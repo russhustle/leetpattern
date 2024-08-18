@@ -8,6 +8,12 @@
 6. 0875 - [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) (Medium)
 7. 1011 - [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) (Medium)
 
+## `bisect` Usage
+
+```python
+--8<-- "template/bisect_usage.py"
+```
+
 ## 0704. Binary Search
 
 ```python

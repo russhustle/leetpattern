@@ -8,7 +8,7 @@ def duplicateZeros(arr: List[int]) -> None:
     n = len(arr)
     fast, slow = 0, 0
 
-    # First pass: find the position 
+    # First pass: find the position
     # where the last element would be in the expanded array
     while fast < n:
         if arr[slow] == 0:
@@ -35,4 +35,4 @@ def duplicateZeros(arr: List[int]) -> None:
 
 arr = [1, 0, 2, 3, 0, 4, 5, 0]
 duplicateZeros(arr)
-print(arr) # [1, 0, 0, 2, 3, 0, 0, 4]
+print(arr)  # [1, 0, 0, 2, 3, 0, 0, 4]

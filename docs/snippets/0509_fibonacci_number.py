@@ -13,6 +13,7 @@ def fib(n: int) -> int:
     return dp[n]
 
 
+# Recursive
 def fibRecursive(n: int) -> int:
     # Time complexity: O(2^n)
     # Space complexity: O(n)

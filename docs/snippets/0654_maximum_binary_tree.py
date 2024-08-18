@@ -1,5 +1,4 @@
 from typing import List, Optional
-from binarytree import build
 
 
 class TreeNode:
@@ -14,12 +13,12 @@ def constructMaximumBinaryTree(nums: List[int]) -> Optional[TreeNode]:
         return None
 
     maximum = max(nums)
-    root_index = nums.index(maximum)
+    rootIndex = nums.index(maximum)
 
     root = TreeNode(maximum)
 
-    left_nums = nums[:root_index]
-    right_nums = nums[root_index + 1 :]
+    left_nums = nums[:rootIndex]
+    right_nums = nums[rootIndex + 1 :]
 
     root.left = constructMaximumBinaryTree(left_nums)
     root.right = constructMaximumBinaryTree(right_nums)

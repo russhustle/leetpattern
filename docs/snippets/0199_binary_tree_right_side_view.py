@@ -1,6 +1,7 @@
-from typing import List, Optional
-from binarytree import build
 from collections import deque
+from typing import List, Optional
+
+from binarytree import build
 
 
 class TreeNode:
@@ -38,13 +39,11 @@ def rightSideView(root: Optional[TreeNode]) -> List[int]:
 root = [1, 2, 2, 3, 4, None, 3, None, None, 5]
 root = build(root)
 print(root)
-"""
-    ____1
-   /     \
-  2__     2
- /   \     \
-3     4     3
-     /
-    5
-"""
+#     ____1
+#    /     \
+#   2__     2
+#  /   \     \
+# 3     4     3
+#      /
+#     5
 print(rightSideView(root))  # [1, 2, 3, 5]

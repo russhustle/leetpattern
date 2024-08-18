@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "new"
+name = "lettpattern"
 version = "0.1.0"
 description = ""
 authors = ["SihanA <57210715+russhustle@users.noreply.github.com>"]
@@ -11,6 +11,11 @@ mkdocs-material = "^9.5.31"
 pymdown-extensions = "^10.9"
 binarytree = "^6.5.1"
 
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.8.0"
+black = "^24.8.0"
+flake8 = "^7.1.1"
 
 [build-system]
 requires = ["poetry-core"]

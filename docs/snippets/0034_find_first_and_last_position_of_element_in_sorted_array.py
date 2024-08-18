@@ -1,5 +1,6 @@
 from typing import List
 
+
 def searchRange(nums: List[int], target: int) -> List[int]:
 
     def binarySearch(nums: List[int], target: int) -> int:

@@ -1,5 +1,5 @@
-from typing import List
 from pprint import pprint
+from typing import List
 
 
 def solve(board: List[List[str]]) -> None:
@@ -20,7 +20,9 @@ def solve(board: List[List[str]]) -> None:
 
     for r in range(ROWS):
         for c in range(COLS):
-            if board[r][c] == "O" and (r in [0, ROWS - 1] or c in [0, COLS - 1]):
+            if board[r][c] == "O" and (
+                r in [0, ROWS - 1] or c in [0, COLS - 1]
+            ):
                 capture(r, c)
 
     for r in range(ROWS):

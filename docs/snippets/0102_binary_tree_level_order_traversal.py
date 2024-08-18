@@ -1,6 +1,7 @@
-from typing import List, Optional
-from binarytree import build
 from collections import deque
+from typing import List, Optional
+
+from binarytree import build
 
 
 class TreeNode:

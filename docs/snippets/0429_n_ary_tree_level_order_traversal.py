@@ -1,5 +1,5 @@
-from typing import List, Optional
 from collections import deque
+from typing import List, Optional
 
 
 class Node:

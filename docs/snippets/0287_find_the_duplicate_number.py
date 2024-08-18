@@ -23,4 +23,4 @@ def findDuplicate(nums: List[int]) -> int:
 # Space complexity: O(1)
 
 nums = [1, 3, 4, 2, 2]
-print(findDuplicate(nums)) # 2
+print(findDuplicate(nums))  # 2

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "new"
+version = "0.1.0"
+description = ""
+authors = ["SihanA <57210715+russhustle@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs-material = "^9.5.31"
+pymdown-extensions = "^10.9"
+binarytree = "^6.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

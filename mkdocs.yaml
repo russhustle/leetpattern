@@ -1,0 +1,51 @@
+site_name: LeetPatterns
+
+nav:
+  - Home: README.md
+  - Binary Search: binary_search.md
+  - Fast Slow Pointers: fast_slow_pointers.md
+  - Left Right Pointers: left_right_pointers.md
+
+  - Tree Traversal: tree_traversal.md
+  - Tree BFS: tree_bfs.md
+  - Tree Modification: tree_modification.md
+
+  - DP Basic: dp_basic.md
+
+  - Graph Flood Fill: graph_flood_fill.md
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+        accent: pink
+  font:
+    text: Montserrat
+    code: Roboto Mono
+  features:
+    - content.code.copy
+    - content.code.select
+    # - navigation.tabs
+    - navigation.indexes # Enable indexes for the navigation
+    - search.suggest # Enable search suggestions
+
+markdown_extensions:
+  - pymdownx.snippets:
+      base_path: docs/snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences

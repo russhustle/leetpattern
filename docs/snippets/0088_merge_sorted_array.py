@@ -1,3 +1,6 @@
+from typing import List
+
+
 def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
     p1, p2 = m - 1, n - 1
     tail = m + n - 1

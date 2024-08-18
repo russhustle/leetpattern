@@ -12,6 +12,7 @@ nav:
 
   - DP Basic: dp_basic.md
   - DP Knapsack 0/1: dp_knapsack_01.md
+  - DP Knapsack Unbounded: dp_knapsack_unbounded.md
 
   - Graph Flood Fill: graph_flood_fill.md
 

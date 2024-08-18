@@ -11,6 +11,7 @@ nav:
   - Tree Modification: tree_modification.md
 
   - DP Basic: dp_basic.md
+  - DP Knapsack 0/1: dp_knapsack_01.md
 
   - Graph Flood Fill: graph_flood_fill.md
 

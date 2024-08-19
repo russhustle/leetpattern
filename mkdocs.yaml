@@ -16,6 +16,8 @@ nav:
 
   - Graph Flood Fill: graph_flood_fill.md
 
+  - Heap Top K: heap_top_k.md
+
 theme:
   name: material
   palette:

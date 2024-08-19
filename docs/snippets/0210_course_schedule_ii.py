@@ -63,5 +63,5 @@ def findOrderBFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
 
 numCourses = 4
 prerequisites = [[1, 0], [2, 0], [3, 1], [3, 2]]
-print(findOrderDFS(numCourses, prerequisites))  # [0, 2, 1, 3]
+print(findOrderDFS(numCourses, prerequisites))  # [0, 1, 2, 3]
 print(findOrderBFS(numCourses, prerequisites))  # [0, 1, 2, 3]

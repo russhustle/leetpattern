@@ -48,6 +48,7 @@ theme:
     # - navigation.tabs
     - navigation.indexes # Enable indexes for the navigation
     - search.suggest # Enable search suggestions
+    - content.math
 
 markdown_extensions:
   - pymdownx.snippets:
@@ -60,3 +61,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+
+extra_css:
+  - css/extra.css

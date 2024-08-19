@@ -5,6 +5,7 @@ nav:
   - Binary Search: binary_search.md
   - Fast Slow Pointers: fast_slow_pointers.md
   - Left Right Pointers: left_right_pointers.md
+  - Prefix Sum: prefix_sum.md
 
   - Tree Traversal: tree_traversal.md
   - Tree BFS: tree_bfs.md

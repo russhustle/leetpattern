@@ -19,6 +19,7 @@ nav:
   - Backtracking Combinations: backtracking_combinations.md
 
   - Graph Flood Fill: graph_flood_fill.md
+  - Graph Topological Sort: graph_topological_sort.md
 
   - Heap Top K: heap_top_k.md
 

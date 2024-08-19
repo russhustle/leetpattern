@@ -9,6 +9,7 @@ nav:
   - Tree Traversal: tree_traversal.md
   - Tree BFS: tree_bfs.md
   - Tree Modification: tree_modification.md
+  - Tree BST: tree_bst.md
 
   - DP Basic: dp_basic.md
   - DP Knapsack 0/1: dp_knapsack_01.md
@@ -53,3 +54,5 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true

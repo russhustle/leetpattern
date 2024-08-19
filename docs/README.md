@@ -1,7 +1,7 @@
 # LeetPatterns
 
-- Binary Search
-- Fast Slow Pointers
-- Left Right Pointers
-- Tree Traversal
-- Tree BFS
+- [x] Binary Search
+- [x] Fast Slow Pointers
+- [x] Left Right Pointers
+- [x] Tree Traversal
+- [x] Tree BFS

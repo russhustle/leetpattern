@@ -21,6 +21,7 @@ nav:
 
   - Graph Flood Fill: graph_flood_fill.md
   - Graph Topological Sort: graph_topological_sort.md
+  - Graph Union Find: graph_union_find.md
 
   - Heap Top K: heap_top_k.md
 

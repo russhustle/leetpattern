@@ -24,6 +24,7 @@ nav:
   - Graph Union Find: graph_union_find.md
 
   - Heap Top K: heap_top_k.md
+  - Design: design.md
 
 theme:
   name: material

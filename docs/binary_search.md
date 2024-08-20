@@ -14,37 +14,37 @@
 --8<-- "template/bisect_usage.py"
 ```
 
-## 0704. Binary Search
+## 704. Binary Search
 
 ```python
 --8<-- "0704_binary_search.py"
 ```
 
-## 0035. Search Insert Position
+## 35. Search Insert Position
 
 ```python
 --8<-- "0035_search_insert_position.py"
 ```
 
-## 0278. First Bad Version
+## 278. First Bad Version
 
 ```python
 --8<-- "0278_first_bad_version.py"
 ```
 
-## 0034. Find First and Last Position of Element in Sorted Array
+## 34. Find First and Last Position of Element in Sorted Array
 
 ```python
 --8<-- "0034_find_first_and_last_position_of_element_in_sorted_array.py"
 ```
 
-## 0367. Valid Perfect Square
+## 367. Valid Perfect Square
 
 ```python
 --8<-- "0367_valid_perfect_square.py"
 ```
 
-## 0875. Koko Eating Bananas
+## 875. Koko Eating Bananas
 
 ```python
 --8<-- "0875_koko_eating_bananas.py"

@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Greedy
 def canJump(nums: List[int]) -> bool:
     if len(nums) < 2:
         return True

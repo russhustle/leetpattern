@@ -1,6 +1,6 @@
 # Tree - Feature
 
-1. 0101 - [Simple Tree](https://leetcode.com/problems/symmetric-tree/) (Easy)
+1. 0101 - [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) (Easy)
 2. 0222 - [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) (Medium)
 3. 0110 - [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) (Easy)
 4. 0257 - [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) (Easy)
@@ -45,7 +45,7 @@
 --8<-- "0112_path_sum.py"
 ```
 
-## 331. Evaluate Boolean Binary Tree
+## 2331. Evaluate Boolean Binary Tree
 
 ```python
 --8<-- "2331_evaluate_boolean_binary_tree.py"

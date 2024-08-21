@@ -58,8 +58,8 @@ theme:
         name: Switch to light mode
         accent: pink
   font:
-    text: Montserrat
-    code: Roboto Mono
+    text: Open Sans
+    code: Courier Prime
   features:
     - content.code.copy
     - content.code.select
@@ -79,6 +79,3 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
-
-extra_css:
-  - css/extra.css

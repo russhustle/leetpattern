@@ -31,6 +31,7 @@ nav:
   - DP Knapsack Unbounded: dp_knapsack_unbounded.md
   - DP Kadane: dp_kadane.md
   - DP Stock: dp_stock.md
+  - DP LCS: dp_lcs.md
 
   - Backtracking Combinations: backtracking_combinations.md
 
@@ -43,6 +44,10 @@ nav:
   - Heap Merge K Sorted: heap_merge_k_sorted.md
 
   - Design: design.md
+
+##############################################
+##  Material theme configuration for MkDocs ##
+##############################################
 
 theme:
   name: material
@@ -62,7 +67,7 @@ theme:
         accent: pink
   font:
     text: Open Sans
-    code: Courier Prime
+    code: Roboto Mono
   features:
     - content.code.copy
     - content.code.select

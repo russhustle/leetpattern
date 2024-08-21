@@ -9,6 +9,7 @@ nav:
 
   - Hash Map: hash_map.md
   - Hash Set: hash_set.md
+  - Hash Counting: hash_counting.md
 
   - Tree Traversal: tree_traversal.md
   - Tree Feature: tree_feature.md

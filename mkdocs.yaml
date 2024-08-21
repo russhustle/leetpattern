@@ -7,6 +7,9 @@ nav:
   - Left Right Pointers: left_right_pointers.md
   - Prefix Sum: prefix_sum.md
 
+  - Hash Map: hash_map.md
+  - Hash Set: hash_set.md
+
   - Tree Traversal: tree_traversal.md
   - Tree Feature: tree_feature.md
   - Tree BFS: tree_bfs.md
@@ -16,6 +19,7 @@ nav:
 
   - Stack: stack.md
   - Stack Monotonic: stack_monotonic.md
+  - Queue: queue.md
 
   - Greedy Interval: greedy_interval.md
 

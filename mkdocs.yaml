@@ -14,6 +14,9 @@ nav:
   - Tree BST: tree_bst.md
   - Tree Trie: tree_trie.md
 
+  - Stack: stack.md
+  - Stack Monotonic: stack_monotonic.md
+
   - Greedy Interval: greedy_interval.md
 
   - DP Basic: dp_basic.md

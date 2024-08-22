@@ -1,10 +1,17 @@
 # Stack
 
-1. 0020 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy)
-2. 0155 - [Min Stack](https://leetcode.com/problems/min-stack/) (Easy)
-3. 0150 - [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) (Medium)
-4. 0022 - [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) (Medium)
-5. 0853 - [Car Fleet](https://leetcode.com/problems/car-fleet/) (Medium)
+1. 1544 - [Make The String Great](https://leetcode.com/problems/make-the-string-great/) (Easy)
+2. 0020 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy)
+3. 0155 - [Min Stack](https://leetcode.com/problems/min-stack/) (Easy)
+4. 0150 - [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) (Medium)
+5. 0022 - [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) (Medium)
+6. 0853 - [Car Fleet](https://leetcode.com/problems/car-fleet/) (Medium)
+
+## 1544. Make The String Great
+
+```python
+--8<-- "1544_make_the_string_great.py"
+```
 
 ## 20. Valid Parentheses
 

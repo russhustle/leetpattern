@@ -1,5 +1,8 @@
+# DP
 def climbStairs(n: int) -> int:
-    if n < 2:
+    # TC: O(n)
+    # SC: O(n)
+    if n <= 1:
         return n
 
     dp = [i for i in range(n + 1)]
@@ -10,5 +13,4 @@ def climbStairs(n: int) -> int:
     return dp[n]
 
 
-n = 10
-print(climbStairs(n))  # 89
+print(climbStairs(10))  # 89

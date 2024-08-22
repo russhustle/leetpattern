@@ -2,9 +2,12 @@ site_name: LeetPatterns
 
 nav:
   - Home: README.md
+  - Array: array.md
   - Binary Search: binary_search.md
   - Fast Slow Pointers: fast_slow_pointers.md
   - Left Right Pointers: left_right_pointers.md
+  - Sliding Window Fixed: sliding_window_fixed.md
+  - Sliding Window Variable: sliding_window_variable.md
   - Prefix Sum: prefix_sum.md
 
   - Hash Map: hash_map.md
@@ -32,6 +35,7 @@ nav:
   - DP Kadane: dp_kadane.md
   - DP Stock: dp_stock.md
   - DP LCS: dp_lcs.md
+  - DP LIS: dp_lis.md
 
   - Backtracking Combinations: backtracking_combinations.md
 

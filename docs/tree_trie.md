@@ -4,6 +4,8 @@
 2. 0211 - [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) (Medium)
 3. 0212 - [Word Search II](https://leetcode.com/problems/word-search-ii/) (Hard)
 
+![trie](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Trie_example.svg/250px-Trie_example.svg.png)
+
 ## 208. Implement Trie (Prefix Tree)
 
 ```python

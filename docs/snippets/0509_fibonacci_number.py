@@ -1,8 +1,8 @@
 # DP
-def fib(n: int) -> int:
-    # Time complexity: O(n)
-    # Space complexity: O(n)
-    if n < 2:
+def fibDP(n: int) -> int:
+    # TC: O(n)
+    # SC: O(n)
+    if n <= 1:
         return n
 
     dp = [i for i in range(n + 1)]
@@ -15,14 +15,14 @@ def fib(n: int) -> int:
 
 # Recursive
 def fibRecursive(n: int) -> int:
-    # Time complexity: O(2^n)
-    # Space complexity: O(n)
-    if n < 2:
+    # TC: O(2^n)
+    # SC: O(n)
+    if n <= 1:
         return n
 
     return fibRecursive(n - 1) + fibRecursive(n - 2)
 
 
 n = 10
-print(fib(n))  # 55
+print(fibDP(n))  # 55
 print(fibRecursive(n))  # 55

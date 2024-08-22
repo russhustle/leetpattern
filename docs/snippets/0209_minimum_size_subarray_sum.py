@@ -2,7 +2,8 @@ import bisect
 from typing import List
 
 
-def minSubArrayLen(target: int, nums: List[int]) -> int:
+# Prefix Sum
+def minSubArrayLenPS(target: int, nums: List[int]) -> int:
     n = len(nums)
     prefix_sums = [0] * (n + 1)
 
@@ -20,6 +21,26 @@ def minSubArrayLen(target: int, nums: List[int]) -> int:
     return 0 if minLen == float("inf") else minLen
 
 
+# Sliding window - Fixed
+def minSubArrayLenSW(target: int, nums: List[int]) -> int:
+    left, right = 0, 0
+    curSum = 0
+    minLen = float("inf")
+
+    while right < len(nums):
+        curSum += nums[right]
+
+        while curSum >= target:
+            minLen = min(minLen, right - left + 1)
+            curSum -= nums[left]
+            left += 1
+
+        right += 1
+
+    return minLen if minLen != float("inf") else 0
+
+
 target = 7
 nums = [2, 3, 1, 2, 4, 3]
-print(minSubArrayLen(target, nums))  # 2
+print(minSubArrayLenPS(target, nums))  # 2
+print(minSubArrayLenSW(target, nums))  # 2

@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Sliding Window - Variable
 def findAnagrams(s: str, p: str) -> List[int]:
     result = []
     if len(s) < len(p):

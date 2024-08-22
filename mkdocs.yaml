@@ -38,6 +38,10 @@ nav:
   - DP LIS: dp_lis.md
 
   - Backtracking Combinations: backtracking_combinations.md
+  - Backtracking Permutations: backtracking_permutations.md
+  - Backtracking Subsets: backtracking_subsets.md
+  - Backtracking Partitions: backtracking_partitions.md
+  - Backtracking Board: backtracking_board.md
 
   - Graph Flood Fill: graph_flood_fill.md
   - Graph Topological Sort: graph_topological_sort.md

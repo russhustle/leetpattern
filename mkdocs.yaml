@@ -15,6 +15,8 @@ nav:
   - 🔢 Hash Set: hash_set.md
   - 🔢 Hash Counting: hash_counting.md
 
+  - 🔗 Linked List: linked_list.md
+
   - 🌳 Tree Traversal: tree_traversal.md
   - 🌳 Tree Feature: tree_feature.md
   - 🌳 Tree BFS: tree_bfs.md

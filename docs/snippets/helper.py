@@ -9,31 +9,31 @@ class ListNode:
             return None
 
         head = ListNode(nums[0])
-        current = head
+        cur = head
         cycle_node = None
 
         for i, val in enumerate(nums[1:], start=1):
-            current.next = ListNode(val)
-            current = current.next
+            cur.next = ListNode(val)
+            cur = cur.next
             if i == pos:
-                cycle_node = current
+                cycle_node = cur
 
         if pos >= 0:
-            current.next = cycle_node
+            cur.next = cycle_node
 
         return head
 
     def __str__(self):
         result = []
-        current = self
+        cur = self
         visited = set()
 
-        while current and current not in visited:
-            result.append(str(current.val))
-            visited.add(current)
-            current = current.next
+        while cur and cur not in visited:
+            result.append(str(cur.val))
+            visited.add(cur)
+            cur = cur.next
 
-        if current:
+        if cur:
             result.append("...")
 
         return " -> ".join(result)

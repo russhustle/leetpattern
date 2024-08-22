@@ -1,12 +1,14 @@
 from typing import List
 
 
-def floodFill(image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
+def floodFill(
+    image: List[List[int]], sr: int, sc: int, color: int
+) -> List[List[int]]:
     original = image[sr][sc]
     if original == color:
         return image
 
-    def dfs(image, r, c):
+    def dfs(r, c):
         if (
             r < 0
             or c < 0
@@ -18,12 +20,12 @@ def floodFill(image: List[List[int]], sr: int, sc: int, color: int) -> List[List
 
         image[r][c] = color
 
-        dfs(image, r - 1, c)
-        dfs(image, r + 1, c)
-        dfs(image, r, c - 1)
-        dfs(image, r, c + 1)
+        dfs(r - 1, c)
+        dfs(r + 1, c)
+        dfs(r, c - 1)
+        dfs(r, c + 1)
 
-    dfs(image, sr, sc)
+    dfs(sr, sc)
 
     return image
 

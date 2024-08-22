@@ -1,7 +1,8 @@
 from typing import List
 
 
-def wiggleMaxLength(nums: List[int]) -> int:
+# DP
+def wiggleMaxLengthDP(nums: List[int]) -> int:
     # Time complexity: O(n)
     # Space complexity: O(n)
     if len(nums) <= 1:
@@ -26,5 +27,23 @@ def wiggleMaxLength(nums: List[int]) -> int:
     return max(up[-1], down[-1])
 
 
+# Greedy
+def wiggleMaxLengthGreedy(nums: List[int]) -> int:
+    if len(nums) < 2:
+        return len(nums)
+
+    prev_diff = nums[1] - nums[0]
+    count = 2 if prev_diff != 0 else 1
+
+    for i in range(2, len(nums)):
+        diff = nums[i] - nums[i - 1]
+        if (diff > 0 and prev_diff <= 0) or (diff < 0 and prev_diff >= 0):
+            count += 1
+            prev_diff = diff
+
+    return count
+
+
 nums = [1, 7, 4, 9, 2, 5]
-print(wiggleMaxLength(nums))  # 6
+print(wiggleMaxLengthDP(nums))  # 6
+print(wiggleMaxLengthGreedy(nums))  # 6

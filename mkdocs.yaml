@@ -19,12 +19,14 @@ nav:
   - Tree BFS: tree_bfs.md
   - Tree Modification: tree_modification.md
   - Tree BST: tree_bst.md
+  - Tree Common Ancestor: tree_common_ancestor.md
   - Tree Trie: tree_trie.md
 
   - Stack: stack.md
   - Stack Monotonic: stack_monotonic.md
   - Queue: queue.md
 
+  - Greedy: greedy.md
   - Greedy Interval: greedy_interval.md
 
   - DP Basic: dp_basic.md

@@ -3,7 +3,8 @@ from typing import List
 
 # Greedy
 def canJump(nums: List[int]) -> bool:
-    if len(nums) < 2:
+    n = len(nums)
+    if n <= 1:
         return True
 
     maxReachable = 0
@@ -11,7 +12,7 @@ def canJump(nums: List[int]) -> bool:
 
     while i <= maxReachable:
         maxReachable = max(maxReachable, i + nums[i])
-        if maxReachable >= len(nums) - 1:
+        if maxReachable >= n - 1:
             return True
         i += 1
 

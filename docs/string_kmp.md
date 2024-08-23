@@ -8,11 +8,15 @@
 
 ## 28. Find the Index of the First Occurrence in a String
 
+- Find the index of the first occurrence of a substring in a string.
+
 ```python
 --8<-- "0028_find_the_index_of_the_first_occurrence_in_a_string.py"
 ```
 
 ## 459. Repeated Substring Pattern
+
+- Check if a string can be constructed by repeating a substring.
 
 ```python
 --8<-- "0459_repeated_substring_pattern.py"
@@ -20,17 +24,23 @@
 
 ## 686. Repeated String Match
 
+- Find the minimum number of times a string must be repeated to make another string a substring of it.
+
 ```python
 --8<-- "0686_repeated_string_match.py"
 ```
 
 ## 1392. Longest Happy Prefix
 
+- Find the longest prefix that is also a suffix.
+
 ```python
 --8<-- "1392_longest_happy_prefix.py"
 ```
 
 ## 214. Shortest Palindrome
+
+- Find the shortest palindrome that can be constructed by adding characters to the beginning of a string.
 
 ```python
 --8<-- "0214_shortest_palindrome.py"

@@ -52,14 +52,19 @@ nav:
   - 🔄 Backtracking Board: backtracking_board.md
 
   - 📝 Graph Flood Fill: graph_flood_fill.md
+  - 📝 Graph DFS: graph_dfs.md
+  - 📝 Graph BFS: graph_bfs.md
   - 📝 Graph Topological Sort: graph_topological_sort.md
   - 📝 Graph Union Find: graph_union_find.md
+  - 📝 Graph Dijkstra: graph_dijkstra.md
+  - 📝 Graph MST: graph_mst.md
 
   - 🖇 Heap Top K: heap_top_k.md
   - 🖇 Heap Two Heaps: heap_two_heaps.md
   - 🖇 Heap Merge K Sorted: heap_merge_k_sorted.md
 
   - 🏷 Design: design.md
+  - 🍩 Bit: bit.md
 
   - Neetcode 150: neetcode_150.md
 

@@ -7,11 +7,24 @@
 
 ## 118. Pascal's Triangle
 
+- Generate the first `numRows` of Pascal's triangle.
+
+```plaintext
+                 numRows    index
+     1              1         0
+    1 1             2         1
+   1 2 1            3         2
+  1 3 3 1           4         3
+ 1 4 6 4 1          5         4
+```
+
 ```python
 --8<-- "0118_pascals_triangle.py"
 ```
 
 ## 119. Pascal's Triangle II
+
+- Return the `rowIndex`th row of Pascal's triangle.
 
 ```python
 --8<-- "0119_pascals_triangle_ii.py"
@@ -19,11 +32,15 @@
 
 ## 62. Unique Paths
 
+- Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
+
 ```python
 --8<-- "0062_unique_paths.py"
 ```
 
 ## 63. Unique Paths II
+
+- Count the number of unique paths to reach the bottom-right corner of a `m x n` grid with obstacles.
 
 ```python
 --8<-- "0063_unique_paths_ii.py"

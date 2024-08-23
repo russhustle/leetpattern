@@ -82,7 +82,7 @@ theme:
         name: Switch to light mode
         accent: pink
   font:
-    text: Open Sans
+    text: Lato
     code: Roboto Mono
   features:
     - content.code.copy

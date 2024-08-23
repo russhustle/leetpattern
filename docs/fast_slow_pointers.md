@@ -13,11 +13,15 @@
 
 ## 27. Remove Element
 
+- Remove all instances of a given value in-place.
+
 ```python
 --8<-- "0027_remove_element.py"
 ```
 
 ## 26. Remove Duplicates from Sorted Array
+
+- Remove duplicates in-place.
 
 ```python
 --8<-- "0026_remove_duplicates_from_sorted_array.py"
@@ -35,17 +39,23 @@
 
 ## 283. Move Zeroes
 
+- Move all zeroes to the end of the array while maintaining the relative order of the non-zero elements.
+
 ```python
 --8<-- "0283_move_zeroes.py"
 ```
 
 ## 1089. Duplicate Zeros
 
+- Duplicate each occurrence of zero, shifting the remaining elements to the right.
+
 ```python
 --8<-- "1089_duplicate_zeros.py"
 ```
 
 ## 287. Find the Duplicate Number
+
+- Find the duplicate number in an array containing `n + 1` integers where each integer is between `1` and `n` inclusive.
 
 ```python
 --8<-- "0287_find_the_duplicate_number.py"

@@ -1,11 +1,12 @@
 def isHappy(n: int) -> bool:
+
     def getSum(n):
-        result = 0
+        sum_of_squares = 0
         while n:
             a, b = divmod(n, 10)
-            result += b**2
+            sum_of_squares += b**2
             n = a
-        return result
+        return sum_of_squares
 
     record = set()
 

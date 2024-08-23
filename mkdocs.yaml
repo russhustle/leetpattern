@@ -15,6 +15,9 @@ nav:
   - 🔢 Hash Set: hash_set.md
   - 🔢 Hash Counting: hash_counting.md
 
+  - 💬 String: string.md
+  - 💬 String KMP: string_kmp.md
+
   - 🔗 Linked List: linked_list.md
 
   - 🌳 Tree Traversal: tree_traversal.md

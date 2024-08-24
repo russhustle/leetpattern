@@ -2,11 +2,41 @@ from collections import defaultdict, deque
 from typing import List
 
 
-# DFS (Neetcode)
-def findOrderDFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-    prereq = {i: [] for i in range(numCourses)}
+# 1. BFS - Kahn's Algorithm
+def findOrderBFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+    adj = defaultdict(list)
+    indegree = [0] * numCourses
+
     for crs, pre in prerequisites:
-        prereq[crs].append(pre)
+        adj[pre].append(crs)
+        indegree[crs] += 1
+
+    q = deque([i for i in range(numCourses) if indegree[i] == 0])
+    order = []
+
+    while q:
+        crs = q.popleft()
+        order.append(crs)
+
+        for next in adj[crs]:
+            indegree[next] -= 1
+
+            if indegree[next] == 0:
+                q.append(next)
+
+    if len(order) == numCourses:
+        return order
+    else:
+        return []
+
+
+# 2. DFS + Set
+def findOrderDFS1(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
+    adj = defaultdict(list)
+    for crs, pre in prerequisites:
+        adj[crs].append(pre)
 
     visit, cycle = set(), set()
     order = []
@@ -18,7 +48,7 @@ def findOrderDFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
             return True
 
         cycle.add(crs)
-        for pre in prereq[crs]:
+        for pre in adj[crs]:
             if not dfs(pre):
                 return False
 
@@ -34,34 +64,43 @@ def findOrderDFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
     return order
 
 
-# BFS - Kahn's Algorithm
-def findOrderBFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-    graph = defaultdict(list)
-    indegree = [0 for _ in range(numCourses)]
+# 3. DFS + List
+def findOrderDFS2(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
+    adj = defaultdict(list)
+    for pre, crs in prerequisites:
+        adj[crs].append(pre)
 
-    for dest, src in prerequisites:
-        graph[src].append(dest)
-        indegree[dest] += 1
-
-    queue = deque([i for i in range(numCourses) if indegree[i] == 0])
+    # 0: not visited, 1: visiting, 2: visited
+    state = [0] * numCourses
     order = []
 
-    while queue:
-        course = queue.popleft()
-        order.append(course)
+    def dfs(crs):
+        if state[crs] == 1:
+            return False
+        if state[crs] == 2:
+            return True
 
-        for next_course in graph[course]:
-            indegree[next_course] -= 1
-            if indegree[next_course] == 0:
-                queue.append(next_course)
+        state[crs] = 1
 
-    if len(order) == numCourses:
-        return order
-    else:
-        return []
+        for pre in adj[crs]:
+            if not dfs(pre):
+                return False
+
+        state[crs] = 2
+        order.append(crs)
+        return True
+
+    for crs in range(numCourses):
+        if not dfs(crs):
+            return []
+
+    return order[::-1]
 
 
-numCourses = 4
-prerequisites = [[1, 0], [2, 0], [3, 1], [3, 2]]
-print(findOrderDFS(numCourses, prerequisites))  # [0, 1, 2, 3]
-print(findOrderBFS(numCourses, prerequisites))  # [0, 1, 2, 3]
+numCourses = 5
+prerequisites = [[0, 1], [0, 2], [1, 3], [1, 4], [3, 4]]
+print(findOrderBFS(numCourses, prerequisites))  # [2, 4, 3, 1, 0]
+print(findOrderDFS1(numCourses, prerequisites))  # [4, 3, 1, 2, 0]
+print(findOrderDFS2(numCourses, prerequisites))  # [4, 3, 2, 1, 0]

@@ -3,72 +3,96 @@ from copy import deepcopy
 from typing import List
 
 
-# DFS
+# 1. DFS
 def numIslandsDFS(grid: List[List[str]]) -> int:
     if not grid:
         return 0
+    m, n = len(grid), len(grid[0])
+    islands = 0
 
-    def dfs(grid, r, c):
-        if (
-            r < 0
-            or c < 0
-            or r >= len(grid)
-            or c >= len(grid[0])
-            or grid[r][c] == "0"
-        ):
+    def dfs(r, c):
+        if r not in range(m) or c not in range(n) or grid[r][c] == "0":
             return None
 
         grid[r][c] = "0"
 
-        dfs(grid, r + 1, c)
-        dfs(grid, r - 1, c)
-        dfs(grid, r, c + 1)
-        dfs(grid, r, c - 1)
+        dfs(r + 1, c)
+        dfs(r - 1, c)
+        dfs(r, c + 1)
+        dfs(r, c - 1)
 
-    islands = 0
-
-    for r in range(len(grid)):
-        for c in range(len(grid[0])):
+    for r in range(m):
+        for c in range(n):
             if grid[r][c] == "1":
-                dfs(grid, r, c)
+                dfs(r, c)
                 islands += 1
 
     return islands
 
 
-# BFS
-def numIslandsBFS(grid: List[List[str]]) -> int:
+# 2. BFS + Set
+def numIslandsBFS1(grid: List[List[str]]) -> int:
     if not grid:
         return 0
 
+    m, n = len(grid), len(grid[0])
+    directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+    visited = set()
+    islands = 0
+
     def bfs(r, c):
-        q = deque()
-        visit.add((r, c))
-        q.append((r, c))
+        q = deque([(r, c)])
 
         while q:
             row, col = q.popleft()
-            directions = [[1, 0], [-1, 0], [0, 1], [0, -1]]
 
             for dr, dc in directions:
-                r = row + dr
-                c = col + dc
+                nr = row + dr
+                nc = col + dc
                 if (
-                    r in range(ROWS)
-                    and c in range(COLS)
-                    and grid[r][c] == "1"
-                    and (r, c) not in visit
+                    nr in range(m)
+                    and nc in range(n)
+                    and grid[nr][nc] == "1"
+                    and (nr, nc) not in visited
                 ):
-                    q.append((r, c))
-                    visit.add((r, c))
+                    visited.add((nr, nc))
+                    q.append((nr, nc))
 
-    ROWS, COLS = len(grid), len(grid[0])
-    visit = set()
+    for r in range(m):
+        for c in range(n):
+            if grid[r][c] == "1" and (r, c) not in visited:
+                visited.add((r, c))
+                bfs(r, c)
+                islands += 1
+
+    return islands
+
+
+# 3. BFS + Grid
+def numIslandsBFS2(grid: List[List[str]]) -> int:
+    if not grid:
+        return 0
+
+    m, n = len(grid), len(grid[0])
+    directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
     islands = 0
 
-    for r in range(ROWS):
-        for c in range(COLS):
-            if grid[r][c] == "1" and (r, c) not in visit:
+    def bfs(r, c):
+        q = deque([(r, c)])
+
+        while q:
+            row, col = q.popleft()
+
+            for dr, dc in directions:
+                nr, nc = row + dr, col + dc
+                if nr in range(m) and nc in range(n) and grid[nr][nc] == "1":
+                    q.append((nr, nc))
+                    grid[nr][nc] = "0"
+
+    for r in range(m):
+        for c in range(n):
+            if grid[r][c] == "1":
+                grid[r][c] = "0"
                 bfs(r, c)
                 islands += 1
 
@@ -83,4 +107,5 @@ grid = [
 ]
 
 print(numIslandsDFS(deepcopy(grid)))  # 1
-print(numIslandsBFS(deepcopy(grid)))  # 1
+print(numIslandsBFS1(deepcopy(grid)))  # 1
+print(numIslandsBFS2(deepcopy(grid)))  # 1

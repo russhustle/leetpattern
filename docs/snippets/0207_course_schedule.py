@@ -2,7 +2,7 @@ from collections import defaultdict, deque
 from typing import List
 
 
-# BFS: Kahn's Algorithm
+# 1. BFS - Kahn's Algorithm
 def canFinishBFS(numCourses: int, prerequisites: List[List[int]]) -> bool:
     adj = defaultdict(list)
     indegree = [0] * numCourses

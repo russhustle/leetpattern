@@ -46,6 +46,8 @@
 
 - Find the list of coordinates where water can flow to both the Pacific and Atlantic oceans.
 
+![417](https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg)
+
 ```python
 --8<-- "0417_pacific_atlantic_water_flow.py"
 ```

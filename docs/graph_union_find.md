@@ -2,14 +2,15 @@
 
 1. 0547 - [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) (Medium)
 2. 0684 - [Redundant Connection](https://leetcode.com/problems/redundant-connection/) (Medium)
-3. 0721 - [Accounts Merge](https://leetcode.com/problems/accounts-merge/) (Medium)
-4. 0990 - [Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) (Medium)
-5. 0952 - [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/) (Hard)
-6. 0839 - [Similar String Groups](https://leetcode.com/problems/similar-string-groups/) (Hard)
-7. 0305 - [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) (Hard)
-8. 1202 - [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) (Medium)
-9. 0685 - [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/) (Hard)
-10. 0399 - [Evaluate Division](https://leetcode.com/problems/evaluate-division/) (Medium)
+3. 0323 - [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
+4. 0721 - [Accounts Merge](https://leetcode.com/problems/accounts-merge/) (Medium)
+5. 0990 - [Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) (Medium)
+6. 0952 - [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/) (Hard)
+7. 0839 - [Similar String Groups](https://leetcode.com/problems/similar-string-groups/) (Hard)
+8. 0305 - [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) (Hard)
+9. 1202 - [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) (Medium)
+10. 0685 - [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/) (Hard)
+11. 0399 - [Evaluate Division](https://leetcode.com/problems/evaluate-division/) (Medium)
 
 ## Union Find
 
@@ -30,6 +31,12 @@
 
 ```python
 --8<-- "0684_redundant_connection.py"
+```
+
+## 323. Number of Connected Components in an Undirected Graph
+
+```python
+--8<-- "0323_number_of_connected_components_in_an_undirected_graph.py"
 ```
 
 ## 721. Accounts Merge

@@ -18,25 +18,23 @@ class TrieNode:
 class Solution:
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         root = TrieNode()
-
         for w in words:
             root.addWord(w)
 
-        ROWS, COLS = len(board), len(board[0])
+        m, n = len(board), len(board[0])
         result, visit = set(), set()
 
         def dfs(r, c, node, word):
             if (
-                r < 0
-                or c < 0
-                or r >= ROWS
-                or c >= COLS
+                r not in range(m)
+                or c not in range(n)
                 or (r, c) in visit
                 or board[r][c] not in node.children
             ):
                 return None
 
             visit.add((r, c))
+
             node = node.children[board[r][c]]
             word += board[r][c]
             if node.isWord:
@@ -49,8 +47,8 @@ class Solution:
 
             visit.remove((r, c))
 
-        for r in range(ROWS):
-            for c in range(COLS):
+        for r in range(m):
+            for c in range(n):
                 dfs(r, c, root, "")
 
         return list(result)

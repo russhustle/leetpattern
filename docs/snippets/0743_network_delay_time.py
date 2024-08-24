@@ -3,33 +3,59 @@ from heapq import heappop, heappush
 from typing import List
 
 
-# Dijkstra
-def networkDelayTime(times: List[List[int]], n: int, k: int) -> int:
+# Dijkstra - Set
+def networkDelayTime1(times: List[List[int]], n: int, k: int) -> int:
     adj = defaultdict(list)
     for u, v, w in times:
         adj[u].append((v, w))
 
-    minHeap = [(0, k)]
+    minHeap = [(0, k)]  # (weight, node)
     visited = set()
-    t = 0
+    delay = 0
 
     while minHeap:
-        w1, n1 = heappop(minHeap)
+        cur, u = heappop(minHeap)
 
-        if n1 in visited:
+        if u in visited:
+            continue
+        visited.add(u)
+
+        delay = max(delay, cur)
+
+        for v, w in adj[u]:
+            if v not in visited:
+                heappush(minHeap, (cur + w, v))
+
+    return delay if len(visited) == n else -1
+
+
+# Dijkstra - Dict
+def networkDelayTime2(times: List[List[int]], n: int, k: int) -> int:
+    adj = defaultdict(list)
+    for u, v, w in times:
+        adj[u].append((v, w))
+
+    minHeap = [(0, k)]  # (weight, node)
+    dist = defaultdict(int)
+    dist[k] = 0
+
+    while minHeap:
+        cur, u = heappop(minHeap)
+
+        if cur > dist[u]:
             continue
 
-        visited.add(n1)
-        t = max(t, w1)
+        for v, w in adj[u]:
+            path = cur + w
+            if v not in dist or path < dist[v]:
+                dist[v] = path
+                heappush(minHeap, (path, v))
 
-        for n2, w2 in adj[n1]:
-            if n2 not in visited:
-                heappush(minHeap, (w1 + w2, n2))
-
-    return t if len(visited) == n else -1
+    return max(dist.values()) if len(dist) == n else -1
 
 
 times = [[2, 1, 1], [2, 3, 1], [3, 4, 1]]
 n = 4
 k = 2
-print(networkDelayTime(times, n, k))  # 2
+print(networkDelayTime1(times, n, k))  # 2
+print(networkDelayTime2(times, n, k))  # 2

@@ -18,11 +18,15 @@
 
 ## 200. Number of Islands
 
+- Count the number of islands in a 2D grid.
+
 ```python
 --8<-- "0200_number_of_islands.py"
 ```
 
 ## 695. Max Area of Island
+
+- Find the maximum area of an island in a 2D grid.
 
 ![695](https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg)
 
@@ -32,11 +36,15 @@
 
 ## 130. Surrounded Regions
 
+- Replace all the 'O's with 'X's if surrounded by 'X's.
+
 ```python
 --8<-- "0130_surrounded_regions.py"
 ```
 
 ## 417. Pacific Atlantic Water Flow
+
+- Find the list of coordinates where water can flow to both the Pacific and Atlantic oceans.
 
 ```python
 --8<-- "0417_pacific_atlantic_water_flow.py"

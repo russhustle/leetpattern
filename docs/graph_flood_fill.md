@@ -8,11 +8,9 @@
 
 ## 733. Flood Fill
 
-```plaintext
-[1,1,1]    [2,2,2]
-[1,1,0] -> [2,2,0]
-[1,0,1]    [2,0,1]
-```
+- Replace all the pixels of the same color starting from the given pixel.
+
+![733](https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg)
 
 ```python
 --8<-- "0733_flood_fill.py"

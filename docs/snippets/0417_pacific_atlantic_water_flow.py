@@ -10,20 +10,19 @@ def pacificAtlanticDFS(heights: List[List[int]]) -> List[List[int]]:
     def dfs(r, c, visited, prevHeight):
         if (
             (r, c) in visited
-            or r < 0
-            or c < 0
-            or r == m
-            or c == n
+            or r not in range(m)
+            or c not in range(n)
             or heights[r][c] < prevHeight
         ):
             return None
 
         visited.add((r, c))
+        height = heights[r][c]
 
-        dfs(r + 1, c, visited, heights[r][c])
-        dfs(r - 1, c, visited, heights[r][c])
-        dfs(r, c + 1, visited, heights[r][c])
-        dfs(r, c - 1, visited, heights[r][c])
+        dfs(r + 1, c, visited, height)
+        dfs(r - 1, c, visited, height)
+        dfs(r, c + 1, visited, height)
+        dfs(r, c - 1, visited, height)
 
     for c in range(n):
         dfs(0, c, pac, heights[0][c])  # top
@@ -55,11 +54,11 @@ def pacificAtlanticBFS(heights: List[List[int]]) -> List[List[int]]:
                 if (
                     nr in range(m)
                     and nc in range(n)
-                    and heights[nr][nc] >= heights[row][col]
+                    and heights[nr][nc] < heights[row][col]
                     and (nr, nc) not in visited
                 ):
-                    visited.add((nr, nc))
                     q.append((nr, nc))
+                    visited.add((nr, nc))
 
     for c in range(n):
         bfs(0, c, pac)  # top

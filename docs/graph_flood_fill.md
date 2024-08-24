@@ -26,6 +26,8 @@
 
 ## 695. Max Area of Island
 
+![695](https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg)
+
 ```python
 --8<-- "0695_max_area_of_island.py"
 ```

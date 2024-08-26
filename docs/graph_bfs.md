@@ -3,6 +3,7 @@
 1. 0994 - [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) (Medium)
 2. 0127 - [Word Ladder](https://leetcode.com/problems/word-ladder/) (Hard)
 3. 1466 - [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) (Medium)
+4. 0286 - [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) (Medium)
 
 ## 994. Rotting Oranges
 
@@ -30,4 +31,14 @@
 
 ```python
 --8<-- "1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero.py"
+```
+
+## 286. Walls and Gates
+
+- Fill each empty room with the distance to its nearest gate.
+
+![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
+
+```python
+--8<-- "0286_walls_and_gates.py"
 ```

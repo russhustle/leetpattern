@@ -11,7 +11,6 @@
 2. 0787 - [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) (Medium)
 3. 0207 - [Course Schedule](https://leetcode.com/problems/course-schedule/) (Medium)
 4. 1109 - [Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/) (Medium)
-5. 0332 - [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) (Medium)
 
 ## 743. Network Delay Time
 
@@ -47,12 +46,4 @@
 
 ```python
 --8<-- "1109_corporate_flight_bookings.py"
-```
-
-## 332. Reconstruct Itinerary
-
-- Return the itinerary that uses all the tickets.
-
-```python
---8<-- "0332_reconstruct_itinerary.py"
 ```

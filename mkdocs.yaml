@@ -111,3 +111,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago

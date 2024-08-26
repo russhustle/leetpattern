@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="LeetCode Patterns">
       
+      
+        <meta name="author" content="Sihan A">
+      
+      
+        <link rel="canonical" href="https://russhustle.github.io/leetpattern/neetcode_150/">
       
       
         <link rel="prev" href="../bit/">
@@ -45,6 +51,10 @@
     
     
       <link rel="stylesheet" href="../css/timeago.css">
+    
+      <link rel="stylesheet" href="../css/no-footer.css">
+    
+      <link rel="stylesheet" href="../css/unordered-list-symbols.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -145,6 +155,45 @@
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
     
   </nav>
@@ -4224,8 +4273,8 @@
                   
 
 
-<h1 id="neetcode-150">Neetcode 150</h1>
-<h2 id="table-of-contents">Table of Contents</h2>
+<h1 id="neetcode-150">Neetcode 150<a class="headerlink" href="#neetcode-150" title="Permanent link">&para;</a></h1>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <div class="toc">
 <ul>
 <li><a href="#neetcode-150">Neetcode 150</a><ul>
@@ -4417,7 +4466,7 @@
 </li>
 </ul>
 </div>
-<h2 id="arrays-hashing">Arrays &amp; Hashing</h2>
+<h2 id="arrays-hashing">Arrays &amp; Hashing<a class="headerlink" href="#arrays-hashing" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0217 - <a href="https://leetcode.com/problems/contains-duplicate/">Contains Duplicate</a> (Easy)</li>
 <li>0242 - <a href="https://leetcode.com/problems/valid-anagram/">Valid Anagram</a> (Easy)</li>
@@ -4429,7 +4478,7 @@
 <li>0271 - <a href="https://leetcode.com/problems/encode-and-decode-strings/">Encode and Decode Strings</a> (Medium)</li>
 <li>0128 - <a href="https://leetcode.com/problems/longest-consecutive-sequence/">Longest Consecutive Sequence</a> (Hard)</li>
 </ol>
-<h3 id="217-contains-duplicate">217. Contains Duplicate</h3>
+<h3 id="217-contains-duplicate">217. Contains Duplicate<a class="headerlink" href="#217-contains-duplicate" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -4478,7 +4527,7 @@
 </span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="nb">print</span><span class="p">(</span><span class="n">containsDuplicateSort</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>  <span class="c1"># True</span>
 </span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="nb">print</span><span class="p">(</span><span class="n">containsDuplicateSet</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h3 id="242-valid-anagram">242. Valid Anagram</h3>
+<h3 id="242-valid-anagram">242. Valid Anagram<a class="headerlink" href="#242-valid-anagram" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
@@ -4539,7 +4588,7 @@
 </span><span id="__span-1-58"><a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="nb">print</span><span class="p">(</span><span class="n">isAnagramArray</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">))</span>  <span class="c1"># True</span>
 </span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a><span class="nb">print</span><span class="p">(</span><span class="n">isAnagramCounter</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h3 id="1-two-sum">1. Two Sum</h3>
+<h3 id="1-two-sum">1. Two Sum<a class="headerlink" href="#1-two-sum" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
@@ -4556,7 +4605,7 @@
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">target</span> <span class="o">=</span> <span class="mi">18</span>
 </span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">twoSum</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>  <span class="c1"># [1, 2]</span>
 </span></code></pre></div>
-<h3 id="49-group-anagrams">49. Group Anagrams</h3>
+<h3 id="49-group-anagrams">49. Group Anagrams<a class="headerlink" href="#49-group-anagrams" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
@@ -4577,7 +4626,7 @@
 </span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="n">strs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;eat&quot;</span><span class="p">,</span> <span class="s2">&quot;tea&quot;</span><span class="p">,</span> <span class="s2">&quot;tan&quot;</span><span class="p">,</span> <span class="s2">&quot;ate&quot;</span><span class="p">,</span> <span class="s2">&quot;nat&quot;</span><span class="p">,</span> <span class="s2">&quot;bat&quot;</span><span class="p">]</span>
 </span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">groupAnagrams</span><span class="p">(</span><span class="n">strs</span><span class="p">))</span>  <span class="c1"># [[&#39;eat&#39;, &#39;tea&#39;, &#39;ate&#39;], [&#39;tan&#39;, &#39;nat&#39;], [&#39;bat&#39;]]</span>
 </span></code></pre></div>
-<h3 id="347-top-k-frequent-elements">347. Top K Frequent Elements</h3>
+<h3 id="347-top-k-frequent-elements">347. Top K Frequent Elements<a class="headerlink" href="#347-top-k-frequent-elements" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">heapq</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
@@ -4621,7 +4670,7 @@
 </span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="nb">print</span><span class="p">(</span><span class="n">topKFrequent1</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>  <span class="c1"># [2, 1]</span>
 </span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="nb">print</span><span class="p">(</span><span class="n">topKFrequent2</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>  <span class="c1"># [2, 1]</span>
 </span></code></pre></div>
-<h3 id="238-product-of-array-except-self">238. Product of Array Except Self</h3>
+<h3 id="238-product-of-array-except-self">238. Product of Array Except Self<a class="headerlink" href="#238-product-of-array-except-self" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
@@ -4670,28 +4719,28 @@
 </span><span id="__span-5-46"><a id="__codelineno-5-46" name="__codelineno-5-46" href="#__codelineno-5-46"></a><span class="nb">print</span><span class="p">(</span><span class="n">productExceptSelf</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>  <span class="c1"># [24, 12, 8, 6]</span>
 </span><span id="__span-5-47"><a id="__codelineno-5-47" name="__codelineno-5-47" href="#__codelineno-5-47"></a><span class="nb">print</span><span class="p">(</span><span class="n">productExceptSelfOptimized</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>  <span class="c1"># [24, 12, 8, 6]</span>
 </span></code></pre></div>
-<h3 id="36-valid-sudoku">36. Valid Sudoku</h3>
+<h3 id="36-valid-sudoku">36. Valid Sudoku<a class="headerlink" href="#36-valid-sudoku" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>
 </span></code></pre></div>
-<h3 id="271-encode-and-decode-strings">271. Encode and Decode Strings</h3>
+<h3 id="271-encode-and-decode-strings">271. Encode and Decode Strings<a class="headerlink" href="#271-encode-and-decode-strings" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>
 </span></code></pre></div>
-<h3 id="128-longest-consecutive-sequence">128. Longest Consecutive Sequence</h3>
+<h3 id="128-longest-consecutive-sequence">128. Longest Consecutive Sequence<a class="headerlink" href="#128-longest-consecutive-sequence" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>
 </span></code></pre></div>
-<h2 id="two-pointers">Two Pointers</h2>
+<h2 id="two-pointers">Two Pointers<a class="headerlink" href="#two-pointers" title="Permanent link">&para;</a></h2>
 <p>0125 - <a href="https://leetcode.com/problems/valid-palindrome/">Valid Palindrome</a> (Easy)
 0167 - <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">Two Sum II - Input array is sorted</a> (Easy)
 0015 - <a href="https://leetcode.com/problems/3sum/">3Sum</a> (Medium)
 0011 - <a href="https://leetcode.com/problems/container-with-most-water/">Container With Most Water</a> (Medium)
 0042 - <a href="https://leetcode.com/problems/trapping-rain-water/">Trapping Rain Water</a> (Hard)</p>
-<h3 id="125-valid-palindrome">125. Valid Palindrome</h3>
+<h3 id="125-valid-palindrome">125. Valid Palindrome<a class="headerlink" href="#125-valid-palindrome" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>
 </span></code></pre></div>
-<h3 id="167-two-sum-ii-input-array-is-sorted">167. Two Sum II - Input array is sorted</h3>
+<h3 id="167-two-sum-ii-input-array-is-sorted">167. Two Sum II - Input array is sorted<a class="headerlink" href="#167-two-sum-ii-input-array-is-sorted" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>
 </span></code></pre></div>
-<h3 id="15-3sum">15. 3Sum</h3>
+<h3 id="15-3sum">15. 3Sum<a class="headerlink" href="#15-3sum" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
@@ -4732,10 +4781,10 @@
 </span><span id="__span-11-38"><a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">]</span>
 </span><span id="__span-11-39"><a id="__codelineno-11-39" name="__codelineno-11-39" href="#__codelineno-11-39"></a><span class="nb">print</span><span class="p">(</span><span class="n">threeSum</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
 </span></code></pre></div>
-<h3 id="11-container-with-most-water">11. Container With Most Water</h3>
+<h3 id="11-container-with-most-water">11. Container With Most Water<a class="headerlink" href="#11-container-with-most-water" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>
 </span></code></pre></div>
-<h3 id="42-trapping-rain-water">42. Trapping Rain Water</h3>
+<h3 id="42-trapping-rain-water">42. Trapping Rain Water<a class="headerlink" href="#42-trapping-rain-water" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
 </span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
@@ -4787,7 +4836,7 @@
 </span><span id="__span-13-49"><a id="__codelineno-13-49" name="__codelineno-13-49" href="#__codelineno-13-49"></a><span class="nb">print</span><span class="p">(</span><span class="n">trapTP</span><span class="p">(</span><span class="n">height</span><span class="p">))</span>  <span class="c1"># 6</span>
 </span><span id="__span-13-50"><a id="__codelineno-13-50" name="__codelineno-13-50" href="#__codelineno-13-50"></a><span class="nb">print</span><span class="p">(</span><span class="n">trapStack</span><span class="p">(</span><span class="n">height</span><span class="p">))</span>  <span class="c1"># 6</span>
 </span></code></pre></div>
-<h2 id="sliding-window">Sliding Window</h2>
+<h2 id="sliding-window">Sliding Window<a class="headerlink" href="#sliding-window" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0121 - <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">Best Time to Buy and Sell Stock</a> (Easy)</li>
 <li>0003 - <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">Longest Substring Without Repeating Characters</a> (Medium)</li>
@@ -4796,7 +4845,7 @@
 <li>0567 - <a href="https://leetcode.com/problems/permutation-in-string/">Permutation in String</a> (Medium)</li>
 <li>0239 - <a href="https://leetcode.com/problems/sliding-window-maximum/">Sliding Window Maximum</a> (Hard)</li>
 </ol>
-<h3 id="121-best-time-to-buy-and-sell-stock">121. Best Time to Buy and Sell Stock</h3>
+<h3 id="121-best-time-to-buy-and-sell-stock">121. Best Time to Buy and Sell Stock<a class="headerlink" href="#121-best-time-to-buy-and-sell-stock" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
@@ -4847,7 +4896,7 @@
 </span><span id="__span-14-48"><a id="__codelineno-14-48" name="__codelineno-14-48" href="#__codelineno-14-48"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxProfitDP</span><span class="p">(</span><span class="n">prices</span><span class="p">))</span>  <span class="c1"># 5</span>
 </span><span id="__span-14-49"><a id="__codelineno-14-49" name="__codelineno-14-49" href="#__codelineno-14-49"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxProfitGreedy</span><span class="p">(</span><span class="n">prices</span><span class="p">))</span>  <span class="c1"># 5</span>
 </span></code></pre></div>
-<h3 id="3-longest-substring-without-repeating-characters">3. Longest Substring Without Repeating Characters</h3>
+<h3 id="3-longest-substring-without-repeating-characters">3. Longest Substring Without Repeating Characters<a class="headerlink" href="#3-longest-substring-without-repeating-characters" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># Sliding Window - Variable</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">def</span> <span class="nf">lengthOfLongestSubstring</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="n">hashmap</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>  <span class="c1"># char: last index</span>
@@ -4867,7 +4916,7 @@
 </span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abcabcbb&quot;</span>
 </span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">lengthOfLongestSubstring</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="424-longest-repeating-character-replacement">424. Longest Repeating Character Replacement</h3>
+<h3 id="424-longest-repeating-character-replacement">424. Longest Repeating Character Replacement<a class="headerlink" href="#424-longest-repeating-character-replacement" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
 </span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
@@ -4895,7 +4944,7 @@
 </span><span id="__span-16-25"><a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a><span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
 </span><span id="__span-16-26"><a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">characterReplacement</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>  <span class="c1"># 4</span>
 </span></code></pre></div>
-<h3 id="76-minimum-window-substring">76. Minimum Window Substring</h3>
+<h3 id="76-minimum-window-substring">76. Minimum Window Substring<a class="headerlink" href="#76-minimum-window-substring" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
 </span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
 </span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
@@ -4936,7 +4985,7 @@
 </span><span id="__span-17-38"><a id="__codelineno-17-38" name="__codelineno-17-38" href="#__codelineno-17-38"></a><span class="n">t</span> <span class="o">=</span> <span class="s2">&quot;ABC&quot;</span>
 </span><span id="__span-17-39"><a id="__codelineno-17-39" name="__codelineno-17-39" href="#__codelineno-17-39"></a><span class="nb">print</span><span class="p">(</span><span class="n">minWindow</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">))</span>  <span class="c1"># BANC</span>
 </span></code></pre></div>
-<h3 id="567-permutation-in-string">567. Permutation in String</h3>
+<h3 id="567-permutation-in-string">567. Permutation in String<a class="headerlink" href="#567-permutation-in-string" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">def</span> <span class="nf">checkInclusion</span><span class="p">(</span><span class="n">s1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">s2</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 </span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">):</span>
 </span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>        <span class="k">return</span> <span class="kc">False</span>
@@ -4981,7 +5030,7 @@
 </span><span id="__span-18-42"><a id="__codelineno-18-42" name="__codelineno-18-42" href="#__codelineno-18-42"></a><span class="n">s2</span> <span class="o">=</span> <span class="s2">&quot;eidba&quot;</span>
 </span><span id="__span-18-43"><a id="__codelineno-18-43" name="__codelineno-18-43" href="#__codelineno-18-43"></a><span class="nb">print</span><span class="p">(</span><span class="n">checkInclusion</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h2 id="stack">Stack</h2>
+<h2 id="stack">Stack<a class="headerlink" href="#stack" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0020 - <a href="https://leetcode.com/problems/valid-parentheses/">Valid Parentheses</a> (Easy)</li>
 <li>0155 - <a href="https://leetcode.com/problems/min-stack/">Min Stack</a> (Easy)</li>
@@ -4991,7 +5040,7 @@
 <li>0853 - <a href="https://leetcode.com/problems/car-fleet/">Car Fleet</a> (Medium)</li>
 <li>0084 - <a href="https://leetcode.com/problems/largest-rectangle-in-histogram/">Largest Rectangle in Histogram</a> (Hard)</li>
 </ol>
-<h3 id="20-valid-parentheses">20. Valid Parentheses</h3>
+<h3 id="20-valid-parentheses">20. Valid Parentheses<a class="headerlink" href="#20-valid-parentheses" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">def</span> <span class="nf">isValid</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 </span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="n">hashmap</span> <span class="o">=</span> <span class="p">{</span>
 </span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>        <span class="s2">&quot;)&quot;</span><span class="p">:</span> <span class="s2">&quot;(&quot;</span><span class="p">,</span>
@@ -5016,7 +5065,7 @@
 </span><span id="__span-19-22"><a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a><span class="nb">print</span><span class="p">(</span><span class="n">isValid</span><span class="p">(</span><span class="s2">&quot;()[]</span><span class="si">{}</span><span class="s2">&quot;</span><span class="p">))</span>  <span class="c1"># True</span>
 </span><span id="__span-19-23"><a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a><span class="nb">print</span><span class="p">(</span><span class="n">isValid</span><span class="p">(</span><span class="s2">&quot;(]&quot;</span><span class="p">))</span>  <span class="c1"># False</span>
 </span></code></pre></div>
-<h3 id="155-min-stack">155. Min Stack</h3>
+<h3 id="155-min-stack">155. Min Stack<a class="headerlink" href="#155-min-stack" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">class</span> <span class="nc">MinStack</span><span class="p">:</span>
 </span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
 </span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -5049,7 +5098,7 @@
 </span><span id="__span-20-30"><a id="__codelineno-20-30" name="__codelineno-20-30" href="#__codelineno-20-30"></a><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">top</span><span class="p">())</span>  <span class="c1"># 3</span>
 </span><span id="__span-20-31"><a id="__codelineno-20-31" name="__codelineno-20-31" href="#__codelineno-20-31"></a><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">getMin</span><span class="p">())</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="150-evaluate-reverse-polish-notation">150. Evaluate Reverse Polish Notation</h3>
+<h3 id="150-evaluate-reverse-polish-notation">150. Evaluate Reverse Polish Notation<a class="headerlink" href="#150-evaluate-reverse-polish-notation" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
 </span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
@@ -5078,7 +5127,7 @@
 </span><span id="__span-21-26"><a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">evalRPN</span><span class="p">([</span><span class="s2">&quot;18&quot;</span><span class="p">]))</span>  <span class="c1"># 18</span>
 </span><span id="__span-21-27"><a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a><span class="nb">print</span><span class="p">(</span><span class="n">evalRPN</span><span class="p">([</span><span class="s2">&quot;4&quot;</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">]))</span>  <span class="c1"># 1</span>
 </span></code></pre></div>
-<h3 id="22-generate-parentheses">22. Generate Parentheses</h3>
+<h3 id="22-generate-parentheses">22. Generate Parentheses<a class="headerlink" href="#22-generate-parentheses" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
 </span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
@@ -5109,7 +5158,7 @@
 </span><span id="__span-22-28"><a id="__codelineno-22-28" name="__codelineno-22-28" href="#__codelineno-22-28"></a><span class="nb">print</span><span class="p">(</span><span class="n">generateParenthesis</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </span><span id="__span-22-29"><a id="__codelineno-22-29" name="__codelineno-22-29" href="#__codelineno-22-29"></a><span class="c1"># [&#39;((()))&#39;, &#39;(()())&#39;, &#39;(())()&#39;, &#39;()(())&#39;, &#39;()()()&#39;]</span>
 </span></code></pre></div>
-<h3 id="739-daily-temperatures">739. Daily Temperatures</h3>
+<h3 id="739-daily-temperatures">739. Daily Temperatures<a class="headerlink" href="#739-daily-temperatures" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
 </span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
@@ -5129,7 +5178,7 @@
 </span><span id="__span-23-17"><a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">dailyTemperatures</span><span class="p">([</span><span class="mi">73</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">71</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">73</span><span class="p">]))</span>
 </span><span id="__span-23-18"><a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a><span class="c1"># [1, 1, 4, 2, 1, 1, 0, 0]</span>
 </span></code></pre></div>
-<h3 id="853-car-fleet">853. Car Fleet</h3>
+<h3 id="853-car-fleet">853. Car Fleet<a class="headerlink" href="#853-car-fleet" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
 </span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
@@ -5148,7 +5197,7 @@
 </span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>
 </span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">carFleet</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="84-largest-rectangle-in-histogram">84. Largest Rectangle in Histogram</h3>
+<h3 id="84-largest-rectangle-in-histogram">84. Largest Rectangle in Histogram<a class="headerlink" href="#84-largest-rectangle-in-histogram" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
 </span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
@@ -5172,14 +5221,14 @@
 </span><span id="__span-25-21"><a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a>
 </span><span id="__span-25-22"><a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a><span class="nb">print</span><span class="p">(</span><span class="n">largestRectangleArea</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>  <span class="c1"># 10</span>
 </span></code></pre></div>
-<h2 id="binary-search">Binary Search</h2>
+<h2 id="binary-search">Binary Search<a class="headerlink" href="#binary-search" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0704 - <a href="https://leetcode.com/problems/binary-search/">Binary Search</a> (Easy)</li>
 <li>0074 - <a href="https://leetcode.com/problems/search-a-2d-matrix/">Search a 2D Matrix</a> (Medium)</li>
 <li>0875 - <a href="https://leetcode.com/problems/koko-eating-bananas/">Koko Eating Bananas</a> (Medium)</li>
 <li>0004 - <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/">Median of Two Sorted Arrays</a> (Hard)</li>
 </ol>
-<h3 id="704-binary-search">704. Binary Search</h3>
+<h3 id="704-binary-search">704. Binary Search<a class="headerlink" href="#704-binary-search" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
 </span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>
@@ -5203,10 +5252,10 @@
 </span><span id="__span-26-21"><a id="__codelineno-26-21" name="__codelineno-26-21" href="#__codelineno-26-21"></a><span class="n">target</span> <span class="o">=</span> <span class="mi">9</span>
 </span><span id="__span-26-22"><a id="__codelineno-26-22" name="__codelineno-26-22" href="#__codelineno-26-22"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>  <span class="c1"># 4</span>
 </span></code></pre></div>
-<h3 id="74-search-a-2d-matrix">74. Search a 2D Matrix</h3>
+<h3 id="74-search-a-2d-matrix">74. Search a 2D Matrix<a class="headerlink" href="#74-search-a-2d-matrix" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>
 </span></code></pre></div>
-<h3 id="875-koko-eating-bananas">875. Koko Eating Bananas</h3>
+<h3 id="875-koko-eating-bananas">875. Koko Eating Bananas<a class="headerlink" href="#875-koko-eating-bananas" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
 </span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
@@ -5234,10 +5283,10 @@
 </span><span id="__span-28-25"><a id="__codelineno-28-25" name="__codelineno-28-25" href="#__codelineno-28-25"></a><span class="n">h</span> <span class="o">=</span> <span class="mi">8</span>
 </span><span id="__span-28-26"><a id="__codelineno-28-26" name="__codelineno-28-26" href="#__codelineno-28-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">minEatingSpeed</span><span class="p">(</span><span class="n">piles</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span>
 </span></code></pre></div>
-<h3 id="4-median-of-two-sorted-arrays">4. Median of Two Sorted Arrays</h3>
+<h3 id="4-median-of-two-sorted-arrays">4. Median of Two Sorted Arrays<a class="headerlink" href="#4-median-of-two-sorted-arrays" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>
 </span></code></pre></div>
-<h2 id="linked-list">Linked List</h2>
+<h2 id="linked-list">Linked List<a class="headerlink" href="#linked-list" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0206 - <a href="https://leetcode.com/problems/reverse-linked-list/">Reverse Linked List</a> (Easy)</li>
 <li>0021 - <a href="https://leetcode.com/problems/merge-two-sorted-lists/">Merge Two Sorted Lists</a> (Easy)</li>
@@ -5247,7 +5296,7 @@
 <li>0002 - <a href="https://leetcode.com/problems/add-two-numbers/">Add Two Numbers</a> (Medium)</li>
 <li>0141 - <a href="https://leetcode.com/problems/linked-list-cycle/">Linked List Cycle</a> (Easy)</li>
 </ol>
-<h3 id="206-reverse-linked-list">206. Reverse Linked List</h3>
+<h3 id="206-reverse-linked-list">206. Reverse Linked List<a class="headerlink" href="#206-reverse-linked-list" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 </span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
 </span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="kn">from</span> <span class="nn">helper</span> <span class="kn">import</span> <span class="n">ListNode</span>
@@ -5292,13 +5341,13 @@
 </span><span id="__span-30-42"><a id="__codelineno-30-42" name="__codelineno-30-42" href="#__codelineno-30-42"></a><span class="nb">print</span><span class="p">(</span><span class="n">reverseListRecursive</span><span class="p">(</span><span class="n">head2</span><span class="p">))</span>
 </span><span id="__span-30-43"><a id="__codelineno-30-43" name="__codelineno-30-43" href="#__codelineno-30-43"></a><span class="c1"># 5 -&gt; 4 -&gt; 3 -&gt; 2 -&gt; 1</span>
 </span></code></pre></div>
-<h3 id="21-merge-two-sorted-lists">21. Merge Two Sorted Lists</h3>
+<h3 id="21-merge-two-sorted-lists">21. Merge Two Sorted Lists<a class="headerlink" href="#21-merge-two-sorted-lists" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>
 </span></code></pre></div>
-<h3 id="143-reorder-list">143. Reorder List</h3>
+<h3 id="143-reorder-list">143. Reorder List<a class="headerlink" href="#143-reorder-list" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>
 </span></code></pre></div>
-<h3 id="19-remove-nth-node-from-end-of-list">19. Remove Nth Node From End of List</h3>
+<h3 id="19-remove-nth-node-from-end-of-list">19. Remove Nth Node From End of List<a class="headerlink" href="#19-remove-nth-node-from-end-of-list" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 </span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>
 </span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="kn">from</span> <span class="nn">helper</span> <span class="kn">import</span> <span class="n">ListNode</span>
@@ -5328,13 +5377,13 @@
 </span><span id="__span-33-27"><a id="__codelineno-33-27" name="__codelineno-33-27" href="#__codelineno-33-27"></a><span class="nb">print</span><span class="p">(</span><span class="n">removeNthFromEnd</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
 </span><span id="__span-33-28"><a id="__codelineno-33-28" name="__codelineno-33-28" href="#__codelineno-33-28"></a><span class="c1"># 1 -&gt; 2 -&gt; 3 -&gt; 5</span>
 </span></code></pre></div>
-<h3 id="138-copy-list-with-random-pointer">138. Copy List with Random Pointer</h3>
+<h3 id="138-copy-list-with-random-pointer">138. Copy List with Random Pointer<a class="headerlink" href="#138-copy-list-with-random-pointer" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>
 </span></code></pre></div>
-<h3 id="2-add-two-numbers">2. Add Two Numbers</h3>
+<h3 id="2-add-two-numbers">2. Add Two Numbers<a class="headerlink" href="#2-add-two-numbers" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>
 </span></code></pre></div>
-<h3 id="141-linked-list-cycle">141. Linked List Cycle</h3>
+<h3 id="141-linked-list-cycle">141. Linked List Cycle<a class="headerlink" href="#141-linked-list-cycle" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 </span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>
 </span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="kn">from</span> <span class="nn">helper</span> <span class="kn">import</span> <span class="n">ListNode</span>
@@ -5356,7 +5405,7 @@
 </span><span id="__span-36-19"><a id="__codelineno-36-19" name="__codelineno-36-19" href="#__codelineno-36-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">hasCycle</span><span class="p">(</span><span class="n">ListNode</span><span class="o">.</span><span class="n">create</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">])))</span>  <span class="c1"># False</span>
 </span><span id="__span-36-20"><a id="__codelineno-36-20" name="__codelineno-36-20" href="#__codelineno-36-20"></a><span class="nb">print</span><span class="p">(</span><span class="n">hasCycle</span><span class="p">(</span><span class="n">ListNode</span><span class="o">.</span><span class="n">create</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">],</span> <span class="mi">1</span><span class="p">)))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h2 id="trees">Trees</h2>
+<h2 id="trees">Trees<a class="headerlink" href="#trees" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0226 - <a href="https://leetcode.com/problems/invert-binary-tree/">Invert Binary Tree</a> (Easy)</li>
 <li>0104 - <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">Maximum Depth of Binary Tree</a> (Easy)</li>
@@ -5374,7 +5423,7 @@
 <li>0124 - <a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/">Binary Tree Maximum Path Sum</a> (Hard)</li>
 <li>0297 - <a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/">Serialize and Deserialize Binary Tree</a> (Hard)</li>
 </ol>
-<h3 id="226-invert-binary-tree">226. Invert Binary Tree</h3>
+<h3 id="226-invert-binary-tree">226. Invert Binary Tree<a class="headerlink" href="#226-invert-binary-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 </span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>
 </span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="kn">from</span> <span class="nn">binarytree</span> <span class="kn">import</span> <span class="n">build</span>
@@ -5442,7 +5491,7 @@
 </span><span id="__span-37-65"><a id="__codelineno-37-65" name="__codelineno-37-65" href="#__codelineno-37-65"></a><span class="c1">#  / \     / \</span>
 </span><span id="__span-37-66"><a id="__codelineno-37-66" name="__codelineno-37-66" href="#__codelineno-37-66"></a><span class="c1"># 9   6   3   1</span>
 </span></code></pre></div>
-<h3 id="104-maximum-depth-of-binary-tree">104. Maximum Depth of Binary Tree</h3>
+<h3 id="104-maximum-depth-of-binary-tree">104. Maximum Depth of Binary Tree<a class="headerlink" href="#104-maximum-depth-of-binary-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 </span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>
@@ -5500,10 +5549,10 @@
 </span><span id="__span-38-55"><a id="__codelineno-38-55" name="__codelineno-38-55" href="#__codelineno-38-55"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxDepthIterative</span><span class="p">(</span><span class="n">root</span><span class="p">))</span>  <span class="c1"># 4</span>
 </span><span id="__span-38-56"><a id="__codelineno-38-56" name="__codelineno-38-56" href="#__codelineno-38-56"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxDepthRecursive</span><span class="p">(</span><span class="n">root</span><span class="p">))</span>  <span class="c1"># 4</span>
 </span></code></pre></div>
-<h3 id="543-diameter-of-binary-tree">543. Diameter of Binary Tree</h3>
+<h3 id="543-diameter-of-binary-tree">543. Diameter of Binary Tree<a class="headerlink" href="#543-diameter-of-binary-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>
 </span></code></pre></div>
-<h3 id="110-balanced-binary-tree">110. Balanced Binary Tree</h3>
+<h3 id="110-balanced-binary-tree">110. Balanced Binary Tree<a class="headerlink" href="#110-balanced-binary-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 </span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>
 </span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="kn">from</span> <span class="nn">binarytree</span> <span class="kn">import</span> <span class="n">build</span>
@@ -5550,7 +5599,7 @@
 </span><span id="__span-40-44"><a id="__codelineno-40-44" name="__codelineno-40-44" href="#__codelineno-40-44"></a><span class="c1">#     15    7</span>
 </span><span id="__span-40-45"><a id="__codelineno-40-45" name="__codelineno-40-45" href="#__codelineno-40-45"></a><span class="nb">print</span><span class="p">(</span><span class="n">isBalanced</span><span class="p">(</span><span class="n">root</span><span class="p">))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h3 id="100-same-tree">100. Same Tree</h3>
+<h3 id="100-same-tree">100. Same Tree<a class="headerlink" href="#100-same-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 </span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>
@@ -5634,10 +5683,10 @@
 </span><span id="__span-41-81"><a id="__codelineno-41-81" name="__codelineno-41-81" href="#__codelineno-41-81"></a><span class="nb">print</span><span class="p">(</span><span class="n">isSameTreeIterativeStack</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">q1</span><span class="p">))</span>  <span class="c1"># True</span>
 </span><span id="__span-41-82"><a id="__codelineno-41-82" name="__codelineno-41-82" href="#__codelineno-41-82"></a><span class="nb">print</span><span class="p">(</span><span class="n">isSameTreeIterativeStack</span><span class="p">(</span><span class="n">p2</span><span class="p">,</span> <span class="n">q2</span><span class="p">))</span>  <span class="c1"># False</span>
 </span></code></pre></div>
-<h3 id="572-subtree-of-another-tree">572. Subtree of Another Tree</h3>
+<h3 id="572-subtree-of-another-tree">572. Subtree of Another Tree<a class="headerlink" href="#572-subtree-of-another-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>
 </span></code></pre></div>
-<h3 id="235-lowest-common-ancestor-of-a-binary-search-tree">235. Lowest Common Ancestor of a Binary Search Tree</h3>
+<h3 id="235-lowest-common-ancestor-of-a-binary-search-tree">235. Lowest Common Ancestor of a Binary Search Tree<a class="headerlink" href="#235-lowest-common-ancestor-of-a-binary-search-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="kn">from</span> <span class="nn">binarytree</span> <span class="kn">import</span> <span class="n">build</span>
 </span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>
 </span><span id="__span-43-3"><a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>
@@ -5681,7 +5730,7 @@
 </span><span id="__span-43-41"><a id="__codelineno-43-41" name="__codelineno-43-41" href="#__codelineno-43-41"></a><span class="c1">#      / \</span>
 </span><span id="__span-43-42"><a id="__codelineno-43-42" name="__codelineno-43-42" href="#__codelineno-43-42"></a><span class="c1">#     3   5</span>
 </span></code></pre></div>
-<h3 id="102-binary-tree-level-order-traversal">102. Binary Tree Level Order Traversal</h3>
+<h3 id="102-binary-tree-level-order-traversal">102. Binary Tree Level Order Traversal<a class="headerlink" href="#102-binary-tree-level-order-traversal" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
 </span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>
@@ -5729,7 +5778,7 @@
 </span><span id="__span-44-45"><a id="__codelineno-44-45" name="__codelineno-44-45" href="#__codelineno-44-45"></a><span class="c1">#     15    7</span>
 </span><span id="__span-44-46"><a id="__codelineno-44-46" name="__codelineno-44-46" href="#__codelineno-44-46"></a><span class="nb">print</span><span class="p">(</span><span class="n">levelOrder</span><span class="p">(</span><span class="n">tree</span><span class="p">))</span>  <span class="c1"># [[3], [9, 20], [15, 7]]</span>
 </span></code></pre></div>
-<h3 id="199-binary-tree-right-side-view">199. Binary Tree Right Side View</h3>
+<h3 id="199-binary-tree-right-side-view">199. Binary Tree Right Side View<a class="headerlink" href="#199-binary-tree-right-side-view" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
 </span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>
@@ -5780,10 +5829,10 @@
 </span><span id="__span-45-48"><a id="__codelineno-45-48" name="__codelineno-45-48" href="#__codelineno-45-48"></a><span class="c1">#     5</span>
 </span><span id="__span-45-49"><a id="__codelineno-45-49" name="__codelineno-45-49" href="#__codelineno-45-49"></a><span class="nb">print</span><span class="p">(</span><span class="n">rightSideView</span><span class="p">(</span><span class="n">root</span><span class="p">))</span>  <span class="c1"># [1, 2, 3, 5]</span>
 </span></code></pre></div>
-<h3 id="1448-count-good-nodes-in-binary-tree">1448. Count Good Nodes in Binary Tree</h3>
+<h3 id="1448-count-good-nodes-in-binary-tree">1448. Count Good Nodes in Binary Tree<a class="headerlink" href="#1448-count-good-nodes-in-binary-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>
 </span></code></pre></div>
-<h3 id="98-validate-binary-search-tree">98. Validate Binary Search Tree</h3>
+<h3 id="98-validate-binary-search-tree">98. Validate Binary Search Tree<a class="headerlink" href="#98-validate-binary-search-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 </span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>
 </span><span id="__span-47-3"><a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a><span class="kn">from</span> <span class="nn">binarytree</span> <span class="kn">import</span> <span class="n">build</span>
@@ -5826,10 +5875,10 @@
 </span><span id="__span-47-40"><a id="__codelineno-47-40" name="__codelineno-47-40" href="#__codelineno-47-40"></a><span class="c1">#     3   6</span>
 </span><span id="__span-47-41"><a id="__codelineno-47-41" name="__codelineno-47-41" href="#__codelineno-47-41"></a><span class="nb">print</span><span class="p">(</span><span class="n">isValidBST</span><span class="p">(</span><span class="n">root</span><span class="p">))</span>  <span class="c1"># False</span>
 </span></code></pre></div>
-<h3 id="230-kth-smallest-element-in-a-bst">230. Kth Smallest Element in a BST</h3>
+<h3 id="230-kth-smallest-element-in-a-bst">230. Kth Smallest Element in a BST<a class="headerlink" href="#230-kth-smallest-element-in-a-bst" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>
 </span></code></pre></div>
-<h3 id="105-construct-binary-tree-from-preorder-and-inorder-traversal">105. Construct Binary Tree from Preorder and Inorder Traversal</h3>
+<h3 id="105-construct-binary-tree-from-preorder-and-inorder-traversal">105. Construct Binary Tree from Preorder and Inorder Traversal<a class="headerlink" href="#105-construct-binary-tree-from-preorder-and-inorder-traversal" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
 </span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>
 </span><span id="__span-49-3"><a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>
@@ -5875,19 +5924,19 @@
 </span><span id="__span-49-43"><a id="__codelineno-49-43" name="__codelineno-49-43" href="#__codelineno-49-43"></a><span class="c1">#     /  \</span>
 </span><span id="__span-49-44"><a id="__codelineno-49-44" name="__codelineno-49-44" href="#__codelineno-49-44"></a><span class="c1">#    15   7</span>
 </span></code></pre></div>
-<h3 id="124-binary-tree-maximum-path-sum">124. Binary Tree Maximum Path Sum</h3>
+<h3 id="124-binary-tree-maximum-path-sum">124. Binary Tree Maximum Path Sum<a class="headerlink" href="#124-binary-tree-maximum-path-sum" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>
 </span></code></pre></div>
-<h3 id="297-serialize-and-deserialize-binary-tree">297. Serialize and Deserialize Binary Tree</h3>
+<h3 id="297-serialize-and-deserialize-binary-tree">297. Serialize and Deserialize Binary Tree<a class="headerlink" href="#297-serialize-and-deserialize-binary-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>
 </span></code></pre></div>
-<h2 id="tries">Tries</h2>
+<h2 id="tries">Tries<a class="headerlink" href="#tries" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0208 - <a href="https://leetcode.com/problems/implement-trie-prefix-tree/">Implement Trie (Prefix Tree)</a> (Medium)</li>
 <li>0211 - <a href="https://leetcode.com/problems/add-and-search-word-data-structure-design/">Add and Search Word - Data structure design</a> (Medium)</li>
 <li>0212 - <a href="https://leetcode.com/problems/word-search-ii/">Word Search II</a> (Hard)</li>
 </ol>
-<h3 id="208-implement-trie-prefix-tree">208. Implement Trie (Prefix Tree)</h3>
+<h3 id="208-implement-trie-prefix-tree">208. Implement Trie (Prefix Tree)<a class="headerlink" href="#208-implement-trie-prefix-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="k">class</span> <span class="nc">TrieNode</span><span class="p">:</span>
 </span><span id="__span-52-2"><a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </span><span id="__span-52-3"><a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">children</span> <span class="o">=</span> <span class="p">{}</span>
@@ -5932,7 +5981,7 @@
 </span><span id="__span-52-42"><a id="__codelineno-52-42" name="__codelineno-52-42" href="#__codelineno-52-42"></a><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;word&quot;</span><span class="p">))</span>  <span class="c1"># False</span>
 </span><span id="__span-52-43"><a id="__codelineno-52-43" name="__codelineno-52-43" href="#__codelineno-52-43"></a><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">startsWith</span><span class="p">(</span><span class="s2">&quot;app&quot;</span><span class="p">))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h3 id="211-add-and-search-word-data-structure-design">211. Add and Search Word - Data structure design</h3>
+<h3 id="211-add-and-search-word-data-structure-design">211. Add and Search Word - Data structure design<a class="headerlink" href="#211-add-and-search-word-data-structure-design" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="k">class</span> <span class="nc">TrieNode</span><span class="p">:</span>
 </span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </span><span id="__span-53-3"><a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">children</span> <span class="o">=</span> <span class="p">{}</span>
@@ -5980,7 +6029,7 @@
 </span><span id="__span-53-45"><a id="__codelineno-53-45" name="__codelineno-53-45" href="#__codelineno-53-45"></a><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;word&quot;</span><span class="p">))</span>
 </span><span id="__span-53-46"><a id="__codelineno-53-46" name="__codelineno-53-46" href="#__codelineno-53-46"></a><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;w.rd&quot;</span><span class="p">))</span>
 </span></code></pre></div>
-<h3 id="212-word-search-ii">212. Word Search II</h3>
+<h3 id="212-word-search-ii">212. Word Search II<a class="headerlink" href="#212-word-search-ii" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-54-2"><a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a>
 </span><span id="__span-54-3"><a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a>
@@ -6052,7 +6101,7 @@
 </span><span id="__span-54-69"><a id="__codelineno-54-69" name="__codelineno-54-69" href="#__codelineno-54-69"></a><span class="p">)</span>
 </span><span id="__span-54-70"><a id="__codelineno-54-70" name="__codelineno-54-70" href="#__codelineno-54-70"></a><span class="c1"># [&quot;oath&quot;, &quot;eat&quot;]</span>
 </span></code></pre></div>
-<h2 id="heap-priority-queue">Heap / Priority Queue</h2>
+<h2 id="heap-priority-queue">Heap / Priority Queue<a class="headerlink" href="#heap-priority-queue" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0703 - <a href="https://leetcode.com/problems/kth-largest-element-in-a-stream/">Kth Largest Element in a Stream</a> (Easy)</li>
 <li>1046 - <a href="https://leetcode.com/problems/last-stone-weight/">Last Stone Weight</a> (Easy)</li>
@@ -6061,7 +6110,7 @@
 <li>0355 - <a href="https://leetcode.com/problems/design-twitter/">Design Twitter</a> (Medium)</li>
 <li>0295 - <a href="https://leetcode.com/problems/find-median-from-data-stream/">Find Median from Data Stream</a> (Hard)</li>
 </ol>
-<h3 id="703-kth-largest-element-in-a-stream">703. Kth Largest Element in a Stream</h3>
+<h3 id="703-kth-largest-element-in-a-stream">703. Kth Largest Element in a Stream<a class="headerlink" href="#703-kth-largest-element-in-a-stream" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="kn">import</span> <span class="nn">heapq</span>
 </span><span id="__span-55-2"><a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-55-3"><a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a>
@@ -6091,10 +6140,10 @@
 </span><span id="__span-55-27"><a id="__codelineno-55-27" name="__codelineno-55-27" href="#__codelineno-55-27"></a><span class="n">kthLargest</span> <span class="o">=</span> <span class="n">KthLargest</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 </span><span id="__span-55-28"><a id="__codelineno-55-28" name="__codelineno-55-28" href="#__codelineno-55-28"></a><span class="nb">print</span><span class="p">(</span><span class="n">kthLargest</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># 4</span>
 </span></code></pre></div>
-<h3 id="1046-last-stone-weight">1046. Last Stone Weight</h3>
+<h3 id="1046-last-stone-weight">1046. Last Stone Weight<a class="headerlink" href="#1046-last-stone-weight" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>
 </span></code></pre></div>
-<h3 id="973-k-closest-points-to-origin">973. K Closest Points to Origin</h3>
+<h3 id="973-k-closest-points-to-origin">973. K Closest Points to Origin<a class="headerlink" href="#973-k-closest-points-to-origin" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="kn">import</span> <span class="nn">heapq</span>
 </span><span id="__span-57-2"><a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-57-3"><a id="__codelineno-57-3" name="__codelineno-57-3" href="#__codelineno-57-3"></a>
@@ -6121,13 +6170,13 @@
 </span><span id="__span-57-24"><a id="__codelineno-57-24" name="__codelineno-57-24" href="#__codelineno-57-24"></a><span class="n">k</span> <span class="o">=</span> <span class="mi">1</span>
 </span><span id="__span-57-25"><a id="__codelineno-57-25" name="__codelineno-57-25" href="#__codelineno-57-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">kClosest</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>  <span class="c1"># [[-2, 2]]</span>
 </span></code></pre></div>
-<h3 id="621-task-scheduler">621. Task Scheduler</h3>
+<h3 id="621-task-scheduler">621. Task Scheduler<a class="headerlink" href="#621-task-scheduler" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>
 </span></code></pre></div>
-<h3 id="355-design-twitter">355. Design Twitter</h3>
+<h3 id="355-design-twitter">355. Design Twitter<a class="headerlink" href="#355-design-twitter" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>
 </span></code></pre></div>
-<h3 id="295-find-median-from-data-stream">295. Find Median from Data Stream</h3>
+<h3 id="295-find-median-from-data-stream">295. Find Median from Data Stream<a class="headerlink" href="#295-find-median-from-data-stream" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="kn">from</span> <span class="nn">heapq</span> <span class="kn">import</span> <span class="n">heappop</span><span class="p">,</span> <span class="n">heappush</span>
 </span><span id="__span-60-2"><a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a>
 </span><span id="__span-60-3"><a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a>
@@ -6166,7 +6215,7 @@
 </span><span id="__span-60-36"><a id="__codelineno-60-36" name="__codelineno-60-36" href="#__codelineno-60-36"></a><span class="k">assert</span> <span class="n">median_finder</span><span class="o">.</span><span class="n">findMedian</span><span class="p">()</span> <span class="o">==</span> <span class="mi">3</span>
 </span><span id="__span-60-37"><a id="__codelineno-60-37" name="__codelineno-60-37" href="#__codelineno-60-37"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All Passed.&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="backtracking">Backtracking</h2>
+<h2 id="backtracking">Backtracking<a class="headerlink" href="#backtracking" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0078 - <a href="https://leetcode.com/problems/subsets/">Subsets</a> (Medium)</li>
 <li>0039 - <a href="https://leetcode.com/problems/combination-sum/">Combination Sum</a> (Medium)</li>
@@ -6174,7 +6223,7 @@
 <li>0079 - <a href="https://leetcode.com/problems/word-search/">Word Search</a> (Medium)</li>
 <li>0131 - <a href="https://leetcode.com/problems/palindrome-partitioning/">Palindrome Partitioning</a> (Medium)</li>
 </ol>
-<h3 id="78-subsets">78. Subsets</h3>
+<h3 id="78-subsets">78. Subsets<a class="headerlink" href="#78-subsets" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-61-2"><a id="__codelineno-61-2" name="__codelineno-61-2" href="#__codelineno-61-2"></a>
 </span><span id="__span-61-3"><a id="__codelineno-61-3" name="__codelineno-61-3" href="#__codelineno-61-3"></a>
@@ -6197,7 +6246,7 @@
 </span><span id="__span-61-20"><a id="__codelineno-61-20" name="__codelineno-61-20" href="#__codelineno-61-20"></a><span class="nb">print</span><span class="p">(</span><span class="n">subsets</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
 </span><span id="__span-61-21"><a id="__codelineno-61-21" name="__codelineno-61-21" href="#__codelineno-61-21"></a><span class="c1"># [[], [1], [1, 2], [1, 2, 3], [1, 3], [2], [2, 3], [3]]</span>
 </span></code></pre></div>
-<h3 id="39-combination-sum">39. Combination Sum</h3>
+<h3 id="39-combination-sum">39. Combination Sum<a class="headerlink" href="#39-combination-sum" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-62-2"><a id="__codelineno-62-2" name="__codelineno-62-2" href="#__codelineno-62-2"></a>
 </span><span id="__span-62-3"><a id="__codelineno-62-3" name="__codelineno-62-3" href="#__codelineno-62-3"></a>
@@ -6227,7 +6276,7 @@
 </span><span id="__span-62-27"><a id="__codelineno-62-27" name="__codelineno-62-27" href="#__codelineno-62-27"></a>
 </span><span id="__span-62-28"><a id="__codelineno-62-28" name="__codelineno-62-28" href="#__codelineno-62-28"></a><span class="nb">print</span><span class="p">(</span><span class="n">combinationSum</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="mi">7</span><span class="p">))</span>  <span class="c1"># [[2, 2, 3], [7]]</span>
 </span></code></pre></div>
-<h3 id="46-permutations">46. Permutations</h3>
+<h3 id="46-permutations">46. Permutations<a class="headerlink" href="#46-permutations" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-63-2"><a id="__codelineno-63-2" name="__codelineno-63-2" href="#__codelineno-63-2"></a>
 </span><span id="__span-63-3"><a id="__codelineno-63-3" name="__codelineno-63-3" href="#__codelineno-63-3"></a>
@@ -6256,7 +6305,7 @@
 </span><span id="__span-63-26"><a id="__codelineno-63-26" name="__codelineno-63-26" href="#__codelineno-63-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">permute</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
 </span><span id="__span-63-27"><a id="__codelineno-63-27" name="__codelineno-63-27" href="#__codelineno-63-27"></a><span class="c1"># [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]</span>
 </span></code></pre></div>
-<h3 id="79-word-search">79. Word Search</h3>
+<h3 id="79-word-search">79. Word Search<a class="headerlink" href="#79-word-search" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-64-2"><a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a>
 </span><span id="__span-64-3"><a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a>
@@ -6302,7 +6351,7 @@
 </span><span id="__span-64-43"><a id="__codelineno-64-43" name="__codelineno-64-43" href="#__codelineno-64-43"></a><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;ABCCED&quot;</span>
 </span><span id="__span-64-44"><a id="__codelineno-64-44" name="__codelineno-64-44" href="#__codelineno-64-44"></a><span class="nb">print</span><span class="p">(</span><span class="n">exist</span><span class="p">(</span><span class="n">board</span><span class="p">,</span> <span class="n">word</span><span class="p">))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h3 id="131-palindrome-partitioning">131. Palindrome Partitioning</h3>
+<h3 id="131-palindrome-partitioning">131. Palindrome Partitioning<a class="headerlink" href="#131-palindrome-partitioning" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-65-2"><a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a>
 </span><span id="__span-65-3"><a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a>
@@ -6336,7 +6385,7 @@
 </span><span id="__span-65-31"><a id="__codelineno-65-31" name="__codelineno-65-31" href="#__codelineno-65-31"></a>
 </span><span id="__span-65-32"><a id="__codelineno-65-32" name="__codelineno-65-32" href="#__codelineno-65-32"></a><span class="nb">print</span><span class="p">(</span><span class="n">partition</span><span class="p">(</span><span class="s2">&quot;aab&quot;</span><span class="p">))</span>  <span class="c1"># [[&#39;a&#39;, &#39;a&#39;, &#39;b&#39;], [&#39;aa&#39;, &#39;b&#39;]]</span>
 </span></code></pre></div>
-<h2 id="graphs">Graphs</h2>
+<h2 id="graphs">Graphs<a class="headerlink" href="#graphs" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0200 - <a href="https://leetcode.com/problems/number-of-islands/">Number of Islands</a> (Medium)</li>
 <li>0133 - <a href="https://leetcode.com/problems/clone-graph/">Clone Graph</a> (Medium)</li>
@@ -6351,7 +6400,7 @@
 <li>0323 - <a href="https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/">Number of Connected Components in an Undirected Graph</a> (Medium)</li>
 <li>0127 - <a href="https://leetcode.com/problems/word-ladder/">Word Ladder</a> (Medium)</li>
 </ol>
-<h3 id="200-number-of-islands">200. Number of Islands</h3>
+<h3 id="200-number-of-islands">200. Number of Islands<a class="headerlink" href="#200-number-of-islands" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-66-2"><a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a><span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
 </span><span id="__span-66-3"><a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
@@ -6464,7 +6513,7 @@
 </span><span id="__span-66-110"><a id="__codelineno-66-110" name="__codelineno-66-110" href="#__codelineno-66-110"></a><span class="nb">print</span><span class="p">(</span><span class="n">numIslandsBFS1</span><span class="p">(</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">grid</span><span class="p">)))</span>  <span class="c1"># 1</span>
 </span><span id="__span-66-111"><a id="__codelineno-66-111" name="__codelineno-66-111" href="#__codelineno-66-111"></a><span class="nb">print</span><span class="p">(</span><span class="n">numIslandsBFS2</span><span class="p">(</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">grid</span><span class="p">)))</span>  <span class="c1"># 1</span>
 </span></code></pre></div>
-<h3 id="133-clone-graph">133. Clone Graph</h3>
+<h3 id="133-clone-graph">133. Clone Graph<a class="headerlink" href="#133-clone-graph" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-67-2"><a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 </span><span id="__span-67-3"><a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a>
@@ -6517,7 +6566,7 @@
 </span><span id="__span-67-50"><a id="__codelineno-67-50" name="__codelineno-67-50" href="#__codelineno-67-50"></a>
 </span><span id="__span-67-51"><a id="__codelineno-67-51" name="__codelineno-67-51" href="#__codelineno-67-51"></a>    <span class="k">return</span> <span class="n">cloned</span><span class="p">[</span><span class="n">node</span><span class="p">]</span>
 </span></code></pre></div>
-<h3 id="695-max-area-of-island">695. Max Area of Island</h3>
+<h3 id="695-max-area-of-island">695. Max Area of Island<a class="headerlink" href="#695-max-area-of-island" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-68-2"><a id="__codelineno-68-2" name="__codelineno-68-2" href="#__codelineno-68-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-68-3"><a id="__codelineno-68-3" name="__codelineno-68-3" href="#__codelineno-68-3"></a>
@@ -6642,7 +6691,7 @@
 </span><span id="__span-68-122"><a id="__codelineno-68-122" name="__codelineno-68-122" href="#__codelineno-68-122"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxAreaOfIslandBFS1</span><span class="p">(</span><span class="n">grid</span><span class="p">))</span>  <span class="c1"># 6</span>
 </span><span id="__span-68-123"><a id="__codelineno-68-123" name="__codelineno-68-123" href="#__codelineno-68-123"></a><span class="nb">print</span><span class="p">(</span><span class="n">numIslandsBFS2</span><span class="p">(</span><span class="n">grid</span><span class="p">))</span>  <span class="c1"># 6</span>
 </span></code></pre></div>
-<h3 id="417-pacific-atlantic-water-flow">417. Pacific Atlantic Water Flow</h3>
+<h3 id="417-pacific-atlantic-water-flow">417. Pacific Atlantic Water Flow<a class="headerlink" href="#417-pacific-atlantic-water-flow" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-69-2"><a id="__codelineno-69-2" name="__codelineno-69-2" href="#__codelineno-69-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-69-3"><a id="__codelineno-69-3" name="__codelineno-69-3" href="#__codelineno-69-3"></a>
@@ -6728,7 +6777,7 @@
 </span><span id="__span-69-83"><a id="__codelineno-69-83" name="__codelineno-69-83" href="#__codelineno-69-83"></a><span class="nb">print</span><span class="p">(</span><span class="n">pacificAtlanticBFS</span><span class="p">(</span><span class="n">heights</span><span class="p">))</span>
 </span><span id="__span-69-84"><a id="__codelineno-69-84" name="__codelineno-69-84" href="#__codelineno-69-84"></a><span class="c1"># [(4, 0), (0, 4), (3, 1), (1, 4), (3, 0), (2, 2), (1, 3)]</span>
 </span></code></pre></div>
-<h3 id="130-surrounded-regions">130. Surrounded Regions</h3>
+<h3 id="130-surrounded-regions">130. Surrounded Regions<a class="headerlink" href="#130-surrounded-regions" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-70-2"><a id="__codelineno-70-2" name="__codelineno-70-2" href="#__codelineno-70-2"></a><span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
 </span><span id="__span-70-3"><a id="__codelineno-70-3" name="__codelineno-70-3" href="#__codelineno-70-3"></a><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
@@ -6834,7 +6883,7 @@
 </span><span id="__span-70-103"><a id="__codelineno-70-103" name="__codelineno-70-103" href="#__codelineno-70-103"></a><span class="c1">#  [&#39;X&#39;, &#39;X&#39;, &#39;X&#39;, &#39;X&#39;],</span>
 </span><span id="__span-70-104"><a id="__codelineno-70-104" name="__codelineno-70-104" href="#__codelineno-70-104"></a><span class="c1">#  [&#39;X&#39;, &#39;O&#39;, &#39;X&#39;, &#39;X&#39;]]</span>
 </span></code></pre></div>
-<h3 id="994-rotting-oranges">994. Rotting Oranges</h3>
+<h3 id="994-rotting-oranges">994. Rotting Oranges<a class="headerlink" href="#994-rotting-oranges" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-71-1"><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-71-2"><a id="__codelineno-71-2" name="__codelineno-71-2" href="#__codelineno-71-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-71-3"><a id="__codelineno-71-3" name="__codelineno-71-3" href="#__codelineno-71-3"></a>
@@ -6870,7 +6919,7 @@
 </span><span id="__span-71-33"><a id="__codelineno-71-33" name="__codelineno-71-33" href="#__codelineno-71-33"></a><span class="n">grid</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
 </span><span id="__span-71-34"><a id="__codelineno-71-34" name="__codelineno-71-34" href="#__codelineno-71-34"></a><span class="nb">print</span><span class="p">(</span><span class="n">orangesRotting</span><span class="p">(</span><span class="n">grid</span><span class="p">))</span>
 </span></code></pre></div>
-<h3 id="207-course-schedule">207. Course Schedule</h3>
+<h3 id="207-course-schedule">207. Course Schedule<a class="headerlink" href="#207-course-schedule" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-72-1"><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-72-2"><a id="__codelineno-72-2" name="__codelineno-72-2" href="#__codelineno-72-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-72-3"><a id="__codelineno-72-3" name="__codelineno-72-3" href="#__codelineno-72-3"></a>
@@ -6966,7 +7015,7 @@
 </span><span id="__span-72-93"><a id="__codelineno-72-93" name="__codelineno-72-93" href="#__codelineno-72-93"></a><span class="nb">print</span><span class="p">(</span><span class="n">canFinishDFS1</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">prerequisites</span><span class="p">))</span>  <span class="c1"># True</span>
 </span><span id="__span-72-94"><a id="__codelineno-72-94" name="__codelineno-72-94" href="#__codelineno-72-94"></a><span class="nb">print</span><span class="p">(</span><span class="n">canFinishDFS2</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">prerequisites</span><span class="p">))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h3 id="210-course-schedule-ii">210. Course Schedule II</h3>
+<h3 id="210-course-schedule-ii">210. Course Schedule II<a class="headerlink" href="#210-course-schedule-ii" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-73-1"><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-73-2"><a id="__codelineno-73-2" name="__codelineno-73-2" href="#__codelineno-73-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-73-3"><a id="__codelineno-73-3" name="__codelineno-73-3" href="#__codelineno-73-3"></a>
@@ -7074,7 +7123,7 @@
 </span><span id="__span-73-105"><a id="__codelineno-73-105" name="__codelineno-73-105" href="#__codelineno-73-105"></a><span class="nb">print</span><span class="p">(</span><span class="n">findOrderDFS1</span><span class="p">(</span><span class="n">numCourses</span><span class="p">,</span> <span class="n">prerequisites</span><span class="p">))</span>  <span class="c1"># [4, 3, 1, 2, 0]</span>
 </span><span id="__span-73-106"><a id="__codelineno-73-106" name="__codelineno-73-106" href="#__codelineno-73-106"></a><span class="nb">print</span><span class="p">(</span><span class="n">findOrderDFS2</span><span class="p">(</span><span class="n">numCourses</span><span class="p">,</span> <span class="n">prerequisites</span><span class="p">))</span>  <span class="c1"># [4, 3, 2, 1, 0]</span>
 </span></code></pre></div>
-<h3 id="684-redundant-connection">684. Redundant Connection</h3>
+<h3 id="684-redundant-connection">684. Redundant Connection<a class="headerlink" href="#684-redundant-connection" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-74-1"><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-74-2"><a id="__codelineno-74-2" name="__codelineno-74-2" href="#__codelineno-74-2"></a>
 </span><span id="__span-74-3"><a id="__codelineno-74-3" name="__codelineno-74-3" href="#__codelineno-74-3"></a>
@@ -7140,7 +7189,7 @@
 </span><span id="__span-74-63"><a id="__codelineno-74-63" name="__codelineno-74-63" href="#__codelineno-74-63"></a><span class="nb">print</span><span class="p">(</span><span class="n">findRedundantConnectionUF</span><span class="p">(</span><span class="n">edges</span><span class="p">))</span>  <span class="c1"># [2, 3]</span>
 </span><span id="__span-74-64"><a id="__codelineno-74-64" name="__codelineno-74-64" href="#__codelineno-74-64"></a><span class="nb">print</span><span class="p">(</span><span class="n">findRedundantConnectionDFS</span><span class="p">(</span><span class="n">edges</span><span class="p">))</span>  <span class="c1"># [2, 3]</span>
 </span></code></pre></div>
-<h3 id="261-graph-valid-tree">261. Graph Valid Tree</h3>
+<h3 id="261-graph-valid-tree">261. Graph Valid Tree<a class="headerlink" href="#261-graph-valid-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-75-1"><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-75-2"><a id="__codelineno-75-2" name="__codelineno-75-2" href="#__codelineno-75-2"></a>
 </span><span id="__span-75-3"><a id="__codelineno-75-3" name="__codelineno-75-3" href="#__codelineno-75-3"></a>
@@ -7178,7 +7227,7 @@
 </span><span id="__span-75-35"><a id="__codelineno-75-35" name="__codelineno-75-35" href="#__codelineno-75-35"></a><span class="nb">print</span><span class="p">(</span><span class="n">validTree</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]))</span>  <span class="c1"># True</span>
 </span><span id="__span-75-36"><a id="__codelineno-75-36" name="__codelineno-75-36" href="#__codelineno-75-36"></a><span class="nb">print</span><span class="p">(</span><span class="n">validTree</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]))</span>  <span class="c1"># False</span>
 </span></code></pre></div>
-<h3 id="323-number-of-connected-components-in-an-undirected-graph">323. Number of Connected Components in an Undirected Graph</h3>
+<h3 id="323-number-of-connected-components-in-an-undirected-graph">323. Number of Connected Components in an Undirected Graph<a class="headerlink" href="#323-number-of-connected-components-in-an-undirected-graph" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-76-1"><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-76-2"><a id="__codelineno-76-2" name="__codelineno-76-2" href="#__codelineno-76-2"></a>
 </span><span id="__span-76-3"><a id="__codelineno-76-3" name="__codelineno-76-3" href="#__codelineno-76-3"></a>
@@ -7218,7 +7267,7 @@
 </span><span id="__span-76-37"><a id="__codelineno-76-37" name="__codelineno-76-37" href="#__codelineno-76-37"></a>
 </span><span id="__span-76-38"><a id="__codelineno-76-38" name="__codelineno-76-38" href="#__codelineno-76-38"></a><span class="nb">print</span><span class="p">(</span><span class="n">countComponents</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]))</span>
 </span></code></pre></div>
-<h3 id="127-word-ladder">127. Word Ladder</h3>
+<h3 id="127-word-ladder">127. Word Ladder<a class="headerlink" href="#127-word-ladder" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-77-1"><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-77-2"><a id="__codelineno-77-2" name="__codelineno-77-2" href="#__codelineno-77-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-77-3"><a id="__codelineno-77-3" name="__codelineno-77-3" href="#__codelineno-77-3"></a>
@@ -7266,7 +7315,7 @@
 </span><span id="__span-77-45"><a id="__codelineno-77-45" name="__codelineno-77-45" href="#__codelineno-77-45"></a><span class="n">wordList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;hot&quot;</span><span class="p">,</span> <span class="s2">&quot;dot&quot;</span><span class="p">,</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;lot&quot;</span><span class="p">,</span> <span class="s2">&quot;log&quot;</span><span class="p">,</span> <span class="s2">&quot;cog&quot;</span><span class="p">]</span>
 </span><span id="__span-77-46"><a id="__codelineno-77-46" name="__codelineno-77-46" href="#__codelineno-77-46"></a><span class="nb">print</span><span class="p">(</span><span class="n">ladderLength</span><span class="p">(</span><span class="n">beginWord</span><span class="p">,</span> <span class="n">endWord</span><span class="p">,</span> <span class="n">wordList</span><span class="p">))</span>  <span class="c1"># 5</span>
 </span></code></pre></div>
-<h2 id="advanced-graphs">Advanced Graphs</h2>
+<h2 id="advanced-graphs">Advanced Graphs<a class="headerlink" href="#advanced-graphs" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0269 - <a href="https://leetcode.com/problems/alien-dictionary/">Alien Dictionary</a> (Hard)</li>
 <li>0787 - <a href="https://leetcode.com/problems/cheapest-flights-within-k-stops/">Cheapest Flights Within K Stops</a> (Medium)</li>
@@ -7278,7 +7327,7 @@
 <li>1489 - <a href="https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/">Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree</a> (Hard)</li>
 <li>0332 - <a href="https://leetcode.com/problems/reconstruct-itinerary/">Reconstruct Itinerary</a> (Medium)</li>
 </ol>
-<h3 id="269-alien-dictionary">269. Alien Dictionary</h3>
+<h3 id="269-alien-dictionary">269. Alien Dictionary<a class="headerlink" href="#269-alien-dictionary" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-78-1"><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-78-2"><a id="__codelineno-78-2" name="__codelineno-78-2" href="#__codelineno-78-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-78-3"><a id="__codelineno-78-3" name="__codelineno-78-3" href="#__codelineno-78-3"></a>
@@ -7363,7 +7412,7 @@
 </span><span id="__span-78-82"><a id="__codelineno-78-82" name="__codelineno-78-82" href="#__codelineno-78-82"></a><span class="nb">print</span><span class="p">(</span><span class="n">alienOrderBFS</span><span class="p">(</span><span class="n">words</span><span class="p">))</span>  <span class="c1"># wertf</span>
 </span><span id="__span-78-83"><a id="__codelineno-78-83" name="__codelineno-78-83" href="#__codelineno-78-83"></a><span class="nb">print</span><span class="p">(</span><span class="n">alienOrderDFS</span><span class="p">(</span><span class="n">words</span><span class="p">))</span>  <span class="c1"># wrt</span>
 </span></code></pre></div>
-<h3 id="787-cheapest-flights-within-k-stops">787. Cheapest Flights Within K Stops</h3>
+<h3 id="787-cheapest-flights-within-k-stops">787. Cheapest Flights Within K Stops<a class="headerlink" href="#787-cheapest-flights-within-k-stops" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Return the cheapest price from <code>src</code> to <code>dst</code> with at most <code>K</code> stops.</li>
 </ul>
@@ -7395,7 +7444,7 @@
 </span><span id="__span-79-25"><a id="__codelineno-79-25" name="__codelineno-79-25" href="#__codelineno-79-25"></a><span class="n">k</span> <span class="o">=</span> <span class="mi">1</span>
 </span><span id="__span-79-26"><a id="__codelineno-79-26" name="__codelineno-79-26" href="#__codelineno-79-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">findCheapestPriceBF</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">flights</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>  <span class="c1"># 700</span>
 </span></code></pre></div>
-<h3 id="743-network-delay-time">743. Network Delay Time</h3>
+<h3 id="743-network-delay-time">743. Network Delay Time<a class="headerlink" href="#743-network-delay-time" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-80-1"><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-80-2"><a id="__codelineno-80-2" name="__codelineno-80-2" href="#__codelineno-80-2"></a><span class="kn">from</span> <span class="nn">heapq</span> <span class="kn">import</span> <span class="n">heappop</span><span class="p">,</span> <span class="n">heappush</span>
 </span><span id="__span-80-3"><a id="__codelineno-80-3" name="__codelineno-80-3" href="#__codelineno-80-3"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
@@ -7478,7 +7527,7 @@
 </span><span id="__span-80-80"><a id="__codelineno-80-80" name="__codelineno-80-80" href="#__codelineno-80-80"></a><span class="nb">print</span><span class="p">(</span><span class="n">networkDelayTime2</span><span class="p">(</span><span class="n">times</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>  <span class="c1"># 2</span>
 </span><span id="__span-80-81"><a id="__codelineno-80-81" name="__codelineno-80-81" href="#__codelineno-80-81"></a><span class="nb">print</span><span class="p">(</span><span class="n">networkDelayTimeBF</span><span class="p">(</span><span class="n">times</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>  <span class="c1"># 2</span>
 </span></code></pre></div>
-<h3 id="452-minimum-number-of-arrows-to-burst-balloons">452. Minimum Number of Arrows to Burst Balloons</h3>
+<h3 id="452-minimum-number-of-arrows-to-burst-balloons">452. Minimum Number of Arrows to Burst Balloons<a class="headerlink" href="#452-minimum-number-of-arrows-to-burst-balloons" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-81-1"><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-81-2"><a id="__codelineno-81-2" name="__codelineno-81-2" href="#__codelineno-81-2"></a>
 </span><span id="__span-81-3"><a id="__codelineno-81-3" name="__codelineno-81-3" href="#__codelineno-81-3"></a>
@@ -7503,10 +7552,10 @@
 </span><span id="__span-81-22"><a id="__codelineno-81-22" name="__codelineno-81-22" href="#__codelineno-81-22"></a>
 </span><span id="__span-81-23"><a id="__codelineno-81-23" name="__codelineno-81-23" href="#__codelineno-81-23"></a><span class="nb">print</span><span class="p">(</span><span class="n">findMinArrowShots</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">16</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">12</span><span class="p">]]))</span>  <span class="c1"># 2</span>
 </span></code></pre></div>
-<h3 id="1514-path-with-maximum-probability">1514. Path with Maximum Probability</h3>
+<h3 id="1514-path-with-maximum-probability">1514. Path with Maximum Probability<a class="headerlink" href="#1514-path-with-maximum-probability" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-82-1"><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a>
 </span></code></pre></div>
-<h3 id="1584-min-cost-to-connect-all-points">1584. Min Cost to Connect All Points</h3>
+<h3 id="1584-min-cost-to-connect-all-points">1584. Min Cost to Connect All Points<a class="headerlink" href="#1584-min-cost-to-connect-all-points" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-83-1"><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a><span class="kn">import</span> <span class="nn">heapq</span>
 </span><span id="__span-83-2"><a id="__codelineno-83-2" name="__codelineno-83-2" href="#__codelineno-83-2"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-83-3"><a id="__codelineno-83-3" name="__codelineno-83-3" href="#__codelineno-83-3"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
@@ -7545,7 +7594,7 @@
 </span><span id="__span-83-36"><a id="__codelineno-83-36" name="__codelineno-83-36" href="#__codelineno-83-36"></a><span class="n">points</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
 </span><span id="__span-83-37"><a id="__codelineno-83-37" name="__codelineno-83-37" href="#__codelineno-83-37"></a><span class="nb">print</span><span class="p">(</span><span class="n">minCostConnectPoints</span><span class="p">(</span><span class="n">points</span><span class="p">))</span>  <span class="c1"># 20</span>
 </span></code></pre></div>
-<h3 id="778-swim-in-rising-water">778. Swim in Rising Water</h3>
+<h3 id="778-swim-in-rising-water">778. Swim in Rising Water<a class="headerlink" href="#778-swim-in-rising-water" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-84-1"><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a><span class="kn">import</span> <span class="nn">heapq</span>
 </span><span id="__span-84-2"><a id="__codelineno-84-2" name="__codelineno-84-2" href="#__codelineno-84-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-84-3"><a id="__codelineno-84-3" name="__codelineno-84-3" href="#__codelineno-84-3"></a>
@@ -7582,10 +7631,10 @@
 </span><span id="__span-84-34"><a id="__codelineno-84-34" name="__codelineno-84-34" href="#__codelineno-84-34"></a><span class="p">]</span>
 </span><span id="__span-84-35"><a id="__codelineno-84-35" name="__codelineno-84-35" href="#__codelineno-84-35"></a><span class="nb">print</span><span class="p">(</span><span class="n">swimInWater</span><span class="p">(</span><span class="n">grid</span><span class="p">))</span>  <span class="c1"># 16</span>
 </span></code></pre></div>
-<h3 id="1489-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree">1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree</h3>
+<h3 id="1489-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree">1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree<a class="headerlink" href="#1489-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-85-1"><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a>
 </span></code></pre></div>
-<h3 id="332-reconstruct-itinerary">332. Reconstruct Itinerary</h3>
+<h3 id="332-reconstruct-itinerary">332. Reconstruct Itinerary<a class="headerlink" href="#332-reconstruct-itinerary" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-86-1"><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-86-2"><a id="__codelineno-86-2" name="__codelineno-86-2" href="#__codelineno-86-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-86-3"><a id="__codelineno-86-3" name="__codelineno-86-3" href="#__codelineno-86-3"></a>
@@ -7644,7 +7693,7 @@
 </span><span id="__span-86-56"><a id="__codelineno-86-56" name="__codelineno-86-56" href="#__codelineno-86-56"></a><span class="nb">print</span><span class="p">(</span><span class="n">findItinerary2</span><span class="p">(</span><span class="n">tickets</span><span class="p">))</span>
 </span><span id="__span-86-57"><a id="__codelineno-86-57" name="__codelineno-86-57" href="#__codelineno-86-57"></a><span class="c1"># [&quot;JFK&quot;, &quot;MUC&quot;, &quot;LHR&quot;, &quot;SFO&quot;, &quot;SJC&quot;]</span>
 </span></code></pre></div>
-<h2 id="1-d-dynamic-programming">1-D Dynamic Programming</h2>
+<h2 id="1-d-dynamic-programming">1-D Dynamic Programming<a class="headerlink" href="#1-d-dynamic-programming" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0070 - <a href="https://leetcode.com/problems/climbing-stairs/">Climbing Stairs</a> (Easy)</li>
 <li>0746 - <a href="https://leetcode.com/problems/min-cost-climbing-stairs/">Min Cost Climbing Stairs</a> (Easy)</li>
@@ -7656,7 +7705,7 @@
 <li>0322 - <a href="https://leetcode.com/problems/coin-change/">Coin Change</a> (Medium)</li>
 <li>0152 - <a href="https://leetcode.com/problems/maximum-product-subarray/">Maximum Product Subarray</a> (Medium)</li>
 </ol>
-<h3 id="70-climbing-stairs">70. Climbing Stairs</h3>
+<h3 id="70-climbing-stairs">70. Climbing Stairs<a class="headerlink" href="#70-climbing-stairs" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-87-1"><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a><span class="c1"># DP</span>
 </span><span id="__span-87-2"><a id="__codelineno-87-2" name="__codelineno-87-2" href="#__codelineno-87-2"></a><span class="k">def</span> <span class="nf">climbStairs</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </span><span id="__span-87-3"><a id="__codelineno-87-3" name="__codelineno-87-3" href="#__codelineno-87-3"></a>    <span class="c1"># TC: O(n)</span>
@@ -7674,7 +7723,7 @@
 </span><span id="__span-87-15"><a id="__codelineno-87-15" name="__codelineno-87-15" href="#__codelineno-87-15"></a>
 </span><span id="__span-87-16"><a id="__codelineno-87-16" name="__codelineno-87-16" href="#__codelineno-87-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">climbStairs</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>  <span class="c1"># 89</span>
 </span></code></pre></div>
-<h3 id="746-min-cost-climbing-stairs">746. Min Cost Climbing Stairs</h3>
+<h3 id="746-min-cost-climbing-stairs">746. Min Cost Climbing Stairs<a class="headerlink" href="#746-min-cost-climbing-stairs" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-88-1"><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-88-2"><a id="__codelineno-88-2" name="__codelineno-88-2" href="#__codelineno-88-2"></a>
 </span><span id="__span-88-3"><a id="__codelineno-88-3" name="__codelineno-88-3" href="#__codelineno-88-3"></a>
@@ -7692,7 +7741,7 @@
 </span><span id="__span-88-15"><a id="__codelineno-88-15" name="__codelineno-88-15" href="#__codelineno-88-15"></a><span class="n">cost</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
 </span><span id="__span-88-16"><a id="__codelineno-88-16" name="__codelineno-88-16" href="#__codelineno-88-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">minCostClimbingStairs</span><span class="p">(</span><span class="n">cost</span><span class="p">))</span>  <span class="c1"># 15</span>
 </span></code></pre></div>
-<h3 id="198-house-robber">198. House Robber</h3>
+<h3 id="198-house-robber">198. House Robber<a class="headerlink" href="#198-house-robber" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-89-1"><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-89-2"><a id="__codelineno-89-2" name="__codelineno-89-2" href="#__codelineno-89-2"></a>
 </span><span id="__span-89-3"><a id="__codelineno-89-3" name="__codelineno-89-3" href="#__codelineno-89-3"></a>
@@ -7712,7 +7761,7 @@
 </span><span id="__span-89-17"><a id="__codelineno-89-17" name="__codelineno-89-17" href="#__codelineno-89-17"></a><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 </span><span id="__span-89-18"><a id="__codelineno-89-18" name="__codelineno-89-18" href="#__codelineno-89-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">rob</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>  <span class="c1"># 12</span>
 </span></code></pre></div>
-<h3 id="213-house-robber-ii">213. House Robber II</h3>
+<h3 id="213-house-robber-ii">213. House Robber II<a class="headerlink" href="#213-house-robber-ii" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-90-1"><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-90-2"><a id="__codelineno-90-2" name="__codelineno-90-2" href="#__codelineno-90-2"></a>
 </span><span id="__span-90-3"><a id="__codelineno-90-3" name="__codelineno-90-3" href="#__codelineno-90-3"></a>
@@ -7739,7 +7788,7 @@
 </span><span id="__span-90-24"><a id="__codelineno-90-24" name="__codelineno-90-24" href="#__codelineno-90-24"></a><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 </span><span id="__span-90-25"><a id="__codelineno-90-25" name="__codelineno-90-25" href="#__codelineno-90-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">rob</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="5-longest-palindromic-substring">5. Longest Palindromic Substring</h3>
+<h3 id="5-longest-palindromic-substring">5. Longest Palindromic Substring<a class="headerlink" href="#5-longest-palindromic-substring" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-91-1"><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a><span class="c1"># DP - LCS</span>
 </span><span id="__span-91-2"><a id="__codelineno-91-2" name="__codelineno-91-2" href="#__codelineno-91-2"></a><span class="k">def</span> <span class="nf">longestPalindrome</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 </span><span id="__span-91-3"><a id="__codelineno-91-3" name="__codelineno-91-3" href="#__codelineno-91-3"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
@@ -7770,7 +7819,7 @@
 </span><span id="__span-91-28"><a id="__codelineno-91-28" name="__codelineno-91-28" href="#__codelineno-91-28"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;babad&quot;</span>
 </span><span id="__span-91-29"><a id="__codelineno-91-29" name="__codelineno-91-29" href="#__codelineno-91-29"></a><span class="nb">print</span><span class="p">(</span><span class="n">longestPalindrome</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>  <span class="c1"># &quot;bab&quot; or &quot;aba&quot;</span>
 </span></code></pre></div>
-<h3 id="647-palindromic-substrings">647. Palindromic Substrings</h3>
+<h3 id="647-palindromic-substrings">647. Palindromic Substrings<a class="headerlink" href="#647-palindromic-substrings" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-92-1"><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a><span class="k">def</span> <span class="nf">countSubstrings</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </span><span id="__span-92-2"><a id="__codelineno-92-2" name="__codelineno-92-2" href="#__codelineno-92-2"></a>    <span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">))]</span>
 </span><span id="__span-92-3"><a id="__codelineno-92-3" name="__codelineno-92-3" href="#__codelineno-92-3"></a>    <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
@@ -7789,10 +7838,10 @@
 </span><span id="__span-92-16"><a id="__codelineno-92-16" name="__codelineno-92-16" href="#__codelineno-92-16"></a>
 </span><span id="__span-92-17"><a id="__codelineno-92-17" name="__codelineno-92-17" href="#__codelineno-92-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">countSubstrings</span><span class="p">(</span><span class="s2">&quot;abc&quot;</span><span class="p">))</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="91-decode-ways">91. Decode Ways</h3>
+<h3 id="91-decode-ways">91. Decode Ways<a class="headerlink" href="#91-decode-ways" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-93-1"><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>
 </span></code></pre></div>
-<h3 id="322-coin-change">322. Coin Change</h3>
+<h3 id="322-coin-change">322. Coin Change<a class="headerlink" href="#322-coin-change" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-94-1"><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-94-2"><a id="__codelineno-94-2" name="__codelineno-94-2" href="#__codelineno-94-2"></a>
 </span><span id="__span-94-3"><a id="__codelineno-94-3" name="__codelineno-94-3" href="#__codelineno-94-3"></a>
@@ -7813,7 +7862,7 @@
 </span><span id="__span-94-18"><a id="__codelineno-94-18" name="__codelineno-94-18" href="#__codelineno-94-18"></a><span class="n">amount</span> <span class="o">=</span> <span class="mi">11</span>
 </span><span id="__span-94-19"><a id="__codelineno-94-19" name="__codelineno-94-19" href="#__codelineno-94-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">coinChange</span><span class="p">(</span><span class="n">coins</span><span class="p">,</span> <span class="n">amount</span><span class="p">))</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="152-maximum-product-subarray">152. Maximum Product Subarray</h3>
+<h3 id="152-maximum-product-subarray">152. Maximum Product Subarray<a class="headerlink" href="#152-maximum-product-subarray" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-95-1"><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-95-2"><a id="__codelineno-95-2" name="__codelineno-95-2" href="#__codelineno-95-2"></a>
 </span><span id="__span-95-3"><a id="__codelineno-95-3" name="__codelineno-95-3" href="#__codelineno-95-3"></a>
@@ -7846,7 +7895,7 @@
 </span><span id="__span-95-30"><a id="__codelineno-95-30" name="__codelineno-95-30" href="#__codelineno-95-30"></a><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 </span><span id="__span-95-31"><a id="__codelineno-95-31" name="__codelineno-95-31" href="#__codelineno-95-31"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxProduct</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>  <span class="c1"># 6</span>
 </span></code></pre></div>
-<h2 id="2-d-dynamic-programming">2-D Dynamic Programming</h2>
+<h2 id="2-d-dynamic-programming">2-D Dynamic Programming<a class="headerlink" href="#2-d-dynamic-programming" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0062 - <a href="https://leetcode.com/problems/unique-paths/">Unique Paths</a> (Medium)</li>
 <li>1143 - <a href="https://leetcode.com/problems/longest-common-subsequence/">Longest Common Subsequence</a> (Medium)</li>
@@ -7856,7 +7905,7 @@
 <li>0097 - <a href="https://leetcode.com/problems/interleaving-string/">Interleaving String</a> (Hard)</li>
 <li>0329 - <a href="https://leetcode.com/problems/longest-increasing-path-in-a-matrix/">Longest Increasing Path in a Matrix</a> (Hard)</li>
 </ol>
-<h3 id="62-unique-paths">62. Unique Paths</h3>
+<h3 id="62-unique-paths">62. Unique Paths<a class="headerlink" href="#62-unique-paths" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-96-1"><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a><span class="k">def</span> <span class="nf">uniquePaths</span><span class="p">(</span><span class="n">m</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </span><span id="__span-96-2"><a id="__codelineno-96-2" name="__codelineno-96-2" href="#__codelineno-96-2"></a>    <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
 </span><span id="__span-96-3"><a id="__codelineno-96-3" name="__codelineno-96-3" href="#__codelineno-96-3"></a>        <span class="k">return</span> <span class="mi">1</span>
@@ -7872,7 +7921,7 @@
 </span><span id="__span-96-13"><a id="__codelineno-96-13" name="__codelineno-96-13" href="#__codelineno-96-13"></a>
 </span><span id="__span-96-14"><a id="__codelineno-96-14" name="__codelineno-96-14" href="#__codelineno-96-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">uniquePaths</span><span class="p">(</span><span class="n">m</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">7</span><span class="p">))</span>  <span class="c1"># 28</span>
 </span></code></pre></div>
-<h3 id="1143-longest-common-subsequence">1143. Longest Common Subsequence</h3>
+<h3 id="1143-longest-common-subsequence">1143. Longest Common Subsequence<a class="headerlink" href="#1143-longest-common-subsequence" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-97-1"><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a><span class="c1"># DP - LCS</span>
 </span><span id="__span-97-2"><a id="__codelineno-97-2" name="__codelineno-97-2" href="#__codelineno-97-2"></a><span class="k">def</span> <span class="nf">longestCommonSubsequence</span><span class="p">(</span><span class="n">text1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">text2</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </span><span id="__span-97-3"><a id="__codelineno-97-3" name="__codelineno-97-3" href="#__codelineno-97-3"></a>    <span class="c1"># TC: O(m * n)</span>
@@ -7898,7 +7947,7 @@
 </span><span id="__span-97-23"><a id="__codelineno-97-23" name="__codelineno-97-23" href="#__codelineno-97-23"></a><span class="n">text2</span> <span class="o">=</span> <span class="s2">&quot;ace&quot;</span>
 </span><span id="__span-97-24"><a id="__codelineno-97-24" name="__codelineno-97-24" href="#__codelineno-97-24"></a><span class="nb">print</span><span class="p">(</span><span class="n">longestCommonSubsequence</span><span class="p">(</span><span class="n">text1</span><span class="p">,</span> <span class="n">text2</span><span class="p">))</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="309-best-time-to-buy-and-sell-stock-with-cooldown">309. Best Time to Buy and Sell Stock with Cooldown</h3>
+<h3 id="309-best-time-to-buy-and-sell-stock-with-cooldown">309. Best Time to Buy and Sell Stock with Cooldown<a class="headerlink" href="#309-best-time-to-buy-and-sell-stock-with-cooldown" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-98-1"><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-98-2"><a id="__codelineno-98-2" name="__codelineno-98-2" href="#__codelineno-98-2"></a>
 </span><span id="__span-98-3"><a id="__codelineno-98-3" name="__codelineno-98-3" href="#__codelineno-98-3"></a>
@@ -7934,7 +7983,7 @@
 </span><span id="__span-98-33"><a id="__codelineno-98-33" name="__codelineno-98-33" href="#__codelineno-98-33"></a><span class="n">prices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 </span><span id="__span-98-34"><a id="__codelineno-98-34" name="__codelineno-98-34" href="#__codelineno-98-34"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxProfit</span><span class="p">(</span><span class="n">prices</span><span class="p">))</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="518-coin-change-2">518. Coin Change 2</h3>
+<h3 id="518-coin-change-2">518. Coin Change 2<a class="headerlink" href="#518-coin-change-2" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-99-1"><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-99-2"><a id="__codelineno-99-2" name="__codelineno-99-2" href="#__codelineno-99-2"></a>
 </span><span id="__span-99-3"><a id="__codelineno-99-3" name="__codelineno-99-3" href="#__codelineno-99-3"></a>
@@ -7953,7 +8002,7 @@
 </span><span id="__span-99-16"><a id="__codelineno-99-16" name="__codelineno-99-16" href="#__codelineno-99-16"></a><span class="n">coins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 </span><span id="__span-99-17"><a id="__codelineno-99-17" name="__codelineno-99-17" href="#__codelineno-99-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">change</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="n">coins</span><span class="p">))</span>  <span class="c1"># 4</span>
 </span></code></pre></div>
-<h3 id="494-target-sum">494. Target Sum</h3>
+<h3 id="494-target-sum">494. Target Sum<a class="headerlink" href="#494-target-sum" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-100-1"><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-100-2"><a id="__codelineno-100-2" name="__codelineno-100-2" href="#__codelineno-100-2"></a>
 </span><span id="__span-100-3"><a id="__codelineno-100-3" name="__codelineno-100-3" href="#__codelineno-100-3"></a>
@@ -7981,13 +8030,13 @@
 </span><span id="__span-100-25"><a id="__codelineno-100-25" name="__codelineno-100-25" href="#__codelineno-100-25"></a><span class="n">target</span> <span class="o">=</span> <span class="mi">3</span>
 </span><span id="__span-100-26"><a id="__codelineno-100-26" name="__codelineno-100-26" href="#__codelineno-100-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">findTargetSumWays</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>  <span class="c1"># 5</span>
 </span></code></pre></div>
-<h3 id="97-interleaving-string">97. Interleaving String</h3>
+<h3 id="97-interleaving-string">97. Interleaving String<a class="headerlink" href="#97-interleaving-string" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-101-1"><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>
 </span></code></pre></div>
-<h3 id="329-longest-increasing-path-in-a-matrix">329. Longest Increasing Path in a Matrix</h3>
+<h3 id="329-longest-increasing-path-in-a-matrix">329. Longest Increasing Path in a Matrix<a class="headerlink" href="#329-longest-increasing-path-in-a-matrix" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-102-1"><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>
 </span></code></pre></div>
-<h2 id="greedy">Greedy</h2>
+<h2 id="greedy">Greedy<a class="headerlink" href="#greedy" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0053 - <a href="https://leetcode.com/problems/maximum-subarray/">Maximum Subarray</a> (Easy)</li>
 <li>0055 - <a href="https://leetcode.com/problems/jump-game/">Jump Game</a> (Medium)</li>
@@ -7998,7 +8047,7 @@
 <li>0763 - <a href="https://leetcode.com/problems/partition-labels/">Partition Labels</a> (Medium)</li>
 <li>0678 - <a href="https://leetcode.com/problems/valid-parenthesis-string/">Valid Parenthesis String</a> (Medium)</li>
 </ol>
-<h3 id="53-maximum-subarray">53. Maximum Subarray</h3>
+<h3 id="53-maximum-subarray">53. Maximum Subarray<a class="headerlink" href="#53-maximum-subarray" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-103-1"><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-103-2"><a id="__codelineno-103-2" name="__codelineno-103-2" href="#__codelineno-103-2"></a>
 </span><span id="__span-103-3"><a id="__codelineno-103-3" name="__codelineno-103-3" href="#__codelineno-103-3"></a>
@@ -8036,7 +8085,7 @@
 </span><span id="__span-103-35"><a id="__codelineno-103-35" name="__codelineno-103-35" href="#__codelineno-103-35"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxSubArrayDP</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>  <span class="c1"># 6</span>
 </span><span id="__span-103-36"><a id="__codelineno-103-36" name="__codelineno-103-36" href="#__codelineno-103-36"></a><span class="nb">print</span><span class="p">(</span><span class="n">maxSubArrayGreedy</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>  <span class="c1"># 6</span>
 </span></code></pre></div>
-<h3 id="55-jump-game">55. Jump Game</h3>
+<h3 id="55-jump-game">55. Jump Game<a class="headerlink" href="#55-jump-game" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-104-1"><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-104-2"><a id="__codelineno-104-2" name="__codelineno-104-2" href="#__codelineno-104-2"></a>
 </span><span id="__span-104-3"><a id="__codelineno-104-3" name="__codelineno-104-3" href="#__codelineno-104-3"></a>
@@ -8060,7 +8109,7 @@
 </span><span id="__span-104-21"><a id="__codelineno-104-21" name="__codelineno-104-21" href="#__codelineno-104-21"></a>
 </span><span id="__span-104-22"><a id="__codelineno-104-22" name="__codelineno-104-22" href="#__codelineno-104-22"></a><span class="nb">print</span><span class="p">(</span><span class="n">canJump</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h3 id="45-jump-game-ii">45. Jump Game II</h3>
+<h3 id="45-jump-game-ii">45. Jump Game II<a class="headerlink" href="#45-jump-game-ii" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-105-1"><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-105-2"><a id="__codelineno-105-2" name="__codelineno-105-2" href="#__codelineno-105-2"></a>
 </span><span id="__span-105-3"><a id="__codelineno-105-3" name="__codelineno-105-3" href="#__codelineno-105-3"></a>
@@ -8084,7 +8133,7 @@
 </span><span id="__span-105-21"><a id="__codelineno-105-21" name="__codelineno-105-21" href="#__codelineno-105-21"></a>
 </span><span id="__span-105-22"><a id="__codelineno-105-22" name="__codelineno-105-22" href="#__codelineno-105-22"></a><span class="nb">print</span><span class="p">(</span><span class="n">jump</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>  <span class="c1"># 2</span>
 </span></code></pre></div>
-<h3 id="134-gas-station">134. Gas Station</h3>
+<h3 id="134-gas-station">134. Gas Station<a class="headerlink" href="#134-gas-station" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-106-1"><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-106-2"><a id="__codelineno-106-2" name="__codelineno-106-2" href="#__codelineno-106-2"></a>
 </span><span id="__span-106-3"><a id="__codelineno-106-3" name="__codelineno-106-3" href="#__codelineno-106-3"></a>
@@ -8112,13 +8161,13 @@
 </span><span id="__span-106-25"><a id="__codelineno-106-25" name="__codelineno-106-25" href="#__codelineno-106-25"></a><span class="n">cost</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 </span><span id="__span-106-26"><a id="__codelineno-106-26" name="__codelineno-106-26" href="#__codelineno-106-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">canCompleteCircuit</span><span class="p">(</span><span class="n">gas</span><span class="p">,</span> <span class="n">cost</span><span class="p">))</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="846-hand-of-straights">846. Hand of Straights</h3>
+<h3 id="846-hand-of-straights">846. Hand of Straights<a class="headerlink" href="#846-hand-of-straights" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-107-1"><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a>
 </span></code></pre></div>
-<h3 id="1899-merge-triplets-to-form-target-triplet">1899. Merge Triplets to Form Target Triplet</h3>
+<h3 id="1899-merge-triplets-to-form-target-triplet">1899. Merge Triplets to Form Target Triplet<a class="headerlink" href="#1899-merge-triplets-to-form-target-triplet" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-108-1"><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>
 </span></code></pre></div>
-<h3 id="763-partition-labels">763. Partition Labels</h3>
+<h3 id="763-partition-labels">763. Partition Labels<a class="headerlink" href="#763-partition-labels" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-109-1"><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-109-2"><a id="__codelineno-109-2" name="__codelineno-109-2" href="#__codelineno-109-2"></a>
 </span><span id="__span-109-3"><a id="__codelineno-109-3" name="__codelineno-109-3" href="#__codelineno-109-3"></a>
@@ -8178,10 +8227,10 @@
 </span><span id="__span-109-57"><a id="__codelineno-109-57" name="__codelineno-109-57" href="#__codelineno-109-57"></a><span class="nb">print</span><span class="p">(</span><span class="n">partitionLabels1</span><span class="p">(</span><span class="s2">&quot;abaccd&quot;</span><span class="p">))</span>  <span class="c1"># [3, 2, 1]</span>
 </span><span id="__span-109-58"><a id="__codelineno-109-58" name="__codelineno-109-58" href="#__codelineno-109-58"></a><span class="nb">print</span><span class="p">(</span><span class="n">partitionLabels2</span><span class="p">(</span><span class="s2">&quot;abaccd&quot;</span><span class="p">))</span>  <span class="c1"># [3, 2, 1]</span>
 </span></code></pre></div>
-<h3 id="678-valid-parenthesis-string">678. Valid Parenthesis String</h3>
+<h3 id="678-valid-parenthesis-string">678. Valid Parenthesis String<a class="headerlink" href="#678-valid-parenthesis-string" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-110-1"><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>
 </span></code></pre></div>
-<h2 id="intervals">Intervals</h2>
+<h2 id="intervals">Intervals<a class="headerlink" href="#intervals" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0057 - <a href="https://leetcode.com/problems/insert-interval/">Insert Interval</a> (Hard)</li>
 <li>0056 - <a href="https://leetcode.com/problems/merge-intervals/">Merge Intervals</a> (Medium)</li>
@@ -8189,10 +8238,10 @@
 <li>0252 - <a href="https://leetcode.com/problems/meeting-rooms/">Meeting Rooms</a> (Easy)</li>
 <li>0253 - <a href="https://leetcode.com/problems/meeting-rooms-ii/">Meeting Rooms II</a> (Medium)</li>
 </ol>
-<h3 id="57-insert-interval">57. Insert Interval</h3>
+<h3 id="57-insert-interval">57. Insert Interval<a class="headerlink" href="#57-insert-interval" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-111-1"><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>
 </span></code></pre></div>
-<h3 id="56-merge-intervals">56. Merge Intervals</h3>
+<h3 id="56-merge-intervals">56. Merge Intervals<a class="headerlink" href="#56-merge-intervals" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-112-1"><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-112-2"><a id="__codelineno-112-2" name="__codelineno-112-2" href="#__codelineno-112-2"></a>
 </span><span id="__span-112-3"><a id="__codelineno-112-3" name="__codelineno-112-3" href="#__codelineno-112-3"></a>
@@ -8212,7 +8261,7 @@
 </span><span id="__span-112-17"><a id="__codelineno-112-17" name="__codelineno-112-17" href="#__codelineno-112-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">merge</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">]]))</span>
 </span><span id="__span-112-18"><a id="__codelineno-112-18" name="__codelineno-112-18" href="#__codelineno-112-18"></a><span class="c1"># [[1, 6], [8, 10], [15, 18]]</span>
 </span></code></pre></div>
-<h3 id="435-non-overlapping-intervals">435. Non-overlapping Intervals</h3>
+<h3 id="435-non-overlapping-intervals">435. Non-overlapping Intervals<a class="headerlink" href="#435-non-overlapping-intervals" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-113-1"><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-113-2"><a id="__codelineno-113-2" name="__codelineno-113-2" href="#__codelineno-113-2"></a>
 </span><span id="__span-113-3"><a id="__codelineno-113-3" name="__codelineno-113-3" href="#__codelineno-113-3"></a>
@@ -8235,13 +8284,13 @@
 </span><span id="__span-113-20"><a id="__codelineno-113-20" name="__codelineno-113-20" href="#__codelineno-113-20"></a>
 </span><span id="__span-113-21"><a id="__codelineno-113-21" name="__codelineno-113-21" href="#__codelineno-113-21"></a><span class="nb">print</span><span class="p">(</span><span class="n">eraseOverlapIntervals</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]))</span>  <span class="c1"># 1</span>
 </span></code></pre></div>
-<h3 id="252-meeting-rooms">252. Meeting Rooms</h3>
+<h3 id="252-meeting-rooms">252. Meeting Rooms<a class="headerlink" href="#252-meeting-rooms" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-114-1"><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a>
 </span></code></pre></div>
-<h3 id="253-meeting-rooms-ii">253. Meeting Rooms II</h3>
+<h3 id="253-meeting-rooms-ii">253. Meeting Rooms II<a class="headerlink" href="#253-meeting-rooms-ii" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-115-1"><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a>
 </span></code></pre></div>
-<h2 id="math-geometry">Math &amp; Geometry</h2>
+<h2 id="math-geometry">Math &amp; Geometry<a class="headerlink" href="#math-geometry" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0048 - <a href="https://leetcode.com/problems/rotate-image/">Rotate Image</a> (Medium)</li>
 <li>0054 - <a href="https://leetcode.com/problems/spiral-matrix/">Spiral Matrix</a> (Medium)</li>
@@ -8252,10 +8301,10 @@
 <li>0043 - <a href="https://leetcode.com/problems/multiply-strings/">Multiply Strings</a> (Medium)</li>
 <li>0166 - <a href="https://leetcode.com/problems/fraction-to-recurring-decimal/">Fraction to Recurring Decimal</a> (Medium)</li>
 </ol>
-<h3 id="48-rotate-image">48. Rotate Image</h3>
+<h3 id="48-rotate-image">48. Rotate Image<a class="headerlink" href="#48-rotate-image" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-116-1"><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a>
 </span></code></pre></div>
-<h3 id="54-spiral-matrix">54. Spiral Matrix</h3>
+<h3 id="54-spiral-matrix">54. Spiral Matrix<a class="headerlink" href="#54-spiral-matrix" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-117-1"><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-117-2"><a id="__codelineno-117-2" name="__codelineno-117-2" href="#__codelineno-117-2"></a>
 </span><span id="__span-117-3"><a id="__codelineno-117-3" name="__codelineno-117-3" href="#__codelineno-117-3"></a>
@@ -8295,10 +8344,10 @@
 </span><span id="__span-117-37"><a id="__codelineno-117-37" name="__codelineno-117-37" href="#__codelineno-117-37"></a><span class="nb">print</span><span class="p">(</span><span class="n">spiralOrder</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]))</span>
 </span><span id="__span-117-38"><a id="__codelineno-117-38" name="__codelineno-117-38" href="#__codelineno-117-38"></a><span class="c1"># [1, 2, 3, 6, 9, 8, 7, 4, 5]</span>
 </span></code></pre></div>
-<h3 id="73-set-matrix-zeroes">73. Set Matrix Zeroes</h3>
+<h3 id="73-set-matrix-zeroes">73. Set Matrix Zeroes<a class="headerlink" href="#73-set-matrix-zeroes" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-118-1"><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a>
 </span></code></pre></div>
-<h3 id="202-happy-number">202. Happy Number</h3>
+<h3 id="202-happy-number">202. Happy Number<a class="headerlink" href="#202-happy-number" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-119-1"><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a><span class="k">def</span> <span class="nf">isHappy</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 </span><span id="__span-119-2"><a id="__codelineno-119-2" name="__codelineno-119-2" href="#__codelineno-119-2"></a>
 </span><span id="__span-119-3"><a id="__codelineno-119-3" name="__codelineno-119-3" href="#__codelineno-119-3"></a>    <span class="k">def</span> <span class="nf">getSum</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -8326,19 +8375,19 @@
 </span><span id="__span-119-25"><a id="__codelineno-119-25" name="__codelineno-119-25" href="#__codelineno-119-25"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">19</span>
 </span><span id="__span-119-26"><a id="__codelineno-119-26" name="__codelineno-119-26" href="#__codelineno-119-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">isHappy</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
-<h3 id="66-plus-one">66. Plus One</h3>
+<h3 id="66-plus-one">66. Plus One<a class="headerlink" href="#66-plus-one" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-120-1"><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a>
 </span></code></pre></div>
-<h3 id="50-powx-n">50. Pow(x, n)</h3>
+<h3 id="50-powx-n">50. Pow(x, n)<a class="headerlink" href="#50-powx-n" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-121-1"><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a>
 </span></code></pre></div>
-<h3 id="43-multiply-strings">43. Multiply Strings</h3>
+<h3 id="43-multiply-strings">43. Multiply Strings<a class="headerlink" href="#43-multiply-strings" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-122-1"><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a>
 </span></code></pre></div>
-<h3 id="166-fraction-to-recurring-decimal">166. Fraction to Recurring Decimal</h3>
+<h3 id="166-fraction-to-recurring-decimal">166. Fraction to Recurring Decimal<a class="headerlink" href="#166-fraction-to-recurring-decimal" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-123-1"><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a>
 </span></code></pre></div>
-<h2 id="bit-manipulation">Bit Manipulation</h2>
+<h2 id="bit-manipulation">Bit Manipulation<a class="headerlink" href="#bit-manipulation" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0191 - <a href="https://leetcode.com/problems/number-of-1-bits/">Number of 1 Bits</a> (Easy)</li>
 <li>0338 - <a href="https://leetcode.com/problems/counting-bits/">Counting Bits</a> (Medium)</li>
@@ -8346,19 +8395,19 @@
 <li>0268 - <a href="https://leetcode.com/problems/missing-number/">Missing Number</a> (Easy)</li>
 <li>0371 - <a href="https://leetcode.com/problems/sum-of-two-integers/">Sum of Two Integers</a> (Medium)</li>
 </ol>
-<h3 id="191-number-of-1-bits">191. Number of 1 Bits</h3>
+<h3 id="191-number-of-1-bits">191. Number of 1 Bits<a class="headerlink" href="#191-number-of-1-bits" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-124-1"><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a>
 </span></code></pre></div>
-<h3 id="338-counting-bits">338. Counting Bits</h3>
+<h3 id="338-counting-bits">338. Counting Bits<a class="headerlink" href="#338-counting-bits" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-125-1"><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a>
 </span></code></pre></div>
-<h3 id="190-reverse-bits">190. Reverse Bits</h3>
+<h3 id="190-reverse-bits">190. Reverse Bits<a class="headerlink" href="#190-reverse-bits" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-126-1"><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a>
 </span></code></pre></div>
-<h3 id="268-missing-number">268. Missing Number</h3>
+<h3 id="268-missing-number">268. Missing Number<a class="headerlink" href="#268-missing-number" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-127-1"><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a>
 </span></code></pre></div>
-<h3 id="371-sum-of-two-integers">371. Sum of Two Integers</h3>
+<h3 id="371-sum-of-two-integers">371. Sum of Two Integers<a class="headerlink" href="#371-sum-of-two-integers" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-128-1"><a id="__codelineno-128-1" name="__codelineno-128-1" href="#__codelineno-128-1"></a>
 </span></code></pre></div>
 
@@ -8429,6 +8478,42 @@
   
 </div>
       
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/Sihan-A" target="_blank" rel="noopener" title="GitHub | Sihan A" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/sihan-a/" target="_blank" rel="noopener" title="LinkedIn | Sihan A" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.kaggle.com/sihana" target="_blank" rel="noopener" title="Kaggle | Sihan A" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M304.2 501.5 158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.25 0 6-3z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://medium.com/@sihan-a" target="_blank" rel="noopener" title="Medium | Sihan A" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262Zm288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -8447,6 +8532,12 @@
         <script src="../js/timeago.min.js"></script>
       
         <script src="../js/timeago_mkdocs_material.js"></script>
+      
+        <script src="../js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

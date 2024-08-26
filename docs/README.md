@@ -1,6 +1,6 @@
 # LeetPatterns
 
-## Tree
+## 🌳 Tree
 
 | [Tree Traversal](tree_traversal.md) |     |
 | ------------------------------------- | --- |

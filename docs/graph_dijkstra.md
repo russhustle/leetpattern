@@ -3,8 +3,8 @@
 - Shortest path algorithm
 - Weighted graph
 - Data Structure: Heap; HashSet
-- Time Complexity: O(E log V)
-- Space Complexity: O(V)
+- Time Complexity: $O(E \log V)$
+- Space Complexity: $O(V)$
 
 ## Problems
 

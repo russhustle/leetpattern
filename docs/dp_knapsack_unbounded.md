@@ -2,7 +2,11 @@
 
 ## Unbounded Knapsack Problem
 
-```python
+- The unbounded knapsack problem is a variation of the knapsack problem where the items can be repeated.
+
+![knapsack01](imgs/knapsack01.jpg)
+
+```python linenums="1"
 --8<-- "template/knapsack_unbounded.py"
 ```
 
@@ -16,30 +20,30 @@
 
 ## 0139. Word Break
 
-```python
+```python linenums="1"
 --8<-- "0139_word_break.py"
 ```
 
 ## 0279. Perfect Squares
 
-```python
+```python linenums="1"
 --8<-- "0279_perfect_squares.py"
 ```
 
 ## 0322. Coin Change
 
-```python
+```python linenums="1"
 --8<-- "0322_coin_change.py"
 ```
 
 ## 0518. Coin Change 2
 
-```python
+```python linenums="1"
 --8<-- "0518_coin_change_2.py"
 ```
 
 ## 0377. Combination Sum IV
 
-```python
+```python linenums="1"
 --8<-- "0377_combination_sum_iv.py"
 ```

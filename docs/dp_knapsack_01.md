@@ -1,10 +1,12 @@
 # Dynamic Programming - 0/1 Knapsack Problem
 
-## 0/1 Knapsack
+## 0/1 Knapsack Problem
 
 ![knapsack01](imgs/knapsack01.jpg)
 
-```python
+- The 0/1 knapsack problem is a variation of the knapsack problem where the items can be selected only once.
+
+```python linenums="1"
 --8<-- "template/knapsack01.py"
 ```
 
@@ -17,24 +19,24 @@
 
 ## 416. Partition Equal Subset Sum
 
-```python
+```python linenums="1"
 --8<-- "0416_partition_equal_subset_sum.py"
 ```
 
 ## 474. Ones and Zeroes
 
-```python
+```python linenums="1"
 --8<-- "0474_ones_and_zeroes.py"
 ```
 
 ## 494. Target Sum
 
-```python
+```python linenums="1"
 --8<-- "0494_target_sum.py"
 ```
 
 ## 1049. Last Stone Weight II
 
-```python
+```python linenums="1"
 --8<-- "1049_last_stone_weight_ii.py"
 ```

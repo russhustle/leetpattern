@@ -48,12 +48,12 @@ def inorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
     return inorder
 
 
-tree = build([1, None, 2, None, None, 3])
+tree = build([0, 1, 2, 3, 4, 5, 6])
 print(tree)
-# 1__
-#    \
-#     2
-#    /
-#   3
-print(inorderTraversalRecursive(tree))  # [1, 3, 2]
-print(inorderTraversalIterative(tree))  # [1, 3, 2]
+#     __0__
+#    /     \
+#   1       2
+#  / \     / \
+# 3   4   5   6
+print(inorderTraversalRecursive(tree))  # [3, 1, 4, 0, 5, 2, 6]
+print(inorderTraversalIterative(tree))  # [3, 1, 4, 0, 5, 2, 6]

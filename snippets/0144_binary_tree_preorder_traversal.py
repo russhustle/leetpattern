@@ -47,12 +47,12 @@ def preorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
     return preorder
 
 
-tree = build([1, None, 2, None, None, 3])
+tree = build([0, 1, 2, 3, 4, 5, 6])
 print(tree)
-# 1__
-#    \
-#     2
-#    /
-#   3
-print(preorderTraversalRecursive(tree))  # [1, 2, 3]
-print(preorderTraversalIterative(tree))  # [1, 2, 3]
+#     __0__
+#    /     \
+#   1       2
+#  / \     / \
+# 3   4   5   6
+print(preorderTraversalRecursive(tree))  # [0, 1, 3, 4, 2, 5, 6]
+print(preorderTraversalIterative(tree))  # [0, 1, 3, 4, 2, 5, 6]

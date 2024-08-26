@@ -47,12 +47,12 @@ def postorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
     return postorder[::-1]
 
 
-tree = build([1, None, 2, None, None, 3])
+tree = build([0, 1, 2, 3, 4, 5, 6])
 print(tree)
-# 1__
-#    \
-#     2
-#    /
-#   3
-print(postorderTraversalRecursive(tree))  # [3, 2, 1]
-print(postorderTraversalIterative(tree))  # [3, 2, 1]
+#     __0__
+#    /     \
+#   1       2
+#  / \     / \
+# 3   4   5   6
+print(postorderTraversalRecursive(tree))  # [3, 4, 1, 5, 6, 2, 0]
+print(postorderTraversalIterative(tree))  # [3, 4, 1, 5, 6, 2, 0]

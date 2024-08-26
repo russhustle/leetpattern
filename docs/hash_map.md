@@ -12,7 +12,7 @@
 
 - Return `True` if the ransom note can be constructed from the magazines, otherwise, return `False`.
 
-```python
+```python linenums="1"
 --8<-- "0383_ransom_note.py"
 ```
 
@@ -20,7 +20,7 @@
 
 - Return the intersection of two arrays.
 
-```python
+```python linenums="1"
 --8<-- "0350_intersection_of_two_arrays_ii.py"
 ```
 
@@ -28,7 +28,7 @@
 
 - Return the indices of the two numbers such that they add up to a specific target.
 
-```python
+```python linenums="1"
 --8<-- "0001_two_sum.py"
 ```
 
@@ -36,7 +36,7 @@
 
 - Return the length of the longest palindrome that can be built with the characters in the string.
 
-```python
+```python linenums="1"
 --8<-- "0409_longest_palindrome.py"
 ```
 
@@ -44,7 +44,7 @@
 
 - For each number in the array, return how many numbers are smaller than it.
 
-```python
+```python linenums="1"
 --8<-- "1365_how_many_numbers_are_smaller_than_the_current_number.py"
 ```
 
@@ -53,7 +53,7 @@
 - Return `True` if the number is a happy number, otherwise, return `False`.
 - A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
 
-```python
+```python linenums="1"
 --8<-- "0202_happy_number.py"
 ```
 
@@ -61,6 +61,6 @@
 
 - Return the number of tuples `(i, j, k, l)` such that `A[i] + B[j] + C[k] + D[l] == 0`.
 
-```python
+```python linenums="1"
 --8<-- "0454_4sum_ii.py"
 ```

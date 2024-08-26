@@ -1,7 +1,9 @@
 # DP
 def climbStairs(n: int) -> int:
-    # TC: O(n)
-    # SC: O(n)
+    # TC: O(n), SC: O(n)
+    # dp[n]: the number of ways to reach the n-th step
+    # dp[n] = dp[n-1] + dp[n-2]
+
     if n <= 1:
         return n
 

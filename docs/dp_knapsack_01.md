@@ -1,5 +1,15 @@
 # Dynamic Programming - 0/1 Knapsack Problem
 
+## 0/1 Knapsack
+
+![knapsack01](imgs/knapsack01.jpg)
+
+```python
+--8<-- "template/knapsack01.py"
+```
+
+## Problems
+
 1. 0416 - [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) (Medium)
 2. 0474 - [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) (Medium)
 3. 0494 - [Target Sum](https://leetcode.com/problems/target-sum/) (Medium)

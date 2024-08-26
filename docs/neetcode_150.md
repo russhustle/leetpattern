@@ -1,8 +1,7 @@
 # Neetcode 150
 
-## Table of Contents
-
-[TOC]
+- [Neetcode - YouTube](https://www.youtube.com/c/Neetcode)
+- [Website](https://neetcode.io)
 
 ## Arrays & Hashing
 

@@ -1,7 +1,8 @@
-site_name: 🚀 LeetPatterns
-site_url: https://russhustle.github.io/leetpattern/
+site_name: 🚀LeetPattern
+site_url: https://www.leetpattern.com
 site_author: Sihan A
 site_description: LeetCode Patterns
+repo_url: https://github.com/russhustle/leetpattern/
 
 nav:
   - 🏠 Home: README.md
@@ -77,23 +78,26 @@ nav:
 ##############################################
 
 theme:
+  logo: imgs/logo.jpg
+  favicon: imgs/logo.jpg
   name: material
   palette:
-    - scheme: default
-      primary: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
       accent: pink
       toggle:
-        icon: material/brightness-7
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
       accent: pink
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-        accent: pink
+        icon: material/toggle-switch
+        name: Switch to system preference
   font:
-    text: Lato
+    text: Open Sans
     code: Roboto Mono
   features:
     - content.code.copy
@@ -101,9 +105,13 @@ theme:
     # - navigation.tabs
     - navigation.indexes # Enable indexes for the navigation
     - search.suggest # Enable search suggestions
+    - search.highlight # Enable search term highlighting
     - content.math
+    - grid
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - pymdownx.snippets:
       base_path: docs/snippets
   - pymdownx.highlight:
@@ -118,6 +126,9 @@ markdown_extensions:
       generic: true
   - toc:
       permalink: true # Add permalinks to headers
+  - attr_list
+  - md_in_html
+
 
 plugins:
   - git-revision-date-localized:
@@ -126,6 +137,8 @@ plugins:
   - search
 
 extra:
+  creator: Sihan A
+  homepage: https://www.leetpattern.com
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Sihan-A

@@ -57,6 +57,7 @@ nav:
   - 📝 Graph Topological Sort: graph_topological_sort.md
   - 📝 Graph Union Find: graph_union_find.md
   - 📝 Graph Dijkstra: graph_dijkstra.md
+  - 📝 Graph Bellman Ford: graph_bellman_ford.md
   - 📝 Graph MST: graph_mst.md
 
   - 🖇 Heap Top K: heap_top_k.md

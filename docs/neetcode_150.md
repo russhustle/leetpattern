@@ -604,6 +604,10 @@
 
 ### 787. Cheapest Flights Within K Stops
 
+- Return the cheapest price from `src` to `dst` with at most `K` stops.
+
+![787](https://assets.leetcode.com/uploads/2022/03/18/cheapest-flights-within-k-stops-3drawio.png)
+
 ```python
 --8<-- "0787_cheapest_flights_within_k_stops.py"
 ```

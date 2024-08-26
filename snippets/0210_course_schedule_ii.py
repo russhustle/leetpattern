@@ -1,0 +1,106 @@
+from collections import defaultdict, deque
+from typing import List
+
+
+# 1. BFS - Kahn's Algorithm
+def findOrderBFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+    adj = defaultdict(list)
+    indegree = [0] * numCourses
+
+    for crs, pre in prerequisites:
+        adj[pre].append(crs)
+        indegree[crs] += 1
+
+    q = deque([i for i in range(numCourses) if indegree[i] == 0])
+    order = []
+
+    while q:
+        crs = q.popleft()
+        order.append(crs)
+
+        for next in adj[crs]:
+            indegree[next] -= 1
+
+            if indegree[next] == 0:
+                q.append(next)
+
+    if len(order) == numCourses:
+        return order
+    else:
+        return []
+
+
+# 2. DFS + Set
+def findOrderDFS1(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
+    adj = defaultdict(list)
+    for crs, pre in prerequisites:
+        adj[crs].append(pre)
+
+    visit, cycle = set(), set()
+    order = []
+
+    def dfs(crs):
+        if crs in cycle:
+            return False
+        if crs in visit:
+            return True
+
+        cycle.add(crs)
+        for pre in adj[crs]:
+            if not dfs(pre):
+                return False
+
+        cycle.remove(crs)
+        visit.add(crs)
+        order.append(crs)
+        return True
+
+    for crs in range(numCourses):
+        if not dfs(crs):
+            return []
+
+    return order
+
+
+# 3. DFS + List
+def findOrderDFS2(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
+    adj = defaultdict(list)
+    for pre, crs in prerequisites:
+        adj[crs].append(pre)
+
+    # 0: not visited, 1: visiting, 2: visited
+    state = [0] * numCourses
+    order = []
+
+    def dfs(crs):
+        if state[crs] == 1:
+            return False
+        if state[crs] == 2:
+            return True
+
+        state[crs] = 1
+
+        for pre in adj[crs]:
+            if not dfs(pre):
+                return False
+
+        state[crs] = 2
+        order.append(crs)
+        return True
+
+    for crs in range(numCourses):
+        if not dfs(crs):
+            return []
+
+    return order[::-1]
+
+
+numCourses = 5
+prerequisites = [[0, 1], [0, 2], [1, 3], [1, 4], [3, 4]]
+print(findOrderBFS(numCourses, prerequisites))  # [2, 4, 3, 1, 0]
+print(findOrderDFS1(numCourses, prerequisites))  # [4, 3, 1, 2, 0]
+print(findOrderDFS2(numCourses, prerequisites))  # [4, 3, 2, 1, 0]

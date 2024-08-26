@@ -1,5 +1,13 @@
 # Dynamic Programming - Unbounded Knapsack Problem
 
+## Unbounded Knapsack Problem
+
+```python
+--8<-- "template/knapsack_unbounded.py"
+```
+
+## LeetCode Problems
+
 1. 0139 - [Word Break](https://leetcode.com/problems/word-break/) (Medium)
 2. 0279 - [Perfect Squares](https://leetcode.com/problems/perfect-squares/) (Medium)
 3. 0322 - [Coin Change](https://leetcode.com/problems/coin-change/) (Medium)

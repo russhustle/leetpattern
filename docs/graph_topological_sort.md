@@ -3,10 +3,10 @@
 Topological Sort
 
 - DAG (Directed Acyclic Graph)
-- Time complexity: O(V+E)
-- Space complexity: O(V+E)
+- Time complexity: $O(V+E)$
+- Space complexity: $O(V+E)$
 
-Table of Contents
+## LeetCode Problems
 
 1. 0207 - [Course Schedule](https://leetcode.com/problems/course-schedule/) (Medium)
 2. 0210 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) (Medium)
@@ -15,7 +15,14 @@ Table of Contents
 
 - Return true if it is possible to finish all courses, otherwise return false.
 
-![dag](./imgs/dag.png)
+```mermaid
+graph LR
+0 --> 2
+0 --> 1
+1 --> 3
+1 --> 4
+3 --> 4
+```
 
 ```python
 --8<-- "0207_course_schedule.py"
@@ -25,7 +32,14 @@ Table of Contents
 
 - Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
-![dag](./imgs/dag.png)
+```mermaid
+graph LR
+0 --> 2
+0 --> 1
+1 --> 3
+1 --> 4
+3 --> 4
+```
 
 ```python
 --8<-- "0210_course_schedule_ii.py"
@@ -39,10 +53,10 @@ Table of Contents
 
 - 拓扑排序（Kahn 算法）：Kahn 算法是一种基于 BFS 的拓扑排序算法：
 
-    - 首先找出所有入度为 0 的节点，将它们加入队列。
-    - 从队列中依次取出节点，放入结果集中，并将该节点指向的节点的入度减 1。
-    - 如果某个节点的入度减为 0，将其加入队列。
-    - 重复上述过程直到队列为空。如果最终结果集中的节点数等于课程数，则返回结果集，否则返回空数组。
+  - 首先找出所有入度为 0 的节点，将它们加入队列。
+  - 从队列中依次取出节点，放入结果集中，并将该节点指向的节点的入度减 1。
+  - 如果某个节点的入度减为 0，将其加入队列。
+  - 重复上述过程直到队列为空。如果最终结果集中的节点数等于课程数，则返回结果集，否则返回空数组。
 
 - 时间复杂度：O(V+E)，其中 V 是课程数量，E 是先修课程的数量。我们需要遍历每个节点和它的边。
 - 空间复杂度：O(V+E)，用来存储图的结构和入度表。

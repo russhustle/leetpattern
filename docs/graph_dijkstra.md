@@ -24,7 +24,16 @@
 
 - Return the minimum time taken to reach all nodes in a network.
 
-![743](https://assets.leetcode.com/uploads/2019/05/23/931_example_1.png)
+```mermaid
+graph LR
+1((1))
+2((2))
+3((3))
+4((4))
+2 --> |1| 1
+2 --> |1| 3
+3 --> |1| 4
+```
 
 ```python
 --8<-- "0743_network_delay_time.py"

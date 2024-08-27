@@ -8,6 +8,8 @@
 
 ## 219. Contains Duplicate II
 
+- Return `True` if there are two distinct indices `i` and `j` in the array such that `nums[i] == nums[j]` and `abs(i - j) <= k`.
+
 ```python
 --8<-- "0219_contains_duplicate_ii.py"
 ```

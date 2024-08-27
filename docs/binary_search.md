@@ -1,9 +1,9 @@
 # Binary Search
 
-## Binary Search
+## Binary Search Template
 
 - Binary search is a search algorithm that finds the position of a target value within a sorted array.
-  - Note: we need to sort the array before applying binary search if it is not sorted.
+    - Note: we need to sort the array before applying binary search if it is not sorted.
 - Time Complexity: $O(\log n)$
 - Space Complexity: $O(1)$
 
@@ -11,6 +11,7 @@ Two ways to implement binary search
 
 1. `[left, right]`
 2. `[left, right)`
+3. Recursive
 
 ```python linenums="1"
 --8<-- "template/binary_search.py"

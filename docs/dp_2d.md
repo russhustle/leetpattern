@@ -34,6 +34,8 @@
 
 - Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
 
+![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
+
 ```python
 --8<-- "0062_unique_paths.py"
 ```
@@ -41,6 +43,8 @@
 ## 63. Unique Paths II
 
 - Count the number of unique paths to reach the bottom-right corner of a `m x n` grid with obstacles.
+
+![36](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
 
 ```python
 --8<-- "0063_unique_paths_ii.py"

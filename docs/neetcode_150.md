@@ -53,6 +53,8 @@
 
 ### 36. Valid Sudoku
 
+![36](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+
 ```python
 --8<-- "0036_valid_sudoku.py"
 ```
@@ -71,11 +73,11 @@
 
 ## Two Pointers
 
-0125 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (Easy)
-0167 - [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) (Easy)
-0015 - [3Sum](https://leetcode.com/problems/3sum/) (Medium)
-0011 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (Medium)
-0042 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) (Hard)
+- 0125 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (Easy)
+- 0167 - [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) (Easy)
+- 0015 - [3Sum](https://leetcode.com/problems/3sum/) (Medium)
+- 0011 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (Medium)
+- 0042 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) (Hard)
 
 ### 125. Valid Palindrome
 

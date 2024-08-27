@@ -47,7 +47,7 @@ nav:
       - Greedy: greedy.md
       - Greedy - Interval: greedy_interval.md
 
-    - ⏳ DP:
+    - ⏳ Dynamic Programming:
       - DP Basic: dp_basic.md
       - DP 2D: dp_2d.md
       - DP Interval: dp_interval.md

@@ -12,7 +12,7 @@ Two ways to implement binary search
 1. `[left, right]`
 2. `[left, right)`
 
-```python linenums="1" 
+```python linenums="1"
 --8<-- "template/binary_search.py"
 ```
 

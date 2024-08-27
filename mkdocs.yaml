@@ -6,7 +6,7 @@ repo_url: https://github.com/russhustle/leetpattern/
 
 nav:
   - 🏠 Home: README.md
-  - Coding: 
+  - Coding:
     - Home: coding/index.md
     - 🧩 Arrays:
       - Array: array.md
@@ -22,7 +22,7 @@ nav:
       - Hash Set: hash_set.md
       - Counting: hash_counting.md
 
-    - 💬 String: 
+    - 💬 String:
       - String: string.md
       - KMP: string_kmp.md
 
@@ -43,11 +43,11 @@ nav:
       - Monotonic Stack: stack_monotonic.md
       - Queue: queue.md
 
-    - 🤑 Greedy: 
+    - 🤑 Greedy:
       - Greedy: greedy.md
       - Greedy - Interval: greedy_interval.md
 
-    - ⏳ DP: 
+    - ⏳ DP:
       - DP Basic: dp_basic.md
       - DP 2D: dp_2d.md
       - DP Interval: dp_interval.md
@@ -79,14 +79,14 @@ nav:
       - Top K: heap_top_k.md
       - Two Heaps: heap_two_heaps.md
       - Merge K Sorted: heap_merge_k_sorted.md
-    
+
     - 🏁 Other:
       - 🍩 Bit: bit.md
       - 👨🏻‍💻 Neetcode 150: neetcode_150.md
-  
+
   - OOD:
     - 🚠 Design: design.md
-    
+
 
 ##############################################
 ##  Material theme configuration for MkDocs ##

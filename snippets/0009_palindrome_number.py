@@ -2,7 +2,7 @@ def isPalindrome(x: int) -> bool:
     if x < 0:
         return False
 
-    x = list(str(x))
+    x = list(str(x))  # 121 -> ['1', '2', '1']
 
     left, right = 0, len(x) - 1
 

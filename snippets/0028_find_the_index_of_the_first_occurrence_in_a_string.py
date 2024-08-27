@@ -1,7 +1,23 @@
 from helper import LPS
 
 
-def strStr(haystack: str, needle: str) -> int:
+# 1. Brute Force
+def strStrBF(haystack: str, needle: str) -> int:
+    # TC: O((m - n) * n)
+    # SC: O(1)
+
+    m, n = len(haystack), len(needle)
+    for i in range(m - n + 1):
+        if haystack[i : i + n] == needle:
+            return i
+    return -1
+
+
+# 2. KMP
+def strStrKMP(haystack: str, needle: str) -> int:
+    # TC: O(m + n)
+    # SC: O(n)
+
     lps = LPS(needle)
     m, n = len(haystack), len(needle)
     j = 0
@@ -18,4 +34,5 @@ def strStr(haystack: str, needle: str) -> int:
 
 haystack = "hello"
 needle = "ll"
-print(strStr(haystack, needle))  # 2
+print(strStrBF(haystack, needle))  # 2
+print(strStrKMP(haystack, needle))  # 2

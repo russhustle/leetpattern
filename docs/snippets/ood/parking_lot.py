@@ -59,15 +59,17 @@ class ParkingLot:
         return False
 
 
-# Usage
-parking_lot = ParkingLot()
-parking_lot.add_parking_spot(ParkingSpot(VehicleSize.MOTORCYCLE))
-parking_lot.add_parking_spot(ParkingSpot(VehicleSize.COMPACT))
-parking_lot.add_parking_spot(ParkingSpot(VehicleSize.LARGE))
-vehicle1 = Vehicle("ABC123", VehicleSize.MOTORCYCLE)
-vehicle2 = Vehicle("XYZ456", VehicleSize.COMPACT)
-vehicle3 = Vehicle("DEF789", VehicleSize.LARGE)
-print(parking_lot.park_vehicle(vehicle1))  # True
-print(parking_lot.park_vehicle(vehicle2))  # True
-print(parking_lot.park_vehicle(vehicle3))  # True
-print(parking_lot.park_vehicle(Vehicle("GHI101", VehicleSize.LARGE)))  # False
+if __name__ == "__main__":
+    parking_lot = ParkingLot()
+    parking_lot.add_parking_spot(ParkingSpot(VehicleSize.MOTORCYCLE))
+    parking_lot.add_parking_spot(ParkingSpot(VehicleSize.COMPACT))
+    parking_lot.add_parking_spot(ParkingSpot(VehicleSize.LARGE))
+    vehicle1 = Vehicle("ABC123", VehicleSize.MOTORCYCLE)
+    vehicle2 = Vehicle("XYZ456", VehicleSize.COMPACT)
+    vehicle3 = Vehicle("DEF789", VehicleSize.LARGE)
+    print(parking_lot.park_vehicle(vehicle1))  # True
+    print(parking_lot.park_vehicle(vehicle2))  # True
+    print(parking_lot.park_vehicle(vehicle3))  # True
+    print(
+        parking_lot.park_vehicle(Vehicle("GHI101", VehicleSize.LARGE))
+    )  # False

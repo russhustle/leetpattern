@@ -26,43 +26,43 @@
 --8<-- "1732_find_the_highest_altitude.py"
 ```
 
-## 0303. Range Sum Query - Immutable
+## 303. Range Sum Query - Immutable
 
 ```python
 --8<-- "0303_range_sum_query_immutable.py"
 ```
 
-## 0304. Range Sum Query 2D - Immutable
+## 304. Range Sum Query 2D - Immutable
 
 ```python
 --8<-- "0304_range_sum_query_2d_immutable.py"
 ```
 
-## 0560. Subarray Sum Equals K
+## 560. Subarray Sum Equals K
 
 ```python
 --8<-- "0560_subarray_sum_equals_k.py"
 ```
 
-## 0238. Product of Array Except Self
+## 238. Product of Array Except Self
 
 ```python
 --8<-- "0238_product_of_array_except_self.py"
 ```
 
-## 0974. Subarray Sums Divisible by K
+## 974. Subarray Sums Divisible by K
 
 ```python
 --8<-- "0974_subarray_sums_divisible_by_k.py"
 ```
 
-## 0209. Minimum Size Subarray Sum
+## 209. Minimum Size Subarray Sum
 
 ```python
 --8<-- "0209_minimum_size_subarray_sum.py"
 ```
 
-## 0523. Continuous Subarray Sum
+## 523. Continuous Subarray Sum
 
 ```python
 --8<-- "0523_continuous_subarray_sum.py"
@@ -74,13 +74,13 @@
 --8<-- "1248_count_number_of_nice_subarrays.py"
 ```
 
-## 0325. Maximum Size Subarray Sum Equals k
+## 325. Maximum Size Subarray Sum Equals k
 
 ```python
 --8<-- "0325_maximum_size_subarray_sum_equals_k.py"
 ```
 
-## 0862. Shortest Subarray with Sum at Least K
+## 862. Shortest Subarray with Sum at Least K
 
 ```python
 --8<-- "0862_shortest_subarray_with_sum_at_least_k.py"

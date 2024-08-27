@@ -7,7 +7,7 @@ repo_url: https://github.com/russhustle/leetpattern/
 nav:
   - 🏠 Home: README.md
   - Coding: 
-    - index: coding/index.md
+    - Home: coding/index.md
     - 🧩 Arrays:
       - Array: array.md
       - Binary Search: binary_search.md

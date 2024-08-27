@@ -15,7 +15,7 @@
 --8<-- "0009_palindrome_number.py"
 ```
 
-## 0015. 3Sum
+## 15. 3Sum
 
 ```python
 --8<-- "0015_3sum.py"

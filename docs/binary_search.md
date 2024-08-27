@@ -1,5 +1,23 @@
 # Binary Search
 
+## Binary Search
+
+- Binary search is a search algorithm that finds the position of a target value within a sorted array.
+  - Note: we need to sort the array before applying binary search if it is not sorted.
+- Time Complexity: $O(\log n)$
+- Space Complexity: $O(1)$
+
+Two ways to implement binary search
+
+1. `[left, right]`
+2. `[left, right)`
+
+```python linenums="1" 
+--8<-- "template/binary_search.py"
+```
+
+## LeetCode Problems
+
 1. 0704 - [Binary Search](https://leetcode.com/problems/binary-search/) (Easy)
 2. 0035 - [Search Insert Position](https://leetcode.com/problems/search-insert-position/) (Easy)
 3. 0278 - [First Bad Version](https://leetcode.com/problems/first-bad-version/) (Easy)

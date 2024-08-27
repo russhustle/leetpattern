@@ -85,6 +85,7 @@ nav:
       - 👨🏻‍💻 Neetcode 150: neetcode_150.md
 
   - OOD:
+    - 🎊 Design Patterns: design_patterns.md
     - 🚠 Design: design.md
 
 
@@ -112,8 +113,9 @@ theme:
         icon: material/toggle-switch
         name: Switch to system preference
   font:
-    text: Open Sans
-    code: Roboto Mono
+    text: Work Sans
+    code: Menlo
+
   features:
     - content.code.copy
     - content.code.select

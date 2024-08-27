@@ -1,5 +1,13 @@
 # Binary Tree - BFS (Level Order Traversal)
 
+Level Order Traversal Template
+
+```python
+--8<-- "template/tree_bfs.py"
+```
+
+## LeetCode Problems
+
 1. 0199 - [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) (Medium)
 2. 0111 - [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) (Easy)
 3. 0104 - [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) (Easy)

@@ -15,25 +15,25 @@ def rightSideView(root: Optional[TreeNode]) -> List[int]:
     if not root:
         return []
 
-    queue = deque([root])
-    result = []
+    q = deque([root])
+    right = []
 
-    while queue:
-        size = len(queue)
+    while q:
+        n = len(q)
 
-        for i in range(size):
-            current = queue.popleft()
+        for i in range(n):
+            cur = q.popleft()
 
             # rightmost element
-            if i == size - 1:
-                result.append(current.val)
+            if i == n - 1:
+                right.append(cur.val)
 
-            if current.left:
-                queue.append(current.left)
-            if current.right:
-                queue.append(current.right)
+            if cur.left:
+                q.append(cur.left)
+            if cur.right:
+                q.append(cur.right)
 
-    return result
+    return right
 
 
 root = [1, 2, 2, 3, 4, None, 3, None, None, 5]

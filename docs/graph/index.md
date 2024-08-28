@@ -2,9 +2,14 @@
 
 ## Concepts
 
+- Graph
+- Vertex (Node)
+- Edge
+- Weight
+
 ### Types
 
-Undirected graph
+Undirected graph: A graph in which edges have no direction.
 
 ```mermaid
 flowchart LR
@@ -19,7 +24,7 @@ flowchart LR
 2 --- 4
 ```
 
-Directed graph
+Directed graph: A graph in which edges have direction.
 
 ```mermaid
 flowchart LR
@@ -35,7 +40,7 @@ flowchart LR
 4 --> 5
 ```
 
-Cyclic graph
+Cyclic graph: A graph in which there is a cycle.
 
 ```mermaid
 flowchart LR
@@ -94,7 +99,7 @@ flowchart LR
 4 -->|5| 5
 ```
 
-Connected Component
+Connected Graph
 
 ```mermaid
 flowchart LR
@@ -111,6 +116,8 @@ flowchart LR
 4 --- 5
 3 --- 5
 ```
+
+Sto
 
 ### Representation
 
@@ -171,7 +178,6 @@ graph = {
 ```
 
 ### Degree
-
 
 1. Degree: Number of edges connected to a node
 2. In-degree: Number of edges coming into a node

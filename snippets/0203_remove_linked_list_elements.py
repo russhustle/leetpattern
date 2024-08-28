@@ -5,13 +5,13 @@ from helper import ListNode
 
 def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
     dummy = ListNode(next=head)
-    current = dummy
+    cur = dummy
 
-    while current.next:
-        if current.next.val == val:
-            current.next = current.next.next
+    while cur.next:
+        if cur.next.val == val:
+            cur.next = cur.next.next
         else:
-            current = current.next
+            cur = cur.next
 
     return dummy.next
 

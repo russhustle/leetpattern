@@ -2,272 +2,287 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.leetpattern.com/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/array/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking_board/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking_combinations/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking_partitions/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking_permutations/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking_subsets/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/binary_search/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/bit/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/design/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/design_patterns/</loc>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp_2d/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp_basic/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp_interval/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp_kadane/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp_knapsack_01/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp_knapsack_unbounded/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp_lcs/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp_lis/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp_stock/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/fast_slow_pointers/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph_bellman_ford/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph_bfs/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph_dfs/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph_dijkstra/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph_flood_fill/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph_mst/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph_topological_sort/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph_union_find/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/greedy/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/greedy_interval/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/hash_counting/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/hash_map/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/hash_set/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/heap_merge_k_sorted/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/heap_top_k/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/heap_two_heaps/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/left_right_pointers/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/linked_list/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode_150/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/prefix_sum/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/queue/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/sliding_window_fixed/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/sliding_window_variable/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/stack/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/stack_monotonic/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/string/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/string_kmp/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree_bfs/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree_bst/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree_common_ancestor/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree_feature/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree_modification/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree_traversal/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree_trie/</loc>
-         <lastmod>2024-08-27</lastmod>
+         <lastmod>2024-08-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/coding/</loc>
+         <lastmod>2024-08-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/graph/</loc>
+         <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

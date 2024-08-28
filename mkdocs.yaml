@@ -26,10 +26,10 @@ nav:
     - String: string.md
     - KMP: string_kmp.md
 
-  - 🔗 Linked List:
-    - LL: linked_list.md
+  - 🔗 Linked List: linked_list.md
 
   - 🌳 Tree:
+    - Tree: tree/index.md
     - Traversal: tree_traversal.md
     - Tree Feature: tree_feature.md
     - Tree BFS: tree_bfs.md
@@ -66,7 +66,7 @@ nav:
     - Board: backtracking_board.md
 
   - 📝 Graph:
-    - Home: graph/index.md
+    - Graph: graph/index.md
     - Flood Fill: graph_flood_fill.md
     - DFS: graph_dfs.md
     - BFS: graph_bfs.md

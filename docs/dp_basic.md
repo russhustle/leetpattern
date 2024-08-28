@@ -23,6 +23,19 @@
 
 ## 509. Fibonacci Number
 
+- Return the `n-th` Fibonacci number.
+
+```mermaid
+graph LR
+A[0] --> B[1]
+B --> C[1]
+C --> D[2]
+D --> E[3]
+E --> F[5]
+F --> G[8]
+G --> H[13]
+```
+
 ```python
 --8<-- "0509_fibonacci_number.py"
 ```

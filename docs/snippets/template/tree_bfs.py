@@ -10,7 +10,6 @@ def treeBFS(root: TreeNode):
     q = deque([root])
 
     while q:
-
         n = len(q)
 
         for i in range(n):

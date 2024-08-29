@@ -5,90 +5,93 @@ site_description: LeetCode Patterns
 repo_url: https://github.com/russhustle/leetpattern/
 
 nav:
-- 🏠 Home: README.md
-- Coding:
-  - Home: coding/index.md
-  - 🧩 Arrays:
-    - Array: array.md
-    - Binary Search: binary_search.md
-    - Fast Slow Pointers: fast_slow_pointers.md
-    - Left Right Pointers: left_right_pointers.md
-    - Sliding Window Fixed: sliding_window_fixed.md
-    - Sliding Window Variable: sliding_window_variable.md
-    - Prefix Sum: prefix_sum.md
+  - 🏠 Home: README.md
+  - Coding:
+      - Home: coding/index.md
+      - 🧩 Arrays:
+          - Array: array.md
+          - Binary Search: binary_search.md
+          - Fast Slow Pointers: fast_slow_pointers.md
+          - Left Right Pointers: left_right_pointers.md
+          - Sliding Window Fixed: sliding_window_fixed.md
+          - Sliding Window Variable: sliding_window_variable.md
+          - Prefix Sum: prefix_sum.md
 
-  - 🔢 Hash:
-    - Hash Map: hash_map.md
-    - Hash Set: hash_set.md
-    - Counting: hash_counting.md
+      - 🔢 Hash:
+          - Hash Map: hash_map.md
+          - Hash Set: hash_set.md
+          - Counting: hash_counting.md
 
-  - 💬 String:
-    - String: string.md
-    - KMP: string_kmp.md
+      - 💬 String:
+          - String: string.md
+          - KMP: string_kmp.md
 
-  - 🔗 Linked List: linked_list.md
+      - 🔗 Linked List: linked_list.md
 
-  - 🌳 Tree:
-    - Tree: tree/index.md
-    - Traversal: tree_traversal.md
-    - Tree Feature: tree_feature.md
-    - Tree BFS: tree_bfs.md
-    - Tree Modification: tree_modification.md
-    - BST: tree_bst.md
-    - Common Ancestors: tree_common_ancestor.md
-    - Trie: tree_trie.md
+      - 🌳 Tree:
+          - Tree: tree/index.md
+          - Traversal: tree_traversal.md
+          - Tree Feature: tree_feature.md
+          - Tree BFS: tree_bfs.md
+          - Tree Modification: tree_modification.md
+          - BST: tree_bst.md
+          - Common Ancestors: tree_common_ancestor.md
+          - Trie: tree_trie.md
 
-  - 📚 Stack & Queue:
-    - Stack: stack.md
-    - Monotonic Stack: stack_monotonic.md
-    - Queue: queue.md
+      - 📚 Stack & Queue:
+          - Stack: stack.md
+          - Monotonic Stack: stack_monotonic.md
+          - Queue: queue.md
 
-  - 🤑 Greedy:
-    - Greedy: greedy.md
-    - Greedy - Interval: greedy_interval.md
+      - 🤑 Greedy:
+          - Greedy: greedy.md
+          - Greedy - Interval: greedy_interval.md
 
-  - ⏳ Dynamic Programming:
-    - DP Basic: dp_basic.md
-    - DP 2D: dp_2d.md
-    - DP Interval: dp_interval.md
-    - Knapsack 0/1: dp_knapsack_01.md
-    - Knapsack Unbounded: dp_knapsack_unbounded.md
-    - Kadane: dp_kadane.md
-    - Stock: dp_stock.md
-    - LCS: dp_lcs.md
-    - LIS: dp_lis.md
+      - ⏳ Dynamic Programming:
+          - DP Basic: dp_basic.md
+          - DP 2D: dp_2d.md
+          - DP Interval: dp_interval.md
+          - Knapsack 0/1: dp_knapsack_01.md
+          - Knapsack Unbounded: dp_knapsack_unbounded.md
+          - Kadane: dp_kadane.md
+          - Stock: dp_stock.md
+          - LCS: dp_lcs.md
+          - LIS: dp_lis.md
 
-  - 🔄 Backtracking:
-    - Combinations: backtracking_combinations.md
-    - Permutations: backtracking_permutations.md
-    - Subsets: backtracking_subsets.md
-    - Partitions: backtracking_partitions.md
-    - Board: backtracking_board.md
+      - 🔄 Backtracking:
+          - Combinations: backtracking_combinations.md
+          - Permutations: backtracking_permutations.md
+          - Subsets: backtracking_subsets.md
+          - Partitions: backtracking_partitions.md
+          - Board: backtracking_board.md
 
-  - 📝 Graph:
-    - Graph: graph/index.md
-    - Flood Fill: graph_flood_fill.md
-    - DFS: graph_dfs.md
-    - BFS: graph_bfs.md
-    - Topological Sort: graph_topological_sort.md
-    - Union Find: graph_union_find.md
-    - Dijkstra: graph_dijkstra.md
-    - Bellman Ford: graph_bellman_ford.md
-    - MST: graph_mst.md
+      - 📝 Graph:
+          - Graph: graph/index.md
+          - Flood Fill: graph_flood_fill.md
+          - DFS: graph_dfs.md
+          - BFS: graph_bfs.md
+          - Topological Sort: graph_topological_sort.md
+          - Union Find: graph_union_find.md
+          - Dijkstra: graph_dijkstra.md
+          - Bellman Ford: graph_bellman_ford.md
+          - MST: graph_mst.md
 
-  - 🏔️ Heap:
-    - Top K: heap_top_k.md
-    - Two Heaps: heap_two_heaps.md
-    - Merge K Sorted: heap_merge_k_sorted.md
+      - 🏔️ Heap:
+          - Top K: heap_top_k.md
+          - Two Heaps: heap_two_heaps.md
+          - Merge K Sorted: heap_merge_k_sorted.md
 
-  - 🏁 Other:
-    - 🍩 Bit: bit.md
-    - 👨🏻‍💻 Neetcode 150: neetcode_150.md
+      - 🏁 Other:
+          - 🍩 Bit: bit.md
+          - 👨🏻‍💻 Neetcode 150: neetcode_150.md
 
-- OOD:
-  - 🎊 Design Patterns: design_patterns.md
-  - 🚠 Design: design.md
+      - 🐍 Python:
+          - Home: python/index.md
+          - collections: python/python_collections.md
 
+  - OOD:
+      - 🎊 Design Patterns: design_patterns.md
+      - 🚠 Design: design.md
 
 ##############################################
 ##  Material theme configuration for MkDocs ##
@@ -149,7 +152,6 @@ markdown_extensions:
       permalink: true # Add permalinks to headers
   - attr_list
   - md_in_html
-
 
 plugins:
   - git-revision-date-localized:

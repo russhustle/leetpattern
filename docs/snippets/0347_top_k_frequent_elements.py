@@ -36,15 +36,17 @@ def topKFrequent2(nums: List[int], k: int) -> List[int]:
     return [i for (_, i) in minHeap]
 
 
-# 3. OrderedDict
+# 3. Counter - Most Common
 def topKFrequent3(nums: List[int], k: int) -> List[int]:
-    return [i for i, _ in Counter(nums).most_common(k)]
+    common = Counter(nums).most_common(k)
+    return [i for i, _ in common]
 
 
 # |-------------|-------------|--------------|
 # |   Approach  |    Time     |    Space     |
 # |-------------|-------------|--------------|
 # |   Heap      |    O(n)     |    O(n)      |
+# |   Counter   |    O(n)     |    O(n)      |
 # |-------------|-------------|--------------|
 
 

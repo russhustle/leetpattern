@@ -1,6 +1,6 @@
-# 1. Filter + Reverse
+# 1. List Comprehension
 def isPalindrome(s: str) -> bool:
-    s = "".join(filter(str.isalnum, s)).lower()
+    s = [char.lower() for char in s if char.isalnum()]
     return s == s[::-1]
 
 
@@ -21,6 +21,14 @@ def isPalindromeLR(s: str) -> bool:
         right -= 1
 
     return True
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |  List       |      O(n)       |    O(n)      |
+# |  Left Right |      O(n)       |    O(1)      |
+# |-------------|-----------------|--------------|
 
 
 s = "A man, a plan, a canal: Panama"

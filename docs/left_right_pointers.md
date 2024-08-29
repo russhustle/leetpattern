@@ -8,6 +8,9 @@
 6. 0977 - [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) (Easy)
 7. 0881 - [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) (Medium)
 8. 0075 - [Sort Colors](https://leetcode.com/problems/sort-colors/) (Medium)
+9. 0125 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (Easy)
+10. 0167 - [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) (Easy)
+11. 0011 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (Medium)
 
 ## 9. Palindrome Number
 

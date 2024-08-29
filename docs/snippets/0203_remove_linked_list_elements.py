@@ -3,6 +3,7 @@ from typing import Optional
 from helper import ListNode
 
 
+# Iterative
 def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
     dummy = ListNode(next=head)
     cur = dummy
@@ -14,6 +15,13 @@ def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
             cur = cur.next
 
     return dummy.next
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |  Iterative  |      O(N)       |    O(1)      |
+# |-------------|-----------------|--------------|
 
 
 nums = [1, 2, 6, 3, 4, 5, 6]

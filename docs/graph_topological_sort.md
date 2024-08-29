@@ -1,10 +1,14 @@
 # Graph - Topological Sort
 
-Topological Sort
+## Topological Sort
 
 - DAG (Directed Acyclic Graph)
 - Time complexity: $O(V+E)$
 - Space complexity: $O(V+E)$
+
+```python
+--8<-- "template/graph_topological_sort.py"
+```
 
 ## LeetCode Problems
 
@@ -17,10 +21,10 @@ Topological Sort
 
 ```mermaid
 graph LR
-0 --> 2
-0 --> 1
-1 --> 3
-1 --> 4
+0((0)) --> 2((2))
+0 --> 1((1))
+1 --> 3((3))
+1 --> 4((4))
 3 --> 4
 ```
 
@@ -34,10 +38,10 @@ graph LR
 
 ```mermaid
 graph LR
-0 --> 2
-0 --> 1
-1 --> 3
-1 --> 4
+0((0)) --> 2((2))
+0 --> 1((1))
+1 --> 3((3))
+1 --> 4((4))
 3 --> 4
 ```
 

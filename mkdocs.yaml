@@ -85,12 +85,12 @@ nav:
           - 🍩 Bit: bit.md
           - 👨🏻‍💻 Neetcode 150: neetcode_150.md
 
-      - 🐍 Python:
-          - Home: python/index.md
-          - collections: python/python_collections.md
+      # - 🐍 Python:
+      #     - Home: python/index.md
+      #     - collections: python/python_collections.md
 
   - OOD:
-      - 🎊 Design Patterns: design_patterns.md
+      # - 🎊 Design Patterns: design_patterns.md
       - 🚠 Design: design.md
 
 ##############################################

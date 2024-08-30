@@ -1,7 +1,9 @@
 from typing import List
 
 
+# Left Right Pointers
 def sortedSquares(nums: List[int]) -> List[int]:
+    """Returns the squares of the sorted array."""
     result = [0 for _ in range(len(nums))]
 
     left, right, index = 0, len(nums) - 1, len(nums) - 1

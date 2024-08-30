@@ -1,4 +1,6 @@
+# Left Right Pointers
 def mySqrt(x: int) -> int:
+    """Returns the square root of a number."""
     if x < 2:
         return x
 
@@ -15,4 +17,4 @@ def mySqrt(x: int) -> int:
 
 
 x = 8
-print(mySqrt(x))
+print(mySqrt(x))  # 2

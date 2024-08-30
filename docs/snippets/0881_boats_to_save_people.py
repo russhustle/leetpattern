@@ -1,7 +1,9 @@
 from typing import List
 
 
+# Left Right Pointers
 def numRescueBoats(people: List[int], limit: int) -> int:
+    """Returns the minimum number of boats to rescue people."""
     people.sort()
     left, right = 0, len(people) - 1
     boats = 0
@@ -17,4 +19,4 @@ def numRescueBoats(people: List[int], limit: int) -> int:
 
 people = [3, 2, 2, 1]
 limit = 3
-print(numRescueBoats(people, limit))
+print(numRescueBoats(people, limit))  # 3

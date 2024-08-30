@@ -1,14 +1,14 @@
 from typing import List
 
 
-# 1. Set
+# Set
 def intersectionSet(nums1: List[int], nums2: List[int]) -> List[int]:
     set1 = set(nums1)
     set2 = set(nums2)
     return list(set1 & set2)
 
 
-# 2. Hash
+# Hash
 def intersectionHash(nums1: List[int], nums2: List[int]) -> List[int]:
     set1 = set(nums1)
     result = set()
@@ -18,6 +18,14 @@ def intersectionHash(nums1: List[int], nums2: List[int]) -> List[int]:
             result.add(num)
 
     return list(result)
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# |     Set    | O(n+m) |  O(n+m) |
+# |    Hash    | O(n+m) |   O(n)  |
+# |------------|--------|---------|
 
 
 nums1 = [1, 2, 2, 1]

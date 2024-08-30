@@ -7,37 +7,37 @@
 5. 0763 - [Partition Labels](https://leetcode.com/problems/partition-labels/) (Medium)
 6. 0056 - [Merge Intervals](https://leetcode.com/problems/merge-intervals/) (Medium)
 
-## 0055. Jump Game
+## 55. Jump Game
 
 ```python
 --8<-- "0055_jump_game.py"
 ```
 
-## 0045. Jump Game II
+## 45. Jump Game II
 
 ```python
 --8<-- "0045_jump_game_ii.py"
 ```
 
-## 0452. Minimum Number of Arrows to Burst Balloons
+## 452. Minimum Number of Arrows to Burst Balloons
 
 ```python
 --8<-- "0452_minimum_number_of_arrows_to_burst_balloons.py"
 ```
 
-## 0435. Non-overlapping Intervals
+## 435. Non-overlapping Intervals
 
 ```python
 --8<-- "0435_non_overlapping_intervals.py"
 ```
 
-## 0763. Partition Labels
+## 763. Partition Labels
 
 ```python
 --8<-- "0763_partition_labels.py"
 ```
 
-## 0056. Merge Intervals
+## 56. Merge Intervals
 
 ```python
 --8<-- "0056_merge_intervals.py"

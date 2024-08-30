@@ -1,17 +1,10 @@
 from typing import Optional
 
 from binarytree import build
-
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from helper import TreeNode
 
 
 def isValidBST(root: Optional[TreeNode]) -> bool:
-
     inorder = []  # inorder traversal of BST
 
     def dfs(node):
@@ -39,3 +32,4 @@ print(root)
 #      / \
 #     3   6
 print(isValidBST(root))  # False
+# [1, 5, 3, 4, 6]

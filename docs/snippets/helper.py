@@ -42,6 +42,13 @@ class ListNode:
         return " -> ".join(result)
 
 
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
 def LPS(pattern: str) -> List[int]:
     """Returns the Longest Prefix Suffix array for the given pattern.
 

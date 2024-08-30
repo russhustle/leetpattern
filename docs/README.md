@@ -64,7 +64,7 @@
 - [LCS Pattern](dp_lcs.md)
 - [LIS Pattern](dp_lis.md)
 
-## 🔄Backtracking
+## 🔄 Backtracking
 
 - [Combinations Pattern](backtracking_combinations.md)
 - [Permutations Pattern](backtracking_permutations.md)

@@ -37,12 +37,28 @@ def maxProfitGreedy(prices: List[int]) -> int:
     return max_profit
 
 
+# 4. Fast Slow Pointers
+def maxProfitFS(prices: List[int]) -> int:
+    max_profit = 0
+    slow, fast = 0, 1
+
+    while fast < len(prices):
+        if prices[fast] > prices[slow]:
+            max_profit = max(max_profit, prices[fast] - prices[slow])
+        else:
+            slow = fast
+        fast += 1
+
+    return max_profit
+
+
 # |------------|------- |---------|
 # |  Approach  |  Time  |  Space  |
 # |------------|--------|---------|
-# | Brute Force|  O(N^2)|  O(1)   |
-# | DP         |  O(N)  |  O(N)   |
-# | Greedy     |  O(N)  |  O(1)   |
+# | Brute Force|  O(n^2)|  O(1)   |
+# | DP         |  O(n)  |  O(n)   |
+# | Greedy     |  O(n)  |  O(1)   |
+# | Fast Slow  |  O(n)  |  O(1)   |
 # |------------|--------|---------|
 
 
@@ -50,3 +66,4 @@ prices = [7, 1, 5, 3, 6, 4]
 print(maxProfitBF(prices))  # 5
 print(maxProfitDP(prices))  # 5
 print(maxProfitGreedy(prices))  # 5
+print(maxProfitFS(prices))  # 5

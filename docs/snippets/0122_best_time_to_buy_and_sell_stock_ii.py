@@ -1,10 +1,8 @@
 from typing import List
 
 
-# 1. DP
+# DP
 def maxProfitDP1(prices: List[int]) -> int:
-    # TC: O(n)
-    # SC: O(n)
     n = len(prices)
     if n <= 1:
         return 0
@@ -20,10 +18,8 @@ def maxProfitDP1(prices: List[int]) -> int:
     return dp[-1][1]
 
 
-# 2. DP - Optimized
+# DP - Optimized
 def maxProfitDP2(prices: List[int]) -> int:
-    # TC: O(n)
-    # SC: O(1)
     n = len(prices)
     if n <= 1:
         return 0
@@ -38,16 +34,23 @@ def maxProfitDP2(prices: List[int]) -> int:
     return profit
 
 
-# 3. Greedy
+# Greedy
 def maxProfitGreedy(prices: List[int]) -> int:
-    # TC: O(n)
-    # SC: O(1)
     profit = 0
 
     for i in range(1, len(prices)):
         profit += max(prices[i] - prices[i - 1], 0)
 
     return profit
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# |     DP1    |  O(n)  |   O(n)  |
+# |     DP2    |  O(n)  |   O(1)  |
+# |   Greedy   |  O(n)  |   O(1)  |
+# |------------|--------|---------|
 
 
 prices = [7, 1, 5, 3, 6, 4]

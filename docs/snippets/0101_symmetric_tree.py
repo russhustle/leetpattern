@@ -11,8 +11,9 @@ class TreeNode:
         self.right = right
 
 
-# 1. Recursive
+# Recursive
 def isSymmetricRecursive(root: Optional[TreeNode]) -> bool:
+    """Determine if a tree is symmetric."""
     if not root:
         return True
 
@@ -34,8 +35,9 @@ def isSymmetricRecursive(root: Optional[TreeNode]) -> bool:
     return compare(root.left, root.right)
 
 
-# 2. Iterative
+# Iterative
 def isSymmetricIterative(root: Optional[TreeNode]) -> bool:
+    """Determine if a tree is symmetric."""
     if not root:
         return True
 
@@ -59,6 +61,14 @@ def isSymmetricIterative(root: Optional[TreeNode]) -> bool:
         q.append(rightNode.left)
 
     return True
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# | Recursive  |  O(n)  |   O(n)  |
+# | Iterative  |  O(n)  |   O(n)  |
+# |------------|--------|---------|
 
 
 root = [1, 2, 2, 3, 4, 4, 3]

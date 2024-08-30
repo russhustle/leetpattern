@@ -87,6 +87,8 @@
 
 ### 128. Longest Consecutive Sequence
 
+- Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.
+
 ```python
 --8<-- "0128_longest_consecutive_sequence.py"
 ```
@@ -101,11 +103,15 @@
 
 ### 125. Valid Palindrome
 
+- Given a string `s`, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
 ```python
 --8<-- "0125_valid_palindrome.py"
 ```
 
 ### 167. Two Sum II - Input array is sorted
+
+- Return the indices of the two numbers such that they add up to a specific target.
 
 ```python
 --8<-- "0167_two_sum_ii_input_array_is_sorted.py"
@@ -113,17 +119,25 @@
 
 ### 15. 3Sum
 
+- Return all the unique triplets that sum up to a specific target.
+
 ```python
 --8<-- "0015_3sum.py"
 ```
 
 ### 11. Container With Most Water
 
+- Return the maximum area of water that can be trapped between the vertical lines.
+
 ```python
 --8<-- "0011_container_with_most_water.py"
 ```
 
 ### 42. Trapping Rain Water
+
+- Return the total amount of water that can be trapped.
+
+![42](https://assets.leetcode.com/uploads/2018/10/22/rainwatertrap.png)
 
 ```python
 --8<-- "0042_trapping_rain_water.py"
@@ -140,11 +154,15 @@
 
 ### 121. Best Time to Buy and Sell Stock
 
+- Return the maximum profit you can achieve from buying on one day and selling on another day.
+
 ```python
 --8<-- "0121_best_time_to_buy_and_sell_stock.py"
 ```
 
 ### 3. Longest Substring Without Repeating Characters
+
+- Return the length of the longest substring without repeating characters.
 
 ```python
 --8<-- "0003_longest_substring_without_repeating_characters.py"
@@ -152,17 +170,23 @@
 
 ### 424. Longest Repeating Character Replacement
 
+- Return the length of the longest substring that contains at most `k` distinct characters.
+
 ```python
 --8<-- "0424_longest_repeating_character_replacement.py"
 ```
 
 ### 76. Minimum Window Substring
 
+- Return the minimum window in `s` that contains all the characters in `t`.
+
 ```python
 --8<-- "0076_minimum_window_substring.py"
 ```
 
 ### 567. Permutation in String
+
+- Return `True` if `s2` contains the permutation of `s1`, otherwise return `False`.
 
 ```python
 --8<-- "0567_permutation_in_string.py"

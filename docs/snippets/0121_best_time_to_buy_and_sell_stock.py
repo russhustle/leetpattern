@@ -1,23 +1,19 @@
 from typing import List
 
 
-# 1. Brute Force: O(n^2)
+# 1. Brute Force
 def maxProfitBF(prices: List[int]) -> int:
-    # TC: O(n^2)
-    # SC: O(1)
-    maxProfit = 0
+    max_profit = 0
     n = len(prices)
     for i in range(n):
         for j in range(i + 1, n):
-            maxProfit = max(maxProfit, prices[j] - prices[i])
+            max_profit = max(max_profit, prices[j] - prices[i])
 
-    return maxProfit
+    return max_profit
 
 
 # 2. DP
 def maxProfitDP(prices: List[int]) -> int:
-    # TC: O(n)
-    # SC: O(n)
     dp = [[0] * 2 for _ in range(len(prices))]
     dp[0][0] = -prices[0]  # buy
     dp[0][1] = 0  # sell
@@ -31,16 +27,23 @@ def maxProfitDP(prices: List[int]) -> int:
 
 # 3. Greedy
 def maxProfitGreedy(prices: List[int]) -> int:
-    # TC: O(n)
-    # SC: O(1)
-    maxProfit = 0
-    seenMin = prices[0]
+    max_profit = 0
+    seen_min = prices[0]
 
     for i in range(1, len(prices)):
-        maxProfit = max(maxProfit, prices[i] - seenMin)
-        seenMin = min(seenMin, prices[i])
+        max_profit = max(max_profit, prices[i] - seen_min)
+        seen_min = min(seen_min, prices[i])
 
-    return maxProfit
+    return max_profit
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# | Brute Force|  O(N^2)|  O(1)   |
+# | DP         |  O(N)  |  O(N)   |
+# | Greedy     |  O(N)  |  O(1)   |
+# |------------|--------|---------|
 
 
 prices = [7, 1, 5, 3, 6, 4]

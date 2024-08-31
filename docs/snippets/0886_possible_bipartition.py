@@ -65,8 +65,8 @@ def possibleBipartitionDFS(n: int, dislikes: List[List[int]]) -> bool:
 # |------------|------- |---------|
 # |  Approach  |  Time  |  Space  |
 # |------------|--------|---------|
-# |    BFS     | O(N+E) |  O(N+E) |
-# |    DFS     | O(N+E) |  O(N+E) |
+# |    BFS     | O(V+E) |  O(V+E) |
+# |    DFS     | O(V+E) |  O(V+E) |
 # |------------|--------|---------|
 
 

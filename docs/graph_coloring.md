@@ -12,6 +12,13 @@ A3((A3)) --- B2
 A3 --- B3
 ```
 
+How to group
+
+|          | Uncolored | Color 1 | Color 2 | Operation   |
+| -------- | --------- | ------- | ------- | ----------- |
+| Method 1 | -1        | 0       | 1       | `1 - color` |
+| Method 2 | 0         | 1       | -1      | `-color`    |
+
 ## LeetCode Problems
 
 1. 0785 - [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) (Medium)

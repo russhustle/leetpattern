@@ -1,0 +1,30 @@
+# Graph - Coloring
+
+## Bipartite Graph
+
+```mermaid
+graph TD
+A1((A1)) --- B1((B1))
+A1 --- B2((B2))
+A2((A2)) --- B1
+A2 --- B3((B3))
+A3((A3)) --- B2
+A3 --- B3
+```
+
+## LeetCode Problems
+
+1. 0785 - [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) (Medium)
+2. 886 - [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) (Medium)
+
+## 785. Is Graph Bipartite?
+
+```python
+--8<-- "0785_is_graph_bipartite.py"
+```
+
+## 886. Possible Bipartition
+
+```python
+--8<-- "0886_possible_bipartition.py"
+```

@@ -75,6 +75,7 @@ nav:
           - Dijkstra: graph_dijkstra.md
           - Bellman Ford: graph_bellman_ford.md
           - MST: graph_mst.md
+          - Coloring: graph_coloring.md
 
       - 🏔️ Heap:
           - Top K: heap_top_k.md

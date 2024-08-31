@@ -118,8 +118,8 @@ theme:
         icon: material/toggle-switch
         name: Switch to system preference
   font:
-    text: Work Sans
-    code: Menlo
+    text: Noto Sans
+    code: Roboto Mono
 
   features:
     - content.code.copy

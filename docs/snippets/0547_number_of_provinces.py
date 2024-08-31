@@ -3,13 +3,15 @@ from typing import List
 
 def findCircleNum(isConnected: List[List[int]]) -> int:
     n = len(isConnected)
-    par = list(range(n))
+    parent = list(range(n))
     rank = [1] * n
 
-    def find(p):
-        if par[p] != p:
-            par[p] = find(par[p])
-        return par[p]
+    def find(n):
+        p = parent[n]
+        while p != parent[p]:
+            parent[p] = parent[parent[p]]
+            p = parent[p]
+        return p
 
     def union(n1, n2):
         p1 = find(n1)
@@ -17,11 +19,11 @@ def findCircleNum(isConnected: List[List[int]]) -> int:
 
         if p1 != p2:
             if rank[p1] > rank[p2]:
-                par[p2] = p1
+                parent[p2] = p1
             elif rank[p1] < rank[p2]:
-                par[p1] = p2
+                parent[p1] = p2
             else:
-                par[p2] = p1
+                parent[p2] = p1
                 rank[p1] += 1
 
     for i in range(n):

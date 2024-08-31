@@ -3,7 +3,27 @@
 - [Neetcode - YouTube](https://www.youtube.com/c/Neetcode)
 - [Website](https://neetcode.io)
 
-## Arrays & Hashing
+## Table of Contents
+
+- [Arrays and Hashing](#arrays-and-hashing)
+- [Two Pointers](#two-pointers)
+- [Sliding Window](#sliding-window)
+- [Stack](#stack)
+- [Binary Search](#binary-search)
+- [Linked List](#linked-list)
+- [Trees](#trees)
+- [Tries](#tries)
+- [Heap (Priority Queue)](#heap-priority-queue)
+- [Backtracking](#backtracking)
+- [Graphs](#graphs)
+- [Advanced Graphs](#advanced-graphs)
+- [1-D Dynamic Programming](#1-d-dynamic-programming)
+- [2-D Dynamic Programming](#2-d-dynamic-programming)
+- [Greedy](#greedy)
+- [Intervals](#intervals)
+- [Math & Geometry](#math--geometry)
+
+## Arrays and Hashing
 
 1. 0217 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (Easy)
 2. 0242 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/) (Easy)
@@ -459,7 +479,7 @@
 --8<-- "0212_word_search_ii.py"
 ```
 
-## Heap / Priority Queue
+## Heap (Priority Queue)
 
 1. 0703 - [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) (Easy)
 2. 1046 - [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) (Easy)
@@ -651,7 +671,18 @@
 
 - Return the cheapest price from `src` to `dst` with at most `K` stops.
 
-![787](https://assets.leetcode.com/uploads/2022/03/18/cheapest-flights-within-k-stops-3drawio.png)
+```mermaid
+graph TD
+0((0))
+1((1))
+2((2))
+3((3))
+0 --> |100| 1
+1 --> |600| 3
+1 --> |100| 2
+2 --> |100| 0
+2 --> |200| 3
+```
 
 ```python
 --8<-- "0787_cheapest_flights_within_k_stops.py"

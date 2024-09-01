@@ -84,7 +84,27 @@ nav:
 
       - 🏁 Other:
           - 🍩 Bit: bit.md
-          - 👨🏻‍💻 Neetcode 150: neetcode_150.md
+
+      - 👨🏻‍💻 Neetcode 150:
+          - Home: neetcode150/index.md
+          - Arrays & Hashing: neetcode150/arrays_hashing.md
+          - Two Pointers: neetcode150/two_pointers.md
+          - Sliding Window: neetcode150/sliding_window.md
+          - Stack: neetcode150/stack.md
+          - Binary Search: neetcode150/binary_search.md
+          - Linked List: neetcode150/linked_list.md
+          - Trees: neetcode150/trees.md
+          - Heap: neetcode150/heap.md
+          - Backtracking: neetcode150/backtracking.md
+          - Tries: neetcode150/tries.md
+          - Graphs: neetcode150/graphs.md
+          - Advanced Graphs: neetcode150/advanced_graphs.md
+          - 1D Dynamic Programming: neetcode150/1d_dynamic_programming.md
+          - 2D Dynamic Programming: neetcode150/2d_dynamic_programming.md
+          - Greedy: neetcode150/greedy.md
+          - Intervals: neetcode150/intervals.md
+          - Math & Geometry: neetcode150/math_geometry.md
+          - Bit Manipulation: neetcode150/bit_manipulation.md
 
       # - 🐍 Python:
       #     - Home: python/index.md
@@ -118,7 +138,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to system preference
   font:
-    text: Noto Sans
+    text: Work Sans
     code: Roboto Mono
 
   features:

@@ -1,7 +1,7 @@
 # Graph - Dijkstra's Algorithm
 
 - Shortest path algorithm
-- Weighted graph
+- Weighted graph (non-negative weights)
 - Data Structure: Heap; HashSet
 - Time Complexity: $O(E \log V)$
 - Space Complexity: $O(V)$

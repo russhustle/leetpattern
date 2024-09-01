@@ -41,6 +41,20 @@ class ListNode:
 
         return " -> ".join(result)
 
+    def intersect(self, other: "ListNode", val: int) -> None:
+        cur = self
+        while cur and cur.val != val:
+            cur = cur.next
+
+        if not cur:
+            raise ValueError(f"Value {val} not found in the list.")
+
+        cur_other = other
+        while cur_other.next:
+            cur_other = cur_other.next
+
+        cur_other.next = cur
+
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):

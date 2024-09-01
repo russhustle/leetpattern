@@ -34,12 +34,6 @@ repos:
     hooks:
     -   id: isort
 
-# interogate for docstring linting
--   repo: https://github.com/econchick/interrogate
-    rev: 1.7.0
-    hooks:
-      - id: interrogate
-
 # shellcheck-py for linting shell files
 -   repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.10.0.1

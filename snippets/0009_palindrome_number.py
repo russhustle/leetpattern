@@ -1,4 +1,6 @@
+# Left Right Pointers
 def isPalindrome(x: int) -> bool:
+    """Determines if a number is a palindrome."""
     if x < 0:
         return False
 
@@ -13,6 +15,13 @@ def isPalindrome(x: int) -> bool:
         right -= 1
 
     return True
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# | Left Right |  O(N)  |   O(1)  |
+# |------------|--------|---------|
 
 
 x = 121

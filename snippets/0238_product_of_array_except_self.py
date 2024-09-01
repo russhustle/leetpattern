@@ -1,11 +1,8 @@
 from typing import List
 
 
+# 1. Prefix
 def productExceptSelf(nums: List[int]) -> List[int]:
-    """
-    Time complexity: O(n)
-    Space complexity: O(n)
-    """
     n = len(nums)
     prefix = [1 for _ in range(n)]
     suffix = [1 for _ in range(n)]
@@ -21,12 +18,8 @@ def productExceptSelf(nums: List[int]) -> List[int]:
     return result
 
 
-# Space optimized
+# 2. Prefix - Optimized
 def productExceptSelfOptimized(nums: List[int]) -> List[int]:
-    """
-    Time complexity: O(n)
-    Space complexity: O(1)
-    """
     n = len(nums)
     result = [1] * n
 
@@ -41,6 +34,14 @@ def productExceptSelfOptimized(nums: List[int]) -> List[int]:
         suffix *= nums[i]
 
     return result
+
+
+# |-------------|-------------|--------------|
+# |   Approach  |    Time     |    Space     |
+# |-------------|-------------|--------------|
+# |    Prefix   |    O(n)     |    O(n)      |
+# |Prefix - Opt |    O(n)     |    O(1)      |
+# |-------------|-------------|--------------|
 
 
 print(productExceptSelf([1, 2, 3, 4]))  # [24, 12, 8, 6]

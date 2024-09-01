@@ -1,5 +1,5 @@
+import heapq
 from collections import defaultdict
-from heapq import heappop, heappush
 from typing import List
 
 
@@ -9,24 +9,22 @@ def networkDelayTime1(times: List[List[int]], n: int, k: int) -> int:
     for u, v, w in times:
         graph[u].append((v, w))
 
-    minHeap = [(0, k)]  # (weight, node)
-    visited = set()
-    delay = 0
+    heap = [(0, k)]
+    visit = set()
+    t = 0
 
-    while minHeap:
-        cur, u = heappop(minHeap)
-
-        if u in visited:
+    while heap:
+        w1, n1 = heapq.heappop(heap)
+        if n1 in visit:
             continue
-        visited.add(u)
 
-        delay = max(delay, cur)
+        visit.add(n1)
+        t = w1
 
-        for v, w in graph[u]:
-            if v not in visited:
-                heappush(minHeap, (cur + w, v))
+        for n2, w2 in graph[n1]:
+            heapq.heappush(heap, (w1 + w2, n2))
 
-    return delay if len(visited) == n else -1
+    return t if len(visit) == n else -1
 
 
 # 2. Dijkstra - Dict
@@ -35,21 +33,18 @@ def networkDelayTime2(times: List[List[int]], n: int, k: int) -> int:
     for u, v, w in times:
         graph[u].append((v, w))
 
-    minHeap = [(0, k)]  # (weight, node)
+    heap = [(0, k)]
     dist = defaultdict(int)
-    dist[k] = 0
 
-    while minHeap:
-        cur, u = heappop(minHeap)
-
-        if cur > dist[u]:
+    while heap:
+        w1, n1 = heapq.heappop(heap)
+        if n1 in dist:
             continue
 
-        for v, w in graph[u]:
-            path = cur + w
-            if v not in dist or path < dist[v]:
-                dist[v] = path
-                heappush(minHeap, (path, v))
+        dist[n1] = w1
+
+        for n2, w2 in graph[n1]:
+            heapq.heappush(heap, (w1 + w2, n2))
 
     return max(dist.values()) if len(dist) == n else -1
 
@@ -71,6 +66,14 @@ def networkDelayTimeBF(times: List[List[int]], n: int, k: int) -> int:
         return -1
 
     return max(dist)
+
+
+# |------------|---------|---------|
+# |  Approach  |  Time   |  Space  |
+# |------------|---------|---------|
+# |Dijkstra    |O(E*logV)|  O(V+E) |
+# |Bellman-Ford|O(E*V)   |  O(V)   |
+# |------------|---------|---------|
 
 
 times = [[2, 1, 1], [2, 3, 1], [3, 4, 1]]

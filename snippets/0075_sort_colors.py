@@ -1,8 +1,9 @@
 from typing import List
 
 
+# Left Right Pointers
 def sortColors(nums: List[int]) -> None:
-    """
+    """Sorts an array of 0, 1, and 2 in-place.
     Do not return anything, modify nums in-place instead.
     """
     left, right = 0, len(nums) - 1

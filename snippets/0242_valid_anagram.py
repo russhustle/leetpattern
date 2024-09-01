@@ -52,6 +52,15 @@ def isAnagramCounter(s: str, t: str) -> bool:
     return Counter(s) == Counter(t)
 
 
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |   Hashmap   |       O(n)      |     O(1)     |
+# |    Array    |       O(n)      |     O(1)     |
+# |   Counter   |       O(n)      |     O(1)     |
+# |-------------|-----------------|--------------|
+
+
 s = "anagram"
 t = "nagaram"
 print(isAnagramHash(s, t))  # True

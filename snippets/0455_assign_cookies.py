@@ -15,6 +15,13 @@ def findContentChildren(g: List[int], s: List[int]) -> int:
     return i
 
 
+# |-------------|-------------|--------------|
+# |   Approach  |    Time     |    Space     |
+# |-------------|-------------|--------------|
+# |   Greedy    | O(N * logN) |    O(1)      |
+# |-------------|-------------|--------------|
+
+
 g = [1, 2, 3]
 s = [1, 1]
 print(findContentChildren(g, s))  # 1

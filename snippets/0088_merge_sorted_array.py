@@ -1,7 +1,9 @@
 from typing import List
 
 
+# Left Right Pointers
 def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+    """Merges two sorted arrays in-place."""
     p1, p2 = m - 1, n - 1
     tail = m + n - 1
 

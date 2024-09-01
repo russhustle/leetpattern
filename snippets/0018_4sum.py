@@ -1,7 +1,9 @@
 from typing import List
 
 
+# Left Right Pointers
 def fourSum(nums: List[int], target: int) -> List[List[int]]:
+    """Returns all unique quadruplets that sum up to the target."""
     nums.sort()
     result = []
 
@@ -38,3 +40,4 @@ def fourSum(nums: List[int], target: int) -> List[List[int]]:
 nums = [1, 0, -1, 0, -2, 2]
 target = 0
 print(fourSum(nums, target))
+# [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]

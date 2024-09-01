@@ -1,4 +1,4 @@
-# DP
+# 1. DP
 def fibDP(n: int) -> int:
     # TC: O(n)
     # SC: O(n)
@@ -13,7 +13,7 @@ def fibDP(n: int) -> int:
     return dp[n]
 
 
-# Recursive
+# 2. Recursive
 def fibRecursive(n: int) -> int:
     # TC: O(2^n)
     # SC: O(n)

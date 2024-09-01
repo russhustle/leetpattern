@@ -87,4 +87,3 @@
 
 - [🏷 Design](design.md)
 - [🍩 Bit](bit.md)
-- [👨🏻‍💻 Neetcode 150](neetcode_150.md)

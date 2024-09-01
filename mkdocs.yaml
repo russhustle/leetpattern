@@ -104,7 +104,7 @@ nav:
           - Greedy: neetcode150/greedy.md
           - Intervals: neetcode150/intervals.md
           - Math & Geometry: neetcode150/math_geometry.md
-          - Bit Manipulation: neetcode150/bit_manipulation.md
+          - Bit Manipulation: neetcode150/bit.md
 
       # - 🐍 Python:
       #     - Home: python/index.md
@@ -175,9 +175,9 @@ markdown_extensions:
   - md_in_html
 
 plugins:
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: timeago
   - search
 
 extra:

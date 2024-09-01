@@ -117,7 +117,17 @@ flowchart LR
 3 --- 5
 ```
 
-Sto
+Eulerian path
+
+```mermaid
+graph TD
+A((A)) --> B((B))
+B --> C((C))
+C --> D((D))
+D --> A
+A --> E((E))
+E --> D
+```
 
 ### Representation
 

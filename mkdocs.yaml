@@ -205,3 +205,4 @@ extra_javascript:
 extra_css:
   - css/no-footer.css
   - css/unordered-list-symbols.css
+  - css/ordered-list-symbols.css

@@ -2,7 +2,7 @@ from collections import defaultdict
 from typing import List
 
 
-# Hierholzer's Algorithm
+# Hierholzer
 def findItinerary1(tickets: List[List[str]]) -> List[str]:
     graph = defaultdict(list)
     for u, v in sorted(tickets, reverse=True):
@@ -12,7 +12,8 @@ def findItinerary1(tickets: List[List[str]]) -> List[str]:
 
     def dfs(node):
         while graph[node]:
-            dfs(graph[node].pop())
+            dest = graph[node].pop()
+            dfs(dest)
         route.append(node)
 
     dfs("JFK")
@@ -20,17 +21,17 @@ def findItinerary1(tickets: List[List[str]]) -> List[str]:
     return route[::-1]
 
 
-# DFS + Backtracking
+# Backtracking
 def findItinerary2(tickets: List[List[str]]) -> List[str]:
     graph = defaultdict(list)
     tickets.sort()
     for u, v in tickets:
         graph[u].append(v)
 
-    res = ["JFK"]
+    route = ["JFK"]
 
-    def dfs(node):
-        if len(res) == len(tickets) + 1:
+    def backtraking(node):
+        if len(route) == len(tickets) + 1:
             return True
         if node not in graph:
             return False
@@ -38,20 +39,29 @@ def findItinerary2(tickets: List[List[str]]) -> List[str]:
         temp = list(graph[node])
         for i, v in enumerate(temp):
             graph[node].pop(i)
-            res.append(v)
-            if dfs(v):
+            route.append(v)
+
+            if backtraking(v):
                 return True
+
             graph[node].insert(i, v)
-            res.pop()
+            route.pop()
+
         return False
 
-    dfs("JFK")
+    backtraking("JFK")
 
-    return res
+    return route
 
 
-tickets = [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
+tickets = tickets = [
+    ["JFK", "SFO"],
+    ["JFK", "ATL"],
+    ["SFO", "ATL"],
+    ["ATL", "JFK"],
+    ["ATL", "SFO"],
+]
 print(findItinerary1(tickets))
-# ["JFK", "MUC", "LHR", "SFO", "SJC"]
+# ['JFK', 'ATL', 'JFK', 'SFO', 'ATL', 'SFO']
 print(findItinerary2(tickets))
-# ["JFK", "MUC", "LHR", "SFO", "SJC"]
+# ['JFK', 'ATL', 'JFK', 'SFO', 'ATL', 'SFO']

@@ -3,7 +3,8 @@ from collections import defaultdict
 from typing import List
 
 
-def minCostToSupplyWater(
+# Prim
+def minCostToSupplyWater1(
     n: int, wells: List[int], pipes: List[List[int]]
 ) -> int:
     graph = defaultdict(list)
@@ -37,7 +38,58 @@ def minCostToSupplyWater(
     return cost
 
 
+# Kruskal
+def minCostToSupplyWater2(
+    n: int, wells: List[int], pipes: List[List[int]]
+) -> int:
+    par = list(range(n + 1))
+    rank = [0] * (n + 1)
+
+    def find(n):
+        p = par[n]
+        while p != par[p]:
+            par[p] = par[par[p]]
+            p = par[p]
+        return p
+
+    def union(n1, n2):
+        p1, p2 = find(n1), find(n2)
+        if p1 != p2:
+            if rank[p1] < rank[p2]:
+                par[p1] = p2
+            elif rank[p1] > rank[p2]:
+                par[p2] = p1
+            else:
+                par[p1] = p2
+                rank[p2] += 1
+            return True
+        return False
+
+    graph = [(c, 0, i + 1) for i, c in enumerate(wells)]
+    for h1, h2, c in pipes:
+        graph.append((c, h1, h2))
+
+    graph.sort()
+
+    cost = 0
+
+    for c, h1, h2 in graph:
+        if union(h1, h2):
+            cost += c
+
+    return cost
+
+
+# |------------|------------------|---------|
+# |  Approach  |       Time       |  Space  |
+# |------------|------------------|---------|
+# |    Prim    | O((V + E) log V) | O(V + E)|
+# |  Kruskal   |     O(E log E)   | O(V + E)|
+# |------------|------------------|---------|
+
+
 n = 3
 wells = [1, 2, 2]
 pipes = [[1, 2, 1], [2, 3, 1]]
-print(minCostToSupplyWater(n, wells, pipes))  # 3
+print(minCostToSupplyWater1(n, wells, pipes))  # 3
+print(minCostToSupplyWater2(n, wells, pipes))  # 3

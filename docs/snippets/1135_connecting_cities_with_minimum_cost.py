@@ -3,6 +3,7 @@ from collections import defaultdict
 from typing import List
 
 
+# Prim
 def minimumCost(n: int, connections: List[List[int]]) -> int:
     graph = defaultdict(list)
     for u, v, c in connections:

@@ -2,7 +2,36 @@
 
 ## Minimum Spanning Tree
 
-- A minimum spanning tree (MST) is a subset of the edges of a connected, edge-weighted graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight.
+- **Tree**: a connected acyclic graph
+- **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
+- **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
+
+### Prim's Algorithm
+
+- Greedy algorithm
+
+```mermaid
+flowchart LR
+    0((0)) -.- |4|1((1))
+    0 -.- |3| 2((2))
+    1 -.- |1| 2
+    2 -.- |4| 3
+    1 -.- |2| 3((3))
+    3 -.- |2| 4((4))
+    4 -.- |4| 0
+```
+
+```mermaid
+flowchart LR
+    0((0)) -.- |3| 2((2))
+    2 -.- |1| 1((1))
+    2 -.- |2| 3((3))
+    3 -.- |2| 4((4))
+```
+
+```python
+--8<-- "template/graph_prim.py"
+```
 
 ## LeetCode Problems
 

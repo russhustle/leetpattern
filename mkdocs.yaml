@@ -5,7 +5,7 @@ site_description: LeetCode Patterns
 repo_url: https://github.com/russhustle/leetpattern/
 
 nav:
-  - 🏠 Home: README.md
+  - Home: README.md
   - Coding:
       - Home: coding/index.md
       - 🧩 Arrays:
@@ -113,6 +113,10 @@ nav:
   - OOD:
       # - 🎊 Design Patterns: design_patterns.md
       - 🚠 Design: design.md
+
+  - Challenges:
+      - Home: challenge/index.md
+      - 2024 September: challenge/202409.md
 
 ##############################################
 ##  Material theme configuration for MkDocs ##

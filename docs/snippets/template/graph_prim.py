@@ -4,39 +4,50 @@ from typing import Dict, List, Tuple
 
 
 def prim(
-    graph: Dict[str, List[Tuple[str, int]]]
-) -> Dict[str, List[Tuple[str, int]]]:
-    mst = defaultdict(list)
+    connections: List[Tuple[int, int, int]]
+) -> Dict[int, List[Tuple[int, int]]]:
+    graph = defaultdict(list)
+    for u, v, w in connections:
+        graph[u].append((v, w))
+        graph[v].append((u, w))
+
+    mst = defaultdict(list)  # {node: [(neighbour, weight)]}
     visited = set()
-
-    min_heap = []
-    start = next(iter(graph))  # get the first node
+    start = next(iter(graph))
     visited.add(start)
+    heap = []
 
-    for neighbor, weight in graph[start]:
-        heapq.heappush(min_heap, (weight, start, neighbor))
+    for n, w in graph[start]:
+        heapq.heappush(heap, (w, start, n))
 
-    while min_heap:
-        weight, u, v = heapq.heappop(min_heap)
+    while heap:
+        w, u, v = heapq.heappop(heap)
         if v in visited:
             continue
-
         visited.add(v)
-        mst[u].append((v, weight))
-
-        for neighbor, weight in graph[v]:
-            if neighbor not in visited:
-                heapq.heappush(min_heap, (weight, v, neighbor))
+        mst[u].append((v, w))
+        mst[v].append((u, w))
+        for n, w in graph[v]:
+            heapq.heappush(heap, (w, v, n))
 
     return mst
 
 
-graph = {
-    "A": [("B", 1), ("C", 4)],
-    "B": [("A", 1), ("C", 2), ("D", 5)],
-    "C": [("A", 4), ("B", 2), ("D", 1)],
-    "D": [("B", 5), ("C", 1)],
-}
+connections = [
+    (0, 1, 4),
+    (0, 2, 3),
+    (1, 2, 1),
+    (1, 3, 2),
+    (2, 3, 4),
+    (3, 4, 2),
+    (4, 0, 4),
+]
 
-print(prim(graph))
-# {'A': [('B', 1)], 'B': [('C', 2)], 'C': [('D', 1)]})
+print(prim(connections))
+# {
+#     0: [(2, 3)],
+#     2: [(0, 3), (1, 1)],
+#     1: [(2, 1), (3, 2)],
+#     3: [(1, 2), (4, 2)],
+#     4: [(3, 2)],
+# }

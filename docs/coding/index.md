@@ -67,7 +67,7 @@
 - [BFS Pattern](../graph_bfs.md)
 - [Topological Sort Pattern](../graph_topological_sort.md)
 - [Union Find Pattern](../graph_union_find.md)
-- [Dijkstra Pattern](../graph_dijkstra.md)
+- [Shortest Path](../graph_shortest_path.md)
 - [Bellman Ford Pattern](../graph_bellman_ford.md)
 - [MST Pattern](../graph_mst.md)
 

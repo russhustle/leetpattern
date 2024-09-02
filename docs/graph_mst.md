@@ -25,12 +25,12 @@ flowchart LR
 flowchart LR
     0((0)) -.- |3| 2((2))
     2 -.- |1| 1((1))
-    2 -.- |2| 3((3))
+    1 -.- |2| 3((3))
     3 -.- |2| 4((4))
 ```
 
 ```python
---8<-- "template/graph_prim.py"
+--8<-- "template/graph_mst.py"
 ```
 
 ## LeetCode Problems

@@ -6,6 +6,7 @@
 4. 1004 - [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) (Medium)
 5. 0438 - [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) (Medium)
 6. 0992 - [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/) (Hard)
+7. 2024 - [Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) (Medium)
 
 ## 3. Longest Substring Without Repeating Characters
 
@@ -41,4 +42,10 @@
 
 ```python
 --8<-- "0992_subarrays_with_k_different_integers.py"
+```
+
+## 2024. Maximize the Confusion of an Exam
+
+```python
+--8<-- "2024_maximize_the_confusion_of_an_exam.py"
 ```

@@ -5,10 +5,10 @@
 - **Tree**: a connected acyclic graph
 - **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
 - **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
+- Prim's Algorithm
+- Kruskal's Algorithm
 
-### Prim's Algorithm
-
-- Greedy algorithm
+Example graph
 
 ```mermaid
 flowchart LR
@@ -20,6 +20,8 @@ flowchart LR
     3 -.- |2| 4((4))
     4 -.- |4| 0
 ```
+
+MST of the above graph
 
 ```mermaid
 flowchart LR

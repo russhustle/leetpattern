@@ -74,11 +74,11 @@ def kruskal(
 
     while heap:
         w, u, v = heapq.heappop(heap)
-        print(u, v, w)
+
         if union(u, v):
             mst[u].append((v, w))
             mst[v].append((u, w))
-        print(mst)
+
     return mst
 
 

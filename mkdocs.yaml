@@ -72,7 +72,7 @@ nav:
           - BFS: graph_bfs.md
           - Topological Sort: graph_topological_sort.md
           - Union Find: graph_union_find.md
-          - Dijkstra: graph_dijkstra.md
+          - Shortest Path: graph_shortest_path.md
           - Bellman Ford: graph_bellman_ford.md
           - MST: graph_mst.md
           - Coloring: graph_coloring.md

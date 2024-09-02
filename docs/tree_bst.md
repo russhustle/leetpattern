@@ -30,6 +30,7 @@ graph TD
 9. 0108 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) (Easy)
 10. 0109 - [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) (Medium)
 11. 0538 - [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) (Easy)
+12. 0230 - [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) (Medium)
 
 ## 0700. Search in a Binary Search Tree
 
@@ -99,4 +100,10 @@ graph TD
 
 ```python
 --8<-- "0538_convert_bst_to_greater_tree.py"
+```
+
+## 0230. Kth Smallest Element in a BST
+
+```python
+--8<-- "0230_kth_smallest_element_in_a_bst.py"
 ```

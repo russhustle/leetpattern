@@ -117,6 +117,7 @@ nav:
   - Challenges:
       - Home: challenge/index.md
       - 2024 September: challenge/202409.md
+      - 2024 September CN: challenge/202409_cn.md
 
 ##############################################
 ##  Material theme configuration for MkDocs ##

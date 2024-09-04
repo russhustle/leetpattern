@@ -15,7 +15,8 @@
 1. 0416 - [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) (Medium)
 2. 0474 - [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) (Medium)
 3. 0494 - [Target Sum](https://leetcode.com/problems/target-sum/) (Medium)
-4. 1049 - [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/) (Medium)
+4. 1046 - [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) (Easy)
+5. 1049 - [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/) (Medium)
 
 ## 416. Partition Equal Subset Sum
 
@@ -33,6 +34,12 @@
 
 ```python linenums="1"
 --8<-- "0494_target_sum.py"
+```
+
+## 1046. Last Stone Weight
+
+```python linenums="1"
+--8<-- "1046_last_stone_weight.py"
 ```
 
 ## 1049. Last Stone Weight II

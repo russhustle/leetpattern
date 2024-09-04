@@ -13,6 +13,7 @@
 9. 0141 - [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) (Easy)
 10. 0142 - [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) (Medium)
 11. 2816 - [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) (Medium)
+12. 0002 - [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) (Medium)
 
 ## 203. Remove Linked List Elements
 
@@ -177,4 +178,12 @@ D --> B
 
 ```python
 --8<-- "2816_double_a_number_represented_as_a_linked_list.py"
+```
+
+## 2. Add Two Numbers
+
+- Represent the sum of two numbers as a linked list.
+
+```python
+--8<-- "0002_add_two_numbers.py"
 ```

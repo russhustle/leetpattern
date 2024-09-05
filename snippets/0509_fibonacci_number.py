@@ -1,7 +1,5 @@
 # 1. DP
 def fibDP(n: int) -> int:
-    # TC: O(n)
-    # SC: O(n)
     if n <= 1:
         return n
 
@@ -15,12 +13,18 @@ def fibDP(n: int) -> int:
 
 # 2. Recursive
 def fibRecursive(n: int) -> int:
-    # TC: O(2^n)
-    # SC: O(n)
     if n <= 1:
         return n
 
     return fibRecursive(n - 1) + fibRecursive(n - 2)
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |     DP      |      O(n)       |     O(n)     |
+# |  Recursive  |     O(2^n)      |     O(n)     |
+# |-------------|-----------------|--------------|
 
 
 n = 10

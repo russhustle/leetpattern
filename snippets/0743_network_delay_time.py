@@ -2,6 +2,8 @@ import heapq
 from collections import defaultdict
 from typing import List
 
+from helper import complexity
+
 
 # 1. Dijkstra - Set
 def networkDelayTime1(times: List[List[int]], n: int, k: int) -> int:
@@ -49,31 +51,30 @@ def networkDelayTime2(times: List[List[int]], n: int, k: int) -> int:
     return max(dist.values()) if len(dist) == n else -1
 
 
-# 3. Bellman-Ford
+# Bellman-Ford
 def networkDelayTimeBF(times: List[List[int]], n: int, k: int) -> int:
-    # TC: O(N * E)
-    # SC: O(N)
-
-    dist = [float("inf")] * n
-    dist[k - 1] = 0
+    delay = {i: float("inf") for i in range(1, n + 1)}
+    delay[k] = 0
 
     for _ in range(n - 1):
-        for u, v, w in times:
-            if dist[u - 1] + w < dist[v - 1]:
-                dist[v - 1] = dist[u - 1] + w
+        for u, v, t in times:
+            delay[v] = min(delay[v], delay[u] + t)
 
-    if any(d == float("inf") for d in dist):
-        return -1
-
-    return max(dist)
+    max_delay = max(delay.values())
+    return max_delay if max_delay < float("inf") else -1
 
 
-# |------------|---------|---------|
-# |  Approach  |  Time   |  Space  |
-# |------------|---------|---------|
-# |Dijkstra    |O(E*logV)|  O(V+E) |
-# |Bellman-Ford|O(E*V)   |  O(V)   |
-# |------------|---------|---------|
+table = [
+    ["Dijkstra", "O(E*logV)", "O(V+E)"],
+    ["Bellman-Ford", "O(E*V)", "O(V)"],
+]
+complexity(table)
+# |--------------|-----------|--------|
+# | Approach     | Time      | Space  |
+# |--------------|-----------|--------|
+# | Dijkstra     | O(E*logV) | O(V+E) |
+# | Bellman-Ford | O(E*V)    | O(V)   |
+# |--------------|-----------|--------|
 
 
 times = [[2, 1, 1], [2, 3, 1], [3, 4, 1]]

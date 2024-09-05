@@ -3,35 +3,83 @@ from collections import defaultdict
 from typing import List
 
 
-# Prim's Algorithm
-def minCostConnectPoints(points: List[List[int]]) -> int:
+# Prim
+def minCostConnectPointsPrim(points: List[List[int]]) -> int:
     n = len(points)
-
     graph = defaultdict(list)
+
     for i in range(n):
-        x1, y1 = points[i]
         for j in range(i + 1, n):
+            x1, y1 = points[i]
             x2, y2 = points[j]
             dist = abs(x1 - x2) + abs(y1 - y2)
-            graph[i].append((dist, j))
-            graph[j].append((dist, i))
+            graph[i].append((j, dist))
+            graph[j].append((i, dist))
 
     cost = 0
-    visit = set()
-    minHeap = [(0, 0)]
+    heap = [(0, 0)]  # (cost, node)
+    visited = set()
 
-    while len(visit) < n:
-        dist, node = heapq.heappop(minHeap)
-        if node in visit:
+    while heap:
+        n1, d1 = heapq.heappop(heap)
+        if n1 in visited:
             continue
-        visit.add(node)
-        cost += dist
-        for distance, neighbor in graph[node]:
-            if neighbor not in visit:
-                heapq.heappush(minHeap, (distance, neighbor))
+        visited.add(n1)
+        cost += d1
+
+        for n2, d2 in graph[n1]:
+            if n2 not in visited:
+                heapq.heappush(heap, (n2, d2))
+
+    return cost
+
+
+# Kruskal
+def minCostConnectPointsKruskal(points: List[List[int]]) -> int:
+    n = len(points)
+    par = {i: i for i in range(n)}
+    rank = {i: 0 for i in range(n)}
+
+    def find(n):
+        p = par[n]
+        while p != par[p]:
+            par[p] = par[par[p]]
+            p = par[p]
+        return p
+
+    def union(n1, n2):
+        p1, p2 = find(n1), find(n2)
+
+        if p1 == p2:
+            return False
+
+        if rank[p1] > rank[p2]:
+            par[p2] = p1
+        elif rank[p1] < rank[p2]:
+            par[p1] = p2
+        else:
+            par[p2] = p1
+            rank[p1] += 1
+
+        return True
+
+    heap = []
+    for i in range(n):
+        for j in range(i + 1, n):
+            x1, y1 = points[i]
+            x2, y2 = points[j]
+            dist = abs(x1 - x2) + abs(y1 - y2)
+            heapq.heappush(heap, (dist, i, j))
+
+    cost = 0
+    while heap:
+        d, n1, n2 = heapq.heappop(heap)
+        if union(n1, n2):
+            cost += d
 
     return cost
 
 
 points = [[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]
-print(minCostConnectPoints(points))  # 20
+print(minCostConnectPointsPrim(points))  # 20
+print(minCostConnectPointsKruskal(points))  # 20

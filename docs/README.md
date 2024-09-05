@@ -1,9 +1,15 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Welcome to 🚀LeetPattern
 
 - Your ultimate guide to mastering coding interviews with LeetPattern.
 - Learn essential problem-solving patterns and practice with real interview questions to boost your confidence and skills.
 
-![LeetPattern](imgs/leetpattern.jpg)
+![LeetPattern](imgs/leetpattern.jpg){ width=500px }
 
 ## Why 🚀LeetPattern?
 

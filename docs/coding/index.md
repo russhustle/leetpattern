@@ -12,13 +12,13 @@
 
 ## 🌳 Tree
 
-- [Traversal](../tree_traversal.md)
-- [Feature](../tree_feature.md)
-- [BFS](../tree_bfs.md)
-- [Modification](../tree_modification.md)
-- [Binary Search Tree](../tree_bst.md)
-- [Common Ancestor Problems](../tree_common_ancestor.md)
-- [Trie](../tree_trie.md)
+- [Traversal](../tree/tree_traversal.md)
+- [Feature](../tree/tree_feature.md)
+- [BFS](../tree/tree_bfs.md)
+- [Modification](../tree/tree_modification.md)
+- [Binary Search Tree](../tree/tree_bst.md)
+- [Common Ancestor Problems](../tree/tree_common_ancestor.md)
+- [Trie](../tree/tree_trie.md)
 
 ## 📚 Data Structures
 

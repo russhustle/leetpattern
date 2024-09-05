@@ -31,13 +31,13 @@ nav:
 
       - 🌳 Tree:
           - Tree: tree/index.md
-          - Traversal: tree_traversal.md
-          - Tree Feature: tree_feature.md
-          - Tree BFS: tree_bfs.md
-          - Tree Modification: tree_modification.md
-          - BST: tree_bst.md
-          - Common Ancestors: tree_common_ancestor.md
-          - Trie: tree_trie.md
+          - Traversal: tree/tree_traversal.md
+          - Tree Feature: tree/tree_feature.md
+          - Tree BFS: tree/tree_bfs.md
+          - Tree Modification: tree/tree_modification.md
+          - BST: tree/tree_bst.md
+          - Common Ancestors: tree/tree_common_ancestor.md
+          - Trie: tree/tree_trie.md
 
       - 📚 Stack & Queue:
           - Stack: stack.md
@@ -129,6 +129,7 @@ nav:
 ##############################################
 
 theme:
+  language: en
   logo: imgs/logo.jpg
   favicon: imgs/logo.jpg
   name: material
@@ -136,14 +137,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
-      accent: pink
+      accent: deep orange
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: pink
+      accent: deep orange
       toggle:
         icon: material/toggle-switch
         name: Switch to system preference
@@ -155,11 +156,32 @@ theme:
     - content.code.copy
     - content.code.select
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.indexes # Enable indexes for the navigation
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.path
     - search.suggest # Enable search suggestions
     - search.highlight # Enable search term highlighting
     - content.math
     - grid
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
 
 markdown_extensions:
   - admonition
@@ -183,6 +205,7 @@ markdown_extensions:
       permalink: true # Add permalinks to headers
   - attr_list
   - md_in_html
+
 
 plugins:
   # - git-revision-date-localized:

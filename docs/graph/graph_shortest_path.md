@@ -1,11 +1,14 @@
 # Graph - Shortest Path Problems
 
-Dijkstra's Algorithm
+!!! note
+    Shortest Path Problem: Find the shortest path between two vertices in a graph.
+
+## Dijkstra's Algorithm
 
 - Shortest path algorithm
 - Weighted graph (non-negative weights)
 - Data Structure: Heap; HashSet
-- Time Complexity: $O(E \log V)$
+- Time Complexity: $O(E \cdot \log{V})$
 - Space Complexity: $O(V)$
 
 ```python

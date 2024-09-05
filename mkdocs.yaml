@@ -3,6 +3,7 @@ site_url: https://www.leetpattern.com
 site_author: Sihan A
 site_description: LeetCode Patterns
 repo_url: https://github.com/russhustle/leetpattern/
+copyright: Copyright &copy; 2024 Sihan A
 
 nav:
   - Home: README.md
@@ -19,15 +20,19 @@ nav:
           - Prefix Sum: arrays/prefix_sum.md
 
       - 🔢 Hash:
-          - Hash Map: hash_map.md
-          - Hash Set: hash_set.md
-          - Counting: hash_counting.md
+          - Home: hash/index.md
+          - Hash Map: hash/hash_map.md
+          - Hash Set: hash/hash_set.md
+          - Counting: hash/hash_counting.md
 
       - 💬 String:
-          - String: string.md
-          - KMP: string_kmp.md
+          - Home: string/index.md
+          - String: string/string.md
+          - KMP: string/string_kmp.md
 
-      - 🔗 Linked List: linkedlist/linked_list.md
+      - 🔗 Linked List:
+          - Home: linkedlist/index.md
+          - Linked List: linkedlist/linked_list.md
 
       - 🌳 Tree:
           - Tree: tree/index.md
@@ -40,13 +45,15 @@ nav:
           - Trie: tree/tree_trie.md
 
       - 📚 Stack & Queue:
-          - Stack: stack.md
-          - Monotonic Stack: stack_monotonic.md
-          - Queue: queue.md
+          - Home: stack_queue/index.md
+          - Stack: stack_queue/stack.md
+          - Monotonic Stack: stack_queue/stack_monotonic.md
+          - Queue: stack_queue/queue.md
 
       - 🤑 Greedy:
-          - Greedy: greedy.md
-          - Greedy - Interval: greedy_interval.md
+          - Home: greedy/index.md
+          - Greedy: greedy/greedy.md
+          - Greedy - Interval: greedy/greedy_interval.md
 
       - ⏳ Dynamic Programming:
           - Home: dp/index.md
@@ -88,7 +95,8 @@ nav:
           - Merge K Sorted: heap/heap_merge_k_sorted.md
 
       - 🏁 Other:
-          - 🍩 Bit: bit.md
+          - Home: other/index.md
+          - 🍩 Bit: other/bit.md
 
       - 👨🏻‍💻 Neetcode 150:
           - Home: neetcode150/index.md
@@ -115,14 +123,15 @@ nav:
       #     - Home: python/index.md
       #     - collections: python/python_collections.md
 
-  - OOD:
-      # - 🎊 Design Patterns: design_patterns.md
-      - 🚠 Design: design.md
+  # - OOD:
+  #     - Home: design/index.md
+  #     - 🎊 Design Patterns: design_patterns.md
+  #     - 🚠 Design: design/design.md
 
-  - Challenges:
-      - Home: challenge/index.md
-      - 2024 September: challenge/202409.md
-      - 2024 September CN: challenge/202409_cn.md
+  # - Challenges:
+  #     - Home: challenge/index.md
+  #     - 2024 September: challenge/202409.md
+  #     - 2024 September CN: challenge/202409_cn.md
 
 ##############################################
 ##  Material theme configuration for MkDocs ##
@@ -156,16 +165,18 @@ theme:
     - content.code.copy
     - content.code.select
     - navigation.tabs
+    - navigation.tracking
     - navigation.tabs.sticky
     - navigation.indexes # Enable indexes for the navigation
     - navigation.instant
     - navigation.instant.prefetch
-    - navigation.instant.progress
     - navigation.path
+    - navigation.footer
     - search.suggest # Enable search suggestions
     - search.highlight # Enable search term highlighting
     - content.math
     - grid
+    - toc.follow
   icon:
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
@@ -205,7 +216,6 @@ markdown_extensions:
       permalink: true # Add permalinks to headers
   - attr_list
   - md_in_html
-
 
 plugins:
   # - git-revision-date-localized:

@@ -22,23 +22,23 @@
 
 ## 📚 Data Structures
 
-- [Stack](../stack.md)
-- [Monotonic Stack](../stack_monotonic.md)
-- [Queue](../queue.md)
+- [Stack](../stack_queue/stack.md)
+- [Monotonic Stack](../stack_queue/stack_monotonic.md)
+- [Queue](../stack_queue/queue.md)
 - [Heap - Top K Pattern](../heap/heap_top_k.md)
 - [Heap - Two Heaps Pattern](../heap/heap_two_heaps.md)
 - [Heap - Merge K Sorted Pattern](../heap/heap_merge_k_sorted.md)
-- [Hash Map](../hash_map.md)
-- [Hash Set](../hash_set.md)
-- [Hash Counting Pattern](../hash_counting.md)
-- [String](../string.md)
-- [String - KMP](../string_kmp.md)
+- [Hash Map](../hash/hash_map.md)
+- [Hash Set](../hash/hash_set.md)
+- [Hash Counting Pattern](../hash/hash_counting.md)
+- [String](../string/string.md)
+- [String - KMP](../string/string_kmp.md)
 - [Linked List](../linkedlist/linked_list.md)
 
 ## 🤑 Greedy
 
-- [Greedy](../greedy.md)
-- [Greedy - Interval Pattern](../greedy_interval.md)
+- [Greedy](../greedy/greedy.md)
+- [Greedy - Interval Pattern](../greedy/greedy_interval.md)
 
 ## ⏳ Dynamic Programming
 
@@ -73,5 +73,5 @@
 
 ## Other
 
-- [🏷 Design](../design.md)
-- [🍩 Bit](../bit.md)
+- [🏷 Design](../design/design.md)
+- [🍩 Bit](../other/bit.md)

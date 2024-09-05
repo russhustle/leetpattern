@@ -9,13 +9,14 @@ nav:
   - Coding:
       - Home: coding/index.md
       - 🧩 Arrays:
-          - Array: array.md
-          - Binary Search: binary_search.md
-          - Fast Slow Pointers: fast_slow_pointers.md
-          - Left Right Pointers: left_right_pointers.md
-          - Sliding Window Fixed: sliding_window_fixed.md
-          - Sliding Window Variable: sliding_window_variable.md
-          - Prefix Sum: prefix_sum.md
+          - Home: arrays/index.md
+          - Array: arrays/array.md
+          - Binary Search: arrays/binary_search.md
+          - Fast Slow Pointers: arrays/fast_slow_pointers.md
+          - Left Right Pointers: arrays/left_right_pointers.md
+          - Sliding Window Fixed: arrays/sliding_window_fixed.md
+          - Sliding Window Variable: arrays/sliding_window_variable.md
+          - Prefix Sum: arrays/prefix_sum.md
 
       - 🔢 Hash:
           - Hash Map: hash_map.md
@@ -26,7 +27,7 @@ nav:
           - String: string.md
           - KMP: string_kmp.md
 
-      - 🔗 Linked List: linked_list.md
+      - 🔗 Linked List: linkedlist/linked_list.md
 
       - 🌳 Tree:
           - Tree: tree/index.md
@@ -48,40 +49,43 @@ nav:
           - Greedy - Interval: greedy_interval.md
 
       - ⏳ Dynamic Programming:
-          - DP Basic: dp_basic.md
-          - DP 2D: dp_2d.md
-          - DP Interval: dp_interval.md
-          - Knapsack 0/1: dp_knapsack_01.md
-          - Knapsack Unbounded: dp_knapsack_unbounded.md
-          - Kadane: dp_kadane.md
-          - Stock: dp_stock.md
-          - LCS: dp_lcs.md
-          - LIS: dp_lis.md
+          - Home: dp/index.md
+          - DP Basic: dp/dp_basic.md
+          - DP 2D: dp/dp_2d.md
+          - DP Interval: dp/dp_interval.md
+          - Knapsack 0/1: dp/dp_knapsack_01.md
+          - Knapsack Unbounded: dp/dp_knapsack_unbounded.md
+          - Kadane: dp/dp_kadane.md
+          - Stock: dp/dp_stock.md
+          - LCS: dp/dp_lcs.md
+          - LIS: dp/dp_lis.md
 
       - 🔄 Backtracking:
-          - Combinations: backtracking_combinations.md
-          - Permutations: backtracking_permutations.md
-          - Subsets: backtracking_subsets.md
-          - Partitions: backtracking_partitions.md
-          - Board: backtracking_board.md
+          - Home: backtracking/index.md
+          - Combinations: backtracking/backtracking_combinations.md
+          - Permutations: backtracking/backtracking_permutations.md
+          - Subsets: backtracking/backtracking_subsets.md
+          - Partitions: backtracking/backtracking_partitions.md
+          - Board: backtracking/backtracking_board.md
 
       - 📝 Graph:
           - Graph: graph/index.md
-          - Flood Fill: graph_flood_fill.md
-          - DFS: graph_dfs.md
-          - BFS: graph_bfs.md
-          - Topological Sort: graph_topological_sort.md
-          - Union Find: graph_union_find.md
-          - Shortest Path: graph_shortest_path.md
-          - Bellman Ford: graph_bellman_ford.md
-          - MST: graph_mst.md
-          - Coloring: graph_coloring.md
+          - Flood Fill: graph/graph_flood_fill.md
+          - DFS: graph/graph_dfs.md
+          - BFS: graph/graph_bfs.md
+          - Topological Sort: graph/graph_topological_sort.md
+          - Union Find: graph/graph_union_find.md
+          - Shortest Path: graph/graph_shortest_path.md
+          - Bellman Ford: graph/graph_bellman_ford.md
+          - MST: graph/graph_mst.md
+          - Coloring: graph/graph_coloring.md
 
       - 🏔️ Heap:
-          - Heap: heap_heap.md
-          - Top K: heap_top_k.md
-          - Two Heaps: heap_two_heaps.md
-          - Merge K Sorted: heap_merge_k_sorted.md
+          - Home: heap/index.md
+          - Heap: heap/heap_heap.md
+          - Top K: heap/heap_top_k.md
+          - Two Heaps: heap/heap_two_heaps.md
+          - Merge K Sorted: heap/heap_merge_k_sorted.md
 
       - 🏁 Other:
           - 🍩 Bit: bit.md

@@ -4,7 +4,7 @@
 
 - The unbounded knapsack problem is a variation of the knapsack problem where the items can be repeated.
 
-![knapsack01](imgs/knapsack01.jpg)
+![knapsack01](../imgs/knapsack01.jpg)
 
 ```python linenums="1"
 --8<-- "template/knapsack_unbounded.py"

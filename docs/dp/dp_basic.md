@@ -44,7 +44,7 @@ G --> H[13]
 
 - Return the number of distinct ways to reach the top of the stairs.
 
-![Climbing Stairs](imgs/0070.png)
+![Climbing Stairs](../imgs/0070.png)
 
 ```python
 --8<-- "0070_climbing_stairs.py"

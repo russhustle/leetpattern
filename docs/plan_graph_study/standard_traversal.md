@@ -13,11 +13,15 @@
 
 ## 547. Number of Provinces
 
+- Return the number of provinces.
+
 ```python
 --8<-- "0547_number_of_provinces.py"
 ```
 
 ## 802. Find Eventual Safe States
+
+- Return an array containing all the safe nodes.
 
 ```python
 --8<-- "0802_find_eventual_safe_states.py"
@@ -25,11 +29,15 @@
 
 ## 841. Keys and Rooms
 
+- Return `True` if you can enter every room.
+
 ```python
 --8<-- "0841_keys_and_rooms.py"
 ```
 
 ## 1129. Shortest Path with Alternating Colors
+
+- Return the shortest path from `start` to `end` with alternating colors.
 
 ```python
 --8<-- "1129_shortest_path_with_alternating_colors.py"
@@ -37,11 +45,15 @@
 
 ## 1376. Time Needed to Inform All Employees
 
+- Return the time needed to inform all employees.
+
 ```python
 --8<-- "1376_time_needed_to_inform_all_employees.py"
 ```
 
 ## 1466. Reorder Routes to Make All Paths Lead to the City Zero
+
+- Return the minimum number of connections needed to make all paths lead to the city zero.
 
 ```python
 --8<-- "1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero.py"
@@ -49,11 +61,15 @@
 
 ## 797. All Paths From Source to Target
 
+- Return all possible paths from `source` to `target`.
+
 ```python
 --8<-- "0797_all_paths_from_source_to_target.py"
 ```
 
 ## 1192. Critical Connections in a Network
+
+- Return all critical connections in the network.
 
 ```python
 --8<-- "1192_critical_connections_in_a_network.py"

@@ -1,5 +1,7 @@
 # Study Plan -Graph Theory
 
+- [图论・从入门到精通](https://leetcode.cn/studyplan/graph-theory/)
+
 - Standard Traversal
     1. 0547 - [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) (Medium)
     2. 0802 - [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) (Medium)

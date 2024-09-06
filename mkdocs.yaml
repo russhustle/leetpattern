@@ -184,6 +184,7 @@ theme:
     - navigation.instant.prefetch
     - navigation.path
     - navigation.footer
+    - navigation.top
     - search.suggest # Enable search suggestions
     - search.highlight # Enable search term highlighting
     - content.math

@@ -1,30 +1,31 @@
 from typing import List
 
 
+# Union Find
 def findCircleNum(isConnected: List[List[int]]) -> int:
     n = len(isConnected)
     parent = list(range(n))
-    rank = [1] * n
+    rank = [1 for _ in range(n)]
 
     def find(n):
         p = parent[n]
         while p != parent[p]:
-            parent[p] = parent[parent[p]]
             p = parent[p]
         return p
 
     def union(n1, n2):
-        p1 = find(n1)
-        p2 = find(n2)
+        p1, p2 = find(n1), find(n2)
 
-        if p1 != p2:
-            if rank[p1] > rank[p2]:
-                parent[p2] = p1
-            elif rank[p1] < rank[p2]:
-                parent[p1] = p2
-            else:
-                parent[p2] = p1
-                rank[p1] += 1
+        if p1 == p2:
+            return None
+
+        if rank[p1] > rank[p2]:
+            parent[p2] = p1
+        elif rank[p1] < rank[p2]:
+            parent[p1] = p2
+        else:
+            parent[p2] = p1
+            rank[p1] += 1
 
     for i in range(n):
         for j in range(i + 1, n):

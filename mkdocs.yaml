@@ -133,6 +133,18 @@ nav:
   #     - 2024 September: challenge/202409.md
   #     - 2024 September CN: challenge/202409_cn.md
 
+  - Study Plan:
+      - Home: plan/index.md
+      - Graph Theory:
+          - Home: plan_graph_study/index.md
+          - Standard Traversal: plan_graph_study/standard_traversal.md
+          - BFS: plan_graph_study/bfs.md
+          - Matrix Graphs: plan_graph_study/matrix_graphs.md
+          - Graph Theory: plan_graph_study/graph_theory.md
+          - Union Find: plan_graph_study/union_find_dsu.md
+          - Dijkstra's: plan_graph_study/dijkstra.md
+          - MST: plan_graph_study/mst.md
+
 ##############################################
 ##  Material theme configuration for MkDocs ##
 ##############################################

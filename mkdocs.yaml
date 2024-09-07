@@ -157,15 +157,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: indigo
+      primary: indigo
+      accent: pink
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: indigo
+      primary: indigo
+      accent: pink
       toggle:
         icon: material/toggle-switch
         name: Switch to system preference

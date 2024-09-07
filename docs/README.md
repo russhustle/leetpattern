@@ -17,3 +17,9 @@ hide:
 - Structured Learning: Organized by difficulty and topic, our content helps you learn efficiently and effectively.
 - Real Interview Questions: Practice with problems that are frequently asked in top tech interviews.
 - Community Support: Join our community of learners and mentors. Get support, share insights, and grow together.
+
+## Prerequisites
+
+- Python Basics: [Python Distilled](https://www.dabeaz.com/python-distilled/)
+
+![python distilled](https://www.dabeaz.com/python-distilled/cover.jpg){ width=200px }

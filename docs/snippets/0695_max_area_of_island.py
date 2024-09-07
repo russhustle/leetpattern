@@ -27,7 +27,8 @@ def maxAreaOfIslandDFS(grid: List[List[int]]) -> int:
 
     for r in range(m):
         for c in range(n):
-            area = max(area, dfs(r, c))
+            if grid[r][c] == 1 and (r, c) not in visited:
+                area = max(area, dfs(r, c))
 
     return area
 

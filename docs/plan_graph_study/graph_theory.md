@@ -10,17 +10,27 @@
 
 ## 0997. Find the Town Judge
 
+- Return the label of the town judge if the town has a judge.
+
+![0997](../imgs/0997.png)
+
 ```python
 --8<-- "0997_find_the_town_judge.py"
 ```
 
 ## 1557. Minimum Number of Vertices to Reach All Nodes
 
+![1557](../imgs/1557.png)
+
 ```python
 --8<-- "1557_minimum_number_of_vertices_to_reach_all_nodes.py"
 ```
 
 ## 1615. Maximal Network Rank
+
+- Return the maximal network rank.
+
+![1615](../imgs/1615.png)
 
 ```python
 --8<-- "1615_maximal_network_rank.py"

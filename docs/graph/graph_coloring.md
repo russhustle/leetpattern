@@ -2,15 +2,7 @@
 
 ## Bipartite Graph
 
-```mermaid
-graph TD
-A1((A1)) --- B1((B1))
-A1 --- B2((B2))
-A2((A2)) --- B1
-A2 --- B3((B3))
-A3((A3)) --- B2
-A3 --- B3
-```
+![bipartite](../imgs/bipartite.png)
 
 How to group
 

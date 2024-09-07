@@ -9,51 +9,17 @@
 
 ### Types
 
-Undirected graph: A graph in which edges have no direction.
+- **Undirected graph**: A graph in which edges have no direction.
 
-```mermaid
-flowchart LR
-1((1))
-2((2))
-3((3))
-4((4))
-1 --- 3
-1 --- 2
-3 --- 4
-2 --- 3
-2 --- 4
-```
+![undirected_graph](../imgs/undirected_graph.png)
 
-Directed graph: A graph in which edges have direction.
+- **Directed graph**: A graph in which edges have direction.
 
-```mermaid
-flowchart LR
-1((1))
-2((2))
-3((3))
-4((4))
-5((5))
-1 --> 3
-1 --> 2
-3 --> 4
-2 --> 3
-4 --> 5
-```
+![directed_graph](../imgs/directed_graph.png)
 
-Cyclic graph: A graph in which there is a cycle.
+- **Cyclic graph**: A graph in which there is a cycle.
 
-```mermaid
-flowchart LR
-1((1))
-2((2))
-3((3))
-4((4))
-1 --> 3
-1 --> 2
-3 --> 4
-2 --> 3
-4 --> 1
-```
+![cyclic_graph](../imgs/cyclic_graph.png)
 
 Acyclic graph
 

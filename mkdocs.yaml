@@ -119,19 +119,19 @@ nav:
           - Math & Geometry: neetcode150/math_geometry.md
           - Bit Manipulation: neetcode150/bit.md
 
-      - 🐍 Python:
-          - Home: python/index.md
-          - collections: python/python_collections.md
+  #     - 🐍 Python:
+  #         - Home: python/index.md
+  #         - collections: python/python_collections.md
 
-  - OOD:
-      - Home: design/index.md
-      - 🎊 Design Patterns: design_patterns.md
-      - 🚠 Design: design/design.md
+  # - OOD:
+  #     - Home: design/index.md
+  #     - 🎊 Design Patterns: design_patterns.md
+  #     - 🚠 Design: design/design.md
 
-  - Challenges:
-      - Home: challenge/index.md
-      - 2024 September: challenge/202409.md
-      - 2024 September CN: challenge/202409_cn.md
+  # - Challenges:
+  #     - Home: challenge/index.md
+  #     - 2024 September: challenge/202409.md
+  #     - 2024 September CN: challenge/202409_cn.md
 
   - Study Plan:
       - Home: plan/index.md

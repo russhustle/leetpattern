@@ -6,7 +6,7 @@ from typing import List
 def isBipartiteBFS(graph: List[List[int]]) -> bool:
     n = len(graph)
     # -1: not colored; 0: blue; 1: red
-    color = [-1] * n
+    color = [-1 for _ in range(n)]
 
     def bfs(node):
         q = deque([node])

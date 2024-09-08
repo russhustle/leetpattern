@@ -4,30 +4,26 @@ from typing import List
 
 # 1. BFS - Kahn's Algorithm
 def findOrderBFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-    adj = defaultdict(list)
-    indegree = [0] * numCourses
+    graph = defaultdict(list)
+    indegree = defaultdict(int)
 
     for crs, pre in prerequisites:
-        adj[pre].append(crs)
+        graph[pre].append(crs)
         indegree[crs] += 1
 
     q = deque([i for i in range(numCourses) if indegree[i] == 0])
     order = []
 
     while q:
-        crs = q.popleft()
-        order.append(crs)
+        pre = q.popleft()
+        order.append(pre)
 
-        for next in adj[crs]:
-            indegree[next] -= 1
+        for crs in graph[pre]:
+            indegree[crs] -= 1
+            if indegree[crs] == 0:
+                q.append(crs)
 
-            if indegree[next] == 0:
-                q.append(next)
-
-    if len(order) == numCourses:
-        return order
-    else:
-        return []
+    return order if len(order) == numCourses else []
 
 
 # 2. DFS + Set

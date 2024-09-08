@@ -2,7 +2,7 @@ from collections import defaultdict, deque
 from typing import List
 
 
-# 1. BFS
+# BFS - Kahn's algorithm (Topological Sort)
 def alienOrderBFS(words: List[str]) -> str:
     graph = defaultdict(set)
     indegree = {c: 0 for word in words for c in word}
@@ -33,13 +33,10 @@ def alienOrderBFS(words: List[str]) -> str:
             if indegree[neighbor] == 0:
                 q.append(neighbor)
 
-    if len(result) == len(indegree):
-        return "".join(result)
-    else:
-        return ""
+    return "".join(result) if len(result) == len(indegree) else ""
 
 
-# 2. DFS
+# DFS - Topological Sort
 def alienOrderDFS(words: List[str]) -> str:
     graph = defaultdict(set)
     visited = {}
@@ -80,4 +77,4 @@ def alienOrderDFS(words: List[str]) -> str:
 
 words = ["wrt", "wrf", "er", "ett", "rftt"]
 print(alienOrderBFS(words))  # wertf
-print(alienOrderDFS(words))  # wrt
+print(alienOrderDFS(words))  # wertf

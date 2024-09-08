@@ -10,26 +10,11 @@
 
 Example graph
 
-```mermaid
-flowchart LR
-    0((0)) -.- |4|1((1))
-    0 -.- |3| 2((2))
-    1 -.- |1| 2
-    2 -.- |4| 3
-    1 -.- |2| 3((3))
-    3 -.- |2| 4((4))
-    4 -.- |4| 0
-```
+![mst1](../imgs/mst_1.png)
 
-MST of the above graph
+MST
 
-```mermaid
-flowchart LR
-    0((0)) -.- |3| 2((2))
-    2 -.- |1| 1((1))
-    1 -.- |2| 3((3))
-    3 -.- |2| 4((4))
-```
+![mst2](../imgs/mst_2.png)
 
 ```python
 --8<-- "template/graph_mst.py"

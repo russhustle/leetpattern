@@ -1,35 +1,31 @@
+from collections import defaultdict
 from typing import List
 
 
+# Graph
 def validTree(n: int, edges: List[List[int]]) -> bool:
-    if not n:
-        return True
-
+    if n == 0:
+        return False
     if len(edges) != n - 1:
         return False
 
-    adj = {i: [] for i in range(n)}
-    for n1, n2 in edges:
-        adj[n1].append(n2)
-        adj[n2].append(n1)
+    graph = defaultdict(list)
+    for u, v in edges:
+        graph[u].append(v)
+        graph[v].append(u)
 
-    visit = set()
+    visited = set()
 
     def dfs(node, parent):
-        if node in visit:
+        if node in visited:
             return False
-
-        visit.add(node)
-
-        for child in adj[node]:
-            if child == parent:
-                continue
-            if not dfs(child, node):
+        visited.add(node)
+        for neighbor in graph[node]:
+            if neighbor != parent and not dfs(neighbor, node):
                 return False
-
         return True
 
-    return dfs(0, -1) and len(visit) == n
+    return dfs(0, -1) and len(visited) == n
 
 
 print(validTree(5, [[0, 1], [0, 2], [0, 3], [1, 4]]))  # True

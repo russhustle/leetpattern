@@ -13,12 +13,12 @@ def minReorderBFS(n: int, connections: List[List[int]]) -> int:
     q = deque([(0, -1)])
 
     while q:
-        node, parent = q.popleft()
+        n1, d1 = q.popleft()
 
-        for child, direction in graph[node]:
-            if child != parent:
-                changes += direction
-                q.append((child, node))
+        for n2, d2 in graph[n1]:
+            if n2 != d1:
+                changes += d2
+                q.append((n2, n1))
 
     return changes
 
@@ -30,11 +30,11 @@ def minReorderDFS(n: int, connections: List[List[int]]) -> int:
         graph[u].append((v, 1))  # go
         graph[v].append((u, 0))  # come
 
-    def dfs(node, parent):
+    def dfs(n1, d1):
         changes = 0
-        for child, direction in graph[node]:
-            if child != parent:
-                changes += direction + dfs(child, node)
+        for n2, d2 in graph[n1]:
+            if n2 != d1:
+                changes += d2 + dfs(n2, n1)
         return changes
 
     return dfs(0, -1)

@@ -2,40 +2,38 @@ from collections import deque
 from typing import List
 
 
-# 1. DFS
+# DFS
 def pacificAtlanticDFS(heights: List[List[int]]) -> List[List[int]]:
     m, n = len(heights), len(heights[0])
     pac, atl = set(), set()
+    directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 
-    def dfs(r, c, visited, prevHeight):
+    def dfs(r, c, visited, prev_height):
         if (
-            (r, c) in visited
-            or r not in range(m)
+            r not in range(m)
             or c not in range(n)
-            or heights[r][c] < prevHeight
+            or heights[r][c] < prev_height
+            or (r, c) in visited
         ):
             return None
 
         visited.add((r, c))
         height = heights[r][c]
-
-        dfs(r + 1, c, visited, height)
-        dfs(r - 1, c, visited, height)
-        dfs(r, c + 1, visited, height)
-        dfs(r, c - 1, visited, height)
+        for dr, dc in directions:
+            dfs(dr + r, dc + c, visited, height)
 
     for c in range(n):
-        dfs(0, c, pac, heights[0][c])  # top
-        dfs(m - 1, c, atl, heights[m - 1][c])  # bottom
+        dfs(0, c, pac, heights[0][c])
+        dfs(m - 1, c, atl, heights[m - 1][c])
 
     for r in range(m):
-        dfs(r, 0, pac, heights[r][0])  # left
-        dfs(r, n - 1, atl, heights[r][n - 1])  # right
+        dfs(r, 0, pac, heights[r][0])
+        dfs(r, n - 1, atl, heights[r][n - 1])
 
     return list(pac & atl)
 
 
-# 2. BFS
+# BFS
 def pacificAtlanticBFS(heights: List[List[int]]) -> List[List[int]]:
     m, n = len(heights), len(heights[0])
     pac, atl = set(), set()
@@ -54,7 +52,7 @@ def pacificAtlanticBFS(heights: List[List[int]]) -> List[List[int]]:
                 if (
                     nr in range(m)
                     and nc in range(n)
-                    and heights[nr][nc] < heights[row][col]
+                    and heights[row][col] <= heights[nr][nc]
                     and (nr, nc) not in visited
                 ):
                     q.append((nr, nc))

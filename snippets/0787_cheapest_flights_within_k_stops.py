@@ -1,3 +1,5 @@
+import heapq
+from collections import defaultdict
 from typing import List
 
 
@@ -22,11 +24,43 @@ def findCheapestPriceBF(
     return prices[dst] if prices[dst] != float("inf") else -1
 
 
-# |------------|---------|---------|
-# |  Approach  |  Time   |  Space  |
-# |------------|---------|---------|
-# |Bellman-Ford| O(k * E)|  O(n)   |
-# |------------|---------|---------|
+# Dijkstra
+def findCheapestPriceDijkstra(
+    n: int, flights: List[List[int]], src: int, dst: int, k: int
+) -> int:
+    graph = defaultdict(list)
+    for u, v, w in flights:
+        graph[u].append((v, w))
+
+    heap = [(0, src, 0)]  # (price, city, stops)
+    visited = defaultdict(int)  # {city: stops}
+
+    while heap:
+        price, city, stops = heapq.heappop(heap)
+
+        if city == dst:
+            return price
+
+        if stops > k:
+            continue
+
+        if city in visited and visited[city] <= stops:
+            continue
+
+        visited[city] = stops
+
+        for neighbor, cost in graph[city]:
+            heapq.heappush(heap, (price + cost, neighbor, stops + 1))
+
+    return -1
+
+
+# |------------|------------------|---------|
+# |  Approach  |       Time       |  Space  |
+# |------------|------------------|---------|
+# |Bellman-Ford|    O(k * E)      |  O(n)   |
+# | Dijkstra   | O(E * log(V))    |  O(n)   |
+# |------------|------------------|---------|
 
 
 n = 4
@@ -35,3 +69,4 @@ src = 0
 dst = 3
 k = 1
 print(findCheapestPriceBF(n, flights, src, dst, k))  # 700
+print(findCheapestPriceDijkstra(n, flights, src, dst, k))  # 700

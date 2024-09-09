@@ -141,6 +141,7 @@ nav:
           - BFS: plan_graph_study/bfs.md
           - Matrix Graphs: plan_graph_study/matrix_graphs.md
           - Graph Theory: plan_graph_study/graph_theory.md
+          - Topological Sort: plan_graph_study/topological_sort.md
           - Union Find: plan_graph_study/union_find_dsu.md
           - Dijkstra's: plan_graph_study/dijkstra.md
           - MST: plan_graph_study/mst.md

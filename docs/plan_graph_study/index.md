@@ -34,6 +34,11 @@
     4. 0785 - [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) (Medium)
     5. 0261 - [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) (Medium)
 - Union Find / DSU
+    1. 0721 - [Accounts Merge](https://leetcode.com/problems/accounts-merge/) (Medium)
+    2. 0990 - [Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) (Medium)
+    3. 1061 - [Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/) (Medium)
+    4. 0839 - [Similar String Groups](https://leetcode.com/problems/similar-string-groups/) (Hard)
+- Topological Sort
     1. 0207 - [Course Schedule](https://leetcode.com/problems/course-schedule/) (Medium)
     2. 0210 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) (Medium)
     3. 0269 - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) (Hard)

@@ -21,33 +21,13 @@
 
 ![cyclic_graph](../imgs/cyclic_graph.png)
 
-Acyclic graph
+- **Acyclic graph**: A graph in which there is no cycle.
 
-```mermaid
-flowchart LR
-1((1))
-2((2))
-3((3))
-4((4))
-1 --> 3
-1 --> 2
-3 --> 4
-2 --> 3
-```
+![acyclic_graph](../imgs/graph_acyclic.png)
 
-Directed Acyclic Graph (DAG)
+- **Directed Acyclic Graph** (DAG)
 
-```mermaid
-flowchart LR
-1((1))
-2((2))
-3((3))
-4((4))
-1 --> 3
-1 --> 2
-3 --> 4
-2 --> 3
-```
+![dag](../imgs/graph_dag.png)
 
 Weighted graph
 

@@ -11,13 +11,13 @@ def ladderLength(beginWord: str, endWord: str, wordList: List[str]) -> int:
     if endWord not in wordList:
         return 0
 
-    adj = defaultdict(list)  # {pattern: [word1, word2, ...]}
+    graph = defaultdict(list)  # {pattern: [word1, word2, ...]}
     wordList.append(beginWord)
 
     for word in wordList:
         for j in range(len(word)):
             pattern = word[:j] + "*" + word[j + 1 :]
-            adj[pattern].append(word)
+            graph[pattern].append(word)
 
     visited = set([beginWord])
     q = deque([beginWord])
@@ -31,7 +31,7 @@ def ladderLength(beginWord: str, endWord: str, wordList: List[str]) -> int:
 
             for j in range(len(word)):
                 pattern = word[:j] + "*" + word[j + 1 :]
-                for neighbor in adj[pattern]:
+                for neighbor in graph[pattern]:
                     if neighbor not in visited:
                         visited.add(neighbor)
                         q.append(neighbor)

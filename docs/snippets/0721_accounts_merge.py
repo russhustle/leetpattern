@@ -2,40 +2,53 @@ from collections import defaultdict
 from typing import List
 
 
-class UnionFind:
-    def __init__(self, n):
-        self.parent = list(range(n))
-
-    def find(self, p):
-        if self.parent[p] != p:
-            self.parent[p] = self.find(self.parent[p])
-        return self.parent[p]
-
-    def union(self, p, q):
-        rootP = self.find(p)
-        rootQ = self.find(q)
-        if rootP != rootQ:
-            self.parent[rootQ] = rootP
-
-
+# Union Find
 def accountsMerge(accounts: List[List[str]]) -> List[List[str]]:
-    email_to_id = {}
-    uf = UnionFind(len(accounts))
+    parent = defaultdict(str)
+    rank = defaultdict(int)
+    email_to_name = defaultdict(str)
+    merged_accounts = defaultdict(list)
 
-    for i, account in enumerate(accounts):
+    def find(n):
+        p = parent[n]
+        while p != parent[p]:
+            parent[p] = parent[parent[p]]
+            p = parent[p]
+        return p
+
+    def union(n1, n2):
+        p1, p2 = find(n1), find(n2)
+        if p1 == p2:
+            return
+
+        if rank[p1] > rank[p2]:
+            parent[p2] = p1
+        elif rank[p1] < rank[p2]:
+            parent[p1] = p2
+        else:
+            parent[p2] = p1
+            rank[p1] += 1
+
+    for account in accounts:
+        name = account[0]
+        first_email = account[1]
+
         for email in account[1:]:
-            if email in email_to_id:
-                uf.union(i, email_to_id[email])
-            email_to_id[email] = i
+            if email not in parent:
+                parent[email] = email
+                rank[email] = 1
+            email_to_name[email] = name
+            union(first_email, email)
 
-    id_to_emails = defaultdict(list)
-    for email, id_ in email_to_id.items():
-        id_to_emails[uf.find(id_)].append(email)
+    for email in parent:
+        root_email = find(email)
+        merged_accounts[root_email].append(email)
 
-    return [
-        [accounts[id_][0]] + sorted(emails)
-        for id_, emails in id_to_emails.items()
-    ]
+    result = []
+    for root_email, emails in merged_accounts.items():
+        result.append([email_to_name[root_email]] + sorted(emails))
+
+    return result
 
 
 accounts = [
@@ -44,8 +57,7 @@ accounts = [
     ["Mary", "mary@mail.com"],
     ["John", "johnnybravo@mail.com"],
 ]
-
 print(accountsMerge(accounts))
 # [['John', 'john00@mail.com', 'john_newyork@mail.com', 'johnsmith@mail.com'],
-#  ['Mary', 'mary@mail.com'],
-#  ['John', 'johnnybravo@mail.com']]
+# ['Mary', 'mary@mail.com'],
+# ['John', 'johnnybravo@mail.com']]

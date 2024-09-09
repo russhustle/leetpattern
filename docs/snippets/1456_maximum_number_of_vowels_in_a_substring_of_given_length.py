@@ -4,21 +4,21 @@ from typing import List
 # Sliding Window - Fixed
 def maxVowels(s: str, k: int) -> int:
     vowel = set("aeiou")
-    cur = 0
+    count = 0
 
     for i in range(k):
         if s[i] in vowel:
-            cur += 1
+            count += 1
 
-    max_count = cur
+    max_count = count
 
     for i in range(k, len(s)):
         if s[i] in vowel:
-            cur += 1
+            count += 1
         if s[i - k] in vowel:
-            cur -= 1
+            count -= 1
 
-        max_count = max(max_count, cur)
+        max_count = max(max_count, count)
 
         if max_count == k:
             break

@@ -5,8 +5,9 @@
 3. 1456 - [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
 4. 0567 - [Permutation in String](https://leetcode.com/problems/permutation-in-string/) (Medium)
 5. 0713 - [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) (Medium)
-6. 0209 - [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) (Medium)
-7. 0076 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) (Hard)
+6. 1151 - [Minimum Swaps to Group All 1's Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
+7. 0209 - [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) (Medium)
+8. 0076 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) (Hard)
 
 ## 643. Maximum Average Subarray I
 
@@ -40,6 +41,14 @@
 
 ```python
 --8<-- "0713_subarray_product_less_than_k.py"
+```
+
+## 1151. Minimum Swaps to Group All 1's Together
+
+- Return the minimum number of swaps required to group all 1's together in any subarray of size `k`.
+
+```python
+--8<-- "1151_minimum_swaps_to_group_all_ones_together.py"
 ```
 
 ## 209. Minimum Size Subarray Sum

@@ -1,6 +1,7 @@
 from typing import List
 
 
+# DP - 2D
 def uniquePathsWithObstacles(obstacleGrid: List[List[int]]) -> int:
     if obstacleGrid[0][0] == 1 or obstacleGrid[-1][-1] == 1:
         return 0

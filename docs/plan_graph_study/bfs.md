@@ -38,11 +38,17 @@
 
 ## 1306. Jump Game III
 
+- Return `True` if you can reach the end of the array starting at index `start` and `False` otherwise.
+
 ```python
 --8<-- "1306_jump_game_iii.py"
 ```
 
 ## 542. 01 Matrix
+
+- Return the distance of the nearest 0 for each cell in the matrix.
+
+![0542](../imgs/0542.jpg)
 
 ```python
 --8<-- "0542_01_matrix.py"

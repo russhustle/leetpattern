@@ -1,5 +1,12 @@
 # Graph - Flood Fill
 
+!!! note
+    **Flood Fill** is essentially a graph traversal algorithm (like BFS or DFS) applied to matrices (2D grids).
+    It checks adjacent cells (up, down, left, right) of a starting point to determine whether they belong to the same region.
+    Typically, it involves modifying or marking the cells that belong to the same connected component.
+
+## LeetCode Problems
+
 1. 0733 - [Flood Fill](https://leetcode.com/problems/flood-fill/) (Easy)
 2. 0200 - [Number of Islands](https://leetcode.com/problems/number-of-islands/) (Medium)
 3. 695 - [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) (Medium)

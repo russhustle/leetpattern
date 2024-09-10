@@ -1,5 +1,7 @@
 # Dynamic Programming - 2 Dimensional Table
 
+## LeetCode Problems
+
 1. 0118 - [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) (Easy)
 2. 0119 - [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) (Easy)
 3. 0062 - [Unique Paths](https://leetcode.com/problems/unique-paths/) (Medium)

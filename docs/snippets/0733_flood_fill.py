@@ -2,7 +2,7 @@ from collections import deque
 from typing import List
 
 
-# 1. DFS
+# DFS
 def floodFillDFS(
     image: List[List[int]], sr: int, sc: int, color: int
 ) -> List[List[int]]:
@@ -29,7 +29,7 @@ def floodFillDFS(
     return image
 
 
-# 2. BFS
+# BFS
 def floodFillBFS(
     image: List[List[int]], sr: int, sc: int, color: int
 ) -> List[List[int]]:

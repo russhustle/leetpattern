@@ -1,5 +1,7 @@
 # Dynamic Programming - Basic
 
+## LeetCode Problems
+
 1. 0509 - [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) (Easy)
 2. 0070 - [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) (Easy)
 3. 0746 - [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) (Easy)
@@ -8,18 +10,6 @@
 6. 0376 - [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) (Medium)
 7. 0343 - [Integer Break](https://leetcode.com/problems/integer-break/) (Medium)
 8. 1025 - [Divisor Game](https://leetcode.com/problems/divisor-game/) (Easy)
-
-## DP Resources
-
-- [[Leetcode Discuss] Solved all dynamic programming (dp) problems in 7 months](https://leetcode.com/discuss/general-discussion/1000929/solved-all-dynamic-programming-dp-problems-in-7-months)
-
-## Steps to Solve DP Problems
-
-1. Define the `dp` array and its meaning.
-2. Define the `dp` formula.
-3. Initialize the `dp` array.
-4. Determine the traversal direction.
-5. Derive the `dp` array.
 
 ## 509. Fibonacci Number
 

@@ -2,7 +2,7 @@
 
 ## 0/1 Knapsack Problem
 
-![knapsack01](../imgs/knapsack01.jpg)
+![knapsack01](../imgs/knapsack01.jpg){width=400px}
 
 - The 0/1 knapsack problem is a variation of the knapsack problem where the items can be selected only once.
 

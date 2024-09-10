@@ -1,7 +1,7 @@
 # Graph - Shortest Path Problems
 
 !!! note
-    Shortest Path Problem: Find the shortest path between two vertices in a graph.
+Shortest Path Problem: Find the shortest path between two vertices in a graph.
 
 ## Dijkstra's Algorithm
 
@@ -103,6 +103,10 @@ graph LR
 ```
 
 ## 1168. Optimize Water Distribution in a Village
+
+![1168_0](../imgs/1168_0.png)
+
+![1168_1](../imgs/1168_1.png)
 
 ```python
 --8<-- "1168_optimize_water_distribution_in_a_village.py"

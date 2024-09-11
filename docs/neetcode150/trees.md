@@ -1,5 +1,7 @@
 # Trees
 
+## LeetCode Problems
+
 1. 0226 - [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) (Easy)
 2. 0104 - [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) (Easy)
 3. 0543 - [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) (Easy)

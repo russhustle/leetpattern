@@ -1,5 +1,7 @@
 # Hash - Counting
 
+## LeetCode Problems
+
 1. 0242 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/) (Easy)
 2. 0560 - [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) (Medium)
 3. 0049 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/) (Medium)

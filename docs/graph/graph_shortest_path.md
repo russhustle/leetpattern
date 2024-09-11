@@ -1,7 +1,7 @@
 # Graph - Shortest Path Problems
 
 !!! note
-Shortest Path Problem: Find the shortest path between two vertices in a graph.
+    Shortest Path Problem: Find the shortest path between two vertices in a graph.
 
 ## Dijkstra's Algorithm
 
@@ -15,7 +15,7 @@ Shortest Path Problem: Find the shortest path between two vertices in a graph.
 --8<-- "template/graph_shortest_path.py"
 ```
 
-## Problems
+## LeetCode Problems
 
 1. 0743 - [Network Delay Time](https://leetcode.com/problems/network-delay-time/) (Medium)
 2. 0778 - [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) (Hard)

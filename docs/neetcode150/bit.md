@@ -1,5 +1,7 @@
 # Bit Manipulation
 
+## LeetCode Problems
+
 1. 0191 - [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) (Easy)
 2. 0338 - [Counting Bits](https://leetcode.com/problems/counting-bits/) (Medium)
 3. 0190 - [Reverse Bits](https://leetcode.com/problems/reverse-bits/) (Easy)

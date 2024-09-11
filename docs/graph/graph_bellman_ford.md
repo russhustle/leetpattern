@@ -5,7 +5,7 @@
 - Time Complexity: O(V \* E), where V is the number of vertices and E is the number of edges in the graph.
 - Space Complexity: O(V), where V is the number of vertices in the graph.
 
-## Problems
+## LeetCode Problems
 
 1. 0743 - [Network Delay Time](https://leetcode.com/problems/network-delay-time/) (Medium)
 2. 0787 - [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) (Medium)

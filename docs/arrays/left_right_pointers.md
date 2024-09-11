@@ -1,5 +1,7 @@
 # Left Right Pointers
 
+## LeetCode Problems
+
 1. 0009 - [Palindrome Number](https://leetcode.com/problems/palindrome-number/) (Easy)
 2. 0015 - [3Sum](https://leetcode.com/problems/3sum/) (Medium)
 3. 0018 - [4Sum](https://leetcode.com/problems/4sum/) (Medium)

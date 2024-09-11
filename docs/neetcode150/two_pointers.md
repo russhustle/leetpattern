@@ -1,10 +1,12 @@
 # Two Pointers
 
-- 0125 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (Easy)
-- 0167 - [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) (Easy)
-- 0015 - [3Sum](https://leetcode.com/problems/3sum/) (Medium)
-- 0011 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (Medium)
-- 0042 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) (Hard)
+## LeetCode Problems
+
+1. 0125 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (Easy)
+2. 0167 - [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) (Easy)
+3. 0015 - [3Sum](https://leetcode.com/problems/3sum/) (Medium)
+4. 0011 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (Medium)
+5. 0042 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) (Hard)
 
 ## 125. Valid Palindrome
 

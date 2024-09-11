@@ -1,5 +1,7 @@
 # Prefix Sum
 
+## LeetCode Problems
+
 1. 2574 - [Left and Right Sum Difference](https://leetcode.com/problems/left-and-right-sum-differences/) (easy)
 2. 1732 - [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) (easy)
 3. 0303 - [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) (easy)

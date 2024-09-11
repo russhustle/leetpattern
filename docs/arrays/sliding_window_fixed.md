@@ -1,5 +1,7 @@
 # Sliding Window - Fixed Size
 
+## LeetCode Problems
+
 1. 0643 - [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) (Easy)
 2. 0219 - [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) (Easy)
 3. 1456 - [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)

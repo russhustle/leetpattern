@@ -1,5 +1,7 @@
 # Math & Geometry
 
+## LeetCode Problems
+
 1. 0048 - [Rotate Image](https://leetcode.com/problems/rotate-image/) (Medium)
 2. 0054 - [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) (Medium)
 3. 0073 - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) (Medium)

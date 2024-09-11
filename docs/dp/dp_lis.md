@@ -1,5 +1,7 @@
 # Dynamic Programming - Longest Increasing Subsequence
 
+## LeetCode Problems
+
 1. 0300 - [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) (Medium)
 2. 0673 - [Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) (Medium)
 3. 0354 - [Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/) (Hard)

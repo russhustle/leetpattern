@@ -1,5 +1,7 @@
 # Hash Map
 
+## LeetCode Problems
+
 1. 0383 - [Ransom Note](https://leetcode.com/problems/ransom-note/) (Easy)
 2. 0350 - [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) (Easy)
 3. 0001 - [Two Sum](https://leetcode.com/problems/two-sum/) (Easy)

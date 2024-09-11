@@ -1,5 +1,7 @@
 # Greedy Algorithm - Interval Problems
 
+## LeetCode Problems
+
 1. 0055 - [Jump Game](https://leetcode.com/problems/jump-game/) (Medium)
 2. 0045 - [Jump Game II](https://leetcode.com/problems/jump-game-ii/) (Hard)
 3. 0452 - [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)

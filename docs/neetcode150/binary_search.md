@@ -1,5 +1,7 @@
 # Binary Search
 
+## LeetCode Problems
+
 1. 0704 - [Binary Search](https://leetcode.com/problems/binary-search/) (Easy)
 2. 0074 - [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) (Medium)
 3. 0875 - [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) (Medium)

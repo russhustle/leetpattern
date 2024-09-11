@@ -28,6 +28,8 @@
 
 - Count the number of islands in a 2D grid.
 
+![0200](../imgs/0200.jpg){width=400px}
+
 ```python
 --8<-- "0200_number_of_islands.py"
 ```

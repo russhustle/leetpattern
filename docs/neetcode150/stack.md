@@ -1,5 +1,7 @@
 # Stack
 
+## LeetCode Problems
+
 1. 0020 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy)
 2. 0155 - [Min Stack](https://leetcode.com/problems/min-stack/) (Easy)
 3. 0150 - [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) (Medium)

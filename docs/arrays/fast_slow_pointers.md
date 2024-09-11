@@ -1,5 +1,7 @@
 # Fast Slow Pointers
 
+## LeetCode Problems
+
 1. 0027 - [Remove Element](https://leetcode.com/problems/remove-element/) (Easy)
 2. 0026 - [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) (Easy)
 3. 0080 - [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) (Medium)

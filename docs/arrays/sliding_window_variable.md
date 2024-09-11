@@ -1,5 +1,7 @@
 # Sliding Window - Variable Size
 
+## LeetCode Problems
+
 1. 0003 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) (Medium)
 2. 0424 - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) (Medium)
 3. 1208 - [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/) (Medium)

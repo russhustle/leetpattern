@@ -1,5 +1,7 @@
 # Heap (Priority Queue)
 
+## LeetCode Problems
+
 1. 0703 - [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) (Easy)
 2. 1046 - [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) (Easy)
 3. 0973 - [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) (Medium)

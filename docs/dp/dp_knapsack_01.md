@@ -10,7 +10,7 @@
 --8<-- "template/knapsack01.py"
 ```
 
-## Problems
+## LeetCode Problems
 
 1. 0416 - [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) (Medium)
 2. 0474 - [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) (Medium)

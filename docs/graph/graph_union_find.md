@@ -1,5 +1,18 @@
 # Union Find (Disjoint Set)
 
+## Union Find
+
+1. Path Compression
+2. Union by Rank
+
+```python
+--8<-- "template/union_find.py"
+```
+
+![graph_union_find](../imgs/graph_union_find.png){width=300px}
+
+## LeetCode Problems
+
 1. 0547 - [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) (Medium)
 2. 0684 - [Redundant Connection](https://leetcode.com/problems/redundant-connection/) (Medium)
 3. 0323 - [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
@@ -11,15 +24,6 @@
 9. 1202 - [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) (Medium)
 10. 0685 - [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/) (Hard)
 11. 0399 - [Evaluate Division](https://leetcode.com/problems/evaluate-division/) (Medium)
-
-## Union Find
-
-1. Path Compression
-2. Union by Rank
-
-```python
---8<-- "template/union_find.py"
-```
 
 ## 547. Number of Provinces
 

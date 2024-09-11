@@ -34,6 +34,10 @@
 --8<-- "0001_two_sum.py"
 ```
 
+```cpp linenums="1"
+--8<-- "cpp/0001_two_sum.cpp"
+```
+
 ## 409. Longest Palindrome
 
 - Return the length of the longest palindrome that can be built with the characters in the string.

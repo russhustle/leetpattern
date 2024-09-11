@@ -1,7 +1,7 @@
 from typing import List
 
 
-# 1. Sorting
+# Sort
 def thirdMaxSort(nums: List[int]) -> int:
     nums = list(set(nums))
     nums.sort(reverse=True)
@@ -9,7 +9,7 @@ def thirdMaxSort(nums: List[int]) -> int:
     return nums[2] if len(nums) >= 3 else nums[0]
 
 
-# 2. Compare
+# Compare
 def thirdMaxCompare(nums: List[int]) -> int:
     first, second, third = float("-inf"), float("-inf"), float("-inf")
 
@@ -22,6 +22,14 @@ def thirdMaxCompare(nums: List[int]) -> int:
             third = num
 
     return third if third != float("-inf") else first
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    Sort     |    O(NlogN)     |     O(N)     |
+# |  Compare    |       O(N)      |     O(1)     |
+# |-------------|-----------------|--------------|
 
 
 print(thirdMaxSort([3, 2, 1]))  # 1

@@ -171,7 +171,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to system preference
   font:
-    text: Roboto
+    text: Open Sans
     code: Roboto Mono
 
   features:
@@ -184,7 +184,7 @@ theme:
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.path
-    - navigation.footer
+    - navigation.footer # Enable footer navigation
     - navigation.top
     - search.suggest # Enable search suggestions
     - search.highlight # Enable search term highlighting
@@ -260,6 +260,6 @@ extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  - css/no-footer.css
+  # - css/no-footer.css
   - css/unordered-list-symbols.css
   - css/ordered-list-symbols.css

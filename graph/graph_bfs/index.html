@@ -88,12 +88,10 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
       
     
-    
-      <link rel="stylesheet" href="../../css/no-footer.css">
     
       <link rel="stylesheet" href="../../css/unordered-list-symbols.css">
     
@@ -2096,6 +2094,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#leetcode-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      LeetCode Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#994-rotting-oranges" class="md-nav__link">
     <span class="md-ellipsis">
       994. Rotting Oranges
@@ -3079,6 +3086,8 @@
       
         
       
+        
+      
     
     
       
@@ -3211,6 +3220,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../plan_graph_study/topological_sort/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topological Sort
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../plan_graph_study/union_find_dsu/" class="md-nav__link">
         
   
@@ -3309,6 +3339,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#leetcode-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      LeetCode Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#994-rotting-oranges" class="md-nav__link">
     <span class="md-ellipsis">
       994. Rotting Oranges
@@ -3363,6 +3402,7 @@
 
 
 <h1 id="graph-breadth-first-search">Graph - Breadth First Search<a class="headerlink" href="#graph-breadth-first-search" title="Permanent link">&para;</a></h1>
+<h2 id="leetcode-problems">LeetCode Problems<a class="headerlink" href="#leetcode-problems" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0994 - <a href="https://leetcode.com/problems/rotting-oranges/">Rotting Oranges</a> (Medium)</li>
 <li>0127 - <a href="https://leetcode.com/problems/word-ladder/">Word Ladder</a> (Hard)</li>
@@ -3426,13 +3466,13 @@
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="k">if</span> <span class="n">endWord</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">wordList</span><span class="p">:</span>
 </span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="k">return</span> <span class="mi">0</span>
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">adj</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>  <span class="c1"># {pattern: [word1, word2, ...]}</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">graph</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>  <span class="c1"># {pattern: [word1, word2, ...]}</span>
 </span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="n">wordList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">beginWord</span><span class="p">)</span>
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
 </span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">wordList</span><span class="p">:</span>
 </span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)):</span>
 </span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>            <span class="n">pattern</span> <span class="o">=</span> <span class="n">word</span><span class="p">[:</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:]</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>            <span class="n">adj</span><span class="p">[</span><span class="n">pattern</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>            <span class="n">graph</span><span class="p">[</span><span class="n">pattern</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
 </span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
 </span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    <span class="n">visited</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="n">beginWord</span><span class="p">])</span>
 </span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="n">q</span> <span class="o">=</span> <span class="n">deque</span><span class="p">([</span><span class="n">beginWord</span><span class="p">])</span>
@@ -3446,7 +3486,7 @@
 </span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>
 </span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)):</span>
 </span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>                <span class="n">pattern</span> <span class="o">=</span> <span class="n">word</span><span class="p">[:</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:]</span>
-</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>                <span class="k">for</span> <span class="n">neighbor</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">[</span><span class="n">pattern</span><span class="p">]:</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>                <span class="k">for</span> <span class="n">neighbor</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">pattern</span><span class="p">]:</span>
 </span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>                    <span class="k">if</span> <span class="n">neighbor</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
 </span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>                        <span class="n">visited</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">neighbor</span><span class="p">)</span>
 </span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>                        <span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">neighbor</span><span class="p">)</span>

@@ -2,6 +2,7 @@ from pprint import pprint
 from typing import List
 
 
+# Array
 def generateMatrix(n: int) -> List[List[int]]:
     matrix = [[0] * n for _ in range(n)]
     num = 1
@@ -21,6 +22,13 @@ def generateMatrix(n: int) -> List[List[int]]:
             num += 1
 
     return matrix
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |   Layer     |      O(N^2)     |     O(1)     |
+# |-------------|-----------------|--------------|
 
 
 pprint(generateMatrix(5))

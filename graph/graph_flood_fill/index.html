@@ -88,12 +88,10 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
       
     
-    
-      <link rel="stylesheet" href="../../css/no-footer.css">
     
       <link rel="stylesheet" href="../../css/unordered-list-symbols.css">
     
@@ -2054,6 +2052,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#leetcode-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      LeetCode Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#733-flood-fill" class="md-nav__link">
     <span class="md-ellipsis">
       733. Flood Fill
@@ -3097,6 +3104,8 @@
       
         
       
+        
+      
     
     
       
@@ -3229,6 +3238,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../plan_graph_study/topological_sort/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topological Sort
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../plan_graph_study/union_find_dsu/" class="md-nav__link">
         
   
@@ -3327,6 +3357,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#leetcode-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      LeetCode Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#733-flood-fill" class="md-nav__link">
     <span class="md-ellipsis">
       733. Flood Fill
@@ -3399,6 +3438,13 @@
 
 
 <h1 id="graph-flood-fill">Graph - Flood Fill<a class="headerlink" href="#graph-flood-fill" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Flood Fill</strong> is essentially a graph traversal algorithm (like BFS or DFS) applied to matrices (2D grids).
+It checks adjacent cells (up, down, left, right) of a starting point to determine whether they belong to the same region.
+Typically, it involves modifying or marking the cells that belong to the same connected component.</p>
+</div>
+<h2 id="leetcode-problems">LeetCode Problems<a class="headerlink" href="#leetcode-problems" title="Permanent link">&para;</a></h2>
 <ol>
 <li>0733 - <a href="https://leetcode.com/problems/flood-fill/">Flood Fill</a> (Easy)</li>
 <li>0200 - <a href="https://leetcode.com/problems/number-of-islands/">Number of Islands</a> (Medium)</li>
@@ -3416,7 +3462,7 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># 1. DFS</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># DFS</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">def</span> <span class="nf">floodFillDFS</span><span class="p">(</span>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">image</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span> <span class="n">sr</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">sc</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">int</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>
@@ -3443,7 +3489,7 @@
 </span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    <span class="k">return</span> <span class="n">image</span>
 </span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
 </span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="c1"># 2. BFS</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="c1"># BFS</span>
 </span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="k">def</span> <span class="nf">floodFillBFS</span><span class="p">(</span>
 </span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    <span class="n">image</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span> <span class="n">sr</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">sc</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">int</span>
 </span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>
@@ -3484,6 +3530,7 @@
 <ul>
 <li>Count the number of islands in a 2D grid.</li>
 </ul>
+<p><img alt="0200" src="../../imgs/0200.jpg" width="400px" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>

@@ -88,12 +88,10 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
       
     
-    
-      <link rel="stylesheet" href="../css/no-footer.css">
     
       <link rel="stylesheet" href="../css/unordered-list-symbols.css">
     
@@ -3003,6 +3001,8 @@
       
         
       
+        
+      
     
     
       
@@ -3119,6 +3119,27 @@
   
   <span class="md-ellipsis">
     Graph Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plan_graph_study/topological_sort/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topological Sort
   </span>
   
 
@@ -3293,6 +3314,9 @@
 
 
 <h1 id="graph">Graph<a class="headerlink" href="#graph" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="https://csacademy.com/app/graph_editor/">Graph Editor</a>: Create and visualize graphs.</li>
+</ul>
 <h2 id="concepts">Concepts<a class="headerlink" href="#concepts" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Graph</li>
@@ -3313,26 +3337,14 @@
 <li><strong>Cyclic graph</strong>: A graph in which there is a cycle.</li>
 </ul>
 <p><img alt="cyclic_graph" src="../imgs/cyclic_graph.png" /></p>
-<p>Acyclic graph</p>
-<pre class="mermaid"><code>flowchart LR
-1((1))
-2((2))
-3((3))
-4((4))
-1 --&gt; 3
-1 --&gt; 2
-3 --&gt; 4
-2 --&gt; 3</code></pre>
-<p>Directed Acyclic Graph (DAG)</p>
-<pre class="mermaid"><code>flowchart LR
-1((1))
-2((2))
-3((3))
-4((4))
-1 --&gt; 3
-1 --&gt; 2
-3 --&gt; 4
-2 --&gt; 3</code></pre>
+<ul>
+<li><strong>Acyclic graph</strong>: A graph in which there is no cycle.</li>
+</ul>
+<p><img alt="acyclic_graph" src="../imgs/graph_acyclic.png" /></p>
+<ul>
+<li><strong>Directed Acyclic Graph</strong> (DAG)</li>
+</ul>
+<p><img alt="dag" src="../imgs/graph_dag.png" /></p>
 <p>Weighted graph</p>
 <pre class="mermaid"><code>flowchart LR
 1((1))

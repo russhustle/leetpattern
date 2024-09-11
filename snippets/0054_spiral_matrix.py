@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Array
 def spiralOrder(matrix: List[List[int]]) -> List[int]:
     if not matrix or not matrix[0]:
         return []
@@ -32,6 +33,13 @@ def spiralOrder(matrix: List[List[int]]) -> List[int]:
             left += 1
 
     return result
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    Naive    |      O(N)       |     O(1)     |
+# |-------------|-----------------|--------------|
 
 
 print(spiralOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))

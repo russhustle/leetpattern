@@ -1,3 +1,4 @@
+# DP - 2D
 def uniquePaths(m: int, n: int) -> int:
     if m == 1 or n == 1:
         return 1

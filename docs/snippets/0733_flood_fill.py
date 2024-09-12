@@ -14,7 +14,7 @@ def floodFillDFS(
         return image
 
     def dfs(r, c):
-        if r not in range(m) or c not in range(n) or image[r][c] != original:
+        if r < 0 or r >= m or c < 0 or c >= n or image[r][c] != original:
             return None
 
         image[r][c] = color
@@ -51,7 +51,7 @@ def floodFillBFS(
             nr = row + dr
             nc = col + dc
 
-            if nr in range(m) and nc in range(n) and image[nr][nc] == original:
+            if 0 <= nr < m and 0 <= nc < n and image[nr][nc] == original:
                 q.append((nr, nc))
 
     return image

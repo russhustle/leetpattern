@@ -1,7 +1,7 @@
 from typing import List
 
 
-# 1. Brute Force
+# Brute Force
 def maxProfitBF(prices: List[int]) -> int:
     max_profit = 0
     n = len(prices)
@@ -12,7 +12,7 @@ def maxProfitBF(prices: List[int]) -> int:
     return max_profit
 
 
-# 2. DP
+# DP
 def maxProfitDP(prices: List[int]) -> int:
     dp = [[0] * 2 for _ in range(len(prices))]
     dp[0][0] = -prices[0]  # buy
@@ -25,7 +25,7 @@ def maxProfitDP(prices: List[int]) -> int:
     return dp[-1][1]
 
 
-# 3. Greedy
+# Greedy
 def maxProfitGreedy(prices: List[int]) -> int:
     max_profit = 0
     seen_min = prices[0]
@@ -37,7 +37,7 @@ def maxProfitGreedy(prices: List[int]) -> int:
     return max_profit
 
 
-# 4. Fast Slow Pointers
+# Fast Slow Pointers
 def maxProfitFS(prices: List[int]) -> int:
     max_profit = 0
     slow, fast = 0, 1

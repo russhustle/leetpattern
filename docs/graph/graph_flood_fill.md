@@ -18,7 +18,7 @@
 
 - Replace all the pixels of the same color starting from the given pixel.
 
-![733](https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg)
+![733](https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg){width=400px}
 
 ```python
 --8<-- "0733_flood_fill.py"
@@ -38,7 +38,7 @@
 
 - Find the maximum area of an island in a 2D grid.
 
-![695](https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg)
+![695](https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg){width=400px}
 
 ```python
 --8<-- "0695_max_area_of_island.py"
@@ -48,7 +48,7 @@
 
 - Calculate the perimeter of an island in a 2D grid.
 
-![463](https://assets.leetcode.com/uploads/2018/10/12/island.png)
+![463](https://assets.leetcode.com/uploads/2018/10/12/island.png){width=400px}
 
 ```python
 --8<-- "0463_island_perimeter.py"
@@ -66,7 +66,7 @@
 
 - Find the list of coordinates where water can flow to both the Pacific and Atlantic oceans.
 
-![417](https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg)
+![417](https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg){width=400px}
 
 ```python
 --8<-- "0417_pacific_atlantic_water_flow.py"

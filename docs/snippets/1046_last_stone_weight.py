@@ -2,7 +2,7 @@ import heapq
 from typing import List
 
 
-# 1. Heap
+# Heap
 def lastStoneWeightHeap(stones: List[int]) -> int:
     heap = [-stone for stone in stones]
     heapq.heapify(heap)
@@ -17,7 +17,7 @@ def lastStoneWeightHeap(stones: List[int]) -> int:
     return -heap[0] if heap else 0
 
 
-# 2. 0/1 Knapsack
+# 0/1 Knapsack
 def lastStoneWeightKnapsack(stones: List[int]) -> int:
     total = sum(stones)
     target = total // 2
@@ -28,6 +28,14 @@ def lastStoneWeightKnapsack(stones: List[int]) -> int:
             dp[j] = max(dp[j], dp[j - stone] + stone)
 
     return total - 2 * dp[target]
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    Heap     |   O(n log n)    |     O(n)     |
+# |  Knapsack   |      O(n)       |     O(n)     |
+# |-------------|-----------------|--------------|
 
 
 stones = [2, 7, 4, 1, 8, 1]

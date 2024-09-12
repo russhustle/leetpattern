@@ -172,7 +172,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to system preference
   font:
-    text: Noto Sans
+    text: Roboto
     code: Roboto Mono
 
   features:

@@ -6,14 +6,15 @@
 - **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
 - **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
 - Algorithm
-    - Prim's Algorithm
-        - Data Structure: Heap
-        - Time Ciomplexity: $O(E \log V)$
-        - Space Complexity: $O(V + E)$
-    - Kruskal's Algorithm
-        - Union Find
-        - Time Complexity: $O(E \log V)$
-        - Space Complexity: $O(V + E)$
+
+  - Prim's Algorithm
+    - Data Structure: Heap
+    - Time Ciomplexity: $O(E \log V)$
+    - Space Complexity: $O(V + E)$
+  - Kruskal's Algorithm
+    - Union Find
+    - Time Complexity: $O(E \log V)$
+    - Space Complexity: $O(V + E)$
 
 - Demonstration
 
@@ -71,6 +72,10 @@ MST
 ```
 
 ## 1579. Remove Max Number of Edges to Keep Graph Fully Traversable
+
+- Return the maximum number of edges you can remove so that the graph remains fully traversable.
+
+![1579](../imgs/1579.png){width=200px}
 
 ```python
 --8<-- "1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.py"

@@ -45,7 +45,7 @@ nav:
           - Trie: tree/tree_trie.md
 
       - 📚 Stack & Queue:
-          - Home: stack_queue/index.md
+          - Stack & Queue: stack_queue/index.md
           - Stack: stack_queue/stack.md
           - Monotonic Stack: stack_queue/stack_monotonic.md
           - Queue: stack_queue/queue.md
@@ -56,7 +56,7 @@ nav:
           - Greedy - Interval: greedy/greedy_interval.md
 
       - ⏳ Dynamic Programming:
-          - Home: dp/index.md
+          - Dynamic Programming: dp/index.md
           - DP Basic: dp/dp_basic.md
           - DP 2D: dp/dp_2d.md
           - DP Interval: dp/dp_interval.md
@@ -68,11 +68,11 @@ nav:
           - LIS: dp/dp_lis.md
 
       - 🔄 Backtracking:
-          - Home: backtracking/index.md
+          - Backtracking: backtracking/index.md
           - Combinations: backtracking/backtracking_combinations.md
-          - Permutations: backtracking/backtracking_permutations.md
-          - Subsets: backtracking/backtracking_subsets.md
           - Partitions: backtracking/backtracking_partitions.md
+          - Subsets: backtracking/backtracking_subsets.md
+          - Permutations: backtracking/backtracking_permutations.md
           - Board: backtracking/backtracking_board.md
 
       - 📝 Graph:
@@ -89,7 +89,7 @@ nav:
           - Tarjan: graph/graph_tarjan.md
 
       - 🏔️ Heap:
-          - Home: heap/index.md
+          - Heap Introduction: heap/index.md
           - Heap: heap/heap_heap.md
           - Top K: heap/heap_top_k.md
           - Two Heaps: heap/heap_two_heaps.md
@@ -99,8 +99,34 @@ nav:
           - Home: other/index.md
           - 🍩 Bit: other/bit.md
 
+      - 📕 OOD:
+          - Home: design/index.md
+          - 🎊 Design Patterns: design/design_patterns.md
+          - 🚠 Design: design/design.md
+
+  #     - 🐍 Python:
+  #         - Home: python/index.md
+  #         - collections: python/python_collections.md
+
+  - Study Plan:
+      - Study Plan: plan/index.md
+      - 📊 Graph Theory:
+          - Graph Theory: plan_graph_study/index.md
+          - Standard Traversal: plan_graph_study/standard_traversal.md
+          - BFS: plan_graph_study/bfs.md
+          - Matrix Graphs: plan_graph_study/matrix_graphs.md
+          - Graph Theory: plan_graph_study/graph_theory.md
+          - Topological Sort: plan_graph_study/topological_sort.md
+          - Union Find: plan_graph_study/union_find_dsu.md
+          - Dijkstra's: plan_graph_study/dijkstra.md
+          - MST: plan_graph_study/mst.md
+      -  🌸 Challenges:
+          - Challenges: challenge/index.md
+          - 2024 September: challenge/202409.md
+          - 2024 September CN: challenge/202409_cn.md
+
       - 👨🏻‍💻 Neetcode 150:
-          - Home: neetcode150/index.md
+          - Neetcode 150: neetcode150/index.md
           - Arrays & Hashing: neetcode150/arrays_hashing.md
           - Two Pointers: neetcode150/two_pointers.md
           - Sliding Window: neetcode150/sliding_window.md
@@ -119,34 +145,6 @@ nav:
           - Intervals: neetcode150/intervals.md
           - Math & Geometry: neetcode150/math_geometry.md
           - Bit Manipulation: neetcode150/bit.md
-
-  #     - 🐍 Python:
-  #         - Home: python/index.md
-  #         - collections: python/python_collections.md
-
-  # - OOD:
-  #     - Home: design/index.md
-  #     - 🎊 Design Patterns: design_patterns.md
-  #     - 🚠 Design: design/design.md
-
-  # - Challenges:
-  #     - Home: challenge/index.md
-  #     - 2024 September: challenge/202409.md
-  #     - 2024 September CN: challenge/202409_cn.md
-
-  - Study Plan:
-      - Home: plan/index.md
-      - Graph Theory:
-          - Home: plan_graph_study/index.md
-          - Standard Traversal: plan_graph_study/standard_traversal.md
-          - BFS: plan_graph_study/bfs.md
-          - Matrix Graphs: plan_graph_study/matrix_graphs.md
-          - Graph Theory: plan_graph_study/graph_theory.md
-          - Topological Sort: plan_graph_study/topological_sort.md
-          - Union Find: plan_graph_study/union_find_dsu.md
-          - Dijkstra's: plan_graph_study/dijkstra.md
-          - MST: plan_graph_study/mst.md
-
 ##############################################
 ##  Material theme configuration for MkDocs ##
 ##############################################

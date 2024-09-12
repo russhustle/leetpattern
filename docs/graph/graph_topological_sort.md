@@ -5,6 +5,8 @@
 - DAG (Directed Acyclic Graph)
 - Time complexity: $O(V+E)$
 - Space complexity: $O(V+E)$
+- prerequisites
+    - Indegree (Look at the problem [1557. Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/))
 
 ```python
 --8<-- "template/graph_topological_sort.py"
@@ -12,12 +14,21 @@
 
 ## LeetCode Problems
 
-1. 0207 - [Course Schedule](https://leetcode.com/problems/course-schedule/) (Medium)
-2. 0210 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) (Medium)
-3. 0269 - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) (Hard)
-4. 1203 - [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
-5. 1857 - [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) (Hard)
-6. 1136 - [Parallel Courses](https://leetcode.com/problems/parallel-courses/) (Hard)
+1. 1557 - [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
+2. 0207 - [Course Schedule](https://leetcode.com/problems/course-schedule/) (Medium)
+3. 0210 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) (Medium)
+4. 0269 - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) (Hard)
+5. 1203 - [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
+6. 1857 - [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) (Hard)
+7. 1136 - [Parallel Courses](https://leetcode.com/problems/parallel-courses/) (Hard)
+
+## 1557. Minimum Number of Vertices to Reach All Nodes
+
+- Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
+
+```python
+--8<-- "1557_minimum_number_of_vertices_to_reach_all_nodes.py"
+```
 
 ## 207. Course Schedule
 

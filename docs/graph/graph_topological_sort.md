@@ -17,6 +17,7 @@
 3. 0269 - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) (Hard)
 4. 1203 - [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
 5. 1857 - [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) (Hard)
+6. 1136 - [Parallel Courses](https://leetcode.com/problems/parallel-courses/) (Hard)
 
 ## 207. Course Schedule
 
@@ -60,4 +61,14 @@
 
 ```python
 --8<-- "1857_largest_color_value_in_a_directed_graph.py"
+```
+
+## 1136. Parallel Courses
+
+- Return the minimum number of semesters needed to take all courses.
+
+![1136](../imgs/1136.png){width=300px}
+
+```python
+--8<-- "1136_parallel_courses.py"
 ```

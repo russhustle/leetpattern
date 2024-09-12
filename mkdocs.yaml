@@ -86,6 +86,7 @@ nav:
           - Bellman Ford: graph/graph_bellman_ford.md
           - MST: graph/graph_mst.md
           - Coloring: graph/graph_coloring.md
+          - Tarjan: graph/graph_tarjan.md
 
       - 🏔️ Heap:
           - Home: heap/index.md
@@ -171,7 +172,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to system preference
   font:
-    text: Open Sans
+    text: Work Sans
     code: Roboto Mono
 
   features:

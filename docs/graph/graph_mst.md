@@ -5,8 +5,17 @@
 - **Tree**: a connected acyclic graph
 - **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
 - **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
-- Prim's Algorithm
-- Kruskal's Algorithm
+- Algorithm
+    - Prim's Algorithm
+        - Data Structure: Heap
+        - Time Ciomplexity: $O(E \log V)$
+        - Space Complexity: $O(V + E)$
+    - Kruskal's Algorithm
+        - Union Find
+        - Time Complexity: $O(E \log V)$
+        - Space Complexity: $O(V + E)$
+
+- Demonstration
 
 Example graph
 
@@ -27,11 +36,9 @@ MST
 3. 1168 - [Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) (Hard)
 4. 1489 - [Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
 5. 1631 - [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) (Medium)
-6. 1192 - [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) (Hard)
-7. 1579 - [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) (Hard)
-8. 1136 - [Parallel Courses](https://leetcode.com/problems/parallel-courses/) (Hard)
-9. 0924 - [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/) (Hard)
-10. 1589 - [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
+6. 1579 - [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) (Hard)
+7. 0924 - [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/) (Hard)
+8. 1589 - [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
 
 ## 1584. Min Cost to Connect All Points
 
@@ -63,22 +70,10 @@ MST
 --8<-- "1631_path_with_minimum_effort.py"
 ```
 
-## 1192. Critical Connections in a Network
-
-```python
---8<-- "1192_critical_connections_in_a_network.py"
-```
-
 ## 1579. Remove Max Number of Edges to Keep Graph Fully Traversable
 
 ```python
 --8<-- "1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.py"
-```
-
-## 1136. Parallel Courses
-
-```python
---8<-- "1136_parallel_courses.py"
 ```
 
 ## 0924. Minimize Malware Spread

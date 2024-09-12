@@ -2,7 +2,7 @@
 
 ## Bipartite Graph
 
-![bipartite](../imgs/bipartite.png)
+![graph_bipartite](../imgs/graph_bipartite.png){width=300px}
 
 How to group
 

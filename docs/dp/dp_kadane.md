@@ -3,9 +3,10 @@
 ## LeetCode Problems
 
 1. 0053 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) (Medium)
-2. 0152 - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) (Medium)
-3. 0978 - [Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray/) (Medium)
-4. 1186 - [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) (Medium)
+2. 0918 - [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) (Medium)
+3. 0152 - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) (Medium)
+4. 0978 - [Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray/) (Medium)
+5. 1186 - [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) (Medium)
 
 ## 53. Maximum Subarray
 
@@ -13,6 +14,14 @@
 
 ```python
 --8<-- "0053_maximum_subarray.py"
+```
+
+## 918. Maximum Sum Circular Subarray
+
+- Return the maximum sum of a circular subarray from the given array.
+
+```python
+--8<-- "0918_maximum_sum_circular_subarray.py"
 ```
 
 ## 152. Maximum Product Subarray

@@ -49,6 +49,7 @@ nav:
           - Stack: stack_queue/stack.md
           - Monotonic Stack: stack_queue/stack_monotonic.md
           - Queue: stack_queue/queue.md
+          - Monotonic Queue: stack_queue/queue_monotonic.md
 
       - 🤑 Greedy:
           - Home: greedy/index.md

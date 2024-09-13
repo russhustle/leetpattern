@@ -98,7 +98,9 @@ nav:
 
       - 🏁 Other:
           - Home: other/index.md
-          - 🍩 Bit: other/bit.md
+          - Bit: other/bit.md
+          - Math: other/math.md
+          - Simulation: other/simulation.md
 
       - 📕 OOD:
           - Home: design/index.md
@@ -123,7 +125,6 @@ nav:
           - MST: plan_graph_study/mst.md
       -  🌸 Challenges:
           - Challenges: challenge/index.md
-          - 2024 September: challenge/202409.md
           - 2024 September CN: challenge/202409_cn.md
 
       - 👨🏻‍💻 Neetcode 150:

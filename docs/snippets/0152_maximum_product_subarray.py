@@ -1,6 +1,7 @@
 from typing import List
 
 
+# DP - Kadane
 def maxProduct(nums: List[int]) -> int:
     n = len(nums)
     dp_max = [0 for _ in range(n)]

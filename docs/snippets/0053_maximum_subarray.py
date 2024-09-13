@@ -1,7 +1,7 @@
 from typing import List
 
 
-# DP
+# DP - Kadane
 def maxSubArrayDP(nums: List[int]) -> int:
     dp = [0 for _ in range(len(nums))]
 
@@ -20,15 +20,14 @@ def maxSubArrayDP(nums: List[int]) -> int:
 
 # Greedy
 def maxSubArrayGreedy(nums: List[int]) -> int:
-    maxSum = float("-inf")
-    curSum = 0
+    max_sum = nums[0]
+    cur_sum = 0
 
     for num in nums:
-        curSum += num
-        maxSum = max(maxSum, curSum)
-        curSum = max(curSum, 0)
+        cur_sum = max(cur_sum + num, num)
+        max_sum = max(max_sum, cur_sum)
 
-    return maxSum
+    return max_sum
 
 
 nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]

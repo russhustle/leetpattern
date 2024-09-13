@@ -9,11 +9,15 @@
 
 ## 53. Maximum Subarray
 
+- Return the maximum sum of a contiguous subarray from the given array.
+
 ```python
 --8<-- "0053_maximum_subarray.py"
 ```
 
 ## 152. Maximum Product Subarray
+
+- Return the maximum product of a contiguous subarray from the given array.
 
 ```python
 --8<-- "0152_maximum_product_subarray.py"
@@ -21,11 +25,15 @@
 
 ## 978. Longest Turbulent Subarray
 
+- Return the length of the longest turbulent subarray of the given array.
+
 ```python
 --8<-- "0978_longest_turbulent_subarray.py"
 ```
 
 ## 1186. Maximum Subarray Sum with One Deletion
+
+- Return the maximum sum of a contiguous subarray with at most one deletion.
 
 ```python
 --8<-- "1186_maximum_subarray_sum_with_one_deletion.py"

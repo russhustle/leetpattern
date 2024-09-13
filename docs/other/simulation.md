@@ -2,7 +2,7 @@
 
 ## LeetCode Problems
 
-1. [874. Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/) (Easy)
+1. 0874 - [Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/) (Medium)
 
 ## 874. Walking Robot Simulation
 

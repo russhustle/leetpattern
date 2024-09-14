@@ -12,6 +12,10 @@
 --8<-- "template/graph_topological_sort.py"
 ```
 
+![ts1](../imgs/graph_ts1.png){width=300px}
+
+![ts2](../imgs/graph_ts2.png){width=300px}
+
 ## LeetCode Problems
 
 1. 1557 - [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)

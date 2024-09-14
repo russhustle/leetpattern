@@ -1,3 +1,4 @@
+# Stack
 def makeGood(s: str) -> str:
     stack = []
 

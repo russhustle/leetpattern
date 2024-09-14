@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Stack
 def generateParenthesis(n: int) -> List[str]:
     stack = []
     result = []

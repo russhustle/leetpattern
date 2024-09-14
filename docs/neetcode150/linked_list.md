@@ -12,11 +12,15 @@
 
 ## 206. Reverse Linked List
 
+- Reverse a singly linked list.
+
 ```python
 --8<-- "0206_reverse_linked_list.py"
 ```
 
 ## 21. Merge Two Sorted Lists
+
+- Merge two sorted linked lists and return it as a new sorted list. The new list should be made by splicing together the nodes of the first two lists.
 
 ```python
 --8<-- "0021_merge_two_sorted_lists.py"

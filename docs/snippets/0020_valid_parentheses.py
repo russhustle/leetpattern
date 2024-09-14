@@ -1,3 +1,4 @@
+# Stack
 def isValid(s: str) -> bool:
     hashmap = {
         ")": "(",

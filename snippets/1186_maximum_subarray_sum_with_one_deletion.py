@@ -1,10 +1,8 @@
 from typing import List
 
 
+# DP - Kadane
 def maximumSum(arr: List[int]) -> int:
-    # dp0: max sum ending at i without deleting any element
-    # dp1: max sum ending at i with deleting one element
-
     dp0 = arr[0]
     dp1 = 0
     maxSum = dp0

@@ -3,9 +3,11 @@ from collections import defaultdict
 from typing import Dict, List, Tuple
 
 
+# Prim
 def prim(
     connections: List[Tuple[int, int, int]]
 ) -> Dict[int, List[Tuple[int, int]]]:
+
     graph = defaultdict(list)
     for u, v, w in connections:
         graph[u].append((v, w))

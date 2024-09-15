@@ -1,6 +1,7 @@
 from typing import List
 
 
+# DP - Kadane
 def maxTurbulenceSize(arr: List[int]) -> int:
     n = len(arr)
     up = [1 for _ in range(n)]

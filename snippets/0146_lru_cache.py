@@ -52,11 +52,11 @@ class LRUCache:
         self.add_node_to_last(node)
 
 
-# Data structure: Doubly linked list + Hash map
-# Time complexity
-#   - get: O(1)
-#   - put: O(1)
-# Space complexity: O(capacity)
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |   LRU       |      O(1)       |    O(n)      |
+# |-------------|-----------------|--------------|
 
 
 cache = LRUCache(2)

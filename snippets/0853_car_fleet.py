@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Stack
 def carFleet(target: int, position: List[int], speed: List[int]) -> int:
     cars = sorted(zip(position, speed), reverse=True)
     stack = []

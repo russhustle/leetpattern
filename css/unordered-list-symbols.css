@@ -9,7 +9,7 @@ article ul ul {
 }
 
 article ul ul ul {
-    list-style-type: circle !important;
+    list-style-type: square !important;
 }
 
 article ul ul ul ul {

@@ -18,6 +18,7 @@ nav:
           - Sliding Window Fixed: arrays/sliding_window_fixed.md
           - Sliding Window Variable: arrays/sliding_window_variable.md
           - Prefix Sum: arrays/prefix_sum.md
+          - Difference Array: arrays/difference_array.md
 
       - 🔢 Hash:
           - Home: hash/index.md

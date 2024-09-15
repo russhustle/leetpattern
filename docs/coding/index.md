@@ -75,3 +75,7 @@
 
 - [🏷 Design](../design/design.md)
 - [🍩 Bit](../other/bit.md)
+
+## Resources
+
+- [算法竞赛模板库 by 灵茶山艾府](https://github.com/EndlessCheng/codeforces-go)

@@ -15,6 +15,7 @@ How to group
 
 1. 0785 - [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) (Medium)
 2. 886 - [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) (Medium)
+3. 0924 - [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/) (Hard)
 
 ## 785. Is Graph Bipartite?
 
@@ -30,4 +31,10 @@ How to group
 
 ```python
 --8<-- "0886_possible_bipartition.py"
+```
+
+## 0924. Minimize Malware Spread
+
+```python
+--8<-- "0924_minimize_malware_spread.py"
 ```

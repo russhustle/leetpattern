@@ -2,6 +2,7 @@ import heapq
 from typing import List
 
 
+# Heap - Two Heaps
 def findMaximizedCapital(
     k: int, w: int, profits: List[int], capital: List[int]
 ) -> int:

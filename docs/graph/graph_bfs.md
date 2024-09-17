@@ -6,6 +6,7 @@
 2. 0127 - [Word Ladder](https://leetcode.com/problems/word-ladder/) (Hard)
 3. 1466 - [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) (Medium)
 4. 0286 - [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) (Medium)
+5. 0815 - [Bus Routes](https://leetcode.com/problems/bus-routes/) (Hard)
 
 ## 994. Rotting Oranges
 
@@ -43,4 +44,12 @@
 
 ```python
 --8<-- "0286_walls_and_gates.py"
+```
+
+## 0815. Bus Routes
+
+- Return the least number of buses one must take to reach the destination from the source.
+
+```python
+--8<-- "0815_bus_routes.py"
 ```

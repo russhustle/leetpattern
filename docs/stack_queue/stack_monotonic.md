@@ -37,6 +37,10 @@
 
 ## 85. Maximal Rectangle
 
+- Return the area of the largest rectangle that can be formed within a rectangle of 1's.
+
+![0085](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg){width=300px}
+
 ```python
 --8<-- "0085_maximal_rectangle.py"
 ```
@@ -48,6 +52,8 @@
 ```
 
 ## 901. Online Stock Span
+
+- Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
 ```python
 --8<-- "0901_online_stock_span.py"

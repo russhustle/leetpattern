@@ -38,8 +38,7 @@ MST
 4. 1489 - [Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
 5. 1631 - [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) (Medium)
 6. 1579 - [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) (Hard)
-7. 0924 - [Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/) (Hard)
-8. 1589 - [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
+7. 1589 - [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
 
 ## 1584. Min Cost to Connect All Points
 
@@ -79,12 +78,6 @@ MST
 
 ```python
 --8<-- "1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.py"
-```
-
-## 0924. Minimize Malware Spread
-
-```python
---8<-- "0924_minimize_malware_spread.py"
 ```
 
 ## 1589. Maximum Sum Obtained of Any Permutation

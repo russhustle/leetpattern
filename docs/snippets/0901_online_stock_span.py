@@ -1,0 +1,21 @@
+from typing import List
+
+
+# Monotonic Stack
+class StockSpanner:
+
+    def __init__(self):
+        self.stack = [(-1, float("inf"))]
+        self.cur_day = -1
+
+    def next(self, price: int) -> int:
+        while price >= self.stack[-1][1]:
+            self.stack.pop()
+        self.cur_day += 1
+        self.stack.append((self.cur_day, price))
+        return self.cur_day - self.stack[-2][0]
+
+
+obj = StockSpanner()
+prices = [100, 80, 60, 70, 60, 75, 85]
+print([obj.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]

@@ -8,6 +8,10 @@
 6. 0394 - [Decode String](https://leetcode.com/problems/decode-string/) (Medium)
 7. 0022 - [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) (Medium)
 8. 0853 - [Car Fleet](https://leetcode.com/problems/car-fleet/) (Medium)
+9. 0224 - [Basic Calculator](https://leetcode.com/problems/basic-calculator/) (Hard)
+10. 227 - [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) (Medium)
+11. 0772 - [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) (Hard)
+12. 0770 - [Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) (Hard)
 
 ## 2390. Removing Stars From a String
 
@@ -57,4 +61,28 @@
 
 ```python
 --8<-- "0853_car_fleet.py"
+```
+
+## 224. Basic Calculator
+
+```python
+--8<-- "0224_basic_calculator.py"
+```
+
+## 227. Basic Calculator II
+
+```python
+--8<-- "0227_basic_calculator_ii.py"
+```
+
+## 772. Basic Calculator III
+
+```python
+--8<-- "0772_basic_calculator_iii.py"
+```
+
+## 770. Basic Calculator IV
+
+```python
+--8<-- "0770_basic_calculator_iv.py"
 ```

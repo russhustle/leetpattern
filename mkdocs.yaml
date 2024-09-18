@@ -124,7 +124,7 @@ nav:
           - Union Find: plan_graph_study/union_find_dsu.md
           - Dijkstra's: plan_graph_study/dijkstra.md
           - MST: plan_graph_study/mst.md
-      -  🌸 Challenges:
+      - 🌸 Challenges:
           - Challenges: challenge/index.md
           - 2024 September CN: challenge/202409_cn.md
 
@@ -213,6 +213,8 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.snippets:
       base_path: docs/snippets
   - pymdownx.highlight:

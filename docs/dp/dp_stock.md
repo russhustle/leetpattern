@@ -11,9 +11,15 @@
 
 ## 121. Best Time to Buy and Sell Stock
 
-```python
---8<-- "0121_best_time_to_buy_and_sell_stock.py"
-```
+=== "Python"
+    ```python
+    --8<-- "0121_best_time_to_buy_and_sell_stock.py"
+    ```
+
+=== "JavaScript"
+    ```javascript
+    --8<-- "js/0121_best_time_to_buy_and_sell_stock.js"
+    ```
 
 ## 122. Best Time to Buy and Sell Stock II
 

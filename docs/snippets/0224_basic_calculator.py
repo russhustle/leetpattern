@@ -26,8 +26,6 @@ def calculate(s: str) -> int:
             number = 0
             result *= stack.pop()  # pop sign
             result += stack.pop()  # pop previous result
-        else:  # space
-            continue
 
     result += sign * number
 

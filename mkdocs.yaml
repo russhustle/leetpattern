@@ -127,6 +127,7 @@ nav:
       - 🌸 Challenges:
           - Challenges: challenge/index.md
           - 2024 September CN: challenge/202409_cn.md
+          - 2024 October CN: challenge/202410_cn.md
 
       - 👨🏻‍💻 Neetcode 150:
           - Neetcode 150: neetcode150/index.md

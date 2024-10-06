@@ -34,8 +34,16 @@
 --8<-- "0001_two_sum.py"
 ```
 
+C++
+
 ```cpp linenums="1"
 --8<-- "cpp/0001_two_sum.cpp"
+```
+
+JavaScript
+
+```javascript
+--8<-- "js/0001_two_sum.js"
 ```
 
 ## 409. Longest Palindrome

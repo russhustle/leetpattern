@@ -18,11 +18,11 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../neetcode150/">
+        <link rel="next" href="../202410_cn/">
       
       
       <link rel="icon" href="../../imgs/logo.jpg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -2986,6 +2986,8 @@
       
         
       
+        
+      
     
     
       
@@ -3005,7 +3007,7 @@
               
   
   <span class="md-ellipsis">
-     🌸 Challenges
+    🌸 Challenges
   </span>
   
 
@@ -3021,7 +3023,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
-             🌸 Challenges
+            🌸 Challenges
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3205,10 +3207,49 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2848-points-that-intersect-with-cars" class="md-nav__link">
+    <span class="md-ellipsis">
+      2848. Points That Intersect With Cars
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1184-distance-between-bus-stops" class="md-nav__link">
+    <span class="md-ellipsis">
+      1184. Distance Between Bus Stops
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../202410_cn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 October CN
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -3857,6 +3898,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2848-points-that-intersect-with-cars" class="md-nav__link">
+    <span class="md-ellipsis">
+      2848. Points That Intersect With Cars
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1184-distance-between-bus-stops" class="md-nav__link">
+    <span class="md-ellipsis">
+      1184. Distance Between Bus Stops
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3891,6 +3950,8 @@
 <li>2576 - <a href="https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/">Find the Maximum Number of Marked Indices</a> (Medium)</li>
 <li>2398 - <a href="https://leetcode.com/problems/maximum-number-of-robots-within-budget/">Maximum Number of Robots Within Budget</a> (Hard)</li>
 <li>2390 - <a href="https://leetcode.com/problems/removing-stars-from-a-string/">Removing Stars From a String</a> (Medium)</li>
+<li>2848 - <a href="https://leetcode.com/problems/points-that-intersect-with-cars/">Points That Intersect With Cars</a> (Easy)</li>
+<li>1184 - <a href="https://leetcode.com/problems/distance-between-bus-stops/">Distance Between Bus Stops</a> (Easy)</li>
 </ol>
 <h2 id="1450-number-of-students-doing-homework-at-a-given-time">1450. Number of Students Doing Homework at a Given Time<a class="headerlink" href="#1450-number-of-students-doing-homework-at-a-given-time" title="Permanent link">&para;</a></h2>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
@@ -4310,6 +4371,49 @@
 </span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;leet**cod*e&quot;</span>
 </span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">removeStars</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>  <span class="c1"># &quot;lecoe&quot;</span>
 </span></code></pre></div>
+<h2 id="2848-points-that-intersect-with-cars">2848. Points That Intersect With Cars<a class="headerlink" href="#2848-points-that-intersect-with-cars" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">accumulate</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c1"># Differnce Array</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="k">def</span> <span class="nf">numberOfPoints</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    <span class="n">max_end</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">end</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">end</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">)</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>    <span class="n">diff</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">max_end</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>    <span class="k">for</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>        <span class="n">diff</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>        <span class="n">diff</span><span class="p">[</span><span class="n">end</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">s</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">accumulate</span><span class="p">(</span><span class="n">diff</span><span class="p">))</span>
+</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="n">nums</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span>
+</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">numberOfPoints</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>  <span class="c1"># 7</span>
+</span></code></pre></div>
+<h2 id="1184-distance-between-bus-stops">1184. Distance Between Bus Stops<a class="headerlink" href="#1184-distance-between-bus-stops" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1"># Simulation</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="k">def</span> <span class="nf">distanceBetweenBusStops</span><span class="p">(</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="n">distance</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">start</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">destination</span><span class="p">:</span> <span class="nb">int</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>    <span class="k">if</span> <span class="n">start</span> <span class="o">&gt;</span> <span class="n">destination</span><span class="p">:</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>        <span class="n">start</span><span class="p">,</span> <span class="n">destination</span> <span class="o">=</span> <span class="n">destination</span><span class="p">,</span> <span class="n">start</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>    <span class="n">clock</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">distance</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">destination</span><span class="p">])</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>    <span class="n">counter</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span> <span class="o">-</span> <span class="n">clock</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>    <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">clock</span><span class="p">,</span> <span class="n">counter</span><span class="p">)</span>
+</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>
+</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>
+</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="n">distance</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="n">destination</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="nb">print</span><span class="p">(</span><span class="n">distanceBetweenBusStops</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">destination</span><span class="p">))</span>  <span class="c1"># 1</span>
+</span></code></pre></div>
 
 
 
@@ -4362,13 +4466,13 @@
         
         
           
-          <a href="../../neetcode150/" class="md-footer__link md-footer__link--next" aria-label="Next: Neetcode 150">
+          <a href="../202410_cn/" class="md-footer__link md-footer__link--next" aria-label="Next: 2024 October CN">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Neetcode 150
+                2024 October CN
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -4442,10 +4546,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.path", "navigation.footer", "navigation.top", "search.suggest", "search.highlight", "content.math", "grid", "toc.follow"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.path", "navigation.footer", "navigation.top", "search.suggest", "search.highlight", "content.math", "grid", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
       
         <script src="../../js/mathjax.js"></script>
       

@@ -30,21 +30,23 @@
 
 - Return the indices of the two numbers such that they add up to a specific target.
 
-```python linenums="1"
---8<-- "0001_two_sum.py"
-```
+=== "Python"
 
-C++
+    ```python linenums="1"
+    --8<-- "0001_two_sum.py"
+    ```
 
-```cpp linenums="1"
---8<-- "cpp/0001_two_sum.cpp"
-```
+=== "C++"
 
-JavaScript
+    ```cpp linenums="1"
+    --8<-- "cpp/0001_two_sum.cpp"
+    ```
 
-```javascript
---8<-- "js/0001_two_sum.js"
-```
+=== "JavaScript"
+
+    ```javascript
+    --8<-- "js/0001_two_sum.js"
+    ```
 
 ## 409. Longest Palindrome
 

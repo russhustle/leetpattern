@@ -7,7 +7,8 @@ using namespace std;
 vector<int> twoSum(vector<int> &nums, int target)
 {
     unordered_map<int, int> hashmap;
-    for (std::vector<int>::size_type i = 0; i < nums.size(); ++i)
+
+    for (size_t i = 0; i < nums.size(); ++i)
     {
         int complement = target - nums[i];
         if (hashmap.find(complement) != hashmap.end())
@@ -16,6 +17,7 @@ vector<int> twoSum(vector<int> &nums, int target)
         }
         hashmap[nums[i]] = i;
     }
+
     return {};
 }
 

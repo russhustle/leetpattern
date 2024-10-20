@@ -7,7 +7,7 @@
 - Binary search is a search algorithm that finds the position of a target value within a sorted array.
 
 !!! note
-    We need to sort the array before applying binary search if it is not sorted.
+We need to sort the array before applying binary search if it is not sorted.
 
 - Time Complexity: $O(\log{N})$
 - Space Complexity: $O(1)$
@@ -42,9 +42,14 @@ Two ways to implement binary search
 
 - Implement binary search algorithm.
 
-```python
---8<-- "0704_binary_search.py"
-```
+=== "Python"
+    ```python
+    --8<-- "0704_binary_search.py"
+    ```
+=== "C++"
+    ```cpp
+    --8<-- "cpp/0704_binary_search.cpp"
+    ```
 
 ## 35. Search Insert Position
 

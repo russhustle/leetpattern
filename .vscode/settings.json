@@ -143,5 +143,6 @@
     "thread": "cpp",
     "cfenv": "cpp",
     "cinttypes": "cpp"
-  }
+  },
+  "editor.formatOnSave": false
 }

@@ -159,13 +159,6 @@ theme:
   favicon: imgs/logo.jpg
   name: material
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: pink
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
@@ -173,6 +166,14 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to system preference
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
   font:
     text: Roboto
     code: Roboto Mono

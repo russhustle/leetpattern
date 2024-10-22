@@ -3,3 +3,4 @@ temp.ipynb
 site/
 output/
 .vscode/
+.DS_Store

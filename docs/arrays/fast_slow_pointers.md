@@ -9,10 +9,6 @@
 5. 1089 - [Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/) (Easy)
 6. 0287 - [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) (Medium)
 
-## Array Resources
-
-- [[Leetcode Discuss] Solved all two pointers problems in 100 days](https://leetcode.com/discuss/study-guide/1688903/solved-all-two-pointers-problems-in-100-days)
-
 ## 27. Remove Element
 
 - Remove all instances of a given value in-place.

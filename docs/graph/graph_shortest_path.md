@@ -1,7 +1,6 @@
 # Graph - Shortest Path Problems
 
-!!! note
-    Shortest Path Problem: Find the shortest path between two vertices in a graph.
+- Shortest Path Problem: Find the shortest path between two vertices in a graph.
 
 ## Dijkstra's Algorithm
 
@@ -10,10 +9,6 @@
 - Data Structure: Heap; HashSet
 - Time Complexity: $O(E \cdot \log{V})$
 - Space Complexity: $O(V)$
-
-```python
---8<-- "template/graph_shortest_path.py"
-```
 
 ## LeetCode Problems
 
@@ -116,4 +111,10 @@ graph LR
 
 ```python
 --8<-- "1976_number_of_ways_to_arrive_at_destination.py"
+```
+
+## Appendix
+
+```python
+--8<-- "template/graph_shortest_path.py"
 ```

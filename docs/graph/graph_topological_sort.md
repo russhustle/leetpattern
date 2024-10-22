@@ -5,16 +5,8 @@
 - DAG (Directed Acyclic Graph)
 - Time complexity: $O(V+E)$
 - Space complexity: $O(V+E)$
-- prerequisites
-    - Indegree (Look at the problem [1557. Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/))
-
-```python
---8<-- "template/graph_topological_sort.py"
-```
-
-![ts1](../imgs/graph_ts1.png){width=300px}
-
-![ts2](../imgs/graph_ts2.png){width=300px}
+- prerequisites: Indegree (Look at the problem [1557. Minimum Number of Vertices to Reach All Nodes](#1557-minimum-number-of-vertices-to-reach-all-nodes))
+- Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
 
 ## LeetCode Problems
 
@@ -87,3 +79,13 @@
 ```python
 --8<-- "1136_parallel_courses.py"
 ```
+
+## Appendix
+
+```python
+--8<-- "template/graph_topological_sort.py"
+```
+
+![ts1](../imgs/graph_ts1.png){width=300px}
+
+![ts2](../imgs/graph_ts2.png){width=300px}

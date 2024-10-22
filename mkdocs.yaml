@@ -80,7 +80,6 @@ nav:
       - 📝 Graph:
           - Graph: graph/index.md
           - Flood Fill: graph/graph_flood_fill.md
-          - DFS: graph/graph_dfs.md
           - BFS: graph/graph_bfs.md
           - Topological Sort: graph/graph_topological_sort.md
           - Union Find: graph/graph_union_find.md

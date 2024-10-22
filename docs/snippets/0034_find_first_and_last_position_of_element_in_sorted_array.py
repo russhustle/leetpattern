@@ -6,11 +6,11 @@ def searchRange(nums: List[int], target: int) -> List[int]:
     def binarySearch(nums: List[int], target: int) -> int:
         left, right = 0, len(nums) - 1
         while left <= right:
-            middle = left + (right - left) // 2
-            if nums[middle] >= target:
-                right = middle - 1
+            mid = left + (right - left) // 2
+            if nums[mid] >= target:
+                right = mid - 1
             else:
-                left = middle + 1
+                left = mid + 1
         return left
 
     left = binarySearch(nums, target)

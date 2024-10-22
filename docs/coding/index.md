@@ -63,7 +63,6 @@
 ## 📝 Graph
 
 - [Flood Fill Pattern](../graph/graph_flood_fill.md)
-- [DFS Pattern](../graph/graph_dfs.md)
 - [BFS Pattern](../graph/graph_bfs.md)
 - [Topological Sort Pattern](../graph/graph_topological_sort.md)
 - [Union Find Pattern](../graph/graph_union_find.md)

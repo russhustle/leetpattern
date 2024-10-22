@@ -18,7 +18,7 @@ def sortedListToBST(head: Optional[ListNode]) -> Optional[TreeNode]:
     if not head:
         return None
 
-    def find_middle(head: ListNode) -> ListNode:
+    def find_mid(head: ListNode) -> ListNode:
         prev = None
         slow = head
         fast = head
@@ -33,7 +33,7 @@ def sortedListToBST(head: Optional[ListNode]) -> Optional[TreeNode]:
 
         return slow
 
-    mid = find_middle(head)
+    mid = find_mid(head)
 
     node = TreeNode(mid.val)
 

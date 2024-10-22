@@ -1,6 +1,6 @@
 # Arrays
 
-![arrays](../imgs/meme_array.jpg){width=200px}
+![arrays](../imgs/meme_array.jpg){width=300px}
 
 ## Array Resources
 

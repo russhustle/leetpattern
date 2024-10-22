@@ -148,6 +148,7 @@ nav:
           - Intervals: neetcode150/intervals.md
           - Math & Geometry: neetcode150/math_geometry.md
           - Bit Manipulation: neetcode150/bit.md
+
 ##############################################
 ##  Material theme configuration for MkDocs ##
 ##############################################
@@ -177,8 +178,8 @@ theme:
     code: Roboto Mono
 
   features:
-    - content.code.copy
-    - content.code.select
+    - content.code.copy # Enable copy button on code blocks
+    - content.code.select # Enable select button on code blocks
     - navigation.tabs
     - navigation.tracking
     - navigation.tabs.sticky
@@ -236,6 +237,7 @@ markdown_extensions:
   - md_in_html
 
 plugins:
+  # show the last modification date of the page
   # - git-revision-date-localized:
   #     enable_creation_date: true
   #     type: timeago
@@ -264,6 +266,5 @@ extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  # - css/no-footer.css
   - css/unordered-list-symbols.css
   - css/ordered-list-symbols.css

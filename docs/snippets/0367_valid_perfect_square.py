@@ -1,3 +1,4 @@
+# Binary Search
 def isPerfectSquare(num: int) -> bool:
     if num < 2:
         return True
@@ -18,4 +19,4 @@ def isPerfectSquare(num: int) -> bool:
 
 
 num = 16
-print(isPerfectSquare(num))
+print(isPerfectSquare(num))  # True

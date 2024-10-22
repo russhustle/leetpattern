@@ -1,8 +1,9 @@
 from typing import List
 
 
+# Binary Search
 def minEatingSpeed(piles: List[int], h: int) -> int:
-    def canEat(piles: List[int], k: int, h: int) -> bool:
+    def canEat(piles, k, h):
         hours = 0
         for pile in piles:
             hours += (pile + k - 1) // k
@@ -23,4 +24,4 @@ def minEatingSpeed(piles: List[int], h: int) -> int:
 
 piles = [3, 6, 7, 11]
 h = 8
-print(minEatingSpeed(piles, h))
+print(minEatingSpeed(piles, h))  # 4

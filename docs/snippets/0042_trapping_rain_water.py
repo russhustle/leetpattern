@@ -1,7 +1,7 @@
 from typing import List
 
 
-# 1. DP
+# DP
 def trapDP(height: List[int]) -> int:
     if not height:
         return 0
@@ -26,7 +26,7 @@ def trapDP(height: List[int]) -> int:
     return total
 
 
-# 2. Left Right Pointers
+# Left Right Pointers
 def trapLR(height: List[int]) -> int:
     if not height:
         return 0
@@ -48,7 +48,7 @@ def trapLR(height: List[int]) -> int:
     return total
 
 
-# 3. Monotonic Stack
+# Monotonic Stack
 def trapStack(height: List[int]) -> int:
     stack = []
     total = 0

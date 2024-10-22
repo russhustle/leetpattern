@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Binary Search
 def searchInsert(nums: List[int], target: int) -> int:
     left, right = 0, len(nums) - 1
 

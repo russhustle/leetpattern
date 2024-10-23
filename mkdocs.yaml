@@ -6,9 +6,8 @@ repo_url: https://github.com/russhustle/leetpattern/
 copyright: Copyright &copy; 2024 Sihan A
 
 nav:
-  - Home: README.md
-  - Coding:
-      - Home: coding/index.md
+  - LeetPattern:
+      - Home: README.md
       - 🧩 Arrays:
           - Home: arrays/index.md
           - Array: arrays/array.md

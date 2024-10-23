@@ -16,6 +16,8 @@
 
 ## 9. Palindrome Number
 
+- Return true if the given number is a palindrome. Otherwise, return false.
+
 ```python
 --8<-- "0009_palindrome_number.py"
 ```

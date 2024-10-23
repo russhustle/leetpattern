@@ -1,9 +1,3 @@
----
-hide:
-  - navigation
-  - toc
----
-
 # Welcome to 🚀LeetPattern
 
 - Your ultimate guide to mastering coding interviews with LeetPattern.
@@ -23,3 +17,11 @@ hide:
 - Python Basics: [Python Distilled](https://www.dabeaz.com/python-distilled/)
 
 ![python distilled](https://www.dabeaz.com/python-distilled/cover.jpg){ width=200px }
+
+## To Do
+
+- Add explanations for the most common question for each pattern.
+
+## Resources
+
+- [算法竞赛模板库 by 灵茶山艾府](https://github.com/EndlessCheng/codeforces-go)

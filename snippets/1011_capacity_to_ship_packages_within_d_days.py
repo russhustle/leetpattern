@@ -1,8 +1,10 @@
 from typing import List
 
 
+# Binary Search
 def shipWithinDays(weights: List[int], days: int) -> int:
-    def canShip(weights, D, capacity) -> bool:
+
+    def canShip(weights, D, capacity):
         days = 1
         current_weight = 0
 
@@ -18,6 +20,7 @@ def shipWithinDays(weights: List[int], days: int) -> int:
 
     while left <= right:
         mid = left + (right - left) // 2
+
         if canShip(weights, days, mid):
             right = mid - 1
         else:
@@ -28,4 +31,4 @@ def shipWithinDays(weights: List[int], days: int) -> int:
 
 weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 days = 5
-print(shipWithinDays(weights, days))
+print(shipWithinDays(weights, days))  # 15

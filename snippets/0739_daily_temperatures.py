@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Monotonic Stack
 def dailyTemperatures(temperatures: List[int]) -> List[int]:
     result = [0 for _ in range(len(temperatures))]
     stack = []
@@ -9,6 +10,7 @@ def dailyTemperatures(temperatures: List[int]) -> List[int]:
         while stack and t > stack[-1][0]:
             _, stackIdx = stack.pop()
             result[stackIdx] = i - stackIdx
+
         stack.append([t, i])
 
     return result

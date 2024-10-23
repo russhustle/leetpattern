@@ -7,14 +7,14 @@ def floodFillDFS(
     image: List[List[int]], sr: int, sc: int, color: int
 ) -> List[List[int]]:
 
-    original = image[sr][sc]
+    org = image[sr][sc]
     m, n = len(image), len(image[0])
 
-    if original == color:
+    if org == color:
         return image
 
     def dfs(r, c):
-        if r < 0 or r >= m or c < 0 or c >= n or image[r][c] != original:
+        if r < 0 or r >= m or c < 0 or c >= n or image[r][c] != org:
             return None
 
         image[r][c] = color
@@ -34,24 +34,23 @@ def floodFillBFS(
     image: List[List[int]], sr: int, sc: int, color: int
 ) -> List[List[int]]:
 
-    original = image[sr][sc]
+    org = image[sr][sc]
     m, n = len(image), len(image[0])
-    directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+    dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
-    if original == color:
+    if org == color:
         return image
 
     q = deque([(sr, sc)])
 
     while q:
-        row, col = q.popleft()
-        image[row][col] = color
+        r, c = q.popleft()
+        image[r][c] = color
 
-        for dr, dc in directions:
-            nr = row + dr
-            nc = col + dc
+        for dr, dc in dirs:
+            nr, nc = r + dr, c + dc
 
-            if 0 <= nr < m and 0 <= nc < n and image[nr][nc] == original:
+            if 0 <= nr < m and 0 <= nc < n and image[nr][nc] == org:
                 q.append((nr, nc))
 
     return image

@@ -1,6 +1,13 @@
+# Reverse
+def isPalindromeReverse(x: int) -> bool:
+    if x < 0:
+        return False
+
+    return str(x) == str(x)[::-1]
+
+
 # Left Right Pointers
-def isPalindrome(x: int) -> bool:
-    """Determines if a number is a palindrome."""
+def isPalindromeLR(x: int) -> bool:
     if x < 0:
         return False
 
@@ -20,9 +27,11 @@ def isPalindrome(x: int) -> bool:
 # |------------|------- |---------|
 # |  Approach  |  Time  |  Space  |
 # |------------|--------|---------|
+# |  Reverse   |  O(N)  |   O(N)  |
 # | Left Right |  O(N)  |   O(1)  |
 # |------------|--------|---------|
 
 
 x = 121
-print(isPalindrome(x))  # True
+print(isPalindromeReverse(x))  # True
+print(isPalindromeLR(x))  # True

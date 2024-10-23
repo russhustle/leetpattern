@@ -1,4 +1,4 @@
-# 1. DP
+# DP
 def fibDP(n: int) -> int:
     if n <= 1:
         return n
@@ -11,7 +11,7 @@ def fibDP(n: int) -> int:
     return dp[n]
 
 
-# 2. Recursive
+# Recursive
 def fibRecursive(n: int) -> int:
     if n <= 1:
         return n

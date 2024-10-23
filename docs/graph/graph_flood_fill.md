@@ -12,6 +12,7 @@
 4. 0463 - [Island Perimeter](https://leetcode.com/problems/island-perimeter/) (Easy)
 5. 0130 - [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) (Medium)
 6. 0417 - [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) (Medium)
+7. 0827 - [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) (Hard)
 
 ## 733. Flood Fill
 
@@ -69,4 +70,12 @@
 
 ```python
 --8<-- "0417_pacific_atlantic_water_flow.py"
+```
+
+## 827. Making A Large Island
+
+- Find the area of the largest island after changing at most one '0' to '1'.
+
+```python
+--8<-- "0827_making_a_large_island.py"
 ```

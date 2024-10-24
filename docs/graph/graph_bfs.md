@@ -1,4 +1,10 @@
-# Graph - Breadth First Search
+# Graph - Breadth First Search (BFS)
+
+## Prerequisites problems
+
+1. 0102 - [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) (Medium)
+2. 0733 - [Flood Fill](https://leetcode.com/problems/flood-fill/) (Easy)
+3. 0200 - [Number of Islands](https://leetcode.com/problems/number-of-islands/) (Medium)
 
 ## LeetCode Problems
 
@@ -10,7 +16,8 @@
 
 ## 994. Rotting Oranges
 
-- Return the minimum number of minutes that must elapse until no cell has a fresh orange.
+-   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
+-   Hint: Multi-source BFS to count the level.
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
@@ -20,7 +27,7 @@
 
 ## 127. Word Ladder
 
-- Return the length of the shortest transformation sequence from `beginWord` to `endWord`.
+-   Return the length of the shortest transformation sequence from `beginWord` to `endWord`.
 
 ```python
 --8<-- "0127_word_ladder.py"
@@ -28,7 +35,7 @@
 
 ## 1466. Reorder Routes to Make All Paths Lead to the City Zero
 
-- Return the minimum number of connections needed to connect all the cities such that all the roads are used in the right direction.
+-   Return the minimum number of connections needed to connect all the cities such that all the roads are used in the right direction.
 
 ![1466](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
 
@@ -38,7 +45,7 @@
 
 ## 286. Walls and Gates
 
-- Fill each empty room with the distance to its nearest gate.
+-   Fill each empty room with the distance to its nearest gate.
 
 ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
@@ -48,7 +55,7 @@
 
 ## 0815. Bus Routes
 
-- Return the least number of buses one must take to reach the destination from the source.
+-   Return the least number of buses one must take to reach the destination from the source.
 
 ```python
 --8<-- "0815_bus_routes.py"

@@ -4,13 +4,11 @@ from typing import List
 
 # BFS
 def ladderLength(beginWord: str, endWord: str, wordList: List[str]) -> int:
-    # TC: O(N * M^2)
-    # SC: O(N * M)
-    # N = len(wordList), M = len(word)
-
+    # Edge case
     if endWord not in wordList:
         return 0
 
+    # Init
     graph = defaultdict(list)  # {pattern: [word1, word2, ...]}
     wordList.append(beginWord)
 
@@ -23,8 +21,10 @@ def ladderLength(beginWord: str, endWord: str, wordList: List[str]) -> int:
     q = deque([beginWord])
     steps = 1
 
+    # BFS
     while q:
-        for _ in range(len(q)):
+        size = len(q)
+        for _ in range(size):
             word = q.popleft()
             if word == endWord:
                 return steps
@@ -39,6 +39,12 @@ def ladderLength(beginWord: str, endWord: str, wordList: List[str]) -> int:
 
     return 0
 
+
+# |------------|---------|---------|
+# |  Approach  |  Time   |  Space  |
+# |------------|---------|---------|
+# |    BFS     | O(n*m^2)| O(n*m)  |
+# |------------|---------|---------|
 
 beginWord = "hit"
 endWord = "cog"

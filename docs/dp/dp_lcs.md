@@ -14,11 +14,17 @@
 
 ## 1143. Longest Common Subsequence
 
+-   Return the length of the longest common subsequence of two strings.
+
+![1143](../imgs/1143.png)
+
 ```python
 --8<-- "1143_longest_common_subsequence.py"
 ```
 
 ## 5. Longest Palindromic Substring
+
+-   Given a string `s`, return the longest palindromic substring in `s`.
 
 ```python
 --8<-- "0005_longest_palindromic_substring.py"

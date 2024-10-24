@@ -2,7 +2,7 @@
 def longestCommonSubsequence(text1: str, text2: str) -> int:
     m, n = len(text1), len(text2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
-    length = 0
+    res = 0
 
     for i in range(1, m + 1):
         for j in range(1, n + 1):
@@ -11,10 +11,10 @@ def longestCommonSubsequence(text1: str, text2: str) -> int:
             else:
                 dp[i][j] = max(dp[i][j - 1], dp[i - 1][j])
 
-            if length < dp[i][j]:
-                length = dp[i][j]
+            if res < dp[i][j]:
+                res = dp[i][j]
 
-    return length
+    return res
 
 
 text1 = "abcde"

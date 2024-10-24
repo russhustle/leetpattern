@@ -20,13 +20,13 @@ nav:
                 - Difference Array: arrays/difference_array.md
 
           - 🔢 Hash:
-                - Home: hash/index.md
+                #     - Home: hash/index.md
                 - Hash Map: hash/hash_map.md
                 - Hash Set: hash/hash_set.md
                 - Counting: hash/hash_counting.md
 
           - 💬 String:
-                - Home: string/index.md
+                #     - Home: string/index.md
                 - String: string/string.md
                 - KMP: string/string_kmp.md
 

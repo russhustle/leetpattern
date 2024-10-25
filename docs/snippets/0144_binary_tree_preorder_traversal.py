@@ -1,13 +1,7 @@
 from typing import List, Optional
 
+from binarytree import Node as TreeNode
 from binarytree import build
-
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
 
 
 # Recursive

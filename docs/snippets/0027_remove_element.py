@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Fast Slow Pointers
 def removeElement(nums: List[int], val: int) -> int:
     fast, slow = 0, 0
 

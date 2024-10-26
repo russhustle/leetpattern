@@ -18,7 +18,7 @@
 
 -   Replace all the pixels of the same color starting from the given pixel.
 
-![733](https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg){width=400px}
+![733](https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg){width=300px}
 
 ```python
 --8<-- "0733_flood_fill.py"
@@ -40,7 +40,7 @@
     2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
     3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
-![0200](../imgs/0200.jpg){width=400px}
+![0200](../imgs/0200.jpg){width=300px}
 
 ```python
 --8<-- "0200_number_of_islands.py"
@@ -50,7 +50,7 @@
 
 -   Find the maximum area of an island in a 2D grid.
 
-![695](https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg){width=400px}
+![695](https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg){width=300px}
 
 ```python
 --8<-- "0695_max_area_of_island.py"
@@ -60,7 +60,7 @@
 
 -   Calculate the perimeter of an island in a 2D grid.
 
-![463](https://assets.leetcode.com/uploads/2018/10/12/island.png){width=400px}
+![463](https://assets.leetcode.com/uploads/2018/10/12/island.png){width=300px}
 
 ```python
 --8<-- "0463_island_perimeter.py"
@@ -78,7 +78,7 @@
 
 -   Find the list of coordinates where water can flow to both the Pacific and Atlantic oceans.
 
-![417](https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg){width=400px}
+![417](https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg){width=300px}
 
 ```python
 --8<-- "0417_pacific_atlantic_water_flow.py"

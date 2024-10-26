@@ -30,9 +30,7 @@ nav:
                 - String: string/string.md
                 - KMP: string/string_kmp.md
 
-          - 🔗 Linked List:
-                - Home: linkedlist/index.md
-                - Linked List: linkedlist/linked_list.md
+          - 🔗 Linked List: other/linked_list.md
 
           - 🌳 Tree:
                 - Tree: tree/index.md

@@ -1,5 +1,7 @@
 # Linked List
 
+![Linked List Memes](../imgs/linked_list_memes.jpg){width=300px}
+
 ## LeetCode Problems
 
 1. 0203 - [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) (Easy)
@@ -17,9 +19,9 @@
 
 ## 203. Remove Linked List Elements
 
-- Remove all elements from a linked list of integers that have value `val`.
+-   Remove all elements from a linked list of integers that have value `val`.
 
-- Before
+-   Before
 
 ```mermaid
 graph LR
@@ -32,7 +34,7 @@ F --> G[6]
 G --> H[None]
 ```
 
-- After
+-   After
 
 ```mermaid
 graph LR
@@ -52,7 +54,7 @@ F --> I[None]
 
 ## 707. Design Linked List
 
-- Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
+-   Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
 
 ```python
 --8<-- "0707_design_linked_list.py"
@@ -60,7 +62,7 @@ F --> I[None]
 
 ## 206. Reverse Linked List
 
-- Reverse a singly linked list.
+-   Reverse a singly linked list.
 
 ```mermaid
 graph LR
@@ -84,7 +86,7 @@ B --> A[1]
 
 ## 237. Delete Node in a Linked List
 
-- Delete a node in a singly linked list. You are given only the node to be deleted.
+-   Delete a node in a singly linked list. You are given only the node to be deleted.
 
 ```python
 --8<-- "0237_delete_node_in_a_linked_list.py"
@@ -92,7 +94,7 @@ B --> A[1]
 
 ## 2487. Remove Nodes From Linked List
 
-- Remove all nodes from a linked list that have a value greater than `maxValue`.
+-   Remove all nodes from a linked list that have a value greater than `maxValue`.
 
 ```python
 --8<-- "2487_remove_nodes_from_linked_list.py"
@@ -100,7 +102,7 @@ B --> A[1]
 
 ## 24. Swap Nodes in Pairs
 
-- Given a linked list, swap every two adjacent nodes and return its head.
+-   Given a linked list, swap every two adjacent nodes and return its head.
 
 ```python
 --8<-- "0024_swap_nodes_in_pairs.py"
@@ -108,7 +110,7 @@ B --> A[1]
 
 ## 19. Remove Nth Node From End of List
 
-- Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
+-   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
 ```python
 --8<-- "0019_remove_nth_node_from_end_of_list.py"
@@ -116,7 +118,7 @@ B --> A[1]
 
 ## 160. Intersection of Two Linked Lists
 
-- Find the node at which the intersection of two singly linked lists begins.
+-   Find the node at which the intersection of two singly linked lists begins.
 
 ```mermaid
 graph LR
@@ -135,7 +137,7 @@ c2 --> c3((c3))
 
 ## 141. Linked List Cycle
 
-- Determine if a linked list has a cycle in it.
+-   Determine if a linked list has a cycle in it.
 
 ```mermaid
 graph LR
@@ -158,7 +160,7 @@ D --> B
 
 ## 142. Linked List Cycle II
 
-- Given a linked list, return the node where the cycle begins. If there is no cycle, return `None`.
+-   Given a linked list, return the node where the cycle begins. If there is no cycle, return `None`.
 
 ```mermaid
 graph LR
@@ -174,7 +176,7 @@ D --> B
 
 ## 2816. Double a Number Represented as a Linked List
 
-- Given a number represented as a linked list, double it and return the resulting linked list.
+-   Given a number represented as a linked list, double it and return the resulting linked list.
 
 ```python
 --8<-- "2816_double_a_number_represented_as_a_linked_list.py"
@@ -182,7 +184,7 @@ D --> B
 
 ## 2. Add Two Numbers
 
-- Represent the sum of two numbers as a linked list.
+-   Represent the sum of two numbers as a linked list.
 
 ```python
 --8<-- "0002_add_two_numbers.py"

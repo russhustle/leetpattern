@@ -17,7 +17,7 @@
 
 ## 2390. Removing Stars From a String
 
-- Remove all `*` characters and their adjacent characters from the string.
+-   Remove all `*` characters and their adjacent characters from the string.
 
 ```python
 --8<-- "2390_removing_stars_from_a_string.py"
@@ -25,7 +25,7 @@
 
 ## 1544. Make The String Great
 
-- Remove all adjacent characters that are the same and have different cases.
+-   Remove all adjacent characters that are the same and have different cases.
 
 ```python
 --8<-- "1544_make_the_string_great.py"
@@ -33,7 +33,7 @@
 
 ## 20. Valid Parentheses
 
-- Determine if the input string is valid.
+-   Determine if the input string is valid.
 
 ```python
 --8<-- "0020_valid_parentheses.py"
@@ -41,7 +41,7 @@
 
 ## 155. Min Stack
 
-- Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+-   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 ```python
 --8<-- "0155_min_stack.py"

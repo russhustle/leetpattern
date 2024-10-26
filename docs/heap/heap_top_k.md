@@ -12,12 +12,6 @@
 8. 0767 - [Reorganize String](https://leetcode.com/problems/reorganize-string/) (Medium)
 9. 0786 - [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) (Hard)
 
-## [To Do] Heap
-
-```python
---8<-- "heap.py"
-```
-
 ## 215. Kth Largest Element in an Array
 
 ```python

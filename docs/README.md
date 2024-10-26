@@ -21,6 +21,7 @@
 ## To Do
 
 -   Add explanations for the most common question for each pattern.
+-   To be completed: 31 problems.
 
 ## Resources
 

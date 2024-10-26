@@ -16,7 +16,7 @@
 
 ## 9. Palindrome Number
 
-- Return true if the given number is a palindrome. Otherwise, return false.
+-   Return true if the given number is a palindrome. Otherwise, return false.
 
 ```python
 --8<-- "0009_palindrome_number.py"
@@ -62,4 +62,26 @@
 
 ```python
 --8<-- "0075_sort_colors.py"
+```
+
+## 125. Valid Palindrome
+
+```python
+--8<-- "0125_valid_palindrome.py"
+```
+
+## 167. Two Sum II - Input array is sorted
+
+```python
+--8<-- "0167_two_sum_ii_input_array_is_sorted.py"
+```
+
+## 11. Container With Most Water
+
+-   Return the maximum area of water that can be trapped between the vertical lines.
+
+![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg){width=300px}
+
+```python
+--8<-- "0011_container_with_most_water.py"
 ```

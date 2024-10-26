@@ -17,6 +17,7 @@ def calculate(s: str) -> int:
             result += sign * number
             number = 0
             sign = -1
+
         elif char == "(":
             stack.append(result)
             stack.append(sign)

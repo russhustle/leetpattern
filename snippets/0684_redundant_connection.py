@@ -1,15 +1,15 @@
 from typing import List
 
 
-# 1. Union Find
+# Union Find
 def findRedundantConnectionUF(edges: List[List[int]]) -> List[int]:
-    par = [i for i in range(len(edges) + 1)]
-    rank = [1 for _ in range(len(edges) + 1)]
+    par = {i: i for i in range(len(edges) + 1)}
+    rank = {i: 1 for i in range(len(edges) + 1)}
 
     def find(n):
         p = par[n]
         while p != par[p]:
-            par[p] = par[par[p]]  # path compression
+            par[p] = par[par[p]]
             p = par[p]
         return p
 
@@ -30,15 +30,15 @@ def findRedundantConnectionUF(edges: List[List[int]]) -> List[int]:
 
     for n1, n2 in edges:
         if not union(n1, n2):
-            return [n1, n2]
+            return (n1, n2)
 
 
-# 2. DFS
+# DFS
 def findRedundantConnectionDFS(edges: List[List[int]]) -> List[int]:
-    adj, cycle = {}, {}
+    graph, cycle = {}, {}
     for a, b in edges:
-        adj.setdefault(a, []).append(b)
-        adj.setdefault(b, []).append(a)
+        graph.setdefault(a, []).append(b)
+        graph.setdefault(b, []).append(a)
 
     def dfs(node, parent):
         if node in cycle:
@@ -46,8 +46,9 @@ def findRedundantConnectionDFS(edges: List[List[int]]) -> List[int]:
                 if k == node:
                     return True
                 del cycle[k]
+
         cycle[node] = None
-        for child in adj[node]:
+        for child in graph[node]:
             if child != parent and dfs(child, node):
                 return True
         del cycle[node]
@@ -60,5 +61,5 @@ def findRedundantConnectionDFS(edges: List[List[int]]) -> List[int]:
 
 
 edges = [[1, 2], [1, 3], [2, 3]]
-print(findRedundantConnectionUF(edges))  # [2, 3]
-print(findRedundantConnectionDFS(edges))  # [2, 3]
+print(findRedundantConnectionUF(edges))  # (2, 3)
+print(findRedundantConnectionDFS(edges))  # (2, 3)

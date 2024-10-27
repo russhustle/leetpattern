@@ -1,7 +1,7 @@
 from typing import List
 
 
-# 1. Brute Force
+# Brute Force
 def maxAreaBF(height: List[int]) -> int:
     max_area = 0
 
@@ -14,22 +14,22 @@ def maxAreaBF(height: List[int]) -> int:
     return max_area
 
 
-# 2. Left Right Pointers
+# Left Right Pointers
 def maxAreaLR(height: List[int]) -> int:
     left, right = 0, len(height) - 1
-    max_area = 0
+    res = 0
 
     while left < right:
         h = min(height[left], height[right])
         w = right - left
-        max_area = max(max_area, h * w)
+        res = max(res, h * w)
 
         if height[left] < height[right]:
             left += 1
         else:
             right -= 1
 
-    return max_area
+    return res
 
 
 # |------------|------- |---------|

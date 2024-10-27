@@ -689,10 +689,6 @@
     
       
         
-          
-        
-      
-        
       
         
       
@@ -711,24 +707,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../hash/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     🔢 Hash
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_3">
@@ -736,8 +724,6 @@
             🔢 Hash
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -820,10 +806,6 @@
     
       
         
-          
-        
-      
-        
       
         
       
@@ -840,24 +822,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../string/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     💬 String
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_4">
@@ -865,8 +839,6 @@
             💬 String
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -924,80 +896,16 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="../../other/linked_list/" class="md-nav__link">
         
-          
-        
-      
-        
-      
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../linkedlist/" class="md-nav__link ">
-              
   
   <span class="md-ellipsis">
     🔗 Linked List
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_5">
-            <span class="md-nav__icon md-icon"></span>
-            🔗 Linked List
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../linkedlist/linked_list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Linked List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -3772,7 +3680,10 @@
 <li>DAG (Directed Acyclic Graph)</li>
 <li>Time complexity: <span class="arithmatex">\(O(V+E)\)</span></li>
 <li>Space complexity: <span class="arithmatex">\(O(V+E)\)</span></li>
-<li>prerequisites: Indegree (Look at the problem <a href="#1557-minimum-number-of-vertices-to-reach-all-nodes">1557. Minimum Number of Vertices to Reach All Nodes</a>)</li>
+<li>Prerequisites: Indegree (Look at the problem <a href="#1557-minimum-number-of-vertices-to-reach-all-nodes">1557. Minimum Number of Vertices to Reach All Nodes</a>)<ul>
+<li>Indegree: Number of incoming edges to a vertex</li>
+</ul>
+</li>
 <li>Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.</li>
 </ul>
 <h2 id="leetcode-problems">LeetCode Problems<a class="headerlink" href="#leetcode-problems" title="Permanent link">&para;</a></h2>
@@ -3788,7 +3699,9 @@
 <h2 id="1557-minimum-number-of-vertices-to-reach-all-nodes">1557. Minimum Number of Vertices to Reach All Nodes<a class="headerlink" href="#1557-minimum-number-of-vertices-to-reach-all-nodes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.</li>
+<li>✅ Return the vertices with indegree 0.</li>
 </ul>
+<p><img alt="1557" src="../../imgs/1557.png" width="300px" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -3809,19 +3722,21 @@
 <h2 id="207-course-schedule">207. Course Schedule<a class="headerlink" href="#207-course-schedule" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Return true if it is possible to finish all courses, otherwise return false.</li>
+<li>Dependency relationships imply the topological sort algorithm.</li>
+<li>Cycle detection</li>
 </ul>
-<p><img alt="0207" src="../../imgs/0207.png" /></p>
+<p><img alt="0207" src="../../imgs/0207.png" width="300px" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># 1. BFS - Kahn&#39;s Algorithm</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># BFS (Kahn&#39;s Algorithm)</span>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">def</span> <span class="nf">canFinishBFS</span><span class="p">(</span><span class="n">numCourses</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">prerequisites</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">adj</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">indegree</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">numCourses</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">graph</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">indegree</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="k">for</span> <span class="n">crs</span><span class="p">,</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">prerequisites</span><span class="p">:</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="n">adj</span><span class="p">[</span><span class="n">pre</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="n">graph</span><span class="p">[</span><span class="n">pre</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
 </span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="n">indegree</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
 </span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">q</span> <span class="o">=</span> <span class="n">deque</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numCourses</span><span class="p">)</span> <span class="k">if</span> <span class="n">indegree</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">])</span>
@@ -3831,37 +3746,37 @@
 </span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>        <span class="n">crs</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
 </span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
 </span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>        <span class="k">for</span> <span class="nb">next</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">[</span><span class="n">crs</span><span class="p">]:</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>            <span class="n">indegree</span><span class="p">[</span><span class="nb">next</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>        <span class="k">for</span> <span class="n">nxt</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]:</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>            <span class="n">indegree</span><span class="p">[</span><span class="n">nxt</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
 </span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>            <span class="k">if</span> <span class="n">indegree</span><span class="p">[</span><span class="nb">next</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>                <span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">next</span><span class="p">)</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>            <span class="k">if</span> <span class="n">indegree</span><span class="p">[</span><span class="n">nxt</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>                <span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">nxt</span><span class="p">)</span>
 </span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
 </span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>    <span class="k">return</span> <span class="n">count</span> <span class="o">==</span> <span class="n">numCourses</span>
 </span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>
 </span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>
-</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="c1"># 2. DFS + Set</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="c1"># DFS + Set</span>
 </span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="k">def</span> <span class="nf">canFinishDFS1</span><span class="p">(</span><span class="n">numCourses</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">prerequisites</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>    <span class="n">adj</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>    <span class="n">graph</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
 </span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>    <span class="k">for</span> <span class="n">crs</span><span class="p">,</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">prerequisites</span><span class="p">:</span>
-</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>        <span class="n">adj</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pre</span><span class="p">)</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>        <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pre</span><span class="p">)</span>
 </span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>
 </span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    <span class="n">visited</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 </span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>
 </span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>    <span class="k">def</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">crs</span><span class="p">):</span>
 </span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>        <span class="k">if</span> <span class="n">crs</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>  <span class="c1"># cycle detected</span>
 </span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>            <span class="k">return</span> <span class="kc">False</span>
-</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>        <span class="k">if</span> <span class="n">adj</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">==</span> <span class="p">[]:</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>        <span class="k">if</span> <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">==</span> <span class="p">[]:</span>
 </span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>            <span class="k">return</span> <span class="kc">True</span>
 </span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>
 </span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>        <span class="n">visited</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
 </span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>
-</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>        <span class="k">for</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">[</span><span class="n">crs</span><span class="p">]:</span>
+</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>        <span class="k">for</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]:</span>
 </span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">dfs</span><span class="p">(</span><span class="n">pre</span><span class="p">):</span>
 </span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>                <span class="k">return</span> <span class="kc">False</span>
 </span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>
 </span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>        <span class="n">visited</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
-</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>        <span class="n">adj</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>        <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
 </span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>
 </span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>        <span class="k">return</span> <span class="kc">True</span>
 </span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>
@@ -3871,11 +3786,11 @@
 </span><span id="__span-1-58"><a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a>    <span class="k">return</span> <span class="kc">True</span>
 </span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>
 </span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>
-</span><span id="__span-1-61"><a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a><span class="c1"># 3. DFS + List</span>
+</span><span id="__span-1-61"><a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a><span class="c1"># DFS + List</span>
 </span><span id="__span-1-62"><a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a><span class="k">def</span> <span class="nf">canFinishDFS2</span><span class="p">(</span><span class="n">numCourses</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">prerequisites</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</span><span id="__span-1-63"><a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>    <span class="n">adj</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</span><span id="__span-1-63"><a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>    <span class="n">graph</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
 </span><span id="__span-1-64"><a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>    <span class="k">for</span> <span class="n">pre</span><span class="p">,</span> <span class="n">crs</span> <span class="ow">in</span> <span class="n">prerequisites</span><span class="p">:</span>
-</span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>        <span class="n">adj</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pre</span><span class="p">)</span>
+</span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>        <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pre</span><span class="p">)</span>
 </span><span id="__span-1-66"><a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>
 </span><span id="__span-1-67"><a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>    <span class="c1"># 0: not visited, 1: visiting, 2: visited</span>
 </span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>    <span class="n">visited</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">numCourses</span>
@@ -3888,7 +3803,7 @@
 </span><span id="__span-1-75"><a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a>
 </span><span id="__span-1-76"><a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a>        <span class="n">visited</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 </span><span id="__span-1-77"><a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a>
-</span><span id="__span-1-78"><a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>        <span class="k">for</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">[</span><span class="n">crs</span><span class="p">]:</span>
+</span><span id="__span-1-78"><a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>        <span class="k">for</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]:</span>
 </span><span id="__span-1-79"><a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">dfs</span><span class="p">(</span><span class="n">pre</span><span class="p">):</span>
 </span><span id="__span-1-80"><a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a>                <span class="k">return</span> <span class="kc">False</span>
 </span><span id="__span-1-81"><a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a>
@@ -3910,7 +3825,7 @@
 <ul>
 <li>Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.</li>
 </ul>
-<p><img alt="0207" src="../../imgs/0207.png" /></p>
+<p><img alt="0207" src="../../imgs/0207.png" width="300px" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>

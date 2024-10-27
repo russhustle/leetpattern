@@ -1,18 +1,15 @@
 from typing import List
 
 
-# Greedy
+# Greedy - Interval
 def canJump(nums: List[int]) -> bool:
-    n = len(nums)
-    if n <= 1:
-        return True
-
-    maxReachable = 0
+    reach = 0
     i = 0
+    n = len(nums)
 
-    while i <= maxReachable:
-        maxReachable = max(maxReachable, i + nums[i])
-        if maxReachable >= n - 1:
+    while i <= reach:
+        reach = max(reach, i + nums[i])
+        if reach >= n - 1:
             return True
         i += 1
 

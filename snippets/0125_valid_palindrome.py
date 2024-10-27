@@ -1,10 +1,10 @@
-# 1. List Comprehension
+# List Comprehension
 def isPalindrome(s: str) -> bool:
     s = [char.lower() for char in s if char.isalnum()]
     return s == s[::-1]
 
 
-# 2. Left Right Pointers
+# Left Right Pointers
 def isPalindromeLR(s: str) -> bool:
     left, right = 0, len(s) - 1
 

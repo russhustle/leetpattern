@@ -1,7 +1,7 @@
 from collections import Counter, defaultdict
 
 
-# 1. Array
+# Array
 def canConstructArray(ransomNote: str, magazine: str) -> bool:
     if len(ransomNote) > len(magazine):
         return False
@@ -21,7 +21,7 @@ def canConstructArray(ransomNote: str, magazine: str) -> bool:
     return True
 
 
-# 2. Dict
+# Dict
 def canConstructDict(ransomNote: str, magazine: str) -> bool:
     if len(ransomNote) > len(magazine):
         return False
@@ -39,7 +39,7 @@ def canConstructDict(ransomNote: str, magazine: str) -> bool:
     return True
 
 
-# 3. Counter
+# Counter
 def canConstructCounter(ransomNote: str, magazine: str) -> bool:
     return not Counter(ransomNote) - Counter(magazine)
 

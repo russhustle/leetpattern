@@ -2,8 +2,9 @@ from collections import defaultdict
 from typing import List
 
 
+# Hashmap
 def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
-    hashmap = defaultdict(int)
+    hashmap = defaultdict(int)  # {num: count}
     result = []
 
     for i in nums1:
@@ -16,6 +17,12 @@ def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
 
     return result
 
+
+# |-------------|-------------|--------------|
+# |   Approach  |    Time     |    Space     |
+# |-------------|-------------|--------------|
+# |   Hashmap   |   O(n + m)  | O(min(n, m)) |
+# |-------------|-------------|--------------|
 
 nums1 = [1, 2, 2, 1]
 nums2 = [2, 2]

@@ -2,13 +2,13 @@ from collections import defaultdict, deque
 from typing import List
 
 
-# 1. BFS - Kahn's Algorithm
+# BFS (Kahn's Algorithm)
 def canFinishBFS(numCourses: int, prerequisites: List[List[int]]) -> bool:
-    adj = defaultdict(list)
-    indegree = [0] * numCourses
+    graph = defaultdict(list)
+    indegree = defaultdict(int)
 
     for crs, pre in prerequisites:
-        adj[pre].append(crs)
+        graph[pre].append(crs)
         indegree[crs] += 1
 
     q = deque([i for i in range(numCourses) if indegree[i] == 0])
@@ -18,37 +18,37 @@ def canFinishBFS(numCourses: int, prerequisites: List[List[int]]) -> bool:
         crs = q.popleft()
         count += 1
 
-        for next in adj[crs]:
-            indegree[next] -= 1
+        for nxt in graph[crs]:
+            indegree[nxt] -= 1
 
-            if indegree[next] == 0:
-                q.append(next)
+            if indegree[nxt] == 0:
+                q.append(nxt)
 
     return count == numCourses
 
 
-# 2. DFS + Set
+# DFS + Set
 def canFinishDFS1(numCourses: int, prerequisites: List[List[int]]) -> bool:
-    adj = defaultdict(list)
+    graph = defaultdict(list)
     for crs, pre in prerequisites:
-        adj[crs].append(pre)
+        graph[crs].append(pre)
 
     visited = set()
 
     def dfs(crs):
         if crs in visited:  # cycle detected
             return False
-        if adj[crs] == []:
+        if graph[crs] == []:
             return True
 
         visited.add(crs)
 
-        for pre in adj[crs]:
+        for pre in graph[crs]:
             if not dfs(pre):
                 return False
 
         visited.remove(crs)
-        adj[crs] = []
+        graph[crs] = []
 
         return True
 
@@ -58,11 +58,11 @@ def canFinishDFS1(numCourses: int, prerequisites: List[List[int]]) -> bool:
     return True
 
 
-# 3. DFS + List
+# DFS + List
 def canFinishDFS2(numCourses: int, prerequisites: List[List[int]]) -> bool:
-    adj = defaultdict(list)
+    graph = defaultdict(list)
     for pre, crs in prerequisites:
-        adj[crs].append(pre)
+        graph[crs].append(pre)
 
     # 0: not visited, 1: visiting, 2: visited
     visited = [0] * numCourses
@@ -75,7 +75,7 @@ def canFinishDFS2(numCourses: int, prerequisites: List[List[int]]) -> bool:
 
         visited[crs] = 1
 
-        for pre in adj[crs]:
+        for pre in graph[crs]:
             if not dfs(pre):
                 return False
 

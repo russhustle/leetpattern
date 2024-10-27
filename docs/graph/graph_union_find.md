@@ -1,16 +1,5 @@
 # Union Find (Disjoint Set)
 
-## Union Find
-
-1. Path Compression
-2. Union by Rank
-
-```python
---8<-- "template/union_find.py"
-```
-
-![graph_union_find](../imgs/graph_union_find.png){width=300px}
-
 ## LeetCode Problems
 
 1. 0547 - [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) (Medium)
@@ -26,6 +15,8 @@
 11. 0399 - [Evaluate Division](https://leetcode.com/problems/evaluate-division/) (Medium)
 
 ## 547. Number of Provinces
+
+-   Return the number of provinces.
 
 ```python
 --8<-- "0547_number_of_provinces.py"
@@ -90,3 +81,16 @@
 ```python
 --8<-- "0399_evaluate_division.py"
 ```
+
+## Appendix
+
+### Union Find
+
+1. Path Compression
+2. Union by Rank
+
+```python
+--8<-- "template/union_find.py"
+```
+
+![graph_union_find](../imgs/graph_union_find.png){width=300px}

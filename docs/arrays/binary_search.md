@@ -16,6 +16,7 @@
 5. 0367 - [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) (Easy)
 6. 0875 - [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) (Medium)
 7. 1011 - [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) (Medium)
+8. 0378 - [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)
 
 ## 704. Binary Search
 
@@ -71,6 +72,14 @@
 
 ```python
 --8<-- "1011_capacity_to_ship_packages_within_d_days.py"
+```
+
+## 378. Kth Smallest Element in a Sorted Matrix
+
+-   Given an `n x n` matrix where each of the rows and columns are sorted in ascending order, return the `k-th` smallest element in the matrix.
+
+```python
+--8<-- "0378_kth_smallest_element_in_a_sorted_matrix.py"
 ```
 
 ## Appendix

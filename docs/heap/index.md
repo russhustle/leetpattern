@@ -7,5 +7,5 @@ _Source: [GeeksforGeeks](https://www.geeksforgeeks.org/heap-data-structure/)_
 ## heapq Module
 
 ```python
---8<-- "heapq.py"
+--8<-- "heaps.py"
 ```

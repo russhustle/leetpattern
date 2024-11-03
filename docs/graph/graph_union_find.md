@@ -13,6 +13,7 @@
 9. 1202 - [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) (Medium)
 10. 0685 - [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/) (Hard)
 11. 0399 - [Evaluate Division](https://leetcode.com/problems/evaluate-division/) (Medium)
+12. 1101 - [The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/) (Medium)
 
 ## 547. Number of Provinces
 
@@ -80,6 +81,12 @@
 
 ```python
 --8<-- "0399_evaluate_division.py"
+```
+
+## 1101. The Earliest Moment When Everyone Become Friends
+
+```python
+--8<-- "1101_the_earliest_moment_when_everyone_become_friends.py"
 ```
 
 ## Appendix

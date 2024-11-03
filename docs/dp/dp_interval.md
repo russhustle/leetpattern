@@ -4,6 +4,7 @@
 
 1. 0516 - [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) (Medium)
 2. 0647 - [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) (Medium)
+3. 0005 - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) (Medium)
 
 ## 516. Longest Palindromic Subsequence
 
@@ -15,4 +16,10 @@
 
 ```python
 --8<-- "0647_palindromic_substrings.py"
+```
+
+## 5. Longest Palindromic Substring
+
+```python
+--8<-- "0005_longest_palindromic_substring.py"
 ```

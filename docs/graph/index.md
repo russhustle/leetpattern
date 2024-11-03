@@ -2,83 +2,54 @@
 
 ## Resources
 
-- [Graph Editor](https://csacademy.com/app/graph_editor/): Create and visualize graphs.
-- [【题单】图论算法（DFS/BFS/拓扑排序/最短路/最小生成树/二分图/基环树/欧拉路径）](https://leetcode.cn/circle/discuss/01LUak/)
+-   [Graph Editor](https://csacademy.com/app/graph_editor/): Create and visualize graphs.
+-   [【题单】图论算法（DFS/BFS/拓扑排序/最短路/最小生成树/二分图/基环树/欧拉路径）](https://leetcode.cn/circle/discuss/01LUak/)
 
 ## Concepts
 
-- Graph
-- Vertex (Node)
-- Edge
-- Weight
+-   Graph
+-   Vertex (Node)
+-   Edge
+-   Weight
 
 ### Types
 
-- **Undirected graph**: A graph in which edges have no direction.
+-   **Undirected graph**: A graph in which edges have no direction.
 
 ![undirected_graph](../imgs/undirected_graph.png)
 
-- **Directed graph**: A graph in which edges have direction.
+-   **Directed graph**: A graph in which edges have direction.
 
 ![directed_graph](../imgs/directed_graph.png)
 
-- **Cyclic graph**: A graph in which there is a cycle.
+-   **Cyclic graph**: A graph in which there is a cycle. A cycle is a path of edges that starts and ends at the same vertex, e.g., `1 -> 3 -> 4 -> 1`.
 
 ![cyclic_graph](../imgs/cyclic_graph.png)
 
-- **Acyclic graph**: A graph in which there is no cycle.
+-   **Acyclic graph**: A graph in which there is no cycle.
 
 ![acyclic_graph](../imgs/graph_acyclic.png)
 
-- **Directed Acyclic Graph** (DAG)
+-   **Directed Acyclic Graph** (DAG): A directed graph with no cycles.
+    -   Topological sort
 
 ![dag](../imgs/graph_dag.png)
 
-Weighted graph
+-   **Weighted graph**: A graph in which edges have weights.
 
-```mermaid
-flowchart LR
-1((1))
-2((2))
-3((3))
-4((4))
-5((5))
-1 -->|1| 3
-1 -->|2| 2
-3 -->|3| 4
-2 -->|4| 3
-4 -->|5| 5
-```
+![weighted](../imgs/graph_weighted.png)
 
-Connected Graph
+-   **Connected Graph**: A graph in which there is a path between every pair of vertices.
 
-```mermaid
-flowchart LR
-1((1))
-2((2))
-3((3))
-4((4))
-5((5))
+![connected](../imgs/graph_connected.png)
 
-1 --- 2
-2 --- 3
-3 --- 1
-1 --- 4
-4 --- 5
-3 --- 5
-```
+-   **Disconnected Graph**: A graph in which there is no path between some pairs of vertices.
 
-Eulerian path
+![disconnected](../imgs/graph_disconnected.png)
 
-```mermaid
-graph TD
-A((A)) --> B((B))
-B --> C((C))
-C --> D((D))
-D --> A
-A --> E((E))
-E --> D
-```
+-   **Eulerian path**: A path that visits every edge exactly once, e.g., `5 -> 4 -> 1 -> 2 -> 3`.
+
+![eulerian](../imgs/graph_eulerian.png)
 
 ### Representation
 
@@ -156,10 +127,10 @@ flowchart LR
 2 --> 3
 ```
 
-- In-degree of Node 1: 0
-- Out-degree of Node 1: 2
-- In-degree of Node 2: 1
-- Out-degree of Node 2: 1
+-   In-degree of Node 1: 0
+-   Out-degree of Node 1: 2
+-   In-degree of Node 2: 1
+-   Out-degree of Node 2: 1
 
 ```python
 # List

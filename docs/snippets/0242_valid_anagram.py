@@ -1,53 +1,53 @@
 from collections import Counter
 
 
-# 1. Hashmap
+# Hashmap
 def isAnagramHash(s: str, t: str) -> bool:
     if len(s) != len(t):
         return False
 
-    hashmap = dict()
+    count = dict()
 
     for i in s:
-        if i in hashmap:
-            hashmap[i] += 1
+        if i in count:
+            count[i] += 1
         else:
-            hashmap[i] = 1
+            count[i] = 1
 
     for j in t:
-        if j in hashmap:
-            hashmap[j] -= 1
+        if j in count:
+            count[j] -= 1
         else:
             return False
 
-    for count in hashmap.values():
+    for count in count.values():
         if count != 0:
             return False
 
     return True
 
 
-# 2. Array
+# Array
 def isAnagramArray(s: str, t: str) -> bool:
     if len(s) != len(t):
         return False
 
-    record = [0 for _ in range(26)]
+    count = [0 for _ in range(26)]
 
     for i in s:
-        record[ord(i) - ord("a")] += 1
+        count[ord(i) - ord("a")] += 1
 
     for j in t:
-        record[ord(j) - ord("a")] -= 1
+        count[ord(j) - ord("a")] -= 1
 
-    for i in record:
+    for i in count:
         if i != 0:
             return False
 
     return True
 
 
-# 3. Counter
+# Counter
 def isAnagramCounter(s: str, t: str) -> bool:
     return Counter(s) == Counter(t)
 

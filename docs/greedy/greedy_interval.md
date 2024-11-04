@@ -11,11 +11,29 @@
 
 ## 55. Jump Game
 
+-   Return `True` if you can reach the last index, otherwise `False`.
+
 ```python
 --8<-- "0055_jump_game.py"
 ```
 
+-   Example: `[2, 3, 1, 1, 4, 1, 2, 0, 0]`
+
+| Index | Value | Index + Value | Max Reach | Max Reach >= Last Index |
+| :---: | :---: | :-----------: | :-------: | :---------------------: |
+|   0   |   2   |       2       |     2     |          False          |
+|   1   |   3   |       4       |     4     |          False          |
+|   2   |   1   |       3       |     4     |          False          |
+|   3   |   1   |       4       |     4     |          False          |
+|   4   |   4   |       8       |     8     |          True           |
+|   5   |   1   |       6       |     8     |          True           |
+|   6   |   2   |       8       |     8     |          True           |
+|   7   |   0   |       7       |     8     |          True           |
+|   8   |   0   |       8       |     8     |          True           |
+
 ## 45. Jump Game II
+
+-   Return the minimum number of jumps to reach the last index.
 
 ```python
 --8<-- "0045_jump_game_ii.py"

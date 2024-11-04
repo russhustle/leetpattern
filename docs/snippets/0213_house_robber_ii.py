@@ -22,5 +22,5 @@ def rob(nums: List[int]) -> int:
     return max(a, b)
 
 
-nums = [2, 3, 2]
-print(rob(nums))  # 3
+nums = [2, 7, 9, 3, 1]
+print(rob(nums))  # 11

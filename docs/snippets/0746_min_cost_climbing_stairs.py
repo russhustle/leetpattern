@@ -8,9 +8,9 @@ def minCostClimbingStairs(cost: List[int]) -> int:
 
     for i in range(2, len(cost)):
         dp[i] = min(dp[i - 1], dp[i - 2]) + cost[i]
-
+    print(dp)
     return min(dp[-1], dp[-2])
 
 
-cost = [10, 15, 20]
-print(minCostClimbingStairs(cost))  # 15
+cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+print(minCostClimbingStairs(cost))  # 6

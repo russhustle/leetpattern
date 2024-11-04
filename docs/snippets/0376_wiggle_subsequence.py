@@ -3,8 +3,6 @@ from typing import List
 
 # DP
 def wiggleMaxLengthDP(nums: List[int]) -> int:
-    # Time complexity: O(n)
-    # Space complexity: O(n)
     if len(nums) <= 1:
         return len(nums)
 
@@ -43,6 +41,13 @@ def wiggleMaxLengthGreedy(nums: List[int]) -> int:
 
     return count
 
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    DP       |      O(n)       |     O(n)     |
+# |  Greedy     |      O(n)       |     O(1)     |
+# |-------------|-----------------|--------------|
 
 nums = [1, 7, 4, 9, 2, 5]
 print(wiggleMaxLengthDP(nums))  # 6

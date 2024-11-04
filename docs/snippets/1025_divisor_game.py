@@ -1,7 +1,5 @@
-def divisorGame(n: int) -> bool:
-    # Time complexity: O(n^2)
-    # Space complexity: O(n)
-
+# DP
+def divisorGameDP(n: int) -> bool:
     if n <= 1:
         return False
 
@@ -12,8 +10,22 @@ def divisorGame(n: int) -> bool:
             if i % j == 0 and not dp[i - j]:
                 dp[i] = True
                 break
+
     return dp[n]
 
 
+# Math
+def divisorGameDPMath(n: int) -> bool:
+    return n % 2 == 0
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |  DP         |      O(n^2)     |    O(n)      |
+# |  Math       |      O(1)       |    O(1)      |
+# |-------------|-----------------|--------------|
+
 n = 2
-print(divisorGame(n))  # True
+print(divisorGameDP(n))  # True
+print(divisorGameDPMath(n))  # True

@@ -13,6 +13,10 @@
 
 ## 739. Daily Temperatures
 
+-   Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
+
+![0739](../imgs/0739.jpg)
+
 ```python
 --8<-- "0739_daily_temperatures.py"
 ```
@@ -37,7 +41,7 @@
 
 ## 85. Maximal Rectangle
 
-- Return the area of the largest rectangle that can be formed within a rectangle of 1's.
+-   Return the area of the largest rectangle that can be formed within a rectangle of 1's.
 
 ![0085](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg){width=300px}
 
@@ -53,7 +57,7 @@
 
 ## 901. Online Stock Span
 
-- Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
+-   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
 ```python
 --8<-- "0901_online_stock_span.py"

@@ -8,7 +8,7 @@
 
 1. 0733 - [Flood Fill](https://leetcode.com/problems/flood-fill/) (Easy)
 2. 0200 - [Number of Islands](https://leetcode.com/problems/number-of-islands/) (Medium)
-3. 695 - [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) (Medium)
+3. 0695 - [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) (Medium)
 4. 0463 - [Island Perimeter](https://leetcode.com/problems/island-perimeter/) (Easy)
 5. 0130 - [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) (Medium)
 6. 0417 - [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) (Medium)
@@ -18,7 +18,7 @@
 
 -   Replace all the pixels of the same color starting from the given pixel.
 
-![733](https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg){width=300px}
+![733](../imgs/0733.jpg)
 
 ```python
 --8<-- "0733_flood_fill.py"
@@ -40,7 +40,7 @@
     2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
     3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
-![0200](../imgs/0200.jpg){width=300px}
+![0200](../imgs/0200.jpg)
 
 ```python
 --8<-- "0200_number_of_islands.py"

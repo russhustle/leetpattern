@@ -20,8 +20,9 @@ def list_files_with_string(folder: str, string: str, present: bool = True):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
     folder = "docs/snippets"
+
+    parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--folder", type=str, default=folder)
     parser.add_argument("-s", "--string", type=str, required=True)
     parser.add_argument("-p", "--present", action="store_true")

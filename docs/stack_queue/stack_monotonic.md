@@ -15,8 +15,6 @@
 
 -   Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
 
-![0739](../imgs/0739.jpg)
-
 ```python
 --8<-- "0739_daily_temperatures.py"
 ```

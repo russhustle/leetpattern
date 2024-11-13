@@ -16,4 +16,4 @@ def canJump(nums: List[int]) -> bool:
     return False
 
 
-print(canJump([2, 3, 1, 1, 4]))  # True
+print(canJump([2, 3, 1, 1, 4, 1, 2, 0, 0]))  # True

@@ -3,7 +3,7 @@ from typing import List
 
 # Left Right Pointers
 def threeSum(nums: List[int]) -> List[List[int]]:
-    nums.sort()  # O(n * logn) Quick Sort
+    nums.sort()
     result = []
     n = len(nums)
 
@@ -35,11 +35,11 @@ def threeSum(nums: List[int]) -> List[List[int]]:
     return result
 
 
-# |-------------|-------------|--------------|
-# |   Approach  |    Time     |    Space     |
-# |-------------|-------------|--------------|
-# |  Left Right |   O(n^2)    |     O(1)     |
-# |-------------|-------------|--------------|
+# |-----------|---------|---------|
+# | Approach  |   Time  |  Space  |
+# |-----------|---------|---------|
+# | LR Pointer|  O(n^2) |   O(1)  |
+# |-----------|---------|---------|
 
 
 nums = [-1, 0, 1, 2, -1, -4]

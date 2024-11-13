@@ -1,55 +1,49 @@
 from collections import deque
 from typing import Optional
 
+from binarytree import Node as TreeNode
 from binarytree import build
 
 
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-
-# 1. Recursive
+# Recursive
 def countNodesRecursive(root: Optional[TreeNode]) -> int:
-    # TC: O(n)
-    # SC: O(n)
     if not root:
         return 0
 
-    nodeNum = (
-        countNodesRecursive(root.left) + countNodesRecursive(root.right) + 1
-    )
+    num = 1 + countNodesRecursive(root.left) + countNodesRecursive(root.right)
 
-    return nodeNum
+    return num
 
 
-# 2. Iterative
+# Iterative
 def countNodesIterative(root: Optional[TreeNode]) -> int:
-    # TC: O(n)
-    # SC: O(n)
-
     if not root:
         return 0
 
     q = deque([root])
-    nodeNum = 0
+    count = 0
 
     while q:
         n = len(q)
 
         for _ in range(n):
             node = q.popleft()
-            nodeNum += 1
+            count += 1
 
             if node.left:
                 q.append(node.left)
             if node.right:
                 q.append(node.right)
 
-    return nodeNum
+    return count
 
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# | Recursive  |  O(n)  |  O(n)   |
+# | Iterative  |  O(n)  |  O(n)   |
+# |------------|--------|---------|
 
 root = [1, 2, 3, 4, 5, 6]
 root = build(root)

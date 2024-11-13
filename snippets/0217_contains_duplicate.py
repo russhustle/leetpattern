@@ -1,7 +1,7 @@
 from typing import List
 
 
-# 1.Brute Force
+# Brute Force
 def containsDuplicateBF(nums: List[int]) -> bool:
     for i in range(len(nums)):
         for j in range(i + 1, len(nums)):
@@ -11,7 +11,7 @@ def containsDuplicateBF(nums: List[int]) -> bool:
     return False
 
 
-# 2. Sort
+# Sort
 def containsDuplicateSort(nums: List[int]) -> bool:
     nums.sort()
 
@@ -22,7 +22,7 @@ def containsDuplicateSort(nums: List[int]) -> bool:
     return False
 
 
-# 3.Set
+# Set
 def containsDuplicateSet(nums: List[int]) -> bool:
     seen = set()
 

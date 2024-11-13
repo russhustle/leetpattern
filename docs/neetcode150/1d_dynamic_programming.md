@@ -50,6 +50,8 @@
 
 ## 91. Decode Ways
 
+-   Return the number of ways to decode a string of digits.
+
 ```python
 --8<-- "0091_decode_ways.py"
 ```

@@ -1,6 +1,7 @@
 from typing import List
 
 
+# DP - LIS
 def findNumberOfLIS(nums: List[int]) -> int:
     if not nums:
         return 0

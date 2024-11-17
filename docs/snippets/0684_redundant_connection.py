@@ -1,36 +1,43 @@
 from typing import List
 
 
-# Union Find
-def findRedundantConnectionUF(edges: List[List[int]]) -> List[int]:
-    par = {i: i for i in range(len(edges) + 1)}
-    rank = {i: 1 for i in range(len(edges) + 1)}
+class UnionFind:
+    def __init__(self, n):
+        self.par = {i: i for i in range(1, n + 1)}
+        self.rank = {i: 1 for i in range(1, n + 1)}
 
-    def find(n):
-        p = par[n]
-        while p != par[p]:
-            par[p] = par[par[p]]
-            p = par[p]
+    def find(self, n):
+        p = self.par[n]
+        while self.par[p] != p:
+            self.par[p] = self.par[self.par[p]]
+            p = self.par[p]
         return p
 
-    def union(n1, n2):
-        p1, p2 = find(n1), find(n2)
+    def union(self, n1, n2):
+        p1, p2 = self.find(n1), self.find(n2)
 
         if p1 == p2:
             return False
 
-        if rank[p1] > rank[p2]:
-            par[p2] = p1
-            rank[p1] += rank[p2]
+        if self.rank[p1] > self.rank[p2]:
+            self.par[p2] = p1
+        elif self.rank[p1] < self.rank[p2]:
+            self.par[p1] = p2
         else:
-            par[p1] = p2
-            rank[p2] += rank[p1]
+            self.par[p2] = p1
+            self.rank[p1] += 1
 
         return True
 
-    for n1, n2 in edges:
-        if not union(n1, n2):
-            return (n1, n2)
+
+# Union Find
+def findRedundantConnectionUF(edges: List[List[int]]) -> List[int]:
+    n = len(edges)
+    uf = UnionFind(n)
+
+    for u, v in edges:
+        if not uf.union(u, v):
+            return (u, v)
 
 
 # DFS

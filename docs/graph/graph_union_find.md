@@ -15,6 +15,17 @@
 11. 0399 - [Evaluate Division](https://leetcode.com/problems/evaluate-division/) (Medium)
 12. 1101 - [The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/) (Medium)
 
+## Union Find
+
+-   Find by Path Compression
+-   Union by Rank
+-   Time Complexity: $O(\log(n))$
+-   Space Complexity: $O(n)$
+
+```python title="template/union_find.py"
+--8<-- "template/union_find.py"
+```
+
 ## 547. Number of Provinces
 
 -   Return the number of provinces.
@@ -88,16 +99,3 @@
 ```python
 --8<-- "1101_the_earliest_moment_when_everyone_become_friends.py"
 ```
-
-## Appendix
-
-### Union Find
-
-1. Path Compression
-2. Union by Rank
-
-```python
---8<-- "template/union_find.py"
-```
-
-![graph_union_find](../imgs/graph_union_find.png){width=300px}

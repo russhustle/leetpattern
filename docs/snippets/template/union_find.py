@@ -1,7 +1,7 @@
 class UnionFind:
-    def __init__(self, n: int):
+    def __init__(self, n):
         self.par = {i: i for i in range(n)}
-        self.rank = {i: 0 for i in range(n)}
+        self.rank = {i: 1 for i in range(n)}
 
     def find(self, n):
         p = self.par[n]
@@ -24,15 +24,5 @@ class UnionFind:
             self.par[p2] = p1
             self.rank[p1] += 1
 
-    def connected(self, p, q):
-        return self.find(p) == self.find(q)
-
-
-uf = UnionFind(7)
-uf.union(1, 2)
-uf.union(3, 4)
-uf.union(1, 4)
-uf.union(5, 6)
-print(uf.connected(2, 3))  # True
-print(uf.connected(1, 3))  # True
-print(uf.connected(1, 5))  # False
+    def connected(self, n1, n2):
+        return self.find(n1) == self.find(n2)

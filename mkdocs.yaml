@@ -173,7 +173,7 @@ theme:
 
     font:
         text: Open Sans
-        code: Noto Sans Mono
+        code: Roboto Mono
 
     features:
         - content.code.copy # Enable copy button on code blocks

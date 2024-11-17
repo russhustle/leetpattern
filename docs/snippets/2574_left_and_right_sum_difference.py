@@ -1,11 +1,11 @@
 from typing import List
 
 
-# 1. Left Right Sum
+# Prefix Sum
 def leftRightDifferenceSum(nums: List[int]) -> List[int]:
     n = len(nums)
-    left = [0] * n
-    right = [0] * n
+    left = [0 for _ in range(n)]
+    right = [0 for _ in range(n)]
 
     for i in range(1, n):
         left[i] = left[i - 1] + nums[i - 1]
@@ -16,7 +16,7 @@ def leftRightDifferenceSum(nums: List[int]) -> List[int]:
     return [abs(left[i] - right[i]) for i in range(n)]
 
 
-# 2. Left Right Pointer
+# Left Right Pointer
 def leftRightDifferencePointer(nums: List[int]) -> List[int]:
     left, right = 0, sum(nums)
     result = []

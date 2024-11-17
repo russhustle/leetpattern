@@ -7,6 +7,8 @@
 3. 0354 - [Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/) (Hard)
 4. 0960 - [Delete Columns to Make Sorted III](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/) (Hard)
 5. 1671 - [Minimum Number of Removals to Make Mountain Array](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) (Hard)
+    1. 0941 - [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) (Easy)
+    2. 0845 - [Longest Mountain in Array](https://leetcode.com/problems/longest-mountain-in-array/) (Medium)
 
 ## 300. Longest Increasing Subsequence
 
@@ -36,4 +38,16 @@
 
 ```python
 --8<-- "1671_minimum_number_of_removals_to_make_mountain_array.py"
+```
+
+### 941. Valid Mountain Array
+
+```python
+--8<-- "0941_valid_mountain_array.py"
+```
+
+### 845. Longest Mountain in Array
+
+```python
+--8<-- "0845_longest_mountain_in_array.py"
 ```

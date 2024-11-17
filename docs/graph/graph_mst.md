@@ -2,21 +2,21 @@
 
 ## Minimum Spanning Tree
 
-- **Tree**: a connected acyclic graph
-- **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
-- **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
-- Algorithm
+-   **Tree**: a connected acyclic graph
+-   **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
+-   **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
+-   Algorithm
 
-  - Prim's Algorithm
-    - Data Structure: Heap
-    - Time Ciomplexity: $O(E \log V)$
-    - Space Complexity: $O(V + E)$
-  - Kruskal's Algorithm
-    - Union Find
-    - Time Complexity: $O(E \log V)$
-    - Space Complexity: $O(V + E)$
+    -   Prim's Algorithm
+        -   Data Structure: Heap
+        -   Time Ciomplexity: $O(E \log V)$
+        -   Space Complexity: $O(V + E)$
+    -   Kruskal's Algorithm
+        -   Union Find
+        -   Time Complexity: $O(E \log V)$
+        -   Space Complexity: $O(V + E)$
 
-- Demonstration
+-   Demonstration
 
 Example graph
 
@@ -38,7 +38,6 @@ MST
 4. 1489 - [Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
 5. 1631 - [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) (Medium)
 6. 1579 - [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) (Hard)
-7. 1589 - [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
 
 ## 1584. Min Cost to Connect All Points
 
@@ -72,16 +71,10 @@ MST
 
 ## 1579. Remove Max Number of Edges to Keep Graph Fully Traversable
 
-- Return the maximum number of edges you can remove so that the graph remains fully traversable.
+-   Return the maximum number of edges you can remove so that the graph remains fully traversable.
 
 ![1579](../imgs/1579.png){width=200px}
 
 ```python
 --8<-- "1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.py"
-```
-
-## 1589. Maximum Sum Obtained of Any Permutation
-
-```python
---8<-- "1589_maximum_sum_obtained_of_any_permutation.py"
 ```

@@ -7,6 +7,8 @@ search:
 
 clear:
 	find . -name ".DS_Store" -type f -delete
+# delete __pycache__ folders
+	find . -name "__pycache__" -type d -exec rm -r {} +
 
 push:
 	# tag

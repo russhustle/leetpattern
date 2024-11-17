@@ -1,9 +1,9 @@
 from typing import Optional
 
-from helper import ListNode
+from template import ListNode
 
 
-# 1. Iterative
+# Iterative
 def reverseListIterative(head: Optional[ListNode]) -> Optional[ListNode]:
     cur = head
     prev = None
@@ -18,7 +18,7 @@ def reverseListIterative(head: Optional[ListNode]) -> Optional[ListNode]:
     return prev
 
 
-# 2. Recursive
+# Recursive
 def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
     def reverse(cur, prev=None):
         if not cur:

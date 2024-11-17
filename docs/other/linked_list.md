@@ -17,6 +17,10 @@
 11. 2816 - [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) (Medium)
 12. 0002 - [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) (Medium)
 
+```python title="template/linked_list.py"
+--8<-- "template/linked_list.py"
+```
+
 ## 203. Remove Linked List Elements
 
 -   Remove all elements from a linked list of integers that have value `val`.

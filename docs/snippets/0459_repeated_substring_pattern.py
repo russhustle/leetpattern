@@ -1,6 +1,7 @@
-from helper import LPS
+from template import LPS
 
 
+# KMP
 def repeatedSubstringPattern(s: str) -> bool:
     lps = LPS(s)
     length = len(s)

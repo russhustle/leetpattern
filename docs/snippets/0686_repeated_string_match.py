@@ -1,21 +1,11 @@
 import math
 
+from template import LPS
 
+
+# KMP
 def repeatedStringMatch(a: str, b: str) -> int:
     min_repeat = math.ceil(len(b) / len(a))
-
-    def LPS(pattern):
-        lps = [0] * len(pattern)
-        j = 0
-
-        for i in range(1, len(pattern)):
-            while j > 0 and pattern[i] != pattern[j]:
-                j = lps[j - 1]
-            if pattern[i] == pattern[j]:
-                j += 1
-            lps[i] = j
-
-        return lps
 
     def kmp(text, pattern):
         n, m = len(text), len(pattern)

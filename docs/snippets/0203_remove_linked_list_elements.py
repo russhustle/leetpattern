@@ -1,11 +1,12 @@
 from typing import Optional
 
-from helper import ListNode
+from template import ListNode
 
 
 # Iterative
 def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
-    dummy = ListNode(next=head)
+    dummy = ListNode(0)
+    dummy.next = head
     cur = dummy
 
     while cur.next:

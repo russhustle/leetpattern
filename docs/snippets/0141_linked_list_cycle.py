@@ -1,6 +1,6 @@
 from typing import Optional
 
-from helper import ListNode
+from template import ListNode
 
 
 def hasCycle(head: Optional[ListNode]) -> bool:

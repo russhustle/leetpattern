@@ -55,6 +55,5 @@ class MyLinkedList:
 ll = MyLinkedList()
 ll.addAtHead(1)
 ll.addAtTail(3)
-ll.addAtIndex(1, 2)
-# 1 -> 2 -> 3
+ll.addAtIndex(1, 2)  # 1 -> 2 -> 3
 print(ll.get(1))  # 2

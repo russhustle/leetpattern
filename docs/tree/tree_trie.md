@@ -2,7 +2,7 @@
 
 ## Trie
 
-- A trie is a tree-like data structure whose nodes store the letters of an alphabet.
+-   A trie is a tree-like data structure whose nodes store the letters of an alphabet.
 
 ```mermaid
 flowchart TD
@@ -24,6 +24,10 @@ A2 --- R2((R))
 1. 0208 - [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) (Medium)
 2. 0211 - [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) (Medium)
 3. 0212 - [Word Search II](https://leetcode.com/problems/word-search-ii/) (Hard)
+
+```python
+--8<-- "template/trie.py"
+```
 
 ## 208. Implement Trie (Prefix Tree)
 

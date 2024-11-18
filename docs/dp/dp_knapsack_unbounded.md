@@ -20,11 +20,15 @@
 
 ## 139. Word Break
 
+-   Return True if the string can be segmented into a space-separated sequence of one or more dictionary words.
+
 ```python
 --8<-- "0139_word_break.py"
 ```
 
 ## 279. Perfect Squares
+
+-   Return the least number of perfect square numbers that sum to `n`.
 
 ```python
 --8<-- "0279_perfect_squares.py"
@@ -32,17 +36,23 @@
 
 ## 322. Coin Change
 
+-   Return the fewest number of coins that you need to make up that amount.
+
 ```python
 --8<-- "0322_coin_change.py"
 ```
 
 ## 518. Coin Change 2
 
+-   Return the number of combinations that make up that amount.
+
 ```python
 --8<-- "0518_coin_change_2.py"
 ```
 
 ## 377. Combination Sum IV
+
+-   Return the number of possible combinations that make up that amount.
 
 ```python
 --8<-- "0377_combination_sum_iv.py"

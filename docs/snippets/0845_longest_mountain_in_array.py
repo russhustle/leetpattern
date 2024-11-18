@@ -1,7 +1,7 @@
 from typing import List
 
 
-# Left Right Pointer
+# Left Right Pointers
 def longestMountain(arr: List[int]) -> int:
     n = len(arr)
     res = 0

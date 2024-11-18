@@ -16,7 +16,7 @@ def leftRightDifferenceSum(nums: List[int]) -> List[int]:
     return [abs(left[i] - right[i]) for i in range(n)]
 
 
-# Left Right Pointer
+# Left Right Pointers
 def leftRightDifferencePointer(nums: List[int]) -> List[int]:
     left, right = 0, sum(nums)
     result = []

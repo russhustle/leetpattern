@@ -6,7 +6,7 @@ from binarytree import build
 
 # Recursive
 def postorderTraversalRecursive(root: Optional[TreeNode]) -> List[int]:
-    postorder = []
+    res = []
 
     def dfs(node):
         if not node:
@@ -14,11 +14,11 @@ def postorderTraversalRecursive(root: Optional[TreeNode]) -> List[int]:
 
         dfs(node.left)
         dfs(node.right)
-        postorder.append(node.val)
+        res.append(node.val)  # <--
 
     dfs(root)
 
-    return postorder
+    return res
 
 
 # Iterative
@@ -26,19 +26,19 @@ def postorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
     if not root:
         return []
 
-    postorder = []
+    res = []
     stack = [root]
 
     while stack:
         node = stack.pop()
-        postorder.append(node.val)
+        res.append(node.val)
 
         if node.left:
             stack.append(node.left)
         if node.right:
             stack.append(node.right)
 
-    return postorder[::-1]
+    return res[::-1]
 
 
 tree = build([0, 1, 2, 3, 4, 5, 6])

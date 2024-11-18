@@ -18,11 +18,6 @@
 
 ![python distilled](https://www.dabeaz.com/python-distilled/cover.jpg){ width=200px }
 
-## To Do
-
--   Add explanations for the most common question for each pattern.
--   To be completed: 28 problems.
-
 ## Resources
 
 -   [算法竞赛模板库 by 灵茶山艾府](https://github.com/EndlessCheng/codeforces-go)

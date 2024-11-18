@@ -18,7 +18,7 @@ def validMountainArray(arr: List[int]) -> bool:
     return i == n - 1
 
 
-# Left Right Pointer
+# Left Right Pointers
 def validMountainArrayLP(arr: List[int]) -> bool:
     n = len(arr)
 

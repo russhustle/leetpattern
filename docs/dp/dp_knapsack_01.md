@@ -6,7 +6,7 @@
 
 -   The 0/1 knapsack problem is a variation of the knapsack problem where the items can be selected only once.
 
-```python
+```python title="template/knapsack01.py"
 --8<-- "template/knapsack01.py"
 ```
 

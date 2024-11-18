@@ -5,7 +5,7 @@ serve:
 search:
 	python utils/utils.py -s "def" -np
 
-clear:
+clean:
 	find . -name ".DS_Store" -type f -delete
 # delete __pycache__ folders
 	find . -name "__pycache__" -type d -exec rm -r {} +

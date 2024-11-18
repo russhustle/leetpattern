@@ -6,7 +6,7 @@
 
 ![knapsack01](../imgs/knapsack01.jpg){width=300px}
 
-```python
+```python title="template/knapsack_unbounded.py"
 --8<-- "template/knapsack_unbounded.py"
 ```
 
@@ -18,31 +18,31 @@
 4. 0518 - [Coin Change 2](https://leetcode.com/problems/coin-change-2/) (Medium)
 5. 0377 - [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/) (Medium)
 
-## 0139. Word Break
+## 139. Word Break
 
 ```python
 --8<-- "0139_word_break.py"
 ```
 
-## 0279. Perfect Squares
+## 279. Perfect Squares
 
 ```python
 --8<-- "0279_perfect_squares.py"
 ```
 
-## 0322. Coin Change
+## 322. Coin Change
 
 ```python
 --8<-- "0322_coin_change.py"
 ```
 
-## 0518. Coin Change 2
+## 518. Coin Change 2
 
 ```python
 --8<-- "0518_coin_change_2.py"
 ```
 
-## 0377. Combination Sum IV
+## 377. Combination Sum IV
 
 ```python
 --8<-- "0377_combination_sum_iv.py"

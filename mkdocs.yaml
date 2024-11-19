@@ -178,6 +178,7 @@ theme:
     features:
         - content.code.copy # Enable copy button on code blocks
         - content.code.select # Enable select button on code blocks
+        - content.tabs.link # Enable link button on tabs
         - navigation.tabs
         - navigation.tracking
         - navigation.tabs.sticky

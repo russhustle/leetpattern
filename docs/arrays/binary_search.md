@@ -34,6 +34,12 @@
     --8<-- "cpp/0704_binary_search.cc"
     ```
 
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0704_binary_search.ts"
+    ```
+
 ## 35. Search Insert Position
 
 -   Return the index of the target if it is found. If not, return the index where it would be if it were inserted in order.
@@ -48,6 +54,12 @@
 
     ```cpp
     --8<-- "cpp/0035_search_insert_position.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0035_search_insert_position.ts"
     ```
 
 ## 278. First Bad Version

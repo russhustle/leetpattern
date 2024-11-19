@@ -2,5 +2,5 @@ __pycache__/
 temp.ipynb
 site/
 output/
-.vscode/
+# .vscode/
 .DS_Store

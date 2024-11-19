@@ -26,7 +26,7 @@ MST
 
 ![mst2](../imgs/mst_2.png)
 
-```python
+```python title="template/graph_mst.py"
 --8<-- "template/graph_mst.py"
 ```
 

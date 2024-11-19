@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "makefile.configureOnOpen": false,
+    "prettier.embeddedLanguageFormatting": "auto",
+    "prettier.bracketSameLine": false,
+    "prettier.printWidth": 79
+}

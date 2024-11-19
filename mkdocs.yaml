@@ -26,7 +26,7 @@ nav:
                 - Counting: hash/hash_counting.md
 
           - 💬 String:
-                #     - Home: string/index.md
+                # - Home: string/index.md
                 - String: string/string.md
                 - KMP: string/string_kmp.md
 
@@ -43,7 +43,7 @@ nav:
                 - Trie: tree/tree_trie.md
 
           - 📚 Stack & Queue:
-                - Stack & Queue: stack_queue/index.md
+                # - Stack & Queue: stack_queue/index.md
                 - Stack: stack_queue/stack.md
                 - Monotonic Stack: stack_queue/stack_monotonic.md
                 - Queue: stack_queue/queue.md

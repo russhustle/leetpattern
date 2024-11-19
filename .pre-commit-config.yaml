@@ -1,41 +1,41 @@
 repos:
-# a set of useful Python-based pre-commit hooks
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
-    hooks:
-      # supported hooks: https://pre-commit.com/hooks.html
-    - id: trailing-whitespace
-    - id: check-toml
-    - id: check-yaml
-    - id: check-json
-    - id: check-merge-conflict
-      args: ['--assume-in-merge']
-    - id: check-added-large-files
-      args: ['--maxkb=10240']
-    - id: debug-statements
-    - id: detect-private-key
+    # a set of useful Python-based pre-commit hooks
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.6.0
+      hooks:
+          # supported hooks: https://pre-commit.com/hooks.html
+          - id: trailing-whitespace
+          - id: check-toml
+          - id: check-yaml
+          - id: check-json
+          - id: check-merge-conflict
+            args: ["--assume-in-merge"]
+          - id: check-added-large-files
+            args: ["--maxkb=10240"]
+          - id: debug-statements
+          - id: detect-private-key
 
-# black
--   repo: https://github.com/ambv/black
-    rev: 24.8.0
-    hooks:
-    - id: black
-      args: [--line-length=79]
+    # black
+    - repo: https://github.com/ambv/black
+      rev: 24.8.0
+      hooks:
+          - id: black
+            args: [--line-length=79]
 
-# flake8
--   repo: https://github.com/pycqa/flake8
-    rev: 7.1.1
-    hooks:
-    - id: flake8
+    # flake8
+    - repo: https://github.com/pycqa/flake8
+      rev: 7.1.1
+      hooks:
+          - id: flake8
 
-# isort
--   repo: https://github.com/timothycrosley/isort
-    rev: 5.13.2
-    hooks:
-    -   id: isort
+    # isort
+    - repo: https://github.com/timothycrosley/isort
+      rev: 5.13.2
+      hooks:
+          - id: isort
 
-# shellcheck-py for linting shell files
--   repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
-    hooks:
-      - id: shellcheck
+    # shellcheck-py for linting shell files
+    - repo: https://github.com/shellcheck-py/shellcheck-py
+      rev: v0.10.0.1
+      hooks:
+          - id: shellcheck

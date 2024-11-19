@@ -7,5 +7,7 @@
     "prettier.printWidth": 79,
     "files.associations": {
         "iostream": "cpp"
-    }
+    },
+    "quokka.automaticRestart": true,
+    "quokka.automaticStartRegex": "/docs/snippets/ts/*.ts"
 }

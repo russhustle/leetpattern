@@ -9,7 +9,7 @@
 
 ## 118. Pascal's Triangle
 
-- Generate the first `numRows` of Pascal's triangle.
+-   Generate the first `numRows` of Pascal's triangle.
 
 ```plaintext
                  numRows    index
@@ -26,7 +26,7 @@
 
 ## 119. Pascal's Triangle II
 
-- Return the `rowIndex`th row of Pascal's triangle.
+-   Return the `rowIndex`th row of Pascal's triangle.
 
 ```python
 --8<-- "0119_pascals_triangle_ii.py"
@@ -34,7 +34,7 @@
 
 ## 62. Unique Paths
 
-- Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
+-   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
@@ -44,9 +44,9 @@
 
 ## 63. Unique Paths II
 
-- Count the number of unique paths to reach the bottom-right corner of a `m x n` grid with obstacles.
+-   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid with obstacles.
 
-![36](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
+![63](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
 
 ```python
 --8<-- "0063_unique_paths_ii.py"

@@ -1,17 +1,27 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "MkDocs",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}/.venv/bin/mkdocs",
-            "args": ["serve"],
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}/.venv/bin/python"
-            }
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MkDocs",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.venv/bin/mkdocs",
+      "args": [
+        "serve"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/.venv/bin/python"
+      }
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/sihana/Desktop/repos/leetpattern/docs/cpp",
+      "program": "/Users/sihana/Desktop/repos/leetpattern/docs/cpp/build/Debug/outDebug"
+    }
+  ]
 }

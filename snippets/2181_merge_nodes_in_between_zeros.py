@@ -1,6 +1,6 @@
 from typing import Optional
 
-from helper import ListNode
+from template import ListNode
 
 
 # Linked List
@@ -13,7 +13,7 @@ def mergeNodes(head: Optional[ListNode]) -> Optional[ListNode]:
 
     while head.next:
         if head.val == 0:
-            cur.next = ListNode(val=temp)
+            cur.next = ListNode(temp)
             cur = cur.next
             temp = 0
         else:
@@ -22,7 +22,7 @@ def mergeNodes(head: Optional[ListNode]) -> Optional[ListNode]:
         head = head.next
 
     if temp != 0:
-        cur.next = ListNode(val=temp)
+        cur.next = ListNode(temp)
 
     return dummy.next
 

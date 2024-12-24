@@ -1,9 +1,9 @@
 from typing import Optional
 
-from helper import ListNode
+from template import ListNode
 
 
-# 1. Recursive
+# Recursive
 def removeNodesRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
     if not head:
         return None
@@ -16,7 +16,7 @@ def removeNodesRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
     return head
 
 
-# 2. Iterative
+# Iterative
 def removeNodesIterative(head: Optional[ListNode]) -> Optional[ListNode]:
     stack = []
     cur = head
@@ -42,11 +42,7 @@ def removeNodesIterative(head: Optional[ListNode]) -> Optional[ListNode]:
 
 head = [5, 2, 13, 3, 8]
 head1 = ListNode.create(head)
-print(head1)
-# 5 -> 2 -> 13 -> 3 -> 8
-print(removeNodesRecursive(head1))
-# 13 -> 8
-
+print(head1)  # 5 -> 2 -> 13 -> 3 -> 8
+print(removeNodesRecursive(head1))  # 13 -> 8
 head2 = ListNode.create(head)
-print(removeNodesIterative(head2))
-# 13 -> 8
+print(removeNodesIterative(head2))  # 13 -> 8

@@ -6,19 +6,19 @@ from binarytree import build
 
 # Recursive
 def inorderTraversalRecursive(root: TreeNode) -> List[int]:
-    inorder = []
+    res = []
 
     def dfs(node):
         if not node:
             return
 
         dfs(node.left)
-        inorder.append(node.val)
+        res.append(node.val)  # <--
         dfs(node.right)
 
     dfs(root)
 
-    return inorder
+    return res
 
 
 # Iterative
@@ -27,19 +27,19 @@ def inorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
         return []
 
     stack = []
-    inorder = []
-    current = root
+    res = []
+    cur = root
 
-    while current or stack:
-        if current:
-            stack.append(current)
-            current = current.left
+    while cur or stack:
+        if cur:
+            stack.append(cur)
+            cur = cur.left
         else:
-            current = stack.pop()
-            inorder.append(current.val)
-            current = current.right
+            cur = stack.pop()
+            res.append(cur.val)
+            cur = cur.right
 
-    return inorder
+    return res
 
 
 tree = build([0, 1, 2, 3, 4, 5, 6])

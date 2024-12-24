@@ -1,8 +1,9 @@
 from typing import Optional
 
-from helper import ListNode
+from template import ListNode
 
 
+# Linked List
 def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     dummy = ListNode(0, head)
     fast = slow = dummy
@@ -22,7 +23,5 @@ def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
 head = [1, 2, 3, 4, 5]
 n = 2
 head = ListNode.create(head)
-print(head)
-# 1 -> 2 -> 3 -> 4 -> 5
-print(removeNthFromEnd(head, n))
-# 1 -> 2 -> 3 -> 5
+print(head)  # 1 -> 2 -> 3 -> 4 -> 5
+print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5

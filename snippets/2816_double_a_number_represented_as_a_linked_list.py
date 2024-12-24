@@ -1,6 +1,6 @@
 from typing import Optional
 
-from helper import ListNode
+from template import ListNode
 
 
 def doubleIt(head: Optional[ListNode]) -> Optional[ListNode]:

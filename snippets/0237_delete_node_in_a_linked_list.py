@@ -1,4 +1,4 @@
-from helper import ListNode
+from template import ListNode
 
 
 def deleteNode(node: ListNode) -> None:

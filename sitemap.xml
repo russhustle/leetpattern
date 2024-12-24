@@ -2,434 +2,438 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.leetpattern.com/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/about/</loc>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/arrays/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/arrays/array/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/arrays/binary_search/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/arrays/difference_array/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/arrays/fast_slow_pointers/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/arrays/left_right_pointers/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/arrays/prefix_sum/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/arrays/sliding_window_fixed/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/arrays/sliding_window_variable/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking/backtracking_board/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking/backtracking_combinations/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking/backtracking_partitions/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking/backtracking_permutations/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/backtracking/backtracking_subsets/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/challenge/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/challenge/202409_cn/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/challenge/202410_cn/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/design/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/design/design/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/design/design_patterns/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/dp_2d/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/dp_basic/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/dp_interval/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/dp_kadane/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/dp_knapsack_01/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/dp_knapsack_unbounded/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/dp_lcs/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/dp_lis/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/dp/dp_stock/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/graph_bellman_ford/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/graph_bfs/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/graph_coloring/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/graph_flood_fill/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/graph_mst/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/graph_shortest_path/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/graph_tarjan/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/graph_topological_sort/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/graph/graph_union_find/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/greedy/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/greedy/greedy/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/greedy/greedy_interval/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/hash/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/hash/hash_counting/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/hash/hash_map/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/hash/hash_set/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/heap/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/heap/heap_heap/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/heap/heap_merge_k_sorted/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/heap/heap_top_k/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/heap/heap_two_heaps/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/1d_dynamic_programming/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/2d_dynamic_programming/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/advanced_graphs/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/arrays_hashing/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/backtracking/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/binary_search/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/bit/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/graphs/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/greedy/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/heap/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/intervals/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/linked_list/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/math_geometry/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/sliding_window/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/stack/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/trees/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/tries/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/neetcode150/two_pointers/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/other/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/other/bit/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/other/linked_list/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/other/math/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/other/simulation/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan/blind75/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan_graph_study/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan_graph_study/bfs/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan_graph_study/dijkstra/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan_graph_study/graph_theory/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan_graph_study/matrix_graphs/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan_graph_study/mst/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan_graph_study/standard_traversal/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan_graph_study/topological_sort/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/plan_graph_study/union_find_dsu/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/python/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/python/python_collections/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/stack_queue/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/stack_queue/queue/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/stack_queue/queue_monotonic/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/stack_queue/stack/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/stack_queue/stack_monotonic/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/string/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/string/string/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/string/string_kmp/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/top_interview_150/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree/tree_bfs/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree/tree_bst/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree/tree_common_ancestor/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree/tree_feature/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree/tree_modification/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree/tree_traversal/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/tree/tree_trie/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-12-24</lastmod>
     </url>
 </urlset>

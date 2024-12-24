@@ -1,33 +1,23 @@
 from typing import List
 
-
-class TrieNode:
-    def __init__(self):
-        self.children = {}
-        self.isWord = False
-
-    def addWord(self, word):
-        node = self
-        for c in word:
-            if c not in node.children:
-                node.children[c] = TrieNode()
-            node = node.children[c]
-        node.isWord = True
+from template import TrieNode
 
 
 # Backtracking + Trie
 def findWords(board: List[List[str]], words: List[str]) -> List[str]:
     root = TrieNode()
-    for w in words:
-        root.addWord(w)
+    for word in words:
+        root.addWord(word)
 
     m, n = len(board), len(board[0])
     result, visit = set(), set()
 
     def dfs(r, c, node, word):
         if (
-            r not in range(m)
-            or c not in range(n)
+            r < 0
+            or r >= m
+            or c < 0
+            or c >= n
             or (r, c) in visit
             or board[r][c] not in node.children
         ):

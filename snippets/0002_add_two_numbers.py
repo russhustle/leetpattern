@@ -1,6 +1,6 @@
 from typing import Optional
 
-from helper import ListNode
+from template import ListNode
 
 
 # Linked List
@@ -16,7 +16,7 @@ def addTwoNumbers(
         v2 = l2.val if l2 else 0
 
         carry, val = divmod(v1 + v2 + carry, 10)
-        cur.next = ListNode(val=val)
+        cur.next = ListNode(val)
         cur = cur.next
 
         if l1:
@@ -32,5 +32,4 @@ def addTwoNumbers(
 
 l1 = ListNode.create([2, 4, 3])
 l2 = ListNode.create([5, 6, 4])
-
 print(addTwoNumbers(l1, l2))  # 7 -> 0 -> 8

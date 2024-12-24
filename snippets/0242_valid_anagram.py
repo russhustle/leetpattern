@@ -3,6 +3,7 @@ from collections import Counter
 
 # Hashmap
 def isAnagramHash(s: str, t: str) -> bool:
+    """Return True if t is an anagram of s, False otherwise."""
     if len(s) != len(t):
         return False
 

@@ -1,6 +1,7 @@
 import math
 
 
+# DP - Knapsack Unbounded
 def numSquares(n: int) -> int:
     dp = [float("inf") for _ in range(n + 1)]
     dp[0] = 0

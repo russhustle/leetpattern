@@ -1,7 +1,7 @@
 import heapq
 from typing import List, Optional
 
-from helper import ListNode
+from template import ListNode
 
 
 # Heap - Merge k Sorted

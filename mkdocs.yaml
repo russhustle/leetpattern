@@ -185,6 +185,7 @@ theme:
         - navigation.indexes # Enable indexes for the navigation
         - navigation.instant
         - navigation.instant.prefetch
+        - navigation.instant.progress
         - navigation.path
         - navigation.footer # Enable footer navigation
         - navigation.top
@@ -237,9 +238,9 @@ markdown_extensions:
 
 plugins:
     # show the last modification date of the page
-    # - git-revision-date-localized:
-    #     enable_creation_date: true
-    #     type: timeago
+    - git-revision-date-localized:
+          enable_creation_date: true
+          type: timeago
     - search
 
 extra:
@@ -258,7 +259,13 @@ extra:
         - icon: fontawesome/brands/medium
           link: https://medium.com/@sihan-a
           name: Medium | Sihan A
-
+    consent:
+        title: Cookie consent
+        description:
+            We use cookies to recognize your repeated visits and preferences, as well
+            as to measure the effectiveness of our documentation and whether users
+            find what they're searching for. With your consent, you're helping us to
+            make our documentation better.
 extra_javascript:
     - utils/mathjax.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6

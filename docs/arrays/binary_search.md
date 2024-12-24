@@ -3,7 +3,8 @@
 ![bs_memes](../imgs/binary_search_memes.png){width=300px}
 
 -   Binary search is a search algorithm that finds the position of a target value within a sorted array.
--   **We need to sort the array before applying binary search if it is not sorted.**
+-   Prerequisites: sorted array
+    -   **We need to sort the array before applying binary search if it is not sorted.**
 -   Time Complexity: $O(\log{N})$
 -   Space Complexity: $O(1)$
 

@@ -145,7 +145,7 @@ nav:
                 - Intervals: neetcode150/intervals.md
                 - Math & Geometry: neetcode150/math_geometry.md
                 - Bit Manipulation: neetcode150/bit.md
-
+    - About: about.md
 ##############################################
 ##  Material theme configuration for MkDocs ##
 ##############################################

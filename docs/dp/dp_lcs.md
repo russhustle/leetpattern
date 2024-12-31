@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Dynamic Programming - Longest Common Subsequence
 
 ## LeetCode Problems

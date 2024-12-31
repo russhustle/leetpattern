@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Graph - Flood Fill
 
 -   **Flood Fill** is essentially a graph traversal algorithm (like BFS or DFS) applied to matrices (2D grids).

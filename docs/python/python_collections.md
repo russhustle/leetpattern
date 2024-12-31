@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # `collections` Module
 
 ## Counter

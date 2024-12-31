@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Hash Map
 
 ## LeetCode Problems

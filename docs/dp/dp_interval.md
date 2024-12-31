@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Dynamic Programming - Interval
 
 ## LeetCode Problems

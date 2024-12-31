@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Intervals
 
 ## LeetCode Problems

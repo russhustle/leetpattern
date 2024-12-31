@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 2-D Dynamic Programming
 
 ## LeetCode Problems

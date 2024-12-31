@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Bit Manipulation
 
 ## LeetCode Problems

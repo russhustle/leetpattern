@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Graph - Breadth First Search (BFS)
 
 ## Prerequisites problems

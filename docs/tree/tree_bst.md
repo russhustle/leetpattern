@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Binary Search Tree (BST)
 
 ## Binary Search Tree

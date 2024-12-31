@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Blind 75
 
 -   [Blind 75](https://neetcode.io/practice)

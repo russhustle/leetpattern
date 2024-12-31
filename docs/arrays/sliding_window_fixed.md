@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Sliding Window - Fixed Size
 
 ## LeetCode Problems

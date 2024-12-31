@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Dynamic Programming - 2 Dimensional Table
 
 ## LeetCode Problems

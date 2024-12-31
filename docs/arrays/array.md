@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Array
 
 ## LeetCode Problems

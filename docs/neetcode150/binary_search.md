@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Binary Search
 
 ## LeetCode Problems

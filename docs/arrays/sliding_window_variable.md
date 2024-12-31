@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Sliding Window - Variable Size
 
 ## LeetCode Problems

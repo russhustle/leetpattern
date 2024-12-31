@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Binary Search
 
 ![bs_memes](../imgs/binary_search_memes.png){width=300px}

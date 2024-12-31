@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Hash - Counting
 
 ## LeetCode Problems

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Design Patterns
 
 ## Creational Patterns

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Dynamic Programming - Kadane's Algorithm
 
 ## LeetCode Problems

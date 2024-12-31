@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Difference Array
 
 ## LeetCode Problems

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Union Find (Disjoint Set)
 
 ## LeetCode Problems

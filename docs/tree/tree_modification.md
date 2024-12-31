@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Binary Tree Modification
 
 1. 0226 - [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) (Easy)

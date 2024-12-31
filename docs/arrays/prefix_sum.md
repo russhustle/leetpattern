@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Prefix Sum
 
 ## LeetCode Problems

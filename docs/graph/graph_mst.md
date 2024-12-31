@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Graph - Minimum Spanning Tree (MST)
 
 ## Minimum Spanning Tree

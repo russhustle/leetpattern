@@ -1,14 +1,8 @@
----
-comments: true
----
-
 # Welcome to 🚀LeetPattern
 
-[![GitHub stars](https://img.shields.io/github/stars/russhustle/leetpattern.svg?style=social&label=Star)](https://github.com/russhustle/leetpattern)
+[![GitHub stars](https://img.shields.io/github/stars/russhustle/leetpattern.svg?style=social&label=Star)](https://github.com/russhustle/leetpattern) [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/russhustle/leetpattern)](https://github.com/russhustle/leetpattern/tags) [![GitHub last commit](https://img.shields.io/github/last-commit/russhustle/leetpattern)](https://github.com/russhustle/leetpattern/commits) [![License](https://img.shields.io/github/license/russhustle/leetpattern)](https://github.com/russhustle/leetpattern/blob/main/LICENSE)
 
-Thank you for visiting this project! If you find it helpful or interesting, please consider giving it a ⭐️ on GitHub. It helps others discover the project and motivates me to keep improving it.
-
-Your support means a lot! 😊
+Thank you for visiting this project! If you find it helpful or interesting, please consider giving it a ⭐️ on GitHub. It helps others discover the project and motivates me to keep improving it. Your support means a lot! 😊
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
   <div style="flex: 1; text-align: center;">
@@ -23,7 +17,7 @@ Your support means a lot! 😊
 
 -   Python Basics: [Python Distilled](https://www.dabeaz.com/python-distilled/)
 
-<img src="https://www.dabeaz.com/python-distilled/cover.jpg" alt="python distilled" style="width: 200px; border-radius: 15px;">
+<img src="https://www.dabeaz.com/python-distilled/cover.jpg" alt="python distilled" width="200">
 
 ## Resources
 

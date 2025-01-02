@@ -249,7 +249,7 @@ extra:
     homepage: https://www.leetpattern.com
     social:
         - icon: fontawesome/brands/github
-          link: https://github.com/Sihan-A
+          link: https://github.com/russhustle
           name: GitHub | Sihan A
         - icon: fontawesome/brands/linkedin
           link: https://www.linkedin.com/in/sihan-a/
@@ -267,6 +267,10 @@ extra:
             as to measure the effectiveness of our documentation and whether users
             find what they're searching for. With your consent, you're helping us to
             make our documentation better.
+
+    analytics:
+        provider: google
+        property: G-EZ5J5E3CTR
 extra_javascript:
     - utils/mathjax.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6

@@ -12,6 +12,10 @@ comments: true
 -   Time Complexity: $O(\log{N})$
 -   Space Complexity: $O(1)$
 
+```python title="template/binary_search.py"
+--8<-- "template/binary_search.py"
+```
+
 ## LeetCode Problems
 
 1. 0704 - [Binary Search](https://leetcode.com/problems/binary-search/) (Easy)

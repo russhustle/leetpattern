@@ -123,8 +123,23 @@ nav:
 
           - 🎄 Blind 75: plan/blind75.md
           - 🔗 Grind 75:
-                - Grind 75: plan/grind75/index.md
-                - Array: plan/grind75/grind75_array.md
+                - Grind 75: grind75/index.md
+                - Array: grind75/grind75_array.md
+                - Stack: grind75/grind75_stack.md
+                - Linked List: grind75/grind75_ll.md
+                - String: grind75/grind75_string.md
+                - Binary Tree: grind75/grind75_tree.md
+                - Binary Search: grind75/grind75_bs.md
+                - Graph: grind75/grind75_graph.md
+                - Binary Search Tree: grind75/grind75_bst.md
+                - Hash: grind75/grind75_hash.md
+                - Dynamic Programming: grind75/grind75_dp.md
+                - Binary: grind75/grind75_binary.md
+                - Heap: grind75/grind75_heap.md
+                - Trie: grind75/grind75_trie.md
+                - Recursion: grind75/grind75_recursion.md
+                - Matrix: grind75/grind75_matrix.md
+
           - 👨🏻‍💻 Neetcode 150:
                 - Neetcode 150: neetcode150/index.md
                 - Arrays & Hashing: neetcode150/arrays_hashing.md

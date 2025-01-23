@@ -11,14 +11,14 @@ comments: true
 
 ## LeetCode Problems
 
-|     | Number | LeetCode                                                                                                        | 力扣                                                                                                  | Difficulty |
-| --- | ------ | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------- |
-| 1   | 0027   | [Remove Element](https://leetcode.com/problems/remove-element/)                                                 | [移除元素](https://leetcode-cn.com/problems/remove-element/)                                          | Easy       |
-| 2   | 0026   | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | [删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)       | Easy       |
-| 3   | 0080   | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [删除排序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/) | Medium     |
-| 4   | 0283   | [Move Zeroes](https://leetcode.com/problems/move-zeroes/)                                                       | [移动零](https://leetcode-cn.com/problems/move-zeroes/)                                               | Easy       |
-| 5   | 1089   | [Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)                                               | [复写零](https://leetcode-cn.com/problems/duplicate-zeros/)                                           | Easy       |
-| 6   | 0287   | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)                           | [寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)                             | Medium     |
+|     | Number | LeetCode                                                                                                        | 力扣                                                                                              | Difficulty |
+| --- | ------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------- |
+| 1   | 0027   | [Remove Element](https://leetcode.com/problems/remove-element/)                                                 | [移除元素](https://leetcode.cn/problems/remove-element/)                                          | Easy       |
+| 2   | 0026   | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | [删除排序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/)       | Easy       |
+| 3   | 0080   | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [删除排序数组中的重复项 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) | Medium     |
+| 4   | 0283   | [Move Zeroes](https://leetcode.com/problems/move-zeroes/)                                                       | [移动零](https://leetcode.cn/problems/move-zeroes/)                                               | Easy       |
+| 5   | 1089   | [Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)                                               | [复写零](https://leetcode.cn/problems/duplicate-zeros/)                                           | Easy       |
+| 6   | 0287   | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)                           | [寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/)                             | Medium     |
 
 ## 27. Remove Element
 

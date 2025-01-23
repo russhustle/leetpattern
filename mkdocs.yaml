@@ -20,7 +20,7 @@ nav:
                 - Difference Array: arrays/difference_array.md
 
           - 🔢 Hash:
-                #     - Home: hash/index.md
+                #   - Home: hash/index.md
                 - Hash Map: hash/hash_map.md
                 - Hash Set: hash/hash_set.md
                 - Counting: hash/hash_counting.md
@@ -49,7 +49,7 @@ nav:
                 - Queue: stack_queue/queue.md
                 - Monotonic Queue: stack_queue/queue_monotonic.md
 
-          - 🤑 Greedy:
+          - 🎄 Greedy Algorithm:
                 - Home: greedy/index.md
                 - Greedy: greedy/greedy.md
                 - Greedy - Interval: greedy/greedy_interval.md
@@ -104,9 +104,9 @@ nav:
                 - 🎊 Design Patterns: design/design_patterns.md
                 - 🚠 Design: design/design.md
 
-    #     - 🐍 Python:
-    #         - Home: python/index.md
-    #         - collections: python/python_collections.md
+    #   - 🐍 Python:
+    #     - Home: python/index.md
+    #     - collections: python/python_collections.md
 
     - Study Plan:
           - Study Plan: plan/index.md
@@ -120,11 +120,11 @@ nav:
                 - Union Find: plan_graph_study/union_find_dsu.md
                 - Dijkstra's: plan_graph_study/dijkstra.md
                 - MST: plan_graph_study/mst.md
-          # - 🌸 Challenges:
-          #       - Challenges: challenge/index.md
-          #       - 2024 September CN: challenge/202409_cn.md
-          #       - 2024 October CN: challenge/202410_cn.md
+
           - 🎄 Blind 75: plan/blind75.md
+          - 🔗 Grind 75:
+                - Grind 75: plan/grind75/index.md
+                - Array: plan/grind75/grind75_array.md
           - 👨🏻‍💻 Neetcode 150:
                 - Neetcode 150: neetcode150/index.md
                 - Arrays & Hashing: neetcode150/arrays_hashing.md
@@ -146,6 +146,7 @@ nav:
                 - Math & Geometry: neetcode150/math_geometry.md
                 - Bit Manipulation: neetcode150/bit.md
     - About: about.md
+
 ##############################################
 ##  Material theme configuration for MkDocs ##
 ##############################################

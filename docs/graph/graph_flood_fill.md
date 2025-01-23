@@ -12,17 +12,21 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0733 - [Flood Fill](https://leetcode.com/problems/flood-fill/) (Easy)
-2. 0200 - [Number of Islands](https://leetcode.com/problems/number-of-islands/) (Medium)
-3. 0695 - [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) (Medium)
-4. 0463 - [Island Perimeter](https://leetcode.com/problems/island-perimeter/) (Easy)
-5. 0130 - [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) (Medium)
-6. 0417 - [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) (Medium)
-7. 0827 - [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) (Hard)
+| Order | Number | LeetCode                                                                                  | 力扣                                                                              | Difficulty |
+| ----- | ------ | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ---------- |
+| 1     | 0733   | [Flood Fill](https://leetcode.com/problems/flood-fill/)                                   | [图像渲染](https://leetcode.cn/problems/flood-fill/)                              | Easy       |
+| 2     | 0200   | [Number of Islands](https://leetcode.com/problems/number-of-islands/)                     | [岛屿数量](https://leetcode.cn/problems/number-of-islands/)                       | Medium     |
+| 3     | 0695   | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)                   | [岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/)                | Medium     |
+| 4     | 0463   | [Island Perimeter](https://leetcode.com/problems/island-perimeter/)                       | [岛屿的周长](https://leetcode.cn/problems/island-perimeter/)                      | Easy       |
+| 5     | 0130   | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)                   | [被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)                  | Medium     |
+| 6     | 0417   | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/) | Medium     |
+| 7     | 0827   | [Making A Large Island](https://leetcode.com/problems/making-a-large-island/)             | [最大人工岛](https://leetcode.cn/problems/making-a-large-island/)                 | Hard       |
 
 ## 733. Flood Fill
 
 -   Replace all the pixels of the same color starting from the given pixel.
+-   In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
+-   Edge cases: If the starting pixel is already the target color, return the image as it is.
 
 ![733](../imgs/0733.jpg)
 

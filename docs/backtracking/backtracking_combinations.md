@@ -6,11 +6,11 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0077 - [Combinations](https://leetcode.com/problems/combinations/) (Medium)
-2. 0017 - [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) (Medium)
-3. 0039 - [Combination Sum](https://leetcode.com/problems/combination-sum/) (Medium)
-4. 0040 - [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) (Medium)
-5. 0216 - [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) (Medium)
+1. 0077 - [Combinations](https://leetcode.com/problems/combinations/) | [组合](https://leetcode.cn/problems/combinations/) (Medium)
+2. 0017 - [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
+3. 0039 - [Combination Sum](https://leetcode.com/problems/combination-sum/) | [组合总和](https://leetcode.cn/problems/combination-sum/) (Medium)
+4. 0040 - [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [组合总和 II](https://leetcode.cn/problems/combination-sum-ii/) (Medium)
+5. 0216 - [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | [组合总和 III](https://leetcode.cn/problems/combination-sum-iii/) (Medium)
 
 ## 77. Combinations
 

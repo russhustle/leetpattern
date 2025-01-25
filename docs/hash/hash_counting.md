@@ -6,10 +6,10 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0242 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/) (Easy)
-2. 0560 - [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) (Medium)
-3. 0049 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/) (Medium)
-4. 0438 - [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) (Medium)
+1. 0242 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) (Easy)
+2. 0560 - [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | [和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/) (Medium)
+3. 0049 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/) (Medium)
+4. 0438 - [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) (Medium)
 
 ## 242. Valid Anagram
 

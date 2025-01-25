@@ -7,21 +7,21 @@ comments: true
 ## Topological Sort
 
 -   DAG (Directed Acyclic Graph)
--   Time complexity: $O(V+E)$
--   Space complexity: $O(V+E)$
+-   Time complexity: O(V+E)
+-   Space complexity: O(V+E)
 -   Prerequisites: Indegree (Look at the problem [1557. Minimum Number of Vertices to Reach All Nodes](#1557-minimum-number-of-vertices-to-reach-all-nodes))
     -   Indegree: Number of incoming edges to a vertex
 -   Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
 
 ## LeetCode Problems
 
-1. 1557 - [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
-2. 0207 - [Course Schedule](https://leetcode.com/problems/course-schedule/) (Medium)
-3. 0210 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) (Medium)
-4. 0269 - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) (Hard)
-5. 1203 - [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
-6. 1857 - [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) (Hard)
-7. 1136 - [Parallel Courses](https://leetcode.com/problems/parallel-courses/) (Hard)
+1. 1557 - [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [到达所有点的最少点数目](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
+2. 0207 - [Course Schedule](https://leetcode.com/problems/course-schedule/) | [课程表](https://leetcode.cn/problems/course-schedule/) (Medium)
+3. 0210 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [课程表 II](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+4. 0269 - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [外星人字典](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+5. 1203 - [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) | [项目管理](https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
+6. 1857 - [Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [有向图中最大颜色值](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
+7. 1136 - [Parallel Courses](https://leetcode.com/problems/parallel-courses/) | [平行课程](https://leetcode.cn/problems/parallel-courses/) (Hard)
 
 ## 1557. Minimum Number of Vertices to Reach All Nodes
 

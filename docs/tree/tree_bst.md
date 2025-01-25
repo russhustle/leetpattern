@@ -23,20 +23,20 @@ graph TD
 
 ## LeetCode Problems
 
-1. 0700 - [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) (Easy)
-2. 0098 - [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) (Medium)
-3. 0530 - [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) (Easy)
-4. 0501 - [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/) (Easy)
-5. 0235 - [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Easy)
-6. 0701 - [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) (Medium)
-7. 0450 - [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) (Medium)
-8. 0669 - [Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/) (Medium)
-9. 0108 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) (Easy)
-10. 0109 - [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) (Medium)
-11. 0538 - [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) (Easy)
-12. 0230 - [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) (Medium)
-13. 0173 - [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) (Medium)
-14. 1586 - [Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii/) (Medium)
+1. 0700 - [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | [二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/) (Easy)
+2. 0098 - [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
+3. 0530 - [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | [二叉搜索树的最小绝对差](https://leetcode.cn/problems/minimum-absolute-difference-in-bst/) (Easy)
+4. 0501 - [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/) | [二叉搜索树中的众数](https://leetcode.cn/problems/find-mode-in-binary-search-tree/) (Easy)
+5. 0235 - [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Easy)
+6. 0701 - [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | [二叉搜索树中的插入操作](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) (Medium)
+7. 0450 - [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [删除二叉搜索树中的节点](https://leetcode.cn/problems/delete-node-in-a-bst/) (Medium)
+8. 0669 - [Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/) | [修剪二叉搜索树](https://leetcode.cn/problems/trim-a-binary-search-tree/) (Medium)
+9. 0108 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) (Easy)
+10. 0109 - [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [有序链表转换二叉搜索树](https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/) (Medium)
+11. 0538 - [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [把二叉搜索树转换为累加树](https://leetcode.cn/problems/convert-bst-to-greater-tree/) (Easy)
+12. 0230 - [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [二叉搜索树中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)
+13. 0173 - [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [二叉搜索树迭代器](https://leetcode.cn/problems/binary-search-tree-iterator/) (Medium)
+14. 1586 - [Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii/) | [二叉搜索树迭代器 II](https://leetcode.cn/problems/binary-search-tree-iterator-ii/) (Medium)
 
 ## 700. Search in a Binary Search Tree
 

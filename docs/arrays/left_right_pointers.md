@@ -6,17 +6,17 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0009 - [Palindrome Number](https://leetcode.com/problems/palindrome-number/) (Easy)
-2. 0015 - [3Sum](https://leetcode.com/problems/3sum/) (Medium)
-3. 0018 - [4Sum](https://leetcode.com/problems/4sum/) (Medium)
-4. 0069 - [Sqrt(x)](https://leetcode.com/problems/sqrtx/) (Easy)
-5. 0088 - [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) (Easy)
-6. 0977 - [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) (Easy)
-7. 0881 - [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) (Medium)
-8. 0075 - [Sort Colors](https://leetcode.com/problems/sort-colors/) (Medium)
-9. 0125 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (Easy)
-10. 0167 - [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) (Easy)
-11. 0011 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (Medium)
+1. 0009 - [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [回文数](https://leetcode.cn/problems/palindrome-number/) (Easy)
+2. 0015 - [3Sum](https://leetcode.com/problems/3sum/) | [三数之和](https://leetcode.cn/problems/3sum/) (Medium)
+3. 0018 - [4Sum](https://leetcode.com/problems/4sum/) | [四数之和](https://leetcode.cn/problems/4sum/) (Medium)
+4. 0069 - [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [x 的平方根](https://leetcode.cn/problems/sqrtx/) (Easy)
+5. 0088 - [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
+6. 0977 - [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
+7. 0881 - [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | [救生艇](https://leetcode.cn/problems/boats-to-save-people/) (Medium)
+8. 0075 - [Sort Colors](https://leetcode.com/problems/sort-colors/) | [颜色分类](https://leetcode.cn/problems/sort-colors/) (Medium)
+9. 0125 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [验证回文串](https://leetcode.cn/problems/valid-palindrome/) (Easy)
+10. 0167 - [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Easy)
+11. 0011 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) (Medium)
 
 ## 9. Palindrome Number
 

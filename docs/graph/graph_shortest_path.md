@@ -4,33 +4,33 @@ comments: true
 
 # Graph - Shortest Path Problems
 
-- Shortest Path Problem: Find the shortest path between two vertices in a graph.
+-   Shortest Path Problem: Find the shortest path between two vertices in a graph.
 
 ## Dijkstra's Algorithm
 
-- Shortest path algorithm
-- Weighted graph (non-negative weights)
-- Data Structure: Heap; HashSet
-- Time Complexity: $O(E \cdot \log{V})$
-- Space Complexity: $O(V)$
+-   Shortest path algorithm
+-   Weighted graph (non-negative weights)
+-   Data Structure: Heap; Hash Set
+-   Time Complexity: O(E \* logV)
+-   Space Complexity: O(V)
 
 ## LeetCode Problems
 
-1. 0743 - [Network Delay Time](https://leetcode.com/problems/network-delay-time/) (Medium)
-2. 0778 - [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) (Hard)
-3. 1631 - [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) (Medium)
-4. 0787 - [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) (Medium)
-5. 1514 - [Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/) (Medium)
-6. 0505 - [The Maze II](https://leetcode.com/problems/the-maze-ii/) (Medium)
-7. 0499 - [The Maze III](https://leetcode.com/problems/the-maze-iii/) (Hard)
-8. 0882 - [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/) (Hard)
-9. 1376 - [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/) (Medium)
-10. 1168 - [Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) (Hard)
-11. 1976 - [Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) (Hard)
+1. 0743 - [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | [网络延迟时间](https://leetcode.cn/problems/network-delay-time/) (Medium)
+2. 0778 - [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) | [水位上升的泳池中游泳](https://leetcode.cn/problems/swim-in-rising-water/) (Hard)
+3. 1631 - [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) | [最小体力消耗路径](https://leetcode.cn/problems/path-with-minimum-effort/) (Medium)
+4. 0787 - [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [K 站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
+5. 1514 - [Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/) | [概率最大的路径](https://leetcode.cn/problems/path-with-maximum-probability/) (Medium)
+6. 0505 - [The Maze II](https://leetcode.com/problems/the-maze-ii/) | [迷宫 II](https://leetcode.cn/problems/the-maze-ii/) (Medium)
+7. 0499 - [The Maze III](https://leetcode.com/problems/the-maze-iii/) | [迷宫 III](https://leetcode.cn/problems/the-maze-iii/) (Hard)
+8. 0882 - [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/) | [细分图中的可到达节点](https://leetcode.cn/problems/reachable-nodes-in-subdivided-graph/) (Hard)
+9. 1376 - [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | [通知所有员工所需的时间](https://leetcode.cn/problems/time-needed-to-inform-all-employees/) (Medium)
+10. 1168 - [Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [优化村庄水资源分配](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard)
+11. 1976 - [Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) | [到达目的地的方案数](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Hard)
 
 ## 743. Network Delay Time
 
-- Return the minimum time taken to reach all nodes in a network.
+-   Return the minimum time taken to reach all nodes in a network.
 
 ```mermaid
 graph LR
@@ -49,7 +49,7 @@ graph LR
 
 ## 778. Swim in Rising Water
 
-- Return the minimum time when you can reach the target.
+-   Return the minimum time when you can reach the target.
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
@@ -59,7 +59,7 @@ graph LR
 
 ## 1631. Path With Minimum Effort
 
-- Return the minimum effort required to travel from the top-left to the bottom-right corner.
+-   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
 ```python
 --8<-- "1631_path_with_minimum_effort.py"

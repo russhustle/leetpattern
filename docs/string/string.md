@@ -6,13 +6,13 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0344 - [Reverse String](https://leetcode.com/problems/reverse-string/) (Easy)
-2. 0541 - [Reverse String II](https://leetcode.com/problems/reverse-string-ii/) (Easy)
-3. 0151 - [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) (Medium)
-4. 0058 - [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) (Easy)
-5. 0844 - [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) (Easy)
-6. 2185 - [Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/) (Easy)
-7. 2000 - [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) (Easy)
+1. 0344 - [Reverse String](https://leetcode.com/problems/reverse-string/) | [反转字符串](https://leetcode.cn/problems/reverse-string/) (Easy)
+2. 0541 - [Reverse String II](https://leetcode.com/problems/reverse-string-ii/) | [反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/) (Easy)
+3. 0151 - [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [翻转字符串里的单词](https://leetcode.cn/problems/reverse-words-in-a-string/) (Medium)
+4. 0058 - [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | [最后一个单词的长度](https://leetcode.cn/problems/length-of-last-word/) (Easy)
+5. 0844 - [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [比较含退格的字符串](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
+6. 2185 - [Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/) | [统计包含给定前缀的字符串](https://leetcode.cn/problems/counting-words-with-a-given-prefix/) (Easy)
+7. 2000 - [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) | [反转单词前缀](https://leetcode.cn/problems/reverse-prefix-of-word/) (Easy)
 
 ## 344. Reverse String
 

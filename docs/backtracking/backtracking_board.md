@@ -6,10 +6,10 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0051 - [N-Queens](https://leetcode.com/problems/n-queens/) (Hard)
-2. 0037 - [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) (Hard)
-3. 0079 - [Word Search](https://leetcode.com/problems/word-search/) (Medium)
-4. 0212 - [Word Search II](https://leetcode.com/problems/word-search-ii/) (Hard)
+1. 0051 - [N-Queens](https://leetcode.com/problems/n-queens/) | [N 皇后](https://leetcode.cn/problems/n-queens/) (Hard)
+2. 0037 - [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | [解数独](https://leetcode.cn/problems/sudoku-solver/) (Hard)
+3. 0079 - [Word Search](https://leetcode.com/problems/word-search/) | [单词搜索](https://leetcode.cn/problems/word-search/) (Medium)
+4. 0212 - [Word Search II](https://leetcode.com/problems/word-search-ii/) | [单词搜索 II](https://leetcode.cn/problems/word-search-ii/) (Hard)
 
 ## 51. N-Queens
 

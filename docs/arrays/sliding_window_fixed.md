@@ -6,18 +6,18 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0643 - [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) (Easy)
-2. 0219 - [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) (Easy)
-3. 1456 - [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
-4. 0567 - [Permutation in String](https://leetcode.com/problems/permutation-in-string/) (Medium)
-5. 0713 - [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) (Medium)
-6. 1151 - [Minimum Swaps to Group All 1's Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
-7. 0209 - [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) (Medium)
-8. 0076 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) (Hard)
+1. 0643 - [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | [子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/) (Easy)
+2. 0219 - [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | [存在重复元素 II](https://leetcode.cn/problems/contains-duplicate-ii/) (Easy)
+3. 1456 - [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [定长子串中元音的最大数目](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
+4. 0567 - [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [字符串的排列](https://leetcode.cn/problems/permutation-in-string/) (Medium)
+5. 0713 - [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/) (Medium)
+6. 1151 - [Minimum Swaps to Group All 1's Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [最少交换次数来组合所有的 1](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
+7. 0209 - [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
+8. 0076 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 
 ## 643. Maximum Average Subarray I
 
-- Find the contiguous subarray of given length `k` that has the maximum average value.
+-   Find the contiguous subarray of given length `k` that has the maximum average value.
 
 ```python
 --8<-- "0643_maximum_average_subarray_i.py"
@@ -25,7 +25,7 @@ comments: true
 
 ## 219. Contains Duplicate II
 
-- Return `True` if there are two distinct indices `i` and `j` in the array such that `nums[i] == nums[j]` and `abs(i - j) <= k`.
+-   Return `True` if there are two distinct indices `i` and `j` in the array such that `nums[i] == nums[j]` and `abs(i - j) <= k`.
 
 ```python
 --8<-- "0219_contains_duplicate_ii.py"
@@ -51,7 +51,7 @@ comments: true
 
 ## 1151. Minimum Swaps to Group All 1's Together
 
-- Return the minimum number of swaps required to group all 1's together in any subarray of size `k`.
+-   Return the minimum number of swaps required to group all 1's together in any subarray of size `k`.
 
 ```python
 --8<-- "1151_minimum_swaps_to_group_all_ones_together.py"

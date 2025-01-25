@@ -6,22 +6,22 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0455 - [Assign Cookies](https://leetcode.com/problems/assign-cookies/) (Easy)
-2. 1005 - [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) (Easy)
-3. 0860 - [Lemonade Change](https://leetcode.com/problems/lemonade-change/) (Easy)
-4. 2037 - [Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/) (Easy)
-5. 0376 - [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) (Medium)
-6. 0738 - [Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/) (Medium)
-7. 0122 - [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) (Easy)
-8. 0714 - [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) (Medium)
-9. 0135 - [Candy](https://leetcode.com/problems/candy/) (Hard)
-10. 0406 - [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) (Medium)
-11. 3075 - [Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/) (Medium)
-12. 0945 - [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) (Medium)
-13. 0053 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) (Medium)
-14. 0134 - [Gas Station](https://leetcode.com/problems/gas-station/) (Medium)
-15. 0968 - [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/) (Hard)
-16. 1589 - [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
+1. 0455 - [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [分发饼干](https://leetcode.cn/problems/assign-cookies/) (Easy)
+2. 1005 - [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) | [K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) (Easy)
+3. 0860 - [Lemonade Change](https://leetcode.com/problems/lemonade-change/) | [柠檬水找零](https://leetcode.cn/problems/lemonade-change/) (Easy)
+4. 2037 - [Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/) | [移动座位的最小移动次数](https://leetcode.cn/problems/minimum-number-of-moves-to-seat-everyone/) (Easy)
+5. 0376 - [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) | [摆动序列](https://leetcode.cn/problems/wiggle-subsequence/) (Medium)
+6. 0738 - [Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/) | [单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/) (Medium)
+7. 0122 - [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) (Easy)
+8. 0714 - [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [买卖股票的最佳时机含手续费](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) (Medium)
+9. 0135 - [Candy](https://leetcode.com/problems/candy/) | [分发糖果](https://leetcode.cn/problems/candy/) (Hard)
+10. 0406 - [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) (Medium)
+11. 3075 - [Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [最大化选择孩子的幸福感](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) (Medium)
+12. 0945 - [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [使数组唯一的最小增量](https://leetcode.cn/problems/minimum-increment-to-make-array-unique/) (Medium)
+13. 0053 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [最大子数组和](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+14. 0134 - [Gas Station](https://leetcode.com/problems/gas-station/) | [加油站](https://leetcode.cn/problems/gas-station/) (Medium)
+15. 0968 - [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/) | [监控二叉树](https://leetcode.cn/problems/binary-tree-cameras/) (Hard)
+16. 1589 - [Maximum Sum Obtained of Any Permutation](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) | [任意排列中的最大和](https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
 
 ## 455. Assign Cookies
 

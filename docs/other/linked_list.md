@@ -8,18 +8,18 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0203 - [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) (Easy)
-2. 0707 - [Design Linked List](https://leetcode.com/problems/design-linked-list/) (Medium)
-3. 0206 - [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) (Easy)
-4. 0237 - [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) (Easy)
-5. 2487 - [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) (Medium)
-6. 0024 - [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) (Medium)
-7. 0019 - [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) (Medium)
-8. 0160 - [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) (Easy)
-9. 0141 - [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) (Easy)
-10. 0142 - [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) (Medium)
-11. 2816 - [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) (Medium)
-12. 0002 - [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) (Medium)
+1. 0203 - [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/) (Easy)
+2. 0707 - [Design Linked List](https://leetcode.com/problems/design-linked-list/) | [设计链表](https://leetcode.cn/problems/design-linked-list/) (Medium)
+3. 0206 - [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [反转链表](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
+4. 0237 - [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [删除链表中的节点](https://leetcode.cn/problems/delete-node-in-a-linked-list/) (Easy)
+5. 2487 - [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [从链表中移除节点](https://leetcode.cn/problems/remove-nodes-from-linked-list/) (Medium)
+6. 0024 - [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/) (Medium)
+7. 0019 - [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) (Medium)
+8. 0160 - [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/) (Easy)
+9. 0141 - [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [环形链表](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
+10. 0142 - [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) (Medium)
+11. 2816 - [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | [链表表示的数字两倍](https://leetcode.cn/problems/double-a-number-represented-as-a-linked-list/) (Medium)
+12. 0002 - [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [两数相加](https://leetcode.cn/problems/add-two-numbers/) (Medium)
 
 ```python title="template/linked_list.py"
 --8<-- "template/linked_list.py"

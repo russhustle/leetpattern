@@ -6,8 +6,8 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0046 - [Permutations](https://leetcode.com/problems/permutations/) (Medium)
-2. 0047 - [Permutations II](https://leetcode.com/problems/permutations-ii/) (Medium)
+1. 0046 - [Permutations](https://leetcode.com/problems/permutations/) | [全排列](https://leetcode.cn/problems/permutations/) (Medium)
+2. 0047 - [Permutations II](https://leetcode.com/problems/permutations-ii/) | [全排列 II](https://leetcode.cn/problems/permutations-ii/) (Medium)
 
 ## 46. Permutations
 

@@ -6,12 +6,12 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0055 - [Jump Game](https://leetcode.com/problems/jump-game/) (Medium)
-2. 0045 - [Jump Game II](https://leetcode.com/problems/jump-game-ii/) (Hard)
-3. 0452 - [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)
-4. 0435 - [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) (Medium)
-5. 0763 - [Partition Labels](https://leetcode.com/problems/partition-labels/) (Medium)
-6. 0056 - [Merge Intervals](https://leetcode.com/problems/merge-intervals/) (Medium)
+1. 0055 - [Jump Game](https://leetcode.com/problems/jump-game/) | [跳跃游戏](https://leetcode.cn/problems/jump-game/) (Medium)
+2. 0045 - [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) (Hard)
+3. 0452 - [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)
+4. 0435 - [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | [无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals/) (Medium)
+5. 0763 - [Partition Labels](https://leetcode.com/problems/partition-labels/) | [划分字母区间](https://leetcode.cn/problems/partition-labels/) (Medium)
+6. 0056 - [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [合并区间](https://leetcode.cn/problems/merge-intervals/) (Medium)
 
 ## 55. Jump Game
 

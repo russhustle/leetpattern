@@ -6,7 +6,7 @@ comments: true
 
 ## LeetCode Problems
 
-1. 1046 - [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) (Easy)
+1. 1046 - [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/) (Easy)
 
 ## 1046. Last Stone Weight
 

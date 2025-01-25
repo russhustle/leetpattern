@@ -6,12 +6,12 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0144 - [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) (Easy)
-2. 0094 - [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) (Easy)
-3. 0145 - [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) (Easy)
-4. 0102 - [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) (Medium)
-5. 0107 - [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) (Medium)
-6. 0103 - [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
+1. 0144 - [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/) (Easy)
+2. 0094 - [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/) (Easy)
+3. 0145 - [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/) (Easy)
+4. 0102 - [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
+5. 0107 - [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [二叉树的层序遍历 II](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) (Medium)
+6. 0103 - [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [二叉树的锯齿形层序遍历](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
 
 ## 144. Binary Tree Preorder Traversal
 

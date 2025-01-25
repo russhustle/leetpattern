@@ -3,15 +3,15 @@ site_url: https://www.leetpattern.com
 site_author: Sihan A
 site_description: LeetCode Patterns
 repo_url: https://github.com/russhustle/leetpattern/
-copyright: Copyright &copy; 2024 Sihan A
+copyright: Copyright &copy; 2024-2025 Sihan A
 
 nav:
     - LeetPattern:
           - Home: README.md
-          - 🧩 Arrays:
+          - Arrays:
                 - Home: arrays/index.md
-                - Array: arrays/array.md
                 - Binary Search: arrays/binary_search.md
+                - Array: arrays/array.md
                 - Fast Slow Pointers: arrays/fast_slow_pointers.md
                 - Left Right Pointers: arrays/left_right_pointers.md
                 - Sliding Window Fixed: arrays/sliding_window_fixed.md
@@ -19,20 +19,18 @@ nav:
                 - Prefix Sum: arrays/prefix_sum.md
                 - Difference Array: arrays/difference_array.md
 
-          - 🔢 Hash:
-                #   - Home: hash/index.md
+          - Hash:
                 - Hash Map: hash/hash_map.md
                 - Hash Set: hash/hash_set.md
                 - Counting: hash/hash_counting.md
 
-          - 💬 String:
-                # - Home: string/index.md
+          - String:
                 - String: string/string.md
                 - KMP: string/string_kmp.md
 
-          - 🔗 Linked List: other/linked_list.md
+          - Linked List: other/linked_list.md
 
-          - 🌳 Tree:
+          - Tree:
                 - Tree: tree/index.md
                 - Traversal: tree/tree_traversal.md
                 - Tree Feature: tree/tree_feature.md
@@ -42,19 +40,17 @@ nav:
                 - Common Ancestors: tree/tree_common_ancestor.md
                 - Trie: tree/tree_trie.md
 
-          - 📚 Stack & Queue:
-                # - Stack & Queue: stack_queue/index.md
+          - Stack & Queue:
                 - Stack: stack_queue/stack.md
                 - Monotonic Stack: stack_queue/stack_monotonic.md
                 - Queue: stack_queue/queue.md
                 - Monotonic Queue: stack_queue/queue_monotonic.md
 
-          - 🎄 Greedy Algorithm:
-                - Home: greedy/index.md
+          - Greedy Algorithm:
                 - Greedy: greedy/greedy.md
                 - Greedy - Interval: greedy/greedy_interval.md
 
-          - ⏳ Dynamic Programming:
+          - Dynamic Programming:
                 - Dynamic Programming: dp/index.md
                 - DP Basic: dp/dp_basic.md
                 - DP 2D: dp/dp_2d.md
@@ -66,15 +62,14 @@ nav:
                 - LCS: dp/dp_lcs.md
                 - LIS: dp/dp_lis.md
 
-          - 🔄 Backtracking:
-                - Backtracking: backtracking/index.md
+          - Backtracking:
                 - Combinations: backtracking/backtracking_combinations.md
                 - Partitions: backtracking/backtracking_partitions.md
                 - Subsets: backtracking/backtracking_subsets.md
                 - Permutations: backtracking/backtracking_permutations.md
                 - Board: backtracking/backtracking_board.md
 
-          - 📝 Graph:
+          - Graph:
                 - Graph: graph/index.md
                 - Flood Fill: graph/graph_flood_fill.md
                 - BFS: graph/graph_bfs.md
@@ -86,31 +81,27 @@ nav:
                 - Coloring: graph/graph_coloring.md
                 - Tarjan: graph/graph_tarjan.md
 
-          - 🏔️ Heap:
+          - Heap:
                 - Heap Introduction: heap/index.md
                 - Heap: heap/heap_heap.md
                 - Top K: heap/heap_top_k.md
                 - Two Heaps: heap/heap_two_heaps.md
                 - Merge K Sorted: heap/heap_merge_k_sorted.md
 
-          - 🏁 Other:
+          - Other:
                 - Home: other/index.md
                 - Bit: other/bit.md
                 - Math: other/math.md
                 - Simulation: other/simulation.md
 
-          - 📕 OOD:
+          - OOD:
                 - Home: design/index.md
-                - 🎊 Design Patterns: design/design_patterns.md
-                - 🚠 Design: design/design.md
-
-    #   - 🐍 Python:
-    #     - Home: python/index.md
-    #     - collections: python/python_collections.md
+                - Design Patterns: design/design_patterns.md
+                - Design: design/design.md
 
     - Study Plan:
           - Study Plan: plan/index.md
-          - 📊 Graph Theory:
+          - Graph Theory:
                 - Graph Theory: plan_graph_study/index.md
                 - Standard Traversal: plan_graph_study/standard_traversal.md
                 - BFS: plan_graph_study/bfs.md
@@ -121,8 +112,8 @@ nav:
                 - Dijkstra's: plan_graph_study/dijkstra.md
                 - MST: plan_graph_study/mst.md
 
-          - 🎄 Blind 75: plan/blind75.md
-          - 🔗 Grind 75:
+          - Blind 75: plan/blind75.md
+          - Grind 75:
                 - Grind 75: grind75/index.md
                 - Array: grind75/grind75_array.md
                 - Stack: grind75/grind75_stack.md
@@ -140,7 +131,7 @@ nav:
                 - Recursion: grind75/grind75_recursion.md
                 - Matrix: grind75/grind75_matrix.md
 
-          - 👨🏻‍💻 Neetcode 150:
+          - Neetcode 150:
                 - Neetcode 150: neetcode150/index.md
                 - Arrays & Hashing: neetcode150/arrays_hashing.md
                 - Two Pointers: neetcode150/two_pointers.md
@@ -188,7 +179,7 @@ theme:
               name: Switch to dark mode
 
     font:
-        text: Open Sans
+        text: Roboto
         code: Roboto Mono
 
     features:

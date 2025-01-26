@@ -16,11 +16,11 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0139 - [Word Break](https://leetcode.com/problems/word-break/) (Medium)
-2. 0279 - [Perfect Squares](https://leetcode.com/problems/perfect-squares/) (Medium)
-3. 0322 - [Coin Change](https://leetcode.com/problems/coin-change/) (Medium)
-4. 0518 - [Coin Change 2](https://leetcode.com/problems/coin-change-2/) (Medium)
-5. 0377 - [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/) (Medium)
+1. 0139 - [Word Break](https://leetcode.com/problems/word-break/) | [单词拆分](https://leetcode.cn/problems/word-break/) (Medium)
+2. 0279 - [Perfect Squares](https://leetcode.com/problems/perfect-squares/) | [完全平方数](https://leetcode.cn/problems/perfect-squares/) (Medium)
+3. 0322 - [Coin Change](https://leetcode.com/problems/coin-change/) | [零钱兑换](https://leetcode.cn/problems/coin-change/) (Medium)
+4. 0518 - [Coin Change 2](https://leetcode.com/problems/coin-change-2/) | [零钱兑换 II](https://leetcode.cn/problems/coin-change-2/) (Medium)
+5. 0377 - [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/) | [组合总和 IV](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
 
 ## 139. Word Break
 

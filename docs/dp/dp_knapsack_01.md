@@ -16,11 +16,11 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0416 - [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) (Medium)
-2. 0474 - [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) (Medium)
-3. 0494 - [Target Sum](https://leetcode.com/problems/target-sum/) (Medium)
-4. 1046 - [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) (Easy)
-5. 1049 - [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/) (Medium)
+1. 0416 - [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | [分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
+2. 0474 - [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) | [一和零](https://leetcode.cn/problems/ones-and-zeroes/) (Medium)
+3. 0494 - [Target Sum](https://leetcode.com/problems/target-sum/) | [目标和](https://leetcode.cn/problems/target-sum/) (Medium)
+4. 1046 - [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/) (Easy)
+5. 1049 - [Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/) | [最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/) (Medium)
 
 ## 416. Partition Equal Subset Sum
 

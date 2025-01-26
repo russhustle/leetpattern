@@ -29,7 +29,7 @@ A2 --- R2((R))
 2. 0211 - [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [添加与搜索单词 - 数据结构设计](https://leetcode.cn/problems/add-and-search-word-data-structure-design/) (Medium)
 3. 0212 - [Word Search II](https://leetcode.com/problems/word-search-ii/) | [单词搜索 II](https://leetcode.cn/problems/word-search-ii/) (Hard)
 
-```python
+```python title="template/trie.py"
 --8<-- "template/trie.py"
 ```
 

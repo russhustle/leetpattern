@@ -1,22 +1,17 @@
 from collections import deque
 from typing import List, Optional
 
+from binarytree import Node as TreeNode
 from binarytree import build
 
 
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-
+# Binary Tree
 def rightSideView(root: Optional[TreeNode]) -> List[int]:
     if not root:
         return []
 
     q = deque([root])
-    right = []
+    res = []
 
     while q:
         n = len(q)
@@ -26,14 +21,14 @@ def rightSideView(root: Optional[TreeNode]) -> List[int]:
 
             # rightmost element
             if i == n - 1:
-                right.append(cur.val)
+                res.append(cur.val)
 
             if cur.left:
                 q.append(cur.left)
             if cur.right:
                 q.append(cur.right)
 
-    return right
+    return res
 
 
 root = [1, 2, 2, 3, 4, None, 3, None, None, 5]

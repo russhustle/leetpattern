@@ -6,9 +6,9 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0516 - [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) (Medium)
-2. 0647 - [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) (Medium)
-3. 0005 - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) (Medium)
+1. 0516 - [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | [最长回文子序列](https://leetcode.cn/problems/longest-palindromic-subsequence/) (Medium)
+2. 0647 - [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [回文子串](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
+3. 0005 - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
 
 ## 516. Longest Palindromic Subsequence
 
@@ -38,13 +38,13 @@ comments: true
 
 -   Bottom-up DP table
 
-|  dp   |  a   |  b   |  b   |  a   |  e   |
-| :---: | :--: | :--: | :--: | :--: | :--: |
-| **a** |  1   |  0   |  0   |  1   |  0   |
-| **b** |  0   |  1   |  1   |  0   |  0   |
-| **b** |  0   |  0   |  1   |  0   |  0   |
-| **a** |  0   |  0   |  0   |  1   |  0   |
-| **e** |  0   |  0   |  0   |  0   |  1   |
+|  dp   |  a  |  b  |  b  |  a  |  e  |
+| :---: | :-: | :-: | :-: | :-: | :-: |
+| **a** |  1  |  0  |  0  |  1  |  0  |
+| **b** |  0  |  1  |  1  |  0  |  0  |
+| **b** |  0  |  0  |  1  |  0  |  0  |
+| **a** |  0  |  0  |  0  |  1  |  0  |
+| **e** |  0  |  0  |  0  |  0  |  1  |
 
 ## 5. Longest Palindromic Substring
 

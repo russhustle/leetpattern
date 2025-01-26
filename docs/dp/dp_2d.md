@@ -6,10 +6,10 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0118 - [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) (Easy)
-2. 0119 - [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) (Easy)
-3. 0062 - [Unique Paths](https://leetcode.com/problems/unique-paths/) (Medium)
-4. 0063 - [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) (Medium)
+1. 0118 - [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | [杨辉三角](https://leetcode.cn/problems/pascals-triangle/) (Easy)
+2. 0119 - [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | [杨辉三角 II](https://leetcode.cn/problems/pascals-triangle-ii/) (Easy)
+3. 0062 - [Unique Paths](https://leetcode.com/problems/unique-paths/) | [不同路径](https://leetcode.cn/problems/unique-paths/) (Medium)
+4. 0063 - [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) (Medium)
 
 ## 118. Pascal's Triangle
 

@@ -6,15 +6,15 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0053 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) (Medium)
-2. 0918 - [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) (Medium)
-3. 0152 - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) (Medium)
-4. 0978 - [Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray/) (Medium)
-5. 1186 - [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) (Medium)
+1. 0053 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [最大子数组和](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+2. 0918 - [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [环形子数组的最大和](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
+3. 0152 - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
+4. 0978 - [Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray/) | [最长湍流子数组](https://leetcode.cn/problems/longest-turbulent-subarray/) (Medium)
+5. 1186 - [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) | [删除一次得到的最大子数组和](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/) (Medium)
 
 ## 53. Maximum Subarray
 
-- Return the maximum sum of a contiguous subarray from the given array.
+-   Return the maximum sum of a contiguous subarray from the given array.
 
 ```python
 --8<-- "0053_maximum_subarray.py"
@@ -22,7 +22,7 @@ comments: true
 
 ## 918. Maximum Sum Circular Subarray
 
-- Return the maximum sum of a circular subarray from the given array.
+-   Return the maximum sum of a circular subarray from the given array.
 
 ```python
 --8<-- "0918_maximum_sum_circular_subarray.py"
@@ -30,7 +30,7 @@ comments: true
 
 ## 152. Maximum Product Subarray
 
-- Return the maximum product of a contiguous subarray from the given array.
+-   Return the maximum product of a contiguous subarray from the given array.
 
 ```python
 --8<-- "0152_maximum_product_subarray.py"
@@ -38,7 +38,7 @@ comments: true
 
 ## 978. Longest Turbulent Subarray
 
-- Return the length of the longest turbulent subarray of the given array.
+-   Return the length of the longest turbulent subarray of the given array.
 
 ```python
 --8<-- "0978_longest_turbulent_subarray.py"
@@ -46,7 +46,7 @@ comments: true
 
 ## 1186. Maximum Subarray Sum with One Deletion
 
-- Return the maximum sum of a contiguous subarray with at most one deletion.
+-   Return the maximum sum of a contiguous subarray with at most one deletion.
 
 ```python
 --8<-- "1186_maximum_subarray_sum_with_one_deletion.py"

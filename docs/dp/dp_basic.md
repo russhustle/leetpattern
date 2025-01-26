@@ -6,14 +6,14 @@ comments: true
 
 ## LeetCode Problems
 
-1. 0509 - [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) (Easy)
-2. 0070 - [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) (Easy)
-3. 0746 - [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) (Easy)
-4. 0198 - [House Robber](https://leetcode.com/problems/house-robber/) (Easy)
-5. 0213 - [House Robber II](https://leetcode.com/problems/house-robber-ii/) (Medium)
-6. 0376 - [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) (Medium)
-7. 0343 - [Integer Break](https://leetcode.com/problems/integer-break/) (Medium)
-8. 1025 - [Divisor Game](https://leetcode.com/problems/divisor-game/) (Easy)
+1. 0509 - [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | [斐波那契数](https://leetcode.cn/problems/fibonacci-number/) (Easy)
+2. 0070 - [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [爬楼梯](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+3. 0746 - [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
+4. 0198 - [House Robber](https://leetcode.com/problems/house-robber/) | [打家劫舍](https://leetcode.cn/problems/house-robber/) (Easy)
+5. 0213 - [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) (Medium)
+6. 0376 - [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) | [摆动序列](https://leetcode.cn/problems/wiggle-subsequence/) (Medium)
+7. 0343 - [Integer Break](https://leetcode.com/problems/integer-break/) | [整数拆分](https://leetcode.cn/problems/integer-break/) (Medium)
+8. 1025 - [Divisor Game](https://leetcode.com/problems/divisor-game/) | [除数博弈](https://leetcode.cn/problems/divisor-game/) (Easy)
 
 ## 509. Fibonacci Number
 

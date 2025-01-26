@@ -6,20 +6,18 @@ comments: true
 
 ## LeetCode Problems
 
-| Order | Number | LeetCode                                                                                            | 力扣                                                                               | Difficulty |
-| ----- | ------ | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------- |
-| 1     | 2390   | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/)         | [移除字符串中的星号](https://leetcode.cn/problems/removing-stars-from-a-string/)   | Medium     |
-| 2     | 1544   | [Make The String Great](https://leetcode.com/problems/make-the-string-great/)                       | [使字符串变好](https://leetcode.cn/problems/make-the-string-great/)                | Easy       |
-| 3     | 0020   | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                               | [有效的括号](https://leetcode.cn/problems/valid-parentheses/)                      | Easy       |
-| 4     | 0155   | [Min Stack](https://leetcode.com/problems/min-stack/)                                               | [最小栈](https://leetcode.cn/problems/min-stack/)                                  | Easy       |
-| 5     | 0150   | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | Medium     |
-| 6     | 0394   | [Decode String](https://leetcode.com/problems/decode-string/)                                       | [字符串解码](https://leetcode.cn/problems/decode-string/)                          | Medium     |
-| 7     | 0022   | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)                         | [括号生成](https://leetcode.cn/problems/generate-parentheses/)                     | Medium     |
-| 8     | 0853   | [Car Fleet](https://leetcode.com/problems/car-fleet/)                                               | [车队](https://leetcode.cn/problems/car-fleet/)                                    | Medium     |
-| 9     | 0224   | [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                 | [基本计算器](https://leetcode.cn/problems/basic-calculator/)                       | Hard       |
-| 10    | 0227   | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                           | [基本计算器 II](https://leetcode.cn/problems/basic-calculator-ii/)                 | Medium     |
-| 11    | 0772   | [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/)                         | [基本计算器 III](https://leetcode.cn/problems/basic-calculator-iii/)               | Hard       |
-| 12    | 0770   | [Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/)                           | [基本计算器 IV](https://leetcode.cn/problems/basic-calculator-iv/)                 | Hard       |
+1. 2390 - [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | [移除字符串中的星号](https://leetcode.cn/problems/removing-stars-from-a-string/) (Medium)
+2. 1544 - [Make The String Great](https://leetcode.com/problems/make-the-string-great/) | [使字符串变好](https://leetcode.cn/problems/make-the-string-great/) (Easy)
+3. 0020 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [有效的括号](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+4. 0155 - [Min Stack](https://leetcode.com/problems/min-stack/) | [最小栈](https://leetcode.cn/problems/min-stack/) (Easy)
+5. 0150 - [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
+6. 0394 - [Decode String](https://leetcode.com/problems/decode-string/) | [字符串解码](https://leetcode.cn/problems/decode-string/) (Medium)
+7. 0022 - [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [括号生成](https://leetcode.cn/problems/generate-parentheses/) (Medium)
+8. 0853 - [Car Fleet](https://leetcode.com/problems/car-fleet/) | [车队](https://leetcode.cn/problems/car-fleet/) (Medium)
+9. 0224 - [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | [基本计算器](https://leetcode.cn/problems/basic-calculator/) (Hard)
+10. 0227 - [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) | [基本计算器 II](https://leetcode.cn/problems/basic-calculator-ii/) (Medium)
+11. 0772 - [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) | [基本计算器 III](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
+12. 0770 - [Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) | [基本计算器 IV](https://leetcode.cn/problems/basic-calculator-iv/) (Hard)
 
 ## 2390. Removing Stars From a String
 

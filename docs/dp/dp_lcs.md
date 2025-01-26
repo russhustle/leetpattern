@@ -6,15 +6,14 @@ comments: true
 
 ## LeetCode Problems
 
-1. 1143 - [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) (Medium)
-
-2. 0072 - [Edit Distance](https://leetcode.com/problems/edit-distance/) (Hard)
-3. 0115 - [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) (Hard)
-4. 0392 - [Is Subsequence](https://leetcode.com/problems/is-subsequence/) (Easy)
-5. 0583 - [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/) (Medium)
-6. 0674 - [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) (Easy)
-7. 0718 - [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) (Medium)
-8. 1035 - [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) (Medium)
+1. 1143 - [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
+2. 0072 - [Edit Distance](https://leetcode.com/problems/edit-distance/) | [编辑距离](https://leetcode.cn/problems/edit-distance/) (Hard)
+3. 0115 - [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | [不同的子序列](https://leetcode.cn/problems/distinct-subsequences/) (Hard)
+4. 0392 - [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [判断子序列](https://leetcode.cn/problems/is-subsequence/) (Easy)
+5. 0583 - [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/) | [两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/) (Medium)
+6. 0674 - [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) (Easy)
+7. 0718 - [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | [最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) (Medium)
+8. 1035 - [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | [不相交的线](https://leetcode.cn/problems/uncrossed-lines/) (Medium)
 
 ## 1143. Longest Common Subsequence
 

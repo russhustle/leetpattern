@@ -4,6 +4,8 @@ comments: true
 
 # Greedy Algorithm - Interval Problems
 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRcWpkNKTljkt5q5wZLRdeHwdpFNUJKNyOFbEGT3uoM6FO1b6_-N8pqaosF-jLOiJioOu7zbtJehCM0/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ## LeetCode Problems
 
 1. 0055 - [Jump Game](https://leetcode.com/problems/jump-game/) | [跳跃游戏](https://leetcode.cn/problems/jump-game/) (Medium)
@@ -16,6 +18,8 @@ comments: true
 ## 55. Jump Game
 
 -   Return `True` if you can reach the last index, otherwise `False`.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yan0cv2cLy8?si=musT5NViPicljg7x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python
 --8<-- "0055_jump_game.py"
@@ -39,11 +43,21 @@ comments: true
 
 -   Return the minimum number of jumps to reach the last index.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dJ7sWiOoK7g?si=3kc-pp4rs3Dk7Jqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ```python
 --8<-- "0045_jump_game_ii.py"
 ```
 
 ## 452. Minimum Number of Arrows to Burst Balloons
+
+-   Return the minimum number of arrows.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lPmkKnvNPrw?si=P0rkcvTOxRGoFpkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+-   Differece between two versions
+    1. Start from 1: if there is no overlap, we add one more arrow.
+    2. Start from the number of balloons: if there is overlap, we need to reduce one arrow.
 
 ```python
 --8<-- "0452_minimum_number_of_arrows_to_burst_balloons.py"

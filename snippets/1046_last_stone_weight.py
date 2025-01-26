@@ -21,11 +21,12 @@ def lastStoneWeightHeap(stones: List[int]) -> int:
 def lastStoneWeightKnapsack(stones: List[int]) -> int:
     total = sum(stones)
     target = total // 2
+
     dp = [0 for _ in range(target + 1)]
 
-    for stone in stones:
-        for j in range(target, stone - 1, -1):
-            dp[j] = max(dp[j], dp[j - stone] + stone)
+    for i in stones:
+        for j in range(target, i - 1, -1):
+            dp[j] = max(dp[j], dp[j - i] + i)
 
     return total - 2 * dp[target]
 

@@ -1,34 +1,58 @@
 from typing import List
 
+import matplotlib.pyplot as plt
+
 
 # Monotonic Stack
 def dailyTemperatures(temperatures: List[int]) -> List[int]:
-    # Returns a list of days you would have to wait until a warmer temperature.
-
-    result = [0 for _ in range(len(temperatures))]
+    res = [0 for _ in range(len(temperatures))]
     stack = []
 
     for idx, temp in enumerate(temperatures):
         while stack and temp > stack[-1][0]:
             _, last_index = stack.pop()
-            result[last_index] = idx - last_index
+            res[last_index] = idx - last_index
 
         stack.append([temp, idx])
 
-    return result
+    return res
+
+
+def utils_plot(idx: int, temps: List[int], stack: List[List[int]]) -> None:
+    """Plot the current state of the stack and the temperatures."""
+    plt.figure(figsize=(8, 3))
+    plt.plot(
+        range(len(temps)),
+        temps,
+        marker="o",
+        linestyle="-",
+        color="b",
+        label="Temperatures",
+    )
+
+    # Highlight the current temperature in red
+    plt.scatter(idx, temps[idx], color="r", s=100, label="Current")
+
+    # Display the current state of the stack
+    for temp, stack_idx in stack:
+        plt.scatter(stack_idx, temp, color="g", s=70)
+        plt.text(
+            stack_idx,
+            temp,
+            f"({temp}, {stack_idx})",
+            fontsize=10,
+            ha="center",
+            va="bottom",
+            color="red",
+        )
+
+    plt.title(f"Day {idx}")
+    plt.xlabel("Days")
+    plt.ylabel("Temperature")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
 
 
 print(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
 # [1, 1, 4, 2, 1, 1, 0, 0]
-
-# | Index | Temp | > stack last   | stack                         | result    |
-# | ----- | ---- | -------------- | ----------------------------- | --------- |
-# | 0     | 73   | False          | [ [73, 0] ]                   | 1 - 0 = 1 |
-# | 1     | 74   | True           | [ [74, 1] ]                   | 2 - 1 = 1 |
-# | 2     | 75   | True           | [ [75, 2] ]                   | 6 - 2 = 4 |
-# | 3     | 71   | False          | [ [75, 2], [71, 3] ]          | 5 - 3 = 2 |
-# | 4     | 69   | False          | [ [75, 2], [71, 3], [69, 4] ] | 5 - 4 = 1 |
-# | 5     | 72   | True           | [ [75, 2], [72, 5] ]          | 6 - 5 = 1 |
-# | 6     | 76   | True           | [ [76, 6] ]                   | 0         |
-# | 7     | 73   | False          | [[76, 6], [73, 7]]            | 0         |
-# | ----- | ---- | -------------- | ----------------------------- | --------- |

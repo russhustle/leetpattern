@@ -2,27 +2,26 @@ import itertools
 from typing import List
 
 
-# 1. Backtracking
+# Backtracking
 def combine(n: int, k: int) -> List[List[int]]:
-    path = []
-    result = []
+    res = []
 
-    def backtracking(start):
+    def backtrack(start, path):
         if len(path) == k:
-            result.append(path[:])
+            res.append(path[:])
             return None
 
         for i in range(start, n + 1):
             path.append(i)
-            backtracking(i + 1)
+            backtrack(i + 1, path)
             path.pop()
 
-    backtracking(start=1)
+    backtrack(1, [])
 
-    return result
+    return res
 
 
-# 2. Itertools
+# itertools
 def combineItertools(n: int, k: int) -> List[List[int]]:
     path = itertools.combinations(range(1, n + 1), k)
     return path

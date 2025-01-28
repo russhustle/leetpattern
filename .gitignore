@@ -4,3 +4,4 @@ site/
 output/
 # .vscode/
 .DS_Store
+temp*

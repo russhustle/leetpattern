@@ -151,6 +151,10 @@ nav:
                 - Intervals: neetcode150/intervals.md
                 - Math & Geometry: neetcode150/math_geometry.md
                 - Bit Manipulation: neetcode150/bit.md
+          - Top Interview 150:
+                - Top Interview 150: top150/index.md
+                - Array & Strings: top150/top150_array_string.md
+
     - About: about.md
 
 ##############################################

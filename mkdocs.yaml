@@ -8,78 +8,58 @@ copyright: Copyright &copy; 2024-2025 Sihan A
 nav:
     - LeetPattern:
           - Home: README.md
-          - Arrays:
-                - Home: arrays/index.md
-                - Binary Search: arrays/binary_search.md
-                - Array: arrays/array.md
-                - Fast Slow Pointers: arrays/fast_slow_pointers.md
-                - Left Right Pointers: arrays/left_right_pointers.md
-                - Sliding Window Fixed: arrays/sliding_window_fixed.md
-                - Sliding Window Variable: arrays/sliding_window_variable.md
-                - Prefix Sum: arrays/prefix_sum.md
-                - Difference Array: arrays/difference_array.md
-
-          - Hash:
-                - Hash Map: hash/hash_map.md
-                - Hash Set: hash/hash_set.md
-                - Counting: hash/hash_counting.md
-
-          - String:
-                - String: string/string.md
-                - KMP: string/string_kmp.md
-
+          - Binary Search: arrays/binary_search.md
+          - Arrays: arrays/arrays.md
+          - Fast Slow Pointers: arrays/fast_slow_pointers.md
+          - Left Right Pointers: arrays/left_right_pointers.md
+          - Sliding Window Fixed: arrays/sliding_window_fixed.md
+          - Sliding Window Variable: arrays/sliding_window_variable.md
+          - Prefix Sum: arrays/prefix_sum.md
+          - Difference Array: arrays/difference_array.md
+          - Hash Map: hash/hash_map.md
+          - Hash Set: hash/hash_set.md
+          - Hash Counting: hash/hash_counting.md
+          - String: string/string.md
+          - KMP: string/string_kmp.md
           - Linked List: other/linked_list.md
-
-          - Tree:
-                - Tree: tree/index.md
-                - Traversal: tree/tree_traversal.md
-                - Tree Feature: tree/tree_feature.md
-                - Tree BFS: tree/tree_bfs.md
-                - Tree Modification: tree/tree_modification.md
-                - BST: tree/tree_bst.md
-                - Common Ancestors: tree/tree_common_ancestor.md
-                - Trie: tree/tree_trie.md
-
-          - Stack & Queue:
-                - Stack: stack_queue/stack.md
-                - Monotonic Stack: stack_queue/stack_monotonic.md
-                - Queue: stack_queue/queue.md
-                - Monotonic Queue: stack_queue/queue_monotonic.md
-
-          - Greedy Algorithm:
-                - Greedy: greedy/greedy.md
-                - Greedy - Interval: greedy/greedy_interval.md
-
-          - Dynamic Programming:
-                - Dynamic Programming: dp/index.md
-                - DP Basic: dp/dp_basic.md
-                - DP 2D: dp/dp_2d.md
-                - DP Interval: dp/dp_interval.md
-                - Knapsack 0/1: dp/dp_knapsack_01.md
-                - Knapsack Unbounded: dp/dp_knapsack_unbounded.md
-                - Kadane: dp/dp_kadane.md
-                - Stock: dp/dp_stock.md
-                - LCS: dp/dp_lcs.md
-                - LIS: dp/dp_lis.md
-
-          - Backtracking:
-                - Combinations: backtracking/backtracking_combinations.md
-                - Partitions: backtracking/backtracking_partitions.md
-                - Subsets: backtracking/backtracking_subsets.md
-                - Permutations: backtracking/backtracking_permutations.md
-                - Board: backtracking/backtracking_board.md
-
-          - Graph:
-                - Graph: graph/index.md
-                - Flood Fill: graph/graph_flood_fill.md
-                - BFS: graph/graph_bfs.md
-                - Topological Sort: graph/graph_topological_sort.md
-                - Union Find: graph/graph_union_find.md
-                - Shortest Path: graph/graph_shortest_path.md
-                - Bellman Ford: graph/graph_bellman_ford.md
-                - MST: graph/graph_mst.md
-                - Coloring: graph/graph_coloring.md
-                - Tarjan: graph/graph_tarjan.md
+          - Tree Traversal: tree/tree_traversal.md
+          - Tree Feature: tree/tree_feature.md
+          - Tree BFS: tree/tree_bfs.md
+          - Tree Modification: tree/tree_modification.md
+          - BST: tree/tree_bst.md
+          - Tree Common Ancestors: tree/tree_common_ancestor.md
+          - Trie: tree/tree_trie.md
+          - Stack: stack_queue/stack.md
+          - Monotonic Stack: stack_queue/stack_monotonic.md
+          - Queue: stack_queue/queue.md
+          - Monotonic Queue: stack_queue/queue_monotonic.md
+          - Greedy: greedy/greedy.md
+          - Greedy - Interval: greedy/greedy_interval.md
+          - Dynamic Programming: dp/index.md
+          - DP Basic: dp/dp_basic.md
+          - DP 2D: dp/dp_2d.md
+          - DP Interval: dp/dp_interval.md
+          - DP Knapsack 0/1: dp/dp_knapsack_01.md
+          - DP Knapsack Unbounded: dp/dp_knapsack_unbounded.md
+          - DP Kadane: dp/dp_kadane.md
+          - DP Stock: dp/dp_stock.md
+          - DP LCS: dp/dp_lcs.md
+          - DP LIS: dp/dp_lis.md
+          - BT Combinations: backtracking/backtracking_combinations.md
+          - BT Partitions: backtracking/backtracking_partitions.md
+          - BT Subsets: backtracking/backtracking_subsets.md
+          - BT Permutations: backtracking/backtracking_permutations.md
+          - BT Board: backtracking/backtracking_board.md
+          - Graph: graph/index.md
+          - Flood Fill: graph/graph_flood_fill.md
+          - BFS: graph/graph_bfs.md
+          - Topological Sort: graph/graph_topological_sort.md
+          - Union Find: graph/graph_union_find.md
+          - Shortest Path: graph/graph_shortest_path.md
+          - Bellman Ford: graph/graph_bellman_ford.md
+          - MST: graph/graph_mst.md
+          - Coloring: graph/graph_coloring.md
+          - Tarjan: graph/graph_tarjan.md
 
           - Heap:
                 - Heap Introduction: heap/index.md

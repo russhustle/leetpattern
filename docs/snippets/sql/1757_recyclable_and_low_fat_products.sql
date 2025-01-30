@@ -1,8 +1,7 @@
 -- Select product IDs for products that are both low fat and recyclable
-SELECT
-    product_id
+SELECT product_id
 FROM
-    Products
+    products
 WHERE
     low_fats = 'Y'
     AND recyclable = 'Y';

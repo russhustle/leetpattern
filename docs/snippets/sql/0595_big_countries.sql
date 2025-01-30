@@ -3,7 +3,7 @@ SELECT
     population,
     area
 FROM
-    World
+    world
 WHERE
     population >= 25000000
     OR area >= 3000000;

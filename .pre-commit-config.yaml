@@ -17,7 +17,7 @@ repos:
 
     # black
     - repo: https://github.com/ambv/black
-      rev: 24.10.0
+      rev: 25.1.0
       hooks:
           - id: black
             args: [--line-length=79]
@@ -30,7 +30,7 @@ repos:
 
     # isort
     - repo: https://github.com/timothycrosley/isort
-      rev: 5.13.2
+      rev: 6.0.0
       hooks:
           - id: isort
 
@@ -39,3 +39,12 @@ repos:
       rev: v0.10.0.1
       hooks:
           - id: shellcheck
+
+    # sqlfluff for linting SQL files
+    - repo: https://github.com/sqlfluff/sqlfluff
+      rev: 3.3.0
+      hooks:
+          - id: sqlfluff-lint
+            args: ["--dialect", "mysql"]
+          - id: sqlfluff-fix
+            args: ["--dialect", "mysql"]

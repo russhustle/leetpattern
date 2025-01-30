@@ -5,7 +5,7 @@ from typing import Dict, List, Tuple
 
 # Prim
 def prim(
-    connections: List[Tuple[int, int, int]]
+    connections: List[Tuple[int, int, int]],
 ) -> Dict[int, List[Tuple[int, int]]]:
 
     graph = defaultdict(list)

@@ -1,7 +1,6 @@
-SELECT DISTINCT
-    author_id AS id
+SELECT DISTINCT author_id AS id
 FROM
-    Views
+    views
 WHERE
     author_id = viewer_id
 ORDER BY

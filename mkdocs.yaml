@@ -16,6 +16,7 @@ nav:
           - Sliding Window Variable: arrays/sliding_window_variable.md
           - Prefix Sum: arrays/prefix_sum.md
           - Difference Array: arrays/difference_array.md
+          - Boyer Moore: arrays/boyer_moore.md
           - Hash Map: hash/hash_map.md
           - Hash Set: hash/hash_set.md
           - Hash Counting: hash/hash_counting.md
@@ -78,7 +79,9 @@ nav:
                 - Home: design/index.md
                 - Design Patterns: design/design_patterns.md
                 - Design: design/design.md
-
+    - SQL:
+          - Home: sql/index.md
+          - SQL 50: sql/sql50.md
     - Study Plan:
           - Study Plan: plan/index.md
           - Graph Theory:

@@ -1,14 +1,14 @@
 {
-  "editor.formatOnSave": true,
-  "prettier.tabWidth": 4,
-  "makefile.configureOnOpen": false,
-  "prettier.embeddedLanguageFormatting": "auto",
-  "prettier.bracketSameLine": false,
-  "prettier.printWidth": 79,
-  "files.associations": {
-    "iostream": "cpp"
-  },
-  "quokka.automaticRestart": true,
-  "quokka.automaticStartRegex": "/docs/snippets/ts/*.ts",
-  "C_Cpp_Runner.msvcBatchPath": ""
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "makefile.configureOnOpen": false,
+    "prettier.embeddedLanguageFormatting": "auto",
+    "prettier.bracketSameLine": false,
+    "prettier.printWidth": 79,
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "quokka.automaticRestart": true,
+    "quokka.automaticStartRegex": "src/ts/.*\\.ts$",
+    "C_Cpp_Runner.msvcBatchPath": ""
 }

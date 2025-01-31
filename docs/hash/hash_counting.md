@@ -28,9 +28,23 @@ comments: true
 
 ## 49. Group Anagrams
 
-```python
---8<-- "0049_group_anagrams.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0049_group_anagrams.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0049_group_anagrams.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0049_group_anagrams.ts"
+    ```
 
 ## 438. Find All Anagrams in a String
 

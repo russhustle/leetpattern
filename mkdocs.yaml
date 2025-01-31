@@ -61,24 +61,16 @@ nav:
           - MST: graph/graph_mst.md
           - Coloring: graph/graph_coloring.md
           - Tarjan: graph/graph_tarjan.md
-
-          - Heap:
-                - Heap Introduction: heap/index.md
-                - Heap: heap/heap_heap.md
-                - Top K: heap/heap_top_k.md
-                - Two Heaps: heap/heap_two_heaps.md
-                - Merge K Sorted: heap/heap_merge_k_sorted.md
-
-          - Other:
-                - Home: other/index.md
-                - Bit: other/bit.md
-                - Math: other/math.md
-                - Simulation: other/simulation.md
-
-          - OOD:
-                - Home: design/index.md
-                - Design Patterns: design/design_patterns.md
-                - Design: design/design.md
+          - Heap Introduction: heap/index.md
+          - Heap: heap/heap_heap.md
+          - Top K: heap/heap_top_k.md
+          - Two Heaps: heap/heap_two_heaps.md
+          - Merge K Sorted: heap/heap_merge_k_sorted.md
+          - Bit: other/bit.md
+          - Math: other/math.md
+          - Simulation: other/simulation.md
+          - Design Patterns: design/design_patterns.md
+          - Design: design/design.md
     - SQL:
           - Home: sql/index.md
           - SQL 50: sql/sql50.md

@@ -1,22 +1,24 @@
 from typing import List
 
 
+# Greedy - Interval
 def jump(nums: List[int]) -> int:
+    n = len(nums)
     if len(nums) == 1:
         return 0
 
-    cover = 0
-    count = 0
-    i = 0
+    maxReach = 0
+    step = 0
+    left, right = 0, 0
 
-    while cover >= 0:
-        for i in range(i, cover + 1):
-            cover = max(cover, nums[i] + i)
-            if cover >= len(nums) - 1:
-                return count + 1
-        count += 1
+    while right < n - 1:
+        for i in range(left, right + 1):
+            maxReach = max(maxReach, i + nums[i])
+        left = right + 1
+        right = maxReach
+        step += 1
 
-    return count
+    return step
 
 
-print(jump([2, 3, 1, 1, 4]))  # 2
+print(jump([2, 3, 1, 1, 4, 2, 1]))  # 3

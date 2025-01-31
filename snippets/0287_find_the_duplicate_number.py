@@ -1,6 +1,7 @@
 from typing import List
 
 
+# Fast Slow Pointer
 def findDuplicate(nums: List[int]) -> int:
 
     fast, slow = nums[0], nums[0]
@@ -19,8 +20,10 @@ def findDuplicate(nums: List[int]) -> int:
     return slow
 
 
-# Time complexity: O(n)
-# Space complexity: O(1)
+# | Algorithm          | TC   | SC   |
+# |--------------------|------|------|
+# | Fast Slow Pointer  | O(n) | O(1) |
+# |--------------------|------|------|
 
 nums = [1, 3, 4, 2, 2]
 print(findDuplicate(nums))  # 2

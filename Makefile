@@ -11,6 +11,6 @@ clean:
 	find . -name "__pycache__" -type d -exec rm -r {} +
 
 push:
-	# tag
-	git tag -a v0.1.10 -m "Release v0.1.10"
-	git push origin v0.1.10
+	git add .
+	git commit -m "Update"
+	git push

@@ -4,7 +4,4 @@ SELECT
     name
 FROM
     employees
-LEFT JOIN
-    employeeuni
-    ON
-        employees.id = employeeuni.id;
+LEFT JOIN employeeuni ON employees.id = employeeuni.id;

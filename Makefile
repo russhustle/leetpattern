@@ -14,3 +14,6 @@ push:
 	git add .
 	git commit -m "Update"
 	git push
+
+sync:
+	poetry run python utils/sync.py

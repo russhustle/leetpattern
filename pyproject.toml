@@ -16,6 +16,7 @@ networkx = "^3.3"
 notebook = "^7.2.1"
 mkdocs-git-revision-date-localized-plugin = "^1.2.7"
 sortedcontainers = "^2.4.0"
+pandas = "^2.2.3"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -1,6 +1,21 @@
-SELECT name
+-- 1.
+SELECT NAME
 FROM
-    customer
+    CUSTOMER
 WHERE
-    referee_id <> 2
-    OR referee_id IS NULL;
+    REFEREE_ID <> 2
+    OR REFEREE_ID IS NULL;
+
+-- 2.
+SELECT NAME
+FROM
+    CUSTOMER
+WHERE
+    COALESCE(REFEREE_ID, -1) <> 2;
+
+-- 3.
+SELECT NAME
+FROM
+    CUSTOMER
+WHERE
+    COALESCE(REFEREE_ID, -1) <> 2;

@@ -4,6 +4,8 @@ comments: true
 
 # SQL 50
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=QaUv8VyjUKlICN1X&amp;list=PLtfxzVLWb-B-aQ1U1AaOA8LBrCoE-3TX2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## LeetCode Problems
 
 Select
@@ -87,11 +89,16 @@ Advanced String Functions / Regex / Clause
 
 ### 584. Find Customer Referee
 
+-   `IS NULL` - Determines whether a specified expression is NULL.
+-   `<>` - Not equal operator.
+
 ```mysql
 --8<-- "sql/0584_find_customer_referee.sql"
 ```
 
 ### 595. Big Countries
+
+-   Return the country name, population, and area for countries with an area larger than 3 million or a population more than 25 million.
 
 ```mysql
 --8<-- "sql/0595_big_countries.sql"
@@ -99,11 +106,18 @@ Advanced String Functions / Regex / Clause
 
 ### 1148. Article Views I
 
+-   Return the article_id and author_id of the article with the maximum number of views.
+
 ```mysql
 --8<-- "sql/1148_article_views_i.sql"
 ```
 
 ### 1683. Invalid Tweets
+
+-   Return the tweet_id if the content length is strictly greater than 15.
+
+-   `LENGTH()` - Returns the number of bytes in a string.
+-   `CHAR_LENGTH()` - Returns the number of characters in a string.
 
 ```mysql
 --8<-- "sql/1683_invalid_tweets.sql"
@@ -125,9 +139,17 @@ Advanced String Functions / Regex / Clause
 
 ### 1581. Customer Who Visited but Did Not Make Any Transactions
 
-```mysql
---8<-- "sql/1581_customer_who_visited_but_did_not_make_any_transactions.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1581_customer_who_visited_but_did_not_make_any_transactions.sql"
+    ```
+
+=== "Pandas"
+
+    ```python
+    --8<-- "sql/1581_customer_who_visited_but_did_not_make_any_transactions.py"
+    ```
 
 ### 197. Rising Temperature
 

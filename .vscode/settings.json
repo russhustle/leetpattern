@@ -10,5 +10,7 @@
     },
     "quokka.automaticRestart": true,
     "quokka.automaticStartRegex": "src/ts/.*\\.ts$",
-    "C_Cpp_Runner.msvcBatchPath": ""
+    "C_Cpp_Runner.msvcBatchPath": "",
+    "Prettier-SQL.SQLFlavourOverride": "mysql",
+    "Prettier-SQL.keywordCase": "upper"
 }

@@ -7,6 +7,7 @@ repos:
           - id: trailing-whitespace
           - id: check-toml
           - id: check-yaml
+          - id: end-of-file-fixer
           - id: check-json
           - id: check-merge-conflict
             args: ["--assume-in-merge"]

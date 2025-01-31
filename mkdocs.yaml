@@ -204,7 +204,7 @@ markdown_extensions:
     - pymdownx.tabbed:
           alternate_style: true
     - pymdownx.snippets:
-          base_path: docs/snippets
+          base_path: src
     - pymdownx.highlight:
           anchor_linenums: true
           line_spans: __span

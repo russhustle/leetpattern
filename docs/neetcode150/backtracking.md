@@ -41,4 +41,3 @@ comments: true
 ```python
 --8<-- "0131_palindrome_partitioning.py"
 ```
-

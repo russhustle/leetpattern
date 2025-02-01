@@ -12,5 +12,8 @@
     "quokka.automaticStartRegex": "src/ts/.*\\.ts$",
     "C_Cpp_Runner.msvcBatchPath": "",
     "Prettier-SQL.SQLFlavourOverride": "mysql",
-    "Prettier-SQL.keywordCase": "upper"
+    "Prettier-SQL.keywordCase": "upper",
+    "Prettier-SQL.denseOperators": false,
+    "Prettier-SQL.indentStyle": "standard",
+    "Prettier-SQL.newlineBeforeSemicolon": true
 }

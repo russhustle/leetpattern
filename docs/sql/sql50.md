@@ -4,7 +4,7 @@ comments: true
 
 # SQL 50
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=QaUv8VyjUKlICN1X&amp;list=PLtfxzVLWb-B-aQ1U1AaOA8LBrCoE-3TX2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   [SQL 50 Series by Everyday Data Science](https://youtube.com/playlist?list=PLtfxzVLWb-B-aQ1U1AaOA8LBrCoE-3TX2&si=w6jfUlHL1EZK2ajn)
 
 ## LeetCode Problems
 
@@ -83,59 +83,73 @@ Advanced String Functions / Regex / Clause
 
 ### 1757. Recyclable and Low Fat Products
 
-```mysql
---8<-- "sql/1757_recyclable_and_low_fat_products.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1757_recyclable_and_low_fat_products.sql"
+    ```
 
 ### 584. Find Customer Referee
 
 -   `IS NULL` - Determines whether a specified expression is NULL.
 -   `<>` - Not equal operator.
 
-```mysql
---8<-- "sql/0584_find_customer_referee.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0584_find_customer_referee.sql"
+    ```
 
 ### 595. Big Countries
 
 -   Return the country name, population, and area for countries with an area larger than 3 million or a population more than 25 million.
 
-```mysql
---8<-- "sql/0595_big_countries.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0595_big_countries.sql"
+    ```
 
 ### 1148. Article Views I
 
 -   Return the article_id and author_id of the article with the maximum number of views.
 
-```mysql
---8<-- "sql/1148_article_views_i.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1148_article_views_i.sql"
+    ```
 
 ### 1683. Invalid Tweets
 
--   Return the tweet_id if the content length is strictly greater than 15.
+-   Return the `tweet_id` if the content length is strictly greater than 15.
 
 -   `LENGTH()` - Returns the number of bytes in a string.
 -   `CHAR_LENGTH()` - Returns the number of characters in a string.
 
-```mysql
---8<-- "sql/1683_invalid_tweets.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1683_invalid_tweets.sql"
+    ```
 
 ## Basic Joins
 
 ### 1378. Replace Employee ID With The Unique Identifier
 
-```mysql
---8<-- "sql/1378_replace_employee_id_with_the_unique_identifier.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1378_replace_employee_id_with_the_unique_identifier.sql"
+    ```
 
 ### 1068. Product Sales Analysis I
 
-```mysql
---8<-- "sql/1068_product_sales_analysis_i.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1068_product_sales_analysis_i.sql"
+    ```
 
 ### 1581. Customer Who Visited but Did Not Make Any Transactions
 
@@ -148,268 +162,358 @@ Advanced String Functions / Regex / Clause
 === "Pandas"
 
     ```python
-    --8<-- "sql/1581_customer_who_visited_but_did_not_make_any_transactions.py"
+        --8<-- "sql/1581_customer_who_visited_but_did_not_make_any_transactions.py"
     ```
 
 ### 197. Rising Temperature
 
-```mysql
---8<-- "sql/0197_rising_temperature.sql"
-```
+-   Return the `Id` of the weather records where the temperature is higher than the temperature of the previous day.
+
+-   Self join: Join a table with itself.
+
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0197_rising_temperature.sql"
+    ```
 
 ### 1661. Average Time of Process per Machine
 
-```mysql
---8<-- "sql/1661_average_time_of_process_per_machine.sql"
-```
+-   `AVG()` - Returns the average value of a numeric column.
+
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1661_average_time_of_process_per_machine.sql"
+    ```
 
 ### 577. Employee Bonus
 
-```mysql
---8<-- "sql/0577_employee_bonus.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0577_employee_bonus.sql"
+    ```
 
 ### 1280. Students and Examinations
 
-```mysql
---8<-- "sql/1280_students_and_examinations.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1280_students_and_examinations.sql"
+    ```
 
 ### 570. Managers with at Least 5 Direct Reports
 
-```mysql
---8<-- "sql/0570_managers_with_at_least_5_direct_reports.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0570_managers_with_at_least_5_direct_reports.sql"
+    ```
 
 ### 1934. Confirmation Rate
 
-```mysql
---8<-- "sql/1934_confirmation_rate.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1934_confirmation_rate.sql"
+    ```
 
 ## Basic Aggregate Functions
 
 ### 620. Not Boring Movies
 
-```mysql
---8<-- "sql/0620_not_boring_movies.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0620_not_boring_movies.sql"
+    ```
 
 ### 1251. Average Selling Price
 
-```mysql
---8<-- "sql/1251_average_selling_price.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1251_average_selling_price.sql"
+    ```
 
 ### 1075. Project Employees I
 
-```mysql
---8<-- "sql/1075_project_employees_i.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1075_project_employees_i.sql"
+    ```
 
 ### 1633. Percentage of Users Attended a Contest
 
-```mysql
---8<-- "sql/1633_percentage_of_users_attended_a_contest.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1633_percentage_of_users_attended_a_contest.sql"
+    ```
 
 ### 1211. Queries Quality and Percentage
 
-```mysql
---8<-- "sql/1211_queries_quality_and_percentage.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1211_queries_quality_and_percentage.sql"
+    ```
 
 ### 1193. Monthly Transactions I
 
-```mysql
---8<-- "sql/1193_monthly_transactions_i.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1193_monthly_transactions_i.sql"
+    ```
 
 ### 1174. Immediate Food Delivery II
 
-```mysql
---8<-- "sql/1174_immediate_food_delivery_ii.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1174_immediate_food_delivery_ii.sql"
+    ```
 
 ### 550. Game Play Analysis IV
 
-```mysql
---8<-- "sql/0550_game_play_analysis_iv.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0550_game_play_analysis_iv.sql"
+    ```
 
 ## Sorting and Grouping
 
 ### 2356. Number of Unique Subjects Taught by Each Teacher
 
-```mysql
---8<-- "sql/2356_number_of_unique_subjects_taught_by_each_teacher.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/2356_number_of_unique_subjects_taught_by_each_teacher.sql"
+    ```
 
 ### 1141. User Activity for the Past 30 Days I
 
-```mysql
---8<-- "sql/1141_user_activity_for_the_past_30_days_i.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1141_user_activity_for_the_past_30_days_i.sql"
+    ```
 
 ### 1070. Product Sales Analysis III
 
-```mysql
---8<-- "sql/1070_product_sales_analysis_iii.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1070_product_sales_analysis_iii.sql"
+    ```
 
 ### 596. Classes More Than 5 Students
 
-```mysql
---8<-- "sql/0596_classes_more_than_5_students.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0596_classes_more_than_5_students.sql"
+    ```
 
 ### 1729. Find Followers Count
 
-```mysql
---8<-- "sql/1729_find_followers_count.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1729_find_followers_count.sql"
+    ```
 
 ### 619. Biggest Single Number
 
-```mysql
---8<-- "sql/0619_biggest_single_number.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0619_biggest_single_number.sql"
+    ```
 
 ### 1045. Customers Who Bought All Products
 
-```mysql
+=== "MySQL"
 
---8<-- "sql/1045_customers_who_bought_all_products.sql"
-```
+    ```mysql
+
+    --8<-- "sql/1045_customers_who_bought_all_products.sql"
+    ```
 
 ## Advanced Select and Joins
 
 ### 1731. The Number of Employees Which Report to Each Employee
 
-```mysql
---8<-- "sql/1731_the_number_of_employees_which_report_to_each_employee.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1731_the_number_of_employees_which_report_to_each_employee.sql"
+    ```
 
 ### 1789. Primary Department for Each Employee
 
-```mysql
---8<-- "sql/1789_primary_department_for_each_employee.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1789_primary_department_for_each_employee.sql"
+    ```
 
 ### 610. Triangle Judgement
 
-```mysql
---8<-- "sql/0610_triangle_judgement.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0610_triangle_judgement.sql"
+    ```
 
 ### 180. Consecutive Numbers
 
-```mysql
---8<-- "sql/0180_consecutive_numbers.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0180_consecutive_numbers.sql"
+    ```
 
 ### 1164. Product Price at a Given Date
 
-```mysql
---8<-- "sql/1164_product_price_at_a_given_date.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1164_product_price_at_a_given_date.sql"
+    ```
 
 ### 1204. Last Person to Fit in the Bus
 
-```mysql
---8<-- "sql/1204_last_person_to_fit_in_the_bus.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1204_last_person_to_fit_in_the_bus.sql"
+    ```
 
 ### 1907. Count Salary Categories
 
-```mysql
---8<-- "sql/1907_count_salary_categories.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1907_count_salary_categories.sql"
+    ```
 
 ## Subqueries
 
 ### 1978. Employees Whose Manager Left the Company
 
-```mysql
---8<-- "sql/1978_employees_whose_manager_left_the_company.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1978_employees_whose_manager_left_the_company.sql"
+    ```
 
 ### 626. Exchange Seats
 
-```mysql
---8<-- "sql/0626_exchange_seats.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0626_exchange_seats.sql"
+    ```
 
 ### 1341. Movie Rating
 
-```mysql
---8<-- "sql/1341_movie_rating.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1341_movie_rating.sql"
+    ```
 
 ### 1321. Restaurant Growth
 
-```mysql
---8<-- "sql/1321_restaurant_growth.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1321_restaurant_growth.sql"
+    ```
 
 ### 602. Friend Requests II: Who Has the Most Friends
 
-```mysql
---8<-- "sql/0602_friend_requests_ii_who_has_the_most_friends.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0602_friend_requests_ii_who_has_the_most_friends.sql"
+    ```
 
 ### 585. Investments in 2016
 
-```mysql
---8<-- "sql/0585_investments_in_2016.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0585_investments_in_2016.sql"
+    ```
 
 ### 185. Department Top Three Salaries
 
-```mysql
---8<-- "sql/0185_department_top_three_salaries.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0185_department_top_three_salaries.sql"
+    ```
 
 ## Advanced String Functions / Regex / Clause
 
 ### 1667. Fix Names in a Table
 
-```mysql
---8<-- "sql/1667_fix_names_in_a_table.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1667_fix_names_in_a_table.sql"
+    ```
 
 ### 1527. Patients With a Condition
 
-```mysql
---8<-- "sql/1527_patients_with_a_condition.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1527_patients_with_a_condition.sql"
+    ```
 
 ### 196. Delete Duplicate Emails
 
-```mysql
---8<-- "sql/0196_delete_duplicate_emails.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0196_delete_duplicate_emails.sql"
+    ```
 
 ### 176. Second Highest Salary
 
-```mysql
---8<-- "sql/0176_second_highest_salary.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/0176_second_highest_salary.sql"
+    ```
 
 ### 1484. Group Sold Products By The Date
 
-```mysql
---8<-- "sql/1484_group_sold_products_by_the_date.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1484_group_sold_products_by_the_date.sql"
+    ```
 
 ### 1327. List the Products Ordered in a Period
 
-```mysql
---8<-- "sql/1327_list_the_products_ordered_in_a_period.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1327_list_the_products_ordered_in_a_period.sql"
+    ```
 
 ### 1517. Find Users With Valid E-Mails
 
-```mysql
---8<-- "sql/1517_find_users_with_valid_e_mails.sql"
-```
+=== "MySQL"
+
+    ```mysql
+    --8<-- "sql/1517_find_users_with_valid_e_mails.sql"
+    ```

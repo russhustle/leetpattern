@@ -46,7 +46,7 @@ repos:
       rev: 3.3.0
       hooks:
           - id: sqlfluff-lint
-            args: ["--dialect", "mysql", "--exclude-rules", "RF02"]
+            args: ["--dialect", "mysql", "--exclude-rules", "RF02,ST10"]
             # RF02 - reference qualification
           - id: sqlfluff-fix
-            args: ["--dialect", "mysql", "--exclude-rules", "RF02"]
+            args: ["--dialect", "mysql", "--exclude-rules", "RF02,ST10"]

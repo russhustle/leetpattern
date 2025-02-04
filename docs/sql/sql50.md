@@ -107,6 +107,10 @@ comments: true
 -   `IS NULL` - Determines whether a specified expression is NULL.
 -   `<>` - Not equal operator.
 
+```plaintext
+--8<-- "sql/0584_find_customer_referee.txt"
+```
+
 === "MySQL"
 
     ```mysql
@@ -285,6 +289,12 @@ comments: true
     ```
 
 ### 1211. Queries Quality and Percentage
+
+-   Select the quality and the percentage of poor queries for each query name.
+
+```plaintext
+--8<-- "sql/1211_queries_quality_and_percentage.txt"
+```
 
 === "MySQL"
 

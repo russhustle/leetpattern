@@ -84,10 +84,22 @@ comments: true
 
 ### 1757. Recyclable and Low Fat Products
 
+-   Select product IDs for products that are both low fat and recyclable.
+
+```plaintext
+--8<-- "sql/1757_recyclable_and_low_fat_products.txt"
+```
+
 === "MySQL"
 
     ```mysql
     --8<-- "sql/1757_recyclable_and_low_fat_products.sql"
+    ```
+
+=== "Pandas"
+
+    ```python
+    --8<-- "sql/1757_recyclable_and_low_fat_products.py"
     ```
 
 ### 584. Find Customer Referee
@@ -101,6 +113,12 @@ comments: true
     --8<-- "sql/0584_find_customer_referee.sql"
     ```
 
+=== "Pandas"
+
+    ```python
+    --8<-- "sql/0584_find_customer_referee.py"
+    ```
+
 ### 595. Big Countries
 
 -   Return the country name, population, and area for countries with an area larger than 3 million or a population more than 25 million.
@@ -111,6 +129,12 @@ comments: true
     --8<-- "sql/0595_big_countries.sql"
     ```
 
+=== "Pandas"
+
+    ```python
+    --8<-- "sql/0595_big_countries.py"
+    ```
+
 ### 1148. Article Views I
 
 -   Return the article_id and author_id of the article with the maximum number of views.
@@ -119,6 +143,12 @@ comments: true
 
     ```mysql
     --8<-- "sql/1148_article_views_i.sql"
+    ```
+
+=== "Pandas"
+
+    ```python
+    --8<-- "sql/1148_article_views_i.py"
     ```
 
 ### 1683. Invalid Tweets
@@ -163,7 +193,7 @@ comments: true
 === "Pandas"
 
     ```python
-        --8<-- "sql/1581_customer_who_visited_but_did_not_make_any_transactions.py"
+    --8<-- "sql/1581_customer_who_visited_but_did_not_make_any_transactions.py"
     ```
 
 ### 197. Rising Temperature
@@ -263,6 +293,10 @@ comments: true
     ```
 
 ### 1193. Monthly Transactions I
+
+```plaintext
+--8<-- "sql/1193_monthly_transactions_i.txt"
+```
 
 === "MySQL"
 

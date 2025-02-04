@@ -13,13 +13,19 @@ def sync_sql_files(directory):
         for f in os.listdir(directory)
         if f.endswith(".py")
     }
+    txt_files = {
+        os.path.splitext(f)[0]
+        for f in os.listdir(directory)
+        if f.endswith(".txt")
+    }
 
-    all_files = sql_files.union(py_files)
+    all_files = sql_files.union(py_files).union(txt_files)
 
     i = 0
     for file in all_files:
         sql_path = os.path.join(directory, file + ".sql")
         py_path = os.path.join(directory, file + ".py")
+        txt_path = os.path.join(directory, file + ".txt")
 
         if not os.path.exists(sql_path):
             open(sql_path, "w").close()
@@ -27,6 +33,10 @@ def sync_sql_files(directory):
 
         if not os.path.exists(py_path):
             open(py_path, "w").close()
+            i += 1
+
+        if not os.path.exists(txt_path):
+            open(txt_path, "w").close()
             i += 1
 
     print(f"Created {i} files")

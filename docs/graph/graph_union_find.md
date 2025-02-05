@@ -34,9 +34,17 @@ comments: true
 
 -   Return the number of provinces.
 
-```python
---8<-- "0547_number_of_provinces.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0547_number_of_provinces.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0547_number_of_provinces.cc"
+    ```
 
 ## 684. Redundant Connection
 

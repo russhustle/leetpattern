@@ -5,3 +5,4 @@ output/
 # .vscode/
 .DS_Store
 *.ipynb
+*.drawio

@@ -17,3 +17,6 @@ push:
 
 sync:
 	poetry run python utils/sync.py
+
+pre-commit:
+	poetry run pre-commit run --all-files

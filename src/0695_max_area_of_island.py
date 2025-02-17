@@ -8,28 +8,21 @@ def maxAreaOfIslandDFS(grid: List[List[int]]) -> int:
         return 0
 
     m, n = len(grid), len(grid[0])
-    visited = set()
-    area = 0
 
     def dfs(r, c):
-        if (
-            r < 0
-            or r >= m
-            or c < 0
-            or c >= n
-            or grid[r][c] == 0
-            or (r, c) in visited
-        ):
+        if r < 0 or r >= m or c < 0 or c >= n or grid[r][c] != 1:
             return 0
 
-        visited.add((r, c))
+        grid[r][c] = 2
+
         return (
-            1 + dfs(r - 1, c) + dfs(r + 1, c) + dfs(r, c - 1) + dfs(r, c + 1)
+            1 + dfs(r - 1, c) + dfs(r + 1, c) + dfs(r, c + 1) + dfs(r, c - 1)
         )
 
+    area = 0
     for r in range(m):
         for c in range(n):
-            if grid[r][c] == 1 and (r, c) not in visited:
+            if grid[r][c] == 1:
                 area = max(area, dfs(r, c))
 
     return area

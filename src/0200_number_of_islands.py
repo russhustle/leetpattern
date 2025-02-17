@@ -12,10 +12,10 @@ def numIslandsDFS(grid: List[List[str]]) -> int:
     res = 0
 
     def dfs(r, c):
-        if r < 0 or r >= m or c < 0 or c >= n or grid[r][c] == "0":
-            return None
+        if r < 0 or r >= m or c < 0 or c >= n or grid[r][c] != "1":
+            return
 
-        grid[r][c] = "0"
+        grid[r][c] = "2"
 
         dfs(r + 1, c)
         dfs(r - 1, c)
@@ -94,16 +94,16 @@ def numIslandsBFS2(grid: List[List[str]]) -> int:
                     or nr >= m
                     or nc < 0
                     or nc >= n
-                    or grid[nr][nc] == "0"
+                    or grid[nr][nc] != "1"
                 ):
                     continue
                 q.append((nr, nc))
-                grid[nr][nc] = "0"
+                grid[nr][nc] = "2"
 
     for r in range(m):
         for c in range(n):
             if grid[r][c] == "1":
-                grid[r][c] = "0"
+                grid[r][c] = "2"
                 bfs(r, c)
                 res += 1
 

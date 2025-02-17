@@ -5,8 +5,9 @@ def longestPalindromeDP(s: str) -> str:
         return s
 
     start, maxLen = 0, 1
-    dp = [[0] * n for _ in range(n)]
 
+    # Init
+    dp = [[0] * n for _ in range(n)]
     for i in range(n):
         dp[i][i] = 1
 
@@ -21,7 +22,7 @@ def longestPalindromeDP(s: str) -> str:
                 if dp[i][j] and j - i + 1 > maxLen:
                     maxLen = j - i + 1
                     start = i
-    print(dp)
+
     return s[start : start + maxLen]
 
 

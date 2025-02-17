@@ -209,6 +209,11 @@ markdown_extensions:
           anchor_linenums: true
           line_spans: __span
           pygments_lang_class: true
+    - pymdownx.critic # CriticMarkup support
+    - pymdownx.caret # Caret Markup support
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
     - pymdownx.inlinehilite
     - pymdownx.superfences:
           custom_fences:
@@ -265,3 +270,4 @@ extra_javascript:
 extra_css:
     - utils/unordered-list-symbols.css
     - utils/ordered-list-symbols.css
+    - utils/table.css

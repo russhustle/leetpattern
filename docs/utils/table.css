@@ -1,0 +1,36 @@
+/* Make table headers not bold (override Material styles) */
+.md-typeset table thead th {
+    font-weight: 400 !important;
+}
+
+.md-typeset__table {
+    max-width: 100%;
+}
+
+.md-typeset__table table:not([class]) {
+    display: table;
+}
+
+.md-typeset td:not([class]):not(:last-child) {
+    border: 0.05rem solid var(--md-typeset-table-color);
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+    padding: 4px 10px;
+}
+
+/* Add vertical borders to table headers */
+.md-typeset table:not([class]) th:not(:last-child),
+.md-typeset table:not([class]) td:not(:last-child) {
+    border-right: 0.05rem solid var(--md-typeset-table-color);
+}
+
+/* Add borders to the entire table */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+    border: 0.05rem solid var(--md-typeset-table-color);
+    padding: 4px 10px;
+    font-weight: 400;
+    font-family: inherit;
+}

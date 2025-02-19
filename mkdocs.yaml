@@ -129,7 +129,9 @@ nav:
           - Top Interview 150:
                 - Top Interview 150: top150/index.md
                 - Array & Strings: top150/top150_array_string.md
-
+    - Company:
+          - Home: company/index.md
+          - Amazon: company/amazon.md
     - About: about.md
 
 ##############################################

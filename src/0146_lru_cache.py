@@ -82,6 +82,8 @@ class LRUCacheOrderedDict:
 # |   LRU       |      O(1)       |    O(n)      |
 # |-------------|-----------------|--------------|
 
+# https://leetcode.cn/problems/lru-cache/
+
 
 cache = LRUCache(2)
 cache.put(1, 1)

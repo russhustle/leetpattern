@@ -5,25 +5,21 @@ from typing import List
 def trapDP(height: List[int]) -> int:
     if not height:
         return 0
-    n = len(height)
 
-    max_left = [0 for _ in range(n)]
-    max_right = [0 for _ in range(n)]
+    n = len(height)
+    maxLeft, maxRight = [0 for _ in range(n)], [0 for _ in range(n)]
 
     for i in range(1, n):
-        max_left[i] = max(max_left[i - 1], height[i - 1])
+        maxLeft[i] = max(maxLeft[i - 1], height[i - 1])
 
     for i in range(n - 2, -1, -1):
-        max_right[i] = max(max_right[i + 1], height[i + 1])
+        maxRight[i] = max(maxRight[i + 1], height[i + 1])
 
-    total = 0
-
+    res = 0
     for i in range(n):
-        min_height = min(max_left[i], max_right[i])
-        if min_height > height[i]:
-            total += min_height - height[i]
+        res += max(0, min(maxLeft[i], maxRight[i]) - height[i])
 
-    return total
+    return res
 
 
 # Left Right Pointers
@@ -33,19 +29,19 @@ def trapLR(height: List[int]) -> int:
 
     left, right = 0, len(height) - 1
     maxL, maxR = height[left], height[right]
-    total = 0
+    res = 0
 
     while left < right:
         if maxL < maxR:
             left += 1
             maxL = max(maxL, height[left])
-            total += maxL - height[left]
+            res += maxL - height[left]
         else:
             right -= 1
             maxR = max(maxR, height[right])
-            total += maxR - height[right]
+            res += maxR - height[right]
 
-    return total
+    return res
 
 
 # Monotonic Stack

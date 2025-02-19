@@ -1,3 +1,7 @@
+from collections import OrderedDict
+
+
+# Doubly Linked List
 class ListNode:
     def __init__(self, key=0, val=0):
         self.key = key
@@ -52,6 +56,26 @@ class LRUCache:
         self.add_node_to_last(node)
 
 
+# OrderedDict
+class LRUCacheOrderedDict:
+    def __init__(self, capacity: int):
+        self.cache = OrderedDict()
+        self.capacity = capacity
+
+    def get(self, key: int):
+        if key not in self.cache:
+            return -1
+        self.cache.move_to_end(key, last=True)
+        return self.cache[key]
+
+    def put(self, key: int, value: int):
+        if key in self.cache:
+            self.cache.move_to_end(key, last=True)
+        elif len(self.cache) >= self.capacity:
+            self.cache.popitem(last=False)
+        self.cache[key] = value
+
+
 # |-------------|-----------------|--------------|
 # |  Approach   |      Time       |    Space     |
 # |-------------|-----------------|--------------|
@@ -70,4 +94,17 @@ assert cache.get(1) == -1
 assert cache.get(3) == 3
 assert cache.get(4) == 4
 
+
+cache = LRUCacheOrderedDict(2)
+cache.put(1, 1)
+cache.put(2, 2)
+assert cache.get(1) == 1
+cache.put(3, 3)
+assert cache.get(2) == -1
+cache.put(4, 4)
+assert cache.get(1) == -1
+assert cache.get(3) == 3
+assert cache.get(4) == 4
+
 print("LRU Cache passed")
+print("LRU Cache Ordered Dict passed")

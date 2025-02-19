@@ -47,7 +47,7 @@ def sync_files(directory):
     cpp_folder = os.path.join(directory, "cpp")
     cpp_default_file_path = os.path.join("utils", "default.cc")
     ts_folder = os.path.join(directory, "ts")
-
+    md_folder = os.path.abspath(os.path.join(directory, "..", "docs", "md"))
     pattern = re.compile(r"^\d{4}_")
 
     py_files = {
@@ -66,13 +66,20 @@ def sync_files(directory):
         if f.endswith(".ts") and pattern.match(f)
     }
 
-    all_files = py_files.union(cpp_files).union(ts_files)
+    md_files = {
+        os.path.splitext(f)[0]
+        for f in os.listdir(md_folder)
+        if f.endswith(".md") and pattern.match(f)
+    }
+
+    all_files = py_files.union(cpp_files).union(ts_files).union(md_files)
 
     i = 0
     for file in all_files:
         py_path = os.path.join(py_folder, file + ".py")
         cpp_path = os.path.join(cpp_folder, file + ".cc")
         ts_path = os.path.join(ts_folder, file + ".ts")
+        md_path = os.path.join(md_folder, file + ".md")
 
         if not os.path.exists(py_path):
             open(py_path, "w").close()
@@ -86,6 +93,11 @@ def sync_files(directory):
 
         if not os.path.exists(ts_path):
             open(ts_path, "w").close()
+            i += 1
+
+        if not os.path.exists(md_path):
+            # write default content
+            open(md_path, "w").close()
             i += 1
 
     print(f"Created {i} files")

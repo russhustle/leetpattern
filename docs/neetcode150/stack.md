@@ -1,57 +1,145 @@
 ---
-comments: true
+comments: True
 ---
 
 # Stack
 
-## LeetCode Problems
-
-1. 0020 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy)
-2. 0155 - [Min Stack](https://leetcode.com/problems/min-stack/) (Easy)
-3. 0150 - [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) (Medium)
-4. 0022 - [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) (Medium)
-5. 0739 - [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) (Medium)
-6. 0853 - [Car Fleet](https://leetcode.com/problems/car-fleet/) (Medium)
-7. 0084 - [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) (Hard)
-
 ## 20. Valid Parentheses
 
-```python
---8<-- "0020_valid_parentheses.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0020_valid_parentheses.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0020_valid_parentheses.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0020_valid_parentheses.ts"
+    ```
 
 ## 155. Min Stack
 
-```python
---8<-- "0155_min_stack.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0155_min_stack.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0155_min_stack.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0155_min_stack.ts"
+    ```
 
 ## 150. Evaluate Reverse Polish Notation
 
-```python
---8<-- "0150_evaluate_reverse_polish_notation.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0150_evaluate_reverse_polish_notation.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0150_evaluate_reverse_polish_notation.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0150_evaluate_reverse_polish_notation.ts"
+    ```
 
 ## 22. Generate Parentheses
 
-```python
---8<-- "0022_generate_parentheses.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0022_generate_parentheses.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0022_generate_parentheses.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0022_generate_parentheses.ts"
+    ```
 
 ## 739. Daily Temperatures
 
-```python
---8<-- "0739_daily_temperatures.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0739_daily_temperatures.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0739_daily_temperatures.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0739_daily_temperatures.ts"
+    ```
 
 ## 853. Car Fleet
 
-```python
---8<-- "0853_car_fleet.py"
-```
+=== "Python"
 
-## 84. Largest Rectangle in Histogram
+    ```python
+    --8<-- "0853_car_fleet.py"
+    ```
 
-```python
---8<-- "0084_largest_rectangle_in_histogram.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0853_car_fleet.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0853_car_fleet.ts"
+    ```
+
+## 84. Largest Rectangle In Histogram
+
+=== "Python"
+
+    ```python
+    --8<-- "0084_largest_rectangle_in_histogram.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0084_largest_rectangle_in_histogram.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0084_largest_rectangle_in_histogram.ts"
+    ```

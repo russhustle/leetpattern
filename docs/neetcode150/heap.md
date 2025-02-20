@@ -1,50 +1,145 @@
 ---
-comments: true
+comments: True
 ---
 
-# Heap (Priority Queue)
+# Heap
 
-## LeetCode Problems
+## 703. Kth Largest Element In A Stream
 
-1. 0703 - [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) (Easy)
-2. 1046 - [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) (Easy)
-3. 0973 - [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) (Medium)
-4. 0621 - [Task Scheduler](https://leetcode.com/problems/task-scheduler/) (Medium)
-5. 0355 - [Design Twitter](https://leetcode.com/problems/design-twitter/) (Medium)
-6. 0295 - [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) (Hard)
+=== "Python"
 
-## 703. Kth Largest Element in a Stream
+    ```python
+    --8<-- "0703_kth_largest_element_in_a_stream.py"
+    ```
 
-```python
---8<-- "0703_kth_largest_element_in_a_stream.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0703_kth_largest_element_in_a_stream.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0703_kth_largest_element_in_a_stream.ts"
+    ```
 
 ## 1046. Last Stone Weight
 
-```python
---8<-- "1046_last_stone_weight.py"
-```
+=== "Python"
 
-## 973. K Closest Points to Origin
+    ```python
+    --8<-- "1046_last_stone_weight.py"
+    ```
 
-```python
---8<-- "0973_k_closest_points_to_origin.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/1046_last_stone_weight.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/1046_last_stone_weight.ts"
+    ```
+
+## 973. K Closest Points To Origin
+
+=== "Python"
+
+    ```python
+    --8<-- "0973_k_closest_points_to_origin.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0973_k_closest_points_to_origin.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0973_k_closest_points_to_origin.ts"
+    ```
+
+## 215. Kth Largest Element In An Array
+
+=== "Python"
+
+    ```python
+    --8<-- "0215_kth_largest_element_in_an_array.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0215_kth_largest_element_in_an_array.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0215_kth_largest_element_in_an_array.ts"
+    ```
 
 ## 621. Task Scheduler
 
-```python
---8<-- "0621_task_scheduler.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0621_task_scheduler.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0621_task_scheduler.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0621_task_scheduler.ts"
+    ```
 
 ## 355. Design Twitter
 
-```python
---8<-- "0355_design_twitter.py"
-```
+=== "Python"
 
-## 295. Find Median from Data Stream
+    ```python
+    --8<-- "0355_design_twitter.py"
+    ```
 
-```python
---8<-- "0295_find_median_from_data_stream.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0355_design_twitter.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0355_design_twitter.ts"
+    ```
+
+## 295. Find Median From Data Stream
+
+=== "Python"
+
+    ```python
+    --8<-- "0295_find_median_from_data_stream.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0295_find_median_from_data_stream.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0295_find_median_from_data_stream.ts"
+    ```

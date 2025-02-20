@@ -1,0 +1,21 @@
+dir: blind75
+name: Blind 75
+topics:
+    Arrays Hashing: [217, 242, 1, 49, 347, 271, 238, 128]
+    Two Pointers: [125, 15, 11]
+    Sliding Window: [121, 3, 424, 76]
+    Stack: [20]
+    Binary Search: [153, 33]
+    Linked List: [206, 21, 143, 19, 141, 23]
+    Trees: [226, 104, 100, 572, 235, 102, 98, 230, 105, 124, 298]
+    Heap: [295]
+    Backtracking: [39, 79]
+    Tries: [208, 212, 211]
+    Graphs: [200, 133, 417, 207, 261, 323]
+    Advanced Graphs: [269]
+    1D Dynamic Programming: [70, 198, 213, 5, 647, 91, 322, 152, 139, 300]
+    2D Dynamic Programming: [62, 1143]
+    Greedy: [53, 55]
+    Intervals: [57, 56, 252, 253, 254]
+    Math Geometry: [48, 54, 73]
+    Bit Manipulation: [191, 338, 190, 268, 371]

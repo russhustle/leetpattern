@@ -1,1 +1,3 @@
-## 350. Intersection Of Two Arrays Ii
+## 350. Intersection of Two Arrays II
+
+-   Return the intersection of two arrays.

@@ -1,1 +1,1 @@
-## 17. Letter Combinations Of A Phone Number
+## 17. Letter Combinations of a Phone Number

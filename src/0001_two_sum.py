@@ -11,13 +11,6 @@ def twoSum(nums: List[int], target: int) -> List[int]:
         hashmap[val] = idx
 
 
-# |-------------|-----------------|--------------|
-# |  Approach   |      Time       |    Space     |
-# |-------------|-----------------|--------------|
-# |  Hashmap    |      O(n)       |    O(n)      |
-# |-------------|-----------------|--------------|
-
-
 nums = [2, 7, 11, 15]
 target = 18
-print(twoSum(nums, target))  # [1, 2]
+assert twoSum(nums, target) == [1, 2]

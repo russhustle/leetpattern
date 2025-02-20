@@ -17,6 +17,6 @@ def findJudge(n: int, trust: List[List[int]]) -> int:
     return -1
 
 
-n = 3
-trust = [[1, 3], [2, 3]]
-print(findJudge(n, trust))  # 3
+n = 4
+trust = [[1, 3], [2, 3], [1, 2], [4, 3]]
+print(findJudge(n, trust))  # 4

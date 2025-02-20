@@ -1,93 +1,197 @@
 ---
-comments: true
+comments: True
 ---
 
-# Arrays & Hashing
-
-1. 0217 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (Easy)
-2. 0242 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/) (Easy)
-3. 0001 - [Two Sum](https://leetcode.com/problems/two-sum/) (Easy)
-4. 0049 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/) (Medium)
-5. 0347 - [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) (Medium)
-6. 0271 - [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) (Medium)
-7. 0238 - [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) (Medium)
-8. 0036 - [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) (Medium)
-9. 0128 - [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) (Medium)
+# Arrays Hashing
 
 ## 217. Contains Duplicate
 
-- Return `True` if the array contains any duplicates, otherwise return `False`.
+-   Return True if the array contains any duplicates, otherwise return False.
 
-```python
---8<-- "0217_contains_duplicate.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0217_contains_duplicate.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0217_contains_duplicate.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0217_contains_duplicate.ts"
+    ```
 
 ## 242. Valid Anagram
+-   Return true if an input string is an anagram of another string.
+-   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
 
-- Return `True` if `t` is an anagram of `s`, otherwise return `False`.
+=== "Python"
 
-```python
---8<-- "0242_valid_anagram.py"
-```
+    ```python
+    --8<-- "0242_valid_anagram.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0242_valid_anagram.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0242_valid_anagram.ts"
+    ```
 
 ## 1. Two Sum
 
-- Return the indices of the two numbers such that they add up to a specific target.
+-   Return the indices of the two numbers such that they add up to a specific target.
 
-```python
---8<-- "0001_two_sum.py"
-```
+| Approach | Time Complexity | Space Complexity |
+| -------- | --------------- | ---------------- |
+| Hashmap  | O(n)            | O(n)             |
+
+=== "Python"
+
+    ```python
+    --8<-- "0001_two_sum.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0001_two_sum.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0001_two_sum.ts"
+    ```
 
 ## 49. Group Anagrams
 
-- Given an array of strings `strs`, group the anagrams together.
+=== "Python"
 
-```python
---8<-- "0049_group_anagrams.py"
-```
+    ```python
+    --8<-- "0049_group_anagrams.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0049_group_anagrams.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0049_group_anagrams.ts"
+    ```
 
 ## 347. Top K Frequent Elements
 
-- Return the `k` most frequent elements in the array.
+=== "Python"
 
-```python
---8<-- "0347_top_k_frequent_elements.py"
-```
+    ```python
+    --8<-- "0347_top_k_frequent_elements.py"
+    ```
 
-## 271. Encode and Decode Strings
+=== "C++"
 
-- Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
+    ```cpp
+    --8<-- "cpp/0347_top_k_frequent_elements.cc"
+    ```
 
-```python
---8<-- "0271_encode_and_decode_strings.py"
-```
+=== "TypeScript"
 
-## 238. Product of Array Except Self
+    ```typescript
+    --8<-- "ts/0347_top_k_frequent_elements.ts"
+    ```
 
-- Return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
+## 271. Encode And Decode Strings
 
-```python
---8<-- "0238_product_of_array_except_self.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0271_encode_and_decode_strings.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0271_encode_and_decode_strings.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0271_encode_and_decode_strings.ts"
+    ```
+
+## 238. Product Of Array Except Self
+
+=== "Python"
+
+    ```python
+    --8<-- "0238_product_of_array_except_self.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0238_product_of_array_except_self.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0238_product_of_array_except_self.ts"
+    ```
 
 ## 36. Valid Sudoku
 
-- Determine if a `9x9` Sudoku board is valid.
-- Only the filled cells need to be validated according to the following rules:
-    - Each row must contain the digits `1-9` without repetition.
-    - Each column must contain the digits `1-9` without repetition.
-    - Each of the 9 `3x3` sub-boxes of the grid must contain the digits `1-9` without repetition.
+![alt text](../assets/image.png)
 
-![36](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+=== "Python"
 
-```python
---8<-- "0036_valid_sudoku.py"
-```
+    ```python
+    --8<-- "0036_valid_sudoku.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0036_valid_sudoku.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0036_valid_sudoku.ts"
+    ```
 
 ## 128. Longest Consecutive Sequence
 
-- Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.
+=== "Python"
 
-```python
---8<-- "0128_longest_consecutive_sequence.py"
-```
+    ```python
+    --8<-- "0128_longest_consecutive_sequence.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0128_longest_consecutive_sequence.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0128_longest_consecutive_sequence.ts"
+    ```

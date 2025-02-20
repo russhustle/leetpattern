@@ -1,64 +1,165 @@
 ---
-comments: true
+comments: True
 ---
 
 # Greedy
 
-## LeetCode Problems
-
-1. 0053 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) (Easy)
-2. 0055 - [Jump Game](https://leetcode.com/problems/jump-game/) (Medium)
-3. 0045 - [Jump Game II](https://leetcode.com/problems/jump-game-ii/) (Medium)
-4. 0134 - [Gas Station](https://leetcode.com/problems/gas-station/) (Medium)
-5. 0846 - [Hand of Straights](https://leetcode.com/problems/hand-of-straights/) (Medium)
-6. 1899 - [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) (Medium)
-7. 0763 - [Partition Labels](https://leetcode.com/problems/partition-labels/) (Medium)
-8. 0678 - [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) (Medium)
-
 ## 53. Maximum Subarray
 
-```python
---8<-- "0053_maximum_subarray.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0053_maximum_subarray.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0053_maximum_subarray.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0053_maximum_subarray.ts"
+    ```
 
 ## 55. Jump Game
 
-```python
---8<-- "0055_jump_game.py"
-```
+=== "Python"
 
-## 45. Jump Game II
+    ```python
+    --8<-- "0055_jump_game.py"
+    ```
 
-```python
---8<-- "0045_jump_game_ii.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0055_jump_game.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0055_jump_game.ts"
+    ```
+
+## 45. Jump Game Ii
+
+=== "Python"
+
+    ```python
+    --8<-- "0045_jump_game_ii.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0045_jump_game_ii.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0045_jump_game_ii.ts"
+    ```
 
 ## 134. Gas Station
 
-```python
---8<-- "0134_gas_station.py"
-```
+=== "Python"
 
-## 846. Hand of Straights
+    ```python
+    --8<-- "0134_gas_station.py"
+    ```
 
-```python
---8<-- "0846_hand_of_straights.py"
-```
+=== "C++"
 
-## 1899. Merge Triplets to Form Target Triplet
+    ```cpp
+    --8<-- "cpp/0134_gas_station.cc"
+    ```
 
-```python
---8<-- "1899_merge_triplets_to_form_target_triplet.py"
-```
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0134_gas_station.ts"
+    ```
+
+## 846. Hand Of Straights
+
+=== "Python"
+
+    ```python
+    --8<-- "0846_hand_of_straights.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0846_hand_of_straights.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0846_hand_of_straights.ts"
+    ```
+
+## 1899. Merge Triplets To Form Target Triplet
+
+=== "Python"
+
+    ```python
+    --8<-- "1899_merge_triplets_to_form_target_triplet.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/1899_merge_triplets_to_form_target_triplet.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/1899_merge_triplets_to_form_target_triplet.ts"
+    ```
 
 ## 763. Partition Labels
 
-```python
---8<-- "0763_partition_labels.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0763_partition_labels.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0763_partition_labels.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0763_partition_labels.ts"
+    ```
 
 ## 678. Valid Parenthesis String
 
-```python
---8<-- "0678_valid_parenthesis_string.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0678_valid_parenthesis_string.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0678_valid_parenthesis_string.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0678_valid_parenthesis_string.ts"
+    ```

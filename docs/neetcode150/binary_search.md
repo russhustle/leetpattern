@@ -1,36 +1,89 @@
 ---
-comments: true
+comments: True
 ---
 
 # Binary Search
 
-## LeetCode Problems
-
-1. 0704 - [Binary Search](https://leetcode.com/problems/binary-search/) (Easy)
-2. 0074 - [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) (Medium)
-3. 0875 - [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) (Medium)
-4. 0004 - [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) (Hard)
-
 ## 704. Binary Search
 
-```python
---8<-- "0704_binary_search.py"
-```
+-   Implement binary search algorithm.
 
-## 74. Search a 2D Matrix
+=== "Python"
 
-```python
---8<-- "0074_search_a_2d_matrix.py"
-```
+    ```python
+    --8<-- "0704_binary_search.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0704_binary_search.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0704_binary_search.ts"
+    ```
+
+## 74. Search A 2D Matrix
+
+=== "Python"
+
+    ```python
+    --8<-- "0074_search_a_2d_matrix.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0074_search_a_2d_matrix.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0074_search_a_2d_matrix.ts"
+    ```
 
 ## 875. Koko Eating Bananas
 
-```python
---8<-- "0875_koko_eating_bananas.py"
-```
+-   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
 
-## 4. Median of Two Sorted Arrays
+=== "Python"
 
-```python
---8<-- "0004_median_of_two_sorted_arrays.py"
-```
+    ```python
+    --8<-- "0875_koko_eating_bananas.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0875_koko_eating_bananas.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0875_koko_eating_bananas.ts"
+    ```
+
+## 4. Median Of Two Sorted Arrays
+
+=== "Python"
+
+    ```python
+    --8<-- "0004_median_of_two_sorted_arrays.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0004_median_of_two_sorted_arrays.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0004_median_of_two_sorted_arrays.ts"
+    ```

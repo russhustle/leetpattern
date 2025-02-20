@@ -1,54 +1,127 @@
 ---
-comments: true
+comments: True
 ---
 
 # Sliding Window
 
-## LeetCode Problems
+## 121. Best Time To Buy And Sell Stock
 
-1. 0121 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (Easy)
-2. 0003 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) (Medium)
-3. 0424 - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) (Medium)
-4. 0076 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) (Hard)
-5. 0567 - [Permutation in String](https://leetcode.com/problems/permutation-in-string/) (Medium)
-6. 0239 - [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) (Hard)
+-   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
-## 121. Best Time to Buy and Sell Stock
+=== "Python"
 
-- Return the maximum profit you can achieve from buying on one day and selling on another day.
+    ```python
+    --8<-- "0121_best_time_to_buy_and_sell_stock.py"
+    ```
 
-```python
---8<-- "0121_best_time_to_buy_and_sell_stock.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0121_best_time_to_buy_and_sell_stock.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0121_best_time_to_buy_and_sell_stock.ts"
+    ```
 
 ## 3. Longest Substring Without Repeating Characters
 
-- Return the length of the longest substring without repeating characters.
+=== "Python"
 
-```python
---8<-- "0003_longest_substring_without_repeating_characters.py"
-```
+    ```python
+    --8<-- "0003_longest_substring_without_repeating_characters.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0003_longest_substring_without_repeating_characters.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0003_longest_substring_without_repeating_characters.ts"
+    ```
 
 ## 424. Longest Repeating Character Replacement
 
-- Return the length of the longest substring that contains at most `k` distinct characters.
+=== "Python"
 
-```python
---8<-- "0424_longest_repeating_character_replacement.py"
-```
+    ```python
+    --8<-- "0424_longest_repeating_character_replacement.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0424_longest_repeating_character_replacement.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0424_longest_repeating_character_replacement.ts"
+    ```
 
 ## 76. Minimum Window Substring
 
-- Return the minimum window in `s` that contains all the characters in `t`.
+=== "Python"
 
-```python
---8<-- "0076_minimum_window_substring.py"
-```
+    ```python
+    --8<-- "0076_minimum_window_substring.py"
+    ```
 
-## 567. Permutation in String
+=== "C++"
 
-- Return `True` if `s2` contains the permutation of `s1`, otherwise return `False`.
+    ```cpp
+    --8<-- "cpp/0076_minimum_window_substring.cc"
+    ```
 
-```python
---8<-- "0567_permutation_in_string.py"
-```
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0076_minimum_window_substring.ts"
+    ```
+
+## 567. Permutation In String
+
+=== "Python"
+
+    ```python
+    --8<-- "0567_permutation_in_string.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0567_permutation_in_string.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0567_permutation_in_string.ts"
+    ```
+
+## 239. Sliding Window Maximum
+
+=== "Python"
+
+    ```python
+    --8<-- "0239_sliding_window_maximum.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0239_sliding_window_maximum.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0239_sliding_window_maximum.ts"
+    ```

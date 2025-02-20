@@ -19,8 +19,6 @@ class ProblemList:
             self.generate_topic_markdown(topic, problems)
 
     def generate_topic_markdown(self, topic, problems, comments=True):
-
-        # get problems files list
         if problems:
             files = [
                 file
@@ -60,3 +58,5 @@ class ProblemList:
 if __name__ == "__main__":
     ProblemList("src/config/leetpattern.yaml")
     ProblemList("src/config/graph_theory.yaml")
+    ProblemList("src/config/neetcode150.yaml")
+    ProblemList("src/config/company.yaml")

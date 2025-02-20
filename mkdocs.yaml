@@ -2,83 +2,77 @@ nav:
     - LeetPattern:
           - Home: README.md
           - Binary Search: leetpattern/binary_search.md
-          - Arrays: arrays/arrays.md
-          - Fast Slow Pointers: arrays/fast_slow_pointers.md
+          - Array: leetpattern/array.md
+          - Fast Slow Pointers: leetpattern/fast_slow_pointers.md
           - Left Right Pointers: leetpattern/left_right_pointers.md
-          - Sliding Window Fixed: arrays/sliding_window_fixed.md
-          - Sliding Window Variable: arrays/sliding_window_variable.md
-          - Prefix Sum: arrays/prefix_sum.md
-          - Difference Array: arrays/difference_array.md
-          - Boyer Moore: arrays/boyer_moore.md
-          - Hash Map: hash/hash_map.md
-          - Hash Set: hash/hash_set.md
-          - Hash Counting: hash/hash_counting.md
-          - String: string/string.md
-          - KMP: string/string_kmp.md
-          - Linked List: other/linked_list.md
-          - Tree Traversal: tree/tree_traversal.md
-          - Tree Feature: tree/tree_feature.md
-          - Tree BFS: tree/tree_bfs.md
-          - Tree Modification: tree/tree_modification.md
-          - BST: tree/tree_bst.md
-          - Tree Common Ancestors: tree/tree_common_ancestor.md
-          - Trie: tree/tree_trie.md
-          - Stack: stack_queue/stack.md
-          - Monotonic Stack: stack_queue/stack_monotonic.md
-          - Queue: stack_queue/queue.md
-          - Monotonic Queue: stack_queue/queue_monotonic.md
-          - Greedy: greedy/greedy.md
-          - Greedy - Interval: greedy/greedy_interval.md
-          - Dynamic Programming: dp/index.md
-          - DP Basic: dp/dp_basic.md
-          - DP 2D: dp/dp_2d.md
-          - DP Interval: dp/dp_interval.md
-          - DP Knapsack 0/1: dp/dp_knapsack_01.md
-          - DP Knapsack Unbounded: dp/dp_knapsack_unbounded.md
-          - DP Kadane: dp/dp_kadane.md
-          - DP Stock: dp/dp_stock.md
-          - DP LCS: dp/dp_lcs.md
-          - DP LIS: dp/dp_lis.md
-          - BT Combinations: backtracking/backtracking_combinations.md
-          - BT Partitions: backtracking/backtracking_partitions.md
-          - BT Subsets: backtracking/backtracking_subsets.md
-          - BT Permutations: backtracking/backtracking_permutations.md
-          - BT Board: backtracking/backtracking_board.md
-          - Graph: graph/index.md
-          - Flood Fill: graph/graph_flood_fill.md
-          - BFS: graph/graph_bfs.md
-          - Topological Sort: graph/graph_topological_sort.md
-          - Union Find: graph/graph_union_find.md
-          - Shortest Path: graph/graph_shortest_path.md
-          - Bellman Ford: graph/graph_bellman_ford.md
-          - MST: graph/graph_mst.md
-          - Coloring: graph/graph_coloring.md
-          - Tarjan: graph/graph_tarjan.md
-          - Heap Introduction: heap/index.md
-          - Heap: heap/heap_heap.md
-          - Top K: heap/heap_top_k.md
-          - Two Heaps: heap/heap_two_heaps.md
-          - Merge K Sorted: heap/heap_merge_k_sorted.md
-          - Bit: other/bit.md
-          - Math: other/math.md
-          - Simulation: other/simulation.md
-          - Design Patterns: design/design_patterns.md
-          - Design: design/design.md
+          - Sliding Window Fixed: leetpattern/sliding_window_fixed.md
+          - Sliding Window Variable: leetpattern/sliding_window_variable.md
+          - Prefix Sum: leetpattern/prefix_sum.md
+          - Difference Array: leetpattern/difference_array.md
+          - Boyer Moore: leetpattern/boyer_moore.md
+          - Hash Map: leetpattern/hash_map.md
+          - Hash Set: leetpattern/hash_set.md
+          - Hash Counting: leetpattern/hash_counting.md
+      #     - String: string/string.md
+      #     - KMP: string/string_kmp.md
+      #     - Linked List: other/linked_list.md
+      #     - Tree Traversal: tree/tree_traversal.md
+      #     - Tree Feature: tree/tree_feature.md
+      #     - Tree BFS: tree/tree_bfs.md
+      #     - Tree Modification: tree/tree_modification.md
+      #     - BST: tree/tree_bst.md
+      #     - Tree Common Ancestors: tree/tree_common_ancestor.md
+      #     - Trie: tree/tree_trie.md
+      #     - Stack: stack_queue/stack.md
+      #     - Monotonic Stack: stack_queue/stack_monotonic.md
+      #     - Queue: stack_queue/queue.md
+      #     - Monotonic Queue: stack_queue/queue_monotonic.md
+      #     - Greedy: greedy/greedy.md
+      #     - Greedy - Interval: greedy/greedy_interval.md
+      #     - Dynamic Programming: dp/index.md
+      #     - DP Basic: dp/dp_basic.md
+      #     - DP 2D: dp/dp_2d.md
+      #     - DP Interval: dp/dp_interval.md
+      #     - DP Knapsack 0/1: dp/dp_knapsack_01.md
+      #     - DP Knapsack Unbounded: dp/dp_knapsack_unbounded.md
+      #     - DP Kadane: dp/dp_kadane.md
+      #     - DP Stock: dp/dp_stock.md
+      #     - DP LCS: dp/dp_lcs.md
+      #     - DP LIS: dp/dp_lis.md
+      #     - Graph: graph/index.md
+      #     - Flood Fill: graph/graph_flood_fill.md
+      #     - BFS: graph/graph_bfs.md
+      #     - Topological Sort: graph/graph_topological_sort.md
+      #     - Union Find: graph/graph_union_find.md
+      #     - Shortest Path: graph/graph_shortest_path.md
+      #     - Bellman Ford: graph/graph_bellman_ford.md
+      #     - MST: graph/graph_mst.md
+      #     - Coloring: graph/graph_coloring.md
+      #     - Tarjan: graph/graph_tarjan.md
+      #     - Heap Introduction: heap/index.md
+      #     - Heap: heap/heap_heap.md
+      #     - Top K: heap/heap_top_k.md
+      #     - Two Heaps: heap/heap_two_heaps.md
+      #     - Merge K Sorted: heap/heap_merge_k_sorted.md
+      #     - Bit: other/bit.md
+      #     - Math: other/math.md
+      #     - Simulation: other/simulation.md
+      #     - Design Patterns: design/design_patterns.md
+      #     - Design: design/design.md
     - SQL:
           - Home: sql/index.md
           - SQL 50: sql/sql50.md
     - Study Plan:
           - Study Plan: plan/index.md
           - Graph Theory:
-                - Graph Theory: plan_graph_study/index.md
-                - Standard Traversal: plan_graph_study/standard_traversal.md
-                - BFS: plan_graph_study/bfs.md
-                - Matrix Graphs: plan_graph_study/matrix_graphs.md
-                - Graph Theory: plan_graph_study/graph_theory.md
-                - Topological Sort: plan_graph_study/topological_sort.md
-                - Union Find: plan_graph_study/union_find_dsu.md
-                - Dijkstra's: plan_graph_study/dijkstra.md
-                - MST: plan_graph_study/mst.md
+                - Standard Traversal: graph_theory/standard_traversal.md
+                - BFS: graph_theory/bfs.md
+                - Matrix Graphs: graph_theory/matrix_graphs.md
+                - Graph Theory: graph_theory/graph_theory.md
+                - Topological Sort: graph_theory/topological_sort.md
+                - Union Find: graph_theory/union_find.md
+                - Dijkstra's: graph_theory/dijkstra.md
+                - MST: graph_theory/mst.md
 
           - Blind 75: plan/blind75.md
           - Grind 75:
@@ -100,7 +94,6 @@ nav:
                 - Matrix: grind75/grind75_matrix.md
 
           - Neetcode 150:
-                - Neetcode 150: neetcode150/index.md
                 - Arrays & Hashing: neetcode150/arrays_hashing.md
                 - Two Pointers: neetcode150/two_pointers.md
                 - Sliding Window: neetcode150/sliding_window.md
@@ -124,7 +117,7 @@ nav:
                 - Array & Strings: top150/top150_array_string.md
     - Company:
           - Home: company/index.md
-          - Amazon: all.md
+          - Amazon: company/amazon.md
     - About: about.md
 
 site_name: 🚀LeetPattern
@@ -160,7 +153,7 @@ theme:
               name: Switch to dark mode
 
     font:
-        text: Roboto
+        text: Work Sans
         code: Roboto Mono
 
     features:

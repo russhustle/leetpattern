@@ -1,1 +1,3 @@
-## 26. Remove Duplicates From Sorted Array
+## 26. Remove Duplicates from Sorted Array
+
+-   Remove duplicates in-place.

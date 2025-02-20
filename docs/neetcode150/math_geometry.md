@@ -1,64 +1,170 @@
 ---
-comments: true
+comments: True
 ---
 
-# Math & Geometry
-
-## LeetCode Problems
-
-1. 0048 - [Rotate Image](https://leetcode.com/problems/rotate-image/) (Medium)
-2. 0054 - [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) (Medium)
-3. 0073 - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) (Medium)
-4. 0202 - [Happy Number](https://leetcode.com/problems/happy-number/) (Easy)
-5. 0066 - [Plus One](https://leetcode.com/problems/plus-one/) (Easy)
-6. 0050 - [Pow(x, n)](https://leetcode.com/problems/powx-n/) (Medium)
-7. 0043 - [Multiply Strings](https://leetcode.com/problems/multiply-strings/) (Medium)
-8. 0166 - [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) (Medium)
+# Math Geometry
 
 ## 48. Rotate Image
 
-```python
---8<-- "0048_rotate_image.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0048_rotate_image.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0048_rotate_image.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0048_rotate_image.ts"
+    ```
 
 ## 54. Spiral Matrix
 
-```python
---8<-- "0054_spiral_matrix.py"
-```
+-   Return all elements of the matrix in spiral order.
+
+=== "Python"
+
+    ```python
+    --8<-- "0054_spiral_matrix.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0054_spiral_matrix.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0054_spiral_matrix.ts"
+    ```
 
 ## 73. Set Matrix Zeroes
 
-```python
---8<-- "0073_set_matrix_zeroes.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0073_set_matrix_zeroes.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0073_set_matrix_zeroes.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0073_set_matrix_zeroes.ts"
+    ```
 
 ## 202. Happy Number
 
-```python
---8<-- "0202_happy_number.py"
-```
+-   Return `True` if the number is a happy number, otherwise, return `False`.
+-   A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
+
+=== "Python"
+
+    ```python
+    --8<-- "0202_happy_number.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0202_happy_number.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0202_happy_number.ts"
+    ```
 
 ## 66. Plus One
 
-```python
---8<-- "0066_plus_one.py"
-```
+=== "Python"
 
-## 50. Pow(x, n)
+    ```python
+    --8<-- "0066_plus_one.py"
+    ```
 
-```python
---8<-- "0050_powx_n.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0066_plus_one.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0066_plus_one.ts"
+    ```
+
+## 50. Powx N
+
+=== "Python"
+
+    ```python
+    --8<-- "0050_powx_n.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0050_powx_n.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0050_powx_n.ts"
+    ```
 
 ## 43. Multiply Strings
 
-```python
---8<-- "0043_multiply_strings.py"
-```
+=== "Python"
 
-## 166. Fraction to Recurring Decimal
+    ```python
+    --8<-- "0043_multiply_strings.py"
+    ```
 
-```python
---8<-- "0166_fraction_to_recurring_decimal.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0043_multiply_strings.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0043_multiply_strings.ts"
+    ```
+
+## 166. Fraction To Recurring Decimal
+
+=== "Python"
+
+    ```python
+    --8<-- "0166_fraction_to_recurring_decimal.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0166_fraction_to_recurring_decimal.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0166_fraction_to_recurring_decimal.ts"
+    ```

@@ -1,1 +1,1 @@
-## 1945. Sum Of Digits Of String After Convert
+## 1945. Sum of Digits of String After Convert

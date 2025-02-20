@@ -2,6 +2,23 @@ dir: leetpattern
 name: LeetPattern
 topics:
     Binary Search: [704, 35, 278, 34, 367, 875, 1011, 378]
-    Left Right Pointers: [9, 15, 18]
+    Array: [414, 169, 2022, 54, 59]
+    Left Right Pointers: [9, 15, 18, 69, 88, 977, 881, 75, 125, 167, 11]
+    Fast Slow Pointers: [27, 26, 80, 283, 1089, 287]
+    Sliding Window Fixed: [643, 219, 1456, 567, 713, 1151, 209, 76]
+    Sliding Window Variable: [3, 424, 1208, 1004, 438, 992, 2024]
+    Boyer Moore: [169, 229, 287, 1150, 1157, 495]
+    Prefix Sum:
+        [2574, 1732, 303, 304, 560, 238, 974, 209, 523, 1248, 325, 862, 1171]
+    Difference Array: [1094, 370, 1109, 2848]
+    Linked List: [203, 707, 206, 237, 2487, 24, 19, 160, 141, 142, 2816, 2]
     Backtracking:
         [77, 17, 39, 40, 216, 131, 93, 78, 90, 491, 46, 47, 51, 37, 79, 212]
+    Hash Map: [383, 350, 1, 409, 1365, 202, 454]
+    Hash Set: [349]
+    Hash Counting: [242, 560, 49, 438]
+    String: [344, 541, 151, 58, 844, 2185, 2000]
+    KMP: [28, 459, 686, 1392, 214]
+    Bit Manipulation: [2595]
+    Math: [1945, 1894, 7]
+    Simulation: [874]

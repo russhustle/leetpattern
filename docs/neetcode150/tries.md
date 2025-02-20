@@ -1,29 +1,65 @@
 ---
-comments: true
+comments: True
 ---
 
 # Tries
 
-## LeetCode Problems
+## 208. Implement Trie Prefix Tree
 
-1. 0208 - [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) (Medium)
-2. 0211 - [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) (Medium)
-3. 0212 - [Word Search II](https://leetcode.com/problems/word-search-ii/) (Hard)
+=== "Python"
 
-## 208. Implement Trie (Prefix Tree)
+    ```python
+    --8<-- "0208_implement_trie_prefix_tree.py"
+    ```
 
-```python
---8<-- "0208_implement_trie_prefix_tree.py"
-```
+=== "C++"
 
-## 211. Add and Search Word - Data structure design
+    ```cpp
+    --8<-- "cpp/0208_implement_trie_prefix_tree.cc"
+    ```
 
-```python
---8<-- "0211_add_and_search_word_data_structure_design.py"
-```
+=== "TypeScript"
 
-## 212. Word Search II
+    ```typescript
+    --8<-- "ts/0208_implement_trie_prefix_tree.ts"
+    ```
 
-```python
---8<-- "0212_word_search_ii.py"
-```
+## 211. Add And Search Word Data Structure Design
+
+=== "Python"
+
+    ```python
+    --8<-- "0211_add_and_search_word_data_structure_design.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0211_add_and_search_word_data_structure_design.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0211_add_and_search_word_data_structure_design.ts"
+    ```
+
+## 212. Word Search Ii
+
+=== "Python"
+
+    ```python
+    --8<-- "0212_word_search_ii.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0212_word_search_ii.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0212_word_search_ii.ts"
+    ```

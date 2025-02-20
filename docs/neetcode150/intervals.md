@@ -1,43 +1,105 @@
 ---
-comments: true
+comments: True
 ---
 
 # Intervals
 
-## LeetCode Problems
-
-1. 0057 - [Insert Interval](https://leetcode.com/problems/insert-interval/) (Hard)
-2. 0056 - [Merge Intervals](https://leetcode.com/problems/merge-intervals/) (Medium)
-3. 0435 - [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) (Medium)
-4. 0252 - [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) (Easy)
-5. 0253 - [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) (Medium)
-
 ## 57. Insert Interval
 
-```python
---8<-- "0057_insert_interval.py"
-```
+=== "Python"
+
+    ```python
+    --8<-- "0057_insert_interval.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0057_insert_interval.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0057_insert_interval.ts"
+    ```
 
 ## 56. Merge Intervals
 
-```python
---8<-- "0056_merge_intervals.py"
-```
+=== "Python"
 
-## 435. Non-overlapping Intervals
+    ```python
+    --8<-- "0056_merge_intervals.py"
+    ```
 
-```python
---8<-- "0435_non_overlapping_intervals.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0056_merge_intervals.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0056_merge_intervals.ts"
+    ```
+
+## 435. Non Overlapping Intervals
+
+=== "Python"
+
+    ```python
+    --8<-- "0435_non_overlapping_intervals.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0435_non_overlapping_intervals.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0435_non_overlapping_intervals.ts"
+    ```
 
 ## 252. Meeting Rooms
 
-```python
---8<-- "0252_meeting_rooms.py"
-```
+=== "Python"
 
-## 253. Meeting Rooms II
+    ```python
+    --8<-- "0252_meeting_rooms.py"
+    ```
 
-```python
---8<-- "0253_meeting_rooms_ii.py"
-```
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0252_meeting_rooms.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0252_meeting_rooms.ts"
+    ```
+
+## 253. Meeting Rooms Ii
+
+=== "Python"
+
+    ```python
+    --8<-- "0253_meeting_rooms_ii.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0253_meeting_rooms_ii.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0253_meeting_rooms_ii.ts"
+    ```

@@ -2,46 +2,46 @@
 comments: True
 ---
 
-# Graphs
+# Graph
 
-## 200. Number Of Islands
+## 733. Flood Fill
 
 === "Python"
 
     ```python
-    --8<-- "0200_number_of_islands.py"
+    --8<-- "0733_flood_fill.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0200_number_of_islands.cc"
+    --8<-- "cpp/0733_flood_fill.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0200_number_of_islands.ts"
+    --8<-- "ts/0733_flood_fill.ts"
     ```
 
-## 695. Max Area Of Island
+## 542. 01 Matrix
 
 === "Python"
 
     ```python
-    --8<-- "0695_max_area_of_island.py"
+    --8<-- "0542_01_matrix.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0695_max_area_of_island.cc"
+    --8<-- "cpp/0542_01_matrix.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0695_max_area_of_island.ts"
+    --8<-- "ts/0542_01_matrix.ts"
     ```
 
 ## 133. Clone Graph
@@ -62,86 +62,6 @@ comments: True
 
     ```typescript
     --8<-- "ts/0133_clone_graph.ts"
-    ```
-
-## 286. Walls And Gates
-
-=== "Python"
-
-    ```python
-    --8<-- "0286_walls_and_gates.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0286_walls_and_gates.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0286_walls_and_gates.ts"
-    ```
-
-## 994. Rotting Oranges
-
-=== "Python"
-
-    ```python
-    --8<-- "0994_rotting_oranges.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0994_rotting_oranges.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0994_rotting_oranges.ts"
-    ```
-
-## 417. Pacific Atlantic Water Flow
-
-=== "Python"
-
-    ```python
-    --8<-- "0417_pacific_atlantic_water_flow.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0417_pacific_atlantic_water_flow.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0417_pacific_atlantic_water_flow.ts"
-    ```
-
-## 130. Surrounded Regions
-
-=== "Python"
-
-    ```python
-    --8<-- "0130_surrounded_regions.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0130_surrounded_regions.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0130_surrounded_regions.ts"
     ```
 
 ## 207. Course Schedule
@@ -269,84 +189,84 @@ Pop `0` from the queue
     --8<-- "ts/0207_course_schedule.ts"
     ```
 
-## 210. Course Schedule Ii
+## 200. Number Of Islands
 
 === "Python"
 
     ```python
-    --8<-- "0210_course_schedule_ii.py"
+    --8<-- "0200_number_of_islands.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0210_course_schedule_ii.cc"
+    --8<-- "cpp/0200_number_of_islands.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0210_course_schedule_ii.ts"
+    --8<-- "ts/0200_number_of_islands.ts"
     ```
 
-## 261. Graph Valid Tree
+## 994. Rotting Oranges
 
 === "Python"
 
     ```python
-    --8<-- "0261_graph_valid_tree.py"
+    --8<-- "0994_rotting_oranges.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0261_graph_valid_tree.cc"
+    --8<-- "cpp/0994_rotting_oranges.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0261_graph_valid_tree.ts"
+    --8<-- "ts/0994_rotting_oranges.ts"
     ```
 
-## 323. Number Of Connected Components In An Undirected Graph
+## 721. Accounts Merge
 
 === "Python"
 
     ```python
-    --8<-- "0323_number_of_connected_components_in_an_undirected_graph.py"
+    --8<-- "0721_accounts_merge.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0323_number_of_connected_components_in_an_undirected_graph.cc"
+    --8<-- "cpp/0721_accounts_merge.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0323_number_of_connected_components_in_an_undirected_graph.ts"
+    --8<-- "ts/0721_accounts_merge.ts"
     ```
 
-## 684. Redundant Connection
+## 79. Word Search
 
 === "Python"
 
     ```python
-    --8<-- "0684_redundant_connection.py"
+    --8<-- "0079_word_search.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0684_redundant_connection.cc"
+    --8<-- "cpp/0079_word_search.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0684_redundant_connection.ts"
+    --8<-- "ts/0079_word_search.ts"
     ```
 
 ## 127. Word Ladder

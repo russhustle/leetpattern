@@ -6,12 +6,13 @@ from config import code, load_config_yaml
 
 class ProblemList:
     def __init__(self, file_path):
-        self.data = load_config_yaml(file_path)
         self.src = "src"
         self.docs = "docs"
+        self.data = load_config_yaml(
+            os.path.join(self.src, "config", file_path)
+        )
         self.dir = os.path.join(self.docs, self.data.dir)
-        if not os.path.exists(self.dir):
-            os.makedirs(self.dir)
+        os.makedirs(self.dir, exist_ok=True)
 
         self.pattern = re.compile(r"^\d{4}_")
 
@@ -56,7 +57,6 @@ class ProblemList:
 
 
 if __name__ == "__main__":
-    ProblemList("src/config/leetpattern.yaml")
-    ProblemList("src/config/graph_theory.yaml")
-    ProblemList("src/config/neetcode150.yaml")
-    ProblemList("src/config/company.yaml")
+    problems = os.listdir(os.path.join("src", "config"))
+    for problem in problems:
+        ProblemList(problem)

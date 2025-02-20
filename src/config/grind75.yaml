@@ -1,0 +1,18 @@
+dir: grind75
+name: Grind 75
+topics:
+    Array: [1, 121, 169, 217, 57, 15, 238, 39, 56, 75, 11]
+    Stack: [20, 232, 150, 155, 42, 224, 84]
+    Linked List: [21, 141, 206, 876, 146]
+    String: [125, 242, 409, 3, 8, 5, 438, 76]
+    Binary Tree: [226, 110, 543, 104, 102, 236, 199, 105, 297]
+    Binary Search: [704, 278, 33, 981, 1235]
+    Graph: [733, 542, 133, 207, 200, 994, 721, 79, 310, 127]
+    Binary Search Tree: [235, 98, 230]
+    Hash Table: [383]
+    Dynamic Programming: [70, 53, 322, 416, 62]
+    Binary: [67]
+    Heap: [973, 621, 295, 23]
+    Trie: [208, 139]
+    Recursion: [46, 78, 17]
+    Matrix: [54]

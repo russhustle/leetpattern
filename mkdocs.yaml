@@ -63,7 +63,6 @@ nav:
           - Home: sql/index.md
           - SQL 50: sql/sql50.md
     - Study Plan:
-          - Study Plan: plan/index.md
           - Graph Theory:
                 - Standard Traversal: graph_theory/standard_traversal.md
                 - BFS: graph_theory/bfs.md
@@ -71,27 +70,25 @@ nav:
                 - Graph Theory: graph_theory/graph_theory.md
                 - Topological Sort: graph_theory/topological_sort.md
                 - Union Find: graph_theory/union_find.md
-                - Dijkstra's: graph_theory/dijkstra.md
+                - Dijkstra's: graph_theory/dijkstra's.md
                 - MST: graph_theory/mst.md
 
-          - Blind 75: plan/blind75.md
           - Grind 75:
-                - Grind 75: grind75/index.md
-                - Array: grind75/grind75_array.md
-                - Stack: grind75/grind75_stack.md
-                - Linked List: grind75/grind75_ll.md
-                - String: grind75/grind75_string.md
-                - Binary Tree: grind75/grind75_tree.md
-                - Binary Search: grind75/grind75_bs.md
-                - Graph: grind75/grind75_graph.md
-                - Binary Search Tree: grind75/grind75_bst.md
-                - Hash: grind75/grind75_hash.md
-                - Dynamic Programming: grind75/grind75_dp.md
-                - Binary: grind75/grind75_binary.md
-                - Heap: grind75/grind75_heap.md
-                - Trie: grind75/grind75_trie.md
-                - Recursion: grind75/grind75_recursion.md
-                - Matrix: grind75/grind75_matrix.md
+                - Array: grind75/array.md
+                - Stack: grind75/stack.md
+                - Linked List: grind75/linked_list.md
+                - String: grind75/string.md
+                - Binary Tree: grind75/binary_tree.md
+                - Binary Search: grind75/binary_search.md
+                - Graph: grind75/graph.md
+                - Binary Search Tree: grind75/binary_search_tree.md
+                - Hash Table: grind75/hash_table.md
+                - Dynamic Programming: grind75/dynamic_programming.md
+                - Binary: grind75/binary.md
+                - Heap: grind75/heap.md
+                - Trie: grind75/trie.md
+                - Recursion: grind75/recursion.md
+                - Matrix: grind75/matrix.md
 
           - Neetcode 150:
                 - Arrays & Hashing: neetcode150/arrays_hashing.md
@@ -120,6 +117,10 @@ nav:
           - Amazon: company/amazon.md
     - About: about.md
 
+##############################################
+##  Material theme configuration for MkDocs ##
+##############################################
+
 site_name: 🚀LeetPattern
 site_url: https://www.leetpattern.com
 site_author: Sihan A
@@ -127,14 +128,10 @@ site_description: LeetCode Patterns
 repo_url: https://github.com/russhustle/leetpattern/
 copyright: Copyright &copy; 2024-2025 Sihan A
 
-##############################################
-##  Material theme configuration for MkDocs ##
-##############################################
-
 theme:
     language: en
-    logo: imgs/logo.jpg
-    favicon: imgs/logo.jpg
+    logo: assets/logo.jpg
+    favicon: assets/logo.jpg
     name: material
     palette:
         - media: "(prefers-color-scheme: dark)"
@@ -153,7 +150,7 @@ theme:
               name: Switch to dark mode
 
     font:
-        text: Work Sans
+        text: Open Sans
         code: Roboto Mono
 
     features:

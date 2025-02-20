@@ -1,0 +1,5 @@
+---
+comments: True
+---
+
+# Binary Search

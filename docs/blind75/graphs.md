@@ -1,3 +1,69 @@
+---
+comments: True
+---
+
+# Graphs
+
+## 200. Number Of Islands
+
+=== "Python"
+
+    ```python
+    --8<-- "0200_number_of_islands.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0200_number_of_islands.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0200_number_of_islands.ts"
+    ```
+
+## 133. Clone Graph
+
+=== "Python"
+
+    ```python
+    --8<-- "0133_clone_graph.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0133_clone_graph.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0133_clone_graph.ts"
+    ```
+
+## 417. Pacific Atlantic Water Flow
+
+=== "Python"
+
+    ```python
+    --8<-- "0417_pacific_atlantic_water_flow.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0417_pacific_atlantic_water_flow.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0417_pacific_atlantic_water_flow.ts"
+    ```
+
 ## 207. Course Schedule
 
 -   Return true if it is possible to finish all courses, otherwise return false.
@@ -104,3 +170,61 @@ flowchart LR
 -   queue: `[0]`
 
 Pop `0` from the queue
+
+=== "Python"
+
+    ```python
+    --8<-- "0207_course_schedule.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0207_course_schedule.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0207_course_schedule.ts"
+    ```
+
+## 261. Graph Valid Tree
+
+=== "Python"
+
+    ```python
+    --8<-- "0261_graph_valid_tree.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0261_graph_valid_tree.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0261_graph_valid_tree.ts"
+    ```
+
+## 323. Number Of Connected Components In An Undirected Graph
+
+=== "Python"
+
+    ```python
+    --8<-- "0323_number_of_connected_components_in_an_undirected_graph.py"
+    ```
+
+=== "C++"
+
+    ```cpp
+    --8<-- "cpp/0323_number_of_connected_components_in_an_undirected_graph.cc"
+    ```
+
+=== "TypeScript"
+
+    ```typescript
+    --8<-- "ts/0323_number_of_connected_components_in_an_undirected_graph.ts"
+    ```

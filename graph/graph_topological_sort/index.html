@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../imgs/logo.jpg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
     
     
       
@@ -98,6 +98,8 @@
       <link rel="stylesheet" href="../../utils/unordered-list-symbols.css">
     
       <link rel="stylesheet" href="../../utils/ordered-list-symbols.css">
+    
+      <link rel="stylesheet" href="../../utils/table.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -323,6 +325,26 @@
     
   
   Study Plan
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../company/" class="md-tabs__link">
+          
+  
+    
+  
+  Company
 
         </a>
       </li>
@@ -3559,6 +3581,92 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../company/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Company
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Company
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../company/amazon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amazon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
@@ -3754,13 +3862,274 @@
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">edges</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
 </span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">findSmallestSetOfVertices</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">edges</span><span class="p">))</span>  <span class="c1"># [0, 3]</span>
 </span></code></pre></div>
+<ul>
+<li><code>edges = [[0, 1], [0, 2], [2, 5], [3, 4], [4, 2]]</code></li>
+<li>Initialization</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><code>src</code></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>dst</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">node</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">in-degree</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><code>src</code></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>dst</code></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">node</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">in-degree</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><code>src</code></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>dst</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">node</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">in-degree</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><code>src</code></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>dst</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">node</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">in-degree</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><code>src</code></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>dst</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">node</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">in-degree</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><code>src</code></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>dst</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">node</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">in-degree</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
 <h2 id="207-course-schedule">207. Course Schedule<a class="headerlink" href="#207-course-schedule" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Return true if it is possible to finish all courses, otherwise return false.</li>
 <li>Dependency relationships imply the topological sort algorithm.</li>
 <li>Cycle detection</li>
 </ul>
-<p><img alt="0207" src="../../imgs/0207.png" width="300px" /></p>
+<pre class="mermaid"><code>flowchart LR
+    0((0)) --&gt; 1((1))
+    0((0)) --&gt; 2((2))
+    1((1)) --&gt; 3((3))
+    3((3)) --&gt; 4((4))
+    1((1)) --&gt; 4((4))</code></pre>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
@@ -3856,6 +4225,225 @@
 </span><span id="__span-1-93"><a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a><span class="nb">print</span><span class="p">(</span><span class="n">canFinishDFS1</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">prerequisites</span><span class="p">))</span>  <span class="c1"># True</span>
 </span><span id="__span-1-94"><a id="__codelineno-1-94" name="__codelineno-1-94" href="#__codelineno-1-94"></a><span class="nb">print</span><span class="p">(</span><span class="n">canFinishDFS2</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">prerequisites</span><span class="p">))</span>  <span class="c1"># True</span>
 </span></code></pre></div>
+<pre class="mermaid"><code>flowchart LR
+    1((1)) --&gt; 0((0))
+    2((2)) --&gt; 0((0))
+    3((3)) --&gt; 1((1))
+    4((4)) --&gt; 3((3))
+    4((4)) --&gt; 1((1))</code></pre>
+<table>
+<thead>
+<tr>
+<th>course</th>
+<th>0</th>
+<th>0</th>
+<th>1</th>
+<th>1</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prerequisite</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>index</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in-degree</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Initialize</p>
+<ul>
+<li>graph</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>prerequisite</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course</td>
+<td><code>[0]</code></td>
+<td><code>[0]</code></td>
+<td><code>[1]</code></td>
+<td><code>[1, 3]</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>in-degree</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in-degree</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>queue: <code>[2, 4]</code></li>
+</ul>
+<p>Pop <code>2</code> from the queue</p>
+<pre class="mermaid"><code>flowchart LR
+    1((1)) --&gt; 0((0))
+    3((3)) --&gt; 1((1))
+    4((4)) --&gt; 3((3))
+    4((4)) --&gt; 1((1))</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in-degree</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>queue: <code>[4]</code></li>
+</ul>
+<p>Pop <code>4</code> from the queue</p>
+<pre class="mermaid"><code>flowchart LR
+    1((1)) --&gt; 0((0))
+    3((3)) --&gt; 1((1))</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in-degree</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>queue: <code>[3]</code></li>
+</ul>
+<p>Pop <code>3</code> from the queue</p>
+<pre class="mermaid"><code>flowchart LR
+    1((1)) --&gt; 0((0))</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in-degree</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>queue: <code>[1]</code></li>
+</ul>
+<p>Pop <code>1</code> from the queue</p>
+<pre class="mermaid"><code>flowchart LR
+    0((0))</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in-degree</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>queue: <code>[0]</code></li>
+</ul>
+<p>Pop <code>0</code> from the queue</p>
 <h2 id="210-course-schedule-ii">210. Course Schedule II<a class="headerlink" href="#210-course-schedule-ii" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.</li>
@@ -4319,7 +4907,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-01-25T07:52:40+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-01-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-17T15:25:14+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-17</span>
   </span>
 
     

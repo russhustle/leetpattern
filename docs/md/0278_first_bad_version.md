@@ -1,1 +1,3 @@
 ## 278. First Bad Version
+
+-   Find the first bad version given a function `isBadVersion`.

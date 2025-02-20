@@ -27,85 +27,7 @@ comments: true
 7. 1011 - [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [在 D 天内送达包裹的能力](https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/) (Medium)
 8. 0378 - [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | [有序矩阵中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)
 
-## 704. Binary Search
-
--   Implement binary search algorithm.
-
-=== "Python"
-
-    ```python
-    --8<-- "0704_binary_search.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0704_binary_search.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0704_binary_search.ts"
-    ```
-
-## 35. Search Insert Position
-
--   Return the index of the target if it is found. If not, return the index where it would be if it were inserted in order.
-
-=== "Python"
-
-    ```python
-    --8<-- "0035_search_insert_position.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0035_search_insert_position.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0035_search_insert_position.ts"
-    ```
-
-## 278. First Bad Version
-
--   Find the first bad version given a function `isBadVersion`.
-
-=== "Python"
-
-    ```python
-    --8<-- "0278_first_bad_version.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0278_first_bad_version.cc"
-    ```
-
-## 34. Find First and Last Position of Element in Sorted Array
-
--   Find the starting and ending position of a given target value in a sorted array.
-
-=== "Python"
-
-    ```python
-    --8<-- "0034_find_first_and_last_position_of_element_in_sorted_array.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0034_find_first_and_last_position_of_element_in_sorted_array.cc"
-    ```
-
 ## 367. Valid Perfect Square
-
--   Determine if a positive integer is a perfect square without using any built-in library function.
 
 === "Python"
 
@@ -121,8 +43,6 @@ comments: true
 
 ## 875. Koko Eating Bananas
 
--   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
-
 === "Python"
 
     ```python
@@ -137,8 +57,6 @@ comments: true
 
 ## 1011. Capacity To Ship Packages Within D Days
 
--   A conveyor belt has packages that must be shipped from one port to another within `D` days. The `i-th` package has a weight of `weights[i]`. Each day, we load the ship with packages on the conveyor belt. The ship will be loaded with packages up to its capacity. The ship will not be loaded beyond its capacity. Return the least weight capacity of the ship.
-
 === "Python"
 
     ```python
@@ -152,8 +70,6 @@ comments: true
     ```
 
 ## 378. Kth Smallest Element in a Sorted Matrix
-
--   Given an `n x n` matrix where each of the rows and columns are sorted in ascending order, return the `k-th` smallest element in the matrix.
 
 === "Python"
 

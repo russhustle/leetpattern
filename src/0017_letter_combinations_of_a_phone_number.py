@@ -14,11 +14,11 @@ def letterCombinations(digits: str) -> List[str]:
         "tuv",  # 8
         "wxyz",  # 9
     ]
-    result = []
+    res = []
 
     def backtracking(index, s):
         if index == len(digits):
-            result.append(s)
+            res.append(s)
             return None
 
         digit = int(digits[index])
@@ -28,11 +28,11 @@ def letterCombinations(digits: str) -> List[str]:
             backtracking(index + 1, s + letters[i])
 
     if len(digits) == 0:
-        return result
+        return res
 
     backtracking(0, "")
 
-    return result
+    return res
 
 
 print(letterCombinations("23"))

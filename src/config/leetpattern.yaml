@@ -1,0 +1,7 @@
+dir: leetpattern
+name: LeetPattern
+topics:
+    Binary Search: [704, 35, 278, 34, 367, 875, 1011, 378]
+    Left Right Pointers: [9, 15, 18]
+    Backtracking:
+        [77, 17, 39, 40, 216, 131, 93, 78, 90, 491, 46, 47, 51, 37, 79, 212]

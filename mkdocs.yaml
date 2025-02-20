@@ -1,10 +1,10 @@
 nav:
     - LeetPattern:
           - Home: README.md
-          - Binary Search: arrays/binary_search.md
+          - Binary Search: leetpattern/binary_search.md
           - Arrays: arrays/arrays.md
           - Fast Slow Pointers: arrays/fast_slow_pointers.md
-          - Left Right Pointers: arrays/left_right_pointers.md
+          - Left Right Pointers: leetpattern/left_right_pointers.md
           - Sliding Window Fixed: arrays/sliding_window_fixed.md
           - Sliding Window Variable: arrays/sliding_window_variable.md
           - Prefix Sum: arrays/prefix_sum.md

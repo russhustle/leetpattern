@@ -1,10 +1,3 @@
-site_name: 🚀LeetPattern
-site_url: https://www.leetpattern.com
-site_author: Sihan A
-site_description: LeetCode Patterns
-repo_url: https://github.com/russhustle/leetpattern/
-copyright: Copyright &copy; 2024-2025 Sihan A
-
 nav:
     - LeetPattern:
           - Home: README.md
@@ -131,8 +124,15 @@ nav:
                 - Array & Strings: top150/top150_array_string.md
     - Company:
           - Home: company/index.md
-          - Amazon: company/amazon.md
+          - Amazon: all.md
     - About: about.md
+
+site_name: 🚀LeetPattern
+site_url: https://www.leetpattern.com
+site_author: Sihan A
+site_description: LeetCode Patterns
+repo_url: https://github.com/russhustle/leetpattern/
+copyright: Copyright &copy; 2024-2025 Sihan A
 
 ##############################################
 ##  Material theme configuration for MkDocs ##

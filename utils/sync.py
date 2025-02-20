@@ -47,7 +47,7 @@ def sync_files(directory):
     cpp_folder = os.path.join(directory, "cpp")
     cpp_default_file_path = os.path.join("utils", "default.cc")
     ts_folder = os.path.join(directory, "ts")
-    md_folder = os.path.abspath(os.path.join(directory, "..", "docs", "md"))
+    md_folder = os.path.join(directory, "..", "docs", "md")
     pattern = re.compile(r"^\d{4}_")
 
     py_files = {

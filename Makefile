@@ -20,3 +20,7 @@ sync:
 
 pre-commit:
 	poetry run pre-commit run --all-files
+
+generate:
+	poetry run python utils/sync.py
+	poetry run python utils/generate.py

@@ -1,1 +1,1 @@
-## 673. Number Of Longest Increasing Subsequence
+## 673. Number of Longest Increasing Subsequence

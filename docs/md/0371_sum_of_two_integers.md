@@ -1,1 +1,1 @@
-## 371. Sum Of Two Integers
+## 371. Sum of Two Integers

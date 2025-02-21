@@ -1,1 +1,1 @@
-## 4. Median Of Two Sorted Arrays
+## 4. Median of Two Sorted Arrays

@@ -1,1 +1,1 @@
-## 3176. Find The Maximum Length Of A Good Subsequence I
+## 3176. Find the Maximum Length of a Good Subsequence I

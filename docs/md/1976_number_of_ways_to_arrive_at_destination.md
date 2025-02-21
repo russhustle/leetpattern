@@ -1,1 +1,1 @@
-## 1976. Number Of Ways To Arrive At Destination
+## 1976. Number of Ways to Arrive at Destination

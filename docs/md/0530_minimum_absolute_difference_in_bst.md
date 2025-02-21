@@ -1,1 +1,1 @@
-## 530. Minimum Absolute Difference In Bst
+## 530. Minimum Absolute Difference in BST

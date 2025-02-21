@@ -1,1 +1,1 @@
-## 992. Subarrays With K Different Integers
+## 992. Subarrays with K Different Integers

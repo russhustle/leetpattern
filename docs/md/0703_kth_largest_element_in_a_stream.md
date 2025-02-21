@@ -1,1 +1,1 @@
-## 703. Kth Largest Element In A Stream
+## 703. Kth Largest Element in a Stream

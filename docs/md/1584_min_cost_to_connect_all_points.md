@@ -1,1 +1,1 @@
-## 1584. Min Cost To Connect All Points
+## 1584. Min Cost to Connect All Points

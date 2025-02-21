@@ -1,1 +1,1 @@
-## 2398. Maximum Number Of Robots Within Budget
+## 2398. Maximum Number of Robots Within Budget

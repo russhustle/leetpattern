@@ -1,1 +1,1 @@
-## 637. Average Of Levels In Binary Tree
+## 637. Average of Levels in Binary Tree

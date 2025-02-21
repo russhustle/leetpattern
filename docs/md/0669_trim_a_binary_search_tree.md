@@ -1,1 +1,1 @@
-## 669. Trim A Binary Search Tree
+## 669. Trim a Binary Search Tree

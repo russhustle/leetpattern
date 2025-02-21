@@ -1,1 +1,1 @@
-## 105. Construct Binary Tree From Preorder And Inorder Traversal
+## 105. Construct Binary Tree from Preorder and Inorder Traversal

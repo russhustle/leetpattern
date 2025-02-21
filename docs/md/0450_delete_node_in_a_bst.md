@@ -1,1 +1,1 @@
-## 450. Delete Node In A Bst
+## 450. Delete Node in a BST

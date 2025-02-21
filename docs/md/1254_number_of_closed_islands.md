@@ -1,1 +1,1 @@
-## 1254. Number Of Closed Islands
+## 1254. Number of Closed Islands

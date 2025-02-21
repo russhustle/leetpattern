@@ -1,1 +1,1 @@
-## 1732. Find The Highest Altitude
+## 1732. Find the Highest Altitude

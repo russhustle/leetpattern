@@ -1,1 +1,1 @@
-## 474. Ones And Zeroes
+## 474. Ones and Zeroes

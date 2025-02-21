@@ -1,1 +1,1 @@
-## 977. Squares Of A Sorted Array
+## 977. Squares of a Sorted Array

@@ -1,1 +1,1 @@
-## 2574. Left And Right Sum Difference
+## 2574. Left and Right Sum Differences

@@ -1,1 +1,1 @@
-## 567. Permutation In String
+## 567. Permutation in String

@@ -1,1 +1,1 @@
-## 373. Find K Pairs With Smallest Sums
+## 373. Find K Pairs with Smallest Sums

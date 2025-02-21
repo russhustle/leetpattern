@@ -1,1 +1,1 @@
-## 286. Walls And Gates
+## 286. Walls and Gates

@@ -1,1 +1,1 @@
-## 543. Diameter Of Binary Tree
+## 543. Diameter of Binary Tree

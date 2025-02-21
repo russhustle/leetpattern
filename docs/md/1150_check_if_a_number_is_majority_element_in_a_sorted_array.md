@@ -1,1 +1,1 @@
-## 1150. Check If A Number Is Majority Element In A Sorted Array
+## 1150. Check If a Number Is Majority Element in a Sorted Array

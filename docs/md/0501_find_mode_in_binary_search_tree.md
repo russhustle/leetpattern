@@ -1,1 +1,1 @@
-## 501. Find Mode In Binary Search Tree
+## 501. Find Mode in Binary Search Tree

@@ -1,1 +1,1 @@
-## 2576. Find The Maximum Number Of Marked Indices
+## 2576. Find the Maximum Number of Marked Indices

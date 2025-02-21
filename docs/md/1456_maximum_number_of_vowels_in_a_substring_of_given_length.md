@@ -1,1 +1,1 @@
-## 1456. Maximum Number Of Vowels In A Substring Of Given Length
+## 1456. Maximum Number of Vowels in a Substring of Given Length

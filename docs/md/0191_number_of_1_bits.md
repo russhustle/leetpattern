@@ -1,1 +1,1 @@
-## 191. Number Of 1 Bits
+## 191. Number of 1 Bits

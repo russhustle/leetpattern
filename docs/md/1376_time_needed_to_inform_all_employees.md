@@ -1,1 +1,1 @@
-## 1376. Time Needed To Inform All Employees
+## 1376. Time Needed to Inform All Employees

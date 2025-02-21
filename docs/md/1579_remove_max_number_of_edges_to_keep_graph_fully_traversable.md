@@ -1,1 +1,1 @@
-## 1579. Remove Max Number Of Edges To Keep Graph Fully Traversable
+## 1579. Remove Max Number of Edges to Keep Graph Fully Traversable

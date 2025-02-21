@@ -1,1 +1,1 @@
-## 2390. Removing Stars From A String
+## 2390. Removing Stars From a String

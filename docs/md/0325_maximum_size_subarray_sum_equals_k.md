@@ -1,1 +1,1 @@
-## 325. Maximum Size Subarray Sum Equals K
+## 325. Maximum Size Subarray Sum Equals k

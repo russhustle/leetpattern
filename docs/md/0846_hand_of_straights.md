@@ -1,1 +1,1 @@
-## 846. Hand Of Straights
+## 846. Hand of Straights

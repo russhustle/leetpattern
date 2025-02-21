@@ -1,1 +1,1 @@
-## 1203. Sort Items By Groups Respecting Dependencies
+## 1203. Sort Items by Groups Respecting Dependencies

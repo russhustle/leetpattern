@@ -1,1 +1,1 @@
-## 974. Subarray Sums Divisible By K
+## 974. Subarray Sums Divisible by K

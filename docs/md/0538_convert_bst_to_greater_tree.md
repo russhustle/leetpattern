@@ -1,1 +1,1 @@
-## 538. Convert Bst To Greater Tree
+## 538. Convert BST to Greater Tree

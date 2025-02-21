@@ -1,1 +1,1 @@
-## 624. Max Distance In Arrays
+## 624. Maximum Distance in Arrays

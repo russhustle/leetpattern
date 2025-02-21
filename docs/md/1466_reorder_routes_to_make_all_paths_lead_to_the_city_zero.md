@@ -1,1 +1,1 @@
-## 1466. Reorder Routes To Make All Paths Lead To The City Zero
+## 1466. Reorder Routes to Make All Paths Lead to the City Zero

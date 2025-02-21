@@ -1,1 +1,1 @@
-## 2000. Reverse Prefix Of Word
+## 2000. Reverse Prefix of Word

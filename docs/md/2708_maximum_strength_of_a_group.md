@@ -1,1 +1,1 @@
-## 2708. Maximum Strength Of A Group
+## 2708. Maximum Strength of a Group

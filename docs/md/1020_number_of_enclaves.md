@@ -1,1 +1,1 @@
-## 1020. Number Of Enclaves
+## 1020. Number of Enclaves

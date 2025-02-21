@@ -1,1 +1,1 @@
-## 583. Delete Operation For Two Strings
+## 583. Delete Operation for Two Strings

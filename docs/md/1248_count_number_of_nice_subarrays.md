@@ -1,1 +1,1 @@
-## 1248. Count Number Of Nice Subarrays
+## 1248. Count Number of Nice Subarrays

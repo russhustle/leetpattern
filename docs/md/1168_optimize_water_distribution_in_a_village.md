@@ -1,1 +1,1 @@
-## 1168. Optimize Water Distribution In A Village
+## 1168. Optimize Water Distribution in a Village

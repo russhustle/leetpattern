@@ -1,1 +1,1 @@
-## 990. Satisfiability Of Equality Equations
+## 990. Satisfiability of Equality Equations

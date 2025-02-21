@@ -1,1 +1,1 @@
-## 166. Fraction To Recurring Decimal
+## 166. Fraction to Recurring Decimal

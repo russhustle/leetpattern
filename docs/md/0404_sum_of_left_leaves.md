@@ -1,1 +1,1 @@
-## 404. Sum Of Left Leaves
+## 404. Sum of Left Leaves

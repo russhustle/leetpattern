@@ -1,1 +1,1 @@
-## 84. Largest Rectangle In Histogram
+## 84. Largest Rectangle in Histogram

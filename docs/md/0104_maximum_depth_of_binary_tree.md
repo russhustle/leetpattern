@@ -1,1 +1,1 @@
-## 104. Maximum Depth Of Binary Tree
+## 104. Maximum Depth of Binary Tree

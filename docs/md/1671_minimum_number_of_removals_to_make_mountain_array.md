@@ -1,1 +1,1 @@
-## 1671. Minimum Number Of Removals To Make Mountain Array
+## 1671. Minimum Number of Removals to Make Mountain Array

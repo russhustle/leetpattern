@@ -1,1 +1,1 @@
-## 215. Kth Largest Element In An Array
+## 215. Kth Largest Element in an Array

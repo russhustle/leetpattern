@@ -1,1 +1,1 @@
-## 797. All Paths From Source To Target
+## 797. All Paths From Source to Target

@@ -1,1 +1,1 @@
-## 106. Construct Binary Tree From Inorder And Postorder Traversal
+## 106. Construct Binary Tree from Inorder and Postorder Traversal

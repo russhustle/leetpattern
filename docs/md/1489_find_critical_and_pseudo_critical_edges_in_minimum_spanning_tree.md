@@ -1,1 +1,1 @@
-## 1489. Find Critical And Pseudo Critical Edges In Minimum Spanning Tree
+## 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree

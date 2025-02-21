@@ -1,1 +1,1 @@
-## 109. Convert Sorted List To Binary Search Tree
+## 109. Convert Sorted List to Binary Search Tree

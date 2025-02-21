@@ -1,1 +1,1 @@
-## 1514. Path With Maximum Probability
+## 1514. Path with Maximum Probability

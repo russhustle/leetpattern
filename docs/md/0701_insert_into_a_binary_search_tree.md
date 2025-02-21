@@ -1,1 +1,1 @@
-## 701. Insert Into A Binary Search Tree
+## 701. Insert into a Binary Search Tree

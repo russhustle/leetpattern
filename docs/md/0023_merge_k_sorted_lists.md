@@ -1,1 +1,1 @@
-## 23. Merge K Sorted Lists
+## 23. Merge k Sorted Lists

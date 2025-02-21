@@ -1,1 +1,1 @@
-## 349. Intersection Of Two Arrays
+## 349. Intersection of Two Arrays

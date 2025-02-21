@@ -1,1 +1,1 @@
-## 547. Number Of Provinces
+## 547. Number of Provinces

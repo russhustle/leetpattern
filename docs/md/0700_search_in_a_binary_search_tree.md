@@ -1,1 +1,1 @@
-## 700. Search In A Binary Search Tree
+## 700. Search in a Binary Search Tree

@@ -1,1 +1,1 @@
-## 1448. Count Good Nodes In Binary Tree
+## 1448. Count Good Nodes in Binary Tree

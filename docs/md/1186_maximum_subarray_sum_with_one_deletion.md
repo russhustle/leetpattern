@@ -1,1 +1,1 @@
-## 1186. Maximum Subarray Sum With One Deletion
+## 1186. Maximum Subarray Sum with One Deletion

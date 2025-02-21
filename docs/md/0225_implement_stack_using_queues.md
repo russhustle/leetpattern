@@ -1,1 +1,1 @@
-## 225. Implement Stack Using Queues
+## 225. Implement Stack using Queues

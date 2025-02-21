@@ -1,1 +1,1 @@
-## 1091. Shortest Path In Binary Matrix
+## 1091. Shortest Path in Binary Matrix

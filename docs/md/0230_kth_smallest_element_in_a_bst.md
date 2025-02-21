@@ -1,1 +1,1 @@
-## 230. Kth Smallest Element In A Bst
+## 230. Kth Smallest Element in a BST

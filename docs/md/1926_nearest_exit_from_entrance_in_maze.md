@@ -1,1 +1,1 @@
-## 1926. Nearest Exit From Entrance In Maze
+## 1926. Nearest Exit from Entrance in Maze

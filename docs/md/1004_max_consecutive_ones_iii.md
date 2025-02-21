@@ -1,1 +1,1 @@
-## 1004. Max Consecutive Ones Iii
+## 1004. Max Consecutive Ones III

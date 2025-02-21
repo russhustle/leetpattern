@@ -1,1 +1,1 @@
-## 572. Subtree Of Another Tree
+## 572. Subtree of Another Tree

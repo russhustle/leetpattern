@@ -1,1 +1,1 @@
-## 1894. Find The Student That Will Replace The Chalk
+## 1894. Find the Student that Will Replace the Chalk

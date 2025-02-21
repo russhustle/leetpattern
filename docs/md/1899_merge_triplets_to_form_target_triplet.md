@@ -1,1 +1,1 @@
-## 1899. Merge Triplets To Form Target Triplet
+## 1899. Merge Triplets to Form Target Triplet

@@ -1,4 +1,4 @@
-## 51. N Queens
+## 51. N-Queens
 
 - Hard
 - [N-Queens](https://leetcode.com/problems/n-queens/)

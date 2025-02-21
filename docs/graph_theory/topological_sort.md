@@ -129,7 +129,7 @@ Pop `0` from the queue
     --8<-- "ts/0207_course_schedule.ts"
     ```
 
-## 210. Course Schedule Ii
+## 210. Course Schedule II
 
 === "Python"
 
@@ -169,7 +169,7 @@ Pop `0` from the queue
     --8<-- "ts/0269_alien_dictionary.ts"
     ```
 
-## 1203. Sort Items By Groups Respecting Dependencies
+## 1203. Sort Items by Groups Respecting Dependencies
 
 === "Python"
 
@@ -189,7 +189,7 @@ Pop `0` from the queue
     --8<-- "ts/1203_sort_items_by_groups_respecting_dependencies.ts"
     ```
 
-## 1857. Largest Color Value In A Directed Graph
+## 1857. Largest Color Value in a Directed Graph
 
 === "Python"
 

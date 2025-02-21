@@ -4,7 +4,7 @@ comments: True
 
 # Graph Union Find
 
-## 547. Number Of Provinces
+## 547. Number of Provinces
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0684_redundant_connection.ts"
     ```
 
-## 323. Number Of Connected Components In An Undirected Graph
+## 323. Number of Connected Components in an Undirected Graph
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0721_accounts_merge.ts"
     ```
 
-## 990. Satisfiability Of Equality Equations
+## 990. Satisfiability of Equality Equations
 
 === "Python"
 
@@ -104,7 +104,7 @@ comments: True
     --8<-- "ts/0990_satisfiability_of_equality_equations.ts"
     ```
 
-## 952. Largest Component Size By Common Factor
+## 952. Largest Component Size by Common Factor
 
 === "Python"
 
@@ -144,7 +144,7 @@ comments: True
     --8<-- "ts/0839_similar_string_groups.ts"
     ```
 
-## 305. Number Of Islands Ii
+## 305. Number of Islands II
 
 === "Python"
 
@@ -184,7 +184,7 @@ comments: True
     --8<-- "ts/1202_smallest_string_with_swaps.ts"
     ```
 
-## 685. Redundant Connection Ii
+## 685. Redundant Connection II
 
 === "Python"
 

@@ -58,7 +58,7 @@ comments: True
     --8<-- "ts/0146_lru_cache.ts"
     ```
 
-## 200. Number Of Islands
+## 200. Number of Islands
 
 === "Python"
 

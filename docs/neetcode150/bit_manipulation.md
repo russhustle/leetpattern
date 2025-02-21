@@ -4,7 +4,7 @@ comments: True
 
 # Bit Manipulation
 
-## 191. Number Of 1 Bits
+## 191. Number of 1 Bits
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0268_missing_number.ts"
     ```
 
-## 371. Sum Of Two Integers
+## 371. Sum of Two Integers
 
 === "Python"
 

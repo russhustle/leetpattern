@@ -4,7 +4,7 @@ comments: True
 
 # Standard Traversal
 
-## 547. Number Of Provinces
+## 547. Number of Provinces
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0802_find_eventual_safe_states.ts"
     ```
 
-## 841. Keys And Rooms
+## 841. Keys and Rooms
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0841_keys_and_rooms.ts"
     ```
 
-## 1129. Shortest Path With Alternating Colors
+## 1129. Shortest Path with Alternating Colors
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/1129_shortest_path_with_alternating_colors.ts"
     ```
 
-## 1376. Time Needed To Inform All Employees
+## 1376. Time Needed to Inform All Employees
 
 === "Python"
 
@@ -104,7 +104,7 @@ comments: True
     --8<-- "ts/1376_time_needed_to_inform_all_employees.ts"
     ```
 
-## 1466. Reorder Routes To Make All Paths Lead To The City Zero
+## 1466. Reorder Routes to Make All Paths Lead to the City Zero
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero.ts"
     ```
 
-## 797. All Paths From Source To Target
+## 797. All Paths From Source to Target
 
 === "Python"
 
@@ -144,7 +144,7 @@ comments: True
     --8<-- "ts/0797_all_paths_from_source_to_target.ts"
     ```
 
-## 1192. Critical Connections In A Network
+## 1192. Critical Connections in a Network
 
 === "Python"
 

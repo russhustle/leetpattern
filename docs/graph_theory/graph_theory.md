@@ -118,7 +118,7 @@ flowchart LR
     --8<-- "ts/1615_maximal_network_rank.ts"
     ```
 
-## 785. Is Graph Bipartite
+## 785. Is Graph Bipartite?
 
 === "Python"
 

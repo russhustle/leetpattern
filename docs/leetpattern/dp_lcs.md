@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0392_is_subsequence.ts"
     ```
 
-## 583. Delete Operation For Two Strings
+## 583. Delete Operation for Two Strings
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/0674_longest_continuous_increasing_subsequence.ts"
     ```
 
-## 718. Maximum Length Of Repeated Subarray
+## 718. Maximum Length of Repeated Subarray
 
 === "Python"
 

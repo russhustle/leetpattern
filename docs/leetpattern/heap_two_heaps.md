@@ -4,7 +4,7 @@ comments: True
 
 # Heap Two Heaps
 
-## 295. Find Median From Data Stream
+## 295. Find Median from Data Stream
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0480_sliding_window_median.ts"
     ```
 
-## 502. Ipo
+## 502. IPO
 
 === "Python"
 

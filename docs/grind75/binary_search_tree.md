@@ -4,7 +4,7 @@ comments: True
 
 # Binary Search Tree
 
-## 235. Lowest Common Ancestor Of A Binary Search Tree
+## 235. Lowest Common Ancestor of a Binary Search Tree
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0098_validate_binary_search_tree.ts"
     ```
 
-## 230. Kth Smallest Element In A Bst
+## 230. Kth Smallest Element in a BST
 
 === "Python"
 

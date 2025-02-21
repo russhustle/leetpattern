@@ -26,7 +26,7 @@ comments: True
     --8<-- "ts/0704_binary_search.ts"
     ```
 
-## 74. Search A 2D Matrix
+## 74. Search a 2D Matrix
 
 === "Python"
 
@@ -68,7 +68,7 @@ comments: True
     --8<-- "ts/0875_koko_eating_bananas.ts"
     ```
 
-## 4. Median Of Two Sorted Arrays
+## 4. Median of Two Sorted Arrays
 
 === "Python"
 

@@ -39,7 +39,7 @@ graph TD
     --8<-- "ts/0787_cheapest_flights_within_k_stops.ts"
     ```
 
-## 1514. Path With Maximum Probability
+## 1514. Path with Maximum Probability
 
 === "Python"
 
@@ -59,7 +59,7 @@ graph TD
     --8<-- "ts/1514_path_with_maximum_probability.ts"
     ```
 
-## 505. The Maze Ii
+## 505. The Maze II
 
 === "Python"
 
@@ -79,7 +79,7 @@ graph TD
     --8<-- "ts/0505_the_maze_ii.ts"
     ```
 
-## 499. The Maze Iii
+## 499. The Maze III
 
 === "Python"
 

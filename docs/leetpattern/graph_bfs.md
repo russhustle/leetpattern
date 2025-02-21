@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0127_word_ladder.ts"
     ```
 
-## 1466. Reorder Routes To Make All Paths Lead To The City Zero
+## 1466. Reorder Routes to Make All Paths Lead to the City Zero
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero.ts"
     ```
 
-## 286. Walls And Gates
+## 286. Walls and Gates
 
 === "Python"
 

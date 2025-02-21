@@ -4,7 +4,7 @@ comments: True
 
 # Graphs
 
-## 200. Number Of Islands
+## 200. Number of Islands
 
 === "Python"
 
@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0200_number_of_islands.ts"
     ```
 
-## 695. Max Area Of Island
+## 695. Max Area of Island
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0133_clone_graph.ts"
     ```
 
-## 286. Walls And Gates
+## 286. Walls and Gates
 
 === "Python"
 
@@ -269,7 +269,7 @@ Pop `0` from the queue
     --8<-- "ts/0207_course_schedule.ts"
     ```
 
-## 210. Course Schedule Ii
+## 210. Course Schedule II
 
 === "Python"
 
@@ -309,7 +309,7 @@ Pop `0` from the queue
     --8<-- "ts/0261_graph_valid_tree.ts"
     ```
 
-## 323. Number Of Connected Components In An Undirected Graph
+## 323. Number of Connected Components in an Undirected Graph
 
 === "Python"
 

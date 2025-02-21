@@ -4,7 +4,7 @@ comments: True
 
 # Tries
 
-## 208. Implement Trie Prefix Tree
+## 208. Implement Trie (Prefix Tree)
 
 === "Python"
 
@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0208_implement_trie_prefix_tree.ts"
     ```
 
-## 212. Word Search Ii
+## 212. Word Search II
 
 === "Python"
 
@@ -44,22 +44,22 @@ comments: True
     --8<-- "ts/0212_word_search_ii.ts"
     ```
 
-## 211. Add And Search Word Data Structure Design
+## 211. Design Add and Search Words Data Structure
 
 === "Python"
 
     ```python
-    --8<-- "0211_add_and_search_word_data_structure_design.py"
+    --8<-- "0211_design_add_and_search_words_data_structure.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0211_add_and_search_word_data_structure_design.cc"
+    --8<-- "cpp/0211_design_add_and_search_words_data_structure.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0211_add_and_search_word_data_structure_design.ts"
+    --8<-- "ts/0211_design_add_and_search_words_data_structure.ts"
     ```

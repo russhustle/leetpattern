@@ -66,7 +66,7 @@ comments: True
     --8<-- "ts/0049_group_anagrams.ts"
     ```
 
-## 438. Find All Anagrams In A String
+## 438. Find All Anagrams in a String
 
 === "Python"
 

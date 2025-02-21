@@ -4,7 +4,7 @@ comments: True
 
 # KMP
 
-## 28. Find The Index Of The First Occurrence In A String
+## 28. Find the Index of the First Occurrence in a String
 
 === "Python"
 

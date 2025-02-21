@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0300_longest_increasing_subsequence.ts"
     ```
 
-## 673. Number Of Longest Increasing Subsequence
+## 673. Number of Longest Increasing Subsequence
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0354_russian_doll_envelopes.ts"
     ```
 
-## 960. Delete Columns To Make Sorted Iii
+## 960. Delete Columns to Make Sorted III
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0960_delete_columns_to_make_sorted_iii.ts"
     ```
 
-## 1671. Minimum Number Of Removals To Make Mountain Array
+## 1671. Minimum Number of Removals to Make Mountain Array
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/0941_valid_mountain_array.ts"
     ```
 
-## 845. Longest Mountain In Array
+## 845. Longest Mountain in Array
 
 === "Python"
 

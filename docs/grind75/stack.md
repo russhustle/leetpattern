@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0020_valid_parentheses.ts"
     ```
 
-## 232. Implement Queue Using Stacks
+## 232. Implement Queue using Stacks
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/0224_basic_calculator.ts"
     ```
 
-## 84. Largest Rectangle In Histogram
+## 84. Largest Rectangle in Histogram
 
 === "Python"
 

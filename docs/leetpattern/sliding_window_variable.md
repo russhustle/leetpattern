@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/1208_get_equal_substrings_within_budget.ts"
     ```
 
-## 1004. Max Consecutive Ones Iii
+## 1004. Max Consecutive Ones III
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/1004_max_consecutive_ones_iii.ts"
     ```
 
-## 438. Find All Anagrams In A String
+## 438. Find All Anagrams in a String
 
 === "Python"
 
@@ -104,7 +104,7 @@ comments: True
     --8<-- "ts/0438_find_all_anagrams_in_a_string.ts"
     ```
 
-## 992. Subarrays With K Different Integers
+## 992. Subarrays with K Different Integers
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/0992_subarrays_with_k_different_integers.ts"
     ```
 
-## 2024. Maximize The Confusion Of An Exam
+## 2024. Maximize the Confusion of an Exam
 
 === "Python"
 

@@ -189,7 +189,7 @@ Pop `0` from the queue
     --8<-- "ts/0207_course_schedule.ts"
     ```
 
-## 200. Number Of Islands
+## 200. Number of Islands
 
 === "Python"
 

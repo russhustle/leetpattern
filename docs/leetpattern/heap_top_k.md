@@ -4,7 +4,7 @@ comments: True
 
 # Heap Top K
 
-## 215. Kth Largest Element In An Array
+## 215. Kth Largest Element in an Array
 
 === "Python"
 
@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0215_kth_largest_element_in_an_array.ts"
     ```
 
-## 973. K Closest Points To Origin
+## 973. K Closest Points to Origin
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0692_top_k_frequent_words.ts"
     ```
 
-## 264. Ugly Number Ii
+## 264. Ugly Number II
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/0451_sort_characters_by_frequency.ts"
     ```
 
-## 703. Kth Largest Element In A Stream
+## 703. Kth Largest Element in a Stream
 
 === "Python"
 
@@ -164,22 +164,22 @@ comments: True
     --8<-- "ts/0767_reorganize_string.ts"
     ```
 
-## 786. Kth Smallest Prime Fraction
+## 786. K-th Smallest Prime Fraction
 
 === "Python"
 
     ```python
-    --8<-- "0786_kth_smallest_prime_fraction.py"
+    --8<-- "0786_k_th_smallest_prime_fraction.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0786_kth_smallest_prime_fraction.cc"
+    --8<-- "cpp/0786_k_th_smallest_prime_fraction.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0786_kth_smallest_prime_fraction.ts"
+    --8<-- "ts/0786_k_th_smallest_prime_fraction.ts"
     ```

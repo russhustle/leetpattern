@@ -110,7 +110,7 @@ comments: True
     --8<-- "ts/0005_longest_palindromic_substring.ts"
     ```
 
-## 438. Find All Anagrams In A String
+## 438. Find All Anagrams in a String
 
 === "Python"
 

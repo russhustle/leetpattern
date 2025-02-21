@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0344_reverse_string.ts"
     ```
 
-## 541. Reverse String Ii
+## 541. Reverse String II
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0541_reverse_string_ii.ts"
     ```
 
-## 151. Reverse Words In A String
+## 151. Reverse Words in a String
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0151_reverse_words_in_a_string.ts"
     ```
 
-## 58. Length Of Last Word
+## 58. Length of Last Word
 
 === "Python"
 
@@ -104,7 +104,7 @@ comments: True
     --8<-- "ts/0844_backspace_string_compare.ts"
     ```
 
-## 2185. Counting Words With A Given Prefix
+## 2185. Counting Words With a Given Prefix
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/2185_counting_words_with_a_given_prefix.ts"
     ```
 
-## 2000. Reverse Prefix Of Word
+## 2000. Reverse Prefix of Word
 
 === "Python"
 

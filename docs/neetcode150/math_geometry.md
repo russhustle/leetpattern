@@ -109,7 +109,7 @@ comments: True
     --8<-- "ts/0066_plus_one.ts"
     ```
 
-## 50. Powx N
+## 50. Pow(x, n)
 
 === "Python"
 
@@ -149,7 +149,7 @@ comments: True
     --8<-- "ts/0043_multiply_strings.ts"
     ```
 
-## 166. Fraction To Recurring Decimal
+## 166. Fraction to Recurring Decimal
 
 === "Python"
 

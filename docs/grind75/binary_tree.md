@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0110_balanced_binary_tree.ts"
     ```
 
-## 543. Diameter Of Binary Tree
+## 543. Diameter of Binary Tree
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0543_diameter_of_binary_tree.ts"
     ```
 
-## 104. Maximum Depth Of Binary Tree
+## 104. Maximum Depth of Binary Tree
 
 === "Python"
 
@@ -104,7 +104,7 @@ comments: True
     --8<-- "ts/0102_binary_tree_level_order_traversal.ts"
     ```
 
-## 236. Lowest Common Ancestor Of A Binary Tree
+## 236. Lowest Common Ancestor of a Binary Tree
 
 === "Python"
 
@@ -144,7 +144,7 @@ comments: True
     --8<-- "ts/0199_binary_tree_right_side_view.ts"
     ```
 
-## 105. Construct Binary Tree From Preorder And Inorder Traversal
+## 105. Construct Binary Tree from Preorder and Inorder Traversal
 
 === "Python"
 

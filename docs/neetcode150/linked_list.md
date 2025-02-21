@@ -104,7 +104,7 @@ B --> A[1]
     --8<-- "ts/0019_remove_nth_node_from_end_of_list.ts"
     ```
 
-## 138. Copy List With Random Pointer
+## 138. Copy List with Random Pointer
 
 === "Python"
 
@@ -233,7 +233,7 @@ D --> B
     --8<-- "ts/0146_lru_cache.ts"
     ```
 
-## 23. Merge K Sorted Lists
+## 23. Merge k Sorted Lists
 
 === "Python"
 

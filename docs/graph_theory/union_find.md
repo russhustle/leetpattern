@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0721_accounts_merge.ts"
     ```
 
-## 990. Satisfiability Of Equality Equations
+## 990. Satisfiability of Equality Equations
 
 === "Python"
 

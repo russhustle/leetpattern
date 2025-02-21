@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0226_invert_binary_tree.ts"
     ```
 
-## 104. Maximum Depth Of Binary Tree
+## 104. Maximum Depth of Binary Tree
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0100_same_tree.ts"
     ```
 
-## 572. Subtree Of Another Tree
+## 572. Subtree of Another Tree
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0572_subtree_of_another_tree.ts"
     ```
 
-## 235. Lowest Common Ancestor Of A Binary Search Tree
+## 235. Lowest Common Ancestor of a Binary Search Tree
 
 === "Python"
 
@@ -144,7 +144,7 @@ comments: True
     --8<-- "ts/0098_validate_binary_search_tree.ts"
     ```
 
-## 230. Kth Smallest Element In A Bst
+## 230. Kth Smallest Element in a BST
 
 === "Python"
 
@@ -164,7 +164,7 @@ comments: True
     --8<-- "ts/0230_kth_smallest_element_in_a_bst.ts"
     ```
 
-## 105. Construct Binary Tree From Preorder And Inorder Traversal
+## 105. Construct Binary Tree from Preorder and Inorder Traversal
 
 === "Python"
 

@@ -1,178 +1,116 @@
 nav:
+    - Home: README.md
+
     - LeetPattern:
-          - Home: README.md
+          - Home: leetpattern/index.md
           - Binary Search: leetpattern/binary_search.md
           - Array: leetpattern/array.md
-          - Fast Slow Pointers: leetpattern/fast_slow_pointers.md
           - Left Right Pointers: leetpattern/left_right_pointers.md
+          - Fast Slow Pointers: leetpattern/fast_slow_pointers.md
           - Sliding Window Fixed: leetpattern/sliding_window_fixed.md
           - Sliding Window Variable: leetpattern/sliding_window_variable.md
+          - Boyer Moore: leetpattern/boyer_moore.md
           - Prefix Sum: leetpattern/prefix_sum.md
           - Difference Array: leetpattern/difference_array.md
-          - Boyer Moore: leetpattern/boyer_moore.md
+          - Linked List: leetpattern/linked_list.md
+          - Backtracking: leetpattern/backtracking.md
           - Hash Map: leetpattern/hash_map.md
           - Hash Set: leetpattern/hash_set.md
           - Hash Counting: leetpattern/hash_counting.md
-      #     - String: string/string.md
-      #     - KMP: string/string_kmp.md
-      #     - Linked List: other/linked_list.md
-      #     - Tree Traversal: tree/tree_traversal.md
-      #     - Tree Feature: tree/tree_feature.md
-      #     - Tree BFS: tree/tree_bfs.md
-      #     - Tree Modification: tree/tree_modification.md
-      #     - BST: tree/tree_bst.md
-      #     - Tree Common Ancestors: tree/tree_common_ancestor.md
-      #     - Trie: tree/tree_trie.md
-      #     - Stack: stack_queue/stack.md
-      #     - Monotonic Stack: stack_queue/stack_monotonic.md
-      #     - Queue: stack_queue/queue.md
-      #     - Monotonic Queue: stack_queue/queue_monotonic.md
-      #     - Greedy: greedy/greedy.md
-      #     - Greedy - Interval: greedy/greedy_interval.md
-      #     - Dynamic Programming: dp/index.md
-      #     - DP Basic: dp/dp_basic.md
-      #     - DP 2D: dp/dp_2d.md
-      #     - DP Interval: dp/dp_interval.md
-      #     - DP Knapsack 0/1: dp/dp_knapsack_01.md
-      #     - DP Knapsack Unbounded: dp/dp_knapsack_unbounded.md
-      #     - DP Kadane: dp/dp_kadane.md
-      #     - DP Stock: dp/dp_stock.md
-      #     - DP LCS: dp/dp_lcs.md
-      #     - DP LIS: dp/dp_lis.md
-      #     - Graph: graph/index.md
-      #     - Flood Fill: graph/graph_flood_fill.md
-      #     - BFS: graph/graph_bfs.md
-      #     - Topological Sort: graph/graph_topological_sort.md
-      #     - Union Find: graph/graph_union_find.md
-      #     - Shortest Path: graph/graph_shortest_path.md
-      #     - Bellman Ford: graph/graph_bellman_ford.md
-      #     - MST: graph/graph_mst.md
-      #     - Coloring: graph/graph_coloring.md
-      #     - Tarjan: graph/graph_tarjan.md
-      #     - Heap Introduction: heap/index.md
-      #     - Heap: heap/heap_heap.md
-      #     - Top K: heap/heap_top_k.md
-      #     - Two Heaps: heap/heap_two_heaps.md
-      #     - Merge K Sorted: heap/heap_merge_k_sorted.md
-      #     - Bit: other/bit.md
-      #     - Math: other/math.md
-      #     - Simulation: other/simulation.md
-      #     - Design Patterns: design/design_patterns.md
-      #     - Design: design/design.md
+          - String: leetpattern/string.md
+          - KMP: leetpattern/kmp.md
+          - DP Basic: leetpattern/dp_basic.md
+          - DP 2D: leetpattern/dp_2d.md
+          - DP Stock: leetpattern/dp_stock.md
+          - DP 01 Knapsack: leetpattern/dp_01_knapsack.md
+          - DP Unbounded Knapsack: leetpattern/dp_unbounded_knapsack.md
+          - DP Kadane: leetpattern/dp_kadane.md
+          - DP Interval: leetpattern/dp_interval.md
+          - DP LCS: leetpattern/dp_lcs.md
+          - DP LIS: leetpattern/dp_lis.md
+          - Greedy: leetpattern/greedy.md
+          - Intervals: leetpattern/intervals.md
+          - Graph Flood Fill: leetpattern/graph_flood_fill.md
+          - Graph BFS: leetpattern/graph_bfs.md
+          - Graph Topological Sort: leetpattern/graph_topological_sort.md
+          - Graph Union Find: leetpattern/graph_union_find.md
+          - Graph Shortest Path: leetpattern/graph_shortest_path.md
+          - Graph Bellman Ford: leetpattern/graph_bellman_ford.md
+          - Graph Minimum Spanning Tree: leetpattern/graph_minimum_spanning_tree.md
+          - Graph Coloring: leetpattern/graph_coloring.md
+          - Graph Tarjan: leetpattern/graph_tarjan.md
+          - Heap: leetpattern/heap.md
+          - Heap Top K: leetpattern/heap_top_k.md
+          - Heap Two Heaps: leetpattern/heap_two_heaps.md
+          - Heap Merge K Sorted: leetpattern/heap_merge_k_sorted.md
+          - Bit Manipulation: leetpattern/bit_manipulation.md
+          - Math: leetpattern/math.md
+          - Simulation: leetpattern/simulation.md
+          - Design: leetpattern/design.md
+
     - SQL:
           - Home: sql/index.md
           - SQL 50: sql/sql50.md
-    - Study Plan:
-          - Grind 75:
-                # - Home: grind75/index.md
-                - Array: grind75/array.md
-                - Stack: grind75/stack.md
-                - Linked List: grind75/linked_list.md
-                - String: grind75/string.md
-                - Binary Tree: grind75/binary_tree.md
-                - Binary Search: grind75/binary_search.md
-                - Graph: grind75/graph.md
-                - Binary Search Tree: grind75/binary_search_tree.md
-                - Hash Table: grind75/hash_table.md
-                - Dynamic Programming: grind75/dynamic_programming.md
-                - Binary: grind75/binary.md
-                - Heap: grind75/heap.md
-                - Trie: grind75/trie.md
-                - Recursion: grind75/recursion.md
-                - Matrix: grind75/matrix.md
 
-          - Neetcode 150:
-                - Home: neetcode150/index.md
-                - Arrays Hashing: neetcode150/arrays_hashing.md
-                - Two Pointers: neetcode150/two_pointers.md
-                - Sliding Window: neetcode150/sliding_window.md
-                - Stack: neetcode150/stack.md
-                - Binary Search: neetcode150/binary_search.md
-                - Linked List: neetcode150/linked_list.md
-                - Trees: neetcode150/trees.md
-                - Heap: neetcode150/heap.md
-                - Backtracking: neetcode150/backtracking.md
-                - Tries: neetcode150/tries.md
-                - Graphs: neetcode150/graphs.md
-                - Advanced Graphs: neetcode150/advanced_graphs.md
-                - 1D Dynamic Programming: neetcode150/1d_dynamic_programming.md
-                - 2D Dynamic_Programming: neetcode150/2d_dynamic_programming.md
-                - Greedy: neetcode150/greedy.md
-                - Intervals: neetcode150/intervals.md
-                - Math Geometry: neetcode150/math_geometry.md
-                - Bit Manipulation: neetcode150/bit_manipulation.md
+    - Grind 75:
+          - Home: grind75/index.md
+          - Array: grind75/array.md
+          - Stack: grind75/stack.md
+          - Linked List: grind75/linked_list.md
+          - String: grind75/string.md
+          - Binary Tree: grind75/binary_tree.md
+          - Binary Search: grind75/binary_search.md
+          - Graph: grind75/graph.md
+          - Binary Search Tree: grind75/binary_search_tree.md
+          - Hash Table: grind75/hash_table.md
+          - Dynamic Programming: grind75/dynamic_programming.md
+          - Binary: grind75/binary.md
+          - Heap: grind75/heap.md
+          - Trie: grind75/trie.md
+          - Recursion: grind75/recursion.md
+          - Matrix: grind75/matrix.md
 
-          - LeetPattern:
-                - Home: leetpattern/index.md
-                - Binary Search: leetpattern/binary_search.md
-                - Array: leetpattern/array.md
-                - Left Right Pointers: leetpattern/left_right_pointers.md
-                - Fast Slow Pointers: leetpattern/fast_slow_pointers.md
-                - Sliding Window Fixed: leetpattern/sliding_window_fixed.md
-                - Sliding Window Variable: leetpattern/sliding_window_variable.md
-                - Boyer Moore: leetpattern/boyer_moore.md
-                - Prefix Sum: leetpattern/prefix_sum.md
-                - Difference Array: leetpattern/difference_array.md
-                - Linked List: leetpattern/linked_list.md
-                - Backtracking: leetpattern/backtracking.md
-                - Hash Map: leetpattern/hash_map.md
-                - Hash Set: leetpattern/hash_set.md
-                - Hash Counting: leetpattern/hash_counting.md
-                - String: leetpattern/string.md
-                - KMP: leetpattern/kmp.md
-                - DP Basic: leetpattern/dp_basic.md
-                - DP 2D: leetpattern/dp_2d.md
-                - DP Stock: leetpattern/dp_stock.md
-                - DP 01 Knapsack: leetpattern/dp_01_knapsack.md
-                - DP Unbounded Knapsack: leetpattern/dp_unbounded_knapsack.md
-                - DP Kadane: leetpattern/dp_kadane.md
-                - DP Interval: leetpattern/dp_interval.md
-                - DP LCS: leetpattern/dp_lcs.md
-                - DP LIS: leetpattern/dp_lis.md
-                - Greedy: leetpattern/greedy.md
-                - Intervals: leetpattern/intervals.md
-                - Graph Flood Fill: leetpattern/graph_flood_fill.md
-                - Graph BFS: leetpattern/graph_bfs.md
-                - Graph Topological Sort: leetpattern/graph_topological_sort.md
-                - Graph Union Find: leetpattern/graph_union_find.md
-                - Graph Shortest Path: leetpattern/graph_shortest_path.md
-                - Graph Bellman Ford: leetpattern/graph_bellman_ford.md
-                - Graph Minimum Spanning Tree: leetpattern/graph_minimum_spanning_tree.md
-                - Graph Coloring: leetpattern/graph_coloring.md
-                - Graph Tarjan: leetpattern/graph_tarjan.md
-                - Heap: leetpattern/heap.md
-                - Heap Top K: leetpattern/heap_top_k.md
-                - Heap Two Heaps: leetpattern/heap_two_heaps.md
-                - Heap Merge K Sorted: leetpattern/heap_merge_k_sorted.md
-                - Bit Manipulation: leetpattern/bit_manipulation.md
-                - Math: leetpattern/math.md
-                - Simulation: leetpattern/simulation.md
-                - Design: leetpattern/design.md
+    - Neetcode 150:
+          - Home: neetcode150/index.md
+          - Arrays Hashing: neetcode150/arrays_hashing.md
+          - Two Pointers: neetcode150/two_pointers.md
+          - Sliding Window: neetcode150/sliding_window.md
+          - Stack: neetcode150/stack.md
+          - Binary Search: neetcode150/binary_search.md
+          - Linked List: neetcode150/linked_list.md
+          - Trees: neetcode150/trees.md
+          - Heap: neetcode150/heap.md
+          - Backtracking: neetcode150/backtracking.md
+          - Tries: neetcode150/tries.md
+          - Graphs: neetcode150/graphs.md
+          - Advanced Graphs: neetcode150/advanced_graphs.md
+          - 1D Dynamic Programming: neetcode150/1d_dynamic_programming.md
+          - 2D Dynamic_Programming: neetcode150/2d_dynamic_programming.md
+          - Greedy: neetcode150/greedy.md
+          - Intervals: neetcode150/intervals.md
+          - Math Geometry: neetcode150/math_geometry.md
+          - Bit Manipulation: neetcode150/bit_manipulation.md
 
-          - Blind 75:
-                - Home: blind75/index.md
-                - Arrays Hashing: blind75/arrays_hashing.md
-                - Two Pointers: blind75/two_pointers.md
-                - Sliding Window: blind75/sliding_window.md
-                - Stack: blind75/stack.md
-                - Binary Search: blind75/binary_search.md
-                - Linked List: blind75/linked_list.md
-                - Trees: blind75/trees.md
-                - Heap: blind75/heap.md
-                - Backtracking: blind75/backtracking.md
-                - Tries: blind75/tries.md
-                - Graphs: blind75/graphs.md
-                - Advanced Graphs: blind75/advanced_graphs.md
-                - 1D Dynamic Programming: blind75/1d_dynamic_programming.md
-                - 2D Dynamic Programming: blind75/2d_dynamic_programming.md
-                - Greedy: blind75/greedy.md
-                - Intervals: blind75/intervals.md
-                - Math Geometry: blind75/math_geometry.md
-                - Bit Manipulation: blind75/bit_manipulation.md
-
-    - Company:
-          - Home: company/index.md
-          - Amazon: company/amazon.md
+    - Blind 75:
+          - Home: blind75/index.md
+          - Arrays Hashing: blind75/arrays_hashing.md
+          - Two Pointers: blind75/two_pointers.md
+          - Sliding Window: blind75/sliding_window.md
+          - Stack: blind75/stack.md
+          - Binary Search: blind75/binary_search.md
+          - Linked List: blind75/linked_list.md
+          - Trees: blind75/trees.md
+          - Heap: blind75/heap.md
+          - Backtracking: blind75/backtracking.md
+          - Tries: blind75/tries.md
+          - Graphs: blind75/graphs.md
+          - Advanced Graphs: blind75/advanced_graphs.md
+          - 1D Dynamic Programming: blind75/1d_dynamic_programming.md
+          - 2D Dynamic Programming: blind75/2d_dynamic_programming.md
+          - Greedy: blind75/greedy.md
+          - Intervals: blind75/intervals.md
+          - Math Geometry: blind75/math_geometry.md
+          - Bit Manipulation: blind75/bit_manipulation.md
 
     - Graph Theory:
           - Home: graph_theory/index.md
@@ -184,9 +122,11 @@ nav:
           - Topological Sort: graph_theory/topological_sort.md
           - Dijkstra's: graph_theory/dijkstra's.md
           - MST: graph_theory/mst.md
+
     - Company:
           - Home: company/index.md
           - Amazon: company/amazon.md
+
     - About: about.md
 
 ##############################################
@@ -229,7 +169,7 @@ theme:
         - content.code.copy # Enable copy button on code blocks
         - content.code.select # Enable select button on code blocks
         - content.tabs.link # Enable link button on tabs
-        - navigation.tabs
+        #   - navigation.tabs
         - navigation.tracking
         - navigation.tabs.sticky
         - navigation.indexes # Enable indexes for the navigation
@@ -285,7 +225,8 @@ markdown_extensions:
                 class: mermaid
     - pymdownx.tasklist:
           custom_checkbox: true
-    - pymdownx.arithmatex: # latex support
+    - pymdownx.arithmatex:
+          # latex support
           generic: true
     - toc:
           permalink: true # Add permalinks to headers
@@ -317,11 +258,7 @@ extra:
           name: Medium | Sihan A
     consent:
         title: Cookie consent
-        description:
-            We use cookies to recognize your repeated visits and preferences, as well
-            as to measure the effectiveness of our documentation and whether users
-            find what they're searching for. With your consent, you're helping us to
-            make our documentation better.
+        description: We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.
 
     analytics:
         provider: google

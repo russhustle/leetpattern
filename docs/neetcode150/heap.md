@@ -4,7 +4,7 @@ comments: True
 
 # Heap
 
-## 703. Kth Largest Element In A Stream
+## 703. Kth Largest Element in a Stream
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/1046_last_stone_weight.ts"
     ```
 
-## 973. K Closest Points To Origin
+## 973. K Closest Points to Origin
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0973_k_closest_points_to_origin.ts"
     ```
 
-## 215. Kth Largest Element In An Array
+## 215. Kth Largest Element in an Array
 
 === "Python"
 
@@ -126,7 +126,7 @@ comments: True
     --8<-- "ts/0355_design_twitter.ts"
     ```
 
-## 295. Find Median From Data Stream
+## 295. Find Median from Data Stream
 
 === "Python"
 

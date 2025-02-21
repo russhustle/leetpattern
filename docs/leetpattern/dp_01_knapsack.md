@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0416_partition_equal_subset_sum.ts"
     ```
 
-## 474. Ones And Zeroes
+## 474. Ones and Zeroes
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/1046_last_stone_weight.ts"
     ```
 
-## 1049. Last Stone Weight Ii
+## 1049. Last Stone Weight II
 
 === "Python"
 

@@ -4,7 +4,7 @@ comments: True
 
 # Sliding Window
 
-## 121. Best Time To Buy And Sell Stock
+## 121. Best Time to Buy and Sell Stock
 
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
@@ -86,7 +86,7 @@ comments: True
     --8<-- "ts/0076_minimum_window_substring.ts"
     ```
 
-## 567. Permutation In String
+## 567. Permutation in String
 
 === "Python"
 

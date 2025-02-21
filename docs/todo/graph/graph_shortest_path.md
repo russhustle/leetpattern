@@ -103,9 +103,9 @@ graph LR
 
 ## 1168. Optimize Water Distribution in a Village
 
-![1168_0](../imgs/1168_0.png)
+![1168_0](../assets/1168_0.png)
 
-![1168_1](../imgs/1168_1.png)
+![1168_1](../assets/1168_1.png)
 
 ```python
 --8<-- "1168_optimize_water_distribution_in_a_village.py"

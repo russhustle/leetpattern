@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0252_meeting_rooms.ts"
     ```
 
-## 253. Meeting Rooms Ii
+## 253. Meeting Rooms II
 
 === "Python"
 

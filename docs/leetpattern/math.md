@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/1945_sum_of_digits_of_string_after_convert.ts"
     ```
 
-## 1894. Find The Student That Will Replace The Chalk
+## 1894. Find the Student that Will Replace the Chalk
 
 === "Python"
 

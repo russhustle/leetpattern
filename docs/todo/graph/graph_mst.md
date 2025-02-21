@@ -23,11 +23,11 @@ comments: true
 
 Example graph
 
-![mst1](../imgs/mst_1.png)
+![mst1](../assets/mst_1.png)
 
 MST
 
-![mst2](../imgs/mst_2.png)
+![mst2](../assets/mst_2.png)
 
 ```python title="template/graph_mst.py"
 --8<-- "template/graph_mst.py"
@@ -76,7 +76,7 @@ MST
 
 -   Return the maximum number of edges you can remove so that the graph remains fully traversable.
 
-![1579](../imgs/1579.png){width=200px}
+![1579](../assets/1579.png){width=200px}
 
 ```python
 --8<-- "1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.py"

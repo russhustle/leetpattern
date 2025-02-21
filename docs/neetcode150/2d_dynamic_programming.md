@@ -48,7 +48,7 @@ comments: True
     --8<-- "ts/1143_longest_common_subsequence.ts"
     ```
 
-## 309. Best Time To Buy And Sell Stock With Cooldown
+## 309. Best Time to Buy and Sell Stock with Cooldown
 
 === "Python"
 
@@ -68,24 +68,24 @@ comments: True
     --8<-- "ts/0309_best_time_to_buy_and_sell_stock_with_cooldown.ts"
     ```
 
-## 518. Coin Change 2
+## 518. Coin Change II
 
 === "Python"
 
     ```python
-    --8<-- "0518_coin_change_2.py"
+    --8<-- "0518_coin_change_ii.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0518_coin_change_2.cc"
+    --8<-- "cpp/0518_coin_change_ii.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0518_coin_change_2.ts"
+    --8<-- "ts/0518_coin_change_ii.ts"
     ```
 
 ## 494. Target Sum
@@ -128,7 +128,7 @@ comments: True
     --8<-- "ts/0097_interleaving_string.ts"
     ```
 
-## 329. Longest Increasing Path In A Matrix
+## 329. Longest Increasing Path in a Matrix
 
 === "Python"
 

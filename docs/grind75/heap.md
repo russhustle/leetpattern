@@ -4,7 +4,7 @@ comments: True
 
 # Heap
 
-## 973. K Closest Points To Origin
+## 973. K Closest Points to Origin
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0621_task_scheduler.ts"
     ```
 
-## 295. Find Median From Data Stream
+## 295. Find Median from Data Stream
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0295_find_median_from_data_stream.ts"
     ```
 
-## 23. Merge K Sorted Lists
+## 23. Merge k Sorted Lists
 
 === "Python"
 

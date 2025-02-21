@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0039_combination_sum.ts"
     ```
 
-## 40. Combination Sum Ii
+## 40. Combination Sum II
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0046_permutations.ts"
     ```
 
-## 90. Subsets Ii
+## 90. Subsets II
 
 === "Python"
 
@@ -164,7 +164,7 @@ comments: True
     --8<-- "ts/0017_letter_combinations_of_a_phone_number.ts"
     ```
 
-## 51. N Queens
+## 51. N-Queens
 
 - Hard
 - [N-Queens](https://leetcode.com/problems/n-queens/)

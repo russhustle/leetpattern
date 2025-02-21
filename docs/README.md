@@ -6,7 +6,7 @@ Thank you for visiting this project! If you find it helpful or interesting, plea
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
   <div style="flex: 1; text-align: center;">
-    <img src="imgs/leetpattern.png" alt="LeetPattern" style="width: 300px; border-radius: 15px;">
+    <img src="assets/leetpattern.png" alt="LeetPattern" style="width: 300px; border-radius: 15px;">
   </div>
   <div style="flex: 2;">
     📚 This is a collection of patterns for solving LeetCode problems. The goal is to provide a structured approach to solving problems and to help you build a strong foundation in algorithms and data structures.

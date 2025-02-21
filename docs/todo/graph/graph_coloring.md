@@ -6,7 +6,7 @@ comments: true
 
 ## Bipartite Graph
 
-![graph_bipartite](../imgs/graph_bipartite.png){width=300px}
+![graph_bipartite](../assets/graph_bipartite.png){width=300px}
 
 How to group
 

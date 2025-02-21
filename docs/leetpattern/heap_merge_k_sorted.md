@@ -4,7 +4,7 @@ comments: True
 
 # Heap Merge K Sorted
 
-## 23. Merge K Sorted Lists
+## 23. Merge k Sorted Lists
 
 === "Python"
 
@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0023_merge_k_sorted_lists.ts"
     ```
 
-## 373. Find K Pairs With Smallest Sums
+## 373. Find K Pairs with Smallest Sums
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0373_find_k_pairs_with_smallest_sums.ts"
     ```
 
-## 378. Kth Smallest Element In A Sorted Matrix
+## 378. Kth Smallest Element in a Sorted Matrix
 
 -   Given an `n x n` matrix where each of the rows and columns are sorted in ascending order, return the `k-th` smallest element in the matrix.
 

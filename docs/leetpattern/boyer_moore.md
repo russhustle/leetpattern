@@ -38,7 +38,7 @@ comments: True
     --8<-- "ts/0169_majority_element.ts"
     ```
 
-## 229. Majority Element Ii
+## 229. Majority Element II
 
 === "Python"
 
@@ -80,7 +80,7 @@ comments: True
     --8<-- "ts/0287_find_the_duplicate_number.ts"
     ```
 
-## 1150. Check If A Number Is Majority Element In A Sorted Array
+## 1150. Check If a Number Is Majority Element in a Sorted Array
 
 === "Python"
 

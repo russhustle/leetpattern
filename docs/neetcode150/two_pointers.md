@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0125_valid_palindrome.ts"
     ```
 
-## 167. Two Sum Ii Input Array Is Sorted
+## 167. Two Sum II - Input Array Is Sorted
 
 === "Python"
 

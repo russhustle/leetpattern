@@ -66,7 +66,7 @@ comments: True
     --8<-- "ts/0018_4sum.ts"
     ```
 
-## 69. Sqrtx
+## 69. Sqrt(x)
 
 === "Python"
 
@@ -106,7 +106,7 @@ comments: True
     --8<-- "ts/0088_merge_sorted_array.ts"
     ```
 
-## 977. Squares Of A Sorted Array
+## 977. Squares of a Sorted Array
 
 === "Python"
 
@@ -126,7 +126,7 @@ comments: True
     --8<-- "ts/0977_squares_of_a_sorted_array.ts"
     ```
 
-## 881. Boats To Save People
+## 881. Boats to Save People
 
 === "Python"
 
@@ -186,7 +186,7 @@ comments: True
     --8<-- "ts/0125_valid_palindrome.ts"
     ```
 
-## 167. Two Sum Ii Input Array Is Sorted
+## 167. Two Sum II - Input Array Is Sorted
 
 === "Python"
 

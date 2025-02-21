@@ -114,7 +114,7 @@ comments: True
     --8<-- "ts/0347_top_k_frequent_elements.ts"
     ```
 
-## 271. Encode And Decode Strings
+## 271. Encode and Decode Strings
 
 === "Python"
 
@@ -134,7 +134,7 @@ comments: True
     --8<-- "ts/0271_encode_and_decode_strings.ts"
     ```
 
-## 238. Product Of Array Except Self
+## 238. Product of Array Except Self
 
 === "Python"
 

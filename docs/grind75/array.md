@@ -30,7 +30,7 @@ comments: True
     --8<-- "ts/0001_two_sum.ts"
     ```
 
-## 121. Best Time To Buy And Sell Stock
+## 121. Best Time to Buy and Sell Stock
 
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
@@ -148,7 +148,7 @@ comments: True
     --8<-- "ts/0015_3sum.ts"
     ```
 
-## 238. Product Of Array Except Self
+## 238. Product of Array Except Self
 
 === "Python"
 

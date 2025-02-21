@@ -4,7 +4,7 @@ comments: True
 
 # Hash Set
 
-## 349. Intersection Of Two Arrays
+## 349. Intersection of Two Arrays
 
 === "Python"
 

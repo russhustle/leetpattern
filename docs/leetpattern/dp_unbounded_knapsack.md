@@ -64,27 +64,27 @@ comments: True
     --8<-- "ts/0322_coin_change.ts"
     ```
 
-## 518. Coin Change 2
+## 518. Coin Change II
 
 === "Python"
 
     ```python
-    --8<-- "0518_coin_change_2.py"
+    --8<-- "0518_coin_change_ii.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/0518_coin_change_2.cc"
+    --8<-- "cpp/0518_coin_change_ii.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/0518_coin_change_2.ts"
+    --8<-- "ts/0518_coin_change_ii.ts"
     ```
 
-## 377. Combination Sum Iv
+## 377. Combination Sum IV
 
 === "Python"
 

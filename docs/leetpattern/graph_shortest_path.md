@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0743_network_delay_time.ts"
     ```
 
-## 778. Swim In Rising Water
+## 778. Swim in Rising Water
 
 === "Python"
 
@@ -99,7 +99,7 @@ graph TD
     --8<-- "ts/0787_cheapest_flights_within_k_stops.ts"
     ```
 
-## 1514. Path With Maximum Probability
+## 1514. Path with Maximum Probability
 
 === "Python"
 
@@ -119,7 +119,7 @@ graph TD
     --8<-- "ts/1514_path_with_maximum_probability.ts"
     ```
 
-## 505. The Maze Ii
+## 505. The Maze II
 
 === "Python"
 
@@ -139,7 +139,7 @@ graph TD
     --8<-- "ts/0505_the_maze_ii.ts"
     ```
 
-## 499. The Maze Iii
+## 499. The Maze III
 
 === "Python"
 
@@ -179,7 +179,7 @@ graph TD
     --8<-- "ts/0882_reachable_nodes_in_subdivided_graph.ts"
     ```
 
-## 1376. Time Needed To Inform All Employees
+## 1376. Time Needed to Inform All Employees
 
 === "Python"
 
@@ -199,7 +199,7 @@ graph TD
     --8<-- "ts/1376_time_needed_to_inform_all_employees.ts"
     ```
 
-## 1168. Optimize Water Distribution In A Village
+## 1168. Optimize Water Distribution in a Village
 
 === "Python"
 
@@ -219,7 +219,7 @@ graph TD
     --8<-- "ts/1168_optimize_water_distribution_in_a_village.ts"
     ```
 
-## 1976. Number Of Ways To Arrive At Destination
+## 1976. Number of Ways to Arrive at Destination
 
 === "Python"
 

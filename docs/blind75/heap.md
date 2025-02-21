@@ -4,7 +4,7 @@ comments: True
 
 # Heap
 
-## 295. Find Median From Data Stream
+## 295. Find Median from Data Stream
 
 === "Python"
 

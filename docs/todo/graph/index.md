@@ -20,40 +20,40 @@ comments: true
 
 -   **Undirected graph**: A graph in which edges have no direction.
 
-![undirected_graph](../imgs/undirected_graph.png)
+![undirected_graph](../assets/undirected_graph.png)
 
 -   **Directed graph**: A graph in which edges have direction.
 
-![directed_graph](../imgs/directed_graph.png)
+![directed_graph](../assets/directed_graph.png)
 
 -   **Cyclic graph**: A graph in which there is a cycle. A cycle is a path of edges that starts and ends at the same vertex, e.g., `1 -> 3 -> 4 -> 1`.
 
-![cyclic_graph](../imgs/cyclic_graph.png)
+![cyclic_graph](../assets/cyclic_graph.png)
 
 -   **Acyclic graph**: A graph in which there is no cycle.
 
-![acyclic_graph](../imgs/graph_acyclic.png)
+![acyclic_graph](../assets/graph_acyclic.png)
 
 -   **Directed Acyclic Graph** (DAG): A directed graph with no cycles.
     -   Topological sort
 
-![dag](../imgs/graph_dag.png)
+![dag](../assets/graph_dag.png)
 
 -   **Weighted graph**: A graph in which edges have weights.
 
-![weighted](../imgs/graph_weighted.png)
+![weighted](../assets/graph_weighted.png)
 
 -   **Connected Graph**: A graph in which there is a path between every pair of vertices.
 
-![connected](../imgs/graph_connected.png)
+![connected](../assets/graph_connected.png)
 
 -   **Disconnected Graph**: A graph in which there is no path between some pairs of vertices.
 
-![disconnected](../imgs/graph_disconnected.png)
+![disconnected](../assets/graph_disconnected.png)
 
 -   **Eulerian path**: A path that visits every edge exactly once, e.g., `5 -> 4 -> 1 -> 2 -> 3`.
 
-![eulerian](../imgs/graph_eulerian.png)
+![eulerian](../assets/graph_eulerian.png)
 
 ### Representation
 

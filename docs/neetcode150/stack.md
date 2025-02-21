@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/0853_car_fleet.ts"
     ```
 
-## 84. Largest Rectangle In Histogram
+## 84. Largest Rectangle in Histogram
 
 === "Python"
 

@@ -141,7 +141,7 @@ D --> B
     --8<-- "ts/0141_linked_list_cycle.ts"
     ```
 
-## 23. Merge K Sorted Lists
+## 23. Merge k Sorted Lists
 
 === "Python"
 

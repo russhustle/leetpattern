@@ -4,7 +4,7 @@ comments: True
 
 # BFS
 
-## 1926. Nearest Exit From Entrance In Maze
+## 1926. Nearest Exit from Entrance in Maze
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0127_word_ladder.ts"
     ```
 
-## 1306. Jump Game Iii
+## 1306. Jump Game III
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/0542_01_matrix.ts"
     ```
 
-## 1091. Shortest Path In Binary Matrix
+## 1091. Shortest Path in Binary Matrix
 
 === "Python"
 
@@ -144,7 +144,7 @@ comments: True
     --8<-- "ts/1091_shortest_path_in_binary_matrix.ts"
     ```
 
-## 863. All Nodes Distance K In Binary Tree
+## 863. All Nodes Distance K in Binary Tree
 
 === "Python"
 
@@ -164,7 +164,7 @@ comments: True
     --8<-- "ts/0863_all_nodes_distance_k_in_binary_tree.ts"
     ```
 
-## 864. Shortest Path To Get All Keys
+## 864. Shortest Path to Get All Keys
 
 === "Python"
 

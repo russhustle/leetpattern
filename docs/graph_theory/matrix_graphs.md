@@ -4,7 +4,7 @@ comments: True
 
 # Matrix Graphs
 
-## 200. Number Of Islands
+## 200. Number of Islands
 
 === "Python"
 
@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0200_number_of_islands.ts"
     ```
 
-## 1020. Number Of Enclaves
+## 1020. Number of Enclaves
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/1020_number_of_enclaves.ts"
     ```
 
-## 1254. Number Of Closed Islands
+## 1254. Number of Closed Islands
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/1254_number_of_closed_islands.ts"
     ```
 
-## 695. Max Area Of Island
+## 695. Max Area of Island
 
 === "Python"
 

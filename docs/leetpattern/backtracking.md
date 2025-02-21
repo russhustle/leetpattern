@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0039_combination_sum.ts"
     ```
 
-## 40. Combination Sum Ii
+## 40. Combination Sum II
 
 === "Python"
 
@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0040_combination_sum_ii.ts"
     ```
 
-## 216. Combination Sum Iii
+## 216. Combination Sum III
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/0131_palindrome_partitioning.ts"
     ```
 
-## 93. Restore Ip Addresses
+## 93. Restore IP Addresses
 
 === "Python"
 
@@ -164,7 +164,7 @@ comments: True
     --8<-- "ts/0078_subsets.ts"
     ```
 
-## 90. Subsets Ii
+## 90. Subsets II
 
 === "Python"
 
@@ -184,7 +184,7 @@ comments: True
     --8<-- "ts/0090_subsets_ii.ts"
     ```
 
-## 491. Non Decreasing Subsequences
+## 491. Non-decreasing Subsequences
 
 === "Python"
 
@@ -224,7 +224,7 @@ comments: True
     --8<-- "ts/0046_permutations.ts"
     ```
 
-## 47. Permutations Ii
+## 47. Permutations II
 
 === "Python"
 
@@ -244,7 +244,7 @@ comments: True
     --8<-- "ts/0047_permutations_ii.ts"
     ```
 
-## 51. N Queens
+## 51. N-Queens
 
 - Hard
 - [N-Queens](https://leetcode.com/problems/n-queens/)
@@ -312,7 +312,7 @@ comments: True
     --8<-- "ts/0079_word_search.ts"
     ```
 
-## 212. Word Search Ii
+## 212. Word Search II
 
 === "Python"
 

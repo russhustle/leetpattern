@@ -158,7 +158,7 @@ comments: True
     --8<-- "ts/1011_capacity_to_ship_packages_within_d_days.ts"
     ```
 
-## 378. Kth Smallest Element In A Sorted Matrix
+## 378. Kth Smallest Element in a Sorted Matrix
 
 -   Given an `n x n` matrix where each of the rows and columns are sorted in ascending order, return the `k-th` smallest element in the matrix.
 

@@ -8,7 +8,7 @@ comments: true
     It checks adjacent cells (up, down, left, right) of a starting point to determine whether they belong to the same region.
     Typically, it involves modifying or marking the cells that belong to the same connected component.
 
-![flood_fill](../imgs/flood_fill_example.png){width=300px}
+![flood_fill](../assets/flood_fill_example.png){width=300px}
 
 ## LeetCode Problems
 
@@ -26,7 +26,7 @@ comments: true
 -   In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
 -   Edge cases: If the starting pixel is already the target color, return the image as it is.
 
-![733](../imgs/0733.jpg)
+![733](../assets/0733.jpg)
 
 ```python
 --8<-- "0733_flood_fill.py"
@@ -68,7 +68,7 @@ comments: true
     2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
     3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
-![0200](../imgs/0200.jpg)
+![0200](../assets/0200.jpg)
 
 ```python
 --8<-- "0200_number_of_islands.py"

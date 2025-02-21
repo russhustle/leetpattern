@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/1135_connecting_cities_with_minimum_cost.ts"
     ```
 
-## 1584. Min Cost To Connect All Points
+## 1584. Min Cost to Connect All Points
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/1584_min_cost_to_connect_all_points.ts"
     ```
 
-## 1168. Optimize Water Distribution In A Village
+## 1168. Optimize Water Distribution in a Village
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/1168_optimize_water_distribution_in_a_village.ts"
     ```
 
-## 1489. Find Critical And Pseudo Critical Edges In Minimum Spanning Tree
+## 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
 
 === "Python"
 

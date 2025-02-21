@@ -27,7 +27,7 @@ comments: true
 
 -   Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
-![0207](../imgs/0207.png){width=300px}
+![0207](../assets/0207.png){width=300px}
 
 ```python
 --8<-- "0210_course_schedule_ii.py"
@@ -61,7 +61,7 @@ comments: true
 
 -   Return the minimum number of semesters needed to take all courses.
 
-![1136](../imgs/1136.png){width=300px}
+![1136](../assets/1136.png){width=300px}
 
 ```python
 --8<-- "1136_parallel_courses.py"
@@ -73,6 +73,6 @@ comments: true
 --8<-- "template/graph_topological_sort.py"
 ```
 
-![ts1](../imgs/graph_ts1.png){width=300px}
+![ts1](../assets/graph_ts1.png){width=300px}
 
-![ts2](../imgs/graph_ts2.png){width=300px}
+![ts2](../assets/graph_ts2.png){width=300px}

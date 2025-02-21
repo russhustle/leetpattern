@@ -41,7 +41,7 @@ ATL --> SFO
     --8<-- "ts/0332_reconstruct_itinerary.ts"
     ```
 
-## 1584. Min Cost To Connect All Points
+## 1584. Min Cost to Connect All Points
 
 === "Python"
 
@@ -81,7 +81,7 @@ ATL --> SFO
     --8<-- "ts/0743_network_delay_time.ts"
     ```
 
-## 778. Swim In Rising Water
+## 778. Swim in Rising Water
 
 === "Python"
 

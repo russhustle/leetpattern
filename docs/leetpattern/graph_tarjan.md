@@ -4,7 +4,7 @@ comments: True
 
 # Graph Tarjan
 
-## 1192. Critical Connections In A Network
+## 1192. Critical Connections in a Network
 
 === "Python"
 

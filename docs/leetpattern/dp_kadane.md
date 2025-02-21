@@ -84,7 +84,7 @@ comments: True
     --8<-- "ts/0978_longest_turbulent_subarray.ts"
     ```
 
-## 1186. Maximum Subarray Sum With One Deletion
+## 1186. Maximum Subarray Sum with One Deletion
 
 === "Python"
 

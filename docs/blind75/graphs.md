@@ -4,7 +4,7 @@ comments: True
 
 # Graphs
 
-## 200. Number Of Islands
+## 200. Number of Islands
 
 === "Python"
 
@@ -209,7 +209,7 @@ Pop `0` from the queue
     --8<-- "ts/0261_graph_valid_tree.ts"
     ```
 
-## 323. Number Of Connected Components In An Undirected Graph
+## 323. Number of Connected Components in an Undirected Graph
 
 === "Python"
 

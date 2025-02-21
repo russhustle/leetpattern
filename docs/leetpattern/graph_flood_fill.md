@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0733_flood_fill.ts"
     ```
 
-## 200. Number Of Islands
+## 200. Number of Islands
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0200_number_of_islands.ts"
     ```
 
-## 695. Max Area Of Island
+## 695. Max Area of Island
 
 === "Python"
 

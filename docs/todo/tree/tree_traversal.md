@@ -53,7 +53,7 @@ comments: true
 
 ### Traversal Methods
 
-![tree_traversal](../imgs/tree_traversal_dfs_bfs.png)
+![tree_traversal](../assets/tree_traversal_dfs_bfs.png)
 
 Example 1
 

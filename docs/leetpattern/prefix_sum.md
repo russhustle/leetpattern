@@ -4,27 +4,27 @@ comments: True
 
 # Prefix Sum
 
-## 2574. Left And Right Sum Difference
+## 2574. Left and Right Sum Differences
 
 === "Python"
 
     ```python
-    --8<-- "2574_left_and_right_sum_difference.py"
+    --8<-- "2574_left_and_right_sum_differences.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/2574_left_and_right_sum_difference.cc"
+    --8<-- "cpp/2574_left_and_right_sum_differences.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/2574_left_and_right_sum_difference.ts"
+    --8<-- "ts/2574_left_and_right_sum_differences.ts"
     ```
 
-## 1732. Find The Highest Altitude
+## 1732. Find the Highest Altitude
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/1732_find_the_highest_altitude.ts"
     ```
 
-## 303. Range Sum Query Immutable
+## 303. Range Sum Query - Immutable
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/0303_range_sum_query_immutable.ts"
     ```
 
-## 304. Range Sum Query 2D Immutable
+## 304. Range Sum Query 2D - Immutable
 
 === "Python"
 
@@ -104,7 +104,7 @@ comments: True
     --8<-- "ts/0560_subarray_sum_equals_k.ts"
     ```
 
-## 238. Product Of Array Except Self
+## 238. Product of Array Except Self
 
 === "Python"
 
@@ -124,7 +124,7 @@ comments: True
     --8<-- "ts/0238_product_of_array_except_self.ts"
     ```
 
-## 974. Subarray Sums Divisible By K
+## 974. Subarray Sums Divisible by K
 
 === "Python"
 
@@ -184,7 +184,7 @@ comments: True
     --8<-- "ts/0523_continuous_subarray_sum.ts"
     ```
 
-## 1248. Count Number Of Nice Subarrays
+## 1248. Count Number of Nice Subarrays
 
 === "Python"
 
@@ -204,7 +204,7 @@ comments: True
     --8<-- "ts/1248_count_number_of_nice_subarrays.ts"
     ```
 
-## 325. Maximum Size Subarray Sum Equals K
+## 325. Maximum Size Subarray Sum Equals k
 
 === "Python"
 
@@ -224,7 +224,7 @@ comments: True
     --8<-- "ts/0325_maximum_size_subarray_sum_equals_k.ts"
     ```
 
-## 862. Shortest Subarray With Sum At Least K
+## 862. Shortest Subarray with Sum at Least K
 
 === "Python"
 
@@ -244,7 +244,7 @@ comments: True
     --8<-- "ts/0862_shortest_subarray_with_sum_at_least_k.ts"
     ```
 
-## 1171. Remove Zero Sum Consecutive Nodes From Linked List
+## 1171. Remove Zero Sum Consecutive Nodes from Linked List
 
 === "Python"
 

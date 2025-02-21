@@ -106,7 +106,7 @@ comments: True
     --8<-- "ts/0134_gas_station.ts"
     ```
 
-## 846. Hand Of Straights
+## 846. Hand of Straights
 
 === "Python"
 
@@ -126,7 +126,7 @@ comments: True
     --8<-- "ts/0846_hand_of_straights.ts"
     ```
 
-## 1899. Merge Triplets To Form Target Triplet
+## 1899. Merge Triplets to Form Target Triplet
 
 === "Python"
 

@@ -24,7 +24,7 @@ comments: True
     --8<-- "ts/0643_maximum_average_subarray_i.ts"
     ```
 
-## 219. Contains Duplicate Ii
+## 219. Contains Duplicate II
 
 === "Python"
 
@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0219_contains_duplicate_ii.ts"
     ```
 
-## 1456. Maximum Number Of Vowels In A Substring Of Given Length
+## 1456. Maximum Number of Vowels in a Substring of Given Length
 
 === "Python"
 
@@ -64,7 +64,7 @@ comments: True
     --8<-- "ts/1456_maximum_number_of_vowels_in_a_substring_of_given_length.ts"
     ```
 
-## 567. Permutation In String
+## 567. Permutation in String
 
 === "Python"
 
@@ -104,24 +104,24 @@ comments: True
     --8<-- "ts/0713_subarray_product_less_than_k.ts"
     ```
 
-## 1151. Minimum Swaps To Group All Ones Together
+## 1151. Minimum Swaps to Group All 1's Together
 
 === "Python"
 
     ```python
-    --8<-- "1151_minimum_swaps_to_group_all_ones_together.py"
+    --8<-- "1151_minimum_swaps_to_group_all_1s_together.py"
     ```
 
 === "C++"
 
     ```cpp
-    --8<-- "cpp/1151_minimum_swaps_to_group_all_ones_together.cc"
+    --8<-- "cpp/1151_minimum_swaps_to_group_all_1s_together.cc"
     ```
 
 === "TypeScript"
 
     ```typescript
-    --8<-- "ts/1151_minimum_swaps_to_group_all_ones_together.ts"
+    --8<-- "ts/1151_minimum_swaps_to_group_all_1s_together.ts"
     ```
 
 ## 209. Minimum Size Subarray Sum

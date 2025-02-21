@@ -4,7 +4,7 @@ comments: true
 
 # Meet your Instructor
 
-![Sihan](./imgs/sihan.jpg){ style="display: block; margin-left: auto; margin-right: auto; border-radius: 50%; width: 200px;" }
+![Sihan](./assets/sihan.jpg){ style="display: block; margin-left: auto; margin-right: auto; border-radius: 50%; width: 200px;" }
 
 <div style="text-align: center;">
   Hi, I am Sihan. Connect with me on

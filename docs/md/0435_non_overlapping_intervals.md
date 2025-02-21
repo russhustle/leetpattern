@@ -1,1 +1,1 @@
-## 435. Non Overlapping Intervals
+## 435. Non-overlapping Intervals

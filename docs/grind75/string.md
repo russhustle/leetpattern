@@ -90,6 +90,8 @@ comments: True
 
 ## 5. Longest Palindromic Substring
 
+-   Return the longest palindromic substring in `s`.
+
 === "Python"
 
     ```python

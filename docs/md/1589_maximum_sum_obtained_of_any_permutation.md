@@ -1,1 +1,1 @@
-## 1589. Maximum Sum Obtained Of Any Permutation
+## 1589. Maximum Sum Obtained of Any Permutation

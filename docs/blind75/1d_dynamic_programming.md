@@ -6,6 +6,25 @@ comments: True
 
 ## 70. Climbing Stairs
 
+-   Return the number of distinct ways to reach the top of the stairs.
+-   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
+-   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
+-   Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
+
+|  n  | `dp[n-2]` | `dp[n-1]` | `dp[n]` |
+| :-: | :-------: | :-------: | :-----: |
+|  0  |     -     |     -     |    0    |
+|  1  |     -     |     -     |    1    |
+|  2  |     -     |     1     |    2    |
+|  3  |     1     |     2     |    3    |
+|  4  |     2     |     3     |    5    |
+|  5  |     3     |     5     |    8    |
+|  6  |     5     |     8     |   13    |
+|  7  |     8     |    13     |   21    |
+|  8  |    13     |    21     |   34    |
+|  9  |    21     |    34     |   55    |
+| 10  |    34     |    55     |   89    |
+
 === "Python"
 
     ```python
@@ -26,6 +45,24 @@ comments: True
 
 ## 198. House Robber
 
+-   Return the maximum amount of money that can be robbed from the houses. No two adjacent houses can be robbed.
+
+-   `dp[n]` stores the maximum amount of money that can be robbed from the first `n` houses.
+-   Formula: `dp[n] = max(dp[n - 1], dp[n - 2] + nums[n])`.
+    -   Skip: `dp[n]` → `dp[n - 1]`
+    -   Rob: `dp[n]` → `dp[n - 2] + nums[n]`
+-   Initialize `dp[0] = nums[0]` and `dp[1] = max(nums[0], nums[1])`.
+-   Return `dp[-1]`.
+-   Example: `nums = [2, 7, 9, 3, 1]`
+
+|  n  | `nums[n]` | `dp[n-2]` | `dp[n-1]` | `dp[n-2] + nums[n]` | `dp[n]` |
+| :-: | :-------: | :-------: | :-------: | :-----------------: | :-----: |
+|  0  |     2     |     -     |     2     |          -          |    2    |
+|  1  |     7     |     -     |     7     |          -          |    7    |
+|  2  |     9     |     2     |     7     |         11          |   11    |
+|  3  |     3     |     7     |    11     |         10          |   11    |
+|  4  |     1     |    11     |    11     |         12          |   12    |
+
 === "Python"
 
     ```python
@@ -44,7 +81,27 @@ comments: True
     --8<-- "ts/0198_house_robber.ts"
     ```
 
-## 213. House Robber Ii
+## 213. House Robber II
+
+-   Return the maximum amount of money that can be robbed from the houses arranged in a circle.
+-   Circular → Linear: `nums[0]` and `nums[-1]` cannot be robbed together.
+-   Rob from `0` to `n - 2`
+
+|  n  | `nums[n]` | `dp[n-2]` | `dp[n-1]` | `dp[n-2] + nums[n]` | `dp[n]` |
+| :-: | :-------: | :-------: | :-------: | :-----------------: | :-----: |
+|  0  |     2     |     -     |     2     |          -          |    2    |
+|  1  |     7     |     -     |     7     |          -          |    7    |
+|  2  |     9     |     2     |     7     |         11          |   11    |
+|  3  |     3     |     7     |    11     |         10          |   11    |
+
+-   Rob from `1` to `n - 1`
+
+|  n  | `nums[n]` | `dp[n-2]` | `dp[n-1]` | `dp[n-2] + nums[n]` | `dp[n]` |
+| :-: | :-------: | :-------: | :-------: | :-----------------: | :-----: |
+|  1  |     7     |     -     |     -     |          -          |    7    |
+|  2  |     9     |     -     |     7     |          -          |    9    |
+|  3  |     3     |     7     |     9     |         10          |   10    |
+|  4  |     1     |     9     |    10     |         10          |   10    |
 
 === "Python"
 
@@ -66,6 +123,8 @@ comments: True
 
 ## 5. Longest Palindromic Substring
 
+-   Return the longest palindromic substring in `s`.
+
 === "Python"
 
     ```python
@@ -85,6 +144,17 @@ comments: True
     ```
 
 ## 647. Palindromic Substrings
+
+-   Return the number of palindromic substrings in `s`.
+-   Bottom-up DP table
+
+|  dp   |  a  |  b  |  b  |  a  |  e  |
+| :---: | :-: | :-: | :-: | :-: | :-: |
+| **a** |  1  |  0  |  0  |  1  |  0  |
+| **b** |  0  |  1  |  1  |  0  |  0  |
+| **b** |  0  |  0  |  1  |  0  |  0  |
+| **a** |  0  |  0  |  0  |  1  |  0  |
+| **e** |  0  |  0  |  0  |  0  |  1  |
 
 === "Python"
 

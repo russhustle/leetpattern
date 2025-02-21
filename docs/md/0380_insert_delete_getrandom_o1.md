@@ -1,1 +1,1 @@
-## 380. Insert Delete Getrandom O1
+## 380. Insert Delete GetRandom O(1)

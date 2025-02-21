@@ -16,31 +16,40 @@ class ProblemList:
 
         self.pattern = re.compile(r"^\d{4}_")
 
+        # mkdocs
+        self.tab = 4 * " "
+        self.mkdocs_yaml = f"{self.tab}- {self.data.name}:\n"
+        self.mkdocs_yaml += (
+            f"{self.tab}{self.tab}- Home: {self.data.dir}/index.md\n"
+        )
+
+        # index
+        self.index_md_path = os.path.join(self.docs, self.data.dir, "index.md")
+        if not os.path.exists(self.index_md_path):
+            with open(self.index_md_path, "w") as outfile:
+                outfile.write(f"# {self.data.name}\n")
+
         for topic, problems in self.data.topics.items():
             self.generate_topic_markdown(topic, problems)
 
-    def generate_topic_markdown(self, topic, problems, comments=True):
-        if problems:
-            files = [
-                file
-                for problem in problems
-                for file in os.listdir(self.src)
-                if file.endswith(".py")
-                and self.pattern.match(file)
-                and int(file.split("_")[0]) == problem
-            ]
-        else:
-            files = sorted(
-                [
-                    file
-                    for file in os.listdir(self.src)
-                    if file.endswith(".py") and self.pattern.match(file)
-                ]
-            )
+        print(self.mkdocs_yaml)
+
+    def generate_topic_markdown(self, topic: str, problems, comments=True):
+        files = [
+            file
+            for problem in problems
+            for file in os.listdir(self.src)
+            if file.endswith(".py")
+            and self.pattern.match(file)
+            and int(file.split("_")[0]) == problem
+        ]
 
         title = f"# {topic}\n\n"
-        md_path = os.path.join(
-            self.docs, self.data.dir, topic.lower().replace(" ", "_") + ".md"
+        md_name = topic.lower().replace(" ", "_") + ".md"
+        md_path = os.path.join(self.docs, self.data.dir, md_name)
+
+        self.mkdocs_yaml += (
+            f"{self.tab}{self.tab}- {topic}: {self.data.dir}/{md_name}\n"
         )
 
         with open(md_path, "w") as outfile:

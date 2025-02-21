@@ -1,1 +1,3 @@
-## 406. Queue Reconstruction By Height
+## 406. Queue Reconstruction by Height
+
+-   Reconstruct the queue.

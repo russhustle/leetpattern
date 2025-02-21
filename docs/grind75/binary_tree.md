@@ -164,7 +164,7 @@ comments: True
     --8<-- "ts/0105_construct_binary_tree_from_preorder_and_inorder_traversal.ts"
     ```
 
-## 297. Serialize And Deserialize Binary Tree
+## 297. Serialize and Deserialize Binary Tree
 
 === "Python"
 

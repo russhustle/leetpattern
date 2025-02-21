@@ -284,7 +284,7 @@ comments: True
     --8<-- "ts/0124_binary_tree_maximum_path_sum.ts"
     ```
 
-## 297. Serialize And Deserialize Binary Tree
+## 297. Serialize and Deserialize Binary Tree
 
 === "Python"
 

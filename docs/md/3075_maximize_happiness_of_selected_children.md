@@ -1,1 +1,1 @@
-## 3075. Maximize Happiness Of Selected Children
+## 3075. Maximize Happiness of Selected Children

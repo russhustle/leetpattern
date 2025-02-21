@@ -23,4 +23,6 @@ pre-commit:
 
 generate:
 	poetry run python utils/sync.py
-	poetry run python utils/generate.py
+	poetry run python utils/integrate.py
+	poetry run pre-commit run --all-files
+	poetry run pre-commit run --all-files

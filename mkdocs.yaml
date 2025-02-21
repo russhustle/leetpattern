@@ -63,17 +63,8 @@ nav:
           - Home: sql/index.md
           - SQL 50: sql/sql50.md
     - Study Plan:
-          - Graph Theory:
-                - Standard Traversal: graph_theory/standard_traversal.md
-                - BFS: graph_theory/bfs.md
-                - Matrix Graphs: graph_theory/matrix_graphs.md
-                - Graph Theory: graph_theory/graph_theory.md
-                - Topological Sort: graph_theory/topological_sort.md
-                - Union Find: graph_theory/union_find.md
-                - Dijkstra's: graph_theory/dijkstra's.md
-                - MST: graph_theory/mst.md
-
           - Grind 75:
+                # - Home: grind75/index.md
                 - Array: grind75/array.md
                 - Stack: grind75/stack.md
                 - Linked List: grind75/linked_list.md
@@ -91,7 +82,8 @@ nav:
                 - Matrix: grind75/matrix.md
 
           - Neetcode 150:
-                - Arrays & Hashing: neetcode150/arrays_hashing.md
+                - Home: neetcode150/index.md
+                - Arrays Hashing: neetcode150/arrays_hashing.md
                 - Two Pointers: neetcode150/two_pointers.md
                 - Sliding Window: neetcode150/sliding_window.md
                 - Stack: neetcode150/stack.md
@@ -104,14 +96,94 @@ nav:
                 - Graphs: neetcode150/graphs.md
                 - Advanced Graphs: neetcode150/advanced_graphs.md
                 - 1D Dynamic Programming: neetcode150/1d_dynamic_programming.md
-                - 2D Dynamic Programming: neetcode150/2d_dynamic_programming.md
+                - 2D Dynamic_Programming: neetcode150/2d_dynamic_programming.md
                 - Greedy: neetcode150/greedy.md
                 - Intervals: neetcode150/intervals.md
-                - Math & Geometry: neetcode150/math_geometry.md
-                - Bit Manipulation: neetcode150/bit.md
-          - Top Interview 150:
-                - Top Interview 150: top150/index.md
-                - Array & Strings: top150/top150_array_string.md
+                - Math Geometry: neetcode150/math_geometry.md
+                - Bit Manipulation: neetcode150/bit_manipulation.md
+
+          - LeetPattern:
+                - Home: leetpattern/index.md
+                - Binary Search: leetpattern/binary_search.md
+                - Array: leetpattern/array.md
+                - Left Right Pointers: leetpattern/left_right_pointers.md
+                - Fast Slow Pointers: leetpattern/fast_slow_pointers.md
+                - Sliding Window Fixed: leetpattern/sliding_window_fixed.md
+                - Sliding Window Variable: leetpattern/sliding_window_variable.md
+                - Boyer Moore: leetpattern/boyer_moore.md
+                - Prefix Sum: leetpattern/prefix_sum.md
+                - Difference Array: leetpattern/difference_array.md
+                - Linked List: leetpattern/linked_list.md
+                - Backtracking: leetpattern/backtracking.md
+                - Hash Map: leetpattern/hash_map.md
+                - Hash Set: leetpattern/hash_set.md
+                - Hash Counting: leetpattern/hash_counting.md
+                - String: leetpattern/string.md
+                - KMP: leetpattern/kmp.md
+                - DP Basic: leetpattern/dp_basic.md
+                - DP 2D: leetpattern/dp_2d.md
+                - DP Stock: leetpattern/dp_stock.md
+                - DP 01 Knapsack: leetpattern/dp_01_knapsack.md
+                - DP Unbounded Knapsack: leetpattern/dp_unbounded_knapsack.md
+                - DP Kadane: leetpattern/dp_kadane.md
+                - DP Interval: leetpattern/dp_interval.md
+                - DP LCS: leetpattern/dp_lcs.md
+                - DP LIS: leetpattern/dp_lis.md
+                - Greedy: leetpattern/greedy.md
+                - Intervals: leetpattern/intervals.md
+                - Graph Flood Fill: leetpattern/graph_flood_fill.md
+                - Graph BFS: leetpattern/graph_bfs.md
+                - Graph Topological Sort: leetpattern/graph_topological_sort.md
+                - Graph Union Find: leetpattern/graph_union_find.md
+                - Graph Shortest Path: leetpattern/graph_shortest_path.md
+                - Graph Bellman Ford: leetpattern/graph_bellman_ford.md
+                - Graph Minimum Spanning Tree: leetpattern/graph_minimum_spanning_tree.md
+                - Graph Coloring: leetpattern/graph_coloring.md
+                - Graph Tarjan: leetpattern/graph_tarjan.md
+                - Heap: leetpattern/heap.md
+                - Heap Top K: leetpattern/heap_top_k.md
+                - Heap Two Heaps: leetpattern/heap_two_heaps.md
+                - Heap Merge K Sorted: leetpattern/heap_merge_k_sorted.md
+                - Bit Manipulation: leetpattern/bit_manipulation.md
+                - Math: leetpattern/math.md
+                - Simulation: leetpattern/simulation.md
+                - Design: leetpattern/design.md
+
+          - Blind 75:
+                - Home: blind75/index.md
+                - Arrays Hashing: blind75/arrays_hashing.md
+                - Two Pointers: blind75/two_pointers.md
+                - Sliding Window: blind75/sliding_window.md
+                - Stack: blind75/stack.md
+                - Binary Search: blind75/binary_search.md
+                - Linked List: blind75/linked_list.md
+                - Trees: blind75/trees.md
+                - Heap: blind75/heap.md
+                - Backtracking: blind75/backtracking.md
+                - Tries: blind75/tries.md
+                - Graphs: blind75/graphs.md
+                - Advanced Graphs: blind75/advanced_graphs.md
+                - 1D Dynamic Programming: blind75/1d_dynamic_programming.md
+                - 2D Dynamic Programming: blind75/2d_dynamic_programming.md
+                - Greedy: blind75/greedy.md
+                - Intervals: blind75/intervals.md
+                - Math Geometry: blind75/math_geometry.md
+                - Bit Manipulation: blind75/bit_manipulation.md
+
+    - Company:
+          - Home: company/index.md
+          - Amazon: company/amazon.md
+
+    - Graph Theory:
+          - Home: graph_theory/index.md
+          - Standard Traversal: graph_theory/standard_traversal.md
+          - BFS: graph_theory/bfs.md
+          - Matrix Graphs: graph_theory/matrix_graphs.md
+          - Graph Theory: graph_theory/graph_theory.md
+          - Union Find: graph_theory/union_find.md
+          - Topological Sort: graph_theory/topological_sort.md
+          - Dijkstra's: graph_theory/dijkstra's.md
+          - MST: graph_theory/mst.md
     - Company:
           - Home: company/index.md
           - Amazon: company/amazon.md

@@ -1,1 +1,3 @@
 ## 355. Design Twitter
+
+-   Similar question: [23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (Hard)

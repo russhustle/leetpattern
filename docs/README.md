@@ -23,6 +23,15 @@ Thank you for visiting this project! If you find it helpful or interesting, plea
 
 -   [算法竞赛模板库 by 灵茶山艾府](https://github.com/EndlessCheng/codeforces-go)
 -   [[Leetcode Discuss] Solved all two pointers problems in 100 days](https://leetcode.com/discuss/study-guide/1688903/solved-all-two-pointers-problems-in-100-days)
+-   [[Leetcode Discuss] Solved all dynamic programming (dp) problems in 7 months](https://leetcode.com/discuss/general-discussion/1000929/solved-all-dynamic-programming-dp-problems-in-7-months)
 -   [liquidslr/leetcode-company-wise-problems](https://github.com/liquidslr/leetcode-company-wise-problems)
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTn_gElbkX3P669Dq7pBKHaQdmKhq8oWuf6NGq6imJxujw1eexYkpMgtw7GKlN_3xjle6jqBUPUpPkp/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Steps to Solve DP Problems
+
+1. Define the `dp` array and its meaning.
+2. Define the `dp` formula.
+3. Initialize the `dp` array.
+4. Determine the traversal direction.
+5. Derive the `dp` array.

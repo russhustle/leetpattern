@@ -1,1 +1,1 @@
-## 945. Minimum Increment To Make Array Unique
+## 945. Minimum Increment to Make Array Unique

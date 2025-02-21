@@ -44,7 +44,7 @@ comments: True
     --8<-- "ts/0056_merge_intervals.ts"
     ```
 
-## 435. Non Overlapping Intervals
+## 435. Non-overlapping Intervals
 
 === "Python"
 

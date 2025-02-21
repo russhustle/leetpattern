@@ -1,1 +1,1 @@
-## 460. Lfu Cache
+## 460. LFU Cache

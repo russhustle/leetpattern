@@ -861,6 +861,18 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/0176_second_highest_salary/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0180_consecutive_numbers/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0185_department_top_three_salaries/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/0188_best_time_to_buy_and_sell_stock_iv/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
@@ -870,6 +882,14 @@
     </url>
     <url>
          <loc>https://www.leetpattern.com/md/0191_number_of_1_bits/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0196_delete_duplicate_emails/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0197_rising_temperature/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1365,6 +1385,10 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/0550_game_play_analysis_iv/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/0560_subarray_sum_equals_k/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
@@ -1373,7 +1397,15 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/0570_managers_with_at_least_5_direct_reports/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/0572_subtree_of_another_tree/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0577_employee_bonus/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1381,11 +1413,43 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/0584_find_customer_referee/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0585_investments_in_2016/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/0588_design_in_memory_file_system/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/0595_big_countries/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0596_classes_more_than_5_students/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0602_friend_requests_ii_who_has_the_most_friends/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0610_triangle_judgement/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/0617_merge_two_binary_trees/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0619_biggest_single_number/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0620_not_boring_movies/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1398,6 +1462,10 @@
     </url>
     <url>
          <loc>https://www.leetpattern.com/md/0624_maximum_distance_in_arrays/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/0626_exchange_seats/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1713,6 +1781,10 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1045_customers_who_bought_all_products/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1046_last_stone_weight/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
@@ -1722,6 +1794,18 @@
     </url>
     <url>
          <loc>https://www.leetpattern.com/md/1061_lexicographically_smallest_equivalent_string/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1068_product_sales_analysis_i/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1070_product_sales_analysis_iii/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1075_project_employees_i/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1757,7 +1841,15 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1141_user_activity_for_the_past_30_days_i/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1143_longest_common_subsequence/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1148_article_views_i/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1773,6 +1865,10 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1164_product_price_at_a_given_date/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1166_design_file_system/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
@@ -1782,6 +1878,10 @@
     </url>
     <url>
          <loc>https://www.leetpattern.com/md/1171_remove_zero_sum_consecutive_nodes_from_linked_list/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1174_immediate_food_delivery_ii/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1797,6 +1897,10 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1193_monthly_transactions_i/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1202_smallest_string_with_swaps/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
@@ -1805,7 +1909,15 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1204_last_person_to_fit_in_the_bus/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1208_get_equal_substrings_within_budget/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1211_queries_quality_and_percentage/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1817,7 +1929,15 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1251_average_selling_price/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1254_number_of_closed_islands/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1280_students_and_examinations/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1833,11 +1953,27 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1321_restaurant_growth/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1327_list_the_products_ordered_in_a_period/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1341_movie_rating/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1365_how_many_numbers_are_smaller_than_the_current_number/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/md/1376_time_needed_to_inform_all_employees/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1378_replace_employee_id_with_the_unique_identifier/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1861,11 +1997,23 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1484_group_sold_products_by_the_date/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
          <loc>https://www.leetpattern.com/md/1514_path_with_maximum_probability/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1517_find_users_with_valid_e_mails/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1527_patients_with_a_condition/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1878,6 +2026,10 @@
     </url>
     <url>
          <loc>https://www.leetpattern.com/md/1579_remove_max_number_of_edges_to_keep_graph_fully_traversable/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1581_customer_who_visited_but_did_not_make_any_transactions/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1901,11 +2053,43 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1633_percentage_of_users_attended_a_contest/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1661_average_time_of_process_per_machine/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1667_fix_names_in_a_table/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1671_minimum_number_of_removals_to_make_mountain_array/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1683_invalid_tweets/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1729_find_followers_count/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1731_the_number_of_employees_which_report_to_each_employee/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1732_find_the_highest_altitude/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1757_recyclable_and_low_fat_products/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1789_primary_department_for_each_employee/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1925,7 +2109,15 @@
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
+         <loc>https://www.leetpattern.com/md/1907_count_salary_categories/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
          <loc>https://www.leetpattern.com/md/1926_nearest_exit_from_entrance_in_maze/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1934_confirmation_rate/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1934,6 +2126,10 @@
     </url>
     <url>
          <loc>https://www.leetpattern.com/md/1976_number_of_ways_to_arrive_at_destination/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/1978_employees_whose_manager_left_the_company/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -1970,6 +2166,10 @@
     </url>
     <url>
          <loc>https://www.leetpattern.com/md/2331_evaluate_boolean_binary_tree/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/md/2356_number_of_unique_subjects_taught_by_each_teacher/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
     <url>
@@ -2126,6 +2326,38 @@
     </url>
     <url>
          <loc>https://www.leetpattern.com/sql/sql50/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/sql50/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/sql50/advanced_select_and_joins/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/sql50/advanced_string_functions_regex_clause/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/sql50/basic_aggregate_functions/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/sql50/basic_joins/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/sql50/select/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/sql50/sorting_and_grouping/</loc>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://www.leetpattern.com/sql50/subqueries/</loc>
          <lastmod>2025-02-22</lastmod>
     </url>
 </urlset>

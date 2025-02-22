@@ -6,96 +6,36 @@ comments: True
 
 ## 1094. Car Pooling
 
--  [LeetCode](https://leetcode.com/problems/car-pooling/) | [LeetCode CH](https://leetcode.cn/problems/car-pooling/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/car-pooling/) | [LeetCode CH](https://leetcode.cn/problems/car-pooling/) (Medium)
 -   Return `False` if the total number of passengers at any point is greater than `capacity`. Otherwise, return `True`.
 
-=== "Python"
-
-    ```python
-    --8<-- "1094_car_pooling.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/1094_car_pooling.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/1094_car_pooling.ts"
-    ```
+```python
+--8<-- "1094_car_pooling.py"
+```
 
 ## 370. Range Addition
 
--  [LeetCode](https://leetcode.com/problems/range-addition/) | [LeetCode CH](https://leetcode.cn/problems/range-addition/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/range-addition/) | [LeetCode CH](https://leetcode.cn/problems/range-addition/) (Medium)
 -   Return the final array after applying all the Adition operations.
 
-=== "Python"
-
-    ```python
-    --8<-- "0370_range_addition.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0370_range_addition.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0370_range_addition.ts"
-    ```
+```python
+--8<-- "0370_range_addition.py"
+```
 
 ## 1109. Corporate Flight Bookings
 
--  [LeetCode](https://leetcode.com/problems/corporate-flight-bookings/) | [LeetCode CH](https://leetcode.cn/problems/corporate-flight-bookings/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/corporate-flight-bookings/) | [LeetCode CH](https://leetcode.cn/problems/corporate-flight-bookings/) (Medium)
 -   Return the number of seats booked on each flight.
 
-=== "Python"
-
-    ```python
-    --8<-- "1109_corporate_flight_bookings.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/1109_corporate_flight_bookings.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/1109_corporate_flight_bookings.ts"
-    ```
+```python
+--8<-- "1109_corporate_flight_bookings.py"
+```
 
 ## 2848. Points That Intersect With Cars
 
--  [LeetCode](https://leetcode.com/problems/points-that-intersect-with-cars/) | [LeetCode CH](https://leetcode.cn/problems/points-that-intersect-with-cars/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/points-that-intersect-with-cars/) | [LeetCode CH](https://leetcode.cn/problems/points-that-intersect-with-cars/) (Easy)
 -   Return the number of points that intersect with cars.
 
-=== "Python"
-
-    ```python
-    --8<-- "2848_points_that_intersect_with_cars.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/2848_points_that_intersect_with_cars.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/2848_points_that_intersect_with_cars.ts"
-    ```
+```python
+--8<-- "2848_points_that_intersect_with_cars.py"
+```

@@ -6,8 +6,7 @@ comments: True
 
 ## 383. Ransom Note
 
--  [LeetCode](https://leetcode.com/problems/ransom-note/) | [LeetCode CH](https://leetcode.cn/problems/ransom-note/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/ransom-note/) | [LeetCode CH](https://leetcode.cn/problems/ransom-note/) (Easy)
 -   Return `True` if the ransom note can be constructed from the magazines, otherwise, return `False`.
 
 ```mermaid
@@ -16,20 +15,6 @@ graph LR
     B["Ransom Note: abc"] --> C
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0383_ransom_note.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0383_ransom_note.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0383_ransom_note.ts"
-    ```
+```python
+--8<-- "0383_ransom_note.py"
+```

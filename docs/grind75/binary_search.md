@@ -6,48 +6,39 @@ comments: True
 
 ## 704. Binary Search
 
--  [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)
 -   Implement binary search algorithm.
 
-=== "Python"
-
-    ```python
-    --8<-- "0704_binary_search.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0704_binary_search.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0704_binary_search.ts"
-    ```
+```python
+--8<-- "0704_binary_search.py"
+```
 
 ## 278. First Bad Version
 
--  [LeetCode](https://leetcode.com/problems/first-bad-version/) | [LeetCode CH](https://leetcode.cn/problems/first-bad-version/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/first-bad-version/) | [LeetCode CH](https://leetcode.cn/problems/first-bad-version/) (Easy)
 -   Find the first bad version given a function `isBadVersion`.
 
-=== "Python"
+```python
+--8<-- "0278_first_bad_version.py"
+```
 
-    ```python
-    --8<-- "0278_first_bad_version.py"
-    ```
+## 33. Search in Rotated Sorted Array
 
-=== "C++"
+-   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
+```python
+--8<-- "0033_search_in_rotated_sorted_array.py"
+```
 
-    ```cpp
-    --8<-- "cpp/0278_first_bad_version.cc"
-    ```
+## 981. Time Based Key-Value Store
 
-=== "TypeScript"
+-   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
+```python
+--8<-- "0981_time_based_key_value_store.py"
+```
 
-    ```typescript
-    --8<-- "ts/0278_first_bad_version.ts"
-    ```
+## 1235. Maximum Profit in Job Scheduling
+
+-   [LeetCode](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | [LeetCode CH](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) (Hard)
+```python
+--8<-- "1235_maximum_profit_in_job_scheduling.py"
+```

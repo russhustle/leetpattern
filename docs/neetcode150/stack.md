@@ -6,8 +6,7 @@ comments: True
 
 ## 20. Valid Parentheses
 
--  [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
 -   Determine if the input string is valid.
 -   Steps for the string `()[]{}`:
 
@@ -20,52 +19,22 @@ comments: True
 | `{`  | push   | "\{"  |
 | `}`  | pop    | ""    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0020_valid_parentheses.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0020_valid_parentheses.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0020_valid_parentheses.ts"
-    ```
+```python
+--8<-- "0020_valid_parentheses.py"
+```
 
 ## 155. Min Stack
 
--  [LeetCode](https://leetcode.com/problems/min-stack/) | [LeetCode CH](https://leetcode.cn/problems/min-stack/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/min-stack/) | [LeetCode CH](https://leetcode.cn/problems/min-stack/) (Medium)
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
-=== "Python"
-
-    ```python
-    --8<-- "0155_min_stack.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0155_min_stack.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0155_min_stack.ts"
-    ```
+```python
+--8<-- "0155_min_stack.py"
+```
 
 ## 150. Evaluate Reverse Polish Notation
 
--  [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
 -   Steps for the list `["2", "1", "+", "3", "*"]`:
 
 | token | action | stack    |
@@ -76,50 +45,21 @@ comments: True
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0150_evaluate_reverse_polish_notation.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0150_evaluate_reverse_polish_notation.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0150_evaluate_reverse_polish_notation.ts"
-    ```
+```python
+--8<-- "0150_evaluate_reverse_polish_notation.py"
+```
 
 ## 22. Generate Parentheses
 
--  [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0022_generate_parentheses.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0022_generate_parentheses.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0022_generate_parentheses.ts"
-    ```
+```python
+--8<-- "0022_generate_parentheses.py"
+```
 
 ## 739. Daily Temperatures
 
--  [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)
 -   Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
 
 | Index | Temp | > stack last | stack                           | result    |
@@ -133,64 +73,22 @@ comments: True
 | 6     | 76   | True         | `[ [76, 6] ]`                   | 0         |
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
-=== "Python"
-
-    ```python
-    --8<-- "0739_daily_temperatures.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0739_daily_temperatures.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0739_daily_temperatures.ts"
-    ```
+```python
+--8<-- "0739_daily_temperatures.py"
+```
 
 ## 853. Car Fleet
 
--  [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0853_car_fleet.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0853_car_fleet.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0853_car_fleet.ts"
-    ```
+```python
+--8<-- "0853_car_fleet.py"
+```
 
 ## 84. Largest Rectangle in Histogram
 
--  [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 
-=== "Python"
-
-    ```python
-    --8<-- "0084_largest_rectangle_in_histogram.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0084_largest_rectangle_in_histogram.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0084_largest_rectangle_in_histogram.ts"
-    ```
+```python
+--8<-- "0084_largest_rectangle_in_histogram.py"
+```

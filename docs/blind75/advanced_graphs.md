@@ -6,24 +6,9 @@ comments: True
 
 ## 269. Alien Dictionary
 
--  [LeetCode](https://leetcode.com/problems/alien-dictionary/) | [LeetCode CH](https://leetcode.cn/problems/alien-dictionary/) (Hard)
-
+-   [LeetCode](https://leetcode.com/problems/alien-dictionary/) | [LeetCode CH](https://leetcode.cn/problems/alien-dictionary/) (Hard)
 -   Return the correct order of characters in the alien language.
 
-=== "Python"
-
-    ```python
-    --8<-- "0269_alien_dictionary.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0269_alien_dictionary.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0269_alien_dictionary.ts"
-    ```
+```python
+--8<-- "0269_alien_dictionary.py"
+```

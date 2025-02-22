@@ -6,8 +6,7 @@ comments: True
 
 ## 997. Find the Town Judge
 
--  [LeetCode](https://leetcode.com/problems/find-the-town-judge/) | [LeetCode CH](https://leetcode.cn/problems/find-the-town-judge/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/find-the-town-judge/) | [LeetCode CH](https://leetcode.cn/problems/find-the-town-judge/) (Easy)
 -   `trust = [[1, 3], [2, 3], [1, 2], [4, 3]]`
 
 ```mermaid
@@ -18,28 +17,13 @@ flowchart LR
     4((4)) --> 3((3))
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0997_find_the_town_judge.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0997_find_the_town_judge.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0997_find_the_town_judge.ts"
-    ```
+```python
+--8<-- "0997_find_the_town_judge.py"
+```
 
 ## 1557. Minimum Number of Vertices to Reach All Nodes
 
--  [LeetCode](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
 -   Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
 -   ✅ Return the vertices with indegree 0.
 
@@ -84,50 +68,21 @@ flowchart LR
 |   node    |  0  |  1  | **2** |  3  |   4   |  5  |
 | in-degree |  0  |  1  | **2** |  0  |   1   |  1  |
 
-=== "Python"
-
-    ```python
-    --8<-- "1557_minimum_number_of_vertices_to_reach_all_nodes.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/1557_minimum_number_of_vertices_to_reach_all_nodes.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/1557_minimum_number_of_vertices_to_reach_all_nodes.ts"
-    ```
+```python
+--8<-- "1557_minimum_number_of_vertices_to_reach_all_nodes.py"
+```
 
 ## 1615. Maximal Network Rank
 
--  [LeetCode](https://leetcode.com/problems/maximal-network-rank/) | [LeetCode CH](https://leetcode.cn/problems/maximal-network-rank/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/maximal-network-rank/) | [LeetCode CH](https://leetcode.cn/problems/maximal-network-rank/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "1615_maximal_network_rank.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/1615_maximal_network_rank.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/1615_maximal_network_rank.ts"
-    ```
+```python
+--8<-- "1615_maximal_network_rank.py"
+```
 
 ## 785. Is Graph Bipartite?
 
--  [LeetCode](https://leetcode.com/problems/is-graph-bipartite/) | [LeetCode CH](https://leetcode.cn/problems/is-graph-bipartite/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/is-graph-bipartite/) | [LeetCode CH](https://leetcode.cn/problems/is-graph-bipartite/) (Medium)
 -   Determine if a graph is bipartite.
 
 How to group
@@ -137,42 +92,14 @@ How to group
 | Method 1 | -1        | 0       | 1       | `1 - color` |
 | Method 2 | 0         | 1       | -1      | `-color`    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0785_is_graph_bipartite.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0785_is_graph_bipartite.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0785_is_graph_bipartite.ts"
-    ```
+```python
+--8<-- "0785_is_graph_bipartite.py"
+```
 
 ## 261. Graph Valid Tree
 
--  [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0261_graph_valid_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0261_graph_valid_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0261_graph_valid_tree.ts"
-    ```
+```python
+--8<-- "0261_graph_valid_tree.py"
+```

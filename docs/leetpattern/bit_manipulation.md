@@ -6,8 +6,7 @@ comments: True
 
 ## 2595. Number of Even and Odd Bits
 
--  [LeetCode](https://leetcode.com/problems/number-of-even-and-odd-bits/) | [LeetCode CH](https://leetcode.cn/problems/number-of-even-and-odd-bits/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/number-of-even-and-odd-bits/) | [LeetCode CH](https://leetcode.cn/problems/number-of-even-and-odd-bits/) (Easy)
 -   Topic: Bit Manipulation
 -   Difficulty: Easy
 
@@ -17,20 +16,6 @@ comments: True
 > Note that bits are indexed from right to left in the binary representation of a number.
 > Return the array [even, odd].
 
-=== "Python"
-
-    ```python
-    --8<-- "2595_number_of_even_and_odd_bits.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/2595_number_of_even_and_odd_bits.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/2595_number_of_even_and_odd_bits.ts"
-    ```
+```python
+--8<-- "2595_number_of_even_and_odd_bits.py"
+```

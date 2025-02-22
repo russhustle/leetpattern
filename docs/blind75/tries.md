@@ -6,8 +6,7 @@ comments: True
 
 ## 208. Implement Trie (Prefix Tree)
 
--  [LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree/) | [LeetCode CH](https://leetcode.cn/problems/implement-trie-prefix-tree/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree/) | [LeetCode CH](https://leetcode.cn/problems/implement-trie-prefix-tree/) (Medium)
 ## Trie
 
 -   A trie is a tree-like data structure whose nodes store the letters of an alphabet.
@@ -27,64 +26,22 @@ A2 --- T2((T))
 A2 --- R2((R))
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0208_implement_trie_prefix_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0208_implement_trie_prefix_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0208_implement_trie_prefix_tree.ts"
-    ```
+```python
+--8<-- "0208_implement_trie_prefix_tree.py"
+```
 
 ## 212. Word Search II
 
--  [LeetCode](https://leetcode.com/problems/word-search-ii/) | [LeetCode CH](https://leetcode.cn/problems/word-search-ii/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/word-search-ii/) | [LeetCode CH](https://leetcode.cn/problems/word-search-ii/) (Hard)
 
-=== "Python"
-
-    ```python
-    --8<-- "0212_word_search_ii.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0212_word_search_ii.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0212_word_search_ii.ts"
-    ```
+```python
+--8<-- "0212_word_search_ii.py"
+```
 
 ## 211. Design Add and Search Words Data Structure
 
--  [LeetCode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | [LeetCode CH](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | [LeetCode CH](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0211_design_add_and_search_words_data_structure.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0211_design_add_and_search_words_data_structure.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0211_design_add_and_search_words_data_structure.ts"
-    ```
+```python
+--8<-- "0211_design_add_and_search_words_data_structure.py"
+```

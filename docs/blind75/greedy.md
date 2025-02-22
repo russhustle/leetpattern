@@ -6,30 +6,15 @@ comments: True
 
 ## 53. Maximum Subarray
 
--  [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0053_maximum_subarray.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0053_maximum_subarray.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0053_maximum_subarray.ts"
-    ```
+```python
+--8<-- "0053_maximum_subarray.py"
+```
 
 ## 55. Jump Game
 
--  [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
 -   Return `True` if you can reach the last index, otherwise `False`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yan0cv2cLy8?si=musT5NViPicljg7x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -48,20 +33,6 @@ comments: True
 |   7   |   0   |       7       |     8     |          True           |
 |   8   |   0   |       8       |     8     |          True           |
 
-=== "Python"
-
-    ```python
-    --8<-- "0055_jump_game.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0055_jump_game.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0055_jump_game.ts"
-    ```
+```python
+--8<-- "0055_jump_game.py"
+```

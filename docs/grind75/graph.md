@@ -6,8 +6,7 @@ comments: True
 
 ## 733. Flood Fill
 
--  [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
 -   Replace all the pixels of the same color starting from the given pixel.
 -   In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
 -   Edge cases: If the starting pixel is already the target color, return the image as it is.
@@ -39,72 +38,29 @@ comments: True
 | ==2== | ==2== |   0   |
 | ==2== |   0   |   1   |
 
-=== "Python"
-
-    ```python
-    --8<-- "0733_flood_fill.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0733_flood_fill.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0733_flood_fill.ts"
-    ```
+```python
+--8<-- "0733_flood_fill.py"
+```
 
 ## 542. 01 Matrix
 
--  [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0542_01_matrix.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0542_01_matrix.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0542_01_matrix.ts"
-    ```
+```python
+--8<-- "0542_01_matrix.py"
+```
 
 ## 133. Clone Graph
 
--  [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0133_clone_graph.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0133_clone_graph.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0133_clone_graph.ts"
-    ```
+```python
+--8<-- "0133_clone_graph.py"
+```
 
 ## 207. Course Schedule
 
--  [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
 -   Cycle detection
@@ -112,7 +68,7 @@ comments: True
     -   DAG (Directed Acyclic Graph)
     -   Time complexity: O(V+E)
     -   Space complexity: O(V+E)
-    -   Prerequisites: Indegree (Look at the problem [1557. Minimum Number of Vertices to Reach All Nodes](#1557-minimum-number-of-vertices-to-reach-all-nodes))
+    -   Prerequisites: Indegree (Look at the problem 1557. Minimum Number of Vertices to Reach All Nodes)
         -   Indegree: Number of incoming edges to a vertex
     -   Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
 
@@ -220,28 +176,13 @@ flowchart LR
 -   pop `0` from the queue
 -   All courses are taken. Return `True`.
 
-=== "Python"
-
-    ```python
-    --8<-- "0207_course_schedule.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0207_course_schedule.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0207_course_schedule.ts"
-    ```
+```python
+--8<-- "0207_course_schedule.py"
+```
 
 ## 200. Number of Islands
 
--  [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -258,113 +199,49 @@ flowchart LR
 
 ![0200](../assets/0200.jpg)
 
-=== "Python"
-
-    ```python
-    --8<-- "0200_number_of_islands.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0200_number_of_islands.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0200_number_of_islands.ts"
-    ```
+```python
+--8<-- "0200_number_of_islands.py"
+```
 
 ## 994. Rotting Oranges
 
--  [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
 -   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
 -   Hint: Multi-source BFS to count the level.
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-=== "Python"
-
-    ```python
-    --8<-- "0994_rotting_oranges.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0994_rotting_oranges.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0994_rotting_oranges.ts"
-    ```
+```python
+--8<-- "0994_rotting_oranges.py"
+```
 
 ## 721. Accounts Merge
 
--  [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0721_accounts_merge.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0721_accounts_merge.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0721_accounts_merge.ts"
-    ```
+```python
+--8<-- "0721_accounts_merge.py"
+```
 
 ## 79. Word Search
 
--  [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 
-=== "Python"
+```python
+--8<-- "0079_word_search.py"
+```
 
-    ```python
-    --8<-- "0079_word_search.py"
-    ```
+## 310. Minimum Height Trees
 
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0079_word_search.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0079_word_search.ts"
-    ```
+-   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+```python
+--8<-- "0310_minimum_height_trees.py"
+```
 
 ## 127. Word Ladder
 
--  [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
 
-=== "Python"
-
-    ```python
-    --8<-- "0127_word_ladder.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0127_word_ladder.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0127_word_ladder.ts"
-    ```
+```python
+--8<-- "0127_word_ladder.py"
+```

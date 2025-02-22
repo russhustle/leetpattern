@@ -6,8 +6,7 @@ comments: True
 
 ## 70. Climbing Stairs
 
--  [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
 -   Return the number of distinct ways to reach the top of the stairs.
 -   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
@@ -27,28 +26,13 @@ comments: True
 |  9  |    21     |    34     |   55    |
 | 10  |    34     |    55     |   89    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0070_climbing_stairs.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0070_climbing_stairs.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0070_climbing_stairs.ts"
-    ```
+```python
+--8<-- "0070_climbing_stairs.py"
+```
 
 ## 746. Min Cost Climbing Stairs
 
--  [LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
 -   Return the minimum cost to reach the top of the stairs.
 
 -   `dp[n]` stores the <u>minimum cost</u> to reach the `n-th` stair.
@@ -71,28 +55,13 @@ comments: True
 |  8  |    100    |     4     |     5     |   104   |
 |  9  |     1     |     5     |    104    |    6    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0746_min_cost_climbing_stairs.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0746_min_cost_climbing_stairs.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0746_min_cost_climbing_stairs.ts"
-    ```
+```python
+--8<-- "0746_min_cost_climbing_stairs.py"
+```
 
 ## 198. House Robber
 
--  [LeetCode](https://leetcode.com/problems/house-robber/) | [LeetCode CH](https://leetcode.cn/problems/house-robber/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/house-robber/) | [LeetCode CH](https://leetcode.cn/problems/house-robber/) (Medium)
 -   Return the maximum amount of money that can be robbed from the houses. No two adjacent houses can be robbed.
 
 -   `dp[n]` stores the maximum amount of money that can be robbed from the first `n` houses.
@@ -111,28 +80,13 @@ comments: True
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0198_house_robber.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0198_house_robber.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0198_house_robber.ts"
-    ```
+```python
+--8<-- "0198_house_robber.py"
+```
 
 ## 213. House Robber II
 
--  [LeetCode](https://leetcode.com/problems/house-robber-ii/) | [LeetCode CH](https://leetcode.cn/problems/house-robber-ii/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/house-robber-ii/) | [LeetCode CH](https://leetcode.cn/problems/house-robber-ii/) (Medium)
 -   Return the maximum amount of money that can be robbed from the houses arranged in a circle.
 -   Circular → Linear: `nums[0]` and `nums[-1]` cannot be robbed together.
 -   Rob from `0` to `n - 2`
@@ -153,52 +107,22 @@ comments: True
 |  3  |     3     |     7     |     9     |         10          |   10    |
 |  4  |     1     |     9     |    10     |         10          |   10    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0213_house_robber_ii.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0213_house_robber_ii.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0213_house_robber_ii.ts"
-    ```
+```python
+--8<-- "0213_house_robber_ii.py"
+```
 
 ## 5. Longest Palindromic Substring
 
--  [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
 -   Return the longest palindromic substring in `s`.
 
-=== "Python"
-
-    ```python
-    --8<-- "0005_longest_palindromic_substring.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0005_longest_palindromic_substring.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0005_longest_palindromic_substring.ts"
-    ```
+```python
+--8<-- "0005_longest_palindromic_substring.py"
+```
 
 ## 647. Palindromic Substrings
 
--  [LeetCode](https://leetcode.com/problems/palindromic-substrings/) | [LeetCode CH](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/palindromic-substrings/) | [LeetCode CH](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
 -   Return the number of palindromic substrings in `s`.
 -   Bottom-up DP table
 
@@ -210,152 +134,54 @@ comments: True
 | **a** |  0  |  0  |  0  |  1  |  0  |
 | **e** |  0  |  0  |  0  |  0  |  1  |
 
-=== "Python"
-
-    ```python
-    --8<-- "0647_palindromic_substrings.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0647_palindromic_substrings.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0647_palindromic_substrings.ts"
-    ```
+```python
+--8<-- "0647_palindromic_substrings.py"
+```
 
 ## 91. Decode Ways
 
--  [LeetCode](https://leetcode.com/problems/decode-ways/) | [LeetCode CH](https://leetcode.cn/problems/decode-ways/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/decode-ways/) | [LeetCode CH](https://leetcode.cn/problems/decode-ways/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0091_decode_ways.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0091_decode_ways.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0091_decode_ways.ts"
-    ```
+```python
+--8<-- "0091_decode_ways.py"
+```
 
 ## 322. Coin Change
 
--  [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0322_coin_change.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0322_coin_change.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0322_coin_change.ts"
-    ```
+```python
+--8<-- "0322_coin_change.py"
+```
 
 ## 152. Maximum Product Subarray
 
--  [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0152_maximum_product_subarray.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0152_maximum_product_subarray.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0152_maximum_product_subarray.ts"
-    ```
+```python
+--8<-- "0152_maximum_product_subarray.py"
+```
 
 ## 139. Word Break
 
--  [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0139_word_break.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0139_word_break.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0139_word_break.ts"
-    ```
+```python
+--8<-- "0139_word_break.py"
+```
 
 ## 300. Longest Increasing Subsequence
 
--  [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0300_longest_increasing_subsequence.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0300_longest_increasing_subsequence.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0300_longest_increasing_subsequence.ts"
-    ```
+```python
+--8<-- "0300_longest_increasing_subsequence.py"
+```
 
 ## 416. Partition Equal Subset Sum
 
--  [LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/) | [LeetCode CH](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/) | [LeetCode CH](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0416_partition_equal_subset_sum.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0416_partition_equal_subset_sum.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0416_partition_equal_subset_sum.ts"
-    ```
+```python
+--8<-- "0416_partition_equal_subset_sum.py"
+```

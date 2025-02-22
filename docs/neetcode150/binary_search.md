@@ -6,92 +6,55 @@ comments: True
 
 ## 704. Binary Search
 
--  [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)
 -   Implement binary search algorithm.
 
-=== "Python"
-
-    ```python
-    --8<-- "0704_binary_search.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0704_binary_search.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0704_binary_search.ts"
-    ```
+```python
+--8<-- "0704_binary_search.py"
+```
 
 ## 74. Search a 2D Matrix
 
--  [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0074_search_a_2d_matrix.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0074_search_a_2d_matrix.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0074_search_a_2d_matrix.ts"
-    ```
+```python
+--8<-- "0074_search_a_2d_matrix.py"
+```
 
 ## 875. Koko Eating Bananas
 
--  [LeetCode](https://leetcode.com/problems/koko-eating-bananas/) | [LeetCode CH](https://leetcode.cn/problems/koko-eating-bananas/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/koko-eating-bananas/) | [LeetCode CH](https://leetcode.cn/problems/koko-eating-bananas/) (Medium)
 -   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
 
-=== "Python"
+```python
+--8<-- "0875_koko_eating_bananas.py"
+```
 
-    ```python
-    --8<-- "0875_koko_eating_bananas.py"
-    ```
+## 153. Find Minimum in Rotated Sorted Array
 
-=== "C++"
+-   [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
+```python
+--8<-- "0153_find_minimum_in_rotated_sorted_array.py"
+```
 
-    ```cpp
-    --8<-- "cpp/0875_koko_eating_bananas.cc"
-    ```
+## 33. Search in Rotated Sorted Array
 
-=== "TypeScript"
+-   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
+```python
+--8<-- "0033_search_in_rotated_sorted_array.py"
+```
 
-    ```typescript
-    --8<-- "ts/0875_koko_eating_bananas.ts"
-    ```
+## 981. Time Based Key-Value Store
+
+-   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
+```python
+--8<-- "0981_time_based_key_value_store.py"
+```
 
 ## 4. Median of Two Sorted Arrays
 
--  [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
 
-=== "Python"
-
-    ```python
-    --8<-- "0004_median_of_two_sorted_arrays.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0004_median_of_two_sorted_arrays.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0004_median_of_two_sorted_arrays.ts"
-    ```
+```python
+--8<-- "0004_median_of_two_sorted_arrays.py"
+```

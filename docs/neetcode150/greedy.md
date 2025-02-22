@@ -6,30 +6,15 @@ comments: True
 
 ## 53. Maximum Subarray
 
--  [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0053_maximum_subarray.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0053_maximum_subarray.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0053_maximum_subarray.ts"
-    ```
+```python
+--8<-- "0053_maximum_subarray.py"
+```
 
 ## 55. Jump Game
 
--  [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
 -   Return `True` if you can reach the last index, otherwise `False`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yan0cv2cLy8?si=musT5NViPicljg7x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -48,156 +33,57 @@ comments: True
 |   7   |   0   |       7       |     8     |          True           |
 |   8   |   0   |       8       |     8     |          True           |
 
-=== "Python"
-
-    ```python
-    --8<-- "0055_jump_game.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0055_jump_game.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0055_jump_game.ts"
-    ```
+```python
+--8<-- "0055_jump_game.py"
+```
 
 ## 45. Jump Game II
 
--  [LeetCode](https://leetcode.com/problems/jump-game-ii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-ii/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/jump-game-ii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-ii/) (Medium)
 -   Return the minimum number of jumps to reach the last index.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dJ7sWiOoK7g?si=3kc-pp4rs3Dk7Jqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-=== "Python"
-
-    ```python
-    --8<-- "0045_jump_game_ii.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0045_jump_game_ii.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0045_jump_game_ii.ts"
-    ```
+```python
+--8<-- "0045_jump_game_ii.py"
+```
 
 ## 134. Gas Station
 
--  [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0134_gas_station.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0134_gas_station.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0134_gas_station.ts"
-    ```
+```python
+--8<-- "0134_gas_station.py"
+```
 
 ## 846. Hand of Straights
 
--  [LeetCode](https://leetcode.com/problems/hand-of-straights/) | [LeetCode CH](https://leetcode.cn/problems/hand-of-straights/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/hand-of-straights/) | [LeetCode CH](https://leetcode.cn/problems/hand-of-straights/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0846_hand_of_straights.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0846_hand_of_straights.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0846_hand_of_straights.ts"
-    ```
+```python
+--8<-- "0846_hand_of_straights.py"
+```
 
 ## 1899. Merge Triplets to Form Target Triplet
 
--  [LeetCode](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | [LeetCode CH](https://leetcode.cn/problems/merge-triplets-to-form-target-triplet/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | [LeetCode CH](https://leetcode.cn/problems/merge-triplets-to-form-target-triplet/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "1899_merge_triplets_to_form_target_triplet.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/1899_merge_triplets_to_form_target_triplet.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/1899_merge_triplets_to_form_target_triplet.ts"
-    ```
+```python
+--8<-- "1899_merge_triplets_to_form_target_triplet.py"
+```
 
 ## 763. Partition Labels
 
--  [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0763_partition_labels.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0763_partition_labels.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0763_partition_labels.ts"
-    ```
+```python
+--8<-- "0763_partition_labels.py"
+```
 
 ## 678. Valid Parenthesis String
 
--  [LeetCode](https://leetcode.com/problems/valid-parenthesis-string/) | [LeetCode CH](https://leetcode.cn/problems/valid-parenthesis-string/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/valid-parenthesis-string/) | [LeetCode CH](https://leetcode.cn/problems/valid-parenthesis-string/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0678_valid_parenthesis_string.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0678_valid_parenthesis_string.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0678_valid_parenthesis_string.ts"
-    ```
+```python
+--8<-- "0678_valid_parenthesis_string.py"
+```

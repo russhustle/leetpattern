@@ -6,8 +6,7 @@ comments: True
 
 ## 55. Jump Game
 
--  [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
 -   Return `True` if you can reach the last index, otherwise `False`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yan0cv2cLy8?si=musT5NViPicljg7x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -26,54 +25,24 @@ comments: True
 |   7   |   0   |       7       |     8     |          True           |
 |   8   |   0   |       8       |     8     |          True           |
 
-=== "Python"
-
-    ```python
-    --8<-- "0055_jump_game.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0055_jump_game.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0055_jump_game.ts"
-    ```
+```python
+--8<-- "0055_jump_game.py"
+```
 
 ## 45. Jump Game II
 
--  [LeetCode](https://leetcode.com/problems/jump-game-ii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-ii/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/jump-game-ii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-ii/) (Medium)
 -   Return the minimum number of jumps to reach the last index.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dJ7sWiOoK7g?si=3kc-pp4rs3Dk7Jqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-=== "Python"
-
-    ```python
-    --8<-- "0045_jump_game_ii.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0045_jump_game_ii.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0045_jump_game_ii.ts"
-    ```
+```python
+--8<-- "0045_jump_game_ii.py"
+```
 
 ## 452. Minimum Number of Arrows to Burst Balloons
 
--  [LeetCode](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)
 -   Return the minimum number of arrows.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lPmkKnvNPrw?si=P0rkcvTOxRGoFpkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -82,86 +51,30 @@ comments: True
     1. Start from 1: if there is no overlap, we add one more arrow.
     2. Start from the number of balloons: if there is overlap, we need to reduce one arrow.
 
-=== "Python"
-
-    ```python
-    --8<-- "0452_minimum_number_of_arrows_to_burst_balloons.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0452_minimum_number_of_arrows_to_burst_balloons.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0452_minimum_number_of_arrows_to_burst_balloons.ts"
-    ```
+```python
+--8<-- "0452_minimum_number_of_arrows_to_burst_balloons.py"
+```
 
 ## 435. Non-overlapping Intervals
 
--  [LeetCode](https://leetcode.com/problems/non-overlapping-intervals/) | [LeetCode CH](https://leetcode.cn/problems/non-overlapping-intervals/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/non-overlapping-intervals/) | [LeetCode CH](https://leetcode.cn/problems/non-overlapping-intervals/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0435_non_overlapping_intervals.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0435_non_overlapping_intervals.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0435_non_overlapping_intervals.ts"
-    ```
+```python
+--8<-- "0435_non_overlapping_intervals.py"
+```
 
 ## 763. Partition Labels
 
--  [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0763_partition_labels.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0763_partition_labels.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0763_partition_labels.ts"
-    ```
+```python
+--8<-- "0763_partition_labels.py"
+```
 
 ## 56. Merge Intervals
 
--  [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0056_merge_intervals.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0056_merge_intervals.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0056_merge_intervals.ts"
-    ```
+```python
+--8<-- "0056_merge_intervals.py"
+```

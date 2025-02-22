@@ -6,8 +6,7 @@ comments: True
 
 ## 743. Network Delay Time
 
--  [LeetCode](https://leetcode.com/problems/network-delay-time/) | [LeetCode CH](https://leetcode.cn/problems/network-delay-time/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/network-delay-time/) | [LeetCode CH](https://leetcode.cn/problems/network-delay-time/) (Medium)
 -   Return the minimum time taken to reach all nodes in a network.
 
 ```mermaid
@@ -29,28 +28,13 @@ graph LR
     -   Time Complexity: O(E \* logV)
     -   Space Complexity: O(V)
 
-=== "Python"
-
-    ```python
-    --8<-- "0743_network_delay_time.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0743_network_delay_time.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0743_network_delay_time.ts"
-    ```
+```python
+--8<-- "0743_network_delay_time.py"
+```
 
 ## 787. Cheapest Flights Within K Stops
 
--  [LeetCode](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [LeetCode CH](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [LeetCode CH](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
 -   Return the cheapest price from `src` to `dst` with at most `K` stops.
 
 ```mermaid
@@ -68,20 +52,6 @@ graph TD
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-=== "Python"
-
-    ```python
-    --8<-- "0787_cheapest_flights_within_k_stops.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0787_cheapest_flights_within_k_stops.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0787_cheapest_flights_within_k_stops.ts"
-    ```
+```python
+--8<-- "0787_cheapest_flights_within_k_stops.py"
+```

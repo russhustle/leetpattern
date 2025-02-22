@@ -6,8 +6,7 @@ comments: True
 
 ## 509. Fibonacci Number
 
--  [LeetCode](https://leetcode.com/problems/fibonacci-number/) | [LeetCode CH](https://leetcode.cn/problems/fibonacci-number/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/fibonacci-number/) | [LeetCode CH](https://leetcode.cn/problems/fibonacci-number/) (Easy)
 -   Return the `n-th` Fibonacci number.
 -   `dp[n]` stores the `n-th` Fibonacci number.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
@@ -27,28 +26,13 @@ comments: True
 |  9  |    13     |    21     |   34    |
 | 10  |    21     |    34     |   55    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0509_fibonacci_number.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0509_fibonacci_number.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0509_fibonacci_number.ts"
-    ```
+```python
+--8<-- "0509_fibonacci_number.py"
+```
 
 ## 70. Climbing Stairs
 
--  [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
 -   Return the number of distinct ways to reach the top of the stairs.
 -   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
@@ -68,28 +52,13 @@ comments: True
 |  9  |    21     |    34     |   55    |
 | 10  |    34     |    55     |   89    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0070_climbing_stairs.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0070_climbing_stairs.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0070_climbing_stairs.ts"
-    ```
+```python
+--8<-- "0070_climbing_stairs.py"
+```
 
 ## 746. Min Cost Climbing Stairs
 
--  [LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
 -   Return the minimum cost to reach the top of the stairs.
 
 -   `dp[n]` stores the <u>minimum cost</u> to reach the `n-th` stair.
@@ -112,28 +81,13 @@ comments: True
 |  8  |    100    |     4     |     5     |   104   |
 |  9  |     1     |     5     |    104    |    6    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0746_min_cost_climbing_stairs.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0746_min_cost_climbing_stairs.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0746_min_cost_climbing_stairs.ts"
-    ```
+```python
+--8<-- "0746_min_cost_climbing_stairs.py"
+```
 
 ## 198. House Robber
 
--  [LeetCode](https://leetcode.com/problems/house-robber/) | [LeetCode CH](https://leetcode.cn/problems/house-robber/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/house-robber/) | [LeetCode CH](https://leetcode.cn/problems/house-robber/) (Medium)
 -   Return the maximum amount of money that can be robbed from the houses. No two adjacent houses can be robbed.
 
 -   `dp[n]` stores the maximum amount of money that can be robbed from the first `n` houses.
@@ -152,28 +106,13 @@ comments: True
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0198_house_robber.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0198_house_robber.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0198_house_robber.ts"
-    ```
+```python
+--8<-- "0198_house_robber.py"
+```
 
 ## 213. House Robber II
 
--  [LeetCode](https://leetcode.com/problems/house-robber-ii/) | [LeetCode CH](https://leetcode.cn/problems/house-robber-ii/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/house-robber-ii/) | [LeetCode CH](https://leetcode.cn/problems/house-robber-ii/) (Medium)
 -   Return the maximum amount of money that can be robbed from the houses arranged in a circle.
 -   Circular → Linear: `nums[0]` and `nums[-1]` cannot be robbed together.
 -   Rob from `0` to `n - 2`
@@ -194,28 +133,13 @@ comments: True
 |  3  |     3     |     7     |     9     |         10          |   10    |
 |  4  |     1     |     9     |    10     |         10          |   10    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0213_house_robber_ii.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0213_house_robber_ii.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0213_house_robber_ii.ts"
-    ```
+```python
+--8<-- "0213_house_robber_ii.py"
+```
 
 ## 376. Wiggle Subsequence
 
--  [LeetCode](https://leetcode.com/problems/wiggle-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-subsequence/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/wiggle-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-subsequence/) (Medium)
 -   Return the length of the longest wiggle subsequence.
 -   `up[n]` stores the length of the longest wiggle subsequence ending at `n` with a rising wiggle.
 -   `down[n]` stores the length of the longest wiggle subsequence ending at `n` with a falling wiggle.
@@ -231,28 +155,13 @@ comments: True
 |     2     |      9      |     4     |      3      |    4    |     5     |
 |     5     |      2      |     4     |      5      |    6    |     5     |
 
-=== "Python"
-
-    ```python
-    --8<-- "0376_wiggle_subsequence.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0376_wiggle_subsequence.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0376_wiggle_subsequence.ts"
-    ```
+```python
+--8<-- "0376_wiggle_subsequence.py"
+```
 
 ## 343. Integer Break
 
--  [LeetCode](https://leetcode.com/problems/integer-break/) | [LeetCode CH](https://leetcode.cn/problems/integer-break/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/integer-break/) | [LeetCode CH](https://leetcode.cn/problems/integer-break/) (Medium)
 -   Return the maximum product of the integer after breaking it into at least two positive integers.
 -   `dp[i]` stores the maximum product of the integer `i`.
 -   Formula: `dp[i] = max(dp[i - j] * j, (i - j) * j)`
@@ -273,46 +182,17 @@ comments: True
 | dp[7]=12 |        |        |        |        |         | 12\*1=12 |
 | `dp[n]`  |   2    |   4    |   6    |   9    |   12    |    18    |
 
-=== "Python"
-
-    ```python
-    --8<-- "0343_integer_break.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0343_integer_break.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0343_integer_break.ts"
-    ```
+```python
+--8<-- "0343_integer_break.py"
+```
 
 ## 1025. Divisor Game
 
--  [LeetCode](https://leetcode.com/problems/divisor-game/) | [LeetCode CH](https://leetcode.cn/problems/divisor-game/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/divisor-game/) | [LeetCode CH](https://leetcode.cn/problems/divisor-game/) (Easy)
 -   Return `True` if Alice wins the game, assuming both players play optimally.
 -   `dp[n]` stores the result of the game when the number is `n`.
 -   Initialize `dp[1] = False`.
 
-=== "Python"
-
-    ```python
-    --8<-- "1025_divisor_game.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/1025_divisor_game.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/1025_divisor_game.ts"
-    ```
+```python
+--8<-- "1025_divisor_game.py"
+```

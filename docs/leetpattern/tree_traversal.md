@@ -6,8 +6,7 @@ comments: True
 
 ## 144. Binary Tree Preorder Traversal
 
--  [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-preorder-traversal/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-preorder-traversal/) (Easy)
 ![tree_traversal](../assets/tree_traversal_dfs_bfs.png)
 
 ### Example 1
@@ -131,130 +130,46 @@ graph TD
 | Postorder   | Left, Right, Root | DFS or Stack   | `[3, 4, 1, 5, 6, 2, 0]`       |
 | Level Order | Level by Level    | BFS with Queue | `[[0], [1, 2], [3, 4, 5, 6]]` |
 
-=== "Python"
-
-    ```python
-    --8<-- "0144_binary_tree_preorder_traversal.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0144_binary_tree_preorder_traversal.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0144_binary_tree_preorder_traversal.ts"
-    ```
+```python
+--8<-- "0144_binary_tree_preorder_traversal.py"
+```
 
 ## 94. Binary Tree Inorder Traversal
 
--  [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-inorder-traversal/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-inorder-traversal/) (Easy)
 
-=== "Python"
-
-    ```python
-    --8<-- "0094_binary_tree_inorder_traversal.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0094_binary_tree_inorder_traversal.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0094_binary_tree_inorder_traversal.ts"
-    ```
+```python
+--8<-- "0094_binary_tree_inorder_traversal.py"
+```
 
 ## 145. Binary Tree Postorder Traversal
 
--  [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-postorder-traversal/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-postorder-traversal/) (Easy)
 
-=== "Python"
-
-    ```python
-    --8<-- "0145_binary_tree_postorder_traversal.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0145_binary_tree_postorder_traversal.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0145_binary_tree_postorder_traversal.ts"
-    ```
+```python
+--8<-- "0145_binary_tree_postorder_traversal.py"
+```
 
 ## 102. Binary Tree Level Order Traversal
 
--  [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0102_binary_tree_level_order_traversal.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0102_binary_tree_level_order_traversal.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0102_binary_tree_level_order_traversal.ts"
-    ```
+```python
+--8<-- "0102_binary_tree_level_order_traversal.py"
+```
 
 ## 107. Binary Tree Level Order Traversal II
 
--  [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0107_binary_tree_level_order_traversal_ii.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0107_binary_tree_level_order_traversal_ii.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0107_binary_tree_level_order_traversal_ii.ts"
-    ```
+```python
+--8<-- "0107_binary_tree_level_order_traversal_ii.py"
+```
 
 ## 103. Binary Tree Zigzag Level Order Traversal
 
--  [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0103_binary_tree_zigzag_level_order_traversal.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0103_binary_tree_zigzag_level_order_traversal.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0103_binary_tree_zigzag_level_order_traversal.ts"
-    ```
+```python
+--8<-- "0103_binary_tree_zigzag_level_order_traversal.py"
+```

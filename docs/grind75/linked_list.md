@@ -6,30 +6,15 @@ comments: True
 
 ## 21. Merge Two Sorted Lists
 
--  [LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-two-sorted-lists/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-two-sorted-lists/) (Easy)
 
-=== "Python"
-
-    ```python
-    --8<-- "0021_merge_two_sorted_lists.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0021_merge_two_sorted_lists.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0021_merge_two_sorted_lists.ts"
-    ```
+```python
+--8<-- "0021_merge_two_sorted_lists.py"
+```
 
 ## 141. Linked List Cycle
 
--  [LeetCode](https://leetcode.com/problems/linked-list-cycle/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/linked-list-cycle/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
 -   Determine if a linked list has a cycle in it.
 
 ```mermaid
@@ -47,28 +32,13 @@ C --> D[-4]
 D --> B
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0141_linked_list_cycle.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0141_linked_list_cycle.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0141_linked_list_cycle.ts"
-    ```
+```python
+--8<-- "0141_linked_list_cycle.py"
+```
 
 ## 206. Reverse Linked List
 
--  [LeetCode](https://leetcode.com/problems/reverse-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/reverse-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
 -   Reverse a singly linked list.
 
 ```mermaid
@@ -87,28 +57,20 @@ C --> B[2]
 B --> A[1]
 ```
 
-=== "Python"
+```python
+--8<-- "0206_reverse_linked_list.py"
+```
 
-    ```python
-    --8<-- "0206_reverse_linked_list.py"
-    ```
+## 876. Middle of the Linked List
 
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0206_reverse_linked_list.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0206_reverse_linked_list.ts"
-    ```
+-   [LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
+```python
+--8<-- "0876_middle_of_the_linked_list.py"
+```
 
 ## 146. LRU Cache
 
--  [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
 -   Design and implement a data structure for **Least Recently Used (LRU) cache**. It should support the following operations: get and put.
 
 ![146](https://miro.medium.com/v2/resize:fit:650/0*fOwBd3z0XtHh7WN1.png){width=300px}
@@ -117,20 +79,6 @@ B --> A[1]
     -   Doubly Linked List: to store the key-value pairs.
     -   Hash Map: to store the key-node pairs.
 
-=== "Python"
-
-    ```python
-    --8<-- "0146_lru_cache.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0146_lru_cache.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0146_lru_cache.ts"
-    ```
+```python
+--8<-- "0146_lru_cache.py"
+```

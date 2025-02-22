@@ -6,184 +6,71 @@ comments: True
 
 ## 226. Invert Binary Tree
 
--  [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
 
-=== "Python"
-
-    ```python
-    --8<-- "0226_invert_binary_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0226_invert_binary_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0226_invert_binary_tree.ts"
-    ```
+```python
+--8<-- "0226_invert_binary_tree.py"
+```
 
 ## 104. Maximum Depth of Binary Tree
 
--  [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 
-=== "Python"
-
-    ```python
-    --8<-- "0104_maximum_depth_of_binary_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0104_maximum_depth_of_binary_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0104_maximum_depth_of_binary_tree.ts"
-    ```
+```python
+--8<-- "0104_maximum_depth_of_binary_tree.py"
+```
 
 ## 543. Diameter of Binary Tree
 
--  [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/diameter-of-binary-tree/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/diameter-of-binary-tree/) (Easy)
 
-=== "Python"
-
-    ```python
-    --8<-- "0543_diameter_of_binary_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0543_diameter_of_binary_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0543_diameter_of_binary_tree.ts"
-    ```
+```python
+--8<-- "0543_diameter_of_binary_tree.py"
+```
 
 ## 110. Balanced Binary Tree
 
--  [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/balanced-binary-tree/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/balanced-binary-tree/) (Easy)
 
-=== "Python"
-
-    ```python
-    --8<-- "0110_balanced_binary_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0110_balanced_binary_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0110_balanced_binary_tree.ts"
-    ```
+```python
+--8<-- "0110_balanced_binary_tree.py"
+```
 
 ## 100. Same Tree
 
--  [LeetCode](https://leetcode.com/problems/same-tree/) | [LeetCode CH](https://leetcode.cn/problems/same-tree/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/same-tree/) | [LeetCode CH](https://leetcode.cn/problems/same-tree/) (Easy)
 
-=== "Python"
-
-    ```python
-    --8<-- "0100_same_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0100_same_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0100_same_tree.ts"
-    ```
+```python
+--8<-- "0100_same_tree.py"
+```
 
 ## 572. Subtree of Another Tree
 
--  [LeetCode](https://leetcode.com/problems/subtree-of-another-tree/) | [LeetCode CH](https://leetcode.cn/problems/subtree-of-another-tree/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/subtree-of-another-tree/) | [LeetCode CH](https://leetcode.cn/problems/subtree-of-another-tree/) (Easy)
 
-=== "Python"
-
-    ```python
-    --8<-- "0572_subtree_of_another_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0572_subtree_of_another_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0572_subtree_of_another_tree.ts"
-    ```
+```python
+--8<-- "0572_subtree_of_another_tree.py"
+```
 
 ## 235. Lowest Common Ancestor of a Binary Search Tree
 
--  [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0235_lowest_common_ancestor_of_a_binary_search_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0235_lowest_common_ancestor_of_a_binary_search_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0235_lowest_common_ancestor_of_a_binary_search_tree.ts"
-    ```
+```python
+--8<-- "0235_lowest_common_ancestor_of_a_binary_search_tree.py"
+```
 
 ## 102. Binary Tree Level Order Traversal
 
--  [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0102_binary_tree_level_order_traversal.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0102_binary_tree_level_order_traversal.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0102_binary_tree_level_order_traversal.ts"
-    ```
+```python
+--8<-- "0102_binary_tree_level_order_traversal.py"
+```
 
 ## 199. Binary Tree Right Side View
 
--  [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
 ```plaintext
     ____1       <---
    /     \
@@ -194,152 +81,54 @@ comments: True
     5           <---
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0199_binary_tree_right_side_view.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0199_binary_tree_right_side_view.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0199_binary_tree_right_side_view.ts"
-    ```
+```python
+--8<-- "0199_binary_tree_right_side_view.py"
+```
 
 ## 1448. Count Good Nodes in Binary Tree
 
--  [LeetCode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "1448_count_good_nodes_in_binary_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/1448_count_good_nodes_in_binary_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/1448_count_good_nodes_in_binary_tree.ts"
-    ```
+```python
+--8<-- "1448_count_good_nodes_in_binary_tree.py"
+```
 
 ## 98. Validate Binary Search Tree
 
--  [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0098_validate_binary_search_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0098_validate_binary_search_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0098_validate_binary_search_tree.ts"
-    ```
+```python
+--8<-- "0098_validate_binary_search_tree.py"
+```
 
 ## 230. Kth Smallest Element in a BST
 
--  [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0230_kth_smallest_element_in_a_bst.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0230_kth_smallest_element_in_a_bst.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0230_kth_smallest_element_in_a_bst.ts"
-    ```
+```python
+--8<-- "0230_kth_smallest_element_in_a_bst.py"
+```
 
 ## 105. Construct Binary Tree from Preorder and Inorder Traversal
 
--  [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
 
-=== "Python"
-
-    ```python
-    --8<-- "0105_construct_binary_tree_from_preorder_and_inorder_traversal.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0105_construct_binary_tree_from_preorder_and_inorder_traversal.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0105_construct_binary_tree_from_preorder_and_inorder_traversal.ts"
-    ```
+```python
+--8<-- "0105_construct_binary_tree_from_preorder_and_inorder_traversal.py"
+```
 
 ## 124. Binary Tree Maximum Path Sum
 
--  [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)
 
-=== "Python"
-
-    ```python
-    --8<-- "0124_binary_tree_maximum_path_sum.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0124_binary_tree_maximum_path_sum.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0124_binary_tree_maximum_path_sum.ts"
-    ```
+```python
+--8<-- "0124_binary_tree_maximum_path_sum.py"
+```
 
 ## 297. Serialize and Deserialize Binary Tree
 
--  [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
 
-=== "Python"
-
-    ```python
-    --8<-- "0297_serialize_and_deserialize_binary_tree.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0297_serialize_and_deserialize_binary_tree.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0297_serialize_and_deserialize_binary_tree.ts"
-    ```
+```python
+--8<-- "0297_serialize_and_deserialize_binary_tree.py"
+```

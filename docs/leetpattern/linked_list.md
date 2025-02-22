@@ -6,8 +6,7 @@ comments: True
 
 ## 203. Remove Linked List Elements
 
--  [LeetCode](https://leetcode.com/problems/remove-linked-list-elements/) | [LeetCode CH](https://leetcode.cn/problems/remove-linked-list-elements/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/remove-linked-list-elements/) | [LeetCode CH](https://leetcode.cn/problems/remove-linked-list-elements/) (Easy)
 -   Remove all elements from a linked list of integers that have value `val`.
 
 -   Before
@@ -37,52 +36,22 @@ B --> D((3))
 F --> I((None))
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0203_remove_linked_list_elements.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0203_remove_linked_list_elements.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0203_remove_linked_list_elements.ts"
-    ```
+```python
+--8<-- "0203_remove_linked_list_elements.py"
+```
 
 ## 707. Design Linked List
 
--  [LeetCode](https://leetcode.com/problems/design-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/design-linked-list/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/design-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/design-linked-list/) (Medium)
 -   Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
 
-=== "Python"
-
-    ```python
-    --8<-- "0707_design_linked_list.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0707_design_linked_list.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0707_design_linked_list.ts"
-    ```
+```python
+--8<-- "0707_design_linked_list.py"
+```
 
 ## 206. Reverse Linked List
 
--  [LeetCode](https://leetcode.com/problems/reverse-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/reverse-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
 -   Reverse a singly linked list.
 
 ```mermaid
@@ -101,124 +70,49 @@ C --> B[2]
 B --> A[1]
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0206_reverse_linked_list.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0206_reverse_linked_list.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0206_reverse_linked_list.ts"
-    ```
+```python
+--8<-- "0206_reverse_linked_list.py"
+```
 
 ## 237. Delete Node in a Linked List
 
--  [LeetCode](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-node-in-a-linked-list/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-node-in-a-linked-list/) (Medium)
 -   Delete a node in a singly linked list. You are given only the node to be deleted.
 
-=== "Python"
-
-    ```python
-    --8<-- "0237_delete_node_in_a_linked_list.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0237_delete_node_in_a_linked_list.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0237_delete_node_in_a_linked_list.ts"
-    ```
+```python
+--8<-- "0237_delete_node_in_a_linked_list.py"
+```
 
 ## 2487. Remove Nodes From Linked List
 
--  [LeetCode](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nodes-from-linked-list/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nodes-from-linked-list/) (Medium)
 -   Remove all nodes from a linked list that have a value greater than `maxValue`.
 
-=== "Python"
-
-    ```python
-    --8<-- "2487_remove_nodes_from_linked_list.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/2487_remove_nodes_from_linked_list.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/2487_remove_nodes_from_linked_list.ts"
-    ```
+```python
+--8<-- "2487_remove_nodes_from_linked_list.py"
+```
 
 ## 24. Swap Nodes in Pairs
 
--  [LeetCode](https://leetcode.com/problems/swap-nodes-in-pairs/) | [LeetCode CH](https://leetcode.cn/problems/swap-nodes-in-pairs/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/swap-nodes-in-pairs/) | [LeetCode CH](https://leetcode.cn/problems/swap-nodes-in-pairs/) (Medium)
 -   Given a linked list, swap every two adjacent nodes and return its head.
 
-=== "Python"
-
-    ```python
-    --8<-- "0024_swap_nodes_in_pairs.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0024_swap_nodes_in_pairs.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0024_swap_nodes_in_pairs.ts"
-    ```
+```python
+--8<-- "0024_swap_nodes_in_pairs.py"
+```
 
 ## 19. Remove Nth Node From End of List
 
--  [LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) (Medium)
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
-=== "Python"
-
-    ```python
-    --8<-- "0019_remove_nth_node_from_end_of_list.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0019_remove_nth_node_from_end_of_list.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0019_remove_nth_node_from_end_of_list.ts"
-    ```
+```python
+--8<-- "0019_remove_nth_node_from_end_of_list.py"
+```
 
 ## 160. Intersection of Two Linked Lists
 
--  [LeetCode](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [LeetCode CH](https://leetcode.cn/problems/intersection-of-two-linked-lists/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [LeetCode CH](https://leetcode.cn/problems/intersection-of-two-linked-lists/) (Easy)
 -   Find the node at which the intersection of two singly linked lists begins.
 
 ```mermaid
@@ -232,28 +126,13 @@ c1 --> c2((c2))
 c2 --> c3((c3))
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0160_intersection_of_two_linked_lists.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0160_intersection_of_two_linked_lists.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0160_intersection_of_two_linked_lists.ts"
-    ```
+```python
+--8<-- "0160_intersection_of_two_linked_lists.py"
+```
 
 ## 141. Linked List Cycle
 
--  [LeetCode](https://leetcode.com/problems/linked-list-cycle/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/linked-list-cycle/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
 -   Determine if a linked list has a cycle in it.
 
 ```mermaid
@@ -271,28 +150,13 @@ C --> D[-4]
 D --> B
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0141_linked_list_cycle.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0141_linked_list_cycle.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0141_linked_list_cycle.ts"
-    ```
+```python
+--8<-- "0141_linked_list_cycle.py"
+```
 
 ## 142. Linked List Cycle II
 
--  [LeetCode](https://leetcode.com/problems/linked-list-cycle-ii/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle-ii/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/linked-list-cycle-ii/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle-ii/) (Medium)
 -   Given a linked list, return the node where the cycle begins. If there is no cycle, return `None`.
 
 ```mermaid
@@ -303,68 +167,24 @@ C --> D[-4]
 D --> B
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0142_linked_list_cycle_ii.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0142_linked_list_cycle_ii.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0142_linked_list_cycle_ii.ts"
-    ```
+```python
+--8<-- "0142_linked_list_cycle_ii.py"
+```
 
 ## 2816. Double a Number Represented as a Linked List
 
--  [LeetCode](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/double-a-number-represented-as-a-linked-list/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/double-a-number-represented-as-a-linked-list/) (Medium)
 -   Given a number represented as a linked list, double it and return the resulting linked list.
 
-=== "Python"
-
-    ```python
-    --8<-- "2816_double_a_number_represented_as_a_linked_list.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/2816_double_a_number_represented_as_a_linked_list.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/2816_double_a_number_represented_as_a_linked_list.ts"
-    ```
+```python
+--8<-- "2816_double_a_number_represented_as_a_linked_list.py"
+```
 
 ## 2. Add Two Numbers
 
--  [LeetCode](https://leetcode.com/problems/add-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/add-two-numbers/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/add-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/add-two-numbers/) (Medium)
 -   Represent the sum of two numbers as a linked list.
 
-=== "Python"
-
-    ```python
-    --8<-- "0002_add_two_numbers.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0002_add_two_numbers.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0002_add_two_numbers.ts"
-    ```
+```python
+--8<-- "0002_add_two_numbers.py"
+```

@@ -6,8 +6,7 @@ comments: True
 
 ## 118. Pascal's Triangle
 
--  [LeetCode](https://leetcode.com/problems/pascals-triangle/) | [LeetCode CH](https://leetcode.cn/problems/pascals-triangle/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/pascals-triangle/) | [LeetCode CH](https://leetcode.cn/problems/pascals-triangle/) (Easy)
 -   Generate the first `numRows` of Pascal's triangle.
 
 ```plaintext
@@ -19,96 +18,37 @@ comments: True
  1 4 6 4 1          5         4
 ```
 
-=== "Python"
-
-    ```python
-    --8<-- "0118_pascals_triangle.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0118_pascals_triangle.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0118_pascals_triangle.ts"
-    ```
+```python
+--8<-- "0118_pascals_triangle.py"
+```
 
 ## 119. Pascal's Triangle II
 
--  [LeetCode](https://leetcode.com/problems/pascals-triangle-ii/) | [LeetCode CH](https://leetcode.cn/problems/pascals-triangle-ii/) (Easy)
-
+-   [LeetCode](https://leetcode.com/problems/pascals-triangle-ii/) | [LeetCode CH](https://leetcode.cn/problems/pascals-triangle-ii/) (Easy)
 -   Return the `rowIndex`th row of Pascal's triangle.
 
-=== "Python"
-
-    ```python
-    --8<-- "0119_pascals_triangle_ii.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0119_pascals_triangle_ii.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0119_pascals_triangle_ii.ts"
-    ```
+```python
+--8<-- "0119_pascals_triangle_ii.py"
+```
 
 ## 62. Unique Paths
 
--  [LeetCode](https://leetcode.com/problems/unique-paths/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/unique-paths/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths/) (Medium)
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
-=== "Python"
-
-    ```python
-    --8<-- "0062_unique_paths.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0062_unique_paths.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0062_unique_paths.ts"
-    ```
+```python
+--8<-- "0062_unique_paths.py"
+```
 
 ## 63. Unique Paths II
 
--  [LeetCode](https://leetcode.com/problems/unique-paths-ii/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths-ii/) (Medium)
-
+-   [LeetCode](https://leetcode.com/problems/unique-paths-ii/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths-ii/) (Medium)
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid with obstacles.
 
 ![63](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
 
-=== "Python"
-
-    ```python
-    --8<-- "0063_unique_paths_ii.py"
-    ```
-
-=== "C++"
-
-    ```cpp
-    --8<-- "cpp/0063_unique_paths_ii.cc"
-    ```
-
-=== "TypeScript"
-
-    ```typescript
-    --8<-- "ts/0063_unique_paths_ii.ts"
-    ```
+```python
+--8<-- "0063_unique_paths_ii.py"
+```

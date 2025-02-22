@@ -1,5 +1,7 @@
 nav:
-- Home: README.md
+- Home:
+  - Home: README.md
+
 - About: about.md
 
 site_name: 🚀LeetPattern
@@ -11,8 +13,8 @@ copyright: Copyright &copy; 2024-2025 Sihan A
 
 theme:
   language: en
-  logo: imgs/logo.jpg
-  favicon: imgs/logo.jpg
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
   name: material
   palette:
   - media: "(prefers-color-scheme: dark)"
@@ -108,6 +110,9 @@ plugins:
     enable_creation_date: true
     type: timeago
 - search
+- exclude:
+    glob:
+    - "md/*.md"
 
 extra:
   creator: Sihan A

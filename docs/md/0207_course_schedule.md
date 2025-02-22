@@ -5,7 +5,7 @@
     -   DAG (Directed Acyclic Graph)
     -   Time complexity: O(V+E)
     -   Space complexity: O(V+E)
-    -   Prerequisites: Indegree (Look at the problem [1557. Minimum Number of Vertices to Reach All Nodes](#1557-minimum-number-of-vertices-to-reach-all-nodes))
+    -   Prerequisites: Indegree (Look at the problem 1557. Minimum Number of Vertices to Reach All Nodes)
         -   Indegree: Number of incoming edges to a vertex
     -   Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
 

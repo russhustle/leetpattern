@@ -3,7 +3,7 @@ name: publish
 on:
     push:
         branches:
-            - main
+          - main
 
 permissions:
     contents: write
@@ -14,11 +14,11 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
-              with:
-                  fetch-depth: 0
-            - uses: actions/setup-python@v3
-              with:
-                  python-version: 3.x
-            - run: pip install mkdocs mkdocs-material pymdown-extensions mkdocs-git-revision-date-localized-plugin
-            - run: mkdocs gh-deploy --force
+          - uses: actions/checkout@v3
+            with:
+                fetch-depth: 0
+          - uses: actions/setup-python@v3
+            with:
+                python-version: 3.x
+          - run: pip install mkdocs mkdocs-material pymdown-extensions mkdocs-git-revision-date-localized-plugin mkdocs-exclude
+          - run: mkdocs gh-deploy --force

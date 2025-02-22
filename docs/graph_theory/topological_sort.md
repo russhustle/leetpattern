@@ -9,6 +9,19 @@ comments: True
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
 -   Cycle detection
+-   Topological Sort
+    -   DAG (Directed Acyclic Graph)
+    -   Time complexity: O(V+E)
+    -   Space complexity: O(V+E)
+    -   Prerequisites: Indegree (Look at the problem [1557. Minimum Number of Vertices to Reach All Nodes](#1557-minimum-number-of-vertices-to-reach-all-nodes))
+        -   Indegree: Number of incoming edges to a vertex
+    -   Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
+
+![ts1](../assets/graph_ts1.png){width=300px}
+
+![ts2](../assets/graph_ts2.png){width=300px}
+
+Course to prerequisites mapping
 
 ```mermaid
 flowchart LR
@@ -19,6 +32,7 @@ flowchart LR
     1((1)) --> 4((4))
 ```
 
+Prerequisites to course mapping
 
 ```mermaid
 flowchart LR
@@ -52,8 +66,7 @@ Initialize
 | in-degree | 2   | 2   | 0   | 1   | 0   |
 
 -   queue: `[2, 4]`
-
-Pop `2` from the queue
+-   pop `2` from the queue
 
 ```mermaid
 flowchart LR
@@ -68,8 +81,7 @@ flowchart LR
 | in-degree | 1   | 2   | 0   | 1   | 0   |
 
 -   queue: `[4]`
-
-Pop `4` from the queue
+-   pop `4` from the queue
 
 ```mermaid
 flowchart LR
@@ -82,8 +94,7 @@ flowchart LR
 | in-degree | 1   | 1   | 0   | 0   | 0   |
 
 -   queue: `[3]`
-
-Pop `3` from the queue
+-   pop `3` from the queue
 
 ```mermaid
 flowchart LR
@@ -95,8 +106,7 @@ flowchart LR
 | in-degree | 1   | 0   | 0   | 0   | 0   |
 
 -   queue: `[1]`
-
-Pop `1` from the queue
+-   pop `1` from the queue
 
 ```mermaid
 flowchart LR
@@ -108,8 +118,8 @@ flowchart LR
 | in-degree | 0   | 0   | 0   | 0   | 0   |
 
 -   queue: `[0]`
-
-Pop `0` from the queue
+-   pop `0` from the queue
+-   All courses are taken. Return `True`.
 
 === "Python"
 
@@ -131,6 +141,10 @@ Pop `0` from the queue
 
 ## 210. Course Schedule II
 
+-   Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
+
+![0207](../assets/0207.png){width=300px}
+
 === "Python"
 
     ```python
@@ -151,6 +165,8 @@ Pop `0` from the queue
 
 ## 269. Alien Dictionary
 
+-   Return the correct order of characters in the alien language.
+
 === "Python"
 
     ```python
@@ -170,6 +186,8 @@ Pop `0` from the queue
     ```
 
 ## 1203. Sort Items by Groups Respecting Dependencies
+
+-   Return any permutation of the items that satisfies the requirements.
 
 === "Python"
 

@@ -2,7 +2,7 @@
 comments: True
 ---
 
-# Tries
+# Trie
 
 ## 208. Implement Trie (Prefix Tree)
 

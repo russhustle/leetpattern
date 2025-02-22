@@ -6,6 +6,27 @@ comments: True
 
 ## 743. Network Delay Time
 
+-   Return the minimum time taken to reach all nodes in a network.
+
+```mermaid
+graph LR
+1((1))
+2((2))
+3((3))
+4((4))
+2 --> |1| 1
+2 --> |1| 3
+3 --> |1| 4
+```
+
+-   Shortest Path Problem: Find the shortest path between two vertices in a graph.
+-   Dijkstra's Algorithm
+    -   Shortest path algorithm
+    -   Weighted graph (non-negative weights)
+    -   Data Structure: Heap; Hash Set
+    -   Time Complexity: O(E \* logV)
+    -   Space Complexity: O(V)
+
 === "Python"
 
     ```python
@@ -26,6 +47,10 @@ comments: True
 
 ## 778. Swim in Rising Water
 
+-   Return the minimum time when you can reach the target.
+
+![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
+
 === "Python"
 
     ```python
@@ -45,6 +70,8 @@ comments: True
     ```
 
 ## 1631. Path With Minimum Effort
+
+-   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
 === "Python"
 
@@ -202,6 +229,10 @@ graph TD
     ```
 
 ## 1168. Optimize Water Distribution in a Village
+
+![1168_0](../assets/1168_0.png)
+
+![1168_1](../assets/1168_1.png)
 
 === "Python"
 

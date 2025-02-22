@@ -7,8 +7,8 @@ search:
 
 clean:
 	find . -name ".DS_Store" -type f -delete
-# delete __pycache__ folders
 	find . -name "__pycache__" -type d -exec rm -r {} +
+	find . -name "output" -type d -exec rm -r {} +
 
 push:
 	git add .
@@ -18,11 +18,5 @@ push:
 sync:
 	poetry run python utils/sync.py
 
-pre-commit:
-	poetry run pre-commit run --all-files
-
-generate:
-	poetry run python utils/sync.py
-	poetry run python utils/integrate.py
-	poetry run pre-commit run --all-files
-	poetry run pre-commit run --all-files
+format:
+	poetry run pre-commit run --all-files || $(MAKE) format

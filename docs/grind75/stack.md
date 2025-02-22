@@ -6,6 +6,18 @@ comments: True
 
 ## 20. Valid Parentheses
 
+-   Determine if the input string is valid.
+-   Steps for the string `()[]{}`:
+
+| char | action | stack |
+| ---- | ------ | ----- |
+| `(`  | push   | "\("  |
+| `)`  | pop    | ""    |
+| `[`  | push   | "\["  |
+| `]`  | pop    | ""    |
+| `{`  | push   | "\{"  |
+| `}`  | pop    | ""    |
+
 === "Python"
 
     ```python
@@ -25,6 +37,12 @@ comments: True
     ```
 
 ## 232. Implement Queue using Stacks
+
+-   Implement the following operations of a queue using stacks.
+    -   `push(x)` - Push element x to the back of queue.
+    -   `pop()` - Removes the element from in front of queue.
+    -   `peek()` - Get the front element.
+    -   `empty()` - Return whether the queue is empty.
 
 === "Python"
 
@@ -46,6 +64,16 @@ comments: True
 
 ## 150. Evaluate Reverse Polish Notation
 
+-   Steps for the list `["2", "1", "+", "3", "*"]`:
+
+| token | action | stack    |
+| ----- | ------ | -------- |
+| `2`   | push   | `[2]`    |
+| `1`   | push   | `[2, 1]` |
+| `+`   | pop    | `[3]`    |
+| `3`   | push   | `[3, 3]` |
+| `*`   | pop    | `[9]`    |
+
 === "Python"
 
     ```python
@@ -65,6 +93,8 @@ comments: True
     ```
 
 ## 155. Min Stack
+
+-   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 === "Python"
 

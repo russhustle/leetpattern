@@ -6,6 +6,8 @@ comments: True
 
 ## 269. Alien Dictionary
 
+-   Return the correct order of characters in the alien language.
+
 === "Python"
 
     ```python

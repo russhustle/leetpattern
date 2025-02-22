@@ -6,6 +6,8 @@ comments: True
 
 ## 200. Number of Islands
 
+-  [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -42,6 +44,8 @@ comments: True
 
 ## 133. Clone Graph
 
+-  [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+
 === "Python"
 
     ```python
@@ -62,6 +66,8 @@ comments: True
 
 ## 417. Pacific Atlantic Water Flow
 
+-  [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+
 === "Python"
 
     ```python
@@ -81,6 +87,8 @@ comments: True
     ```
 
 ## 207. Course Schedule
+
+-  [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
 
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
@@ -217,6 +225,8 @@ flowchart LR
 
 ## 261. Graph Valid Tree
 
+-  [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
+
 === "Python"
 
     ```python
@@ -236,6 +246,8 @@ flowchart LR
     ```
 
 ## 323. Number of Connected Components in an Undirected Graph
+
+-  [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 
 === "Python"
 

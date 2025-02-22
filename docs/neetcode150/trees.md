@@ -6,6 +6,8 @@ comments: True
 
 ## 226. Invert Binary Tree
 
+-  [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 104. Maximum Depth of Binary Tree
+
+-  [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 543. Diameter of Binary Tree
 
+-  [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/diameter-of-binary-tree/) (Easy)
+
 === "Python"
 
     ```python
@@ -65,6 +71,8 @@ comments: True
     ```
 
 ## 110. Balanced Binary Tree
+
+-  [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/balanced-binary-tree/) (Easy)
 
 === "Python"
 
@@ -86,6 +94,8 @@ comments: True
 
 ## 100. Same Tree
 
+-  [LeetCode](https://leetcode.com/problems/same-tree/) | [LeetCode CH](https://leetcode.cn/problems/same-tree/) (Easy)
+
 === "Python"
 
     ```python
@@ -105,6 +115,8 @@ comments: True
     ```
 
 ## 572. Subtree of Another Tree
+
+-  [LeetCode](https://leetcode.com/problems/subtree-of-another-tree/) | [LeetCode CH](https://leetcode.cn/problems/subtree-of-another-tree/) (Easy)
 
 === "Python"
 
@@ -126,6 +138,8 @@ comments: True
 
 ## 235. Lowest Common Ancestor of a Binary Search Tree
 
+-  [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
+
 === "Python"
 
     ```python
@@ -146,6 +160,8 @@ comments: True
 
 ## 102. Binary Tree Level Order Traversal
 
+-  [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
+
 === "Python"
 
     ```python
@@ -165,6 +181,8 @@ comments: True
     ```
 
 ## 199. Binary Tree Right Side View
+
+-  [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
 
 ```plaintext
     ____1       <---
@@ -196,6 +214,8 @@ comments: True
 
 ## 1448. Count Good Nodes in Binary Tree
 
+-  [LeetCode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/) (Medium)
+
 === "Python"
 
     ```python
@@ -215,6 +235,8 @@ comments: True
     ```
 
 ## 98. Validate Binary Search Tree
+
+-  [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
 
 === "Python"
 
@@ -236,6 +258,8 @@ comments: True
 
 ## 230. Kth Smallest Element in a BST
 
+-  [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)
+
 === "Python"
 
     ```python
@@ -255,6 +279,8 @@ comments: True
     ```
 
 ## 105. Construct Binary Tree from Preorder and Inorder Traversal
+
+-  [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
 
 === "Python"
 
@@ -276,6 +302,8 @@ comments: True
 
 ## 124. Binary Tree Maximum Path Sum
 
+-  [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)
+
 === "Python"
 
     ```python
@@ -295,6 +323,8 @@ comments: True
     ```
 
 ## 297. Serialize and Deserialize Binary Tree
+
+-  [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
 
 === "Python"
 

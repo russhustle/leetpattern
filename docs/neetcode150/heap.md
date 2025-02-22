@@ -6,6 +6,8 @@ comments: True
 
 ## 703. Kth Largest Element in a Stream
 
+-  [LeetCode](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 1046. Last Stone Weight
+
+-  [LeetCode](https://leetcode.com/problems/last-stone-weight/) | [LeetCode CH](https://leetcode.cn/problems/last-stone-weight/) (Easy)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 973. K Closest Points to Origin
 
+-  [LeetCode](https://leetcode.com/problems/k-closest-points-to-origin/) | [LeetCode CH](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)
+
 === "Python"
 
     ```python
@@ -65,6 +71,8 @@ comments: True
     ```
 
 ## 215. Kth Largest Element in an Array
+
+-  [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
 
 === "Python"
 
@@ -86,6 +94,8 @@ comments: True
 
 ## 621. Task Scheduler
 
+-  [LeetCode](https://leetcode.com/problems/task-scheduler/) | [LeetCode CH](https://leetcode.cn/problems/task-scheduler/) (Medium)
+
 === "Python"
 
     ```python
@@ -105,6 +115,8 @@ comments: True
     ```
 
 ## 355. Design Twitter
+
+-  [LeetCode](https://leetcode.com/problems/design-twitter/) | [LeetCode CH](https://leetcode.cn/problems/design-twitter/) (Medium)
 
 -   Similar question: [23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (Hard)
 
@@ -127,6 +139,8 @@ comments: True
     ```
 
 ## 295. Find Median from Data Stream
+
+-  [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 
 === "Python"
 

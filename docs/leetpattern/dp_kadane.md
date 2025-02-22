@@ -6,6 +6,8 @@ comments: True
 
 ## 53. Maximum Subarray
 
+-  [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 918. Maximum Sum Circular Subarray
+
+-  [LeetCode](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 152. Maximum Product Subarray
 
+-  [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
+
 === "Python"
 
     ```python
@@ -66,6 +72,8 @@ comments: True
 
 ## 978. Longest Turbulent Subarray
 
+-  [LeetCode](https://leetcode.com/problems/longest-turbulent-subarray/) | [LeetCode CH](https://leetcode.cn/problems/longest-turbulent-subarray/) (Medium)
+
 === "Python"
 
     ```python
@@ -85,6 +93,8 @@ comments: True
     ```
 
 ## 1186. Maximum Subarray Sum with One Deletion
+
+-  [LeetCode](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/) (Medium)
 
 === "Python"
 

@@ -1,5 +1,7 @@
 ## 739. Daily Temperatures
 
+-  [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)
+
 -   Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
 
 | Index | Temp | > stack last | stack                           | result    |

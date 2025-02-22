@@ -6,6 +6,8 @@ comments: True
 
 ## 300. Longest Increasing Subsequence
 
+-  [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 673. Number of Longest Increasing Subsequence
+
+-  [LeetCode](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) (Medium)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 354. Russian Doll Envelopes
 
+-  [LeetCode](https://leetcode.com/problems/russian-doll-envelopes/) | [LeetCode CH](https://leetcode.cn/problems/russian-doll-envelopes/) (Hard)
+
 === "Python"
 
     ```python
@@ -65,6 +71,8 @@ comments: True
     ```
 
 ## 960. Delete Columns to Make Sorted III
+
+-  [LeetCode](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/) | [LeetCode CH](https://leetcode.cn/problems/delete-columns-to-make-sorted-iii/) (Hard)
 
 === "Python"
 
@@ -86,6 +94,8 @@ comments: True
 
 ## 1671. Minimum Number of Removals to Make Mountain Array
 
+-  [LeetCode](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array/) (Hard)
+
 === "Python"
 
     ```python
@@ -106,6 +116,8 @@ comments: True
 
 ## 941. Valid Mountain Array
 
+-  [LeetCode](https://leetcode.com/problems/valid-mountain-array/) | [LeetCode CH](https://leetcode.cn/problems/valid-mountain-array/) (Easy)
+
 === "Python"
 
     ```python
@@ -125,6 +137,8 @@ comments: True
     ```
 
 ## 845. Longest Mountain in Array
+
+-  [LeetCode](https://leetcode.com/problems/longest-mountain-in-array/) | [LeetCode CH](https://leetcode.cn/problems/longest-mountain-in-array/) (Medium)
 
 === "Python"
 

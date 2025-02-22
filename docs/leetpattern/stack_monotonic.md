@@ -6,6 +6,8 @@ comments: True
 
 ## 739. Daily Temperatures
 
+-  [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)
+
 -   Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
 
 | Index | Temp | > stack last | stack                           | result    |
@@ -39,6 +41,8 @@ comments: True
 
 ## 496. Next Greater Element I
 
+-  [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
+
 === "Python"
 
     ```python
@@ -58,6 +62,8 @@ comments: True
     ```
 
 ## 503. Next Greater Element II
+
+-  [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)
 
 === "Python"
 
@@ -79,6 +85,8 @@ comments: True
 
 ## 84. Largest Rectangle in Histogram
 
+-  [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+
 === "Python"
 
     ```python
@@ -98,6 +106,8 @@ comments: True
     ```
 
 ## 85. Maximal Rectangle
+
+-  [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | [LeetCode CH](https://leetcode.cn/problems/maximal-rectangle/) (Hard)
 
 -   Return the area of the largest rectangle that can be formed within a rectangle of 1's.
 
@@ -123,6 +133,8 @@ comments: True
 
 ## 42. Trapping Rain Water
 
+-  [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+
 === "Python"
 
     ```python
@@ -142,6 +154,8 @@ comments: True
     ```
 
 ## 901. Online Stock Span
+
+-  [LeetCode](https://leetcode.com/problems/online-stock-span/) | [LeetCode CH](https://leetcode.cn/problems/online-stock-span/) (Medium)
 
 -   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
@@ -165,6 +179,8 @@ comments: True
 
 ## 316. Remove Duplicate Letters
 
+-  [LeetCode](https://leetcode.com/problems/remove-duplicate-letters/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)
+
 === "Python"
 
     ```python
@@ -185,6 +201,8 @@ comments: True
 
 ## 456. 132 Pattern
 
+-  [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
+
 === "Python"
 
     ```python
@@ -204,6 +222,8 @@ comments: True
     ```
 
 ## 2281. Sum of Total Strength of Wizards
+
+-  [LeetCode](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
 
 === "Python"
 

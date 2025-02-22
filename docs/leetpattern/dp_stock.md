@@ -6,6 +6,8 @@ comments: True
 
 ## 121. Best Time to Buy and Sell Stock
 
+-  [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
 === "Python"
@@ -27,6 +29,8 @@ comments: True
     ```
 
 ## 122. Best Time to Buy and Sell Stock II
+
+-  [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) (Medium)
 
 -   Return the maximum profit you can achieve.
 
@@ -50,6 +54,8 @@ comments: True
 
 ## 123. Best Time to Buy and Sell Stock III
 
+-  [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) (Hard)
+
 === "Python"
 
     ```python
@@ -69,6 +75,8 @@ comments: True
     ```
 
 ## 188. Best Time to Buy and Sell Stock IV
+
+-  [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) (Hard)
 
 === "Python"
 
@@ -90,6 +98,8 @@ comments: True
 
 ## 309. Best Time to Buy and Sell Stock with Cooldown
 
+-  [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) (Medium)
+
 === "Python"
 
     ```python
@@ -109,6 +119,8 @@ comments: True
     ```
 
 ## 714. Best Time to Buy and Sell Stock with Transaction Fee
+
+-  [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) (Medium)
 
 -   Return the maximum profit you can achieve with the given transaction fee.
 

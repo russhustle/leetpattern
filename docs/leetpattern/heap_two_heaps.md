@@ -6,6 +6,8 @@ comments: True
 
 ## 295. Find Median from Data Stream
 
+-  [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
+
 === "Python"
 
     ```python
@@ -26,6 +28,8 @@ comments: True
 
 ## 480. Sliding Window Median
 
+-  [LeetCode](https://leetcode.com/problems/sliding-window-median/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-median/) (Hard)
+
 === "Python"
 
     ```python
@@ -45,6 +49,8 @@ comments: True
     ```
 
 ## 502. IPO
+
+-  [LeetCode](https://leetcode.com/problems/ipo/) | [LeetCode CH](https://leetcode.cn/problems/ipo/) (Hard)
 
 === "Python"
 

@@ -1,5 +1,7 @@
 ## 2390. Removing Stars From a String
 
+-  [LeetCode](https://leetcode.com/problems/removing-stars-from-a-string/) | [LeetCode CH](https://leetcode.cn/problems/removing-stars-from-a-string/) (Medium)
+
 -   Remove all `*` characters and their adjacent characters from the string.
 
 -   Steps for the string `leet**cod*e`:

@@ -6,6 +6,8 @@ comments: True
 
 ## 144. Binary Tree Preorder Traversal
 
+-  [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-preorder-traversal/) (Easy)
+
 ![tree_traversal](../assets/tree_traversal_dfs_bfs.png)
 
 ### Example 1
@@ -149,6 +151,8 @@ graph TD
 
 ## 94. Binary Tree Inorder Traversal
 
+-  [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-inorder-traversal/) (Easy)
+
 === "Python"
 
     ```python
@@ -168,6 +172,8 @@ graph TD
     ```
 
 ## 145. Binary Tree Postorder Traversal
+
+-  [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-postorder-traversal/) (Easy)
 
 === "Python"
 
@@ -189,6 +195,8 @@ graph TD
 
 ## 102. Binary Tree Level Order Traversal
 
+-  [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
+
 === "Python"
 
     ```python
@@ -209,6 +217,8 @@ graph TD
 
 ## 107. Binary Tree Level Order Traversal II
 
+-  [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -228,6 +238,8 @@ graph TD
     ```
 
 ## 103. Binary Tree Zigzag Level Order Traversal
+
+-  [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
 
 === "Python"
 

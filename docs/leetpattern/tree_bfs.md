@@ -6,6 +6,8 @@ comments: True
 
 ## 199. Binary Tree Right Side View
 
+-  [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
+
 ```plaintext
     ____1       <---
    /     \
@@ -36,6 +38,8 @@ comments: True
 
 ## 111. Minimum Depth of Binary Tree
 
+-  [LeetCode](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) (Easy)
+
 === "Python"
 
     ```python
@@ -55,6 +59,8 @@ comments: True
     ```
 
 ## 104. Maximum Depth of Binary Tree
+
+-  [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 
 === "Python"
 
@@ -76,6 +82,8 @@ comments: True
 
 ## 637. Average of Levels in Binary Tree
 
+-  [LeetCode](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) (Easy)
+
 === "Python"
 
     ```python
@@ -95,6 +103,8 @@ comments: True
     ```
 
 ## 429. N-ary Tree Level Order Traversal
+
+-  [LeetCode](https://leetcode.com/problems/n-ary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/) (Medium)
 
 === "Python"
 
@@ -116,6 +126,8 @@ comments: True
 
 ## 515. Find Largest Value in Each Tree Row
 
+-  [LeetCode](https://leetcode.com/problems/find-largest-value-in-each-tree-row/) | [LeetCode CH](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) (Medium)
+
 === "Python"
 
     ```python
@@ -135,6 +147,8 @@ comments: True
     ```
 
 ## 116. Populating Next Right Pointers in Each Node
+
+-  [LeetCode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [LeetCode CH](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) (Medium)
 
 -   Perfect Binary Tree
 
@@ -158,6 +172,8 @@ comments: True
 
 ## 117. Populating Next Right Pointers in Each Node II
 
+-  [LeetCode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | [LeetCode CH](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -178,6 +194,8 @@ comments: True
 
 ## 513. Find Bottom Left Tree Value
 
+-  [LeetCode](https://leetcode.com/problems/find-bottom-left-tree-value/) | [LeetCode CH](https://leetcode.cn/problems/find-bottom-left-tree-value/) (Medium)
+
 === "Python"
 
     ```python
@@ -197,6 +215,8 @@ comments: True
     ```
 
 ## 863. All Nodes Distance K in Binary Tree
+
+-  [LeetCode](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) (Medium)
 
 === "Python"
 

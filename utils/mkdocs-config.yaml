@@ -1,3 +1,7 @@
+nav:
+- Home: README.md
+- About: about.md
+
 site_name: 🚀LeetPattern
 site_url: https://www.leetpattern.com
 site_author: Sihan A
@@ -6,137 +10,134 @@ repo_url: https://github.com/russhustle/leetpattern/
 copyright: Copyright &copy; 2024-2025 Sihan A
 
 theme:
-    language: en
-    logo: imgs/logo.jpg
-    favicon: imgs/logo.jpg
-    name: material
-    palette:
-        - media: "(prefers-color-scheme: dark)"
-          scheme: slate
-          primary: indigo
-          accent: pink
-          toggle:
-              icon: material/toggle-switch
-              name: Switch to system preference
-        - media: "(prefers-color-scheme: light)"
-          scheme: default
-          primary: indigo
-          accent: pink
-          toggle:
-              icon: material/toggle-switch-off-outline
-              name: Switch to dark mode
+  language: en
+  logo: imgs/logo.jpg
+  favicon: imgs/logo.jpg
+  name: material
+  palette:
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: indigo
+    accent: pink
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to system preference
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: indigo
+    accent: pink
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
 
-    font:
-        text: Roboto
-        code: Roboto Mono
+  font:
+    text: Roboto
+    code: Roboto Mono
 
-    features:
-        - content.code.copy # Enable copy button on code blocks
-        - content.code.select # Enable select button on code blocks
-        - content.tabs.link # Enable link button on tabs
-        - navigation.tabs
-        - navigation.tracking
-        - navigation.tabs.sticky
-        - navigation.indexes # Enable indexes for the navigation
-        - navigation.instant
-        - navigation.instant.prefetch
-        - navigation.instant.progress
-        - navigation.path
-        - navigation.footer # Enable footer navigation
-        - navigation.top
-        - search.suggest # Enable search suggestions
-        - search.highlight # Enable search term highlighting
-        - content.math
-        - grid
-        - toc.follow
-    icon:
-        previous: fontawesome/solid/angle-left
-        next: fontawesome/solid/angle-right
-        admonition:
-            note: octicons/tag-16
-            abstract: octicons/checklist-16
-            info: octicons/info-16
-            tip: octicons/squirrel-16
-            success: octicons/check-16
-            question: octicons/question-16
-            warning: octicons/alert-16
-            failure: octicons/x-circle-16
-            danger: octicons/zap-16
-            bug: octicons/bug-16
-            example: octicons/beaker-16
-            quote: octicons/quote-16
-    custom_dir: overrides
+  features:
+  - content.code.copy # Enable copy button on code blocks
+  - content.code.select # Enable select button on code blocks
+  - content.tabs.link # Enable link button on tabs
+  - navigation.tabs
+  - navigation.tracking
+  - navigation.tabs.sticky
+  - navigation.indexes # Enable indexes for the navigation
+  - navigation.instant
+  - navigation.instant.prefetch
+  - navigation.instant.progress
+  - navigation.path
+  - navigation.footer # Enable footer navigation
+  - navigation.top
+  - search.suggest # Enable search suggestions
+  - search.highlight # Enable search term highlighting
+  - content.math
+  - grid
+  - toc.follow
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  custom_dir: overrides
 
 markdown_extensions:
-    - admonition
-    - pymdownx.details
-    - pymdownx.tabbed:
-          alternate_style: true
-    - pymdownx.snippets:
-          base_path: src
-    - pymdownx.highlight:
-          anchor_linenums: true
-          line_spans: __span
-          pygments_lang_class: true
-    - pymdownx.critic # CriticMarkup support
-    - pymdownx.caret # Caret Markup support
-    - pymdownx.keys
-    - pymdownx.mark
-    - pymdownx.tilde
-    - pymdownx.inlinehilite
-    - pymdownx.superfences:
-          custom_fences:
-              - name: mermaid
-                class: mermaid
-    - pymdownx.tasklist:
-          custom_checkbox: true
-    - pymdownx.arithmatex: # latex support
-          generic: true
-    - toc:
-          permalink: true # Add permalinks to headers
-    - attr_list
-    - md_in_html
+- admonition
+- pymdownx.details
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.snippets:
+    base_path: src
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.critic # CriticMarkup support
+- pymdownx.caret # Caret Markup support
+- pymdownx.keys
+- pymdownx.mark
+- pymdownx.tilde
+- pymdownx.inlinehilite
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.arithmatex:
+    # latex support
+    generic: true
+- toc:
+    permalink: true # Add permalinks to headers
+- attr_list
+- md_in_html
 
 plugins:
-    # show the last modification date of the page
-    - git-revision-date-localized:
-          enable_creation_date: true
-          type: timeago
-    - search
+# show the last modification date of the page
+- git-revision-date-localized:
+    enable_creation_date: true
+    type: timeago
+- search
 
 extra:
-    creator: Sihan A
-    homepage: https://www.leetpattern.com
-    social:
-        - icon: fontawesome/brands/github
-          link: https://github.com/russhustle
-          name: GitHub | Sihan A
-        - icon: fontawesome/brands/linkedin
-          link: https://www.linkedin.com/in/sihan-a/
-          name: LinkedIn | Sihan A
-        - icon: fontawesome/brands/kaggle
-          link: https://www.kaggle.com/sihana
-          name: Kaggle | Sihan A
-        - icon: fontawesome/brands/medium
-          link: https://medium.com/@sihan-a
-          name: Medium | Sihan A
-    consent:
-        title: Cookie consent
-        description:
-            We use cookies to recognize your repeated visits and preferences, as well
-            as to measure the effectiveness of our documentation and whether users
-            find what they're searching for. With your consent, you're helping us to
-            make our documentation better.
+  creator: Sihan A
+  homepage: https://www.leetpattern.com
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/russhustle
+    name: GitHub | Sihan A
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/in/sihan-a/
+    name: LinkedIn | Sihan A
+  - icon: fontawesome/brands/kaggle
+    link: https://www.kaggle.com/sihana
+    name: Kaggle | Sihan A
+  - icon: fontawesome/brands/medium
+    link: https://medium.com/@sihan-a
+    name: Medium | Sihan A
+  consent:
+    title: Cookie consent
+    description: We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.
 
-    analytics:
-        provider: google
-        property: G-EZ5J5E3CTR
+  analytics:
+    provider: google
+    property: G-EZ5J5E3CTR
 extra_javascript:
-    - utils/mathjax.js
-    - https://polyfill.io/v3/polyfill.min.js?features=es6
-    - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+- utils/mathjax.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-    - utils/unordered-list-symbols.css
-    - utils/ordered-list-symbols.css
-    - utils/table.css
+- utils/unordered-list-symbols.css
+- utils/ordered-list-symbols.css
+- utils/table.css

@@ -6,6 +6,8 @@ comments: True
 
 ## 1945. Sum of Digits of String After Convert
 
+-  [LeetCode](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-digits-of-string-after-convert/) (Easy)
+
 === "Python"
 
     ```python
@@ -26,6 +28,8 @@ comments: True
 
 ## 1894. Find the Student that Will Replace the Chalk
 
+-  [LeetCode](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/) | [LeetCode CH](https://leetcode.cn/problems/find-the-student-that-will-replace-the-chalk/) (Medium)
+
 === "Python"
 
     ```python
@@ -45,6 +49,8 @@ comments: True
     ```
 
 ## 7. Reverse Integer
+
+-  [LeetCode](https://leetcode.com/problems/reverse-integer/) | [LeetCode CH](https://leetcode.cn/problems/reverse-integer/) (Medium)
 
 === "Python"
 

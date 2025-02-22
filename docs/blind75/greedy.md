@@ -6,6 +6,8 @@ comments: True
 
 ## 53. Maximum Subarray
 
+-  [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 55. Jump Game
+
+-  [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
 
 -   Return `True` if you can reach the last index, otherwise `False`.
 

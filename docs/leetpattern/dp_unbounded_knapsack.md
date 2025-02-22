@@ -6,6 +6,8 @@ comments: True
 
 ## 139. Word Break
 
+-  [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 279. Perfect Squares
+
+-  [LeetCode](https://leetcode.com/problems/perfect-squares/) | [LeetCode CH](https://leetcode.cn/problems/perfect-squares/) (Medium)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 322. Coin Change
 
+-  [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
+
 === "Python"
 
     ```python
@@ -66,6 +72,8 @@ comments: True
 
 ## 518. Coin Change II
 
+-  [LeetCode](https://leetcode.com/problems/coin-change-ii/) | [LeetCode CH](https://leetcode.cn/problems/coin-change-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -85,6 +93,8 @@ comments: True
     ```
 
 ## 377. Combination Sum IV
+
+-  [LeetCode](https://leetcode.com/problems/combination-sum-iv/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
 
 === "Python"
 

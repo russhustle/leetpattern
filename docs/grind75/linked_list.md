@@ -6,6 +6,8 @@ comments: True
 
 ## 21. Merge Two Sorted Lists
 
+-  [LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-two-sorted-lists/) (Easy)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 141. Linked List Cycle
+
+-  [LeetCode](https://leetcode.com/problems/linked-list-cycle/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
 
 -   Determine if a linked list has a cycle in it.
 
@@ -63,6 +67,8 @@ D --> B
 
 ## 206. Reverse Linked List
 
+-  [LeetCode](https://leetcode.com/problems/reverse-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
+
 -   Reverse a singly linked list.
 
 ```mermaid
@@ -100,6 +106,8 @@ B --> A[1]
     ```
 
 ## 146. LRU Cache
+
+-  [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
 
 -   Design and implement a data structure for **Least Recently Used (LRU) cache**. It should support the following operations: get and put.
 

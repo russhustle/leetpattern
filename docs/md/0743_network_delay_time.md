@@ -1,5 +1,7 @@
 ## 743. Network Delay Time
 
+-  [LeetCode](https://leetcode.com/problems/network-delay-time/) | [LeetCode CH](https://leetcode.cn/problems/network-delay-time/) (Medium)
+
 -   Return the minimum time taken to reach all nodes in a network.
 
 ```mermaid

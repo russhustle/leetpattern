@@ -6,6 +6,8 @@ comments: True
 
 ## 226. Invert Binary Tree
 
+-  [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 105. Construct Binary Tree from Preorder and Inorder Traversal
+
+-  [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 106. Construct Binary Tree from Inorder and Postorder Traversal
 
+-  [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) (Medium)
+
 === "Python"
 
     ```python
@@ -66,6 +72,8 @@ comments: True
 
 ## 654. Maximum Binary Tree
 
+-  [LeetCode](https://leetcode.com/problems/maximum-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-binary-tree/) (Medium)
+
 === "Python"
 
     ```python
@@ -85,6 +93,8 @@ comments: True
     ```
 
 ## 617. Merge Two Binary Trees
+
+-  [LeetCode](https://leetcode.com/problems/merge-two-binary-trees/) | [LeetCode CH](https://leetcode.cn/problems/merge-two-binary-trees/) (Easy)
 
 === "Python"
 

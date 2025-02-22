@@ -6,6 +6,8 @@ comments: True
 
 ## 70. Climbing Stairs
 
+-  [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+
 -   Return the number of distinct ways to reach the top of the stairs.
 -   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
@@ -45,6 +47,8 @@ comments: True
 
 ## 198. House Robber
 
+-  [LeetCode](https://leetcode.com/problems/house-robber/) | [LeetCode CH](https://leetcode.cn/problems/house-robber/) (Medium)
+
 -   Return the maximum amount of money that can be robbed from the houses. No two adjacent houses can be robbed.
 
 -   `dp[n]` stores the maximum amount of money that can be robbed from the first `n` houses.
@@ -82,6 +86,8 @@ comments: True
     ```
 
 ## 213. House Robber II
+
+-  [LeetCode](https://leetcode.com/problems/house-robber-ii/) | [LeetCode CH](https://leetcode.cn/problems/house-robber-ii/) (Medium)
 
 -   Return the maximum amount of money that can be robbed from the houses arranged in a circle.
 -   Circular → Linear: `nums[0]` and `nums[-1]` cannot be robbed together.
@@ -123,6 +129,8 @@ comments: True
 
 ## 5. Longest Palindromic Substring
 
+-  [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
+
 -   Return the longest palindromic substring in `s`.
 
 === "Python"
@@ -144,6 +152,8 @@ comments: True
     ```
 
 ## 647. Palindromic Substrings
+
+-  [LeetCode](https://leetcode.com/problems/palindromic-substrings/) | [LeetCode CH](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
 
 -   Return the number of palindromic substrings in `s`.
 -   Bottom-up DP table
@@ -176,6 +186,8 @@ comments: True
 
 ## 91. Decode Ways
 
+-  [LeetCode](https://leetcode.com/problems/decode-ways/) | [LeetCode CH](https://leetcode.cn/problems/decode-ways/) (Medium)
+
 === "Python"
 
     ```python
@@ -195,6 +207,8 @@ comments: True
     ```
 
 ## 322. Coin Change
+
+-  [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
 
 === "Python"
 
@@ -216,6 +230,8 @@ comments: True
 
 ## 152. Maximum Product Subarray
 
+-  [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
+
 === "Python"
 
     ```python
@@ -236,6 +252,8 @@ comments: True
 
 ## 139. Word Break
 
+-  [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
+
 === "Python"
 
     ```python
@@ -255,6 +273,8 @@ comments: True
     ```
 
 ## 300. Longest Increasing Subsequence
+
+-  [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 
 === "Python"
 

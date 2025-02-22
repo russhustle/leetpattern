@@ -6,6 +6,8 @@ comments: True
 
 ## 200. Number of Islands
 
+-  [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -42,6 +44,8 @@ comments: True
 
 ## 1020. Number of Enclaves
 
+-  [LeetCode](https://leetcode.com/problems/number-of-enclaves/) | [LeetCode CH](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
+
 === "Python"
 
     ```python
@@ -61,6 +65,8 @@ comments: True
     ```
 
 ## 1254. Number of Closed Islands
+
+-  [LeetCode](https://leetcode.com/problems/number-of-closed-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
 
 === "Python"
 
@@ -82,6 +88,8 @@ comments: True
 
 ## 695. Max Area of Island
 
+-  [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+
 === "Python"
 
     ```python
@@ -101,6 +109,8 @@ comments: True
     ```
 
 ## 417. Pacific Atlantic Water Flow
+
+-  [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 
 === "Python"
 

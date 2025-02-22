@@ -6,6 +6,8 @@ comments: True
 
 ## 9. Palindrome Number
 
+-  [LeetCode](https://leetcode.com/problems/palindrome-number/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-number/) (Easy)
+
 -   Return true if the given number is a palindrome. Otherwise, return false.
 
 === "Python"
@@ -28,6 +30,8 @@ comments: True
 
 ## 15. 3Sum
 
+-  [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
+
 === "Python"
 
     ```python
@@ -47,6 +51,8 @@ comments: True
     ```
 
 ## 18. 4Sum
+
+-  [LeetCode](https://leetcode.com/problems/4sum/) | [LeetCode CH](https://leetcode.cn/problems/4sum/) (Medium)
 
 === "Python"
 
@@ -68,6 +74,8 @@ comments: True
 
 ## 69. Sqrt(x)
 
+-  [LeetCode](https://leetcode.com/problems/sqrtx/) | [LeetCode CH](https://leetcode.cn/problems/sqrtx/) (Easy)
+
 === "Python"
 
     ```python
@@ -87,6 +95,8 @@ comments: True
     ```
 
 ## 88. Merge Sorted Array
+
+-  [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
 
 === "Python"
 
@@ -108,6 +118,8 @@ comments: True
 
 ## 977. Squares of a Sorted Array
 
+-  [LeetCode](https://leetcode.com/problems/squares-of-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
+
 === "Python"
 
     ```python
@@ -127,6 +139,8 @@ comments: True
     ```
 
 ## 881. Boats to Save People
+
+-  [LeetCode](https://leetcode.com/problems/boats-to-save-people/) | [LeetCode CH](https://leetcode.cn/problems/boats-to-save-people/) (Medium)
 
 === "Python"
 
@@ -148,6 +162,8 @@ comments: True
 
 ## 75. Sort Colors
 
+-  [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
+
 === "Python"
 
     ```python
@@ -167,6 +183,8 @@ comments: True
     ```
 
 ## 125. Valid Palindrome
+
+-  [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 
 === "Python"
 
@@ -188,6 +206,8 @@ comments: True
 
 ## 167. Two Sum II - Input Array Is Sorted
 
+-  [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
+
 === "Python"
 
     ```python
@@ -207,6 +227,8 @@ comments: True
     ```
 
 ## 11. Container With Most Water
+
+-  [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
 -   Return the maximum area of water that can be trapped between the vertical lines.
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg){width=300px}

@@ -6,6 +6,8 @@ comments: True
 
 ## 733. Flood Fill
 
+-  [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
+
 -   Replace all the pixels of the same color starting from the given pixel.
 -   In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
 -   Edge cases: If the starting pixel is already the target color, return the image as it is.
@@ -57,6 +59,8 @@ comments: True
 
 ## 542. 01 Matrix
 
+-  [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
+
 === "Python"
 
     ```python
@@ -77,6 +81,8 @@ comments: True
 
 ## 133. Clone Graph
 
+-  [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+
 === "Python"
 
     ```python
@@ -96,6 +102,8 @@ comments: True
     ```
 
 ## 207. Course Schedule
+
+-  [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
 
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
@@ -232,6 +240,8 @@ flowchart LR
 
 ## 200. Number of Islands
 
+-  [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -268,6 +278,8 @@ flowchart LR
 
 ## 994. Rotting Oranges
 
+-  [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
+
 -   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
 -   Hint: Multi-source BFS to count the level.
 
@@ -293,6 +305,8 @@ flowchart LR
 
 ## 721. Accounts Merge
 
+-  [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
+
 === "Python"
 
     ```python
@@ -313,6 +327,8 @@ flowchart LR
 
 ## 79. Word Search
 
+-  [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
+
 === "Python"
 
     ```python
@@ -332,6 +348,8 @@ flowchart LR
     ```
 
 ## 127. Word Ladder
+
+-  [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
 
 === "Python"
 

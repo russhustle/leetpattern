@@ -6,6 +6,8 @@ comments: True
 
 ## 215. Kth Largest Element in an Array
 
+-  [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 973. K Closest Points to Origin
+
+-  [LeetCode](https://leetcode.com/problems/k-closest-points-to-origin/) | [LeetCode CH](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 347. Top K Frequent Elements
 
+-  [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
+
 === "Python"
 
     ```python
@@ -65,6 +71,8 @@ comments: True
     ```
 
 ## 692. Top K Frequent Words
+
+-  [LeetCode](https://leetcode.com/problems/top-k-frequent-words/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-words/) (Medium)
 
 === "Python"
 
@@ -86,6 +94,8 @@ comments: True
 
 ## 264. Ugly Number II
 
+-  [LeetCode](https://leetcode.com/problems/ugly-number-ii/) | [LeetCode CH](https://leetcode.cn/problems/ugly-number-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -105,6 +115,8 @@ comments: True
     ```
 
 ## 451. Sort Characters By Frequency
+
+-  [LeetCode](https://leetcode.com/problems/sort-characters-by-frequency/) | [LeetCode CH](https://leetcode.cn/problems/sort-characters-by-frequency/) (Medium)
 
 === "Python"
 
@@ -126,6 +138,8 @@ comments: True
 
 ## 703. Kth Largest Element in a Stream
 
+-  [LeetCode](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
+
 === "Python"
 
     ```python
@@ -146,6 +160,8 @@ comments: True
 
 ## 767. Reorganize String
 
+-  [LeetCode](https://leetcode.com/problems/reorganize-string/) | [LeetCode CH](https://leetcode.cn/problems/reorganize-string/) (Medium)
+
 === "Python"
 
     ```python
@@ -165,6 +181,8 @@ comments: True
     ```
 
 ## 786. K-th Smallest Prime Fraction
+
+-  [LeetCode](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | [LeetCode CH](https://leetcode.cn/problems/k-th-smallest-prime-fraction/) (Medium)
 
 === "Python"
 

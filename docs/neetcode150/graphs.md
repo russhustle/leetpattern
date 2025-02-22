@@ -6,6 +6,8 @@ comments: True
 
 ## 200. Number of Islands
 
+-  [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -42,6 +44,8 @@ comments: True
 
 ## 695. Max Area of Island
 
+-  [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+
 === "Python"
 
     ```python
@@ -62,6 +66,8 @@ comments: True
 
 ## 133. Clone Graph
 
+-  [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+
 === "Python"
 
     ```python
@@ -81,6 +87,8 @@ comments: True
     ```
 
 ## 286. Walls and Gates
+
+-  [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
 
 ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
@@ -103,6 +111,8 @@ comments: True
     ```
 
 ## 994. Rotting Oranges
+
+-  [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
 
 -   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
 -   Hint: Multi-source BFS to count the level.
@@ -129,6 +139,8 @@ comments: True
 
 ## 417. Pacific Atlantic Water Flow
 
+-  [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+
 === "Python"
 
     ```python
@@ -149,6 +161,8 @@ comments: True
 
 ## 130. Surrounded Regions
 
+-  [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
+
 === "Python"
 
     ```python
@@ -168,6 +182,8 @@ comments: True
     ```
 
 ## 207. Course Schedule
+
+-  [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
 
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
@@ -304,6 +320,8 @@ flowchart LR
 
 ## 210. Course Schedule II
 
+-  [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+
 -   Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
 ![0207](../assets/0207.png){width=300px}
@@ -328,6 +346,8 @@ flowchart LR
 
 ## 261. Graph Valid Tree
 
+-  [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
+
 === "Python"
 
     ```python
@@ -347,6 +367,8 @@ flowchart LR
     ```
 
 ## 323. Number of Connected Components in an Undirected Graph
+
+-  [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 
 === "Python"
 
@@ -368,6 +390,8 @@ flowchart LR
 
 ## 684. Redundant Connection
 
+-  [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
+
 === "Python"
 
     ```python
@@ -387,6 +411,8 @@ flowchart LR
     ```
 
 ## 127. Word Ladder
+
+-  [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
 
 === "Python"
 

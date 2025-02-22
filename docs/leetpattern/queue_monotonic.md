@@ -6,6 +6,8 @@ comments: True
 
 ## 918. Maximum Sum Circular Subarray
 
+-  [LeetCode](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 862. Shortest Subarray with Sum at Least K
+
+-  [LeetCode](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/) | [LeetCode CH](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/) (Hard)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 239. Sliding Window Maximum
 
+-  [LeetCode](https://leetcode.com/problems/sliding-window-maximum/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-maximum/) (Hard)
+
 === "Python"
 
     ```python
@@ -65,6 +71,8 @@ comments: True
     ```
 
 ## 2398. Maximum Number of Robots Within Budget
+
+-  [LeetCode](https://leetcode.com/problems/maximum-number-of-robots-within-budget/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-robots-within-budget/) (Hard)
 
 === "Python"
 

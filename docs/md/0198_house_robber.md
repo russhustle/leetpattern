@@ -1,5 +1,7 @@
 ## 198. House Robber
 
+-  [LeetCode](https://leetcode.com/problems/house-robber/) | [LeetCode CH](https://leetcode.cn/problems/house-robber/) (Medium)
+
 -   Return the maximum amount of money that can be robbed from the houses. No two adjacent houses can be robbed.
 
 -   `dp[n]` stores the maximum amount of money that can be robbed from the first `n` houses.

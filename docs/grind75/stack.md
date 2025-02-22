@@ -6,6 +6,8 @@ comments: True
 
 ## 20. Valid Parentheses
 
+-  [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+
 -   Determine if the input string is valid.
 -   Steps for the string `()[]{}`:
 
@@ -38,6 +40,8 @@ comments: True
 
 ## 232. Implement Queue using Stacks
 
+-  [LeetCode](https://leetcode.com/problems/implement-queue-using-stacks/) | [LeetCode CH](https://leetcode.cn/problems/implement-queue-using-stacks/) (Easy)
+
 -   Implement the following operations of a queue using stacks.
     -   `push(x)` - Push element x to the back of queue.
     -   `pop()` - Removes the element from in front of queue.
@@ -63,6 +67,8 @@ comments: True
     ```
 
 ## 150. Evaluate Reverse Polish Notation
+
+-  [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
 
 -   Steps for the list `["2", "1", "+", "3", "*"]`:
 
@@ -94,6 +100,8 @@ comments: True
 
 ## 155. Min Stack
 
+-  [LeetCode](https://leetcode.com/problems/min-stack/) | [LeetCode CH](https://leetcode.cn/problems/min-stack/) (Medium)
+
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 === "Python"
@@ -116,6 +124,8 @@ comments: True
 
 ## 42. Trapping Rain Water
 
+-  [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+
 === "Python"
 
     ```python
@@ -136,6 +146,8 @@ comments: True
 
 ## 224. Basic Calculator
 
+-  [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)
+
 === "Python"
 
     ```python
@@ -155,6 +167,8 @@ comments: True
     ```
 
 ## 84. Largest Rectangle in Histogram
+
+-  [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 
 === "Python"
 

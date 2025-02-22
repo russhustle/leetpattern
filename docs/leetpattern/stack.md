@@ -6,6 +6,8 @@ comments: True
 
 ## 2390. Removing Stars From a String
 
+-  [LeetCode](https://leetcode.com/problems/removing-stars-from-a-string/) | [LeetCode CH](https://leetcode.cn/problems/removing-stars-from-a-string/) (Medium)
+
 -   Remove all `*` characters and their adjacent characters from the string.
 
 -   Steps for the string `leet**cod*e`:
@@ -44,6 +46,8 @@ comments: True
 
 ## 1544. Make The String Great
 
+-  [LeetCode](https://leetcode.com/problems/make-the-string-great/) | [LeetCode CH](https://leetcode.cn/problems/make-the-string-great/) (Easy)
+
 -   Remove all adjacent characters that are the same and have different cases.
 -   Steps for the string `leEeetcode`:
 
@@ -80,6 +84,8 @@ comments: True
 
 ## 20. Valid Parentheses
 
+-  [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+
 -   Determine if the input string is valid.
 -   Steps for the string `()[]{}`:
 
@@ -112,6 +118,8 @@ comments: True
 
 ## 155. Min Stack
 
+-  [LeetCode](https://leetcode.com/problems/min-stack/) | [LeetCode CH](https://leetcode.cn/problems/min-stack/) (Medium)
+
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 === "Python"
@@ -133,6 +141,8 @@ comments: True
     ```
 
 ## 150. Evaluate Reverse Polish Notation
+
+-  [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
 
 -   Steps for the list `["2", "1", "+", "3", "*"]`:
 
@@ -164,6 +174,8 @@ comments: True
 
 ## 394. Decode String
 
+-  [LeetCode](https://leetcode.com/problems/decode-string/) | [LeetCode CH](https://leetcode.cn/problems/decode-string/) (Medium)
+
 === "Python"
 
     ```python
@@ -183,6 +195,8 @@ comments: True
     ```
 
 ## 22. Generate Parentheses
+
+-  [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
 
 === "Python"
 
@@ -204,6 +218,8 @@ comments: True
 
 ## 853. Car Fleet
 
+-  [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
+
 === "Python"
 
     ```python
@@ -223,6 +239,8 @@ comments: True
     ```
 
 ## 224. Basic Calculator
+
+-  [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)
 
 === "Python"
 
@@ -244,6 +262,8 @@ comments: True
 
 ## 227. Basic Calculator II
 
+-  [LeetCode](https://leetcode.com/problems/basic-calculator-ii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -264,6 +284,8 @@ comments: True
 
 ## 772. Basic Calculator III
 
+-  [LeetCode](https://leetcode.com/problems/basic-calculator-iii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
+
 === "Python"
 
     ```python
@@ -283,6 +305,8 @@ comments: True
     ```
 
 ## 770. Basic Calculator IV
+
+-  [LeetCode](https://leetcode.com/problems/basic-calculator-iv/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iv/) (Hard)
 
 === "Python"
 

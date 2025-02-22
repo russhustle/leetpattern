@@ -6,6 +6,8 @@ comments: True
 
 ## 1584. Min Cost to Connect All Points
 
+-  [LeetCode](https://leetcode.com/problems/min-cost-to-connect-all-points/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-to-connect-all-points/) (Medium)
+
 -   **Tree**: a connected acyclic graph
 -   **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
 -   **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
@@ -49,6 +51,8 @@ MST
 
 ## 1135. Connecting Cities With Minimum Cost
 
+-  [LeetCode](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [LeetCode CH](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) (Medium)
+
 === "Python"
 
     ```python
@@ -68,6 +72,8 @@ MST
     ```
 
 ## 1168. Optimize Water Distribution in a Village
+
+-  [LeetCode](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [LeetCode CH](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard)
 
 ![1168_0](../assets/1168_0.png)
 
@@ -93,6 +99,8 @@ MST
 
 ## 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
 
+-  [LeetCode](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
+
 === "Python"
 
     ```python
@@ -112,6 +120,8 @@ MST
     ```
 
 ## 1631. Path With Minimum Effort
+
+-  [LeetCode](https://leetcode.com/problems/path-with-minimum-effort/) | [LeetCode CH](https://leetcode.cn/problems/path-with-minimum-effort/) (Medium)
 
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
@@ -134,6 +144,8 @@ MST
     ```
 
 ## 1579. Remove Max Number of Edges to Keep Graph Fully Traversable
+
+-  [LeetCode](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) | [LeetCode CH](https://leetcode.cn/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) (Hard)
 
 -   Return the maximum number of edges you can remove so that the graph remains fully traversable.
 

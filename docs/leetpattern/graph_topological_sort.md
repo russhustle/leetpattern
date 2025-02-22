@@ -6,6 +6,8 @@ comments: True
 
 ## 1557. Minimum Number of Vertices to Reach All Nodes
 
+-  [LeetCode](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
+
 -   Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
 -   ✅ Return the vertices with indegree 0.
 
@@ -69,6 +71,8 @@ comments: True
     ```
 
 ## 207. Course Schedule
+
+-  [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
 
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
@@ -205,6 +209,8 @@ flowchart LR
 
 ## 210. Course Schedule II
 
+-  [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+
 -   Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
 ![0207](../assets/0207.png){width=300px}
@@ -229,6 +235,8 @@ flowchart LR
 
 ## 269. Alien Dictionary
 
+-  [LeetCode](https://leetcode.com/problems/alien-dictionary/) | [LeetCode CH](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+
 -   Return the correct order of characters in the alien language.
 
 === "Python"
@@ -250,6 +258,8 @@ flowchart LR
     ```
 
 ## 1203. Sort Items by Groups Respecting Dependencies
+
+-  [LeetCode](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) | [LeetCode CH](https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
 
 -   Return any permutation of the items that satisfies the requirements.
 
@@ -273,6 +283,8 @@ flowchart LR
 
 ## 1857. Largest Color Value in a Directed Graph
 
+-  [LeetCode](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [LeetCode CH](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
+
 === "Python"
 
     ```python
@@ -292,6 +304,8 @@ flowchart LR
     ```
 
 ## 1136. Parallel Courses
+
+-  [LeetCode](https://leetcode.com/problems/parallel-courses/) | [LeetCode CH](https://leetcode.cn/problems/parallel-courses/) (Medium)
 
 -   Return the minimum number of semesters needed to take all courses.
 

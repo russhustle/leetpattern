@@ -1,5 +1,7 @@
 ## 733. Flood Fill
 
+-  [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
+
 -   Replace all the pixels of the same color starting from the given pixel.
 -   In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
 -   Edge cases: If the starting pixel is already the target color, return the image as it is.

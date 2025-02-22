@@ -6,6 +6,8 @@ comments: True
 
 ## 2595. Number of Even and Odd Bits
 
+-  [LeetCode](https://leetcode.com/problems/number-of-even-and-odd-bits/) | [LeetCode CH](https://leetcode.cn/problems/number-of-even-and-odd-bits/) (Easy)
+
 -   Topic: Bit Manipulation
 -   Difficulty: Easy
 

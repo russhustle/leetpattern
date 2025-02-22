@@ -6,6 +6,8 @@ comments: True
 
 ## 787. Cheapest Flights Within K Stops
 
+-  [LeetCode](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [LeetCode CH](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
+
 -   Return the cheapest price from `src` to `dst` with at most `K` stops.
 
 ```mermaid
@@ -43,6 +45,8 @@ graph TD
 
 ## 1514. Path with Maximum Probability
 
+-  [LeetCode](https://leetcode.com/problems/path-with-maximum-probability/) | [LeetCode CH](https://leetcode.cn/problems/path-with-maximum-probability/) (Medium)
+
 === "Python"
 
     ```python
@@ -63,6 +67,8 @@ graph TD
 
 ## 505. The Maze II
 
+-  [LeetCode](https://leetcode.com/problems/the-maze-ii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -82,6 +88,8 @@ graph TD
     ```
 
 ## 499. The Maze III
+
+-  [LeetCode](https://leetcode.com/problems/the-maze-iii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-iii/) (Hard)
 
 === "Python"
 

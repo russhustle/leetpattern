@@ -6,6 +6,8 @@ comments: True
 
 ## 643. Maximum Average Subarray I
 
+-  [LeetCode](https://leetcode.com/problems/maximum-average-subarray-i/) | [LeetCode CH](https://leetcode.cn/problems/maximum-average-subarray-i/) (Easy)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 219. Contains Duplicate II
+
+-  [LeetCode](https://leetcode.com/problems/contains-duplicate-ii/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate-ii/) (Easy)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 1456. Maximum Number of Vowels in a Substring of Given Length
 
+-  [LeetCode](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
+
 === "Python"
 
     ```python
@@ -65,6 +71,8 @@ comments: True
     ```
 
 ## 567. Permutation in String
+
+-  [LeetCode](https://leetcode.com/problems/permutation-in-string/) | [LeetCode CH](https://leetcode.cn/problems/permutation-in-string/) (Medium)
 
 === "Python"
 
@@ -86,6 +94,8 @@ comments: True
 
 ## 713. Subarray Product Less Than K
 
+-  [LeetCode](https://leetcode.com/problems/subarray-product-less-than-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-product-less-than-k/) (Medium)
+
 === "Python"
 
     ```python
@@ -105,6 +115,8 @@ comments: True
     ```
 
 ## 1151. Minimum Swaps to Group All 1's Together
+
+-  [LeetCode](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [LeetCode CH](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
 
 === "Python"
 
@@ -126,6 +138,8 @@ comments: True
 
 ## 209. Minimum Size Subarray Sum
 
+-  [LeetCode](https://leetcode.com/problems/minimum-size-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
+
 === "Python"
 
     ```python
@@ -145,6 +159,8 @@ comments: True
     ```
 
 ## 76. Minimum Window Substring
+
+-  [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 
 === "Python"
 

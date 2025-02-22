@@ -11,9 +11,7 @@ class ProblemList:
     def __init__(self, file: str):
         self.src = "src"
         self.docs = "docs"
-        self.data = load_config_yaml(
-            os.path.join(self.src, "config", file + ".yaml")
-        )
+        self.data = load_config_yaml(os.path.join(self.src, "config", file))
         self.dir = os.path.join(self.docs, self.data.dir)
         os.makedirs(self.dir, exist_ok=True)
 
@@ -69,10 +67,13 @@ class ProblemList:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--file_path", "-f", type=str, help="Path to the yaml file"
-    )
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument(
+    #     "--file_path", "-f", type=str, help="Path to the yaml file"
+    # )
+    # args = parser.parse_args()
 
-    ProblemList(args.file_path)
+    # ProblemList(args.file_path)
+    problems = os.listdir(os.path.join("src", "config"))
+    for problem in problems:
+        ProblemList(problem)

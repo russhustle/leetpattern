@@ -1,5 +1,7 @@
 ## 647. Palindromic Substrings
 
+-  [LeetCode](https://leetcode.com/problems/palindromic-substrings/) | [LeetCode CH](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
+
 -   Return the number of palindromic substrings in `s`.
 -   Bottom-up DP table
 

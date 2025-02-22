@@ -1,5 +1,7 @@
 ## 547. Number of Provinces
 
+-  [LeetCode](https://leetcode.com/problems/number-of-provinces/) | [LeetCode CH](https://leetcode.cn/problems/number-of-provinces/) (Medium)
+
 -   Return the number of provinces.
 
 ### Union Find

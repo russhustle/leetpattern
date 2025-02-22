@@ -6,6 +6,8 @@ comments: True
 
 ## 77. Combinations
 
+-  [LeetCode](https://leetcode.com/problems/combinations/) | [LeetCode CH](https://leetcode.cn/problems/combinations/) (Medium)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 17. Letter Combinations of a Phone Number
+
+-  [LeetCode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [LeetCode CH](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 39. Combination Sum
 
+-  [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
+
 === "Python"
 
     ```python
@@ -65,6 +71,8 @@ comments: True
     ```
 
 ## 40. Combination Sum II
+
+-  [LeetCode](https://leetcode.com/problems/combination-sum-ii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-ii/) (Medium)
 
 === "Python"
 
@@ -86,6 +94,8 @@ comments: True
 
 ## 216. Combination Sum III
 
+-  [LeetCode](https://leetcode.com/problems/combination-sum-iii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iii/) (Medium)
+
 === "Python"
 
     ```python
@@ -105,6 +115,8 @@ comments: True
     ```
 
 ## 131. Palindrome Partitioning
+
+-  [LeetCode](https://leetcode.com/problems/palindrome-partitioning/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning/) (Medium)
 
 === "Python"
 
@@ -126,6 +138,8 @@ comments: True
 
 ## 93. Restore IP Addresses
 
+-  [LeetCode](https://leetcode.com/problems/restore-ip-addresses/) | [LeetCode CH](https://leetcode.cn/problems/restore-ip-addresses/) (Medium)
+
 === "Python"
 
     ```python
@@ -145,6 +159,8 @@ comments: True
     ```
 
 ## 78. Subsets
+
+-  [LeetCode](https://leetcode.com/problems/subsets/) | [LeetCode CH](https://leetcode.cn/problems/subsets/) (Medium)
 
 === "Python"
 
@@ -166,6 +182,8 @@ comments: True
 
 ## 90. Subsets II
 
+-  [LeetCode](https://leetcode.com/problems/subsets-ii/) | [LeetCode CH](https://leetcode.cn/problems/subsets-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -185,6 +203,8 @@ comments: True
     ```
 
 ## 491. Non-decreasing Subsequences
+
+-  [LeetCode](https://leetcode.com/problems/non-decreasing-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/non-decreasing-subsequences/) (Medium)
 
 === "Python"
 
@@ -206,6 +226,8 @@ comments: True
 
 ## 46. Permutations
 
+-  [LeetCode](https://leetcode.com/problems/permutations/) | [LeetCode CH](https://leetcode.cn/problems/permutations/) (Medium)
+
 === "Python"
 
     ```python
@@ -226,6 +248,8 @@ comments: True
 
 ## 47. Permutations II
 
+-  [LeetCode](https://leetcode.com/problems/permutations-ii/) | [LeetCode CH](https://leetcode.cn/problems/permutations-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -245,6 +269,8 @@ comments: True
     ```
 
 ## 51. N-Queens
+
+-  [LeetCode](https://leetcode.com/problems/n-queens/) | [LeetCode CH](https://leetcode.cn/problems/n-queens/) (Hard)
 
 - Hard
 - [N-Queens](https://leetcode.com/problems/n-queens/)
@@ -270,6 +296,8 @@ comments: True
 
 ## 37. Sudoku Solver
 
+-  [LeetCode](https://leetcode.com/problems/sudoku-solver/) | [LeetCode CH](https://leetcode.cn/problems/sudoku-solver/) (Hard)
+
 - [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
 - [解数独](https://leetcode.cn/problems/sudoku-solver/)
 - Hard
@@ -294,6 +322,8 @@ comments: True
 
 ## 79. Word Search
 
+-  [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
+
 === "Python"
 
     ```python
@@ -313,6 +343,8 @@ comments: True
     ```
 
 ## 212. Word Search II
+
+-  [LeetCode](https://leetcode.com/problems/word-search-ii/) | [LeetCode CH](https://leetcode.cn/problems/word-search-ii/) (Hard)
 
 === "Python"
 

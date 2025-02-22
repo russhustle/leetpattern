@@ -1,5 +1,7 @@
 ## 997. Find the Town Judge
 
+-  [LeetCode](https://leetcode.com/problems/find-the-town-judge/) | [LeetCode CH](https://leetcode.cn/problems/find-the-town-judge/) (Easy)
+
 -   `trust = [[1, 3], [2, 3], [1, 2], [4, 3]]`
 
 ```mermaid

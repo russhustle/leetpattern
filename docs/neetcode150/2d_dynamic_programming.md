@@ -6,6 +6,8 @@ comments: True
 
 ## 62. Unique Paths
 
+-  [LeetCode](https://leetcode.com/problems/unique-paths/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths/) (Medium)
+
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
@@ -30,6 +32,8 @@ comments: True
 
 ## 1143. Longest Common Subsequence
 
+-  [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
+
 === "Python"
 
     ```python
@@ -49,6 +53,8 @@ comments: True
     ```
 
 ## 309. Best Time to Buy and Sell Stock with Cooldown
+
+-  [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) (Medium)
 
 === "Python"
 
@@ -70,6 +76,8 @@ comments: True
 
 ## 518. Coin Change II
 
+-  [LeetCode](https://leetcode.com/problems/coin-change-ii/) | [LeetCode CH](https://leetcode.cn/problems/coin-change-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -89,6 +97,8 @@ comments: True
     ```
 
 ## 494. Target Sum
+
+-  [LeetCode](https://leetcode.com/problems/target-sum/) | [LeetCode CH](https://leetcode.cn/problems/target-sum/) (Medium)
 
 === "Python"
 
@@ -110,6 +120,8 @@ comments: True
 
 ## 97. Interleaving String
 
+-  [LeetCode](https://leetcode.com/problems/interleaving-string/) | [LeetCode CH](https://leetcode.cn/problems/interleaving-string/) (Medium)
+
 === "Python"
 
     ```python
@@ -129,6 +141,8 @@ comments: True
     ```
 
 ## 329. Longest Increasing Path in a Matrix
+
+-  [LeetCode](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) (Hard)
 
 === "Python"
 
@@ -150,6 +164,8 @@ comments: True
 
 ## 115. Distinct Subsequences
 
+-  [LeetCode](https://leetcode.com/problems/distinct-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/distinct-subsequences/) (Hard)
+
 === "Python"
 
     ```python
@@ -169,6 +185,8 @@ comments: True
     ```
 
 ## 72. Edit Distance
+
+-  [LeetCode](https://leetcode.com/problems/edit-distance/) | [LeetCode CH](https://leetcode.cn/problems/edit-distance/) (Medium)
 
 === "Python"
 

@@ -6,6 +6,8 @@ comments: True
 
 ## 721. Accounts Merge
 
+-  [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 990. Satisfiability of Equality Equations
+
+-  [LeetCode](https://leetcode.com/problems/satisfiability-of-equality-equations/) | [LeetCode CH](https://leetcode.cn/problems/satisfiability-of-equality-equations/) (Medium)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 1061. Lexicographically Smallest Equivalent String
 
+-  [LeetCode](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/) | [LeetCode CH](https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/) (Medium)
+
 === "Python"
 
     ```python
@@ -65,6 +71,8 @@ comments: True
     ```
 
 ## 839. Similar String Groups
+
+-  [LeetCode](https://leetcode.com/problems/similar-string-groups/) | [LeetCode CH](https://leetcode.cn/problems/similar-string-groups/) (Hard)
 
 === "Python"
 

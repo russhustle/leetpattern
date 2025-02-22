@@ -1,5 +1,7 @@
 ## 144. Binary Tree Preorder Traversal
 
+-  [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-preorder-traversal/) (Easy)
+
 ![tree_traversal](../assets/tree_traversal_dfs_bfs.png)
 
 ### Example 1

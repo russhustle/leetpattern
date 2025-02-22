@@ -6,6 +6,8 @@ comments: True
 
 ## 121. Best Time to Buy and Sell Stock
 
+-  [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
 === "Python"
@@ -28,6 +30,8 @@ comments: True
 
 ## 3. Longest Substring Without Repeating Characters
 
+-  [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
+
 === "Python"
 
     ```python
@@ -48,6 +52,8 @@ comments: True
 
 ## 424. Longest Repeating Character Replacement
 
+-  [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/) | [LeetCode CH](https://leetcode.cn/problems/longest-repeating-character-replacement/) (Medium)
+
 === "Python"
 
     ```python
@@ -67,6 +73,8 @@ comments: True
     ```
 
 ## 76. Minimum Window Substring
+
+-  [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 
 === "Python"
 

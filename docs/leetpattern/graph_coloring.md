@@ -6,6 +6,8 @@ comments: True
 
 ## 785. Is Graph Bipartite?
 
+-  [LeetCode](https://leetcode.com/problems/is-graph-bipartite/) | [LeetCode CH](https://leetcode.cn/problems/is-graph-bipartite/) (Medium)
+
 -   Determine if a graph is bipartite.
 
 How to group
@@ -35,6 +37,8 @@ How to group
 
 ## 886. Possible Bipartition
 
+-  [LeetCode](https://leetcode.com/problems/possible-bipartition/) | [LeetCode CH](https://leetcode.cn/problems/possible-bipartition/) (Medium)
+
 -   Determine if a graph can be divided into two groups such that no two nodes of the same group are connected.
 
 === "Python"
@@ -56,6 +60,8 @@ How to group
     ```
 
 ## 924. Minimize Malware Spread
+
+-  [LeetCode](https://leetcode.com/problems/minimize-malware-spread/) | [LeetCode CH](https://leetcode.cn/problems/minimize-malware-spread/) (Hard)
 
 === "Python"
 

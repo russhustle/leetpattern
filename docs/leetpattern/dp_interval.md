@@ -6,6 +6,8 @@ comments: True
 
 ## 516. Longest Palindromic Subsequence
 
+-  [LeetCode](https://leetcode.com/problems/longest-palindromic-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-subsequence/) (Medium)
+
 -   Return the length of the longest palindromic subsequence in `s`.
 -   Bottom-up DP table
 
@@ -37,6 +39,8 @@ comments: True
 
 ## 647. Palindromic Substrings
 
+-  [LeetCode](https://leetcode.com/problems/palindromic-substrings/) | [LeetCode CH](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
+
 -   Return the number of palindromic substrings in `s`.
 -   Bottom-up DP table
 
@@ -67,6 +71,8 @@ comments: True
     ```
 
 ## 5. Longest Palindromic Substring
+
+-  [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
 
 -   Return the longest palindromic substring in `s`.
 

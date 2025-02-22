@@ -1,5 +1,7 @@
 ## 146. LRU Cache
 
+-  [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
+
 -   Design and implement a data structure for **Least Recently Used (LRU) cache**. It should support the following operations: get and put.
 
 ![146](https://miro.medium.com/v2/resize:fit:650/0*fOwBd3z0XtHh7WN1.png){width=300px}

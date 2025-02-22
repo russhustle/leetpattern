@@ -6,6 +6,8 @@ comments: True
 
 ## 28. Find the Index of the First Occurrence in a String
 
+-  [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 459. Repeated Substring Pattern
+
+-  [LeetCode](https://leetcode.com/problems/repeated-substring-pattern/) | [LeetCode CH](https://leetcode.cn/problems/repeated-substring-pattern/) (Easy)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 686. Repeated String Match
 
+-  [LeetCode](https://leetcode.com/problems/repeated-string-match/) | [LeetCode CH](https://leetcode.cn/problems/repeated-string-match/) (Medium)
+
 === "Python"
 
     ```python
@@ -66,6 +72,8 @@ comments: True
 
 ## 1392. Longest Happy Prefix
 
+-  [LeetCode](https://leetcode.com/problems/longest-happy-prefix/) | [LeetCode CH](https://leetcode.cn/problems/longest-happy-prefix/) (Hard)
+
 === "Python"
 
     ```python
@@ -85,6 +93,8 @@ comments: True
     ```
 
 ## 214. Shortest Palindrome
+
+-  [LeetCode](https://leetcode.com/problems/shortest-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/shortest-palindrome/) (Hard)
 
 === "Python"
 

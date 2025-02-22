@@ -6,6 +6,8 @@ comments: True
 
 ## 48. Rotate Image
 
+-  [LeetCode](https://leetcode.com/problems/rotate-image/) | [LeetCode CH](https://leetcode.cn/problems/rotate-image/) (Medium)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 54. Spiral Matrix
+
+-  [LeetCode](https://leetcode.com/problems/spiral-matrix/) | [LeetCode CH](https://leetcode.cn/problems/spiral-matrix/) (Medium)
 
 -   Return all elements of the matrix in spiral order.
 
@@ -47,6 +51,8 @@ comments: True
     ```
 
 ## 73. Set Matrix Zeroes
+
+-  [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/) | [LeetCode CH](https://leetcode.cn/problems/set-matrix-zeroes/) (Medium)
 
 === "Python"
 

@@ -6,6 +6,8 @@ comments: True
 
 ## 704. Binary Search
 
+-  [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)
+
 -   Implement binary search algorithm.
 
 === "Python"
@@ -28,6 +30,8 @@ comments: True
 
 ## 74. Search a 2D Matrix
 
+-  [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
+
 === "Python"
 
     ```python
@@ -47,6 +51,8 @@ comments: True
     ```
 
 ## 875. Koko Eating Bananas
+
+-  [LeetCode](https://leetcode.com/problems/koko-eating-bananas/) | [LeetCode CH](https://leetcode.cn/problems/koko-eating-bananas/) (Medium)
 
 -   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
 
@@ -69,6 +75,8 @@ comments: True
     ```
 
 ## 4. Median of Two Sorted Arrays
+
+-  [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
 
 === "Python"
 

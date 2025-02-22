@@ -6,6 +6,8 @@ comments: True
 
 ## 2574. Left and Right Sum Differences
 
+-  [LeetCode](https://leetcode.com/problems/left-and-right-sum-differences/) | [LeetCode CH](https://leetcode.cn/problems/left-and-right-sum-differences/) (Easy)
+
 === "Python"
 
     ```python
@@ -25,6 +27,8 @@ comments: True
     ```
 
 ## 1732. Find the Highest Altitude
+
+-  [LeetCode](https://leetcode.com/problems/find-the-highest-altitude/) | [LeetCode CH](https://leetcode.cn/problems/find-the-highest-altitude/) (Easy)
 
 === "Python"
 
@@ -46,6 +50,8 @@ comments: True
 
 ## 303. Range Sum Query - Immutable
 
+-  [LeetCode](https://leetcode.com/problems/range-sum-query-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)
+
 === "Python"
 
     ```python
@@ -65,6 +71,8 @@ comments: True
     ```
 
 ## 304. Range Sum Query 2D - Immutable
+
+-  [LeetCode](https://leetcode.com/problems/range-sum-query-2d-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-2d-immutable/) (Medium)
 
 === "Python"
 
@@ -86,6 +94,8 @@ comments: True
 
 ## 560. Subarray Sum Equals K
 
+-  [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
+
 === "Python"
 
     ```python
@@ -105,6 +115,8 @@ comments: True
     ```
 
 ## 238. Product of Array Except Self
+
+-  [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) | [LeetCode CH](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
 
 === "Python"
 
@@ -126,6 +138,8 @@ comments: True
 
 ## 974. Subarray Sums Divisible by K
 
+-  [LeetCode](https://leetcode.com/problems/subarray-sums-divisible-by-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sums-divisible-by-k/) (Medium)
+
 === "Python"
 
     ```python
@@ -145,6 +159,8 @@ comments: True
     ```
 
 ## 209. Minimum Size Subarray Sum
+
+-  [LeetCode](https://leetcode.com/problems/minimum-size-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
 
 === "Python"
 
@@ -166,6 +182,8 @@ comments: True
 
 ## 523. Continuous Subarray Sum
 
+-  [LeetCode](https://leetcode.com/problems/continuous-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/continuous-subarray-sum/) (Medium)
+
 === "Python"
 
     ```python
@@ -185,6 +203,8 @@ comments: True
     ```
 
 ## 1248. Count Number of Nice Subarrays
+
+-  [LeetCode](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-nice-subarrays/) (Medium)
 
 === "Python"
 
@@ -206,6 +226,8 @@ comments: True
 
 ## 325. Maximum Size Subarray Sum Equals k
 
+-  [LeetCode](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/maximum-size-subarray-sum-equals-k/) (Medium)
+
 === "Python"
 
     ```python
@@ -226,6 +248,8 @@ comments: True
 
 ## 862. Shortest Subarray with Sum at Least K
 
+-  [LeetCode](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/) | [LeetCode CH](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/) (Hard)
+
 === "Python"
 
     ```python
@@ -245,6 +269,8 @@ comments: True
     ```
 
 ## 1171. Remove Zero Sum Consecutive Nodes from Linked List
+
+-  [LeetCode](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) (Medium)
 
 === "Python"
 

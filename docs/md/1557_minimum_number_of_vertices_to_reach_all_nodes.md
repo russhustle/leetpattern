@@ -1,5 +1,7 @@
 ## 1557. Minimum Number of Vertices to Reach All Nodes
 
+-  [LeetCode](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
+
 -   Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
 -   ✅ Return the vertices with indegree 0.
 

@@ -5,6 +5,8 @@ comments: True
 # Array
 
 ## 414. Third Maximum Number
+
+-  [LeetCode](https://leetcode.com/problems/third-maximum-number/) | [LeetCode CH](https://leetcode.cn/problems/third-maximum-number/) (Easy)
 -   Return the third maximum number in an array. If the third maximum does not exist, return the maximum number.
 
 === "Python"
@@ -26,6 +28,8 @@ comments: True
     ```
 
 ## 169. Majority Element
+
+-  [LeetCode](https://leetcode.com/problems/majority-element/) | [LeetCode CH](https://leetcode.cn/problems/majority-element/) (Easy)
 
 -   Return the majority element in an array. The majority element is the element that appears more than `n // 2` times.
 
@@ -61,6 +65,8 @@ comments: True
 
 ## 2022. Convert 1D Array Into 2D Array
 
+-  [LeetCode](https://leetcode.com/problems/convert-1d-array-into-2d-array/) | [LeetCode CH](https://leetcode.cn/problems/convert-1d-array-into-2d-array/) (Easy)
+
 === "Python"
 
     ```python
@@ -80,6 +86,8 @@ comments: True
     ```
 
 ## 54. Spiral Matrix
+
+-  [LeetCode](https://leetcode.com/problems/spiral-matrix/) | [LeetCode CH](https://leetcode.cn/problems/spiral-matrix/) (Medium)
 
 -   Return all elements of the matrix in spiral order.
 
@@ -102,6 +110,8 @@ comments: True
     ```
 
 ## 59. Spiral Matrix II
+
+-  [LeetCode](https://leetcode.com/problems/spiral-matrix-ii/) | [LeetCode CH](https://leetcode.cn/problems/spiral-matrix-ii/) (Medium)
 
 -   Return a square matrix filled with elements from 1 to n^2 in spiral order.
 

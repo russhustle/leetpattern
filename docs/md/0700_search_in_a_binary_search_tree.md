@@ -1,5 +1,7 @@
 ## 700. Search in a Binary Search Tree
 
+-  [LeetCode](https://leetcode.com/problems/search-in-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/search-in-a-binary-search-tree/) (Easy)
+
 ### Binary Search Tree
 
 1. Binary Tree

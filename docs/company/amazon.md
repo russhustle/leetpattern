@@ -6,6 +6,8 @@ comments: True
 
 ## 1. Two Sum
 
+-  [LeetCode](https://leetcode.com/problems/two-sum/) | [LeetCode CH](https://leetcode.cn/problems/two-sum/) (Easy)
+
 -   Return the indices of the two numbers such that they add up to a specific target.
 
 | Approach | Time Complexity | Space Complexity |
@@ -31,6 +33,8 @@ comments: True
     ```
 
 ## 146. LRU Cache
+
+-  [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
 
 -   Design and implement a data structure for **Least Recently Used (LRU) cache**. It should support the following operations: get and put.
 
@@ -59,6 +63,8 @@ comments: True
     ```
 
 ## 200. Number of Islands
+
+-  [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
 
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS

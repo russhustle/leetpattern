@@ -1,5 +1,7 @@
 ## 1544. Make The String Great
 
+-  [LeetCode](https://leetcode.com/problems/make-the-string-great/) | [LeetCode CH](https://leetcode.cn/problems/make-the-string-great/) (Easy)
+
 -   Remove all adjacent characters that are the same and have different cases.
 -   Steps for the string `leEeetcode`:
 

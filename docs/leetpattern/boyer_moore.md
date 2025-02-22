@@ -6,6 +6,8 @@ comments: True
 
 ## 169. Majority Element
 
+-  [LeetCode](https://leetcode.com/problems/majority-element/) | [LeetCode CH](https://leetcode.cn/problems/majority-element/) (Easy)
+
 -   Return the majority element in an array. The majority element is the element that appears more than `n // 2` times.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7pnhv842keE?si=fBYlNfKzdkiLgkF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -40,6 +42,8 @@ comments: True
 
 ## 229. Majority Element II
 
+-  [LeetCode](https://leetcode.com/problems/majority-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/majority-element-ii/) (Medium)
+
 === "Python"
 
     ```python
@@ -59,6 +63,8 @@ comments: True
     ```
 
 ## 287. Find the Duplicate Number
+
+-  [LeetCode](https://leetcode.com/problems/find-the-duplicate-number/) | [LeetCode CH](https://leetcode.cn/problems/find-the-duplicate-number/) (Medium)
 
 -   Find the duplicate number in an array containing `n + 1` integers where each integer is between `1` and `n` inclusive.
 
@@ -82,6 +88,8 @@ comments: True
 
 ## 1150. Check If a Number Is Majority Element in a Sorted Array
 
+-  [LeetCode](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) (Easy)
+
 === "Python"
 
     ```python
@@ -102,6 +110,8 @@ comments: True
 
 ## 1157. Online Majority Element In Subarray
 
+-  [LeetCode](https://leetcode.com/problems/online-majority-element-in-subarray/) | [LeetCode CH](https://leetcode.cn/problems/online-majority-element-in-subarray/) (Hard)
+
 === "Python"
 
     ```python
@@ -121,6 +131,8 @@ comments: True
     ```
 
 ## 495. Teemo Attacking
+
+-  [LeetCode](https://leetcode.com/problems/teemo-attacking/) | [LeetCode CH](https://leetcode.cn/problems/teemo-attacking/) (Easy)
 
 === "Python"
 

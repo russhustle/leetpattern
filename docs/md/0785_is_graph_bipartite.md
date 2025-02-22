@@ -1,7 +1,3 @@
-## 785. Is Graph Bipartite?
-
--  [LeetCode](https://leetcode.com/problems/is-graph-bipartite/) | [LeetCode CH](https://leetcode.cn/problems/is-graph-bipartite/) (Medium)
-
 -   Determine if a graph is bipartite.
 
 How to group

@@ -1,7 +1,3 @@
-## 509. Fibonacci Number
-
--  [LeetCode](https://leetcode.com/problems/fibonacci-number/) | [LeetCode CH](https://leetcode.cn/problems/fibonacci-number/) (Easy)
-
 -   Return the `n-th` Fibonacci number.
 -   `dp[n]` stores the `n-th` Fibonacci number.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.

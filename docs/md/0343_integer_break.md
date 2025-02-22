@@ -1,7 +1,3 @@
-## 343. Integer Break
-
--  [LeetCode](https://leetcode.com/problems/integer-break/) | [LeetCode CH](https://leetcode.cn/problems/integer-break/) (Medium)
-
 -   Return the maximum product of the integer after breaking it into at least two positive integers.
 -   `dp[i]` stores the maximum product of the integer `i`.
 -   Formula: `dp[i] = max(dp[i - j] * j, (i - j) * j)`

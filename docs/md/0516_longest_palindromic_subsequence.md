@@ -1,7 +1,3 @@
-## 516. Longest Palindromic Subsequence
-
--  [LeetCode](https://leetcode.com/problems/longest-palindromic-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-subsequence/) (Medium)
-
 -   Return the length of the longest palindromic subsequence in `s`.
 -   Bottom-up DP table
 

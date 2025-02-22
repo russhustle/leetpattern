@@ -1,7 +1,3 @@
-## 332. Reconstruct Itinerary
-
--  [LeetCode](https://leetcode.com/problems/reconstruct-itinerary/) | [LeetCode CH](https://leetcode.cn/problems/reconstruct-itinerary/) (Hard)
-
 -   Return the itinerary in order that visits every airport exactly once.
 -   The starting airport is `JFK`.
 -   If there are multiple valid itineraries, return the lexicographically smallest one.

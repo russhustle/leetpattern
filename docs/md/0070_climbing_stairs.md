@@ -1,7 +1,3 @@
-## 70. Climbing Stairs
-
--  [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
-
 -   Return the number of distinct ways to reach the top of the stairs.
 -   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.

@@ -1,7 +1,3 @@
-## 1584. Min Cost to Connect All Points
-
--  [LeetCode](https://leetcode.com/problems/min-cost-to-connect-all-points/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-to-connect-all-points/) (Medium)
-
 -   **Tree**: a connected acyclic graph
 -   **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
 -   **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights

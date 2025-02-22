@@ -1,7 +1,3 @@
-## 118. Pascal's Triangle
-
--  [LeetCode](https://leetcode.com/problems/pascals-triangle/) | [LeetCode CH](https://leetcode.cn/problems/pascals-triangle/) (Easy)
-
 -   Generate the first `numRows` of Pascal's triangle.
 
 ```plaintext

@@ -1,7 +1,3 @@
-## 376. Wiggle Subsequence
-
--  [LeetCode](https://leetcode.com/problems/wiggle-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-subsequence/) (Medium)
-
 -   Return the length of the longest wiggle subsequence.
 -   `up[n]` stores the length of the longest wiggle subsequence ending at `n` with a rising wiggle.
 -   `down[n]` stores the length of the longest wiggle subsequence ending at `n` with a falling wiggle.

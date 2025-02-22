@@ -1,7 +1,3 @@
-## 746. Min Cost Climbing Stairs
-
--  [LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
-
 -   Return the minimum cost to reach the top of the stairs.
 
 -   `dp[n]` stores the <u>minimum cost</u> to reach the `n-th` stair.

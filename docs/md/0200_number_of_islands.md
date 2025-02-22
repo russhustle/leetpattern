@@ -1,7 +1,3 @@
-## 200. Number of Islands
-
--  [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
-
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)

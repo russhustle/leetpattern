@@ -1,7 +1,3 @@
-## 383. Ransom Note
-
--  [LeetCode](https://leetcode.com/problems/ransom-note/) | [LeetCode CH](https://leetcode.cn/problems/ransom-note/) (Easy)
-
 -   Return `True` if the ransom note can be constructed from the magazines, otherwise, return `False`.
 
 ```mermaid

@@ -1,7 +1,3 @@
-## 199. Binary Tree Right Side View
-
--  [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
-
 ```plaintext
     ____1       <---
    /     \

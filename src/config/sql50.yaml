@@ -1,0 +1,11 @@
+category: sql
+dir: sql50
+name: SQL 50
+topics:
+    Select: [ 1757, 584, 595, 1148, 1683 ]
+    Basic Joins: [ 1378, 1068, 1581, 197, 1661, 577, 1280, 570, 1934 ]
+    Basic Aggregate Functions: [ 620, 1251, 1075, 1633, 1211, 1193, 1174, 550 ]
+    Sorting and Grouping: [ 2356, 1141, 1070, 596, 1729, 619, 1045 ]
+    Advanced Select and Joins: [ 1731, 1789, 610, 180, 1164, 1204, 1907 ]
+    Subqueries: [ 1978, 626, 1341, 1321, 602, 585, 185 ]
+    Advanced String Functions Regex Clause: [ 1667, 1527, 196, 176, 1484, 1327, 1517 ]

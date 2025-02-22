@@ -9,6 +9,7 @@ public:
     vector<int> twoSum(vector<int> &nums, int target)
     {
         unordered_map<int, int> hash;
+
         for (size_t i = 0; i < nums.size(); i++)
         {
             int complement = target - nums[i];
@@ -18,6 +19,7 @@ public:
             }
             hash[nums[i]] = i;
         }
+
         return {};
     }
 };

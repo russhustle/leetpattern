@@ -1,11 +1,12 @@
+category: algorithms
 dir: graph_theory
 name: Graph Theory
 topics:
-    Standard Traversal: [547, 802, 841, 1129, 1376, 1466, 797, 1192]
-    BFS: [1926, 934, 433, 127, 1306, 542, 1091, 863, 864]
-    Matrix Graphs: [200, 1020, 1254, 695, 417]
-    Graph Theory: [997, 1557, 1615, 785, 261]
-    Union Find: [721, 990, 1061, 839]
-    Topological Sort: [207, 210, 269, 1203, 1857]
-    Dijkstra's: [787, 1514, 505, 499]
-    MST: [1135, 1584, 1168, 1489]
+    Standard Traversal: [ 547, 802, 841, 1129, 1376, 1466, 797, 1192 ]
+    BFS: [ 1926, 934, 433, 127, 1306, 542, 1091, 863, 864 ]
+    Matrix Graphs: [ 200, 1020, 1254, 695, 417 ]
+    Graph Theory: [ 997, 1557, 1615, 785, 261 ]
+    Union Find: [ 721, 990, 1061, 839 ]
+    Topological Sort: [ 207, 210, 269, 1203, 1857 ]
+    Dijkstra's: [ 787, 1514, 505, 499 ]
+    MST: [ 1135, 1584, 1168, 1489 ]

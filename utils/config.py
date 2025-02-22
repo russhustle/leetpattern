@@ -6,6 +6,7 @@ import yaml
 
 @dataclass
 class Data:
+    category: str
     dir: str
     name: str
     topics: Dict[str, List[int]] = field(default_factory=dict)
@@ -35,6 +36,26 @@ code = (
 
     ```typescript
     --8<-- "ts/{filename}.ts"
+    ```
+"""
+)
+
+sql_code = (
+    lambda filename: f"""
+```plaintext
+--8<-- "{filename}.sql"
+```
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/{filename}.sql"
+    ```
+
+=== "Pandas"
+
+    ```python
+    --8<-- "sql/{filename}.py"
     ```
 """
 )

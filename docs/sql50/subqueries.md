@@ -8,11 +8,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/employees-whose-manager-left-the-company/) | [LeetCode CH](https://leetcode.cn/problems/employees-whose-manager-left-the-company/) (Easy)
 
-
 ```txt
 --8<-- "sql/1978_employees_whose_manager_left_the_company.txt"
 ```
-
 ```sql
 --8<-- "sql/1978_employees_whose_manager_left_the_company.sql"
 ```
@@ -22,11 +20,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/exchange-seats/) | [LeetCode CH](https://leetcode.cn/problems/exchange-seats/) (Medium)
 
-
 ```txt
 --8<-- "sql/0626_exchange_seats.txt"
 ```
-
 ```sql
 --8<-- "sql/0626_exchange_seats.sql"
 ```
@@ -36,11 +32,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/movie-rating/) | [LeetCode CH](https://leetcode.cn/problems/movie-rating/) (Medium)
 
-
 ```txt
 --8<-- "sql/1341_movie_rating.txt"
 ```
-
 ```sql
 --8<-- "sql/1341_movie_rating.sql"
 ```
@@ -50,11 +44,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/restaurant-growth/) | [LeetCode CH](https://leetcode.cn/problems/restaurant-growth/) (Medium)
 
-
 ```txt
 --8<-- "sql/1321_restaurant_growth.txt"
 ```
-
 ```sql
 --8<-- "sql/1321_restaurant_growth.sql"
 ```
@@ -64,11 +56,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/) | [LeetCode CH](https://leetcode.cn/problems/friend-requests-ii-who-has-the-most-friends/) (Medium)
 
-
 ```txt
 --8<-- "sql/0602_friend_requests_ii_who_has_the_most_friends.txt"
 ```
-
 ```sql
 --8<-- "sql/0602_friend_requests_ii_who_has_the_most_friends.sql"
 ```
@@ -78,11 +68,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/investments-in-2016/) | [LeetCode CH](https://leetcode.cn/problems/investments-in-2016/) (Medium)
 
-
 ```txt
 --8<-- "sql/0585_investments_in_2016.txt"
 ```
-
 ```sql
 --8<-- "sql/0585_investments_in_2016.sql"
 ```
@@ -92,11 +80,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/department-top-three-salaries/) | [LeetCode CH](https://leetcode.cn/problems/department-top-three-salaries/) (Hard)
 
-
 ```txt
 --8<-- "sql/0185_department_top_three_salaries.txt"
 ```
-
 ```sql
 --8<-- "sql/0185_department_top_three_salaries.sql"
 ```

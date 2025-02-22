@@ -8,11 +8,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/not-boring-movies/) | [LeetCode CH](https://leetcode.cn/problems/not-boring-movies/) (Easy)
 
-
 ```txt
 --8<-- "sql/0620_not_boring_movies.txt"
 ```
-
 ```sql
 --8<-- "sql/0620_not_boring_movies.sql"
 ```
@@ -22,11 +20,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/average-selling-price/) | [LeetCode CH](https://leetcode.cn/problems/average-selling-price/) (Easy)
 
-
 ```txt
 --8<-- "sql/1251_average_selling_price.txt"
 ```
-
 ```sql
 --8<-- "sql/1251_average_selling_price.sql"
 ```
@@ -36,11 +32,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/project-employees-i/) | [LeetCode CH](https://leetcode.cn/problems/project-employees-i/) (Easy)
 
-
 ```txt
 --8<-- "sql/1075_project_employees_i.txt"
 ```
-
 ```sql
 --8<-- "sql/1075_project_employees_i.sql"
 ```
@@ -50,11 +44,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/percentage-of-users-attended-a-contest/) | [LeetCode CH](https://leetcode.cn/problems/percentage-of-users-attended-a-contest/) (Easy)
 
-
 ```txt
 --8<-- "sql/1633_percentage_of_users_attended_a_contest.txt"
 ```
-
 ```sql
 --8<-- "sql/1633_percentage_of_users_attended_a_contest.sql"
 ```
@@ -64,11 +56,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/queries-quality-and-percentage/) | [LeetCode CH](https://leetcode.cn/problems/queries-quality-and-percentage/) (Easy)
 
-
 ```txt
 --8<-- "sql/1211_queries_quality_and_percentage.txt"
 ```
-
 ```sql
 --8<-- "sql/1211_queries_quality_and_percentage.sql"
 ```
@@ -78,11 +68,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/monthly-transactions-i/) | [LeetCode CH](https://leetcode.cn/problems/monthly-transactions-i/) (Medium)
 
-
 ```txt
 --8<-- "sql/1193_monthly_transactions_i.txt"
 ```
-
 ```sql
 --8<-- "sql/1193_monthly_transactions_i.sql"
 ```
@@ -92,11 +80,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/immediate-food-delivery-ii/) | [LeetCode CH](https://leetcode.cn/problems/immediate-food-delivery-ii/) (Medium)
 
-
 ```txt
 --8<-- "sql/1174_immediate_food_delivery_ii.txt"
 ```
-
 ```sql
 --8<-- "sql/1174_immediate_food_delivery_ii.sql"
 ```
@@ -106,11 +92,9 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/game-play-analysis-iv/) | [LeetCode CH](https://leetcode.cn/problems/game-play-analysis-iv/) (Medium)
 
-
 ```txt
 --8<-- "sql/0550_game_play_analysis_iv.txt"
 ```
-
 ```sql
 --8<-- "sql/0550_game_play_analysis_iv.sql"
 ```

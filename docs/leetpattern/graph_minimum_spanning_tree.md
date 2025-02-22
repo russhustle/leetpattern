@@ -6,6 +6,29 @@ comments: True
 
 ## 1584. Min Cost to Connect All Points
 
+-   **Tree**: a connected acyclic graph
+-   **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
+-   **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
+-   Prim's Algorithm
+    -   Data Structure: Heap
+    -   Time Complexity: O(E \* logV)
+    -   Space Complexity: O(V + E)
+-   Kruskal's Algorithm
+
+    -   Union Find
+    -   Time Complexity: O(E \* logV)
+    -   Space Complexity: O(V + E)
+
+-   Demonstration
+
+Example graph
+
+![mst1](../assets/mst_1.png)
+
+MST
+
+![mst2](../assets/mst_2.png)
+
 === "Python"
 
     ```python
@@ -105,6 +128,10 @@ comments: True
     ```
 
 ## 1579. Remove Max Number of Edges to Keep Graph Fully Traversable
+
+-   Return the maximum number of edges you can remove so that the graph remains fully traversable.
+
+![1579](../assets/1579.png){width=200px}
 
 === "Python"
 

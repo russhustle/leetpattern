@@ -6,6 +6,11 @@ comments: True
 
 ## 994. Rotting Oranges
 
+-   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
+-   Hint: Multi-source BFS to count the level.
+
+![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
+
 === "Python"
 
     ```python
@@ -46,6 +51,8 @@ comments: True
 
 ## 1466. Reorder Routes to Make All Paths Lead to the City Zero
 
+![1466](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
+
 === "Python"
 
     ```python
@@ -65,6 +72,8 @@ comments: True
     ```
 
 ## 286. Walls and Gates
+
+![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
 === "Python"
 

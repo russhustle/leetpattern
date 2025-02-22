@@ -6,6 +6,15 @@ comments: True
 
 ## 785. Is Graph Bipartite?
 
+-   Determine if a graph is bipartite.
+
+How to group
+
+|          | Uncolored | Color 1 | Color 2 | Operation   |
+| -------- | --------- | ------- | ------- | ----------- |
+| Method 1 | -1        | 0       | 1       | `1 - color` |
+| Method 2 | 0         | 1       | -1      | `-color`    |
+
 === "Python"
 
     ```python
@@ -25,6 +34,8 @@ comments: True
     ```
 
 ## 886. Possible Bipartition
+
+-   Determine if a graph can be divided into two groups such that no two nodes of the same group are connected.
 
 === "Python"
 

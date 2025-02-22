@@ -6,6 +6,22 @@ comments: True
 
 ## 200. Number of Islands
 
+-   Count the number of islands in a 2D grid.
+-   Method 1: DFS
+-   Method 2: BFS (use a queue to traverse the grid)
+
+-   How to keep track of visited cells?
+
+    1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
+    2. Use a set to store the visited cells.
+
+-   Steps:
+    1. Init: variables
+    2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
+    3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
+
+![0200](../assets/0200.jpg)
+
 === "Python"
 
     ```python
@@ -66,6 +82,8 @@ comments: True
 
 ## 286. Walls and Gates
 
+![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
+
 === "Python"
 
     ```python
@@ -85,6 +103,11 @@ comments: True
     ```
 
 ## 994. Rotting Oranges
+
+-   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
+-   Hint: Multi-source BFS to count the level.
+
+![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
 === "Python"
 

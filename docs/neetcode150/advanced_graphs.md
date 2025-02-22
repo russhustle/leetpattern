@@ -43,6 +43,29 @@ ATL --> SFO
 
 ## 1584. Min Cost to Connect All Points
 
+-   **Tree**: a connected acyclic graph
+-   **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
+-   **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
+-   Prim's Algorithm
+    -   Data Structure: Heap
+    -   Time Complexity: O(E \* logV)
+    -   Space Complexity: O(V + E)
+-   Kruskal's Algorithm
+
+    -   Union Find
+    -   Time Complexity: O(E \* logV)
+    -   Space Complexity: O(V + E)
+
+-   Demonstration
+
+Example graph
+
+![mst1](../assets/mst_1.png)
+
+MST
+
+![mst2](../assets/mst_2.png)
+
 === "Python"
 
     ```python
@@ -137,6 +160,8 @@ graph TD
 2 --> |100| 0
 2 --> |200| 3
 ```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 === "Python"
 

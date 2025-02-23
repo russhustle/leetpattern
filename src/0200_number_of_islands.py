@@ -78,7 +78,7 @@ def numIslandsBFS2(grid: List[List[str]]) -> int:
         return 0
 
     m, n = len(grid), len(grid[0])
-    dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+    dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]]
     res = 0
 
     def bfs(r, c):
@@ -88,7 +88,7 @@ def numIslandsBFS2(grid: List[List[str]]) -> int:
             row, col = q.popleft()
 
             for dr, dc in dirs:
-                nr, nc = row + dr, col + dc
+                nr, nc = dr + row, dc + col
                 if (
                     nr < 0
                     or nr >= m
@@ -97,14 +97,14 @@ def numIslandsBFS2(grid: List[List[str]]) -> int:
                     or grid[nr][nc] != "1"
                 ):
                     continue
-                q.append((nr, nc))
                 grid[nr][nc] = "2"
+                q.append((nr, nc))
 
-    for r in range(m):
-        for c in range(n):
-            if grid[r][c] == "1":
-                grid[r][c] = "2"
-                bfs(r, c)
+    for i in range(m):
+        for j in range(n):
+            if grid[i][j] == "1":
+                grid[i][j] = "2"
+                bfs(i, j)
                 res += 1
 
     return res

@@ -9,11 +9,18 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
 -   Design and implement a data structure for **Least Recently Used (LRU) cache**. It should support the following operations: get and put.
 
-![146](https://miro.medium.com/v2/resize:fit:650/0*fOwBd3z0XtHh7WN1.png){width=300px}
+![146](https://miro.medium.com/v2/resize:fit:650/0*fOwBd3z0XtHh7WN1.png)
 
--   Data structure
-    -   Doubly Linked List: to store the key-value pairs.
-    -   Hash Map: to store the key-node pairs.
+| Data structure     | Description                   |
+| ------------------ | ----------------------------- |
+| Doubly Linked List | To store the key-value pairs. |
+| Hash Map           | To store the key-node pairs.  |
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7ABFKPK2hD4?si=Ys47opcHraHHWtOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+| Approach | Time Complexity | Space Complexity |
+| -------- | --------------- | ---------------- |
+| LRU      | O(1)            | O(n)             |
 
 ```python
 --8<-- "0146_lru_cache.py"

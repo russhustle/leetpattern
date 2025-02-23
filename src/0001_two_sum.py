@@ -3,11 +3,12 @@ from typing import List
 
 # Hashmap
 def twoSum(nums: List[int], target: int) -> List[int]:
-    hashmap = dict()  # {val: idx}
+    hashmap = {}  # val: idx
 
     for idx, val in enumerate(nums):
         if (target - val) in hashmap:
             return [hashmap[target - val], idx]
+
         hashmap[val] = idx
 
 

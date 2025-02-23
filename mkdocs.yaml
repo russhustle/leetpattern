@@ -161,22 +161,21 @@ theme:
   palette:
   - media: "(prefers-color-scheme: dark)"
     scheme: slate
-    primary: indigo
-    accent: pink
+    primary: black
+    accent: orange
     toggle:
       icon: material/toggle-switch
       name: Switch to system preference
   - media: "(prefers-color-scheme: light)"
     scheme: default
-    primary: indigo
-    accent: pink
+    primary: black
+    accent: orange
     toggle:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
-
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Fira Sans
+    code: Fira Code
 
   features:
   - content.code.copy # Enable copy button on code blocks

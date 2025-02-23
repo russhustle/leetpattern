@@ -2,7 +2,7 @@ from collections import OrderedDict
 
 
 # Doubly Linked List
-class ListNode:
+class Node:
     def __init__(self, key=0, val=0):
         self.key = key
         self.val = val
@@ -11,56 +11,57 @@ class ListNode:
 
 
 class LRUCache:
+
     def __init__(self, capacity: int):
-        self.capacity = capacity
+        self.cap = capacity
         self.cache = {}
-        self.head = ListNode()
-        self.tail = ListNode()
+        self.head = Node()
+        self.tail = Node()
         self.head.next = self.tail
         self.tail.prev = self.head
 
-    def remove_node(self, node):
+    def remove(self, node):
         node.prev.next = node.next
         node.next.prev = node.prev
 
-    def add_node_to_last(self, node):
+    def add_to_last(self, node):
         self.tail.prev.next = node
         node.prev = self.tail.prev
         node.next = self.tail
         self.tail.prev = node
 
-    def move_node_to_last(self, node):
-        self.remove_node(node)
-        self.add_node_to_last(node)
+    def move_to_last(self, node):
+        self.remove(node)
+        self.add_to_last(node)
 
     def get(self, key: int) -> int:
         if key not in self.cache:
             return -1
         node = self.cache[key]
-        self.move_node_to_last(node)
+        self.move_to_last(node)
         return node.val
 
     def put(self, key: int, value: int) -> None:
         if key in self.cache:
             node = self.cache[key]
             node.val = value
-            self.move_node_to_last(node)
-            return
+            self.move_to_last(node)
+            return None
 
-        if len(self.cache) == self.capacity:
+        if len(self.cache) == self.cap:
             del self.cache[self.head.next.key]
-            self.remove_node(self.head.next)
+            self.remove(self.head.next)
 
-        node = ListNode(key, value)
+        node = Node(key=key, val=value)
         self.cache[key] = node
-        self.add_node_to_last(node)
+        self.add_to_last(node)
 
 
 # OrderedDict
 class LRUCacheOrderedDict:
     def __init__(self, capacity: int):
         self.cache = OrderedDict()
-        self.capacity = capacity
+        self.cap = capacity
 
     def get(self, key: int):
         if key not in self.cache:
@@ -71,18 +72,10 @@ class LRUCacheOrderedDict:
     def put(self, key: int, value: int):
         if key in self.cache:
             self.cache.move_to_end(key, last=True)
-        elif len(self.cache) >= self.capacity:
+        elif len(self.cache) >= self.cap:
             self.cache.popitem(last=False)
+
         self.cache[key] = value
-
-
-# |-------------|-----------------|--------------|
-# |  Approach   |      Time       |    Space     |
-# |-------------|-----------------|--------------|
-# |   LRU       |      O(1)       |    O(n)      |
-# |-------------|-----------------|--------------|
-
-# https://leetcode.cn/problems/lru-cache/
 
 
 cache = LRUCache(2)

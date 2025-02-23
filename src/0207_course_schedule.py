@@ -33,21 +33,21 @@ def canFinishDFS1(numCourses: int, prerequisites: List[List[int]]) -> bool:
     for crs, pre in prerequisites:
         graph[crs].append(pre)
 
-    visited = set()
+    visiting = set()
 
     def dfs(crs):
-        if crs in visited:  # cycle detected
+        if crs in visiting:  # cycle detected
             return False
         if graph[crs] == []:
             return True
 
-        visited.add(crs)
+        visiting.add(crs)
 
         for pre in graph[crs]:
             if not dfs(pre):
                 return False
 
-        visited.remove(crs)
+        visiting.remove(crs)
         graph[crs] = []
 
         return True
@@ -64,22 +64,22 @@ def canFinishDFS2(numCourses: int, prerequisites: List[List[int]]) -> bool:
     for pre, crs in prerequisites:
         graph[crs].append(pre)
 
-    # 0: not visited, 1: visiting, 2: visited
-    visited = [0] * numCourses
+    # 0: init, 1: visiting, 2: visited
+    status = [0] * numCourses
 
     def dfs(crs):
-        if visited[crs] == 1:  # cycle detected
+        if status[crs] == 1:  # cycle detected
             return False
-        if visited[crs] == 2:
+        if status[crs] == 2:
             return True
 
-        visited[crs] = 1
+        status[crs] = 1
 
         for pre in graph[crs]:
             if not dfs(pre):
                 return False
 
-        visited[crs] = 2
+        status[crs] = 2
         return True
 
     for crs in range(numCourses):

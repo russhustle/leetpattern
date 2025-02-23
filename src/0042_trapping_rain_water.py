@@ -62,15 +62,6 @@ def trapStack(height: List[int]) -> int:
     return total
 
 
-# |------------|------- |---------|
-# |  Approach  |  Time  |  Space  |
-# |------------|--------|---------|
-# | DP         |  O(N)  |  O(N)   |
-# | Left Right |  O(N)  |  O(1)   |
-# | Monotonic  |  O(N)  |  O(N)   |
-# |------------|--------|---------|
-
-
 height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
 print(trapDP(height))  # 6
 print(trapLR(height))  # 6

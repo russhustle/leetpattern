@@ -3,55 +3,26 @@ from collections import Counter
 from typing import List
 
 
-# 1. Heap + Counter
-def topKFrequent1(nums: List[int], k: int) -> List[int]:
+# Heap + Counter
+def topKFrequent(nums: List[int], k: int) -> List[int]:
     minHeap = []
 
-    for val, count in Counter(nums).items():
+    for val, freq in Counter(nums).items():
         if len(minHeap) < k:
-            heapq.heappush(minHeap, (count, val))
+            heapq.heappush(minHeap, (freq, val))
         else:
-            heapq.heappushpop(minHeap, (count, val))
+            heapq.heappushpop(minHeap, (freq, val))
 
-    return [i for (_, i) in minHeap]
-
-
-# 2. Heap + Dict
-def topKFrequent2(nums: List[int], k: int) -> List[int]:
-    minHeap = []
-
-    counts = dict()
-    for num in nums:
-        if num in counts:
-            counts[num] += 1
-        else:
-            counts[num] = 1
-
-    for val, count in counts.items():
-        if len(minHeap) < k:
-            heapq.heappush(minHeap, (count, val))
-        else:
-            heapq.heappushpop(minHeap, (count, val))
-
-    return [i for (_, i) in minHeap]
+    return [i for _, i in minHeap]
 
 
-# 3. Counter - Most Common
-def topKFrequent3(nums: List[int], k: int) -> List[int]:
-    common = Counter(nums).most_common(k)
-    return [i for i, _ in common]
-
-
-# |-------------|-------------|--------------|
-# |   Approach  |    Time     |    Space     |
-# |-------------|-------------|--------------|
-# |   Heap      |    O(n)     |    O(n)      |
-# |   Counter   |    O(n)     |    O(n)      |
-# |-------------|-------------|--------------|
+# Counter (Most Common)
+def topKFrequentCounter(nums: List[int], k: int) -> List[int]:
+    commons = Counter(nums).most_common(k)
+    return [i for i, _ in commons]
 
 
 nums = [1, 1, 1, 2, 2, 3]
 k = 2
-print(topKFrequent1(nums, k))  # [2, 1]
-print(topKFrequent2(nums, k))  # [2, 1]
-print(topKFrequent3(nums, k))  # [1, 2]
+print(topKFrequent(nums, k))  # [1, 2]
+print(topKFrequentCounter(nums, k))  # [1, 2]

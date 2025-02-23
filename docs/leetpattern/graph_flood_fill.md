@@ -7,6 +7,7 @@ comments: True
 ## 733. Flood Fill
 
 -   [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
+-   Tags: array, depth first search, breadth first search, matrix
 -   Replace all the pixels of the same color starting from the given pixel.
 -   In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
 -   Edge cases: If the starting pixel is already the target color, return the image as it is.
@@ -45,6 +46,7 @@ comments: True
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -68,6 +70,7 @@ comments: True
 ## 695. Max Area of Island
 
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python
 --8<-- "0695_max_area_of_island.py"
@@ -76,6 +79,7 @@ comments: True
 ## 463. Island Perimeter
 
 -   [LeetCode](https://leetcode.com/problems/island-perimeter/) | [LeetCode CH](https://leetcode.cn/problems/island-perimeter/) (Easy)
+-   Tags: array, depth first search, breadth first search, matrix
 
 ```python
 --8<-- "0463_island_perimeter.py"
@@ -84,6 +88,7 @@ comments: True
 ## 130. Surrounded Regions
 
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python
 --8<-- "0130_surrounded_regions.py"
@@ -92,6 +97,7 @@ comments: True
 ## 417. Pacific Atlantic Water Flow
 
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+-   Tags: array, depth first search, breadth first search, matrix
 
 ```python
 --8<-- "0417_pacific_atlantic_water_flow.py"
@@ -100,6 +106,7 @@ comments: True
 ## 827. Making A Large Island
 
 -   [LeetCode](https://leetcode.com/problems/making-a-large-island/) | [LeetCode CH](https://leetcode.cn/problems/making-a-large-island/) (Hard)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python
 --8<-- "0827_making_a_large_island.py"

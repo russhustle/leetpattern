@@ -7,6 +7,7 @@ comments: True
 ## 203. Remove Linked List Elements
 
 -   [LeetCode](https://leetcode.com/problems/remove-linked-list-elements/) | [LeetCode CH](https://leetcode.cn/problems/remove-linked-list-elements/) (Easy)
+-   Tags: linked list, recursion
 -   Remove all elements from a linked list of integers that have value `val`.
 
 -   Before
@@ -43,6 +44,7 @@ F --> I((None))
 ## 707. Design Linked List
 
 -   [LeetCode](https://leetcode.com/problems/design-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/design-linked-list/) (Medium)
+-   Tags: linked list, design
 -   Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
 
 ```python
@@ -52,6 +54,7 @@ F --> I((None))
 ## 206. Reverse Linked List
 
 -   [LeetCode](https://leetcode.com/problems/reverse-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
+-   Tags: linked list, recursion
 -   Reverse a singly linked list.
 
 ```mermaid
@@ -77,6 +80,7 @@ B --> A[1]
 ## 237. Delete Node in a Linked List
 
 -   [LeetCode](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-node-in-a-linked-list/) (Medium)
+-   Tags: linked list
 -   Delete a node in a singly linked list. You are given only the node to be deleted.
 
 ```python
@@ -86,6 +90,7 @@ B --> A[1]
 ## 2487. Remove Nodes From Linked List
 
 -   [LeetCode](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nodes-from-linked-list/) (Medium)
+-   Tags: linked list, stack, recursion, monotonic stack
 -   Remove all nodes from a linked list that have a value greater than `maxValue`.
 
 ```python
@@ -95,6 +100,7 @@ B --> A[1]
 ## 24. Swap Nodes in Pairs
 
 -   [LeetCode](https://leetcode.com/problems/swap-nodes-in-pairs/) | [LeetCode CH](https://leetcode.cn/problems/swap-nodes-in-pairs/) (Medium)
+-   Tags: linked list, recursion
 -   Given a linked list, swap every two adjacent nodes and return its head.
 
 ```python
@@ -104,6 +110,7 @@ B --> A[1]
 ## 19. Remove Nth Node From End of List
 
 -   [LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) (Medium)
+-   Tags: linked list, two pointers
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
 ```python
@@ -113,6 +120,7 @@ B --> A[1]
 ## 160. Intersection of Two Linked Lists
 
 -   [LeetCode](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [LeetCode CH](https://leetcode.cn/problems/intersection-of-two-linked-lists/) (Easy)
+-   Tags: hash table, linked list, two pointers
 -   Find the node at which the intersection of two singly linked lists begins.
 
 ```mermaid
@@ -133,6 +141,7 @@ c2 --> c3((c3))
 ## 141. Linked List Cycle
 
 -   [LeetCode](https://leetcode.com/problems/linked-list-cycle/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
+-   Tags: hash table, linked list, two pointers
 -   Determine if a linked list has a cycle in it.
 
 ```mermaid
@@ -157,6 +166,7 @@ D --> B
 ## 142. Linked List Cycle II
 
 -   [LeetCode](https://leetcode.com/problems/linked-list-cycle-ii/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle-ii/) (Medium)
+-   Tags: hash table, linked list, two pointers
 -   Given a linked list, return the node where the cycle begins. If there is no cycle, return `None`.
 
 ```mermaid
@@ -174,6 +184,7 @@ D --> B
 ## 2816. Double a Number Represented as a Linked List
 
 -   [LeetCode](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/double-a-number-represented-as-a-linked-list/) (Medium)
+-   Tags: linked list, math, stack
 -   Given a number represented as a linked list, double it and return the resulting linked list.
 
 ```python
@@ -183,6 +194,7 @@ D --> B
 ## 2. Add Two Numbers
 
 -   [LeetCode](https://leetcode.com/problems/add-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/add-two-numbers/) (Medium)
+-   Tags: linked list, math, recursion
 -   Represent the sum of two numbers as a linked list.
 
 ```python

@@ -112,5 +112,24 @@ def main():
         file.writelines(lines)
 
 
+def create_problem_files(qid: int):
+    df = pd.read_parquet(os.path.join("utils", "questions.parquet"))
+    row = df.loc[qid]
+    problem_md_path = os.path.join("docs", "md", row["basename"] + ".md")
+    check_make_file(problem_md_path)
+
+    if row["categorySlug"] == "algorithms":
+        problem_py_path = os.path.join("src", row["basename"] + ".py")
+        check_make_file(problem_py_path)
+        print("created", problem_py_path)
+    elif row["categorySlug"] == "database":
+        problem_sql_path = os.path.join("src", "sql", row["basename"] + ".sql")
+        problem_txt_path = os.path.join("src", "sql", row["basename"] + ".txt")
+        check_make_file(problem_sql_path)
+        check_make_file(problem_txt_path)
+        print("created", problem_sql_path)
+
+
 if __name__ == "__main__":
     main()
+    # create_problem_files(2055)

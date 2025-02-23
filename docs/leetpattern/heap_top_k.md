@@ -7,6 +7,7 @@ comments: True
 ## 215. Kth Largest Element in an Array
 
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
+-   Tags: array, divide and conquer, sorting, heap priority queue, quickselect
 
 ```python
 --8<-- "0215_kth_largest_element_in_an_array.py"
@@ -15,6 +16,7 @@ comments: True
 ## 973. K Closest Points to Origin
 
 -   [LeetCode](https://leetcode.com/problems/k-closest-points-to-origin/) | [LeetCode CH](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)
+-   Tags: array, math, divide and conquer, geometry, sorting, heap priority queue, quickselect
 
 ```python
 --8<-- "0973_k_closest_points_to_origin.py"
@@ -23,6 +25,7 @@ comments: True
 ## 347. Top K Frequent Elements
 
 -   [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
+-   Tags: array, hash table, divide and conquer, sorting, heap priority queue, bucket sort, counting, quickselect
 
 ```python
 --8<-- "0347_top_k_frequent_elements.py"
@@ -31,6 +34,7 @@ comments: True
 ## 692. Top K Frequent Words
 
 -   [LeetCode](https://leetcode.com/problems/top-k-frequent-words/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-words/) (Medium)
+-   Tags: array, hash table, string, trie, sorting, heap priority queue, bucket sort, counting
 
 ```python
 --8<-- "0692_top_k_frequent_words.py"
@@ -39,6 +43,7 @@ comments: True
 ## 264. Ugly Number II
 
 -   [LeetCode](https://leetcode.com/problems/ugly-number-ii/) | [LeetCode CH](https://leetcode.cn/problems/ugly-number-ii/) (Medium)
+-   Tags: hash table, math, dynamic programming, heap priority queue
 
 ```python
 --8<-- "0264_ugly_number_ii.py"
@@ -47,6 +52,7 @@ comments: True
 ## 451. Sort Characters By Frequency
 
 -   [LeetCode](https://leetcode.com/problems/sort-characters-by-frequency/) | [LeetCode CH](https://leetcode.cn/problems/sort-characters-by-frequency/) (Medium)
+-   Tags: hash table, string, sorting, heap priority queue, bucket sort, counting
 
 ```python
 --8<-- "0451_sort_characters_by_frequency.py"
@@ -55,6 +61,7 @@ comments: True
 ## 703. Kth Largest Element in a Stream
 
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
+-   Tags: tree, design, binary search tree, heap priority queue, binary tree, data stream
 
 ```python
 --8<-- "0703_kth_largest_element_in_a_stream.py"
@@ -63,6 +70,7 @@ comments: True
 ## 767. Reorganize String
 
 -   [LeetCode](https://leetcode.com/problems/reorganize-string/) | [LeetCode CH](https://leetcode.cn/problems/reorganize-string/) (Medium)
+-   Tags: hash table, string, greedy, sorting, heap priority queue, counting
 
 ```python
 --8<-- "0767_reorganize_string.py"
@@ -71,6 +79,7 @@ comments: True
 ## 786. K-th Smallest Prime Fraction
 
 -   [LeetCode](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | [LeetCode CH](https://leetcode.cn/problems/k-th-smallest-prime-fraction/) (Medium)
+-   Tags: array, two pointers, binary search, sorting, heap priority queue
 
 ```python
 --8<-- "0786_k_th_smallest_prime_fraction.py"

@@ -7,6 +7,7 @@ comments: True
 ## 146. LRU Cache
 
 -   [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
+-   Tags: hash table, linked list, design, doubly linked list
 -   Design and implement a data structure for **Least Recently Used (LRU) cache**. It should support the following operations: get and put.
 
 ![146](https://miro.medium.com/v2/resize:fit:650/0*fOwBd3z0XtHh7WN1.png)
@@ -29,6 +30,7 @@ comments: True
 ## 355. Design Twitter
 
 -   [LeetCode](https://leetcode.com/problems/design-twitter/) | [LeetCode CH](https://leetcode.cn/problems/design-twitter/) (Medium)
+-   Tags: hash table, linked list, design, heap priority queue
 -   Similar question: [23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (Hard)
 
 ```python
@@ -38,6 +40,7 @@ comments: True
 ## 588. Design In-Memory File System
 
 -   [LeetCode](https://leetcode.com/problems/design-in-memory-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard)
+-   Tags: hash table, string, design, trie, sorting
 
 ```python
 --8<-- "0588_design_in_memory_file_system.py"
@@ -46,6 +49,7 @@ comments: True
 ## 460. LFU Cache
 
 -   [LeetCode](https://leetcode.com/problems/lfu-cache/) | [LeetCode CH](https://leetcode.cn/problems/lfu-cache/) (Hard)
+-   Tags: hash table, linked list, design, doubly linked list
 
 ```python
 --8<-- "0460_lfu_cache.py"
@@ -54,6 +58,7 @@ comments: True
 ## 1166. Design File System
 
 -   [LeetCode](https://leetcode.com/problems/design-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-file-system/) (Medium)
+-   Tags: hash table, string, design, trie
 
 ```python
 --8<-- "1166_design_file_system.py"
@@ -62,6 +67,7 @@ comments: True
 ## 380. Insert Delete GetRandom O(1)
 
 -   [LeetCode](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [LeetCode CH](https://leetcode.cn/problems/insert-delete-getrandom-o1/) (Medium)
+-   Tags: array, hash table, math, design, randomized
 
 ```python
 --8<-- "0380_insert_delete_getrandom_o1.py"
@@ -70,6 +76,7 @@ comments: True
 ## 362. Design Hit Counter
 
 -   [LeetCode](https://leetcode.com/problems/design-hit-counter/) | [LeetCode CH](https://leetcode.cn/problems/design-hit-counter/) (Medium)
+-   Tags: array, binary search, design, queue, data stream
 
 ```python
 --8<-- "0362_design_hit_counter.py"
@@ -78,6 +85,7 @@ comments: True
 ## 297. Serialize and Deserialize Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
+-   Tags: string, tree, depth first search, breadth first search, design, binary tree
 
 ```python
 --8<-- "0297_serialize_and_deserialize_binary_tree.py"
@@ -86,6 +94,7 @@ comments: True
 ## 622. Design Circular Queue
 
 -   [LeetCode](https://leetcode.com/problems/design-circular-queue/) | [LeetCode CH](https://leetcode.cn/problems/design-circular-queue/) (Medium)
+-   Tags: array, linked list, design, queue
 
 ```python
 --8<-- "0622_design_circular_queue.py"
@@ -94,6 +103,7 @@ comments: True
 ## 353. Design Snake Game
 
 -   [LeetCode](https://leetcode.com/problems/design-snake-game/) | [LeetCode CH](https://leetcode.cn/problems/design-snake-game/) (Medium)
+-   Tags: array, hash table, design, queue, simulation
 
 ```python
 --8<-- "0353_design_snake_game.py"
@@ -102,6 +112,7 @@ comments: True
 ## 1244. Design A Leaderboard
 
 -   [LeetCode](https://leetcode.com/problems/design-a-leaderboard/) | [LeetCode CH](https://leetcode.cn/problems/design-a-leaderboard/) (Medium)
+-   Tags: hash table, design, sorting
 
 ```python
 --8<-- "1244_design_a_leaderboard.py"

@@ -7,6 +7,7 @@ comments: True
 ## 733. Flood Fill
 
 -   [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
+-   Tags: array, depth first search, breadth first search, matrix
 -   Replace all the pixels of the same color starting from the given pixel.
 -   In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
 -   Edge cases: If the starting pixel is already the target color, return the image as it is.
@@ -45,6 +46,7 @@ comments: True
 ## 542. 01 Matrix
 
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
+-   Tags: array, dynamic programming, breadth first search, matrix
 
 ```python
 --8<-- "0542_01_matrix.py"
@@ -53,6 +55,7 @@ comments: True
 ## 133. Clone Graph
 
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+-   Tags: hash table, depth first search, breadth first search, graph
 
 ```python
 --8<-- "0133_clone_graph.py"
@@ -61,6 +64,7 @@ comments: True
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+-   Tags: depth first search, breadth first search, graph, topological sort
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
 -   Cycle detection
@@ -183,6 +187,7 @@ flowchart LR
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -206,6 +211,7 @@ flowchart LR
 ## 994. Rotting Oranges
 
 -   [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
+-   Tags: array, breadth first search, matrix
 -   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
 -   Hint: Multi-source BFS to count the level.
 
@@ -218,6 +224,7 @@ flowchart LR
 ## 721. Accounts Merge
 
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
+-   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
 ```python
 --8<-- "0721_accounts_merge.py"
@@ -226,6 +233,7 @@ flowchart LR
 ## 79. Word Search
 
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
+-   Tags: array, string, backtracking, depth first search, matrix
 
 ```python
 --8<-- "0079_word_search.py"
@@ -234,6 +242,7 @@ flowchart LR
 ## 310. Minimum Height Trees
 
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+-   Tags: depth first search, breadth first search, graph, topological sort
 
 ```python
 --8<-- "0310_minimum_height_trees.py"
@@ -242,6 +251,7 @@ flowchart LR
 ## 127. Word Ladder
 
 -   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
+-   Tags: hash table, string, breadth first search
 
 ```python
 --8<-- "0127_word_ladder.py"

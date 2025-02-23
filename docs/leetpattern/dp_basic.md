@@ -7,6 +7,7 @@ comments: True
 ## 509. Fibonacci Number
 
 -   [LeetCode](https://leetcode.com/problems/fibonacci-number/) | [LeetCode CH](https://leetcode.cn/problems/fibonacci-number/) (Easy)
+-   Tags: math, dynamic programming, recursion, memoization
 -   Return the `n-th` Fibonacci number.
 -   `dp[n]` stores the `n-th` Fibonacci number.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
@@ -33,6 +34,7 @@ comments: True
 ## 70. Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+-   Tags: math, dynamic programming, memoization
 -   Return the number of distinct ways to reach the top of the stairs.
 -   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
@@ -59,6 +61,7 @@ comments: True
 ## 746. Min Cost Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
+-   Tags: array, dynamic programming
 -   Return the minimum cost to reach the top of the stairs.
 
 -   `dp[n]` stores the <u>minimum cost</u> to reach the `n-th` stair.
@@ -88,6 +91,7 @@ comments: True
 ## 198. House Robber
 
 -   [LeetCode](https://leetcode.com/problems/house-robber/) | [LeetCode CH](https://leetcode.cn/problems/house-robber/) (Medium)
+-   Tags: array, dynamic programming
 -   Return the maximum amount of money that can be robbed from the houses. No two adjacent houses can be robbed.
 
 -   `dp[n]` stores the maximum amount of money that can be robbed from the first `n` houses.
@@ -113,6 +117,7 @@ comments: True
 ## 213. House Robber II
 
 -   [LeetCode](https://leetcode.com/problems/house-robber-ii/) | [LeetCode CH](https://leetcode.cn/problems/house-robber-ii/) (Medium)
+-   Tags: array, dynamic programming
 -   Return the maximum amount of money that can be robbed from the houses arranged in a circle.
 -   Circular → Linear: `nums[0]` and `nums[-1]` cannot be robbed together.
 -   Rob from `0` to `n - 2`
@@ -140,6 +145,7 @@ comments: True
 ## 376. Wiggle Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/wiggle-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-subsequence/) (Medium)
+-   Tags: array, dynamic programming, greedy
 -   Return the length of the longest wiggle subsequence.
 -   `up[n]` stores the length of the longest wiggle subsequence ending at `n` with a rising wiggle.
 -   `down[n]` stores the length of the longest wiggle subsequence ending at `n` with a falling wiggle.
@@ -162,6 +168,7 @@ comments: True
 ## 343. Integer Break
 
 -   [LeetCode](https://leetcode.com/problems/integer-break/) | [LeetCode CH](https://leetcode.cn/problems/integer-break/) (Medium)
+-   Tags: math, dynamic programming
 -   Return the maximum product of the integer after breaking it into at least two positive integers.
 -   `dp[i]` stores the maximum product of the integer `i`.
 -   Formula: `dp[i] = max(dp[i - j] * j, (i - j) * j)`
@@ -189,6 +196,7 @@ comments: True
 ## 1025. Divisor Game
 
 -   [LeetCode](https://leetcode.com/problems/divisor-game/) | [LeetCode CH](https://leetcode.cn/problems/divisor-game/) (Easy)
+-   Tags: math, dynamic programming, brainteaser, game theory
 -   Return `True` if Alice wins the game, assuming both players play optimally.
 -   `dp[n]` stores the result of the game when the number is `n`.
 -   Initialize `dp[1] = False`.

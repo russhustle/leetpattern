@@ -7,6 +7,7 @@ comments: True
 ## 739. Daily Temperatures
 
 -   [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)
+-   Tags: array, stack, monotonic stack
 -   Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
 
 | Index | Temp | > stack last | stack                           | result    |
@@ -27,6 +28,7 @@ comments: True
 ## 496. Next Greater Element I
 
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
+-   Tags: array, hash table, stack, monotonic stack
 
 ```python
 --8<-- "0496_next_greater_element_i.py"
@@ -35,6 +37,7 @@ comments: True
 ## 503. Next Greater Element II
 
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)
+-   Tags: array, stack, monotonic stack
 
 ```python
 --8<-- "0503_next_greater_element_ii.py"
@@ -43,6 +46,7 @@ comments: True
 ## 84. Largest Rectangle in Histogram
 
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+-   Tags: array, stack, monotonic stack
 
 ```python
 --8<-- "0084_largest_rectangle_in_histogram.py"
@@ -51,6 +55,7 @@ comments: True
 ## 85. Maximal Rectangle
 
 -   [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | [LeetCode CH](https://leetcode.cn/problems/maximal-rectangle/) (Hard)
+-   Tags: array, dynamic programming, stack, matrix, monotonic stack
 -   Return the area of the largest rectangle that can be formed within a rectangle of 1's.
 
 ![0085](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg){width=300px}
@@ -62,20 +67,8 @@ comments: True
 ## 42. Trapping Rain Water
 
 -   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+-   Tags: array, two pointers, dynamic programming, stack, monotonic stack
 -   ![42](../assets/0042.png)
--   Method 1: Dynamic Programing
-
-| index                           | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  |
-| :------------------------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| value                           | 0   | 1   | 0   | 2   | 1   | 0   | 1   | 3   | 2   | 1   | 2   | 1   |
-| `maxLeft`                       | 0   | 0   | 1   | 1   | 2   | 2   | 2   | 2   | 3   | 3   | 3   | 3   |
-| `maxRight`                      | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 2   | 2   | 2   | 1   | 0   |
-| `hold = min(maxLeft, maxRight)` | 0   | 0   | 1   | 1   | 2   | 2   | 2   | 2   | 2   | 2   | 1   | 0   |
-| `trap = max(0, hold - value)`   | 0   | 0   | 1   | 0   | 1   | 2   | 1   | 0   | 0   | 1   | 0   | 0   |
-
-So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
-
--   Method 2: Left Right Pointers, because we always need to care about the minimum of left right maximum numbers. So, we can use two pointers to keep track of the left and right maximum numbers.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZI2z5pq0TqA?si=OEYg01dbmzvmtIwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -86,6 +79,7 @@ So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
 ## 901. Online Stock Span
 
 -   [LeetCode](https://leetcode.com/problems/online-stock-span/) | [LeetCode CH](https://leetcode.cn/problems/online-stock-span/) (Medium)
+-   Tags: stack, design, monotonic stack, data stream
 -   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
 ```python
@@ -95,6 +89,7 @@ So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
 ## 316. Remove Duplicate Letters
 
 -   [LeetCode](https://leetcode.com/problems/remove-duplicate-letters/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)
+-   Tags: string, stack, greedy, monotonic stack
 
 ```python
 --8<-- "0316_remove_duplicate_letters.py"
@@ -103,6 +98,7 @@ So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
 ## 456. 132 Pattern
 
 -   [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
+-   Tags: array, binary search, stack, monotonic stack, ordered set
 
 ```python
 --8<-- "0456_132_pattern.py"
@@ -111,6 +107,7 @@ So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
 ## 2281. Sum of Total Strength of Wizards
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
+-   Tags: array, stack, monotonic stack, prefix sum
 
 ```python
 --8<-- "2281_sum_of_total_strength_of_wizards.py"

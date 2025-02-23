@@ -7,6 +7,7 @@ comments: True
 ## 208. Implement Trie (Prefix Tree)
 
 -   [LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree/) | [LeetCode CH](https://leetcode.cn/problems/implement-trie-prefix-tree/) (Medium)
+-   Tags: hash table, string, design, trie
 ## Trie
 
 -   A trie is a tree-like data structure whose nodes store the letters of an alphabet.
@@ -33,6 +34,7 @@ A2 --- R2((R))
 ## 212. Word Search II
 
 -   [LeetCode](https://leetcode.com/problems/word-search-ii/) | [LeetCode CH](https://leetcode.cn/problems/word-search-ii/) (Hard)
+-   Tags: array, string, backtracking, trie, matrix
 
 ```python
 --8<-- "0212_word_search_ii.py"
@@ -41,6 +43,7 @@ A2 --- R2((R))
 ## 211. Design Add and Search Words Data Structure
 
 -   [LeetCode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | [LeetCode CH](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) (Medium)
+-   Tags: string, depth first search, design, trie
 
 ```python
 --8<-- "0211_design_add_and_search_words_data_structure.py"

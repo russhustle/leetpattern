@@ -7,6 +7,7 @@ comments: True
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -30,6 +31,7 @@ comments: True
 ## 133. Clone Graph
 
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+-   Tags: hash table, depth first search, breadth first search, graph
 
 ```python
 --8<-- "0133_clone_graph.py"
@@ -38,6 +40,7 @@ comments: True
 ## 417. Pacific Atlantic Water Flow
 
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+-   Tags: array, depth first search, breadth first search, matrix
 
 ```python
 --8<-- "0417_pacific_atlantic_water_flow.py"
@@ -46,6 +49,7 @@ comments: True
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+-   Tags: depth first search, breadth first search, graph, topological sort
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
 -   Cycle detection
@@ -168,6 +172,7 @@ flowchart LR
 ## 261. Graph Valid Tree
 
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
+-   Tags: depth first search, breadth first search, union find, graph
 
 ```python
 --8<-- "0261_graph_valid_tree.py"
@@ -176,6 +181,7 @@ flowchart LR
 ## 323. Number of Connected Components in an Undirected Graph
 
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
+-   Tags: depth first search, breadth first search, union find, graph
 
 ```python
 --8<-- "0323_number_of_connected_components_in_an_undirected_graph.py"

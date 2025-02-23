@@ -7,6 +7,7 @@ comments: True
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -30,6 +31,7 @@ comments: True
 ## 695. Max Area of Island
 
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python
 --8<-- "0695_max_area_of_island.py"
@@ -38,6 +40,7 @@ comments: True
 ## 133. Clone Graph
 
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+-   Tags: hash table, depth first search, breadth first search, graph
 
 ```python
 --8<-- "0133_clone_graph.py"
@@ -46,6 +49,7 @@ comments: True
 ## 286. Walls and Gates
 
 -   [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
+-   Tags: array, breadth first search, matrix
 ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
 ```python
@@ -55,6 +59,7 @@ comments: True
 ## 994. Rotting Oranges
 
 -   [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
+-   Tags: array, breadth first search, matrix
 -   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
 -   Hint: Multi-source BFS to count the level.
 
@@ -67,6 +72,7 @@ comments: True
 ## 417. Pacific Atlantic Water Flow
 
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+-   Tags: array, depth first search, breadth first search, matrix
 
 ```python
 --8<-- "0417_pacific_atlantic_water_flow.py"
@@ -75,6 +81,7 @@ comments: True
 ## 130. Surrounded Regions
 
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python
 --8<-- "0130_surrounded_regions.py"
@@ -83,6 +90,7 @@ comments: True
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+-   Tags: depth first search, breadth first search, graph, topological sort
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
 -   Cycle detection
@@ -205,6 +213,7 @@ flowchart LR
 ## 210. Course Schedule II
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+-   Tags: depth first search, breadth first search, graph, topological sort
 -   Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
 ![0207](../assets/0207.png){width=300px}
@@ -216,6 +225,7 @@ flowchart LR
 ## 261. Graph Valid Tree
 
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
+-   Tags: depth first search, breadth first search, union find, graph
 
 ```python
 --8<-- "0261_graph_valid_tree.py"
@@ -224,6 +234,7 @@ flowchart LR
 ## 323. Number of Connected Components in an Undirected Graph
 
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
+-   Tags: depth first search, breadth first search, union find, graph
 
 ```python
 --8<-- "0323_number_of_connected_components_in_an_undirected_graph.py"
@@ -232,6 +243,7 @@ flowchart LR
 ## 684. Redundant Connection
 
 -   [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
+-   Tags: depth first search, breadth first search, union find, graph
 
 ```python
 --8<-- "0684_redundant_connection.py"
@@ -240,6 +252,7 @@ flowchart LR
 ## 127. Word Ladder
 
 -   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
+-   Tags: hash table, string, breadth first search
 
 ```python
 --8<-- "0127_word_ladder.py"

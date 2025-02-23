@@ -7,6 +7,7 @@ comments: True
 ## 743. Network Delay Time
 
 -   [LeetCode](https://leetcode.com/problems/network-delay-time/) | [LeetCode CH](https://leetcode.cn/problems/network-delay-time/) (Medium)
+-   Tags: depth first search, breadth first search, graph, heap priority queue, shortest path
 -   Return the minimum time taken to reach all nodes in a network.
 
 ```mermaid
@@ -35,6 +36,7 @@ graph LR
 ## 787. Cheapest Flights Within K Stops
 
 -   [LeetCode](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [LeetCode CH](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
+-   Tags: dynamic programming, depth first search, breadth first search, graph, heap priority queue, shortest path
 -   Return the cheapest price from `src` to `dst` with at most `K` stops.
 
 ```mermaid

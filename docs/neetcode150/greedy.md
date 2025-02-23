@@ -7,6 +7,7 @@ comments: True
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+-   Tags: array, divide and conquer, dynamic programming
 
 ```python
 --8<-- "0053_maximum_subarray.py"
@@ -15,6 +16,7 @@ comments: True
 ## 55. Jump Game
 
 -   [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
+-   Tags: array, dynamic programming, greedy
 -   Return `True` if you can reach the last index, otherwise `False`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yan0cv2cLy8?si=musT5NViPicljg7x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -40,6 +42,7 @@ comments: True
 ## 45. Jump Game II
 
 -   [LeetCode](https://leetcode.com/problems/jump-game-ii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-ii/) (Medium)
+-   Tags: array, dynamic programming, greedy
 -   Return the minimum number of jumps to reach the last index.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dJ7sWiOoK7g?si=3kc-pp4rs3Dk7Jqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -51,6 +54,7 @@ comments: True
 ## 134. Gas Station
 
 -   [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
+-   Tags: array, greedy
 
 ```python
 --8<-- "0134_gas_station.py"
@@ -59,6 +63,7 @@ comments: True
 ## 846. Hand of Straights
 
 -   [LeetCode](https://leetcode.com/problems/hand-of-straights/) | [LeetCode CH](https://leetcode.cn/problems/hand-of-straights/) (Medium)
+-   Tags: array, hash table, greedy, sorting
 
 ```python
 --8<-- "0846_hand_of_straights.py"
@@ -67,6 +72,7 @@ comments: True
 ## 1899. Merge Triplets to Form Target Triplet
 
 -   [LeetCode](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | [LeetCode CH](https://leetcode.cn/problems/merge-triplets-to-form-target-triplet/) (Medium)
+-   Tags: array, greedy
 
 ```python
 --8<-- "1899_merge_triplets_to_form_target_triplet.py"
@@ -75,6 +81,7 @@ comments: True
 ## 763. Partition Labels
 
 -   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
+-   Tags: hash table, two pointers, string, greedy
 
 ```python
 --8<-- "0763_partition_labels.py"
@@ -83,6 +90,7 @@ comments: True
 ## 678. Valid Parenthesis String
 
 -   [LeetCode](https://leetcode.com/problems/valid-parenthesis-string/) | [LeetCode CH](https://leetcode.cn/problems/valid-parenthesis-string/) (Medium)
+-   Tags: string, dynamic programming, stack, greedy
 
 ```python
 --8<-- "0678_valid_parenthesis_string.py"

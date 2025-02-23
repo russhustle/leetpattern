@@ -7,6 +7,7 @@ comments: True
 ## 70. Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+-   Tags: math, dynamic programming, memoization
 -   Return the number of distinct ways to reach the top of the stairs.
 -   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
@@ -33,6 +34,7 @@ comments: True
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+-   Tags: array, divide and conquer, dynamic programming
 
 ```python
 --8<-- "0053_maximum_subarray.py"
@@ -41,6 +43,7 @@ comments: True
 ## 322. Coin Change
 
 -   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
+-   Tags: array, dynamic programming, breadth first search
 
 ```python
 --8<-- "0322_coin_change.py"
@@ -49,6 +52,7 @@ comments: True
 ## 416. Partition Equal Subset Sum
 
 -   [LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/) | [LeetCode CH](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
+-   Tags: array, dynamic programming
 
 ```python
 --8<-- "0416_partition_equal_subset_sum.py"
@@ -57,6 +61,7 @@ comments: True
 ## 62. Unique Paths
 
 -   [LeetCode](https://leetcode.com/problems/unique-paths/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths/) (Medium)
+-   Tags: math, dynamic programming, combinatorics
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)

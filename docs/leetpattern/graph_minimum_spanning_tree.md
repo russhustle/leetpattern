@@ -7,6 +7,7 @@ comments: True
 ## 1584. Min Cost to Connect All Points
 
 -   [LeetCode](https://leetcode.com/problems/min-cost-to-connect-all-points/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-to-connect-all-points/) (Medium)
+-   Tags: array, union find, graph, minimum spanning tree
 -   **Tree**: a connected acyclic graph
 -   **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
 -   **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
@@ -37,6 +38,7 @@ MST
 ## 1135. Connecting Cities With Minimum Cost
 
 -   [LeetCode](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [LeetCode CH](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) (Medium)
+-   Tags: union find, graph, heap priority queue, minimum spanning tree
 
 ```python
 --8<-- "1135_connecting_cities_with_minimum_cost.py"
@@ -45,6 +47,7 @@ MST
 ## 1168. Optimize Water Distribution in a Village
 
 -   [LeetCode](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [LeetCode CH](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard)
+-   Tags: union find, graph, heap priority queue, minimum spanning tree
 ![1168_0](../assets/1168_0.png)
 
 ![1168_1](../assets/1168_1.png)
@@ -56,6 +59,7 @@ MST
 ## 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
 
 -   [LeetCode](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
+-   Tags: union find, graph, sorting, minimum spanning tree, strongly connected component
 
 ```python
 --8<-- "1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree.py"
@@ -64,6 +68,7 @@ MST
 ## 1631. Path With Minimum Effort
 
 -   [LeetCode](https://leetcode.com/problems/path-with-minimum-effort/) | [LeetCode CH](https://leetcode.cn/problems/path-with-minimum-effort/) (Medium)
+-   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
 ```python
@@ -73,6 +78,7 @@ MST
 ## 1579. Remove Max Number of Edges to Keep Graph Fully Traversable
 
 -   [LeetCode](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) | [LeetCode CH](https://leetcode.cn/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) (Hard)
+-   Tags: union find, graph
 -   Return the maximum number of edges you can remove so that the graph remains fully traversable.
 
 ![1579](../assets/1579.png){width=200px}

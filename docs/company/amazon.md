@@ -7,6 +7,7 @@ comments: True
 ## 1. Two Sum
 
 -   [LeetCode](https://leetcode.com/problems/two-sum/) | [LeetCode CH](https://leetcode.cn/problems/two-sum/) (Easy)
+-   Tags: array, hash table
 -   Return the indices of the two numbers such that they add up to a specific target.
 
 | Approach | Time Complexity | Space Complexity |
@@ -20,6 +21,7 @@ comments: True
 ## 146. LRU Cache
 
 -   [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
+-   Tags: hash table, linked list, design, doubly linked list
 -   Design and implement a data structure for **Least Recently Used (LRU) cache**. It should support the following operations: get and put.
 
 ![146](https://miro.medium.com/v2/resize:fit:650/0*fOwBd3z0XtHh7WN1.png)
@@ -42,6 +44,7 @@ comments: True
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+-   Tags: array, depth first search, breadth first search, union find, matrix
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
 -   Method 2: BFS (use a queue to traverse the grid)
@@ -65,20 +68,8 @@ comments: True
 ## 42. Trapping Rain Water
 
 -   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+-   Tags: array, two pointers, dynamic programming, stack, monotonic stack
 -   ![42](../assets/0042.png)
--   Method 1: Dynamic Programing
-
-| index                           | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  |
-| :------------------------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| value                           | 0   | 1   | 0   | 2   | 1   | 0   | 1   | 3   | 2   | 1   | 2   | 1   |
-| `maxLeft`                       | 0   | 0   | 1   | 1   | 2   | 2   | 2   | 2   | 3   | 3   | 3   | 3   |
-| `maxRight`                      | 3   | 3   | 3   | 3   | 3   | 3   | 3   | 2   | 2   | 2   | 1   | 0   |
-| `hold = min(maxLeft, maxRight)` | 0   | 0   | 1   | 1   | 2   | 2   | 2   | 2   | 2   | 2   | 1   | 0   |
-| `trap = max(0, hold - value)`   | 0   | 0   | 1   | 0   | 1   | 2   | 1   | 0   | 0   | 1   | 0   | 0   |
-
-So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
-
--   Method 2: Left Right Pointers, because we always need to care about the minimum of left right maximum numbers. So, we can use two pointers to keep track of the left and right maximum numbers.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZI2z5pq0TqA?si=OEYg01dbmzvmtIwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -89,6 +80,7 @@ So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
 ## 49. Group Anagrams
 
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
+-   Tags: array, hash table, string, sorting
 
 ```python
 --8<-- "0049_group_anagrams.py"
@@ -97,6 +89,7 @@ So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
 ## 121. Best Time to Buy and Sell Stock
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+-   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
 ```python
@@ -106,6 +99,7 @@ So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
 ## 56. Merge Intervals
 
 -   [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
+-   Tags: array, sorting
 -   Merge all overlapping intervals.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -117,6 +111,7 @@ So, In total we have trap `1 + 1 + 2 + 1 + 1 = 6` water.
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+-   Tags: depth first search, breadth first search, graph, topological sort
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
 -   Cycle detection
@@ -239,6 +234,8 @@ flowchart LR
 ## 23. Merge k Sorted Lists
 
 -   [LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
+-   Tags: linked list, divide and conquer, heap priority queue, merge sort
+-   Prerequisite: 21. Merge Two Sorted Lists
 
 ```python
 --8<-- "0023_merge_k_sorted_lists.py"
@@ -247,6 +244,7 @@ flowchart LR
 ## 347. Top K Frequent Elements
 
 -   [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
+-   Tags: array, hash table, divide and conquer, sorting, heap priority queue, bucket sort, counting, quickselect
 
 ```python
 --8<-- "0347_top_k_frequent_elements.py"
@@ -255,6 +253,7 @@ flowchart LR
 ## 88. Merge Sorted Array
 
 -   [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
+-   Tags: array, two pointers, sorting
 
 ```python
 --8<-- "0088_merge_sorted_array.py"
@@ -263,6 +262,7 @@ flowchart LR
 ## 15. 3Sum
 
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
+-   Tags: array, two pointers, sorting
 
 ```python
 --8<-- "0015_3sum.py"
@@ -271,6 +271,7 @@ flowchart LR
 ## 127. Word Ladder
 
 -   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
+-   Tags: hash table, string, breadth first search
 
 ```python
 --8<-- "0127_word_ladder.py"
@@ -279,6 +280,7 @@ flowchart LR
 ## 55. Jump Game
 
 -   [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
+-   Tags: array, dynamic programming, greedy
 -   Return `True` if you can reach the last index, otherwise `False`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yan0cv2cLy8?si=musT5NViPicljg7x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -304,6 +306,7 @@ flowchart LR
 ## 3. Longest Substring Without Repeating Characters
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
+-   Tags: hash table, string, sliding window
 
 ```python
 --8<-- "0003_longest_substring_without_repeating_characters.py"
@@ -312,6 +315,7 @@ flowchart LR
 ## 14. Longest Common Prefix
 
 -   [LeetCode](https://leetcode.com/problems/longest-common-prefix/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-prefix/) (Easy)
+-   Tags: string, trie
 
 ```python
 --8<-- "0014_longest_common_prefix.py"
@@ -320,6 +324,7 @@ flowchart LR
 ## 210. Course Schedule II
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+-   Tags: depth first search, breadth first search, graph, topological sort
 -   Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
 ![0207](../assets/0207.png){width=300px}
@@ -331,6 +336,7 @@ flowchart LR
 ## 138. Copy List with Random Pointer
 
 -   [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/) | [LeetCode CH](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
+-   Tags: hash table, linked list
 
 ```python
 --8<-- "0138_copy_list_with_random_pointer.py"
@@ -339,6 +345,7 @@ flowchart LR
 ## 20. Valid Parentheses
 
 -   [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+-   Tags: string, stack
 -   Determine if the input string is valid.
 -   Steps for the string `()[]{}`:
 
@@ -358,6 +365,7 @@ flowchart LR
 ## 2. Add Two Numbers
 
 -   [LeetCode](https://leetcode.com/problems/add-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/add-two-numbers/) (Medium)
+-   Tags: linked list, math, recursion
 -   Represent the sum of two numbers as a linked list.
 
 ```python
@@ -367,6 +375,7 @@ flowchart LR
 ## 70. Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+-   Tags: math, dynamic programming, memoization
 -   Return the number of distinct ways to reach the top of the stairs.
 -   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
 -   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
@@ -393,6 +402,7 @@ flowchart LR
 ## 238. Product of Array Except Self
 
 -   [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) | [LeetCode CH](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
+-   Tags: array, prefix sum
 
 ```python
 --8<-- "0238_product_of_array_except_self.py"
@@ -401,6 +411,7 @@ flowchart LR
 ## 560. Subarray Sum Equals K
 
 -   [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
+-   Tags: array, hash table, prefix sum
 
 ```python
 --8<-- "0560_subarray_sum_equals_k.py"
@@ -409,6 +420,7 @@ flowchart LR
 ## 4. Median of Two Sorted Arrays
 
 -   [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
+-   Tags: array, binary search, divide and conquer
 
 ```python
 --8<-- "0004_median_of_two_sorted_arrays.py"
@@ -417,6 +429,7 @@ flowchart LR
 ## 79. Word Search
 
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
+-   Tags: array, string, backtracking, depth first search, matrix
 
 ```python
 --8<-- "0079_word_search.py"
@@ -425,6 +438,7 @@ flowchart LR
 ## 22. Generate Parentheses
 
 -   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
+-   Tags: string, dynamic programming, backtracking
 
 ```python
 --8<-- "0022_generate_parentheses.py"
@@ -433,6 +447,7 @@ flowchart LR
 ## 215. Kth Largest Element in an Array
 
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
+-   Tags: array, divide and conquer, sorting, heap priority queue, quickselect
 
 ```python
 --8<-- "0215_kth_largest_element_in_an_array.py"
@@ -441,6 +456,7 @@ flowchart LR
 ## 295. Find Median from Data Stream
 
 -   [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
+-   Tags: two pointers, design, sorting, heap priority queue, data stream
 
 ```python
 --8<-- "0295_find_median_from_data_stream.py"
@@ -449,6 +465,7 @@ flowchart LR
 ## 5. Longest Palindromic Substring
 
 -   [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
+-   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
 
 ```python

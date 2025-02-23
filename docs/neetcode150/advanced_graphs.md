@@ -7,6 +7,7 @@ comments: True
 ## 332. Reconstruct Itinerary
 
 -   [LeetCode](https://leetcode.com/problems/reconstruct-itinerary/) | [LeetCode CH](https://leetcode.cn/problems/reconstruct-itinerary/) (Hard)
+-   Tags: depth first search, graph, eulerian circuit
 -   Return the itinerary in order that visits every airport exactly once.
 -   The starting airport is `JFK`.
 -   If there are multiple valid itineraries, return the lexicographically smallest one.
@@ -31,6 +32,7 @@ ATL --> SFO
 ## 1584. Min Cost to Connect All Points
 
 -   [LeetCode](https://leetcode.com/problems/min-cost-to-connect-all-points/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-to-connect-all-points/) (Medium)
+-   Tags: array, union find, graph, minimum spanning tree
 -   **Tree**: a connected acyclic graph
 -   **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
 -   **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
@@ -61,6 +63,7 @@ MST
 ## 743. Network Delay Time
 
 -   [LeetCode](https://leetcode.com/problems/network-delay-time/) | [LeetCode CH](https://leetcode.cn/problems/network-delay-time/) (Medium)
+-   Tags: depth first search, breadth first search, graph, heap priority queue, shortest path
 -   Return the minimum time taken to reach all nodes in a network.
 
 ```mermaid
@@ -89,6 +92,7 @@ graph LR
 ## 778. Swim in Rising Water
 
 -   [LeetCode](https://leetcode.com/problems/swim-in-rising-water/) | [LeetCode CH](https://leetcode.cn/problems/swim-in-rising-water/) (Hard)
+-   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum time when you can reach the target.
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
@@ -100,6 +104,7 @@ graph LR
 ## 269. Alien Dictionary
 
 -   [LeetCode](https://leetcode.com/problems/alien-dictionary/) | [LeetCode CH](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+-   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
 
 ```python
@@ -109,6 +114,7 @@ graph LR
 ## 787. Cheapest Flights Within K Stops
 
 -   [LeetCode](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [LeetCode CH](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
+-   Tags: dynamic programming, depth first search, breadth first search, graph, heap priority queue, shortest path
 -   Return the cheapest price from `src` to `dst` with at most `K` stops.
 
 ```mermaid

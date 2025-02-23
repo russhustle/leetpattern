@@ -88,8 +88,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Code"}</style>
       
     
     
@@ -128,7 +128,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -185,7 +185,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
@@ -195,7 +195,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
@@ -4024,6 +4024,7 @@
 <h2 id="3-longest-substring-without-repeating-characters">3. Longest Substring Without Repeating Characters<a class="headerlink" href="#3-longest-substring-without-repeating-characters" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">LeetCode</a> | <a href="https://leetcode.cn/problems/longest-substring-without-repeating-characters/">LeetCode CH</a> (Medium)</li>
+<li>Tags: hash table, string, sliding window</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Sliding Window - Variable</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">lengthOfLongestSubstring</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
@@ -4047,6 +4048,7 @@
 <h2 id="424-longest-repeating-character-replacement">424. Longest Repeating Character Replacement<a class="headerlink" href="#424-longest-repeating-character-replacement" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/longest-repeating-character-replacement/">LeetCode</a> | <a href="https://leetcode.cn/problems/longest-repeating-character-replacement/">LeetCode CH</a> (Medium)</li>
+<li>Tags: hash table, string, sliding window</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
@@ -4078,6 +4080,7 @@
 <h2 id="1208-get-equal-substrings-within-budget">1208. Get Equal Substrings Within Budget<a class="headerlink" href="#1208-get-equal-substrings-within-budget" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/get-equal-substrings-within-budget/">LeetCode</a> | <a href="https://leetcode.cn/problems/get-equal-substrings-within-budget/">LeetCode CH</a> (Medium)</li>
+<li>Tags: string, binary search, sliding window, prefix sum</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Sliding Window - Variable</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">equalSubstring</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">maxCost</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
@@ -4105,6 +4108,7 @@
 <h2 id="1004-max-consecutive-ones-iii">1004. Max Consecutive Ones III<a class="headerlink" href="#1004-max-consecutive-ones-iii" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/max-consecutive-ones-iii/">LeetCode</a> | <a href="https://leetcode.cn/problems/max-consecutive-ones-iii/">LeetCode CH</a> (Medium)</li>
+<li>Tags: array, binary search, sliding window, prefix sum</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
@@ -4136,6 +4140,7 @@
 <h2 id="438-find-all-anagrams-in-a-string">438. Find All Anagrams in a String<a class="headerlink" href="#438-find-all-anagrams-in-a-string" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">LeetCode</a> | <a href="https://leetcode.cn/problems/find-all-anagrams-in-a-string/">LeetCode CH</a> (Medium)</li>
+<li>Tags: hash table, string, sliding window</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
@@ -4174,6 +4179,7 @@
 <h2 id="992-subarrays-with-k-different-integers">992. Subarrays with K Different Integers<a class="headerlink" href="#992-subarrays-with-k-different-integers" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/subarrays-with-k-different-integers/">LeetCode</a> | <a href="https://leetcode.cn/problems/subarrays-with-k-different-integers/">LeetCode CH</a> (Hard)</li>
+<li>Tags: array, hash table, sliding window, counting</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
@@ -4210,6 +4216,7 @@
 <h2 id="2024-maximize-the-confusion-of-an-exam">2024. Maximize the Confusion of an Exam<a class="headerlink" href="#2024-maximize-the-confusion-of-an-exam" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/maximize-the-confusion-of-an-exam/">LeetCode</a> | <a href="https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/">LeetCode CH</a> (Medium)</li>
+<li>Tags: string, binary search, sliding window, prefix sum</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Sliding Window - Variable</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">maxConsecutiveAnswers1</span><span class="p">(</span><span class="n">answerKey</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
@@ -4297,7 +4304,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-22T17:16:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-23T12:46:36+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-23</span>
   </span>
 
     

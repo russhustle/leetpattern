@@ -88,8 +88,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Code"}</style>
       
     
     
@@ -128,7 +128,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -185,7 +185,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
@@ -195,7 +195,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
@@ -4024,6 +4024,7 @@
 <h2 id="1557-minimum-number-of-vertices-to-reach-all-nodes">1557. Minimum Number of Vertices to Reach All Nodes<a class="headerlink" href="#1557-minimum-number-of-vertices-to-reach-all-nodes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/">LeetCode</a> | <a href="https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/">LeetCode CH</a> (Medium)</li>
+<li>Tags: graph</li>
 <li>Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.</li>
 <li>✅ Return the vertices with indegree 0.</li>
 </ul>
@@ -4304,6 +4305,7 @@
 <h2 id="207-course-schedule">207. Course Schedule<a class="headerlink" href="#207-course-schedule" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/course-schedule/">LeetCode</a> | <a href="https://leetcode.cn/problems/course-schedule/">LeetCode CH</a> (Medium)</li>
+<li>Tags: depth first search, breadth first search, graph, topological sort</li>
 <li>Return true if it is possible to finish all courses, otherwise return false.</li>
 <li>Dependency relationships imply the topological sort algorithm.</li>
 <li>Cycle detection</li>
@@ -4584,21 +4586,21 @@
 </span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>    <span class="k">for</span> <span class="n">crs</span><span class="p">,</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">prerequisites</span><span class="p">:</span>
 </span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>        <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pre</span><span class="p">)</span>
 </span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>
-</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    <span class="n">visited</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    <span class="n">visiting</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 </span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>
 </span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">dfs</span><span class="p">(</span><span class="n">crs</span><span class="p">):</span>
-</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>        <span class="k">if</span> <span class="n">crs</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>  <span class="c1"># cycle detected</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>        <span class="k">if</span> <span class="n">crs</span> <span class="ow">in</span> <span class="n">visiting</span><span class="p">:</span>  <span class="c1"># cycle detected</span>
 </span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>            <span class="k">return</span> <span class="kc">False</span>
 </span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>        <span class="k">if</span> <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">==</span> <span class="p">[]:</span>
 </span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>            <span class="k">return</span> <span class="kc">True</span>
 </span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>
-</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>        <span class="n">visited</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>        <span class="n">visiting</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
 </span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>
 </span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>        <span class="k">for</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]:</span>
 </span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">dfs</span><span class="p">(</span><span class="n">pre</span><span class="p">):</span>
 </span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>                <span class="k">return</span> <span class="kc">False</span>
 </span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>
-</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>        <span class="n">visited</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
+</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>        <span class="n">visiting</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
 </span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>        <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
 </span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>
 </span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>        <span class="k">return</span> <span class="kc">True</span>
@@ -4615,22 +4617,22 @@
 </span><span id="__span-1-64"><a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>    <span class="k">for</span> <span class="n">pre</span><span class="p">,</span> <span class="n">crs</span> <span class="ow">in</span> <span class="n">prerequisites</span><span class="p">:</span>
 </span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>        <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pre</span><span class="p">)</span>
 </span><span id="__span-1-66"><a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>
-</span><span id="__span-1-67"><a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>    <span class="c1"># 0: not visited, 1: visiting, 2: visited</span>
-</span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>    <span class="n">visited</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">numCourses</span>
+</span><span id="__span-1-67"><a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>    <span class="c1"># 0: init, 1: visiting, 2: visited</span>
+</span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>    <span class="n">status</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">numCourses</span>
 </span><span id="__span-1-69"><a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a>
 </span><span id="__span-1-70"><a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">dfs</span><span class="p">(</span><span class="n">crs</span><span class="p">):</span>
-</span><span id="__span-1-71"><a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a>        <span class="k">if</span> <span class="n">visited</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># cycle detected</span>
+</span><span id="__span-1-71"><a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a>        <span class="k">if</span> <span class="n">status</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># cycle detected</span>
 </span><span id="__span-1-72"><a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a>            <span class="k">return</span> <span class="kc">False</span>
-</span><span id="__span-1-73"><a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a>        <span class="k">if</span> <span class="n">visited</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+</span><span id="__span-1-73"><a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a>        <span class="k">if</span> <span class="n">status</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
 </span><span id="__span-1-74"><a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a>            <span class="k">return</span> <span class="kc">True</span>
 </span><span id="__span-1-75"><a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a>
-</span><span id="__span-1-76"><a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a>        <span class="n">visited</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-1-76"><a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a>        <span class="n">status</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 </span><span id="__span-1-77"><a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a>
 </span><span id="__span-1-78"><a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>        <span class="k">for</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">crs</span><span class="p">]:</span>
 </span><span id="__span-1-79"><a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">dfs</span><span class="p">(</span><span class="n">pre</span><span class="p">):</span>
 </span><span id="__span-1-80"><a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a>                <span class="k">return</span> <span class="kc">False</span>
 </span><span id="__span-1-81"><a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a>
-</span><span id="__span-1-82"><a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a>        <span class="n">visited</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+</span><span id="__span-1-82"><a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a>        <span class="n">status</span><span class="p">[</span><span class="n">crs</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
 </span><span id="__span-1-83"><a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a>        <span class="k">return</span> <span class="kc">True</span>
 </span><span id="__span-1-84"><a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a>
 </span><span id="__span-1-85"><a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a>    <span class="k">for</span> <span class="n">crs</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numCourses</span><span class="p">):</span>
@@ -4647,6 +4649,7 @@
 <h2 id="210-course-schedule-ii">210. Course Schedule II<a class="headerlink" href="#210-course-schedule-ii" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/course-schedule-ii/">LeetCode</a> | <a href="https://leetcode.cn/problems/course-schedule-ii/">LeetCode CH</a> (Medium)</li>
+<li>Tags: depth first search, breadth first search, graph, topological sort</li>
 <li>Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.</li>
 </ul>
 <p><img alt="0207" src="../../assets/0207.png" width="300px" /></p>
@@ -4756,6 +4759,7 @@
 <h2 id="269-alien-dictionary">269. Alien Dictionary<a class="headerlink" href="#269-alien-dictionary" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/alien-dictionary/">LeetCode</a> | <a href="https://leetcode.cn/problems/alien-dictionary/">LeetCode CH</a> (Hard)</li>
+<li>Tags: array, string, depth first search, breadth first search, graph, topological sort</li>
 <li>Return the correct order of characters in the alien language.</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
@@ -4842,6 +4846,7 @@
 <h2 id="1203-sort-items-by-groups-respecting-dependencies">1203. Sort Items by Groups Respecting Dependencies<a class="headerlink" href="#1203-sort-items-by-groups-respecting-dependencies" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/">LeetCode</a> | <a href="https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/">LeetCode CH</a> (Hard)</li>
+<li>Tags: depth first search, breadth first search, graph, topological sort</li>
 <li>Return any permutation of the items that satisfies the requirements.</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
@@ -4914,6 +4919,7 @@
 <h2 id="1857-largest-color-value-in-a-directed-graph">1857. Largest Color Value in a Directed Graph<a class="headerlink" href="#1857-largest-color-value-in-a-directed-graph" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/largest-color-value-in-a-directed-graph/">LeetCode</a> | <a href="https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/">LeetCode CH</a> (Hard)</li>
+<li>Tags: hash table, dynamic programming, graph, topological sort, memoization, counting</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
@@ -4963,6 +4969,7 @@
 <h2 id="1136-parallel-courses">1136. Parallel Courses<a class="headerlink" href="#1136-parallel-courses" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/parallel-courses/">LeetCode</a> | <a href="https://leetcode.cn/problems/parallel-courses/">LeetCode CH</a> (Medium)</li>
+<li>Tags: graph, topological sort</li>
 <li>Return the minimum number of semesters needed to take all courses.</li>
 </ul>
 <p><img alt="1136" src="../../assets/1136.png" width="300px" /></p>
@@ -5025,7 +5032,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-22T17:16:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-23T12:46:36+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-23</span>
   </span>
 
     

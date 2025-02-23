@@ -47,6 +47,7 @@ comments: True
 ## 1851. Minimum Interval to Include Each Query
 
 -   [LeetCode](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | [LeetCode CH](https://leetcode.cn/problems/minimum-interval-to-include-each-query/) (Hard)
+
 ```python
 --8<-- "1851_minimum_interval_to_include_each_query.py"
 ```

@@ -7,6 +7,7 @@ comments: True
 ## 136. Single Number
 
 -   [LeetCode](https://leetcode.com/problems/single-number/) | [LeetCode CH](https://leetcode.cn/problems/single-number/) (Easy)
+
 ```python
 --8<-- "0136_single_number.py"
 ```

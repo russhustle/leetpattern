@@ -64,6 +64,7 @@ B --> A[1]
 ## 876. Middle of the Linked List
 
 -   [LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
+
 ```python
 --8<-- "0876_middle_of_the_linked_list.py"
 ```

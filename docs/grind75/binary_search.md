@@ -41,6 +41,7 @@ comments: True
 ## 1235. Maximum Profit in Job Scheduling
 
 -   [LeetCode](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | [LeetCode CH](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) (Hard)
+
 ```python
 --8<-- "1235_maximum_profit_in_job_scheduling.py"
 ```

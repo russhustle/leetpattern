@@ -87,6 +87,7 @@ comments: True
 ## 298. Binary Tree Longest Consecutive Sequence
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
+
 ```python
 --8<-- "0298_binary_tree_longest_consecutive_sequence.py"
 ```

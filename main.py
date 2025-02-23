@@ -61,19 +61,11 @@ def create(config_path: str) -> str:
         problems = cfg.topics[topic]
 
         for idx in problems:
-
             row = df.loc[idx]
+
+            # file checks
             problem_md_path = os.path.join(docs, "md", row["basename"] + ".md")
-
-            content += row["markdown"]
-
-            if os.path.exists(problem_md_path):
-                with open(problem_md_path, "r") as f:
-                    content += f.read() + "\n"
-            else:
-                with open(problem_md_path, "w") as f:
-                    f.write("")
-
+            check_make_file(problem_md_path)
             if cfg.category == "algorithms":
                 problem_py_path = os.path.join(src, row["basename"] + ".py")
                 check_make_file(problem_py_path)
@@ -86,6 +78,10 @@ def create(config_path: str) -> str:
                 )
                 check_make_file(problem_sql_path)
                 check_make_file(problem_txt_path)
+
+            content += row["markdown"]
+            with open(problem_md_path, "r") as f:
+                content += f.read() + "\n"
 
             content += code(cfg.category, row["basename"]) + "\n\n"
 

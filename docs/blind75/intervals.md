@@ -39,6 +39,7 @@ comments: True
 ## 254. Factor Combinations
 
 -   [LeetCode](https://leetcode.com/problems/factor-combinations/) | [LeetCode CH](https://leetcode.cn/problems/factor-combinations/) (Medium)
+
 ```python
 --8<-- "0254_factor_combinations.py"
 ```

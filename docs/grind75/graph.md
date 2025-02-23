@@ -234,6 +234,7 @@ flowchart LR
 ## 310. Minimum Height Trees
 
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+
 ```python
 --8<-- "0310_minimum_height_trees.py"
 ```

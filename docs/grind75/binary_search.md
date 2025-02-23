@@ -25,6 +25,7 @@ comments: True
 ## 33. Search in Rotated Sorted Array
 
 -   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
+
 ```python
 --8<-- "0033_search_in_rotated_sorted_array.py"
 ```
@@ -32,6 +33,7 @@ comments: True
 ## 981. Time Based Key-Value Store
 
 -   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
+
 ```python
 --8<-- "0981_time_based_key_value_store.py"
 ```

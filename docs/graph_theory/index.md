@@ -16,15 +16,24 @@
 
 -   **Undirected graph**: A graph in which edges have no direction.
 
-![undirected_graph](../assets/undirected_graph.png)
+-   ![undirected_graph](../assets/undirected_graph.png)
 
 -   **Directed graph**: A graph in which edges have direction.
-
-![directed_graph](../assets/directed_graph.png)
-
+-   ```mermaid
+      flowchart LR
+      A((1)) --> B((2)) & C((3))
+      C --> B & D((4))
+      D --> C
+    ```
 -   **Cyclic graph**: A graph in which there is a cycle. A cycle is a path of edges that starts and ends at the same vertex, e.g., `1 -> 3 -> 4 -> 1`.
 
-![cyclic_graph](../assets/cyclic_graph.png)
+-   ```mermaid
+    flowchart LR
+    A((1)) --> B((2)) & C((3))
+    B --> C
+    C --> D((4))
+    D --> A
+    ```
 
 -   **Acyclic graph**: A graph in which there is no cycle.
 

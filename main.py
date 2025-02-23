@@ -27,8 +27,15 @@ def code(category, basename):
         return f"""```txt\n--8<-- "sql/{basename}.txt"\n```\n```sql\n--8<-- "sql/{basename}.sql"\n```\n"""
 
 
+def check_make_file(file_path: str):
+    if not os.path.exists(file_path):
+        with open(file_path, "w") as f:
+            f.write("")
+
+
 def create(config_path: str) -> str:
     cfg = load_config_yaml(os.path.join("config", config_path + ".yaml"))
+    src = os.path.join("src")
     docs = os.path.join("docs")
     folder = os.path.join(docs, cfg.dir)
     if not os.path.exists(folder):
@@ -63,6 +70,22 @@ def create(config_path: str) -> str:
             if os.path.exists(problem_md_path):
                 with open(problem_md_path, "r") as f:
                     content += f.read() + "\n"
+            else:
+                with open(problem_md_path, "w") as f:
+                    f.write("")
+
+            if cfg.category == "algorithms":
+                problem_py_path = os.path.join(src, row["basename"] + ".py")
+                check_make_file(problem_py_path)
+            elif cfg.category == "sql":
+                problem_sql_path = os.path.join(
+                    src, "sql", row["basename"] + ".sql"
+                )
+                problem_txt_path = os.path.join(
+                    src, "sql", row["basename"] + ".txt"
+                )
+                check_make_file(problem_sql_path)
+                check_make_file(problem_txt_path)
 
             content += code(cfg.category, row["basename"]) + "\n\n"
 

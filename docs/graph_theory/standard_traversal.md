@@ -59,7 +59,7 @@ comments: True
 ## 1466. Reorder Routes to Make All Paths Lead to the City Zero
 
 -   [LeetCode](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | [LeetCode CH](https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) (Medium)
-![1466](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
+-   ![1466](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
 
 ```python
 --8<-- "1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero.py"

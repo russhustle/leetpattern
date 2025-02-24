@@ -4,7 +4,7 @@ from typing import List
 # Left Right Pointers
 def threeSum(nums: List[int]) -> List[List[int]]:
     nums.sort()
-    result = []
+    res = []
     n = len(nums)
 
     for i in range(n - 2):
@@ -21,7 +21,7 @@ def threeSum(nums: List[int]) -> List[List[int]]:
             elif total < 0:
                 left += 1
             else:
-                result.append([nums[i], nums[left], nums[right]])
+                res.append([nums[i], nums[left], nums[right]])
 
                 while left < right and nums[left] == nums[left + 1]:
                     left += 1
@@ -32,15 +32,8 @@ def threeSum(nums: List[int]) -> List[List[int]]:
                 left += 1
                 right -= 1
 
-    return result
-
-
-# |-----------|---------|---------|
-# | Approach  |   Time  |  Space  |
-# |-----------|---------|---------|
-# | LR Pointer|  O(n^2) |   O(1)  |
-# |-----------|---------|---------|
+    return res
 
 
 nums = [-1, 0, 1, 2, -1, -4]
-print(threeSum(nums))  # [[-1, -1, 2], [-1, 0, 1]]
+assert threeSum(nums) == [[-1, -1, 2], [-1, 0, 1]]

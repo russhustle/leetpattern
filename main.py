@@ -38,12 +38,13 @@ def create(config_path: str) -> str:
     src = os.path.join("src")
     docs = os.path.join("docs")
     folder = os.path.join(docs, cfg.dir)
+    comments = "---\ncomments: True\n---\n\n"
     if not os.path.exists(folder):
         os.makedirs(folder)
     index_md_path = os.path.join(folder, "index.md")
     if not os.path.exists(index_md_path):
         with open(index_md_path, "w") as f:
-            f.write(f"# {cfg.name}\n\n")
+            f.write(comments + f"# {cfg.name}\n\n")
 
     df = pd.read_parquet(os.path.join("utils", "questions.parquet"))
 
@@ -56,8 +57,7 @@ def create(config_path: str) -> str:
 
         mkdocs += f"    - {topic}: {cfg.dir}/{md_path_name}\n"
 
-        content = "---\ncomments: True\n---\n\n"
-        content += f"# {topic}\n\n"
+        content = comments + f"# {topic}\n\n"
         problems = cfg.topics[topic]
 
         for idx in problems:

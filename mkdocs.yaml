@@ -129,6 +129,29 @@ nav:
     - Dijkstra's: graph_theory/dijkstra's.md
     - MST: graph_theory/mst.md
 
+  - Premium 100:
+    - Home: premium100/index.md
+    - Arrays Strings: premium100/arrays_strings.md
+    - Sliding Window: premium100/sliding_window.md
+    - Hashing: premium100/hashing.md
+    - Matrix: premium100/matrix.md
+    - Interval: premium100/interval.md
+    - Stack: premium100/stack.md
+    - Queue: premium100/queue.md
+    - Linked List: premium100/linked_list.md
+    - Binary Tree: premium100/binary_tree.md
+    - Binary Search Tree: premium100/binary_search_tree.md
+    - N-ary Tree: premium100/n-ary_tree.md
+    - Graph: premium100/graph.md
+    - Graph BFS: premium100/graph_bfs.md
+    - Trie: premium100/trie.md
+    - Heap: premium100/heap.md
+    - Binary Search: premium100/binary_search.md
+    - Design: premium100/design.md
+    - Backtracking: premium100/backtracking.md
+    - Dynamic Programming: premium100/dynamic_programming.md
+    - Math: premium100/math.md
+
   - Company:
     - Home: company/index.md
     - Amazon: company/amazon.md

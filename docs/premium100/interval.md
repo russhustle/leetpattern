@@ -1,0 +1,50 @@
+---
+comments: True
+---
+
+# Interval
+
+## 163. Missing Ranges
+
+-   [LeetCode](https://leetcode.com/problems/missing-ranges/) | [LeetCode CH](https://leetcode.cn/problems/missing-ranges/) (Easy)
+-   Tags: array
+
+```python
+--8<-- "0163_missing_ranges.py"
+```
+
+## 252. Meeting Rooms
+
+-   [LeetCode](https://leetcode.com/problems/meeting-rooms/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms/) (Easy)
+-   Tags: array, sorting
+
+```python
+--8<-- "0252_meeting_rooms.py"
+```
+
+## 253. Meeting Rooms II
+
+-   [LeetCode](https://leetcode.com/problems/meeting-rooms-ii/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium)
+-   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
+
+```python
+--8<-- "0253_meeting_rooms_ii.py"
+```
+
+## 616. Add Bold Tag in String
+
+-   [LeetCode](https://leetcode.com/problems/add-bold-tag-in-string/) | [LeetCode CH](https://leetcode.cn/problems/add-bold-tag-in-string/) (Medium)
+-   Tags: array, hash table, string, trie, string matching
+
+```python
+--8<-- "0616_add_bold_tag_in_string.py"
+```
+
+## 1272. Remove Interval
+
+-   [LeetCode](https://leetcode.com/problems/remove-interval/) | [LeetCode CH](https://leetcode.cn/problems/remove-interval/) (Medium)
+-   Tags: array
+
+```python
+--8<-- "1272_remove_interval.py"
+```

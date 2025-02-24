@@ -8,9 +8,23 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
 -   Tags: hash table, string, sliding window
+-   Classic sliding window problem. Use a set to keep track of the characters in the current window.
+-   Return the length of the longest substring without repeating characters.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wiGpQwVHdE0?si=GlOc9C5w5Vy71iTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python
 --8<-- "0003_longest_substring_without_repeating_characters.py"
+```
+
+## 159. Longest Substring with At Most Two Distinct Characters
+
+-   [LeetCode](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) (Medium)
+-   Tags: hash table, string, sliding window
+-   Prerequisite: 3. Longest Substring Without Repeating Characters
+
+```python
+--8<-- "0159_longest_substring_with_at_most_two_distinct_characters.py"
 ```
 
 ## 424. Longest Repeating Character Replacement

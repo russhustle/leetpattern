@@ -1,87 +1,73 @@
-from collections import defaultdict
-
-
-class Node:
-    def __init__(self, key: int, value: int):
-        self.key = key
-        self.value = value
-        self.freq = 1
-
-
-class DoubleLinkedList:
-    def __init__(self):
-        self.head = Node(0, 0)  # dummy head
-        self.tail = Node(0, 0)  # dummy tail
-        self.head.next = self.tail
-        self.tail.prev = self.head
-
-    def insert(self, node: Node):
-        node.next = self.head.next
-        node.prev = self.head
-        self.head.next.prev = node
-        self.head.next = node
-
-    def remove(self, node: Node):
-        node.prev.next = node.next
-        node.next.prev = node.prev
-
-    def pop(self) -> Node:
-        if self.head.next == self.tail:
-            return None
-        node = self.tail.prev
-        self.remove(node)
-        return node
-
-    def is_empty(self) -> bool:
-        return self.head.next == self.tail
+from collections import OrderedDict, defaultdict
 
 
 class LFUCache:
     def __init__(self, capacity: int):
-        self.capacity = capacity
+        self.cap = capacity
+        # key -> [val, freq]
+        self.key_to_val_freq = {}
+        # freq -> OrderedDict of keys
+        self.freq_to_keys = defaultdict(OrderedDict)
         self.min_freq = 0
-        self.key_table = {}
-        self.freq_table = defaultdict(DoubleLinkedList)
-        self.size = 0
+
+    def remove_least_frequent(self):
+
+        lfu_key, _ = self.freq_to_keys[self.min_freq].popitem(last=False)
+        del self.key_to_val_freq[lfu_key]
+
+        # If the frequency list is empty after removal, delete it
+        if not self.freq_to_keys[self.min_freq]:
+            del self.freq_to_keys[self.min_freq]
+
+    def update_freq(self, key):
+        """Updates the frequency of an existing key."""
+        value, freq = self.key_to_val_freq[key]
+
+        # Remove key from current frequency group
+        del self.freq_to_keys[freq][key]
+        if not self.freq_to_keys[freq]:
+            del self.freq_to_keys[freq]
+            if self.min_freq == freq:
+                self.min_freq += 1
+
+        # Update key frequency
+        new_freq = freq + 1
+        self.key_to_val_freq[key] = [value, new_freq]
+        self.freq_to_keys[new_freq][key] = None
+
+    def add_new_key(self, key, value):
+        if len(self.key_to_val_freq) >= self.cap:
+            self.remove_least_frequent()
+
+        # Insert the new key with frequency 1
+        self.key_to_val_freq[key] = [value, 1]
+        self.freq_to_keys[1][key] = None
+        self.min_freq = 1
 
     def get(self, key: int) -> int:
-        if key not in self.key_table:
+        if key not in self.key_to_val_freq:
             return -1
-        node = self.key_table[key]
-        self._update(node)
-        return node.value
+        self.update_freq(key)
+        return self.key_to_val_freq[key][0]
 
     def put(self, key: int, value: int) -> None:
-        if self.capacity == 0:
+        if self.cap == 0:
             return
-        if key in self.key_table:
-            node = self.key_table[key]
-            node.value = value
-            self._update(node)
+
+        if key in self.key_to_val_freq:
+            self.key_to_val_freq[key][0] = value
+            self.update_freq(key)
         else:
-            if self.size == self.capacity:
-                list_to_remove = self.freq_table[self.min_freq]
-                node_to_remove = list_to_remove.pop()
-                del self.key_table[node_to_remove.key]
-                self.size -= 1
-            new_node = Node(key, value)
-            self.key_table[key] = new_node
-            self.freq_table[1].insert(new_node)
-            self.min_freq = 1
-            self.size += 1
-
-    def _update(self, node: Node):
-        freq = node.freq
-        self.freq_table[freq].remove(node)
-        if self.freq_table[freq].is_empty() and freq == self.min_freq:
-            self.min_freq += 1
-        node.freq += 1
-        self.freq_table[node.freq].insert(node)
+            self.add_new_key(key, value)
 
 
-obj = LFUCache(2)
-obj.put(1, 1)
-obj.put(2, 2)
-print(obj.get(1))  # 1
-obj.put(3, 3)
-print(obj.get(2))  # -1
+lfu = LFUCache(2)
+lfu.put(1, 1)
+lfu.put(2, 2)
+print(lfu.get(1))  # 1
+lfu.put(3, 3)
+print(lfu.get(2))  # -1
+print(lfu.get(3))  # 3
+lfu.put(4, 4)
+print(lfu.get(1))  # -1
+print(lfu.get(3))  # 3

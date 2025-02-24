@@ -166,6 +166,7 @@ nav:
     - Subqueries: sql50/subqueries.md
     - Advanced String Functions Regex Clause: sql50/advanced_string_functions_regex_clause.md
 
+
 - About: about.md
 
 site_name: 🚀LeetPattern

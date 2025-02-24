@@ -8,23 +8,21 @@ def lengthOfLongestSubstringTwoDistinct(s: str) -> int:
         return n
 
     window = defaultdict(int)
+    lp, res = 0, 0
 
-    left = 0
-    res = 0
-
-    for right in range(n):
-        window[s[right]] += 1
+    for rp in range(n):
+        window[s[rp]] += 1
 
         while len(window) > 2:
-            window[s[left]] -= 1
-            if window[s[left]] == 0:
-                del window[s[left]]
-            left += 1
+            window[s[lp]] -= 1
+            if window[s[lp]] == 0:
+                del window[s[lp]]
+            lp += 1
 
-        res = max(res, right - left + 1)
+        res = max(res, rp - lp + 1)
 
     return res
 
 
 s = "ccaabbb"
-print(lengthOfLongestSubstringTwoDistinct(s))  # 5
+assert lengthOfLongestSubstringTwoDistinct(s) == 5

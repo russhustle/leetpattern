@@ -57,4 +57,3 @@ comments: True
 ```python
 --8<-- "0456_132_pattern.py"
 ```
-

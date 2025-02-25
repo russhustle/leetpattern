@@ -48,4 +48,3 @@ comments: True
 ```python
 --8<-- "1749_maximum_absolute_sum_of_any_subarray.py"
 ```
-

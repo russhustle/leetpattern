@@ -1,7 +1,8 @@
 category: algorithms
 dir: endlesscheng
-name: EndlessCheng 灵茶山艾府
+name: 灵茶山艾府
 topics:
+  Sliding Window Fixed Size Basics: [ 1456, 643, 1343, 2090, 2379, 2841, 2461, 1423, 1052, 1652, 1176, 1100, 1852, 1151, 2107 ]
   Enumerate Right Maintain Left: [ 1, 1512, 2001, 219, 121, 624, 2815, 2342 ]
   Enumerate Middle: [ 2909, 1930, 3128, 2874, 447, 456 ]
   Prefix Sum Basics: [ 303, 3427, 2559, 3152, 1749 ]

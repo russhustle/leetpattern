@@ -152,9 +152,12 @@ nav:
     - Dynamic Programming: premium100/dynamic_programming.md
     - Math: premium100/math.md
 
-  - Company:
-    - Home: company/index.md
-    - Amazon: company/amazon.md
+  - 灵茶山艾府:
+    - Home: endlesscheng/index.md
+    - Sliding Window Fixed Size Basics: endlesscheng/sliding_window_fixed_size_basics.md
+    - Enumerate Right Maintain Left: endlesscheng/enumerate_right_maintain_left.md
+    - Enumerate Middle: endlesscheng/enumerate_middle.md
+    - Prefix Sum Basics: endlesscheng/prefix_sum_basics.md
 
   - SQL 50:
     - Home: sql50/index.md
@@ -197,8 +200,8 @@ theme:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
   font:
-    text: Roboto
-    code: Roboto Code
+    text: Noto Serif
+    code: Fira Code
 
   features:
   - content.code.copy # Enable copy button on code blocks

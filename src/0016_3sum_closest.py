@@ -11,7 +11,7 @@ def threeSumClosest(nums: List[int], target: int) -> int:
     for i in range(n - 2):
         if i > 0 and nums[i] == nums[i - 1]:
             continue
-        
+
         left, right = i + 1, n - 1
 
         while left < right:
@@ -34,6 +34,7 @@ def threeSumClosest(nums: List[int], target: int) -> int:
 
     return res
 
-nums = [-1,2,1,-4]
+
+nums = [-1, 2, 1, -4]
 target = 1
 assert threeSumClosest(nums, target) == 2

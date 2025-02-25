@@ -1,8 +1,22 @@
 from typing import List
 
 
+# Hash
+def containsNearbyDuplicateHash(nums: List[int], k: int) -> bool:
+    hashmap = {}  # num: last index
+
+    for idx, num in enumerate(nums):
+        if num in hashmap:
+            if idx - hashmap[num] <= k:
+                return True
+
+        hashmap[num] = idx
+
+    return False
+
+
 # Sliding window - Fixed
-def containsNearbyDuplicate(nums: List[int], k: int) -> bool:
+def containsNearbyDuplicateWindow(nums: List[int], k: int) -> bool:
     window = set()
     left = 0
 
@@ -19,4 +33,5 @@ def containsNearbyDuplicate(nums: List[int], k: int) -> bool:
 
 nums = [1, 2, 3, 1]
 k = 3
-print(containsNearbyDuplicate(nums, k))  # True
+print(containsNearbyDuplicateHash(nums, k))  # True
+print(containsNearbyDuplicateWindow(nums, k))  # True

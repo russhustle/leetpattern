@@ -1,0 +1,1 @@
+-   Hint: Maximize the number of _unsatisfied customers_ in the fixed window of `minutes`.

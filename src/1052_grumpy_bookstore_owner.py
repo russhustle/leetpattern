@@ -23,3 +23,9 @@ def maxSatisfied(customers: List[int], grumpy: List[int], minutes: int) -> int:
         cur -= customers[idx - k + 1] if grumpy[idx - k + 1] else 0
 
     return total_satisfied + maxGrumpy
+
+
+customers = [1, 0, 1, 2, 1, 1, 7, 5]
+grumpy = [0, 1, 0, 1, 0, 1, 0, 1]
+minutes = 3
+print(maxSatisfied(customers, grumpy, minutes))  # 16

@@ -80,6 +80,7 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/grumpy-bookstore-owner/) | [LeetCode CH](https://leetcode.cn/problems/grumpy-bookstore-owner/) (Medium)
 -   Tags: array, sliding window
+-   Hint: Maximize the number of _unsatisfied customers_ in the fixed window of `minutes`.
 
 ```python
 --8<-- "1052_grumpy_bookstore_owner.py"
@@ -89,6 +90,8 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/defuse-the-bomb/) | [LeetCode CH](https://leetcode.cn/problems/defuse-the-bomb/) (Easy)
 -   Tags: array, sliding window
+-   How to deal with the _circular array_?
+    -   Trick: mod (index % length)
 
 ```python
 --8<-- "1652_defuse_the_bomb.py"

@@ -1,0 +1,2 @@
+-   How to deal with the _circular array_?
+    -   Trick: mod (index % length)

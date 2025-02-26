@@ -20,49 +20,51 @@ comment: True
 
 -   **Undirected graph**: A graph in which edges have no direction.
 
--   ![undirected_graph](../assets/undirected_graph.png)
+![undirected_graph](../assets/undirected_graph.png){width=300px}
 
 -   **Directed graph**: A graph in which edges have direction.
--   ```mermaid
-      flowchart LR
-      A((1)) --> B((2)) & C((3))
-      C --> B & D((4))
-      D --> C
-    ```
+
+```mermaid
+flowchart LR
+A((1)) --> B((2)) & C((3))
+C --> B & D((4))
+D --> C
+```
+
 -   **Cyclic graph**: A graph in which there is a cycle. A cycle is a path of edges that starts and ends at the same vertex, e.g., `1 -> 3 -> 4 -> 1`.
 
--   ```mermaid
-    flowchart LR
-    A((1)) --> B((2)) & C((3))
-    B --> C
-    C --> D((4))
-    D --> A
-    ```
+```mermaid
+flowchart LR
+A((1)) --> B((2)) & C((3))
+B --> C
+C --> D((4))
+D --> A
+```
 
 -   **Acyclic graph**: A graph in which there is no cycle.
 
-![acyclic_graph](../assets/graph_acyclic.png)
+![acyclic_graph](../assets/graph_acyclic.png){width=300px}
 
 -   **Directed Acyclic Graph** (DAG): A directed graph with no cycles.
     -   Topological sort
 
-![dag](../assets/graph_dag.png)
+![dag](../assets/graph_dag.png){width=300px}
 
 -   **Weighted graph**: A graph in which edges have weights.
 
-![weighted](../assets/graph_weighted.png)
+![weighted](../assets/graph_weighted.png){width=300px}
 
 -   **Connected Graph**: A graph in which there is a path between every pair of vertices.
 
-![connected](../assets/graph_connected.png)
+![connected](../assets/graph_connected.png){width=300px}
 
 -   **Disconnected Graph**: A graph in which there is no path between some pairs of vertices.
 
-![disconnected](../assets/graph_disconnected.png)
+![disconnected](../assets/graph_disconnected.png){width=300px}
 
 -   **Eulerian path**: A path that visits every edge exactly once, e.g., `5 -> 4 -> 1 -> 2 -> 3`.
 
-![eulerian](../assets/graph_eulerian.png)
+![eulerian](../assets/graph_eulerian.png){width=300px}
 
 ### Representation
 

@@ -1,19 +1,19 @@
-# Sliding Window - Variable
+# Sliding Window Variable Size
 def lengthOfLongestSubstring(s: str) -> int:
     n = len(s)
     if n <= 1:
         return n
 
     window = set()
-    lp = 0
+    left = 0
     res = 0
 
-    for rp in range(n):
-        while s[rp] in window:
-            window.remove(s[lp])
-            lp += 1
-        window.add(s[rp])
-        res = max(res, rp - lp + 1)
+    for right in range(n):
+        while s[right] in window:
+            window.remove(s[left])
+            left += 1
+        window.add(s[right])
+        res = max(res, right - left + 1)
 
     return res
 

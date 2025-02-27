@@ -9,18 +9,12 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/ternary-expression-parser/) | [LeetCode CH](https://leetcode.cn/problems/ternary-expression-parser/) (Medium)
 -   Tags: string, stack, recursion
 
-```python title="439. Ternary Expression Parser"
---8<-- "0439_ternary_expression_parser.py"
-```
 
 ## 484. Find Permutation
 
 -   [LeetCode](https://leetcode.com/problems/find-permutation/) | [LeetCode CH](https://leetcode.cn/problems/find-permutation/) (Medium)
 -   Tags: array, string, stack, greedy
 
-```python title="484. Find Permutation"
---8<-- "0484_find_permutation.py"
-```
 
 ## 772. Basic Calculator III
 

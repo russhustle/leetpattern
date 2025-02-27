@@ -9,9 +9,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="490. The Maze"
---8<-- "0490_the_maze.py"
-```
 
 ## 505. The Maze II
 
@@ -36,9 +33,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-knight-moves/) | [LeetCode CH](https://leetcode.cn/problems/minimum-knight-moves/) (Medium)
 -   Tags: breadth first search
 
-```python title="1197. Minimum Knight Moves"
---8<-- "1197_minimum_knight_moves.py"
-```
 
 ## 286. Walls and Gates
 
@@ -55,9 +49,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-distance-from-all-buildings/) | [LeetCode CH](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard)
 -   Tags: array, breadth first search, matrix
 
-```python title="317. Shortest Distance from All Buildings"
---8<-- "0317_shortest_distance_from_all_buildings.py"
-```
 
 ## 269. Alien Dictionary
 

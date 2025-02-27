@@ -98,7 +98,3 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
 -   Tags: tree, depth first search, binary tree
-
-```python title="298. Binary Tree Longest Consecutive Sequence"
---8<-- "0298_binary_tree_longest_consecutive_sequence.py"
-```

@@ -28,15 +28,8 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-consecutive-ones-ii/) | [LeetCode CH](https://leetcode.cn/problems/max-consecutive-ones-ii/) (Medium)
 -   Tags: array, dynamic programming, sliding window
 
-```python title="487. Max Consecutive Ones II"
---8<-- "0487_max_consecutive_ones_ii.py"
-```
 
 ## 1100. Find K-Length Substrings With No Repeated Characters
 
 -   [LeetCode](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [LeetCode CH](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
 -   Tags: hash table, string, sliding window
-
-```python title="1100. Find K-Length Substrings With No Repeated Characters"
---8<-- "1100_find_k_length_substrings_with_no_repeated_characters.py"
-```

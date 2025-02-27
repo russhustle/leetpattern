@@ -16,7 +16,3 @@ comments: True
 > Let odd denote the number of odd indices in the binary representation of n with value 1.
 > Note that bits are indexed from right to left in the binary representation of a number.
 > Return the array [even, odd].
-
-```python title="2595. Number of Even and Odd Bits"
---8<-- "2595_number_of_even_and_odd_bits.py"
-```

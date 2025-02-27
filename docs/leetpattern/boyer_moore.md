@@ -50,24 +50,14 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) (Easy)
 -   Tags: array, binary search
 
-```python title="1150. Check If a Number Is Majority Element in a Sorted Array"
---8<-- "1150_check_if_a_number_is_majority_element_in_a_sorted_array.py"
-```
 
 ## 1157. Online Majority Element In Subarray
 
 -   [LeetCode](https://leetcode.com/problems/online-majority-element-in-subarray/) | [LeetCode CH](https://leetcode.cn/problems/online-majority-element-in-subarray/) (Hard)
 -   Tags: array, binary search, design, binary indexed tree, segment tree
 
-```python title="1157. Online Majority Element In Subarray"
---8<-- "1157_online_majority_element_in_subarray.py"
-```
 
 ## 495. Teemo Attacking
 
 -   [LeetCode](https://leetcode.com/problems/teemo-attacking/) | [LeetCode CH](https://leetcode.cn/problems/teemo-attacking/) (Easy)
 -   Tags: array, simulation
-
-```python title="495. Teemo Attacking"
---8<-- "0495_teemo_attacking.py"
-```

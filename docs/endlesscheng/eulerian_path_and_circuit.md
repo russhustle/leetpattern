@@ -34,15 +34,8 @@ ATL --> SFO
 -   [LeetCode](https://leetcode.com/problems/cracking-the-safe/) | [LeetCode CH](https://leetcode.cn/problems/cracking-the-safe/) (Hard)
 -   Tags: depth first search, graph, eulerian circuit
 
-```python title="753. Cracking the Safe"
---8<-- "0753_cracking_the_safe.py"
-```
 
 ## 2097. Valid Arrangement of Pairs
 
 -   [LeetCode](https://leetcode.com/problems/valid-arrangement-of-pairs/) | [LeetCode CH](https://leetcode.cn/problems/valid-arrangement-of-pairs/) (Hard)
 -   Tags: depth first search, graph, eulerian circuit
-
-```python title="2097. Valid Arrangement of Pairs"
---8<-- "2097_valid_arrangement_of_pairs.py"
-```

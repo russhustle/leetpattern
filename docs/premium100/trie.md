@@ -17,7 +17,3 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/design-search-autocomplete-system/) | [LeetCode CH](https://leetcode.cn/problems/design-search-autocomplete-system/) (Hard)
 -   Tags: string, depth first search, design, trie, sorting, heap priority queue, data stream
-
-```python title="642. Design Search Autocomplete System"
---8<-- "0642_design_search_autocomplete_system.py"
-```

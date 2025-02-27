@@ -47,7 +47,3 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/factor-combinations/) | [LeetCode CH](https://leetcode.cn/problems/factor-combinations/) (Medium)
 -   Tags: backtracking
-
-```python title="254. Factor Combinations"
---8<-- "0254_factor_combinations.py"
-```

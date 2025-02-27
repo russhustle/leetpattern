@@ -93,15 +93,8 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/burst-balloons/) | [LeetCode CH](https://leetcode.cn/problems/burst-balloons/) (Hard)
 -   Tags: array, dynamic programming
 
-```python title="312. Burst Balloons"
---8<-- "0312_burst_balloons.py"
-```
 
 ## 10. Regular Expression Matching
 
 -   [LeetCode](https://leetcode.com/problems/regular-expression-matching/) | [LeetCode CH](https://leetcode.cn/problems/regular-expression-matching/) (Hard)
 -   Tags: string, dynamic programming, recursion
-
-```python title="10. Regular Expression Matching"
---8<-- "0010_regular_expression_matching.py"
-```

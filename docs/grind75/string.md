@@ -52,9 +52,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/string-to-integer-atoi/) | [LeetCode CH](https://leetcode.cn/problems/string-to-integer-atoi/) (Medium)
 -   Tags: string
 
-```python title="8. String to Integer (atoi)"
---8<-- "0008_string_to_integer_atoi.py"
-```
 
 ## 5. Longest Palindromic Substring
 

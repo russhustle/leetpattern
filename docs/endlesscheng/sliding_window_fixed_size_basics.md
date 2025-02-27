@@ -102,27 +102,18 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/diet-plan-performance/) | [LeetCode CH](https://leetcode.cn/problems/diet-plan-performance/) (Easy)
 -   Tags: array, sliding window
 
-```python title="1176. Diet Plan Performance"
---8<-- "1176_diet_plan_performance.py"
-```
 
 ## 1100. Find K-Length Substrings With No Repeated Characters
 
 -   [LeetCode](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [LeetCode CH](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
 -   Tags: hash table, string, sliding window
 
-```python title="1100. Find K-Length Substrings With No Repeated Characters"
---8<-- "1100_find_k_length_substrings_with_no_repeated_characters.py"
-```
 
 ## 1852. Distinct Numbers in Each Subarray
 
 -   [LeetCode](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [LeetCode CH](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium)
 -   Tags: array, hash table, sliding window
 
-```python title="1852. Distinct Numbers in Each Subarray"
---8<-- "1852_distinct_numbers_in_each_subarray.py"
-```
 
 ## 1151. Minimum Swaps to Group All 1's Together
 
@@ -137,7 +128,3 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/) | [LeetCode CH](https://leetcode.cn/problems/number-of-unique-flavors-after-sharing-k-candies/) (Medium)
 -   Tags: array, hash table, sliding window
-
-```python title="2107. Number of Unique Flavors After Sharing K Candies"
---8<-- "2107_number_of_unique_flavors_after_sharing_k_candies.py"
-```

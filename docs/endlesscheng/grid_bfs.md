@@ -27,9 +27,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/as-far-from-land-as-possible/) | [LeetCode CH](https://leetcode.cn/problems/as-far-from-land-as-possible/) (Medium)
 -   Tags: array, dynamic programming, breadth first search, matrix
 
-```python title="1162. As Far from Land as Possible"
---8<-- "1162_as_far_from_land_as_possible.py"
-```
 
 ## 542. 01 Matrix
 
@@ -58,9 +55,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/map-of-highest-peak/) | [LeetCode CH](https://leetcode.cn/problems/map-of-highest-peak/) (Medium)
 -   Tags: array, breadth first search, matrix
 
-```python title="1765. Map of Highest Peak"
---8<-- "1765_map_of_highest_peak.py"
-```
 
 ## 934. Shortest Bridge
 
@@ -76,63 +70,42 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/) | [LeetCode CH](https://leetcode.cn/problems/k-highest-ranked-items-within-a-price-range/) (Medium)
 -   Tags: array, breadth first search, sorting, heap priority queue, matrix
 
-```python title="2146. K Highest Ranked Items Within a Price Range"
---8<-- "2146_k_highest_ranked_items_within_a_price_range.py"
-```
 
 ## 1293. Shortest Path in a Grid with Obstacles Elimination
 
 -   [LeetCode](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-in-a-grid-with-obstacles-elimination/) (Hard)
 -   Tags: array, breadth first search, matrix
 
-```python title="1293. Shortest Path in a Grid with Obstacles Elimination"
---8<-- "1293_shortest_path_in_a_grid_with_obstacles_elimination.py"
-```
 
 ## 909. Snakes and Ladders
 
 -   [LeetCode](https://leetcode.com/problems/snakes-and-ladders/) | [LeetCode CH](https://leetcode.cn/problems/snakes-and-ladders/) (Medium)
 -   Tags: array, breadth first search, matrix
 
-```python title="909. Snakes and Ladders"
---8<-- "0909_snakes_and_ladders.py"
-```
 
 ## 1210. Minimum Moves to Reach Target with Rotations
 
 -   [LeetCode](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/) | [LeetCode CH](https://leetcode.cn/problems/minimum-moves-to-reach-target-with-rotations/) (Hard)
 -   Tags: array, breadth first search, matrix
 
-```python title="1210. Minimum Moves to Reach Target with Rotations"
---8<-- "1210_minimum_moves_to_reach_target_with_rotations.py"
-```
 
 ## 675. Cut Off Trees for Golf Event
 
 -   [LeetCode](https://leetcode.com/problems/cut-off-trees-for-golf-event/) | [LeetCode CH](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) (Hard)
 -   Tags: array, breadth first search, heap priority queue, matrix
 
-```python title="675. Cut Off Trees for Golf Event"
---8<-- "0675_cut_off_trees_for_golf_event.py"
-```
 
 ## 749. Contain Virus
 
 -   [LeetCode](https://leetcode.com/problems/contain-virus/) | [LeetCode CH](https://leetcode.cn/problems/contain-virus/) (Hard)
 -   Tags: array, depth first search, breadth first search, matrix, simulation
 
-```python title="749. Contain Virus"
---8<-- "0749_contain_virus.py"
-```
 
 ## 1730. Shortest Path to Get Food
 
 -   [LeetCode](https://leetcode.com/problems/shortest-path-to-get-food/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-to-get-food/) (Medium)
 -   Tags: array, breadth first search, matrix
 
-```python title="1730. Shortest Path to Get Food"
---8<-- "1730_shortest_path_to_get_food.py"
-```
 
 ## 286. Walls and Gates
 
@@ -149,9 +122,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="490. The Maze"
---8<-- "0490_the_maze.py"
-```
 
 ## 505. The Maze II
 
@@ -176,15 +146,8 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-distance-from-all-buildings/) | [LeetCode CH](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard)
 -   Tags: array, breadth first search, matrix
 
-```python title="317. Shortest Distance from All Buildings"
---8<-- "0317_shortest_distance_from_all_buildings.py"
-```
 
 ## 2814. Minimum Time Takes to Reach Destination Without Drowning
 
 -   [LeetCode](https://leetcode.com/problems/minimum-time-takes-to-reach-destination-without-drowning/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-takes-to-reach-destination-without-drowning/) (Hard)
 -   Tags: array, breadth first search, matrix
-
-```python title="2814. Minimum Time Takes to Reach Destination Without Drowning"
---8<-- "2814_minimum_time_takes_to_reach_destination_without_drowning.py"
-```

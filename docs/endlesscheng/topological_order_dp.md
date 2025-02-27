@@ -9,9 +9,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/parallel-courses-iii/) | [LeetCode CH](https://leetcode.cn/problems/parallel-courses-iii/) (Hard)
 -   Tags: array, dynamic programming, graph, topological sort
 
-```python title="2050. Parallel Courses III"
---8<-- "2050_parallel_courses_iii.py"
-```
 
 ## 1857. Largest Color Value in a Directed Graph
 

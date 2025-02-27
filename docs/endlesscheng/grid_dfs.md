@@ -51,18 +51,12 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-fish-in-a-grid/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="2658. Maximum Number of Fish in a Grid"
---8<-- "2658_maximum_number_of_fish_in_a_grid.py"
-```
 
 ## 1034. Coloring A Border
 
 -   [LeetCode](https://leetcode.com/problems/coloring-a-border/) | [LeetCode CH](https://leetcode.cn/problems/coloring-a-border/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="1034. Coloring A Border"
---8<-- "1034_coloring_a_border.py"
-```
 
 ## 1020. Number of Enclaves
 
@@ -78,9 +72,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 -   Tags: array, dynamic programming, matrix
 
-```python title="2684. Maximum Number of Moves in a Grid"
---8<-- "2684_maximum_number_of_moves_in_a_grid.py"
-```
 
 ## 1254. Number of Closed Islands
 
@@ -105,18 +96,12 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-sub-islands/) | [LeetCode CH](https://leetcode.cn/problems/count-sub-islands/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="1905. Count Sub Islands"
---8<-- "1905_count_sub_islands.py"
-```
 
 ## 1391. Check if There is a Valid Path in a Grid
 
 -   [LeetCode](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="1391. Check if There is a Valid Path in a Grid"
---8<-- "1391_check_if_there_is_a_valid_path_in_a_grid.py"
-```
 
 ## 417. Pacific Atlantic Water Flow
 
@@ -132,18 +117,12 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minesweeper/) | [LeetCode CH](https://leetcode.cn/problems/minesweeper/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="529. Minesweeper"
---8<-- "0529_minesweeper.py"
-```
 
 ## 1559. Detect Cycles in 2D Grid
 
 -   [LeetCode](https://leetcode.com/problems/detect-cycles-in-2d-grid/) | [LeetCode CH](https://leetcode.cn/problems/detect-cycles-in-2d-grid/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="1559. Detect Cycles in 2D Grid"
---8<-- "1559_detect_cycles_in_2d_grid.py"
-```
 
 ## 827. Making A Large Island
 
@@ -168,24 +147,14 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/) | [LeetCode CH](https://leetcode.cn/problems/number-of-spaces-cleaning-robot-cleaned/) (Medium)
 -   Tags: array, matrix, simulation
 
-```python title="2061. Number of Spaces Cleaning Robot Cleaned"
---8<-- "2061_number_of_spaces_cleaning_robot_cleaned.py"
-```
 
 ## 2852. Sum of Remoteness of All Cells
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-remoteness-of-all-cells/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-remoteness-of-all-cells/) (Medium)
 -   Tags: array, hash table, depth first search, breadth first search, union find, matrix
 
-```python title="2852. Sum of Remoteness of All Cells"
---8<-- "2852_sum_of_remoteness_of_all_cells.py"
-```
 
 ## 489. Robot Room Cleaner
 
 -   [LeetCode](https://leetcode.com/problems/robot-room-cleaner/) | [LeetCode CH](https://leetcode.cn/problems/robot-room-cleaner/) (Hard)
 -   Tags: backtracking, interactive
-
-```python title="489. Robot Room Cleaner"
---8<-- "0489_robot_room_cleaner.py"
-```

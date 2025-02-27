@@ -21,19 +21,35 @@ def load_config_yaml(file_path: str) -> Data:
 
 
 def code(category, row):
+    """Code snippet for the problem"""
     basename = row["basename"]
     title = f"{row["QID"]}. {row["title"]}"
 
     if category == "algorithms":
-        return f'```python title="{title}"\n--8<-- "{basename}.py"\n```'
+        py_path = os.path.join("src", basename + ".py")
+        content = f'```python title="{title}"\n--8<-- "{basename}.py"\n```\n\n'
+        return content if not check_file_empty(py_path) else "\n"
+
     elif category == "sql":
-        return f"""```txt title="{title}"\n--8<-- "sql/{basename}.txt"\n```\n\n```sql title="{title}"\n--8<-- "sql/{basename}.sql"\n```\n"""
+        txt_path = os.path.join("src", "sql", basename + ".txt")
+        sql_path = os.path.join("src", "sql", basename + ".sql")
+        txt = f'```txt title="{title}"\n--8<-- "sql/{basename}.txt"\n```\n\n'
+        sql = f'```sql title="{title}"\n--8<-- "sql/{basename}.sql"\n```\n\n'
+        content = ""
+        content += txt if not check_file_empty(txt_path) else ""
+        content += sql if not check_file_empty(sql_path) else ""
+        return content
 
 
 def check_make_file(file_path: str):
     if not os.path.exists(file_path):
         with open(file_path, "w") as f:
             f.write("")
+
+
+def check_file_empty(file_path: str):
+    with open(file_path, "r") as f:
+        return f.read().strip() == ""
 
 
 def create(config_path: str) -> str:
@@ -90,7 +106,7 @@ def create(config_path: str) -> str:
             with open(problem_md_path, "r") as f:
                 content += f.read() + "\n"
 
-            content += code(cfg.category, row) + "\n\n"
+            content += code(cfg.category, row)
 
         with open(md_path, "w") as f:
             f.write(content)

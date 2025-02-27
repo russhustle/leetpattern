@@ -18,15 +18,8 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [LeetCode CH](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) (Easy)
 -   Tags: array, sliding window, sorting
 
-```python title="1984. Minimum Difference Between Highest and Lowest of K Scores"
---8<-- "1984_minimum_difference_between_highest_and_lowest_of_k_scores.py"
-```
 
 ## 220. Contains Duplicate III
 
 -   [LeetCode](https://leetcode.com/problems/contains-duplicate-iii/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate-iii/) (Hard)
 -   Tags: array, sliding window, sorting, bucket sort, ordered set
-
-```python title="220. Contains Duplicate III"
---8<-- "0220_contains_duplicate_iii.py"
-```

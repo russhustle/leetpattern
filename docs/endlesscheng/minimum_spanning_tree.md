@@ -69,7 +69,3 @@ MST
 
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) (Hard)
 -   Tags: array, greedy, sorting
-
-```python title="3219. Minimum Cost for Cutting Cake II"
---8<-- "3219_minimum_cost_for_cutting_cake_ii.py"
-```

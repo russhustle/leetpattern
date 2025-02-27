@@ -18,27 +18,18 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | [LeetCode CH](https://leetcode.cn/problems/shortest-and-lexicographically-smallest-beautiful-string/) (Medium)
 -   Tags: string, sliding window
 
-```python title="2904. Shortest and Lexicographically Smallest Beautiful String"
---8<-- "2904_shortest_and_lexicographically_smallest_beautiful_string.py"
-```
 
 ## 1234. Replace the Substring for Balanced String
 
 -   [LeetCode](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | [LeetCode CH](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/) (Medium)
 -   Tags: string, sliding window
 
-```python title="1234. Replace the Substring for Balanced String"
---8<-- "1234_replace_the_substring_for_balanced_string.py"
-```
 
 ## 2875. Minimum Size Subarray in Infinite Array
 
 -   [LeetCode](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | [LeetCode CH](https://leetcode.cn/problems/minimum-size-subarray-in-infinite-array/) (Medium)
 -   Tags: array, hash table, sliding window, prefix sum
 
-```python title="2875. Minimum Size Subarray in Infinite Array"
---8<-- "2875_minimum_size_subarray_in_infinite_array.py"
-```
 
 ## 76. Minimum Window Substring
 
@@ -53,7 +44,3 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | [LeetCode CH](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/) (Hard)
 -   Tags: array, hash table, greedy, sliding window, sorting, heap priority queue
-
-```python title="632. Smallest Range Covering Elements from K Lists"
---8<-- "0632_smallest_range_covering_elements_from_k_lists.py"
-```

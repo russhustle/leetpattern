@@ -75,24 +75,14 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-ways-to-build-good-strings/) | [LeetCode CH](https://leetcode.cn/problems/count-ways-to-build-good-strings/) (Medium)
 -   Tags: dynamic programming
 
-```python title="2466. Count Ways To Build Good Strings"
---8<-- "2466_count_ways_to_build_good_strings.py"
-```
 
 ## 2266. Count Number of Texts
 
 -   [LeetCode](https://leetcode.com/problems/count-number-of-texts/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-texts/) (Medium)
 -   Tags: hash table, math, string, dynamic programming
 
-```python title="2266. Count Number of Texts"
---8<-- "2266_count_number_of_texts.py"
-```
 
 ## 2533. Number of Good Binary Strings
 
 -   [LeetCode](https://leetcode.com/problems/number-of-good-binary-strings/) | [LeetCode CH](https://leetcode.cn/problems/number-of-good-binary-strings/) (Medium)
 -   Tags: dynamic programming
-
-```python title="2533. Number of Good Binary Strings"
---8<-- "2533_number_of_good_binary_strings.py"
-```

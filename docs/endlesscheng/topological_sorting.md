@@ -73,45 +73,30 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/course-schedule-iv/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-iv/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python title="1462. Course Schedule IV"
---8<-- "1462_course_schedule_iv.py"
-```
 
 ## 2115. Find All Possible Recipes from Given Supplies
 
 -   [LeetCode](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) | [LeetCode CH](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) (Medium)
 -   Tags: array, hash table, string, graph, topological sort
 
-```python title="2115. Find All Possible Recipes from Given Supplies"
---8<-- "2115_find_all_possible_recipes_from_given_supplies.py"
-```
 
 ## 851. Loud and Rich
 
 -   [LeetCode](https://leetcode.com/problems/loud-and-rich/) | [LeetCode CH](https://leetcode.cn/problems/loud-and-rich/) (Medium)
 -   Tags: array, depth first search, graph, topological sort
 
-```python title="851. Loud and Rich"
---8<-- "0851_loud_and_rich.py"
-```
 
 ## 310. Minimum Height Trees
 
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python title="310. Minimum Height Trees"
---8<-- "0310_minimum_height_trees.py"
-```
 
 ## 2392. Build a Matrix With Conditions
 
 -   [LeetCode](https://leetcode.com/problems/build-a-matrix-with-conditions/) | [LeetCode CH](https://leetcode.cn/problems/build-a-matrix-with-conditions/) (Hard)
 -   Tags: array, graph, topological sort, matrix
 
-```python title="2392. Build a Matrix With Conditions"
---8<-- "2392_build_a_matrix_with_conditions.py"
-```
 
 ## 802. Find Eventual Safe States
 
@@ -127,9 +112,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/strange-printer-ii/) | [LeetCode CH](https://leetcode.cn/problems/strange-printer-ii/) (Hard)
 -   Tags: array, graph, topological sort, matrix
 
-```python title="1591. Strange Printer II"
---8<-- "1591_strange_printer_ii.py"
-```
 
 ## 1203. Sort Items by Groups Respecting Dependencies
 
@@ -146,9 +128,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/collect-coins-in-a-tree/) | [LeetCode CH](https://leetcode.cn/problems/collect-coins-in-a-tree/) (Hard)
 -   Tags: array, tree, graph, topological sort
 
-```python title="2603. Collect Coins in a Tree"
---8<-- "2603_collect_coins_in_a_tree.py"
-```
 
 ## 269. Alien Dictionary
 
@@ -165,18 +144,12 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sequence-reconstruction/) | [LeetCode CH](https://leetcode.cn/problems/sequence-reconstruction/) (Medium)
 -   Tags: array, graph, topological sort
 
-```python title="444. Sequence Reconstruction"
---8<-- "0444_sequence_reconstruction.py"
-```
 
 ## 1059. All Paths from Source Lead to Destination
 
 -   [LeetCode](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [LeetCode CH](https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/) (Medium)
 -   Tags: graph, topological sort
 
-```python title="1059. All Paths from Source Lead to Destination"
---8<-- "1059_all_paths_from_source_lead_to_destination.py"
-```
 
 ## 1136. Parallel Courses
 

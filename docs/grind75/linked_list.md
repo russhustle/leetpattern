@@ -72,9 +72,6 @@ B --> A[1]
 -   [LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
 -   Tags: linked list, two pointers
 
-```python title="876. Middle of the Linked List"
---8<-- "0876_middle_of_the_linked_list.py"
-```
 
 ## 146. LRU Cache
 

@@ -9,9 +9,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/single-number/) | [LeetCode CH](https://leetcode.cn/problems/single-number/) (Easy)
 -   Tags: array, bit manipulation
 
-```python title="136. Single Number"
---8<-- "0136_single_number.py"
-```
 
 ## 191. Number of 1 Bits
 

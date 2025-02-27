@@ -9,9 +9,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/missing-ranges/) | [LeetCode CH](https://leetcode.cn/problems/missing-ranges/) (Easy)
 -   Tags: array
 
-```python title="163. Missing Ranges"
---8<-- "0163_missing_ranges.py"
-```
 
 ## 252. Meeting Rooms
 
@@ -36,15 +33,8 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/add-bold-tag-in-string/) | [LeetCode CH](https://leetcode.cn/problems/add-bold-tag-in-string/) (Medium)
 -   Tags: array, hash table, string, trie, string matching
 
-```python title="616. Add Bold Tag in String"
---8<-- "0616_add_bold_tag_in_string.py"
-```
 
 ## 1272. Remove Interval
 
 -   [LeetCode](https://leetcode.com/problems/remove-interval/) | [LeetCode CH](https://leetcode.cn/problems/remove-interval/) (Medium)
 -   Tags: array
-
-```python title="1272. Remove Interval"
---8<-- "1272_remove_interval.py"
-```

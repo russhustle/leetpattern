@@ -69,15 +69,8 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/max-pair-sum-in-an-array/) (Easy)
 -   Tags: array, hash table
 
-```python title="2815. Max Pair Sum in an Array"
---8<-- "2815_max_pair_sum_in_an_array.py"
-```
 
 ## 2342. Max Sum of a Pair With Equal Sum of Digits
 
 -   [LeetCode](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [LeetCode CH](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) (Medium)
 -   Tags: array, hash table, sorting, heap priority queue
-
-```python title="2342. Max Sum of a Pair With Equal Sum of Digits"
---8<-- "2342_max_sum_of_a_pair_with_equal_sum_of_digits.py"
-```

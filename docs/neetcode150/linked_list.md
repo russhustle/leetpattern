@@ -154,7 +154,3 @@ D --> B
 
 -   [LeetCode](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [LeetCode CH](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 -   Tags: linked list, recursion
-
-```python title="25. Reverse Nodes in k-Group"
---8<-- "0025_reverse_nodes_in_k_group.py"
-```

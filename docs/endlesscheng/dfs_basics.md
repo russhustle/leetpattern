@@ -57,63 +57,42 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="2316. Count Unreachable Pairs of Nodes in an Undirected Graph"
---8<-- "2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph.py"
-```
 
 ## 1319. Number of Operations to Make Network Connected
 
 -   [LeetCode](https://leetcode.com/problems/number-of-operations-to-make-network-connected/) | [LeetCode CH](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="1319. Number of Operations to Make Network Connected"
---8<-- "1319_number_of_operations_to_make_network_connected.py"
-```
 
 ## 2492. Minimum Score of a Path Between Two Cities
 
 -   [LeetCode](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/) | [LeetCode CH](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="2492. Minimum Score of a Path Between Two Cities"
---8<-- "2492_minimum_score_of_a_path_between_two_cities.py"
-```
 
 ## 3387. Maximize Amount After Two Days of Conversions
 
 -   [LeetCode](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [LeetCode CH](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
 -   Tags: array, string, depth first search, breadth first search, graph
 
-```python title="3387. Maximize Amount After Two Days of Conversions"
---8<-- "3387_maximize_amount_after_two_days_of_conversions.py"
-```
 
 ## 3310. Remove Methods From Project
 
 -   [LeetCode](https://leetcode.com/problems/remove-methods-from-project/) | [LeetCode CH](https://leetcode.cn/problems/remove-methods-from-project/) (Medium)
 -   Tags: depth first search, breadth first search, graph
 
-```python title="3310. Remove Methods From Project"
---8<-- "3310_remove_methods_from_project.py"
-```
 
 ## 2685. Count the Number of Complete Components
 
 -   [LeetCode](https://leetcode.com/problems/count-the-number-of-complete-components/) | [LeetCode CH](https://leetcode.cn/problems/count-the-number-of-complete-components/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="2685. Count the Number of Complete Components"
---8<-- "2685_count_the_number_of_complete_components.py"
-```
 
 ## 2192. All Ancestors of a Node in a Directed Acyclic Graph
 
 -   [LeetCode](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | [LeetCode CH](https://leetcode.cn/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python title="2192. All Ancestors of a Node in a Directed Acyclic Graph"
---8<-- "2192_all_ancestors_of_a_node_in_a_directed_acyclic_graph.py"
-```
 
 ## 924. Minimize Malware Spread
 
@@ -129,9 +108,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [LeetCode CH](https://leetcode.cn/problems/detonate-the-maximum-bombs/) (Medium)
 -   Tags: array, math, depth first search, breadth first search, graph, geometry
 
-```python title="2101. Detonate the Maximum Bombs"
---8<-- "2101_detonate_the_maximum_bombs.py"
-```
 
 ## 721. Accounts Merge
 
@@ -279,27 +255,18 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/minimize-malware-spread-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimize-malware-spread-ii/) (Hard)
 -   Tags: array, hash table, depth first search, breadth first search, union find, graph
 
-```python title="928. Minimize Malware Spread II"
---8<-- "0928_minimize_malware_spread_ii.py"
-```
 
 ## 2092. Find All People With Secret
 
 -   [LeetCode](https://leetcode.com/problems/find-all-people-with-secret/) | [LeetCode CH](https://leetcode.cn/problems/find-all-people-with-secret/) (Hard)
 -   Tags: depth first search, breadth first search, union find, graph, sorting
 
-```python title="2092. Find All People With Secret"
---8<-- "2092_find_all_people_with_secret.py"
-```
 
 ## 3108. Minimum Cost Walk in Weighted Graph
 
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-walk-in-weighted-graph/) (Hard)
 -   Tags: array, bit manipulation, union find, graph
 
-```python title="3108. Minimum Cost Walk in Weighted Graph"
---8<-- "3108_minimum_cost_walk_in_weighted_graph.py"
-```
 
 ## 261. Graph Valid Tree
 

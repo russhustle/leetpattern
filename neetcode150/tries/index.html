@@ -4423,6 +4423,11 @@
 
 
 <h1 id="tries">Tries<a class="headerlink" href="#tries" title="Permanent link">&para;</a></h1>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://leetcode.cn/problems/implement-trie-prefix-tree/">208. Implement Trie (Prefix Tree)</a> (Medium)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://leetcode.cn/problems/design-add-and-search-words-data-structure/">211. Design Add and Search Words Data Structure</a> (Medium)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://leetcode.cn/problems/word-search-ii/">212. Word Search II</a> (Hard)</li>
+</ul>
 <h2 id="208-implement-trie-prefix-tree">208. Implement Trie (Prefix Tree)<a class="headerlink" href="#208-implement-trie-prefix-tree" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://leetcode.com/problems/implement-trie-prefix-tree/">LeetCode</a> | <a href="https://leetcode.cn/problems/implement-trie-prefix-tree/">LeetCode CH</a> (Medium)</li>
@@ -4444,7 +4449,7 @@ Root --- B1((B))
 B1 --- A2((A))
 A2 --- T2((T))
 A2 --- R2((R))</code></pre>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">TrieNode</span><span class="p">:</span>
+<div class="language-python highlight"><span class="filename">208. Implement Trie (Prefix Tree)</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">TrieNode</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">children</span> <span class="o">=</span> <span class="p">{}</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">endOfWord</span> <span class="o">=</span> <span class="kc">None</span>
@@ -4493,7 +4498,7 @@ A2 --- R2((R))</code></pre>
 <li><a href="https://leetcode.com/problems/design-add-and-search-words-data-structure/">LeetCode</a> | <a href="https://leetcode.cn/problems/design-add-and-search-words-data-structure/">LeetCode CH</a> (Medium)</li>
 <li>Tags: string, depth first search, design, trie</li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">TrieNode</span><span class="p">:</span>
+<div class="language-python highlight"><span class="filename">211. Design Add and Search Words Data Structure</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">TrieNode</span><span class="p">:</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">children</span> <span class="o">=</span> <span class="p">{}</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">word</span> <span class="o">=</span> <span class="kc">False</span>
@@ -4545,7 +4550,7 @@ A2 --- R2((R))</code></pre>
 <li><a href="https://leetcode.com/problems/word-search-ii/">LeetCode</a> | <a href="https://leetcode.cn/problems/word-search-ii/">LeetCode CH</a> (Hard)</li>
 <li>Tags: array, string, backtracking, trie, matrix</li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+<div class="language-python highlight"><span class="filename">212. Word Search II</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">template</span><span class="w"> </span><span class="kn">import</span> <span class="n">TrieNode</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
@@ -4623,7 +4628,7 @@ A2 --- R2((R))</code></pre>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-23T12:46:36+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-23</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-27T09:43:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-27</span>
   </span>
 
     

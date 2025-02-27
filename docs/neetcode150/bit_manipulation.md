@@ -4,6 +4,14 @@ comments: True
 
 # Bit Manipulation
 
+- [ ] [136. Single Number](https://leetcode.cn/problems/single-number/) (Easy)
+- [x] [191. Number of 1 Bits](https://leetcode.cn/problems/number-of-1-bits/) (Easy)
+- [x] [338. Counting Bits](https://leetcode.cn/problems/counting-bits/) (Easy)
+- [x] [190. Reverse Bits](https://leetcode.cn/problems/reverse-bits/) (Easy)
+- [x] [268. Missing Number](https://leetcode.cn/problems/missing-number/) (Easy)
+- [x] [371. Sum of Two Integers](https://leetcode.cn/problems/sum-of-two-integers/) (Medium)
+- [x] [7. Reverse Integer](https://leetcode.cn/problems/reverse-integer/) (Medium)
+
 ## 136. Single Number
 
 -   [LeetCode](https://leetcode.com/problems/single-number/) | [LeetCode CH](https://leetcode.cn/problems/single-number/) (Easy)

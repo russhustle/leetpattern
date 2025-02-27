@@ -4,6 +4,19 @@ comments: True
 
 # Stack
 
+- [x] [2390. Removing Stars From a String](https://leetcode.cn/problems/removing-stars-from-a-string/) (Medium)
+- [x] [1544. Make The String Great](https://leetcode.cn/problems/make-the-string-great/) (Easy)
+- [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+- [x] [155. Min Stack](https://leetcode.cn/problems/min-stack/) (Medium)
+- [x] [150. Evaluate Reverse Polish Notation](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
+- [x] [394. Decode String](https://leetcode.cn/problems/decode-string/) (Medium)
+- [x] [22. Generate Parentheses](https://leetcode.cn/problems/generate-parentheses/) (Medium)
+- [x] [853. Car Fleet](https://leetcode.cn/problems/car-fleet/) (Medium)
+- [x] [224. Basic Calculator](https://leetcode.cn/problems/basic-calculator/) (Hard)
+- [x] [227. Basic Calculator II](https://leetcode.cn/problems/basic-calculator-ii/) (Medium)
+- [x] [772. Basic Calculator III](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
+- [x] [770. Basic Calculator IV](https://leetcode.cn/problems/basic-calculator-iv/) (Hard)
+
 ## 2390. Removing Stars From a String
 
 -   [LeetCode](https://leetcode.com/problems/removing-stars-from-a-string/) | [LeetCode CH](https://leetcode.cn/problems/removing-stars-from-a-string/) (Medium)

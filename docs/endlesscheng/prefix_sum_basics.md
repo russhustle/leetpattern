@@ -4,6 +4,12 @@ comments: True
 
 # Prefix Sum Basics
 
+- [x] [303. Range Sum Query - Immutable](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)
+- [ ] [3427. Sum of Variable Length Subarrays](https://leetcode.cn/problems/sum-of-variable-length-subarrays/) (Easy)
+- [ ] [2559. Count Vowel Strings in Ranges](https://leetcode.cn/problems/count-vowel-strings-in-ranges/) (Medium)
+- [ ] [3152. Special Array II](https://leetcode.cn/problems/special-array-ii/) (Medium)
+- [ ] [1749. Maximum Absolute Sum of Any Subarray](https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray/) (Medium)
+
 ## 303. Range Sum Query -   Immutable
 
 - [LeetCode](https://leetcode.com/problems/range-sum-query-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)

@@ -4,6 +4,14 @@ comments: True
 
 # Max Subarray Sum
 
+- [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+- [ ] [2606. Find the Substring With Maximum Cost](https://leetcode.cn/problems/find-the-substring-with-maximum-cost/) (Medium)
+- [ ] [1749. Maximum Absolute Sum of Any Subarray](https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray/) (Medium)
+- [ ] [1191. K-Concatenation Maximum Sum](https://leetcode.cn/problems/k-concatenation-maximum-sum/) (Medium)
+- [x] [918. Maximum Sum Circular Subarray](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
+- [ ] [2321. Maximum Score Of Spliced Array](https://leetcode.cn/problems/maximum-score-of-spliced-array/) (Hard)
+- [x] [152. Maximum Product Subarray](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
+
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)

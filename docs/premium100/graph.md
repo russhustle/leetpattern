@@ -4,6 +4,15 @@ comments: True
 
 # Graph
 
+- [ ] [277. Find the Celebrity](https://leetcode.cn/problems/find-the-celebrity/) (Medium)
+- [ ] [582. Kill Process](https://leetcode.cn/problems/kill-process/) (Medium)
+- [x] [323. Number of Connected Components in an Undirected Graph](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
+- [ ] [1059. All Paths from Source Lead to Destination](https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/) (Medium)
+- [ ] [1236. Web Crawler](https://leetcode.cn/problems/web-crawler/) (Medium)
+- [x] [305. Number of Islands II](https://leetcode.cn/problems/number-of-islands-ii/) (Hard)
+- [ ] [694. Number of Distinct Islands](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium)
+- [x] [1136. Parallel Courses](https://leetcode.cn/problems/parallel-courses/) (Medium)
+
 ## 277. Find the Celebrity
 
 -   [LeetCode](https://leetcode.com/problems/find-the-celebrity/) | [LeetCode CH](https://leetcode.cn/problems/find-the-celebrity/) (Medium)

@@ -4,6 +4,13 @@ comments: True
 
 # Fast Slow Pointers
 
+- [x] [27. Remove Element](https://leetcode.cn/problems/remove-element/) (Easy)
+- [x] [26. Remove Duplicates from Sorted Array](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) (Easy)
+- [x] [80. Remove Duplicates from Sorted Array II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) (Medium)
+- [x] [283. Move Zeroes](https://leetcode.cn/problems/move-zeroes/) (Easy)
+- [x] [1089. Duplicate Zeros](https://leetcode.cn/problems/duplicate-zeros/) (Easy)
+- [x] [287. Find the Duplicate Number](https://leetcode.cn/problems/find-the-duplicate-number/) (Medium)
+
 ## 27. Remove Element
 
 -   [LeetCode](https://leetcode.com/problems/remove-element/) | [LeetCode CH](https://leetcode.cn/problems/remove-element/) (Easy)

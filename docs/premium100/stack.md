@@ -4,6 +4,10 @@ comments: True
 
 # Stack
 
+- [ ] [439. Ternary Expression Parser](https://leetcode.cn/problems/ternary-expression-parser/) (Medium)
+- [ ] [484. Find Permutation](https://leetcode.cn/problems/find-permutation/) (Medium)
+- [x] [772. Basic Calculator III](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
+
 ## 439. Ternary Expression Parser
 
 -   [LeetCode](https://leetcode.com/problems/ternary-expression-parser/) | [LeetCode CH](https://leetcode.cn/problems/ternary-expression-parser/) (Medium)

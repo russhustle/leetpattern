@@ -4,6 +4,11 @@ comments: True
 
 # DP 2D
 
+- [x] [118. Pascal's Triangle](https://leetcode.cn/problems/pascals-triangle/) (Easy)
+- [x] [119. Pascal's Triangle II](https://leetcode.cn/problems/pascals-triangle-ii/) (Easy)
+- [x] [62. Unique Paths](https://leetcode.cn/problems/unique-paths/) (Medium)
+- [x] [63. Unique Paths II](https://leetcode.cn/problems/unique-paths-ii/) (Medium)
+
 ## 118. Pascal's Triangle
 
 -   [LeetCode](https://leetcode.com/problems/pascals-triangle/) | [LeetCode CH](https://leetcode.cn/problems/pascals-triangle/) (Easy)

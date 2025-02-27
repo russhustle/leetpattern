@@ -4,6 +4,12 @@ comments: True
 
 # Matrix Graphs
 
+- [x] [200. Number of Islands](https://leetcode.cn/problems/number-of-islands/) (Medium)
+- [x] [1020. Number of Enclaves](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
+- [x] [1254. Number of Closed Islands](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
+- [x] [695. Max Area of Island](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+- [x] [417. Pacific Atlantic Water Flow](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)

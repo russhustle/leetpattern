@@ -20,7 +20,7 @@ def load_config_yaml(file_path: str) -> Data:
         return Data(**data)
 
 
-def code(category, row):
+def code(category, row) -> str:
     """Code snippet for the problem"""
     basename = row["basename"]
     title = f"{row["QID"]}. {row["title"]}"
@@ -39,6 +39,26 @@ def code(category, row):
         content += txt if not check_file_empty(txt_path) else ""
         content += sql if not check_file_empty(sql_path) else ""
         return content
+
+
+def topic_progress(df, category, problems):
+    content = ""
+    for problem in problems:
+        row = df.loc[problem]
+
+        if category == "algorithms":
+            py_path = os.path.join("src", row["basename"] + ".py")
+            progress = "x" if not check_file_empty(py_path) else " "
+        elif category == "sql":
+            sql_path = os.path.join("src", "sql", row["basename"] + ".sql")
+            progress = "x" if not check_file_empty(sql_path) else " "
+
+        content += (
+            f"- [{progress}] [{row['QID']}. {row['title']}]({row['urlCh']})"
+        )
+        content += f" ({row['difficulty']})\n"
+
+    return content + "\n"
 
 
 def check_make_file(file_path: str):
@@ -80,7 +100,9 @@ def create(config_path: str) -> str:
 
         mkdocs += f"    - {topic}: {cfg.dir}/{md_path_name}\n"
 
-        content = comments + f"# {topic}\n\n"
+        content = comments
+        content += f"# {topic}\n\n"
+        content += topic_progress(df, cfg.category, problems)
         problems = cfg.topics[topic]
 
         for idx in problems:

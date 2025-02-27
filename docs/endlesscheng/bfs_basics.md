@@ -4,6 +4,14 @@ comments: True
 
 # BFS Basics
 
+- [ ] [3243. Shortest Distance After Road Addition Queries I](https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-i/) (Medium)
+- [ ] [1311. Get Watched Videos by Your Friends](https://leetcode.cn/problems/get-watched-videos-by-your-friends/) (Medium)
+- [x] [1129. Shortest Path with Alternating Colors](https://leetcode.cn/problems/shortest-path-with-alternating-colors/) (Medium)
+- [ ] [1298. Maximum Candies You Can Get from Boxes](https://leetcode.cn/problems/maximum-candies-you-can-get-from-boxes/) (Hard)
+- [ ] [2039. The Time When the Network Becomes Idle](https://leetcode.cn/problems/the-time-when-the-network-becomes-idle/) (Medium)
+- [ ] [2608. Shortest Cycle in a Graph](https://leetcode.cn/problems/shortest-cycle-in-a-graph/) (Hard)
+- [x] [815. Bus Routes](https://leetcode.cn/problems/bus-routes/) (Hard)
+
 ## 3243. Shortest Distance After Road Addition Queries I
 
 -   [LeetCode](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/) | [LeetCode CH](https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-i/) (Medium)

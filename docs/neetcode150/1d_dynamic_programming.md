@@ -4,6 +4,19 @@ comments: True
 
 # 1D Dynamic Programming
 
+- [x] [70. Climbing Stairs](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+- [x] [746. Min Cost Climbing Stairs](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
+- [x] [198. House Robber](https://leetcode.cn/problems/house-robber/) (Medium)
+- [x] [213. House Robber II](https://leetcode.cn/problems/house-robber-ii/) (Medium)
+- [x] [5. Longest Palindromic Substring](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
+- [x] [647. Palindromic Substrings](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
+- [x] [91. Decode Ways](https://leetcode.cn/problems/decode-ways/) (Medium)
+- [x] [322. Coin Change](https://leetcode.cn/problems/coin-change/) (Medium)
+- [x] [152. Maximum Product Subarray](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
+- [x] [139. Word Break](https://leetcode.cn/problems/word-break/) (Medium)
+- [x] [300. Longest Increasing Subsequence](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
+- [x] [416. Partition Equal Subset Sum](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
+
 ## 70. Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)

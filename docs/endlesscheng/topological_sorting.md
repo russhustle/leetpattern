@@ -4,6 +4,22 @@ comments: True
 
 # Topological Sorting
 
+- [x] [1557. Minimum Number of Vertices to Reach All Nodes](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
+- [x] [210. Course Schedule II](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+- [ ] [1462. Course Schedule IV](https://leetcode.cn/problems/course-schedule-iv/) (Medium)
+- [ ] [2115. Find All Possible Recipes from Given Supplies](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) (Medium)
+- [ ] [851. Loud and Rich](https://leetcode.cn/problems/loud-and-rich/) (Medium)
+- [ ] [310. Minimum Height Trees](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+- [ ] [2392. Build a Matrix With Conditions](https://leetcode.cn/problems/build-a-matrix-with-conditions/) (Hard)
+- [x] [802. Find Eventual Safe States](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
+- [ ] [1591. Strange Printer II](https://leetcode.cn/problems/strange-printer-ii/) (Hard)
+- [x] [1203. Sort Items by Groups Respecting Dependencies](https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
+- [ ] [2603. Collect Coins in a Tree](https://leetcode.cn/problems/collect-coins-in-a-tree/) (Hard)
+- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+- [ ] [444. Sequence Reconstruction](https://leetcode.cn/problems/sequence-reconstruction/) (Medium)
+- [ ] [1059. All Paths from Source Lead to Destination](https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/) (Medium)
+- [x] [1136. Parallel Courses](https://leetcode.cn/problems/parallel-courses/) (Medium)
+
 ## 1557. Minimum Number of Vertices to Reach All Nodes
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)

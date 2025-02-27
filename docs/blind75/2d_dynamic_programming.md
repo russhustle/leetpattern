@@ -4,6 +4,9 @@ comments: True
 
 # 2D Dynamic Programming
 
+- [x] [62. Unique Paths](https://leetcode.cn/problems/unique-paths/) (Medium)
+- [x] [1143. Longest Common Subsequence](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
+
 ## 62. Unique Paths
 
 -   [LeetCode](https://leetcode.com/problems/unique-paths/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths/) (Medium)

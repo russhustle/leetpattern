@@ -4,6 +4,14 @@ comments: True
 
 # Stack
 
+- [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+- [x] [155. Min Stack](https://leetcode.cn/problems/min-stack/) (Medium)
+- [x] [150. Evaluate Reverse Polish Notation](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
+- [x] [22. Generate Parentheses](https://leetcode.cn/problems/generate-parentheses/) (Medium)
+- [x] [739. Daily Temperatures](https://leetcode.cn/problems/daily-temperatures/) (Medium)
+- [x] [853. Car Fleet](https://leetcode.cn/problems/car-fleet/) (Medium)
+- [x] [84. Largest Rectangle in Histogram](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+
 ## 20. Valid Parentheses
 
 -   [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)

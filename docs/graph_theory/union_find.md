@@ -4,6 +4,11 @@ comments: True
 
 # Union Find
 
+- [x] [721. Accounts Merge](https://leetcode.cn/problems/accounts-merge/) (Medium)
+- [x] [990. Satisfiability of Equality Equations](https://leetcode.cn/problems/satisfiability-of-equality-equations/) (Medium)
+- [x] [1061. Lexicographically Smallest Equivalent String](https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/) (Medium)
+- [x] [839. Similar String Groups](https://leetcode.cn/problems/similar-string-groups/) (Hard)
+
 ## 721. Accounts Merge
 
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)

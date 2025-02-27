@@ -4,6 +4,20 @@ comments: True
 
 # Grid Applications
 
+- [x] [1631. Path With Minimum Effort](https://leetcode.cn/problems/path-with-minimum-effort/) (Medium)
+- [x] [778. Swim in Rising Water](https://leetcode.cn/problems/swim-in-rising-water/) (Hard)
+- [x] [329. Longest Increasing Path in a Matrix](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) (Hard)
+- [ ] [1036. Escape a Large Maze](https://leetcode.cn/problems/escape-a-large-maze/) (Hard)
+- [x] [864. Shortest Path to Get All Keys](https://leetcode.cn/problems/shortest-path-to-get-all-keys/) (Hard)
+- [ ] [1263. Minimum Moves to Move a Box to Their Target Location](https://leetcode.cn/problems/minimum-moves-to-move-a-box-to-their-target-location/) (Hard)
+- [ ] [2258. Escape the Spreading Fire](https://leetcode.cn/problems/escape-the-spreading-fire/) (Hard)
+- [ ] [2556. Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.cn/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/) (Medium)
+- [ ] [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.cn/problems/minimum-time-to-visit-a-cell-in-a-grid/) (Hard)
+- [ ] [2617. Minimum Number of Visited Cells in a Grid](https://leetcode.cn/problems/minimum-number-of-visited-cells-in-a-grid/) (Hard)
+- [ ] [694. Number of Distinct Islands](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium)
+- [ ] [711. Number of Distinct Islands II](https://leetcode.cn/problems/number-of-distinct-islands-ii/) (Hard)
+- [ ] [1102. Path With Maximum Minimum Value](https://leetcode.cn/problems/path-with-maximum-minimum-value/) (Medium)
+
 ## 1631. Path With Minimum Effort
 
 -   [LeetCode](https://leetcode.com/problems/path-with-minimum-effort/) | [LeetCode CH](https://leetcode.cn/problems/path-with-minimum-effort/) (Medium)

@@ -4,6 +4,15 @@ comments: True
 
 # Binary Search
 
+- [x] [704. Binary Search](https://leetcode.cn/problems/binary-search/) (Easy)
+- [x] [35. Search Insert Position](https://leetcode.cn/problems/search-insert-position/) (Easy)
+- [x] [278. First Bad Version](https://leetcode.cn/problems/first-bad-version/) (Easy)
+- [x] [34. Find First and Last Position of Element in Sorted Array](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) (Medium)
+- [x] [367. Valid Perfect Square](https://leetcode.cn/problems/valid-perfect-square/) (Easy)
+- [x] [875. Koko Eating Bananas](https://leetcode.cn/problems/koko-eating-bananas/) (Medium)
+- [x] [1011. Capacity To Ship Packages Within D Days](https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/) (Medium)
+- [x] [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)
+
 ## 704. Binary Search
 
 -   [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)

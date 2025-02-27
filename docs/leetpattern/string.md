@@ -4,6 +4,14 @@ comments: True
 
 # String
 
+- [x] [344. Reverse String](https://leetcode.cn/problems/reverse-string/) (Easy)
+- [x] [541. Reverse String II](https://leetcode.cn/problems/reverse-string-ii/) (Easy)
+- [x] [151. Reverse Words in a String](https://leetcode.cn/problems/reverse-words-in-a-string/) (Medium)
+- [x] [58. Length of Last Word](https://leetcode.cn/problems/length-of-last-word/) (Easy)
+- [x] [844. Backspace String Compare](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
+- [x] [2185. Counting Words With a Given Prefix](https://leetcode.cn/problems/counting-words-with-a-given-prefix/) (Easy)
+- [x] [2000. Reverse Prefix of Word](https://leetcode.cn/problems/reverse-prefix-of-word/) (Easy)
+
 ## 344. Reverse String
 
 -   [LeetCode](https://leetcode.com/problems/reverse-string/) | [LeetCode CH](https://leetcode.cn/problems/reverse-string/) (Easy)

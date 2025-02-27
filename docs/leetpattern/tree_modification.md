@@ -4,6 +4,12 @@ comments: True
 
 # Tree Modification
 
+- [x] [226. Invert Binary Tree](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
+- [x] [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
+- [x] [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) (Medium)
+- [x] [654. Maximum Binary Tree](https://leetcode.cn/problems/maximum-binary-tree/) (Medium)
+- [x] [617. Merge Two Binary Trees](https://leetcode.cn/problems/merge-two-binary-trees/) (Easy)
+
 ## 226. Invert Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)

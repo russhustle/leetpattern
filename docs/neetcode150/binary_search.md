@@ -4,6 +4,14 @@ comments: True
 
 # Binary Search
 
+- [x] [704. Binary Search](https://leetcode.cn/problems/binary-search/) (Easy)
+- [x] [74. Search a 2D Matrix](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
+- [x] [875. Koko Eating Bananas](https://leetcode.cn/problems/koko-eating-bananas/) (Medium)
+- [ ] [153. Find Minimum in Rotated Sorted Array](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
+- [ ] [33. Search in Rotated Sorted Array](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
+- [ ] [981. Time Based Key-Value Store](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
+- [x] [4. Median of Two Sorted Arrays](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
+
 ## 704. Binary Search
 
 -   [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)

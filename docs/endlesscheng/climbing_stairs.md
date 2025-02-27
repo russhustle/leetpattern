@@ -4,6 +4,13 @@ comments: True
 
 # Climbing Stairs
 
+- [x] [70. Climbing Stairs](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+- [x] [746. Min Cost Climbing Stairs](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
+- [x] [377. Combination Sum IV](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
+- [ ] [2466. Count Ways To Build Good Strings](https://leetcode.cn/problems/count-ways-to-build-good-strings/) (Medium)
+- [ ] [2266. Count Number of Texts](https://leetcode.cn/problems/count-number-of-texts/) (Medium)
+- [ ] [2533. Number of Good Binary Strings](https://leetcode.cn/problems/number-of-good-binary-strings/) (Medium)
+
 ## 70. Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)

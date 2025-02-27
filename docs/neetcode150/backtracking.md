@@ -4,6 +4,16 @@ comments: True
 
 # Backtracking
 
+- [x] [78. Subsets](https://leetcode.cn/problems/subsets/) (Medium)
+- [x] [39. Combination Sum](https://leetcode.cn/problems/combination-sum/) (Medium)
+- [x] [40. Combination Sum II](https://leetcode.cn/problems/combination-sum-ii/) (Medium)
+- [x] [46. Permutations](https://leetcode.cn/problems/permutations/) (Medium)
+- [x] [90. Subsets II](https://leetcode.cn/problems/subsets-ii/) (Medium)
+- [x] [79. Word Search](https://leetcode.cn/problems/word-search/) (Medium)
+- [x] [131. Palindrome Partitioning](https://leetcode.cn/problems/palindrome-partitioning/) (Medium)
+- [x] [17. Letter Combinations of a Phone Number](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
+- [x] [51. N-Queens](https://leetcode.cn/problems/n-queens/) (Hard)
+
 ## 78. Subsets
 
 -   [LeetCode](https://leetcode.com/problems/subsets/) | [LeetCode CH](https://leetcode.cn/problems/subsets/) (Medium)

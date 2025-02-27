@@ -4,6 +4,26 @@ comments: True
 
 # Grid DFS
 
+- [x] [200. Number of Islands](https://leetcode.cn/problems/number-of-islands/) (Medium)
+- [x] [695. Max Area of Island](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+- [x] [463. Island Perimeter](https://leetcode.cn/problems/island-perimeter/) (Easy)
+- [ ] [2658. Maximum Number of Fish in a Grid](https://leetcode.cn/problems/maximum-number-of-fish-in-a-grid/) (Medium)
+- [ ] [1034. Coloring A Border](https://leetcode.cn/problems/coloring-a-border/) (Medium)
+- [x] [1020. Number of Enclaves](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
+- [ ] [2684. Maximum Number of Moves in a Grid](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
+- [x] [1254. Number of Closed Islands](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
+- [x] [130. Surrounded Regions](https://leetcode.cn/problems/surrounded-regions/) (Medium)
+- [ ] [1905. Count Sub Islands](https://leetcode.cn/problems/count-sub-islands/) (Medium)
+- [ ] [1391. Check if There is a Valid Path in a Grid](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/) (Medium)
+- [x] [417. Pacific Atlantic Water Flow](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+- [ ] [529. Minesweeper](https://leetcode.cn/problems/minesweeper/) (Medium)
+- [ ] [1559. Detect Cycles in 2D Grid](https://leetcode.cn/problems/detect-cycles-in-2d-grid/) (Medium)
+- [x] [827. Making A Large Island](https://leetcode.cn/problems/making-a-large-island/) (Hard)
+- [x] [305. Number of Islands II](https://leetcode.cn/problems/number-of-islands-ii/) (Hard)
+- [ ] [2061. Number of Spaces Cleaning Robot Cleaned](https://leetcode.cn/problems/number-of-spaces-cleaning-robot-cleaned/) (Medium)
+- [ ] [2852. Sum of Remoteness of All Cells](https://leetcode.cn/problems/sum-of-remoteness-of-all-cells/) (Medium)
+- [ ] [489. Robot Room Cleaner](https://leetcode.cn/problems/robot-room-cleaner/) (Hard)
+
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)

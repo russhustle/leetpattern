@@ -4,6 +4,12 @@ comments: True
 
 # Array
 
+- [x] [414. Third Maximum Number](https://leetcode.cn/problems/third-maximum-number/) (Easy)
+- [x] [169. Majority Element](https://leetcode.cn/problems/majority-element/) (Easy)
+- [x] [2022. Convert 1D Array Into 2D Array](https://leetcode.cn/problems/convert-1d-array-into-2d-array/) (Easy)
+- [x] [54. Spiral Matrix](https://leetcode.cn/problems/spiral-matrix/) (Medium)
+- [x] [59. Spiral Matrix II](https://leetcode.cn/problems/spiral-matrix-ii/) (Medium)
+
 ## 414. Third Maximum Number
 
 -   [LeetCode](https://leetcode.com/problems/third-maximum-number/) | [LeetCode CH](https://leetcode.cn/problems/third-maximum-number/) (Easy)

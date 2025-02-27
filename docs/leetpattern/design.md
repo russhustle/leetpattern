@@ -4,6 +4,18 @@ comments: True
 
 # Design
 
+- [x] [146. LRU Cache](https://leetcode.cn/problems/lru-cache/) (Medium)
+- [x] [355. Design Twitter](https://leetcode.cn/problems/design-twitter/) (Medium)
+- [x] [588. Design In-Memory File System](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard)
+- [x] [460. LFU Cache](https://leetcode.cn/problems/lfu-cache/) (Hard)
+- [x] [1166. Design File System](https://leetcode.cn/problems/design-file-system/) (Medium)
+- [x] [380. Insert Delete GetRandom O(1)](https://leetcode.cn/problems/insert-delete-getrandom-o1/) (Medium)
+- [x] [362. Design Hit Counter](https://leetcode.cn/problems/design-hit-counter/) (Medium)
+- [x] [297. Serialize and Deserialize Binary Tree](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
+- [x] [622. Design Circular Queue](https://leetcode.cn/problems/design-circular-queue/) (Medium)
+- [x] [353. Design Snake Game](https://leetcode.cn/problems/design-snake-game/) (Medium)
+- [x] [1244. Design A Leaderboard](https://leetcode.cn/problems/design-a-leaderboard/) (Medium)
+
 ## 146. LRU Cache
 
 -   [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)

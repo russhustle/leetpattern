@@ -4,6 +4,16 @@ comments: True
 
 # BFS
 
+- [x] [1926. Nearest Exit from Entrance in Maze](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)
+- [x] [934. Shortest Bridge](https://leetcode.cn/problems/shortest-bridge/) (Medium)
+- [x] [433. Minimum Genetic Mutation](https://leetcode.cn/problems/minimum-genetic-mutation/) (Medium)
+- [x] [127. Word Ladder](https://leetcode.cn/problems/word-ladder/) (Hard)
+- [x] [1306. Jump Game III](https://leetcode.cn/problems/jump-game-iii/) (Medium)
+- [x] [542. 01 Matrix](https://leetcode.cn/problems/01-matrix/) (Medium)
+- [x] [1091. Shortest Path in Binary Matrix](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) (Medium)
+- [x] [863. All Nodes Distance K in Binary Tree](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) (Medium)
+- [x] [864. Shortest Path to Get All Keys](https://leetcode.cn/problems/shortest-path-to-get-all-keys/) (Hard)
+
 ## 1926. Nearest Exit from Entrance in Maze
 
 -   [LeetCode](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | [LeetCode CH](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)

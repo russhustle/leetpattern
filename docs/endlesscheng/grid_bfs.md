@@ -4,6 +4,27 @@ comments: True
 
 # Grid BFS
 
+- [x] [1926. Nearest Exit from Entrance in Maze](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)
+- [x] [1091. Shortest Path in Binary Matrix](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) (Medium)
+- [ ] [1162. As Far from Land as Possible](https://leetcode.cn/problems/as-far-from-land-as-possible/) (Medium)
+- [x] [542. 01 Matrix](https://leetcode.cn/problems/01-matrix/) (Medium)
+- [x] [994. Rotting Oranges](https://leetcode.cn/problems/rotting-oranges/) (Medium)
+- [ ] [1765. Map of Highest Peak](https://leetcode.cn/problems/map-of-highest-peak/) (Medium)
+- [x] [934. Shortest Bridge](https://leetcode.cn/problems/shortest-bridge/) (Medium)
+- [ ] [2146. K Highest Ranked Items Within a Price Range](https://leetcode.cn/problems/k-highest-ranked-items-within-a-price-range/) (Medium)
+- [ ] [1293. Shortest Path in a Grid with Obstacles Elimination](https://leetcode.cn/problems/shortest-path-in-a-grid-with-obstacles-elimination/) (Hard)
+- [ ] [909. Snakes and Ladders](https://leetcode.cn/problems/snakes-and-ladders/) (Medium)
+- [ ] [1210. Minimum Moves to Reach Target with Rotations](https://leetcode.cn/problems/minimum-moves-to-reach-target-with-rotations/) (Hard)
+- [ ] [675. Cut Off Trees for Golf Event](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) (Hard)
+- [ ] [749. Contain Virus](https://leetcode.cn/problems/contain-virus/) (Hard)
+- [ ] [1730. Shortest Path to Get Food](https://leetcode.cn/problems/shortest-path-to-get-food/) (Medium)
+- [x] [286. Walls and Gates](https://leetcode.cn/problems/walls-and-gates/) (Medium)
+- [ ] [490. The Maze](https://leetcode.cn/problems/the-maze/) (Medium)
+- [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium)
+- [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard)
+- [ ] [317. Shortest Distance from All Buildings](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard)
+- [ ] [2814. Minimum Time Takes to Reach Destination Without Drowning](https://leetcode.cn/problems/minimum-time-takes-to-reach-destination-without-drowning/) (Hard)
+
 ## 1926. Nearest Exit from Entrance in Maze
 
 -   [LeetCode](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | [LeetCode CH](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)

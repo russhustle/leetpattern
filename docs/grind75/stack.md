@@ -4,6 +4,14 @@ comments: True
 
 # Stack
 
+- [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+- [x] [232. Implement Queue using Stacks](https://leetcode.cn/problems/implement-queue-using-stacks/) (Easy)
+- [x] [150. Evaluate Reverse Polish Notation](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
+- [x] [155. Min Stack](https://leetcode.cn/problems/min-stack/) (Medium)
+- [x] [42. Trapping Rain Water](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+- [x] [224. Basic Calculator](https://leetcode.cn/problems/basic-calculator/) (Hard)
+- [x] [84. Largest Rectangle in Histogram](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+
 ## 20. Valid Parentheses
 
 -   [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)

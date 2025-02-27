@@ -4,6 +4,14 @@ comments: True
 
 # Graph BFS
 
+- [ ] [490. The Maze](https://leetcode.cn/problems/the-maze/) (Medium)
+- [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium)
+- [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard)
+- [ ] [1197. Minimum Knight Moves](https://leetcode.cn/problems/minimum-knight-moves/) (Medium)
+- [x] [286. Walls and Gates](https://leetcode.cn/problems/walls-and-gates/) (Medium)
+- [ ] [317. Shortest Distance from All Buildings](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard)
+- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+
 ## 490. The Maze
 
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)

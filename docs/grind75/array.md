@@ -4,6 +4,18 @@ comments: True
 
 # Array
 
+- [x] [1. Two Sum](https://leetcode.cn/problems/two-sum/) (Easy)
+- [x] [121. Best Time to Buy and Sell Stock](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+- [x] [169. Majority Element](https://leetcode.cn/problems/majority-element/) (Easy)
+- [x] [217. Contains Duplicate](https://leetcode.cn/problems/contains-duplicate/) (Easy)
+- [x] [57. Insert Interval](https://leetcode.cn/problems/insert-interval/) (Medium)
+- [x] [15. 3Sum](https://leetcode.cn/problems/3sum/) (Medium)
+- [x] [238. Product of Array Except Self](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
+- [x] [39. Combination Sum](https://leetcode.cn/problems/combination-sum/) (Medium)
+- [x] [56. Merge Intervals](https://leetcode.cn/problems/merge-intervals/) (Medium)
+- [x] [75. Sort Colors](https://leetcode.cn/problems/sort-colors/) (Medium)
+- [x] [11. Container With Most Water](https://leetcode.cn/problems/container-with-most-water/) (Medium)
+
 ## 1. Two Sum
 
 -   [LeetCode](https://leetcode.com/problems/two-sum/) | [LeetCode CH](https://leetcode.cn/problems/two-sum/) (Easy)

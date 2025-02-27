@@ -4,6 +4,14 @@ comments: True
 
 # Subqueries
 
+- [ ] [1978. Employees Whose Manager Left the Company](https://leetcode.cn/problems/employees-whose-manager-left-the-company/) (Easy)
+- [ ] [626. Exchange Seats](https://leetcode.cn/problems/exchange-seats/) (Medium)
+- [ ] [1341. Movie Rating](https://leetcode.cn/problems/movie-rating/) (Medium)
+- [ ] [1321. Restaurant Growth](https://leetcode.cn/problems/restaurant-growth/) (Medium)
+- [ ] [602. Friend Requests II: Who Has the Most Friends](https://leetcode.cn/problems/friend-requests-ii-who-has-the-most-friends/) (Medium)
+- [ ] [585. Investments in 2016](https://leetcode.cn/problems/investments-in-2016/) (Medium)
+- [ ] [185. Department Top Three Salaries](https://leetcode.cn/problems/department-top-three-salaries/) (Hard)
+
 ## 1978. Employees Whose Manager Left the Company
 
 -   [LeetCode](https://leetcode.com/problems/employees-whose-manager-left-the-company/) | [LeetCode CH](https://leetcode.cn/problems/employees-whose-manager-left-the-company/) (Easy)

@@ -4,6 +4,9 @@ comments: True
 
 # Greedy
 
+- [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+- [x] [55. Jump Game](https://leetcode.cn/problems/jump-game/) (Medium)
+
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)

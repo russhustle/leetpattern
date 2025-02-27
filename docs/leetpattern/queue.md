@@ -4,6 +4,9 @@ comments: True
 
 # Queue
 
+- [x] [232. Implement Queue using Stacks](https://leetcode.cn/problems/implement-queue-using-stacks/) (Easy)
+- [x] [225. Implement Stack using Queues](https://leetcode.cn/problems/implement-stack-using-queues/) (Easy)
+
 ## 232. Implement Queue using Stacks
 
 -   [LeetCode](https://leetcode.com/problems/implement-queue-using-stacks/) | [LeetCode CH](https://leetcode.cn/problems/implement-queue-using-stacks/) (Easy)

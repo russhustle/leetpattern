@@ -4,6 +4,13 @@ comments: True
 
 # Enumerate Middle
 
+- [ ] [2909. Minimum Sum of Mountain Triplets II](https://leetcode.cn/problems/minimum-sum-of-mountain-triplets-ii/) (Medium)
+- [ ] [1930. Unique Length-3 Palindromic Subsequences](https://leetcode.cn/problems/unique-length-3-palindromic-subsequences/) (Medium)
+- [ ] [3128. Right Triangles](https://leetcode.cn/problems/right-triangles/) (Medium)
+- [ ] [2874. Maximum Value of an Ordered Triplet II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
+- [ ] [447. Number of Boomerangs](https://leetcode.cn/problems/number-of-boomerangs/) (Medium)
+- [x] [456. 132 Pattern](https://leetcode.cn/problems/132-pattern/) (Medium)
+
 ## 2909. Minimum Sum of Mountain Triplets II
 
 -   [LeetCode](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimum-sum-of-mountain-triplets-ii/) (Medium)

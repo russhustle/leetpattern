@@ -4,6 +4,14 @@ comments: True
 
 # Binary Tree
 
+- [ ] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
+- [ ] [549. Binary Tree Longest Consecutive Sequence II](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence-ii/) (Medium)
+- [ ] [250. Count Univalue Subtrees](https://leetcode.cn/problems/count-univalue-subtrees/) (Medium)
+- [ ] [1120. Maximum Average Subtree](https://leetcode.cn/problems/maximum-average-subtree/) (Medium)
+- [ ] [545. Boundary of Binary Tree](https://leetcode.cn/problems/boundary-of-binary-tree/) (Medium)
+- [ ] [366. Find Leaves of Binary Tree](https://leetcode.cn/problems/find-leaves-of-binary-tree/) (Medium)
+- [ ] [314. Binary Tree Vertical Order Traversal](https://leetcode.cn/problems/binary-tree-vertical-order-traversal/) (Medium)
+
 ## 298. Binary Tree Longest Consecutive Sequence
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Advanced Graphs
 
+- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+
 ## 269. Alien Dictionary
 
 -   [LeetCode](https://leetcode.com/problems/alien-dictionary/) | [LeetCode CH](https://leetcode.cn/problems/alien-dictionary/) (Hard)

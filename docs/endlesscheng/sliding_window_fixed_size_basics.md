@@ -4,6 +4,22 @@ comments: True
 
 # Sliding Window Fixed Size Basics
 
+- [x] [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
+- [x] [643. Maximum Average Subarray I](https://leetcode.cn/problems/maximum-average-subarray-i/) (Easy)
+- [x] [1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](https://leetcode.cn/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) (Medium)
+- [x] [2090. K Radius Subarray Averages](https://leetcode.cn/problems/k-radius-subarray-averages/) (Medium)
+- [x] [2379. Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.cn/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) (Easy)
+- [x] [2841. Maximum Sum of Almost Unique Subarray](https://leetcode.cn/problems/maximum-sum-of-almost-unique-subarray/) (Medium)
+- [x] [2461. Maximum Sum of Distinct Subarrays With Length K](https://leetcode.cn/problems/maximum-sum-of-distinct-subarrays-with-length-k/) (Medium)
+- [x] [1423. Maximum Points You Can Obtain from Cards](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/) (Medium)
+- [x] [1052. Grumpy Bookstore Owner](https://leetcode.cn/problems/grumpy-bookstore-owner/) (Medium)
+- [x] [1652. Defuse the Bomb](https://leetcode.cn/problems/defuse-the-bomb/) (Easy)
+- [ ] [1176. Diet Plan Performance](https://leetcode.cn/problems/diet-plan-performance/) (Easy)
+- [ ] [1100. Find K-Length Substrings With No Repeated Characters](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
+- [ ] [1852. Distinct Numbers in Each Subarray](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium)
+- [x] [1151. Minimum Swaps to Group All 1's Together](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
+- [ ] [2107. Number of Unique Flavors After Sharing K Candies](https://leetcode.cn/problems/number-of-unique-flavors-after-sharing-k-candies/) (Medium)
+
 ## 1456. Maximum Number of Vowels in a Substring of Given Length
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)

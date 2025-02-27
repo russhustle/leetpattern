@@ -4,6 +4,16 @@ comments: True
 
 # Heap Top K
 
+- [x] [215. Kth Largest Element in an Array](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
+- [x] [973. K Closest Points to Origin](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)
+- [x] [347. Top K Frequent Elements](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
+- [x] [692. Top K Frequent Words](https://leetcode.cn/problems/top-k-frequent-words/) (Medium)
+- [x] [264. Ugly Number II](https://leetcode.cn/problems/ugly-number-ii/) (Medium)
+- [x] [451. Sort Characters By Frequency](https://leetcode.cn/problems/sort-characters-by-frequency/) (Medium)
+- [x] [703. Kth Largest Element in a Stream](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
+- [x] [767. Reorganize String](https://leetcode.cn/problems/reorganize-string/) (Medium)
+- [x] [786. K-th Smallest Prime Fraction](https://leetcode.cn/problems/k-th-smallest-prime-fraction/) (Medium)
+
 ## 215. Kth Largest Element in an Array
 
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)

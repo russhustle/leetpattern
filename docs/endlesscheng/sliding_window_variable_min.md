@@ -4,6 +4,13 @@ comments: True
 
 # Sliding Window Variable Min
 
+- [x] [209. Minimum Size Subarray Sum](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
+- [ ] [2904. Shortest and Lexicographically Smallest Beautiful String](https://leetcode.cn/problems/shortest-and-lexicographically-smallest-beautiful-string/) (Medium)
+- [ ] [1234. Replace the Substring for Balanced String](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/) (Medium)
+- [ ] [2875. Minimum Size Subarray in Infinite Array](https://leetcode.cn/problems/minimum-size-subarray-in-infinite-array/) (Medium)
+- [x] [76. Minimum Window Substring](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
+- [ ] [632. Smallest Range Covering Elements from K Lists](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/) (Hard)
+
 ## 209. Minimum Size Subarray Sum
 
 -   [LeetCode](https://leetcode.com/problems/minimum-size-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)

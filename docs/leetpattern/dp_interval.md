@@ -4,6 +4,10 @@ comments: True
 
 # DP Interval
 
+- [x] [516. Longest Palindromic Subsequence](https://leetcode.cn/problems/longest-palindromic-subsequence/) (Medium)
+- [x] [647. Palindromic Substrings](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
+- [x] [5. Longest Palindromic Substring](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
+
 ## 516. Longest Palindromic Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/longest-palindromic-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-subsequence/) (Medium)

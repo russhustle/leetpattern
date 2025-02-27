@@ -4,6 +4,12 @@ comments: True
 
 # Dynamic Programming
 
+- [x] [70. Climbing Stairs](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+- [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+- [x] [322. Coin Change](https://leetcode.cn/problems/coin-change/) (Medium)
+- [x] [416. Partition Equal Subset Sum](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
+- [x] [62. Unique Paths](https://leetcode.cn/problems/unique-paths/) (Medium)
+
 ## 70. Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)

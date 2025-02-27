@@ -4,6 +4,14 @@ comments: True
 
 # Heap
 
+- [x] [703. Kth Largest Element in a Stream](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
+- [x] [1046. Last Stone Weight](https://leetcode.cn/problems/last-stone-weight/) (Easy)
+- [x] [973. K Closest Points to Origin](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)
+- [x] [215. Kth Largest Element in an Array](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
+- [x] [621. Task Scheduler](https://leetcode.cn/problems/task-scheduler/) (Medium)
+- [x] [355. Design Twitter](https://leetcode.cn/problems/design-twitter/) (Medium)
+- [x] [295. Find Median from Data Stream](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
+
 ## 703. Kth Largest Element in a Stream
 
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)

@@ -4,6 +4,11 @@ comments: True
 
 # Sliding Window
 
+- [x] [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) (Medium)
+- [x] [340. Longest Substring with At Most K Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/) (Medium)
+- [ ] [487. Max Consecutive Ones II](https://leetcode.cn/problems/max-consecutive-ones-ii/) (Medium)
+- [ ] [1100. Find K-Length Substrings With No Repeated Characters](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
+
 ## 159. Longest Substring with At Most Two Distinct Characters
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) (Medium)

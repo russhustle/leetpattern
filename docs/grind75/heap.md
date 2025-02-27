@@ -4,6 +4,11 @@ comments: True
 
 # Heap
 
+- [x] [973. K Closest Points to Origin](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)
+- [x] [621. Task Scheduler](https://leetcode.cn/problems/task-scheduler/) (Medium)
+- [x] [295. Find Median from Data Stream](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
+- [x] [23. Merge k Sorted Lists](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
+
 ## 973. K Closest Points to Origin
 
 -   [LeetCode](https://leetcode.com/problems/k-closest-points-to-origin/) | [LeetCode CH](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)

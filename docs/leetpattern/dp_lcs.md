@@ -4,6 +4,15 @@ comments: True
 
 # DP LCS
 
+- [x] [1143. Longest Common Subsequence](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
+- [x] [72. Edit Distance](https://leetcode.cn/problems/edit-distance/) (Medium)
+- [x] [115. Distinct Subsequences](https://leetcode.cn/problems/distinct-subsequences/) (Hard)
+- [x] [392. Is Subsequence](https://leetcode.cn/problems/is-subsequence/) (Easy)
+- [x] [583. Delete Operation for Two Strings](https://leetcode.cn/problems/delete-operation-for-two-strings/) (Medium)
+- [x] [674. Longest Continuous Increasing Subsequence](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) (Easy)
+- [x] [718. Maximum Length of Repeated Subarray](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) (Medium)
+- [x] [1035. Uncrossed Lines](https://leetcode.cn/problems/uncrossed-lines/) (Medium)
+
 ## 1143. Longest Common Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)

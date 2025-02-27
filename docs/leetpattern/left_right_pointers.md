@@ -4,6 +4,18 @@ comments: True
 
 # Left Right Pointers
 
+- [x] [9. Palindrome Number](https://leetcode.cn/problems/palindrome-number/) (Easy)
+- [x] [15. 3Sum](https://leetcode.cn/problems/3sum/) (Medium)
+- [x] [18. 4Sum](https://leetcode.cn/problems/4sum/) (Medium)
+- [x] [69. Sqrt(x)](https://leetcode.cn/problems/sqrtx/) (Easy)
+- [x] [88. Merge Sorted Array](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
+- [x] [977. Squares of a Sorted Array](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
+- [x] [881. Boats to Save People](https://leetcode.cn/problems/boats-to-save-people/) (Medium)
+- [x] [75. Sort Colors](https://leetcode.cn/problems/sort-colors/) (Medium)
+- [x] [125. Valid Palindrome](https://leetcode.cn/problems/valid-palindrome/) (Easy)
+- [x] [167. Two Sum II - Input Array Is Sorted](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
+- [x] [11. Container With Most Water](https://leetcode.cn/problems/container-with-most-water/) (Medium)
+
 ## 9. Palindrome Number
 
 -   [LeetCode](https://leetcode.com/problems/palindrome-number/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-number/) (Easy)

@@ -4,6 +4,14 @@ comments: True
 
 # DP LIS
 
+- [x] [300. Longest Increasing Subsequence](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
+- [x] [673. Number of Longest Increasing Subsequence](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) (Medium)
+- [x] [354. Russian Doll Envelopes](https://leetcode.cn/problems/russian-doll-envelopes/) (Hard)
+- [x] [960. Delete Columns to Make Sorted III](https://leetcode.cn/problems/delete-columns-to-make-sorted-iii/) (Hard)
+- [x] [1671. Minimum Number of Removals to Make Mountain Array](https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array/) (Hard)
+- [x] [941. Valid Mountain Array](https://leetcode.cn/problems/valid-mountain-array/) (Easy)
+- [x] [845. Longest Mountain in Array](https://leetcode.cn/problems/longest-mountain-in-array/) (Medium)
+
 ## 300. Longest Increasing Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)

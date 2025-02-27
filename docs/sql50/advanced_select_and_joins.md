@@ -4,6 +4,14 @@ comments: True
 
 # Advanced Select and Joins
 
+- [ ] [1731. The Number of Employees Which Report to Each Employee](https://leetcode.cn/problems/the-number-of-employees-which-report-to-each-employee/) (Easy)
+- [ ] [1789. Primary Department for Each Employee](https://leetcode.cn/problems/primary-department-for-each-employee/) (Easy)
+- [ ] [610. Triangle Judgement](https://leetcode.cn/problems/triangle-judgement/) (Easy)
+- [ ] [180. Consecutive Numbers](https://leetcode.cn/problems/consecutive-numbers/) (Medium)
+- [ ] [1164. Product Price at a Given Date](https://leetcode.cn/problems/product-price-at-a-given-date/) (Medium)
+- [ ] [1204. Last Person to Fit in the Bus](https://leetcode.cn/problems/last-person-to-fit-in-the-bus/) (Medium)
+- [ ] [1907. Count Salary Categories](https://leetcode.cn/problems/count-salary-categories/) (Medium)
+
 ## 1731. The Number of Employees Which Report to Each Employee
 
 -   [LeetCode](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/) | [LeetCode CH](https://leetcode.cn/problems/the-number-of-employees-which-report-to-each-employee/) (Easy)

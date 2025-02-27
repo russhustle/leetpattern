@@ -4,6 +4,27 @@ comments: True
 
 # Sliding Window Variable Max Advanced
 
+- [ ] [2730. Find the Longest Semi-Repetitive Substring](https://leetcode.cn/problems/find-the-longest-semi-repetitive-substring/) (Medium)
+- [ ] [2779. Maximum Beauty of an Array After Applying Operation](https://leetcode.cn/problems/maximum-beauty-of-an-array-after-applying-operation/) (Medium)
+- [ ] [1838. Frequency of the Most Frequent Element](https://leetcode.cn/problems/frequency-of-the-most-frequent-element/) (Medium)
+- [ ] [2516. Take K of Each Character From Left and Right](https://leetcode.cn/problems/take-k-of-each-character-from-left-and-right/) (Medium)
+- [ ] [2831. Find the Longest Equal Subarray](https://leetcode.cn/problems/find-the-longest-equal-subarray/) (Medium)
+- [ ] [2271. Maximum White Tiles Covered by a Carpet](https://leetcode.cn/problems/maximum-white-tiles-covered-by-a-carpet/) (Medium)
+- [ ] [2106. Maximum Fruits Harvested After at Most K Steps](https://leetcode.cn/problems/maximum-fruits-harvested-after-at-most-k-steps/) (Hard)
+- [x] [2555. Maximize Win From Two Segments](https://leetcode.cn/problems/maximize-win-from-two-segments/) (Medium)
+- [ ] [2009. Minimum Number of Operations to Make Array Continuous](https://leetcode.cn/problems/minimum-number-of-operations-to-make-array-continuous/) (Hard)
+- [ ] [1610. Maximum Number of Visible Points](https://leetcode.cn/problems/maximum-number-of-visible-points/) (Hard)
+- [ ] [2781. Length of the Longest Valid Substring](https://leetcode.cn/problems/length-of-the-longest-valid-substring/) (Hard)
+- [ ] [3411. Maximum Subarray With Equal Products](https://leetcode.cn/problems/maximum-subarray-with-equal-products/) (Easy)
+- [ ] [2968. Apply Operations to Maximize Frequency Score](https://leetcode.cn/problems/apply-operations-to-maximize-frequency-score/) (Hard)
+- [ ] [1040. Moving Stones Until Consecutive II](https://leetcode.cn/problems/moving-stones-until-consecutive-ii/) (Medium)
+- [ ] [3413. Maximum Coins From K Consecutive Bags](https://leetcode.cn/problems/maximum-coins-from-k-consecutive-bags/) (Medium)
+- [ ] [395. Longest Substring with At Least K Repeating Characters](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/) (Medium)
+- [ ] [1763. Longest Nice Substring](https://leetcode.cn/problems/longest-nice-substring/) (Easy)
+- [ ] [487. Max Consecutive Ones II](https://leetcode.cn/problems/max-consecutive-ones-ii/) (Medium)
+- [x] [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) (Medium)
+- [x] [340. Longest Substring with At Most K Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/) (Medium)
+
 ## 2730. Find the Longest Semi-Repetitive Substring
 
 -   [LeetCode](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/) | [LeetCode CH](https://leetcode.cn/problems/find-the-longest-semi-repetitive-substring/) (Medium)

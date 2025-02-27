@@ -4,6 +4,12 @@ comments: True
 
 # DP Kadane
 
+- [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+- [x] [918. Maximum Sum Circular Subarray](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
+- [x] [152. Maximum Product Subarray](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
+- [x] [978. Longest Turbulent Subarray](https://leetcode.cn/problems/longest-turbulent-subarray/) (Medium)
+- [x] [1186. Maximum Subarray Sum with One Deletion](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/) (Medium)
+
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)

@@ -4,6 +4,11 @@ comments: True
 
 # Dijkstra's
 
+- [x] [787. Cheapest Flights Within K Stops](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
+- [x] [1514. Path with Maximum Probability](https://leetcode.cn/problems/path-with-maximum-probability/) (Medium)
+- [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium)
+- [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard)
+
 ## 787. Cheapest Flights Within K Stops
 
 -   [LeetCode](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [LeetCode CH](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)

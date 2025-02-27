@@ -4,6 +4,10 @@ comments: True
 
 # Tries
 
+- [x] [208. Implement Trie (Prefix Tree)](https://leetcode.cn/problems/implement-trie-prefix-tree/) (Medium)
+- [x] [212. Word Search II](https://leetcode.cn/problems/word-search-ii/) (Hard)
+- [x] [211. Design Add and Search Words Data Structure](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) (Medium)
+
 ## 208. Implement Trie (Prefix Tree)
 
 -   [LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree/) | [LeetCode CH](https://leetcode.cn/problems/implement-trie-prefix-tree/) (Medium)

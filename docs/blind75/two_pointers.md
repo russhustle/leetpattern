@@ -4,6 +4,10 @@ comments: True
 
 # Two Pointers
 
+- [x] [125. Valid Palindrome](https://leetcode.cn/problems/valid-palindrome/) (Easy)
+- [x] [15. 3Sum](https://leetcode.cn/problems/3sum/) (Medium)
+- [x] [11. Container With Most Water](https://leetcode.cn/problems/container-with-most-water/) (Medium)
+
 ## 125. Valid Palindrome
 
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)

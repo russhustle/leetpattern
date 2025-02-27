@@ -4,6 +4,8 @@ comments: True
 
 # Hash Table
 
+- [x] [383. Ransom Note](https://leetcode.cn/problems/ransom-note/) (Easy)
+
 ## 383. Ransom Note
 
 -   [LeetCode](https://leetcode.com/problems/ransom-note/) | [LeetCode CH](https://leetcode.cn/problems/ransom-note/) (Easy)

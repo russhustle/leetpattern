@@ -4,6 +4,12 @@ comments: True
 
 # DP Unbounded Knapsack
 
+- [x] [139. Word Break](https://leetcode.cn/problems/word-break/) (Medium)
+- [x] [279. Perfect Squares](https://leetcode.cn/problems/perfect-squares/) (Medium)
+- [x] [322. Coin Change](https://leetcode.cn/problems/coin-change/) (Medium)
+- [x] [518. Coin Change II](https://leetcode.cn/problems/coin-change-ii/) (Medium)
+- [x] [377. Combination Sum IV](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
+
 ## 139. Word Break
 
 -   [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)

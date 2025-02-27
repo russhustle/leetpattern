@@ -4,6 +4,11 @@ comments: True
 
 # Queue Monotonic
 
+- [x] [918. Maximum Sum Circular Subarray](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
+- [x] [862. Shortest Subarray with Sum at Least K](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/) (Hard)
+- [x] [239. Sliding Window Maximum](https://leetcode.cn/problems/sliding-window-maximum/) (Hard)
+- [x] [2398. Maximum Number of Robots Within Budget](https://leetcode.cn/problems/maximum-number-of-robots-within-budget/) (Hard)
+
 ## 918. Maximum Sum Circular Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)

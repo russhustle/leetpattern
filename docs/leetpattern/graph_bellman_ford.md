@@ -4,6 +4,9 @@ comments: True
 
 # Graph Bellman Ford
 
+- [x] [743. Network Delay Time](https://leetcode.cn/problems/network-delay-time/) (Medium)
+- [x] [787. Cheapest Flights Within K Stops](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
+
 ## 743. Network Delay Time
 
 -   [LeetCode](https://leetcode.com/problems/network-delay-time/) | [LeetCode CH](https://leetcode.cn/problems/network-delay-time/) (Medium)

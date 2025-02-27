@@ -4,6 +4,20 @@ comments: True
 
 # Graph Others
 
+- [ ] [1042. Flower Planting With No Adjacent](https://leetcode.cn/problems/flower-planting-with-no-adjacent/) (Medium)
+- [ ] [1761. Minimum Degree of a Connected Trio in a Graph](https://leetcode.cn/problems/minimum-degree-of-a-connected-trio-in-a-graph/) (Hard)
+- [ ] [2508. Add Edges to Make Degrees of All Nodes Even](https://leetcode.cn/problems/add-edges-to-make-degrees-of-all-nodes-even/) (Hard)
+- [x] [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.cn/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) (Hard)
+- [ ] [2065. Maximum Path Quality of a Graph](https://leetcode.cn/problems/maximum-path-quality-of-a-graph/) (Hard)
+- [ ] [1697. Checking Existence of Edge Length Limited Paths](https://leetcode.cn/problems/checking-existence-of-edge-length-limited-paths/) (Hard)
+- [ ] [2242. Maximum Score of a Node Sequence](https://leetcode.cn/problems/maximum-score-of-a-node-sequence/) (Hard)
+- [ ] [2493. Divide Nodes Into the Maximum Number of Groups](https://leetcode.cn/problems/divide-nodes-into-the-maximum-number-of-groups/) (Hard)
+- [ ] [1782. Count Pairs Of Nodes](https://leetcode.cn/problems/count-pairs-of-nodes/) (Hard)
+- [ ] [3435. Frequencies of Shortest Supersequences](https://leetcode.cn/problems/frequencies-of-shortest-supersequences/) (Hard)
+- [ ] [277. Find the Celebrity](https://leetcode.cn/problems/find-the-celebrity/) (Medium)
+- [ ] [1724. Checking Existence of Edge Length Limited Paths II](https://leetcode.cn/problems/checking-existence-of-edge-length-limited-paths-ii/) (Hard)
+- [ ] [2077. Paths in Maze That Lead to Same Room](https://leetcode.cn/problems/paths-in-maze-that-lead-to-same-room/) (Medium)
+
 ## 1042. Flower Planting With No Adjacent
 
 -   [LeetCode](https://leetcode.com/problems/flower-planting-with-no-adjacent/) | [LeetCode CH](https://leetcode.cn/problems/flower-planting-with-no-adjacent/) (Medium)

@@ -4,6 +4,12 @@ comments: True
 
 # DP 01 Knapsack
 
+- [x] [416. Partition Equal Subset Sum](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
+- [x] [474. Ones and Zeroes](https://leetcode.cn/problems/ones-and-zeroes/) (Medium)
+- [x] [494. Target Sum](https://leetcode.cn/problems/target-sum/) (Medium)
+- [x] [1046. Last Stone Weight](https://leetcode.cn/problems/last-stone-weight/) (Easy)
+- [x] [1049. Last Stone Weight II](https://leetcode.cn/problems/last-stone-weight-ii/) (Medium)
+
 ## 416. Partition Equal Subset Sum
 
 -   [LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/) | [LeetCode CH](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)

@@ -4,6 +4,15 @@ comments: True
 
 # Greedy
 
+- [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+- [x] [55. Jump Game](https://leetcode.cn/problems/jump-game/) (Medium)
+- [x] [45. Jump Game II](https://leetcode.cn/problems/jump-game-ii/) (Medium)
+- [x] [134. Gas Station](https://leetcode.cn/problems/gas-station/) (Medium)
+- [x] [846. Hand of Straights](https://leetcode.cn/problems/hand-of-straights/) (Medium)
+- [x] [1899. Merge Triplets to Form Target Triplet](https://leetcode.cn/problems/merge-triplets-to-form-target-triplet/) (Medium)
+- [x] [763. Partition Labels](https://leetcode.cn/problems/partition-labels/) (Medium)
+- [x] [678. Valid Parenthesis String](https://leetcode.cn/problems/valid-parenthesis-string/) (Medium)
+
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)

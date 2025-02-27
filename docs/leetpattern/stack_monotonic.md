@@ -4,6 +4,17 @@ comments: True
 
 # Stack Monotonic
 
+- [x] [739. Daily Temperatures](https://leetcode.cn/problems/daily-temperatures/) (Medium)
+- [x] [496. Next Greater Element I](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
+- [x] [503. Next Greater Element II](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)
+- [x] [84. Largest Rectangle in Histogram](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+- [x] [85. Maximal Rectangle](https://leetcode.cn/problems/maximal-rectangle/) (Hard)
+- [x] [42. Trapping Rain Water](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+- [x] [901. Online Stock Span](https://leetcode.cn/problems/online-stock-span/) (Medium)
+- [x] [316. Remove Duplicate Letters](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)
+- [x] [456. 132 Pattern](https://leetcode.cn/problems/132-pattern/) (Medium)
+- [x] [2281. Sum of Total Strength of Wizards](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
+
 ## 739. Daily Temperatures
 
 -   [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)

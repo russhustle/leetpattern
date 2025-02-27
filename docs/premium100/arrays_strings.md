@@ -4,6 +4,14 @@ comments: True
 
 # Arrays Strings
 
+- [x] [624. Maximum Distance in Arrays](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
+- [ ] [280. Wiggle Sort](https://leetcode.cn/problems/wiggle-sort/) (Medium)
+- [ ] [1056. Confusing Number](https://leetcode.cn/problems/confusing-number/) (Easy)
+- [ ] [1427. Perform String Shifts](https://leetcode.cn/problems/perform-string-shifts/) (Easy)
+- [ ] [161. One Edit Distance](https://leetcode.cn/problems/one-edit-distance/) (Medium)
+- [ ] [186. Reverse Words in a String II](https://leetcode.cn/problems/reverse-words-in-a-string-ii/) (Medium)
+- [ ] [1055. Shortest Way to Form String](https://leetcode.cn/problems/shortest-way-to-form-string/) (Medium)
+
 ## 624. Maximum Distance in Arrays
 
 -   [LeetCode](https://leetcode.com/problems/maximum-distance-in-arrays/) | [LeetCode CH](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)

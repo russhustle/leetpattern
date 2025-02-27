@@ -4,6 +4,13 @@ comments: True
 
 # Intervals
 
+- [x] [55. Jump Game](https://leetcode.cn/problems/jump-game/) (Medium)
+- [x] [45. Jump Game II](https://leetcode.cn/problems/jump-game-ii/) (Medium)
+- [x] [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)
+- [x] [435. Non-overlapping Intervals](https://leetcode.cn/problems/non-overlapping-intervals/) (Medium)
+- [x] [763. Partition Labels](https://leetcode.cn/problems/partition-labels/) (Medium)
+- [x] [56. Merge Intervals](https://leetcode.cn/problems/merge-intervals/) (Medium)
+
 ## 55. Jump Game
 
 -   [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)

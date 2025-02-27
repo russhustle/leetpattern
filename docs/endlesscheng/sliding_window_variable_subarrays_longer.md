@@ -4,6 +4,14 @@ comments: True
 
 # Sliding Window Variable Subarrays Longer
 
+- [ ] [1358. Number of Substrings Containing All Three Characters](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) (Medium)
+- [ ] [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) (Medium)
+- [ ] [3325. Count Substrings With K-Frequency Characters I](https://leetcode.cn/problems/count-substrings-with-k-frequency-characters-i/) (Medium)
+- [ ] [2799. Count Complete Subarrays in an Array](https://leetcode.cn/problems/count-complete-subarrays-in-an-array/) (Medium)
+- [ ] [2537. Count the Number of Good Subarrays](https://leetcode.cn/problems/count-the-number-of-good-subarrays/) (Medium)
+- [ ] [3298. Count Substrings That Can Be Rearranged to Contain a String II](https://leetcode.cn/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/) (Hard)
+- [ ] [2495. Number of Subarrays Having Even Product](https://leetcode.cn/problems/number-of-subarrays-having-even-product/) (Medium)
+
 ## 1358. Number of Substrings Containing All Three Characters
 
 -   [LeetCode](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [LeetCode CH](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) (Medium)

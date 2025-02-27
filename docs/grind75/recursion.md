@@ -4,6 +4,10 @@ comments: True
 
 # Recursion
 
+- [x] [46. Permutations](https://leetcode.cn/problems/permutations/) (Medium)
+- [x] [78. Subsets](https://leetcode.cn/problems/subsets/) (Medium)
+- [x] [17. Letter Combinations of a Phone Number](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
+
 ## 46. Permutations
 
 -   [LeetCode](https://leetcode.com/problems/permutations/) | [LeetCode CH](https://leetcode.cn/problems/permutations/) (Medium)

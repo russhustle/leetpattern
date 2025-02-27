@@ -4,6 +4,9 @@ comments: True
 
 # Backtracking
 
+- [x] [39. Combination Sum](https://leetcode.cn/problems/combination-sum/) (Medium)
+- [x] [79. Word Search](https://leetcode.cn/problems/word-search/) (Medium)
+
 ## 39. Combination Sum
 
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)

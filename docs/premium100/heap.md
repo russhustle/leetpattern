@@ -4,6 +4,11 @@ comments: True
 
 # Heap
 
+- [ ] [1086. High Five](https://leetcode.cn/problems/high-five/) (Easy)
+- [ ] [1167. Minimum Cost to Connect Sticks](https://leetcode.cn/problems/minimum-cost-to-connect-sticks/) (Medium)
+- [ ] [1057. Campus Bikes](https://leetcode.cn/problems/campus-bikes/) (Medium)
+- [ ] [358. Rearrange String k Distance Apart](https://leetcode.cn/problems/rearrange-string-k-distance-apart/) (Hard)
+
 ## 1086. High Five
 
 -   [LeetCode](https://leetcode.com/problems/high-five/) | [LeetCode CH](https://leetcode.cn/problems/high-five/) (Easy)

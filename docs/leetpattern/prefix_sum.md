@@ -4,6 +4,20 @@ comments: True
 
 # Prefix Sum
 
+- [x] [2574. Left and Right Sum Differences](https://leetcode.cn/problems/left-and-right-sum-differences/) (Easy)
+- [x] [1732. Find the Highest Altitude](https://leetcode.cn/problems/find-the-highest-altitude/) (Easy)
+- [x] [303. Range Sum Query - Immutable](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)
+- [x] [304. Range Sum Query 2D - Immutable](https://leetcode.cn/problems/range-sum-query-2d-immutable/) (Medium)
+- [x] [560. Subarray Sum Equals K](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
+- [x] [238. Product of Array Except Self](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
+- [x] [974. Subarray Sums Divisible by K](https://leetcode.cn/problems/subarray-sums-divisible-by-k/) (Medium)
+- [x] [209. Minimum Size Subarray Sum](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
+- [x] [523. Continuous Subarray Sum](https://leetcode.cn/problems/continuous-subarray-sum/) (Medium)
+- [x] [1248. Count Number of Nice Subarrays](https://leetcode.cn/problems/count-number-of-nice-subarrays/) (Medium)
+- [x] [325. Maximum Size Subarray Sum Equals k](https://leetcode.cn/problems/maximum-size-subarray-sum-equals-k/) (Medium)
+- [x] [862. Shortest Subarray with Sum at Least K](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/) (Hard)
+- [x] [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) (Medium)
+
 ## 2574. Left and Right Sum Differences
 
 -   [LeetCode](https://leetcode.com/problems/left-and-right-sum-differences/) | [LeetCode CH](https://leetcode.cn/problems/left-and-right-sum-differences/) (Easy)

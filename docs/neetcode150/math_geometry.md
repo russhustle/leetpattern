@@ -4,6 +4,15 @@ comments: True
 
 # Math Geometry
 
+- [x] [48. Rotate Image](https://leetcode.cn/problems/rotate-image/) (Medium)
+- [x] [54. Spiral Matrix](https://leetcode.cn/problems/spiral-matrix/) (Medium)
+- [x] [73. Set Matrix Zeroes](https://leetcode.cn/problems/set-matrix-zeroes/) (Medium)
+- [x] [202. Happy Number](https://leetcode.cn/problems/happy-number/) (Easy)
+- [x] [66. Plus One](https://leetcode.cn/problems/plus-one/) (Easy)
+- [x] [50. Pow(x, n)](https://leetcode.cn/problems/powx-n/) (Medium)
+- [x] [43. Multiply Strings](https://leetcode.cn/problems/multiply-strings/) (Medium)
+- [x] [166. Fraction to Recurring Decimal](https://leetcode.cn/problems/fraction-to-recurring-decimal/) (Medium)
+
 ## 48. Rotate Image
 
 -   [LeetCode](https://leetcode.com/problems/rotate-image/) | [LeetCode CH](https://leetcode.cn/problems/rotate-image/) (Medium)

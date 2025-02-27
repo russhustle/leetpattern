@@ -4,6 +4,10 @@ comments: True
 
 # Eulerian Path and Circuit
 
+- [x] [332. Reconstruct Itinerary](https://leetcode.cn/problems/reconstruct-itinerary/) (Hard)
+- [ ] [753. Cracking the Safe](https://leetcode.cn/problems/cracking-the-safe/) (Hard)
+- [ ] [2097. Valid Arrangement of Pairs](https://leetcode.cn/problems/valid-arrangement-of-pairs/) (Hard)
+
 ## 332. Reconstruct Itinerary
 
 -   [LeetCode](https://leetcode.com/problems/reconstruct-itinerary/) | [LeetCode CH](https://leetcode.cn/problems/reconstruct-itinerary/) (Hard)

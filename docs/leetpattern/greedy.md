@@ -4,6 +4,23 @@ comments: True
 
 # Greedy
 
+- [x] [455. Assign Cookies](https://leetcode.cn/problems/assign-cookies/) (Easy)
+- [x] [1005. Maximize Sum Of Array After K Negations](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) (Easy)
+- [x] [860. Lemonade Change](https://leetcode.cn/problems/lemonade-change/) (Easy)
+- [x] [2037. Minimum Number of Moves to Seat Everyone](https://leetcode.cn/problems/minimum-number-of-moves-to-seat-everyone/) (Easy)
+- [x] [376. Wiggle Subsequence](https://leetcode.cn/problems/wiggle-subsequence/) (Medium)
+- [x] [738. Monotone Increasing Digits](https://leetcode.cn/problems/monotone-increasing-digits/) (Medium)
+- [x] [122. Best Time to Buy and Sell Stock II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) (Medium)
+- [x] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) (Medium)
+- [x] [135. Candy](https://leetcode.cn/problems/candy/) (Hard)
+- [x] [406. Queue Reconstruction by Height](https://leetcode.cn/problems/queue-reconstruction-by-height/) (Medium)
+- [x] [3075. Maximize Happiness of Selected Children](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) (Medium)
+- [x] [945. Minimum Increment to Make Array Unique](https://leetcode.cn/problems/minimum-increment-to-make-array-unique/) (Medium)
+- [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+- [x] [134. Gas Station](https://leetcode.cn/problems/gas-station/) (Medium)
+- [x] [968. Binary Tree Cameras](https://leetcode.cn/problems/binary-tree-cameras/) (Hard)
+- [x] [1589. Maximum Sum Obtained of Any Permutation](https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
+
 ## 455. Assign Cookies
 
 -   [LeetCode](https://leetcode.com/problems/assign-cookies/) | [LeetCode CH](https://leetcode.cn/problems/assign-cookies/) (Easy)

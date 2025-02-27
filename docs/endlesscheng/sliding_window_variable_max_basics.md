@@ -4,6 +4,17 @@ comments: True
 
 # Sliding Window Variable Max Basics
 
+- [x] [3. Longest Substring Without Repeating Characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
+- [ ] [3090. Maximum Length Substring With Two Occurrences](https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/) (Easy)
+- [ ] [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) (Medium)
+- [x] [1208. Get Equal Substrings Within Budget](https://leetcode.cn/problems/get-equal-substrings-within-budget/) (Medium)
+- [ ] [904. Fruit Into Baskets](https://leetcode.cn/problems/fruit-into-baskets/) (Medium)
+- [ ] [1695. Maximum Erasure Value](https://leetcode.cn/problems/maximum-erasure-value/) (Medium)
+- [ ] [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) (Medium)
+- [x] [2024. Maximize the Confusion of an Exam](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/) (Medium)
+- [x] [1004. Max Consecutive Ones III](https://leetcode.cn/problems/max-consecutive-ones-iii/) (Medium)
+- [ ] [1658. Minimum Operations to Reduce X to Zero](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/) (Medium)
+
 ## 3. Longest Substring Without Repeating Characters
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)

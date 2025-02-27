@@ -4,6 +4,12 @@ comments: True
 
 # Select
 
+- [x] [1757. Recyclable and Low Fat Products](https://leetcode.cn/problems/recyclable-and-low-fat-products/) (Easy)
+- [x] [584. Find Customer Referee](https://leetcode.cn/problems/find-customer-referee/) (Easy)
+- [x] [595. Big Countries](https://leetcode.cn/problems/big-countries/) (Easy)
+- [x] [1148. Article Views I](https://leetcode.cn/problems/article-views-i/) (Easy)
+- [x] [1683. Invalid Tweets](https://leetcode.cn/problems/invalid-tweets/) (Easy)
+
 ## 1757. Recyclable and Low Fat Products
 
 -   [LeetCode](https://leetcode.com/problems/recyclable-and-low-fat-products/) | [LeetCode CH](https://leetcode.cn/problems/recyclable-and-low-fat-products/) (Easy)

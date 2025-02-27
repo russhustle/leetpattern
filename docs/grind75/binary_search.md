@@ -4,6 +4,12 @@ comments: True
 
 # Binary Search
 
+- [x] [704. Binary Search](https://leetcode.cn/problems/binary-search/) (Easy)
+- [x] [278. First Bad Version](https://leetcode.cn/problems/first-bad-version/) (Easy)
+- [ ] [33. Search in Rotated Sorted Array](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
+- [ ] [981. Time Based Key-Value Store](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
+- [ ] [1235. Maximum Profit in Job Scheduling](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) (Hard)
+
 ## 704. Binary Search
 
 -   [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)

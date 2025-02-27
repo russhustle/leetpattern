@@ -4,6 +4,8 @@ comments: True
 
 # Stack
 
+- [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+
 ## 20. Valid Parentheses
 
 -   [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)

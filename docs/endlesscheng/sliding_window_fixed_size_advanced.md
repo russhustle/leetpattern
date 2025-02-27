@@ -4,6 +4,22 @@ comments: True
 
 # Sliding Window Fixed Size Advanced
 
+- [ ] [1461. Check If a String Contains All Binary Codes of Size K](https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) (Medium)
+- [ ] [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together-ii/) (Medium)
+- [ ] [1297. Maximum Number of Occurrences of a Substring](https://leetcode.cn/problems/maximum-number-of-occurrences-of-a-substring/) (Medium)
+- [ ] [2653. Sliding Subarray Beauty](https://leetcode.cn/problems/sliding-subarray-beauty/) (Medium)
+- [ ] [3439. Reschedule Meetings for Maximum Free Time I](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-i/) (Medium)
+- [ ] [1888. Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.cn/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) (Medium)
+- [x] [567. Permutation in String](https://leetcode.cn/problems/permutation-in-string/) (Medium)
+- [x] [438. Find All Anagrams in a String](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
+- [ ] [30. Substring with Concatenation of All Words](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/) (Hard)
+- [ ] [2156. Find Substring With Given Hash Value](https://leetcode.cn/problems/find-substring-with-given-hash-value/) (Hard)
+- [ ] [2953. Count Complete Substrings](https://leetcode.cn/problems/count-complete-substrings/) (Hard)
+- [ ] [1016. Binary String With Substrings Representing 1 To N](https://leetcode.cn/problems/binary-string-with-substrings-representing-1-to-n/) (Medium)
+- [ ] [683. K Empty Slots](https://leetcode.cn/problems/k-empty-slots/) (Hard)
+- [ ] [2067. Number of Equal Count Substrings](https://leetcode.cn/problems/number-of-equal-count-substrings/) (Medium)
+- [ ] [2524. Maximum Frequency Score of a Subarray](https://leetcode.cn/problems/maximum-frequency-score-of-a-subarray/) (Hard)
+
 ## 1461. Check If a String Contains All Binary Codes of Size K
 
 -   [LeetCode](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | [LeetCode CH](https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) (Medium)

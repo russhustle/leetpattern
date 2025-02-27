@@ -4,6 +4,23 @@ comments: True
 
 # Backtracking
 
+- [x] [77. Combinations](https://leetcode.cn/problems/combinations/) (Medium)
+- [x] [17. Letter Combinations of a Phone Number](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
+- [x] [39. Combination Sum](https://leetcode.cn/problems/combination-sum/) (Medium)
+- [x] [40. Combination Sum II](https://leetcode.cn/problems/combination-sum-ii/) (Medium)
+- [x] [216. Combination Sum III](https://leetcode.cn/problems/combination-sum-iii/) (Medium)
+- [x] [131. Palindrome Partitioning](https://leetcode.cn/problems/palindrome-partitioning/) (Medium)
+- [x] [93. Restore IP Addresses](https://leetcode.cn/problems/restore-ip-addresses/) (Medium)
+- [x] [78. Subsets](https://leetcode.cn/problems/subsets/) (Medium)
+- [x] [90. Subsets II](https://leetcode.cn/problems/subsets-ii/) (Medium)
+- [x] [491. Non-decreasing Subsequences](https://leetcode.cn/problems/non-decreasing-subsequences/) (Medium)
+- [x] [46. Permutations](https://leetcode.cn/problems/permutations/) (Medium)
+- [x] [47. Permutations II](https://leetcode.cn/problems/permutations-ii/) (Medium)
+- [x] [51. N-Queens](https://leetcode.cn/problems/n-queens/) (Hard)
+- [x] [37. Sudoku Solver](https://leetcode.cn/problems/sudoku-solver/) (Hard)
+- [x] [79. Word Search](https://leetcode.cn/problems/word-search/) (Medium)
+- [x] [212. Word Search II](https://leetcode.cn/problems/word-search-ii/) (Hard)
+
 ## 77. Combinations
 
 -   [LeetCode](https://leetcode.com/problems/combinations/) | [LeetCode CH](https://leetcode.cn/problems/combinations/) (Medium)

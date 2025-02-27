@@ -4,6 +4,14 @@ comments: True
 
 # Hash Map
 
+- [x] [383. Ransom Note](https://leetcode.cn/problems/ransom-note/) (Easy)
+- [x] [350. Intersection of Two Arrays II](https://leetcode.cn/problems/intersection-of-two-arrays-ii/) (Easy)
+- [x] [1. Two Sum](https://leetcode.cn/problems/two-sum/) (Easy)
+- [x] [409. Longest Palindrome](https://leetcode.cn/problems/longest-palindrome/) (Easy)
+- [x] [1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/) (Easy)
+- [x] [202. Happy Number](https://leetcode.cn/problems/happy-number/) (Easy)
+- [x] [454. 4Sum II](https://leetcode.cn/problems/4sum-ii/) (Medium)
+
 ## 383. Ransom Note
 
 -   [LeetCode](https://leetcode.com/problems/ransom-note/) | [LeetCode CH](https://leetcode.cn/problems/ransom-note/) (Easy)

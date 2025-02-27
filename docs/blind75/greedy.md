@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 -   Tags: array, divide and conquer, dynamic programming
 
-```python
+```python title="53. Maximum Subarray"
 --8<-- "0053_maximum_subarray.py"
 ```
 
@@ -35,6 +35,6 @@ comments: True
 |   7   |   0   |       7       |     8     |          True           |
 |   8   |   0   |       8       |     8     |          True           |
 
-```python
+```python title="55. Jump Game"
 --8<-- "0055_jump_game.py"
 ```

@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/rotate-image/) | [LeetCode CH](https://leetcode.cn/problems/rotate-image/) (Medium)
 -   Tags: array, math, matrix
 
-```python
+```python title="48. Rotate Image"
 --8<-- "0048_rotate_image.py"
 ```
 
@@ -19,7 +19,7 @@ comments: True
 -   Tags: array, matrix, simulation
 -   Return all elements of the matrix in spiral order.
 
-```python
+```python title="54. Spiral Matrix"
 --8<-- "0054_spiral_matrix.py"
 ```
 
@@ -28,6 +28,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/) | [LeetCode CH](https://leetcode.cn/problems/set-matrix-zeroes/) (Medium)
 -   Tags: array, hash table, matrix
 
-```python
+```python title="73. Set Matrix Zeroes"
 --8<-- "0073_set_matrix_zeroes.py"
 ```

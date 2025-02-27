@@ -22,7 +22,7 @@ comments: True
 | 2     | 0       | 1     |
 | 2     | 1       | 2     |
 
-```python
+```python title="169. Majority Element"
 --8<-- "0169_majority_element.py"
 ```
 
@@ -31,7 +31,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/majority-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/majority-element-ii/) (Medium)
 -   Tags: array, hash table, sorting, counting
 
-```python
+```python title="229. Majority Element II"
 --8<-- "0229_majority_element_ii.py"
 ```
 
@@ -41,7 +41,7 @@ comments: True
 -   Tags: array, two pointers, binary search, bit manipulation
 -   Find the duplicate number in an array containing `n + 1` integers where each integer is between `1` and `n` inclusive.
 
-```python
+```python title="287. Find the Duplicate Number"
 --8<-- "0287_find_the_duplicate_number.py"
 ```
 
@@ -50,7 +50,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) (Easy)
 -   Tags: array, binary search
 
-```python
+```python title="1150. Check If a Number Is Majority Element in a Sorted Array"
 --8<-- "1150_check_if_a_number_is_majority_element_in_a_sorted_array.py"
 ```
 
@@ -59,7 +59,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/online-majority-element-in-subarray/) | [LeetCode CH](https://leetcode.cn/problems/online-majority-element-in-subarray/) (Hard)
 -   Tags: array, binary search, design, binary indexed tree, segment tree
 
-```python
+```python title="1157. Online Majority Element In Subarray"
 --8<-- "1157_online_majority_element_in_subarray.py"
 ```
 
@@ -68,6 +68,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/teemo-attacking/) | [LeetCode CH](https://leetcode.cn/problems/teemo-attacking/) (Easy)
 -   Tags: array, simulation
 
-```python
+```python title="495. Teemo Attacking"
 --8<-- "0495_teemo_attacking.py"
 ```

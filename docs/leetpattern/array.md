@@ -10,7 +10,7 @@ comments: True
 -   Tags: array, sorting
 -   Return the third maximum number in an array. If the third maximum does not exist, return the maximum number.
 
-```python
+```python title="414. Third Maximum Number"
 --8<-- "0414_third_maximum_number.py"
 ```
 
@@ -32,7 +32,7 @@ comments: True
 | 2     | 0       | 1     |
 | 2     | 1       | 2     |
 
-```python
+```python title="169. Majority Element"
 --8<-- "0169_majority_element.py"
 ```
 
@@ -41,7 +41,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/convert-1d-array-into-2d-array/) | [LeetCode CH](https://leetcode.cn/problems/convert-1d-array-into-2d-array/) (Easy)
 -   Tags: array, matrix, simulation
 
-```python
+```python title="2022. Convert 1D Array Into 2D Array"
 --8<-- "2022_convert_1d_array_into_2d_array.py"
 ```
 
@@ -51,7 +51,7 @@ comments: True
 -   Tags: array, matrix, simulation
 -   Return all elements of the matrix in spiral order.
 
-```python
+```python title="54. Spiral Matrix"
 --8<-- "0054_spiral_matrix.py"
 ```
 
@@ -61,6 +61,6 @@ comments: True
 -   Tags: array, matrix, simulation
 -   Return a square matrix filled with elements from 1 to n^2 in spiral order.
 
-```python
+```python title="59. Spiral Matrix II"
 --8<-- "0059_spiral_matrix_ii.py"
 ```

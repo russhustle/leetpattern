@@ -20,7 +20,7 @@ comments: True
 | `{`  | push   | "\{"  |
 | `}`  | pop    | ""    |
 
-```python
+```python title="20. Valid Parentheses"
 --8<-- "0020_valid_parentheses.py"
 ```
 
@@ -34,7 +34,7 @@ comments: True
     -   `peek()` - Get the front element.
     -   `empty()` - Return whether the queue is empty.
 
-```python
+```python title="232. Implement Queue using Stacks"
 --8<-- "0232_implement_queue_using_stacks.py"
 ```
 
@@ -52,7 +52,7 @@ comments: True
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
 
-```python
+```python title="150. Evaluate Reverse Polish Notation"
 --8<-- "0150_evaluate_reverse_polish_notation.py"
 ```
 
@@ -62,7 +62,7 @@ comments: True
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
-```python
+```python title="155. Min Stack"
 --8<-- "0155_min_stack.py"
 ```
 
@@ -80,7 +80,7 @@ comments: True
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
 
-```python
+```python title="42. Trapping Rain Water"
 --8<-- "0042_trapping_rain_water.py"
 ```
 
@@ -89,7 +89,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)
 -   Tags: math, string, stack, recursion
 
-```python
+```python title="224. Basic Calculator"
 --8<-- "0224_basic_calculator.py"
 ```
 
@@ -98,6 +98,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 -   Tags: array, stack, monotonic stack
 
-```python
+```python title="84. Largest Rectangle in Histogram"
 --8<-- "0084_largest_rectangle_in_histogram.py"
 ```

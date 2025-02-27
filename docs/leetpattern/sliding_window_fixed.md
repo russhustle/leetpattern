@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-average-subarray-i/) | [LeetCode CH](https://leetcode.cn/problems/maximum-average-subarray-i/) (Easy)
 -   Tags: array, sliding window
 
-```python
+```python title="643. Maximum Average Subarray I"
 --8<-- "0643_maximum_average_subarray_i.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/contains-duplicate-ii/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate-ii/) (Easy)
 -   Tags: array, hash table, sliding window
 
-```python
+```python title="219. Contains Duplicate II"
 --8<-- "0219_contains_duplicate_ii.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
 -   Tags: string, sliding window
 
-```python
+```python title="1456. Maximum Number of Vowels in a Substring of Given Length"
 --8<-- "1456_maximum_number_of_vowels_in_a_substring_of_given_length.py"
 ```
 
@@ -36,7 +36,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/permutation-in-string/) | [LeetCode CH](https://leetcode.cn/problems/permutation-in-string/) (Medium)
 -   Tags: hash table, two pointers, string, sliding window
 
-```python
+```python title="567. Permutation in String"
 --8<-- "0567_permutation_in_string.py"
 ```
 
@@ -45,7 +45,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subarray-product-less-than-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-product-less-than-k/) (Medium)
 -   Tags: array, binary search, sliding window, prefix sum
 
-```python
+```python title="713. Subarray Product Less Than K"
 --8<-- "0713_subarray_product_less_than_k.py"
 ```
 
@@ -54,7 +54,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [LeetCode CH](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
 -   Tags: array, sliding window
 
-```python
+```python title="1151. Minimum Swaps to Group All 1's Together"
 --8<-- "1151_minimum_swaps_to_group_all_1s_together.py"
 ```
 
@@ -63,7 +63,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-size-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
 -   Tags: array, binary search, sliding window, prefix sum
 
-```python
+```python title="209. Minimum Size Subarray Sum"
 --8<-- "0209_minimum_size_subarray_sum.py"
 ```
 
@@ -72,6 +72,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 -   Tags: hash table, string, sliding window
 
-```python
+```python title="76. Minimum Window Substring"
 --8<-- "0076_minimum_window_substring.py"
 ```

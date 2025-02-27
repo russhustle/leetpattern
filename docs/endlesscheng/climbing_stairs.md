@@ -27,7 +27,7 @@ comments: True
 |  9  |    21     |    34     |   55    |
 | 10  |    34     |    55     |   89    |
 
-```python
+```python title="70. Climbing Stairs"
 --8<-- "0070_climbing_stairs.py"
 ```
 
@@ -57,7 +57,7 @@ comments: True
 |  8  |    100    |     4     |     5     |   104   |
 |  9  |     1     |     5     |    104    |    6    |
 
-```python
+```python title="746. Min Cost Climbing Stairs"
 --8<-- "0746_min_cost_climbing_stairs.py"
 ```
 
@@ -66,7 +66,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combination-sum-iv/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
 -   Tags: array, dynamic programming
 
-```python
+```python title="377. Combination Sum IV"
 --8<-- "0377_combination_sum_iv.py"
 ```
 
@@ -75,7 +75,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-ways-to-build-good-strings/) | [LeetCode CH](https://leetcode.cn/problems/count-ways-to-build-good-strings/) (Medium)
 -   Tags: dynamic programming
 
-```python
+```python title="2466. Count Ways To Build Good Strings"
 --8<-- "2466_count_ways_to_build_good_strings.py"
 ```
 
@@ -84,7 +84,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-number-of-texts/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-texts/) (Medium)
 -   Tags: hash table, math, string, dynamic programming
 
-```python
+```python title="2266. Count Number of Texts"
 --8<-- "2266_count_number_of_texts.py"
 ```
 
@@ -93,6 +93,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-good-binary-strings/) | [LeetCode CH](https://leetcode.cn/problems/number-of-good-binary-strings/) (Medium)
 -   Tags: dynamic programming
 
-```python
+```python title="2533. Number of Good Binary Strings"
 --8<-- "2533_number_of_good_binary_strings.py"
 ```

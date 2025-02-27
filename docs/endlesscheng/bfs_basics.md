@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/) | [LeetCode CH](https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-i/) (Medium)
 -   Tags: array, breadth first search, graph
 
-```python
+```python title="3243. Shortest Distance After Road Addition Queries I"
 --8<-- "3243_shortest_distance_after_road_addition_queries_i.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/get-watched-videos-by-your-friends/) | [LeetCode CH](https://leetcode.cn/problems/get-watched-videos-by-your-friends/) (Medium)
 -   Tags: array, hash table, breadth first search, graph, sorting
 
-```python
+```python title="1311. Get Watched Videos by Your Friends"
 --8<-- "1311_get_watched_videos_by_your_friends.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-path-with-alternating-colors/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-with-alternating-colors/) (Medium)
 -   Tags: breadth first search, graph
 
-```python
+```python title="1129. Shortest Path with Alternating Colors"
 --8<-- "1129_shortest_path_with_alternating_colors.py"
 ```
 
@@ -36,7 +36,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/) | [LeetCode CH](https://leetcode.cn/problems/maximum-candies-you-can-get-from-boxes/) (Hard)
 -   Tags: array, breadth first search, graph
 
-```python
+```python title="1298. Maximum Candies You Can Get from Boxes"
 --8<-- "1298_maximum_candies_you_can_get_from_boxes.py"
 ```
 
@@ -45,7 +45,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-time-when-the-network-becomes-idle/) | [LeetCode CH](https://leetcode.cn/problems/the-time-when-the-network-becomes-idle/) (Medium)
 -   Tags: array, breadth first search, graph
 
-```python
+```python title="2039. The Time When the Network Becomes Idle"
 --8<-- "2039_the_time_when_the_network_becomes_idle.py"
 ```
 
@@ -54,7 +54,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-cycle-in-a-graph/) | [LeetCode CH](https://leetcode.cn/problems/shortest-cycle-in-a-graph/) (Hard)
 -   Tags: breadth first search, graph
 
-```python
+```python title="2608. Shortest Cycle in a Graph"
 --8<-- "2608_shortest_cycle_in_a_graph.py"
 ```
 
@@ -63,6 +63,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/bus-routes/) | [LeetCode CH](https://leetcode.cn/problems/bus-routes/) (Hard)
 -   Tags: array, hash table, breadth first search
 
-```python
+```python title="815. Bus Routes"
 --8<-- "0815_bus_routes.py"
 ```

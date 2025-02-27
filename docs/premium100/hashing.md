@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-anagram-mappings/) | [LeetCode CH](https://leetcode.cn/problems/find-anagram-mappings/) (Easy)
 -   Tags: array, hash table
 
-```python
+```python title="760. Find Anagram Mappings"
 --8<-- "0760_find_anagram_mappings.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/palindrome-permutation/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-permutation/) (Easy)
 -   Tags: hash table, string, bit manipulation
 
-```python
+```python title="266. Palindrome Permutation"
 --8<-- "0266_palindrome_permutation.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sentence-similarity/) | [LeetCode CH](https://leetcode.cn/problems/sentence-similarity/) (Easy)
 -   Tags: array, hash table, string
 
-```python
+```python title="734. Sentence Similarity"
 --8<-- "0734_sentence_similarity.py"
 ```
 
@@ -36,7 +36,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/single-row-keyboard/) | [LeetCode CH](https://leetcode.cn/problems/single-row-keyboard/) (Easy)
 -   Tags: hash table, string
 
-```python
+```python title="1165. Single-Row Keyboard"
 --8<-- "1165_single_row_keyboard.py"
 ```
 
@@ -45,7 +45,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/group-shifted-strings/) | [LeetCode CH](https://leetcode.cn/problems/group-shifted-strings/) (Medium)
 -   Tags: array, hash table, string
 
-```python
+```python title="249. Group Shifted Strings"
 --8<-- "0249_group_shifted_strings.py"
 ```
 
@@ -54,7 +54,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-unique-number/) | [LeetCode CH](https://leetcode.cn/problems/largest-unique-number/) (Easy)
 -   Tags: array, hash table, sorting
 
-```python
+```python title="1133. Largest Unique Number"
 --8<-- "1133_largest_unique_number.py"
 ```
 
@@ -63,7 +63,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/counting-elements/) | [LeetCode CH](https://leetcode.cn/problems/counting-elements/) (Easy)
 -   Tags: array, hash table
 
-```python
+```python title="1426. Counting Elements"
 --8<-- "1426_counting_elements.py"
 ```
 
@@ -72,6 +72,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/) | [LeetCode CH](https://leetcode.cn/problems/find-smallest-common-element-in-all-rows/) (Medium)
 -   Tags: array, hash table, binary search, matrix, counting
 
-```python
+```python title="1198. Find Smallest Common Element in All Rows"
 --8<-- "1198_find_smallest_common_element_in_all_rows.py"
 ```

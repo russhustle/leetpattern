@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-1-bits/) | [LeetCode CH](https://leetcode.cn/problems/number-of-1-bits/) (Easy)
 -   Tags: divide and conquer, bit manipulation
 
-```python
+```python title="191. Number of 1 Bits"
 --8<-- "0191_number_of_1_bits.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/counting-bits/) | [LeetCode CH](https://leetcode.cn/problems/counting-bits/) (Easy)
 -   Tags: dynamic programming, bit manipulation
 
-```python
+```python title="338. Counting Bits"
 --8<-- "0338_counting_bits.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/reverse-bits/) | [LeetCode CH](https://leetcode.cn/problems/reverse-bits/) (Easy)
 -   Tags: divide and conquer, bit manipulation
 
-```python
+```python title="190. Reverse Bits"
 --8<-- "0190_reverse_bits.py"
 ```
 
@@ -36,7 +36,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/missing-number/) | [LeetCode CH](https://leetcode.cn/problems/missing-number/) (Easy)
 -   Tags: array, hash table, math, binary search, bit manipulation, sorting
 
-```python
+```python title="268. Missing Number"
 --8<-- "0268_missing_number.py"
 ```
 
@@ -45,6 +45,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-of-two-integers/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-two-integers/) (Medium)
 -   Tags: math, bit manipulation
 
-```python
+```python title="371. Sum of Two Integers"
 --8<-- "0371_sum_of_two_integers.py"
 ```

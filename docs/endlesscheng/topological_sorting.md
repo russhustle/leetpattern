@@ -52,7 +52,7 @@ comments: True
 |   node    |  0  |  1  | **2** |  3  |   4   |  5  |
 | in-degree |  0  |  1  | **2** |  0  |   1   |  1  |
 
-```python
+```python title="1557. Minimum Number of Vertices to Reach All Nodes"
 --8<-- "1557_minimum_number_of_vertices_to_reach_all_nodes.py"
 ```
 
@@ -64,7 +64,7 @@ comments: True
 
 ![0207](../assets/0207.png){width=300px}
 
-```python
+```python title="210. Course Schedule II"
 --8<-- "0210_course_schedule_ii.py"
 ```
 
@@ -73,7 +73,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/course-schedule-iv/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-iv/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python
+```python title="1462. Course Schedule IV"
 --8<-- "1462_course_schedule_iv.py"
 ```
 
@@ -82,7 +82,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) | [LeetCode CH](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) (Medium)
 -   Tags: array, hash table, string, graph, topological sort
 
-```python
+```python title="2115. Find All Possible Recipes from Given Supplies"
 --8<-- "2115_find_all_possible_recipes_from_given_supplies.py"
 ```
 
@@ -91,7 +91,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/loud-and-rich/) | [LeetCode CH](https://leetcode.cn/problems/loud-and-rich/) (Medium)
 -   Tags: array, depth first search, graph, topological sort
 
-```python
+```python title="851. Loud and Rich"
 --8<-- "0851_loud_and_rich.py"
 ```
 
@@ -100,7 +100,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python
+```python title="310. Minimum Height Trees"
 --8<-- "0310_minimum_height_trees.py"
 ```
 
@@ -109,7 +109,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/build-a-matrix-with-conditions/) | [LeetCode CH](https://leetcode.cn/problems/build-a-matrix-with-conditions/) (Hard)
 -   Tags: array, graph, topological sort, matrix
 
-```python
+```python title="2392. Build a Matrix With Conditions"
 --8<-- "2392_build_a_matrix_with_conditions.py"
 ```
 
@@ -118,7 +118,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-eventual-safe-states/) | [LeetCode CH](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python
+```python title="802. Find Eventual Safe States"
 --8<-- "0802_find_eventual_safe_states.py"
 ```
 
@@ -127,7 +127,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/strange-printer-ii/) | [LeetCode CH](https://leetcode.cn/problems/strange-printer-ii/) (Hard)
 -   Tags: array, graph, topological sort, matrix
 
-```python
+```python title="1591. Strange Printer II"
 --8<-- "1591_strange_printer_ii.py"
 ```
 
@@ -137,7 +137,7 @@ comments: True
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return any permutation of the items that satisfies the requirements.
 
-```python
+```python title="1203. Sort Items by Groups Respecting Dependencies"
 --8<-- "1203_sort_items_by_groups_respecting_dependencies.py"
 ```
 
@@ -146,7 +146,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/collect-coins-in-a-tree/) | [LeetCode CH](https://leetcode.cn/problems/collect-coins-in-a-tree/) (Hard)
 -   Tags: array, tree, graph, topological sort
 
-```python
+```python title="2603. Collect Coins in a Tree"
 --8<-- "2603_collect_coins_in_a_tree.py"
 ```
 
@@ -156,7 +156,7 @@ comments: True
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
 
-```python
+```python title="269. Alien Dictionary"
 --8<-- "0269_alien_dictionary.py"
 ```
 
@@ -165,7 +165,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sequence-reconstruction/) | [LeetCode CH](https://leetcode.cn/problems/sequence-reconstruction/) (Medium)
 -   Tags: array, graph, topological sort
 
-```python
+```python title="444. Sequence Reconstruction"
 --8<-- "0444_sequence_reconstruction.py"
 ```
 
@@ -174,7 +174,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [LeetCode CH](https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/) (Medium)
 -   Tags: graph, topological sort
 
-```python
+```python title="1059. All Paths from Source Lead to Destination"
 --8<-- "1059_all_paths_from_source_lead_to_destination.py"
 ```
 
@@ -186,6 +186,6 @@ comments: True
 
 ![1136](../assets/1136.png){width=300px}
 
-```python
+```python title="1136. Parallel Courses"
 --8<-- "1136_parallel_courses.py"
 ```

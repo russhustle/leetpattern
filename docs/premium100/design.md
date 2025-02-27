@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-tic-tac-toe/) | [LeetCode CH](https://leetcode.cn/problems/design-tic-tac-toe/) (Medium)
 -   Tags: array, hash table, design, matrix, simulation
 
-```python
+```python title="348. Design Tic-Tac-Toe"
 --8<-- "0348_design_tic_tac_toe.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-snake-game/) | [LeetCode CH](https://leetcode.cn/problems/design-snake-game/) (Medium)
 -   Tags: array, hash table, design, queue, simulation
 
-```python
+```python title="353. Design Snake Game"
 --8<-- "0353_design_snake_game.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-compressed-string-iterator/) | [LeetCode CH](https://leetcode.cn/problems/design-compressed-string-iterator/) (Easy)
 -   Tags: array, string, design, iterator
 
-```python
+```python title="604. Design Compressed String Iterator"
 --8<-- "0604_design_compressed_string_iterator.py"
 ```
 
@@ -36,7 +36,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/encode-and-decode-strings/) | [LeetCode CH](https://leetcode.cn/problems/encode-and-decode-strings/) (Medium)
 -   Tags: array, string, design
 
-```python
+```python title="271. Encode and Decode Strings"
 --8<-- "0271_encode_and_decode_strings.py"
 ```
 
@@ -45,7 +45,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/zigzag-iterator/) | [LeetCode CH](https://leetcode.cn/problems/zigzag-iterator/) (Medium)
 -   Tags: array, design, queue, iterator
 
-```python
+```python title="281. Zigzag Iterator"
 --8<-- "0281_zigzag_iterator.py"
 ```
 
@@ -54,7 +54,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-stack/) | [LeetCode CH](https://leetcode.cn/problems/max-stack/) (Hard)
 -   Tags: linked list, stack, design, doubly linked list, ordered set
 
-```python
+```python title="716. Max Stack"
 --8<-- "0716_max_stack.py"
 ```
 
@@ -63,7 +63,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-a-leaderboard/) | [LeetCode CH](https://leetcode.cn/problems/design-a-leaderboard/) (Medium)
 -   Tags: hash table, design, sorting
 
-```python
+```python title="1244. Design A Leaderboard"
 --8<-- "1244_design_a_leaderboard.py"
 ```
 
@@ -72,7 +72,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard)
 -   Tags: string, tree, depth first search, breadth first search
 
-```python
+```python title="428. Serialize and Deserialize N-ary Tree"
 --8<-- "0428_serialize_and_deserialize_n_ary_tree.py"
 ```
 
@@ -81,6 +81,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/encode-n-ary-tree-to-binary-tree/) (Hard)
 -   Tags: tree, depth first search, breadth first search, design, binary tree
 
-```python
+```python title="431. Encode N-ary Tree to Binary Tree"
 --8<-- "0431_encode_n_ary_tree_to_binary_tree.py"
 ```

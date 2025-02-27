@@ -24,7 +24,7 @@ comments: True
 
 ![0200](../assets/0200.jpg)
 
-```python
+```python title="200. Number of Islands"
 --8<-- "0200_number_of_islands.py"
 ```
 
@@ -33,7 +33,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python
+```python title="695. Max Area of Island"
 --8<-- "0695_max_area_of_island.py"
 ```
 
@@ -42,7 +42,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 -   Tags: hash table, depth first search, breadth first search, graph
 
-```python
+```python title="133. Clone Graph"
 --8<-- "0133_clone_graph.py"
 ```
 
@@ -52,7 +52,7 @@ comments: True
 -   Tags: array, breadth first search, matrix
 ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
-```python
+```python title="286. Walls and Gates"
 --8<-- "0286_walls_and_gates.py"
 ```
 
@@ -65,7 +65,7 @@ comments: True
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-```python
+```python title="994. Rotting Oranges"
 --8<-- "0994_rotting_oranges.py"
 ```
 
@@ -74,7 +74,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python
+```python title="417. Pacific Atlantic Water Flow"
 --8<-- "0417_pacific_atlantic_water_flow.py"
 ```
 
@@ -83,7 +83,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python
+```python title="130. Surrounded Regions"
 --8<-- "0130_surrounded_regions.py"
 ```
 
@@ -206,7 +206,7 @@ flowchart LR
 -   pop `0` from the queue
 -   All courses are taken. Return `True`.
 
-```python
+```python title="207. Course Schedule"
 --8<-- "0207_course_schedule.py"
 ```
 
@@ -218,7 +218,7 @@ flowchart LR
 
 ![0207](../assets/0207.png){width=300px}
 
-```python
+```python title="210. Course Schedule II"
 --8<-- "0210_course_schedule_ii.py"
 ```
 
@@ -227,7 +227,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="261. Graph Valid Tree"
 --8<-- "0261_graph_valid_tree.py"
 ```
 
@@ -236,7 +236,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="323. Number of Connected Components in an Undirected Graph"
 --8<-- "0323_number_of_connected_components_in_an_undirected_graph.py"
 ```
 
@@ -245,7 +245,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="684. Redundant Connection"
 --8<-- "0684_redundant_connection.py"
 ```
 
@@ -262,6 +262,6 @@ flowchart LR
 | -------- | ----------- | --------- |
 | BFS      | O(n \* m^2) | O(n \* m) |
 
-```python
+```python title="127. Word Ladder"
 --8<-- "0127_word_ladder.py"
 ```

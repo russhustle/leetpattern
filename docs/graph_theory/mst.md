@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [LeetCode CH](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) (Medium)
 -   Tags: union find, graph, heap priority queue, minimum spanning tree
 
-```python
+```python title="1135. Connecting Cities With Minimum Cost"
 --8<-- "1135_connecting_cities_with_minimum_cost.py"
 ```
 
@@ -40,7 +40,7 @@ MST
 
 ![mst2](../assets/mst_2.png)
 
-```python
+```python title="1584. Min Cost to Connect All Points"
 --8<-- "1584_min_cost_to_connect_all_points.py"
 ```
 
@@ -52,7 +52,7 @@ MST
 
 ![1168_1](../assets/1168_1.png)
 
-```python
+```python title="1168. Optimize Water Distribution in a Village"
 --8<-- "1168_optimize_water_distribution_in_a_village.py"
 ```
 
@@ -61,6 +61,6 @@ MST
 -   [LeetCode](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
 -   Tags: union find, graph, sorting, minimum spanning tree, strongly connected component
 
-```python
+```python title="1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree"
 --8<-- "1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree.py"
 ```

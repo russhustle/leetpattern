@@ -24,7 +24,7 @@ comments: True
 
 ![0200](../assets/0200.jpg)
 
-```python
+```python title="200. Number of Islands"
 --8<-- "0200_number_of_islands.py"
 ```
 
@@ -33,7 +33,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-enclaves/) | [LeetCode CH](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python
+```python title="1020. Number of Enclaves"
 --8<-- "1020_number_of_enclaves.py"
 ```
 
@@ -42,7 +42,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-closed-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python
+```python title="1254. Number of Closed Islands"
 --8<-- "1254_number_of_closed_islands.py"
 ```
 
@@ -51,7 +51,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python
+```python title="695. Max Area of Island"
 --8<-- "0695_max_area_of_island.py"
 ```
 
@@ -60,6 +60,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python
+```python title="417. Pacific Atlantic Water Flow"
 --8<-- "0417_pacific_atlantic_water_flow.py"
 ```

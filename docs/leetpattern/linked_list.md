@@ -37,7 +37,7 @@ B --> D((3))
 F --> I((None))
 ```
 
-```python
+```python title="203. Remove Linked List Elements"
 --8<-- "0203_remove_linked_list_elements.py"
 ```
 
@@ -47,7 +47,7 @@ F --> I((None))
 -   Tags: linked list, design
 -   Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
 
-```python
+```python title="707. Design Linked List"
 --8<-- "0707_design_linked_list.py"
 ```
 
@@ -73,7 +73,7 @@ C --> B[2]
 B --> A[1]
 ```
 
-```python
+```python title="206. Reverse Linked List"
 --8<-- "0206_reverse_linked_list.py"
 ```
 
@@ -83,7 +83,7 @@ B --> A[1]
 -   Tags: linked list
 -   Delete a node in a singly linked list. You are given only the node to be deleted.
 
-```python
+```python title="237. Delete Node in a Linked List"
 --8<-- "0237_delete_node_in_a_linked_list.py"
 ```
 
@@ -93,7 +93,7 @@ B --> A[1]
 -   Tags: linked list, stack, recursion, monotonic stack
 -   Remove all nodes from a linked list that have a value greater than `maxValue`.
 
-```python
+```python title="2487. Remove Nodes From Linked List"
 --8<-- "2487_remove_nodes_from_linked_list.py"
 ```
 
@@ -103,7 +103,7 @@ B --> A[1]
 -   Tags: linked list, recursion
 -   Given a linked list, swap every two adjacent nodes and return its head.
 
-```python
+```python title="24. Swap Nodes in Pairs"
 --8<-- "0024_swap_nodes_in_pairs.py"
 ```
 
@@ -113,7 +113,7 @@ B --> A[1]
 -   Tags: linked list, two pointers
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
-```python
+```python title="19. Remove Nth Node From End of List"
 --8<-- "0019_remove_nth_node_from_end_of_list.py"
 ```
 
@@ -134,7 +134,7 @@ c1 --> c2((c2))
 c2 --> c3((c3))
 ```
 
-```python
+```python title="160. Intersection of Two Linked Lists"
 --8<-- "0160_intersection_of_two_linked_lists.py"
 ```
 
@@ -159,7 +159,7 @@ C --> D[-4]
 D --> B
 ```
 
-```python
+```python title="141. Linked List Cycle"
 --8<-- "0141_linked_list_cycle.py"
 ```
 
@@ -177,7 +177,7 @@ C --> D[-4]
 D --> B
 ```
 
-```python
+```python title="142. Linked List Cycle II"
 --8<-- "0142_linked_list_cycle_ii.py"
 ```
 
@@ -187,7 +187,7 @@ D --> B
 -   Tags: linked list, math, stack
 -   Given a number represented as a linked list, double it and return the resulting linked list.
 
-```python
+```python title="2816. Double a Number Represented as a Linked List"
 --8<-- "2816_double_a_number_represented_as_a_linked_list.py"
 ```
 
@@ -197,6 +197,6 @@ D --> B
 -   Tags: linked list, math, recursion
 -   Represent the sum of two numbers as a linked list.
 
-```python
+```python title="2. Add Two Numbers"
 --8<-- "0002_add_two_numbers.py"
 ```

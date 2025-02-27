@@ -39,7 +39,7 @@ comments: True
 | ==2== | ==2== |   0   |
 | ==2== |   0   |   1   |
 
-```python
+```python title="733. Flood Fill"
 --8<-- "0733_flood_fill.py"
 ```
 
@@ -48,7 +48,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
 -   Tags: array, dynamic programming, breadth first search, matrix
 
-```python
+```python title="542. 01 Matrix"
 --8<-- "0542_01_matrix.py"
 ```
 
@@ -57,7 +57,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 -   Tags: hash table, depth first search, breadth first search, graph
 
-```python
+```python title="133. Clone Graph"
 --8<-- "0133_clone_graph.py"
 ```
 
@@ -180,7 +180,7 @@ flowchart LR
 -   pop `0` from the queue
 -   All courses are taken. Return `True`.
 
-```python
+```python title="207. Course Schedule"
 --8<-- "0207_course_schedule.py"
 ```
 
@@ -204,7 +204,7 @@ flowchart LR
 
 ![0200](../assets/0200.jpg)
 
-```python
+```python title="200. Number of Islands"
 --8<-- "0200_number_of_islands.py"
 ```
 
@@ -217,7 +217,7 @@ flowchart LR
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-```python
+```python title="994. Rotting Oranges"
 --8<-- "0994_rotting_oranges.py"
 ```
 
@@ -226,7 +226,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
-```python
+```python title="721. Accounts Merge"
 --8<-- "0721_accounts_merge.py"
 ```
 
@@ -235,7 +235,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 -   Tags: array, string, backtracking, depth first search, matrix
 
-```python
+```python title="79. Word Search"
 --8<-- "0079_word_search.py"
 ```
 
@@ -244,7 +244,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python
+```python title="310. Minimum Height Trees"
 --8<-- "0310_minimum_height_trees.py"
 ```
 
@@ -261,6 +261,6 @@ flowchart LR
 | -------- | ----------- | --------- |
 | BFS      | O(n \* m^2) | O(n \* m) |
 
-```python
+```python title="127. Word Ladder"
 --8<-- "0127_word_ladder.py"
 ```

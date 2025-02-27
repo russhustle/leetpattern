@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
 -   Tags: array
 
-```python
+```python title="57. Insert Interval"
 --8<-- "0057_insert_interval.py"
 ```
 
@@ -21,7 +21,7 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python
+```python title="56. Merge Intervals"
 --8<-- "0056_merge_intervals.py"
 ```
 
@@ -30,7 +30,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/non-overlapping-intervals/) | [LeetCode CH](https://leetcode.cn/problems/non-overlapping-intervals/) (Medium)
 -   Tags: array, dynamic programming, greedy, sorting
 
-```python
+```python title="435. Non-overlapping Intervals"
 --8<-- "0435_non_overlapping_intervals.py"
 ```
 
@@ -39,7 +39,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms/) (Easy)
 -   Tags: array, sorting
 
-```python
+```python title="252. Meeting Rooms"
 --8<-- "0252_meeting_rooms.py"
 ```
 
@@ -48,7 +48,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms-ii/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium)
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 
-```python
+```python title="253. Meeting Rooms II"
 --8<-- "0253_meeting_rooms_ii.py"
 ```
 
@@ -57,6 +57,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | [LeetCode CH](https://leetcode.cn/problems/minimum-interval-to-include-each-query/) (Hard)
 -   Tags: array, binary search, line sweep, sorting, heap priority queue
 
-```python
+```python title="1851. Minimum Interval to Include Each Query"
 --8<-- "1851_minimum_interval_to_include_each_query.py"
 ```

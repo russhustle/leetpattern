@@ -14,7 +14,7 @@ comments: True
 | :------: | :-------------: | :--------------: |
 | Hashmap  |      O(n)       |       O(n)       |
 
-```python
+```python title="1. Two Sum"
 --8<-- "0001_two_sum.py"
 ```
 
@@ -24,7 +24,7 @@ comments: True
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
-```python
+```python title="121. Best Time to Buy and Sell Stock"
 --8<-- "0121_best_time_to_buy_and_sell_stock.py"
 ```
 
@@ -46,7 +46,7 @@ comments: True
 | 2     | 0       | 1     |
 | 2     | 1       | 2     |
 
-```python
+```python title="169. Majority Element"
 --8<-- "0169_majority_element.py"
 ```
 
@@ -56,7 +56,7 @@ comments: True
 -   Tags: array, hash table, sorting
 -   Return True if the array contains any duplicates, otherwise return False.
 
-```python
+```python title="217. Contains Duplicate"
 --8<-- "0217_contains_duplicate.py"
 ```
 
@@ -65,7 +65,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
 -   Tags: array
 
-```python
+```python title="57. Insert Interval"
 --8<-- "0057_insert_interval.py"
 ```
 
@@ -74,7 +74,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 -   Tags: array, two pointers, sorting
 
-```python
+```python title="15. 3Sum"
 --8<-- "0015_3sum.py"
 ```
 
@@ -90,7 +90,7 @@ comments: True
 | Prefix             | O(n) | O(n)  |
 | Prefix (Optimized) | O(n) | O(1)  |
 
-```python
+```python title="238. Product of Array Except Self"
 --8<-- "0238_product_of_array_except_self.py"
 ```
 
@@ -99,7 +99,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
 -   Tags: array, backtracking
 
-```python
+```python title="39. Combination Sum"
 --8<-- "0039_combination_sum.py"
 ```
 
@@ -111,7 +111,7 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python
+```python title="56. Merge Intervals"
 --8<-- "0056_merge_intervals.py"
 ```
 
@@ -120,7 +120,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
 -   Tags: array, two pointers, sorting
 
-```python
+```python title="75. Sort Colors"
 --8<-- "0075_sort_colors.py"
 ```
 
@@ -132,6 +132,6 @@ comments: True
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg){width=300px}
 
-```python
+```python title="11. Container With Most Water"
 --8<-- "0011_container_with_most_water.py"
 ```

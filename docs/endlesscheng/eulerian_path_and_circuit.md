@@ -25,7 +25,7 @@ JFK --> ATL
 ATL --> SFO
 ```
 
-```python
+```python title="332. Reconstruct Itinerary"
 --8<-- "0332_reconstruct_itinerary.py"
 ```
 
@@ -34,7 +34,7 @@ ATL --> SFO
 -   [LeetCode](https://leetcode.com/problems/cracking-the-safe/) | [LeetCode CH](https://leetcode.cn/problems/cracking-the-safe/) (Hard)
 -   Tags: depth first search, graph, eulerian circuit
 
-```python
+```python title="753. Cracking the Safe"
 --8<-- "0753_cracking_the_safe.py"
 ```
 
@@ -43,6 +43,6 @@ ATL --> SFO
 -   [LeetCode](https://leetcode.com/problems/valid-arrangement-of-pairs/) | [LeetCode CH](https://leetcode.cn/problems/valid-arrangement-of-pairs/) (Hard)
 -   Tags: depth first search, graph, eulerian circuit
 
-```python
+```python title="2097. Valid Arrangement of Pairs"
 --8<-- "2097_valid_arrangement_of_pairs.py"
 ```

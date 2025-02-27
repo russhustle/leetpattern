@@ -2,14 +2,14 @@ from collections import deque
 from typing import List
 
 
-# DFS - Backtracking
+# DFS (Backtracking)
 def allPathsSourceTargetDFS(graph: List[List[int]]) -> List[List[int]]:
-    result = []
+    res = []
     n = len(graph)
 
     def dfs(node, path):
         if node == n - 1:
-            result.append(path.copy())
+            res.append(path.copy())
             return None
 
         for nei in graph[node]:
@@ -19,25 +19,25 @@ def allPathsSourceTargetDFS(graph: List[List[int]]) -> List[List[int]]:
 
     dfs(0, [0])
 
-    return result
+    return res
 
 
 # BFS
 def allPathsSourceTargetBFS(graph: List[List[int]]) -> List[List[int]]:
     n = len(graph)
-    result = []
+    res = []
     q = deque([(0, [0])])
 
     while q:
         node, path = q.popleft()
 
         if node == n - 1:
-            result.append(path)
+            res.append(path)
 
         for nei in graph[node]:
             q.append((nei, path + [nei]))
 
-    return result
+    return res
 
 
 graph = [[1, 2], [3], [3], []]

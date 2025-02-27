@@ -20,7 +20,7 @@ comments: True
 | `{`  | push   | "\{"  |
 | `}`  | pop    | ""    |
 
-```python
+```python title="20. Valid Parentheses"
 --8<-- "0020_valid_parentheses.py"
 ```
 
@@ -30,7 +30,7 @@ comments: True
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
-```python
+```python title="155. Min Stack"
 --8<-- "0155_min_stack.py"
 ```
 
@@ -48,7 +48,7 @@ comments: True
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
 
-```python
+```python title="150. Evaluate Reverse Polish Notation"
 --8<-- "0150_evaluate_reverse_polish_notation.py"
 ```
 
@@ -57,7 +57,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
 -   Tags: string, dynamic programming, backtracking
 
-```python
+```python title="22. Generate Parentheses"
 --8<-- "0022_generate_parentheses.py"
 ```
 
@@ -78,7 +78,7 @@ comments: True
 | 6     | 76   | True         | `[ [76, 6] ]`                   | 0         |
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
-```python
+```python title="739. Daily Temperatures"
 --8<-- "0739_daily_temperatures.py"
 ```
 
@@ -87,7 +87,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
 -   Tags: array, stack, sorting, monotonic stack
 
-```python
+```python title="853. Car Fleet"
 --8<-- "0853_car_fleet.py"
 ```
 
@@ -96,6 +96,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 -   Tags: array, stack, monotonic stack
 
-```python
+```python title="84. Largest Rectangle in Histogram"
 --8<-- "0084_largest_rectangle_in_histogram.py"
 ```

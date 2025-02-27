@@ -26,7 +26,7 @@ comments: True
 |   7   |   0   |       7       |     8     |          True           |
 |   8   |   0   |       8       |     8     |          True           |
 
-```python
+```python title="55. Jump Game"
 --8<-- "0055_jump_game.py"
 ```
 
@@ -38,7 +38,7 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dJ7sWiOoK7g?si=3kc-pp4rs3Dk7Jqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python
+```python title="45. Jump Game II"
 --8<-- "0045_jump_game_ii.py"
 ```
 
@@ -54,7 +54,7 @@ comments: True
     1. Start from 1: if there is no overlap, we add one more arrow.
     2. Start from the number of balloons: if there is overlap, we need to reduce one arrow.
 
-```python
+```python title="452. Minimum Number of Arrows to Burst Balloons"
 --8<-- "0452_minimum_number_of_arrows_to_burst_balloons.py"
 ```
 
@@ -63,7 +63,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/non-overlapping-intervals/) | [LeetCode CH](https://leetcode.cn/problems/non-overlapping-intervals/) (Medium)
 -   Tags: array, dynamic programming, greedy, sorting
 
-```python
+```python title="435. Non-overlapping Intervals"
 --8<-- "0435_non_overlapping_intervals.py"
 ```
 
@@ -72,7 +72,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
 -   Tags: hash table, two pointers, string, greedy
 
-```python
+```python title="763. Partition Labels"
 --8<-- "0763_partition_labels.py"
 ```
 
@@ -84,6 +84,6 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python
+```python title="56. Merge Intervals"
 --8<-- "0056_merge_intervals.py"
 ```

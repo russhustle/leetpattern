@@ -10,7 +10,7 @@ comments: True
 -   Tags: array, two pointers, greedy, sorting
 -   Return the maximum number of your content children that can be satisfied.
 
-```python
+```python title="455. Assign Cookies"
 --8<-- "0455_assign_cookies.py"
 ```
 
@@ -20,7 +20,7 @@ comments: True
 -   Tags: array, greedy, sorting
 -   Return the maximum sum of the array after changing at most `k` elements.
 
-```python
+```python title="1005. Maximize Sum Of Array After K Negations"
 --8<-- "1005_maximize_sum_of_array_after_k_negations.py"
 ```
 
@@ -30,7 +30,7 @@ comments: True
 -   Tags: array, greedy
 -   Return `True` if and only if you can provide every customer with correct change.
 
-```python
+```python title="860. Lemonade Change"
 --8<-- "0860_lemonade_change.py"
 ```
 
@@ -40,7 +40,7 @@ comments: True
 -   Tags: array, greedy, sorting, counting sort
 -   Return the minimum number of moves needed to seat everyone.
 
-```python
+```python title="2037. Minimum Number of Moves to Seat Everyone"
 --8<-- "2037_minimum_number_of_moves_to_seat_everyone.py"
 ```
 
@@ -63,7 +63,7 @@ comments: True
 |     2     |      9      |     4     |      3      |    4    |     5     |
 |     5     |      2      |     4     |      5      |    6    |     5     |
 
-```python
+```python title="376. Wiggle Subsequence"
 --8<-- "0376_wiggle_subsequence.py"
 ```
 
@@ -73,7 +73,7 @@ comments: True
 -   Tags: math, greedy
 -   Return the largest number that is less than or equal to `n` with monotone increasing digits.
 
-```python
+```python title="738. Monotone Increasing Digits"
 --8<-- "0738_monotone_increasing_digits.py"
 ```
 
@@ -83,7 +83,7 @@ comments: True
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve.
 
-```python
+```python title="122. Best Time to Buy and Sell Stock II"
 --8<-- "0122_best_time_to_buy_and_sell_stock_ii.py"
 ```
 
@@ -93,7 +93,7 @@ comments: True
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve with the given transaction fee.
 
-```python
+```python title="714. Best Time to Buy and Sell Stock with Transaction Fee"
 --8<-- "0714_best_time_to_buy_and_sell_stock_with_transaction_fee.py"
 ```
 
@@ -103,7 +103,7 @@ comments: True
 -   Tags: array, greedy
 -   Return the minimum number of candies you must give.
 
-```python
+```python title="135. Candy"
 --8<-- "0135_candy.py"
 ```
 
@@ -113,7 +113,7 @@ comments: True
 -   Tags: array, binary indexed tree, segment tree, sorting
 -   Reconstruct the queue.
 
-```python
+```python title="406. Queue Reconstruction by Height"
 --8<-- "0406_queue_reconstruction_by_height.py"
 ```
 
@@ -122,7 +122,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [LeetCode CH](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) (Medium)
 -   Tags: array, greedy, sorting
 
-```python
+```python title="3075. Maximize Happiness of Selected Children"
 --8<-- "3075_maximize_happiness_of_selected_children.py"
 ```
 
@@ -131,7 +131,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [LeetCode CH](https://leetcode.cn/problems/minimum-increment-to-make-array-unique/) (Medium)
 -   Tags: array, greedy, sorting, counting
 
-```python
+```python title="945. Minimum Increment to Make Array Unique"
 --8<-- "0945_minimum_increment_to_make_array_unique.py"
 ```
 
@@ -140,7 +140,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 -   Tags: array, divide and conquer, dynamic programming
 
-```python
+```python title="53. Maximum Subarray"
 --8<-- "0053_maximum_subarray.py"
 ```
 
@@ -149,7 +149,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
 -   Tags: array, greedy
 
-```python
+```python title="134. Gas Station"
 --8<-- "0134_gas_station.py"
 ```
 
@@ -158,7 +158,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/binary-tree-cameras/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-cameras/) (Hard)
 -   Tags: dynamic programming, tree, depth first search, binary tree
 
-```python
+```python title="968. Binary Tree Cameras"
 --8<-- "0968_binary_tree_cameras.py"
 ```
 
@@ -167,6 +167,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
 -   Tags: array, greedy, sorting, prefix sum
 
-```python
+```python title="1589. Maximum Sum Obtained of Any Permutation"
 --8<-- "1589_maximum_sum_obtained_of_any_permutation.py"
 ```

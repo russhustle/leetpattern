@@ -25,7 +25,7 @@ graph TD
 2 --- 3((3))
 ```
 
-```python
+```python title="700. Search in a Binary Search Tree"
 --8<-- "0700_search_in_a_binary_search_tree.py"
 ```
 
@@ -34,7 +34,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
 -   Tags: tree, depth first search, binary search tree, binary tree
 
-```python
+```python title="98. Validate Binary Search Tree"
 --8<-- "0098_validate_binary_search_tree.py"
 ```
 
@@ -43,7 +43,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | [LeetCode CH](https://leetcode.cn/problems/minimum-absolute-difference-in-bst/) (Easy)
 -   Tags: tree, depth first search, breadth first search, binary search tree, binary tree
 
-```python
+```python title="530. Minimum Absolute Difference in BST"
 --8<-- "0530_minimum_absolute_difference_in_bst.py"
 ```
 
@@ -52,7 +52,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/find-mode-in-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-mode-in-binary-search-tree/) (Easy)
 -   Tags: tree, depth first search, binary search tree, binary tree
 
-```python
+```python title="501. Find Mode in Binary Search Tree"
 --8<-- "0501_find_mode_in_binary_search_tree.py"
 ```
 
@@ -61,7 +61,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
 -   Tags: tree, depth first search, binary search tree, binary tree
 
-```python
+```python title="235. Lowest Common Ancestor of a Binary Search Tree"
 --8<-- "0235_lowest_common_ancestor_of_a_binary_search_tree.py"
 ```
 
@@ -70,7 +70,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) (Medium)
 -   Tags: tree, binary search tree, binary tree
 
-```python
+```python title="701. Insert into a Binary Search Tree"
 --8<-- "0701_insert_into_a_binary_search_tree.py"
 ```
 
@@ -79,7 +79,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/delete-node-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/delete-node-in-a-bst/) (Medium)
 -   Tags: tree, binary search tree, binary tree
 
-```python
+```python title="450. Delete Node in a BST"
 --8<-- "0450_delete_node_in_a_bst.py"
 ```
 
@@ -88,7 +88,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/trim-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/trim-a-binary-search-tree/) (Medium)
 -   Tags: tree, depth first search, binary search tree, binary tree
 
-```python
+```python title="669. Trim a Binary Search Tree"
 --8<-- "0669_trim_a_binary_search_tree.py"
 ```
 
@@ -97,7 +97,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) (Easy)
 -   Tags: array, divide and conquer, tree, binary search tree, binary tree
 
-```python
+```python title="108. Convert Sorted Array to Binary Search Tree"
 --8<-- "0108_convert_sorted_array_to_binary_search_tree.py"
 ```
 
@@ -107,7 +107,7 @@ graph TD
 -   Tags: linked list, divide and conquer, tree, binary search tree, binary tree
 ![109](https://assets.leetcode.com/uploads/2020/08/17/linked.jpg)
 
-```python
+```python title="109. Convert Sorted List to Binary Search Tree"
 --8<-- "0109_convert_sorted_list_to_binary_search_tree.py"
 ```
 
@@ -117,7 +117,7 @@ graph TD
 -   Tags: tree, depth first search, binary search tree, binary tree
 ![538](https://assets.leetcode.com/uploads/2019/05/02/tree.png)
 
-```python
+```python title="538. Convert BST to Greater Tree"
 --8<-- "0538_convert_bst_to_greater_tree.py"
 ```
 
@@ -126,7 +126,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)
 -   Tags: tree, depth first search, binary search tree, binary tree
 
-```python
+```python title="230. Kth Smallest Element in a BST"
 --8<-- "0230_kth_smallest_element_in_a_bst.py"
 ```
 
@@ -135,7 +135,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/binary-search-tree-iterator/) | [LeetCode CH](https://leetcode.cn/problems/binary-search-tree-iterator/) (Medium)
 -   Tags: stack, tree, design, binary search tree, binary tree, iterator
 
-```python
+```python title="173. Binary Search Tree Iterator"
 --8<-- "0173_binary_search_tree_iterator.py"
 ```
 
@@ -144,6 +144,6 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/binary-search-tree-iterator-ii/) | [LeetCode CH](https://leetcode.cn/problems/binary-search-tree-iterator-ii/) (Medium)
 -   Tags: stack, tree, design, binary search tree, binary tree, iterator
 
-```python
+```python title="1586. Binary Search Tree Iterator II"
 --8<-- "1586_binary_search_tree_iterator_ii.py"
 ```

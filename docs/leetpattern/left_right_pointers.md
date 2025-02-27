@@ -10,7 +10,7 @@ comments: True
 -   Tags: math
 -   Return true if the given number is a palindrome. Otherwise, return false.
 
-```python
+```python title="9. Palindrome Number"
 --8<-- "0009_palindrome_number.py"
 ```
 
@@ -19,7 +19,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 -   Tags: array, two pointers, sorting
 
-```python
+```python title="15. 3Sum"
 --8<-- "0015_3sum.py"
 ```
 
@@ -28,7 +28,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/4sum/) | [LeetCode CH](https://leetcode.cn/problems/4sum/) (Medium)
 -   Tags: array, two pointers, sorting
 
-```python
+```python title="18. 4Sum"
 --8<-- "0018_4sum.py"
 ```
 
@@ -37,7 +37,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sqrtx/) | [LeetCode CH](https://leetcode.cn/problems/sqrtx/) (Easy)
 -   Tags: math, binary search
 
-```python
+```python title="69. Sqrt(x)"
 --8<-- "0069_sqrtx.py"
 ```
 
@@ -46,7 +46,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
 -   Tags: array, two pointers, sorting
 
-```python
+```python title="88. Merge Sorted Array"
 --8<-- "0088_merge_sorted_array.py"
 ```
 
@@ -55,7 +55,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/squares-of-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
 -   Tags: array, two pointers, sorting
 
-```python
+```python title="977. Squares of a Sorted Array"
 --8<-- "0977_squares_of_a_sorted_array.py"
 ```
 
@@ -64,7 +64,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/boats-to-save-people/) | [LeetCode CH](https://leetcode.cn/problems/boats-to-save-people/) (Medium)
 -   Tags: array, two pointers, greedy, sorting
 
-```python
+```python title="881. Boats to Save People"
 --8<-- "0881_boats_to_save_people.py"
 ```
 
@@ -73,7 +73,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
 -   Tags: array, two pointers, sorting
 
-```python
+```python title="75. Sort Colors"
 --8<-- "0075_sort_colors.py"
 ```
 
@@ -82,7 +82,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 -   Tags: two pointers, string
 
-```python
+```python title="125. Valid Palindrome"
 --8<-- "0125_valid_palindrome.py"
 ```
 
@@ -91,7 +91,7 @@ comments: True
 - [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
 -   Tags: array, two pointers, binary search
 
-```python
+```python title="167. Two Sum II - Input Array Is Sorted"
 --8<-- "0167_two_sum_ii_input_array_is_sorted.py"
 ```
 
@@ -103,6 +103,6 @@ comments: True
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg){width=300px}
 
-```python
+```python title="11. Container With Most Water"
 --8<-- "0011_container_with_most_water.py"
 ```

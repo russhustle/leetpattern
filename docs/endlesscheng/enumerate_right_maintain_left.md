@@ -14,7 +14,7 @@ comments: True
 | :------: | :-------------: | :--------------: |
 | Hashmap  |      O(n)       |       O(n)       |
 
-```python
+```python title="1. Two Sum"
 --8<-- "0001_two_sum.py"
 ```
 
@@ -23,7 +23,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-good-pairs/) | [LeetCode CH](https://leetcode.cn/problems/number-of-good-pairs/) (Easy)
 -   Tags: array, hash table, math, counting
 
-```python
+```python title="1512. Number of Good Pairs"
 --8<-- "1512_number_of_good_pairs.py"
 ```
 
@@ -32,7 +32,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/) | [LeetCode CH](https://leetcode.cn/problems/number-of-pairs-of-interchangeable-rectangles/) (Medium)
 -   Tags: array, hash table, math, counting, number theory
 
-```python
+```python title="2001. Number of Pairs of Interchangeable Rectangles"
 --8<-- "2001_number_of_pairs_of_interchangeable_rectangles.py"
 ```
 
@@ -41,7 +41,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/contains-duplicate-ii/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate-ii/) (Easy)
 -   Tags: array, hash table, sliding window
 
-```python
+```python title="219. Contains Duplicate II"
 --8<-- "0219_contains_duplicate_ii.py"
 ```
 
@@ -51,7 +51,7 @@ comments: True
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
-```python
+```python title="121. Best Time to Buy and Sell Stock"
 --8<-- "0121_best_time_to_buy_and_sell_stock.py"
 ```
 
@@ -60,7 +60,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-distance-in-arrays/) | [LeetCode CH](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 -   Tags: array, greedy
 
-```python
+```python title="624. Maximum Distance in Arrays"
 --8<-- "0624_maximum_distance_in_arrays.py"
 ```
 
@@ -69,7 +69,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/max-pair-sum-in-an-array/) (Easy)
 -   Tags: array, hash table
 
-```python
+```python title="2815. Max Pair Sum in an Array"
 --8<-- "2815_max_pair_sum_in_an_array.py"
 ```
 
@@ -78,6 +78,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [LeetCode CH](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) (Medium)
 -   Tags: array, hash table, sorting, heap priority queue
 
-```python
+```python title="2342. Max Sum of a Pair With Equal Sum of Digits"
 --8<-- "2342_max_sum_of_a_pair_with_equal_sum_of_digits.py"
 ```

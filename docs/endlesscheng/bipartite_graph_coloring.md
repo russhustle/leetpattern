@@ -17,7 +17,7 @@ How to group
 | Method 1 | -1        | 0       | 1       | `1 - color` |
 | Method 2 | 0         | 1       | -1      | `-color`    |
 
-```python
+```python title="785. Is Graph Bipartite?"
 --8<-- "0785_is_graph_bipartite.py"
 ```
 
@@ -27,6 +27,6 @@ How to group
 -   Tags: depth first search, breadth first search, union find, graph
 -   Determine if a graph can be divided into two groups such that no two nodes of the same group are connected.
 
-```python
+```python title="886. Possible Bipartition"
 --8<-- "0886_possible_bipartition.py"
 ```

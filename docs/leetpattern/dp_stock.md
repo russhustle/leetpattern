@@ -10,7 +10,7 @@ comments: True
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
-```python
+```python title="121. Best Time to Buy and Sell Stock"
 --8<-- "0121_best_time_to_buy_and_sell_stock.py"
 ```
 
@@ -20,7 +20,7 @@ comments: True
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve.
 
-```python
+```python title="122. Best Time to Buy and Sell Stock II"
 --8<-- "0122_best_time_to_buy_and_sell_stock_ii.py"
 ```
 
@@ -29,7 +29,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) (Hard)
 -   Tags: array, dynamic programming
 
-```python
+```python title="123. Best Time to Buy and Sell Stock III"
 --8<-- "0123_best_time_to_buy_and_sell_stock_iii.py"
 ```
 
@@ -38,7 +38,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) (Hard)
 -   Tags: array, dynamic programming
 
-```python
+```python title="188. Best Time to Buy and Sell Stock IV"
 --8<-- "0188_best_time_to_buy_and_sell_stock_iv.py"
 ```
 
@@ -47,7 +47,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) (Medium)
 -   Tags: array, dynamic programming
 
-```python
+```python title="309. Best Time to Buy and Sell Stock with Cooldown"
 --8<-- "0309_best_time_to_buy_and_sell_stock_with_cooldown.py"
 ```
 
@@ -57,6 +57,6 @@ comments: True
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve with the given transaction fee.
 
-```python
+```python title="714. Best Time to Buy and Sell Stock with Transaction Fee"
 --8<-- "0714_best_time_to_buy_and_sell_stock_with_transaction_fee.py"
 ```

@@ -29,7 +29,7 @@ graph LR
     -   Time Complexity: O(E \* logV)
     -   Space Complexity: O(V)
 
-```python
+```python title="743. Network Delay Time"
 --8<-- "0743_network_delay_time.py"
 ```
 
@@ -38,7 +38,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-i/) (Medium)
 -   Tags: array, graph, heap priority queue, matrix, shortest path
 
-```python
+```python title="3341. Find Minimum Time to Reach Last Room I"
 --8<-- "3341_find_minimum_time_to_reach_last_room_i.py"
 ```
 
@@ -47,7 +47,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-to-visit-disappearing-nodes/) (Medium)
 -   Tags: array, graph, heap priority queue, shortest path
 
-```python
+```python title="3112. Minimum Time to Visit Disappearing Nodes"
 --8<-- "3112_minimum_time_to_visit_disappearing_nodes.py"
 ```
 
@@ -56,7 +56,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | [LeetCode CH](https://leetcode.cn/problems/design-graph-with-shortest-path-calculator/) (Hard)
 -   Tags: graph, design, heap priority queue, shortest path
 
-```python
+```python title="2642. Design Graph With Shortest Path Calculator"
 --8<-- "2642_design_graph_with_shortest_path_calculator.py"
 ```
 
@@ -65,7 +65,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/path-with-maximum-probability/) | [LeetCode CH](https://leetcode.cn/problems/path-with-maximum-probability/) (Medium)
 -   Tags: array, graph, heap priority queue, shortest path
 
-```python
+```python title="1514. Path with Maximum Probability"
 --8<-- "1514_path_with_maximum_probability.py"
 ```
 
@@ -74,7 +74,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-ii/) (Medium)
 -   Tags: array, graph, heap priority queue, matrix, shortest path
 
-```python
+```python title="3342. Find Minimum Time to Reach Last Room II"
 --8<-- "3342_find_minimum_time_to_reach_last_room_ii.py"
 ```
 
@@ -84,7 +84,7 @@ graph LR
 -   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
-```python
+```python title="1631. Path With Minimum Effort"
 --8<-- "1631_path_with_minimum_effort.py"
 ```
 
@@ -93,7 +93,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/) | [LeetCode CH](https://leetcode.cn/problems/number-of-restricted-paths-from-first-to-last-node/) (Medium)
 -   Tags: dynamic programming, graph, topological sort, heap priority queue, shortest path
 
-```python
+```python title="1786. Number of Restricted Paths From First to Last Node"
 --8<-- "1786_number_of_restricted_paths_from_first_to_last_node.py"
 ```
 
@@ -102,7 +102,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/find-edges-in-shortest-paths/) | [LeetCode CH](https://leetcode.cn/problems/find-edges-in-shortest-paths/) (Hard)
 -   Tags: depth first search, breadth first search, graph, heap priority queue, shortest path
 
-```python
+```python title="3123. Find Edges in Shortest Paths"
 --8<-- "3123_find_edges_in_shortest_paths.py"
 ```
 
@@ -111,7 +111,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) | [LeetCode CH](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
 -   Tags: dynamic programming, graph, topological sort, shortest path
 
-```python
+```python title="1976. Number of Ways to Arrive at Destination"
 --8<-- "1976_number_of_ways_to_arrive_at_destination.py"
 ```
 
@@ -123,7 +123,7 @@ graph LR
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
-```python
+```python title="778. Swim in Rising Water"
 --8<-- "0778_swim_in_rising_water.py"
 ```
 
@@ -132,7 +132,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-of-a-path-with-special-roads/) (Medium)
 -   Tags: array, graph, heap priority queue, shortest path
 
-```python
+```python title="2662. Minimum Cost of a Path With Special Roads"
 --8<-- "2662_minimum_cost_of_a_path_with_special_roads.py"
 ```
 
@@ -141,7 +141,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/digit-operations-to-make-two-integers-equal/) | [LeetCode CH](https://leetcode.cn/problems/digit-operations-to-make-two-integers-equal/) (Medium)
 -   Tags: math, graph, heap priority queue, number theory, shortest path
 
-```python
+```python title="3377. Digit Operations to Make Two Integers Equal"
 --8<-- "3377_digit_operations_to_make_two_integers_equal.py"
 ```
 
@@ -150,7 +150,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/second-minimum-time-to-reach-destination/) | [LeetCode CH](https://leetcode.cn/problems/second-minimum-time-to-reach-destination/) (Hard)
 -   Tags: breadth first search, graph, shortest path
 
-```python
+```python title="2045. Second Minimum Time to Reach Destination"
 --8<-- "2045_second_minimum_time_to_reach_destination.py"
 ```
 
@@ -159,7 +159,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/) | [LeetCode CH](https://leetcode.cn/problems/minimize-the-maximum-edge-weight-of-graph/) (Medium)
 -   Tags: binary search, depth first search, breadth first search, graph, shortest path
 
-```python
+```python title="3419. Minimize the Maximum Edge Weight of Graph"
 --8<-- "3419_minimize_the_maximum_edge_weight_of_graph.py"
 ```
 
@@ -168,7 +168,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/) | [LeetCode CH](https://leetcode.cn/problems/reachable-nodes-in-subdivided-graph/) (Hard)
 -   Tags: graph, heap priority queue, shortest path
 
-```python
+```python title="882. Reachable Nodes In Subdivided Graph"
 --8<-- "0882_reachable_nodes_in_subdivided_graph.py"
 ```
 
@@ -177,7 +177,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/) | [LeetCode CH](https://leetcode.cn/problems/minimum-weighted-subgraph-with-the-required-paths/) (Hard)
 -   Tags: graph, shortest path
 
-```python
+```python title="2203. Minimum Weighted Subgraph With the Required Paths"
 --8<-- "2203_minimum_weighted_subgraph_with_the_required_paths.py"
 ```
 
@@ -186,7 +186,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-to-visit-a-cell-in-a-grid/) (Hard)
 -   Tags: array, breadth first search, graph, heap priority queue, matrix, shortest path
 
-```python
+```python title="2577. Minimum Time to Visit a Cell In a Grid"
 --8<-- "2577_minimum_time_to_visit_a_cell_in_a_grid.py"
 ```
 
@@ -195,7 +195,7 @@ graph LR
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-to-reach-destination-in-time/) (Hard)
 -   Tags: array, dynamic programming, graph
 
-```python
+```python title="1928. Minimum Cost to Reach Destination in Time"
 --8<-- "1928_minimum_cost_to_reach_destination_in_time.py"
 ```
 
@@ -220,7 +220,7 @@ graph TD
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python
+```python title="787. Cheapest Flights Within K Stops"
 --8<-- "0787_cheapest_flights_within_k_stops.py"
 ```
 
@@ -229,7 +229,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/modify-graph-edge-weights/) | [LeetCode CH](https://leetcode.cn/problems/modify-graph-edge-weights/) (Hard)
 -   Tags: graph, heap priority queue, shortest path
 
-```python
+```python title="2699. Modify Graph Edge Weights"
 --8<-- "2699_modify_graph_edge_weights.py"
 ```
 
@@ -238,7 +238,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/) | [LeetCode CH](https://leetcode.cn/problems/minimum-path-cost-in-a-hidden-grid/) (Medium)
 -   Tags: depth first search, breadth first search, graph, heap priority queue, interactive
 
-```python
+```python title="1810. Minimum Path Cost in a Hidden Grid"
 --8<-- "1810_minimum_path_cost_in_a_hidden_grid.py"
 ```
 
@@ -247,7 +247,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-to-reach-city-with-discounts/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-to-reach-city-with-discounts/) (Medium)
 -   Tags: graph, heap priority queue, shortest path
 
-```python
+```python title="2093. Minimum Cost to Reach City With Discounts"
 --8<-- "2093_minimum_cost_to_reach_city_with_discounts.py"
 ```
 
@@ -256,7 +256,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-to-buy-apples/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-to-buy-apples/) (Medium)
 -   Tags: array, graph, heap priority queue, shortest path
 
-```python
+```python title="2473. Minimum Cost to Buy Apples"
 --8<-- "2473_minimum_cost_to_buy_apples.py"
 ```
 
@@ -265,7 +265,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/find-shortest-path-with-k-hops/) | [LeetCode CH](https://leetcode.cn/problems/find-shortest-path-with-k-hops/) (Hard)
 -   Tags: graph, heap priority queue, shortest path
 
-```python
+```python title="2714. Find Shortest Path with K Hops"
 --8<-- "2714_find_shortest_path_with_k_hops.py"
 ```
 
@@ -274,6 +274,6 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/find-the-closest-marked-node/) | [LeetCode CH](https://leetcode.cn/problems/find-the-closest-marked-node/) (Medium)
 -   Tags: array, graph, heap priority queue, shortest path
 
-```python
+```python title="2737. Find the Closest Marked Node"
 --8<-- "2737_find_the_closest_marked_node.py"
 ```

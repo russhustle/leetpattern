@@ -21,7 +21,7 @@ comments: True
 | 6     | 76   | True         | `[ [76, 6] ]`                   | 0         |
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
-```python
+```python title="739. Daily Temperatures"
 --8<-- "0739_daily_temperatures.py"
 ```
 
@@ -30,7 +30,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
 -   Tags: array, hash table, stack, monotonic stack
 
-```python
+```python title="496. Next Greater Element I"
 --8<-- "0496_next_greater_element_i.py"
 ```
 
@@ -39,7 +39,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)
 -   Tags: array, stack, monotonic stack
 
-```python
+```python title="503. Next Greater Element II"
 --8<-- "0503_next_greater_element_ii.py"
 ```
 
@@ -48,7 +48,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 -   Tags: array, stack, monotonic stack
 
-```python
+```python title="84. Largest Rectangle in Histogram"
 --8<-- "0084_largest_rectangle_in_histogram.py"
 ```
 
@@ -60,7 +60,7 @@ comments: True
 
 ![0085](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg){width=300px}
 
-```python
+```python title="85. Maximal Rectangle"
 --8<-- "0085_maximal_rectangle.py"
 ```
 
@@ -78,7 +78,7 @@ comments: True
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
 
-```python
+```python title="42. Trapping Rain Water"
 --8<-- "0042_trapping_rain_water.py"
 ```
 
@@ -88,7 +88,7 @@ comments: True
 -   Tags: stack, design, monotonic stack, data stream
 -   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
-```python
+```python title="901. Online Stock Span"
 --8<-- "0901_online_stock_span.py"
 ```
 
@@ -97,7 +97,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/remove-duplicate-letters/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)
 -   Tags: string, stack, greedy, monotonic stack
 
-```python
+```python title="316. Remove Duplicate Letters"
 --8<-- "0316_remove_duplicate_letters.py"
 ```
 
@@ -106,7 +106,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
 -   Tags: array, binary search, stack, monotonic stack, ordered set
 
-```python
+```python title="456. 132 Pattern"
 --8<-- "0456_132_pattern.py"
 ```
 
@@ -115,6 +115,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
 -   Tags: array, stack, monotonic stack, prefix sum
 
-```python
+```python title="2281. Sum of Total Strength of Wizards"
 --8<-- "2281_sum_of_total_strength_of_wizards.py"
 ```

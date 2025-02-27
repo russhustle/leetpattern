@@ -17,6 +17,6 @@ comments: True
 > Note that bits are indexed from right to left in the binary representation of a number.
 > Return the array [even, odd].
 
-```python
+```python title="2595. Number of Even and Odd Bits"
 --8<-- "2595_number_of_even_and_odd_bits.py"
 ```

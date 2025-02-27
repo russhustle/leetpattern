@@ -27,7 +27,7 @@ comments: True
 |  9  |    13     |    21     |   34    |
 | 10  |    21     |    34     |   55    |
 
-```python
+```python title="509. Fibonacci Number"
 --8<-- "0509_fibonacci_number.py"
 ```
 
@@ -54,7 +54,7 @@ comments: True
 |  9  |    21     |    34     |   55    |
 | 10  |    34     |    55     |   89    |
 
-```python
+```python title="70. Climbing Stairs"
 --8<-- "0070_climbing_stairs.py"
 ```
 
@@ -84,7 +84,7 @@ comments: True
 |  8  |    100    |     4     |     5     |   104   |
 |  9  |     1     |     5     |    104    |    6    |
 
-```python
+```python title="746. Min Cost Climbing Stairs"
 --8<-- "0746_min_cost_climbing_stairs.py"
 ```
 
@@ -110,7 +110,7 @@ comments: True
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
 
-```python
+```python title="198. House Robber"
 --8<-- "0198_house_robber.py"
 ```
 
@@ -138,7 +138,7 @@ comments: True
 |  3  |     3     |     7     |     9     |         10          |   10    |
 |  4  |     1     |     9     |    10     |         10          |   10    |
 
-```python
+```python title="213. House Robber II"
 --8<-- "0213_house_robber_ii.py"
 ```
 
@@ -161,7 +161,7 @@ comments: True
 |     2     |      9      |     4     |      3      |    4    |     5     |
 |     5     |      2      |     4     |      5      |    6    |     5     |
 
-```python
+```python title="376. Wiggle Subsequence"
 --8<-- "0376_wiggle_subsequence.py"
 ```
 
@@ -189,7 +189,7 @@ comments: True
 | dp[7]=12 |        |        |        |        |         | 12\*1=12 |
 | `dp[n]`  |   2    |   4    |   6    |   9    |   12    |    18    |
 
-```python
+```python title="343. Integer Break"
 --8<-- "0343_integer_break.py"
 ```
 
@@ -201,6 +201,6 @@ comments: True
 -   `dp[n]` stores the result of the game when the number is `n`.
 -   Initialize `dp[1] = False`.
 
-```python
+```python title="1025. Divisor Game"
 --8<-- "1025_divisor_game.py"
 ```

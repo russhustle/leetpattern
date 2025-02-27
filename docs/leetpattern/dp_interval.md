@@ -19,7 +19,7 @@ comments: True
 |  a  |  0  |  0  |  0  |        1         |      1       |
 |  b  |  0  |  0  |  0  |        0         |      1       |
 
-```python
+```python title="516. Longest Palindromic Subsequence"
 --8<-- "0516_longest_palindromic_subsequence.py"
 ```
 
@@ -38,7 +38,7 @@ comments: True
 | **a** |  0  |  0  |  0  |  1  |  0  |
 | **e** |  0  |  0  |  0  |  0  |  1  |
 
-```python
+```python title="647. Palindromic Substrings"
 --8<-- "0647_palindromic_substrings.py"
 ```
 
@@ -48,6 +48,6 @@ comments: True
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
 
-```python
+```python title="5. Longest Palindromic Substring"
 --8<-- "0005_longest_palindromic_substring.py"
 ```

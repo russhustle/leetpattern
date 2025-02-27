@@ -9,6 +9,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/add-binary/) | [LeetCode CH](https://leetcode.cn/problems/add-binary/) (Easy)
 -   Tags: math, string, bit manipulation, simulation
 
-```python
+```python title="67. Add Binary"
 --8<-- "0067_add_binary.py"
 ```

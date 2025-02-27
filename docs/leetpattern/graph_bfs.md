@@ -13,7 +13,7 @@ comments: True
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-```python
+```python title="994. Rotting Oranges"
 --8<-- "0994_rotting_oranges.py"
 ```
 
@@ -30,7 +30,7 @@ comments: True
 | -------- | ----------- | --------- |
 | BFS      | O(n \* m^2) | O(n \* m) |
 
-```python
+```python title="127. Word Ladder"
 --8<-- "0127_word_ladder.py"
 ```
 
@@ -40,7 +40,7 @@ comments: True
 -   Tags: depth first search, breadth first search, graph
 -   ![1466](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
 
-```python
+```python title="1466. Reorder Routes to Make All Paths Lead to the City Zero"
 --8<-- "1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero.py"
 ```
 
@@ -50,7 +50,7 @@ comments: True
 -   Tags: array, breadth first search, matrix
 ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
-```python
+```python title="286. Walls and Gates"
 --8<-- "0286_walls_and_gates.py"
 ```
 
@@ -59,6 +59,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/bus-routes/) | [LeetCode CH](https://leetcode.cn/problems/bus-routes/) (Hard)
 -   Tags: array, hash table, breadth first search
 
-```python
+```python title="815. Bus Routes"
 --8<-- "0815_bus_routes.py"
 ```

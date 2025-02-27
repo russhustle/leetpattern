@@ -12,7 +12,7 @@ comments: True
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
-```python
+```python title="62. Unique Paths"
 --8<-- "0062_unique_paths.py"
 ```
 
@@ -21,6 +21,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
 -   Tags: string, dynamic programming
 
-```python
+```python title="1143. Longest Common Subsequence"
 --8<-- "1143_longest_common_subsequence.py"
 ```

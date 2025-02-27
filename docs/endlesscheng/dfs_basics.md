@@ -21,7 +21,7 @@ comments: True
 --8<-- "template/union_find.py"
 ```
 
-```python
+```python title="547. Number of Provinces"
 --8<-- "0547_number_of_provinces.py"
 ```
 
@@ -30,7 +30,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [LeetCode CH](https://leetcode.cn/problems/find-if-path-exists-in-graph/) (Easy)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="1971. Find if Path Exists in Graph"
 --8<-- "1971_find_if_path_exists_in_graph.py"
 ```
 
@@ -39,7 +39,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/all-paths-from-source-to-target/) | [LeetCode CH](https://leetcode.cn/problems/all-paths-from-source-to-target/) (Medium)
 -   Tags: backtracking, depth first search, breadth first search, graph
 
-```python
+```python title="797. All Paths From Source to Target"
 --8<-- "0797_all_paths_from_source_to_target.py"
 ```
 
@@ -48,7 +48,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/keys-and-rooms/) | [LeetCode CH](https://leetcode.cn/problems/keys-and-rooms/) (Medium)
 -   Tags: depth first search, breadth first search, graph
 
-```python
+```python title="841. Keys and Rooms"
 --8<-- "0841_keys_and_rooms.py"
 ```
 
@@ -57,7 +57,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="2316. Count Unreachable Pairs of Nodes in an Undirected Graph"
 --8<-- "2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph.py"
 ```
 
@@ -66,7 +66,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-operations-to-make-network-connected/) | [LeetCode CH](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="1319. Number of Operations to Make Network Connected"
 --8<-- "1319_number_of_operations_to_make_network_connected.py"
 ```
 
@@ -75,7 +75,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/) | [LeetCode CH](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="2492. Minimum Score of a Path Between Two Cities"
 --8<-- "2492_minimum_score_of_a_path_between_two_cities.py"
 ```
 
@@ -84,7 +84,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [LeetCode CH](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
 -   Tags: array, string, depth first search, breadth first search, graph
 
-```python
+```python title="3387. Maximize Amount After Two Days of Conversions"
 --8<-- "3387_maximize_amount_after_two_days_of_conversions.py"
 ```
 
@@ -93,7 +93,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/remove-methods-from-project/) | [LeetCode CH](https://leetcode.cn/problems/remove-methods-from-project/) (Medium)
 -   Tags: depth first search, breadth first search, graph
 
-```python
+```python title="3310. Remove Methods From Project"
 --8<-- "3310_remove_methods_from_project.py"
 ```
 
@@ -102,7 +102,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-the-number-of-complete-components/) | [LeetCode CH](https://leetcode.cn/problems/count-the-number-of-complete-components/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="2685. Count the Number of Complete Components"
 --8<-- "2685_count_the_number_of_complete_components.py"
 ```
 
@@ -111,7 +111,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | [LeetCode CH](https://leetcode.cn/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python
+```python title="2192. All Ancestors of a Node in a Directed Acyclic Graph"
 --8<-- "2192_all_ancestors_of_a_node_in_a_directed_acyclic_graph.py"
 ```
 
@@ -120,7 +120,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimize-malware-spread/) | [LeetCode CH](https://leetcode.cn/problems/minimize-malware-spread/) (Hard)
 -   Tags: array, hash table, depth first search, breadth first search, union find, graph
 
-```python
+```python title="924. Minimize Malware Spread"
 --8<-- "0924_minimize_malware_spread.py"
 ```
 
@@ -129,7 +129,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [LeetCode CH](https://leetcode.cn/problems/detonate-the-maximum-bombs/) (Medium)
 -   Tags: array, math, depth first search, breadth first search, graph, geometry
 
-```python
+```python title="2101. Detonate the Maximum Bombs"
 --8<-- "2101_detonate_the_maximum_bombs.py"
 ```
 
@@ -138,7 +138,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
-```python
+```python title="721. Accounts Merge"
 --8<-- "0721_accounts_merge.py"
 ```
 
@@ -261,7 +261,7 @@ flowchart LR
 -   pop `0` from the queue
 -   All courses are taken. Return `True`.
 
-```python
+```python title="207. Course Schedule"
 --8<-- "0207_course_schedule.py"
 ```
 
@@ -270,7 +270,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/find-eventual-safe-states/) | [LeetCode CH](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python
+```python title="802. Find Eventual Safe States"
 --8<-- "0802_find_eventual_safe_states.py"
 ```
 
@@ -279,7 +279,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/minimize-malware-spread-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimize-malware-spread-ii/) (Hard)
 -   Tags: array, hash table, depth first search, breadth first search, union find, graph
 
-```python
+```python title="928. Minimize Malware Spread II"
 --8<-- "0928_minimize_malware_spread_ii.py"
 ```
 
@@ -288,7 +288,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/find-all-people-with-secret/) | [LeetCode CH](https://leetcode.cn/problems/find-all-people-with-secret/) (Hard)
 -   Tags: depth first search, breadth first search, union find, graph, sorting
 
-```python
+```python title="2092. Find All People With Secret"
 --8<-- "2092_find_all_people_with_secret.py"
 ```
 
@@ -297,7 +297,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-walk-in-weighted-graph/) (Hard)
 -   Tags: array, bit manipulation, union find, graph
 
-```python
+```python title="3108. Minimum Cost Walk in Weighted Graph"
 --8<-- "3108_minimum_cost_walk_in_weighted_graph.py"
 ```
 
@@ -306,7 +306,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="261. Graph Valid Tree"
 --8<-- "0261_graph_valid_tree.py"
 ```
 
@@ -315,6 +315,6 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python
+```python title="323. Number of Connected Components in an Undirected Graph"
 --8<-- "0323_number_of_connected_components_in_an_undirected_graph.py"
 ```

@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 -   Tags: two pointers, design, sorting, heap priority queue, data stream
 
-```python
+```python title="295. Find Median from Data Stream"
 --8<-- "0295_find_median_from_data_stream.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sliding-window-median/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-median/) (Hard)
 -   Tags: array, hash table, sliding window, heap priority queue
 
-```python
+```python title="480. Sliding Window Median"
 --8<-- "0480_sliding_window_median.py"
 ```
 
@@ -27,6 +27,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/ipo/) | [LeetCode CH](https://leetcode.cn/problems/ipo/) (Hard)
 -   Tags: array, greedy, sorting, heap priority queue
 
-```python
+```python title="502. IPO"
 --8<-- "0502_ipo.py"
 ```

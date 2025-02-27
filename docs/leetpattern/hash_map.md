@@ -16,7 +16,7 @@ graph LR
     B["Ransom Note: abc"] --> C
 ```
 
-```python
+```python title="383. Ransom Note"
 --8<-- "0383_ransom_note.py"
 ```
 
@@ -26,7 +26,7 @@ graph LR
 -   Tags: array, hash table, two pointers, binary search, sorting
 -   Return the intersection of two arrays.
 
-```python
+```python title="350. Intersection of Two Arrays II"
 --8<-- "0350_intersection_of_two_arrays_ii.py"
 ```
 
@@ -40,7 +40,7 @@ graph LR
 | :------: | :-------------: | :--------------: |
 | Hashmap  |      O(n)       |       O(n)       |
 
-```python
+```python title="1. Two Sum"
 --8<-- "0001_two_sum.py"
 ```
 
@@ -50,7 +50,7 @@ graph LR
 -   Tags: hash table, string, greedy
 -   Return the length of the longest palindrome that can be built with the characters in the string.
 
-```python
+```python title="409. Longest Palindrome"
 --8<-- "0409_longest_palindrome.py"
 ```
 
@@ -60,7 +60,7 @@ graph LR
 -   Tags: array, hash table, sorting, counting
 -   For each number in the array, return how many numbers are smaller than it.
 
-```python
+```python title="1365. How Many Numbers Are Smaller Than the Current Number"
 --8<-- "1365_how_many_numbers_are_smaller_than_the_current_number.py"
 ```
 
@@ -71,7 +71,7 @@ graph LR
 -   Return `True` if the number is a happy number, otherwise, return `False`.
 -   A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
 
-```python
+```python title="202. Happy Number"
 --8<-- "0202_happy_number.py"
 ```
 
@@ -81,6 +81,6 @@ graph LR
 -   Tags: array, hash table
 -   Return the number of tuples `(i, j, k, l)` such that `A[i] + B[j] + C[k] + D[l] == 0`.
 
-```python
+```python title="454. 4Sum II"
 --8<-- "0454_4sum_ii.py"
 ```

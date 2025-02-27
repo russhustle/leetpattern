@@ -20,11 +20,14 @@ def load_config_yaml(file_path: str) -> Data:
         return Data(**data)
 
 
-def code(category, basename):
+def code(category, row):
+    basename = row["basename"]
+    title = f"{row["QID"]}. {row["title"]}"
+
     if category == "algorithms":
-        return f'```python\n--8<-- "{basename}.py"\n```'
+        return f'```python title="{title}"\n--8<-- "{basename}.py"\n```'
     elif category == "sql":
-        return f"""```txt\n--8<-- "sql/{basename}.txt"\n```\n```sql\n--8<-- "sql/{basename}.sql"\n```\n"""
+        return f"""```txt title="{title}"\n--8<-- "sql/{basename}.txt"\n```\n\n```sql title="{title}"\n--8<-- "sql/{basename}.sql"\n```\n"""
 
 
 def check_make_file(file_path: str):
@@ -38,9 +41,12 @@ def create(config_path: str) -> str:
     src = os.path.join("src")
     docs = os.path.join("docs")
     folder = os.path.join(docs, cfg.dir)
-    comments = "---\ncomments: True\n---\n\n"
     if not os.path.exists(folder):
         os.makedirs(folder)
+
+    comments = "---\ncomments: True\n---\n\n"
+
+    # index.md
     index_md_path = os.path.join(folder, "index.md")
     if not os.path.exists(index_md_path):
         with open(index_md_path, "w") as f:
@@ -48,6 +54,7 @@ def create(config_path: str) -> str:
 
     df = pd.read_parquet(os.path.join("utils", "questions.parquet"))
 
+    # mkdocs
     mkdocs = f"  - {cfg.name}:\n"
     mkdocs += f"    - Home: {cfg.dir}/index.md\n"
 
@@ -83,7 +90,7 @@ def create(config_path: str) -> str:
             with open(problem_md_path, "r") as f:
                 content += f.read() + "\n"
 
-            content += code(cfg.category, row["basename"]) + "\n\n"
+            content += code(cfg.category, row) + "\n\n"
 
         with open(md_path, "w") as f:
             f.write(content)

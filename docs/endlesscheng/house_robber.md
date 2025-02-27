@@ -26,7 +26,7 @@ comments: True
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
 
-```python
+```python title="198. House Robber"
 --8<-- "0198_house_robber.py"
 ```
 
@@ -35,7 +35,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/delete-and-earn/) | [LeetCode CH](https://leetcode.cn/problems/delete-and-earn/) (Medium)
 -   Tags: array, hash table, dynamic programming
 
-```python
+```python title="740. Delete and Earn"
 --8<-- "0740_delete_and_earn.py"
 ```
 
@@ -44,7 +44,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-number-of-ways-to-place-houses/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-ways-to-place-houses/) (Medium)
 -   Tags: dynamic programming
 
-```python
+```python title="2320. Count Number of Ways to Place Houses"
 --8<-- "2320_count_number_of_ways_to_place_houses.py"
 ```
 
@@ -72,7 +72,7 @@ comments: True
 |  3  |     3     |     7     |     9     |         10          |   10    |
 |  4  |     1     |     9     |    10     |         10          |   10    |
 
-```python
+```python title="213. House Robber II"
 --8<-- "0213_house_robber_ii.py"
 ```
 
@@ -81,6 +81,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) | [LeetCode CH](https://leetcode.cn/problems/maximum-total-damage-with-spell-casting/) (Medium)
 -   Tags: array, hash table, two pointers, binary search, dynamic programming, sorting, counting
 
-```python
+```python title="3186. Maximum Total Damage With Spell Casting"
 --8<-- "3186_maximum_total_damage_with_spell_casting.py"
 ```

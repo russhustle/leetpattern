@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combinations/) | [LeetCode CH](https://leetcode.cn/problems/combinations/) (Medium)
 -   Tags: backtracking
 
-```python
+```python title="77. Combinations"
 --8<-- "0077_combinations.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [LeetCode CH](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
 -   Tags: hash table, string, backtracking
 
-```python
+```python title="17. Letter Combinations of a Phone Number"
 --8<-- "0017_letter_combinations_of_a_phone_number.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
 -   Tags: array, backtracking
 
-```python
+```python title="39. Combination Sum"
 --8<-- "0039_combination_sum.py"
 ```
 
@@ -36,7 +36,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combination-sum-ii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-ii/) (Medium)
 -   Tags: array, backtracking
 
-```python
+```python title="40. Combination Sum II"
 --8<-- "0040_combination_sum_ii.py"
 ```
 
@@ -45,7 +45,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combination-sum-iii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iii/) (Medium)
 -   Tags: array, backtracking
 
-```python
+```python title="216. Combination Sum III"
 --8<-- "0216_combination_sum_iii.py"
 ```
 
@@ -54,7 +54,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning/) (Medium)
 -   Tags: string, dynamic programming, backtracking
 
-```python
+```python title="131. Palindrome Partitioning"
 --8<-- "0131_palindrome_partitioning.py"
 ```
 
@@ -63,7 +63,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/restore-ip-addresses/) | [LeetCode CH](https://leetcode.cn/problems/restore-ip-addresses/) (Medium)
 -   Tags: string, backtracking
 
-```python
+```python title="93. Restore IP Addresses"
 --8<-- "0093_restore_ip_addresses.py"
 ```
 
@@ -72,7 +72,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subsets/) | [LeetCode CH](https://leetcode.cn/problems/subsets/) (Medium)
 -   Tags: array, backtracking, bit manipulation
 
-```python
+```python title="78. Subsets"
 --8<-- "0078_subsets.py"
 ```
 
@@ -81,7 +81,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subsets-ii/) | [LeetCode CH](https://leetcode.cn/problems/subsets-ii/) (Medium)
 -   Tags: array, backtracking, bit manipulation
 
-```python
+```python title="90. Subsets II"
 --8<-- "0090_subsets_ii.py"
 ```
 
@@ -90,7 +90,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/non-decreasing-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/non-decreasing-subsequences/) (Medium)
 -   Tags: array, hash table, backtracking, bit manipulation
 
-```python
+```python title="491. Non-decreasing Subsequences"
 --8<-- "0491_non_decreasing_subsequences.py"
 ```
 
@@ -99,7 +99,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/permutations/) | [LeetCode CH](https://leetcode.cn/problems/permutations/) (Medium)
 -   Tags: array, backtracking
 
-```python
+```python title="46. Permutations"
 --8<-- "0046_permutations.py"
 ```
 
@@ -108,7 +108,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/permutations-ii/) | [LeetCode CH](https://leetcode.cn/problems/permutations-ii/) (Medium)
 -   Tags: array, backtracking, sorting
 
-```python
+```python title="47. Permutations II"
 --8<-- "0047_permutations_ii.py"
 ```
 
@@ -120,7 +120,7 @@ comments: True
 - [N-Queens](https://leetcode.com/problems/n-queens/)
 - [N 皇后](https://leetcode.cn/problems/n-queens/)
 
-```python
+```python title="51. N-Queens"
 --8<-- "0051_n_queens.py"
 ```
 
@@ -132,7 +132,7 @@ comments: True
 - [解数独](https://leetcode.cn/problems/sudoku-solver/)
 - Hard
 
-```python
+```python title="37. Sudoku Solver"
 --8<-- "0037_sudoku_solver.py"
 ```
 
@@ -141,7 +141,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 -   Tags: array, string, backtracking, depth first search, matrix
 
-```python
+```python title="79. Word Search"
 --8<-- "0079_word_search.py"
 ```
 
@@ -150,6 +150,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/word-search-ii/) | [LeetCode CH](https://leetcode.cn/problems/word-search-ii/) (Hard)
 -   Tags: array, string, backtracking, trie, matrix
 
-```python
+```python title="212. Word Search II"
 --8<-- "0212_word_search_ii.py"
 ```

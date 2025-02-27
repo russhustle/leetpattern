@@ -27,7 +27,7 @@ comments: True
 |  9  |    21     |    34     |   55    |
 | 10  |    34     |    55     |   89    |
 
-```python
+```python title="70. Climbing Stairs"
 --8<-- "0070_climbing_stairs.py"
 ```
 
@@ -53,7 +53,7 @@ comments: True
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
 
-```python
+```python title="198. House Robber"
 --8<-- "0198_house_robber.py"
 ```
 
@@ -81,7 +81,7 @@ comments: True
 |  3  |     3     |     7     |     9     |         10          |   10    |
 |  4  |     1     |     9     |    10     |         10          |   10    |
 
-```python
+```python title="213. House Robber II"
 --8<-- "0213_house_robber_ii.py"
 ```
 
@@ -91,7 +91,7 @@ comments: True
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
 
-```python
+```python title="5. Longest Palindromic Substring"
 --8<-- "0005_longest_palindromic_substring.py"
 ```
 
@@ -110,7 +110,7 @@ comments: True
 | **a** |  0  |  0  |  0  |  1  |  0  |
 | **e** |  0  |  0  |  0  |  0  |  1  |
 
-```python
+```python title="647. Palindromic Substrings"
 --8<-- "0647_palindromic_substrings.py"
 ```
 
@@ -119,7 +119,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/decode-ways/) | [LeetCode CH](https://leetcode.cn/problems/decode-ways/) (Medium)
 -   Tags: string, dynamic programming
 
-```python
+```python title="91. Decode Ways"
 --8<-- "0091_decode_ways.py"
 ```
 
@@ -128,7 +128,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
 -   Tags: array, dynamic programming, breadth first search
 
-```python
+```python title="322. Coin Change"
 --8<-- "0322_coin_change.py"
 ```
 
@@ -137,7 +137,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
 -   Tags: array, dynamic programming
 
-```python
+```python title="152. Maximum Product Subarray"
 --8<-- "0152_maximum_product_subarray.py"
 ```
 
@@ -146,7 +146,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
 -   Tags: array, hash table, string, dynamic programming, trie, memoization
 
-```python
+```python title="139. Word Break"
 --8<-- "0139_word_break.py"
 ```
 
@@ -155,6 +155,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 -   Tags: array, binary search, dynamic programming
 
-```python
+```python title="300. Longest Increasing Subsequence"
 --8<-- "0300_longest_increasing_subsequence.py"
 ```

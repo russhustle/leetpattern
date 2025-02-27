@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python
+```python title="490. The Maze"
 --8<-- "0490_the_maze.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze-ii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-ii/) (Medium)
 -   Tags: array, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
 
-```python
+```python title="505. The Maze II"
 --8<-- "0505_the_maze_ii.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze-iii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-iii/) (Hard)
 -   Tags: array, string, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
 
-```python
+```python title="499. The Maze III"
 --8<-- "0499_the_maze_iii.py"
 ```
 
@@ -36,7 +36,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-knight-moves/) | [LeetCode CH](https://leetcode.cn/problems/minimum-knight-moves/) (Medium)
 -   Tags: breadth first search
 
-```python
+```python title="1197. Minimum Knight Moves"
 --8<-- "1197_minimum_knight_moves.py"
 ```
 
@@ -46,7 +46,7 @@ comments: True
 -   Tags: array, breadth first search, matrix
 ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
-```python
+```python title="286. Walls and Gates"
 --8<-- "0286_walls_and_gates.py"
 ```
 
@@ -55,7 +55,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-distance-from-all-buildings/) | [LeetCode CH](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard)
 -   Tags: array, breadth first search, matrix
 
-```python
+```python title="317. Shortest Distance from All Buildings"
 --8<-- "0317_shortest_distance_from_all_buildings.py"
 ```
 
@@ -65,6 +65,6 @@ comments: True
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
 
-```python
+```python title="269. Alien Dictionary"
 --8<-- "0269_alien_dictionary.py"
 ```

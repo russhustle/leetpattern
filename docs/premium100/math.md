@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/armstrong-number/) | [LeetCode CH](https://leetcode.cn/problems/armstrong-number/) (Easy)
 -   Tags: math
 
-```python
+```python title="1134. Armstrong Number"
 --8<-- "1134_armstrong_number.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/) | [LeetCode CH](https://leetcode.cn/problems/count-substrings-with-only-one-distinct-letter/) (Easy)
 -   Tags: math, string
 
-```python
+```python title="1180. Count Substrings with Only One Distinct Letter"
 --8<-- "1180_count_substrings_with_only_one_distinct_letter.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/guess-the-majority-in-a-hidden-array/) | [LeetCode CH](https://leetcode.cn/problems/guess-the-majority-in-a-hidden-array/) (Medium)
 -   Tags: array, math, interactive
 
-```python
+```python title="1538. Guess the Majority in a Hidden Array"
 --8<-- "1538_guess_the_majority_in_a_hidden_array.py"
 ```
 
@@ -36,6 +36,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-ones/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-ones/) (Hard)
 -   Tags: math, greedy, sorting, heap priority queue
 
-```python
+```python title="1183. Maximum Number of Ones"
 --8<-- "1183_maximum_number_of_ones.py"
 ```

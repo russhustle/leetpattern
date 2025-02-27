@@ -12,7 +12,7 @@ comments: True
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
-```python
+```python title="62. Unique Paths"
 --8<-- "0062_unique_paths.py"
 ```
 
@@ -21,7 +21,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
 -   Tags: string, dynamic programming
 
-```python
+```python title="1143. Longest Common Subsequence"
 --8<-- "1143_longest_common_subsequence.py"
 ```
 
@@ -30,7 +30,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) (Medium)
 -   Tags: array, dynamic programming
 
-```python
+```python title="309. Best Time to Buy and Sell Stock with Cooldown"
 --8<-- "0309_best_time_to_buy_and_sell_stock_with_cooldown.py"
 ```
 
@@ -39,7 +39,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/coin-change-ii/) | [LeetCode CH](https://leetcode.cn/problems/coin-change-ii/) (Medium)
 -   Tags: array, dynamic programming
 
-```python
+```python title="518. Coin Change II"
 --8<-- "0518_coin_change_ii.py"
 ```
 
@@ -48,7 +48,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/target-sum/) | [LeetCode CH](https://leetcode.cn/problems/target-sum/) (Medium)
 -   Tags: array, dynamic programming, backtracking
 
-```python
+```python title="494. Target Sum"
 --8<-- "0494_target_sum.py"
 ```
 
@@ -57,7 +57,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/interleaving-string/) | [LeetCode CH](https://leetcode.cn/problems/interleaving-string/) (Medium)
 -   Tags: string, dynamic programming
 
-```python
+```python title="97. Interleaving String"
 --8<-- "0097_interleaving_string.py"
 ```
 
@@ -66,7 +66,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) (Hard)
 -   Tags: array, dynamic programming, depth first search, breadth first search, graph, topological sort, memoization, matrix
 
-```python
+```python title="329. Longest Increasing Path in a Matrix"
 --8<-- "0329_longest_increasing_path_in_a_matrix.py"
 ```
 
@@ -75,7 +75,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/distinct-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/distinct-subsequences/) (Hard)
 -   Tags: string, dynamic programming
 
-```python
+```python title="115. Distinct Subsequences"
 --8<-- "0115_distinct_subsequences.py"
 ```
 
@@ -84,7 +84,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/edit-distance/) | [LeetCode CH](https://leetcode.cn/problems/edit-distance/) (Medium)
 -   Tags: string, dynamic programming
 
-```python
+```python title="72. Edit Distance"
 --8<-- "0072_edit_distance.py"
 ```
 
@@ -93,7 +93,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/burst-balloons/) | [LeetCode CH](https://leetcode.cn/problems/burst-balloons/) (Hard)
 -   Tags: array, dynamic programming
 
-```python
+```python title="312. Burst Balloons"
 --8<-- "0312_burst_balloons.py"
 ```
 
@@ -102,6 +102,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/regular-expression-matching/) | [LeetCode CH](https://leetcode.cn/problems/regular-expression-matching/) (Hard)
 -   Tags: string, dynamic programming, recursion
 
-```python
+```python title="10. Regular Expression Matching"
 --8<-- "0010_regular_expression_matching.py"
 ```

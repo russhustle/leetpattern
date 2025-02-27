@@ -10,6 +10,6 @@ comments: True
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
 
-```python
+```python title="269. Alien Dictionary"
 --8<-- "0269_alien_dictionary.py"
 ```

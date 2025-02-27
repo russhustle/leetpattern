@@ -16,6 +16,6 @@ graph LR
     B["Ransom Note: abc"] --> C
 ```
 
-```python
+```python title="383. Ransom Note"
 --8<-- "0383_ransom_note.py"
 ```

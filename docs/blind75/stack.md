@@ -20,6 +20,6 @@ comments: True
 | `{`  | push   | "\{"  |
 | `}`  | pop    | ""    |
 
-```python
+```python title="20. Valid Parentheses"
 --8<-- "0020_valid_parentheses.py"
 ```

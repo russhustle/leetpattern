@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/paint-fence/) | [LeetCode CH](https://leetcode.cn/problems/paint-fence/) (Medium)
 -   Tags: dynamic programming
 
-```python
+```python title="276. Paint Fence"
 --8<-- "0276_paint_fence.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/paint-house/) | [LeetCode CH](https://leetcode.cn/problems/paint-house/) (Medium)
 -   Tags: array, dynamic programming
 
-```python
+```python title="256. Paint House"
 --8<-- "0256_paint_house.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/paint-house-ii/) | [LeetCode CH](https://leetcode.cn/problems/paint-house-ii/) (Hard)
 -   Tags: array, dynamic programming
 
-```python
+```python title="265. Paint House II"
 --8<-- "0265_paint_house_ii.py"
 ```
 
@@ -36,7 +36,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/4-keys-keyboard/) | [LeetCode CH](https://leetcode.cn/problems/4-keys-keyboard/) (Medium)
 -   Tags: math, dynamic programming
 
-```python
+```python title="651. 4 Keys Keyboard"
 --8<-- "0651_4_keys_keyboard.py"
 ```
 
@@ -45,6 +45,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/handshakes-that-dont-cross/) | [LeetCode CH](https://leetcode.cn/problems/handshakes-that-dont-cross/) (Hard)
 -   Tags: math, dynamic programming
 
-```python
+```python title="1259. Handshakes That Don't Cross"
 --8<-- "1259_handshakes_that_dont_cross.py"
 ```

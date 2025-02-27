@@ -9,10 +9,11 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/not-boring-movies/) | [LeetCode CH](https://leetcode.cn/problems/not-boring-movies/) (Easy)
 -   Tags: database
 
-```txt
+```txt title="620. Not Boring Movies"
 --8<-- "sql/0620_not_boring_movies.txt"
 ```
-```sql
+
+```sql title="620. Not Boring Movies"
 --8<-- "sql/0620_not_boring_movies.sql"
 ```
 
@@ -22,10 +23,11 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/average-selling-price/) | [LeetCode CH](https://leetcode.cn/problems/average-selling-price/) (Easy)
 -   Tags: database
 
-```txt
+```txt title="1251. Average Selling Price"
 --8<-- "sql/1251_average_selling_price.txt"
 ```
-```sql
+
+```sql title="1251. Average Selling Price"
 --8<-- "sql/1251_average_selling_price.sql"
 ```
 
@@ -35,10 +37,11 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/project-employees-i/) | [LeetCode CH](https://leetcode.cn/problems/project-employees-i/) (Easy)
 -   Tags: database
 
-```txt
+```txt title="1075. Project Employees I"
 --8<-- "sql/1075_project_employees_i.txt"
 ```
-```sql
+
+```sql title="1075. Project Employees I"
 --8<-- "sql/1075_project_employees_i.sql"
 ```
 
@@ -48,10 +51,11 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/percentage-of-users-attended-a-contest/) | [LeetCode CH](https://leetcode.cn/problems/percentage-of-users-attended-a-contest/) (Easy)
 -   Tags: database
 
-```txt
+```txt title="1633. Percentage of Users Attended a Contest"
 --8<-- "sql/1633_percentage_of_users_attended_a_contest.txt"
 ```
-```sql
+
+```sql title="1633. Percentage of Users Attended a Contest"
 --8<-- "sql/1633_percentage_of_users_attended_a_contest.sql"
 ```
 
@@ -61,10 +65,11 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/queries-quality-and-percentage/) | [LeetCode CH](https://leetcode.cn/problems/queries-quality-and-percentage/) (Easy)
 -   Tags: database
 
-```txt
+```txt title="1211. Queries Quality and Percentage"
 --8<-- "sql/1211_queries_quality_and_percentage.txt"
 ```
-```sql
+
+```sql title="1211. Queries Quality and Percentage"
 --8<-- "sql/1211_queries_quality_and_percentage.sql"
 ```
 
@@ -74,10 +79,11 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/monthly-transactions-i/) | [LeetCode CH](https://leetcode.cn/problems/monthly-transactions-i/) (Medium)
 -   Tags: database
 
-```txt
+```txt title="1193. Monthly Transactions I"
 --8<-- "sql/1193_monthly_transactions_i.txt"
 ```
-```sql
+
+```sql title="1193. Monthly Transactions I"
 --8<-- "sql/1193_monthly_transactions_i.sql"
 ```
 
@@ -87,10 +93,11 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/immediate-food-delivery-ii/) | [LeetCode CH](https://leetcode.cn/problems/immediate-food-delivery-ii/) (Medium)
 -   Tags: database
 
-```txt
+```txt title="1174. Immediate Food Delivery II"
 --8<-- "sql/1174_immediate_food_delivery_ii.txt"
 ```
-```sql
+
+```sql title="1174. Immediate Food Delivery II"
 --8<-- "sql/1174_immediate_food_delivery_ii.sql"
 ```
 
@@ -100,9 +107,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/game-play-analysis-iv/) | [LeetCode CH](https://leetcode.cn/problems/game-play-analysis-iv/) (Medium)
 -   Tags: database
 
-```txt
+```txt title="550. Game Play Analysis IV"
 --8<-- "sql/0550_game_play_analysis_iv.txt"
 ```
-```sql
+
+```sql title="550. Game Play Analysis IV"
 --8<-- "sql/0550_game_play_analysis_iv.sql"
 ```

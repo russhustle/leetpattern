@@ -25,7 +25,7 @@ JFK --> ATL
 ATL --> SFO
 ```
 
-```python
+```python title="332. Reconstruct Itinerary"
 --8<-- "0332_reconstruct_itinerary.py"
 ```
 
@@ -56,7 +56,7 @@ MST
 
 ![mst2](../assets/mst_2.png)
 
-```python
+```python title="1584. Min Cost to Connect All Points"
 --8<-- "1584_min_cost_to_connect_all_points.py"
 ```
 
@@ -85,7 +85,7 @@ graph LR
     -   Time Complexity: O(E \* logV)
     -   Space Complexity: O(V)
 
-```python
+```python title="743. Network Delay Time"
 --8<-- "0743_network_delay_time.py"
 ```
 
@@ -97,7 +97,7 @@ graph LR
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
-```python
+```python title="778. Swim in Rising Water"
 --8<-- "0778_swim_in_rising_water.py"
 ```
 
@@ -107,7 +107,7 @@ graph LR
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
 
-```python
+```python title="269. Alien Dictionary"
 --8<-- "0269_alien_dictionary.py"
 ```
 
@@ -132,6 +132,6 @@ graph TD
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python
+```python title="787. Cheapest Flights Within K Stops"
 --8<-- "0787_cheapest_flights_within_k_stops.py"
 ```

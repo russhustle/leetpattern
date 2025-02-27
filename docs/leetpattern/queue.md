@@ -14,7 +14,7 @@ comments: True
     -   `peek()` - Get the front element.
     -   `empty()` - Return whether the queue is empty.
 
-```python
+```python title="232. Implement Queue using Stacks"
 --8<-- "0232_implement_queue_using_stacks.py"
 ```
 
@@ -23,6 +23,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/implement-stack-using-queues/) | [LeetCode CH](https://leetcode.cn/problems/implement-stack-using-queues/) (Easy)
 -   Tags: stack, design, queue
 
-```python
+```python title="225. Implement Stack using Queues"
 --8<-- "0225_implement_stack_using_queues.py"
 ```

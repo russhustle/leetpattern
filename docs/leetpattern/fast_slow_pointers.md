@@ -10,7 +10,7 @@ comments: True
 -   Tags: array, two pointers
 -   Remove all instances of a given value in-place.
 
-```python
+```python title="27. Remove Element"
 --8<-- "0027_remove_element.py"
 ```
 
@@ -20,7 +20,7 @@ comments: True
 -   Tags: array, two pointers
 -   Remove duplicates in-place.
 
-```python
+```python title="26. Remove Duplicates from Sorted Array"
 --8<-- "0026_remove_duplicates_from_sorted_array.py"
 ```
 
@@ -32,7 +32,7 @@ comments: True
 -   fast pointer: explore the array
 -   slow pointer: point to the position to be replaced
 
-```python
+```python title="80. Remove Duplicates from Sorted Array II"
 --8<-- "0080_remove_duplicates_from_sorted_array_ii.py"
 ```
 
@@ -42,7 +42,7 @@ comments: True
 -   Tags: array, two pointers
 -   Move all zeroes to the end of the array while maintaining the relative order of the non-zero elements.
 
-```python
+```python title="283. Move Zeroes"
 --8<-- "0283_move_zeroes.py"
 ```
 
@@ -52,7 +52,7 @@ comments: True
 -   Tags: array, two pointers
 -   Duplicate each occurrence of zero, shifting the remaining elements to the right.
 
-```python
+```python title="1089. Duplicate Zeros"
 --8<-- "1089_duplicate_zeros.py"
 ```
 
@@ -62,6 +62,6 @@ comments: True
 -   Tags: array, two pointers, binary search, bit manipulation
 -   Find the duplicate number in an array containing `n + 1` integers where each integer is between `1` and `n` inclusive.
 
-```python
+```python title="287. Find the Duplicate Number"
 --8<-- "0287_find_the_duplicate_number.py"
 ```

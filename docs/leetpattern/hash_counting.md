@@ -11,7 +11,7 @@ comments: True
 -   Return true if an input string is an anagram of another string.
 -   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
 
-```python
+```python title="242. Valid Anagram"
 --8<-- "0242_valid_anagram.py"
 ```
 
@@ -20,7 +20,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
 -   Tags: array, hash table, prefix sum
 
-```python
+```python title="560. Subarray Sum Equals K"
 --8<-- "0560_subarray_sum_equals_k.py"
 ```
 
@@ -29,7 +29,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
 -   Tags: array, hash table, string, sorting
 
-```python
+```python title="49. Group Anagrams"
 --8<-- "0049_group_anagrams.py"
 ```
 
@@ -38,6 +38,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 -   Tags: hash table, string, sliding window
 
-```python
+```python title="438. Find All Anagrams in a String"
 --8<-- "0438_find_all_anagrams_in_a_string.py"
 ```

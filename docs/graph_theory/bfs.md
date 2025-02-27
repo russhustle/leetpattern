@@ -9,7 +9,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | [LeetCode CH](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)
 -   Tags: array, breadth first search, matrix
 
-```python
+```python title="1926. Nearest Exit from Entrance in Maze"
 --8<-- "1926_nearest_exit_from_entrance_in_maze.py"
 ```
 
@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-bridge/) | [LeetCode CH](https://leetcode.cn/problems/shortest-bridge/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python
+```python title="934. Shortest Bridge"
 --8<-- "0934_shortest_bridge.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-genetic-mutation/) | [LeetCode CH](https://leetcode.cn/problems/minimum-genetic-mutation/) (Medium)
 -   Tags: hash table, string, breadth first search
 
-```python
+```python title="433. Minimum Genetic Mutation"
 --8<-- "0433_minimum_genetic_mutation.py"
 ```
 
@@ -44,7 +44,7 @@ comments: True
 | -------- | ----------- | --------- |
 | BFS      | O(n \* m^2) | O(n \* m) |
 
-```python
+```python title="127. Word Ladder"
 --8<-- "0127_word_ladder.py"
 ```
 
@@ -53,7 +53,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/jump-game-iii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-iii/) (Medium)
 -   Tags: array, depth first search, breadth first search
 
-```python
+```python title="1306. Jump Game III"
 --8<-- "1306_jump_game_iii.py"
 ```
 
@@ -62,7 +62,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
 -   Tags: array, dynamic programming, breadth first search, matrix
 
-```python
+```python title="542. 01 Matrix"
 --8<-- "0542_01_matrix.py"
 ```
 
@@ -71,7 +71,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) (Medium)
 -   Tags: array, breadth first search, matrix
 
-```python
+```python title="1091. Shortest Path in Binary Matrix"
 --8<-- "1091_shortest_path_in_binary_matrix.py"
 ```
 
@@ -80,7 +80,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) (Medium)
 -   Tags: hash table, tree, depth first search, breadth first search, binary tree
 
-```python
+```python title="863. All Nodes Distance K in Binary Tree"
 --8<-- "0863_all_nodes_distance_k_in_binary_tree.py"
 ```
 
@@ -89,6 +89,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-path-to-get-all-keys/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-to-get-all-keys/) (Hard)
 -   Tags: array, bit manipulation, breadth first search, matrix
 
-```python
+```python title="864. Shortest Path to Get All Keys"
 --8<-- "0864_shortest_path_to_get_all_keys.py"
 ```

@@ -131,7 +131,7 @@ graph TD
 | Postorder   | Left, Right, Root | DFS or Stack   | `[3, 4, 1, 5, 6, 2, 0]`       |
 | Level Order | Level by Level    | BFS with Queue | `[[0], [1, 2], [3, 4, 5, 6]]` |
 
-```python
+```python title="144. Binary Tree Preorder Traversal"
 --8<-- "0144_binary_tree_preorder_traversal.py"
 ```
 
@@ -140,7 +140,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-inorder-traversal/) (Easy)
 -   Tags: stack, tree, depth first search, binary tree
 
-```python
+```python title="94. Binary Tree Inorder Traversal"
 --8<-- "0094_binary_tree_inorder_traversal.py"
 ```
 
@@ -149,7 +149,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-postorder-traversal/) (Easy)
 -   Tags: stack, tree, depth first search, binary tree
 
-```python
+```python title="145. Binary Tree Postorder Traversal"
 --8<-- "0145_binary_tree_postorder_traversal.py"
 ```
 
@@ -158,7 +158,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
 -   Tags: tree, breadth first search, binary tree
 
-```python
+```python title="102. Binary Tree Level Order Traversal"
 --8<-- "0102_binary_tree_level_order_traversal.py"
 ```
 
@@ -167,7 +167,7 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) (Medium)
 -   Tags: tree, breadth first search, binary tree
 
-```python
+```python title="107. Binary Tree Level Order Traversal II"
 --8<-- "0107_binary_tree_level_order_traversal_ii.py"
 ```
 
@@ -176,6 +176,6 @@ graph TD
 -   [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
 -   Tags: tree, breadth first search, binary tree
 
-```python
+```python title="103. Binary Tree Zigzag Level Order Traversal"
 --8<-- "0103_binary_tree_zigzag_level_order_traversal.py"
 ```

@@ -58,39 +58,6 @@ nav:
     - Simulation: leetpattern/simulation.md
     - Design: leetpattern/design.md
 
-  - 灵茶山艾府:
-    - Home: endlesscheng/index.md
-    - Sliding Window Fixed Size Basics: endlesscheng/sliding_window_fixed_size_basics.md
-    - Sliding Window Fixed Size Advanced: endlesscheng/sliding_window_fixed_size_advanced.md
-    - Sliding Window Fixed Size Others: endlesscheng/sliding_window_fixed_size_others.md
-    - Sliding Window Variable Max Basics: endlesscheng/sliding_window_variable_max_basics.md
-    - Sliding Window Variable Max Advanced: endlesscheng/sliding_window_variable_max_advanced.md
-    - Sliding Window Variable Min: endlesscheng/sliding_window_variable_min.md
-    - Sliding Window Variable Subarrays Longer: endlesscheng/sliding_window_variable_subarrays_longer.md
-    - Grid DFS: endlesscheng/grid_dfs.md
-    - Grid BFS: endlesscheng/grid_bfs.md
-    - Grid 01 BFS: endlesscheng/grid_01_bfs.md
-    - Grid Applications: endlesscheng/grid_applications.md
-    - DFS Basics: endlesscheng/dfs_basics.md
-    - BFS Basics: endlesscheng/bfs_basics.md
-    - Topological Sorting: endlesscheng/topological_sorting.md
-    - Topological Order DP: endlesscheng/topological_order_dp.md
-    - Fundamental Cycle: endlesscheng/fundamental_cycle.md
-    - Shortest Path Single Source Dijkstra: endlesscheng/shortest_path_single_source_dijkstra.md
-    - Shortest Path All Pairs Floyd: endlesscheng/shortest_path_all_pairs_floyd.md
-    - Minimum Spanning Tree: endlesscheng/minimum_spanning_tree.md
-    - Eulerian Path and Circuit: endlesscheng/eulerian_path_and_circuit.md
-    - Strongly and Biconnected Components: endlesscheng/strongly_and_biconnected_components.md
-    - Bipartite Graph Coloring: endlesscheng/bipartite_graph_coloring.md
-    - Network Flow: endlesscheng/network_flow.md
-    - Graph Others: endlesscheng/graph_others.md
-    - Climbing Stairs: endlesscheng/climbing_stairs.md
-    - House Robber: endlesscheng/house_robber.md
-    - Max Subarray Sum: endlesscheng/max_subarray_sum.md
-    - Enumerate Right Maintain Left: endlesscheng/enumerate_right_maintain_left.md
-    - Enumerate Middle: endlesscheng/enumerate_middle.md
-    - Prefix Sum Basics: endlesscheng/prefix_sum_basics.md
-
   - Neetcode 150:
     - Home: neetcode150/index.md
     - Arrays Hashing: neetcode150/arrays_hashing.md
@@ -194,7 +161,6 @@ nav:
     - Advanced Select and Joins: sql50/advanced_select_and_joins.md
     - Subqueries: sql50/subqueries.md
     - Advanced String Functions Regex Clause: sql50/advanced_string_functions_regex_clause.md
-
 
 - About: about.md
 

@@ -6,6 +6,4 @@ My goal is to help people solve any problems in coding interviews.
 
 Thank you for visiting this project! If you find it helpful or interesting, please consider giving it a ⭐️ on GitHub. It helps others discover the project and motivates me to keep improving it. Your support means a lot! 😊
 
-![intro](./assets/leetpattern.png){width=300px}
-
 📚 This is a collection of patterns for solving LeetCode problems. The goal is to provide a structured approach to solving problems and to help you build a strong foundation in algorithms and data structures.

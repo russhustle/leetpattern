@@ -48,9 +48,11 @@ def topic_progress(df, category, problems):
 
         if category == "algorithms":
             py_path = os.path.join("src", row["basename"] + ".py")
+            check_make_file(py_path)
             progress = "x" if not check_file_empty(py_path) else " "
         elif category == "sql":
             sql_path = os.path.join("src", "sql", row["basename"] + ".sql")
+            check_make_file(sql_path)
             progress = "x" if not check_file_empty(sql_path) else " "
 
         content += (

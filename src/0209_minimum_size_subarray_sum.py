@@ -21,23 +21,20 @@ def minSubArrayLenPS(target: int, nums: List[int]) -> int:
     return 0 if minLen == float("inf") else minLen
 
 
-# Sliding window - Fixed
+# Sliding Window Variable Size
 def minSubArrayLenSW(target: int, nums: List[int]) -> int:
-    left, right = 0, 0
-    curSum = 0
-    minLen = float("inf")
+    res, cur = float("inf"), 0
+    left = 0
 
-    while right < len(nums):
-        curSum += nums[right]
+    for right in range(len(nums)):
+        cur += nums[right]
 
-        while curSum >= target:
-            minLen = min(minLen, right - left + 1)
-            curSum -= nums[left]
+        while cur >= target:
+            res = min(res, right - left + 1)
+            cur -= nums[left]
             left += 1
 
-        right += 1
-
-    return minLen if minLen != float("inf") else 0
+    return res if res != float("inf") else 0
 
 
 target = 7

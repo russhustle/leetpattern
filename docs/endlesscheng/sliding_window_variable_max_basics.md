@@ -5,11 +5,11 @@ comments: True
 # Sliding Window Variable Max Basics
 
 - [x] [3. Longest Substring Without Repeating Characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
-- [ ] [3090. Maximum Length Substring With Two Occurrences](https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/) (Easy)
-- [ ] [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) (Medium)
+- [x] [3090. Maximum Length Substring With Two Occurrences](https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/) (Easy)
+- [x] [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) (Medium)
 - [x] [1208. Get Equal Substrings Within Budget](https://leetcode.cn/problems/get-equal-substrings-within-budget/) (Medium)
-- [ ] [904. Fruit Into Baskets](https://leetcode.cn/problems/fruit-into-baskets/) (Medium)
-- [ ] [1695. Maximum Erasure Value](https://leetcode.cn/problems/maximum-erasure-value/) (Medium)
+- [x] [904. Fruit Into Baskets](https://leetcode.cn/problems/fruit-into-baskets/) (Medium)
+- [x] [1695. Maximum Erasure Value](https://leetcode.cn/problems/maximum-erasure-value/) (Medium)
 - [ ] [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) (Medium)
 - [x] [2024. Maximize the Confusion of an Exam](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/) (Medium)
 - [x] [1004. Max Consecutive Ones III](https://leetcode.cn/problems/max-consecutive-ones-iii/) (Medium)
@@ -33,12 +33,18 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/) | [LeetCode CH](https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/) (Easy)
 -   Tags: hash table, string, sliding window
 
+```python title="3090. Maximum Length Substring With Two Occurrences"
+--8<-- "3090_maximum_length_substring_with_two_occurrences.py"
+```
 
 ## 1493. Longest Subarray of 1's After Deleting One Element
 
 -   [LeetCode](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [LeetCode CH](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) (Medium)
 -   Tags: array, dynamic programming, sliding window
 
+```python title="1493. Longest Subarray of 1's After Deleting One Element"
+--8<-- "1493_longest_subarray_of_1s_after_deleting_one_element.py"
+```
 
 ## 1208. Get Equal Substrings Within Budget
 
@@ -54,12 +60,18 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/fruit-into-baskets/) | [LeetCode CH](https://leetcode.cn/problems/fruit-into-baskets/) (Medium)
 -   Tags: array, hash table, sliding window
 
+```python title="904. Fruit Into Baskets"
+--8<-- "0904_fruit_into_baskets.py"
+```
 
 ## 1695. Maximum Erasure Value
 
 -   [LeetCode](https://leetcode.com/problems/maximum-erasure-value/) | [LeetCode CH](https://leetcode.cn/problems/maximum-erasure-value/) (Medium)
 -   Tags: array, hash table, sliding window
 
+```python title="1695. Maximum Erasure Value"
+--8<-- "1695_maximum_erasure_value.py"
+```
 
 ## 2958. Length of Longest Subarray With at Most K Frequency
 

@@ -5,7 +5,7 @@ comments: True
 # Sliding Window Variable Min
 
 - [x] [209. Minimum Size Subarray Sum](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
-- [ ] [2904. Shortest and Lexicographically Smallest Beautiful String](https://leetcode.cn/problems/shortest-and-lexicographically-smallest-beautiful-string/) (Medium)
+- [x] [2904. Shortest and Lexicographically Smallest Beautiful String](https://leetcode.cn/problems/shortest-and-lexicographically-smallest-beautiful-string/) (Medium)
 - [ ] [1234. Replace the Substring for Balanced String](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/) (Medium)
 - [ ] [2875. Minimum Size Subarray in Infinite Array](https://leetcode.cn/problems/minimum-size-subarray-in-infinite-array/) (Medium)
 - [x] [76. Minimum Window Substring](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
@@ -25,6 +25,9 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | [LeetCode CH](https://leetcode.cn/problems/shortest-and-lexicographically-smallest-beautiful-string/) (Medium)
 -   Tags: string, sliding window
 
+```python title="2904. Shortest and Lexicographically Smallest Beautiful String"
+--8<-- "2904_shortest_and_lexicographically_smallest_beautiful_string.py"
+```
 
 ## 1234. Replace the Substring for Balanced String
 

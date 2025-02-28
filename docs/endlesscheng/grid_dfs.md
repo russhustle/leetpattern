@@ -7,8 +7,8 @@ comments: True
 - [x] [200. Number of Islands](https://leetcode.cn/problems/number-of-islands/) (Medium)
 - [x] [695. Max Area of Island](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 - [x] [463. Island Perimeter](https://leetcode.cn/problems/island-perimeter/) (Easy)
-- [ ] [2658. Maximum Number of Fish in a Grid](https://leetcode.cn/problems/maximum-number-of-fish-in-a-grid/) (Medium)
-- [ ] [1034. Coloring A Border](https://leetcode.cn/problems/coloring-a-border/) (Medium)
+- [x] [2658. Maximum Number of Fish in a Grid](https://leetcode.cn/problems/maximum-number-of-fish-in-a-grid/) (Medium)
+- [x] [1034. Coloring A Border](https://leetcode.cn/problems/coloring-a-border/) (Medium)
 - [x] [1020. Number of Enclaves](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
 - [ ] [2684. Maximum Number of Moves in a Grid](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 - [x] [1254. Number of Closed Islands](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
@@ -71,12 +71,18 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-fish-in-a-grid/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
+```python title="2658. Maximum Number of Fish in a Grid"
+--8<-- "2658_maximum_number_of_fish_in_a_grid.py"
+```
 
 ## 1034. Coloring A Border
 
 -   [LeetCode](https://leetcode.com/problems/coloring-a-border/) | [LeetCode CH](https://leetcode.cn/problems/coloring-a-border/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
+```python title="1034. Coloring A Border"
+--8<-- "1034_coloring_a_border.py"
+```
 
 ## 1020. Number of Enclaves
 

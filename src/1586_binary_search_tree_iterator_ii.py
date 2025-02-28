@@ -1,8 +1,7 @@
 from typing import Optional
 
-from binarytree import build
+from binarytree import build, Node as TreeNode
 
-from helper import TreeNode
 
 
 # BST

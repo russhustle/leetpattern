@@ -1,9 +1,10 @@
-from pandas import DataFrame
 import os
 from dataclasses import dataclass, field
 from typing import Dict, List
-import yaml
+
 import pandas as pd
+import yaml
+from pandas import DataFrame
 
 
 @dataclass

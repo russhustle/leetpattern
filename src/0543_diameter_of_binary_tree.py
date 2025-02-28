@@ -1,8 +1,6 @@
 from typing import Optional
 
-from binarytree import build
-
-from helper import TreeNode
+from binarytree import build, Node as TreeNode
 
 
 # Tree DFS
@@ -25,11 +23,7 @@ def diameterOfBinaryTree(root: Optional[TreeNode]) -> int:
     return diameter
 
 
-# |------------|---------|----------|
-# | Approach   | Time    | Space    |
-# |------------|---------|----------|
-# | DFS        | O(n)    | O(n)     |
-# |------------|---------|----------|
+
 
 
 root = build([1, 2, 3, 4, 5])

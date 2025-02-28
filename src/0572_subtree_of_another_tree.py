@@ -1,8 +1,6 @@
 from typing import Optional
 
-from binarytree import build
-
-from helper import TreeNode
+from binarytree import build, Node as TreeNode
 
 
 # DFS - Tree

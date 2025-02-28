@@ -5,7 +5,7 @@ comments: True
 # House Robber
 
 - [x] [198. House Robber](https://leetcode.cn/problems/house-robber/) (Medium)
-- [ ] [740. Delete and Earn](https://leetcode.cn/problems/delete-and-earn/) (Medium)
+- [x] [740. Delete and Earn](https://leetcode.cn/problems/delete-and-earn/) (Medium)
 - [ ] [2320. Count Number of Ways to Place Houses](https://leetcode.cn/problems/count-number-of-ways-to-place-houses/) (Medium)
 - [x] [213. House Robber II](https://leetcode.cn/problems/house-robber-ii/) (Medium)
 - [ ] [3186. Maximum Total Damage With Spell Casting](https://leetcode.cn/problems/maximum-total-damage-with-spell-casting/) (Medium)
@@ -41,6 +41,9 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/delete-and-earn/) | [LeetCode CH](https://leetcode.cn/problems/delete-and-earn/) (Medium)
 -   Tags: array, hash table, dynamic programming
 
+```python title="740. Delete and Earn"
+--8<-- "0740_delete_and_earn.py"
+```
 
 ## 2320. Count Number of Ways to Place Houses
 

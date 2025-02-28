@@ -8,7 +8,7 @@ comments: True
 - [x] [1971. Find if Path Exists in Graph](https://leetcode.cn/problems/find-if-path-exists-in-graph/) (Easy)
 - [x] [797. All Paths From Source to Target](https://leetcode.cn/problems/all-paths-from-source-to-target/) (Medium)
 - [x] [841. Keys and Rooms](https://leetcode.cn/problems/keys-and-rooms/) (Medium)
-- [ ] [2316. Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
+- [x] [2316. Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
 - [ ] [1319. Number of Operations to Make Network Connected](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) (Medium)
 - [ ] [2492. Minimum Score of a Path Between Two Cities](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
 - [ ] [3387. Maximize Amount After Two Days of Conversions](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
@@ -78,6 +78,14 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
+
+```python title="2316. Count Unreachable Pairs of Nodes in an Undirected Graph - Python Solution"
+--8<-- "2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph.py"
+```
+
+```cpp title="2316. Count Unreachable Pairs of Nodes in an Undirected Graph - C++ Solution"
+--8<-- "cpp/2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph.cc"
+```
 
 ## 1319. Number of Operations to Make Network Connected
 

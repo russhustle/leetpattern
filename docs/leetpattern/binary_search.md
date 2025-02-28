@@ -53,6 +53,10 @@ comments: True
 --8<-- "0034_find_first_and_last_position_of_element_in_sorted_array.py"
 ```
 
+```cpp title="34. Find First and Last Position of Element in Sorted Array"
+--8<-- "cpp/0034_find_first_and_last_position_of_element_in_sorted_array.cc"
+```
+
 ## 367. Valid Perfect Square
 
 -   [LeetCode](https://leetcode.com/problems/valid-perfect-square/) | [LeetCode CH](https://leetcode.cn/problems/valid-perfect-square/) (Easy)

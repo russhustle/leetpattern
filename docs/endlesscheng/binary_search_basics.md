@@ -20,6 +20,10 @@ comments: True
 --8<-- "0034_find_first_and_last_position_of_element_in_sorted_array.py"
 ```
 
+```cpp title="34. Find First and Last Position of Element in Sorted Array"
+--8<-- "cpp/0034_find_first_and_last_position_of_element_in_sorted_array.cc"
+```
+
 ## 35. Search Insert Position
 
 -   [LeetCode](https://leetcode.com/problems/search-insert-position/) | [LeetCode CH](https://leetcode.cn/problems/search-insert-position/) (Easy)

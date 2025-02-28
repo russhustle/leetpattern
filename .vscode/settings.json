@@ -20,5 +20,6 @@
   "Prettier-SQL.denseOperators": false,
   "Prettier-SQL.indentStyle": "standard",
   "Prettier-SQL.newlineBeforeSemicolon": true,
-  "notebook.defaultFormatter": "esbenp.prettier-vscode"
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2
 }

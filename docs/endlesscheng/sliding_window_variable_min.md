@@ -34,12 +34,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | [LeetCode CH](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/) (Medium)
 -   Tags: string, sliding window
 
-
 ## 2875. Minimum Size Subarray in Infinite Array
 
 -   [LeetCode](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | [LeetCode CH](https://leetcode.cn/problems/minimum-size-subarray-in-infinite-array/) (Medium)
 -   Tags: array, hash table, sliding window, prefix sum
-
 
 ## 76. Minimum Window Substring
 

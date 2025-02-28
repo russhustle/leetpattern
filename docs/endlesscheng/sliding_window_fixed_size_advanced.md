@@ -25,36 +25,30 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | [LeetCode CH](https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) (Medium)
 -   Tags: hash table, string, bit manipulation, rolling hash, hash function
 
-
 ## 2134. Minimum Swaps to Group All 1's Together II
 
 -   [LeetCode](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together-ii/) (Medium)
 -   Tags: array, sliding window
-
 
 ## 1297. Maximum Number of Occurrences of a Substring
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-occurrences-of-a-substring/) (Medium)
 -   Tags: hash table, string, sliding window
 
-
 ## 2653. Sliding Subarray Beauty
 
 -   [LeetCode](https://leetcode.com/problems/sliding-subarray-beauty/) | [LeetCode CH](https://leetcode.cn/problems/sliding-subarray-beauty/) (Medium)
 -   Tags: array, hash table, sliding window
-
 
 ## 3439. Reschedule Meetings for Maximum Free Time I
 
 -   [LeetCode](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/) | [LeetCode CH](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-i/) (Medium)
 -   Tags: array, greedy, sliding window
 
-
 ## 1888. Minimum Number of Flips to Make the Binary String Alternating
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) (Medium)
 -   Tags: string, dynamic programming, greedy, sliding window
-
 
 ## 567. Permutation in String
 
@@ -79,36 +73,30 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | [LeetCode CH](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/) (Hard)
 -   Tags: hash table, string, sliding window
 
-
 ## 2156. Find Substring With Given Hash Value
 
 -   [LeetCode](https://leetcode.com/problems/find-substring-with-given-hash-value/) | [LeetCode CH](https://leetcode.cn/problems/find-substring-with-given-hash-value/) (Hard)
 -   Tags: string, sliding window, rolling hash, hash function
-
 
 ## 2953. Count Complete Substrings
 
 -   [LeetCode](https://leetcode.com/problems/count-complete-substrings/) | [LeetCode CH](https://leetcode.cn/problems/count-complete-substrings/) (Hard)
 -   Tags: hash table, string, sliding window
 
-
 ## 1016. Binary String With Substrings Representing 1 To N
 
 -   [LeetCode](https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/) | [LeetCode CH](https://leetcode.cn/problems/binary-string-with-substrings-representing-1-to-n/) (Medium)
 -   Tags: string
-
 
 ## 683. K Empty Slots
 
 -   [LeetCode](https://leetcode.com/problems/k-empty-slots/) | [LeetCode CH](https://leetcode.cn/problems/k-empty-slots/) (Hard)
 -   Tags: array, binary indexed tree, segment tree, queue, sliding window, heap priority queue, ordered set, monotonic queue
 
-
 ## 2067. Number of Equal Count Substrings
 
 -   [LeetCode](https://leetcode.com/problems/number-of-equal-count-substrings/) | [LeetCode CH](https://leetcode.cn/problems/number-of-equal-count-substrings/) (Medium)
 -   Tags: string, counting, prefix sum
-
 
 ## 2524. Maximum Frequency Score of a Subarray
 

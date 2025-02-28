@@ -13,12 +13,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/ternary-expression-parser/) | [LeetCode CH](https://leetcode.cn/problems/ternary-expression-parser/) (Medium)
 -   Tags: string, stack, recursion
 
-
 ## 484. Find Permutation
 
 -   [LeetCode](https://leetcode.com/problems/find-permutation/) | [LeetCode CH](https://leetcode.cn/problems/find-permutation/) (Medium)
 -   Tags: array, string, stack, greedy
-
 
 ## 772. Basic Calculator III
 

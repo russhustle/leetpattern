@@ -255,7 +255,6 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-
 ## 127. Word Ladder
 
 -   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)

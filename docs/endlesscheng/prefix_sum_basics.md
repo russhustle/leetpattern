@@ -24,18 +24,15 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-of-variable-length-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-variable-length-subarrays/) (Easy)
 -   Tags: array, prefix sum
 
-
 ## 2559. Count Vowel Strings in Ranges
 
 -   [LeetCode](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | [LeetCode CH](https://leetcode.cn/problems/count-vowel-strings-in-ranges/) (Medium)
 -   Tags: array, string, prefix sum
 
-
 ## 3152. Special Array II
 
 -   [LeetCode](https://leetcode.com/problems/special-array-ii/) | [LeetCode CH](https://leetcode.cn/problems/special-array-ii/) (Medium)
 -   Tags: array, binary search, prefix sum
-
 
 ## 1749. Maximum Absolute Sum of Any Subarray
 

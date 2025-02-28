@@ -118,18 +118,15 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/diet-plan-performance/) | [LeetCode CH](https://leetcode.cn/problems/diet-plan-performance/) (Easy)
 -   Tags: array, sliding window
 
-
 ## 1100. Find K-Length Substrings With No Repeated Characters
 
 -   [LeetCode](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [LeetCode CH](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
 -   Tags: hash table, string, sliding window
 
-
 ## 1852. Distinct Numbers in Each Subarray
 
 -   [LeetCode](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [LeetCode CH](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium)
 -   Tags: array, hash table, sliding window
-
 
 ## 1151. Minimum Swaps to Group All 1's Together
 

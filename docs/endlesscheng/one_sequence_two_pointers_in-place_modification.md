@@ -60,18 +60,15 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sort-array-by-parity/) | [LeetCode CH](https://leetcode.cn/problems/sort-array-by-parity/) (Easy)
 -   Tags: array, two pointers, sorting
 
-
 ## 922. Sort Array By Parity II
 
 -   [LeetCode](https://leetcode.com/problems/sort-array-by-parity-ii/) | [LeetCode CH](https://leetcode.cn/problems/sort-array-by-parity-ii/) (Easy)
 -   Tags: array, two pointers, sorting
 
-
 ## 2460. Apply Operations to an Array
 
 -   [LeetCode](https://leetcode.com/problems/apply-operations-to-an-array/) | [LeetCode CH](https://leetcode.cn/problems/apply-operations-to-an-array/) (Easy)
 -   Tags: array, two pointers, simulation
-
 
 ## 1089. Duplicate Zeros
 

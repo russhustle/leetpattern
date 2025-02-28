@@ -48,7 +48,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/as-far-from-land-as-possible/) | [LeetCode CH](https://leetcode.cn/problems/as-far-from-land-as-possible/) (Medium)
 -   Tags: array, dynamic programming, breadth first search, matrix
 
-
 ## 542. 01 Matrix
 
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
@@ -76,7 +75,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/map-of-highest-peak/) | [LeetCode CH](https://leetcode.cn/problems/map-of-highest-peak/) (Medium)
 -   Tags: array, breadth first search, matrix
 
-
 ## 934. Shortest Bridge
 
 -   [LeetCode](https://leetcode.com/problems/shortest-bridge/) | [LeetCode CH](https://leetcode.cn/problems/shortest-bridge/) (Medium)
@@ -91,42 +89,35 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/) | [LeetCode CH](https://leetcode.cn/problems/k-highest-ranked-items-within-a-price-range/) (Medium)
 -   Tags: array, breadth first search, sorting, heap priority queue, matrix
 
-
 ## 1293. Shortest Path in a Grid with Obstacles Elimination
 
 -   [LeetCode](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-in-a-grid-with-obstacles-elimination/) (Hard)
 -   Tags: array, breadth first search, matrix
-
 
 ## 909. Snakes and Ladders
 
 -   [LeetCode](https://leetcode.com/problems/snakes-and-ladders/) | [LeetCode CH](https://leetcode.cn/problems/snakes-and-ladders/) (Medium)
 -   Tags: array, breadth first search, matrix
 
-
 ## 1210. Minimum Moves to Reach Target with Rotations
 
 -   [LeetCode](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/) | [LeetCode CH](https://leetcode.cn/problems/minimum-moves-to-reach-target-with-rotations/) (Hard)
 -   Tags: array, breadth first search, matrix
-
 
 ## 675. Cut Off Trees for Golf Event
 
 -   [LeetCode](https://leetcode.com/problems/cut-off-trees-for-golf-event/) | [LeetCode CH](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) (Hard)
 -   Tags: array, breadth first search, heap priority queue, matrix
 
-
 ## 749. Contain Virus
 
 -   [LeetCode](https://leetcode.com/problems/contain-virus/) | [LeetCode CH](https://leetcode.cn/problems/contain-virus/) (Hard)
 -   Tags: array, depth first search, breadth first search, matrix, simulation
 
-
 ## 1730. Shortest Path to Get Food
 
 -   [LeetCode](https://leetcode.com/problems/shortest-path-to-get-food/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-to-get-food/) (Medium)
 -   Tags: array, breadth first search, matrix
-
 
 ## 286. Walls and Gates
 
@@ -142,7 +133,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
-
 
 ## 505. The Maze II
 
@@ -166,7 +156,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/shortest-distance-from-all-buildings/) | [LeetCode CH](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard)
 -   Tags: array, breadth first search, matrix
-
 
 ## 2814. Minimum Time Takes to Reach Destination Without Drowning
 

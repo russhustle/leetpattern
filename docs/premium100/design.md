@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-tic-tac-toe/) | [LeetCode CH](https://leetcode.cn/problems/design-tic-tac-toe/) (Medium)
 -   Tags: array, hash table, design, matrix, simulation
 
-
 ## 353. Design Snake Game
 
 -   [LeetCode](https://leetcode.com/problems/design-snake-game/) | [LeetCode CH](https://leetcode.cn/problems/design-snake-game/) (Medium)
@@ -33,7 +32,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/design-compressed-string-iterator/) | [LeetCode CH](https://leetcode.cn/problems/design-compressed-string-iterator/) (Easy)
 -   Tags: array, string, design, iterator
-
 
 ## 271. Encode and Decode Strings
 
@@ -49,12 +47,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/zigzag-iterator/) | [LeetCode CH](https://leetcode.cn/problems/zigzag-iterator/) (Medium)
 -   Tags: array, design, queue, iterator
 
-
 ## 716. Max Stack
 
 -   [LeetCode](https://leetcode.com/problems/max-stack/) | [LeetCode CH](https://leetcode.cn/problems/max-stack/) (Hard)
 -   Tags: linked list, stack, design, doubly linked list, ordered set
-
 
 ## 1244. Design A Leaderboard
 
@@ -69,7 +65,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard)
 -   Tags: string, tree, depth first search, breadth first search
-
 
 ## 431. Encode N-ary Tree to Binary Tree
 

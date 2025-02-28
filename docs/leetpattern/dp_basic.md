@@ -123,6 +123,10 @@ comments: True
 --8<-- "0198_house_robber.py"
 ```
 
+```cpp title="198. House Robber"
+--8<-- "cpp/0198_house_robber.cc"
+```
+
 ## 213. House Robber II
 
 -   [LeetCode](https://leetcode.com/problems/house-robber-ii/) | [LeetCode CH](https://leetcode.cn/problems/house-robber-ii/) (Medium)

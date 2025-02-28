@@ -18,7 +18,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-anagram-mappings/) | [LeetCode CH](https://leetcode.cn/problems/find-anagram-mappings/) (Easy)
 -   Tags: array, hash table
 
-
 ## 266. Palindrome Permutation
 
 -   [LeetCode](https://leetcode.com/problems/palindrome-permutation/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-permutation/) (Easy)
@@ -33,30 +32,25 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sentence-similarity/) | [LeetCode CH](https://leetcode.cn/problems/sentence-similarity/) (Easy)
 -   Tags: array, hash table, string
 
-
 ## 1165. Single-Row Keyboard
 
 -   [LeetCode](https://leetcode.com/problems/single-row-keyboard/) | [LeetCode CH](https://leetcode.cn/problems/single-row-keyboard/) (Easy)
 -   Tags: hash table, string
-
 
 ## 249. Group Shifted Strings
 
 -   [LeetCode](https://leetcode.com/problems/group-shifted-strings/) | [LeetCode CH](https://leetcode.cn/problems/group-shifted-strings/) (Medium)
 -   Tags: array, hash table, string
 
-
 ## 1133. Largest Unique Number
 
 -   [LeetCode](https://leetcode.com/problems/largest-unique-number/) | [LeetCode CH](https://leetcode.cn/problems/largest-unique-number/) (Easy)
 -   Tags: array, hash table, sorting
 
-
 ## 1426. Counting Elements
 
 -   [LeetCode](https://leetcode.com/problems/counting-elements/) | [LeetCode CH](https://leetcode.cn/problems/counting-elements/) (Easy)
 -   Tags: array, hash table
-
 
 ## 1198. Find Smallest Common Element in All Rows
 

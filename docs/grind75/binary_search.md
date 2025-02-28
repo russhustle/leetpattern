@@ -35,12 +35,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 -   Tags: array, binary search
 
-
 ## 981. Time Based Key-Value Store
 
 -   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
 -   Tags: hash table, string, binary search, design
-
 
 ## 1235. Maximum Profit in Job Scheduling
 

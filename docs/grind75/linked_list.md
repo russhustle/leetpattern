@@ -78,7 +78,6 @@ B --> A[1]
 -   [LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
 -   Tags: linked list, two pointers
 
-
 ## 146. LRU Cache
 
 -   [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)

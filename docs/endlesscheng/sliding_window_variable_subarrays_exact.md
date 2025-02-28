@@ -14,7 +14,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/binary-subarrays-with-sum/) | [LeetCode CH](https://leetcode.cn/problems/binary-subarrays-with-sum/) (Medium)
 -   Tags: array, hash table, sliding window, prefix sum
 
-
 ## 1248. Count Number of Nice Subarrays
 
 -   [LeetCode](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-nice-subarrays/) (Medium)
@@ -28,7 +27,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | [LeetCode CH](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) (Medium)
 -   Tags: hash table, string, sliding window
-
 
 ## 992. Subarrays with K Different Integers
 

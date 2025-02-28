@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-days-to-disconnect-island/) (Hard)
 -   Tags: array, depth first search, breadth first search, matrix, strongly connected component
 
-
 ## 3383. Minimum Runes to Add to Cast Spell
 
 -   [LeetCode](https://leetcode.com/problems/minimum-runes-to-add-to-cast-spell/) | [LeetCode CH](https://leetcode.cn/problems/minimum-runes-to-add-to-cast-spell/) (Hard)

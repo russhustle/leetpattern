@@ -18,12 +18,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-celebrity/) | [LeetCode CH](https://leetcode.cn/problems/find-the-celebrity/) (Medium)
 -   Tags: two pointers, graph, interactive
 
-
 ## 582. Kill Process
 
 -   [LeetCode](https://leetcode.com/problems/kill-process/) | [LeetCode CH](https://leetcode.cn/problems/kill-process/) (Medium)
 -   Tags: array, hash table, tree, depth first search, breadth first search
-
 
 ## 323. Number of Connected Components in an Undirected Graph
 
@@ -39,12 +37,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [LeetCode CH](https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/) (Medium)
 -   Tags: graph, topological sort
 
-
 ## 1236. Web Crawler
 
 -   [LeetCode](https://leetcode.com/problems/web-crawler/) | [LeetCode CH](https://leetcode.cn/problems/web-crawler/) (Medium)
 -   Tags: string, depth first search, breadth first search, interactive
-
 
 ## 305. Number of Islands II
 
@@ -59,7 +55,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/number-of-distinct-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium)
 -   Tags: hash table, depth first search, breadth first search, union find, hash function
-
 
 ## 1136. Parallel Courses
 

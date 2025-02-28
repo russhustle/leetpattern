@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-
 ## 505. The Maze II
 
 -   [LeetCode](https://leetcode.com/problems/the-maze-ii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-ii/) (Medium)
@@ -41,7 +40,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-knight-moves/) | [LeetCode CH](https://leetcode.cn/problems/minimum-knight-moves/) (Medium)
 -   Tags: breadth first search
 
-
 ## 286. Walls and Gates
 
 -   [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
@@ -56,7 +54,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/shortest-distance-from-all-buildings/) | [LeetCode CH](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard)
 -   Tags: array, breadth first search, matrix
-
 
 ## 269. Alien Dictionary
 

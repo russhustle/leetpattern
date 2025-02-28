@@ -79,42 +79,35 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-
 ## 1319. Number of Operations to Make Network Connected
 
 -   [LeetCode](https://leetcode.com/problems/number-of-operations-to-make-network-connected/) | [LeetCode CH](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
-
 
 ## 2492. Minimum Score of a Path Between Two Cities
 
 -   [LeetCode](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/) | [LeetCode CH](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-
 ## 3387. Maximize Amount After Two Days of Conversions
 
 -   [LeetCode](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [LeetCode CH](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
 -   Tags: array, string, depth first search, breadth first search, graph
-
 
 ## 3310. Remove Methods From Project
 
 -   [LeetCode](https://leetcode.com/problems/remove-methods-from-project/) | [LeetCode CH](https://leetcode.cn/problems/remove-methods-from-project/) (Medium)
 -   Tags: depth first search, breadth first search, graph
 
-
 ## 2685. Count the Number of Complete Components
 
 -   [LeetCode](https://leetcode.com/problems/count-the-number-of-complete-components/) | [LeetCode CH](https://leetcode.cn/problems/count-the-number-of-complete-components/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-
 ## 2192. All Ancestors of a Node in a Directed Acyclic Graph
 
 -   [LeetCode](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | [LeetCode CH](https://leetcode.cn/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
-
 
 ## 924. Minimize Malware Spread
 
@@ -129,7 +122,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [LeetCode CH](https://leetcode.cn/problems/detonate-the-maximum-bombs/) (Medium)
 -   Tags: array, math, depth first search, breadth first search, graph, geometry
-
 
 ## 721. Accounts Merge
 
@@ -277,18 +269,15 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/minimize-malware-spread-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimize-malware-spread-ii/) (Hard)
 -   Tags: array, hash table, depth first search, breadth first search, union find, graph
 
-
 ## 2092. Find All People With Secret
 
 -   [LeetCode](https://leetcode.com/problems/find-all-people-with-secret/) | [LeetCode CH](https://leetcode.cn/problems/find-all-people-with-secret/) (Hard)
 -   Tags: depth first search, breadth first search, union find, graph, sorting
 
-
 ## 3108. Minimum Cost Walk in Weighted Graph
 
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-walk-in-weighted-graph/) (Hard)
 -   Tags: array, bit manipulation, union find, graph
-
 
 ## 261. Graph Valid Tree
 

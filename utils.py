@@ -57,8 +57,17 @@ def code(category: str, row: DataFrame) -> str:
 
     if category == "algorithms":
         py_path = os.path.join("src", basename + ".py")
-        content = f'```python title="{title}"\n--8<-- "{basename}.py"\n```\n\n'
-        return content if not check_file_empty(py_path) else "\n"
+        cc_path = os.path.join("src", "cpp", basename + ".cc")
+        py_content = (
+            f'```python title="{title}"\n--8<-- "{basename}.py"\n```\n\n'
+        )
+        cc_content = (
+            f'```cpp title="{title}"\n--8<-- "cpp/{basename}.cc"\n```\n\n'
+        )
+        content = ""
+        content += py_content if not check_file_empty(py_path) else ""
+        content += cc_content if not check_file_empty(cc_path) else ""
+        return content
 
     elif category == "sql":
         txt_path = os.path.join("src", "sql", basename + ".txt")

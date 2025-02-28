@@ -26,18 +26,15 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-substring-with-maximum-cost/) | [LeetCode CH](https://leetcode.cn/problems/find-the-substring-with-maximum-cost/) (Medium)
 -   Tags: array, hash table, string, dynamic programming
 
-
 ## 1749. Maximum Absolute Sum of Any Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray/) (Medium)
 -   Tags: array, dynamic programming
 
-
 ## 1191. K-Concatenation Maximum Sum
 
 -   [LeetCode](https://leetcode.com/problems/k-concatenation-maximum-sum/) | [LeetCode CH](https://leetcode.cn/problems/k-concatenation-maximum-sum/) (Medium)
 -   Tags: array, dynamic programming
-
 
 ## 918. Maximum Sum Circular Subarray
 
@@ -52,7 +49,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/maximum-score-of-spliced-array/) | [LeetCode CH](https://leetcode.cn/problems/maximum-score-of-spliced-array/) (Hard)
 -   Tags: array, dynamic programming
-
 
 ## 152. Maximum Product Subarray
 

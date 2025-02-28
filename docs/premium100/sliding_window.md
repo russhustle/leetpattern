@@ -33,7 +33,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-consecutive-ones-ii/) | [LeetCode CH](https://leetcode.cn/problems/max-consecutive-ones-ii/) (Medium)
 -   Tags: array, dynamic programming, sliding window
 
-
 ## 1100. Find K-Length Substrings With No Repeated Characters
 
 -   [LeetCode](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [LeetCode CH](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)

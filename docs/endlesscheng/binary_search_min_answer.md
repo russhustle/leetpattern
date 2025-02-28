@@ -23,12 +23,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [LeetCode CH](https://leetcode.cn/problems/find-the-smallest-divisor-given-a-threshold/) (Medium)
 -   Tags: array, binary search
 
-
 ## 2187. Minimum Time to Complete Trips
 
 -   [LeetCode](https://leetcode.com/problems/minimum-time-to-complete-trips/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-to-complete-trips/) (Medium)
 -   Tags: array, binary search
-
 
 ## 1870. Minimum Speed to Arrive on Time
 
@@ -64,42 +62,35 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) (Medium)
 -   Tags: array, math, binary search, greedy, heap priority queue
 
-
 ## 475. Heaters
 
 -   [LeetCode](https://leetcode.com/problems/heaters/) | [LeetCode CH](https://leetcode.cn/problems/heaters/) (Medium)
 -   Tags: array, two pointers, binary search, sorting
-
 
 ## 2594. Minimum Time to Repair Cars
 
 -   [LeetCode](https://leetcode.com/problems/minimum-time-to-repair-cars/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-to-repair-cars/) (Medium)
 -   Tags: array, binary search
 
-
 ## 1482. Minimum Number of Days to Make m Bouquets
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets/) (Medium)
 -   Tags: array, binary search
-
 
 ## 3048. Earliest Second to Mark Indices I
 
 -   [LeetCode](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | [LeetCode CH](https://leetcode.cn/problems/earliest-second-to-mark-indices-i/) (Medium)
 -   Tags: array, binary search
 
-
 ## 2604. Minimum Time to Eat All Grains
 
 -   [LeetCode](https://leetcode.com/problems/minimum-time-to-eat-all-grains/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-to-eat-all-grains/) (Hard)
 -   Tags: array, two pointers, binary search, sorting
 
-
 ## 2702. Minimum Operations to Make Numbers Non-positive
 
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-make-numbers-non-positive/) (Hard)
 -   Tags: array, binary search
-
 
 ## 3453. Separate Squares I
 

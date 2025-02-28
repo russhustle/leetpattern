@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [LeetCode CH](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) (Easy)
 -   Tags: array, sliding window, sorting
 
-
 ## 220. Contains Duplicate III
 
 -   [LeetCode](https://leetcode.com/problems/contains-duplicate-iii/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate-iii/) (Hard)

@@ -18,24 +18,20 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [LeetCode CH](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) (Medium)
 -   Tags: array, queue, sliding window, heap priority queue, ordered set, monotonic queue
 
-
 ## 825. Friends Of Appropriate Ages
 
 -   [LeetCode](https://leetcode.com/problems/friends-of-appropriate-ages/) | [LeetCode CH](https://leetcode.cn/problems/friends-of-appropriate-ages/) (Medium)
 -   Tags: array, two pointers, binary search, sorting
-
 
 ## 2401. Longest Nice Subarray
 
 -   [LeetCode](https://leetcode.com/problems/longest-nice-subarray/) | [LeetCode CH](https://leetcode.cn/problems/longest-nice-subarray/) (Medium)
 -   Tags: array, bit manipulation, sliding window
 
-
 ## 1156. Swap For Longest Repeated Character Substring
 
 -   [LeetCode](https://leetcode.com/problems/swap-for-longest-repeated-character-substring/) | [LeetCode CH](https://leetcode.cn/problems/swap-for-longest-repeated-character-substring/) (Medium)
 -   Tags: hash table, string, sliding window
-
 
 ## 424. Longest Repeating Character Replacement
 
@@ -59,7 +55,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/ways-to-split-array-into-three-subarrays/) (Medium)
 -   Tags: array, two pointers, binary search, prefix sum
-
 
 ## 1918. Kth Smallest Subarray Sum
 

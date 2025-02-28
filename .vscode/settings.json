@@ -1,20 +1,24 @@
 {
-    "editor.formatOnSave": true,
-    "prettier.tabWidth": 2,
-    "makefile.configureOnOpen": false,
-    "prettier.embeddedLanguageFormatting": "auto",
-    "prettier.bracketSameLine": false,
-    "prettier.printWidth": 79,
-    "files.associations": {
-        "iostream": "cpp"
-    },
-    "quokka.automaticRestart": true,
-    "quokka.automaticStartRegex": "src/ts/.*\\.ts$",
-    "C_Cpp_Runner.msvcBatchPath": "",
-    "Prettier-SQL.SQLFlavourOverride": "mysql",
-    "Prettier-SQL.keywordCase": "upper",
-    "Prettier-SQL.denseOperators": false,
-    "Prettier-SQL.indentStyle": "standard",
-    "Prettier-SQL.newlineBeforeSemicolon": true,
-    "notebook.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.formatOnSave": true,
+  "prettier.tabWidth": 2,
+  "makefile.configureOnOpen": false,
+  "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.bracketSameLine": false,
+  "prettier.printWidth": 79,
+  "files.associations": {
+    "iostream": "cpp",
+    "algorithm": "cpp",
+    "chrono": "cpp",
+    "random": "cpp",
+    "limits": "cpp"
+  },
+  "quokka.automaticRestart": true,
+  "quokka.automaticStartRegex": "src/ts/.*\\.ts$",
+  "C_Cpp_Runner.msvcBatchPath": "",
+  "Prettier-SQL.SQLFlavourOverride": "mysql",
+  "Prettier-SQL.keywordCase": "upper",
+  "Prettier-SQL.denseOperators": false,
+  "Prettier-SQL.indentStyle": "standard",
+  "Prettier-SQL.newlineBeforeSemicolon": true,
+  "notebook.defaultFormatter": "esbenp.prettier-vscode"
 }

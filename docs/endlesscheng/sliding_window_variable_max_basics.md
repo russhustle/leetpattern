@@ -78,7 +78,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | [LeetCode CH](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) (Medium)
 -   Tags: array, hash table, sliding window
 
-
 ## 2024. Maximize the Confusion of an Exam
 
 -   [LeetCode](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | [LeetCode CH](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/) (Medium)

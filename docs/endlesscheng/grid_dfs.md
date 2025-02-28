@@ -98,7 +98,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 -   Tags: array, dynamic programming, matrix
 
-
 ## 1254. Number of Closed Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-closed-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
@@ -122,12 +121,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-sub-islands/) | [LeetCode CH](https://leetcode.cn/problems/count-sub-islands/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-
 ## 1391. Check if There is a Valid Path in a Grid
 
 -   [LeetCode](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 
 ## 417. Pacific Atlantic Water Flow
 
@@ -143,12 +140,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minesweeper/) | [LeetCode CH](https://leetcode.cn/problems/minesweeper/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-
 ## 1559. Detect Cycles in 2D Grid
 
 -   [LeetCode](https://leetcode.com/problems/detect-cycles-in-2d-grid/) | [LeetCode CH](https://leetcode.cn/problems/detect-cycles-in-2d-grid/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 
 ## 827. Making A Large Island
 
@@ -173,12 +168,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/) | [LeetCode CH](https://leetcode.cn/problems/number-of-spaces-cleaning-robot-cleaned/) (Medium)
 -   Tags: array, matrix, simulation
 
-
 ## 2852. Sum of Remoteness of All Cells
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-remoteness-of-all-cells/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-remoteness-of-all-cells/) (Medium)
 -   Tags: array, hash table, depth first search, breadth first search, union find, matrix
-
 
 ## 489. Robot Room Cleaner
 

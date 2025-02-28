@@ -17,12 +17,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/) | [LeetCode CH](https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-i/) (Medium)
 -   Tags: array, breadth first search, graph
 
-
 ## 1311. Get Watched Videos by Your Friends
 
 -   [LeetCode](https://leetcode.com/problems/get-watched-videos-by-your-friends/) | [LeetCode CH](https://leetcode.cn/problems/get-watched-videos-by-your-friends/) (Medium)
 -   Tags: array, hash table, breadth first search, graph, sorting
-
 
 ## 1129. Shortest Path with Alternating Colors
 
@@ -38,18 +36,15 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/) | [LeetCode CH](https://leetcode.cn/problems/maximum-candies-you-can-get-from-boxes/) (Hard)
 -   Tags: array, breadth first search, graph
 
-
 ## 2039. The Time When the Network Becomes Idle
 
 -   [LeetCode](https://leetcode.com/problems/the-time-when-the-network-becomes-idle/) | [LeetCode CH](https://leetcode.cn/problems/the-time-when-the-network-becomes-idle/) (Medium)
 -   Tags: array, breadth first search, graph
 
-
 ## 2608. Shortest Cycle in a Graph
 
 -   [LeetCode](https://leetcode.com/problems/shortest-cycle-in-a-graph/) | [LeetCode CH](https://leetcode.cn/problems/shortest-cycle-in-a-graph/) (Hard)
 -   Tags: breadth first search, graph
-
 
 ## 815. Bus Routes
 

@@ -26,30 +26,25 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/wiggle-sort/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-sort/) (Medium)
 -   Tags: array, greedy, sorting
 
-
 ## 1056. Confusing Number
 
 -   [LeetCode](https://leetcode.com/problems/confusing-number/) | [LeetCode CH](https://leetcode.cn/problems/confusing-number/) (Easy)
 -   Tags: math
-
 
 ## 1427. Perform String Shifts
 
 -   [LeetCode](https://leetcode.com/problems/perform-string-shifts/) | [LeetCode CH](https://leetcode.cn/problems/perform-string-shifts/) (Easy)
 -   Tags: array, math, string
 
-
 ## 161. One Edit Distance
 
 -   [LeetCode](https://leetcode.com/problems/one-edit-distance/) | [LeetCode CH](https://leetcode.cn/problems/one-edit-distance/) (Medium)
 -   Tags: two pointers, string
 
-
 ## 186. Reverse Words in a String II
 
 -   [LeetCode](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | [LeetCode CH](https://leetcode.cn/problems/reverse-words-in-a-string-ii/) (Medium)
 -   Tags: two pointers, string
-
 
 ## 1055. Shortest Way to Form String
 

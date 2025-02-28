@@ -69,7 +69,11 @@ def create(config_path: str) -> str:
             check_make_file(problem_md_path)
             if cfg.category == "algorithms":
                 problem_py_path = os.path.join(src, row["basename"] + ".py")
+                problem_cc_path = os.path.join(
+                    src, "cpp", row["basename"] + ".cc"
+                )
                 check_make_file(problem_py_path)
+                check_make_file(problem_cc_path)
             elif cfg.category == "sql":
                 problem_sql_path = os.path.join(
                     src, "sql", row["basename"] + ".sql"

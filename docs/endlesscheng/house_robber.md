@@ -36,6 +36,10 @@ comments: True
 --8<-- "0198_house_robber.py"
 ```
 
+```cpp title="198. House Robber"
+--8<-- "cpp/0198_house_robber.cc"
+```
+
 ## 740. Delete and Earn
 
 -   [LeetCode](https://leetcode.com/problems/delete-and-earn/) | [LeetCode CH](https://leetcode.cn/problems/delete-and-earn/) (Medium)
@@ -49,7 +53,6 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/count-number-of-ways-to-place-houses/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-ways-to-place-houses/) (Medium)
 -   Tags: dynamic programming
-
 
 ## 213. House Robber II
 

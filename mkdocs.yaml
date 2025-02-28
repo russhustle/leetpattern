@@ -72,6 +72,12 @@ nav:
     - Sliding Window Variable Others: endlesscheng/sliding_window_variable_others.md
     - One Sequence Two Pointers Opposite Direction: endlesscheng/one_sequence_two_pointers_opposite_direction.md
     - One Sequence Two Pointers Same Direction: endlesscheng/one_sequence_two_pointers_same_direction.md
+    - One Sequence Two Pointers Backward: endlesscheng/one_sequence_two_pointers_backward.md
+    - One Sequence Two Pointers In-Place Modification: endlesscheng/one_sequence_two_pointers_in-place_modification.md
+    - Two Sequences Two Pointers: endlesscheng/two_sequences_two_pointers.md
+    - Two Sequences Subsequence Checking: endlesscheng/two_sequences_subsequence_checking.md
+    - Three Pointers: endlesscheng/three_pointers.md
+    - Grouped Loop: endlesscheng/grouped_loop.md
     - Binary Search Basics: endlesscheng/binary_search_basics.md
     - Binary Search Advanced: endlesscheng/binary_search_advanced.md
     - Binary Search Min Answer: endlesscheng/binary_search_min_answer.md

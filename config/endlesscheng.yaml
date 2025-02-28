@@ -15,6 +15,12 @@ topics:
     Sliding Window Variable Others: [ 1438, 825, 2401, 1156, 424, 438, 1712, 1918 ]
     One Sequence Two Pointers Opposite Direction: [ 344, 125, 1750, 2105, 977, 658, 1471, 167, 633, 2824, 15, 16, 18, 611, 1577, 923, 948, 11, 42, 1616, 1498, 1782, 1099, 360, 2422, 259 ]
     One Sequence Two Pointers Same Direction: [ 1574, 2972, 2122, 2234, 3323, 581 ]
+    One Sequence Two Pointers Backward: [ 1793 ]
+    One Sequence Two Pointers In-Place Modification: [ 27, 26, 80, 283, 905, 922, 2460, 1089 ]
+    Two Sequences Two Pointers: [ 2540, 88, 2570, 1855, 1385, 925, 809, 2337, 777, 844, 986, 1537, 244, 2838, 1229, 1570, 1868 ]
+    Two Sequences Subsequence Checking: [ 392, 524, 2486, 2825, 1023, 3132, 522, 1898, 2565, 3302 ]
+    Three Pointers: [ 2367, 2563, 795, 2444, 3347, 1213 ]
+    Grouped Loop: [ 1446, 1869, 2414, 3456, 1957, 674, 978, 2110, 228, 2760, 1887, 845, 2038, 1759, 3011, 1578, 1839, 2765, 3255, 3350, 3105, 467, 2948, 2593, 2393, 2436, 2495, 3063 ]
 
     # Binary Search
     Binary Search Basics: [ 34, 35, 704, 744, 2529 ]

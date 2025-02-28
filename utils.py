@@ -69,3 +69,19 @@ def code(category: str, row: DataFrame) -> str:
         content += txt if not check_file_empty(txt_path) else ""
         content += sql if not check_file_empty(sql_path) else ""
         return content
+
+
+def remove_empty_files():
+    folders = ["src", "docs/md", "src/sql"]
+    for folder in folders:
+        folder = os.path.join(os.getcwd(), folder)
+        extensions = [".sql", ".py", ".txt", ".md"]
+        py_filenames = [f for f in os.listdir(folder) if f.endswith(tuple(extensions))]
+
+        for py_filename in py_filenames:
+            path = os.path.join(folder, py_filename)
+            if os.path.getsize(path) == 0:
+                os.remove(path)
+                print(f"Removed {path}")
+            else:
+                print(f"Skipped {path}")

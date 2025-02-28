@@ -76,5 +76,3 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/) | [LeetCode CH](https://leetcode.cn/problems/find-the-lexicographically-smallest-valid-sequence/) (Medium)
 -   Tags: two pointers, string, dynamic programming, greedy
-
-

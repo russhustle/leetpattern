@@ -208,5 +208,3 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/linked-list-frequency/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-frequency/) (Easy)
 -   Tags: hash table, linked list, counting
-
-

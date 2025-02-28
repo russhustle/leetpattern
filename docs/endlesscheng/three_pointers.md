@@ -45,5 +45,3 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/intersection-of-three-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/intersection-of-three-sorted-arrays/) (Easy)
 -   Tags: array, hash table, binary search, counting
-
-

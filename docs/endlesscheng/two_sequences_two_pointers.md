@@ -128,5 +128,3 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/) | [LeetCode CH](https://leetcode.cn/problems/product-of-two-run-length-encoded-arrays/) (Medium)
 -   Tags: array, two pointers
-
-

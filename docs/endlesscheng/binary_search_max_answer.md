@@ -41,7 +41,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) | [LeetCode CH](https://leetcode.cn/problems/find-the-maximum-number-of-marked-indices/) (Medium)
 -   Tags: array, two pointers, binary search, greedy, sorting
 
-```python title="2576. Find the Maximum Number of Marked Indices"
+```python title="2576. Find the Maximum Number of Marked Indices - Python Solution"
 --8<-- "2576_find_the_maximum_number_of_marked_indices.py"
 ```
 

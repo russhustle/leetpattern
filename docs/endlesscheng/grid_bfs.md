@@ -30,7 +30,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | [LeetCode CH](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)
 -   Tags: array, breadth first search, matrix
 
-```python title="1926. Nearest Exit from Entrance in Maze"
+```python title="1926. Nearest Exit from Entrance in Maze - Python Solution"
 --8<-- "1926_nearest_exit_from_entrance_in_maze.py"
 ```
 
@@ -39,7 +39,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) (Medium)
 -   Tags: array, breadth first search, matrix
 
-```python title="1091. Shortest Path in Binary Matrix"
+```python title="1091. Shortest Path in Binary Matrix - Python Solution"
 --8<-- "1091_shortest_path_in_binary_matrix.py"
 ```
 
@@ -53,7 +53,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
 -   Tags: array, dynamic programming, breadth first search, matrix
 
-```python title="542. 01 Matrix"
+```python title="542. 01 Matrix - Python Solution"
 --8<-- "0542_01_matrix.py"
 ```
 
@@ -66,7 +66,7 @@ comments: True
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-```python title="994. Rotting Oranges"
+```python title="994. Rotting Oranges - Python Solution"
 --8<-- "0994_rotting_oranges.py"
 ```
 
@@ -80,7 +80,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-bridge/) | [LeetCode CH](https://leetcode.cn/problems/shortest-bridge/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="934. Shortest Bridge"
+```python title="934. Shortest Bridge - Python Solution"
 --8<-- "0934_shortest_bridge.py"
 ```
 
@@ -125,7 +125,7 @@ comments: True
 -   Tags: array, breadth first search, matrix
 ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
-```python title="286. Walls and Gates"
+```python title="286. Walls and Gates - Python Solution"
 --8<-- "0286_walls_and_gates.py"
 ```
 
@@ -139,7 +139,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze-ii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-ii/) (Medium)
 -   Tags: array, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
 
-```python title="505. The Maze II"
+```python title="505. The Maze II - Python Solution"
 --8<-- "0505_the_maze_ii.py"
 ```
 
@@ -148,7 +148,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze-iii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-iii/) (Hard)
 -   Tags: array, string, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
 
-```python title="499. The Maze III"
+```python title="499. The Maze III - Python Solution"
 --8<-- "0499_the_maze_iii.py"
 ```
 

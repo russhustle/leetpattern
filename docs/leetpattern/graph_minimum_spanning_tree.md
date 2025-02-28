@@ -38,7 +38,7 @@ MST
 
 ![mst2](../assets/mst_2.png)
 
-```python title="1584. Min Cost to Connect All Points"
+```python title="1584. Min Cost to Connect All Points - Python Solution"
 --8<-- "1584_min_cost_to_connect_all_points.py"
 ```
 
@@ -47,7 +47,7 @@ MST
 -   [LeetCode](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [LeetCode CH](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) (Medium)
 -   Tags: union find, graph, heap priority queue, minimum spanning tree
 
-```python title="1135. Connecting Cities With Minimum Cost"
+```python title="1135. Connecting Cities With Minimum Cost - Python Solution"
 --8<-- "1135_connecting_cities_with_minimum_cost.py"
 ```
 
@@ -59,7 +59,7 @@ MST
 
 ![1168_1](../assets/1168_1.png)
 
-```python title="1168. Optimize Water Distribution in a Village"
+```python title="1168. Optimize Water Distribution in a Village - Python Solution"
 --8<-- "1168_optimize_water_distribution_in_a_village.py"
 ```
 
@@ -68,7 +68,7 @@ MST
 -   [LeetCode](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
 -   Tags: union find, graph, sorting, minimum spanning tree, strongly connected component
 
-```python title="1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree"
+```python title="1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree - Python Solution"
 --8<-- "1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree.py"
 ```
 
@@ -78,7 +78,7 @@ MST
 -   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
-```python title="1631. Path With Minimum Effort"
+```python title="1631. Path With Minimum Effort - Python Solution"
 --8<-- "1631_path_with_minimum_effort.py"
 ```
 
@@ -90,6 +90,6 @@ MST
 
 ![1579](../assets/1579.png){width=200px}
 
-```python title="1579. Remove Max Number of Edges to Keep Graph Fully Traversable"
+```python title="1579. Remove Max Number of Edges to Keep Graph Fully Traversable - Python Solution"
 --8<-- "1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.py"
 ```

@@ -28,7 +28,7 @@ comments: True
 | `{`  | push   | "\{"  |
 | `}`  | pop    | ""    |
 
-```python title="20. Valid Parentheses"
+```python title="20. Valid Parentheses - Python Solution"
 --8<-- "0020_valid_parentheses.py"
 ```
 
@@ -42,7 +42,7 @@ comments: True
     -   `peek()` - Get the front element.
     -   `empty()` - Return whether the queue is empty.
 
-```python title="232. Implement Queue using Stacks"
+```python title="232. Implement Queue using Stacks - Python Solution"
 --8<-- "0232_implement_queue_using_stacks.py"
 ```
 
@@ -60,7 +60,7 @@ comments: True
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
 
-```python title="150. Evaluate Reverse Polish Notation"
+```python title="150. Evaluate Reverse Polish Notation - Python Solution"
 --8<-- "0150_evaluate_reverse_polish_notation.py"
 ```
 
@@ -70,7 +70,7 @@ comments: True
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
-```python title="155. Min Stack"
+```python title="155. Min Stack - Python Solution"
 --8<-- "0155_min_stack.py"
 ```
 
@@ -88,7 +88,7 @@ comments: True
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
 
-```python title="42. Trapping Rain Water"
+```python title="42. Trapping Rain Water - Python Solution"
 --8<-- "0042_trapping_rain_water.py"
 ```
 
@@ -97,7 +97,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)
 -   Tags: math, string, stack, recursion
 
-```python title="224. Basic Calculator"
+```python title="224. Basic Calculator - Python Solution"
 --8<-- "0224_basic_calculator.py"
 ```
 
@@ -106,6 +106,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 -   Tags: array, stack, monotonic stack
 
-```python title="84. Largest Rectangle in Histogram"
+```python title="84. Largest Rectangle in Histogram - Python Solution"
 --8<-- "0084_largest_rectangle_in_histogram.py"
 ```

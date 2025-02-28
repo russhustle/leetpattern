@@ -33,7 +33,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [LeetCode CH](https://leetcode.cn/problems/minimum-speed-to-arrive-on-time/) (Medium)
 -   Tags: array, binary search
 
-```python title="1870. Minimum Speed to Arrive on Time"
+```python title="1870. Minimum Speed to Arrive on Time - Python Solution"
 --8<-- "1870_minimum_speed_to_arrive_on_time.py"
 ```
 
@@ -43,7 +43,7 @@ comments: True
 -   Tags: array, binary search
 -   A conveyor belt has packages that must be shipped from one port to another within `D` days. The `i-th` package has a weight of `weights[i]`. Each day, we load the ship with packages on the conveyor belt. The ship will be loaded with packages up to its capacity. The ship will not be loaded beyond its capacity. Return the least weight capacity of the ship.
 
-```python title="1011. Capacity To Ship Packages Within D Days"
+```python title="1011. Capacity To Ship Packages Within D Days - Python Solution"
 --8<-- "1011_capacity_to_ship_packages_within_d_days.py"
 ```
 
@@ -53,7 +53,7 @@ comments: True
 -   Tags: array, binary search
 -   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
 
-```python title="875. Koko Eating Bananas"
+```python title="875. Koko Eating Bananas - Python Solution"
 --8<-- "0875_koko_eating_bananas.py"
 ```
 

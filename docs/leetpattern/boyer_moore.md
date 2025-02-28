@@ -29,7 +29,7 @@ comments: True
 | 2     | 0       | 1     |
 | 2     | 1       | 2     |
 
-```python title="169. Majority Element"
+```python title="169. Majority Element - Python Solution"
 --8<-- "0169_majority_element.py"
 ```
 
@@ -38,7 +38,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/majority-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/majority-element-ii/) (Medium)
 -   Tags: array, hash table, sorting, counting
 
-```python title="229. Majority Element II"
+```python title="229. Majority Element II - Python Solution"
 --8<-- "0229_majority_element_ii.py"
 ```
 
@@ -48,7 +48,7 @@ comments: True
 -   Tags: array, two pointers, binary search, bit manipulation
 -   Find the duplicate number in an array containing `n + 1` integers where each integer is between `1` and `n` inclusive.
 
-```python title="287. Find the Duplicate Number"
+```python title="287. Find the Duplicate Number - Python Solution"
 --8<-- "0287_find_the_duplicate_number.py"
 ```
 

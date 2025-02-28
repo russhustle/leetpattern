@@ -16,7 +16,7 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q5a5OiGbT6Q?si=SlQg9SKZh1YL62vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python title="23. Merge k Sorted Lists"
+```python title="23. Merge k Sorted Lists - Python Solution"
 --8<-- "0023_merge_k_sorted_lists.py"
 ```
 
@@ -25,7 +25,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [LeetCode CH](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) (Medium)
 -   Tags: array, heap priority queue
 
-```python title="373. Find K Pairs with Smallest Sums"
+```python title="373. Find K Pairs with Smallest Sums - Python Solution"
 --8<-- "0373_find_k_pairs_with_smallest_sums.py"
 ```
 
@@ -35,6 +35,6 @@ comments: True
 -   Tags: array, binary search, sorting, heap priority queue, matrix
 -   Given an `n x n` matrix where each of the rows and columns are sorted in ascending order, return the `k-th` smallest element in the matrix.
 
-```python title="378. Kth Smallest Element in a Sorted Matrix"
+```python title="378. Kth Smallest Element in a Sorted Matrix - Python Solution"
 --8<-- "0378_kth_smallest_element_in_a_sorted_matrix.py"
 ```

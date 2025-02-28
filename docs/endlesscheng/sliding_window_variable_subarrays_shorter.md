@@ -17,7 +17,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subarray-product-less-than-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-product-less-than-k/) (Medium)
 -   Tags: array, binary search, sliding window, prefix sum
 
-```python title="713. Subarray Product Less Than K"
+```python title="713. Subarray Product Less Than K - Python Solution"
 --8<-- "0713_subarray_product_less_than_k.py"
 ```
 

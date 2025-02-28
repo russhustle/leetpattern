@@ -31,7 +31,7 @@ A2 --- T2((T))
 A2 --- R2((R))
 ```
 
-```python title="208. Implement Trie (Prefix Tree)"
+```python title="208. Implement Trie (Prefix Tree) - Python Solution"
 --8<-- "0208_implement_trie_prefix_tree.py"
 ```
 
@@ -40,7 +40,7 @@ A2 --- R2((R))
 -   [LeetCode](https://leetcode.com/problems/word-search-ii/) | [LeetCode CH](https://leetcode.cn/problems/word-search-ii/) (Hard)
 -   Tags: array, string, backtracking, trie, matrix
 
-```python title="212. Word Search II"
+```python title="212. Word Search II - Python Solution"
 --8<-- "0212_word_search_ii.py"
 ```
 
@@ -49,6 +49,6 @@ A2 --- R2((R))
 -   [LeetCode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | [LeetCode CH](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) (Medium)
 -   Tags: string, depth first search, design, trie
 
-```python title="211. Design Add and Search Words Data Structure"
+```python title="211. Design Add and Search Words Data Structure - Python Solution"
 --8<-- "0211_design_add_and_search_words_data_structure.py"
 ```

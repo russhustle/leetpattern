@@ -31,7 +31,7 @@ comments: True
 -   Tags: array, binary search, sorting, heap priority queue, matrix
 -   Given an `n x n` matrix where each of the rows and columns are sorted in ascending order, return the `k-th` smallest element in the matrix.
 
-```python title="378. Kth Smallest Element in a Sorted Matrix"
+```python title="378. Kth Smallest Element in a Sorted Matrix - Python Solution"
 --8<-- "0378_kth_smallest_element_in_a_sorted_matrix.py"
 ```
 
@@ -60,7 +60,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [LeetCode CH](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) (Medium)
 -   Tags: array, heap priority queue
 
-```python title="373. Find K Pairs with Smallest Sums"
+```python title="373. Find K Pairs with Smallest Sums - Python Solution"
 --8<-- "0373_find_k_pairs_with_smallest_sums.py"
 ```
 
@@ -74,7 +74,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | [LeetCode CH](https://leetcode.cn/problems/k-th-smallest-prime-fraction/) (Medium)
 -   Tags: array, two pointers, binary search, sorting, heap priority queue
 
-```python title="786. K-th Smallest Prime Fraction"
+```python title="786. K-th Smallest Prime Fraction - Python Solution"
 --8<-- "0786_k_th_smallest_prime_fraction.py"
 ```
 

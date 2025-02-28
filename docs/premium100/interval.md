@@ -20,7 +20,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms/) (Easy)
 -   Tags: array, sorting
 
-```python title="252. Meeting Rooms"
+```python title="252. Meeting Rooms - Python Solution"
 --8<-- "0252_meeting_rooms.py"
 ```
 
@@ -29,7 +29,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms-ii/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium)
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 
-```python title="253. Meeting Rooms II"
+```python title="253. Meeting Rooms II - Python Solution"
 --8<-- "0253_meeting_rooms_ii.py"
 ```
 

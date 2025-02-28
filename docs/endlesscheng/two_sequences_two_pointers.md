@@ -32,7 +32,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
 -   Tags: array, two pointers, sorting
 
-```python title="88. Merge Sorted Array"
+```python title="88. Merge Sorted Array - Python Solution"
 --8<-- "0088_merge_sorted_array.py"
 ```
 
@@ -76,7 +76,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/backspace-string-compare/) | [LeetCode CH](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
 -   Tags: two pointers, string, stack, simulation
 
-```python title="844. Backspace String Compare"
+```python title="844. Backspace String Compare - Python Solution"
 --8<-- "0844_backspace_string_compare.py"
 ```
 

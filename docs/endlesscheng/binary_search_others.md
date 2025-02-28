@@ -37,7 +37,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sqrtx/) | [LeetCode CH](https://leetcode.cn/problems/sqrtx/) (Easy)
 -   Tags: math, binary search
 
-```python title="69. Sqrt(x)"
+```python title="69. Sqrt(x) - Python Solution"
 --8<-- "0069_sqrtx.py"
 ```
 
@@ -46,7 +46,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 -   Tags: array, binary search, matrix
 
-```python title="74. Search a 2D Matrix"
+```python title="74. Search a 2D Matrix - Python Solution"
 --8<-- "0074_search_a_2d_matrix.py"
 ```
 
@@ -66,7 +66,7 @@ comments: True
 -   Tags: binary search, interactive
 -   Find the first bad version given a function `isBadVersion`.
 
-```python title="278. First Bad Version"
+```python title="278. First Bad Version - Python Solution"
 --8<-- "0278_first_bad_version.py"
 ```
 
@@ -120,7 +120,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-complete-tree-nodes/) | [LeetCode CH](https://leetcode.cn/problems/count-complete-tree-nodes/) (Easy)
 -   Tags: binary search, bit manipulation, tree, binary tree
 
-```python title="222. Count Complete Tree Nodes"
+```python title="222. Count Complete Tree Nodes - Python Solution"
 --8<-- "0222_count_complete_tree_nodes.py"
 ```
 
@@ -139,7 +139,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
 -   Tags: array, binary search, divide and conquer
 
-```python title="4. Median of Two Sorted Arrays"
+```python title="4. Median of Two Sorted Arrays - Python Solution"
 --8<-- "0004_median_of_two_sorted_arrays.py"
 ```
 

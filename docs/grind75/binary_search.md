@@ -16,7 +16,7 @@ comments: True
 -   Tags: array, binary search
 -   Implement binary search algorithm.
 
-```python title="704. Binary Search"
+```python title="704. Binary Search - Python Solution"
 --8<-- "0704_binary_search.py"
 ```
 
@@ -26,7 +26,7 @@ comments: True
 -   Tags: binary search, interactive
 -   Find the first bad version given a function `isBadVersion`.
 
-```python title="278. First Bad Version"
+```python title="278. First Bad Version - Python Solution"
 --8<-- "0278_first_bad_version.py"
 ```
 

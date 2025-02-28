@@ -28,7 +28,7 @@ comments: True
 | `{`  | push   | "\{"  |
 | `}`  | pop    | ""    |
 
-```python title="20. Valid Parentheses"
+```python title="20. Valid Parentheses - Python Solution"
 --8<-- "0020_valid_parentheses.py"
 ```
 
@@ -38,7 +38,7 @@ comments: True
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
-```python title="155. Min Stack"
+```python title="155. Min Stack - Python Solution"
 --8<-- "0155_min_stack.py"
 ```
 
@@ -56,7 +56,7 @@ comments: True
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
 
-```python title="150. Evaluate Reverse Polish Notation"
+```python title="150. Evaluate Reverse Polish Notation - Python Solution"
 --8<-- "0150_evaluate_reverse_polish_notation.py"
 ```
 
@@ -65,7 +65,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
 -   Tags: string, dynamic programming, backtracking
 
-```python title="22. Generate Parentheses"
+```python title="22. Generate Parentheses - Python Solution"
 --8<-- "0022_generate_parentheses.py"
 ```
 
@@ -86,7 +86,7 @@ comments: True
 | 6     | 76   | True         | `[ [76, 6] ]`                   | 0         |
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
-```python title="739. Daily Temperatures"
+```python title="739. Daily Temperatures - Python Solution"
 --8<-- "0739_daily_temperatures.py"
 ```
 
@@ -95,7 +95,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
 -   Tags: array, stack, sorting, monotonic stack
 
-```python title="853. Car Fleet"
+```python title="853. Car Fleet - Python Solution"
 --8<-- "0853_car_fleet.py"
 ```
 
@@ -104,6 +104,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 -   Tags: array, stack, monotonic stack
 
-```python title="84. Largest Rectangle in Histogram"
+```python title="84. Largest Rectangle in Histogram - Python Solution"
 --8<-- "0084_largest_rectangle_in_histogram.py"
 ```

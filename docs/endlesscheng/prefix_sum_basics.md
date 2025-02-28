@@ -15,7 +15,7 @@ comments: True
 - [LeetCode](https://leetcode.com/problems/range-sum-query-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)
 -   Tags: array, design, prefix sum
 
-```python title="303. Range Sum Query - Immutable"
+```python title="303. Range Sum Query - Immutable - Python Solution"
 --8<-- "0303_range_sum_query_immutable.py"
 ```
 

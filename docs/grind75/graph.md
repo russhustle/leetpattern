@@ -50,7 +50,7 @@ comments: True
 | ==2== | ==2== |   0   |
 | ==2== |   0   |   1   |
 
-```python title="733. Flood Fill"
+```python title="733. Flood Fill - Python Solution"
 --8<-- "0733_flood_fill.py"
 ```
 
@@ -59,7 +59,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
 -   Tags: array, dynamic programming, breadth first search, matrix
 
-```python title="542. 01 Matrix"
+```python title="542. 01 Matrix - Python Solution"
 --8<-- "0542_01_matrix.py"
 ```
 
@@ -68,7 +68,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 -   Tags: hash table, depth first search, breadth first search, graph
 
-```python title="133. Clone Graph"
+```python title="133. Clone Graph - Python Solution"
 --8<-- "0133_clone_graph.py"
 ```
 
@@ -191,7 +191,7 @@ flowchart LR
 -   pop `0` from the queue
 -   All courses are taken. Return `True`.
 
-```python title="207. Course Schedule"
+```python title="207. Course Schedule - Python Solution"
 --8<-- "0207_course_schedule.py"
 ```
 
@@ -215,7 +215,7 @@ flowchart LR
 
 ![0200](../assets/0200.jpg)
 
-```python title="200. Number of Islands"
+```python title="200. Number of Islands - Python Solution"
 --8<-- "0200_number_of_islands.py"
 ```
 
@@ -228,7 +228,7 @@ flowchart LR
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-```python title="994. Rotting Oranges"
+```python title="994. Rotting Oranges - Python Solution"
 --8<-- "0994_rotting_oranges.py"
 ```
 
@@ -237,7 +237,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
-```python title="721. Accounts Merge"
+```python title="721. Accounts Merge - Python Solution"
 --8<-- "0721_accounts_merge.py"
 ```
 
@@ -246,7 +246,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 -   Tags: array, string, backtracking, depth first search, matrix
 
-```python title="79. Word Search"
+```python title="79. Word Search - Python Solution"
 --8<-- "0079_word_search.py"
 ```
 
@@ -268,6 +268,6 @@ flowchart LR
 | -------- | ----------- | --------- |
 | BFS      | O(n \* m^2) | O(n \* m) |
 
-```python title="127. Word Ladder"
+```python title="127. Word Ladder - Python Solution"
 --8<-- "0127_word_ladder.py"
 ```

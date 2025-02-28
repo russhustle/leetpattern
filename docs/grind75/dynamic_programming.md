@@ -33,7 +33,7 @@ comments: True
 |  9  |    21     |    34     |   55    |
 | 10  |    34     |    55     |   89    |
 
-```python title="70. Climbing Stairs"
+```python title="70. Climbing Stairs - Python Solution"
 --8<-- "0070_climbing_stairs.py"
 ```
 
@@ -42,7 +42,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 -   Tags: array, divide and conquer, dynamic programming
 
-```python title="53. Maximum Subarray"
+```python title="53. Maximum Subarray - Python Solution"
 --8<-- "0053_maximum_subarray.py"
 ```
 
@@ -51,7 +51,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
 -   Tags: array, dynamic programming, breadth first search
 
-```python title="322. Coin Change"
+```python title="322. Coin Change - Python Solution"
 --8<-- "0322_coin_change.py"
 ```
 
@@ -60,7 +60,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/) | [LeetCode CH](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
 -   Tags: array, dynamic programming
 
-```python title="416. Partition Equal Subset Sum"
+```python title="416. Partition Equal Subset Sum - Python Solution"
 --8<-- "0416_partition_equal_subset_sum.py"
 ```
 
@@ -72,6 +72,6 @@ comments: True
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
-```python title="62. Unique Paths"
+```python title="62. Unique Paths - Python Solution"
 --8<-- "0062_unique_paths.py"
 ```

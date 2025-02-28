@@ -13,7 +13,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | [LeetCode CH](https://leetcode.cn/problems/find-the-k-beauty-of-a-number/) (Easy)
 -   Tags: math, string, sliding window
 
-```python title="2269. Find the K-Beauty of a Number"
+```python title="2269. Find the K-Beauty of a Number - Python Solution"
 --8<-- "2269_find_the_k_beauty_of_a_number.py"
 ```
 

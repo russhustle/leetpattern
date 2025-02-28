@@ -63,7 +63,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) (Easy)
 -   Tags: array
 
-```python title="674. Longest Continuous Increasing Subsequence"
+```python title="674. Longest Continuous Increasing Subsequence - Python Solution"
 --8<-- "0674_longest_continuous_increasing_subsequence.py"
 ```
 
@@ -72,7 +72,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-turbulent-subarray/) | [LeetCode CH](https://leetcode.cn/problems/longest-turbulent-subarray/) (Medium)
 -   Tags: array, dynamic programming, sliding window
 
-```python title="978. Longest Turbulent Subarray"
+```python title="978. Longest Turbulent Subarray - Python Solution"
 --8<-- "0978_longest_turbulent_subarray.py"
 ```
 
@@ -101,7 +101,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-mountain-in-array/) | [LeetCode CH](https://leetcode.cn/problems/longest-mountain-in-array/) (Medium)
 -   Tags: array, two pointers, dynamic programming, enumeration
 
-```python title="845. Longest Mountain in Array"
+```python title="845. Longest Mountain in Array - Python Solution"
 --8<-- "0845_longest_mountain_in_array.py"
 ```
 

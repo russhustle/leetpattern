@@ -15,7 +15,7 @@ comments: True
 -   Tags: array, sorting, heap priority queue, simulation, prefix sum
 -   Return `False` if the total number of passengers at any point is greater than `capacity`. Otherwise, return `True`.
 
-```python title="1094. Car Pooling"
+```python title="1094. Car Pooling - Python Solution"
 --8<-- "1094_car_pooling.py"
 ```
 
@@ -25,7 +25,7 @@ comments: True
 -   Tags: array, prefix sum
 -   Return the final array after applying all the Adition operations.
 
-```python title="370. Range Addition"
+```python title="370. Range Addition - Python Solution"
 --8<-- "0370_range_addition.py"
 ```
 
@@ -35,7 +35,7 @@ comments: True
 -   Tags: array, prefix sum
 -   Return the number of seats booked on each flight.
 
-```python title="1109. Corporate Flight Bookings"
+```python title="1109. Corporate Flight Bookings - Python Solution"
 --8<-- "1109_corporate_flight_bookings.py"
 ```
 
@@ -45,6 +45,6 @@ comments: True
 -   Tags: array, hash table, prefix sum
 -   Return the number of points that intersect with cars.
 
-```python title="2848. Points That Intersect With Cars"
+```python title="2848. Points That Intersect With Cars - Python Solution"
 --8<-- "2848_points_that_intersect_with_cars.py"
 ```

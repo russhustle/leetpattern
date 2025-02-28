@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 -   Tags: array, divide and conquer, dynamic programming
 
-```python title="53. Maximum Subarray"
+```python title="53. Maximum Subarray - Python Solution"
 --8<-- "0053_maximum_subarray.py"
 ```
 
@@ -44,7 +44,7 @@ comments: True
 |   7   |   0   |       7       |     8     |          True           |
 |   8   |   0   |       8       |     8     |          True           |
 
-```python title="55. Jump Game"
+```python title="55. Jump Game - Python Solution"
 --8<-- "0055_jump_game.py"
 ```
 
@@ -56,7 +56,7 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dJ7sWiOoK7g?si=3kc-pp4rs3Dk7Jqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python title="45. Jump Game II"
+```python title="45. Jump Game II - Python Solution"
 --8<-- "0045_jump_game_ii.py"
 ```
 
@@ -65,7 +65,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
 -   Tags: array, greedy
 
-```python title="134. Gas Station"
+```python title="134. Gas Station - Python Solution"
 --8<-- "0134_gas_station.py"
 ```
 
@@ -74,7 +74,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/hand-of-straights/) | [LeetCode CH](https://leetcode.cn/problems/hand-of-straights/) (Medium)
 -   Tags: array, hash table, greedy, sorting
 
-```python title="846. Hand of Straights"
+```python title="846. Hand of Straights - Python Solution"
 --8<-- "0846_hand_of_straights.py"
 ```
 
@@ -83,7 +83,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | [LeetCode CH](https://leetcode.cn/problems/merge-triplets-to-form-target-triplet/) (Medium)
 -   Tags: array, greedy
 
-```python title="1899. Merge Triplets to Form Target Triplet"
+```python title="1899. Merge Triplets to Form Target Triplet - Python Solution"
 --8<-- "1899_merge_triplets_to_form_target_triplet.py"
 ```
 
@@ -92,7 +92,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
 -   Tags: hash table, two pointers, string, greedy
 
-```python title="763. Partition Labels"
+```python title="763. Partition Labels - Python Solution"
 --8<-- "0763_partition_labels.py"
 ```
 
@@ -101,6 +101,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/valid-parenthesis-string/) | [LeetCode CH](https://leetcode.cn/problems/valid-parenthesis-string/) (Medium)
 -   Tags: string, dynamic programming, stack, greedy
 
-```python title="678. Valid Parenthesis String"
+```python title="678. Valid Parenthesis String - Python Solution"
 --8<-- "0678_valid_parenthesis_string.py"
 ```

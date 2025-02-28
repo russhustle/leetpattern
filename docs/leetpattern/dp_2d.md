@@ -24,7 +24,7 @@ comments: True
  1 4 6 4 1          5         4
 ```
 
-```python title="118. Pascal's Triangle"
+```python title="118. Pascal's Triangle - Python Solution"
 --8<-- "0118_pascals_triangle.py"
 ```
 
@@ -34,7 +34,7 @@ comments: True
 -   Tags: array, dynamic programming
 -   Return the `rowIndex`th row of Pascal's triangle.
 
-```python title="119. Pascal's Triangle II"
+```python title="119. Pascal's Triangle II - Python Solution"
 --8<-- "0119_pascals_triangle_ii.py"
 ```
 
@@ -46,7 +46,7 @@ comments: True
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
-```python title="62. Unique Paths"
+```python title="62. Unique Paths - Python Solution"
 --8<-- "0062_unique_paths.py"
 ```
 
@@ -58,6 +58,6 @@ comments: True
 
 ![63](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
 
-```python title="63. Unique Paths II"
+```python title="63. Unique Paths II - Python Solution"
 --8<-- "0063_unique_paths_ii.py"
 ```

@@ -129,7 +129,7 @@ flowchart LR
 -   pop `0` from the queue
 -   All courses are taken. Return `True`.
 
-```python title="207. Course Schedule"
+```python title="207. Course Schedule - Python Solution"
 --8<-- "0207_course_schedule.py"
 ```
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ![0207](../assets/0207.png){width=300px}
 
-```python title="210. Course Schedule II"
+```python title="210. Course Schedule II - Python Solution"
 --8<-- "0210_course_schedule_ii.py"
 ```
 
@@ -151,7 +151,7 @@ flowchart LR
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
 
-```python title="269. Alien Dictionary"
+```python title="269. Alien Dictionary - Python Solution"
 --8<-- "0269_alien_dictionary.py"
 ```
 
@@ -161,7 +161,7 @@ flowchart LR
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return any permutation of the items that satisfies the requirements.
 
-```python title="1203. Sort Items by Groups Respecting Dependencies"
+```python title="1203. Sort Items by Groups Respecting Dependencies - Python Solution"
 --8<-- "1203_sort_items_by_groups_respecting_dependencies.py"
 ```
 
@@ -170,6 +170,6 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [LeetCode CH](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
 -   Tags: hash table, dynamic programming, graph, topological sort, memoization, counting
 
-```python title="1857. Largest Color Value in a Directed Graph"
+```python title="1857. Largest Color Value in a Directed Graph - Python Solution"
 --8<-- "1857_largest_color_value_in_a_directed_graph.py"
 ```

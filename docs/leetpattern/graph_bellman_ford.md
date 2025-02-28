@@ -32,7 +32,7 @@ graph LR
     -   Time Complexity: O(E \* logV)
     -   Space Complexity: O(V)
 
-```python title="743. Network Delay Time"
+```python title="743. Network Delay Time - Python Solution"
 --8<-- "0743_network_delay_time.py"
 ```
 
@@ -57,6 +57,6 @@ graph TD
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python title="787. Cheapest Flights Within K Stops"
+```python title="787. Cheapest Flights Within K Stops - Python Solution"
 --8<-- "0787_cheapest_flights_within_k_stops.py"
 ```

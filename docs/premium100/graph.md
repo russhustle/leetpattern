@@ -28,7 +28,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="323. Number of Connected Components in an Undirected Graph"
+```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"
 --8<-- "0323_number_of_connected_components_in_an_undirected_graph.py"
 ```
 
@@ -47,7 +47,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-islands-ii/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands-ii/) (Hard)
 -   Tags: array, hash table, union find
 
-```python title="305. Number of Islands II"
+```python title="305. Number of Islands II - Python Solution"
 --8<-- "0305_number_of_islands_ii.py"
 ```
 
@@ -64,6 +64,6 @@ comments: True
 
 ![1136](../assets/1136.png){width=300px}
 
-```python title="1136. Parallel Courses"
+```python title="1136. Parallel Courses - Python Solution"
 --8<-- "1136_parallel_courses.py"
 ```

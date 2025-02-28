@@ -12,6 +12,6 @@ comments: True
 -   Tags: array, matrix, simulation
 -   Return all elements of the matrix in spiral order.
 
-```python title="54. Spiral Matrix"
+```python title="54. Spiral Matrix - Python Solution"
 --8<-- "0054_spiral_matrix.py"
 ```

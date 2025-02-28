@@ -23,7 +23,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/palindrome-permutation/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-permutation/) (Easy)
 -   Tags: hash table, string, bit manipulation
 
-```python title="266. Palindrome Permutation"
+```python title="266. Palindrome Permutation - Python Solution"
 --8<-- "0266_palindrome_permutation.py"
 ```
 

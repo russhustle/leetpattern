@@ -24,7 +24,7 @@ flowchart LR
     4((4)) --> 3((3))
 ```
 
-```python title="997. Find the Town Judge"
+```python title="997. Find the Town Judge - Python Solution"
 --8<-- "0997_find_the_town_judge.py"
 ```
 
@@ -76,7 +76,7 @@ flowchart LR
 |   node    |  0  |  1  | **2** |  3  |   4   |  5  |
 | in-degree |  0  |  1  | **2** |  0  |   1   |  1  |
 
-```python title="1557. Minimum Number of Vertices to Reach All Nodes"
+```python title="1557. Minimum Number of Vertices to Reach All Nodes - Python Solution"
 --8<-- "1557_minimum_number_of_vertices_to_reach_all_nodes.py"
 ```
 
@@ -85,7 +85,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/maximal-network-rank/) | [LeetCode CH](https://leetcode.cn/problems/maximal-network-rank/) (Medium)
 -   Tags: graph
 
-```python title="1615. Maximal Network Rank"
+```python title="1615. Maximal Network Rank - Python Solution"
 --8<-- "1615_maximal_network_rank.py"
 ```
 
@@ -102,7 +102,7 @@ How to group
 | Method 1 | -1        | 0       | 1       | `1 - color` |
 | Method 2 | 0         | 1       | -1      | `-color`    |
 
-```python title="785. Is Graph Bipartite?"
+```python title="785. Is Graph Bipartite? - Python Solution"
 --8<-- "0785_is_graph_bipartite.py"
 ```
 
@@ -111,6 +111,6 @@ How to group
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="261. Graph Valid Tree"
+```python title="261. Graph Valid Tree - Python Solution"
 --8<-- "0261_graph_valid_tree.py"
 ```

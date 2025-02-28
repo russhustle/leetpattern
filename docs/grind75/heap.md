@@ -14,7 +14,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/k-closest-points-to-origin/) | [LeetCode CH](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)
 -   Tags: array, math, divide and conquer, geometry, sorting, heap priority queue, quickselect
 
-```python title="973. K Closest Points to Origin"
+```python title="973. K Closest Points to Origin - Python Solution"
 --8<-- "0973_k_closest_points_to_origin.py"
 ```
 
@@ -23,7 +23,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/task-scheduler/) | [LeetCode CH](https://leetcode.cn/problems/task-scheduler/) (Medium)
 -   Tags: array, hash table, greedy, sorting, heap priority queue, counting
 
-```python title="621. Task Scheduler"
+```python title="621. Task Scheduler - Python Solution"
 --8<-- "0621_task_scheduler.py"
 ```
 
@@ -32,7 +32,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 -   Tags: two pointers, design, sorting, heap priority queue, data stream
 
-```python title="295. Find Median from Data Stream"
+```python title="295. Find Median from Data Stream - Python Solution"
 --8<-- "0295_find_median_from_data_stream.py"
 ```
 
@@ -44,6 +44,6 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q5a5OiGbT6Q?si=SlQg9SKZh1YL62vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python title="23. Merge k Sorted Lists"
+```python title="23. Merge k Sorted Lists - Python Solution"
 --8<-- "0023_merge_k_sorted_lists.py"
 ```

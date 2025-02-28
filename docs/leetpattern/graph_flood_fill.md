@@ -47,7 +47,7 @@ comments: True
 | ==2== | ==2== |   0   |
 | ==2== |   0   |   1   |
 
-```python title="733. Flood Fill"
+```python title="733. Flood Fill - Python Solution"
 --8<-- "0733_flood_fill.py"
 ```
 
@@ -71,7 +71,7 @@ comments: True
 
 ![0200](../assets/0200.jpg)
 
-```python title="200. Number of Islands"
+```python title="200. Number of Islands - Python Solution"
 --8<-- "0200_number_of_islands.py"
 ```
 
@@ -80,7 +80,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="695. Max Area of Island"
+```python title="695. Max Area of Island - Python Solution"
 --8<-- "0695_max_area_of_island.py"
 ```
 
@@ -89,7 +89,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/island-perimeter/) | [LeetCode CH](https://leetcode.cn/problems/island-perimeter/) (Easy)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="463. Island Perimeter"
+```python title="463. Island Perimeter - Python Solution"
 --8<-- "0463_island_perimeter.py"
 ```
 
@@ -98,7 +98,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="130. Surrounded Regions"
+```python title="130. Surrounded Regions - Python Solution"
 --8<-- "0130_surrounded_regions.py"
 ```
 
@@ -107,7 +107,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="417. Pacific Atlantic Water Flow"
+```python title="417. Pacific Atlantic Water Flow - Python Solution"
 --8<-- "0417_pacific_atlantic_water_flow.py"
 ```
 
@@ -116,6 +116,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/making-a-large-island/) | [LeetCode CH](https://leetcode.cn/problems/making-a-large-island/) (Hard)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="827. Making A Large Island"
+```python title="827. Making A Large Island - Python Solution"
 --8<-- "0827_making_a_large_island.py"
 ```

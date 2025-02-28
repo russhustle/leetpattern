@@ -38,7 +38,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/) | [LeetCode CH](https://leetcode.cn/problems/longest-repeating-character-replacement/) (Medium)
 -   Tags: hash table, string, sliding window
 
-```python title="424. Longest Repeating Character Replacement"
+```python title="424. Longest Repeating Character Replacement - Python Solution"
 --8<-- "0424_longest_repeating_character_replacement.py"
 ```
 
@@ -47,7 +47,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 -   Tags: hash table, string, sliding window
 
-```python title="438. Find All Anagrams in a String"
+```python title="438. Find All Anagrams in a String - Python Solution"
 --8<-- "0438_find_all_anagrams_in_a_string.py"
 ```
 

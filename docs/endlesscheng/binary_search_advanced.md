@@ -26,7 +26,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) | [LeetCode CH](https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/) (Medium)
 -   Tags: array, two pointers, binary search, sorting
 
-```python title="2300. Successful Pairs of Spells and Potions"
+```python title="2300. Successful Pairs of Spells and Potions - Python Solution"
 --8<-- "2300_successful_pairs_of_spells_and_potions.py"
 ```
 
@@ -50,7 +50,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/range-frequency-queries/) | [LeetCode CH](https://leetcode.cn/problems/range-frequency-queries/) (Medium)
 -   Tags: array, hash table, binary search, design, segment tree
 
-```python title="2080. Range Frequency Queries"
+```python title="2080. Range Frequency Queries - Python Solution"
 --8<-- "2080_range_frequency_queries.py"
 ```
 
@@ -104,7 +104,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/element-appearing-more-than-25-in-sorted-array/) (Easy)
 -   Tags: array
 
-```python title="1287. Element Appearing More Than 25% In Sorted Array"
+```python title="1287. Element Appearing More Than 25% In Sorted Array - Python Solution"
 --8<-- "1287_element_appearing_more_than_25_in_sorted_array.py"
 ```
 

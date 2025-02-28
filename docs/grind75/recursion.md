@@ -13,7 +13,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/permutations/) | [LeetCode CH](https://leetcode.cn/problems/permutations/) (Medium)
 -   Tags: array, backtracking
 
-```python title="46. Permutations"
+```python title="46. Permutations - Python Solution"
 --8<-- "0046_permutations.py"
 ```
 
@@ -22,7 +22,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subsets/) | [LeetCode CH](https://leetcode.cn/problems/subsets/) (Medium)
 -   Tags: array, backtracking, bit manipulation
 
-```python title="78. Subsets"
+```python title="78. Subsets - Python Solution"
 --8<-- "0078_subsets.py"
 ```
 
@@ -31,6 +31,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [LeetCode CH](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
 -   Tags: hash table, string, backtracking
 
-```python title="17. Letter Combinations of a Phone Number"
+```python title="17. Letter Combinations of a Phone Number - Python Solution"
 --8<-- "0017_letter_combinations_of_a_phone_number.py"
 ```

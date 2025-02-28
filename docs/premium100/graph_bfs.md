@@ -22,7 +22,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze-ii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-ii/) (Medium)
 -   Tags: array, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
 
-```python title="505. The Maze II"
+```python title="505. The Maze II - Python Solution"
 --8<-- "0505_the_maze_ii.py"
 ```
 
@@ -31,7 +31,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze-iii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-iii/) (Hard)
 -   Tags: array, string, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
 
-```python title="499. The Maze III"
+```python title="499. The Maze III - Python Solution"
 --8<-- "0499_the_maze_iii.py"
 ```
 
@@ -46,7 +46,7 @@ comments: True
 -   Tags: array, breadth first search, matrix
 ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
-```python title="286. Walls and Gates"
+```python title="286. Walls and Gates - Python Solution"
 --8<-- "0286_walls_and_gates.py"
 ```
 
@@ -61,6 +61,6 @@ comments: True
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
 
-```python title="269. Alien Dictionary"
+```python title="269. Alien Dictionary - Python Solution"
 --8<-- "0269_alien_dictionary.py"
 ```

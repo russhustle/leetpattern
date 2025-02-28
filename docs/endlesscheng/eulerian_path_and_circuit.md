@@ -29,7 +29,7 @@ JFK --> ATL
 ATL --> SFO
 ```
 
-```python title="332. Reconstruct Itinerary"
+```python title="332. Reconstruct Itinerary - Python Solution"
 --8<-- "0332_reconstruct_itinerary.py"
 ```
 

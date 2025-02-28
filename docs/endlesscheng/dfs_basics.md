@@ -43,7 +43,7 @@ comments: True
 --8<-- "template/union_find.py"
 ```
 
-```python title="547. Number of Provinces"
+```python title="547. Number of Provinces - Python Solution"
 --8<-- "0547_number_of_provinces.py"
 ```
 
@@ -52,7 +52,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [LeetCode CH](https://leetcode.cn/problems/find-if-path-exists-in-graph/) (Easy)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="1971. Find if Path Exists in Graph"
+```python title="1971. Find if Path Exists in Graph - Python Solution"
 --8<-- "1971_find_if_path_exists_in_graph.py"
 ```
 
@@ -61,7 +61,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/all-paths-from-source-to-target/) | [LeetCode CH](https://leetcode.cn/problems/all-paths-from-source-to-target/) (Medium)
 -   Tags: backtracking, depth first search, breadth first search, graph
 
-```python title="797. All Paths From Source to Target"
+```python title="797. All Paths From Source to Target - Python Solution"
 --8<-- "0797_all_paths_from_source_to_target.py"
 ```
 
@@ -70,7 +70,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/keys-and-rooms/) | [LeetCode CH](https://leetcode.cn/problems/keys-and-rooms/) (Medium)
 -   Tags: depth first search, breadth first search, graph
 
-```python title="841. Keys and Rooms"
+```python title="841. Keys and Rooms - Python Solution"
 --8<-- "0841_keys_and_rooms.py"
 ```
 
@@ -114,7 +114,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimize-malware-spread/) | [LeetCode CH](https://leetcode.cn/problems/minimize-malware-spread/) (Hard)
 -   Tags: array, hash table, depth first search, breadth first search, union find, graph
 
-```python title="924. Minimize Malware Spread"
+```python title="924. Minimize Malware Spread - Python Solution"
 --8<-- "0924_minimize_malware_spread.py"
 ```
 
@@ -128,7 +128,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
-```python title="721. Accounts Merge"
+```python title="721. Accounts Merge - Python Solution"
 --8<-- "0721_accounts_merge.py"
 ```
 
@@ -251,7 +251,7 @@ flowchart LR
 -   pop `0` from the queue
 -   All courses are taken. Return `True`.
 
-```python title="207. Course Schedule"
+```python title="207. Course Schedule - Python Solution"
 --8<-- "0207_course_schedule.py"
 ```
 
@@ -260,7 +260,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/find-eventual-safe-states/) | [LeetCode CH](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
 -   Tags: depth first search, breadth first search, graph, topological sort
 
-```python title="802. Find Eventual Safe States"
+```python title="802. Find Eventual Safe States - Python Solution"
 --8<-- "0802_find_eventual_safe_states.py"
 ```
 
@@ -284,7 +284,7 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="261. Graph Valid Tree"
+```python title="261. Graph Valid Tree - Python Solution"
 --8<-- "0261_graph_valid_tree.py"
 ```
 
@@ -293,6 +293,6 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="323. Number of Connected Components in an Undirected Graph"
+```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"
 --8<-- "0323_number_of_connected_components_in_an_undirected_graph.py"
 ```

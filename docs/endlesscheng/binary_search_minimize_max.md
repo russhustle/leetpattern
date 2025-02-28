@@ -38,7 +38,7 @@ comments: True
 -   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
-```python title="1631. Path With Minimum Effort"
+```python title="1631. Path With Minimum Effort - Python Solution"
 --8<-- "1631_path_with_minimum_effort.py"
 ```
 
@@ -60,7 +60,7 @@ comments: True
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
-```python title="778. Swim in Rising Water"
+```python title="778. Swim in Rising Water - Python Solution"
 --8<-- "0778_swim_in_rising_water.py"
 ```
 

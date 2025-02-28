@@ -39,7 +39,7 @@ comments: True
 | \*   | pop    | "leco"  |
 | e    | push   | "lecoe" |
 
-```python title="2390. Removing Stars From a String"
+```python title="2390. Removing Stars From a String - Python Solution"
 --8<-- "2390_removing_stars_from_a_string.py"
 ```
 
@@ -63,7 +63,7 @@ comments: True
 | d    | push   | "leetcod"  |
 | e    | push   | "leetcode" |
 
-```python title="1544. Make The String Great"
+```python title="1544. Make The String Great - Python Solution"
 --8<-- "1544_make_the_string_great.py"
 ```
 
@@ -83,7 +83,7 @@ comments: True
 | `{`  | push   | "\{"  |
 | `}`  | pop    | ""    |
 
-```python title="20. Valid Parentheses"
+```python title="20. Valid Parentheses - Python Solution"
 --8<-- "0020_valid_parentheses.py"
 ```
 
@@ -93,7 +93,7 @@ comments: True
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
-```python title="155. Min Stack"
+```python title="155. Min Stack - Python Solution"
 --8<-- "0155_min_stack.py"
 ```
 
@@ -111,7 +111,7 @@ comments: True
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
 
-```python title="150. Evaluate Reverse Polish Notation"
+```python title="150. Evaluate Reverse Polish Notation - Python Solution"
 --8<-- "0150_evaluate_reverse_polish_notation.py"
 ```
 
@@ -120,7 +120,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/decode-string/) | [LeetCode CH](https://leetcode.cn/problems/decode-string/) (Medium)
 -   Tags: string, stack, recursion
 
-```python title="394. Decode String"
+```python title="394. Decode String - Python Solution"
 --8<-- "0394_decode_string.py"
 ```
 
@@ -129,7 +129,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
 -   Tags: string, dynamic programming, backtracking
 
-```python title="22. Generate Parentheses"
+```python title="22. Generate Parentheses - Python Solution"
 --8<-- "0022_generate_parentheses.py"
 ```
 
@@ -138,7 +138,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
 -   Tags: array, stack, sorting, monotonic stack
 
-```python title="853. Car Fleet"
+```python title="853. Car Fleet - Python Solution"
 --8<-- "0853_car_fleet.py"
 ```
 
@@ -147,7 +147,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)
 -   Tags: math, string, stack, recursion
 
-```python title="224. Basic Calculator"
+```python title="224. Basic Calculator - Python Solution"
 --8<-- "0224_basic_calculator.py"
 ```
 
@@ -156,7 +156,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-ii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-ii/) (Medium)
 -   Tags: math, string, stack
 
-```python title="227. Basic Calculator II"
+```python title="227. Basic Calculator II - Python Solution"
 --8<-- "0227_basic_calculator_ii.py"
 ```
 
@@ -165,7 +165,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-iii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
 -   Tags: math, string, stack, recursion
 
-```python title="772. Basic Calculator III"
+```python title="772. Basic Calculator III - Python Solution"
 --8<-- "0772_basic_calculator_iii.py"
 ```
 
@@ -174,6 +174,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-iv/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iv/) (Hard)
 -   Tags: hash table, math, string, stack, recursion
 
-```python title="770. Basic Calculator IV"
+```python title="770. Basic Calculator IV - Python Solution"
 --8<-- "0770_basic_calculator_iv.py"
 ```

@@ -18,7 +18,7 @@ comments: True
 -   Tags: array, binary search
 -   Implement binary search algorithm.
 
-```python title="704. Binary Search"
+```python title="704. Binary Search - Python Solution"
 --8<-- "0704_binary_search.py"
 ```
 
@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 -   Tags: array, binary search, matrix
 
-```python title="74. Search a 2D Matrix"
+```python title="74. Search a 2D Matrix - Python Solution"
 --8<-- "0074_search_a_2d_matrix.py"
 ```
 
@@ -37,7 +37,7 @@ comments: True
 -   Tags: array, binary search
 -   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
 
-```python title="875. Koko Eating Bananas"
+```python title="875. Koko Eating Bananas - Python Solution"
 --8<-- "0875_koko_eating_bananas.py"
 ```
 
@@ -61,6 +61,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
 -   Tags: array, binary search, divide and conquer
 
-```python title="4. Median of Two Sorted Arrays"
+```python title="4. Median of Two Sorted Arrays - Python Solution"
 --8<-- "0004_median_of_two_sorted_arrays.py"
 ```

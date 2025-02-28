@@ -23,6 +23,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-iii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
 -   Tags: math, string, stack, recursion
 
-```python title="772. Basic Calculator III"
+```python title="772. Basic Calculator III - Python Solution"
 --8<-- "0772_basic_calculator_iii.py"
 ```

@@ -65,7 +65,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximize-win-from-two-segments/) | [LeetCode CH](https://leetcode.cn/problems/maximize-win-from-two-segments/) (Medium)
 -   Tags: array, binary search, sliding window
 
-```python title="2555. Maximize Win From Two Segments"
+```python title="2555. Maximize Win From Two Segments - Python Solution"
 --8<-- "2555_maximize_win_from_two_segments.py"
 ```
 
@@ -125,7 +125,7 @@ comments: True
 -   Tags: hash table, string, sliding window
 -   Prerequisite: 3. Longest Substring Without Repeating Characters
 
-```python title="159. Longest Substring with At Most Two Distinct Characters"
+```python title="159. Longest Substring with At Most Two Distinct Characters - Python Solution"
 --8<-- "0159_longest_substring_with_at_most_two_distinct_characters.py"
 ```
 
@@ -134,6 +134,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/) (Medium)
 -   Tags: hash table, string, sliding window
 
-```python title="340. Longest Substring with At Most K Distinct Characters"
+```python title="340. Longest Substring with At Most K Distinct Characters - Python Solution"
 --8<-- "0340_longest_substring_with_at_most_k_distinct_characters.py"
 ```

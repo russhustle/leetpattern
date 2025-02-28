@@ -19,7 +19,7 @@ comments: True
 -   Tags: array, hash table, sorting
 -   Return True if the array contains any duplicates, otherwise return False.
 
-```python title="217. Contains Duplicate"
+```python title="217. Contains Duplicate - Python Solution"
 --8<-- "0217_contains_duplicate.py"
 ```
 
@@ -30,7 +30,7 @@ comments: True
 -   Return true if an input string is an anagram of another string.
 -   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
 
-```python title="242. Valid Anagram"
+```python title="242. Valid Anagram - Python Solution"
 --8<-- "0242_valid_anagram.py"
 ```
 
@@ -44,7 +44,7 @@ comments: True
 | :------: | :-------------: | :--------------: |
 | Hashmap  |      O(n)       |       O(n)       |
 
-```python title="1. Two Sum"
+```python title="1. Two Sum - Python Solution"
 --8<-- "0001_two_sum.py"
 ```
 
@@ -53,7 +53,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
 -   Tags: array, hash table, string, sorting
 
-```python title="49. Group Anagrams"
+```python title="49. Group Anagrams - Python Solution"
 --8<-- "0049_group_anagrams.py"
 ```
 
@@ -62,7 +62,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
 -   Tags: array, hash table, divide and conquer, sorting, heap priority queue, bucket sort, counting, quickselect
 
-```python title="347. Top K Frequent Elements"
+```python title="347. Top K Frequent Elements - Python Solution"
 --8<-- "0347_top_k_frequent_elements.py"
 ```
 
@@ -71,7 +71,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/encode-and-decode-strings/) | [LeetCode CH](https://leetcode.cn/problems/encode-and-decode-strings/) (Medium)
 -   Tags: array, string, design
 
-```python title="271. Encode and Decode Strings"
+```python title="271. Encode and Decode Strings - Python Solution"
 --8<-- "0271_encode_and_decode_strings.py"
 ```
 
@@ -87,7 +87,7 @@ comments: True
 | Prefix             | O(n) | O(n)  |
 | Prefix (Optimized) | O(n) | O(1)  |
 
-```python title="238. Product of Array Except Self"
+```python title="238. Product of Array Except Self - Python Solution"
 --8<-- "0238_product_of_array_except_self.py"
 ```
 
@@ -96,6 +96,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-consecutive-sequence/) (Medium)
 -   Tags: array, hash table, union find
 
-```python title="128. Longest Consecutive Sequence"
+```python title="128. Longest Consecutive Sequence - Python Solution"
 --8<-- "0128_longest_consecutive_sequence.py"
 ```

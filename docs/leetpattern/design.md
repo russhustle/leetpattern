@@ -35,7 +35,7 @@ comments: True
 | -------- | --------------- | ---------------- |
 | LRU      | O(1)            | O(n)             |
 
-```python title="146. LRU Cache"
+```python title="146. LRU Cache - Python Solution"
 --8<-- "0146_lru_cache.py"
 ```
 
@@ -45,7 +45,7 @@ comments: True
 -   Tags: hash table, linked list, design, heap priority queue
 -   Similar question: [23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (Hard)
 
-```python title="355. Design Twitter"
+```python title="355. Design Twitter - Python Solution"
 --8<-- "0355_design_twitter.py"
 ```
 
@@ -54,7 +54,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-in-memory-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard)
 -   Tags: hash table, string, design, trie, sorting
 
-```python title="588. Design In-Memory File System"
+```python title="588. Design In-Memory File System - Python Solution"
 --8<-- "0588_design_in_memory_file_system.py"
 ```
 
@@ -63,7 +63,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/lfu-cache/) | [LeetCode CH](https://leetcode.cn/problems/lfu-cache/) (Hard)
 -   Tags: hash table, linked list, design, doubly linked list
 
-```python title="460. LFU Cache"
+```python title="460. LFU Cache - Python Solution"
 --8<-- "0460_lfu_cache.py"
 ```
 
@@ -72,7 +72,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-file-system/) (Medium)
 -   Tags: hash table, string, design, trie
 
-```python title="1166. Design File System"
+```python title="1166. Design File System - Python Solution"
 --8<-- "1166_design_file_system.py"
 ```
 
@@ -81,7 +81,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [LeetCode CH](https://leetcode.cn/problems/insert-delete-getrandom-o1/) (Medium)
 -   Tags: array, hash table, math, design, randomized
 
-```python title="380. Insert Delete GetRandom O(1)"
+```python title="380. Insert Delete GetRandom O(1) - Python Solution"
 --8<-- "0380_insert_delete_getrandom_o1.py"
 ```
 
@@ -90,7 +90,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-hit-counter/) | [LeetCode CH](https://leetcode.cn/problems/design-hit-counter/) (Medium)
 -   Tags: array, binary search, design, queue, data stream
 
-```python title="362. Design Hit Counter"
+```python title="362. Design Hit Counter - Python Solution"
 --8<-- "0362_design_hit_counter.py"
 ```
 
@@ -99,7 +99,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
 -   Tags: string, tree, depth first search, breadth first search, design, binary tree
 
-```python title="297. Serialize and Deserialize Binary Tree"
+```python title="297. Serialize and Deserialize Binary Tree - Python Solution"
 --8<-- "0297_serialize_and_deserialize_binary_tree.py"
 ```
 
@@ -108,7 +108,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-circular-queue/) | [LeetCode CH](https://leetcode.cn/problems/design-circular-queue/) (Medium)
 -   Tags: array, linked list, design, queue
 
-```python title="622. Design Circular Queue"
+```python title="622. Design Circular Queue - Python Solution"
 --8<-- "0622_design_circular_queue.py"
 ```
 
@@ -117,7 +117,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-snake-game/) | [LeetCode CH](https://leetcode.cn/problems/design-snake-game/) (Medium)
 -   Tags: array, hash table, design, queue, simulation
 
-```python title="353. Design Snake Game"
+```python title="353. Design Snake Game - Python Solution"
 --8<-- "0353_design_snake_game.py"
 ```
 
@@ -126,6 +126,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-a-leaderboard/) | [LeetCode CH](https://leetcode.cn/problems/design-a-leaderboard/) (Medium)
 -   Tags: hash table, design, sorting
 
-```python title="1244. Design A Leaderboard"
+```python title="1244. Design A Leaderboard - Python Solution"
 --8<-- "1244_design_a_leaderboard.py"
 ```

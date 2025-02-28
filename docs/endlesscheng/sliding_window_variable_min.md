@@ -16,7 +16,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-size-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
 -   Tags: array, binary search, sliding window, prefix sum
 
-```python title="209. Minimum Size Subarray Sum"
+```python title="209. Minimum Size Subarray Sum - Python Solution"
 --8<-- "0209_minimum_size_subarray_sum.py"
 ```
 
@@ -25,7 +25,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | [LeetCode CH](https://leetcode.cn/problems/shortest-and-lexicographically-smallest-beautiful-string/) (Medium)
 -   Tags: string, sliding window
 
-```python title="2904. Shortest and Lexicographically Smallest Beautiful String"
+```python title="2904. Shortest and Lexicographically Smallest Beautiful String - Python Solution"
 --8<-- "2904_shortest_and_lexicographically_smallest_beautiful_string.py"
 ```
 
@@ -44,7 +44,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 -   Tags: hash table, string, sliding window
 
-```python title="76. Minimum Window Substring"
+```python title="76. Minimum Window Substring - Python Solution"
 --8<-- "0076_minimum_window_substring.py"
 ```
 

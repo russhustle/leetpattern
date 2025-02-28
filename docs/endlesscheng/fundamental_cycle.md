@@ -28,7 +28,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="684. Redundant Connection"
+```python title="684. Redundant Connection - Python Solution"
 --8<-- "0684_redundant_connection.py"
 ```
 
@@ -37,7 +37,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/redundant-connection-ii/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection-ii/) (Hard)
 -   Tags: depth first search, breadth first search, union find, graph
 
-```python title="685. Redundant Connection II"
+```python title="685. Redundant Connection II - Python Solution"
 --8<-- "0685_redundant_connection_ii.py"
 ```
 

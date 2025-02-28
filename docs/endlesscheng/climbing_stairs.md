@@ -34,7 +34,7 @@ comments: True
 |  9  |    21     |    34     |   55    |
 | 10  |    34     |    55     |   89    |
 
-```python title="70. Climbing Stairs"
+```python title="70. Climbing Stairs - Python Solution"
 --8<-- "0070_climbing_stairs.py"
 ```
 
@@ -64,7 +64,7 @@ comments: True
 |  8  |    100    |     4     |     5     |   104   |
 |  9  |     1     |     5     |    104    |    6    |
 
-```python title="746. Min Cost Climbing Stairs"
+```python title="746. Min Cost Climbing Stairs - Python Solution"
 --8<-- "0746_min_cost_climbing_stairs.py"
 ```
 
@@ -73,7 +73,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combination-sum-iv/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
 -   Tags: array, dynamic programming
 
-```python title="377. Combination Sum IV"
+```python title="377. Combination Sum IV - Python Solution"
 --8<-- "0377_combination_sum_iv.py"
 ```
 

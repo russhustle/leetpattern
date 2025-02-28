@@ -13,7 +13,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 -   Tags: two pointers, string
 
-```python title="125. Valid Palindrome"
+```python title="125. Valid Palindrome - Python Solution"
 --8<-- "0125_valid_palindrome.py"
 ```
 
@@ -22,7 +22,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 -   Tags: array, two pointers, sorting
 
-```python title="15. 3Sum"
+```python title="15. 3Sum - Python Solution"
 --8<-- "0015_3sum.py"
 ```
 
@@ -34,6 +34,6 @@ comments: True
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg){width=300px}
 
-```python title="11. Container With Most Water"
+```python title="11. Container With Most Water - Python Solution"
 --8<-- "0011_container_with_most_water.py"
 ```

@@ -41,6 +41,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
 -   Tags: array, binary search, stack, monotonic stack, ordered set
 
-```python title="456. 132 Pattern"
+```python title="456. 132 Pattern - Python Solution"
 --8<-- "0456_132_pattern.py"
 ```

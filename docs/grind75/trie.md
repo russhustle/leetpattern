@@ -30,7 +30,7 @@ A2 --- T2((T))
 A2 --- R2((R))
 ```
 
-```python title="208. Implement Trie (Prefix Tree)"
+```python title="208. Implement Trie (Prefix Tree) - Python Solution"
 --8<-- "0208_implement_trie_prefix_tree.py"
 ```
 
@@ -39,6 +39,6 @@ A2 --- R2((R))
 -   [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
 -   Tags: array, hash table, string, dynamic programming, trie, memoization
 
-```python title="139. Word Break"
+```python title="139. Word Break - Python Solution"
 --8<-- "0139_word_break.py"
 ```

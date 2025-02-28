@@ -41,7 +41,7 @@ comments: True
 
 ![1579](../assets/1579.png){width=200px}
 
-```python title="1579. Remove Max Number of Edges to Keep Graph Fully Traversable"
+```python title="1579. Remove Max Number of Edges to Keep Graph Fully Traversable - Python Solution"
 --8<-- "1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.py"
 ```
 

@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-path-with-alternating-colors/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-with-alternating-colors/) (Medium)
 -   Tags: breadth first search, graph
 
-```python title="1129. Shortest Path with Alternating Colors"
+```python title="1129. Shortest Path with Alternating Colors - Python Solution"
 --8<-- "1129_shortest_path_with_alternating_colors.py"
 ```
 
@@ -51,6 +51,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/bus-routes/) | [LeetCode CH](https://leetcode.cn/problems/bus-routes/) (Hard)
 -   Tags: array, hash table, breadth first search
 
-```python title="815. Bus Routes"
+```python title="815. Bus Routes - Python Solution"
 --8<-- "0815_bus_routes.py"
 ```

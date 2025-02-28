@@ -18,7 +18,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 -   Tags: two pointers, string
 
-```python title="125. Valid Palindrome"
+```python title="125. Valid Palindrome - Python Solution"
 --8<-- "0125_valid_palindrome.py"
 ```
 
@@ -29,7 +29,7 @@ comments: True
 -   Return true if an input string is an anagram of another string.
 -   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
 
-```python title="242. Valid Anagram"
+```python title="242. Valid Anagram - Python Solution"
 --8<-- "0242_valid_anagram.py"
 ```
 
@@ -39,7 +39,7 @@ comments: True
 -   Tags: hash table, string, greedy
 -   Return the length of the longest palindrome that can be built with the characters in the string.
 
-```python title="409. Longest Palindrome"
+```python title="409. Longest Palindrome - Python Solution"
 --8<-- "0409_longest_palindrome.py"
 ```
 
@@ -52,7 +52,7 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wiGpQwVHdE0?si=GlOc9C5w5Vy71iTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python title="3. Longest Substring Without Repeating Characters"
+```python title="3. Longest Substring Without Repeating Characters - Python Solution"
 --8<-- "0003_longest_substring_without_repeating_characters.py"
 ```
 
@@ -67,7 +67,7 @@ comments: True
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
 
-```python title="5. Longest Palindromic Substring"
+```python title="5. Longest Palindromic Substring - Python Solution"
 --8<-- "0005_longest_palindromic_substring.py"
 ```
 
@@ -76,7 +76,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 -   Tags: hash table, string, sliding window
 
-```python title="438. Find All Anagrams in a String"
+```python title="438. Find All Anagrams in a String - Python Solution"
 --8<-- "0438_find_all_anagrams_in_a_string.py"
 ```
 
@@ -85,6 +85,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 -   Tags: hash table, string, sliding window
 
-```python title="76. Minimum Window Substring"
+```python title="76. Minimum Window Substring - Python Solution"
 --8<-- "0076_minimum_window_substring.py"
 ```

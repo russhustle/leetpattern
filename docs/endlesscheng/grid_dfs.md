@@ -44,7 +44,7 @@ comments: True
 
 ![0200](../assets/0200.jpg)
 
-```python title="200. Number of Islands"
+```python title="200. Number of Islands - Python Solution"
 --8<-- "0200_number_of_islands.py"
 ```
 
@@ -53,7 +53,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="695. Max Area of Island"
+```python title="695. Max Area of Island - Python Solution"
 --8<-- "0695_max_area_of_island.py"
 ```
 
@@ -62,7 +62,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/island-perimeter/) | [LeetCode CH](https://leetcode.cn/problems/island-perimeter/) (Easy)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="463. Island Perimeter"
+```python title="463. Island Perimeter - Python Solution"
 --8<-- "0463_island_perimeter.py"
 ```
 
@@ -71,7 +71,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-fish-in-a-grid/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="2658. Maximum Number of Fish in a Grid"
+```python title="2658. Maximum Number of Fish in a Grid - Python Solution"
 --8<-- "2658_maximum_number_of_fish_in_a_grid.py"
 ```
 
@@ -80,7 +80,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/coloring-a-border/) | [LeetCode CH](https://leetcode.cn/problems/coloring-a-border/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="1034. Coloring A Border"
+```python title="1034. Coloring A Border - Python Solution"
 --8<-- "1034_coloring_a_border.py"
 ```
 
@@ -89,7 +89,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-enclaves/) | [LeetCode CH](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="1020. Number of Enclaves"
+```python title="1020. Number of Enclaves - Python Solution"
 --8<-- "1020_number_of_enclaves.py"
 ```
 
@@ -103,7 +103,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-closed-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="1254. Number of Closed Islands"
+```python title="1254. Number of Closed Islands - Python Solution"
 --8<-- "1254_number_of_closed_islands.py"
 ```
 
@@ -112,7 +112,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="130. Surrounded Regions"
+```python title="130. Surrounded Regions - Python Solution"
 --8<-- "0130_surrounded_regions.py"
 ```
 
@@ -131,7 +131,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 -   Tags: array, depth first search, breadth first search, matrix
 
-```python title="417. Pacific Atlantic Water Flow"
+```python title="417. Pacific Atlantic Water Flow - Python Solution"
 --8<-- "0417_pacific_atlantic_water_flow.py"
 ```
 
@@ -150,7 +150,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/making-a-large-island/) | [LeetCode CH](https://leetcode.cn/problems/making-a-large-island/) (Hard)
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
-```python title="827. Making A Large Island"
+```python title="827. Making A Large Island - Python Solution"
 --8<-- "0827_making_a_large_island.py"
 ```
 
@@ -159,7 +159,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-islands-ii/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands-ii/) (Hard)
 -   Tags: array, hash table, union find
 
-```python title="305. Number of Islands II"
+```python title="305. Number of Islands II - Python Solution"
 --8<-- "0305_number_of_islands_ii.py"
 ```
 

@@ -17,7 +17,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 -   Tags: array, divide and conquer, dynamic programming
 
-```python title="53. Maximum Subarray"
+```python title="53. Maximum Subarray - Python Solution"
 --8<-- "0053_maximum_subarray.py"
 ```
 
@@ -41,7 +41,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
 -   Tags: array, divide and conquer, dynamic programming, queue, monotonic queue
 
-```python title="918. Maximum Sum Circular Subarray"
+```python title="918. Maximum Sum Circular Subarray - Python Solution"
 --8<-- "0918_maximum_sum_circular_subarray.py"
 ```
 
@@ -55,6 +55,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
 -   Tags: array, dynamic programming
 
-```python title="152. Maximum Product Subarray"
+```python title="152. Maximum Product Subarray - Python Solution"
 --8<-- "0152_maximum_product_subarray.py"
 ```

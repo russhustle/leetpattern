@@ -19,7 +19,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-nice-subarrays/) (Medium)
 -   Tags: array, hash table, math, sliding window, prefix sum
 
-```python title="1248. Count Number of Nice Subarrays"
+```python title="1248. Count Number of Nice Subarrays - Python Solution"
 --8<-- "1248_count_number_of_nice_subarrays.py"
 ```
 
@@ -33,6 +33,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subarrays-with-k-different-integers/) | [LeetCode CH](https://leetcode.cn/problems/subarrays-with-k-different-integers/) (Hard)
 -   Tags: array, hash table, sliding window, counting
 
-```python title="992. Subarrays with K Different Integers"
+```python title="992. Subarrays with K Different Integers - Python Solution"
 --8<-- "0992_subarrays_with_k_different_integers.py"
 ```

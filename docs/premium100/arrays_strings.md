@@ -17,7 +17,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-distance-in-arrays/) | [LeetCode CH](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 -   Tags: array, greedy
 
-```python title="624. Maximum Distance in Arrays"
+```python title="624. Maximum Distance in Arrays - Python Solution"
 --8<-- "0624_maximum_distance_in_arrays.py"
 ```
 

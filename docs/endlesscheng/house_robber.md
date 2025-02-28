@@ -32,11 +32,11 @@ comments: True
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
 
-```python title="198. House Robber"
+```python title="198. House Robber - Python Solution"
 --8<-- "0198_house_robber.py"
 ```
 
-```cpp title="198. House Robber"
+```cpp title="198. House Robber - C++ Solution"
 --8<-- "cpp/0198_house_robber.cc"
 ```
 
@@ -45,7 +45,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/delete-and-earn/) | [LeetCode CH](https://leetcode.cn/problems/delete-and-earn/) (Medium)
 -   Tags: array, hash table, dynamic programming
 
-```python title="740. Delete and Earn"
+```python title="740. Delete and Earn - Python Solution"
 --8<-- "0740_delete_and_earn.py"
 ```
 
@@ -78,7 +78,7 @@ comments: True
 |  3  |     3     |     7     |     9     |         10          |   10    |
 |  4  |     1     |     9     |    10     |         10          |   10    |
 
-```python title="213. House Robber II"
+```python title="213. House Robber II - Python Solution"
 --8<-- "0213_house_robber_ii.py"
 ```
 

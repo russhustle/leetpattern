@@ -24,7 +24,7 @@ comments: True
 -   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
-```python title="1631. Path With Minimum Effort"
+```python title="1631. Path With Minimum Effort - Python Solution"
 --8<-- "1631_path_with_minimum_effort.py"
 ```
 
@@ -36,7 +36,7 @@ comments: True
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
-```python title="778. Swim in Rising Water"
+```python title="778. Swim in Rising Water - Python Solution"
 --8<-- "0778_swim_in_rising_water.py"
 ```
 
@@ -45,7 +45,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) (Hard)
 -   Tags: array, dynamic programming, depth first search, breadth first search, graph, topological sort, memoization, matrix
 
-```python title="329. Longest Increasing Path in a Matrix"
+```python title="329. Longest Increasing Path in a Matrix - Python Solution"
 --8<-- "0329_longest_increasing_path_in_a_matrix.py"
 ```
 
@@ -59,7 +59,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-path-to-get-all-keys/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-to-get-all-keys/) (Hard)
 -   Tags: array, bit manipulation, breadth first search, matrix
 
-```python title="864. Shortest Path to Get All Keys"
+```python title="864. Shortest Path to Get All Keys - Python Solution"
 --8<-- "0864_shortest_path_to_get_all_keys.py"
 ```
 

@@ -33,7 +33,7 @@ C --> B[2]
 B --> A[1]
 ```
 
-```python title="206. Reverse Linked List"
+```python title="206. Reverse Linked List - Python Solution"
 --8<-- "0206_reverse_linked_list.py"
 ```
 
@@ -45,7 +45,7 @@ B --> A[1]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIdigk956u0?si=2cVoU6DujA3Mgtlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python title="21. Merge Two Sorted Lists"
+```python title="21. Merge Two Sorted Lists - Python Solution"
 --8<-- "0021_merge_two_sorted_lists.py"
 ```
 
@@ -54,7 +54,7 @@ B --> A[1]
 -   [LeetCode](https://leetcode.com/problems/reorder-list/) | [LeetCode CH](https://leetcode.cn/problems/reorder-list/) (Medium)
 -   Tags: linked list, two pointers, stack, recursion
 
-```python title="143. Reorder List"
+```python title="143. Reorder List - Python Solution"
 --8<-- "0143_reorder_list.py"
 ```
 
@@ -64,7 +64,7 @@ B --> A[1]
 -   Tags: linked list, two pointers
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
-```python title="19. Remove Nth Node From End of List"
+```python title="19. Remove Nth Node From End of List - Python Solution"
 --8<-- "0019_remove_nth_node_from_end_of_list.py"
 ```
 
@@ -89,7 +89,7 @@ C --> D[-4]
 D --> B
 ```
 
-```python title="141. Linked List Cycle"
+```python title="141. Linked List Cycle - Python Solution"
 --8<-- "0141_linked_list_cycle.py"
 ```
 
@@ -101,6 +101,6 @@ D --> B
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q5a5OiGbT6Q?si=SlQg9SKZh1YL62vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-```python title="23. Merge k Sorted Lists"
+```python title="23. Merge k Sorted Lists - Python Solution"
 --8<-- "0023_merge_k_sorted_lists.py"
 ```

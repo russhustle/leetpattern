@@ -4,7 +4,7 @@ comments: True
 
 # Binary Search Advanced
 
-- [ ] [2300. Successful Pairs of Spells and Potions](https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/) (Medium)
+- [x] [2300. Successful Pairs of Spells and Potions](https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/) (Medium)
 - [ ] [1385. Find the Distance Value Between Two Arrays](https://leetcode.cn/problems/find-the-distance-value-between-two-arrays/) (Easy)
 - [ ] [2389. Longest Subsequence With Limited Sum](https://leetcode.cn/problems/longest-subsequence-with-limited-sum/) (Easy)
 - [ ] [1170. Compare Strings by Frequency of the Smallest Character](https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/) (Medium)
@@ -26,6 +26,9 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) | [LeetCode CH](https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/) (Medium)
 -   Tags: array, two pointers, binary search, sorting
 
+```python title="2300. Successful Pairs of Spells and Potions"
+--8<-- "2300_successful_pairs_of_spells_and_potions.py"
+```
 
 ## 1385. Find the Distance Value Between Two Arrays
 

@@ -1,7 +1,7 @@
 from typing import List
 
-from binarytree import build, Node as TreeNode
-
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 # Tree

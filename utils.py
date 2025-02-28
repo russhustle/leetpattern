@@ -76,7 +76,9 @@ def remove_empty_files():
     for folder in folders:
         folder = os.path.join(os.getcwd(), folder)
         extensions = [".sql", ".py", ".txt", ".md"]
-        py_filenames = [f for f in os.listdir(folder) if f.endswith(tuple(extensions))]
+        py_filenames = [
+            f for f in os.listdir(folder) if f.endswith(tuple(extensions))
+        ]
 
         for py_filename in py_filenames:
             path = os.path.join(folder, py_filename)

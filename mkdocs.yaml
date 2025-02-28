@@ -58,7 +58,7 @@ nav:
     - Simulation: leetpattern/simulation.md
     - Design: leetpattern/design.md
 
-  - 灵茶山艾府:
+  - EndlessCheng:
     - Home: endlesscheng/index.md
     - Sliding Window Fixed Size Basics: endlesscheng/sliding_window_fixed_size_basics.md
     - Sliding Window Fixed Size Advanced: endlesscheng/sliding_window_fixed_size_advanced.md

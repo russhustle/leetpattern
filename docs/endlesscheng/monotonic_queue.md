@@ -15,6 +15,7 @@ comments: True
 ## 239. Sliding Window Maximum
 
 -   [LeetCode](https://leetcode.com/problems/sliding-window-maximum/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-maximum/) (Hard)
+
 -   Tags: array, queue, sliding window, heap priority queue, monotonic queue
 
 ```python title="239. Sliding Window Maximum - Python Solution"
@@ -24,16 +25,19 @@ comments: True
 ## 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
 
 -   [LeetCode](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [LeetCode CH](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) (Medium)
+
 -   Tags: array, queue, sliding window, heap priority queue, ordered set, monotonic queue
 
 ## 2762. Continuous Subarrays
 
 -   [LeetCode](https://leetcode.com/problems/continuous-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/continuous-subarrays/) (Medium)
+
 -   Tags: array, queue, sliding window, heap priority queue, ordered set, monotonic queue
 
 ## 2398. Maximum Number of Robots Within Budget
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-robots-within-budget/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-robots-within-budget/) (Hard)
+
 -   Tags: array, binary search, queue, sliding window, heap priority queue, prefix sum, monotonic queue
 
 ```python title="2398. Maximum Number of Robots Within Budget - Python Solution"
@@ -43,6 +47,7 @@ comments: True
 ## 862. Shortest Subarray with Sum at Least K
 
 -   [LeetCode](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/) | [LeetCode CH](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/) (Hard)
+
 -   Tags: array, binary search, queue, sliding window, heap priority queue, prefix sum, monotonic queue
 
 ```python title="862. Shortest Subarray with Sum at Least K - Python Solution"
@@ -52,9 +57,11 @@ comments: True
 ## 1499. Max Value of Equation
 
 -   [LeetCode](https://leetcode.com/problems/max-value-of-equation/) | [LeetCode CH](https://leetcode.cn/problems/max-value-of-equation/) (Hard)
+
 -   Tags: array, queue, sliding window, heap priority queue, monotonic queue
 
 ## 2071. Maximum Number of Tasks You Can Assign
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/) (Hard)
+
 -   Tags: array, binary search, greedy, queue, sorting, monotonic queue

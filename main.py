@@ -85,6 +85,7 @@ def create(config_path: str) -> str:
                 check_make_file(problem_txt_path)
 
             content += row["markdown"]
+
             with open(problem_md_path, "r") as f:
                 content += f.read() + "\n"
 

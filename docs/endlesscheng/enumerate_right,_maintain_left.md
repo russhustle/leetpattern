@@ -36,6 +36,7 @@ comments: True
 ## 1. Two Sum
 
 -   [LeetCode](https://leetcode.com/problems/two-sum/) | [LeetCode CH](https://leetcode.cn/problems/two-sum/) (Easy)
+
 -   Tags: array, hash table
 -   Return the indices of the two numbers such that they add up to a specific target.
 
@@ -50,6 +51,7 @@ comments: True
 ## 1512. Number of Good Pairs
 
 -   [LeetCode](https://leetcode.com/problems/number-of-good-pairs/) | [LeetCode CH](https://leetcode.cn/problems/number-of-good-pairs/) (Easy)
+
 -   Tags: array, hash table, math, counting
 
 ```python title="1512. Number of Good Pairs - Python Solution"
@@ -59,6 +61,7 @@ comments: True
 ## 2001. Number of Pairs of Interchangeable Rectangles
 
 -   [LeetCode](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/) | [LeetCode CH](https://leetcode.cn/problems/number-of-pairs-of-interchangeable-rectangles/) (Medium)
+
 -   Tags: array, hash table, math, counting, number theory
 
 ```python title="2001. Number of Pairs of Interchangeable Rectangles - Python Solution"
@@ -68,6 +71,7 @@ comments: True
 ## 219. Contains Duplicate II
 
 -   [LeetCode](https://leetcode.com/problems/contains-duplicate-ii/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate-ii/) (Easy)
+
 -   Tags: array, hash table, sliding window
 
 ```python title="219. Contains Duplicate II - Python Solution"
@@ -77,6 +81,7 @@ comments: True
 ## 121. Best Time to Buy and Sell Stock
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
@@ -87,6 +92,7 @@ comments: True
 ## 624. Maximum Distance in Arrays
 
 -   [LeetCode](https://leetcode.com/problems/maximum-distance-in-arrays/) | [LeetCode CH](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
+
 -   Tags: array, greedy
 
 ```python title="624. Maximum Distance in Arrays - Python Solution"
@@ -96,71 +102,85 @@ comments: True
 ## 2815. Max Pair Sum in an Array
 
 -   [LeetCode](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/max-pair-sum-in-an-array/) (Easy)
+
 -   Tags: array, hash table
 
 ## 2342. Max Sum of a Pair With Equal Sum of Digits
 
 -   [LeetCode](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [LeetCode CH](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) (Medium)
+
 -   Tags: array, hash table, sorting, heap priority queue
 
 ## 1679. Max Number of K-Sum Pairs
 
 -   [LeetCode](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | [LeetCode CH](https://leetcode.cn/problems/max-number-of-k-sum-pairs/) (Medium)
+
 -   Tags: array, hash table, two pointers, sorting
 
 ## 2260. Minimum Consecutive Cards to Pick Up
 
 -   [LeetCode](https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/) | [LeetCode CH](https://leetcode.cn/problems/minimum-consecutive-cards-to-pick-up/) (Medium)
+
 -   Tags: array, hash table, sliding window
 
 ## 1010. Pairs of Songs With Total Durations Divisible by 60
 
 -   [LeetCode](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [LeetCode CH](https://leetcode.cn/problems/pairs-of-songs-with-total-durations-divisible-by-60/) (Medium)
+
 -   Tags: array, hash table, counting
 
 ## 3185. Count Pairs That Form a Complete Day II
 
 -   [LeetCode](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/) | [LeetCode CH](https://leetcode.cn/problems/count-pairs-that-form-a-complete-day-ii/) (Medium)
+
 -   Tags: array, hash table, counting
 
 ## 2506. Count Pairs Of Similar Strings
 
 -   [LeetCode](https://leetcode.com/problems/count-pairs-of-similar-strings/) | [LeetCode CH](https://leetcode.cn/problems/count-pairs-of-similar-strings/) (Easy)
+
 -   Tags: array, hash table, string, bit manipulation, counting
 
 ## 2748. Number of Beautiful Pairs
 
 -   [LeetCode](https://leetcode.com/problems/number-of-beautiful-pairs/) | [LeetCode CH](https://leetcode.cn/problems/number-of-beautiful-pairs/) (Easy)
+
 -   Tags: array, hash table, math, counting, number theory
 
 ## 2874. Maximum Value of an Ordered Triplet II
 
 -   [LeetCode](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | [LeetCode CH](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
+
 -   Tags: array
 
 ## 1014. Best Sightseeing Pair
 
 -   [LeetCode](https://leetcode.com/problems/best-sightseeing-pair/) | [LeetCode CH](https://leetcode.cn/problems/best-sightseeing-pair/) (Medium)
+
 -   Tags: array, dynamic programming
 
 ## 1814. Count Nice Pairs in an Array
 
 -   [LeetCode](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/count-nice-pairs-in-an-array/) (Medium)
+
 -   Tags: array, hash table, math, counting
 
 ## 2905. Find Indices With Index and Value Difference II
 
 -   [LeetCode](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) | [LeetCode CH](https://leetcode.cn/problems/find-indices-with-index-and-value-difference-ii/) (Medium)
+
 -   Tags: array, two pointers
 
 ## 1031. Maximum Sum of Two Non-Overlapping Subarrays
 
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-of-two-non-overlapping-subarrays/) (Medium)
+
 -   Tags: array, dynamic programming, sliding window
 
 ## 2555. Maximize Win From Two Segments
 
 -   [LeetCode](https://leetcode.com/problems/maximize-win-from-two-segments/) | [LeetCode CH](https://leetcode.cn/problems/maximize-win-from-two-segments/) (Medium)
+
 -   Tags: array, binary search, sliding window
 
 ```python title="2555. Maximize Win From Two Segments - Python Solution"
@@ -170,36 +190,43 @@ comments: True
 ## 1995. Count Special Quadruplets
 
 -   [LeetCode](https://leetcode.com/problems/count-special-quadruplets/) | [LeetCode CH](https://leetcode.cn/problems/count-special-quadruplets/) (Easy)
+
 -   Tags: array, hash table, enumeration
 
 ## 3404. Count Special Subsequences
 
 -   [LeetCode](https://leetcode.com/problems/count-special-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/count-special-subsequences/) (Medium)
+
 -   Tags: array, hash table, math, enumeration
 
 ## 3267. Count Almost Equal Pairs II
 
 -   [LeetCode](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | [LeetCode CH](https://leetcode.cn/problems/count-almost-equal-pairs-ii/) (Hard)
+
 -   Tags: array, hash table, sorting, counting, enumeration
 
 ## 1214. Two Sum BSTs
 
 -   [LeetCode](https://leetcode.com/problems/two-sum-bsts/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-bsts/) (Medium)
+
 -   Tags: two pointers, binary search, stack, tree, depth first search, binary search tree, binary tree
 
 ## 2964. Number of Divisible Triplet Sums
 
 -   [LeetCode](https://leetcode.com/problems/number-of-divisible-triplet-sums/) | [LeetCode CH](https://leetcode.cn/problems/number-of-divisible-triplet-sums/) (Medium)
+
 -   Tags: array, hash table
 
 ## 2441. Largest Positive Integer That Exists With Its Negative
 
 -   [LeetCode](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) | [LeetCode CH](https://leetcode.cn/problems/largest-positive-integer-that-exists-with-its-negative/) (Easy)
+
 -   Tags: array, hash table, two pointers, sorting
 
 ## 454. 4Sum II
 
 -   [LeetCode](https://leetcode.com/problems/4sum-ii/) | [LeetCode CH](https://leetcode.cn/problems/4sum-ii/) (Medium)
+
 -   Tags: array, hash table
 -   Return the number of tuples `(i, j, k, l)` such that `A[i] + B[j] + C[k] + D[l] == 0`.
 
@@ -210,4 +237,5 @@ comments: True
 ## 3371. Identify the Largest Outlier in an Array
 
 -   [LeetCode](https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/identify-the-largest-outlier-in-an-array/) (Medium)
+
 -   Tags: array, hash table, counting, enumeration

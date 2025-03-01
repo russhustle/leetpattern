@@ -21,16 +21,19 @@ comments: True
 ## 1283. Find the Smallest Divisor Given a Threshold
 
 -   [LeetCode](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [LeetCode CH](https://leetcode.cn/problems/find-the-smallest-divisor-given-a-threshold/) (Medium)
+
 -   Tags: array, binary search
 
 ## 2187. Minimum Time to Complete Trips
 
 -   [LeetCode](https://leetcode.com/problems/minimum-time-to-complete-trips/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-to-complete-trips/) (Medium)
+
 -   Tags: array, binary search
 
 ## 1870. Minimum Speed to Arrive on Time
 
 -   [LeetCode](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [LeetCode CH](https://leetcode.cn/problems/minimum-speed-to-arrive-on-time/) (Medium)
+
 -   Tags: array, binary search
 
 ```python title="1870. Minimum Speed to Arrive on Time - Python Solution"
@@ -40,6 +43,7 @@ comments: True
 ## 1011. Capacity To Ship Packages Within D Days
 
 -   [LeetCode](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [LeetCode CH](https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days/) (Medium)
+
 -   Tags: array, binary search
 -   A conveyor belt has packages that must be shipped from one port to another within `D` days. The `i-th` package has a weight of `weights[i]`. Each day, we load the ship with packages on the conveyor belt. The ship will be loaded with packages up to its capacity. The ship will not be loaded beyond its capacity. Return the least weight capacity of the ship.
 
@@ -50,6 +54,7 @@ comments: True
 ## 875. Koko Eating Bananas
 
 -   [LeetCode](https://leetcode.com/problems/koko-eating-bananas/) | [LeetCode CH](https://leetcode.cn/problems/koko-eating-bananas/) (Medium)
+
 -   Tags: array, binary search
 -   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
 
@@ -60,39 +65,47 @@ comments: True
 ## 3296. Minimum Number of Seconds to Make Mountain Height Zero
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) (Medium)
+
 -   Tags: array, math, binary search, greedy, heap priority queue
 
 ## 475. Heaters
 
 -   [LeetCode](https://leetcode.com/problems/heaters/) | [LeetCode CH](https://leetcode.cn/problems/heaters/) (Medium)
+
 -   Tags: array, two pointers, binary search, sorting
 
 ## 2594. Minimum Time to Repair Cars
 
 -   [LeetCode](https://leetcode.com/problems/minimum-time-to-repair-cars/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-to-repair-cars/) (Medium)
+
 -   Tags: array, binary search
 
 ## 1482. Minimum Number of Days to Make m Bouquets
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets/) (Medium)
+
 -   Tags: array, binary search
 
 ## 3048. Earliest Second to Mark Indices I
 
 -   [LeetCode](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | [LeetCode CH](https://leetcode.cn/problems/earliest-second-to-mark-indices-i/) (Medium)
+
 -   Tags: array, binary search
 
 ## 2604. Minimum Time to Eat All Grains
 
 -   [LeetCode](https://leetcode.com/problems/minimum-time-to-eat-all-grains/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-to-eat-all-grains/) (Hard)
+
 -   Tags: array, two pointers, binary search, sorting
 
 ## 2702. Minimum Operations to Make Numbers Non-positive
 
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-make-numbers-non-positive/) (Hard)
+
 -   Tags: array, binary search
 
 ## 3453. Separate Squares I
 
 -   [LeetCode](https://leetcode.com/problems/separate-squares-i/) | [LeetCode CH](https://leetcode.cn/problems/separate-squares-i/) (Medium)
+
 -   Tags: array, binary search

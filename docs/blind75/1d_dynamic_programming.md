@@ -18,6 +18,7 @@ comments: True
 ## 70. Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+
 -   Tags: math, dynamic programming, memoization
 -   Return the number of distinct ways to reach the top of the stairs.
 -   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
@@ -45,6 +46,7 @@ comments: True
 ## 198. House Robber
 
 -   [LeetCode](https://leetcode.com/problems/house-robber/) | [LeetCode CH](https://leetcode.cn/problems/house-robber/) (Medium)
+
 -   Tags: array, dynamic programming
 -   Return the maximum amount of money that can be robbed from the houses. No two adjacent houses can be robbed.
 
@@ -75,6 +77,7 @@ comments: True
 ## 213. House Robber II
 
 -   [LeetCode](https://leetcode.com/problems/house-robber-ii/) | [LeetCode CH](https://leetcode.cn/problems/house-robber-ii/) (Medium)
+
 -   Tags: array, dynamic programming
 -   Return the maximum amount of money that can be robbed from the houses arranged in a circle.
 -   Circular → Linear: `nums[0]` and `nums[-1]` cannot be robbed together.
@@ -103,6 +106,7 @@ comments: True
 ## 5. Longest Palindromic Substring
 
 -   [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
+
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
 
@@ -113,6 +117,7 @@ comments: True
 ## 647. Palindromic Substrings
 
 -   [LeetCode](https://leetcode.com/problems/palindromic-substrings/) | [LeetCode CH](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
+
 -   Tags: two pointers, string, dynamic programming
 -   Return the number of palindromic substrings in `s`.
 -   Bottom-up DP table
@@ -132,6 +137,7 @@ comments: True
 ## 91. Decode Ways
 
 -   [LeetCode](https://leetcode.com/problems/decode-ways/) | [LeetCode CH](https://leetcode.cn/problems/decode-ways/) (Medium)
+
 -   Tags: string, dynamic programming
 
 ```python title="91. Decode Ways - Python Solution"
@@ -141,6 +147,7 @@ comments: True
 ## 322. Coin Change
 
 -   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
+
 -   Tags: array, dynamic programming, breadth first search
 
 ```python title="322. Coin Change - Python Solution"
@@ -150,6 +157,7 @@ comments: True
 ## 152. Maximum Product Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
+
 -   Tags: array, dynamic programming
 
 ```python title="152. Maximum Product Subarray - Python Solution"
@@ -159,6 +167,7 @@ comments: True
 ## 139. Word Break
 
 -   [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
+
 -   Tags: array, hash table, string, dynamic programming, trie, memoization
 
 ```python title="139. Word Break - Python Solution"
@@ -168,6 +177,7 @@ comments: True
 ## 300. Longest Increasing Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
+
 -   Tags: array, binary search, dynamic programming
 
 ```python title="300. Longest Increasing Subsequence - Python Solution"

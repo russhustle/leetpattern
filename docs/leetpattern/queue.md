@@ -10,6 +10,7 @@ comments: True
 ## 232. Implement Queue using Stacks
 
 -   [LeetCode](https://leetcode.com/problems/implement-queue-using-stacks/) | [LeetCode CH](https://leetcode.cn/problems/implement-queue-using-stacks/) (Easy)
+
 -   Tags: stack, design, queue
 -   Implement the following operations of a queue using stacks.
     -   `push(x)` - Push element x to the back of queue.
@@ -24,6 +25,7 @@ comments: True
 ## 225. Implement Stack using Queues
 
 -   [LeetCode](https://leetcode.com/problems/implement-stack-using-queues/) | [LeetCode CH](https://leetcode.cn/problems/implement-stack-using-queues/) (Easy)
+
 -   Tags: stack, design, queue
 
 ```python title="225. Implement Stack using Queues - Python Solution"

@@ -18,6 +18,7 @@ comments: True
 ## 739. Daily Temperatures
 
 -   [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)
+
 -   Tags: array, stack, monotonic stack
 -   Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
 
@@ -39,6 +40,7 @@ comments: True
 ## 496. Next Greater Element I
 
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
+
 -   Tags: array, hash table, stack, monotonic stack
 
 ```python title="496. Next Greater Element I - Python Solution"
@@ -48,6 +50,7 @@ comments: True
 ## 503. Next Greater Element II
 
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)
+
 -   Tags: array, stack, monotonic stack
 
 ```python title="503. Next Greater Element II - Python Solution"
@@ -57,6 +60,7 @@ comments: True
 ## 84. Largest Rectangle in Histogram
 
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+
 -   Tags: array, stack, monotonic stack
 
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
@@ -66,6 +70,7 @@ comments: True
 ## 85. Maximal Rectangle
 
 -   [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | [LeetCode CH](https://leetcode.cn/problems/maximal-rectangle/) (Hard)
+
 -   Tags: array, dynamic programming, stack, matrix, monotonic stack
 -   Return the area of the largest rectangle that can be formed within a rectangle of 1's.
 
@@ -78,6 +83,7 @@ comments: True
 ## 42. Trapping Rain Water
 
 -   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+
 -   Tags: array, two pointers, dynamic programming, stack, monotonic stack
 -   ![42](../assets/0042.png)
 
@@ -96,6 +102,7 @@ comments: True
 ## 901. Online Stock Span
 
 -   [LeetCode](https://leetcode.com/problems/online-stock-span/) | [LeetCode CH](https://leetcode.cn/problems/online-stock-span/) (Medium)
+
 -   Tags: stack, design, monotonic stack, data stream
 -   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
@@ -106,6 +113,7 @@ comments: True
 ## 316. Remove Duplicate Letters
 
 -   [LeetCode](https://leetcode.com/problems/remove-duplicate-letters/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)
+
 -   Tags: string, stack, greedy, monotonic stack
 
 ```python title="316. Remove Duplicate Letters - Python Solution"
@@ -115,6 +123,7 @@ comments: True
 ## 456. 132 Pattern
 
 -   [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
+
 -   Tags: array, binary search, stack, monotonic stack, ordered set
 
 ```python title="456. 132 Pattern - Python Solution"
@@ -124,6 +133,7 @@ comments: True
 ## 2281. Sum of Total Strength of Wizards
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
+
 -   Tags: array, stack, monotonic stack, prefix sum
 
 ```python title="2281. Sum of Total Strength of Wizards - Python Solution"

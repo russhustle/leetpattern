@@ -17,6 +17,7 @@ comments: True
 ## 78. Subsets
 
 -   [LeetCode](https://leetcode.com/problems/subsets/) | [LeetCode CH](https://leetcode.cn/problems/subsets/) (Medium)
+
 -   Tags: array, backtracking, bit manipulation
 
 ```python title="78. Subsets - Python Solution"
@@ -26,6 +27,7 @@ comments: True
 ## 39. Combination Sum
 
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
+
 -   Tags: array, backtracking
 
 ```python title="39. Combination Sum - Python Solution"
@@ -35,6 +37,7 @@ comments: True
 ## 40. Combination Sum II
 
 -   [LeetCode](https://leetcode.com/problems/combination-sum-ii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-ii/) (Medium)
+
 -   Tags: array, backtracking
 
 ```python title="40. Combination Sum II - Python Solution"
@@ -44,6 +47,7 @@ comments: True
 ## 46. Permutations
 
 -   [LeetCode](https://leetcode.com/problems/permutations/) | [LeetCode CH](https://leetcode.cn/problems/permutations/) (Medium)
+
 -   Tags: array, backtracking
 
 ```python title="46. Permutations - Python Solution"
@@ -53,6 +57,7 @@ comments: True
 ## 90. Subsets II
 
 -   [LeetCode](https://leetcode.com/problems/subsets-ii/) | [LeetCode CH](https://leetcode.cn/problems/subsets-ii/) (Medium)
+
 -   Tags: array, backtracking, bit manipulation
 
 ```python title="90. Subsets II - Python Solution"
@@ -62,6 +67,7 @@ comments: True
 ## 79. Word Search
 
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
+
 -   Tags: array, string, backtracking, depth first search, matrix
 
 ```python title="79. Word Search - Python Solution"
@@ -71,6 +77,7 @@ comments: True
 ## 131. Palindrome Partitioning
 
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning/) (Medium)
+
 -   Tags: string, dynamic programming, backtracking
 
 ```python title="131. Palindrome Partitioning - Python Solution"
@@ -80,6 +87,7 @@ comments: True
 ## 17. Letter Combinations of a Phone Number
 
 -   [LeetCode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [LeetCode CH](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
+
 -   Tags: hash table, string, backtracking
 
 ```python title="17. Letter Combinations of a Phone Number - Python Solution"
@@ -89,6 +97,7 @@ comments: True
 ## 51. N-Queens
 
 -   [LeetCode](https://leetcode.com/problems/n-queens/) | [LeetCode CH](https://leetcode.cn/problems/n-queens/) (Hard)
+
 -   Tags: array, backtracking
 - Hard
 - [N-Queens](https://leetcode.com/problems/n-queens/)

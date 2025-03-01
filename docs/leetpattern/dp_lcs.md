@@ -16,6 +16,7 @@ comments: True
 ## 1143. Longest Common Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
+
 -   Tags: string, dynamic programming
 
 ```python title="1143. Longest Common Subsequence - Python Solution"
@@ -25,6 +26,7 @@ comments: True
 ## 72. Edit Distance
 
 -   [LeetCode](https://leetcode.com/problems/edit-distance/) | [LeetCode CH](https://leetcode.cn/problems/edit-distance/) (Medium)
+
 -   Tags: string, dynamic programming
 
 ```python title="72. Edit Distance - Python Solution"
@@ -34,6 +36,7 @@ comments: True
 ## 115. Distinct Subsequences
 
 -   [LeetCode](https://leetcode.com/problems/distinct-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/distinct-subsequences/) (Hard)
+
 -   Tags: string, dynamic programming
 
 ```python title="115. Distinct Subsequences - Python Solution"
@@ -43,6 +46,7 @@ comments: True
 ## 392. Is Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/is-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/is-subsequence/) (Easy)
+
 -   Tags: two pointers, string, dynamic programming
 
 ```python title="392. Is Subsequence - Python Solution"
@@ -52,6 +56,7 @@ comments: True
 ## 583. Delete Operation for Two Strings
 
 -   [LeetCode](https://leetcode.com/problems/delete-operation-for-two-strings/) | [LeetCode CH](https://leetcode.cn/problems/delete-operation-for-two-strings/) (Medium)
+
 -   Tags: string, dynamic programming
 
 ```python title="583. Delete Operation for Two Strings - Python Solution"
@@ -61,6 +66,7 @@ comments: True
 ## 674. Longest Continuous Increasing Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) (Easy)
+
 -   Tags: array
 
 ```python title="674. Longest Continuous Increasing Subsequence - Python Solution"
@@ -70,6 +76,7 @@ comments: True
 ## 718. Maximum Length of Repeated Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) (Medium)
+
 -   Tags: array, binary search, dynamic programming, sliding window, rolling hash, hash function
 
 ```python title="718. Maximum Length of Repeated Subarray - Python Solution"
@@ -79,6 +86,7 @@ comments: True
 ## 1035. Uncrossed Lines
 
 -   [LeetCode](https://leetcode.com/problems/uncrossed-lines/) | [LeetCode CH](https://leetcode.cn/problems/uncrossed-lines/) (Medium)
+
 -   Tags: array, dynamic programming
 
 ```python title="1035. Uncrossed Lines - Python Solution"

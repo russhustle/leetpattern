@@ -13,6 +13,7 @@ comments: True
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
@@ -136,6 +137,7 @@ flowchart LR
 ## 210. Course Schedule II
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
@@ -148,6 +150,7 @@ flowchart LR
 ## 269. Alien Dictionary
 
 -   [LeetCode](https://leetcode.com/problems/alien-dictionary/) | [LeetCode CH](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
 
@@ -158,6 +161,7 @@ flowchart LR
 ## 1203. Sort Items by Groups Respecting Dependencies
 
 -   [LeetCode](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) | [LeetCode CH](https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return any permutation of the items that satisfies the requirements.
 
@@ -168,6 +172,7 @@ flowchart LR
 ## 1857. Largest Color Value in a Directed Graph
 
 -   [LeetCode](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [LeetCode CH](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
+
 -   Tags: hash table, dynamic programming, graph, topological sort, memoization, counting
 
 ```python title="1857. Largest Color Value in a Directed Graph - Python Solution"

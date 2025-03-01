@@ -19,6 +19,7 @@ comments: True
 ## 1. Two Sum
 
 -   [LeetCode](https://leetcode.com/problems/two-sum/) | [LeetCode CH](https://leetcode.cn/problems/two-sum/) (Easy)
+
 -   Tags: array, hash table
 -   Return the indices of the two numbers such that they add up to a specific target.
 
@@ -33,6 +34,7 @@ comments: True
 ## 121. Best Time to Buy and Sell Stock
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
@@ -43,6 +45,7 @@ comments: True
 ## 169. Majority Element
 
 -   [LeetCode](https://leetcode.com/problems/majority-element/) | [LeetCode CH](https://leetcode.cn/problems/majority-element/) (Easy)
+
 -   Tags: array, hash table, divide and conquer, sorting, counting
 -   Return the majority element in an array. The majority element is the element that appears more than `n // 2` times.
 
@@ -65,6 +68,7 @@ comments: True
 ## 217. Contains Duplicate
 
 -   [LeetCode](https://leetcode.com/problems/contains-duplicate/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate/) (Easy)
+
 -   Tags: array, hash table, sorting
 -   Return True if the array contains any duplicates, otherwise return False.
 
@@ -75,6 +79,7 @@ comments: True
 ## 57. Insert Interval
 
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
+
 -   Tags: array
 
 ```python title="57. Insert Interval - Python Solution"
@@ -84,6 +89,7 @@ comments: True
 ## 15. 3Sum
 
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
+
 -   Tags: array, two pointers, sorting
 
 ```python title="15. 3Sum - Python Solution"
@@ -93,6 +99,7 @@ comments: True
 ## 238. Product of Array Except Self
 
 -   [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) | [LeetCode CH](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
+
 -   Tags: array, prefix sum
 -   Classic **Prefix Sum** problem
 -   Return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
@@ -109,6 +116,7 @@ comments: True
 ## 39. Combination Sum
 
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
+
 -   Tags: array, backtracking
 
 ```python title="39. Combination Sum - Python Solution"
@@ -118,6 +126,7 @@ comments: True
 ## 56. Merge Intervals
 
 -   [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
+
 -   Tags: array, sorting
 -   Merge all overlapping intervals.
 
@@ -130,6 +139,7 @@ comments: True
 ## 75. Sort Colors
 
 -   [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
+
 -   Tags: array, two pointers, sorting
 
 ```python title="75. Sort Colors - Python Solution"
@@ -139,6 +149,7 @@ comments: True
 ## 11. Container With Most Water
 
 -   [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
+
 -   Tags: array, two pointers, greedy
 -   Return the maximum area of water that can be trapped between the vertical lines.
 

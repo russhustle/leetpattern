@@ -29,6 +29,7 @@ comments: True
 ## 547. Number of Provinces
 
 -   [LeetCode](https://leetcode.com/problems/number-of-provinces/) | [LeetCode CH](https://leetcode.cn/problems/number-of-provinces/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 -   Return the number of provinces.
 
@@ -50,6 +51,7 @@ comments: True
 ## 1971. Find if Path Exists in Graph
 
 -   [LeetCode](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [LeetCode CH](https://leetcode.cn/problems/find-if-path-exists-in-graph/) (Easy)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ```python title="1971. Find if Path Exists in Graph - Python Solution"
@@ -59,6 +61,7 @@ comments: True
 ## 797. All Paths From Source to Target
 
 -   [LeetCode](https://leetcode.com/problems/all-paths-from-source-to-target/) | [LeetCode CH](https://leetcode.cn/problems/all-paths-from-source-to-target/) (Medium)
+
 -   Tags: backtracking, depth first search, breadth first search, graph
 
 ```python title="797. All Paths From Source to Target - Python Solution"
@@ -68,6 +71,7 @@ comments: True
 ## 841. Keys and Rooms
 
 -   [LeetCode](https://leetcode.com/problems/keys-and-rooms/) | [LeetCode CH](https://leetcode.cn/problems/keys-and-rooms/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph
 
 ```python title="841. Keys and Rooms - Python Solution"
@@ -77,6 +81,7 @@ comments: True
 ## 2316. Count Unreachable Pairs of Nodes in an Undirected Graph
 
 -   [LeetCode](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ```python title="2316. Count Unreachable Pairs of Nodes in an Undirected Graph - Python Solution"
@@ -90,36 +95,43 @@ comments: True
 ## 1319. Number of Operations to Make Network Connected
 
 -   [LeetCode](https://leetcode.com/problems/number-of-operations-to-make-network-connected/) | [LeetCode CH](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ## 2492. Minimum Score of a Path Between Two Cities
 
 -   [LeetCode](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/) | [LeetCode CH](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ## 3387. Maximize Amount After Two Days of Conversions
 
 -   [LeetCode](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [LeetCode CH](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
+
 -   Tags: array, string, depth first search, breadth first search, graph
 
 ## 3310. Remove Methods From Project
 
 -   [LeetCode](https://leetcode.com/problems/remove-methods-from-project/) | [LeetCode CH](https://leetcode.cn/problems/remove-methods-from-project/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph
 
 ## 2685. Count the Number of Complete Components
 
 -   [LeetCode](https://leetcode.com/problems/count-the-number-of-complete-components/) | [LeetCode CH](https://leetcode.cn/problems/count-the-number-of-complete-components/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ## 2192. All Ancestors of a Node in a Directed Acyclic Graph
 
 -   [LeetCode](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | [LeetCode CH](https://leetcode.cn/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 
 ## 924. Minimize Malware Spread
 
 -   [LeetCode](https://leetcode.com/problems/minimize-malware-spread/) | [LeetCode CH](https://leetcode.cn/problems/minimize-malware-spread/) (Hard)
+
 -   Tags: array, hash table, depth first search, breadth first search, union find, graph
 
 ```python title="924. Minimize Malware Spread - Python Solution"
@@ -129,11 +141,13 @@ comments: True
 ## 2101. Detonate the Maximum Bombs
 
 -   [LeetCode](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [LeetCode CH](https://leetcode.cn/problems/detonate-the-maximum-bombs/) (Medium)
+
 -   Tags: array, math, depth first search, breadth first search, graph, geometry
 
 ## 721. Accounts Merge
 
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
+
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
 ```python title="721. Accounts Merge - Python Solution"
@@ -143,6 +157,7 @@ comments: True
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
@@ -266,6 +281,7 @@ flowchart LR
 ## 802. Find Eventual Safe States
 
 -   [LeetCode](https://leetcode.com/problems/find-eventual-safe-states/) | [LeetCode CH](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 
 ```python title="802. Find Eventual Safe States - Python Solution"
@@ -275,21 +291,25 @@ flowchart LR
 ## 928. Minimize Malware Spread II
 
 -   [LeetCode](https://leetcode.com/problems/minimize-malware-spread-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimize-malware-spread-ii/) (Hard)
+
 -   Tags: array, hash table, depth first search, breadth first search, union find, graph
 
 ## 2092. Find All People With Secret
 
 -   [LeetCode](https://leetcode.com/problems/find-all-people-with-secret/) | [LeetCode CH](https://leetcode.cn/problems/find-all-people-with-secret/) (Hard)
+
 -   Tags: depth first search, breadth first search, union find, graph, sorting
 
 ## 3108. Minimum Cost Walk in Weighted Graph
 
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-walk-in-weighted-graph/) (Hard)
+
 -   Tags: array, bit manipulation, union find, graph
 
 ## 261. Graph Valid Tree
 
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ```python title="261. Graph Valid Tree - Python Solution"
@@ -299,6 +319,7 @@ flowchart LR
 ## 323. Number of Connected Components in an Undirected Graph
 
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"

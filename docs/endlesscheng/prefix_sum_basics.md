@@ -16,9 +16,10 @@ comments: True
 - [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 - [ ] [1523. Count Odd Numbers in an Interval Range](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) (Easy)
 
-## 303. Range Sum Query -   Immutable
+## 303. Range Sum Query - Immutable
 
-- [LeetCode](https://leetcode.com/problems/range-sum-query-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/range-sum-query-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)
+
 -   Tags: array, design, prefix sum
 
 ```python title="303. Range Sum Query - Immutable - Python Solution"
@@ -28,46 +29,55 @@ comments: True
 ## 3427. Sum of Variable Length Subarrays
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-variable-length-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-variable-length-subarrays/) (Easy)
+
 -   Tags: array, prefix sum
 
 ## 2559. Count Vowel Strings in Ranges
 
 -   [LeetCode](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | [LeetCode CH](https://leetcode.cn/problems/count-vowel-strings-in-ranges/) (Medium)
+
 -   Tags: array, string, prefix sum
 
 ## 3152. Special Array II
 
 -   [LeetCode](https://leetcode.com/problems/special-array-ii/) | [LeetCode CH](https://leetcode.cn/problems/special-array-ii/) (Medium)
+
 -   Tags: array, binary search, prefix sum
 
 ## 1749. Maximum Absolute Sum of Any Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray/) (Medium)
+
 -   Tags: array, dynamic programming
 
 ## 2389. Longest Subsequence With Limited Sum
 
 -   [LeetCode](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | [LeetCode CH](https://leetcode.cn/problems/longest-subsequence-with-limited-sum/) (Easy)
+
 -   Tags: array, binary search, greedy, sorting, prefix sum
 
 ## 3361. Shift Distance Between Two Strings
 
 -   [LeetCode](https://leetcode.com/problems/shift-distance-between-two-strings/) | [LeetCode CH](https://leetcode.cn/problems/shift-distance-between-two-strings/) (Medium)
+
 -   Tags: array, string, prefix sum
 
 ## 2055. Plates Between Candles
 
 -   [LeetCode](https://leetcode.com/problems/plates-between-candles/) | [LeetCode CH](https://leetcode.cn/problems/plates-between-candles/) (Medium)
+
 -   Tags: array, string, binary search, prefix sum
 
 ## 1744. Can You Eat Your Favorite Candy on Your Favorite Day?
 
 -   [LeetCode](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | [LeetCode CH](https://leetcode.cn/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) (Medium)
+
 -   Tags: array, prefix sum
 
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+
 -   Tags: array, divide and conquer, dynamic programming
 
 ```python title="53. Maximum Subarray - Python Solution"
@@ -77,4 +87,5 @@ comments: True
 ## 1523. Count Odd Numbers in an Interval Range
 
 -   [LeetCode](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) | [LeetCode CH](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) (Easy)
+
 -   Tags: math

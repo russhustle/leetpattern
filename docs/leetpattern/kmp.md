@@ -13,6 +13,7 @@ comments: True
 ## 28. Find the Index of the First Occurrence in a String
 
 -   [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
+
 -   Tags: two pointers, string, string matching
 
 ```python title="28. Find the Index of the First Occurrence in a String - Python Solution"
@@ -22,6 +23,7 @@ comments: True
 ## 459. Repeated Substring Pattern
 
 -   [LeetCode](https://leetcode.com/problems/repeated-substring-pattern/) | [LeetCode CH](https://leetcode.cn/problems/repeated-substring-pattern/) (Easy)
+
 -   Tags: string, string matching
 
 ```python title="459. Repeated Substring Pattern - Python Solution"
@@ -31,6 +33,7 @@ comments: True
 ## 686. Repeated String Match
 
 -   [LeetCode](https://leetcode.com/problems/repeated-string-match/) | [LeetCode CH](https://leetcode.cn/problems/repeated-string-match/) (Medium)
+
 -   Tags: string, string matching
 
 ```python title="686. Repeated String Match - Python Solution"
@@ -40,6 +43,7 @@ comments: True
 ## 1392. Longest Happy Prefix
 
 -   [LeetCode](https://leetcode.com/problems/longest-happy-prefix/) | [LeetCode CH](https://leetcode.cn/problems/longest-happy-prefix/) (Hard)
+
 -   Tags: string, rolling hash, string matching, hash function
 
 ```python title="1392. Longest Happy Prefix - Python Solution"
@@ -49,6 +53,7 @@ comments: True
 ## 214. Shortest Palindrome
 
 -   [LeetCode](https://leetcode.com/problems/shortest-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/shortest-palindrome/) (Hard)
+
 -   Tags: string, rolling hash, string matching, hash function
 
 ```python title="214. Shortest Palindrome - Python Solution"

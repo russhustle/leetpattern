@@ -13,6 +13,7 @@ comments: True
 ## 704. Binary Search
 
 -   [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)
+
 -   Tags: array, binary search
 -   Implement binary search algorithm.
 
@@ -23,6 +24,7 @@ comments: True
 ## 278. First Bad Version
 
 -   [LeetCode](https://leetcode.com/problems/first-bad-version/) | [LeetCode CH](https://leetcode.cn/problems/first-bad-version/) (Easy)
+
 -   Tags: binary search, interactive
 -   Find the first bad version given a function `isBadVersion`.
 
@@ -33,6 +35,7 @@ comments: True
 ## 33. Search in Rotated Sorted Array
 
 -   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
+
 -   Tags: array, binary search
 
 ```python title="33. Search in Rotated Sorted Array - Python Solution"
@@ -42,6 +45,7 @@ comments: True
 ## 981. Time Based Key-Value Store
 
 -   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
+
 -   Tags: hash table, string, binary search, design
 
 ```python title="981. Time Based Key-Value Store - Python Solution"
@@ -51,4 +55,5 @@ comments: True
 ## 1235. Maximum Profit in Job Scheduling
 
 -   [LeetCode](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | [LeetCode CH](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) (Hard)
+
 -   Tags: array, binary search, dynamic programming, sorting

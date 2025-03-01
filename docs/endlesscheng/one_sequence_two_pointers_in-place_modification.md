@@ -16,6 +16,7 @@ comments: True
 ## 27. Remove Element
 
 -   [LeetCode](https://leetcode.com/problems/remove-element/) | [LeetCode CH](https://leetcode.cn/problems/remove-element/) (Easy)
+
 -   Tags: array, two pointers
 -   Remove all instances of a given value in-place.
 
@@ -26,6 +27,7 @@ comments: True
 ## 26. Remove Duplicates from Sorted Array
 
 -   [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) (Easy)
+
 -   Tags: array, two pointers
 -   Remove duplicates in-place.
 
@@ -36,6 +38,7 @@ comments: True
 ## 80. Remove Duplicates from Sorted Array II
 
 -   [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) (Medium)
+
 -   Tags: array, two pointers
 -   Allow at most two duplicates.
 -   fast pointer: explore the array
@@ -48,6 +51,7 @@ comments: True
 ## 283. Move Zeroes
 
 -   [LeetCode](https://leetcode.com/problems/move-zeroes/) | [LeetCode CH](https://leetcode.cn/problems/move-zeroes/) (Easy)
+
 -   Tags: array, two pointers
 -   Move all zeroes to the end of the array while maintaining the relative order of the non-zero elements.
 
@@ -58,21 +62,25 @@ comments: True
 ## 905. Sort Array By Parity
 
 -   [LeetCode](https://leetcode.com/problems/sort-array-by-parity/) | [LeetCode CH](https://leetcode.cn/problems/sort-array-by-parity/) (Easy)
+
 -   Tags: array, two pointers, sorting
 
 ## 922. Sort Array By Parity II
 
 -   [LeetCode](https://leetcode.com/problems/sort-array-by-parity-ii/) | [LeetCode CH](https://leetcode.cn/problems/sort-array-by-parity-ii/) (Easy)
+
 -   Tags: array, two pointers, sorting
 
 ## 2460. Apply Operations to an Array
 
 -   [LeetCode](https://leetcode.com/problems/apply-operations-to-an-array/) | [LeetCode CH](https://leetcode.cn/problems/apply-operations-to-an-array/) (Easy)
+
 -   Tags: array, two pointers, simulation
 
 ## 1089. Duplicate Zeros
 
 -   [LeetCode](https://leetcode.com/problems/duplicate-zeros/) | [LeetCode CH](https://leetcode.cn/problems/duplicate-zeros/) (Easy)
+
 -   Tags: array, two pointers
 -   Duplicate each occurrence of zero, shifting the remaining elements to the right.
 

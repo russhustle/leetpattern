@@ -13,6 +13,7 @@ comments: True
 ## 198. House Robber
 
 -   [LeetCode](https://leetcode.com/problems/house-robber/) | [LeetCode CH](https://leetcode.cn/problems/house-robber/) (Medium)
+
 -   Tags: array, dynamic programming
 -   Return the maximum amount of money that can be robbed from the houses. No two adjacent houses can be robbed.
 
@@ -43,6 +44,7 @@ comments: True
 ## 740. Delete and Earn
 
 -   [LeetCode](https://leetcode.com/problems/delete-and-earn/) | [LeetCode CH](https://leetcode.cn/problems/delete-and-earn/) (Medium)
+
 -   Tags: array, hash table, dynamic programming
 
 ```python title="740. Delete and Earn - Python Solution"
@@ -52,11 +54,13 @@ comments: True
 ## 2320. Count Number of Ways to Place Houses
 
 -   [LeetCode](https://leetcode.com/problems/count-number-of-ways-to-place-houses/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-ways-to-place-houses/) (Medium)
+
 -   Tags: dynamic programming
 
 ## 213. House Robber II
 
 -   [LeetCode](https://leetcode.com/problems/house-robber-ii/) | [LeetCode CH](https://leetcode.cn/problems/house-robber-ii/) (Medium)
+
 -   Tags: array, dynamic programming
 -   Return the maximum amount of money that can be robbed from the houses arranged in a circle.
 -   Circular → Linear: `nums[0]` and `nums[-1]` cannot be robbed together.
@@ -85,4 +89,5 @@ comments: True
 ## 3186. Maximum Total Damage With Spell Casting
 
 -   [LeetCode](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) | [LeetCode CH](https://leetcode.cn/problems/maximum-total-damage-with-spell-casting/) (Medium)
+
 -   Tags: array, hash table, two pointers, binary search, dynamic programming, sorting, counting

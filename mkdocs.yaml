@@ -164,6 +164,36 @@ nav:
     - Lazy Segment Tree: endlesscheng/lazy_segment_tree.md
     - Dynamic Segment Tree: endlesscheng/dynamic_segment_tree.md
     - Offline Algorithm: endlesscheng/offline_algorithm.md
+    - Greedy from Smallest Largest: endlesscheng/greedy_from_smallest_largest.md
+    - Single Sequence Pairing: endlesscheng/single_sequence_pairing.md
+    - Double Sequence Pairing: endlesscheng/double_sequence_pairing.md
+    - Greedy from Left Right: endlesscheng/greedy_from_left_right.md
+    - Partitioning Greedy: endlesscheng/partitioning_greedy.md
+    - Enumerate then Greedy: endlesscheng/enumerate_then_greedy.md
+    - Exchange Argument: endlesscheng/exchange_argument.md
+    - Adjacent Different: endlesscheng/adjacent_different.md
+    - Regret Greedy: endlesscheng/regret_greedy.md
+    - Non-Overlapping Intervals: endlesscheng/non-overlapping_intervals.md
+    - Interval Grouping: endlesscheng/interval_grouping.md
+    - Interval Selection: endlesscheng/interval_selection.md
+    - Interval Coverage: endlesscheng/interval_coverage.md
+    - Merge Intervals: endlesscheng/merge_intervals.md
+    - Other Interval Greedy: endlesscheng/other_interval_greedy.md
+    - Lexicographically Smallest Largest: endlesscheng/lexicographically_smallest_largest.md
+    - Palindrome Greedy: endlesscheng/palindrome_greedy.md
+    - Math Greedy Basics: endlesscheng/math_greedy_basics.md
+    - Product Greedy: endlesscheng/product_greedy.md
+    - Sorting Inequality: endlesscheng/sorting_inequality.md
+    - Basic Inequality: endlesscheng/basic_inequality.md
+    - Median Greedy: endlesscheng/median_greedy.md
+    - Inductive Method: endlesscheng/inductive_method.md
+    - Other Math Greedy: endlesscheng/other_math_greedy.md
+    - From Special to General: endlesscheng/from_special_to_general.md
+    - Brain Teasers: endlesscheng/brain_teasers.md
+    - Reverse Thinking: endlesscheng/reverse_thinking.md
+    - Equivalent Transformation: endlesscheng/equivalent_transformation.md
+    - Construction Problems: endlesscheng/construction_problems.md
+    - Greedy Others: endlesscheng/greedy_others.md
 
   - Neetcode 150:
     - Home: neetcode150/index.md

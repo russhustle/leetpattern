@@ -14,6 +14,7 @@ comments: True
 ## 55. Jump Game
 
 -   [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
+
 -   Tags: array, dynamic programming, greedy
 -   Return `True` if you can reach the last index, otherwise `False`.
 
@@ -40,6 +41,7 @@ comments: True
 ## 45. Jump Game II
 
 -   [LeetCode](https://leetcode.com/problems/jump-game-ii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-ii/) (Medium)
+
 -   Tags: array, dynamic programming, greedy
 -   Return the minimum number of jumps to reach the last index.
 
@@ -52,6 +54,7 @@ comments: True
 ## 452. Minimum Number of Arrows to Burst Balloons
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)
+
 -   Tags: array, greedy, sorting
 -   Return the minimum number of arrows.
 
@@ -68,6 +71,7 @@ comments: True
 ## 435. Non-overlapping Intervals
 
 -   [LeetCode](https://leetcode.com/problems/non-overlapping-intervals/) | [LeetCode CH](https://leetcode.cn/problems/non-overlapping-intervals/) (Medium)
+
 -   Tags: array, dynamic programming, greedy, sorting
 
 ```python title="435. Non-overlapping Intervals - Python Solution"
@@ -77,6 +81,7 @@ comments: True
 ## 763. Partition Labels
 
 -   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
+
 -   Tags: hash table, two pointers, string, greedy
 
 ```python title="763. Partition Labels - Python Solution"
@@ -86,6 +91,7 @@ comments: True
 ## 56. Merge Intervals
 
 -   [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
+
 -   Tags: array, sorting
 -   Merge all overlapping intervals.
 

@@ -13,15 +13,17 @@ comments: True
 ## 125. Valid Palindrome
 
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
+
 -   Tags: two pointers, string
 
 ```python title="125. Valid Palindrome - Python Solution"
 --8<-- "0125_valid_palindrome.py"
 ```
 
-## 167. Two Sum II -   Input Array Is Sorted
+## 167. Two Sum II - Input Array Is Sorted
 
-- [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
+
 -   Tags: array, two pointers, binary search
 
 ```python title="167. Two Sum II - Input Array Is Sorted - Python Solution"
@@ -31,6 +33,7 @@ comments: True
 ## 15. 3Sum
 
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
+
 -   Tags: array, two pointers, sorting
 
 ```python title="15. 3Sum - Python Solution"
@@ -40,6 +43,7 @@ comments: True
 ## 11. Container With Most Water
 
 -   [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
+
 -   Tags: array, two pointers, greedy
 -   Return the maximum area of water that can be trapped between the vertical lines.
 
@@ -52,6 +56,7 @@ comments: True
 ## 42. Trapping Rain Water
 
 -   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+
 -   Tags: array, two pointers, dynamic programming, stack, monotonic stack
 -   ![42](../assets/0042.png)
 

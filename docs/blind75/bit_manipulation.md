@@ -13,6 +13,7 @@ comments: True
 ## 191. Number of 1 Bits
 
 -   [LeetCode](https://leetcode.com/problems/number-of-1-bits/) | [LeetCode CH](https://leetcode.cn/problems/number-of-1-bits/) (Easy)
+
 -   Tags: divide and conquer, bit manipulation
 
 ```python title="191. Number of 1 Bits - Python Solution"
@@ -22,6 +23,7 @@ comments: True
 ## 338. Counting Bits
 
 -   [LeetCode](https://leetcode.com/problems/counting-bits/) | [LeetCode CH](https://leetcode.cn/problems/counting-bits/) (Easy)
+
 -   Tags: dynamic programming, bit manipulation
 
 ```python title="338. Counting Bits - Python Solution"
@@ -31,6 +33,7 @@ comments: True
 ## 190. Reverse Bits
 
 -   [LeetCode](https://leetcode.com/problems/reverse-bits/) | [LeetCode CH](https://leetcode.cn/problems/reverse-bits/) (Easy)
+
 -   Tags: divide and conquer, bit manipulation
 
 ```python title="190. Reverse Bits - Python Solution"
@@ -40,6 +43,7 @@ comments: True
 ## 268. Missing Number
 
 -   [LeetCode](https://leetcode.com/problems/missing-number/) | [LeetCode CH](https://leetcode.cn/problems/missing-number/) (Easy)
+
 -   Tags: array, hash table, math, binary search, bit manipulation, sorting
 
 ```python title="268. Missing Number - Python Solution"
@@ -49,6 +53,7 @@ comments: True
 ## 371. Sum of Two Integers
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-two-integers/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-two-integers/) (Medium)
+
 -   Tags: math, bit manipulation
 
 ```python title="371. Sum of Two Integers - Python Solution"

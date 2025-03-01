@@ -23,6 +23,7 @@ comments: True
 ## 1456. Maximum Number of Vowels in a Substring of Given Length
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
+
 -   Tags: string, sliding window
 
 ```python title="1456. Maximum Number of Vowels in a Substring of Given Length - Python Solution"
@@ -32,6 +33,7 @@ comments: True
 ## 643. Maximum Average Subarray I
 
 -   [LeetCode](https://leetcode.com/problems/maximum-average-subarray-i/) | [LeetCode CH](https://leetcode.cn/problems/maximum-average-subarray-i/) (Easy)
+
 -   Tags: array, sliding window
 
 ```python title="643. Maximum Average Subarray I - Python Solution"
@@ -41,6 +43,7 @@ comments: True
 ## 1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
 
 -   [LeetCode](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | [LeetCode CH](https://leetcode.cn/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) (Medium)
+
 -   Tags: array, sliding window
 
 ```python title="1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold - Python Solution"
@@ -50,6 +53,7 @@ comments: True
 ## 2090. K Radius Subarray Averages
 
 -   [LeetCode](https://leetcode.com/problems/k-radius-subarray-averages/) | [LeetCode CH](https://leetcode.cn/problems/k-radius-subarray-averages/) (Medium)
+
 -   Tags: array, sliding window
 
 ```python title="2090. K Radius Subarray Averages - Python Solution"
@@ -59,6 +63,7 @@ comments: True
 ## 2379. Minimum Recolors to Get K Consecutive Black Blocks
 
 -   [LeetCode](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | [LeetCode CH](https://leetcode.cn/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) (Easy)
+
 -   Tags: string, sliding window
 
 ```python title="2379. Minimum Recolors to Get K Consecutive Black Blocks - Python Solution"
@@ -68,6 +73,7 @@ comments: True
 ## 2841. Maximum Sum of Almost Unique Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-of-almost-unique-subarray/) (Medium)
+
 -   Tags: array, hash table, sliding window
 
 ```python title="2841. Maximum Sum of Almost Unique Subarray - Python Solution"
@@ -77,6 +83,7 @@ comments: True
 ## 2461. Maximum Sum of Distinct Subarrays With Length K
 
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-of-distinct-subarrays-with-length-k/) (Medium)
+
 -   Tags: array, hash table, sliding window
 
 ```python title="2461. Maximum Sum of Distinct Subarrays With Length K - Python Solution"
@@ -86,6 +93,7 @@ comments: True
 ## 1423. Maximum Points You Can Obtain from Cards
 
 -   [LeetCode](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/) | [LeetCode CH](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/) (Medium)
+
 -   Tags: array, sliding window, prefix sum
 
 ```python title="1423. Maximum Points You Can Obtain from Cards - Python Solution"
@@ -95,6 +103,7 @@ comments: True
 ## 1052. Grumpy Bookstore Owner
 
 -   [LeetCode](https://leetcode.com/problems/grumpy-bookstore-owner/) | [LeetCode CH](https://leetcode.cn/problems/grumpy-bookstore-owner/) (Medium)
+
 -   Tags: array, sliding window
 -   Hint: Maximize the number of _unsatisfied customers_ in the fixed window of `minutes`.
 
@@ -105,6 +114,7 @@ comments: True
 ## 1652. Defuse the Bomb
 
 -   [LeetCode](https://leetcode.com/problems/defuse-the-bomb/) | [LeetCode CH](https://leetcode.cn/problems/defuse-the-bomb/) (Easy)
+
 -   Tags: array, sliding window
 -   How to deal with the _circular array_?
     -   Trick: mod (index % length)
@@ -116,21 +126,25 @@ comments: True
 ## 1176. Diet Plan Performance
 
 -   [LeetCode](https://leetcode.com/problems/diet-plan-performance/) | [LeetCode CH](https://leetcode.cn/problems/diet-plan-performance/) (Easy)
+
 -   Tags: array, sliding window
 
 ## 1100. Find K-Length Substrings With No Repeated Characters
 
 -   [LeetCode](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [LeetCode CH](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
+
 -   Tags: hash table, string, sliding window
 
 ## 1852. Distinct Numbers in Each Subarray
 
 -   [LeetCode](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [LeetCode CH](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium)
+
 -   Tags: array, hash table, sliding window
 
 ## 1151. Minimum Swaps to Group All 1's Together
 
 -   [LeetCode](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [LeetCode CH](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
+
 -   Tags: array, sliding window
 
 ```python title="1151. Minimum Swaps to Group All 1's Together - Python Solution"
@@ -140,4 +154,5 @@ comments: True
 ## 2107. Number of Unique Flavors After Sharing K Candies
 
 -   [LeetCode](https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/) | [LeetCode CH](https://leetcode.cn/problems/number-of-unique-flavors-after-sharing-k-candies/) (Medium)
+
 -   Tags: array, hash table, sliding window

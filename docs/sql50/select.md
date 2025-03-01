@@ -13,6 +13,7 @@ comments: True
 ## 1757. Recyclable and Low Fat Products
 
 -   [LeetCode](https://leetcode.com/problems/recyclable-and-low-fat-products/) | [LeetCode CH](https://leetcode.cn/problems/recyclable-and-low-fat-products/) (Easy)
+
 -   Tags: database
 
 ```txt title="1757. Recyclable and Low Fat Products"
@@ -26,6 +27,7 @@ comments: True
 ## 584. Find Customer Referee
 
 -   [LeetCode](https://leetcode.com/problems/find-customer-referee/) | [LeetCode CH](https://leetcode.cn/problems/find-customer-referee/) (Easy)
+
 -   Tags: database
 
 ```sql title="584. Find Customer Referee"
@@ -35,6 +37,7 @@ comments: True
 ## 595. Big Countries
 
 -   [LeetCode](https://leetcode.com/problems/big-countries/) | [LeetCode CH](https://leetcode.cn/problems/big-countries/) (Easy)
+
 -   Tags: database
 
 ```sql title="595. Big Countries"
@@ -44,6 +47,7 @@ comments: True
 ## 1148. Article Views I
 
 -   [LeetCode](https://leetcode.com/problems/article-views-i/) | [LeetCode CH](https://leetcode.cn/problems/article-views-i/) (Easy)
+
 -   Tags: database
 
 ```sql title="1148. Article Views I"
@@ -53,6 +57,7 @@ comments: True
 ## 1683. Invalid Tweets
 
 -   [LeetCode](https://leetcode.com/problems/invalid-tweets/) | [LeetCode CH](https://leetcode.cn/problems/invalid-tweets/) (Easy)
+
 -   Tags: database
 
 ```sql title="1683. Invalid Tweets"

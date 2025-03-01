@@ -15,34 +15,41 @@ comments: True
 ## 1358. Number of Substrings Containing All Three Characters
 
 -   [LeetCode](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [LeetCode CH](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) (Medium)
+
 -   Tags: hash table, string, sliding window
 
 ## 2962. Count Subarrays Where Max Element Appears at Least K Times
 
 -   [LeetCode](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | [LeetCode CH](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) (Medium)
+
 -   Tags: array, sliding window
 
 ## 3325. Count Substrings With K-Frequency Characters I
 
 -   [LeetCode](https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/) | [LeetCode CH](https://leetcode.cn/problems/count-substrings-with-k-frequency-characters-i/) (Medium)
+
 -   Tags: hash table, string, sliding window
 
 ## 2799. Count Complete Subarrays in an Array
 
 -   [LeetCode](https://leetcode.com/problems/count-complete-subarrays-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/count-complete-subarrays-in-an-array/) (Medium)
+
 -   Tags: array, hash table, sliding window
 
 ## 2537. Count the Number of Good Subarrays
 
 -   [LeetCode](https://leetcode.com/problems/count-the-number-of-good-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/count-the-number-of-good-subarrays/) (Medium)
+
 -   Tags: array, hash table, sliding window
 
 ## 3298. Count Substrings That Can Be Rearranged to Contain a String II
 
 -   [LeetCode](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/) | [LeetCode CH](https://leetcode.cn/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/) (Hard)
+
 -   Tags: hash table, string, sliding window
 
 ## 2495. Number of Subarrays Having Even Product
 
 -   [LeetCode](https://leetcode.com/problems/number-of-subarrays-having-even-product/) | [LeetCode CH](https://leetcode.cn/problems/number-of-subarrays-having-even-product/) (Medium)
+
 -   Tags: array, math, dynamic programming

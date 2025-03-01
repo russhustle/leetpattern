@@ -15,6 +15,7 @@ comments: True
 ## 20. Valid Parentheses
 
 -   [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+
 -   Tags: string, stack
 -   Determine if the input string is valid.
 -   Steps for the string `()[]{}`:
@@ -35,6 +36,7 @@ comments: True
 ## 155. Min Stack
 
 -   [LeetCode](https://leetcode.com/problems/min-stack/) | [LeetCode CH](https://leetcode.cn/problems/min-stack/) (Medium)
+
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
@@ -45,6 +47,7 @@ comments: True
 ## 150. Evaluate Reverse Polish Notation
 
 -   [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
+
 -   Tags: array, math, stack
 -   Steps for the list `["2", "1", "+", "3", "*"]`:
 
@@ -63,6 +66,7 @@ comments: True
 ## 22. Generate Parentheses
 
 -   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
+
 -   Tags: string, dynamic programming, backtracking
 
 ```python title="22. Generate Parentheses - Python Solution"
@@ -72,6 +76,7 @@ comments: True
 ## 739. Daily Temperatures
 
 -   [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)
+
 -   Tags: array, stack, monotonic stack
 -   Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
 
@@ -93,6 +98,7 @@ comments: True
 ## 853. Car Fleet
 
 -   [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
+
 -   Tags: array, stack, sorting, monotonic stack
 
 ```python title="853. Car Fleet - Python Solution"
@@ -102,6 +108,7 @@ comments: True
 ## 84. Largest Rectangle in Histogram
 
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+
 -   Tags: array, stack, monotonic stack
 
 ```python title="84. Largest Rectangle in Histogram - Python Solution"

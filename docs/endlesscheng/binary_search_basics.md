@@ -13,6 +13,7 @@ comments: True
 ## 34. Find First and Last Position of Element in Sorted Array
 
 -   [LeetCode](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) (Medium)
+
 -   Tags: array, binary search
 -   Find the starting and ending position of a given target value in a sorted array.
 
@@ -27,6 +28,7 @@ comments: True
 ## 35. Search Insert Position
 
 -   [LeetCode](https://leetcode.com/problems/search-insert-position/) | [LeetCode CH](https://leetcode.cn/problems/search-insert-position/) (Easy)
+
 -   Tags: array, binary search
 -   Return the index of the target if it is found. If not, return the index where it would be if it were inserted in order.
 
@@ -37,6 +39,7 @@ comments: True
 ## 704. Binary Search
 
 -   [LeetCode](https://leetcode.com/problems/binary-search/) | [LeetCode CH](https://leetcode.cn/problems/binary-search/) (Easy)
+
 -   Tags: array, binary search
 -   Implement binary search algorithm.
 
@@ -47,6 +50,7 @@ comments: True
 ## 744. Find Smallest Letter Greater Than Target
 
 -   [LeetCode](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | [LeetCode CH](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) (Easy)
+
 -   Tags: array, binary search
 
 ```python title="744. Find Smallest Letter Greater Than Target - Python Solution"
@@ -56,6 +60,7 @@ comments: True
 ## 2529. Maximum Count of Positive Integer and Negative Integer
 
 -   [LeetCode](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/) | [LeetCode CH](https://leetcode.cn/problems/maximum-count-of-positive-integer-and-negative-integer/) (Easy)
+
 -   Tags: array, binary search, counting
 
 ```python title="2529. Maximum Count of Positive Integer and Negative Integer - Python Solution"

@@ -18,6 +18,7 @@ comments: True
 ## 3. Longest Substring Without Repeating Characters
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
+
 -   Tags: hash table, string, sliding window
 -   Classic sliding window problem. Use a set to keep track of the characters in the current window.
 -   Return the length of the longest substring without repeating characters.
@@ -31,6 +32,7 @@ comments: True
 ## 3090. Maximum Length Substring With Two Occurrences
 
 -   [LeetCode](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/) | [LeetCode CH](https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/) (Easy)
+
 -   Tags: hash table, string, sliding window
 
 ```python title="3090. Maximum Length Substring With Two Occurrences - Python Solution"
@@ -40,6 +42,7 @@ comments: True
 ## 1493. Longest Subarray of 1's After Deleting One Element
 
 -   [LeetCode](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [LeetCode CH](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) (Medium)
+
 -   Tags: array, dynamic programming, sliding window
 
 ```python title="1493. Longest Subarray of 1's After Deleting One Element - Python Solution"
@@ -49,6 +52,7 @@ comments: True
 ## 1208. Get Equal Substrings Within Budget
 
 -   [LeetCode](https://leetcode.com/problems/get-equal-substrings-within-budget/) | [LeetCode CH](https://leetcode.cn/problems/get-equal-substrings-within-budget/) (Medium)
+
 -   Tags: string, binary search, sliding window, prefix sum
 
 ```python title="1208. Get Equal Substrings Within Budget - Python Solution"
@@ -58,6 +62,7 @@ comments: True
 ## 904. Fruit Into Baskets
 
 -   [LeetCode](https://leetcode.com/problems/fruit-into-baskets/) | [LeetCode CH](https://leetcode.cn/problems/fruit-into-baskets/) (Medium)
+
 -   Tags: array, hash table, sliding window
 
 ```python title="904. Fruit Into Baskets - Python Solution"
@@ -67,6 +72,7 @@ comments: True
 ## 1695. Maximum Erasure Value
 
 -   [LeetCode](https://leetcode.com/problems/maximum-erasure-value/) | [LeetCode CH](https://leetcode.cn/problems/maximum-erasure-value/) (Medium)
+
 -   Tags: array, hash table, sliding window
 
 ```python title="1695. Maximum Erasure Value - Python Solution"
@@ -76,11 +82,13 @@ comments: True
 ## 2958. Length of Longest Subarray With at Most K Frequency
 
 -   [LeetCode](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | [LeetCode CH](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) (Medium)
+
 -   Tags: array, hash table, sliding window
 
 ## 2024. Maximize the Confusion of an Exam
 
 -   [LeetCode](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | [LeetCode CH](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/) (Medium)
+
 -   Tags: string, binary search, sliding window, prefix sum
 
 ```python title="2024. Maximize the Confusion of an Exam - Python Solution"
@@ -90,6 +98,7 @@ comments: True
 ## 1004. Max Consecutive Ones III
 
 -   [LeetCode](https://leetcode.com/problems/max-consecutive-ones-iii/) | [LeetCode CH](https://leetcode.cn/problems/max-consecutive-ones-iii/) (Medium)
+
 -   Tags: array, binary search, sliding window, prefix sum
 
 ```python title="1004. Max Consecutive Ones III - Python Solution"
@@ -99,4 +108,5 @@ comments: True
 ## 1658. Minimum Operations to Reduce X to Zero
 
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/) (Medium)
+
 -   Tags: array, hash table, binary search, sliding window, prefix sum

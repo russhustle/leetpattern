@@ -10,6 +10,7 @@ comments: True
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+
 -   Tags: array, divide and conquer, dynamic programming
 
 ```python title="53. Maximum Subarray - Python Solution"
@@ -19,6 +20,7 @@ comments: True
 ## 55. Jump Game
 
 -   [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
+
 -   Tags: array, dynamic programming, greedy
 -   Return `True` if you can reach the last index, otherwise `False`.
 

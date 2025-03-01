@@ -12,6 +12,7 @@ comments: True
 ## 242. Valid Anagram
 
 -   [LeetCode](https://leetcode.com/problems/valid-anagram/) | [LeetCode CH](https://leetcode.cn/problems/valid-anagram/) (Easy)
+
 -   Tags: hash table, string, sorting
 -   Return true if an input string is an anagram of another string.
 -   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
@@ -23,6 +24,7 @@ comments: True
 ## 560. Subarray Sum Equals K
 
 -   [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
+
 -   Tags: array, hash table, prefix sum
 
 ```python title="560. Subarray Sum Equals K - Python Solution"
@@ -32,6 +34,7 @@ comments: True
 ## 49. Group Anagrams
 
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
+
 -   Tags: array, hash table, string, sorting
 
 ```python title="49. Group Anagrams - Python Solution"
@@ -41,6 +44,7 @@ comments: True
 ## 438. Find All Anagrams in a String
 
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
+
 -   Tags: hash table, string, sliding window
 
 ```python title="438. Find All Anagrams in a String - Python Solution"

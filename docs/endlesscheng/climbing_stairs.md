@@ -14,6 +14,7 @@ comments: True
 ## 70. Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+
 -   Tags: math, dynamic programming, memoization
 -   Return the number of distinct ways to reach the top of the stairs.
 -   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
@@ -41,6 +42,7 @@ comments: True
 ## 746. Min Cost Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
+
 -   Tags: array, dynamic programming
 -   Return the minimum cost to reach the top of the stairs.
 
@@ -71,6 +73,7 @@ comments: True
 ## 377. Combination Sum IV
 
 -   [LeetCode](https://leetcode.com/problems/combination-sum-iv/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
+
 -   Tags: array, dynamic programming
 
 ```python title="377. Combination Sum IV - Python Solution"
@@ -80,14 +83,17 @@ comments: True
 ## 2466. Count Ways To Build Good Strings
 
 -   [LeetCode](https://leetcode.com/problems/count-ways-to-build-good-strings/) | [LeetCode CH](https://leetcode.cn/problems/count-ways-to-build-good-strings/) (Medium)
+
 -   Tags: dynamic programming
 
 ## 2266. Count Number of Texts
 
 -   [LeetCode](https://leetcode.com/problems/count-number-of-texts/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-texts/) (Medium)
+
 -   Tags: hash table, math, string, dynamic programming
 
 ## 2533. Number of Good Binary Strings
 
 -   [LeetCode](https://leetcode.com/problems/number-of-good-binary-strings/) | [LeetCode CH](https://leetcode.cn/problems/number-of-good-binary-strings/) (Medium)
+
 -   Tags: dynamic programming

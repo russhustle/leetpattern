@@ -14,6 +14,7 @@ comments: True
 ## 206. Reverse Linked List
 
 -   [LeetCode](https://leetcode.com/problems/reverse-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
+
 -   Tags: linked list, recursion
 -   Reverse a singly linked list.
 
@@ -40,6 +41,7 @@ B --> A[1]
 ## 21. Merge Two Sorted Lists
 
 -   [LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-two-sorted-lists/) (Easy)
+
 -   Tags: linked list, recursion
 -   Merge the two lists into one sorted list.
 
@@ -52,6 +54,7 @@ B --> A[1]
 ## 143. Reorder List
 
 -   [LeetCode](https://leetcode.com/problems/reorder-list/) | [LeetCode CH](https://leetcode.cn/problems/reorder-list/) (Medium)
+
 -   Tags: linked list, two pointers, stack, recursion
 
 ```python title="143. Reorder List - Python Solution"
@@ -61,6 +64,7 @@ B --> A[1]
 ## 19. Remove Nth Node From End of List
 
 -   [LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) (Medium)
+
 -   Tags: linked list, two pointers
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
@@ -71,6 +75,7 @@ B --> A[1]
 ## 141. Linked List Cycle
 
 -   [LeetCode](https://leetcode.com/problems/linked-list-cycle/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
+
 -   Tags: hash table, linked list, two pointers
 -   Determine if a linked list has a cycle in it.
 
@@ -96,6 +101,7 @@ D --> B
 ## 23. Merge k Sorted Lists
 
 -   [LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
+
 -   Tags: linked list, divide and conquer, heap priority queue, merge sort
 -   Prerequisite: 21. Merge Two Sorted Lists
 

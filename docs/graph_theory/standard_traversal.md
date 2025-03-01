@@ -16,6 +16,7 @@ comments: True
 ## 547. Number of Provinces
 
 -   [LeetCode](https://leetcode.com/problems/number-of-provinces/) | [LeetCode CH](https://leetcode.cn/problems/number-of-provinces/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 -   Return the number of provinces.
 
@@ -37,6 +38,7 @@ comments: True
 ## 802. Find Eventual Safe States
 
 -   [LeetCode](https://leetcode.com/problems/find-eventual-safe-states/) | [LeetCode CH](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 
 ```python title="802. Find Eventual Safe States - Python Solution"
@@ -46,6 +48,7 @@ comments: True
 ## 841. Keys and Rooms
 
 -   [LeetCode](https://leetcode.com/problems/keys-and-rooms/) | [LeetCode CH](https://leetcode.cn/problems/keys-and-rooms/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph
 
 ```python title="841. Keys and Rooms - Python Solution"
@@ -55,6 +58,7 @@ comments: True
 ## 1129. Shortest Path with Alternating Colors
 
 -   [LeetCode](https://leetcode.com/problems/shortest-path-with-alternating-colors/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-with-alternating-colors/) (Medium)
+
 -   Tags: breadth first search, graph
 
 ```python title="1129. Shortest Path with Alternating Colors - Python Solution"
@@ -64,6 +68,7 @@ comments: True
 ## 1376. Time Needed to Inform All Employees
 
 -   [LeetCode](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | [LeetCode CH](https://leetcode.cn/problems/time-needed-to-inform-all-employees/) (Medium)
+
 -   Tags: tree, depth first search, breadth first search
 
 ```python title="1376. Time Needed to Inform All Employees - Python Solution"
@@ -73,6 +78,7 @@ comments: True
 ## 1466. Reorder Routes to Make All Paths Lead to the City Zero
 
 -   [LeetCode](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | [LeetCode CH](https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph
 -   ![1466](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
 
@@ -83,6 +89,7 @@ comments: True
 ## 797. All Paths From Source to Target
 
 -   [LeetCode](https://leetcode.com/problems/all-paths-from-source-to-target/) | [LeetCode CH](https://leetcode.cn/problems/all-paths-from-source-to-target/) (Medium)
+
 -   Tags: backtracking, depth first search, breadth first search, graph
 
 ```python title="797. All Paths From Source to Target - Python Solution"
@@ -92,6 +99,7 @@ comments: True
 ## 1192. Critical Connections in a Network
 
 -   [LeetCode](https://leetcode.com/problems/critical-connections-in-a-network/) | [LeetCode CH](https://leetcode.cn/problems/critical-connections-in-a-network/) (Hard)
+
 -   Tags: depth first search, graph, biconnected component
 
 ```python title="1192. Critical Connections in a Network - Python Solution"

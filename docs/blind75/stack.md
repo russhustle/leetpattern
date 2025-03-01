@@ -9,6 +9,7 @@ comments: True
 ## 20. Valid Parentheses
 
 -   [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+
 -   Tags: string, stack
 -   Determine if the input string is valid.
 -   Steps for the string `()[]{}`:

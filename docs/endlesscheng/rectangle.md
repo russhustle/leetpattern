@@ -14,6 +14,7 @@ comments: True
 ## 84. Largest Rectangle in Histogram
 
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+
 -   Tags: array, stack, monotonic stack
 
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
@@ -23,11 +24,13 @@ comments: True
 ## 1793. Maximum Score of a Good Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-score-of-a-good-subarray/) (Hard)
+
 -   Tags: array, two pointers, binary search, stack, monotonic stack
 
 ## 85. Maximal Rectangle
 
 -   [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | [LeetCode CH](https://leetcode.cn/problems/maximal-rectangle/) (Hard)
+
 -   Tags: array, dynamic programming, stack, matrix, monotonic stack
 -   Return the area of the largest rectangle that can be formed within a rectangle of 1's.
 
@@ -40,11 +43,13 @@ comments: True
 ## 1504. Count Submatrices With All Ones
 
 -   [LeetCode](https://leetcode.com/problems/count-submatrices-with-all-ones/) | [LeetCode CH](https://leetcode.cn/problems/count-submatrices-with-all-ones/) (Medium)
+
 -   Tags: array, dynamic programming, stack, matrix, monotonic stack
 
 ## 42. Trapping Rain Water
 
 -   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+
 -   Tags: array, two pointers, dynamic programming, stack, monotonic stack
 -   ![42](../assets/0042.png)
 
@@ -63,4 +68,5 @@ comments: True
 ## 755. Pour Water
 
 -   [LeetCode](https://leetcode.com/problems/pour-water/) | [LeetCode CH](https://leetcode.cn/problems/pour-water/) (Medium)
+
 -   Tags: array, simulation

@@ -16,6 +16,7 @@ comments: True
 ## 125. Valid Palindrome
 
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
+
 -   Tags: two pointers, string
 
 ```python title="125. Valid Palindrome - Python Solution"
@@ -25,6 +26,7 @@ comments: True
 ## 242. Valid Anagram
 
 -   [LeetCode](https://leetcode.com/problems/valid-anagram/) | [LeetCode CH](https://leetcode.cn/problems/valid-anagram/) (Easy)
+
 -   Tags: hash table, string, sorting
 -   Return true if an input string is an anagram of another string.
 -   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
@@ -36,6 +38,7 @@ comments: True
 ## 409. Longest Palindrome
 
 -   [LeetCode](https://leetcode.com/problems/longest-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindrome/) (Easy)
+
 -   Tags: hash table, string, greedy
 -   Return the length of the longest palindrome that can be built with the characters in the string.
 
@@ -46,6 +49,7 @@ comments: True
 ## 3. Longest Substring Without Repeating Characters
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
+
 -   Tags: hash table, string, sliding window
 -   Classic sliding window problem. Use a set to keep track of the characters in the current window.
 -   Return the length of the longest substring without repeating characters.
@@ -59,11 +63,13 @@ comments: True
 ## 8. String to Integer (atoi)
 
 -   [LeetCode](https://leetcode.com/problems/string-to-integer-atoi/) | [LeetCode CH](https://leetcode.cn/problems/string-to-integer-atoi/) (Medium)
+
 -   Tags: string
 
 ## 5. Longest Palindromic Substring
 
 -   [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
+
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
 
@@ -74,6 +80,7 @@ comments: True
 ## 438. Find All Anagrams in a String
 
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
+
 -   Tags: hash table, string, sliding window
 
 ```python title="438. Find All Anagrams in a String - Python Solution"
@@ -83,6 +90,7 @@ comments: True
 ## 76. Minimum Window Substring
 
 -   [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
+
 -   Tags: hash table, string, sliding window
 
 ```python title="76. Minimum Window Substring - Python Solution"

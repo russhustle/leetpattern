@@ -14,6 +14,7 @@ comments: True
 ## 121. Best Time to Buy and Sell Stock
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
@@ -24,6 +25,7 @@ comments: True
 ## 3. Longest Substring Without Repeating Characters
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
+
 -   Tags: hash table, string, sliding window
 -   Classic sliding window problem. Use a set to keep track of the characters in the current window.
 -   Return the length of the longest substring without repeating characters.
@@ -37,6 +39,7 @@ comments: True
 ## 424. Longest Repeating Character Replacement
 
 -   [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/) | [LeetCode CH](https://leetcode.cn/problems/longest-repeating-character-replacement/) (Medium)
+
 -   Tags: hash table, string, sliding window
 
 ```python title="424. Longest Repeating Character Replacement - Python Solution"
@@ -46,6 +49,7 @@ comments: True
 ## 76. Minimum Window Substring
 
 -   [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
+
 -   Tags: hash table, string, sliding window
 
 ```python title="76. Minimum Window Substring - Python Solution"
@@ -55,6 +59,7 @@ comments: True
 ## 567. Permutation in String
 
 -   [LeetCode](https://leetcode.com/problems/permutation-in-string/) | [LeetCode CH](https://leetcode.cn/problems/permutation-in-string/) (Medium)
+
 -   Tags: hash table, two pointers, string, sliding window
 
 ```python title="567. Permutation in String - Python Solution"
@@ -64,6 +69,7 @@ comments: True
 ## 239. Sliding Window Maximum
 
 -   [LeetCode](https://leetcode.com/problems/sliding-window-maximum/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-maximum/) (Hard)
+
 -   Tags: array, queue, sliding window, heap priority queue, monotonic queue
 
 ```python title="239. Sliding Window Maximum - Python Solution"

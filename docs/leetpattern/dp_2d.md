@@ -12,6 +12,7 @@ comments: True
 ## 118. Pascal's Triangle
 
 -   [LeetCode](https://leetcode.com/problems/pascals-triangle/) | [LeetCode CH](https://leetcode.cn/problems/pascals-triangle/) (Easy)
+
 -   Tags: array, dynamic programming
 -   Generate the first `numRows` of Pascal's triangle.
 
@@ -31,6 +32,7 @@ comments: True
 ## 119. Pascal's Triangle II
 
 -   [LeetCode](https://leetcode.com/problems/pascals-triangle-ii/) | [LeetCode CH](https://leetcode.cn/problems/pascals-triangle-ii/) (Easy)
+
 -   Tags: array, dynamic programming
 -   Return the `rowIndex`th row of Pascal's triangle.
 
@@ -41,6 +43,7 @@ comments: True
 ## 62. Unique Paths
 
 -   [LeetCode](https://leetcode.com/problems/unique-paths/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths/) (Medium)
+
 -   Tags: math, dynamic programming, combinatorics
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
 
@@ -53,6 +56,7 @@ comments: True
 ## 63. Unique Paths II
 
 -   [LeetCode](https://leetcode.com/problems/unique-paths-ii/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths-ii/) (Medium)
+
 -   Tags: array, dynamic programming, matrix
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid with obstacles.
 

@@ -14,6 +14,7 @@ comments: True
 ## 121. Best Time to Buy and Sell Stock
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
@@ -24,6 +25,7 @@ comments: True
 ## 122. Best Time to Buy and Sell Stock II
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) (Medium)
+
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve.
 
@@ -34,6 +36,7 @@ comments: True
 ## 123. Best Time to Buy and Sell Stock III
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) (Hard)
+
 -   Tags: array, dynamic programming
 
 ```python title="123. Best Time to Buy and Sell Stock III - Python Solution"
@@ -43,6 +46,7 @@ comments: True
 ## 188. Best Time to Buy and Sell Stock IV
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) (Hard)
+
 -   Tags: array, dynamic programming
 
 ```python title="188. Best Time to Buy and Sell Stock IV - Python Solution"
@@ -52,6 +56,7 @@ comments: True
 ## 309. Best Time to Buy and Sell Stock with Cooldown
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) (Medium)
+
 -   Tags: array, dynamic programming
 
 ```python title="309. Best Time to Buy and Sell Stock with Cooldown - Python Solution"
@@ -61,6 +66,7 @@ comments: True
 ## 714. Best Time to Buy and Sell Stock with Transaction Fee
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) (Medium)
+
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve with the given transaction fee.
 

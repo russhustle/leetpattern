@@ -13,6 +13,7 @@ comments: True
 ## 1584. Min Cost to Connect All Points
 
 -   [LeetCode](https://leetcode.com/problems/min-cost-to-connect-all-points/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-to-connect-all-points/) (Medium)
+
 -   Tags: array, union find, graph, minimum spanning tree
 -   **Tree**: a connected acyclic graph
 -   **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
@@ -44,6 +45,7 @@ MST
 ## 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
 
 -   [LeetCode](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
+
 -   Tags: union find, graph, sorting, minimum spanning tree, strongly connected component
 
 ```python title="1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree - Python Solution"
@@ -53,6 +55,7 @@ MST
 ## 1135. Connecting Cities With Minimum Cost
 
 -   [LeetCode](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [LeetCode CH](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) (Medium)
+
 -   Tags: union find, graph, heap priority queue, minimum spanning tree
 
 ```python title="1135. Connecting Cities With Minimum Cost - Python Solution"
@@ -62,6 +65,7 @@ MST
 ## 1168. Optimize Water Distribution in a Village
 
 -   [LeetCode](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [LeetCode CH](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard)
+
 -   Tags: union find, graph, heap priority queue, minimum spanning tree
 ![1168_0](../assets/1168_0.png)
 
@@ -74,4 +78,5 @@ MST
 ## 3219. Minimum Cost for Cutting Cake II
 
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) (Hard)
+
 -   Tags: array, greedy, sorting

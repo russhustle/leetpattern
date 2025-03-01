@@ -21,6 +21,7 @@ comments: True
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, union find, matrix
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
@@ -45,6 +46,7 @@ comments: True
 ## 695. Max Area of Island
 
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="695. Max Area of Island - Python Solution"
@@ -54,6 +56,7 @@ comments: True
 ## 133. Clone Graph
 
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+
 -   Tags: hash table, depth first search, breadth first search, graph
 
 ```python title="133. Clone Graph - Python Solution"
@@ -63,6 +66,7 @@ comments: True
 ## 286. Walls and Gates
 
 -   [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
+
 -   Tags: array, breadth first search, matrix
 ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
@@ -73,6 +77,7 @@ comments: True
 ## 994. Rotting Oranges
 
 -   [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
+
 -   Tags: array, breadth first search, matrix
 -   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
 -   Hint: Multi-source BFS to count the level.
@@ -86,6 +91,7 @@ comments: True
 ## 417. Pacific Atlantic Water Flow
 
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, matrix
 
 ```python title="417. Pacific Atlantic Water Flow - Python Solution"
@@ -95,6 +101,7 @@ comments: True
 ## 130. Surrounded Regions
 
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="130. Surrounded Regions - Python Solution"
@@ -104,6 +111,7 @@ comments: True
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
@@ -227,6 +235,7 @@ flowchart LR
 ## 210. Course Schedule II
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
@@ -239,6 +248,7 @@ flowchart LR
 ## 261. Graph Valid Tree
 
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ```python title="261. Graph Valid Tree - Python Solution"
@@ -248,6 +258,7 @@ flowchart LR
 ## 323. Number of Connected Components in an Undirected Graph
 
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"
@@ -257,6 +268,7 @@ flowchart LR
 ## 684. Redundant Connection
 
 -   [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
+
 -   Tags: depth first search, breadth first search, union find, graph
 
 ```python title="684. Redundant Connection - Python Solution"
@@ -266,6 +278,7 @@ flowchart LR
 ## 127. Word Ladder
 
 -   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
+
 -   Tags: hash table, string, breadth first search
 -   The most classic BFS problem.
 -   Return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.

@@ -18,6 +18,7 @@ comments: True
 ## 733. Flood Fill
 
 -   [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
+
 -   Tags: array, depth first search, breadth first search, matrix
 -   Replace all the pixels of the same color starting from the given pixel.
 -   In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
@@ -57,6 +58,7 @@ comments: True
 ## 542. 01 Matrix
 
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
+
 -   Tags: array, dynamic programming, breadth first search, matrix
 
 ```python title="542. 01 Matrix - Python Solution"
@@ -66,6 +68,7 @@ comments: True
 ## 133. Clone Graph
 
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+
 -   Tags: hash table, depth first search, breadth first search, graph
 
 ```python title="133. Clone Graph - Python Solution"
@@ -75,6 +78,7 @@ comments: True
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return true if it is possible to finish all courses, otherwise return false.
 -   Dependency relationships imply the topological sort algorithm.
@@ -198,6 +202,7 @@ flowchart LR
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, union find, matrix
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
@@ -222,6 +227,7 @@ flowchart LR
 ## 994. Rotting Oranges
 
 -   [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
+
 -   Tags: array, breadth first search, matrix
 -   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
 -   Hint: Multi-source BFS to count the level.
@@ -235,6 +241,7 @@ flowchart LR
 ## 721. Accounts Merge
 
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
+
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
 ```python title="721. Accounts Merge - Python Solution"
@@ -244,6 +251,7 @@ flowchart LR
 ## 79. Word Search
 
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
+
 -   Tags: array, string, backtracking, depth first search, matrix
 
 ```python title="79. Word Search - Python Solution"
@@ -253,11 +261,13 @@ flowchart LR
 ## 310. Minimum Height Trees
 
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+
 -   Tags: depth first search, breadth first search, graph, topological sort
 
 ## 127. Word Ladder
 
 -   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
+
 -   Tags: hash table, string, breadth first search
 -   The most classic BFS problem.
 -   Return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.

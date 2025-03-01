@@ -24,6 +24,7 @@ comments: True
 ## 455. Assign Cookies
 
 -   [LeetCode](https://leetcode.com/problems/assign-cookies/) | [LeetCode CH](https://leetcode.cn/problems/assign-cookies/) (Easy)
+
 -   Tags: array, two pointers, greedy, sorting
 -   Return the maximum number of your content children that can be satisfied.
 
@@ -34,6 +35,7 @@ comments: True
 ## 1005. Maximize Sum Of Array After K Negations
 
 -   [LeetCode](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) | [LeetCode CH](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) (Easy)
+
 -   Tags: array, greedy, sorting
 -   Return the maximum sum of the array after changing at most `k` elements.
 
@@ -44,6 +46,7 @@ comments: True
 ## 860. Lemonade Change
 
 -   [LeetCode](https://leetcode.com/problems/lemonade-change/) | [LeetCode CH](https://leetcode.cn/problems/lemonade-change/) (Easy)
+
 -   Tags: array, greedy
 -   Return `True` if and only if you can provide every customer with correct change.
 
@@ -54,6 +57,7 @@ comments: True
 ## 2037. Minimum Number of Moves to Seat Everyone
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-moves-to-seat-everyone/) (Easy)
+
 -   Tags: array, greedy, sorting, counting sort
 -   Return the minimum number of moves needed to seat everyone.
 
@@ -64,6 +68,7 @@ comments: True
 ## 376. Wiggle Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/wiggle-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-subsequence/) (Medium)
+
 -   Tags: array, dynamic programming, greedy
 -   Return the length of the longest wiggle subsequence.
 -   `up[n]` stores the length of the longest wiggle subsequence ending at `n` with a rising wiggle.
@@ -87,6 +92,7 @@ comments: True
 ## 738. Monotone Increasing Digits
 
 -   [LeetCode](https://leetcode.com/problems/monotone-increasing-digits/) | [LeetCode CH](https://leetcode.cn/problems/monotone-increasing-digits/) (Medium)
+
 -   Tags: math, greedy
 -   Return the largest number that is less than or equal to `n` with monotone increasing digits.
 
@@ -97,6 +103,7 @@ comments: True
 ## 122. Best Time to Buy and Sell Stock II
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) (Medium)
+
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve.
 
@@ -107,6 +114,7 @@ comments: True
 ## 714. Best Time to Buy and Sell Stock with Transaction Fee
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) (Medium)
+
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve with the given transaction fee.
 
@@ -117,6 +125,7 @@ comments: True
 ## 135. Candy
 
 -   [LeetCode](https://leetcode.com/problems/candy/) | [LeetCode CH](https://leetcode.cn/problems/candy/) (Hard)
+
 -   Tags: array, greedy
 -   Return the minimum number of candies you must give.
 
@@ -127,6 +136,7 @@ comments: True
 ## 406. Queue Reconstruction by Height
 
 -   [LeetCode](https://leetcode.com/problems/queue-reconstruction-by-height/) | [LeetCode CH](https://leetcode.cn/problems/queue-reconstruction-by-height/) (Medium)
+
 -   Tags: array, binary indexed tree, segment tree, sorting
 -   Reconstruct the queue.
 
@@ -137,6 +147,7 @@ comments: True
 ## 3075. Maximize Happiness of Selected Children
 
 -   [LeetCode](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [LeetCode CH](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) (Medium)
+
 -   Tags: array, greedy, sorting
 
 ```python title="3075. Maximize Happiness of Selected Children - Python Solution"
@@ -146,6 +157,7 @@ comments: True
 ## 945. Minimum Increment to Make Array Unique
 
 -   [LeetCode](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [LeetCode CH](https://leetcode.cn/problems/minimum-increment-to-make-array-unique/) (Medium)
+
 -   Tags: array, greedy, sorting, counting
 
 ```python title="945. Minimum Increment to Make Array Unique - Python Solution"
@@ -155,6 +167,7 @@ comments: True
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
+
 -   Tags: array, divide and conquer, dynamic programming
 
 ```python title="53. Maximum Subarray - Python Solution"
@@ -164,6 +177,7 @@ comments: True
 ## 134. Gas Station
 
 -   [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
+
 -   Tags: array, greedy
 
 ```python title="134. Gas Station - Python Solution"
@@ -173,6 +187,7 @@ comments: True
 ## 968. Binary Tree Cameras
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-cameras/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-cameras/) (Hard)
+
 -   Tags: dynamic programming, tree, depth first search, binary tree
 
 ```python title="968. Binary Tree Cameras - Python Solution"
@@ -182,6 +197,7 @@ comments: True
 ## 1589. Maximum Sum Obtained of Any Permutation
 
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
+
 -   Tags: array, greedy, sorting, prefix sum
 
 ```python title="1589. Maximum Sum Obtained of Any Permutation - Python Solution"

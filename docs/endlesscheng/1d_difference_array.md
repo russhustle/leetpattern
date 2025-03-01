@@ -45,6 +45,7 @@ comments: True
 ## 2848. Points That Intersect With Cars
 
 -   [LeetCode](https://leetcode.com/problems/points-that-intersect-with-cars/) | [LeetCode CH](https://leetcode.cn/problems/points-that-intersect-with-cars/) (Easy)
+
 -   Tags: array, hash table, prefix sum
 -   Return the number of points that intersect with cars.
 
@@ -55,21 +56,25 @@ comments: True
 ## 1893. Check if All the Integers in a Range Are Covered
 
 -   [LeetCode](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/) | [LeetCode CH](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) (Easy)
+
 -   Tags: array, hash table, prefix sum
 
 ## 1854. Maximum Population Year
 
 -   [LeetCode](https://leetcode.com/problems/maximum-population-year/) | [LeetCode CH](https://leetcode.cn/problems/maximum-population-year/) (Easy)
+
 -   Tags: array, counting, prefix sum
 
 ## 2960. Count Tested Devices After Test Operations
 
 -   [LeetCode](https://leetcode.com/problems/count-tested-devices-after-test-operations/) | [LeetCode CH](https://leetcode.cn/problems/count-tested-devices-after-test-operations/) (Easy)
+
 -   Tags: array, simulation, counting
 
 ## 1094. Car Pooling
 
 -   [LeetCode](https://leetcode.com/problems/car-pooling/) | [LeetCode CH](https://leetcode.cn/problems/car-pooling/) (Medium)
+
 -   Tags: array, sorting, heap priority queue, simulation, prefix sum
 -   Return `False` if the total number of passengers at any point is greater than `capacity`. Otherwise, return `True`.
 
@@ -80,6 +85,7 @@ comments: True
 ## 1109. Corporate Flight Bookings
 
 -   [LeetCode](https://leetcode.com/problems/corporate-flight-bookings/) | [LeetCode CH](https://leetcode.cn/problems/corporate-flight-bookings/) (Medium)
+
 -   Tags: array, prefix sum
 -   Return the number of seats booked on each flight.
 
@@ -90,11 +96,13 @@ comments: True
 ## 3355. Zero Array Transformation I
 
 -   [LeetCode](https://leetcode.com/problems/zero-array-transformation-i/) | [LeetCode CH](https://leetcode.cn/problems/zero-array-transformation-i/) (Medium)
+
 -   Tags: array, prefix sum
 
 ## 56. Merge Intervals
 
 -   [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
+
 -   Tags: array, sorting
 -   Merge all overlapping intervals.
 
@@ -107,6 +115,7 @@ comments: True
 ## 57. Insert Interval
 
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
+
 -   Tags: array
 
 ```python title="57. Insert Interval - Python Solution"
@@ -116,31 +125,37 @@ comments: True
 ## 732. My Calendar III
 
 -   [LeetCode](https://leetcode.com/problems/my-calendar-iii/) | [LeetCode CH](https://leetcode.cn/problems/my-calendar-iii/) (Hard)
+
 -   Tags: binary search, design, segment tree, prefix sum, ordered set
 
 ## 2406. Divide Intervals Into Minimum Number of Groups
 
 -   [LeetCode](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/) | [LeetCode CH](https://leetcode.cn/problems/divide-intervals-into-minimum-number-of-groups/) (Medium)
+
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 
 ## 2381. Shifting Letters II
 
 -   [LeetCode](https://leetcode.com/problems/shifting-letters-ii/) | [LeetCode CH](https://leetcode.cn/problems/shifting-letters-ii/) (Medium)
+
 -   Tags: array, string, prefix sum
 
 ## 3453. Separate Squares I
 
 -   [LeetCode](https://leetcode.com/problems/separate-squares-i/) | [LeetCode CH](https://leetcode.cn/problems/separate-squares-i/) (Medium)
+
 -   Tags: array, binary search
 
 ## 995. Minimum Number of K Consecutive Bit Flips
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-k-consecutive-bit-flips/) (Hard)
+
 -   Tags: array, bit manipulation, queue, sliding window, prefix sum
 
 ## 1589. Maximum Sum Obtained of Any Permutation
 
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
+
 -   Tags: array, greedy, sorting, prefix sum
 
 ```python title="1589. Maximum Sum Obtained of Any Permutation - Python Solution"
@@ -150,71 +165,85 @@ comments: True
 ## 1526. Minimum Number of Increments on Subarrays to Form a Target Array
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/) (Hard)
+
 -   Tags: array, dynamic programming, stack, greedy, monotonic stack
 
 ## 3356. Zero Array Transformation II
 
 -   [LeetCode](https://leetcode.com/problems/zero-array-transformation-ii/) | [LeetCode CH](https://leetcode.cn/problems/zero-array-transformation-ii/) (Medium)
+
 -   Tags: array, binary search, prefix sum
 
 ## 1943. Describe the Painting
 
 -   [LeetCode](https://leetcode.com/problems/describe-the-painting/) | [LeetCode CH](https://leetcode.cn/problems/describe-the-painting/) (Medium)
+
 -   Tags: array, hash table, sorting, prefix sum
 
 ## 3224. Minimum Array Changes to Make Differences Equal
 
 -   [LeetCode](https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/) | [LeetCode CH](https://leetcode.cn/problems/minimum-array-changes-to-make-differences-equal/) (Medium)
+
 -   Tags: array, hash table, prefix sum
 
 ## 2251. Number of Flowers in Full Bloom
 
 -   [LeetCode](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [LeetCode CH](https://leetcode.cn/problems/number-of-flowers-in-full-bloom/) (Hard)
+
 -   Tags: array, hash table, binary search, sorting, prefix sum, ordered set
 
 ## 2772. Apply Operations to Make All Array Elements Equal to Zero
 
 -   [LeetCode](https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero/) | [LeetCode CH](https://leetcode.cn/problems/apply-operations-to-make-all-array-elements-equal-to-zero/) (Medium)
+
 -   Tags: array, prefix sum
 
 ## 3229. Minimum Operations to Make Array Equal to Target
 
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-make-array-equal-to-target/) (Hard)
+
 -   Tags: array, dynamic programming, stack, greedy, monotonic stack
 
 ## 798. Smallest Rotation with Highest Score
 
 -   [LeetCode](https://leetcode.com/problems/smallest-rotation-with-highest-score/) | [LeetCode CH](https://leetcode.cn/problems/smallest-rotation-with-highest-score/) (Hard)
+
 -   Tags: array, prefix sum
 
 ## 3347. Maximum Frequency of an Element After Performing Operations II
 
 -   [LeetCode](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/) | [LeetCode CH](https://leetcode.cn/problems/maximum-frequency-of-an-element-after-performing-operations-ii/) (Hard)
+
 -   Tags: array, binary search, sliding window, sorting, prefix sum
 
 ## 2528. Maximize the Minimum Powered City
 
 -   [LeetCode](https://leetcode.com/problems/maximize-the-minimum-powered-city/) | [LeetCode CH](https://leetcode.cn/problems/maximize-the-minimum-powered-city/) (Hard)
+
 -   Tags: array, binary search, greedy, queue, sliding window, prefix sum
 
 ## 1674. Minimum Moves to Make Array Complementary
 
 -   [LeetCode](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | [LeetCode CH](https://leetcode.cn/problems/minimum-moves-to-make-array-complementary/) (Medium)
+
 -   Tags: array, hash table, prefix sum
 
 ## 3362. Zero Array Transformation III
 
 -   [LeetCode](https://leetcode.com/problems/zero-array-transformation-iii/) | [LeetCode CH](https://leetcode.cn/problems/zero-array-transformation-iii/) (Medium)
+
 -   Tags: array, greedy, sorting, heap priority queue, prefix sum
 
 ## 3017. Count the Number of Houses at a Certain Distance II
 
 -   [LeetCode](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-ii/) | [LeetCode CH](https://leetcode.cn/problems/count-the-number-of-houses-at-a-certain-distance-ii/) (Hard)
+
 -   Tags: graph, prefix sum
 
 ## 253. Meeting Rooms II
 
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms-ii/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium)
+
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 
 ```python title="253. Meeting Rooms II - Python Solution"
@@ -224,6 +253,7 @@ comments: True
 ## 370. Range Addition
 
 -   [LeetCode](https://leetcode.com/problems/range-addition/) | [LeetCode CH](https://leetcode.cn/problems/range-addition/) (Medium)
+
 -   Tags: array, prefix sum
 -   Return the final array after applying all the Adition operations.
 
@@ -234,34 +264,41 @@ comments: True
 ## 1989. Maximum Number of People That Can Be Caught in Tag
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-people-that-can-be-caught-in-tag/) (Medium)
+
 -   Tags: array, greedy
 
 ## 759. Employee Free Time
 
 -   [LeetCode](https://leetcode.com/problems/employee-free-time/) | [LeetCode CH](https://leetcode.cn/problems/employee-free-time/) (Hard)
+
 -   Tags: array, sorting, heap priority queue
 
 ## 2021. Brightest Position on Street
 
 -   [LeetCode](https://leetcode.com/problems/brightest-position-on-street/) | [LeetCode CH](https://leetcode.cn/problems/brightest-position-on-street/) (Medium)
+
 -   Tags: array, sorting, prefix sum, ordered set
 
 ## 2015. Average Height of Buildings in Each Segment
 
 -   [LeetCode](https://leetcode.com/problems/average-height-of-buildings-in-each-segment/) | [LeetCode CH](https://leetcode.cn/problems/average-height-of-buildings-in-each-segment/) (Medium)
+
 -   Tags: array, greedy, sorting, heap priority queue
 
 ## 2237. Count Positions on Street With Required Brightness
 
 -   [LeetCode](https://leetcode.com/problems/count-positions-on-street-with-required-brightness/) | [LeetCode CH](https://leetcode.cn/problems/count-positions-on-street-with-required-brightness/) (Medium)
+
 -   Tags: array, prefix sum
 
 ## 3009. Maximum Number of Intersections on the Chart
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-intersections-on-the-chart/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-intersections-on-the-chart/) (Hard)
+
 -   Tags: array, math, binary indexed tree, geometry
 
 ## 3279. Maximum Total Area Occupied by Pistons
 
 -   [LeetCode](https://leetcode.com/problems/maximum-total-area-occupied-by-pistons/) | [LeetCode CH](https://leetcode.cn/problems/maximum-total-area-occupied-by-pistons/) (Hard)
+
 -   Tags: array, hash table, string, simulation, counting, prefix sum

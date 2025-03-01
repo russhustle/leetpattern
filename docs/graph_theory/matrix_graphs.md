@@ -13,6 +13,7 @@ comments: True
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, union find, matrix
 -   Count the number of islands in a 2D grid.
 -   Method 1: DFS
@@ -37,6 +38,7 @@ comments: True
 ## 1020. Number of Enclaves
 
 -   [LeetCode](https://leetcode.com/problems/number-of-enclaves/) | [LeetCode CH](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="1020. Number of Enclaves - Python Solution"
@@ -46,6 +48,7 @@ comments: True
 ## 1254. Number of Closed Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-closed-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="1254. Number of Closed Islands - Python Solution"
@@ -55,6 +58,7 @@ comments: True
 ## 695. Max Area of Island
 
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="695. Max Area of Island - Python Solution"
@@ -64,6 +68,7 @@ comments: True
 ## 417. Pacific Atlantic Water Flow
 
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+
 -   Tags: array, depth first search, breadth first search, matrix
 
 ```python title="417. Pacific Atlantic Water Flow - Python Solution"

@@ -15,6 +15,7 @@ comments: True
 ## 703. Kth Largest Element in a Stream
 
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
+
 -   Tags: tree, design, binary search tree, heap priority queue, binary tree, data stream
 
 ```python title="703. Kth Largest Element in a Stream - Python Solution"
@@ -24,6 +25,7 @@ comments: True
 ## 1046. Last Stone Weight
 
 -   [LeetCode](https://leetcode.com/problems/last-stone-weight/) | [LeetCode CH](https://leetcode.cn/problems/last-stone-weight/) (Easy)
+
 -   Tags: array, heap priority queue
 
 ```python title="1046. Last Stone Weight - Python Solution"
@@ -33,6 +35,7 @@ comments: True
 ## 973. K Closest Points to Origin
 
 -   [LeetCode](https://leetcode.com/problems/k-closest-points-to-origin/) | [LeetCode CH](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)
+
 -   Tags: array, math, divide and conquer, geometry, sorting, heap priority queue, quickselect
 
 ```python title="973. K Closest Points to Origin - Python Solution"
@@ -42,6 +45,7 @@ comments: True
 ## 215. Kth Largest Element in an Array
 
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
+
 -   Tags: array, divide and conquer, sorting, heap priority queue, quickselect
 
 ```python title="215. Kth Largest Element in an Array - Python Solution"
@@ -51,6 +55,7 @@ comments: True
 ## 621. Task Scheduler
 
 -   [LeetCode](https://leetcode.com/problems/task-scheduler/) | [LeetCode CH](https://leetcode.cn/problems/task-scheduler/) (Medium)
+
 -   Tags: array, hash table, greedy, sorting, heap priority queue, counting
 
 ```python title="621. Task Scheduler - Python Solution"
@@ -60,6 +65,7 @@ comments: True
 ## 355. Design Twitter
 
 -   [LeetCode](https://leetcode.com/problems/design-twitter/) | [LeetCode CH](https://leetcode.cn/problems/design-twitter/) (Medium)
+
 -   Tags: hash table, linked list, design, heap priority queue
 -   Similar question: [23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (Hard)
 
@@ -70,6 +76,7 @@ comments: True
 ## 295. Find Median from Data Stream
 
 -   [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
+
 -   Tags: two pointers, design, sorting, heap priority queue, data stream
 
 ```python title="295. Find Median from Data Stream - Python Solution"

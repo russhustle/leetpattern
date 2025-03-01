@@ -10,6 +10,7 @@ comments: True
 ## 588. Design In-Memory File System
 
 -   [LeetCode](https://leetcode.com/problems/design-in-memory-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard)
+
 -   Tags: hash table, string, design, trie, sorting
 
 ```python title="588. Design In-Memory File System - Python Solution"
@@ -19,4 +20,5 @@ comments: True
 ## 642. Design Search Autocomplete System
 
 -   [LeetCode](https://leetcode.com/problems/design-search-autocomplete-system/) | [LeetCode CH](https://leetcode.cn/problems/design-search-autocomplete-system/) (Hard)
+
 -   Tags: string, depth first search, design, trie, sorting, heap priority queue, data stream

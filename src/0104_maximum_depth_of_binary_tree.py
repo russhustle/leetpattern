@@ -1,35 +1,8 @@
 from collections import deque
 from typing import Optional
 
+from binarytree import Node as TreeNode
 from binarytree import build
-
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-
-# Iterative
-def maxDepthIterative(root: Optional[TreeNode]) -> int:
-    if not root:
-        return 0
-
-    queue = deque([root])
-    depth = 0
-
-    while queue:
-        depth += 1
-
-        for _ in range(len(queue)):
-            node = queue.popleft()
-            if node.left:
-                queue.append(node.left)
-            if node.right:
-                queue.append(node.right)
-
-    return depth
 
 
 # Recursive
@@ -37,20 +10,63 @@ def maxDepthRecursive(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
 
-    return 1 + max(maxDepthRecursive(root.left), maxDepthRecursive(root.right))
+    left = maxDepthRecursive(root.left)
+    right = maxDepthRecursive(root.right)
+
+    return 1 + max(left, right)
+
+
+# DFS
+def maxDepthDFS(root: Optional[TreeNode]) -> int:
+    res = 0
+
+    def dfs(node, cnt):
+        if node is None:
+            return
+        cnt += 1
+        nonlocal res
+        res = max(res, cnt)
+
+        dfs(node.left, cnt)
+        dfs(node.right, cnt)
+
+    dfs(root, 0)
+
+    return res
+
+
+# Iterative
+def maxDepthIterative(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    q = deque([root])
+    res = 0
+
+    while q:
+        res += 1
+        n = len(q)
+
+        for _ in range(n):
+            node = q.popleft()
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+    return res
 
 
 root = [1, 2, 2, 3, 4, None, None, None, None, 5]
 root = build(root)
 print(root)
-"""
-    ____1
-   /     \
-  2__     2
- /   \
-3     4
-     /
-    5
-"""
-print(maxDepthIterative(root))  # 4
+#     ____1
+#    /     \
+#   2__     2
+#  /   \
+# 3     4
+#      /
+#     5
 print(maxDepthRecursive(root))  # 4
+print(maxDepthIterative(root))  # 4
+print(maxDepthDFS(root))  # 4

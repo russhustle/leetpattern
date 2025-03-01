@@ -1,32 +1,26 @@
 from typing import List
 
 
+# Backtracking
 def partition(s: str) -> List[List[str]]:
-    path, result = [], []
+    res = []
+    n = len(s)
 
-    def backtracking(startIndex):
-        if startIndex == len(s):
-            result.append(path[:])
+    def backtrack(idx, path):
+        if idx == n:
+            res.append(path[:])
             return None
 
-        for i in range(startIndex, len(s)):
-            if is_palindrome(s, startIndex, i):
-                path.append(s[startIndex : i + 1])
-                backtracking(i + 1)
+        for j in range(idx, n):
+            cur = s[idx : j + 1]
+            if cur == cur[::-1]:
+                path.append(cur)
+                backtrack(j + 1, path)
                 path.pop()
 
-    def is_palindrome(s: str, start, end) -> bool:
-        while start < end:
-            if s[start] != s[end]:
-                return False
-            start += 1
-            end -= 1
+    backtrack(0, [])
 
-        return True
-
-    backtracking(0)
-
-    return result
+    return res
 
 
 print(partition("aab"))  # [['a', 'a', 'b'], ['aa', 'b']]

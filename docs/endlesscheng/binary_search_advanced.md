@@ -11,7 +11,7 @@ comments: True
 - [x] [2080. Range Frequency Queries](https://leetcode.cn/problems/range-frequency-queries/) (Medium)
 - [ ] [2563. Count the Number of Fair Pairs](https://leetcode.cn/problems/count-the-number-of-fair-pairs/) (Medium)
 - [ ] [2070. Most Beautiful Item for Each Query](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) (Medium)
-- [ ] [981. Time Based Key-Value Store](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
+- [x] [981. Time Based Key-Value Store](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
 - [ ] [1146. Snapshot Array](https://leetcode.cn/problems/snapshot-array/) (Medium)
 - [ ] [658. Find K Closest Elements](https://leetcode.cn/problems/find-k-closest-elements/) (Medium)
 - [ ] [1818. Minimum Absolute Sum Difference](https://leetcode.cn/problems/minimum-absolute-sum-difference/) (Medium)
@@ -68,6 +68,10 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
 -   Tags: hash table, string, binary search, design
+
+```python title="981. Time Based Key-Value Store - Python Solution"
+--8<-- "0981_time_based_key_value_store.py"
+```
 
 ## 1146. Snapshot Array
 

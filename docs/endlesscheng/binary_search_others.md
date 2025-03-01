@@ -14,9 +14,9 @@ comments: True
 - [ ] [1901. Find a Peak Element II](https://leetcode.cn/problems/find-a-peak-element-ii/) (Medium)
 - [ ] [852. Peak Index in a Mountain Array](https://leetcode.cn/problems/peak-index-in-a-mountain-array/) (Medium)
 - [ ] [1095. Find in Mountain Array](https://leetcode.cn/problems/find-in-mountain-array/) (Hard)
-- [ ] [153. Find Minimum in Rotated Sorted Array](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
+- [x] [153. Find Minimum in Rotated Sorted Array](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
 - [ ] [154. Find Minimum in Rotated Sorted Array II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/) (Hard)
-- [ ] [33. Search in Rotated Sorted Array](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
+- [x] [33. Search in Rotated Sorted Array](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 - [ ] [81. Search in Rotated Sorted Array II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) (Medium)
 - [x] [222. Count Complete Tree Nodes](https://leetcode.cn/problems/count-complete-tree-nodes/) (Easy)
 - [ ] [1539. Kth Missing Positive Number](https://leetcode.cn/problems/kth-missing-positive-number/) (Easy)
@@ -100,6 +100,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
 -   Tags: array, binary search
 
+```python title="153. Find Minimum in Rotated Sorted Array - Python Solution"
+--8<-- "0153_find_minimum_in_rotated_sorted_array.py"
+```
+
 ## 154. Find Minimum in Rotated Sorted Array II
 
 -   [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/) (Hard)
@@ -109,6 +113,10 @@ comments: True
 
 -   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 -   Tags: array, binary search
+
+```python title="33. Search in Rotated Sorted Array - Python Solution"
+--8<-- "0033_search_in_rotated_sorted_array.py"
+```
 
 ## 81. Search in Rotated Sorted Array II
 

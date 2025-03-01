@@ -7,9 +7,9 @@ comments: True
 - [x] [704. Binary Search](https://leetcode.cn/problems/binary-search/) (Easy)
 - [x] [74. Search a 2D Matrix](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 - [x] [875. Koko Eating Bananas](https://leetcode.cn/problems/koko-eating-bananas/) (Medium)
-- [ ] [153. Find Minimum in Rotated Sorted Array](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
-- [ ] [33. Search in Rotated Sorted Array](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
-- [ ] [981. Time Based Key-Value Store](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
+- [x] [153. Find Minimum in Rotated Sorted Array](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
+- [x] [33. Search in Rotated Sorted Array](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
+- [x] [981. Time Based Key-Value Store](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
 - [x] [4. Median of Two Sorted Arrays](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
 
 ## 704. Binary Search
@@ -46,15 +46,27 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
 -   Tags: array, binary search
 
+```python title="153. Find Minimum in Rotated Sorted Array - Python Solution"
+--8<-- "0153_find_minimum_in_rotated_sorted_array.py"
+```
+
 ## 33. Search in Rotated Sorted Array
 
 -   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 -   Tags: array, binary search
 
+```python title="33. Search in Rotated Sorted Array - Python Solution"
+--8<-- "0033_search_in_rotated_sorted_array.py"
+```
+
 ## 981. Time Based Key-Value Store
 
 -   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
 -   Tags: hash table, string, binary search, design
+
+```python title="981. Time Based Key-Value Store - Python Solution"
+--8<-- "0981_time_based_key_value_store.py"
+```
 
 ## 4. Median of Two Sorted Arrays
 

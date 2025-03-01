@@ -87,6 +87,10 @@ nav:
     - Binary Search Maximize Min: endlesscheng/binary_search_maximize_min.md
     - Binary Search Kth Min Max: endlesscheng/binary_search_kth_min_max.md
     - Binary Search Others: endlesscheng/binary_search_others.md
+    - Monotonic Stack: endlesscheng/monotonic_stack.md
+    - Rectangle: endlesscheng/rectangle.md
+    - Contribution Method: endlesscheng/contribution_method.md
+    - Lexicographically Smallest: endlesscheng/lexicographically_smallest.md
     - Grid DFS: endlesscheng/grid_dfs.md
     - Grid BFS: endlesscheng/grid_bfs.md
     - Grid 01 BFS: endlesscheng/grid_01_bfs.md

@@ -4,7 +4,7 @@ comments: True
 
 # Greedy from Smallest Largest
 
-- [ ] [3074. Apple Redistribution into Boxes](https://leetcode.cn/problems/apple-redistribution-into-boxes/) (Easy)
+- [x] [3074. Apple Redistribution into Boxes](https://leetcode.cn/problems/apple-redistribution-into-boxes/) (Easy)
 - [ ] [2279. Maximum Bags With Full Capacity of Rocks](https://leetcode.cn/problems/maximum-bags-with-full-capacity-of-rocks/) (Medium)
 - [ ] [1833. Maximum Ice Cream Bars](https://leetcode.cn/problems/maximum-ice-cream-bars/) (Medium)
 - [x] [1005. Maximize Sum Of Array After K Negations](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) (Easy)
@@ -51,6 +51,14 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/apple-redistribution-into-boxes/) | [LeetCode CH](https://leetcode.cn/problems/apple-redistribution-into-boxes/) (Easy)
 
 -   Tags: array, greedy, sorting
+
+```python title="3074. Apple Redistribution into Boxes - Python Solution"
+--8<-- "3074_apple_redistribution_into_boxes.py"
+```
+
+```cpp title="3074. Apple Redistribution into Boxes - C++ Solution"
+--8<-- "cpp/3074_apple_redistribution_into_boxes.cc"
+```
 
 ## 2279. Maximum Bags With Full Capacity of Rocks
 

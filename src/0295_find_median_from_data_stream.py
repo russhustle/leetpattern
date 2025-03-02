@@ -1,37 +1,36 @@
 from heapq import heappop, heappush
 
 
-# Heap - Two Heaps
+# Dual Heaps
 class MedianFinder:
     def __init__(self):
-        self.max = []
-        self.min = []
+        self.maxHeap = []
+        self.minHeap = []
+        self.count = 0
 
     def addNum(self, num: int) -> None:
-        heappush(self.max, -num)
-        heappush(self.min, -heappop(self.max))
+        self.count = 1 - self.count
+        heappush(self.maxHeap, -num)
+        heappush(self.minHeap, -heappop(self.maxHeap))
 
-        if len(self.min) > len(self.max):
-            heappush(self.max, -heappop(self.min))
+        if self.count == 1:
+            heappush(self.maxHeap, -heappop(self.minHeap))
 
     def findMedian(self) -> float:
-        if len(self.max) == len(self.min):
-            return (-self.max[0] + self.min[0]) / 2.0
-        else:
-            return -self.max[0]
+        if self.count == 0:
+            return (-self.maxHeap[0] + self.minHeap[0]) / 2.0
+        elif self.count == 1:
+            return -self.maxHeap[0]
 
 
-# TC: O(log n)
-# SC: O(n)
-
-median_finder = MedianFinder()
-median_finder.addNum(1)
-median_finder.addNum(2)
-assert median_finder.findMedian() == 1.5
-median_finder.addNum(3)
-assert median_finder.findMedian() == 2
-median_finder.addNum(4)
-assert median_finder.findMedian() == 2.5
-median_finder.addNum(5)
-assert median_finder.findMedian() == 3
+obj = MedianFinder()
+obj.addNum(1)
+obj.addNum(2)
+assert obj.findMedian() == 1.5
+obj.addNum(3)
+assert obj.findMedian() == 2
+obj.addNum(4)
+assert obj.findMedian() == 2.5
+obj.addNum(5)
+assert obj.findMedian() == 3
 print("All Passed.")

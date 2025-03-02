@@ -6,10 +6,10 @@ def maxDistance(arrays: List[List[int]]) -> int:
     mn, mx = float("inf"), float("-inf")
     res = 0
 
-    for array in arrays:
-        mn = min(mn, array[0])
-        mx = max(mx, array[-1])
-        res = max(res, abs(array[-1] - mn), abs(mx - array[0]))
+    for arr in arrays:
+        res = max(res, arr[-1] - mn, mx - arr[0])
+        mn = min(mn, arr[0])
+        mx = max(mx, arr[-1])
 
     return res
 

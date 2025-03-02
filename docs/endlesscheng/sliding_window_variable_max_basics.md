@@ -10,7 +10,7 @@ comments: True
 - [x] [1208. Get Equal Substrings Within Budget](https://leetcode.cn/problems/get-equal-substrings-within-budget/) (Medium)
 - [x] [904. Fruit Into Baskets](https://leetcode.cn/problems/fruit-into-baskets/) (Medium)
 - [x] [1695. Maximum Erasure Value](https://leetcode.cn/problems/maximum-erasure-value/) (Medium)
-- [ ] [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) (Medium)
+- [x] [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) (Medium)
 - [x] [2024. Maximize the Confusion of an Exam](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/) (Medium)
 - [x] [1004. Max Consecutive Ones III](https://leetcode.cn/problems/max-consecutive-ones-iii/) (Medium)
 - [ ] [1658. Minimum Operations to Reduce X to Zero](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/) (Medium)
@@ -84,6 +84,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | [LeetCode CH](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) (Medium)
 
 -   Tags: array, hash table, sliding window
+
+```python title="2958. Length of Longest Subarray With at Most K Frequency - Python Solution"
+--8<-- "2958_length_of_longest_subarray_with_at_most_k_frequency.py"
+```
 
 ## 2024. Maximize the Confusion of an Exam
 

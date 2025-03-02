@@ -58,6 +58,114 @@ nav:
     - Simulation: leetpattern/simulation.md
     - Design: leetpattern/design.md
 
+  - Neetcode 150:
+    - Home: neetcode150/index.md
+    - Arrays Hashing: neetcode150/arrays_hashing.md
+    - Two Pointers: neetcode150/two_pointers.md
+    - Sliding Window: neetcode150/sliding_window.md
+    - Stack: neetcode150/stack.md
+    - Binary Search: neetcode150/binary_search.md
+    - Linked List: neetcode150/linked_list.md
+    - Trees: neetcode150/trees.md
+    - Heap: neetcode150/heap.md
+    - Backtracking: neetcode150/backtracking.md
+    - Tries: neetcode150/tries.md
+    - Graphs: neetcode150/graphs.md
+    - Advanced Graphs: neetcode150/advanced_graphs.md
+    - 1D Dynamic Programming: neetcode150/1d_dynamic_programming.md
+    - 2D Dynamic_Programming: neetcode150/2d_dynamic_programming.md
+    - Greedy: neetcode150/greedy.md
+    - Intervals: neetcode150/intervals.md
+    - Math Geometry: neetcode150/math_geometry.md
+    - Bit Manipulation: neetcode150/bit_manipulation.md
+
+  - Blind 75:
+    - Home: blind75/index.md
+    - Arrays Hashing: blind75/arrays_hashing.md
+    - Two Pointers: blind75/two_pointers.md
+    - Sliding Window: blind75/sliding_window.md
+    - Stack: blind75/stack.md
+    - Binary Search: blind75/binary_search.md
+    - Linked List: blind75/linked_list.md
+    - Trees: blind75/trees.md
+    - Heap: blind75/heap.md
+    - Backtracking: blind75/backtracking.md
+    - Tries: blind75/tries.md
+    - Graphs: blind75/graphs.md
+    - Advanced Graphs: blind75/advanced_graphs.md
+    - 1D Dynamic Programming: blind75/1d_dynamic_programming.md
+    - 2D Dynamic Programming: blind75/2d_dynamic_programming.md
+    - Greedy: blind75/greedy.md
+    - Intervals: blind75/intervals.md
+    - Math Geometry: blind75/math_geometry.md
+    - Bit Manipulation: blind75/bit_manipulation.md
+
+  - Grind 75:
+    - Home: grind75/index.md
+    - Array: grind75/array.md
+    - Stack: grind75/stack.md
+    - Linked List: grind75/linked_list.md
+    - String: grind75/string.md
+    - Binary Tree: grind75/binary_tree.md
+    - Binary Search: grind75/binary_search.md
+    - Graph: grind75/graph.md
+    - Binary Search Tree: grind75/binary_search_tree.md
+    - Hash Table: grind75/hash_table.md
+    - Dynamic Programming: grind75/dynamic_programming.md
+    - Binary: grind75/binary.md
+    - Heap: grind75/heap.md
+    - Trie: grind75/trie.md
+    - Recursion: grind75/recursion.md
+    - Matrix: grind75/matrix.md
+
+  - Graph Theory:
+    - Home: graph_theory/index.md
+    - Standard Traversal: graph_theory/standard_traversal.md
+    - BFS: graph_theory/bfs.md
+    - Matrix Graphs: graph_theory/matrix_graphs.md
+    - Graph Theory: graph_theory/graph_theory.md
+    - Union Find: graph_theory/union_find.md
+    - Topological Sort: graph_theory/topological_sort.md
+    - Dijkstra's: graph_theory/dijkstra's.md
+    - MST: graph_theory/mst.md
+
+  - Premium 100:
+    - Home: premium100/index.md
+    - Arrays Strings: premium100/arrays_strings.md
+    - Sliding Window: premium100/sliding_window.md
+    - Hashing: premium100/hashing.md
+    - Matrix: premium100/matrix.md
+    - Interval: premium100/interval.md
+    - Stack: premium100/stack.md
+    - Queue: premium100/queue.md
+    - Linked List: premium100/linked_list.md
+    - Binary Tree: premium100/binary_tree.md
+    - Binary Search Tree: premium100/binary_search_tree.md
+    - N-ary Tree: premium100/n-ary_tree.md
+    - Graph: premium100/graph.md
+    - Graph BFS: premium100/graph_bfs.md
+    - Trie: premium100/trie.md
+    - Heap: premium100/heap.md
+    - Binary Search: premium100/binary_search.md
+    - Design: premium100/design.md
+    - Backtracking: premium100/backtracking.md
+    - Dynamic Programming: premium100/dynamic_programming.md
+    - Math: premium100/math.md
+
+  - SQL 50:
+    - Home: sql50/index.md
+    - Select: sql50/select.md
+    - Basic Joins: sql50/basic_joins.md
+    - Basic Aggregate Functions: sql50/basic_aggregate_functions.md
+    - Sorting and Grouping: sql50/sorting_and_grouping.md
+    - Advanced Select and Joins: sql50/advanced_select_and_joins.md
+    - Subqueries: sql50/subqueries.md
+    - Advanced String Functions Regex Clause: sql50/advanced_string_functions_regex_clause.md
+
+  - Daily Challenge:
+    - Home: challenge/index.md
+    - 2025-03: challenge/2025-03.md
+
   - EndlessCheng:
     - Home: endlesscheng/index.md
     - Sliding Window Fixed Size Basics: endlesscheng/sliding_window_fixed_size_basics.md
@@ -120,7 +228,7 @@ nav:
     - Climbing Stairs: endlesscheng/climbing_stairs.md
     - House Robber: endlesscheng/house_robber.md
     - Max Subarray Sum: endlesscheng/max_subarray_sum.md
-    - Enumerate Right, Maintain Left: endlesscheng/enumerate_right,_maintain_left.md
+    - Enumerate Right Maintain Left: endlesscheng/enumerate_right_maintain_left.md
     - Enumerate Middle: endlesscheng/enumerate_middle.md
     - Prefix Sum Basics: endlesscheng/prefix_sum_basics.md
     - Prefix Sum with Hash Table: endlesscheng/prefix_sum_with_hash_table.md
@@ -246,113 +354,9 @@ nav:
     - String Suffix Array: endlesscheng/string_suffix_array.md
     - String Subsequence Automaton: endlesscheng/string_subsequence_automaton.md
 
-  - Neetcode 150:
-    - Home: neetcode150/index.md
-    - Arrays Hashing: neetcode150/arrays_hashing.md
-    - Two Pointers: neetcode150/two_pointers.md
-    - Sliding Window: neetcode150/sliding_window.md
-    - Stack: neetcode150/stack.md
-    - Binary Search: neetcode150/binary_search.md
-    - Linked List: neetcode150/linked_list.md
-    - Trees: neetcode150/trees.md
-    - Heap: neetcode150/heap.md
-    - Backtracking: neetcode150/backtracking.md
-    - Tries: neetcode150/tries.md
-    - Graphs: neetcode150/graphs.md
-    - Advanced Graphs: neetcode150/advanced_graphs.md
-    - 1D Dynamic Programming: neetcode150/1d_dynamic_programming.md
-    - 2D Dynamic_Programming: neetcode150/2d_dynamic_programming.md
-    - Greedy: neetcode150/greedy.md
-    - Intervals: neetcode150/intervals.md
-    - Math Geometry: neetcode150/math_geometry.md
-    - Bit Manipulation: neetcode150/bit_manipulation.md
-
-  - Blind 75:
-    - Home: blind75/index.md
-    - Arrays Hashing: blind75/arrays_hashing.md
-    - Two Pointers: blind75/two_pointers.md
-    - Sliding Window: blind75/sliding_window.md
-    - Stack: blind75/stack.md
-    - Binary Search: blind75/binary_search.md
-    - Linked List: blind75/linked_list.md
-    - Trees: blind75/trees.md
-    - Heap: blind75/heap.md
-    - Backtracking: blind75/backtracking.md
-    - Tries: blind75/tries.md
-    - Graphs: blind75/graphs.md
-    - Advanced Graphs: blind75/advanced_graphs.md
-    - 1D Dynamic Programming: blind75/1d_dynamic_programming.md
-    - 2D Dynamic Programming: blind75/2d_dynamic_programming.md
-    - Greedy: blind75/greedy.md
-    - Intervals: blind75/intervals.md
-    - Math Geometry: blind75/math_geometry.md
-    - Bit Manipulation: blind75/bit_manipulation.md
-
-  - Grind 75:
-    - Home: grind75/index.md
-    - Array: grind75/array.md
-    - Stack: grind75/stack.md
-    - Linked List: grind75/linked_list.md
-    - String: grind75/string.md
-    - Binary Tree: grind75/binary_tree.md
-    - Binary Search: grind75/binary_search.md
-    - Graph: grind75/graph.md
-    - Binary Search Tree: grind75/binary_search_tree.md
-    - Hash Table: grind75/hash_table.md
-    - Dynamic Programming: grind75/dynamic_programming.md
-    - Binary: grind75/binary.md
-    - Heap: grind75/heap.md
-    - Trie: grind75/trie.md
-    - Recursion: grind75/recursion.md
-    - Matrix: grind75/matrix.md
-
-  - Graph Theory:
-    - Home: graph_theory/index.md
-    - Standard Traversal: graph_theory/standard_traversal.md
-    - BFS: graph_theory/bfs.md
-    - Matrix Graphs: graph_theory/matrix_graphs.md
-    - Graph Theory: graph_theory/graph_theory.md
-    - Union Find: graph_theory/union_find.md
-    - Topological Sort: graph_theory/topological_sort.md
-    - Dijkstra's: graph_theory/dijkstra's.md
-    - MST: graph_theory/mst.md
-
-  - Premium 100:
-    - Home: premium100/index.md
-    - Arrays Strings: premium100/arrays_strings.md
-    - Sliding Window: premium100/sliding_window.md
-    - Hashing: premium100/hashing.md
-    - Matrix: premium100/matrix.md
-    - Interval: premium100/interval.md
-    - Stack: premium100/stack.md
-    - Queue: premium100/queue.md
-    - Linked List: premium100/linked_list.md
-    - Binary Tree: premium100/binary_tree.md
-    - Binary Search Tree: premium100/binary_search_tree.md
-    - N-ary Tree: premium100/n-ary_tree.md
-    - Graph: premium100/graph.md
-    - Graph BFS: premium100/graph_bfs.md
-    - Trie: premium100/trie.md
-    - Heap: premium100/heap.md
-    - Binary Search: premium100/binary_search.md
-    - Design: premium100/design.md
-    - Backtracking: premium100/backtracking.md
-    - Dynamic Programming: premium100/dynamic_programming.md
-    - Math: premium100/math.md
-
-  - SQL 50:
-    - Home: sql50/index.md
-    - Select: sql50/select.md
-    - Basic Joins: sql50/basic_joins.md
-    - Basic Aggregate Functions: sql50/basic_aggregate_functions.md
-    - Sorting and Grouping: sql50/sorting_and_grouping.md
-    - Advanced Select and Joins: sql50/advanced_select_and_joins.md
-    - Subqueries: sql50/subqueries.md
-    - Advanced String Functions Regex Clause: sql50/advanced_string_functions_regex_clause.md
-
-  - Daily Challenge:
-    - Home: challenge/index.md
-    - 2025-03: challenge/2025-03.md
+  - Company:
+    - Home: company/index.md
+    - Amazon: company/amazon.md
 
 
 - About: about.md
@@ -385,8 +389,8 @@ theme:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
   font:
-    text: Roboto
-    code: Roboto Code
+    text: Nunito Sans
+    code: Courier Prime
 
   features:
   - content.code.copy # Enable copy button on code blocks

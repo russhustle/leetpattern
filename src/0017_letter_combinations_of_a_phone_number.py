@@ -1,36 +1,36 @@
 from typing import List
 
 
+# Backtracking
 def letterCombinations(digits: str) -> List[str]:
-    letterMap = [
-        "",  # 0
-        "",  # 1
-        "abc",  # 2
-        "def",  # 3
-        "ghi",  # 4
-        "jkl",  # 5
-        "mno",  # 6
-        "pqrs",  # 7
-        "tuv",  # 8
-        "wxyz",  # 9
-    ]
+    letterMap = {
+        2: "abc",
+        3: "def",
+        4: "ghi",
+        5: "jkl",
+        6: "mno",
+        7: "pqrs",
+        8: "tuv",
+        9: "wxyz",
+    }
+
     res = []
 
-    def backtracking(index, s):
-        if index == len(digits):
+    def backtrack(idx, s):
+        if idx == len(digits):
             res.append(s)
             return None
 
-        digit = int(digits[index])
+        digit = int(digits[idx])
         letters = letterMap[digit]
 
         for i in range(len(letters)):
-            backtracking(index + 1, s + letters[i])
+            backtrack(idx + 1, s + letters[i])
 
     if len(digits) == 0:
         return res
 
-    backtracking(0, "")
+    backtrack(0, "")
 
     return res
 

@@ -14,9 +14,9 @@ def levelOrder(root: Optional[TreeNode]) -> List[List[int]]:
 
     while q:
         level = []
-        n = len(q)
+        size = len(q)
 
-        for _ in range(n):
+        for _ in range(size):
             cur = q.popleft()
             level.append(cur.val)
 

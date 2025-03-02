@@ -32,8 +32,8 @@ theme:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
   font:
-    text: Roboto
-    code: Roboto Code
+    text: Nunito Sans
+    code: Courier Prime
 
   features:
   - content.code.copy # Enable copy button on code blocks

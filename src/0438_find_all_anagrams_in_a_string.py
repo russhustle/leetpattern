@@ -1,31 +1,29 @@
 from typing import List
 
 
-# Sliding Window - Variable
+# Sliding Window Fixed Size
 def findAnagrams(s: str, p: str) -> List[int]:
-    result = []
-    if len(s) < len(p):
-        return result
+    n, k = len(s), len(p)
+    target = [0 for _ in range(26)]
+    for ch in p:
+        target[ord(ch) - ord("a")] += 1
 
-    countP = [0] * 26
-    for i in p:
-        countP[ord(i) - ord("a")] += 1
+    count = [0 for _ in range(26)]
+    left = 0
+    res = []
 
-    countS = [0] * 26
-    for i in range(len(p)):
-        countS[ord(s[i]) - ord("a")] += 1
+    for right in range(n):
+        count[ord(s[right]) - ord("a")] += 1
+        if right < k - 1:
+            continue
 
-    if countS == countP:
-        result.append(0)
+        if count == target:
+            res.append(left)
 
-    # sliding window
-    for i in range(len(p), len(s)):
-        countS[ord(s[i]) - ord("a")] += 1  # add new character
-        countS[ord(s[i - len(p)]) - ord("a")] -= 1  # remove old character
-        if countS == countP:
-            result.append(i - len(p) + 1)  # append the starting index
+        count[ord(s[left]) - ord("a")] -= 1
+        left += 1
 
-    return result
+    return res
 
 
 s = "cbaebabacd"

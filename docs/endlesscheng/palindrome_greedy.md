@@ -16,10 +16,10 @@ comments: True
 - [ ] [1147. Longest Chunked Palindrome Decomposition](https://leetcode.cn/problems/longest-chunked-palindrome-decomposition/) (Hard)
 - [ ] [2193. Minimum Number of Moves to Make Palindrome](https://leetcode.cn/problems/minimum-number-of-moves-to-make-palindrome/) (Hard)
 - [ ] [564. Find the Closest Palindrome](https://leetcode.cn/problems/find-the-closest-palindrome/) (Hard)
-- [x] [266. Palindrome Permutation](https://leetcode.cn/problems/palindrome-permutation/) (Easy)
-- [ ] [2422. Merge Operations to Turn Array Into a Palindrome](https://leetcode.cn/problems/merge-operations-to-turn-array-into-a-palindrome/) (Medium)
-- [ ] [1842. Next Palindrome Using Same Digits](https://leetcode.cn/problems/next-palindrome-using-same-digits/) (Hard)
-- [ ] [3088. Make String Anti-palindrome](https://leetcode.cn/problems/make-string-anti-palindrome/) (Hard)
+- [x] [266. Palindrome Permutation](https://leetcode.cn/problems/palindrome-permutation/) (Easy) 👑
+- [ ] [2422. Merge Operations to Turn Array Into a Palindrome](https://leetcode.cn/problems/merge-operations-to-turn-array-into-a-palindrome/) (Medium) 👑
+- [ ] [1842. Next Palindrome Using Same Digits](https://leetcode.cn/problems/next-palindrome-using-same-digits/) (Hard) 👑
+- [ ] [3088. Make String Anti-palindrome](https://leetcode.cn/problems/make-string-anti-palindrome/) (Hard) 👑
 
 ## 409. Longest Palindrome
 

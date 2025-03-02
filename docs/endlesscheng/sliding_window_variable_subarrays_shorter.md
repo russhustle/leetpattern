@@ -10,7 +10,7 @@ comments: True
 - [ ] [2762. Continuous Subarrays](https://leetcode.cn/problems/continuous-subarrays/) (Medium)
 - [ ] [3134. Find the Median of the Uniqueness Array](https://leetcode.cn/problems/find-the-median-of-the-uniqueness-array/) (Hard)
 - [ ] [3261. Count Substrings That Satisfy K-Constraint II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii/) (Hard)
-- [ ] [2743. Count Substrings Without Repeating Character](https://leetcode.cn/problems/count-substrings-without-repeating-character/) (Medium)
+- [ ] [2743. Count Substrings Without Repeating Character](https://leetcode.cn/problems/count-substrings-without-repeating-character/) (Medium) 👑
 
 ## 713. Subarray Product Less Than K
 

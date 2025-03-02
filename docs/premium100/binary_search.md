@@ -4,12 +4,12 @@ comments: True
 
 # Binary Search
 
-- [ ] [1228. Missing Number In Arithmetic Progression](https://leetcode.cn/problems/missing-number-in-arithmetic-progression/) (Easy)
-- [ ] [1060. Missing Element in Sorted Array](https://leetcode.cn/problems/missing-element-in-sorted-array/) (Medium)
-- [ ] [1533. Find the Index of the Large Integer](https://leetcode.cn/problems/find-the-index-of-the-large-integer/) (Medium)
-- [ ] [1150. Check If a Number Is Majority Element in a Sorted Array](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) (Easy)
-- [ ] [1231. Divide Chocolate](https://leetcode.cn/problems/divide-chocolate/) (Hard)
-- [ ] [644. Maximum Average Subarray II](https://leetcode.cn/problems/maximum-average-subarray-ii/) (Hard)
+- [ ] [1228. Missing Number In Arithmetic Progression](https://leetcode.cn/problems/missing-number-in-arithmetic-progression/) (Easy) 👑
+- [ ] [1060. Missing Element in Sorted Array](https://leetcode.cn/problems/missing-element-in-sorted-array/) (Medium) 👑
+- [ ] [1533. Find the Index of the Large Integer](https://leetcode.cn/problems/find-the-index-of-the-large-integer/) (Medium) 👑
+- [ ] [1150. Check If a Number Is Majority Element in a Sorted Array](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) (Easy) 👑
+- [ ] [1231. Divide Chocolate](https://leetcode.cn/problems/divide-chocolate/) (Hard) 👑
+- [ ] [644. Maximum Average Subarray II](https://leetcode.cn/problems/maximum-average-subarray-ii/) (Hard) 👑
 
 ## 1228. Missing Number In Arithmetic Progression
 

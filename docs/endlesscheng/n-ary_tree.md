@@ -10,11 +10,11 @@ comments: True
 - [x] [429. N-ary Tree Level Order Traversal](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/) (Medium)
 - [ ] [427. Construct Quad Tree](https://leetcode.cn/problems/construct-quad-tree/) (Medium)
 - [ ] [558. Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.cn/problems/logical-or-of-two-binary-grids-represented-as-quad-trees/) (Medium)
-- [ ] [428. Serialize and Deserialize N-ary Tree](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard)
-- [ ] [1490. Clone N-ary Tree](https://leetcode.cn/problems/clone-n-ary-tree/) (Medium)
-- [ ] [1506. Find Root of N-Ary Tree](https://leetcode.cn/problems/find-root-of-n-ary-tree/) (Medium)
-- [x] [1522. Diameter of N-Ary Tree](https://leetcode.cn/problems/diameter-of-n-ary-tree/) (Medium)
-- [ ] [1516. Move Sub-Tree of N-Ary Tree](https://leetcode.cn/problems/move-sub-tree-of-n-ary-tree/) (Hard)
+- [ ] [428. Serialize and Deserialize N-ary Tree](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard) 👑
+- [ ] [1490. Clone N-ary Tree](https://leetcode.cn/problems/clone-n-ary-tree/) (Medium) 👑
+- [ ] [1506. Find Root of N-Ary Tree](https://leetcode.cn/problems/find-root-of-n-ary-tree/) (Medium) 👑
+- [x] [1522. Diameter of N-Ary Tree](https://leetcode.cn/problems/diameter-of-n-ary-tree/) (Medium) 👑
+- [ ] [1516. Move Sub-Tree of N-Ary Tree](https://leetcode.cn/problems/move-sub-tree-of-n-ary-tree/) (Hard) 👑
 
 ## 589. N-ary Tree Preorder Traversal
 

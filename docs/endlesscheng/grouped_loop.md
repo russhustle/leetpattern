@@ -28,10 +28,10 @@ comments: True
 - [ ] [467. Unique Substrings in Wraparound String](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) (Medium)
 - [ ] [2948. Make Lexicographically Smallest Array by Swapping Elements](https://leetcode.cn/problems/make-lexicographically-smallest-array-by-swapping-elements/) (Medium)
 - [ ] [2593. Find Score of an Array After Marking All Elements](https://leetcode.cn/problems/find-score-of-an-array-after-marking-all-elements/) (Medium)
-- [ ] [2393. Count Strictly Increasing Subarrays](https://leetcode.cn/problems/count-strictly-increasing-subarrays/) (Medium)
-- [ ] [2436. Minimum Split Into Subarrays With GCD Greater Than One](https://leetcode.cn/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/) (Medium)
-- [ ] [2495. Number of Subarrays Having Even Product](https://leetcode.cn/problems/number-of-subarrays-having-even-product/) (Medium)
-- [ ] [3063. Linked List Frequency](https://leetcode.cn/problems/linked-list-frequency/) (Easy)
+- [ ] [2393. Count Strictly Increasing Subarrays](https://leetcode.cn/problems/count-strictly-increasing-subarrays/) (Medium) 👑
+- [ ] [2436. Minimum Split Into Subarrays With GCD Greater Than One](https://leetcode.cn/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/) (Medium) 👑
+- [ ] [2495. Number of Subarrays Having Even Product](https://leetcode.cn/problems/number-of-subarrays-having-even-product/) (Medium) 👑
+- [ ] [3063. Linked List Frequency](https://leetcode.cn/problems/linked-list-frequency/) (Easy) 👑
 
 ## 1446. Consecutive Characters
 

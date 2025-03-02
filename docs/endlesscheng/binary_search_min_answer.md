@@ -14,8 +14,8 @@ comments: True
 - [ ] [2594. Minimum Time to Repair Cars](https://leetcode.cn/problems/minimum-time-to-repair-cars/) (Medium)
 - [ ] [1482. Minimum Number of Days to Make m Bouquets](https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets/) (Medium)
 - [ ] [3048. Earliest Second to Mark Indices I](https://leetcode.cn/problems/earliest-second-to-mark-indices-i/) (Medium)
-- [ ] [2604. Minimum Time to Eat All Grains](https://leetcode.cn/problems/minimum-time-to-eat-all-grains/) (Hard)
-- [ ] [2702. Minimum Operations to Make Numbers Non-positive](https://leetcode.cn/problems/minimum-operations-to-make-numbers-non-positive/) (Hard)
+- [ ] [2604. Minimum Time to Eat All Grains](https://leetcode.cn/problems/minimum-time-to-eat-all-grains/) (Hard) 👑
+- [ ] [2702. Minimum Operations to Make Numbers Non-positive](https://leetcode.cn/problems/minimum-operations-to-make-numbers-non-positive/) (Hard) 👑
 - [ ] [3453. Separate Squares I](https://leetcode.cn/problems/separate-squares-i/) (Medium)
 
 ## 1283. Find the Smallest Divisor Given a Threshold

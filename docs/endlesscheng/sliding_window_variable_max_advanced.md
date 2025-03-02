@@ -21,9 +21,9 @@ comments: True
 - [ ] [3413. Maximum Coins From K Consecutive Bags](https://leetcode.cn/problems/maximum-coins-from-k-consecutive-bags/) (Medium)
 - [ ] [395. Longest Substring with At Least K Repeating Characters](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/) (Medium)
 - [ ] [1763. Longest Nice Substring](https://leetcode.cn/problems/longest-nice-substring/) (Easy)
-- [ ] [487. Max Consecutive Ones II](https://leetcode.cn/problems/max-consecutive-ones-ii/) (Medium)
-- [x] [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) (Medium)
-- [x] [340. Longest Substring with At Most K Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/) (Medium)
+- [ ] [487. Max Consecutive Ones II](https://leetcode.cn/problems/max-consecutive-ones-ii/) (Medium) 👑
+- [x] [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) (Medium) 👑
+- [x] [340. Longest Substring with At Most K Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/) (Medium) 👑
 
 ## 2730. Find the Longest Semi-Repetitive Substring
 

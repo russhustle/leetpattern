@@ -7,11 +7,11 @@ comments: True
 - [ ] [933. Number of Recent Calls](https://leetcode.cn/problems/number-of-recent-calls/) (Easy)
 - [ ] [950. Reveal Cards In Increasing Order](https://leetcode.cn/problems/reveal-cards-in-increasing-order/) (Medium)
 - [ ] [649. Dota2 Senate](https://leetcode.cn/problems/dota2-senate/) (Medium)
-- [ ] [346. Moving Average from Data Stream](https://leetcode.cn/problems/moving-average-from-data-stream/) (Easy)
-- [x] [362. Design Hit Counter](https://leetcode.cn/problems/design-hit-counter/) (Medium)
-- [ ] [379. Design Phone Directory](https://leetcode.cn/problems/design-phone-directory/) (Medium)
-- [ ] [1429. First Unique Number](https://leetcode.cn/problems/first-unique-number/) (Medium)
-- [ ] [2534. Time Taken to Cross the Door](https://leetcode.cn/problems/time-taken-to-cross-the-door/) (Hard)
+- [ ] [346. Moving Average from Data Stream](https://leetcode.cn/problems/moving-average-from-data-stream/) (Easy) 👑
+- [x] [362. Design Hit Counter](https://leetcode.cn/problems/design-hit-counter/) (Medium) 👑
+- [ ] [379. Design Phone Directory](https://leetcode.cn/problems/design-phone-directory/) (Medium) 👑
+- [ ] [1429. First Unique Number](https://leetcode.cn/problems/first-unique-number/) (Medium) 👑
+- [ ] [2534. Time Taken to Cross the Door](https://leetcode.cn/problems/time-taken-to-cross-the-door/) (Hard) 👑
 
 ## 933. Number of Recent Calls
 

@@ -7,7 +7,7 @@ comments: True
 - [ ] [1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.cn/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/) (Medium)
 - [ ] [3107. Minimum Operations to Make Median of Array Equal to K](https://leetcode.cn/problems/minimum-operations-to-make-median-of-array-equal-to-k/) (Medium)
 - [ ] [754. Reach a Number](https://leetcode.cn/problems/reach-a-number/) (Medium)
-- [ ] [1058. Minimize Rounding Error to Meet Target](https://leetcode.cn/problems/minimize-rounding-error-to-meet-target/) (Medium)
+- [ ] [1058. Minimize Rounding Error to Meet Target](https://leetcode.cn/problems/minimize-rounding-error-to-meet-target/) (Medium) 👑
 
 ## 1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K
 

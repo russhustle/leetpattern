@@ -10,7 +10,7 @@ comments: True
 - [ ] [2968. Apply Operations to Maximize Frequency Score](https://leetcode.cn/problems/apply-operations-to-maximize-frequency-score/) (Hard)
 - [ ] [1703. Minimum Adjacent Swaps for K Consecutive Ones](https://leetcode.cn/problems/minimum-adjacent-swaps-for-k-consecutive-ones/) (Hard)
 - [ ] [3086. Minimum Moves to Pick K Ones](https://leetcode.cn/problems/minimum-moves-to-pick-k-ones/) (Hard)
-- [ ] [3422. Minimum Operations to Make Subarray Elements Equal](https://leetcode.cn/problems/minimum-operations-to-make-subarray-elements-equal/) (Medium)
+- [ ] [3422. Minimum Operations to Make Subarray Elements Equal](https://leetcode.cn/problems/minimum-operations-to-make-subarray-elements-equal/) (Medium) 👑
 
 ## 1685. Sum of Absolute Differences in a Sorted Array
 

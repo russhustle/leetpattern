@@ -15,10 +15,10 @@ comments: True
 - [ ] [1591. Strange Printer II](https://leetcode.cn/problems/strange-printer-ii/) (Hard)
 - [x] [1203. Sort Items by Groups Respecting Dependencies](https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
 - [ ] [2603. Collect Coins in a Tree](https://leetcode.cn/problems/collect-coins-in-a-tree/) (Hard)
-- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard)
-- [ ] [444. Sequence Reconstruction](https://leetcode.cn/problems/sequence-reconstruction/) (Medium)
-- [ ] [1059. All Paths from Source Lead to Destination](https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/) (Medium)
-- [x] [1136. Parallel Courses](https://leetcode.cn/problems/parallel-courses/) (Medium)
+- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard) 👑
+- [ ] [444. Sequence Reconstruction](https://leetcode.cn/problems/sequence-reconstruction/) (Medium) 👑
+- [ ] [1059. All Paths from Source Lead to Destination](https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/) (Medium) 👑
+- [x] [1136. Parallel Courses](https://leetcode.cn/problems/parallel-courses/) (Medium) 👑
 
 ## 1557. Minimum Number of Vertices to Reach All Nodes
 

@@ -6,8 +6,8 @@ comments: True
 
 - [ ] [2807. Insert Greatest Common Divisors in Linked List](https://leetcode.cn/problems/insert-greatest-common-divisors-in-linked-list/) (Medium)
 - [ ] [147. Insertion Sort List](https://leetcode.cn/problems/insertion-sort-list/) (Medium)
-- [ ] [708. Insert into a Sorted Circular Linked List](https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/) (Medium)
-- [ ] [2046. Sort Linked List Already Sorted Using Absolute Values](https://leetcode.cn/problems/sort-linked-list-already-sorted-using-absolute-values/) (Medium)
+- [ ] [708. Insert into a Sorted Circular Linked List](https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/) (Medium) 👑
+- [ ] [2046. Sort Linked List Already Sorted Using Absolute Values](https://leetcode.cn/problems/sort-linked-list-already-sorted-using-absolute-values/) (Medium) 👑
 
 ## 2807. Insert Greatest Common Divisors in Linked List
 

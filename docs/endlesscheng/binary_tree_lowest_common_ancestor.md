@@ -8,10 +8,10 @@ comments: True
 - [x] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 - [ ] [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/) (Medium)
 - [ ] [2096. Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.cn/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) (Medium)
-- [ ] [1740. Find Distance in a Binary Tree](https://leetcode.cn/problems/find-distance-in-a-binary-tree/) (Medium)
-- [ ] [1644. Lowest Common Ancestor of a Binary Tree II](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-ii/) (Medium)
-- [ ] [1650. Lowest Common Ancestor of a Binary Tree III](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-iii/) (Medium)
-- [ ] [1676. Lowest Common Ancestor of a Binary Tree IV](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-iv/) (Medium)
+- [ ] [1740. Find Distance in a Binary Tree](https://leetcode.cn/problems/find-distance-in-a-binary-tree/) (Medium) 👑
+- [ ] [1644. Lowest Common Ancestor of a Binary Tree II](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-ii/) (Medium) 👑
+- [ ] [1650. Lowest Common Ancestor of a Binary Tree III](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-iii/) (Medium) 👑
+- [ ] [1676. Lowest Common Ancestor of a Binary Tree IV](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-iv/) (Medium) 👑
 
 ## 235. Lowest Common Ancestor of a Binary Search Tree
 

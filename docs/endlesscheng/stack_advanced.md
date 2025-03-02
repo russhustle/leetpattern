@@ -12,7 +12,7 @@ comments: True
 - [ ] [895. Maximum Frequency Stack](https://leetcode.cn/problems/maximum-frequency-stack/) (Hard)
 - [ ] [1172. Dinner Plate Stacks](https://leetcode.cn/problems/dinner-plate-stacks/) (Hard)
 - [ ] [2589. Minimum Time to Complete All Tasks](https://leetcode.cn/problems/minimum-time-to-complete-all-tasks/) (Hard)
-- [ ] [716. Max Stack](https://leetcode.cn/problems/max-stack/) (Hard)
+- [ ] [716. Max Stack](https://leetcode.cn/problems/max-stack/) (Hard) 👑
 
 ## 3170. Lexicographically Minimum String After Removing Stars
 

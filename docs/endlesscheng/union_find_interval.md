@@ -6,7 +6,7 @@ comments: True
 
 - [ ] [1851. Minimum Interval to Include Each Query](https://leetcode.cn/problems/minimum-interval-to-include-each-query/) (Hard)
 - [ ] [3244. Shortest Distance After Road Addition Queries II](https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-ii/) (Hard)
-- [ ] [2158. Amount of New Area Painted Each Day](https://leetcode.cn/problems/amount-of-new-area-painted-each-day/) (Hard)
+- [ ] [2158. Amount of New Area Painted Each Day](https://leetcode.cn/problems/amount-of-new-area-painted-each-day/) (Hard) 👑
 
 ## 1851. Minimum Interval to Include Each Query
 

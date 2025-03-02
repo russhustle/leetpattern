@@ -23,7 +23,8 @@ def topic_progress(df, category, problems):
         content += (
             f"- [{progress}] [{row['QID']}. {row['title']}]({row['urlCh']})"
         )
-        content += f" ({row['difficulty']})\n"
+        content += f" ({row['difficulty']})"
+        content += " 👑\n" if row["paidOnly"] else "\n"
 
     return content + "\n"
 

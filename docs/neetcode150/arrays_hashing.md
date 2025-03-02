@@ -9,7 +9,7 @@ comments: True
 - [x] [1. Two Sum](https://leetcode.cn/problems/two-sum/) (Easy)
 - [x] [49. Group Anagrams](https://leetcode.cn/problems/group-anagrams/) (Medium)
 - [x] [347. Top K Frequent Elements](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
-- [x] [271. Encode and Decode Strings](https://leetcode.cn/problems/encode-and-decode-strings/) (Medium)
+- [x] [271. Encode and Decode Strings](https://leetcode.cn/problems/encode-and-decode-strings/) (Medium) 👑
 - [x] [238. Product of Array Except Self](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
 - [x] [36. Valid Sudoku](https://leetcode.cn/problems/valid-sudoku/) (Medium)
 - [x] [128. Longest Consecutive Sequence](https://leetcode.cn/problems/longest-consecutive-sequence/) (Medium)

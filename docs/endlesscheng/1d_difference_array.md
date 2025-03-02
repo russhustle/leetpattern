@@ -32,15 +32,15 @@ comments: True
 - [ ] [1674. Minimum Moves to Make Array Complementary](https://leetcode.cn/problems/minimum-moves-to-make-array-complementary/) (Medium)
 - [ ] [3362. Zero Array Transformation III](https://leetcode.cn/problems/zero-array-transformation-iii/) (Medium)
 - [ ] [3017. Count the Number of Houses at a Certain Distance II](https://leetcode.cn/problems/count-the-number-of-houses-at-a-certain-distance-ii/) (Hard)
-- [x] [253. Meeting Rooms II](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium)
-- [x] [370. Range Addition](https://leetcode.cn/problems/range-addition/) (Medium)
-- [ ] [1989. Maximum Number of People That Can Be Caught in Tag](https://leetcode.cn/problems/maximum-number-of-people-that-can-be-caught-in-tag/) (Medium)
-- [ ] [759. Employee Free Time](https://leetcode.cn/problems/employee-free-time/) (Hard)
-- [ ] [2021. Brightest Position on Street](https://leetcode.cn/problems/brightest-position-on-street/) (Medium)
-- [ ] [2015. Average Height of Buildings in Each Segment](https://leetcode.cn/problems/average-height-of-buildings-in-each-segment/) (Medium)
-- [ ] [2237. Count Positions on Street With Required Brightness](https://leetcode.cn/problems/count-positions-on-street-with-required-brightness/) (Medium)
-- [ ] [3009. Maximum Number of Intersections on the Chart](https://leetcode.cn/problems/maximum-number-of-intersections-on-the-chart/) (Hard)
-- [ ] [3279. Maximum Total Area Occupied by Pistons](https://leetcode.cn/problems/maximum-total-area-occupied-by-pistons/) (Hard)
+- [x] [253. Meeting Rooms II](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium) 👑
+- [x] [370. Range Addition](https://leetcode.cn/problems/range-addition/) (Medium) 👑
+- [ ] [1989. Maximum Number of People That Can Be Caught in Tag](https://leetcode.cn/problems/maximum-number-of-people-that-can-be-caught-in-tag/) (Medium) 👑
+- [ ] [759. Employee Free Time](https://leetcode.cn/problems/employee-free-time/) (Hard) 👑
+- [ ] [2021. Brightest Position on Street](https://leetcode.cn/problems/brightest-position-on-street/) (Medium) 👑
+- [ ] [2015. Average Height of Buildings in Each Segment](https://leetcode.cn/problems/average-height-of-buildings-in-each-segment/) (Medium) 👑
+- [ ] [2237. Count Positions on Street With Required Brightness](https://leetcode.cn/problems/count-positions-on-street-with-required-brightness/) (Medium) 👑
+- [ ] [3009. Maximum Number of Intersections on the Chart](https://leetcode.cn/problems/maximum-number-of-intersections-on-the-chart/) (Hard) 👑
+- [ ] [3279. Maximum Total Area Occupied by Pistons](https://leetcode.cn/problems/maximum-total-area-occupied-by-pistons/) (Hard) 👑
 
 ## 2848. Points That Intersect With Cars
 

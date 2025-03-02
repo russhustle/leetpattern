@@ -7,10 +7,10 @@ comments: True
 - [x] [1557. Minimum Number of Vertices to Reach All Nodes](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
 - [x] [207. Course Schedule](https://leetcode.cn/problems/course-schedule/) (Medium)
 - [x] [210. Course Schedule II](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
-- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard) 👑
 - [x] [1203. Sort Items by Groups Respecting Dependencies](https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
 - [x] [1857. Largest Color Value in a Directed Graph](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
-- [x] [1136. Parallel Courses](https://leetcode.cn/problems/parallel-courses/) (Medium)
+- [x] [1136. Parallel Courses](https://leetcode.cn/problems/parallel-courses/) (Medium) 👑
 
 ## 1557. Minimum Number of Vertices to Reach All Nodes
 

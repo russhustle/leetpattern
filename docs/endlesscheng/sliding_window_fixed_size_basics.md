@@ -14,11 +14,11 @@ comments: True
 - [x] [1423. Maximum Points You Can Obtain from Cards](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/) (Medium)
 - [x] [1052. Grumpy Bookstore Owner](https://leetcode.cn/problems/grumpy-bookstore-owner/) (Medium)
 - [x] [1652. Defuse the Bomb](https://leetcode.cn/problems/defuse-the-bomb/) (Easy)
-- [ ] [1176. Diet Plan Performance](https://leetcode.cn/problems/diet-plan-performance/) (Easy)
-- [ ] [1100. Find K-Length Substrings With No Repeated Characters](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
-- [ ] [1852. Distinct Numbers in Each Subarray](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium)
-- [x] [1151. Minimum Swaps to Group All 1's Together](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
-- [ ] [2107. Number of Unique Flavors After Sharing K Candies](https://leetcode.cn/problems/number-of-unique-flavors-after-sharing-k-candies/) (Medium)
+- [ ] [1176. Diet Plan Performance](https://leetcode.cn/problems/diet-plan-performance/) (Easy) 👑
+- [ ] [1100. Find K-Length Substrings With No Repeated Characters](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium) 👑
+- [ ] [1852. Distinct Numbers in Each Subarray](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium) 👑
+- [x] [1151. Minimum Swaps to Group All 1's Together](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium) 👑
+- [ ] [2107. Number of Unique Flavors After Sharing K Candies](https://leetcode.cn/problems/number-of-unique-flavors-after-sharing-k-candies/) (Medium) 👑
 
 ## 1456. Maximum Number of Vowels in a Substring of Given Length
 

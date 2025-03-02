@@ -14,9 +14,9 @@ comments: True
 - [x] [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) (Medium)
 - [ ] [889. Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) (Medium)
 - [ ] [1028. Recover a Tree From Preorder Traversal](https://leetcode.cn/problems/recover-a-tree-from-preorder-traversal/) (Hard)
-- [ ] [536. Construct Binary Tree from String](https://leetcode.cn/problems/construct-binary-tree-from-string/) (Medium)
-- [ ] [1628. Design an Expression Tree With Evaluate Function](https://leetcode.cn/problems/design-an-expression-tree-with-evaluate-function/) (Medium)
-- [ ] [1597. Build Binary Expression Tree From Infix Expression](https://leetcode.cn/problems/build-binary-expression-tree-from-infix-expression/) (Hard)
+- [ ] [536. Construct Binary Tree from String](https://leetcode.cn/problems/construct-binary-tree-from-string/) (Medium) 👑
+- [ ] [1628. Design an Expression Tree With Evaluate Function](https://leetcode.cn/problems/design-an-expression-tree-with-evaluate-function/) (Medium) 👑
+- [ ] [1597. Build Binary Expression Tree From Infix Expression](https://leetcode.cn/problems/build-binary-expression-tree-from-infix-expression/) (Hard) 👑
 
 ## 108. Convert Sorted Array to Binary Search Tree
 

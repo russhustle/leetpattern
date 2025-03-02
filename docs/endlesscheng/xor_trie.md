@@ -9,7 +9,7 @@ comments: True
 - [ ] [1707. Maximum XOR With an Element From Array](https://leetcode.cn/problems/maximum-xor-with-an-element-from-array/) (Hard)
 - [ ] [1803. Count Pairs With XOR in a Range](https://leetcode.cn/problems/count-pairs-with-xor-in-a-range/) (Hard)
 - [ ] [1938. Maximum Genetic Difference Query](https://leetcode.cn/problems/maximum-genetic-difference-query/) (Hard)
-- [ ] [2479. Maximum XOR of Two Non-Overlapping Subtrees](https://leetcode.cn/problems/maximum-xor-of-two-non-overlapping-subtrees/) (Hard)
+- [ ] [2479. Maximum XOR of Two Non-Overlapping Subtrees](https://leetcode.cn/problems/maximum-xor-of-two-non-overlapping-subtrees/) (Hard) 👑
 
 ## 421. Maximum XOR of Two Numbers in an Array
 

@@ -14,9 +14,9 @@ comments: True
 - [ ] [2556. Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.cn/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/) (Medium)
 - [ ] [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.cn/problems/minimum-time-to-visit-a-cell-in-a-grid/) (Hard)
 - [ ] [2617. Minimum Number of Visited Cells in a Grid](https://leetcode.cn/problems/minimum-number-of-visited-cells-in-a-grid/) (Hard)
-- [ ] [694. Number of Distinct Islands](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium)
-- [ ] [711. Number of Distinct Islands II](https://leetcode.cn/problems/number-of-distinct-islands-ii/) (Hard)
-- [ ] [1102. Path With Maximum Minimum Value](https://leetcode.cn/problems/path-with-maximum-minimum-value/) (Medium)
+- [ ] [694. Number of Distinct Islands](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium) 👑
+- [ ] [711. Number of Distinct Islands II](https://leetcode.cn/problems/number-of-distinct-islands-ii/) (Hard) 👑
+- [ ] [1102. Path With Maximum Minimum Value](https://leetcode.cn/problems/path-with-maximum-minimum-value/) (Medium) 👑
 
 ## 1631. Path With Minimum Effort
 

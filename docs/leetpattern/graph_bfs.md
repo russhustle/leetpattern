@@ -7,7 +7,7 @@ comments: True
 - [x] [994. Rotting Oranges](https://leetcode.cn/problems/rotting-oranges/) (Medium)
 - [x] [127. Word Ladder](https://leetcode.cn/problems/word-ladder/) (Hard)
 - [x] [1466. Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) (Medium)
-- [x] [286. Walls and Gates](https://leetcode.cn/problems/walls-and-gates/) (Medium)
+- [x] [286. Walls and Gates](https://leetcode.cn/problems/walls-and-gates/) (Medium) 👑
 - [x] [815. Bus Routes](https://leetcode.cn/problems/bus-routes/) (Hard)
 
 ## 994. Rotting Oranges

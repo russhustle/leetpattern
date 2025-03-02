@@ -14,7 +14,7 @@ comments: True
 - [x] [853. Car Fleet](https://leetcode.cn/problems/car-fleet/) (Medium)
 - [x] [224. Basic Calculator](https://leetcode.cn/problems/basic-calculator/) (Hard)
 - [x] [227. Basic Calculator II](https://leetcode.cn/problems/basic-calculator-ii/) (Medium)
-- [x] [772. Basic Calculator III](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
+- [x] [772. Basic Calculator III](https://leetcode.cn/problems/basic-calculator-iii/) (Hard) 👑
 - [x] [770. Basic Calculator IV](https://leetcode.cn/problems/basic-calculator-iv/) (Hard)
 
 ## 2390. Removing Stars From a String

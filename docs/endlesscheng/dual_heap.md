@@ -10,8 +10,8 @@ comments: True
 - [ ] [1825. Finding MK Average](https://leetcode.cn/problems/finding-mk-average/) (Hard)
 - [ ] [3013. Divide an Array Into Subarrays With Minimum Cost II](https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/) (Hard)
 - [ ] [3321. Find X-Sum of All K-Long Subarrays II](https://leetcode.cn/problems/find-x-sum-of-all-k-long-subarrays-ii/) (Hard)
-- [ ] [3369. Design an Array Statistics Tracker ](https://leetcode.cn/problems/design-an-array-statistics-tracker/) (Hard)
-- [ ] [3422. Minimum Operations to Make Subarray Elements Equal](https://leetcode.cn/problems/minimum-operations-to-make-subarray-elements-equal/) (Medium)
+- [ ] [3369. Design an Array Statistics Tracker ](https://leetcode.cn/problems/design-an-array-statistics-tracker/) (Hard) 👑
+- [ ] [3422. Minimum Operations to Make Subarray Elements Equal](https://leetcode.cn/problems/minimum-operations-to-make-subarray-elements-equal/) (Medium) 👑
 
 ## 2102. Sequentially Ordinal Rank Tracker
 

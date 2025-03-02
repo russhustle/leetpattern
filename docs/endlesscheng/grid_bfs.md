@@ -17,13 +17,13 @@ comments: True
 - [ ] [1210. Minimum Moves to Reach Target with Rotations](https://leetcode.cn/problems/minimum-moves-to-reach-target-with-rotations/) (Hard)
 - [ ] [675. Cut Off Trees for Golf Event](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) (Hard)
 - [ ] [749. Contain Virus](https://leetcode.cn/problems/contain-virus/) (Hard)
-- [ ] [1730. Shortest Path to Get Food](https://leetcode.cn/problems/shortest-path-to-get-food/) (Medium)
-- [x] [286. Walls and Gates](https://leetcode.cn/problems/walls-and-gates/) (Medium)
-- [ ] [490. The Maze](https://leetcode.cn/problems/the-maze/) (Medium)
-- [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium)
-- [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard)
-- [ ] [317. Shortest Distance from All Buildings](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard)
-- [ ] [2814. Minimum Time Takes to Reach Destination Without Drowning](https://leetcode.cn/problems/minimum-time-takes-to-reach-destination-without-drowning/) (Hard)
+- [ ] [1730. Shortest Path to Get Food](https://leetcode.cn/problems/shortest-path-to-get-food/) (Medium) 👑
+- [x] [286. Walls and Gates](https://leetcode.cn/problems/walls-and-gates/) (Medium) 👑
+- [ ] [490. The Maze](https://leetcode.cn/problems/the-maze/) (Medium) 👑
+- [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium) 👑
+- [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard) 👑
+- [ ] [317. Shortest Distance from All Buildings](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard) 👑
+- [ ] [2814. Minimum Time Takes to Reach Destination Without Drowning](https://leetcode.cn/problems/minimum-time-takes-to-reach-destination-without-drowning/) (Hard) 👑
 
 ## 1926. Nearest Exit from Entrance in Maze
 

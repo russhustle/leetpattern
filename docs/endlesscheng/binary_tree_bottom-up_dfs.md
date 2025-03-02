@@ -26,16 +26,16 @@ comments: True
 - [ ] [1145. Binary Tree Coloring Game](https://leetcode.cn/problems/binary-tree-coloring-game/) (Medium)
 - [x] [572. Subtree of Another Tree](https://leetcode.cn/problems/subtree-of-another-tree/) (Easy)
 - [ ] [1530. Number of Good Leaf Nodes Pairs](https://leetcode.cn/problems/number-of-good-leaf-nodes-pairs/) (Medium)
-- [ ] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
-- [ ] [250. Count Univalue Subtrees](https://leetcode.cn/problems/count-univalue-subtrees/) (Medium)
-- [ ] [1973. Count Nodes Equal to Sum of Descendants](https://leetcode.cn/problems/count-nodes-equal-to-sum-of-descendants/) (Medium)
-- [ ] [663. Equal Tree Partition](https://leetcode.cn/problems/equal-tree-partition/) (Medium)
-- [ ] [1120. Maximum Average Subtree](https://leetcode.cn/problems/maximum-average-subtree/) (Medium)
-- [ ] [2792. Count Nodes That Are Great Enough](https://leetcode.cn/problems/count-nodes-that-are-great-enough/) (Hard)
-- [ ] [333. Largest BST Subtree](https://leetcode.cn/problems/largest-bst-subtree/) (Medium)
-- [ ] [366. Find Leaves of Binary Tree](https://leetcode.cn/problems/find-leaves-of-binary-tree/) (Medium)
-- [ ] [156. Binary Tree Upside Down](https://leetcode.cn/problems/binary-tree-upside-down/) (Medium)
-- [ ] [1612. Check If Two Expression Trees are Equivalent](https://leetcode.cn/problems/check-if-two-expression-trees-are-equivalent/) (Medium)
+- [ ] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium) 👑
+- [ ] [250. Count Univalue Subtrees](https://leetcode.cn/problems/count-univalue-subtrees/) (Medium) 👑
+- [ ] [1973. Count Nodes Equal to Sum of Descendants](https://leetcode.cn/problems/count-nodes-equal-to-sum-of-descendants/) (Medium) 👑
+- [ ] [663. Equal Tree Partition](https://leetcode.cn/problems/equal-tree-partition/) (Medium) 👑
+- [ ] [1120. Maximum Average Subtree](https://leetcode.cn/problems/maximum-average-subtree/) (Medium) 👑
+- [ ] [2792. Count Nodes That Are Great Enough](https://leetcode.cn/problems/count-nodes-that-are-great-enough/) (Hard) 👑
+- [ ] [333. Largest BST Subtree](https://leetcode.cn/problems/largest-bst-subtree/) (Medium) 👑
+- [ ] [366. Find Leaves of Binary Tree](https://leetcode.cn/problems/find-leaves-of-binary-tree/) (Medium) 👑
+- [ ] [156. Binary Tree Upside Down](https://leetcode.cn/problems/binary-tree-upside-down/) (Medium) 👑
+- [ ] [1612. Check If Two Expression Trees are Equivalent](https://leetcode.cn/problems/check-if-two-expression-trees-are-equivalent/) (Medium) 👑
 
 ## 104. Maximum Depth of Binary Tree
 

@@ -4,10 +4,10 @@ comments: True
 
 # Matrix
 
-- [ ] [422. Valid Word Square](https://leetcode.cn/problems/valid-word-square/) (Easy)
-- [ ] [531. Lonely Pixel I](https://leetcode.cn/problems/lonely-pixel-i/) (Medium)
-- [ ] [311. Sparse Matrix Multiplication](https://leetcode.cn/problems/sparse-matrix-multiplication/) (Medium)
-- [ ] [723. Candy Crush](https://leetcode.cn/problems/candy-crush/) (Medium)
+- [ ] [422. Valid Word Square](https://leetcode.cn/problems/valid-word-square/) (Easy) 👑
+- [ ] [531. Lonely Pixel I](https://leetcode.cn/problems/lonely-pixel-i/) (Medium) 👑
+- [ ] [311. Sparse Matrix Multiplication](https://leetcode.cn/problems/sparse-matrix-multiplication/) (Medium) 👑
+- [ ] [723. Candy Crush](https://leetcode.cn/problems/candy-crush/) (Medium) 👑
 
 ## 422. Valid Word Square
 

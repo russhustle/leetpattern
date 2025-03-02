@@ -9,8 +9,8 @@ comments: True
 - [ ] [1402. Reducing Dishes](https://leetcode.cn/problems/reducing-dishes/) (Hard)
 - [ ] [2931. Maximum Spending After Buying Items](https://leetcode.cn/problems/maximum-spending-after-buying-items/) (Hard)
 - [x] [1589. Maximum Sum Obtained of Any Permutation](https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
-- [ ] [1874. Minimize Product Sum of Two Arrays](https://leetcode.cn/problems/minimize-product-sum-of-two-arrays/) (Medium)
-- [ ] [2268. Minimum Number of Keypresses](https://leetcode.cn/problems/minimum-number-of-keypresses/) (Medium)
+- [ ] [1874. Minimize Product Sum of Two Arrays](https://leetcode.cn/problems/minimize-product-sum-of-two-arrays/) (Medium) 👑
+- [ ] [2268. Minimum Number of Keypresses](https://leetcode.cn/problems/minimum-number-of-keypresses/) (Medium) 👑
 
 ## 2285. Maximum Total Importance of Roads
 

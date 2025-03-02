@@ -9,7 +9,7 @@ comments: True
 - [x] [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
 - [x] [567. Permutation in String](https://leetcode.cn/problems/permutation-in-string/) (Medium)
 - [x] [713. Subarray Product Less Than K](https://leetcode.cn/problems/subarray-product-less-than-k/) (Medium)
-- [x] [1151. Minimum Swaps to Group All 1's Together](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
+- [x] [1151. Minimum Swaps to Group All 1's Together](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium) 👑
 - [x] [209. Minimum Size Subarray Sum](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
 - [x] [76. Minimum Window Substring](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 

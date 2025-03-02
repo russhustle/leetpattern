@@ -13,7 +13,7 @@ comments: True
 - [ ] [3133. Minimum Array End](https://leetcode.cn/problems/minimum-array-end/) (Medium)
 - [ ] [3108. Minimum Cost Walk in Weighted Graph](https://leetcode.cn/problems/minimum-cost-walk-in-weighted-graph/) (Hard)
 - [ ] [3117. Minimum Sum of Values by Dividing Array](https://leetcode.cn/problems/minimum-sum-of-values-by-dividing-array/) (Hard)
-- [ ] [3125. Maximum Number That Makes Result of Bitwise AND Zero](https://leetcode.cn/problems/maximum-number-that-makes-result-of-bitwise-and-zero/) (Medium)
+- [ ] [3125. Maximum Number That Makes Result of Bitwise AND Zero](https://leetcode.cn/problems/maximum-number-that-makes-result-of-bitwise-and-zero/) (Medium) 👑
 
 ## 2980. Check if Bitwise OR Has Trailing Zeros
 

@@ -23,8 +23,8 @@ comments: True
 - [ ] [982. Triples with Bitwise AND Equal To Zero](https://leetcode.cn/problems/triples-with-bitwise-and-equal-to-zero/) (Hard)
 - [ ] [3307. Find the K-th Character in String Game II](https://leetcode.cn/problems/find-the-k-th-character-in-string-game-ii/) (Hard)
 - [ ] [1611. Minimum One Bit Operations to Make Integers Zero](https://leetcode.cn/problems/minimum-one-bit-operations-to-make-integers-zero/) (Hard)
-- [ ] [751. IP to CIDR](https://leetcode.cn/problems/ip-to-cidr/) (Medium)
-- [ ] [3141. Maximum Hamming Distances](https://leetcode.cn/problems/maximum-hamming-distances/) (Hard)
+- [ ] [751. IP to CIDR](https://leetcode.cn/problems/ip-to-cidr/) (Medium) 👑
+- [ ] [3141. Maximum Hamming Distances](https://leetcode.cn/problems/maximum-hamming-distances/) (Hard) 👑
 
 ## 136. Single Number
 

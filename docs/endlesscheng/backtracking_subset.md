@@ -17,8 +17,8 @@ comments: True
 - [ ] [2959. Number of Possible Sets of Closing Branches](https://leetcode.cn/problems/number-of-possible-sets-of-closing-branches/) (Hard)
 - [ ] [1601. Maximum Number of Achievable Transfer Requests](https://leetcode.cn/problems/maximum-number-of-achievable-transfer-requests/) (Hard)
 - [ ] [1617. Count Subtrees With Max Distance Between Cities](https://leetcode.cn/problems/count-subtrees-with-max-distance-between-cities/) (Hard)
-- [ ] [320. Generalized Abbreviation](https://leetcode.cn/problems/generalized-abbreviation/) (Medium)
-- [ ] [254. Factor Combinations](https://leetcode.cn/problems/factor-combinations/) (Medium)
+- [ ] [320. Generalized Abbreviation](https://leetcode.cn/problems/generalized-abbreviation/) (Medium) 👑
+- [ ] [254. Factor Combinations](https://leetcode.cn/problems/factor-combinations/) (Medium) 👑
 - [x] [39. Combination Sum](https://leetcode.cn/problems/combination-sum/) (Medium)
 
 ## 78. Subsets

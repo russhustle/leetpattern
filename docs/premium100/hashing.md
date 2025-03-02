@@ -4,14 +4,14 @@ comments: True
 
 # Hashing
 
-- [ ] [760. Find Anagram Mappings](https://leetcode.cn/problems/find-anagram-mappings/) (Easy)
-- [x] [266. Palindrome Permutation](https://leetcode.cn/problems/palindrome-permutation/) (Easy)
-- [ ] [734. Sentence Similarity](https://leetcode.cn/problems/sentence-similarity/) (Easy)
-- [ ] [1165. Single-Row Keyboard](https://leetcode.cn/problems/single-row-keyboard/) (Easy)
-- [ ] [249. Group Shifted Strings](https://leetcode.cn/problems/group-shifted-strings/) (Medium)
-- [ ] [1133. Largest Unique Number](https://leetcode.cn/problems/largest-unique-number/) (Easy)
-- [ ] [1426. Counting Elements](https://leetcode.cn/problems/counting-elements/) (Easy)
-- [ ] [1198. Find Smallest Common Element in All Rows](https://leetcode.cn/problems/find-smallest-common-element-in-all-rows/) (Medium)
+- [ ] [760. Find Anagram Mappings](https://leetcode.cn/problems/find-anagram-mappings/) (Easy) 👑
+- [x] [266. Palindrome Permutation](https://leetcode.cn/problems/palindrome-permutation/) (Easy) 👑
+- [ ] [734. Sentence Similarity](https://leetcode.cn/problems/sentence-similarity/) (Easy) 👑
+- [ ] [1165. Single-Row Keyboard](https://leetcode.cn/problems/single-row-keyboard/) (Easy) 👑
+- [ ] [249. Group Shifted Strings](https://leetcode.cn/problems/group-shifted-strings/) (Medium) 👑
+- [ ] [1133. Largest Unique Number](https://leetcode.cn/problems/largest-unique-number/) (Easy) 👑
+- [ ] [1426. Counting Elements](https://leetcode.cn/problems/counting-elements/) (Easy) 👑
+- [ ] [1198. Find Smallest Common Element in All Rows](https://leetcode.cn/problems/find-smallest-common-element-in-all-rows/) (Medium) 👑
 
 ## 760. Find Anagram Mappings
 

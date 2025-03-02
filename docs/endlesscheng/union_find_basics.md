@@ -6,9 +6,9 @@ comments: True
 
 - [x] [990. Satisfiability of Equality Equations](https://leetcode.cn/problems/satisfiability-of-equality-equations/) (Medium)
 - [x] [721. Accounts Merge](https://leetcode.cn/problems/accounts-merge/) (Medium)
-- [ ] [737. Sentence Similarity II](https://leetcode.cn/problems/sentence-similarity-ii/) (Medium)
-- [x] [1101. The Earliest Moment When Everyone Become Friends](https://leetcode.cn/problems/the-earliest-moment-when-everyone-become-friends/) (Medium)
-- [ ] [1258. Synonymous Sentences](https://leetcode.cn/problems/synonymous-sentences/) (Medium)
+- [ ] [737. Sentence Similarity II](https://leetcode.cn/problems/sentence-similarity-ii/) (Medium) 👑
+- [x] [1101. The Earliest Moment When Everyone Become Friends](https://leetcode.cn/problems/the-earliest-moment-when-everyone-become-friends/) (Medium) 👑
+- [ ] [1258. Synonymous Sentences](https://leetcode.cn/problems/synonymous-sentences/) (Medium) 👑
 
 ## 990. Satisfiability of Equality Equations
 

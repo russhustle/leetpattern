@@ -5,7 +5,7 @@ comments: True
 # Sliding Window Variable
 
 - [x] [3. Longest Substring Without Repeating Characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
-- [x] [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) (Medium)
+- [x] [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) (Medium) 👑
 - [x] [424. Longest Repeating Character Replacement](https://leetcode.cn/problems/longest-repeating-character-replacement/) (Medium)
 - [x] [1208. Get Equal Substrings Within Budget](https://leetcode.cn/problems/get-equal-substrings-within-budget/) (Medium)
 - [x] [1004. Max Consecutive Ones III](https://leetcode.cn/problems/max-consecutive-ones-iii/) (Medium)

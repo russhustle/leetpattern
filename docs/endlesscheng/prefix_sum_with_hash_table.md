@@ -22,11 +22,11 @@ comments: True
 - [ ] [2845. Count of Interesting Subarrays](https://leetcode.cn/problems/count-of-interesting-subarrays/) (Medium)
 - [ ] [1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.cn/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/) (Medium)
 - [ ] [2949. Count Beautiful Substrings II](https://leetcode.cn/problems/count-beautiful-substrings-ii/) (Hard)
-- [x] [325. Maximum Size Subarray Sum Equals k](https://leetcode.cn/problems/maximum-size-subarray-sum-equals-k/) (Medium)
-- [ ] [548. Split Array with Equal Sum](https://leetcode.cn/problems/split-array-with-equal-sum/) (Hard)
-- [ ] [1983. Widest Pair of Indices With Equal Range Sum](https://leetcode.cn/problems/widest-pair-of-indices-with-equal-range-sum/) (Medium)
-- [ ] [2489. Number of Substrings With Fixed Ratio](https://leetcode.cn/problems/number-of-substrings-with-fixed-ratio/) (Medium)
-- [ ] [2950. Number of Divisible Substrings](https://leetcode.cn/problems/number-of-divisible-substrings/) (Medium)
+- [x] [325. Maximum Size Subarray Sum Equals k](https://leetcode.cn/problems/maximum-size-subarray-sum-equals-k/) (Medium) 👑
+- [ ] [548. Split Array with Equal Sum](https://leetcode.cn/problems/split-array-with-equal-sum/) (Hard) 👑
+- [ ] [1983. Widest Pair of Indices With Equal Range Sum](https://leetcode.cn/problems/widest-pair-of-indices-with-equal-range-sum/) (Medium) 👑
+- [ ] [2489. Number of Substrings With Fixed Ratio](https://leetcode.cn/problems/number-of-substrings-with-fixed-ratio/) (Medium) 👑
+- [ ] [2950. Number of Divisible Substrings](https://leetcode.cn/problems/number-of-divisible-substrings/) (Medium) 👑
 - [ ] [3364. Minimum Positive Sum Subarray ](https://leetcode.cn/problems/minimum-positive-sum-subarray/) (Easy)
 - [ ] [2025. Maximum Number of Ways to Partition an Array](https://leetcode.cn/problems/maximum-number-of-ways-to-partition-an-array/) (Hard)
 

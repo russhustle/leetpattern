@@ -25,10 +25,10 @@ comments: True
 - [ ] [331. Verify Preorder Serialization of a Binary Tree](https://leetcode.cn/problems/verify-preorder-serialization-of-a-binary-tree/) (Medium)
 - [ ] [958. Check Completeness of a Binary Tree](https://leetcode.cn/problems/check-completeness-of-a-binary-tree/) (Medium)
 - [ ] [662. Maximum Width of Binary Tree](https://leetcode.cn/problems/maximum-width-of-binary-tree/) (Medium)
-- [ ] [3157. Find the Level of Tree with Minimum Sum](https://leetcode.cn/problems/find-the-level-of-tree-with-minimum-sum/) (Medium)
-- [ ] [1602. Find Nearest Right Node in Binary Tree](https://leetcode.cn/problems/find-nearest-right-node-in-binary-tree/) (Medium)
-- [ ] [742. Closest Leaf in a Binary Tree](https://leetcode.cn/problems/closest-leaf-in-a-binary-tree/) (Medium)
-- [ ] [1660. Correct a Binary Tree](https://leetcode.cn/problems/correct-a-binary-tree/) (Medium)
+- [ ] [3157. Find the Level of Tree with Minimum Sum](https://leetcode.cn/problems/find-the-level-of-tree-with-minimum-sum/) (Medium) 👑
+- [ ] [1602. Find Nearest Right Node in Binary Tree](https://leetcode.cn/problems/find-nearest-right-node-in-binary-tree/) (Medium) 👑
+- [ ] [742. Closest Leaf in a Binary Tree](https://leetcode.cn/problems/closest-leaf-in-a-binary-tree/) (Medium) 👑
+- [ ] [1660. Correct a Binary Tree](https://leetcode.cn/problems/correct-a-binary-tree/) (Medium) 👑
 
 ## 102. Binary Tree Level Order Traversal
 

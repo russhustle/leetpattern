@@ -25,11 +25,11 @@ comments: True
 - [ ] [1928. Minimum Cost to Reach Destination in Time](https://leetcode.cn/problems/minimum-cost-to-reach-destination-in-time/) (Hard)
 - [x] [787. Cheapest Flights Within K Stops](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
 - [ ] [2699. Modify Graph Edge Weights](https://leetcode.cn/problems/modify-graph-edge-weights/) (Hard)
-- [ ] [1810. Minimum Path Cost in a Hidden Grid](https://leetcode.cn/problems/minimum-path-cost-in-a-hidden-grid/) (Medium)
-- [ ] [2093. Minimum Cost to Reach City With Discounts](https://leetcode.cn/problems/minimum-cost-to-reach-city-with-discounts/) (Medium)
-- [ ] [2473. Minimum Cost to Buy Apples](https://leetcode.cn/problems/minimum-cost-to-buy-apples/) (Medium)
-- [ ] [2714. Find Shortest Path with K Hops](https://leetcode.cn/problems/find-shortest-path-with-k-hops/) (Hard)
-- [ ] [2737. Find the Closest Marked Node](https://leetcode.cn/problems/find-the-closest-marked-node/) (Medium)
+- [ ] [1810. Minimum Path Cost in a Hidden Grid](https://leetcode.cn/problems/minimum-path-cost-in-a-hidden-grid/) (Medium) 👑
+- [ ] [2093. Minimum Cost to Reach City With Discounts](https://leetcode.cn/problems/minimum-cost-to-reach-city-with-discounts/) (Medium) 👑
+- [ ] [2473. Minimum Cost to Buy Apples](https://leetcode.cn/problems/minimum-cost-to-buy-apples/) (Medium) 👑
+- [ ] [2714. Find Shortest Path with K Hops](https://leetcode.cn/problems/find-shortest-path-with-k-hops/) (Hard) 👑
+- [ ] [2737. Find the Closest Marked Node](https://leetcode.cn/problems/find-the-closest-marked-node/) (Medium) 👑
 
 ## 743. Network Delay Time
 

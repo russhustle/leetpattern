@@ -9,7 +9,7 @@ comments: True
 - [x] [377. Combination Sum IV](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
 - [ ] [2466. Count Ways To Build Good Strings](https://leetcode.cn/problems/count-ways-to-build-good-strings/) (Medium)
 - [ ] [2266. Count Number of Texts](https://leetcode.cn/problems/count-number-of-texts/) (Medium)
-- [ ] [2533. Number of Good Binary Strings](https://leetcode.cn/problems/number-of-good-binary-strings/) (Medium)
+- [ ] [2533. Number of Good Binary Strings](https://leetcode.cn/problems/number-of-good-binary-strings/) (Medium) 👑
 
 ## 70. Climbing Stairs
 

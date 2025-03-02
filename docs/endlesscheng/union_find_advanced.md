@@ -25,8 +25,8 @@ comments: True
 - [ ] [803. Bricks Falling When Hit](https://leetcode.cn/problems/bricks-falling-when-hit/) (Hard)
 - [ ] [1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.cn/problems/number-of-ways-to-reorder-array-to-get-same-bst/) (Hard)
 - [ ] [3235. Check if the Rectangle Corner Is Reachable](https://leetcode.cn/problems/check-if-the-rectangle-corner-is-reachable/) (Hard)
-- [ ] [2371. Minimize Maximum Value in a Grid](https://leetcode.cn/problems/minimize-maximum-value-in-a-grid/) (Hard)
-- [ ] [2459. Sort Array by Moving Items to Empty Space](https://leetcode.cn/problems/sort-array-by-moving-items-to-empty-space/) (Hard)
+- [ ] [2371. Minimize Maximum Value in a Grid](https://leetcode.cn/problems/minimize-maximum-value-in-a-grid/) (Hard) 👑
+- [ ] [2459. Sort Array by Moving Items to Empty Space](https://leetcode.cn/problems/sort-array-by-moving-items-to-empty-space/) (Hard) 👑
 
 ## 1202. Smallest String With Swaps
 

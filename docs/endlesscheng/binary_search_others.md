@@ -22,15 +22,15 @@ comments: True
 - [ ] [1539. Kth Missing Positive Number](https://leetcode.cn/problems/kth-missing-positive-number/) (Easy)
 - [ ] [540. Single Element in a Sorted Array](https://leetcode.cn/problems/single-element-in-a-sorted-array/) (Medium)
 - [x] [4. Median of Two Sorted Arrays](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
-- [ ] [1064. Fixed Point](https://leetcode.cn/problems/fixed-point/) (Easy)
-- [ ] [702. Search in a Sorted Array of Unknown Size](https://leetcode.cn/problems/search-in-a-sorted-array-of-unknown-size/) (Medium)
-- [ ] [2936. Number of Equal Numbers Blocks](https://leetcode.cn/problems/number-of-equal-numbers-blocks/) (Medium)
-- [ ] [1060. Missing Element in Sorted Array](https://leetcode.cn/problems/missing-element-in-sorted-array/) (Medium)
-- [ ] [1198. Find Smallest Common Element in All Rows](https://leetcode.cn/problems/find-smallest-common-element-in-all-rows/) (Medium)
-- [ ] [1428. Leftmost Column with at Least a One](https://leetcode.cn/problems/leftmost-column-with-at-least-a-one/) (Medium)
-- [ ] [1533. Find the Index of the Large Integer](https://leetcode.cn/problems/find-the-index-of-the-large-integer/) (Medium)
-- [ ] [2387. Median of a Row Wise Sorted Matrix](https://leetcode.cn/problems/median-of-a-row-wise-sorted-matrix/) (Medium)
-- [ ] [302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.cn/problems/smallest-rectangle-enclosing-black-pixels/) (Hard)
+- [ ] [1064. Fixed Point](https://leetcode.cn/problems/fixed-point/) (Easy) 👑
+- [ ] [702. Search in a Sorted Array of Unknown Size](https://leetcode.cn/problems/search-in-a-sorted-array-of-unknown-size/) (Medium) 👑
+- [ ] [2936. Number of Equal Numbers Blocks](https://leetcode.cn/problems/number-of-equal-numbers-blocks/) (Medium) 👑
+- [ ] [1060. Missing Element in Sorted Array](https://leetcode.cn/problems/missing-element-in-sorted-array/) (Medium) 👑
+- [ ] [1198. Find Smallest Common Element in All Rows](https://leetcode.cn/problems/find-smallest-common-element-in-all-rows/) (Medium) 👑
+- [ ] [1428. Leftmost Column with at Least a One](https://leetcode.cn/problems/leftmost-column-with-at-least-a-one/) (Medium) 👑
+- [ ] [1533. Find the Index of the Large Integer](https://leetcode.cn/problems/find-the-index-of-the-large-integer/) (Medium) 👑
+- [ ] [2387. Median of a Row Wise Sorted Matrix](https://leetcode.cn/problems/median-of-a-row-wise-sorted-matrix/) (Medium) 👑
+- [ ] [302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.cn/problems/smallest-rectangle-enclosing-black-pixels/) (Hard) 👑
 
 ## 69. Sqrt(x)
 

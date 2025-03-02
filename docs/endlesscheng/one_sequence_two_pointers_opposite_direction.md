@@ -26,10 +26,10 @@ comments: True
 - [ ] [1616. Split Two Strings to Make Palindrome](https://leetcode.cn/problems/split-two-strings-to-make-palindrome/) (Medium)
 - [ ] [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) (Medium)
 - [ ] [1782. Count Pairs Of Nodes](https://leetcode.cn/problems/count-pairs-of-nodes/) (Hard)
-- [ ] [1099. Two Sum Less Than K](https://leetcode.cn/problems/two-sum-less-than-k/) (Easy)
-- [ ] [360. Sort Transformed Array](https://leetcode.cn/problems/sort-transformed-array/) (Medium)
-- [ ] [2422. Merge Operations to Turn Array Into a Palindrome](https://leetcode.cn/problems/merge-operations-to-turn-array-into-a-palindrome/) (Medium)
-- [ ] [259. 3Sum Smaller](https://leetcode.cn/problems/3sum-smaller/) (Medium)
+- [ ] [1099. Two Sum Less Than K](https://leetcode.cn/problems/two-sum-less-than-k/) (Easy) 👑
+- [ ] [360. Sort Transformed Array](https://leetcode.cn/problems/sort-transformed-array/) (Medium) 👑
+- [ ] [2422. Merge Operations to Turn Array Into a Palindrome](https://leetcode.cn/problems/merge-operations-to-turn-array-into-a-palindrome/) (Medium) 👑
+- [ ] [259. 3Sum Smaller](https://leetcode.cn/problems/3sum-smaller/) (Medium) 👑
 
 ## 344. Reverse String
 

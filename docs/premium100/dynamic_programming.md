@@ -4,11 +4,11 @@ comments: True
 
 # Dynamic Programming
 
-- [ ] [276. Paint Fence](https://leetcode.cn/problems/paint-fence/) (Medium)
-- [ ] [256. Paint House](https://leetcode.cn/problems/paint-house/) (Medium)
-- [ ] [265. Paint House II](https://leetcode.cn/problems/paint-house-ii/) (Hard)
-- [ ] [651. 4 Keys Keyboard](https://leetcode.cn/problems/4-keys-keyboard/) (Medium)
-- [ ] [1259. Handshakes That Don't Cross](https://leetcode.cn/problems/handshakes-that-dont-cross/) (Hard)
+- [ ] [276. Paint Fence](https://leetcode.cn/problems/paint-fence/) (Medium) 👑
+- [ ] [256. Paint House](https://leetcode.cn/problems/paint-house/) (Medium) 👑
+- [ ] [265. Paint House II](https://leetcode.cn/problems/paint-house-ii/) (Hard) 👑
+- [ ] [651. 4 Keys Keyboard](https://leetcode.cn/problems/4-keys-keyboard/) (Medium) 👑
+- [ ] [1259. Handshakes That Don't Cross](https://leetcode.cn/problems/handshakes-that-dont-cross/) (Hard) 👑
 
 ## 276. Paint Fence
 

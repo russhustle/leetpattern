@@ -16,7 +16,7 @@ comments: True
 - [ ] [2867. Count Valid Paths in a Tree](https://leetcode.cn/problems/count-valid-paths-in-a-tree/) (Hard)
 - [x] [2552. Count Increasing Quadruplets](https://leetcode.cn/problems/count-increasing-quadruplets/) (Hard)
 - [ ] [3257. Maximum Value Sum by Placing Three Rooks II](https://leetcode.cn/problems/maximum-value-sum-by-placing-three-rooks-ii/) (Hard)
-- [ ] [3073. Maximum Increasing Triplet Value](https://leetcode.cn/problems/maximum-increasing-triplet-value/) (Medium)
+- [ ] [3073. Maximum Increasing Triplet Value](https://leetcode.cn/problems/maximum-increasing-triplet-value/) (Medium) 👑
 
 ## 2909. Minimum Sum of Mountain Triplets II
 

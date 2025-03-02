@@ -15,11 +15,11 @@ comments: True
 - [ ] [1096. Brace Expansion II](https://leetcode.cn/problems/brace-expansion-ii/) (Hard)
 - [ ] [1896. Minimum Cost to Change the Final Value of Expression](https://leetcode.cn/problems/minimum-cost-to-change-the-final-value-of-expression/) (Hard)
 - [x] [770. Basic Calculator IV](https://leetcode.cn/problems/basic-calculator-iv/) (Hard)
-- [ ] [439. Ternary Expression Parser](https://leetcode.cn/problems/ternary-expression-parser/) (Medium)
-- [x] [772. Basic Calculator III](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
-- [ ] [1087. Brace Expansion](https://leetcode.cn/problems/brace-expansion/) (Medium)
-- [ ] [1597. Build Binary Expression Tree From Infix Expression](https://leetcode.cn/problems/build-binary-expression-tree-from-infix-expression/) (Hard)
-- [ ] [1628. Design an Expression Tree With Evaluate Function](https://leetcode.cn/problems/design-an-expression-tree-with-evaluate-function/) (Medium)
+- [ ] [439. Ternary Expression Parser](https://leetcode.cn/problems/ternary-expression-parser/) (Medium) 👑
+- [x] [772. Basic Calculator III](https://leetcode.cn/problems/basic-calculator-iii/) (Hard) 👑
+- [ ] [1087. Brace Expansion](https://leetcode.cn/problems/brace-expansion/) (Medium) 👑
+- [ ] [1597. Build Binary Expression Tree From Infix Expression](https://leetcode.cn/problems/build-binary-expression-tree-from-infix-expression/) (Hard) 👑
+- [ ] [1628. Design an Expression Tree With Evaluate Function](https://leetcode.cn/problems/design-an-expression-tree-with-evaluate-function/) (Medium) 👑
 
 ## 150. Evaluate Reverse Polish Notation
 

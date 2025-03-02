@@ -9,7 +9,7 @@ comments: True
 - [x] [109. Convert Sorted List to Binary Search Tree](https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/) (Medium)
 - [x] [116. Populating Next Right Pointers in Each Node](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) (Medium)
 - [x] [117. Populating Next Right Pointers in Each Node II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) (Medium)
-- [ ] [426. Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.cn/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) (Medium)
+- [ ] [426. Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.cn/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) (Medium) 👑
 
 ## 114. Flatten Binary Tree to Linked List
 

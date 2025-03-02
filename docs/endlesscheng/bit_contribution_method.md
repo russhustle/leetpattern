@@ -9,7 +9,7 @@ comments: True
 - [ ] [2425. Bitwise XOR of All Pairings](https://leetcode.cn/problems/bitwise-xor-of-all-pairings/) (Medium)
 - [ ] [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) (Medium)
 - [ ] [1835. Find XOR Sum of All Pairs Bitwise AND](https://leetcode.cn/problems/find-xor-sum-of-all-pairs-bitwise-and/) (Hard)
-- [ ] [2505. Bitwise OR of All Subsequence Sums](https://leetcode.cn/problems/bitwise-or-of-all-subsequence-sums/) (Medium)
+- [ ] [2505. Bitwise OR of All Subsequence Sums](https://leetcode.cn/problems/bitwise-or-of-all-subsequence-sums/) (Medium) 👑
 - [ ] [3153. Sum of Digit Differences of All Pairs](https://leetcode.cn/problems/sum-of-digit-differences-of-all-pairs/) (Medium)
 
 ## 477. Total Hamming Distance

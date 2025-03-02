@@ -9,11 +9,11 @@ comments: True
 - [x] [1631. Path With Minimum Effort](https://leetcode.cn/problems/path-with-minimum-effort/) (Medium)
 - [x] [787. Cheapest Flights Within K Stops](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
 - [x] [1514. Path with Maximum Probability](https://leetcode.cn/problems/path-with-maximum-probability/) (Medium)
-- [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium)
-- [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard)
+- [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium) 👑
+- [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard) 👑
 - [x] [882. Reachable Nodes In Subdivided Graph](https://leetcode.cn/problems/reachable-nodes-in-subdivided-graph/) (Hard)
 - [x] [1376. Time Needed to Inform All Employees](https://leetcode.cn/problems/time-needed-to-inform-all-employees/) (Medium)
-- [x] [1168. Optimize Water Distribution in a Village](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard)
+- [x] [1168. Optimize Water Distribution in a Village](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard) 👑
 - [x] [1976. Number of Ways to Arrive at Destination](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
 
 ## 743. Network Delay Time

@@ -32,8 +32,8 @@ comments: True
 - [ ] [1505. Minimum Possible Integer After at Most K Adjacent Swaps On Digits](https://leetcode.cn/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/) (Hard)
 - [ ] [2663. Lexicographically Smallest Beautiful String](https://leetcode.cn/problems/lexicographically-smallest-beautiful-string/) (Hard)
 - [ ] [3302. Find the Lexicographically Smallest Valid Sequence](https://leetcode.cn/problems/find-the-lexicographically-smallest-valid-sequence/) (Medium)
-- [ ] [555. Split Concatenated Strings](https://leetcode.cn/problems/split-concatenated-strings/) (Medium)
-- [ ] [3088. Make String Anti-palindrome](https://leetcode.cn/problems/make-string-anti-palindrome/) (Hard)
+- [ ] [555. Split Concatenated Strings](https://leetcode.cn/problems/split-concatenated-strings/) (Medium) 👑
+- [ ] [3088. Make String Anti-palindrome](https://leetcode.cn/problems/make-string-anti-palindrome/) (Hard) 👑
 
 ## 1323. Maximum 69 Number
 

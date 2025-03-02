@@ -13,7 +13,7 @@ comments: True
 - [x] [93. Restore IP Addresses](https://leetcode.cn/problems/restore-ip-addresses/) (Medium)
 - [ ] [816. Ambiguous Coordinates](https://leetcode.cn/problems/ambiguous-coordinates/) (Medium)
 - [ ] [140. Word Break II](https://leetcode.cn/problems/word-break-ii/) (Hard)
-- [ ] [291. Word Pattern II](https://leetcode.cn/problems/word-pattern-ii/) (Medium)
+- [ ] [291. Word Pattern II](https://leetcode.cn/problems/word-pattern-ii/) (Medium) 👑
 
 ## 131. Palindrome Partitioning
 

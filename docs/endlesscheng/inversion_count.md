@@ -10,7 +10,7 @@ comments: True
 - [ ] [2426. Number of Pairs Satisfying Inequality](https://leetcode.cn/problems/number-of-pairs-satisfying-inequality/) (Hard)
 - [ ] [1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.cn/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/) (Medium)
 - [ ] [2193. Minimum Number of Moves to Make Palindrome](https://leetcode.cn/problems/minimum-number-of-moves-to-make-palindrome/) (Hard)
-- [ ] [1885. Count Pairs in Two Arrays](https://leetcode.cn/problems/count-pairs-in-two-arrays/) (Medium)
+- [ ] [1885. Count Pairs in Two Arrays](https://leetcode.cn/problems/count-pairs-in-two-arrays/) (Medium) 👑
 
 ## 315. Count of Smaller Numbers After Self
 

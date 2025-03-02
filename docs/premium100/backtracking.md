@@ -4,9 +4,9 @@ comments: True
 
 # Backtracking
 
-- [ ] [247. Strobogrammatic Number II](https://leetcode.cn/problems/strobogrammatic-number-ii/) (Medium)
-- [ ] [254. Factor Combinations](https://leetcode.cn/problems/factor-combinations/) (Medium)
-- [ ] [1087. Brace Expansion](https://leetcode.cn/problems/brace-expansion/) (Medium)
+- [ ] [247. Strobogrammatic Number II](https://leetcode.cn/problems/strobogrammatic-number-ii/) (Medium) 👑
+- [ ] [254. Factor Combinations](https://leetcode.cn/problems/factor-combinations/) (Medium) 👑
+- [ ] [1087. Brace Expansion](https://leetcode.cn/problems/brace-expansion/) (Medium) 👑
 
 ## 247. Strobogrammatic Number II
 

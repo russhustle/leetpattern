@@ -10,8 +10,8 @@ comments: True
 - [ ] [2812. Find the Safest Path in a Grid](https://leetcode.cn/problems/find-the-safest-path-in-a-grid/) (Medium)
 - [ ] [2528. Maximize the Minimum Powered City](https://leetcode.cn/problems/maximize-the-minimum-powered-city/) (Hard)
 - [ ] [3449. Maximize the Minimum Game Score](https://leetcode.cn/problems/maximize-the-minimum-game-score/) (Hard)
-- [ ] [1102. Path With Maximum Minimum Value](https://leetcode.cn/problems/path-with-maximum-minimum-value/) (Medium)
-- [ ] [1231. Divide Chocolate](https://leetcode.cn/problems/divide-chocolate/) (Hard)
+- [ ] [1102. Path With Maximum Minimum Value](https://leetcode.cn/problems/path-with-maximum-minimum-value/) (Medium) 👑
+- [ ] [1231. Divide Chocolate](https://leetcode.cn/problems/divide-chocolate/) (Hard) 👑
 
 ## 3281. Maximize Score of Numbers in Ranges
 

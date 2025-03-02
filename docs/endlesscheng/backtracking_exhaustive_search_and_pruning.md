@@ -23,11 +23,11 @@ comments: True
 - [ ] [2056. Number of Valid Move Combinations On Chessboard](https://leetcode.cn/problems/number-of-valid-move-combinations-on-chessboard/) (Hard)
 - [ ] [2386. Find the K-Sum of an Array](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) (Hard)
 - [ ] [488. Zuma Game](https://leetcode.cn/problems/zuma-game/) (Hard)
-- [ ] [2664. The Knight’s Tour](https://leetcode.cn/problems/the-knights-tour/) (Medium)
-- [ ] [247. Strobogrammatic Number II](https://leetcode.cn/problems/strobogrammatic-number-ii/) (Medium)
-- [ ] [248. Strobogrammatic Number III](https://leetcode.cn/problems/strobogrammatic-number-iii/) (Hard)
-- [ ] [411. Minimum Unique Word Abbreviation](https://leetcode.cn/problems/minimum-unique-word-abbreviation/) (Hard)
-- [ ] [1088. Confusing Number II](https://leetcode.cn/problems/confusing-number-ii/) (Hard)
+- [ ] [2664. The Knight’s Tour](https://leetcode.cn/problems/the-knights-tour/) (Medium) 👑
+- [ ] [247. Strobogrammatic Number II](https://leetcode.cn/problems/strobogrammatic-number-ii/) (Medium) 👑
+- [ ] [248. Strobogrammatic Number III](https://leetcode.cn/problems/strobogrammatic-number-iii/) (Hard) 👑
+- [ ] [411. Minimum Unique Word Abbreviation](https://leetcode.cn/problems/minimum-unique-word-abbreviation/) (Hard) 👑
+- [ ] [1088. Confusing Number II](https://leetcode.cn/problems/confusing-number-ii/) (Hard) 👑
 
 ## 3211. Generate Binary Strings Without Adjacent Zeros
 

@@ -8,8 +8,8 @@ comments: True
 - [x] [133. Clone Graph](https://leetcode.cn/problems/clone-graph/) (Medium)
 - [x] [417. Pacific Atlantic Water Flow](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 - [x] [207. Course Schedule](https://leetcode.cn/problems/course-schedule/) (Medium)
-- [x] [261. Graph Valid Tree](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
-- [x] [323. Number of Connected Components in an Undirected Graph](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
+- [x] [261. Graph Valid Tree](https://leetcode.cn/problems/graph-valid-tree/) (Medium) 👑
+- [x] [323. Number of Connected Components in an Undirected Graph](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium) 👑
 
 ## 200. Number of Islands
 

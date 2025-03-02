@@ -9,8 +9,8 @@ comments: True
 - [x] [2181. Merge Nodes in Between Zeros](https://leetcode.cn/problems/merge-nodes-in-between-zeros/) (Medium)
 - [ ] [725. Split Linked List in Parts](https://leetcode.cn/problems/split-linked-list-in-parts/) (Medium)
 - [ ] [817. Linked List Components](https://leetcode.cn/problems/linked-list-components/) (Medium)
-- [ ] [3062. Winner of the Linked List Game](https://leetcode.cn/problems/winner-of-the-linked-list-game/) (Easy)
-- [ ] [3063. Linked List Frequency](https://leetcode.cn/problems/linked-list-frequency/) (Easy)
+- [ ] [3062. Winner of the Linked List Game](https://leetcode.cn/problems/winner-of-the-linked-list-game/) (Easy) 👑
+- [ ] [3063. Linked List Frequency](https://leetcode.cn/problems/linked-list-frequency/) (Easy) 👑
 
 ## 1290. Convert Binary Number in a Linked List to Integer
 

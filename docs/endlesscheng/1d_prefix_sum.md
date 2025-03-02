@@ -16,9 +16,9 @@ comments: True
 - [x] [2281. Sum of Total Strength of Wizards](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
 - [ ] [3445. Maximum Difference Between Even and Odd Frequency II](https://leetcode.cn/problems/maximum-difference-between-even-and-odd-frequency-ii/) (Hard)
 - [ ] [2983. Palindrome Rearrangement Queries](https://leetcode.cn/problems/palindrome-rearrangement-queries/) (Hard)
-- [ ] [2955. Number of Same-End Substrings](https://leetcode.cn/problems/number-of-same-end-substrings/) (Medium)
-- [ ] [1788. Maximize the Beauty of the Garden](https://leetcode.cn/problems/maximize-the-beauty-of-the-garden/) (Hard)
-- [ ] [2819. Minimum Relative Loss After Buying Chocolates](https://leetcode.cn/problems/minimum-relative-loss-after-buying-chocolates/) (Hard)
+- [ ] [2955. Number of Same-End Substrings](https://leetcode.cn/problems/number-of-same-end-substrings/) (Medium) 👑
+- [ ] [1788. Maximize the Beauty of the Garden](https://leetcode.cn/problems/maximize-the-beauty-of-the-garden/) (Hard) 👑
+- [ ] [2819. Minimum Relative Loss After Buying Chocolates](https://leetcode.cn/problems/minimum-relative-loss-after-buying-chocolates/) (Hard) 👑
 
 ## 1310. XOR Queries of a Subarray
 

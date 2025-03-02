@@ -7,7 +7,7 @@ comments: True
 - [x] [19. Remove Nth Node From End of List](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) (Medium)
 - [ ] [61. Rotate List](https://leetcode.cn/problems/rotate-list/) (Medium)
 - [ ] [1721. Swapping Nodes in a Linked List](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/) (Medium)
-- [ ] [1474. Delete N Nodes After M Nodes of a Linked List](https://leetcode.cn/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) (Easy)
+- [ ] [1474. Delete N Nodes After M Nodes of a Linked List](https://leetcode.cn/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) (Easy) 👑
 
 ## 19. Remove Nth Node From End of List
 

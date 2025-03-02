@@ -4,15 +4,15 @@ comments: True
 
 # Design
 
-- [ ] [348. Design Tic-Tac-Toe](https://leetcode.cn/problems/design-tic-tac-toe/) (Medium)
-- [x] [353. Design Snake Game](https://leetcode.cn/problems/design-snake-game/) (Medium)
-- [ ] [604. Design Compressed String Iterator](https://leetcode.cn/problems/design-compressed-string-iterator/) (Easy)
-- [x] [271. Encode and Decode Strings](https://leetcode.cn/problems/encode-and-decode-strings/) (Medium)
-- [ ] [281. Zigzag Iterator](https://leetcode.cn/problems/zigzag-iterator/) (Medium)
-- [ ] [716. Max Stack](https://leetcode.cn/problems/max-stack/) (Hard)
-- [x] [1244. Design A Leaderboard](https://leetcode.cn/problems/design-a-leaderboard/) (Medium)
-- [ ] [428. Serialize and Deserialize N-ary Tree](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard)
-- [ ] [431. Encode N-ary Tree to Binary Tree](https://leetcode.cn/problems/encode-n-ary-tree-to-binary-tree/) (Hard)
+- [ ] [348. Design Tic-Tac-Toe](https://leetcode.cn/problems/design-tic-tac-toe/) (Medium) 👑
+- [x] [353. Design Snake Game](https://leetcode.cn/problems/design-snake-game/) (Medium) 👑
+- [ ] [604. Design Compressed String Iterator](https://leetcode.cn/problems/design-compressed-string-iterator/) (Easy) 👑
+- [x] [271. Encode and Decode Strings](https://leetcode.cn/problems/encode-and-decode-strings/) (Medium) 👑
+- [ ] [281. Zigzag Iterator](https://leetcode.cn/problems/zigzag-iterator/) (Medium) 👑
+- [ ] [716. Max Stack](https://leetcode.cn/problems/max-stack/) (Hard) 👑
+- [x] [1244. Design A Leaderboard](https://leetcode.cn/problems/design-a-leaderboard/) (Medium) 👑
+- [ ] [428. Serialize and Deserialize N-ary Tree](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard) 👑
+- [ ] [431. Encode N-ary Tree to Binary Tree](https://leetcode.cn/problems/encode-n-ary-tree-to-binary-tree/) (Hard) 👑
 
 ## 348. Design Tic-Tac-Toe
 

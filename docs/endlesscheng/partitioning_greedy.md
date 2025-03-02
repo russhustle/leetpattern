@@ -10,8 +10,8 @@ comments: True
 - [ ] [2358. Maximum Number of Groups Entering a Competition](https://leetcode.cn/problems/maximum-number-of-groups-entering-a-competition/) (Medium)
 - [ ] [2522. Partition String Into Substrings With Values at Most K](https://leetcode.cn/problems/partition-string-into-substrings-with-values-at-most-k/) (Medium)
 - [ ] [1546. Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](https://leetcode.cn/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) (Medium)
-- [ ] [2436. Minimum Split Into Subarrays With GCD Greater Than One](https://leetcode.cn/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/) (Medium)
-- [ ] [2892. Minimizing Array After Replacing Pairs With Their Product](https://leetcode.cn/problems/minimizing-array-after-replacing-pairs-with-their-product/) (Medium)
+- [ ] [2436. Minimum Split Into Subarrays With GCD Greater Than One](https://leetcode.cn/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/) (Medium) 👑
+- [ ] [2892. Minimizing Array After Replacing Pairs With Their Product](https://leetcode.cn/problems/minimizing-array-after-replacing-pairs-with-their-product/) (Medium) 👑
 
 ## 1221. Split a String in Balanced Strings
 

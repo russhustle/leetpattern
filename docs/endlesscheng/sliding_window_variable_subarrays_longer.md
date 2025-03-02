@@ -10,7 +10,7 @@ comments: True
 - [ ] [2799. Count Complete Subarrays in an Array](https://leetcode.cn/problems/count-complete-subarrays-in-an-array/) (Medium)
 - [ ] [2537. Count the Number of Good Subarrays](https://leetcode.cn/problems/count-the-number-of-good-subarrays/) (Medium)
 - [ ] [3298. Count Substrings That Can Be Rearranged to Contain a String II](https://leetcode.cn/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/) (Hard)
-- [ ] [2495. Number of Subarrays Having Even Product](https://leetcode.cn/problems/number-of-subarrays-having-even-product/) (Medium)
+- [ ] [2495. Number of Subarrays Having Even Product](https://leetcode.cn/problems/number-of-subarrays-having-even-product/) (Medium) 👑
 
 ## 1358. Number of Substrings Containing All Three Characters
 

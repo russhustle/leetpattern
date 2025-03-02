@@ -10,8 +10,8 @@ comments: True
 - [ ] [2477. Minimum Fuel Cost to Report to the Capital](https://leetcode.cn/problems/minimum-fuel-cost-to-report-to-the-capital/) (Medium)
 - [ ] [2973. Find Number of Coins to Place in Tree Nodes](https://leetcode.cn/problems/find-number-of-coins-to-place-in-tree-nodes/) (Hard)
 - [ ] [2440. Create Components With Same Value](https://leetcode.cn/problems/create-components-with-same-value/) (Hard)
-- [ ] [1273. Delete Tree Nodes](https://leetcode.cn/problems/delete-tree-nodes/) (Medium)
-- [ ] [3004. Maximum Subtree of the Same Color](https://leetcode.cn/problems/maximum-subtree-of-the-same-color/) (Medium)
+- [ ] [1273. Delete Tree Nodes](https://leetcode.cn/problems/delete-tree-nodes/) (Medium) 👑
+- [ ] [3004. Maximum Subtree of the Same Color](https://leetcode.cn/problems/maximum-subtree-of-the-same-color/) (Medium) 👑
 
 ## 3249. Count the Number of Good Nodes
 

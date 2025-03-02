@@ -18,14 +18,14 @@ comments: True
 - [ ] [2673. Make Costs of Paths Equal in a Binary Tree](https://leetcode.cn/problems/make-costs-of-paths-equal-in-a-binary-tree/) (Medium)
 - [ ] [2509. Cycle Length Queries in a Tree](https://leetcode.cn/problems/cycle-length-queries-in-a-tree/) (Hard)
 - [ ] [2458. Height of Binary Tree After Subtree Removal Queries](https://leetcode.cn/problems/height-of-binary-tree-after-subtree-removal-queries/) (Hard)
-- [ ] [314. Binary Tree Vertical Order Traversal](https://leetcode.cn/problems/binary-tree-vertical-order-traversal/) (Medium)
-- [ ] [666. Path Sum IV](https://leetcode.cn/problems/path-sum-iv/) (Medium)
-- [x] [1586. Binary Search Tree Iterator II](https://leetcode.cn/problems/binary-search-tree-iterator-ii/) (Medium)
-- [ ] [2773. Height of Special Binary Tree](https://leetcode.cn/problems/height-of-special-binary-tree/) (Medium)
-- [ ] [1485. Clone Binary Tree With Random Pointer](https://leetcode.cn/problems/clone-binary-tree-with-random-pointer/) (Medium)
-- [ ] [2445. Number of Nodes With Value One](https://leetcode.cn/problems/number-of-nodes-with-value-one/) (Medium)
-- [ ] [431. Encode N-ary Tree to Binary Tree](https://leetcode.cn/problems/encode-n-ary-tree-to-binary-tree/) (Hard)
-- [ ] [2005. Subtree Removal Game with Fibonacci Tree](https://leetcode.cn/problems/subtree-removal-game-with-fibonacci-tree/) (Hard)
+- [ ] [314. Binary Tree Vertical Order Traversal](https://leetcode.cn/problems/binary-tree-vertical-order-traversal/) (Medium) 👑
+- [ ] [666. Path Sum IV](https://leetcode.cn/problems/path-sum-iv/) (Medium) 👑
+- [x] [1586. Binary Search Tree Iterator II](https://leetcode.cn/problems/binary-search-tree-iterator-ii/) (Medium) 👑
+- [ ] [2773. Height of Special Binary Tree](https://leetcode.cn/problems/height-of-special-binary-tree/) (Medium) 👑
+- [ ] [1485. Clone Binary Tree With Random Pointer](https://leetcode.cn/problems/clone-binary-tree-with-random-pointer/) (Medium) 👑
+- [ ] [2445. Number of Nodes With Value One](https://leetcode.cn/problems/number-of-nodes-with-value-one/) (Medium) 👑
+- [ ] [431. Encode N-ary Tree to Binary Tree](https://leetcode.cn/problems/encode-n-ary-tree-to-binary-tree/) (Hard) 👑
+- [ ] [2005. Subtree Removal Game with Fibonacci Tree](https://leetcode.cn/problems/subtree-removal-game-with-fibonacci-tree/) (Hard) 👑
 
 ## 297. Serialize and Deserialize Binary Tree
 

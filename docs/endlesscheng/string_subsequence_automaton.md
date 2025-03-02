@@ -7,8 +7,8 @@ comments: True
 - [ ] [792. Number of Matching Subsequences](https://leetcode.cn/problems/number-of-matching-subsequences/) (Medium)
 - [ ] [514. Freedom Trail](https://leetcode.cn/problems/freedom-trail/) (Hard)
 - [ ] [2014. Longest Subsequence Repeated k Times](https://leetcode.cn/problems/longest-subsequence-repeated-k-times/) (Hard)
-- [ ] [1055. Shortest Way to Form String](https://leetcode.cn/problems/shortest-way-to-form-string/) (Medium)
-- [ ] [727. Minimum Window Subsequence](https://leetcode.cn/problems/minimum-window-subsequence/) (Hard)
+- [ ] [1055. Shortest Way to Form String](https://leetcode.cn/problems/shortest-way-to-form-string/) (Medium) 👑
+- [ ] [727. Minimum Window Subsequence](https://leetcode.cn/problems/minimum-window-subsequence/) (Hard) 👑
 
 ## 792. Number of Matching Subsequences
 

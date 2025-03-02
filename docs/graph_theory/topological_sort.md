@@ -6,7 +6,7 @@ comments: True
 
 - [x] [207. Course Schedule](https://leetcode.cn/problems/course-schedule/) (Medium)
 - [x] [210. Course Schedule II](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
-- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard) 👑
 - [x] [1203. Sort Items by Groups Respecting Dependencies](https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/) (Hard)
 - [x] [1857. Largest Color Value in a Directed Graph](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
 

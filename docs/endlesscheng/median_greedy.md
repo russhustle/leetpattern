@@ -14,7 +14,7 @@ comments: True
 - [ ] [1703. Minimum Adjacent Swaps for K Consecutive Ones](https://leetcode.cn/problems/minimum-adjacent-swaps-for-k-consecutive-ones/) (Hard)
 - [ ] [3086. Minimum Moves to Pick K Ones](https://leetcode.cn/problems/minimum-moves-to-pick-k-ones/) (Hard)
 - [ ] [3441. Minimum Cost Good Caption](https://leetcode.cn/problems/minimum-cost-good-caption/) (Hard)
-- [ ] [296. Best Meeting Point](https://leetcode.cn/problems/best-meeting-point/) (Hard)
+- [ ] [296. Best Meeting Point](https://leetcode.cn/problems/best-meeting-point/) (Hard) 👑
 
 ## 462. Minimum Moves to Equal Array Elements II
 

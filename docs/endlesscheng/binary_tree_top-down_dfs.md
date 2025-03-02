@@ -18,10 +18,10 @@ comments: True
 - [ ] [623. Add One Row to Tree](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
 - [ ] [1372. Longest ZigZag Path in a Binary Tree](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/) (Medium)
 - [ ] [971. Flip Binary Tree To Match Preorder Traversal](https://leetcode.cn/problems/flip-binary-tree-to-match-preorder-traversal/) (Medium)
-- [ ] [2689. Extract Kth Character From The Rope Tree](https://leetcode.cn/problems/extract-kth-character-from-the-rope-tree/) (Easy)
-- [ ] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
-- [ ] [1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.cn/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/) (Medium)
-- [ ] [545. Boundary of Binary Tree](https://leetcode.cn/problems/boundary-of-binary-tree/) (Medium)
+- [ ] [2689. Extract Kth Character From The Rope Tree](https://leetcode.cn/problems/extract-kth-character-from-the-rope-tree/) (Easy) 👑
+- [ ] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium) 👑
+- [ ] [1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.cn/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/) (Medium) 👑
+- [ ] [545. Boundary of Binary Tree](https://leetcode.cn/problems/boundary-of-binary-tree/) (Medium) 👑
 
 ## 104. Maximum Depth of Binary Tree
 

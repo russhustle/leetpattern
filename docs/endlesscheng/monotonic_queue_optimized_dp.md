@@ -11,7 +11,7 @@ comments: True
 - [ ] [1687. Delivering Boxes from Storage to Ports](https://leetcode.cn/problems/delivering-boxes-from-storage-to-ports/) (Hard)
 - [ ] [3117. Minimum Sum of Values by Dividing Array](https://leetcode.cn/problems/minimum-sum-of-values-by-dividing-array/) (Hard)
 - [ ] [2945. Find Maximum Non-decreasing Array Length](https://leetcode.cn/problems/find-maximum-non-decreasing-array-length/) (Hard)
-- [ ] [2969. Minimum Number of Coins for Fruits II](https://leetcode.cn/problems/minimum-number-of-coins-for-fruits-ii/) (Hard)
+- [ ] [2969. Minimum Number of Coins for Fruits II](https://leetcode.cn/problems/minimum-number-of-coins-for-fruits-ii/) (Hard) 👑
 
 ## 2944. Minimum Number of Coins for Fruits
 

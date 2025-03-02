@@ -27,8 +27,8 @@ comments: True
 - [ ] [1995. Count Special Quadruplets](https://leetcode.cn/problems/count-special-quadruplets/) (Easy)
 - [ ] [3404. Count Special Subsequences](https://leetcode.cn/problems/count-special-subsequences/) (Medium)
 - [ ] [3267. Count Almost Equal Pairs II](https://leetcode.cn/problems/count-almost-equal-pairs-ii/) (Hard)
-- [ ] [1214. Two Sum BSTs](https://leetcode.cn/problems/two-sum-bsts/) (Medium)
-- [ ] [2964. Number of Divisible Triplet Sums](https://leetcode.cn/problems/number-of-divisible-triplet-sums/) (Medium)
+- [ ] [1214. Two Sum BSTs](https://leetcode.cn/problems/two-sum-bsts/) (Medium) 👑
+- [ ] [2964. Number of Divisible Triplet Sums](https://leetcode.cn/problems/number-of-divisible-triplet-sums/) (Medium) 👑
 - [ ] [2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.cn/problems/largest-positive-integer-that-exists-with-its-negative/) (Easy)
 - [x] [454. 4Sum II](https://leetcode.cn/problems/4sum-ii/) (Medium)
 - [ ] [3371. Identify the Largest Outlier in an Array](https://leetcode.cn/problems/identify-the-largest-outlier-in-an-array/) (Medium)

@@ -20,11 +20,11 @@ comments: True
 - [ ] [2736. Maximum Sum Queries](https://leetcode.cn/problems/maximum-sum-queries/) (Hard)
 - [ ] [3382. Maximum Area Rectangle With Point Constraints II](https://leetcode.cn/problems/maximum-area-rectangle-with-point-constraints-ii/) (Hard)
 - [ ] [3245. Alternating Groups III](https://leetcode.cn/problems/alternating-groups-iii/) (Hard)
-- [ ] [1756. Design Most Recently Used Queue](https://leetcode.cn/problems/design-most-recently-used-queue/) (Medium)
-- [ ] [2519. Count the Number of K-Big Indices](https://leetcode.cn/problems/count-the-number-of-k-big-indices/) (Hard)
-- [ ] [2613. Beautiful Pairs](https://leetcode.cn/problems/beautiful-pairs/) (Hard)
-- [ ] [2921. Maximum Profitable Triplets With Increasing Prices II](https://leetcode.cn/problems/maximum-profitable-triplets-with-increasing-prices-ii/) (Hard)
-- [ ] [308. Range Sum Query 2D - Mutable](https://leetcode.cn/problems/range-sum-query-2d-mutable/) (Medium)
+- [ ] [1756. Design Most Recently Used Queue](https://leetcode.cn/problems/design-most-recently-used-queue/) (Medium) 👑
+- [ ] [2519. Count the Number of K-Big Indices](https://leetcode.cn/problems/count-the-number-of-k-big-indices/) (Hard) 👑
+- [ ] [2613. Beautiful Pairs](https://leetcode.cn/problems/beautiful-pairs/) (Hard) 👑
+- [ ] [2921. Maximum Profitable Triplets With Increasing Prices II](https://leetcode.cn/problems/maximum-profitable-triplets-with-increasing-prices-ii/) (Hard) 👑
+- [ ] [308. Range Sum Query 2D - Mutable](https://leetcode.cn/problems/range-sum-query-2d-mutable/) (Medium) 👑
 
 ## 307. Range Sum Query - Mutable
 

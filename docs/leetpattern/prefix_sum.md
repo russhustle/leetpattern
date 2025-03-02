@@ -14,7 +14,7 @@ comments: True
 - [x] [209. Minimum Size Subarray Sum](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
 - [x] [523. Continuous Subarray Sum](https://leetcode.cn/problems/continuous-subarray-sum/) (Medium)
 - [x] [1248. Count Number of Nice Subarrays](https://leetcode.cn/problems/count-number-of-nice-subarrays/) (Medium)
-- [x] [325. Maximum Size Subarray Sum Equals k](https://leetcode.cn/problems/maximum-size-subarray-sum-equals-k/) (Medium)
+- [x] [325. Maximum Size Subarray Sum Equals k](https://leetcode.cn/problems/maximum-size-subarray-sum-equals-k/) (Medium) 👑
 - [x] [862. Shortest Subarray with Sum at Least K](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/) (Hard)
 - [x] [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) (Medium)
 

@@ -8,7 +8,7 @@ comments: True
 - [ ] [2972. Count the Number of Incremovable Subarrays II](https://leetcode.cn/problems/count-the-number-of-incremovable-subarrays-ii/) (Hard)
 - [ ] [2122. Recover the Original Array](https://leetcode.cn/problems/recover-the-original-array/) (Hard)
 - [ ] [2234. Maximum Total Beauty of the Gardens](https://leetcode.cn/problems/maximum-total-beauty-of-the-gardens/) (Hard)
-- [ ] [3323. Minimize Connected Groups by Inserting Interval](https://leetcode.cn/problems/minimize-connected-groups-by-inserting-interval/) (Medium)
+- [ ] [3323. Minimize Connected Groups by Inserting Interval](https://leetcode.cn/problems/minimize-connected-groups-by-inserting-interval/) (Medium) 👑
 - [ ] [581. Shortest Unsorted Continuous Subarray](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/) (Medium)
 
 ## 1574. Shortest Subarray to be Removed to Make Array Sorted

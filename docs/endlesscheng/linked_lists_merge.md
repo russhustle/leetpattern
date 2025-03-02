@@ -8,8 +8,8 @@ comments: True
 - [ ] [445. Add Two Numbers II](https://leetcode.cn/problems/add-two-numbers-ii/) (Medium)
 - [x] [2816. Double a Number Represented as a Linked List](https://leetcode.cn/problems/double-a-number-represented-as-a-linked-list/) (Medium)
 - [x] [21. Merge Two Sorted Lists](https://leetcode.cn/problems/merge-two-sorted-lists/) (Easy)
-- [ ] [369. Plus One Linked List](https://leetcode.cn/problems/plus-one-linked-list/) (Medium)
-- [ ] [1634. Add Two Polynomials Represented as Linked Lists](https://leetcode.cn/problems/add-two-polynomials-represented-as-linked-lists/) (Medium)
+- [ ] [369. Plus One Linked List](https://leetcode.cn/problems/plus-one-linked-list/) (Medium) 👑
+- [ ] [1634. Add Two Polynomials Represented as Linked Lists](https://leetcode.cn/problems/add-two-polynomials-represented-as-linked-lists/) (Medium) 👑
 
 ## 2. Add Two Numbers
 

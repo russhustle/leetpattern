@@ -18,12 +18,12 @@ comments: True
 - [ ] [653. Two Sum IV - Input is a BST](https://leetcode.cn/problems/two-sum-iv-input-is-a-bst/) (Easy)
 - [ ] [1373. Maximum Sum BST in Binary Tree](https://leetcode.cn/problems/maximum-sum-bst-in-binary-tree/) (Hard)
 - [ ] [1932. Merge BSTs to Create Single BST](https://leetcode.cn/problems/merge-bsts-to-create-single-bst/) (Hard)
-- [ ] [285. Inorder Successor in BST](https://leetcode.cn/problems/inorder-successor-in-bst/) (Medium)
-- [ ] [510. Inorder Successor in BST II](https://leetcode.cn/problems/inorder-successor-in-bst-ii/) (Medium)
-- [ ] [270. Closest Binary Search Tree Value](https://leetcode.cn/problems/closest-binary-search-tree-value/) (Easy)
-- [ ] [272. Closest Binary Search Tree Value II](https://leetcode.cn/problems/closest-binary-search-tree-value-ii/) (Hard)
-- [ ] [255. Verify Preorder Sequence in Binary Search Tree](https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/) (Medium)
-- [ ] [1902. Depth of BST Given Insertion Order](https://leetcode.cn/problems/depth-of-bst-given-insertion-order/) (Medium)
+- [ ] [285. Inorder Successor in BST](https://leetcode.cn/problems/inorder-successor-in-bst/) (Medium) 👑
+- [ ] [510. Inorder Successor in BST II](https://leetcode.cn/problems/inorder-successor-in-bst-ii/) (Medium) 👑
+- [ ] [270. Closest Binary Search Tree Value](https://leetcode.cn/problems/closest-binary-search-tree-value/) (Easy) 👑
+- [ ] [272. Closest Binary Search Tree Value II](https://leetcode.cn/problems/closest-binary-search-tree-value-ii/) (Hard) 👑
+- [ ] [255. Verify Preorder Sequence in Binary Search Tree](https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/) (Medium) 👑
+- [ ] [1902. Depth of BST Given Insertion Order](https://leetcode.cn/problems/depth-of-bst-given-insertion-order/) (Medium) 👑
 
 ## 98. Validate Binary Search Tree
 

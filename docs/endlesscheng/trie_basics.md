@@ -15,8 +15,8 @@ comments: True
 - [ ] [820. Short Encoding of Words](https://leetcode.cn/problems/short-encoding-of-words/) (Medium)
 - [ ] [2416. Sum of Prefix Scores of Strings](https://leetcode.cn/problems/sum-of-prefix-scores-of-strings/) (Hard)
 - [ ] [2261. K Divisible Elements Subarrays](https://leetcode.cn/problems/k-divisible-elements-subarrays/) (Medium)
-- [ ] [1804. Implement Trie II (Prefix Tree)](https://leetcode.cn/problems/implement-trie-ii-prefix-tree/) (Medium)
-- [ ] [2168. Unique Substrings With Equal Digit Frequency](https://leetcode.cn/problems/unique-substrings-with-equal-digit-frequency/) (Medium)
+- [ ] [1804. Implement Trie II (Prefix Tree)](https://leetcode.cn/problems/implement-trie-ii-prefix-tree/) (Medium) 👑
+- [ ] [2168. Unique Substrings With Equal Digit Frequency](https://leetcode.cn/problems/unique-substrings-with-equal-digit-frequency/) (Medium) 👑
 
 ## 208. Implement Trie (Prefix Tree)
 

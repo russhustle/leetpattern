@@ -8,7 +8,7 @@ comments: True
 - [x] [1584. Min Cost to Connect All Points](https://leetcode.cn/problems/min-cost-to-connect-all-points/) (Medium)
 - [x] [743. Network Delay Time](https://leetcode.cn/problems/network-delay-time/) (Medium)
 - [x] [778. Swim in Rising Water](https://leetcode.cn/problems/swim-in-rising-water/) (Hard)
-- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard)
+- [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard) 👑
 - [x] [787. Cheapest Flights Within K Stops](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) (Medium)
 
 ## 332. Reconstruct Itinerary

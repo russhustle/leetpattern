@@ -9,7 +9,7 @@ comments: True
 - [ ] [1856. Maximum Subarray Min-Product](https://leetcode.cn/problems/maximum-subarray-min-product/) (Medium)
 - [ ] [2818. Apply Operations to Maximize Score](https://leetcode.cn/problems/apply-operations-to-maximize-score/) (Hard)
 - [x] [2281. Sum of Total Strength of Wizards](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
-- [ ] [3359. Find Sorted Submatrices With Maximum Element at Most K](https://leetcode.cn/problems/find-sorted-submatrices-with-maximum-element-at-most-k/) (Hard)
+- [ ] [3359. Find Sorted Submatrices With Maximum Element at Most K](https://leetcode.cn/problems/find-sorted-submatrices-with-maximum-element-at-most-k/) (Hard) 👑
 - [ ] [2334. Subarray With Elements Greater Than Varying Threshold](https://leetcode.cn/problems/subarray-with-elements-greater-than-varying-threshold/) (Hard)
 
 ## 907. Sum of Subarray Minimums

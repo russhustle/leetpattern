@@ -23,8 +23,8 @@ comments: True
 - [ ] [928. Minimize Malware Spread II](https://leetcode.cn/problems/minimize-malware-spread-ii/) (Hard)
 - [ ] [2092. Find All People With Secret](https://leetcode.cn/problems/find-all-people-with-secret/) (Hard)
 - [ ] [3108. Minimum Cost Walk in Weighted Graph](https://leetcode.cn/problems/minimum-cost-walk-in-weighted-graph/) (Hard)
-- [x] [261. Graph Valid Tree](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
-- [x] [323. Number of Connected Components in an Undirected Graph](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
+- [x] [261. Graph Valid Tree](https://leetcode.cn/problems/graph-valid-tree/) (Medium) 👑
+- [x] [323. Number of Connected Components in an Undirected Graph](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium) 👑
 
 ## 547. Number of Provinces
 

@@ -16,10 +16,10 @@ comments: True
 - [ ] [2141. Maximum Running Time of N Computers](https://leetcode.cn/problems/maximum-running-time-of-n-computers/) (Hard)
 - [ ] [2258. Escape the Spreading Fire](https://leetcode.cn/problems/escape-the-spreading-fire/) (Hard)
 - [ ] [2071. Maximum Number of Tasks You Can Assign](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/) (Hard)
-- [ ] [1618. Maximum Font to Fit a Sentence in a Screen](https://leetcode.cn/problems/maximum-font-to-fit-a-sentence-in-a-screen/) (Medium)
-- [ ] [1891. Cutting Ribbons](https://leetcode.cn/problems/cutting-ribbons/) (Medium)
-- [ ] [2137. Pour Water Between Buckets to Make Water Levels Equal](https://leetcode.cn/problems/pour-water-between-buckets-to-make-water-levels-equal/) (Medium)
-- [ ] [644. Maximum Average Subarray II](https://leetcode.cn/problems/maximum-average-subarray-ii/) (Hard)
+- [ ] [1618. Maximum Font to Fit a Sentence in a Screen](https://leetcode.cn/problems/maximum-font-to-fit-a-sentence-in-a-screen/) (Medium) 👑
+- [ ] [1891. Cutting Ribbons](https://leetcode.cn/problems/cutting-ribbons/) (Medium) 👑
+- [ ] [2137. Pour Water Between Buckets to Make Water Levels Equal](https://leetcode.cn/problems/pour-water-between-buckets-to-make-water-levels-equal/) (Medium) 👑
+- [ ] [644. Maximum Average Subarray II](https://leetcode.cn/problems/maximum-average-subarray-ii/) (Hard) 👑
 
 ## 275. H-Index II
 

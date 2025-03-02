@@ -11,15 +11,15 @@ comments: True
 - [ ] [3045. Count Prefix and Suffix Pairs II](https://leetcode.cn/problems/count-prefix-and-suffix-pairs-ii/) (Hard)
 - [ ] [336. Palindrome Pairs](https://leetcode.cn/problems/palindrome-pairs/) (Hard)
 - [ ] [1948. Delete Duplicate Folders in System](https://leetcode.cn/problems/delete-duplicate-folders-in-system/) (Hard)
-- [ ] [425. Word Squares](https://leetcode.cn/problems/word-squares/) (Hard)
-- [ ] [527. Word Abbreviation](https://leetcode.cn/problems/word-abbreviation/) (Hard)
-- [x] [588. Design In-Memory File System](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard)
-- [ ] [616. Add Bold Tag in String](https://leetcode.cn/problems/add-bold-tag-in-string/) (Medium)
-- [ ] [758. Bold Words in String](https://leetcode.cn/problems/bold-words-in-string/) (Medium)
-- [ ] [642. Design Search Autocomplete System](https://leetcode.cn/problems/design-search-autocomplete-system/) (Hard)
-- [ ] [1065. Index Pairs of a String](https://leetcode.cn/problems/index-pairs-of-a-string/) (Easy)
-- [x] [1166. Design File System](https://leetcode.cn/problems/design-file-system/) (Medium)
-- [ ] [1858. Longest Word With All Prefixes](https://leetcode.cn/problems/longest-word-with-all-prefixes/) (Medium)
+- [ ] [425. Word Squares](https://leetcode.cn/problems/word-squares/) (Hard) 👑
+- [ ] [527. Word Abbreviation](https://leetcode.cn/problems/word-abbreviation/) (Hard) 👑
+- [x] [588. Design In-Memory File System](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard) 👑
+- [ ] [616. Add Bold Tag in String](https://leetcode.cn/problems/add-bold-tag-in-string/) (Medium) 👑
+- [ ] [758. Bold Words in String](https://leetcode.cn/problems/bold-words-in-string/) (Medium) 👑
+- [ ] [642. Design Search Autocomplete System](https://leetcode.cn/problems/design-search-autocomplete-system/) (Hard) 👑
+- [ ] [1065. Index Pairs of a String](https://leetcode.cn/problems/index-pairs-of-a-string/) (Easy) 👑
+- [x] [1166. Design File System](https://leetcode.cn/problems/design-file-system/) (Medium) 👑
+- [ ] [1858. Longest Word With All Prefixes](https://leetcode.cn/problems/longest-word-with-all-prefixes/) (Medium) 👑
 
 ## 676. Implement Magic Dictionary
 

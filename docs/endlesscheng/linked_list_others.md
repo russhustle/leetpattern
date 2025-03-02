@@ -7,7 +7,7 @@ comments: True
 - [x] [138. Copy List with Random Pointer](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
 - [ ] [382. Linked List Random Node](https://leetcode.cn/problems/linked-list-random-node/) (Medium)
 - [ ] [430. Flatten a Multilevel Doubly Linked List](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/) (Medium)
-- [ ] [1265. Print Immutable Linked List in Reverse](https://leetcode.cn/problems/print-immutable-linked-list-in-reverse/) (Medium)
+- [ ] [1265. Print Immutable Linked List in Reverse](https://leetcode.cn/problems/print-immutable-linked-list-in-reverse/) (Medium) 👑
 
 ## 138. Copy List with Random Pointer
 

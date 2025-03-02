@@ -11,9 +11,9 @@ comments: True
 - [ ] [2551. Put Marbles in Bags](https://leetcode.cn/problems/put-marbles-in-bags/) (Hard)
 - [ ] [1585. Check If String Is Transformable With Substring Sort Operations](https://leetcode.cn/problems/check-if-string-is-transformable-with-substring-sort-operations/) (Hard)
 - [ ] [1040. Moving Stones Until Consecutive II](https://leetcode.cn/problems/moving-stones-until-consecutive-ii/) (Medium)
-- [ ] [249. Group Shifted Strings](https://leetcode.cn/problems/group-shifted-strings/) (Medium)
+- [ ] [249. Group Shifted Strings](https://leetcode.cn/problems/group-shifted-strings/) (Medium) 👑
 - [x] [49. Group Anagrams](https://leetcode.cn/problems/group-anagrams/) (Medium)
-- [ ] [1183. Maximum Number of Ones](https://leetcode.cn/problems/maximum-number-of-ones/) (Hard)
+- [ ] [1183. Maximum Number of Ones](https://leetcode.cn/problems/maximum-number-of-ones/) (Hard) 👑
 
 ## 3375. Minimum Operations to Make Array Values Equal to K
 

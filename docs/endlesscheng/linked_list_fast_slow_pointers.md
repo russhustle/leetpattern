@@ -12,7 +12,7 @@ comments: True
 - [x] [141. Linked List Cycle](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
 - [x] [142. Linked List Cycle II](https://leetcode.cn/problems/linked-list-cycle-ii/) (Medium)
 - [ ] [457. Circular Array Loop](https://leetcode.cn/problems/circular-array-loop/) (Medium)
-- [ ] [2674. Split a Circular Linked List](https://leetcode.cn/problems/split-a-circular-linked-list/) (Medium)
+- [ ] [2674. Split a Circular Linked List](https://leetcode.cn/problems/split-a-circular-linked-list/) (Medium) 👑
 
 ## 876. Middle of the Linked List
 

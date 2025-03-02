@@ -18,7 +18,7 @@ comments: True
 - [ ] [2040. Kth Smallest Product of Two Sorted Arrays](https://leetcode.cn/problems/kth-smallest-product-of-two-sorted-arrays/) (Hard)
 - [ ] [2386. Find the K-Sum of an Array](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) (Hard)
 - [ ] [1508. Range Sum of Sorted Subarray Sums](https://leetcode.cn/problems/range-sum-of-sorted-subarray-sums/) (Medium)
-- [ ] [1918. Kth Smallest Subarray Sum](https://leetcode.cn/problems/kth-smallest-subarray-sum/) (Medium)
+- [ ] [1918. Kth Smallest Subarray Sum](https://leetcode.cn/problems/kth-smallest-subarray-sum/) (Medium) 👑
 
 ## 668. Kth Smallest Number in Multiplication Table
 

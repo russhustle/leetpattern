@@ -19,7 +19,7 @@ comments: True
 - [ ] [2790. Maximum Number of Groups With Increasing Length](https://leetcode.cn/problems/maximum-number-of-groups-with-increasing-length/) (Hard)
 - [ ] [782. Transform to Chessboard](https://leetcode.cn/problems/transform-to-chessboard/) (Hard)
 - [ ] [420. Strong Password Checker](https://leetcode.cn/problems/strong-password-checker/) (Hard)
-- [ ] [2753. Count Houses in a Circular Street II](https://leetcode.cn/problems/count-houses-in-a-circular-street-ii/) (Hard)
+- [ ] [2753. Count Houses in a Circular Street II](https://leetcode.cn/problems/count-houses-in-a-circular-street-ii/) (Hard) 👑
 
 ## 2740. Find the Value of the Partition
 

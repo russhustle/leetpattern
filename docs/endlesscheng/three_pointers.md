@@ -9,7 +9,7 @@ comments: True
 - [ ] [795. Number of Subarrays with Bounded Maximum](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/) (Medium)
 - [ ] [2444. Count Subarrays With Fixed Bounds](https://leetcode.cn/problems/count-subarrays-with-fixed-bounds/) (Hard)
 - [ ] [3347. Maximum Frequency of an Element After Performing Operations II](https://leetcode.cn/problems/maximum-frequency-of-an-element-after-performing-operations-ii/) (Hard)
-- [ ] [1213. Intersection of Three Sorted Arrays](https://leetcode.cn/problems/intersection-of-three-sorted-arrays/) (Easy)
+- [ ] [1213. Intersection of Three Sorted Arrays](https://leetcode.cn/problems/intersection-of-three-sorted-arrays/) (Easy) 👑
 
 ## 2367. Number of Arithmetic Triplets
 

@@ -28,7 +28,7 @@ comments: True
 - [ ] [2193. Minimum Number of Moves to Make Palindrome](https://leetcode.cn/problems/minimum-number-of-moves-to-make-palindrome/) (Hard)
 - [ ] [2528. Maximize the Minimum Powered City](https://leetcode.cn/problems/maximize-the-minimum-powered-city/) (Hard)
 - [ ] [3449. Maximize the Minimum Game Score](https://leetcode.cn/problems/maximize-the-minimum-game-score/) (Hard)
-- [ ] [2422. Merge Operations to Turn Array Into a Palindrome](https://leetcode.cn/problems/merge-operations-to-turn-array-into-a-palindrome/) (Medium)
+- [ ] [2422. Merge Operations to Turn Array Into a Palindrome](https://leetcode.cn/problems/merge-operations-to-turn-array-into-a-palindrome/) (Medium) 👑
 
 ## 3402. Minimum Operations to Make Columns Strictly Increasing
 

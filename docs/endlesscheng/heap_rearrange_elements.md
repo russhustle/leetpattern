@@ -11,7 +11,7 @@ comments: True
 - [ ] [1405. Longest Happy String](https://leetcode.cn/problems/longest-happy-string/) (Medium)
 - [ ] [3081. Replace Question Marks in String to Minimize Its Value](https://leetcode.cn/problems/replace-question-marks-in-string-to-minimize-its-value/) (Medium)
 - [x] [621. Task Scheduler](https://leetcode.cn/problems/task-scheduler/) (Medium)
-- [ ] [358. Rearrange String k Distance Apart](https://leetcode.cn/problems/rearrange-string-k-distance-apart/) (Hard)
+- [ ] [358. Rearrange String k Distance Apart](https://leetcode.cn/problems/rearrange-string-k-distance-apart/) (Hard) 👑
 
 ## 984. String Without AAA or BBB
 

@@ -22,10 +22,10 @@ comments: True
 - [ ] [1130. Minimum Cost Tree From Leaf Values](https://leetcode.cn/problems/minimum-cost-tree-from-leaf-values/) (Medium)
 - [ ] [2289. Steps to Make Array Non-decreasing](https://leetcode.cn/problems/steps-to-make-array-non-decreasing/) (Medium)
 - [ ] [1776. Car Fleet II](https://leetcode.cn/problems/car-fleet-ii/) (Hard)
-- [ ] [3221. Maximum Array Hopping Score II](https://leetcode.cn/problems/maximum-array-hopping-score-ii/) (Medium)
-- [ ] [1966. Binary Searchable Numbers in an Unsorted Array](https://leetcode.cn/problems/binary-searchable-numbers-in-an-unsorted-array/) (Medium)
-- [ ] [2832. Maximal Range That Each Element Is Maximum in It](https://leetcode.cn/problems/maximal-range-that-each-element-is-maximum-in-it/) (Medium)
-- [ ] [2282. Number of People That Can Be Seen in a Grid](https://leetcode.cn/problems/number-of-people-that-can-be-seen-in-a-grid/) (Medium)
+- [ ] [3221. Maximum Array Hopping Score II](https://leetcode.cn/problems/maximum-array-hopping-score-ii/) (Medium) 👑
+- [ ] [1966. Binary Searchable Numbers in an Unsorted Array](https://leetcode.cn/problems/binary-searchable-numbers-in-an-unsorted-array/) (Medium) 👑
+- [ ] [2832. Maximal Range That Each Element Is Maximum in It](https://leetcode.cn/problems/maximal-range-that-each-element-is-maximum-in-it/) (Medium) 👑
+- [ ] [2282. Number of People That Can Be Seen in a Grid](https://leetcode.cn/problems/number-of-people-that-can-be-seen-in-a-grid/) (Medium) 👑
 
 ## 739. Daily Temperatures
 

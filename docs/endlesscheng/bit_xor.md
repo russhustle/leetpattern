@@ -20,7 +20,7 @@ comments: True
 - [ ] [1734. Decode XORed Permutation](https://leetcode.cn/problems/decode-xored-permutation/) (Medium)
 - [ ] [2857. Count Pairs of Points With Distance k](https://leetcode.cn/problems/count-pairs-of-points-with-distance-k/) (Medium)
 - [ ] [1803. Count Pairs With XOR in a Range](https://leetcode.cn/problems/count-pairs-with-xor-in-a-range/) (Hard)
-- [ ] [3215. Count Triplets with Even XOR Set Bits II](https://leetcode.cn/problems/count-triplets-with-even-xor-set-bits-ii/) (Medium)
+- [ ] [3215. Count Triplets with Even XOR Set Bits II](https://leetcode.cn/problems/count-triplets-with-even-xor-set-bits-ii/) (Medium) 👑
 
 ## 1486. XOR Operation in an Array
 

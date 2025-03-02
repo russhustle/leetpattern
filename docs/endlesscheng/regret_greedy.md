@@ -10,7 +10,7 @@ comments: True
 - [ ] [3362. Zero Array Transformation III](https://leetcode.cn/problems/zero-array-transformation-iii/) (Medium)
 - [ ] [2813. Maximum Elegance of a K-Length Subsequence](https://leetcode.cn/problems/maximum-elegance-of-a-k-length-subsequence/) (Hard)
 - [ ] [3049. Earliest Second to Mark Indices II](https://leetcode.cn/problems/earliest-second-to-mark-indices-ii/) (Hard)
-- [ ] [2599. Make the Prefix Sum Non-negative](https://leetcode.cn/problems/make-the-prefix-sum-non-negative/) (Medium)
+- [ ] [2599. Make the Prefix Sum Non-negative](https://leetcode.cn/problems/make-the-prefix-sum-non-negative/) (Medium) 👑
 - [ ] [2463. Minimum Total Distance Traveled](https://leetcode.cn/problems/minimum-total-distance-traveled/) (Hard)
 
 ## 1642. Furthest Building You Can Reach

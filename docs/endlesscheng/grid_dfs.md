@@ -19,10 +19,10 @@ comments: True
 - [ ] [529. Minesweeper](https://leetcode.cn/problems/minesweeper/) (Medium)
 - [ ] [1559. Detect Cycles in 2D Grid](https://leetcode.cn/problems/detect-cycles-in-2d-grid/) (Medium)
 - [x] [827. Making A Large Island](https://leetcode.cn/problems/making-a-large-island/) (Hard)
-- [x] [305. Number of Islands II](https://leetcode.cn/problems/number-of-islands-ii/) (Hard)
-- [ ] [2061. Number of Spaces Cleaning Robot Cleaned](https://leetcode.cn/problems/number-of-spaces-cleaning-robot-cleaned/) (Medium)
-- [ ] [2852. Sum of Remoteness of All Cells](https://leetcode.cn/problems/sum-of-remoteness-of-all-cells/) (Medium)
-- [ ] [489. Robot Room Cleaner](https://leetcode.cn/problems/robot-room-cleaner/) (Hard)
+- [x] [305. Number of Islands II](https://leetcode.cn/problems/number-of-islands-ii/) (Hard) 👑
+- [ ] [2061. Number of Spaces Cleaning Robot Cleaned](https://leetcode.cn/problems/number-of-spaces-cleaning-robot-cleaned/) (Medium) 👑
+- [ ] [2852. Sum of Remoteness of All Cells](https://leetcode.cn/problems/sum-of-remoteness-of-all-cells/) (Medium) 👑
+- [ ] [489. Robot Room Cleaner](https://leetcode.cn/problems/robot-room-cleaner/) (Hard) 👑
 
 ## 200. Number of Islands
 

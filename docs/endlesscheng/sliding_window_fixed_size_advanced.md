@@ -16,9 +16,9 @@ comments: True
 - [ ] [2156. Find Substring With Given Hash Value](https://leetcode.cn/problems/find-substring-with-given-hash-value/) (Hard)
 - [ ] [2953. Count Complete Substrings](https://leetcode.cn/problems/count-complete-substrings/) (Hard)
 - [ ] [1016. Binary String With Substrings Representing 1 To N](https://leetcode.cn/problems/binary-string-with-substrings-representing-1-to-n/) (Medium)
-- [ ] [683. K Empty Slots](https://leetcode.cn/problems/k-empty-slots/) (Hard)
-- [ ] [2067. Number of Equal Count Substrings](https://leetcode.cn/problems/number-of-equal-count-substrings/) (Medium)
-- [ ] [2524. Maximum Frequency Score of a Subarray](https://leetcode.cn/problems/maximum-frequency-score-of-a-subarray/) (Hard)
+- [ ] [683. K Empty Slots](https://leetcode.cn/problems/k-empty-slots/) (Hard) 👑
+- [ ] [2067. Number of Equal Count Substrings](https://leetcode.cn/problems/number-of-equal-count-substrings/) (Medium) 👑
+- [ ] [2524. Maximum Frequency Score of a Subarray](https://leetcode.cn/problems/maximum-frequency-score-of-a-subarray/) (Hard) 👑
 
 ## 1461. Check If a String Contains All Binary Codes of Size K
 

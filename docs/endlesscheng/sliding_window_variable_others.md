@@ -11,7 +11,7 @@ comments: True
 - [x] [424. Longest Repeating Character Replacement](https://leetcode.cn/problems/longest-repeating-character-replacement/) (Medium)
 - [x] [438. Find All Anagrams in a String](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 - [ ] [1712. Ways to Split Array Into Three Subarrays](https://leetcode.cn/problems/ways-to-split-array-into-three-subarrays/) (Medium)
-- [ ] [1918. Kth Smallest Subarray Sum](https://leetcode.cn/problems/kth-smallest-subarray-sum/) (Medium)
+- [ ] [1918. Kth Smallest Subarray Sum](https://leetcode.cn/problems/kth-smallest-subarray-sum/) (Medium) 👑
 
 ## 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
 

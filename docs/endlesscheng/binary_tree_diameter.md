@@ -8,7 +8,7 @@ comments: True
 - [ ] [687. Longest Univalue Path](https://leetcode.cn/problems/longest-univalue-path/) (Medium)
 - [x] [124. Binary Tree Maximum Path Sum](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)
 - [ ] [2385. Amount of Time for Binary Tree to Be Infected](https://leetcode.cn/problems/amount-of-time-for-binary-tree-to-be-infected/) (Medium)
-- [ ] [549. Binary Tree Longest Consecutive Sequence II](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence-ii/) (Medium)
+- [ ] [549. Binary Tree Longest Consecutive Sequence II](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence-ii/) (Medium) 👑
 
 ## 543. Diameter of Binary Tree
 

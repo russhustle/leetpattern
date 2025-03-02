@@ -7,7 +7,7 @@ comments: True
 - [x] [169. Majority Element](https://leetcode.cn/problems/majority-element/) (Easy)
 - [x] [229. Majority Element II](https://leetcode.cn/problems/majority-element-ii/) (Medium)
 - [x] [287. Find the Duplicate Number](https://leetcode.cn/problems/find-the-duplicate-number/) (Medium)
-- [ ] [1150. Check If a Number Is Majority Element in a Sorted Array](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) (Easy)
+- [ ] [1150. Check If a Number Is Majority Element in a Sorted Array](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) (Easy) 👑
 - [ ] [1157. Online Majority Element In Subarray](https://leetcode.cn/problems/online-majority-element-in-subarray/) (Hard)
 - [ ] [495. Teemo Attacking](https://leetcode.cn/problems/teemo-attacking/) (Easy)
 

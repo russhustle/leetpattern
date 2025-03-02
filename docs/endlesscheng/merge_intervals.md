@@ -13,11 +13,11 @@ comments: True
 - [ ] [3394. Check if Grid can be Cut into Sections](https://leetcode.cn/problems/check-if-grid-can-be-cut-into-sections/) (Medium)
 - [ ] [2963. Count the Number of Good Partitions](https://leetcode.cn/problems/count-the-number-of-good-partitions/) (Hard)
 - [ ] [2584. Split the Array to Make Coprime Products](https://leetcode.cn/problems/split-the-array-to-make-coprime-products/) (Hard)
-- [ ] [616. Add Bold Tag in String](https://leetcode.cn/problems/add-bold-tag-in-string/) (Medium)
-- [ ] [758. Bold Words in String](https://leetcode.cn/problems/bold-words-in-string/) (Medium)
-- [ ] [3323. Minimize Connected Groups by Inserting Interval](https://leetcode.cn/problems/minimize-connected-groups-by-inserting-interval/) (Medium)
-- [ ] [759. Employee Free Time](https://leetcode.cn/problems/employee-free-time/) (Hard)
-- [ ] [2655. Find Maximal Uncovered Ranges](https://leetcode.cn/problems/find-maximal-uncovered-ranges/) (Medium)
+- [ ] [616. Add Bold Tag in String](https://leetcode.cn/problems/add-bold-tag-in-string/) (Medium) 👑
+- [ ] [758. Bold Words in String](https://leetcode.cn/problems/bold-words-in-string/) (Medium) 👑
+- [ ] [3323. Minimize Connected Groups by Inserting Interval](https://leetcode.cn/problems/minimize-connected-groups-by-inserting-interval/) (Medium) 👑
+- [ ] [759. Employee Free Time](https://leetcode.cn/problems/employee-free-time/) (Hard) 👑
+- [ ] [2655. Find Maximal Uncovered Ranges](https://leetcode.cn/problems/find-maximal-uncovered-ranges/) (Medium) 👑
 
 ## 56. Merge Intervals
 

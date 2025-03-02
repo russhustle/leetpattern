@@ -9,7 +9,7 @@ comments: True
 - [x] [85. Maximal Rectangle](https://leetcode.cn/problems/maximal-rectangle/) (Hard)
 - [ ] [1504. Count Submatrices With All Ones](https://leetcode.cn/problems/count-submatrices-with-all-ones/) (Medium)
 - [x] [42. Trapping Rain Water](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
-- [ ] [755. Pour Water](https://leetcode.cn/problems/pour-water/) (Medium)
+- [ ] [755. Pour Water](https://leetcode.cn/problems/pour-water/) (Medium) 👑
 
 ## 84. Largest Rectangle in Histogram
 

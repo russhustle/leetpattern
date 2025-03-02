@@ -15,7 +15,7 @@ comments: True
 - [ ] [3419. Minimize the Maximum Edge Weight of Graph](https://leetcode.cn/problems/minimize-the-maximum-edge-weight-of-graph/) (Medium)
 - [ ] [2513. Minimize the Maximum of Two Arrays](https://leetcode.cn/problems/minimize-the-maximum-of-two-arrays/) (Medium)
 - [ ] [3399. Smallest Substring With Identical Characters II](https://leetcode.cn/problems/smallest-substring-with-identical-characters-ii/) (Hard)
-- [ ] [774. Minimize Max Distance to Gas Station](https://leetcode.cn/problems/minimize-max-distance-to-gas-station/) (Hard)
+- [ ] [774. Minimize Max Distance to Gas Station](https://leetcode.cn/problems/minimize-max-distance-to-gas-station/) (Hard) 👑
 
 ## 410. Split Array Largest Sum
 

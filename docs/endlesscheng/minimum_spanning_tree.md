@@ -6,8 +6,8 @@ comments: True
 
 - [x] [1584. Min Cost to Connect All Points](https://leetcode.cn/problems/min-cost-to-connect-all-points/) (Medium)
 - [x] [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
-- [x] [1135. Connecting Cities With Minimum Cost](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) (Medium)
-- [x] [1168. Optimize Water Distribution in a Village](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard)
+- [x] [1135. Connecting Cities With Minimum Cost](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) (Medium) 👑
+- [x] [1168. Optimize Water Distribution in a Village](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard) 👑
 - [ ] [3219. Minimum Cost for Cutting Cake II](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) (Hard)
 
 ## 1584. Min Cost to Connect All Points

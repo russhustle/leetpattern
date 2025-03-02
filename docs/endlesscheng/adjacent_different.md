@@ -12,7 +12,7 @@ comments: True
 - [x] [767. Reorganize String](https://leetcode.cn/problems/reorganize-string/) (Medium)
 - [ ] [3139. Minimum Cost to Equalize Array](https://leetcode.cn/problems/minimum-cost-to-equalize-array/) (Hard)
 - [x] [621. Task Scheduler](https://leetcode.cn/problems/task-scheduler/) (Medium)
-- [ ] [358. Rearrange String k Distance Apart](https://leetcode.cn/problems/rearrange-string-k-distance-apart/) (Hard)
+- [ ] [358. Rearrange String k Distance Apart](https://leetcode.cn/problems/rearrange-string-k-distance-apart/) (Hard) 👑
 - [ ] [984. String Without AAA or BBB](https://leetcode.cn/problems/string-without-aaa-or-bbb/) (Medium)
 - [ ] [1405. Longest Happy String](https://leetcode.cn/problems/longest-happy-string/) (Medium)
 

@@ -30,7 +30,7 @@ comments: True
 - [ ] [1675. Minimize Deviation in Array](https://leetcode.cn/problems/minimize-deviation-in-array/) (Hard)
 - [ ] [2617. Minimum Number of Visited Cells in a Grid](https://leetcode.cn/problems/minimum-number-of-visited-cells-in-a-grid/) (Hard)
 - [ ] [2532. Time to Cross a Bridge](https://leetcode.cn/problems/time-to-cross-a-bridge/) (Hard)
-- [ ] [1199. Minimum Time to Build Blocks](https://leetcode.cn/problems/minimum-time-to-build-blocks/) (Hard)
+- [ ] [1199. Minimum Time to Build Blocks](https://leetcode.cn/problems/minimum-time-to-build-blocks/) (Hard) 👑
 
 ## 23. Merge k Sorted Lists
 

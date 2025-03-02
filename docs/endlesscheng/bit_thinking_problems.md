@@ -15,8 +15,8 @@ comments: True
 - [ ] [2835. Minimum Operations to Form Subsequence With Target Sum](https://leetcode.cn/problems/minimum-operations-to-form-subsequence-with-target-sum/) (Hard)
 - [ ] [2897. Apply Operations on Array to Maximize Sum of Squares](https://leetcode.cn/problems/apply-operations-on-array-to-maximize-sum-of-squares/) (Hard)
 - [ ] [810. Chalkboard XOR Game](https://leetcode.cn/problems/chalkboard-xor-game/) (Hard)
-- [ ] [3064. Guess the Number Using Bitwise Questions I](https://leetcode.cn/problems/guess-the-number-using-bitwise-questions-i/) (Medium)
-- [ ] [3094. Guess the Number Using Bitwise Questions II](https://leetcode.cn/problems/guess-the-number-using-bitwise-questions-ii/) (Medium)
+- [ ] [3064. Guess the Number Using Bitwise Questions I](https://leetcode.cn/problems/guess-the-number-using-bitwise-questions-i/) (Medium) 👑
+- [ ] [3094. Guess the Number Using Bitwise Questions II](https://leetcode.cn/problems/guess-the-number-using-bitwise-questions-ii/) (Medium) 👑
 
 ## 2546. Apply Bitwise Operations to Make Strings Equal
 

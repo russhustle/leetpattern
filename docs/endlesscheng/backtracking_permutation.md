@@ -12,7 +12,7 @@ comments: True
 - [ ] [1718. Construct the Lexicographically Largest Valid Sequence](https://leetcode.cn/problems/construct-the-lexicographically-largest-valid-sequence/) (Medium)
 - [ ] [1307. Verbal Arithmetic Puzzle](https://leetcode.cn/problems/verbal-arithmetic-puzzle/) (Hard)
 - [ ] [2014. Longest Subsequence Repeated k Times](https://leetcode.cn/problems/longest-subsequence-repeated-k-times/) (Hard)
-- [ ] [267. Palindrome Permutation II](https://leetcode.cn/problems/palindrome-permutation-ii/) (Medium)
+- [ ] [267. Palindrome Permutation II](https://leetcode.cn/problems/palindrome-permutation-ii/) (Medium) 👑
 
 ## 46. Permutations
 

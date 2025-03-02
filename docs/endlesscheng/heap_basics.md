@@ -26,8 +26,8 @@ comments: True
 - [ ] [2931. Maximum Spending After Buying Items](https://leetcode.cn/problems/maximum-spending-after-buying-items/) (Hard)
 - [ ] [1882. Process Tasks Using Servers](https://leetcode.cn/problems/process-tasks-using-servers/) (Medium)
 - [ ] [2402. Meeting Rooms III](https://leetcode.cn/problems/meeting-rooms-iii/) (Hard)
-- [x] [253. Meeting Rooms II](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium)
-- [ ] [1167. Minimum Cost to Connect Sticks](https://leetcode.cn/problems/minimum-cost-to-connect-sticks/) (Medium)
+- [x] [253. Meeting Rooms II](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium) 👑
+- [ ] [1167. Minimum Cost to Connect Sticks](https://leetcode.cn/problems/minimum-cost-to-connect-sticks/) (Medium) 👑
 
 ## 1046. Last Stone Weight
 

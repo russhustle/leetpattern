@@ -7,8 +7,8 @@ comments: True
 - [x] [701. Insert into a Binary Search Tree](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) (Medium)
 - [x] [450. Delete Node in a BST](https://leetcode.cn/problems/delete-node-in-a-bst/) (Medium)
 - [x] [669. Trim a Binary Search Tree](https://leetcode.cn/problems/trim-a-binary-search-tree/) (Medium)
-- [ ] [776. Split BST](https://leetcode.cn/problems/split-bst/) (Medium)
-- [ ] [1666. Change the Root of a Binary Tree](https://leetcode.cn/problems/change-the-root-of-a-binary-tree/) (Medium)
+- [ ] [776. Split BST](https://leetcode.cn/problems/split-bst/) (Medium) 👑
+- [ ] [1666. Change the Root of a Binary Tree](https://leetcode.cn/problems/change-the-root-of-a-binary-tree/) (Medium) 👑
 
 ## 701. Insert into a Binary Search Tree
 

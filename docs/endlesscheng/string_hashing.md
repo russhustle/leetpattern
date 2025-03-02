@@ -15,9 +15,9 @@ comments: True
 - [x] [718. Maximum Length of Repeated Subarray](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) (Medium)
 - [ ] [1923. Longest Common Subpath](https://leetcode.cn/problems/longest-common-subpath/) (Hard)
 - [ ] [3292. Minimum Number of Valid Strings to Form Target II](https://leetcode.cn/problems/minimum-number-of-valid-strings-to-form-target-ii/) (Hard)
-- [ ] [2168. Unique Substrings With Equal Digit Frequency](https://leetcode.cn/problems/unique-substrings-with-equal-digit-frequency/) (Medium)
-- [ ] [1554. Strings Differ by One Character](https://leetcode.cn/problems/strings-differ-by-one-character/) (Medium)
-- [ ] [1062. Longest Repeating Substring](https://leetcode.cn/problems/longest-repeating-substring/) (Medium)
+- [ ] [2168. Unique Substrings With Equal Digit Frequency](https://leetcode.cn/problems/unique-substrings-with-equal-digit-frequency/) (Medium) 👑
+- [ ] [1554. Strings Differ by One Character](https://leetcode.cn/problems/strings-differ-by-one-character/) (Medium) 👑
+- [ ] [1062. Longest Repeating Substring](https://leetcode.cn/problems/longest-repeating-substring/) (Medium) 👑
 
 ## 28. Find the Index of the First Occurrence in a String
 

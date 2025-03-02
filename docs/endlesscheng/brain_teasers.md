@@ -32,8 +32,8 @@ comments: True
 - [ ] [2680. Maximum OR](https://leetcode.cn/problems/maximum-or/) (Medium)
 - [ ] [2731. Movement of Robots](https://leetcode.cn/problems/movement-of-robots/) (Medium)
 - [ ] [2556. Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.cn/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/) (Medium)
-- [ ] [3125. Maximum Number That Makes Result of Bitwise AND Zero](https://leetcode.cn/problems/maximum-number-that-makes-result-of-bitwise-and-zero/) (Medium)
-- [ ] [1794. Count Pairs of Equal Substrings With Minimum Difference](https://leetcode.cn/problems/count-pairs-of-equal-substrings-with-minimum-difference/) (Medium)
+- [ ] [3125. Maximum Number That Makes Result of Bitwise AND Zero](https://leetcode.cn/problems/maximum-number-that-makes-result-of-bitwise-and-zero/) (Medium) 👑
+- [ ] [1794. Count Pairs of Equal Substrings With Minimum Difference](https://leetcode.cn/problems/count-pairs-of-equal-substrings-with-minimum-difference/) (Medium) 👑
 
 ## 2733. Neither Minimum nor Maximum
 

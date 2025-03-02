@@ -16,9 +16,9 @@ comments: True
 - [ ] [1316. Distinct Echo Substrings](https://leetcode.cn/problems/distinct-echo-substrings/) (Hard)
 - [ ] [3388. Count Beautiful Splits in an Array](https://leetcode.cn/problems/count-beautiful-splits-in-an-array/) (Medium)
 - [ ] [2564. Substring XOR Queries](https://leetcode.cn/problems/substring-xor-queries/) (Medium)
-- [ ] [1698. Number of Distinct Substrings in a String](https://leetcode.cn/problems/number-of-distinct-substrings-in-a-string/) (Medium)
-- [ ] [1062. Longest Repeating Substring](https://leetcode.cn/problems/longest-repeating-substring/) (Medium)
-- [ ] [3135. Equalize Strings by Adding or Removing Characters at Ends](https://leetcode.cn/problems/equalize-strings-by-adding-or-removing-characters-at-ends/) (Medium)
+- [ ] [1698. Number of Distinct Substrings in a String](https://leetcode.cn/problems/number-of-distinct-substrings-in-a-string/) (Medium) 👑
+- [ ] [1062. Longest Repeating Substring](https://leetcode.cn/problems/longest-repeating-substring/) (Medium) 👑
+- [ ] [3135. Equalize Strings by Adding or Removing Characters at Ends](https://leetcode.cn/problems/equalize-strings-by-adding-or-removing-characters-at-ends/) (Medium) 👑
 
 ## 1163. Last Substring in Lexicographical Order
 

@@ -16,11 +16,11 @@ comments: True
 - [x] [844. Backspace String Compare](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
 - [ ] [986. Interval List Intersections](https://leetcode.cn/problems/interval-list-intersections/) (Medium)
 - [ ] [1537. Get the Maximum Score](https://leetcode.cn/problems/get-the-maximum-score/) (Hard)
-- [ ] [244. Shortest Word Distance II](https://leetcode.cn/problems/shortest-word-distance-ii/) (Medium)
-- [ ] [2838. Maximum Coins Heroes Can Collect](https://leetcode.cn/problems/maximum-coins-heroes-can-collect/) (Medium)
-- [ ] [1229. Meeting Scheduler](https://leetcode.cn/problems/meeting-scheduler/) (Medium)
-- [ ] [1570. Dot Product of Two Sparse Vectors](https://leetcode.cn/problems/dot-product-of-two-sparse-vectors/) (Medium)
-- [ ] [1868. Product of Two Run-Length Encoded Arrays](https://leetcode.cn/problems/product-of-two-run-length-encoded-arrays/) (Medium)
+- [ ] [244. Shortest Word Distance II](https://leetcode.cn/problems/shortest-word-distance-ii/) (Medium) 👑
+- [ ] [2838. Maximum Coins Heroes Can Collect](https://leetcode.cn/problems/maximum-coins-heroes-can-collect/) (Medium) 👑
+- [ ] [1229. Meeting Scheduler](https://leetcode.cn/problems/meeting-scheduler/) (Medium) 👑
+- [ ] [1570. Dot Product of Two Sparse Vectors](https://leetcode.cn/problems/dot-product-of-two-sparse-vectors/) (Medium) 👑
+- [ ] [1868. Product of Two Run-Length Encoded Arrays](https://leetcode.cn/problems/product-of-two-run-length-encoded-arrays/) (Medium) 👑
 
 ## 2540. Minimum Common Value
 

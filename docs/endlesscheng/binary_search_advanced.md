@@ -16,10 +16,10 @@ comments: True
 - [ ] [658. Find K Closest Elements](https://leetcode.cn/problems/find-k-closest-elements/) (Medium)
 - [ ] [1818. Minimum Absolute Sum Difference](https://leetcode.cn/problems/minimum-absolute-sum-difference/) (Medium)
 - [ ] [911. Online Election](https://leetcode.cn/problems/online-election/) (Medium)
-- [ ] [1182. Shortest Distance to Target Color](https://leetcode.cn/problems/shortest-distance-to-target-color/) (Medium)
-- [ ] [2819. Minimum Relative Loss After Buying Chocolates](https://leetcode.cn/problems/minimum-relative-loss-after-buying-chocolates/) (Hard)
+- [ ] [1182. Shortest Distance to Target Color](https://leetcode.cn/problems/shortest-distance-to-target-color/) (Medium) 👑
+- [ ] [2819. Minimum Relative Loss After Buying Chocolates](https://leetcode.cn/problems/minimum-relative-loss-after-buying-chocolates/) (Hard) 👑
 - [x] [1287. Element Appearing More Than 25% In Sorted Array](https://leetcode.cn/problems/element-appearing-more-than-25-in-sorted-array/) (Easy)
-- [ ] [1150. Check If a Number Is Majority Element in a Sorted Array](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) (Easy)
+- [ ] [1150. Check If a Number Is Majority Element in a Sorted Array](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) (Easy) 👑
 
 ## 2300. Successful Pairs of Spells and Potions
 

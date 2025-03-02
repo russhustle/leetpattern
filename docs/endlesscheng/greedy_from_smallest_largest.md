@@ -35,12 +35,12 @@ comments: True
 - [ ] [2333. Minimum Sum of Squared Difference](https://leetcode.cn/problems/minimum-sum-of-squared-difference/) (Medium)
 - [ ] [3440. Reschedule Meetings for Maximum Free Time II](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-ii/) (Medium)
 - [ ] [2141. Maximum Running Time of N Computers](https://leetcode.cn/problems/maximum-running-time-of-n-computers/) (Hard)
-- [ ] [1196. How Many Apples Can You Put into the Basket](https://leetcode.cn/problems/how-many-apples-can-you-put-into-the-basket/) (Easy)
-- [ ] [2214. Minimum Health to Beat Game](https://leetcode.cn/problems/minimum-health-to-beat-game/) (Medium)
-- [ ] [2098. Subsequence of Size K With the Largest Even Sum](https://leetcode.cn/problems/subsequence-of-size-k-with-the-largest-even-sum/) (Medium)
-- [ ] [2548. Maximum Price to Fill a Bag](https://leetcode.cn/problems/maximum-price-to-fill-a-bag/) (Medium)
-- [ ] [3119. Maximum Number of Potholes That Can Be Fixed](https://leetcode.cn/problems/maximum-number-of-potholes-that-can-be-fixed/) (Medium)
-- [ ] [2557. Maximum Number of Integers to Choose From a Range II](https://leetcode.cn/problems/maximum-number-of-integers-to-choose-from-a-range-ii/) (Medium)
+- [ ] [1196. How Many Apples Can You Put into the Basket](https://leetcode.cn/problems/how-many-apples-can-you-put-into-the-basket/) (Easy) 👑
+- [ ] [2214. Minimum Health to Beat Game](https://leetcode.cn/problems/minimum-health-to-beat-game/) (Medium) 👑
+- [ ] [2098. Subsequence of Size K With the Largest Even Sum](https://leetcode.cn/problems/subsequence-of-size-k-with-the-largest-even-sum/) (Medium) 👑
+- [ ] [2548. Maximum Price to Fill a Bag](https://leetcode.cn/problems/maximum-price-to-fill-a-bag/) (Medium) 👑
+- [ ] [3119. Maximum Number of Potholes That Can Be Fixed](https://leetcode.cn/problems/maximum-number-of-potholes-that-can-be-fixed/) (Medium) 👑
+- [ ] [2557. Maximum Number of Integers to Choose From a Range II](https://leetcode.cn/problems/maximum-number-of-integers-to-choose-from-a-range-ii/) (Medium) 👑
 - [x] [624. Maximum Distance in Arrays](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 - [ ] [910. Smallest Range II](https://leetcode.cn/problems/smallest-range-ii/) (Medium)
 - [ ] [2835. Minimum Operations to Form Subsequence With Target Sum](https://leetcode.cn/problems/minimum-operations-to-form-subsequence-with-target-sum/) (Hard)

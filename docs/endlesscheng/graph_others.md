@@ -14,9 +14,9 @@ comments: True
 - [ ] [2493. Divide Nodes Into the Maximum Number of Groups](https://leetcode.cn/problems/divide-nodes-into-the-maximum-number-of-groups/) (Hard)
 - [ ] [1782. Count Pairs Of Nodes](https://leetcode.cn/problems/count-pairs-of-nodes/) (Hard)
 - [ ] [3435. Frequencies of Shortest Supersequences](https://leetcode.cn/problems/frequencies-of-shortest-supersequences/) (Hard)
-- [ ] [277. Find the Celebrity](https://leetcode.cn/problems/find-the-celebrity/) (Medium)
-- [ ] [1724. Checking Existence of Edge Length Limited Paths II](https://leetcode.cn/problems/checking-existence-of-edge-length-limited-paths-ii/) (Hard)
-- [ ] [2077. Paths in Maze That Lead to Same Room](https://leetcode.cn/problems/paths-in-maze-that-lead-to-same-room/) (Medium)
+- [ ] [277. Find the Celebrity](https://leetcode.cn/problems/find-the-celebrity/) (Medium) 👑
+- [ ] [1724. Checking Existence of Edge Length Limited Paths II](https://leetcode.cn/problems/checking-existence-of-edge-length-limited-paths-ii/) (Hard) 👑
+- [ ] [2077. Paths in Maze That Lead to Same Room](https://leetcode.cn/problems/paths-in-maze-that-lead-to-same-room/) (Medium) 👑
 
 ## 1042. Flower Planting With No Adjacent
 

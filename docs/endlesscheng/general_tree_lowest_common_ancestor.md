@@ -6,7 +6,7 @@ comments: True
 
 - [ ] [1483. Kth Ancestor of a Tree Node](https://leetcode.cn/problems/kth-ancestor-of-a-tree-node/) (Hard)
 - [ ] [2846. Minimum Edge Weight Equilibrium Queries in a Tree](https://leetcode.cn/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/) (Hard)
-- [ ] [2277. Closest Node to Path in Tree](https://leetcode.cn/problems/closest-node-to-path-in-tree/) (Hard)
+- [ ] [2277. Closest Node to Path in Tree](https://leetcode.cn/problems/closest-node-to-path-in-tree/) (Hard) 👑
 
 ## 1483. Kth Ancestor of a Tree Node
 

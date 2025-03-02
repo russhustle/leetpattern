@@ -15,7 +15,7 @@ comments: True
 - [x] [214. Shortest Palindrome](https://leetcode.cn/problems/shortest-palindrome/) (Hard)
 - [x] [686. Repeated String Match](https://leetcode.cn/problems/repeated-string-match/) (Medium)
 - [ ] [1397. Find All Good Strings](https://leetcode.cn/problems/find-all-good-strings/) (Hard)
-- [ ] [3037. Find Pattern in Infinite Stream II](https://leetcode.cn/problems/find-pattern-in-infinite-stream-ii/) (Hard)
+- [ ] [3037. Find Pattern in Infinite Stream II](https://leetcode.cn/problems/find-pattern-in-infinite-stream-ii/) (Hard) 👑
 
 ## 28. Find the Index of the First Occurrence in a String
 

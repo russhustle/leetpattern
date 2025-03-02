@@ -20,3 +20,11 @@ sync:
 
 format:
 	poetry run pre-commit run --all-files || $(MAKE) format
+
+build:
+	poetry run python main.py
+
+run:
+	$(MAKE) build
+	$(MAKE) format
+	$(MAKE) clean

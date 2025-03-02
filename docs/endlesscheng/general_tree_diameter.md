@@ -8,7 +8,7 @@ comments: True
 - [ ] [3203. Find Minimum Diameter After Merging Two Trees](https://leetcode.cn/problems/find-minimum-diameter-after-merging-two-trees/) (Hard)
 - [ ] [1617. Count Subtrees With Max Distance Between Cities](https://leetcode.cn/problems/count-subtrees-with-max-distance-between-cities/) (Hard)
 - [ ] [2538. Difference Between Maximum and Minimum Price Sum](https://leetcode.cn/problems/difference-between-maximum-and-minimum-price-sum/) (Hard)
-- [ ] [1245. Tree Diameter](https://leetcode.cn/problems/tree-diameter/) (Medium)
+- [x] [1245. Tree Diameter](https://leetcode.cn/problems/tree-diameter/) (Medium)
 - [ ] [3313. Find the Last Marked Nodes in Tree](https://leetcode.cn/problems/find-the-last-marked-nodes-in-tree/) (Hard)
 
 ## 2246. Longest Path With Different Adjacent Characters
@@ -40,6 +40,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/tree-diameter/) | [LeetCode CH](https://leetcode.cn/problems/tree-diameter/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, graph, topological sort
+
+```python title="1245. Tree Diameter - Python Solution"
+--8<-- "1245_tree_diameter.py"
+```
 
 ## 3313. Find the Last Marked Nodes in Tree
 

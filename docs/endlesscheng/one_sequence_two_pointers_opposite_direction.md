@@ -6,7 +6,7 @@ comments: True
 
 - [x] [344. Reverse String](https://leetcode.cn/problems/reverse-string/) (Easy)
 - [x] [125. Valid Palindrome](https://leetcode.cn/problems/valid-palindrome/) (Easy)
-- [ ] [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/) (Medium)
+- [x] [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/) (Medium)
 - [ ] [2105. Watering Plants II](https://leetcode.cn/problems/watering-plants-ii/) (Medium)
 - [x] [977. Squares of a Sorted Array](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
 - [ ] [658. Find K Closest Elements](https://leetcode.cn/problems/find-k-closest-elements/) (Medium)
@@ -56,6 +56,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | [LeetCode CH](https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/) (Medium)
 
 -   Tags: two pointers, string
+
+```python title="1750. Minimum Length of String After Deleting Similar Ends - Python Solution"
+--8<-- "1750_minimum_length_of_string_after_deleting_similar_ends.py"
+```
 
 ## 2105. Watering Plants II
 

@@ -4,7 +4,7 @@ comments: True
 
 # Sliding Window Variable Subarrays Longer
 
-- [ ] [1358. Number of Substrings Containing All Three Characters](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) (Medium)
+- [x] [1358. Number of Substrings Containing All Three Characters](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) (Medium)
 - [ ] [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) (Medium)
 - [ ] [3325. Count Substrings With K-Frequency Characters I](https://leetcode.cn/problems/count-substrings-with-k-frequency-characters-i/) (Medium)
 - [ ] [2799. Count Complete Subarrays in an Array](https://leetcode.cn/problems/count-complete-subarrays-in-an-array/) (Medium)
@@ -17,6 +17,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [LeetCode CH](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) (Medium)
 
 -   Tags: hash table, string, sliding window
+
+```python title="1358. Number of Substrings Containing All Three Characters - Python Solution"
+--8<-- "1358_number_of_substrings_containing_all_three_characters.py"
+```
 
 ## 2962. Count Subarrays Where Max Element Appears at Least K Times
 

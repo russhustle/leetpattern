@@ -194,6 +194,57 @@ nav:
     - Equivalent Transformation: endlesscheng/equivalent_transformation.md
     - Construction Problems: endlesscheng/construction_problems.md
     - Greedy Others: endlesscheng/greedy_others.md
+    - Linked List Traversal: endlesscheng/linked_list_traversal.md
+    - Linked List Delete Nodes: endlesscheng/linked_list_delete_nodes.md
+    - Linked List Insert Nodes: endlesscheng/linked_list_insert_nodes.md
+    - Linked List Reverse: endlesscheng/linked_list_reverse.md
+    - Linked List Front Back Pointers: endlesscheng/linked_list_front_back_pointers.md
+    - Linked List Fast Slow Pointers: endlesscheng/linked_list_fast_slow_pointers.md
+    - Linked List Double Pointers: endlesscheng/linked_list_double_pointers.md
+    - Linked Lists Merge: endlesscheng/linked_lists_merge.md
+    - Linked List Divide and Conquer: endlesscheng/linked_list_divide_and_conquer.md
+    - Linked List Applications: endlesscheng/linked_list_applications.md
+    - Linked List Others: endlesscheng/linked_list_others.md
+    - Binary Tree Traversal: endlesscheng/binary_tree_traversal.md
+    - Binary Tree Top-Down DFS: endlesscheng/binary_tree_top-down_dfs.md
+    - Binary Tree Bottom-Up DFS: endlesscheng/binary_tree_bottom-up_dfs.md
+    - Binary Tree Bottom-Up DFS Node Deletion: endlesscheng/binary_tree_bottom-up_dfs_node_deletion.md
+    - Binary Tree Recursion: endlesscheng/binary_tree_recursion.md
+    - Binary Tree Diameter: endlesscheng/binary_tree_diameter.md
+    - Binary Tree Backtracking: endlesscheng/binary_tree_backtracking.md
+    - Binary Tree Lowest Common Ancestor: endlesscheng/binary_tree_lowest_common_ancestor.md
+    - Binary Search Tree: endlesscheng/binary_search_tree.md
+    - Binary Tree Construction: endlesscheng/binary_tree_construction.md
+    - Binary Tree Insert Delete Nodes: endlesscheng/binary_tree_insert_delete_nodes.md
+    - Tree DP: endlesscheng/tree_dp.md
+    - Binary Tree BFS: endlesscheng/binary_tree_bfs.md
+    - Binary Tree Linked List: endlesscheng/binary_tree_linked_list.md
+    - N-ary Tree: endlesscheng/n-ary_tree.md
+    - Binary Tree Others: endlesscheng/binary_tree_others.md
+    - General Tree Traversal: endlesscheng/general_tree_traversal.md
+    - General Tree Top-Down DFS: endlesscheng/general_tree_top-down_dfs.md
+    - General Tree Bottom-Up DFS: endlesscheng/general_tree_bottom-up_dfs.md
+    - General Tree Recursion: endlesscheng/general_tree_recursion.md
+    - General Tree Diameter: endlesscheng/general_tree_diameter.md
+    - General Tree DFS Timestamp: endlesscheng/general_tree_dfs_timestamp.md
+    - General Tree Topological Sort: endlesscheng/general_tree_topological_sort.md
+    - General Tree Lowest Common Ancestor: endlesscheng/general_tree_lowest_common_ancestor.md
+    - General Tree Others: endlesscheng/general_tree_others.md
+    - Backtracking Basic: endlesscheng/backtracking_basic.md
+    - Backtracking Subset: endlesscheng/backtracking_subset.md
+    - Backtracking Partition: endlesscheng/backtracking_partition.md
+    - Backtracking Combination: endlesscheng/backtracking_combination.md
+    - Backtracking Permutation: endlesscheng/backtracking_permutation.md
+    - Backtracking Exhaustive Search and Pruning: endlesscheng/backtracking_exhaustive_search_and_pruning.md
+    - Backtracking with Duplicates: endlesscheng/backtracking_with_duplicates.md
+    - String KMP: endlesscheng/string_kmp.md
+    - String Z Function: endlesscheng/string_z_function.md
+    - String Manacher Algorithm: endlesscheng/string_manacher_algorithm.md
+    - String Hashing: endlesscheng/string_hashing.md
+    - String Minimal Representation: endlesscheng/string_minimal_representation.md
+    - String AC Automaton: endlesscheng/string_ac_automaton.md
+    - String Suffix Array: endlesscheng/string_suffix_array.md
+    - String Subsequence Automaton: endlesscheng/string_subsequence_automaton.md
 
   - Neetcode 150:
     - Home: neetcode150/index.md
@@ -334,8 +385,8 @@ theme:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
   font:
-    text: Noto Serif
-    code: Fira Code
+    text: Roboto
+    code: Roboto Code
 
   features:
   - content.code.copy # Enable copy button on code blocks

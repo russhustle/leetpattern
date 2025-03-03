@@ -50,6 +50,10 @@ comments: True
 --8<-- "0001_two_sum.py"
 ```
 
+```cpp title="1. Two Sum - C++ Solution"
+--8<-- "cpp/0001_two_sum.cc"
+```
+
 ## 146. LRU Cache
 
 -   [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)

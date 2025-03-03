@@ -55,6 +55,10 @@ graph LR
 --8<-- "0001_two_sum.py"
 ```
 
+```cpp title="1. Two Sum - C++ Solution"
+--8<-- "cpp/0001_two_sum.cc"
+```
+
 ## 409. Longest Palindrome
 
 -   [LeetCode](https://leetcode.com/problems/longest-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindrome/) (Easy)

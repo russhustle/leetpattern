@@ -31,6 +31,10 @@ comments: True
 --8<-- "0001_two_sum.py"
 ```
 
+```cpp title="1. Two Sum - C++ Solution"
+--8<-- "cpp/0001_two_sum.cc"
+```
+
 ## 121. Best Time to Buy and Sell Stock
 
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)

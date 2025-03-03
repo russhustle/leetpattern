@@ -52,6 +52,10 @@ comments: True
 --8<-- "0001_two_sum.py"
 ```
 
+```cpp title="1. Two Sum - C++ Solution"
+--8<-- "cpp/0001_two_sum.cc"
+```
+
 ## 49. Group Anagrams
 
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)

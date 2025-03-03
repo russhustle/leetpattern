@@ -10,7 +10,7 @@ comments: True
 - [x] [219. Contains Duplicate II](https://leetcode.cn/problems/contains-duplicate-ii/) (Easy)
 - [x] [121. Best Time to Buy and Sell Stock](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
 - [x] [624. Maximum Distance in Arrays](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
-- [ ] [2815. Max Pair Sum in an Array](https://leetcode.cn/problems/max-pair-sum-in-an-array/) (Easy)
+- [x] [2815. Max Pair Sum in an Array](https://leetcode.cn/problems/max-pair-sum-in-an-array/) (Easy)
 - [ ] [2342. Max Sum of a Pair With Equal Sum of Digits](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) (Medium)
 - [ ] [1679. Max Number of K-Sum Pairs](https://leetcode.cn/problems/max-number-of-k-sum-pairs/) (Medium)
 - [ ] [2260. Minimum Consecutive Cards to Pick Up](https://leetcode.cn/problems/minimum-consecutive-cards-to-pick-up/) (Medium)
@@ -46,6 +46,10 @@ comments: True
 
 ```python title="1. Two Sum - Python Solution"
 --8<-- "0001_two_sum.py"
+```
+
+```cpp title="1. Two Sum - C++ Solution"
+--8<-- "cpp/0001_two_sum.cc"
 ```
 
 ## 1512. Number of Good Pairs
@@ -104,6 +108,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/max-pair-sum-in-an-array/) (Easy)
 
 -   Tags: array, hash table
+
+```python title="2815. Max Pair Sum in an Array - Python Solution"
+--8<-- "2815_max_pair_sum_in_an_array.py"
+```
 
 ## 2342. Max Sum of a Pair With Equal Sum of Digits
 

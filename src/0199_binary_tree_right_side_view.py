@@ -15,18 +15,14 @@ def rightSideView(root: Optional[TreeNode]) -> List[int]:
 
     while q:
         n = len(q)
-
         for i in range(n):
-            cur = q.popleft()
-
-            # rightmost element
+            node = q.popleft()
             if i == n - 1:
-                res.append(cur.val)
-
-            if cur.left:
-                q.append(cur.left)
-            if cur.right:
-                q.append(cur.right)
+                res.append(node.val)
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
 
     return res
 

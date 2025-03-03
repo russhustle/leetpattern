@@ -7,7 +7,7 @@ comments: True
 - [x] [104. Maximum Depth of Binary Tree](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 - [x] [111. Minimum Depth of Binary Tree](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) (Easy)
 - [x] [112. Path Sum](https://leetcode.cn/problems/path-sum/) (Easy)
-- [ ] [129. Sum Root to Leaf Numbers](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) (Medium)
+- [x] [129. Sum Root to Leaf Numbers](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) (Medium)
 - [x] [199. Binary Tree Right Side View](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
 - [x] [1448. Count Good Nodes in Binary Tree](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/) (Medium)
 - [ ] [1457. Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.cn/problems/pseudo-palindromic-paths-in-a-binary-tree/) (Medium)
@@ -58,6 +58,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [LeetCode CH](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
+
+```python title="129. Sum Root to Leaf Numbers - Python Solution"
+--8<-- "0129_sum_root_to_leaf_numbers.py"
+```
 
 ## 199. Binary Tree Right Side View
 

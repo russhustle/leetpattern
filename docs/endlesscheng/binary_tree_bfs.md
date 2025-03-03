@@ -11,10 +11,10 @@ comments: True
 - [x] [513. Find Bottom Left Tree Value](https://leetcode.cn/problems/find-bottom-left-tree-value/) (Medium)
 - [x] [515. Find Largest Value in Each Tree Row](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) (Medium)
 - [x] [637. Average of Levels in Binary Tree](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) (Easy)
-- [ ] [1161. Maximum Level Sum of a Binary Tree](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) (Medium)
+- [x] [1161. Maximum Level Sum of a Binary Tree](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) (Medium)
 - [ ] [993. Cousins in Binary Tree](https://leetcode.cn/problems/cousins-in-binary-tree/) (Easy)
-- [ ] [2583. Kth Largest Sum in a Binary Tree](https://leetcode.cn/problems/kth-largest-sum-in-a-binary-tree/) (Medium)
-- [ ] [1302. Deepest Leaves Sum](https://leetcode.cn/problems/deepest-leaves-sum/) (Medium)
+- [x] [2583. Kth Largest Sum in a Binary Tree](https://leetcode.cn/problems/kth-largest-sum-in-a-binary-tree/) (Medium)
+- [x] [1302. Deepest Leaves Sum](https://leetcode.cn/problems/deepest-leaves-sum/) (Medium)
 - [ ] [2415. Reverse Odd Levels of Binary Tree](https://leetcode.cn/problems/reverse-odd-levels-of-binary-tree/) (Medium)
 - [ ] [1609. Even Odd Tree](https://leetcode.cn/problems/even-odd-tree/) (Medium)
 - [ ] [623. Add One Row to Tree](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
@@ -115,6 +115,10 @@ comments: True
 
 -   Tags: tree, depth first search, breadth first search, binary tree
 
+```python title="1161. Maximum Level Sum of a Binary Tree - Python Solution"
+--8<-- "1161_maximum_level_sum_of_a_binary_tree.py"
+```
+
 ## 993. Cousins in Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/cousins-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/cousins-in-binary-tree/) (Easy)
@@ -127,11 +131,19 @@ comments: True
 
 -   Tags: tree, breadth first search, sorting, binary tree
 
+```python title="2583. Kth Largest Sum in a Binary Tree - Python Solution"
+--8<-- "2583_kth_largest_sum_in_a_binary_tree.py"
+```
+
 ## 1302. Deepest Leaves Sum
 
 -   [LeetCode](https://leetcode.com/problems/deepest-leaves-sum/) | [LeetCode CH](https://leetcode.cn/problems/deepest-leaves-sum/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
+
+```python title="1302. Deepest Leaves Sum - Python Solution"
+--8<-- "1302_deepest_leaves_sum.py"
+```
 
 ## 2415. Reverse Odd Levels of Binary Tree
 

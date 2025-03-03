@@ -6,7 +6,7 @@ comments: True
 
 - [x] [69. Sqrt(x)](https://leetcode.cn/problems/sqrtx/) (Easy)
 - [x] [74. Search a 2D Matrix](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
-- [ ] [240. Search a 2D Matrix II](https://leetcode.cn/problems/search-a-2d-matrix-ii/) (Medium)
+- [x] [240. Search a 2D Matrix II](https://leetcode.cn/problems/search-a-2d-matrix-ii/) (Medium)
 - [ ] [2476. Closest Nodes Queries in a Binary Search Tree](https://leetcode.cn/problems/closest-nodes-queries-in-a-binary-search-tree/) (Medium)
 - [x] [278. First Bad Version](https://leetcode.cn/problems/first-bad-version/) (Easy)
 - [ ] [374. Guess Number Higher or Lower](https://leetcode.cn/problems/guess-number-higher-or-lower/) (Easy)
@@ -57,6 +57,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix-ii/) (Medium)
 
 -   Tags: array, binary search, divide and conquer, matrix
+
+```python title="240. Search a 2D Matrix II - Python Solution"
+--8<-- "0240_search_a_2d_matrix_ii.py"
+```
 
 ## 2476. Closest Nodes Queries in a Binary Search Tree
 

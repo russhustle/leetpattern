@@ -4,15 +4,17 @@ from typing import List
 def exist(board: List[List[str]], word: str) -> bool:
     m, n = len(board), len(board[0])
     path = set()
-    directions = ((0, 1), (1, 0), (0, -1), (-1, 0))
+    dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
 
     def dfs(r, c, i):
         if i == len(word):
             return True
 
         if (
-            r not in range(m)
-            or c not in range(n)
+            r < 0
+            or r >= m
+            or c < 0
+            or c >= n
             or board[r][c] != word[i]
             or (r, c) in path
         ):
@@ -20,7 +22,7 @@ def exist(board: List[List[str]], word: str) -> bool:
 
         path.add((r, c))
 
-        for dr, dc in directions:
+        for dr, dc in dirs:
             if dfs(r + dr, c + dc, i + 1):
                 return True
 

@@ -4,7 +4,7 @@ comments: True
 
 # Distance Sum
 
-- [ ] [1685. Sum of Absolute Differences in a Sorted Array](https://leetcode.cn/problems/sum-of-absolute-differences-in-a-sorted-array/) (Medium)
+- [x] [1685. Sum of Absolute Differences in a Sorted Array](https://leetcode.cn/problems/sum-of-absolute-differences-in-a-sorted-array/) (Medium)
 - [ ] [2615. Sum of Distances](https://leetcode.cn/problems/sum-of-distances/) (Medium)
 - [ ] [2602. Minimum Operations to Make All Array Elements Equal](https://leetcode.cn/problems/minimum-operations-to-make-all-array-elements-equal/) (Medium)
 - [ ] [2968. Apply Operations to Maximize Frequency Score](https://leetcode.cn/problems/apply-operations-to-maximize-frequency-score/) (Hard)
@@ -17,6 +17,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-absolute-differences-in-a-sorted-array/) (Medium)
 
 -   Tags: array, math, prefix sum
+
+```python title="1685. Sum of Absolute Differences in a Sorted Array - Python Solution"
+--8<-- "1685_sum_of_absolute_differences_in_a_sorted_array.py"
+```
 
 ## 2615. Sum of Distances
 

@@ -32,7 +32,7 @@ theme:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
   font:
-    text: Nunito Sans
+    text: Lato
     code: Courier Prime
 
   features:

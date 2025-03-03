@@ -4,8 +4,8 @@ comments: True
 
 # Linked List Traversal
 
-- [ ] [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/) (Easy)
-- [ ] [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.cn/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) (Medium)
+- [x] [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/) (Easy)
+- [x] [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.cn/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) (Medium)
 - [x] [2181. Merge Nodes in Between Zeros](https://leetcode.cn/problems/merge-nodes-in-between-zeros/) (Medium)
 - [ ] [725. Split Linked List in Parts](https://leetcode.cn/problems/split-linked-list-in-parts/) (Medium)
 - [ ] [817. Linked List Components](https://leetcode.cn/problems/linked-list-components/) (Medium)
@@ -18,11 +18,19 @@ comments: True
 
 -   Tags: linked list, math
 
+```python title="1290. Convert Binary Number in a Linked List to Integer - Python Solution"
+--8<-- "1290_convert_binary_number_in_a_linked_list_to_integer.py"
+```
+
 ## 2058. Find the Minimum and Maximum Number of Nodes Between Critical Points
 
 -   [LeetCode](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) | [LeetCode CH](https://leetcode.cn/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) (Medium)
 
 -   Tags: linked list
+
+```python title="2058. Find the Minimum and Maximum Number of Nodes Between Critical Points - Python Solution"
+--8<-- "2058_find_the_minimum_and_maximum_number_of_nodes_between_critical_points.py"
+```
 
 ## 2181. Merge Nodes in Between Zeros
 

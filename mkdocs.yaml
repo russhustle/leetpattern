@@ -225,9 +225,59 @@ nav:
     - Bipartite Graph Coloring: endlesscheng/bipartite_graph_coloring.md
     - Network Flow: endlesscheng/network_flow.md
     - Graph Others: endlesscheng/graph_others.md
-    - Climbing Stairs: endlesscheng/climbing_stairs.md
-    - House Robber: endlesscheng/house_robber.md
-    - Max Subarray Sum: endlesscheng/max_subarray_sum.md
+    - DP Climbing Stairs: endlesscheng/dp_climbing_stairs.md
+    - DP House Robber: endlesscheng/dp_house_robber.md
+    - DP Max Subarray Sum: endlesscheng/dp_max_subarray_sum.md
+    - DP Grid Basics: endlesscheng/dp_grid_basics.md
+    - DP Grid Advanced: endlesscheng/dp_grid_advanced.md
+    - DP 0-1 Knapsack: endlesscheng/dp_0-1_knapsack.md
+    - DP Complete Knapsack: endlesscheng/dp_complete_knapsack.md
+    - DP Multiple Knapsack: endlesscheng/dp_multiple_knapsack.md
+    - DP Grouped Knapsack: endlesscheng/dp_grouped_knapsack.md
+    - DP LCS Basics: endlesscheng/dp_lcs_basics.md
+    - DP LCS Advanced: endlesscheng/dp_lcs_advanced.md
+    - DP LIS Basics: endlesscheng/dp_lis_basics.md
+    - DP LIS Advanced: endlesscheng/dp_lis_advanced.md
+    - DP Partitioning Feasibility: endlesscheng/dp_partitioning_feasibility.md
+    - DP Optimal Partitioning: endlesscheng/dp_optimal_partitioning.md
+    - DP Constrained Number of Partitions: endlesscheng/dp_constrained_number_of_partitions.md
+    - DP Non-Overlapping Intervals: endlesscheng/dp_non-overlapping_intervals.md
+    - DP Stock Trading: endlesscheng/dp_stock_trading.md
+    - DP State Machine Basics: endlesscheng/dp_state_machine_basics.md
+    - DP State Machine Advanced: endlesscheng/dp_state_machine_advanced.md
+    - DP 1D: endlesscheng/dp_1d.md
+    - DP Valid Subsequence: endlesscheng/dp_valid_subsequence.md
+    - DP Matrix Exponentiation Optimized: endlesscheng/dp_matrix_exponentiation_optimized.md
+    - DP Subrectangle: endlesscheng/dp_subrectangle.md
+    - DP Multi-Dimensional: endlesscheng/dp_multi-dimensional.md
+    - DP Longest Palindromic Subsequence: endlesscheng/dp_longest_palindromic_subsequence.md
+    - DP Other Interval DP: endlesscheng/dp_other_interval_dp.md
+    - DP Permutation Type Adjacent Unrelated: endlesscheng/dp_permutation_type_adjacent_unrelated.md
+    - DP Permutation Type Adjacent Related: endlesscheng/dp_permutation_type_adjacent_related.md
+    - DP Traveling Salesman Problem: endlesscheng/dp_traveling_salesman_problem.md
+    - DP Subset State Compression: endlesscheng/dp_subset_state_compression.md
+    - DP Other State Compression: endlesscheng/dp_other_state_compression.md
+    - DP Digit: endlesscheng/dp_digit.md
+    - DP Prefix Sum: endlesscheng/dp_prefix_sum.md
+    - DP Monotonic Stack: endlesscheng/dp_monotonic_stack.md
+    - DP Monotonic Queue: endlesscheng/dp_monotonic_queue.md
+    - DP Fenwick Tree Segment Tree: endlesscheng/dp_fenwick_tree_segment_tree.md
+    - DP Trie: endlesscheng/dp_trie.md
+    - DP Other Optimized: endlesscheng/dp_other_optimized.md
+    - DP WQS Binary Search: endlesscheng/dp_wqs_binary_search.md
+    - Tree DP Tree Diameter: endlesscheng/tree_dp_tree_diameter.md
+    - Tree DP Maximum Independent Set: endlesscheng/tree_dp_maximum_independent_set.md
+    - Tree DP Minimum Dominating Set: endlesscheng/tree_dp_minimum_dominating_set.md
+    - Tree DP Rerooting DP: endlesscheng/tree_dp_rerooting_dp.md
+    - Tree DP Other: endlesscheng/tree_dp_other.md
+    - DP Graph: endlesscheng/dp_graph.md
+    - DP Game Theory: endlesscheng/dp_game_theory.md
+    - DP Probability Expectation: endlesscheng/dp_probability_expectation.md
+    - DP Print Solutions: endlesscheng/dp_print_solutions.md
+    - DP Prefix and Suffix Decomposition: endlesscheng/dp_prefix_and_suffix_decomposition.md
+    - DP Transform X to Y: endlesscheng/dp_transform_x_to_y.md
+    - DP Jump Game: endlesscheng/dp_jump_game.md
+    - DP Other DP: endlesscheng/dp_other_dp.md
     - Enumerate Right Maintain Left: endlesscheng/enumerate_right_maintain_left.md
     - Enumerate Middle: endlesscheng/enumerate_middle.md
     - Prefix Sum Basics: endlesscheng/prefix_sum_basics.md

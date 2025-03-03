@@ -9,6 +9,7 @@ clean:
 	find . -name ".DS_Store" -type f -delete
 	find . -name "__pycache__" -type d -exec rm -r {} +
 	find . -name "output" -type d -exec rm -r {} +
+	find . -name "build" -type d -exec rm -r {} +
 
 push:
 	git add .

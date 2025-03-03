@@ -10,7 +10,7 @@ comments: True
 - [ ] [120. Triangle](https://leetcode.cn/problems/triangle/) (Medium)
 - [ ] [3393. Count Paths With the Given XOR Value](https://leetcode.cn/problems/count-paths-with-the-given-xor-value/) (Medium)
 - [ ] [931. Minimum Falling Path Sum](https://leetcode.cn/problems/minimum-falling-path-sum/) (Medium)
-- [ ] [2684. Maximum Number of Moves in a Grid](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
+- [x] [2684. Maximum Number of Moves in a Grid](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 - [ ] [2304. Minimum Path Cost in a Grid](https://leetcode.cn/problems/minimum-path-cost-in-a-grid/) (Medium)
 - [ ] [1289. Minimum Falling Path Sum II](https://leetcode.cn/problems/minimum-falling-path-sum-ii/) (Hard)
 - [ ] [3418. Maximum Amount of Money Robot Can Earn](https://leetcode.cn/problems/maximum-amount-of-money-robot-can-earn/) (Medium)
@@ -70,6 +70,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 
 -   Tags: array, dynamic programming, matrix
+
+```python title="2684. Maximum Number of Moves in a Grid - Python Solution"
+--8<-- "2684_maximum_number_of_moves_in_a_grid.py"
+```
 
 ## 2304. Minimum Path Cost in a Grid
 

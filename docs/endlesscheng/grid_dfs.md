@@ -10,10 +10,10 @@ comments: True
 - [x] [2658. Maximum Number of Fish in a Grid](https://leetcode.cn/problems/maximum-number-of-fish-in-a-grid/) (Medium)
 - [x] [1034. Coloring A Border](https://leetcode.cn/problems/coloring-a-border/) (Medium)
 - [x] [1020. Number of Enclaves](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
-- [ ] [2684. Maximum Number of Moves in a Grid](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
+- [x] [2684. Maximum Number of Moves in a Grid](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 - [x] [1254. Number of Closed Islands](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
 - [x] [130. Surrounded Regions](https://leetcode.cn/problems/surrounded-regions/) (Medium)
-- [ ] [1905. Count Sub Islands](https://leetcode.cn/problems/count-sub-islands/) (Medium)
+- [x] [1905. Count Sub Islands](https://leetcode.cn/problems/count-sub-islands/) (Medium)
 - [ ] [1391. Check if There is a Valid Path in a Grid](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/) (Medium)
 - [x] [417. Pacific Atlantic Water Flow](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 - [ ] [529. Minesweeper](https://leetcode.cn/problems/minesweeper/) (Medium)
@@ -105,6 +105,10 @@ comments: True
 
 -   Tags: array, dynamic programming, matrix
 
+```python title="2684. Maximum Number of Moves in a Grid - Python Solution"
+--8<-- "2684_maximum_number_of_moves_in_a_grid.py"
+```
+
 ## 1254. Number of Closed Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-closed-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
@@ -130,6 +134,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-sub-islands/) | [LeetCode CH](https://leetcode.cn/problems/count-sub-islands/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
+
+```python title="1905. Count Sub Islands - Python Solution"
+--8<-- "1905_count_sub_islands.py"
+```
 
 ## 1391. Check if There is a Valid Path in a Grid
 

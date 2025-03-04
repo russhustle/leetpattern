@@ -322,6 +322,33 @@ nav:
     - Lazy Segment Tree: endlesscheng/lazy_segment_tree.md
     - Dynamic Segment Tree: endlesscheng/dynamic_segment_tree.md
     - Offline Algorithm: endlesscheng/offline_algorithm.md
+    - Prime Check: endlesscheng/prime_check.md
+    - Prime Preprocessing: endlesscheng/prime_preprocessing.md
+    - Prime Factorization: endlesscheng/prime_factorization.md
+    - Factorial Decomposition: endlesscheng/factorial_decomposition.md
+    - Factors: endlesscheng/factors.md
+    - Greatest Common Divisor: endlesscheng/greatest_common_divisor.md
+    - Least Common Multiple: endlesscheng/least_common_multiple.md
+    - Coprime: endlesscheng/coprime.md
+    - Modular Arithmetic: endlesscheng/modular_arithmetic.md
+    - Number Theory Others: endlesscheng/number_theory_others.md
+    - Multiplication Principle: endlesscheng/multiplication_principle.md
+    - Combinatorial Counting: endlesscheng/combinatorial_counting.md
+    - Ball Placement Problems: endlesscheng/ball_placement_problems.md
+    - Inclusion Exclusion Principle: endlesscheng/inclusion_exclusion_principle.md
+    - Combinatorics Contribution Method: endlesscheng/combinatorics_contribution_method.md
+    - Probability and Expectation: endlesscheng/probability_and_expectation.md
+    - Game Theory: endlesscheng/game_theory.md
+    - Points and Lines: endlesscheng/points_and_lines.md
+    - Circles: endlesscheng/circles.md
+    - Rectangles and Polygons: endlesscheng/rectangles_and_polygons.md
+    - Convex Hull: endlesscheng/convex_hull.md
+    - Randomized Algorithms: endlesscheng/randomized_algorithms.md
+    - Palindromic Numbers: endlesscheng/palindromic_numbers.md
+    - Integer Partition: endlesscheng/integer_partition.md
+    - Manhattan Distance: endlesscheng/manhattan_distance.md
+    - Polynomial Convolution: endlesscheng/polynomial_convolution.md
+    - Math Others: endlesscheng/math_others.md
     - Greedy from Smallest Largest: endlesscheng/greedy_from_smallest_largest.md
     - Single Sequence Pairing: endlesscheng/single_sequence_pairing.md
     - Double Sequence Pairing: endlesscheng/double_sequence_pairing.md

@@ -1,6 +1,6 @@
-## Trie
+### Trie
 
--   A trie is a tree-like data structure whose nodes store the letters of an alphabet.
+- A trie is a tree-like data structure whose nodes store the letters of an alphabet.
 
 ```mermaid
 flowchart TD

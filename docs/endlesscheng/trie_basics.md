@@ -23,9 +23,9 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree/) | [LeetCode CH](https://leetcode.cn/problems/implement-trie-prefix-tree/) (Medium)
 
 -   Tags: hash table, string, design, trie
-## Trie
+### Trie
 
--   A trie is a tree-like data structure whose nodes store the letters of an alphabet.
+- A trie is a tree-like data structure whose nodes store the letters of an alphabet.
 
 ```mermaid
 flowchart TD

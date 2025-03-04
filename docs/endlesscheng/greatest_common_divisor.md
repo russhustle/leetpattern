@@ -13,7 +13,7 @@ comments: True
 - [ ] [858. Mirror Reflection](https://leetcode.cn/problems/mirror-reflection/) (Medium)
 - [ ] [2654. Minimum Number of Operations to Make All Array Elements Equal to 1](https://leetcode.cn/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) (Medium)
 - [ ] [1250. Check If It Is a Good Array](https://leetcode.cn/problems/check-if-it-is-a-good-array/) (Hard)
-- [ ] [149. Max Points on a Line](https://leetcode.cn/problems/max-points-on-a-line/) (Hard)
+- [x] [149. Max Points on a Line](https://leetcode.cn/problems/max-points-on-a-line/) (Hard)
 - [ ] [2607. Make K-Subarray Sums Equal](https://leetcode.cn/problems/make-k-subarray-sums-equal/) (Medium)
 - [ ] [2447. Number of Subarrays With GCD Equal to K](https://leetcode.cn/problems/number-of-subarrays-with-gcd-equal-to-k/) (Medium)
 - [ ] [2543. Check if Point Is Reachable](https://leetcode.cn/problems/check-if-point-is-reachable/) (Hard)
@@ -83,6 +83,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-points-on-a-line/) | [LeetCode CH](https://leetcode.cn/problems/max-points-on-a-line/) (Hard)
 
 -   Tags: array, hash table, math, geometry
+
+```python title="149. Max Points on a Line - Python Solution"
+--8<-- "0149_max_points_on_a_line.py"
+```
 
 ## 2607. Make K-Subarray Sums Equal
 

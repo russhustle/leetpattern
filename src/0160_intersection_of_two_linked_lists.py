@@ -7,7 +7,6 @@ from template import ListNode
 def getIntersectionNodeHash(
     headA: ListNode, headB: ListNode
 ) -> Optional[ListNode]:
-    """Return the intersection node of two linked lists."""
     if not headA or not headB:
         return None
 
@@ -30,7 +29,6 @@ def getIntersectionNodeHash(
 def getIntersectionNodeTP(
     headA: ListNode, headB: ListNode
 ) -> Optional[ListNode]:
-    """Return the intersection node of two linked lists."""
     if not headA or not headB:
         return None
 
@@ -41,14 +39,6 @@ def getIntersectionNodeTP(
         b = b.next if b else headA
 
     return a
-
-
-# |------------|------- |---------|
-# |  Approach  |  Time  |  Space  |
-# |------------|--------|---------|
-# |  Hash Set  | O(n+m) |  O(n)   |
-# |Two Pointers| O(n+m) |  O(1)   |
-# |------------|--------|---------|
 
 
 listA = [4, 1, 8, 4, 5]

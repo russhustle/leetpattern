@@ -20,7 +20,7 @@ def reverseListIterative(head: Optional[ListNode]) -> Optional[ListNode]:
 
 # Recursive
 def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
-    def reverse(cur, prev=None):
+    def reverse(cur, prev):
         if not cur:
             return prev
 
@@ -29,7 +29,7 @@ def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
 
         return reverse(temp, cur)
 
-    return reverse(head)
+    return reverse(head, None)
 
 
 nums = [1, 2, 3, 4, 5]

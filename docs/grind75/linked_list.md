@@ -7,7 +7,7 @@ comments: True
 - [x] [21. Merge Two Sorted Lists](https://leetcode.cn/problems/merge-two-sorted-lists/) (Easy)
 - [x] [141. Linked List Cycle](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
 - [x] [206. Reverse Linked List](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
-- [ ] [876. Middle of the Linked List](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
+- [x] [876. Middle of the Linked List](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
 - [x] [146. LRU Cache](https://leetcode.cn/problems/lru-cache/) (Medium)
 
 ## 21. Merge Two Sorted Lists
@@ -81,6 +81,10 @@ B --> A[1]
 -   [LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
 
 -   Tags: linked list, two pointers
+
+```python title="876. Middle of the Linked List - Python Solution"
+--8<-- "0876_middle_of_the_linked_list.py"
+```
 
 ## 146. LRU Cache
 

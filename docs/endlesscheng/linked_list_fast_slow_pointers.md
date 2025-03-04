@@ -4,10 +4,10 @@ comments: True
 
 # Linked List Fast Slow Pointers
 
-- [ ] [876. Middle of the Linked List](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
-- [ ] [2095. Delete the Middle Node of a Linked List](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) (Medium)
-- [ ] [234. Palindrome Linked List](https://leetcode.cn/problems/palindrome-linked-list/) (Easy)
-- [ ] [2130. Maximum Twin Sum of a Linked List](https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/) (Medium)
+- [x] [876. Middle of the Linked List](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
+- [x] [2095. Delete the Middle Node of a Linked List](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) (Medium)
+- [x] [234. Palindrome Linked List](https://leetcode.cn/problems/palindrome-linked-list/) (Easy)
+- [x] [2130. Maximum Twin Sum of a Linked List](https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/) (Medium)
 - [x] [143. Reorder List](https://leetcode.cn/problems/reorder-list/) (Medium)
 - [x] [141. Linked List Cycle](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
 - [x] [142. Linked List Cycle II](https://leetcode.cn/problems/linked-list-cycle-ii/) (Medium)
@@ -20,11 +20,19 @@ comments: True
 
 -   Tags: linked list, two pointers
 
+```python title="876. Middle of the Linked List - Python Solution"
+--8<-- "0876_middle_of_the_linked_list.py"
+```
+
 ## 2095. Delete the Middle Node of a Linked List
 
 -   [LeetCode](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) (Medium)
 
 -   Tags: linked list, two pointers
+
+```python title="2095. Delete the Middle Node of a Linked List - Python Solution"
+--8<-- "2095_delete_the_middle_node_of_a_linked_list.py"
+```
 
 ## 234. Palindrome Linked List
 
@@ -32,11 +40,19 @@ comments: True
 
 -   Tags: linked list, two pointers, stack, recursion
 
+```python title="234. Palindrome Linked List - Python Solution"
+--8<-- "0234_palindrome_linked_list.py"
+```
+
 ## 2130. Maximum Twin Sum of a Linked List
 
 -   [LeetCode](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/) (Medium)
 
 -   Tags: linked list, two pointers, stack
+
+```python title="2130. Maximum Twin Sum of a Linked List - Python Solution"
+--8<-- "2130_maximum_twin_sum_of_a_linked_list.py"
+```
 
 ## 143. Reorder List
 

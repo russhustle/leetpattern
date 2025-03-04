@@ -1,3 +1,6 @@
+from functools import cache
+
+
 # DP
 def fibDP(n: int) -> int:
     if n <= 1:
@@ -11,7 +14,20 @@ def fibDP(n: int) -> int:
     return dp[n]
 
 
+# DP (Optimized)
+def fibDPOptimized(n: int) -> int:
+    if n <= 1:
+        return n
+
+    n1, n2 = 0, 1
+    for _ in range(2, n + 1):
+        n1, n2 = n2, n1 + n2
+
+    return n2
+
+
 # Recursive
+@cache
 def fibRecursive(n: int) -> int:
     if n <= 1:
         return n
@@ -19,14 +35,7 @@ def fibRecursive(n: int) -> int:
     return fibRecursive(n - 1) + fibRecursive(n - 2)
 
 
-# |-------------|-----------------|--------------|
-# |  Approach   |      Time       |    Space     |
-# |-------------|-----------------|--------------|
-# |     DP      |      O(n)       |     O(n)     |
-# |  Recursive  |     O(2^n)      |     O(n)     |
-# |-------------|-----------------|--------------|
-
-
 n = 10
 print(fibDP(n))  # 55
+print(fibDPOptimized(n))  # 55
 print(fibRecursive(n))  # 55

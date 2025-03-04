@@ -23,13 +23,6 @@ def isPalindromeLR(s: str) -> bool:
     return True
 
 
-# |------------|------- |---------|
-# |  Approach  |  Time  |  Space  |
-# |------------|--------|---------|
-# | Left Right |  O(n)  |  O(1)   |
-# |------------|--------|---------|
-
-
 s = "A man, a plan, a canal: Panama"
 print(isPalindrome(s))  # True
 print(isPalindromeLR(s))  # True

@@ -7,7 +7,7 @@ comments: True
 - [ ] [410. Split Array Largest Sum](https://leetcode.cn/problems/split-array-largest-sum/) (Hard)
 - [ ] [813. Largest Sum of Averages](https://leetcode.cn/problems/largest-sum-of-averages/) (Medium)
 - [x] [1278. Palindrome Partitioning III](https://leetcode.cn/problems/palindrome-partitioning-iii/) (Hard)
-- [ ] [1745. Palindrome Partitioning IV](https://leetcode.cn/problems/palindrome-partitioning-iv/) (Hard)
+- [x] [1745. Palindrome Partitioning IV](https://leetcode.cn/problems/palindrome-partitioning-iv/) (Hard)
 - [ ] [1335. Minimum Difficulty of a Job Schedule](https://leetcode.cn/problems/minimum-difficulty-of-a-job-schedule/) (Hard)
 - [ ] [1473. Paint House III](https://leetcode.cn/problems/paint-house-iii/) (Hard)
 - [ ] [2209. Minimum White Tiles After Covering With Carpets](https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/) (Hard)
@@ -45,6 +45,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning-iv/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning-iv/) (Hard)
 
 -   Tags: string, dynamic programming
+
+```python title="1745. Palindrome Partitioning IV - Python Solution"
+--8<-- "1745_palindrome_partitioning_iv.py"
+```
 
 ## 1335. Minimum Difficulty of a Job Schedule
 

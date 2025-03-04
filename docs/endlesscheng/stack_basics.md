@@ -4,9 +4,9 @@ comments: True
 
 # Stack Basics
 
-- [ ] [1441. Build an Array With Stack Operations](https://leetcode.cn/problems/build-an-array-with-stack-operations/) (Medium)
+- [x] [1441. Build an Array With Stack Operations](https://leetcode.cn/problems/build-an-array-with-stack-operations/) (Medium)
 - [x] [844. Backspace String Compare](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
-- [ ] [682. Baseball Game](https://leetcode.cn/problems/baseball-game/) (Easy)
+- [x] [682. Baseball Game](https://leetcode.cn/problems/baseball-game/) (Easy)
 - [x] [2390. Removing Stars From a String](https://leetcode.cn/problems/removing-stars-from-a-string/) (Medium)
 - [ ] [1472. Design Browser History](https://leetcode.cn/problems/design-browser-history/) (Medium)
 - [ ] [946. Validate Stack Sequences](https://leetcode.cn/problems/validate-stack-sequences/) (Medium)
@@ -18,6 +18,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/build-an-array-with-stack-operations/) | [LeetCode CH](https://leetcode.cn/problems/build-an-array-with-stack-operations/) (Medium)
 
 -   Tags: array, stack, simulation
+
+```python title="1441. Build an Array With Stack Operations - Python Solution"
+--8<-- "1441_build_an_array_with_stack_operations.py"
+```
 
 ## 844. Backspace String Compare
 
@@ -34,6 +38,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/baseball-game/) | [LeetCode CH](https://leetcode.cn/problems/baseball-game/) (Easy)
 
 -   Tags: array, stack, simulation
+
+```python title="682. Baseball Game - Python Solution"
+--8<-- "0682_baseball_game.py"
+```
 
 ## 2390. Removing Stars From a String
 

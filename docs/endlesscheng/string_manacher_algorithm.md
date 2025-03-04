@@ -8,7 +8,7 @@ comments: True
 - [x] [647. Palindromic Substrings](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
 - [x] [214. Shortest Palindrome](https://leetcode.cn/problems/shortest-palindrome/) (Hard)
 - [ ] [3327. Check if DFS Strings Are Palindromes](https://leetcode.cn/problems/check-if-dfs-strings-are-palindromes/) (Hard)
-- [ ] [1745. Palindrome Partitioning IV](https://leetcode.cn/problems/palindrome-partitioning-iv/) (Hard)
+- [x] [1745. Palindrome Partitioning IV](https://leetcode.cn/problems/palindrome-partitioning-iv/) (Hard)
 - [ ] [1960. Maximum Product of the Length of Two Palindromic Substrings](https://leetcode.cn/problems/maximum-product-of-the-length-of-two-palindromic-substrings/) (Hard)
 
 ## 5. Longest Palindromic Substring
@@ -63,6 +63,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning-iv/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning-iv/) (Hard)
 
 -   Tags: string, dynamic programming
+
+```python title="1745. Palindrome Partitioning IV - Python Solution"
+--8<-- "1745_palindrome_partitioning_iv.py"
+```
 
 ## 1960. Maximum Product of the Length of Two Palindromic Substrings
 

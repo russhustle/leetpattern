@@ -1,6 +1,9 @@
+from functools import cache
+
+
 # DP
-def climbStairs(n: int) -> int:
-    if n <= 1:
+def climbStairsDP(n: int) -> int:
+    if n <= 2:
         return n
 
     dp = [i for i in range(n + 1)]
@@ -11,10 +14,30 @@ def climbStairs(n: int) -> int:
     return dp[n]
 
 
-# |-------------|-----------------|--------------|
-# |  Approach   |      Time       |    Space     |
-# |-------------|-----------------|--------------|
-# |     DP      |      O(n)       |     O(n)     |
-# |-------------|-----------------|--------------|
+# DP (Optimized)
+def climbStairsDPOptimized(n: int) -> int:
+    if n <= 2:
+        return n
 
-print(climbStairs(10))  # 89
+    first, second = 1, 2
+
+    for _ in range(3, n + 1):
+        first, second = second, first + second
+
+    return second
+
+
+# Recursion
+def climbStairsRecursion(n: int) -> int:
+    @cache
+    def dfs(i: int) -> int:
+        if i <= 1:
+            return 1
+        return dfs(i - 1) + dfs(i - 2)
+
+    return dfs(n)
+
+
+print(climbStairsDP(10))  # 89
+print(climbStairsDPOptimized(10))  # 89
+print(climbStairsRecursion(10))  # 89

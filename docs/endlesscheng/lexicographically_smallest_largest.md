@@ -6,12 +6,12 @@ comments: True
 
 - [ ] [1323. Maximum 69 Number](https://leetcode.cn/problems/maximum-69-number/) (Easy)
 - [ ] [3216. Lexicographically Smallest String After a Swap](https://leetcode.cn/problems/lexicographically-smallest-string-after-a-swap/) (Easy)
-- [ ] [2697. Lexicographically Smallest Palindrome](https://leetcode.cn/problems/lexicographically-smallest-palindrome/) (Easy)
+- [x] [2697. Lexicographically Smallest Palindrome](https://leetcode.cn/problems/lexicographically-smallest-palindrome/) (Easy)
 - [ ] [1881. Maximum Value after Insertion](https://leetcode.cn/problems/maximum-value-after-insertion/) (Medium)
 - [ ] [2734. Lexicographically Smallest String After Substring Operation](https://leetcode.cn/problems/lexicographically-smallest-string-after-substring-operation/) (Medium)
 - [ ] [1946. Largest Number After Mutating Substring](https://leetcode.cn/problems/largest-number-after-mutating-substring/) (Medium)
 - [ ] [1663. Smallest String With A Given Numeric Value](https://leetcode.cn/problems/smallest-string-with-a-given-numeric-value/) (Medium)
-- [ ] [1328. Break a Palindrome](https://leetcode.cn/problems/break-a-palindrome/) (Medium)
+- [x] [1328. Break a Palindrome](https://leetcode.cn/problems/break-a-palindrome/) (Medium)
 - [ ] [2259. Remove Digit From Number to Maximize Result](https://leetcode.cn/problems/remove-digit-from-number-to-maximize-result/) (Easy)
 - [ ] [2566. Maximum Difference by Remapping a Digit](https://leetcode.cn/problems/maximum-difference-by-remapping-a-digit/) (Easy)
 - [ ] [670. Maximum Swap](https://leetcode.cn/problems/maximum-swap/) (Medium)
@@ -53,6 +53,10 @@ comments: True
 
 -   Tags: two pointers, string, greedy
 
+```python title="2697. Lexicographically Smallest Palindrome - Python Solution"
+--8<-- "2697_lexicographically_smallest_palindrome.py"
+```
+
 ## 1881. Maximum Value after Insertion
 
 -   [LeetCode](https://leetcode.com/problems/maximum-value-after-insertion/) | [LeetCode CH](https://leetcode.cn/problems/maximum-value-after-insertion/) (Medium)
@@ -82,6 +86,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/break-a-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/break-a-palindrome/) (Medium)
 
 -   Tags: string, greedy
+
+```python title="1328. Break a Palindrome - Python Solution"
+--8<-- "1328_break_a_palindrome.py"
+```
 
 ## 2259. Remove Digit From Number to Maximize Result
 

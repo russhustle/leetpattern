@@ -5,7 +5,7 @@ comments: True
 # Linked List Delete Nodes
 
 - [x] [203. Remove Linked List Elements](https://leetcode.cn/problems/remove-linked-list-elements/) (Easy)
-- [ ] [3217. Delete Nodes From Linked List Present in Array](https://leetcode.cn/problems/delete-nodes-from-linked-list-present-in-array/) (Medium)
+- [x] [3217. Delete Nodes From Linked List Present in Array](https://leetcode.cn/problems/delete-nodes-from-linked-list-present-in-array/) (Medium)
 - [ ] [83. Remove Duplicates from Sorted List](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) (Easy)
 - [ ] [82. Remove Duplicates from Sorted List II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
 - [x] [237. Delete Node in a Linked List](https://leetcode.cn/problems/delete-node-in-a-linked-list/) (Medium)
@@ -56,6 +56,10 @@ F --> I((None))
 -   [LeetCode](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | [LeetCode CH](https://leetcode.cn/problems/delete-nodes-from-linked-list-present-in-array/) (Medium)
 
 -   Tags: array, hash table, linked list
+
+```python title="3217. Delete Nodes From Linked List Present in Array - Python Solution"
+--8<-- "3217_delete_nodes_from_linked_list_present_in_array.py"
+```
 
 ## 83. Remove Duplicates from Sorted List
 

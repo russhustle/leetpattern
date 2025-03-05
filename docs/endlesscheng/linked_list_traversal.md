@@ -8,7 +8,7 @@ comments: True
 - [x] [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.cn/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) (Medium)
 - [x] [2181. Merge Nodes in Between Zeros](https://leetcode.cn/problems/merge-nodes-in-between-zeros/) (Medium)
 - [ ] [725. Split Linked List in Parts](https://leetcode.cn/problems/split-linked-list-in-parts/) (Medium)
-- [ ] [817. Linked List Components](https://leetcode.cn/problems/linked-list-components/) (Medium)
+- [x] [817. Linked List Components](https://leetcode.cn/problems/linked-list-components/) (Medium)
 - [ ] [3062. Winner of the Linked List Game](https://leetcode.cn/problems/winner-of-the-linked-list-game/) (Easy) 👑
 - [ ] [3063. Linked List Frequency](https://leetcode.cn/problems/linked-list-frequency/) (Easy) 👑
 
@@ -53,6 +53,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/linked-list-components/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-components/) (Medium)
 
 -   Tags: array, hash table, linked list
+
+```python title="817. Linked List Components - Python Solution"
+--8<-- "0817_linked_list_components.py"
+```
 
 ## 3062. Winner of the Linked List Game
 

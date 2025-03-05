@@ -5,10 +5,10 @@ comments: True
 # Palindrome Greedy
 
 - [x] [409. Longest Palindrome](https://leetcode.cn/problems/longest-palindrome/) (Easy)
-- [ ] [2697. Lexicographically Smallest Palindrome](https://leetcode.cn/problems/lexicographically-smallest-palindrome/) (Easy)
+- [x] [2697. Lexicographically Smallest Palindrome](https://leetcode.cn/problems/lexicographically-smallest-palindrome/) (Easy)
 - [ ] [680. Valid Palindrome II](https://leetcode.cn/problems/valid-palindrome-ii/) (Easy)
-- [ ] [1328. Break a Palindrome](https://leetcode.cn/problems/break-a-palindrome/) (Medium)
-- [ ] [1400. Construct K Palindrome Strings](https://leetcode.cn/problems/construct-k-palindrome-strings/) (Medium)
+- [x] [1328. Break a Palindrome](https://leetcode.cn/problems/break-a-palindrome/) (Medium)
+- [x] [1400. Construct K Palindrome Strings](https://leetcode.cn/problems/construct-k-palindrome-strings/) (Medium)
 - [ ] [2131. Longest Palindrome by Concatenating Two Letter Words](https://leetcode.cn/problems/longest-palindrome-by-concatenating-two-letter-words/) (Medium)
 - [ ] [2384. Largest Palindromic Number](https://leetcode.cn/problems/largest-palindromic-number/) (Medium)
 - [ ] [3035. Maximum Palindromes After Operations](https://leetcode.cn/problems/maximum-palindromes-after-operations/) (Medium)
@@ -38,6 +38,10 @@ comments: True
 
 -   Tags: two pointers, string, greedy
 
+```python title="2697. Lexicographically Smallest Palindrome - Python Solution"
+--8<-- "2697_lexicographically_smallest_palindrome.py"
+```
+
 ## 680. Valid Palindrome II
 
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome-ii/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome-ii/) (Easy)
@@ -50,11 +54,19 @@ comments: True
 
 -   Tags: string, greedy
 
+```python title="1328. Break a Palindrome - Python Solution"
+--8<-- "1328_break_a_palindrome.py"
+```
+
 ## 1400. Construct K Palindrome Strings
 
 -   [LeetCode](https://leetcode.com/problems/construct-k-palindrome-strings/) | [LeetCode CH](https://leetcode.cn/problems/construct-k-palindrome-strings/) (Medium)
 
 -   Tags: hash table, string, greedy, counting
+
+```python title="1400. Construct K Palindrome Strings - Python Solution"
+--8<-- "1400_construct_k_palindrome_strings.py"
+```
 
 ## 2131. Longest Palindrome by Concatenating Two Letter Words
 

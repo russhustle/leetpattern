@@ -33,7 +33,7 @@ theme:
       name: Switch to dark mode
   font:
     text: Lato
-    code: Courier Prime
+    code: Fira Code
 
   features:
   - content.code.copy # Enable copy button on code blocks

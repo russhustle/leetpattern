@@ -166,10 +166,6 @@ comments: True
 --8<-- "0056_merge_intervals.py"
 ```
 
-```cpp title="56. Merge Intervals - C++ Solution"
---8<-- "cpp/0056_merge_intervals.cc"
-```
-
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
@@ -419,6 +415,10 @@ flowchart LR
 --8<-- "0210_course_schedule_ii.py"
 ```
 
+```cpp title="210. Course Schedule II - C++ Solution"
+--8<-- "cpp/0210_course_schedule_ii.cc"
+```
+
 ## 138. Copy List with Random Pointer
 
 -   [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/) | [LeetCode CH](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
@@ -448,6 +448,10 @@ flowchart LR
 
 ```python title="20. Valid Parentheses - Python Solution"
 --8<-- "0020_valid_parentheses.py"
+```
+
+```cpp title="20. Valid Parentheses - C++ Solution"
+--8<-- "cpp/0020_valid_parentheses.cc"
 ```
 
 ## 2. Add Two Numbers
@@ -504,6 +508,10 @@ flowchart LR
 
 ```python title="238. Product of Array Except Self - Python Solution"
 --8<-- "0238_product_of_array_except_self.py"
+```
+
+```cpp title="238. Product of Array Except Self - C++ Solution"
+--8<-- "cpp/0238_product_of_array_except_self.cc"
 ```
 
 ## 560. Subarray Sum Equals K

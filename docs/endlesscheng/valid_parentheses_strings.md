@@ -39,6 +39,10 @@ comments: True
 --8<-- "0020_valid_parentheses.py"
 ```
 
+```cpp title="20. Valid Parentheses - C++ Solution"
+--8<-- "cpp/0020_valid_parentheses.cc"
+```
+
 ## 921. Minimum Add to Make Parentheses Valid
 
 -   [LeetCode](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | [LeetCode CH](https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid/) (Medium)

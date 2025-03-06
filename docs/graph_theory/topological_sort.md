@@ -147,6 +147,10 @@ flowchart LR
 --8<-- "0210_course_schedule_ii.py"
 ```
 
+```cpp title="210. Course Schedule II - C++ Solution"
+--8<-- "cpp/0210_course_schedule_ii.cc"
+```
+
 ## 269. Alien Dictionary
 
 -   [LeetCode](https://leetcode.com/problems/alien-dictionary/) | [LeetCode CH](https://leetcode.cn/problems/alien-dictionary/) (Hard)

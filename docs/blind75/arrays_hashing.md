@@ -102,6 +102,10 @@ comments: True
 --8<-- "0238_product_of_array_except_self.py"
 ```
 
+```cpp title="238. Product of Array Except Self - C++ Solution"
+--8<-- "cpp/0238_product_of_array_except_self.cc"
+```
+
 ## 128. Longest Consecutive Sequence
 
 -   [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-consecutive-sequence/) (Medium)

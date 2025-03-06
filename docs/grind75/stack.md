@@ -33,6 +33,10 @@ comments: True
 --8<-- "0020_valid_parentheses.py"
 ```
 
+```cpp title="20. Valid Parentheses - C++ Solution"
+--8<-- "cpp/0020_valid_parentheses.cc"
+```
+
 ## 232. Implement Queue using Stacks
 
 -   [LeetCode](https://leetcode.com/problems/implement-queue-using-stacks/) | [LeetCode CH](https://leetcode.cn/problems/implement-queue-using-stacks/) (Easy)

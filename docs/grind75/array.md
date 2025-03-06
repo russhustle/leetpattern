@@ -121,6 +121,10 @@ comments: True
 --8<-- "0238_product_of_array_except_self.py"
 ```
 
+```cpp title="238. Product of Array Except Self - C++ Solution"
+--8<-- "cpp/0238_product_of_array_except_self.cc"
+```
+
 ## 39. Combination Sum
 
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
@@ -142,10 +146,6 @@ comments: True
 
 ```python title="56. Merge Intervals - Python Solution"
 --8<-- "0056_merge_intervals.py"
-```
-
-```cpp title="56. Merge Intervals - C++ Solution"
---8<-- "cpp/0056_merge_intervals.cc"
 ```
 
 ## 75. Sort Colors

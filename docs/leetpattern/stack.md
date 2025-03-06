@@ -90,6 +90,10 @@ comments: True
 --8<-- "0020_valid_parentheses.py"
 ```
 
+```cpp title="20. Valid Parentheses - C++ Solution"
+--8<-- "cpp/0020_valid_parentheses.cc"
+```
+
 ## 155. Min Stack
 
 -   [LeetCode](https://leetcode.com/problems/min-stack/) | [LeetCode CH](https://leetcode.cn/problems/min-stack/) (Medium)

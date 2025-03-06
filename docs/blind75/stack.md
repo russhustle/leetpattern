@@ -26,3 +26,7 @@ comments: True
 ```python title="20. Valid Parentheses - Python Solution"
 --8<-- "0020_valid_parentheses.py"
 ```
+
+```cpp title="20. Valid Parentheses - C++ Solution"
+--8<-- "cpp/0020_valid_parentheses.cc"
+```

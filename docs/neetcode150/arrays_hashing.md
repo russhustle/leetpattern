@@ -103,6 +103,10 @@ comments: True
 --8<-- "0238_product_of_array_except_self.py"
 ```
 
+```cpp title="238. Product of Array Except Self - C++ Solution"
+--8<-- "cpp/0238_product_of_array_except_self.cc"
+```
+
 ## 36. Valid Sudoku
 
 -   [LeetCode](https://leetcode.com/problems/valid-sudoku/) | [LeetCode CH](https://leetcode.cn/problems/valid-sudoku/) (Medium)

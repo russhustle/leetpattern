@@ -86,6 +86,10 @@ comments: True
 --8<-- "0210_course_schedule_ii.py"
 ```
 
+```cpp title="210. Course Schedule II - C++ Solution"
+--8<-- "cpp/0210_course_schedule_ii.cc"
+```
+
 ## 1462. Course Schedule IV
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule-iv/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-iv/) (Medium)

@@ -287,6 +287,10 @@ comments: True
 --8<-- "0238_product_of_array_except_self.py"
 ```
 
+```cpp title="238. Product of Array Except Self - C++ Solution"
+--8<-- "cpp/0238_product_of_array_except_self.cc"
+```
+
 ## 2906. Construct Product Matrix
 
 -   [LeetCode](https://leetcode.com/problems/construct-product-matrix/) | [LeetCode CH](https://leetcode.cn/problems/construct-product-matrix/) (Medium)

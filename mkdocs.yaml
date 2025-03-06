@@ -435,7 +435,6 @@ nav:
     - Home: company/index.md
     - Amazon: company/amazon.md
 
-
 - About: about.md
 
 site_name: 🚀LeetPattern
@@ -466,8 +465,8 @@ theme:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
   font:
-    text: Lato
-    code: Fira Code
+    text: Roboto
+    code: Roboto Code
 
   features:
   - content.code.copy # Enable copy button on code blocks

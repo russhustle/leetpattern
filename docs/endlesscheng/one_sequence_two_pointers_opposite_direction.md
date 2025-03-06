@@ -197,6 +197,10 @@ comments: True
 --8<-- "0042_trapping_rain_water.py"
 ```
 
+```cpp title="42. Trapping Rain Water - C++ Solution"
+--8<-- "cpp/0042_trapping_rain_water.cc"
+```
+
 ## 1616. Split Two Strings to Make Palindrome
 
 -   [LeetCode](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/split-two-strings-to-make-palindrome/) (Medium)

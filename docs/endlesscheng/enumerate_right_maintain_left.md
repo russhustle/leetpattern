@@ -93,6 +93,10 @@ comments: True
 --8<-- "0121_best_time_to_buy_and_sell_stock.py"
 ```
 
+```cpp title="121. Best Time to Buy and Sell Stock - C++ Solution"
+--8<-- "cpp/0121_best_time_to_buy_and_sell_stock.cc"
+```
+
 ## 624. Maximum Distance in Arrays
 
 -   [LeetCode](https://leetcode.com/problems/maximum-distance-in-arrays/) | [LeetCode CH](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)

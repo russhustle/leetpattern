@@ -50,6 +50,10 @@ comments: True
 --8<-- "1046_last_stone_weight.py"
 ```
 
+```cpp title="1046. Last Stone Weight - C++ Solution"
+--8<-- "cpp/1046_last_stone_weight.cc"
+```
+
 ## 1049. Last Stone Weight II
 
 -   [LeetCode](https://leetcode.com/problems/last-stone-weight-ii/) | [LeetCode CH](https://leetcode.cn/problems/last-stone-weight-ii/) (Medium)

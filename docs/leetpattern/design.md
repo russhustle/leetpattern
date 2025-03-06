@@ -34,6 +34,10 @@ comments: True
 --8<-- "0146_lru_cache.py"
 ```
 
+```cpp title="146. LRU Cache - C++ Solution"
+--8<-- "cpp/0146_lru_cache.cc"
+```
+
 ## 355. Design Twitter
 
 -   [LeetCode](https://leetcode.com/problems/design-twitter/) | [LeetCode CH](https://leetcode.cn/problems/design-twitter/) (Medium)

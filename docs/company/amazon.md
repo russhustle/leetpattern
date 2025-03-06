@@ -72,6 +72,10 @@ comments: True
 --8<-- "0146_lru_cache.py"
 ```
 
+```cpp title="146. LRU Cache - C++ Solution"
+--8<-- "cpp/0146_lru_cache.cc"
+```
+
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
@@ -97,6 +101,10 @@ comments: True
 --8<-- "0200_number_of_islands.py"
 ```
 
+```cpp title="200. Number of Islands - C++ Solution"
+--8<-- "cpp/0200_number_of_islands.cc"
+```
+
 ## 42. Trapping Rain Water
 
 -   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
@@ -114,6 +122,10 @@ comments: True
 
 ```python title="42. Trapping Rain Water - Python Solution"
 --8<-- "0042_trapping_rain_water.py"
+```
+
+```cpp title="42. Trapping Rain Water - C++ Solution"
+--8<-- "cpp/0042_trapping_rain_water.cc"
 ```
 
 ## 49. Group Anagrams
@@ -137,6 +149,10 @@ comments: True
 --8<-- "0121_best_time_to_buy_and_sell_stock.py"
 ```
 
+```cpp title="121. Best Time to Buy and Sell Stock - C++ Solution"
+--8<-- "cpp/0121_best_time_to_buy_and_sell_stock.cc"
+```
+
 ## 56. Merge Intervals
 
 -   [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
@@ -148,6 +164,10 @@ comments: True
 
 ```python title="56. Merge Intervals - Python Solution"
 --8<-- "0056_merge_intervals.py"
+```
+
+```cpp title="56. Merge Intervals - C++ Solution"
+--8<-- "cpp/0056_merge_intervals.cc"
 ```
 
 ## 207. Course Schedule

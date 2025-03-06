@@ -36,6 +36,10 @@ comments: True
 --8<-- "0200_number_of_islands.py"
 ```
 
+```cpp title="200. Number of Islands - C++ Solution"
+--8<-- "cpp/0200_number_of_islands.cc"
+```
+
 ## 133. Clone Graph
 
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)

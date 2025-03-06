@@ -65,6 +65,10 @@ comments: True
 --8<-- "0042_trapping_rain_water.py"
 ```
 
+```cpp title="42. Trapping Rain Water - C++ Solution"
+--8<-- "cpp/0042_trapping_rain_water.cc"
+```
+
 ## 755. Pour Water
 
 -   [LeetCode](https://leetcode.com/problems/pour-water/) | [LeetCode CH](https://leetcode.cn/problems/pour-water/) (Medium)

@@ -17,11 +17,22 @@
     },
     {
       "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
+      "type": "cppdbg",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/sihana/Desktop/repos/leetpattern/docs/cpp",
-      "program": "/Users/sihana/Desktop/repos/leetpattern/docs/cpp/build/Debug/outDebug"
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/home/asihan/repos/leetpattern/src/cpp",
+      "program": "/home/asihan/repos/leetpattern/src/cpp/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }

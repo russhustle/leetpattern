@@ -46,6 +46,10 @@ comments: True
 --8<-- "0121_best_time_to_buy_and_sell_stock.py"
 ```
 
+```cpp title="121. Best Time to Buy and Sell Stock - C++ Solution"
+--8<-- "cpp/0121_best_time_to_buy_and_sell_stock.cc"
+```
+
 ## 169. Majority Element
 
 -   [LeetCode](https://leetcode.com/problems/majority-element/) | [LeetCode CH](https://leetcode.cn/problems/majority-element/) (Easy)
@@ -138,6 +142,10 @@ comments: True
 
 ```python title="56. Merge Intervals - Python Solution"
 --8<-- "0056_merge_intervals.py"
+```
+
+```cpp title="56. Merge Intervals - C++ Solution"
+--8<-- "cpp/0056_merge_intervals.cc"
 ```
 
 ## 75. Sort Colors

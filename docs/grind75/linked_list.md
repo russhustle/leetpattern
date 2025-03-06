@@ -103,3 +103,7 @@ B --> A[1]
 ```python title="146. LRU Cache - Python Solution"
 --8<-- "0146_lru_cache.py"
 ```
+
+```cpp title="146. LRU Cache - C++ Solution"
+--8<-- "cpp/0146_lru_cache.cc"
+```

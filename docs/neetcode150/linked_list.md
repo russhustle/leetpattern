@@ -153,6 +153,10 @@ D --> B
 --8<-- "0146_lru_cache.py"
 ```
 
+```cpp title="146. LRU Cache - C++ Solution"
+--8<-- "cpp/0146_lru_cache.cc"
+```
+
 ## 23. Merge k Sorted Lists
 
 -   [LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)

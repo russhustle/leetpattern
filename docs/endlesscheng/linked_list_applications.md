@@ -57,6 +57,10 @@ comments: True
 --8<-- "0146_lru_cache.py"
 ```
 
+```cpp title="146. LRU Cache - C++ Solution"
+--8<-- "cpp/0146_lru_cache.cc"
+```
+
 ## 460. LFU Cache
 
 -   [LeetCode](https://leetcode.com/problems/lfu-cache/) | [LeetCode CH](https://leetcode.cn/problems/lfu-cache/) (Hard)

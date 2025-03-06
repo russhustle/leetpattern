@@ -224,6 +224,10 @@ flowchart LR
 --8<-- "0200_number_of_islands.py"
 ```
 
+```cpp title="200. Number of Islands - C++ Solution"
+--8<-- "cpp/0200_number_of_islands.cc"
+```
+
 ## 994. Rotting Oranges
 
 -   [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)

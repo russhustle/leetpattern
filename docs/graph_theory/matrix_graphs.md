@@ -35,6 +35,10 @@ comments: True
 --8<-- "0200_number_of_islands.py"
 ```
 
+```cpp title="200. Number of Islands - C++ Solution"
+--8<-- "cpp/0200_number_of_islands.cc"
+```
+
 ## 1020. Number of Enclaves
 
 -   [LeetCode](https://leetcode.com/problems/number-of-enclaves/) | [LeetCode CH](https://leetcode.cn/problems/number-of-enclaves/) (Medium)

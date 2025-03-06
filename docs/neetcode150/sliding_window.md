@@ -22,6 +22,10 @@ comments: True
 --8<-- "0121_best_time_to_buy_and_sell_stock.py"
 ```
 
+```cpp title="121. Best Time to Buy and Sell Stock - C++ Solution"
+--8<-- "cpp/0121_best_time_to_buy_and_sell_stock.cc"
+```
+
 ## 3. Longest Substring Without Repeating Characters
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)

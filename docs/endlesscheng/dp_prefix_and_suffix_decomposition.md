@@ -232,6 +232,10 @@ comments: True
 --8<-- "0042_trapping_rain_water.py"
 ```
 
+```cpp title="42. Trapping Rain Water - C++ Solution"
+--8<-- "cpp/0042_trapping_rain_water.cc"
+```
+
 ## 2711. Difference of Number of Distinct Values on Diagonals
 
 -   [LeetCode](https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/) | [LeetCode CH](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) (Medium)

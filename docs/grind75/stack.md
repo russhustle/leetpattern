@@ -97,6 +97,10 @@ comments: True
 --8<-- "0042_trapping_rain_water.py"
 ```
 
+```cpp title="42. Trapping Rain Water - C++ Solution"
+--8<-- "cpp/0042_trapping_rain_water.cc"
+```
+
 ## 224. Basic Calculator
 
 -   [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)

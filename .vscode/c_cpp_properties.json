@@ -2,7 +2,13 @@
   "configurations": [
     {
       "name": "linux-gcc-x64",
-      "includePath": ["${workspaceFolder}/**"],
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include/c++/11",
+        "/usr/include/x86_64-linux-gnu/c++/11/",
+        "/usr/local/include",
+        "/usr/include"
+      ],
       "compilerPath": "/usr/bin/gcc",
       "cStandard": "${default}",
       "cppStandard": "c++20",

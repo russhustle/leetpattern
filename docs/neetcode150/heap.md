@@ -32,6 +32,10 @@ comments: True
 --8<-- "1046_last_stone_weight.py"
 ```
 
+```cpp title="1046. Last Stone Weight - C++ Solution"
+--8<-- "cpp/1046_last_stone_weight.cc"
+```
+
 ## 973. K Closest Points to Origin
 
 -   [LeetCode](https://leetcode.com/problems/k-closest-points-to-origin/) | [LeetCode CH](https://leetcode.cn/problems/k-closest-points-to-origin/) (Medium)

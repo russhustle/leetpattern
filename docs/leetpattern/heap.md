@@ -15,3 +15,7 @@ comments: True
 ```python title="1046. Last Stone Weight - Python Solution"
 --8<-- "1046_last_stone_weight.py"
 ```
+
+```cpp title="1046. Last Stone Weight - C++ Solution"
+--8<-- "cpp/1046_last_stone_weight.cc"
+```

@@ -71,3 +71,7 @@ comments: True
 ```python title="42. Trapping Rain Water - Python Solution"
 --8<-- "0042_trapping_rain_water.py"
 ```
+
+```cpp title="42. Trapping Rain Water - C++ Solution"
+--8<-- "cpp/0042_trapping_rain_water.cc"
+```

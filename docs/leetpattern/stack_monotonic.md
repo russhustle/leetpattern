@@ -99,6 +99,10 @@ comments: True
 --8<-- "0042_trapping_rain_water.py"
 ```
 
+```cpp title="42. Trapping Rain Water - C++ Solution"
+--8<-- "cpp/0042_trapping_rain_water.cc"
+```
+
 ## 901. Online Stock Span
 
 -   [LeetCode](https://leetcode.com/problems/online-stock-span/) | [LeetCode CH](https://leetcode.cn/problems/online-stock-span/) (Medium)

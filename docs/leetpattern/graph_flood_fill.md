@@ -77,6 +77,10 @@ comments: True
 --8<-- "0200_number_of_islands.py"
 ```
 
+```cpp title="200. Number of Islands - C++ Solution"
+--8<-- "cpp/0200_number_of_islands.cc"
+```
+
 ## 695. Max Area of Island
 
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)

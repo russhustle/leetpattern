@@ -39,6 +39,10 @@ comments: True
 --8<-- "1046_last_stone_weight.py"
 ```
 
+```cpp title="1046. Last Stone Weight - C++ Solution"
+--8<-- "cpp/1046_last_stone_weight.cc"
+```
+
 ## 3264. Final Array State After K Multiplication Operations I
 
 -   [LeetCode](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/) | [LeetCode CH](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/) (Easy)

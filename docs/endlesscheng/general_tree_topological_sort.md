@@ -4,7 +4,7 @@ comments: True
 
 # General Tree Topological Sort
 
-- [ ] [310. Minimum Height Trees](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+- [x] [310. Minimum Height Trees](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 - [ ] [2603. Collect Coins in a Tree](https://leetcode.cn/problems/collect-coins-in-a-tree/) (Hard)
 
 ## 310. Minimum Height Trees
@@ -12,6 +12,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
+
+```python title="310. Minimum Height Trees - Python Solution"
+--8<-- "0310_minimum_height_trees.py"
+```
 
 ## 2603. Collect Coins in a Tree
 

@@ -15,7 +15,7 @@ comments: True
 - [ ] [2429. Minimize XOR](https://leetcode.cn/problems/minimize-xor/) (Medium)
 - [ ] [2527. Find Xor-Beauty of Array](https://leetcode.cn/problems/find-xor-beauty-of-array/) (Medium)
 - [ ] [2317. Maximum XOR After Operations ](https://leetcode.cn/problems/maximum-xor-after-operations/) (Medium)
-- [ ] [2588. Count the Number of Beautiful Subarrays](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) (Medium)
+- [x] [2588. Count the Number of Beautiful Subarrays](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) (Medium)
 - [ ] [2564. Substring XOR Queries](https://leetcode.cn/problems/substring-xor-queries/) (Medium)
 - [ ] [1734. Decode XORed Permutation](https://leetcode.cn/problems/decode-xored-permutation/) (Medium)
 - [ ] [2857. Count Pairs of Points With Distance k](https://leetcode.cn/problems/count-pairs-of-points-with-distance-k/) (Medium)
@@ -93,6 +93,20 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) (Medium)
 
 -   Tags: array, hash table, bit manipulation, prefix sum
+- `nums = [4, 3, 1, 2, 4]`
+- In bianry
+
+```
+4 -> 100
+3 -> 011
+1 -> 001
+2 -> 010
+4 -> 100
+```
+
+```python title="2588. Count the Number of Beautiful Subarrays - Python Solution"
+--8<-- "2588_count_the_number_of_beautiful_subarrays.py"
+```
 
 ## 2564. Substring XOR Queries
 

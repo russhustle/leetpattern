@@ -10,7 +10,7 @@ comments: True
 - [x] [974. Subarray Sums Divisible by K](https://leetcode.cn/problems/subarray-sums-divisible-by-k/) (Medium)
 - [x] [523. Continuous Subarray Sum](https://leetcode.cn/problems/continuous-subarray-sum/) (Medium)
 - [ ] [437. Path Sum III](https://leetcode.cn/problems/path-sum-iii/) (Medium)
-- [ ] [2588. Count the Number of Beautiful Subarrays](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) (Medium)
+- [x] [2588. Count the Number of Beautiful Subarrays](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) (Medium)
 - [ ] [525. Contiguous Array](https://leetcode.cn/problems/contiguous-array/) (Medium)
 - [ ] [3026. Maximum Good Subarray Sum](https://leetcode.cn/problems/maximum-good-subarray-sum/) (Medium)
 - [ ] [1477. Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.cn/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/) (Medium)
@@ -83,6 +83,20 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) (Medium)
 
 -   Tags: array, hash table, bit manipulation, prefix sum
+- `nums = [4, 3, 1, 2, 4]`
+- In bianry
+
+```
+4 -> 100
+3 -> 011
+1 -> 001
+2 -> 010
+4 -> 100
+```
+
+```python title="2588. Count the Number of Beautiful Subarrays - Python Solution"
+--8<-- "2588_count_the_number_of_beautiful_subarrays.py"
+```
 
 ## 525. Contiguous Array
 

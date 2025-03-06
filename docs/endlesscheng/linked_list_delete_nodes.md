@@ -6,8 +6,8 @@ comments: True
 
 - [x] [203. Remove Linked List Elements](https://leetcode.cn/problems/remove-linked-list-elements/) (Easy)
 - [x] [3217. Delete Nodes From Linked List Present in Array](https://leetcode.cn/problems/delete-nodes-from-linked-list-present-in-array/) (Medium)
-- [ ] [83. Remove Duplicates from Sorted List](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) (Easy)
-- [ ] [82. Remove Duplicates from Sorted List II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
+- [x] [83. Remove Duplicates from Sorted List](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) (Easy)
+- [x] [82. Remove Duplicates from Sorted List II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
 - [x] [237. Delete Node in a Linked List](https://leetcode.cn/problems/delete-node-in-a-linked-list/) (Medium)
 - [ ] [1669. Merge In Between Linked Lists](https://leetcode.cn/problems/merge-in-between-linked-lists/) (Medium)
 - [x] [2487. Remove Nodes From Linked List](https://leetcode.cn/problems/remove-nodes-from-linked-list/) (Medium)
@@ -67,11 +67,19 @@ F --> I((None))
 
 -   Tags: linked list
 
+```python title="83. Remove Duplicates from Sorted List - Python Solution"
+--8<-- "0083_remove_duplicates_from_sorted_list.py"
+```
+
 ## 82. Remove Duplicates from Sorted List II
 
 -   [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
 
 -   Tags: linked list, two pointers
+
+```python title="82. Remove Duplicates from Sorted List II - Python Solution"
+--8<-- "0082_remove_duplicates_from_sorted_list_ii.py"
+```
 
 ## 237. Delete Node in a Linked List
 

@@ -12,7 +12,7 @@ comments: True
 - [x] [994. Rotting Oranges](https://leetcode.cn/problems/rotting-oranges/) (Medium)
 - [x] [721. Accounts Merge](https://leetcode.cn/problems/accounts-merge/) (Medium)
 - [x] [79. Word Search](https://leetcode.cn/problems/word-search/) (Medium)
-- [ ] [310. Minimum Height Trees](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+- [x] [310. Minimum Height Trees](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 - [x] [127. Word Ladder](https://leetcode.cn/problems/word-ladder/) (Hard)
 
 ## 733. Flood Fill
@@ -263,6 +263,10 @@ flowchart LR
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
+
+```python title="310. Minimum Height Trees - Python Solution"
+--8<-- "0310_minimum_height_trees.py"
+```
 
 ## 127. Word Ladder
 

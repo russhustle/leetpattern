@@ -9,7 +9,7 @@ comments: True
 - [ ] [1462. Course Schedule IV](https://leetcode.cn/problems/course-schedule-iv/) (Medium)
 - [ ] [2115. Find All Possible Recipes from Given Supplies](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) (Medium)
 - [ ] [851. Loud and Rich](https://leetcode.cn/problems/loud-and-rich/) (Medium)
-- [ ] [310. Minimum Height Trees](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+- [x] [310. Minimum Height Trees](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 - [ ] [2392. Build a Matrix With Conditions](https://leetcode.cn/problems/build-a-matrix-with-conditions/) (Hard)
 - [x] [802. Find Eventual Safe States](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
 - [ ] [1591. Strange Printer II](https://leetcode.cn/problems/strange-printer-ii/) (Hard)
@@ -109,6 +109,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
+
+```python title="310. Minimum Height Trees - Python Solution"
+--8<-- "0310_minimum_height_trees.py"
+```
 
 ## 2392. Build a Matrix With Conditions
 

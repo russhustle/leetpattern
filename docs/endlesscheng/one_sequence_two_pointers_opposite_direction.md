@@ -135,6 +135,10 @@ comments: True
 --8<-- "0016_3sum_closest.py"
 ```
 
+```cpp title="16. 3Sum Closest - C++ Solution"
+--8<-- "cpp/0016_3sum_closest.cc"
+```
+
 ## 18. 4Sum
 
 -   [LeetCode](https://leetcode.com/problems/4sum/) | [LeetCode CH](https://leetcode.cn/problems/4sum/) (Medium)

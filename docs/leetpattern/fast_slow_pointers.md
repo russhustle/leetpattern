@@ -22,6 +22,10 @@ comments: True
 --8<-- "0027_remove_element.py"
 ```
 
+```cpp title="27. Remove Element - C++ Solution"
+--8<-- "cpp/0027_remove_element.cc"
+```
+
 ## 26. Remove Duplicates from Sorted Array
 
 -   [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) (Easy)
@@ -55,6 +59,10 @@ comments: True
 
 ```python title="283. Move Zeroes - Python Solution"
 --8<-- "0283_move_zeroes.py"
+```
+
+```cpp title="283. Move Zeroes - C++ Solution"
+--8<-- "cpp/0283_move_zeroes.cc"
 ```
 
 ## 1089. Duplicate Zeros

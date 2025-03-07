@@ -60,6 +60,10 @@ comments: True
 --8<-- "0003_longest_substring_without_repeating_characters.py"
 ```
 
+```cpp title="3. Longest Substring Without Repeating Characters - C++ Solution"
+--8<-- "cpp/0003_longest_substring_without_repeating_characters.cc"
+```
+
 ## 8. String to Integer (atoi)
 
 -   [LeetCode](https://leetcode.com/problems/string-to-integer-atoi/) | [LeetCode CH](https://leetcode.cn/problems/string-to-integer-atoi/) (Medium)

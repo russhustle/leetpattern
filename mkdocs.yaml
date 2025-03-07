@@ -58,6 +58,26 @@ nav:
     - Simulation: leetpattern/simulation.md
     - Design: leetpattern/design.md
 
+  - Top 100 Liked:
+    - Home: top100liked/index.md
+    - Hash: top100liked/hash.md
+    - Two Pointers: top100liked/two_pointers.md
+    - Sliding Window: top100liked/sliding_window.md
+    - Subarray: top100liked/subarray.md
+    - Arrasy: top100liked/arrasy.md
+    - Matrix: top100liked/matrix.md
+    - Linked List: top100liked/linked_list.md
+    - Binary Tree: top100liked/binary_tree.md
+    - Graph: top100liked/graph.md
+    - Backtracking: top100liked/backtracking.md
+    - Binary Search: top100liked/binary_search.md
+    - Stack: top100liked/stack.md
+    - Heap: top100liked/heap.md
+    - Greedy: top100liked/greedy.md
+    - Dynamic Programming: top100liked/dynamic_programming.md
+    - Multi-dimensional Dynamic Programming: top100liked/multi-dimensional_dynamic_programming.md
+    - Techniques: top100liked/techniques.md
+
   - Neetcode 150:
     - Home: neetcode150/index.md
     - Arrays Hashing: neetcode150/arrays_hashing.md

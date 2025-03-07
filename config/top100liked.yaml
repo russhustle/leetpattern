@@ -1,0 +1,21 @@
+category: algorithms
+dir: top100liked
+name: Top 100 Liked
+topics:
+  Hash: [ 1, 49, 128 ]
+  Two Pointers: [ 283, 11, 15, 42 ]
+  Sliding Window: [ 3, 438 ]
+  Subarray: [ 560, 239, 76 ]
+  Arrasy: [ 53, 56, 189, 238, 41 ]
+  Matrix: [ 73, 54, 48, 240 ]
+  Linked List: [ 160, 206, 234, 141, 142, 21, 2, 19, 24, 25, 138, 148, 23, 146 ]
+  Binary Tree: [ 94, 104, 226, 101, 543, 102, 108, 98, 230, 199, 114, 105, 437, 236, 124 ]
+  Graph: [ 200, 994, 207, 208 ]
+  Backtracking: [ 46, 78, 17, 39, 22, 79, 131, 51 ]
+  Binary Search: [ 35, 74, 34, 33, 153, 4 ]
+  Stack: [ 20, 155, 394, 739, 84 ]
+  Heap: [ 215, 347, 295 ]
+  Greedy: [ 121, 55, 45, 763 ]
+  Dynamic Programming: [ 70, 118, 198, 279, 322, 139, 300, 152, 416, 32 ]
+  Multi-dimensional Dynamic Programming: [ 62, 64, 5, 1143, 72 ]
+  Techniques: [ 136, 169, 75, 31, 287 ]

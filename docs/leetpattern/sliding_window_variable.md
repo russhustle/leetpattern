@@ -27,6 +27,10 @@ comments: True
 --8<-- "0003_longest_substring_without_repeating_characters.py"
 ```
 
+```cpp title="3. Longest Substring Without Repeating Characters - C++ Solution"
+--8<-- "cpp/0003_longest_substring_without_repeating_characters.cc"
+```
+
 ## 159. Longest Substring with At Most Two Distinct Characters
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) (Medium)

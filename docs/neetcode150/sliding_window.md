@@ -40,6 +40,10 @@ comments: True
 --8<-- "0003_longest_substring_without_repeating_characters.py"
 ```
 
+```cpp title="3. Longest Substring Without Repeating Characters - C++ Solution"
+--8<-- "cpp/0003_longest_substring_without_repeating_characters.cc"
+```
+
 ## 424. Longest Repeating Character Replacement
 
 -   [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/) | [LeetCode CH](https://leetcode.cn/problems/longest-repeating-character-replacement/) (Medium)

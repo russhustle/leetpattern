@@ -37,6 +37,10 @@ comments: True
 --8<-- "0015_3sum.py"
 ```
 
+```cpp title="15. 3Sum - C++ Solution"
+--8<-- "cpp/0015_3sum.cc"
+```
+
 ## 18. 4Sum
 
 -   [LeetCode](https://leetcode.com/problems/4sum/) | [LeetCode CH](https://leetcode.cn/problems/4sum/) (Medium)

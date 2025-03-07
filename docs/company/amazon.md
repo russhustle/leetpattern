@@ -337,6 +337,10 @@ flowchart LR
 --8<-- "0015_3sum.py"
 ```
 
+```cpp title="15. 3Sum - C++ Solution"
+--8<-- "cpp/0015_3sum.cc"
+```
+
 ## 127. Word Ladder
 
 -   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
@@ -380,6 +384,10 @@ flowchart LR
 
 ```python title="55. Jump Game - Python Solution"
 --8<-- "0055_jump_game.py"
+```
+
+```cpp title="55. Jump Game - C++ Solution"
+--8<-- "cpp/0055_jump_game.cc"
 ```
 
 ## 3. Longest Substring Without Repeating Characters

@@ -43,3 +43,7 @@ comments: True
 ```python title="55. Jump Game - Python Solution"
 --8<-- "0055_jump_game.py"
 ```
+
+```cpp title="55. Jump Game - C++ Solution"
+--8<-- "cpp/0055_jump_game.cc"
+```

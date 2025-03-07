@@ -38,6 +38,10 @@ comments: True
 --8<-- "0055_jump_game.py"
 ```
 
+```cpp title="55. Jump Game - C++ Solution"
+--8<-- "cpp/0055_jump_game.cc"
+```
+
 ## 45. Jump Game II
 
 -   [LeetCode](https://leetcode.com/problems/jump-game-ii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-ii/) (Medium)

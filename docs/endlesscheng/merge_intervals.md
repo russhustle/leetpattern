@@ -69,6 +69,10 @@ comments: True
 --8<-- "0055_jump_game.py"
 ```
 
+```cpp title="55. Jump Game - C++ Solution"
+--8<-- "cpp/0055_jump_game.cc"
+```
+
 ## 763. Partition Labels
 
 -   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)

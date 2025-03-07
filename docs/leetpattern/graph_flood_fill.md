@@ -91,6 +91,10 @@ comments: True
 --8<-- "0695_max_area_of_island.py"
 ```
 
+```cpp title="695. Max Area of Island - C++ Solution"
+--8<-- "cpp/0695_max_area_of_island.cc"
+```
+
 ## 463. Island Perimeter
 
 -   [LeetCode](https://leetcode.com/problems/island-perimeter/) | [LeetCode CH](https://leetcode.cn/problems/island-perimeter/) (Easy)

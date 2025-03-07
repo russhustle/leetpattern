@@ -134,6 +134,10 @@ flowchart LR
 --8<-- "0207_course_schedule.py"
 ```
 
+```cpp title="207. Course Schedule - C++ Solution"
+--8<-- "cpp/0207_course_schedule.cc"
+```
+
 ## 210. Course Schedule II
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)

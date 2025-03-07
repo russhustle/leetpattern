@@ -290,6 +290,10 @@ flowchart LR
 --8<-- "0207_course_schedule.py"
 ```
 
+```cpp title="207. Course Schedule - C++ Solution"
+--8<-- "cpp/0207_course_schedule.cc"
+```
+
 ## 23. Merge k Sorted Lists
 
 -   [LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
@@ -572,6 +576,10 @@ flowchart LR
 
 ```python title="295. Find Median from Data Stream - Python Solution"
 --8<-- "0295_find_median_from_data_stream.py"
+```
+
+```cpp title="295. Find Median from Data Stream - C++ Solution"
+--8<-- "cpp/0295_find_median_from_data_stream.cc"
 ```
 
 ## 5. Longest Palindromic Substring

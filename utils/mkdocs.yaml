@@ -144,4 +144,3 @@ extra_javascript:
 extra_css:
 - utils/unordered-list-symbols.css
 - utils/ordered-list-symbols.css
-- utils/table.css

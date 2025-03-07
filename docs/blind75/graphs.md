@@ -184,6 +184,10 @@ flowchart LR
 --8<-- "0207_course_schedule.py"
 ```
 
+```cpp title="207. Course Schedule - C++ Solution"
+--8<-- "cpp/0207_course_schedule.cc"
+```
+
 ## 261. Graph Valid Tree
 
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)

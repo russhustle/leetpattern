@@ -13,8 +13,14 @@ def topic_progress(df, category, problems):
 
         if category == "algorithms":
             py_path = os.path.join("src", row["basename"] + ".py")
+            cc_path = os.path.join("src", "cpp", row["basename"] + ".cc")
             check_make_file(py_path)
-            progress = "x" if not check_file_empty(py_path) else " "
+            check_make_file(cc_path)
+            completed = not check_file_empty(py_path) or not check_file_empty(
+                cc_path
+            )
+            progress = "x" if completed else " "
+
         elif category == "sql":
             sql_path = os.path.join("src", "sql", row["basename"] + ".sql")
             check_make_file(sql_path)

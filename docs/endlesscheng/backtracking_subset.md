@@ -13,7 +13,7 @@ comments: True
 - [ ] [2212. Maximum Points in an Archery Competition](https://leetcode.cn/problems/maximum-points-in-an-archery-competition/) (Medium)
 - [ ] [1255. Maximum Score Words Formed by Letters](https://leetcode.cn/problems/maximum-score-words-formed-by-letters/) (Hard)
 - [ ] [2151. Maximum Good People Based on Statements](https://leetcode.cn/problems/maximum-good-people-based-on-statements/) (Hard)
-- [ ] [2597. The Number of Beautiful Subsets](https://leetcode.cn/problems/the-number-of-beautiful-subsets/) (Medium)
+- [x] [2597. The Number of Beautiful Subsets](https://leetcode.cn/problems/the-number-of-beautiful-subsets/) (Medium)
 - [ ] [2959. Number of Possible Sets of Closing Branches](https://leetcode.cn/problems/number-of-possible-sets-of-closing-branches/) (Hard)
 - [ ] [1601. Maximum Number of Achievable Transfer Requests](https://leetcode.cn/problems/maximum-number-of-achievable-transfer-requests/) (Hard)
 - [ ] [1617. Count Subtrees With Max Distance Between Cities](https://leetcode.cn/problems/count-subtrees-with-max-distance-between-cities/) (Hard)
@@ -88,6 +88,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | [LeetCode CH](https://leetcode.cn/problems/the-number-of-beautiful-subsets/) (Medium)
 
 -   Tags: array, hash table, math, dynamic programming, backtracking, sorting, combinatorics
+
+```cpp title="2597. The Number of Beautiful Subsets - C++ Solution"
+--8<-- "cpp/2597_the_number_of_beautiful_subsets.cc"
+```
 
 ## 2959. Number of Possible Sets of Closing Branches
 

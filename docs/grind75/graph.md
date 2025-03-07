@@ -199,6 +199,10 @@ flowchart LR
 --8<-- "0207_course_schedule.py"
 ```
 
+```cpp title="207. Course Schedule - C++ Solution"
+--8<-- "cpp/0207_course_schedule.cc"
+```
+
 ## 200. Number of Islands
 
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)

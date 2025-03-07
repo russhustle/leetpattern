@@ -278,6 +278,10 @@ flowchart LR
 --8<-- "0207_course_schedule.py"
 ```
 
+```cpp title="207. Course Schedule - C++ Solution"
+--8<-- "cpp/0207_course_schedule.cc"
+```
+
 ## 802. Find Eventual Safe States
 
 -   [LeetCode](https://leetcode.com/problems/find-eventual-safe-states/) | [LeetCode CH](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)

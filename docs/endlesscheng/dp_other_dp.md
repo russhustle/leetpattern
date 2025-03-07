@@ -29,7 +29,7 @@ comments: True
 - [ ] [2809. Minimum Time to Make Array Sum At Most x](https://leetcode.cn/problems/minimum-time-to-make-array-sum-at-most-x/) (Hard)
 - [ ] [3299. Sum of Consecutive Subsequences](https://leetcode.cn/problems/sum-of-consecutive-subsequences/) (Hard) 👑
 - [ ] [2189. Number of Ways to Build House of Cards](https://leetcode.cn/problems/number-of-ways-to-build-house-of-cards/) (Medium) 👑
-- [ ] [2597. The Number of Beautiful Subsets](https://leetcode.cn/problems/the-number-of-beautiful-subsets/) (Medium)
+- [x] [2597. The Number of Beautiful Subsets](https://leetcode.cn/problems/the-number-of-beautiful-subsets/) (Medium)
 - [ ] [2638. Count the Number of K-Free Subsets](https://leetcode.cn/problems/count-the-number-of-k-free-subsets/) (Medium) 👑
 
 ## 1387. Sort Integers by The Power Value
@@ -192,6 +192,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | [LeetCode CH](https://leetcode.cn/problems/the-number-of-beautiful-subsets/) (Medium)
 
 -   Tags: array, hash table, math, dynamic programming, backtracking, sorting, combinatorics
+
+```cpp title="2597. The Number of Beautiful Subsets - C++ Solution"
+--8<-- "cpp/2597_the_number_of_beautiful_subsets.cc"
+```
 
 ## 2638. Count the Number of K-Free Subsets
 

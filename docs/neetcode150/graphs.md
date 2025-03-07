@@ -57,6 +57,10 @@ comments: True
 --8<-- "0695_max_area_of_island.py"
 ```
 
+```cpp title="695. Max Area of Island - C++ Solution"
+--8<-- "cpp/0695_max_area_of_island.cc"
+```
+
 ## 133. Clone Graph
 
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
@@ -234,6 +238,10 @@ flowchart LR
 
 ```python title="207. Course Schedule - Python Solution"
 --8<-- "0207_course_schedule.py"
+```
+
+```cpp title="207. Course Schedule - C++ Solution"
+--8<-- "cpp/0207_course_schedule.cc"
 ```
 
 ## 210. Course Schedule II

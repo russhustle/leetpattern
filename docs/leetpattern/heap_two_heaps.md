@@ -18,6 +18,10 @@ comments: True
 --8<-- "0295_find_median_from_data_stream.py"
 ```
 
+```cpp title="295. Find Median from Data Stream - C++ Solution"
+--8<-- "cpp/0295_find_median_from_data_stream.cc"
+```
+
 ## 480. Sliding Window Median
 
 -   [LeetCode](https://leetcode.com/problems/sliding-window-median/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-median/) (Hard)

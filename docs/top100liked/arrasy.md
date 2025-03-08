@@ -33,6 +33,10 @@ comments: True
 --8<-- "0056_merge_intervals.py"
 ```
 
+```cpp title="56. Merge Intervals - C++ Solution"
+--8<-- "cpp/0056_merge_intervals.cc"
+```
+
 ## 189. Rotate Array
 
 -   [LeetCode](https://leetcode.com/problems/rotate-array/) | [LeetCode CH](https://leetcode.cn/problems/rotate-array/) (Medium)

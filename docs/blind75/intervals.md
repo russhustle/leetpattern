@@ -33,6 +33,10 @@ comments: True
 --8<-- "0056_merge_intervals.py"
 ```
 
+```cpp title="56. Merge Intervals - C++ Solution"
+--8<-- "cpp/0056_merge_intervals.cc"
+```
+
 ## 252. Meeting Rooms
 
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms/) (Easy)

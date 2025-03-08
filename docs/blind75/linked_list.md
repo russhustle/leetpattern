@@ -98,6 +98,10 @@ D --> B
 --8<-- "0141_linked_list_cycle.py"
 ```
 
+```cpp title="141. Linked List Cycle - C++ Solution"
+--8<-- "cpp/0141_linked_list_cycle.cc"
+```
+
 ## 23. Merge k Sorted Lists
 
 -   [LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)

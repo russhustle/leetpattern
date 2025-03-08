@@ -112,6 +112,10 @@ comments: True
 --8<-- "0056_merge_intervals.py"
 ```
 
+```cpp title="56. Merge Intervals - C++ Solution"
+--8<-- "cpp/0056_merge_intervals.cc"
+```
+
 ## 57. Insert Interval
 
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)

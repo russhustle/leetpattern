@@ -124,6 +124,10 @@ D --> B
 --8<-- "0141_linked_list_cycle.py"
 ```
 
+```cpp title="141. Linked List Cycle - C++ Solution"
+--8<-- "cpp/0141_linked_list_cycle.cc"
+```
+
 ## 287. Find the Duplicate Number
 
 -   [LeetCode](https://leetcode.com/problems/find-the-duplicate-number/) | [LeetCode CH](https://leetcode.cn/problems/find-the-duplicate-number/) (Medium)

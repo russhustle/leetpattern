@@ -31,6 +31,10 @@ comments: True
 --8<-- "0560_subarray_sum_equals_k.py"
 ```
 
+```cpp title="560. Subarray Sum Equals K - C++ Solution"
+--8<-- "cpp/0560_subarray_sum_equals_k.cc"
+```
+
 ## 49. Group Anagrams
 
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)

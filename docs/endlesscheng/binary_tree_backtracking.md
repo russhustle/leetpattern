@@ -6,7 +6,7 @@ comments: True
 
 - [x] [257. Binary Tree Paths](https://leetcode.cn/problems/binary-tree-paths/) (Easy)
 - [ ] [113. Path Sum II](https://leetcode.cn/problems/path-sum-ii/) (Medium)
-- [ ] [437. Path Sum III](https://leetcode.cn/problems/path-sum-iii/) (Medium)
+- [x] [437. Path Sum III](https://leetcode.cn/problems/path-sum-iii/) (Medium)
 
 ## 257. Binary Tree Paths
 
@@ -29,3 +29,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/path-sum-iii/) | [LeetCode CH](https://leetcode.cn/problems/path-sum-iii/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
+
+```cpp title="437. Path Sum III - C++ Solution"
+--8<-- "cpp/0437_path_sum_iii.cc"
+```

@@ -86,6 +86,10 @@ comments: True
 --8<-- "0098_validate_binary_search_tree.py"
 ```
 
+```cpp title="98. Validate Binary Search Tree - C++ Solution"
+--8<-- "cpp/0098_validate_binary_search_tree.cc"
+```
+
 ## 230. Kth Smallest Element in a BST
 
 -   [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)

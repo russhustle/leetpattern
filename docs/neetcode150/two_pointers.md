@@ -57,6 +57,10 @@ comments: True
 --8<-- "0011_container_with_most_water.py"
 ```
 
+```cpp title="11. Container With Most Water - C++ Solution"
+--8<-- "cpp/0011_container_with_most_water.cc"
+```
+
 ## 42. Trapping Rain Water
 
 -   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)

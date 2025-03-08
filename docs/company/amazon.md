@@ -166,6 +166,10 @@ comments: True
 --8<-- "0056_merge_intervals.py"
 ```
 
+```cpp title="56. Merge Intervals - C++ Solution"
+--8<-- "cpp/0056_merge_intervals.cc"
+```
+
 ## 207. Course Schedule
 
 -   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
@@ -538,6 +542,10 @@ flowchart LR
 
 ```python title="560. Subarray Sum Equals K - Python Solution"
 --8<-- "0560_subarray_sum_equals_k.py"
+```
+
+```cpp title="560. Subarray Sum Equals K - C++ Solution"
+--8<-- "cpp/0560_subarray_sum_equals_k.cc"
 ```
 
 ## 4. Median of Two Sorted Arrays

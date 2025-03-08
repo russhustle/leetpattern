@@ -9,7 +9,7 @@ comments: True
 - [ ] [1727. Largest Submatrix With Rearrangements](https://leetcode.cn/problems/largest-submatrix-with-rearrangements/) (Medium)
 - [ ] [2749. Minimum Operations to Make the Integer Zero](https://leetcode.cn/problems/minimum-operations-to-make-the-integer-zero/) (Medium)
 - [ ] [2910. Minimum Number of Groups to Create a Valid Assignment](https://leetcode.cn/problems/minimum-number-of-groups-to-create-a-valid-assignment/) (Medium)
-- [ ] [2234. Maximum Total Beauty of the Gardens](https://leetcode.cn/problems/maximum-total-beauty-of-the-gardens/) (Hard)
+- [x] [2234. Maximum Total Beauty of the Gardens](https://leetcode.cn/problems/maximum-total-beauty-of-the-gardens/) (Hard)
 
 ## 2171. Removing Minimum Number of Magic Beans
 
@@ -46,3 +46,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) | [LeetCode CH](https://leetcode.cn/problems/maximum-total-beauty-of-the-gardens/) (Hard)
 
 -   Tags: array, two pointers, binary search, greedy, sorting
+
+```cpp title="2234. Maximum Total Beauty of the Gardens - C++ Solution"
+--8<-- "cpp/2234_maximum_total_beauty_of_the_gardens.cc"
+```

@@ -44,3 +44,7 @@ comments: True
 ```python title="11. Container With Most Water - Python Solution"
 --8<-- "0011_container_with_most_water.py"
 ```
+
+```cpp title="11. Container With Most Water - C++ Solution"
+--8<-- "cpp/0011_container_with_most_water.cc"
+```

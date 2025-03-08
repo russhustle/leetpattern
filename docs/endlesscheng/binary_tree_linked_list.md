@@ -4,7 +4,7 @@ comments: True
 
 # Binary Tree Linked List
 
-- [ ] [114. Flatten Binary Tree to Linked List](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) (Medium)
+- [x] [114. Flatten Binary Tree to Linked List](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) (Medium)
 - [ ] [1367. Linked List in Binary Tree](https://leetcode.cn/problems/linked-list-in-binary-tree/) (Medium)
 - [x] [109. Convert Sorted List to Binary Search Tree](https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/) (Medium)
 - [x] [116. Populating Next Right Pointers in Each Node](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) (Medium)
@@ -16,6 +16,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) (Medium)
 
 -   Tags: linked list, stack, tree, depth first search, binary tree
+
+```cpp title="114. Flatten Binary Tree to Linked List - C++ Solution"
+--8<-- "cpp/0114_flatten_binary_tree_to_linked_list.cc"
+```
 
 ## 1367. Linked List in Binary Tree
 

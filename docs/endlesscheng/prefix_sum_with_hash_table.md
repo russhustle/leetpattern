@@ -9,7 +9,7 @@ comments: True
 - [ ] [1524. Number of Sub-arrays With Odd Sum](https://leetcode.cn/problems/number-of-sub-arrays-with-odd-sum/) (Medium)
 - [x] [974. Subarray Sums Divisible by K](https://leetcode.cn/problems/subarray-sums-divisible-by-k/) (Medium)
 - [x] [523. Continuous Subarray Sum](https://leetcode.cn/problems/continuous-subarray-sum/) (Medium)
-- [ ] [437. Path Sum III](https://leetcode.cn/problems/path-sum-iii/) (Medium)
+- [x] [437. Path Sum III](https://leetcode.cn/problems/path-sum-iii/) (Medium)
 - [x] [2588. Count the Number of Beautiful Subarrays](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) (Medium)
 - [ ] [525. Contiguous Array](https://leetcode.cn/problems/contiguous-array/) (Medium)
 - [ ] [3026. Maximum Good Subarray Sum](https://leetcode.cn/problems/maximum-good-subarray-sum/) (Medium)
@@ -46,6 +46,10 @@ comments: True
 --8<-- "0560_subarray_sum_equals_k.py"
 ```
 
+```cpp title="560. Subarray Sum Equals K - C++ Solution"
+--8<-- "cpp/0560_subarray_sum_equals_k.cc"
+```
+
 ## 1524. Number of Sub-arrays With Odd Sum
 
 -   [LeetCode](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/) | [LeetCode CH](https://leetcode.cn/problems/number-of-sub-arrays-with-odd-sum/) (Medium)
@@ -77,6 +81,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/path-sum-iii/) | [LeetCode CH](https://leetcode.cn/problems/path-sum-iii/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
+
+```cpp title="437. Path Sum III - C++ Solution"
+--8<-- "cpp/0437_path_sum_iii.cc"
+```
 
 ## 2588. Count the Number of Beautiful Subarrays
 

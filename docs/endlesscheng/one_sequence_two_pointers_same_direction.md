@@ -7,7 +7,7 @@ comments: True
 - [ ] [1574. Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.cn/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) (Medium)
 - [ ] [2972. Count the Number of Incremovable Subarrays II](https://leetcode.cn/problems/count-the-number-of-incremovable-subarrays-ii/) (Hard)
 - [ ] [2122. Recover the Original Array](https://leetcode.cn/problems/recover-the-original-array/) (Hard)
-- [ ] [2234. Maximum Total Beauty of the Gardens](https://leetcode.cn/problems/maximum-total-beauty-of-the-gardens/) (Hard)
+- [x] [2234. Maximum Total Beauty of the Gardens](https://leetcode.cn/problems/maximum-total-beauty-of-the-gardens/) (Hard)
 - [ ] [3323. Minimize Connected Groups by Inserting Interval](https://leetcode.cn/problems/minimize-connected-groups-by-inserting-interval/) (Medium) 👑
 - [ ] [581. Shortest Unsorted Continuous Subarray](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/) (Medium)
 
@@ -34,6 +34,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) | [LeetCode CH](https://leetcode.cn/problems/maximum-total-beauty-of-the-gardens/) (Hard)
 
 -   Tags: array, two pointers, binary search, greedy, sorting
+
+```cpp title="2234. Maximum Total Beauty of the Gardens - C++ Solution"
+--8<-- "cpp/2234_maximum_total_beauty_of_the_gardens.cc"
+```
 
 ## 3323. Minimize Connected Groups by Inserting Interval
 

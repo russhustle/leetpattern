@@ -104,6 +104,10 @@ D --> B
 --8<-- "0141_linked_list_cycle.py"
 ```
 
+```cpp title="141. Linked List Cycle - C++ Solution"
+--8<-- "cpp/0141_linked_list_cycle.cc"
+```
+
 ## 142. Linked List Cycle II
 
 -   [LeetCode](https://leetcode.com/problems/linked-list-cycle-ii/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle-ii/) (Medium)
@@ -121,6 +125,10 @@ D --> B
 
 ```python title="142. Linked List Cycle II - Python Solution"
 --8<-- "0142_linked_list_cycle_ii.py"
+```
+
+```cpp title="142. Linked List Cycle II - C++ Solution"
+--8<-- "cpp/0142_linked_list_cycle_ii.cc"
 ```
 
 ## 21. Merge Two Sorted Lists

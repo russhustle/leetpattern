@@ -18,6 +18,10 @@ comments: True
 --8<-- "0560_subarray_sum_equals_k.py"
 ```
 
+```cpp title="560. Subarray Sum Equals K - C++ Solution"
+--8<-- "cpp/0560_subarray_sum_equals_k.cc"
+```
+
 ## 239. Sliding Window Maximum
 
 -   [LeetCode](https://leetcode.com/problems/sliding-window-maximum/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-maximum/) (Hard)

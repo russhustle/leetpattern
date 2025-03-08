@@ -37,6 +37,10 @@ comments: True
 --8<-- "0011_container_with_most_water.py"
 ```
 
+```cpp title="11. Container With Most Water - C++ Solution"
+--8<-- "cpp/0011_container_with_most_water.cc"
+```
+
 ## 15. 3Sum
 
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)

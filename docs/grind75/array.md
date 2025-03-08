@@ -152,6 +152,10 @@ comments: True
 --8<-- "0056_merge_intervals.py"
 ```
 
+```cpp title="56. Merge Intervals - C++ Solution"
+--8<-- "cpp/0056_merge_intervals.cc"
+```
+
 ## 75. Sort Colors
 
 -   [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
@@ -173,4 +177,8 @@ comments: True
 
 ```python title="11. Container With Most Water - Python Solution"
 --8<-- "0011_container_with_most_water.py"
+```
+
+```cpp title="11. Container With Most Water - C++ Solution"
+--8<-- "cpp/0011_container_with_most_water.cc"
 ```

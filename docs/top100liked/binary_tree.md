@@ -14,9 +14,9 @@ comments: True
 - [x] [98. Validate Binary Search Tree](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
 - [x] [230. Kth Smallest Element in a BST](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)
 - [x] [199. Binary Tree Right Side View](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
-- [ ] [114. Flatten Binary Tree to Linked List](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) (Medium)
+- [x] [114. Flatten Binary Tree to Linked List](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) (Medium)
 - [x] [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
-- [ ] [437. Path Sum III](https://leetcode.cn/problems/path-sum-iii/) (Medium)
+- [x] [437. Path Sum III](https://leetcode.cn/problems/path-sum-iii/) (Medium)
 - [x] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 - [x] [124. Binary Tree Maximum Path Sum](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)
 
@@ -90,6 +90,10 @@ comments: True
 --8<-- "0108_convert_sorted_array_to_binary_search_tree.py"
 ```
 
+```cpp title="108. Convert Sorted Array to Binary Search Tree - C++ Solution"
+--8<-- "cpp/0108_convert_sorted_array_to_binary_search_tree.cc"
+```
+
 ## 98. Validate Binary Search Tree
 
 -   [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
@@ -98,6 +102,10 @@ comments: True
 
 ```python title="98. Validate Binary Search Tree - Python Solution"
 --8<-- "0098_validate_binary_search_tree.py"
+```
+
+```cpp title="98. Validate Binary Search Tree - C++ Solution"
+--8<-- "cpp/0098_validate_binary_search_tree.cc"
 ```
 
 ## 230. Kth Smallest Element in a BST
@@ -135,6 +143,10 @@ comments: True
 
 -   Tags: linked list, stack, tree, depth first search, binary tree
 
+```cpp title="114. Flatten Binary Tree to Linked List - C++ Solution"
+--8<-- "cpp/0114_flatten_binary_tree_to_linked_list.cc"
+```
+
 ## 105. Construct Binary Tree from Preorder and Inorder Traversal
 
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
@@ -150,6 +162,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/path-sum-iii/) | [LeetCode CH](https://leetcode.cn/problems/path-sum-iii/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
+
+```cpp title="437. Path Sum III - C++ Solution"
+--8<-- "cpp/0437_path_sum_iii.cc"
+```
 
 ## 236. Lowest Common Ancestor of a Binary Tree
 

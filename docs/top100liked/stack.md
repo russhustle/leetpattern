@@ -46,6 +46,10 @@ comments: True
 --8<-- "0155_min_stack.py"
 ```
 
+```cpp title="155. Min Stack - C++ Solution"
+--8<-- "cpp/0155_min_stack.cc"
+```
+
 ## 394. Decode String
 
 -   [LeetCode](https://leetcode.com/problems/decode-string/) | [LeetCode CH](https://leetcode.cn/problems/decode-string/) (Medium)

@@ -82,6 +82,10 @@ comments: True
 --8<-- "0155_min_stack.py"
 ```
 
+```cpp title="155. Min Stack - C++ Solution"
+--8<-- "cpp/0155_min_stack.cc"
+```
+
 ## 42. Trapping Rain Water
 
 -   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)

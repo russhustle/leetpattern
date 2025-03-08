@@ -44,6 +44,10 @@ comments: True
 --8<-- "0062_unique_paths.py"
 ```
 
+```cpp title="62. Unique Paths - C++ Solution"
+--8<-- "cpp/0062_unique_paths.cc"
+```
+
 ## 357. Count Numbers with Unique Digits
 
 -   [LeetCode](https://leetcode.com/problems/count-numbers-with-unique-digits/) | [LeetCode CH](https://leetcode.cn/problems/count-numbers-with-unique-digits/) (Medium)

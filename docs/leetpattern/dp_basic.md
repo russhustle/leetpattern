@@ -69,6 +69,10 @@ comments: True
 --8<-- "0070_climbing_stairs.py"
 ```
 
+```cpp title="70. Climbing Stairs - C++ Solution"
+--8<-- "cpp/0070_climbing_stairs.cc"
+```
+
 ## 746. Min Cost Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)

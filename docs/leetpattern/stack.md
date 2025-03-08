@@ -105,6 +105,10 @@ comments: True
 --8<-- "0155_min_stack.py"
 ```
 
+```cpp title="155. Min Stack - C++ Solution"
+--8<-- "cpp/0155_min_stack.cc"
+```
+
 ## 150. Evaluate Reverse Polish Notation
 
 -   [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)

@@ -50,6 +50,10 @@ comments: True
 --8<-- "0543_diameter_of_binary_tree.py"
 ```
 
+```cpp title="543. Diameter of Binary Tree - C++ Solution"
+--8<-- "cpp/0543_diameter_of_binary_tree.cc"
+```
+
 ## 110. Balanced Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/balanced-binary-tree/) (Easy)
@@ -161,6 +165,10 @@ comments: True
 
 ```python title="105. Construct Binary Tree from Preorder and Inorder Traversal - Python Solution"
 --8<-- "0105_construct_binary_tree_from_preorder_and_inorder_traversal.py"
+```
+
+```cpp title="105. Construct Binary Tree from Preorder and Inorder Traversal - C++ Solution"
+--8<-- "cpp/0105_construct_binary_tree_from_preorder_and_inorder_traversal.cc"
 ```
 
 ## 124. Binary Tree Maximum Path Sum

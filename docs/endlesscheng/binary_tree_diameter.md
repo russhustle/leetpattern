@@ -20,6 +20,10 @@ comments: True
 --8<-- "0543_diameter_of_binary_tree.py"
 ```
 
+```cpp title="543. Diameter of Binary Tree - C++ Solution"
+--8<-- "cpp/0543_diameter_of_binary_tree.cc"
+```
+
 ## 687. Longest Univalue Path
 
 -   [LeetCode](https://leetcode.com/problems/longest-univalue-path/) | [LeetCode CH](https://leetcode.cn/problems/longest-univalue-path/) (Medium)

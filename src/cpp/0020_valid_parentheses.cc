@@ -1,44 +1,31 @@
-#include <string>
-#include <stack>
-#include <unordered_map>
 #include <cassert>
+#include <stack>
+#include <string>
+#include <unordered_map>
 using namespace std;
 
-class Solution
-{
-public:
-    bool isValid(string s)
-    {
-        unordered_map<char, char> map = {
-            {')', '('},
-            {']', '['},
-            {'}', '{'}};
-
+class Solution {
+   public:
+    bool isValid(string s) {
+        unordered_map<char, char> map{{')', '('}, {'}', '{'}, {']', '['}};
         stack<char> stack;
+        if (s.length() % 2 == 1) return false;
 
-        for (char c : s)
-        {
-            if (map.find(c) != map.end())
-            {
-                char topElement = stack.empty() ? '#' : stack.top();
-                if (topElement != map[c])
-                {
+        for (char& ch : s) {
+            if (stack.empty() || map.find(ch) == map.end()) {
+                stack.push(ch);
+            } else {
+                if (map[ch] != stack.top()) {
                     return false;
                 }
                 stack.pop();
             }
-            else
-            {
-                stack.push(c);
-            }
         }
-
         return stack.empty();
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
     assert(s.isValid("()") == true);
     assert(s.isValid("()[]{}") == true);

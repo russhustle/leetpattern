@@ -31,6 +31,10 @@ comments: True
 --8<-- "0155_min_stack.py"
 ```
 
+```cpp title="155. Min Stack - C++ Solution"
+--8<-- "cpp/0155_min_stack.cc"
+```
+
 ## 1381. Design a Stack With Increment Operation
 
 -   [LeetCode](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | [LeetCode CH](https://leetcode.cn/problems/design-a-stack-with-increment-operation/) (Medium)

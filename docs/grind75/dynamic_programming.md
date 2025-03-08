@@ -38,6 +38,10 @@ comments: True
 --8<-- "0070_climbing_stairs.py"
 ```
 
+```cpp title="70. Climbing Stairs - C++ Solution"
+--8<-- "cpp/0070_climbing_stairs.cc"
+```
+
 ## 53. Maximum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
@@ -79,4 +83,8 @@ comments: True
 
 ```python title="62. Unique Paths - Python Solution"
 --8<-- "0062_unique_paths.py"
+```
+
+```cpp title="62. Unique Paths - C++ Solution"
+--8<-- "cpp/0062_unique_paths.cc"
 ```

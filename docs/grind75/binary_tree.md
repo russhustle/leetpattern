@@ -44,6 +44,10 @@ comments: True
 --8<-- "0543_diameter_of_binary_tree.py"
 ```
 
+```cpp title="543. Diameter of Binary Tree - C++ Solution"
+--8<-- "cpp/0543_diameter_of_binary_tree.cc"
+```
+
 ## 104. Maximum Depth of Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
@@ -74,6 +78,10 @@ comments: True
 --8<-- "0236_lowest_common_ancestor_of_a_binary_tree.py"
 ```
 
+```cpp title="236. Lowest Common Ancestor of a Binary Tree - C++ Solution"
+--8<-- "cpp/0236_lowest_common_ancestor_of_a_binary_tree.cc"
+```
+
 ## 199. Binary Tree Right Side View
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
@@ -101,6 +109,10 @@ comments: True
 
 ```python title="105. Construct Binary Tree from Preorder and Inorder Traversal - Python Solution"
 --8<-- "0105_construct_binary_tree_from_preorder_and_inorder_traversal.py"
+```
+
+```cpp title="105. Construct Binary Tree from Preorder and Inorder Traversal - C++ Solution"
+--8<-- "cpp/0105_construct_binary_tree_from_preorder_and_inorder_traversal.cc"
 ```
 
 ## 297. Serialize and Deserialize Binary Tree

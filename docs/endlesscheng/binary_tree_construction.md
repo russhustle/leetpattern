@@ -76,6 +76,10 @@ comments: True
 --8<-- "0105_construct_binary_tree_from_preorder_and_inorder_traversal.py"
 ```
 
+```cpp title="105. Construct Binary Tree from Preorder and Inorder Traversal - C++ Solution"
+--8<-- "cpp/0105_construct_binary_tree_from_preorder_and_inorder_traversal.cc"
+```
+
 ## 106. Construct Binary Tree from Inorder and Postorder Traversal
 
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) (Medium)

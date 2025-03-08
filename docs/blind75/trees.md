@@ -110,6 +110,10 @@ comments: True
 --8<-- "0105_construct_binary_tree_from_preorder_and_inorder_traversal.py"
 ```
 
+```cpp title="105. Construct Binary Tree from Preorder and Inorder Traversal - C++ Solution"
+--8<-- "cpp/0105_construct_binary_tree_from_preorder_and_inorder_traversal.cc"
+```
+
 ## 124. Binary Tree Maximum Path Sum
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)

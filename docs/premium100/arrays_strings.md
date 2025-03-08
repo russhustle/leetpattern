@@ -5,7 +5,7 @@ comments: True
 # Arrays Strings
 
 - [x] [624. Maximum Distance in Arrays](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
-- [ ] [280. Wiggle Sort](https://leetcode.cn/problems/wiggle-sort/) (Medium) 👑
+- [x] [280. Wiggle Sort](https://leetcode.cn/problems/wiggle-sort/) (Medium) 👑
 - [ ] [1056. Confusing Number](https://leetcode.cn/problems/confusing-number/) (Easy) 👑
 - [ ] [1427. Perform String Shifts](https://leetcode.cn/problems/perform-string-shifts/) (Easy) 👑
 - [ ] [161. One Edit Distance](https://leetcode.cn/problems/one-edit-distance/) (Medium) 👑
@@ -27,6 +27,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/wiggle-sort/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-sort/) (Medium)
 
 -   Tags: array, greedy, sorting
+
+```cpp title="280. Wiggle Sort - C++ Solution"
+--8<-- "cpp/0280_wiggle_sort.cc"
+```
 
 ## 1056. Confusing Number
 

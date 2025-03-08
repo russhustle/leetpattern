@@ -43,6 +43,10 @@ comments: True
 --8<-- "0070_climbing_stairs.py"
 ```
 
+```cpp title="70. Climbing Stairs - C++ Solution"
+--8<-- "cpp/0070_climbing_stairs.cc"
+```
+
 ## 509. Fibonacci Number
 
 -   [LeetCode](https://leetcode.com/problems/fibonacci-number/) | [LeetCode CH](https://leetcode.cn/problems/fibonacci-number/) (Easy)

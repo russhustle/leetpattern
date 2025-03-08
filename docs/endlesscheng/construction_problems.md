@@ -18,7 +18,7 @@ comments: True
 - [ ] [3311. Construct 2D Grid Matching Graph Layout](https://leetcode.cn/problems/construct-2d-grid-matching-graph-layout/) (Hard)
 - [ ] [2573. Find the String with LCP](https://leetcode.cn/problems/find-the-string-with-lcp/) (Hard)
 - [ ] [1982. Find Array Given Subset Sums](https://leetcode.cn/problems/find-array-given-subset-sums/) (Hard)
-- [ ] [280. Wiggle Sort](https://leetcode.cn/problems/wiggle-sort/) (Medium) 👑
+- [x] [280. Wiggle Sort](https://leetcode.cn/problems/wiggle-sort/) (Medium) 👑
 - [ ] [484. Find Permutation](https://leetcode.cn/problems/find-permutation/) (Medium) 👑
 - [ ] [1980. Find Unique Binary String](https://leetcode.cn/problems/find-unique-binary-string/) (Medium)
 
@@ -111,6 +111,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/wiggle-sort/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-sort/) (Medium)
 
 -   Tags: array, greedy, sorting
+
+```cpp title="280. Wiggle Sort - C++ Solution"
+--8<-- "cpp/0280_wiggle_sort.cc"
+```
 
 ## 484. Find Permutation
 

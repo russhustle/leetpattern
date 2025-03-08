@@ -114,3 +114,7 @@ comments: True
 ```python title="236. Lowest Common Ancestor of a Binary Tree - Python Solution"
 --8<-- "0236_lowest_common_ancestor_of_a_binary_tree.py"
 ```
+
+```cpp title="236. Lowest Common Ancestor of a Binary Tree - C++ Solution"
+--8<-- "cpp/0236_lowest_common_ancestor_of_a_binary_tree.cc"
+```

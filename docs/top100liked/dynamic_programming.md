@@ -43,6 +43,10 @@ comments: True
 --8<-- "0070_climbing_stairs.py"
 ```
 
+```cpp title="70. Climbing Stairs - C++ Solution"
+--8<-- "cpp/0070_climbing_stairs.cc"
+```
+
 ## 118. Pascal's Triangle
 
 -   [LeetCode](https://leetcode.com/problems/pascals-triangle/) | [LeetCode CH](https://leetcode.cn/problems/pascals-triangle/) (Easy)

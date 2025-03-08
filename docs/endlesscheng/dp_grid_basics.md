@@ -34,6 +34,10 @@ comments: True
 --8<-- "0062_unique_paths.py"
 ```
 
+```cpp title="62. Unique Paths - C++ Solution"
+--8<-- "cpp/0062_unique_paths.cc"
+```
+
 ## 63. Unique Paths II
 
 -   [LeetCode](https://leetcode.com/problems/unique-paths-ii/) | [LeetCode CH](https://leetcode.cn/problems/unique-paths-ii/) (Medium)

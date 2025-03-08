@@ -23,6 +23,10 @@ comments: True
 --8<-- "0062_unique_paths.py"
 ```
 
+```cpp title="62. Unique Paths - C++ Solution"
+--8<-- "cpp/0062_unique_paths.cc"
+```
+
 ## 64. Minimum Path Sum
 
 -   [LeetCode](https://leetcode.com/problems/minimum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-path-sum/) (Medium)

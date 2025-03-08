@@ -29,6 +29,10 @@ comments: True
 --8<-- "0062_unique_paths.py"
 ```
 
+```cpp title="62. Unique Paths - C++ Solution"
+--8<-- "cpp/0062_unique_paths.cc"
+```
+
 ## 1143. Longest Common Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)

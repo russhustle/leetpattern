@@ -513,6 +513,10 @@ flowchart LR
 --8<-- "0070_climbing_stairs.py"
 ```
 
+```cpp title="70. Climbing Stairs - C++ Solution"
+--8<-- "cpp/0070_climbing_stairs.cc"
+```
+
 ## 238. Product of Array Except Self
 
 -   [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) | [LeetCode CH](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)

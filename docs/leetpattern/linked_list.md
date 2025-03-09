@@ -233,3 +233,7 @@ D --> B
 ```python title="2. Add Two Numbers - Python Solution"
 --8<-- "0002_add_two_numbers.py"
 ```
+
+```cpp title="2. Add Two Numbers - C++ Solution"
+--8<-- "cpp/0002_add_two_numbers.cc"
+```

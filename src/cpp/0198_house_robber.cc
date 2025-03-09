@@ -3,10 +3,10 @@
 using namespace std;
 
 int rob(vector<int> &nums) {
-    int prev = 0, cur = 0;
+    int prev = 0, cur = 0, temp = 0;
 
     for (int num : nums) {
-        int temp = cur;
+        temp = cur;
         cur = max(cur, prev + num);
         prev = temp;
     }

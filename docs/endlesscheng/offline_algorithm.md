@@ -5,7 +5,7 @@ comments: True
 # Offline Algorithm
 
 - [ ] [2343. Query Kth Smallest Trimmed Number](https://leetcode.cn/problems/query-kth-smallest-trimmed-number/) (Medium)
-- [ ] [2070. Most Beautiful Item for Each Query](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) (Medium)
+- [x] [2070. Most Beautiful Item for Each Query](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) (Medium)
 - [ ] [1847. Closest Room](https://leetcode.cn/problems/closest-room/) (Hard)
 - [ ] [2503. Maximum Number of Points From Grid Queries](https://leetcode.cn/problems/maximum-number-of-points-from-grid-queries/) (Hard)
 - [ ] [1851. Minimum Interval to Include Each Query](https://leetcode.cn/problems/minimum-interval-to-include-each-query/) (Hard)
@@ -27,6 +27,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/most-beautiful-item-for-each-query/) | [LeetCode CH](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) (Medium)
 
 -   Tags: array, binary search, sorting
+
+```cpp title="2070. Most Beautiful Item for Each Query - C++ Solution"
+--8<-- "cpp/2070_most_beautiful_item_for_each_query.cc"
+```
 
 ## 1847. Closest Room
 

@@ -107,6 +107,10 @@ comments: True
 --8<-- "0213_house_robber_ii.py"
 ```
 
+```cpp title="213. House Robber II - C++ Solution"
+--8<-- "cpp/0213_house_robber_ii.cc"
+```
+
 ## 5. Longest Palindromic Substring
 
 -   [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)

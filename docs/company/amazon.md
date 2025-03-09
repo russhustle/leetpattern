@@ -485,6 +485,10 @@ flowchart LR
 --8<-- "0002_add_two_numbers.py"
 ```
 
+```cpp title="2. Add Two Numbers - C++ Solution"
+--8<-- "cpp/0002_add_two_numbers.cc"
+```
+
 ## 70. Climbing Stairs
 
 -   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)

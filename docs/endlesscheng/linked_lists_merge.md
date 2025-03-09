@@ -22,6 +22,10 @@ comments: True
 --8<-- "0002_add_two_numbers.py"
 ```
 
+```cpp title="2. Add Two Numbers - C++ Solution"
+--8<-- "cpp/0002_add_two_numbers.cc"
+```
+
 ## 445. Add Two Numbers II
 
 -   [LeetCode](https://leetcode.com/problems/add-two-numbers-ii/) | [LeetCode CH](https://leetcode.cn/problems/add-two-numbers-ii/) (Medium)
@@ -50,6 +54,10 @@ comments: True
 
 ```python title="21. Merge Two Sorted Lists - Python Solution"
 --8<-- "0021_merge_two_sorted_lists.py"
+```
+
+```cpp title="21. Merge Two Sorted Lists - C++ Solution"
+--8<-- "cpp/0021_merge_two_sorted_lists.cc"
 ```
 
 ## 369. Plus One Linked List

@@ -56,6 +56,10 @@ B --> A[1]
 --8<-- "0021_merge_two_sorted_lists.py"
 ```
 
+```cpp title="21. Merge Two Sorted Lists - C++ Solution"
+--8<-- "cpp/0021_merge_two_sorted_lists.cc"
+```
+
 ## 143. Reorder List
 
 -   [LeetCode](https://leetcode.com/problems/reorder-list/) | [LeetCode CH](https://leetcode.cn/problems/reorder-list/) (Medium)
@@ -96,6 +100,10 @@ B --> A[1]
 
 ```python title="2. Add Two Numbers - Python Solution"
 --8<-- "0002_add_two_numbers.py"
+```
+
+```cpp title="2. Add Two Numbers - C++ Solution"
+--8<-- "cpp/0002_add_two_numbers.cc"
 ```
 
 ## 141. Linked List Cycle

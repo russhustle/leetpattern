@@ -86,6 +86,10 @@ comments: True
 --8<-- "0213_house_robber_ii.py"
 ```
 
+```cpp title="213. House Robber II - C++ Solution"
+--8<-- "cpp/0213_house_robber_ii.cc"
+```
+
 ## 3186. Maximum Total Damage With Spell Casting
 
 -   [LeetCode](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) | [LeetCode CH](https://leetcode.cn/problems/maximum-total-damage-with-spell-casting/) (Medium)

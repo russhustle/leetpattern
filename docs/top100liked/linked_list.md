@@ -144,6 +144,10 @@ D --> B
 --8<-- "0021_merge_two_sorted_lists.py"
 ```
 
+```cpp title="21. Merge Two Sorted Lists - C++ Solution"
+--8<-- "cpp/0021_merge_two_sorted_lists.cc"
+```
+
 ## 2. Add Two Numbers
 
 -   [LeetCode](https://leetcode.com/problems/add-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/add-two-numbers/) (Medium)
@@ -153,6 +157,10 @@ D --> B
 
 ```python title="2. Add Two Numbers - Python Solution"
 --8<-- "0002_add_two_numbers.py"
+```
+
+```cpp title="2. Add Two Numbers - C++ Solution"
+--8<-- "cpp/0002_add_two_numbers.cc"
 ```
 
 ## 19. Remove Nth Node From End of List

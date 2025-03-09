@@ -6,7 +6,7 @@ comments: True
 
 - [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 - [x] [56. Merge Intervals](https://leetcode.cn/problems/merge-intervals/) (Medium)
-- [ ] [189. Rotate Array](https://leetcode.cn/problems/rotate-array/) (Medium)
+- [x] [189. Rotate Array](https://leetcode.cn/problems/rotate-array/) (Medium)
 - [x] [238. Product of Array Except Self](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
 - [ ] [41. First Missing Positive](https://leetcode.cn/problems/first-missing-positive/) (Hard)
 
@@ -42,6 +42,22 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/rotate-array/) | [LeetCode CH](https://leetcode.cn/problems/rotate-array/) (Medium)
 
 -   Tags: array, math, two pointers
+- Rotate array with reversing subarrays
+
+```mermaid
+graph TD
+    A[1 2 3 4 5 6 7] --Reverse entire array--> B[7 6 5 4 3 2 1]
+    B --Reverse first k elements--> C[5 6 7 4 3 2 1]
+    C --Reverse remaining n-k elements--> D[5 6 7 1 2 3 4];
+```
+
+```python title="189. Rotate Array - Python Solution"
+--8<-- "0189_rotate_array.py"
+```
+
+```cpp title="189. Rotate Array - C++ Solution"
+--8<-- "cpp/0189_rotate_array.cc"
+```
 
 ## 238. Product of Array Except Self
 

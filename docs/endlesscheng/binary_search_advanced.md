@@ -10,7 +10,7 @@ comments: True
 - [ ] [1170. Compare Strings by Frequency of the Smallest Character](https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/) (Medium)
 - [x] [2080. Range Frequency Queries](https://leetcode.cn/problems/range-frequency-queries/) (Medium)
 - [ ] [2563. Count the Number of Fair Pairs](https://leetcode.cn/problems/count-the-number-of-fair-pairs/) (Medium)
-- [ ] [2070. Most Beautiful Item for Each Query](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) (Medium)
+- [x] [2070. Most Beautiful Item for Each Query](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) (Medium)
 - [x] [981. Time Based Key-Value Store](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
 - [ ] [1146. Snapshot Array](https://leetcode.cn/problems/snapshot-array/) (Medium)
 - [ ] [658. Find K Closest Elements](https://leetcode.cn/problems/find-k-closest-elements/) (Medium)
@@ -70,6 +70,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/most-beautiful-item-for-each-query/) | [LeetCode CH](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) (Medium)
 
 -   Tags: array, binary search, sorting
+
+```cpp title="2070. Most Beautiful Item for Each Query - C++ Solution"
+--8<-- "cpp/2070_most_beautiful_item_for_each_query.cc"
+```
 
 ## 981. Time Based Key-Value Store
 

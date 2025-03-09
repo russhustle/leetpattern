@@ -9,7 +9,7 @@ comments: True
 - [ ] [1665. Minimum Initial Energy to Finish Tasks](https://leetcode.cn/problems/minimum-initial-energy-to-finish-tasks/) (Hard)
 - [ ] [3273. Minimum Amount of Damage Dealt to Bob](https://leetcode.cn/problems/minimum-amount-of-damage-dealt-to-bob/) (Hard)
 - [ ] [2136. Earliest Possible Day of Full Bloom](https://leetcode.cn/problems/earliest-possible-day-of-full-bloom/) (Hard)
-- [ ] [179. Largest Number](https://leetcode.cn/problems/largest-number/) (Medium)
+- [x] [179. Largest Number](https://leetcode.cn/problems/largest-number/) (Medium)
 - [ ] [3309. Maximum Possible Number by Binary Concatenation](https://leetcode.cn/problems/maximum-possible-number-by-binary-concatenation/) (Medium)
 
 ## 2895. Minimum Processing Time
@@ -47,6 +47,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-number/) | [LeetCode CH](https://leetcode.cn/problems/largest-number/) (Medium)
 
 -   Tags: array, string, greedy, sorting
+
+```python title="179. Largest Number - Python Solution"
+--8<-- "0179_largest_number.py"
+```
 
 ## 3309. Maximum Possible Number by Binary Concatenation
 

@@ -23,6 +23,10 @@ comments: True
 --8<-- "0021_merge_two_sorted_lists.py"
 ```
 
+```cpp title="21. Merge Two Sorted Lists - C++ Solution"
+--8<-- "cpp/0021_merge_two_sorted_lists.cc"
+```
+
 ## 141. Linked List Cycle
 
 -   [LeetCode](https://leetcode.com/problems/linked-list-cycle/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle/) (Easy)

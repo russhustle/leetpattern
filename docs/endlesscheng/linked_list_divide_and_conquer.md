@@ -5,7 +5,7 @@ comments: True
 # Linked List Divide and Conquer
 
 - [x] [23. Merge k Sorted Lists](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
-- [ ] [148. Sort List](https://leetcode.cn/problems/sort-list/) (Medium)
+- [x] [148. Sort List](https://leetcode.cn/problems/sort-list/) (Medium)
 
 ## 23. Merge k Sorted Lists
 
@@ -25,3 +25,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sort-list/) | [LeetCode CH](https://leetcode.cn/problems/sort-list/) (Medium)
 
 -   Tags: linked list, two pointers, divide and conquer, sorting, merge sort
+
+```python title="148. Sort List - Python Solution"
+--8<-- "0148_sort_list.py"
+```

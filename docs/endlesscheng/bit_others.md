@@ -4,7 +4,7 @@ comments: True
 
 # Bit Others
 
-- [ ] [136. Single Number](https://leetcode.cn/problems/single-number/) (Easy)
+- [x] [136. Single Number](https://leetcode.cn/problems/single-number/) (Easy)
 - [x] [287. Find the Duplicate Number](https://leetcode.cn/problems/find-the-duplicate-number/) (Medium)
 - [ ] [260. Single Number III](https://leetcode.cn/problems/single-number-iii/) (Medium)
 - [ ] [2965. Find Missing and Repeated Values](https://leetcode.cn/problems/find-missing-and-repeated-values/) (Easy)
@@ -31,6 +31,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/single-number/) | [LeetCode CH](https://leetcode.cn/problems/single-number/) (Easy)
 
 -   Tags: array, bit manipulation
+
+```python title="136. Single Number - Python Solution"
+--8<-- "0136_single_number.py"
+```
 
 ## 287. Find the Duplicate Number
 

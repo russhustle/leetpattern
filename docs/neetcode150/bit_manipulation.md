@@ -4,7 +4,7 @@ comments: True
 
 # Bit Manipulation
 
-- [ ] [136. Single Number](https://leetcode.cn/problems/single-number/) (Easy)
+- [x] [136. Single Number](https://leetcode.cn/problems/single-number/) (Easy)
 - [x] [191. Number of 1 Bits](https://leetcode.cn/problems/number-of-1-bits/) (Easy)
 - [x] [338. Counting Bits](https://leetcode.cn/problems/counting-bits/) (Easy)
 - [x] [190. Reverse Bits](https://leetcode.cn/problems/reverse-bits/) (Easy)
@@ -17,6 +17,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/single-number/) | [LeetCode CH](https://leetcode.cn/problems/single-number/) (Easy)
 
 -   Tags: array, bit manipulation
+
+```python title="136. Single Number - Python Solution"
+--8<-- "0136_single_number.py"
+```
 
 ## 191. Number of 1 Bits
 

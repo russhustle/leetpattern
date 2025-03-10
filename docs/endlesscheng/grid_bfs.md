@@ -6,10 +6,10 @@ comments: True
 
 - [x] [1926. Nearest Exit from Entrance in Maze](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)
 - [x] [1091. Shortest Path in Binary Matrix](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) (Medium)
-- [ ] [1162. As Far from Land as Possible](https://leetcode.cn/problems/as-far-from-land-as-possible/) (Medium)
+- [x] [1162. As Far from Land as Possible](https://leetcode.cn/problems/as-far-from-land-as-possible/) (Medium)
 - [x] [542. 01 Matrix](https://leetcode.cn/problems/01-matrix/) (Medium)
 - [x] [994. Rotting Oranges](https://leetcode.cn/problems/rotting-oranges/) (Medium)
-- [ ] [1765. Map of Highest Peak](https://leetcode.cn/problems/map-of-highest-peak/) (Medium)
+- [x] [1765. Map of Highest Peak](https://leetcode.cn/problems/map-of-highest-peak/) (Medium)
 - [x] [934. Shortest Bridge](https://leetcode.cn/problems/shortest-bridge/) (Medium)
 - [ ] [2146. K Highest Ranked Items Within a Price Range](https://leetcode.cn/problems/k-highest-ranked-items-within-a-price-range/) (Medium)
 - [ ] [1293. Shortest Path in a Grid with Obstacles Elimination](https://leetcode.cn/problems/shortest-path-in-a-grid-with-obstacles-elimination/) (Hard)
@@ -19,7 +19,7 @@ comments: True
 - [ ] [749. Contain Virus](https://leetcode.cn/problems/contain-virus/) (Hard)
 - [ ] [1730. Shortest Path to Get Food](https://leetcode.cn/problems/shortest-path-to-get-food/) (Medium) 👑
 - [x] [286. Walls and Gates](https://leetcode.cn/problems/walls-and-gates/) (Medium) 👑
-- [ ] [490. The Maze](https://leetcode.cn/problems/the-maze/) (Medium) 👑
+- [x] [490. The Maze](https://leetcode.cn/problems/the-maze/) (Medium) 👑
 - [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium) 👑
 - [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard) 👑
 - [ ] [317. Shortest Distance from All Buildings](https://leetcode.cn/problems/shortest-distance-from-all-buildings/) (Hard) 👑
@@ -51,6 +51,10 @@ comments: True
 
 -   Tags: array, dynamic programming, breadth first search, matrix
 
+```python title="1162. As Far from Land as Possible - Python Solution"
+--8<-- "1162_as_far_from_land_as_possible.py"
+```
+
 ## 542. 01 Matrix
 
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
@@ -80,6 +84,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/map-of-highest-peak/) | [LeetCode CH](https://leetcode.cn/problems/map-of-highest-peak/) (Medium)
 
 -   Tags: array, breadth first search, matrix
+
+```python title="1765. Map of Highest Peak - Python Solution"
+--8<-- "1765_map_of_highest_peak.py"
+```
 
 ## 934. Shortest Bridge
 
@@ -149,6 +157,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
+
+```python title="490. The Maze - Python Solution"
+--8<-- "0490_the_maze.py"
+```
 
 ## 505. The Maze II
 

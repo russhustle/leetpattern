@@ -10,7 +10,7 @@ comments: True
 - [ ] [1059. All Paths from Source Lead to Destination](https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/) (Medium) 👑
 - [ ] [1236. Web Crawler](https://leetcode.cn/problems/web-crawler/) (Medium) 👑
 - [x] [305. Number of Islands II](https://leetcode.cn/problems/number-of-islands-ii/) (Hard) 👑
-- [ ] [694. Number of Distinct Islands](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium) 👑
+- [x] [694. Number of Distinct Islands](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium) 👑
 - [x] [1136. Parallel Courses](https://leetcode.cn/problems/parallel-courses/) (Medium) 👑
 
 ## 277. Find the Celebrity
@@ -62,6 +62,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-distinct-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium)
 
 -   Tags: hash table, depth first search, breadth first search, union find, hash function
+
+```python title="694. Number of Distinct Islands - Python Solution"
+--8<-- "0694_number_of_distinct_islands.py"
+```
 
 ## 1136. Parallel Courses
 

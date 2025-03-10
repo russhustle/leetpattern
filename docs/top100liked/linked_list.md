@@ -15,7 +15,7 @@ comments: True
 - [x] [24. Swap Nodes in Pairs](https://leetcode.cn/problems/swap-nodes-in-pairs/) (Medium)
 - [ ] [25. Reverse Nodes in k-Group](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 - [x] [138. Copy List with Random Pointer](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
-- [ ] [148. Sort List](https://leetcode.cn/problems/sort-list/) (Medium)
+- [x] [148. Sort List](https://leetcode.cn/problems/sort-list/) (Medium)
 - [x] [23. Merge k Sorted Lists](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
 - [x] [146. LRU Cache](https://leetcode.cn/problems/lru-cache/) (Medium)
 
@@ -206,6 +206,10 @@ D --> B
 -   [LeetCode](https://leetcode.com/problems/sort-list/) | [LeetCode CH](https://leetcode.cn/problems/sort-list/) (Medium)
 
 -   Tags: linked list, two pointers, divide and conquer, sorting, merge sort
+
+```python title="148. Sort List - Python Solution"
+--8<-- "0148_sort_list.py"
+```
 
 ## 23. Merge k Sorted Lists
 

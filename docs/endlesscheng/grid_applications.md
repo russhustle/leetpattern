@@ -14,7 +14,7 @@ comments: True
 - [ ] [2556. Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.cn/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/) (Medium)
 - [ ] [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.cn/problems/minimum-time-to-visit-a-cell-in-a-grid/) (Hard)
 - [ ] [2617. Minimum Number of Visited Cells in a Grid](https://leetcode.cn/problems/minimum-number-of-visited-cells-in-a-grid/) (Hard)
-- [ ] [694. Number of Distinct Islands](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium) 👑
+- [x] [694. Number of Distinct Islands](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium) 👑
 - [ ] [711. Number of Distinct Islands II](https://leetcode.cn/problems/number-of-distinct-islands-ii/) (Hard) 👑
 - [ ] [1102. Path With Maximum Minimum Value](https://leetcode.cn/problems/path-with-maximum-minimum-value/) (Medium) 👑
 
@@ -103,6 +103,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-distinct-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium)
 
 -   Tags: hash table, depth first search, breadth first search, union find, hash function
+
+```python title="694. Number of Distinct Islands - Python Solution"
+--8<-- "0694_number_of_distinct_islands.py"
+```
 
 ## 711. Number of Distinct Islands II
 

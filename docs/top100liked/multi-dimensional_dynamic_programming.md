@@ -5,7 +5,7 @@ comments: True
 # Multi-dimensional Dynamic Programming
 
 - [x] [62. Unique Paths](https://leetcode.cn/problems/unique-paths/) (Medium)
-- [ ] [64. Minimum Path Sum](https://leetcode.cn/problems/minimum-path-sum/) (Medium)
+- [x] [64. Minimum Path Sum](https://leetcode.cn/problems/minimum-path-sum/) (Medium)
 - [x] [5. Longest Palindromic Substring](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
 - [x] [1143. Longest Common Subsequence](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
 - [x] [72. Edit Distance](https://leetcode.cn/problems/edit-distance/) (Medium)
@@ -32,6 +32,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-path-sum/) (Medium)
 
 -   Tags: array, dynamic programming, matrix
+
+```python title="64. Minimum Path Sum - Python Solution"
+--8<-- "0064_minimum_path_sum.py"
+```
 
 ## 5. Longest Palindromic Substring
 

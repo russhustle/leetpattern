@@ -4,7 +4,7 @@ comments: True
 
 # Graph BFS
 
-- [ ] [490. The Maze](https://leetcode.cn/problems/the-maze/) (Medium) 👑
+- [x] [490. The Maze](https://leetcode.cn/problems/the-maze/) (Medium) 👑
 - [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium) 👑
 - [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard) 👑
 - [ ] [1197. Minimum Knight Moves](https://leetcode.cn/problems/minimum-knight-moves/) (Medium) 👑
@@ -17,6 +17,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
+
+```python title="490. The Maze - Python Solution"
+--8<-- "0490_the_maze.py"
+```
 
 ## 505. The Maze II
 

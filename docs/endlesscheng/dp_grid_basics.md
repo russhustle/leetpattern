@@ -4,7 +4,7 @@ comments: True
 
 # DP Grid Basics
 
-- [ ] [64. Minimum Path Sum](https://leetcode.cn/problems/minimum-path-sum/) (Medium)
+- [x] [64. Minimum Path Sum](https://leetcode.cn/problems/minimum-path-sum/) (Medium)
 - [x] [62. Unique Paths](https://leetcode.cn/problems/unique-paths/) (Medium)
 - [x] [63. Unique Paths II](https://leetcode.cn/problems/unique-paths-ii/) (Medium)
 - [ ] [120. Triangle](https://leetcode.cn/problems/triangle/) (Medium)
@@ -20,6 +20,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-path-sum/) (Medium)
 
 -   Tags: array, dynamic programming, matrix
+
+```python title="64. Minimum Path Sum - Python Solution"
+--8<-- "0064_minimum_path_sum.py"
+```
 
 ## 62. Unique Paths
 

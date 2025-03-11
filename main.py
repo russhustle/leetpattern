@@ -28,14 +28,11 @@ def topic_progress(
         if category == "algorithms":
             py_path = os.path.join("src", row["basename"] + ".py")
             cc_path = os.path.join("src", "cpp", row["basename"] + ".cc")
-            check_make_file(py_path)
-            check_make_file(cc_path)
             completed = file_not_empty(py_path) or file_not_empty(cc_path)
             progress = "x" if completed else " "
 
         elif category == "sql":
             sql_path = os.path.join("src", "sql", row["basename"] + ".sql")
-            check_make_file(sql_path)
             progress = "x" if file_not_empty(sql_path) else " "
 
         content += (

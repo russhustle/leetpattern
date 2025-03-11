@@ -5,7 +5,7 @@ comments: True
 # String KMP
 
 - [x] [28. Find the Index of the First Occurrence in a String](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
-- [ ] [796. Rotate String](https://leetcode.cn/problems/rotate-string/) (Easy)
+- [x] [796. Rotate String](https://leetcode.cn/problems/rotate-string/) (Easy)
 - [x] [1392. Longest Happy Prefix](https://leetcode.cn/problems/longest-happy-prefix/) (Hard)
 - [ ] [3036. Number of Subarrays That Match a Pattern II](https://leetcode.cn/problems/number-of-subarrays-that-match-a-pattern-ii/) (Hard)
 - [ ] [1764. Form Array by Concatenating Subarrays of Another Array](https://leetcode.cn/problems/form-array-by-concatenating-subarrays-of-another-array/) (Medium)
@@ -32,6 +32,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/rotate-string/) | [LeetCode CH](https://leetcode.cn/problems/rotate-string/) (Easy)
 
 -   Tags: string, string matching
+
+```python title="796. Rotate String - Python Solution"
+--8<-- "0796_rotate_string.py"
+```
 
 ## 1392. Longest Happy Prefix
 

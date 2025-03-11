@@ -5,7 +5,7 @@ comments: True
 # Binary Search Advanced
 
 - [x] [2300. Successful Pairs of Spells and Potions](https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/) (Medium)
-- [ ] [1385. Find the Distance Value Between Two Arrays](https://leetcode.cn/problems/find-the-distance-value-between-two-arrays/) (Easy)
+- [x] [1385. Find the Distance Value Between Two Arrays](https://leetcode.cn/problems/find-the-distance-value-between-two-arrays/) (Easy)
 - [ ] [2389. Longest Subsequence With Limited Sum](https://leetcode.cn/problems/longest-subsequence-with-limited-sum/) (Easy)
 - [ ] [1170. Compare Strings by Frequency of the Smallest Character](https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/) (Medium)
 - [x] [2080. Range Frequency Queries](https://leetcode.cn/problems/range-frequency-queries/) (Medium)
@@ -36,6 +36,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | [LeetCode CH](https://leetcode.cn/problems/find-the-distance-value-between-two-arrays/) (Easy)
 
 -   Tags: array, two pointers, binary search, sorting
+
+```python title="1385. Find the Distance Value Between Two Arrays - Python Solution"
+--8<-- "1385_find_the_distance_value_between_two_arrays.py"
+```
 
 ## 2389. Longest Subsequence With Limited Sum
 

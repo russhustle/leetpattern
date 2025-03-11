@@ -8,7 +8,7 @@ comments: True
 - [x] [26. Remove Duplicates from Sorted Array](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) (Easy)
 - [x] [80. Remove Duplicates from Sorted Array II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) (Medium)
 - [x] [283. Move Zeroes](https://leetcode.cn/problems/move-zeroes/) (Easy)
-- [ ] [905. Sort Array By Parity](https://leetcode.cn/problems/sort-array-by-parity/) (Easy)
+- [x] [905. Sort Array By Parity](https://leetcode.cn/problems/sort-array-by-parity/) (Easy)
 - [ ] [922. Sort Array By Parity II](https://leetcode.cn/problems/sort-array-by-parity-ii/) (Easy)
 - [ ] [2460. Apply Operations to an Array](https://leetcode.cn/problems/apply-operations-to-an-array/) (Easy)
 - [x] [1089. Duplicate Zeros](https://leetcode.cn/problems/duplicate-zeros/) (Easy)
@@ -72,6 +72,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sort-array-by-parity/) | [LeetCode CH](https://leetcode.cn/problems/sort-array-by-parity/) (Easy)
 
 -   Tags: array, two pointers, sorting
+
+```python title="905. Sort Array By Parity - Python Solution"
+--8<-- "0905_sort_array_by_parity.py"
+```
 
 ## 922. Sort Array By Parity II
 

@@ -11,7 +11,7 @@ comments: True
 - [x] [121. Best Time to Buy and Sell Stock](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
 - [x] [624. Maximum Distance in Arrays](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 - [x] [2815. Max Pair Sum in an Array](https://leetcode.cn/problems/max-pair-sum-in-an-array/) (Easy)
-- [ ] [2342. Max Sum of a Pair With Equal Sum of Digits](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) (Medium)
+- [x] [2342. Max Sum of a Pair With Equal Sum of Digits](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) (Medium)
 - [ ] [1679. Max Number of K-Sum Pairs](https://leetcode.cn/problems/max-number-of-k-sum-pairs/) (Medium)
 - [ ] [2260. Minimum Consecutive Cards to Pick Up](https://leetcode.cn/problems/minimum-consecutive-cards-to-pick-up/) (Medium)
 - [ ] [1010. Pairs of Songs With Total Durations Divisible by 60](https://leetcode.cn/problems/pairs-of-songs-with-total-durations-divisible-by-60/) (Medium)
@@ -122,6 +122,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [LeetCode CH](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) (Medium)
 
 -   Tags: array, hash table, sorting, heap priority queue
+
+```python title="2342. Max Sum of a Pair With Equal Sum of Digits - Python Solution"
+--8<-- "2342_max_sum_of_a_pair_with_equal_sum_of_digits.py"
+```
 
 ## 1679. Max Number of K-Sum Pairs
 

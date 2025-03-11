@@ -5,7 +5,7 @@ comments: True
 # Heap Basics
 
 - [x] [1046. Last Stone Weight](https://leetcode.cn/problems/last-stone-weight/) (Easy)
-- [ ] [3264. Final Array State After K Multiplication Operations I](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/) (Easy)
+- [x] [3264. Final Array State After K Multiplication Operations I](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/) (Easy)
 - [ ] [2558. Take Gifts From the Richest Pile](https://leetcode.cn/problems/take-gifts-from-the-richest-pile/) (Easy)
 - [ ] [2336. Smallest Number in Infinite Set](https://leetcode.cn/problems/smallest-number-in-infinite-set/) (Medium)
 - [ ] [2530. Maximal Score After Applying K Operations](https://leetcode.cn/problems/maximal-score-after-applying-k-operations/) (Medium)
@@ -48,6 +48,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/) | [LeetCode CH](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/) (Easy)
 
 -   Tags: array, math, heap priority queue, simulation
+
+```python title="3264. Final Array State After K Multiplication Operations I - Python Solution"
+--8<-- "3264_final_array_state_after_k_multiplication_operations_i.py"
+```
 
 ## 2558. Take Gifts From the Richest Pile
 

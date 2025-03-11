@@ -11,7 +11,7 @@ comments: True
 - [ ] [1422. Maximum Score After Splitting a String](https://leetcode.cn/problems/maximum-score-after-splitting-a-string/) (Easy)
 - [x] [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) (Medium)
 - [x] [845. Longest Mountain in Array](https://leetcode.cn/problems/longest-mountain-in-array/) (Medium)
-- [ ] [2012. Sum of Beauty in the Array](https://leetcode.cn/problems/sum-of-beauty-in-the-array/) (Medium)
+- [x] [2012. Sum of Beauty in the Array](https://leetcode.cn/problems/sum-of-beauty-in-the-array/) (Medium)
 - [ ] [2909. Minimum Sum of Mountain Triplets II](https://leetcode.cn/problems/minimum-sum-of-mountain-triplets-ii/) (Medium)
 - [ ] [2483. Minimum Penalty for a Shop](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) (Medium)
 - [ ] [1525. Number of Good Ways to Split a String](https://leetcode.cn/problems/number-of-good-ways-to-split-a-string/) (Medium)
@@ -108,6 +108,10 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-of-beauty-in-the-array/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-beauty-in-the-array/) (Medium)
 
 -   Tags: array
+
+```python title="2012. Sum of Beauty in the Array - Python Solution"
+--8<-- "2012_sum_of_beauty_in_the_array.py"
+```
 
 ## 2909. Minimum Sum of Mountain Triplets II
 

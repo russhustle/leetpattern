@@ -67,12 +67,24 @@ def code(category: str, row: DataFrame) -> str:
     if category == "algorithms":
         py_path = os.path.join("src", basename + ".py")
         cc_path = os.path.join("src", "cpp", basename + ".cc")
-
-        py_content = f'```python title="{title} - Python Solution"\n--8<-- "{basename}.py"\n```\n\n'
-        cc_content = f'```cpp title="{title} - C++ Solution"\n--8<-- "cpp/{basename}.cc"\n```\n\n'
         content = ""
-        content += py_content if file_not_empty(py_path) else ""
-        content += cc_content if file_not_empty(cc_path) else ""
+
+        if file_not_empty(py_path):
+            with open(py_path, "r") as f:
+                py_content = f.read()
+
+            py_content = f'```python title="{title} - Python Solution"\n{py_content}\n```\n\n'
+            content += py_content
+
+        if file_not_empty(cc_path):
+            with open(cc_path, "r") as f:
+                cc_content = f.read()
+
+            cc_content = (
+                f'```cpp title="{title} - C++ Solution"\n{cc_content}\n```\n\n'
+            )
+            content += cc_content
+
         return content
 
     elif category == "sql":

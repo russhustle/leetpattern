@@ -5,7 +5,7 @@ comments: True
 # Linked List Reverse
 
 - [x] [206. Reverse Linked List](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
-- [ ] [92. Reverse Linked List II](https://leetcode.cn/problems/reverse-linked-list-ii/) (Medium)
+- [x] [92. Reverse Linked List II](https://leetcode.cn/problems/reverse-linked-list-ii/) (Medium)
 - [x] [24. Swap Nodes in Pairs](https://leetcode.cn/problems/swap-nodes-in-pairs/) (Medium)
 - [ ] [25. Reverse Nodes in k-Group](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 - [ ] [2074. Reverse Nodes in Even Length Groups](https://leetcode.cn/problems/reverse-nodes-in-even-length-groups/) (Medium)
@@ -15,22 +15,22 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/reverse-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
 
 -   Tags: linked list, recursion
--   Reverse a singly linked list.
+- Reverse a singly linked list.
 
 ```mermaid
 graph LR
-A[1] --> B[2]
-B --> C[3]
-C --> D[4]
-D --> E[5]
+A((1)) --> B((2))
+B --> C((3))
+C --> D((4))
+D --> E((5))
 ```
 
 ```mermaid
 graph RL
-E[5] --> D[4]
-D --> C[3]
-C --> B[2]
-B --> A[1]
+E((5)) --> D((4))
+D --> C((3))
+C --> B((2))
+B --> A((1))
 ```
 
 ```python title="206. Reverse Linked List - Python Solution"
@@ -42,6 +42,27 @@ B --> A[1]
 -   [LeetCode](https://leetcode.com/problems/reverse-linked-list-ii/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list-ii/) (Medium)
 
 -   Tags: linked list
+- Reverse a linked list from position left to position right. Return the linked list after reversing.
+
+```mermaid
+graph LR
+A((1)) --> B((2))
+B --> C((3))
+C --> D((4))
+D --> E((5))
+```
+
+```mermaid
+graph LR
+A((1)) --> B((4))
+B --> C((3))
+C --> D((2))
+D --> E((5))
+```
+
+```python title="92. Reverse Linked List II - Python Solution"
+--8<-- "0092_reverse_linked_list_ii.py"
+```
 
 ## 24. Swap Nodes in Pairs
 

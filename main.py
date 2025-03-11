@@ -1,12 +1,26 @@
 import os
+from typing import List
 
 import pandas as pd
 import yaml
+from pandas import DataFrame
 
-from utils import check_file_empty, check_make_file, code, load_config_yaml
+from utils import check_make_file, code, file_not_empty, load_config_yaml
 
 
-def topic_progress(df, category, problems):
+def topic_progress(
+    df: DataFrame, problems: List[int], category: str = "algorithms"
+):
+    """Generate a ist of problems with progress.
+
+    Args:
+        df (DataFrame): DataFrame containing the questions
+        problems (List[int]): List of questions
+        category (str, optional): Category of the questions. Defaults to "algorithms", "sql".
+
+    Returns:
+        str: List of problems with progress.
+    """
     content = ""
     for problem in problems:
         row = df.loc[problem]
@@ -16,15 +30,13 @@ def topic_progress(df, category, problems):
             cc_path = os.path.join("src", "cpp", row["basename"] + ".cc")
             check_make_file(py_path)
             check_make_file(cc_path)
-            completed = not check_file_empty(py_path) or not check_file_empty(
-                cc_path
-            )
+            completed = file_not_empty(py_path) or file_not_empty(cc_path)
             progress = "x" if completed else " "
 
         elif category == "sql":
             sql_path = os.path.join("src", "sql", row["basename"] + ".sql")
             check_make_file(sql_path)
-            progress = "x" if not check_file_empty(sql_path) else " "
+            progress = "x" if file_not_empty(sql_path) else " "
 
         content += (
             f"- [{progress}] [{row['QID']}. {row['title']}]({row['urlCh']})"
@@ -65,7 +77,7 @@ def create(config_path: str) -> str:
 
         content = comments
         content += f"# {topic}\n\n"
-        content += topic_progress(df, cfg.category, problems)
+        content += topic_progress(df, problems, cfg.category)
         problems = cfg.topics[topic]
 
         for idx in problems:
@@ -127,4 +139,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # create_problem_files(2055)

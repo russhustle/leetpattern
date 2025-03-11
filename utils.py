@@ -16,23 +16,32 @@ class Data:
 
 
 def load_config_yaml(file_path: str) -> Data:
+    """Load the configuration file"""
     with open(file_path, "r") as file:
         data = yaml.safe_load(file)
         return Data(**data)
 
 
 def check_make_file(file_path: str):
+    """Create an empty file if it does not exist"""
     if not os.path.exists(file_path):
         with open(file_path, "w") as f:
             f.write("")
 
 
-def check_file_empty(file_path: str):
-    with open(file_path, "r") as f:
-        return f.read().strip() == ""
+def file_not_empty(file_path: str):
+    """Check if a file does not exist or is empty
+    If the file does not exist, return False.
+    If the file exists and is empty, return False.
+    Otherwise, return True.
+    """
+    if not os.path.exists(file_path):
+        return False
+    return os.path.getsize(file_path) != 0
 
 
 def create_problem_files(qid: int):
+    """Create problem files for a given leetcode question ID"""
     df = pd.read_parquet(os.path.join("utils", "questions.parquet"))
     row = df.loc[qid]
     problem_md_path = os.path.join("docs", "md", row["basename"] + ".md")
@@ -58,11 +67,12 @@ def code(category: str, row: DataFrame) -> str:
     if category == "algorithms":
         py_path = os.path.join("src", basename + ".py")
         cc_path = os.path.join("src", "cpp", basename + ".cc")
+
         py_content = f'```python title="{title} - Python Solution"\n--8<-- "{basename}.py"\n```\n\n'
         cc_content = f'```cpp title="{title} - C++ Solution"\n--8<-- "cpp/{basename}.cc"\n```\n\n'
         content = ""
-        content += py_content if not check_file_empty(py_path) else ""
-        content += cc_content if not check_file_empty(cc_path) else ""
+        content += py_content if file_not_empty(py_path) else ""
+        content += cc_content if file_not_empty(cc_path) else ""
         return content
 
     elif category == "sql":
@@ -71,12 +81,13 @@ def code(category: str, row: DataFrame) -> str:
         txt = f'```txt title="{title}"\n--8<-- "sql/{basename}.txt"\n```\n\n'
         sql = f'```sql title="{title}"\n--8<-- "sql/{basename}.sql"\n```\n\n'
         content = ""
-        content += txt if not check_file_empty(txt_path) else ""
-        content += sql if not check_file_empty(sql_path) else ""
+        content += txt if file_not_empty(txt_path) else ""
+        content += sql if file_not_empty(sql_path) else ""
         return content
 
 
 def remove_empty_files():
+    """Remove empty files"""
     folders = ["src", "docs/md", "src/sql"]
     for folder in folders:
         folder = os.path.join(os.getcwd(), folder)

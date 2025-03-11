@@ -140,7 +140,59 @@ graph TD
 | Level Order | Level by Level    | BFS with Queue | `[[0], [1, 2], [3, 4, 5, 6]]` |
 
 ```python title="144. Binary Tree Preorder Traversal - Python Solution"
---8<-- "0144_binary_tree_preorder_traversal.py"
+from typing import List, Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Recursive
+def preorderTraversalRecursive(root: Optional[TreeNode]) -> List[int]:
+    res = []
+
+    def dfs(node):
+        if not node:
+            return None
+
+        res.append(node.val)  # <--
+        dfs(node.left)
+        dfs(node.right)
+
+    dfs(root)
+
+    return res
+
+
+# Iterative
+def preorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
+    if not root:
+        return []
+
+    stack = [root]
+    res = []
+
+    while stack:
+        node = stack.pop()
+        res.append(node.val)
+
+        if node.right:
+            stack.append(node.right)
+        if node.left:
+            stack.append(node.left)
+
+    return res
+
+
+tree = build([0, 1, 2, 3, 4, 5, 6])
+print(tree)
+#     __0__
+#    /     \
+#   1       2
+#  / \     / \
+# 3   4   5   6
+print(preorderTraversalRecursive(tree))  # [0, 1, 3, 4, 2, 5, 6]
+print(preorderTraversalIterative(tree))  # [0, 1, 3, 4, 2, 5, 6]
+
 ```
 
 ## 94. Binary Tree Inorder Traversal
@@ -150,7 +202,60 @@ graph TD
 -   Tags: stack, tree, depth first search, binary tree
 
 ```python title="94. Binary Tree Inorder Traversal - Python Solution"
---8<-- "0094_binary_tree_inorder_traversal.py"
+from typing import List, Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Recursive
+def inorderTraversalRecursive(root: TreeNode) -> List[int]:
+    res = []
+
+    def dfs(node):
+        if not node:
+            return
+
+        dfs(node.left)
+        res.append(node.val)  # <--
+        dfs(node.right)
+
+    dfs(root)
+
+    return res
+
+
+# Iterative
+def inorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
+    if not root:
+        return []
+
+    stack = []
+    res = []
+    cur = root
+
+    while cur or stack:
+        if cur:
+            stack.append(cur)
+            cur = cur.left
+        else:
+            cur = stack.pop()
+            res.append(cur.val)
+            cur = cur.right
+
+    return res
+
+
+tree = build([0, 1, 2, 3, 4, 5, 6])
+print(tree)
+#     __0__
+#    /     \
+#   1       2
+#  / \     / \
+# 3   4   5   6
+print(inorderTraversalRecursive(tree))  # [3, 1, 4, 0, 5, 2, 6]
+print(inorderTraversalIterative(tree))  # [3, 1, 4, 0, 5, 2, 6]
+
 ```
 
 ## 145. Binary Tree Postorder Traversal
@@ -160,7 +265,59 @@ graph TD
 -   Tags: stack, tree, depth first search, binary tree
 
 ```python title="145. Binary Tree Postorder Traversal - Python Solution"
---8<-- "0145_binary_tree_postorder_traversal.py"
+from typing import List, Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Recursive
+def postorderTraversalRecursive(root: Optional[TreeNode]) -> List[int]:
+    res = []
+
+    def dfs(node):
+        if not node:
+            return
+
+        dfs(node.left)
+        dfs(node.right)
+        res.append(node.val)  # <--
+
+    dfs(root)
+
+    return res
+
+
+# Iterative
+def postorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
+    if not root:
+        return []
+
+    res = []
+    stack = [root]
+
+    while stack:
+        node = stack.pop()
+        res.append(node.val)
+
+        if node.left:
+            stack.append(node.left)
+        if node.right:
+            stack.append(node.right)
+
+    return res[::-1]
+
+
+tree = build([0, 1, 2, 3, 4, 5, 6])
+print(tree)
+#     __0__
+#    /     \
+#   1       2
+#  / \     / \
+# 3   4   5   6
+print(postorderTraversalRecursive(tree))  # [3, 4, 1, 5, 6, 2, 0]
+print(postorderTraversalIterative(tree))  # [3, 4, 1, 5, 6, 2, 0]
+
 ```
 
 ## 102. Binary Tree Level Order Traversal
@@ -170,7 +327,47 @@ graph TD
 -   Tags: tree, breadth first search, binary tree
 
 ```python title="102. Binary Tree Level Order Traversal - Python Solution"
---8<-- "0102_binary_tree_level_order_traversal.py"
+from collections import deque
+from typing import List, Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+def levelOrder(root: Optional[TreeNode]) -> List[List[int]]:
+    if not root:
+        return []
+
+    q = deque([root])
+    res = []
+
+    while q:
+        level = []
+        size = len(q)
+
+        for _ in range(size):
+            cur = q.popleft()
+            level.append(cur.val)
+
+            if cur.left:
+                q.append(cur.left)
+            if cur.right:
+                q.append(cur.right)
+
+        res.append(level)
+
+    return res
+
+
+tree = build([3, 9, 20, None, None, 15, 7])
+print(tree)
+#   3___
+#  /    \
+# 9     _20
+#      /   \
+#     15    7
+print(levelOrder(tree))  # [[3], [9, 20], [15, 7]]
+
 ```
 
 ## 107. Binary Tree Level Order Traversal II
@@ -180,7 +377,47 @@ graph TD
 -   Tags: tree, breadth first search, binary tree
 
 ```python title="107. Binary Tree Level Order Traversal II - Python Solution"
---8<-- "0107_binary_tree_level_order_traversal_ii.py"
+from collections import deque
+from typing import List, Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+def levelOrderBottom(root: Optional[TreeNode]) -> List[List[int]]:
+    if not root:
+        return []
+
+    res = []
+    q = deque([root])
+
+    while q:
+        level = []
+        n = len(q)
+
+        for _ in range(n):
+            cur = q.popleft()
+            level.append(cur.val)
+
+            if cur.left:
+                q.append(cur.left)
+            if cur.right:
+                q.append(cur.right)
+
+        res.append(level)
+
+    return res[::-1]
+
+
+tree = build([3, 9, 20, None, None, 15, 7])
+print(tree)
+#   3___
+#  /    \
+# 9     _20
+#      /   \
+#     15    7
+print(levelOrderBottom(tree))  # [[15, 7], [9, 20], [3]]
+
 ```
 
 ## 103. Binary Tree Zigzag Level Order Traversal
@@ -190,5 +427,45 @@ graph TD
 -   Tags: tree, breadth first search, binary tree
 
 ```python title="103. Binary Tree Zigzag Level Order Traversal - Python Solution"
---8<-- "0103_binary_tree_zigzag_level_order_traversal.py"
+from collections import deque
+from typing import List, Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+def zigzagLevelOrder(root: Optional[TreeNode]) -> List[List[int]]:
+    if not root:
+        return []
+
+    q = deque([root])
+    res = []
+
+    while q:
+        level = []
+        n = len(q)
+
+        for _ in range(n):
+            cur = q.popleft()
+            level.append(cur.val)
+
+            if cur.left:
+                q.append(cur.left)
+            if cur.right:
+                q.append(cur.right)
+
+        res.append(level if len(res) % 2 == 0 else level[::-1])
+
+    return res
+
+
+tree = build([3, 9, 20, None, None, 15, 7])
+print(tree)
+#   3___
+#  /    \
+# 9     _20
+#      /   \
+#     15    7
+print(zigzagLevelOrder(tree))  # [[3], [20, 9], [15, 7]]
+
 ```

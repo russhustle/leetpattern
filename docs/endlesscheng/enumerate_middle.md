@@ -55,7 +55,33 @@ comments: True
 -   Tags: array, binary search, stack, monotonic stack, ordered set
 
 ```python title="456. 132 Pattern - Python Solution"
---8<-- "0456_132_pattern.py"
+from typing import List
+
+
+# Monotonic Stack
+def find132pattern(nums: List[int]) -> bool:
+    n = len(nums)
+    if n < 3:
+        return False
+
+    stack = []
+    second_max = float("-inf")
+
+    for i in range(n - 1, -1, -1):
+        if nums[i] < second_max:
+            return True
+
+        while stack and stack[-1] < nums[i]:
+            second_max = stack.pop()
+
+        stack.append(nums[i])
+
+    return False
+
+
+nums = [-1, 3, 2, 0]
+print(find132pattern(nums))  # True
+
 ```
 
 ## 3067. Count Pairs of Connectable Servers in a Weighted Tree Network
@@ -89,7 +115,34 @@ comments: True
 -   Tags: array, dynamic programming, binary indexed tree, enumeration, prefix sum
 
 ```python title="2552. Count Increasing Quadruplets - Python Solution"
---8<-- "2552_count_increasing_quadruplets.py"
+from typing import List
+
+
+# DP
+def countQuadruplets(nums: List[int]) -> int:
+    n = len(nums)
+    great = [[0] * (n + 1) for _ in range(n)]
+    less = [0 for _ in range(n + 1)]
+
+    for k in range(n - 2, 1, -1):
+        great[k] = great[k + 1].copy()
+        for x in range(1, nums[k + 1]):
+            great[k][x] += 1
+
+    ans = 0
+
+    for j in range(1, n - 1):
+        for x in range(nums[j - 1] + 1, n + 1):
+            less[x] += 1
+        for k in range(j + 1, n - 1):
+            if nums[j] > nums[k]:
+                ans += less[nums[k]] * great[k][nums[j]]
+    return ans
+
+
+nums = [1, 3, 2, 4, 5]
+print(countQuadruplets(nums))  # 2
+
 ```
 
 ## 3257. Maximum Value Sum by Placing Three Rooks II

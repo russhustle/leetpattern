@@ -41,7 +41,22 @@ comments: True
 | e    | push   | "lecoe" |
 
 ```python title="2390. Removing Stars From a String - Python Solution"
---8<-- "2390_removing_stars_from_a_string.py"
+# Stack
+def removeStars(s: str) -> str:
+    stack = []
+
+    for char in s:
+        if char == "*":
+            stack.pop()
+        else:
+            stack.append(char)
+
+    return "".join(stack)
+
+
+s = "leet**cod*e"
+print(removeStars(s))  # "lecoe"
+
 ```
 
 ## 1544. Make The String Great
@@ -66,7 +81,20 @@ comments: True
 | e    | push   | "leetcode" |
 
 ```python title="1544. Make The String Great - Python Solution"
---8<-- "1544_make_the_string_great.py"
+# Stack
+def makeGood(s: str) -> str:
+    stack = []
+
+    for i in range(len(s)):
+        if stack and stack[-1] == s[i].swapcase():
+            stack.pop()
+        else:
+            stack.append(s[i])
+    return "".join(stack)
+
+
+print(makeGood("leEeetcode"))  # "leetcode"
+
 ```
 
 ## 20. Valid Parentheses
@@ -87,11 +115,71 @@ comments: True
 | `}`  | pop    | ""    |
 
 ```python title="20. Valid Parentheses - Python Solution"
---8<-- "0020_valid_parentheses.py"
+# Stack
+def isValid(s: str) -> bool:
+    hashmap = {
+        ")": "(",
+        "]": "[",
+        "}": "{",
+    }
+    stack = []
+
+    for c in s:
+        if c in hashmap:
+            if stack and stack[-1] == hashmap[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+
+    return True if not stack else False
+
+
+print(isValid("()"))  # True
+print(isValid("()[]{}"))  # True
+print(isValid("(]"))  # False
+
 ```
 
 ```cpp title="20. Valid Parentheses - C++ Solution"
---8<-- "cpp/0020_valid_parentheses.cc"
+#include <cassert>
+#include <stack>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+class Solution {
+   public:
+    bool isValid(string s) {
+        unordered_map<char, char> map{{')', '('}, {'}', '{'}, {']', '['}};
+        stack<char> stack;
+        if (s.length() % 2 == 1) return false;
+
+        for (char& ch : s) {
+            if (stack.empty() || map.find(ch) == map.end()) {
+                stack.push(ch);
+            } else {
+                if (map[ch] != stack.top()) {
+                    return false;
+                }
+                stack.pop();
+            }
+        }
+        return stack.empty();
+    }
+};
+
+int main() {
+    Solution s;
+    assert(s.isValid("()") == true);
+    assert(s.isValid("()[]{}") == true);
+    assert(s.isValid("(]") == false);
+    assert(s.isValid("([)]") == false);
+    assert(s.isValid("{[]}") == true);
+    return 0;
+}
+
 ```
 
 ## 155. Min Stack
@@ -102,11 +190,72 @@ comments: True
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 ```python title="155. Min Stack - Python Solution"
---8<-- "0155_min_stack.py"
+# Stack
+class MinStack:
+
+    def __init__(self):
+        self.stack = []
+
+    def push(self, val: int) -> None:
+        if self.stack:
+            self.stack.append((val, min(val, self.getMin())))
+        else:
+            self.stack.append((val, val))
+
+    def pop(self) -> None:
+        self.stack.pop()
+
+    def top(self) -> int:
+        return self.stack[-1][0]
+
+    def getMin(self) -> int:
+        return self.stack[-1][1]
+
+
+obj = MinStack()
+obj.push(3)
+obj.push(2)
+obj.pop()
+print(obj.top())  # 3
+print(obj.getMin())  # 3
+
 ```
 
 ```cpp title="155. Min Stack - C++ Solution"
---8<-- "cpp/0155_min_stack.cc"
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <stack>
+#include <utility>
+using namespace std;
+
+class MinStack {
+    stack<pair<int, int>> st;
+
+   public:
+    MinStack() { st.emplace(0, INT_MAX); }
+
+    void push(int val) { st.emplace(val, min(getMin(), val)); }
+
+    void pop() { st.pop(); }
+
+    int top() { return st.top().first; }
+
+    int getMin() { return st.top().second; }
+};
+
+int main() {
+    MinStack minStack;
+    minStack.push(-2);
+    minStack.push(0);
+    minStack.push(-3);
+    cout << minStack.getMin() << endl;  // -3
+    minStack.pop();
+    cout << minStack.top() << endl;     // 0
+    cout << minStack.getMin() << endl;  // -2
+    return 0;
+}
+
 ```
 
 ## 150. Evaluate Reverse Polish Notation
@@ -125,7 +274,35 @@ comments: True
 | `*`   | pop    | `[9]`    |
 
 ```python title="150. Evaluate Reverse Polish Notation - Python Solution"
---8<-- "0150_evaluate_reverse_polish_notation.py"
+from typing import List
+
+
+# Stack
+def evalRPN(tokens: List[str]) -> int:
+    stack = []
+
+    for c in tokens:
+        if c == "+":
+            stack.append(stack.pop() + stack.pop())
+        elif c == "-":
+            a, b = stack.pop(), stack.pop()
+            stack.append(b - a)
+        elif c == "*":
+            stack.append(stack.pop() * stack.pop())
+        elif c == "/":
+            a, b = stack.pop(), stack.pop()
+            stack.append(int(b / a))
+        else:
+            stack.append(int(c))
+
+    return stack[0]
+
+
+print(evalRPN(["2", "1", "+", "3", "*"]))  # 9
+print(evalRPN(["4", "13", "5", "/", "-"]))  # 2
+print(evalRPN(["18"]))  # 18
+print(evalRPN(["4", "3", "-"]))  # 1
+
 ```
 
 ## 394. Decode String
@@ -135,7 +312,30 @@ comments: True
 -   Tags: string, stack, recursion
 
 ```python title="394. Decode String - Python Solution"
---8<-- "0394_decode_string.py"
+# Stack
+def decodeString(s: str) -> str:
+    stack = []  # (str, int)
+    num = 0
+    res = ""
+
+    for c in s:
+        if c.isdigit():
+            num = num * 10 + int(c)
+        elif c == "[":
+            stack.append((res, num))
+            res, num = "", 0
+        elif c == "]":
+            top = stack.pop()
+            res = top[0] + res * top[1]
+        else:
+            res += c
+
+    return res
+
+
+s = "3[a2[c]]"
+print(decodeString(s))  # accaccacc
+
 ```
 
 ## 22. Generate Parentheses
@@ -145,7 +345,37 @@ comments: True
 -   Tags: string, dynamic programming, backtracking
 
 ```python title="22. Generate Parentheses - Python Solution"
---8<-- "0022_generate_parentheses.py"
+from typing import List
+
+
+# Stack
+def generateParenthesis(n: int) -> List[str]:
+    stack = []
+    result = []
+
+    def backtrack(openN, closeN):
+        if openN == closeN == n:
+            result.append("".join(stack))
+            return None
+
+        if openN < n:
+            stack.append("(")
+            backtrack(openN + 1, closeN)
+            stack.pop()
+
+        if closeN < openN:
+            stack.append(")")
+            backtrack(openN, closeN + 1)
+            stack.pop()
+
+    backtrack(0, 0)
+
+    return result
+
+
+print(generateParenthesis(3))
+# ['((()))', '(()())', '(())()', '()(())', '()()()']
+
 ```
 
 ## 853. Car Fleet
@@ -155,7 +385,25 @@ comments: True
 -   Tags: array, stack, sorting, monotonic stack
 
 ```python title="853. Car Fleet - Python Solution"
---8<-- "0853_car_fleet.py"
+from typing import List
+
+
+# Stack
+def carFleet(target: int, position: List[int], speed: List[int]) -> int:
+    cars = sorted(zip(position, speed), reverse=True)
+    stack = []
+
+    for p, s in cars:
+        time = (target - p) / s
+
+        if not stack or time > stack[-1]:
+            stack.append(time)
+
+    return len(stack)
+
+
+print(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]))  # 3
+
 ```
 
 ## 224. Basic Calculator
@@ -165,7 +413,44 @@ comments: True
 -   Tags: math, string, stack, recursion
 
 ```python title="224. Basic Calculator - Python Solution"
---8<-- "0224_basic_calculator.py"
+# Stack
+def calculate(s: str) -> int:
+    stack = []
+    result = 0
+    number = 0
+    sign = 1
+
+    for char in s:
+        if char.isdigit():
+            number = number * 10 + int(char)
+
+        elif char == "+":
+            result += sign * number
+            number = 0
+            sign = 1
+        elif char == "-":
+            result += sign * number
+            number = 0
+            sign = -1
+
+        elif char == "(":
+            stack.append(result)
+            stack.append(sign)
+            result = 0
+            sign = 1
+        elif char == ")":
+            result += sign * number
+            number = 0
+            result *= stack.pop()  # pop sign
+            result += stack.pop()  # pop previous result
+
+    result += sign * number
+
+    return result
+
+
+print(calculate("(1+(4+5+2)-3)+(6+8)"))  # 23
+
 ```
 
 ## 227. Basic Calculator II
@@ -175,7 +460,34 @@ comments: True
 -   Tags: math, string, stack
 
 ```python title="227. Basic Calculator II - Python Solution"
---8<-- "0227_basic_calculator_ii.py"
+# Stack
+def calculate(s: str) -> int:
+    stack = []
+    num = 0
+    sign = "+"
+
+    for index, char in enumerate(s):
+        if char.isdigit():
+            num = num * 10 + int(char)
+
+        if char in "+-*/" or index == len(s) - 1:
+            if sign == "+":
+                stack.append(num)
+            elif sign == "-":
+                stack.append(-num)
+            elif sign == "*":
+                stack.append(stack.pop() * num)
+            elif sign == "/":
+                stack.append(int(stack.pop() / num))
+            sign = char
+            num = 0
+
+    return sum(stack)
+
+
+s = "3+2*2"
+print(calculate(s))  # 7
+
 ```
 
 ## 772. Basic Calculator III
@@ -185,7 +497,45 @@ comments: True
 -   Tags: math, string, stack, recursion
 
 ```python title="772. Basic Calculator III - Python Solution"
---8<-- "0772_basic_calculator_iii.py"
+# Stack
+def calculate(s: str) -> int:
+    def helper(index):
+        stack = []
+        num = 0
+        sign = "+"
+
+        while index < len(s):
+            char = s[index]
+            if char.isdigit():
+                num = num * 10 + int(char)
+            if char == "(":
+                num, index = helper(index + 1)
+            if char in "+-*/)" or index == len(s) - 1:
+                if sign == "+":
+                    stack.append(num)
+                elif sign == "-":
+                    stack.append(-num)
+                elif sign == "*":
+                    stack.append(stack.pop() * num)
+                elif sign == "/":
+                    stack.append(int(stack.pop() / num))  # 向零取整
+                num = 0
+                sign = char
+            if char == ")":
+                break
+            index += 1
+
+        return sum(stack), index
+
+    s = s.replace(" ", "")
+    result, _ = helper(0)
+
+    return result
+
+
+s = "2*(5+5*2)/3+(6/2+8)"
+print(calculate(s))  # 21
+
 ```
 
 ## 770. Basic Calculator IV
@@ -195,5 +545,134 @@ comments: True
 -   Tags: hash table, math, string, stack, recursion
 
 ```python title="770. Basic Calculator IV - Python Solution"
---8<-- "0770_basic_calculator_iv.py"
+from collections import defaultdict
+from typing import List
+
+
+# Stack
+class Solution:
+    def __init__(self):
+        self.operators = set(["+", "-", "*"])
+
+    def basicCalculatorIV(
+        self, expression: str, evalvars: List[str], evalints: List[int]
+    ) -> List[str]:
+        evalmap = dict(zip(evalvars, evalints))
+        tokens = self.parse_expression(expression)
+        result_terms = self.evaluate(tokens, evalmap)
+        return self.format_result(result_terms)
+
+    def parse_expression(self, expression):
+        tokens = []
+        i = 0
+        while i < len(expression):
+            if expression[i].isalnum():  # Variable or digit
+                start = i
+                while i < len(expression) and (
+                    expression[i].isalnum() or expression[i] == "_"
+                ):
+                    i += 1
+                tokens.append(expression[start:i])
+            elif expression[i] in self.operators or expression[i] in "()":
+                tokens.append(expression[i])
+                i += 1
+            elif expression[i] == " ":
+                i += 1  # skip whitespace
+        return tokens
+
+    def evaluate(self, tokens, evalmap):
+        def apply_operator(op, b, a):
+            if op == "+":
+                return self.add_terms(a, b)
+            elif op == "-":
+                return self.add_terms(a, self.negate_terms(b))
+            elif op == "*":
+                return self.multiply_terms(a, b)
+
+        def process_token(token):
+            if token.isalnum():
+                if token in evalmap:
+                    stack.append({(): evalmap[token]})
+                elif token.isdigit():
+                    stack.append({(): int(token)})
+                else:
+                    stack.append({(token,): 1})
+            elif token == "(":
+                ops.append(token)
+            elif token == ")":
+                while ops and ops[-1] != "(":
+                    operate()
+                ops.pop()
+            else:
+                while (
+                    ops
+                    and ops[-1] in precedence
+                    and precedence[ops[-1]] >= precedence[token]
+                ):
+                    operate()
+                ops.append(token)
+
+        def operate():
+            if len(stack) < 2 or not ops:
+                return
+            b = stack.pop()
+            a = stack.pop()
+            op = ops.pop()
+            stack.append(apply_operator(op, b, a))
+
+        stack = []
+        ops = []
+        precedence = {"+": 1, "-": 1, "*": 2}
+
+        for token in tokens:
+            process_token(token)
+
+        while ops:
+            operate()
+        return self.combine_terms(stack[-1])
+
+    def add_terms(self, a, b):
+        result = defaultdict(int, a)
+        for term, coef in b.items():
+            result[term] += coef
+        return dict(result)
+
+    def negate_terms(self, a):
+        return {term: -coef for term, coef in a.items()}
+
+    def multiply_terms(self, a, b):
+        result = defaultdict(int)
+        for term1, coef1 in a.items():
+            for term2, coef2 in b.items():
+                new_term = tuple(sorted(term1 + term2))
+                result[new_term] += coef1 * coef2
+        return dict(result)
+
+    def combine_terms(self, terms):
+        result = defaultdict(int)
+        for term, coef in terms.items():
+            if coef != 0:
+                result[term] = coef
+        return dict(result)
+
+    def format_result(self, result_terms):
+        result = []
+        for term in sorted(result_terms.keys(), key=lambda x: (-len(x), x)):
+            coef = result_terms[term]
+            if coef != 0:
+                term_str = "*".join(term)
+                if term_str:
+                    result.append(f"{coef}*{term_str}")
+                else:
+                    result.append(str(coef))
+        return result
+
+
+calculator = Solution()
+expression = "e + 8 - a + 5"
+evalvars = ["e"]
+evalints = [1]
+print(calculator.basicCalculatorIV(expression, evalvars, evalints))
+# ['-1*a', '14']
+
 ```

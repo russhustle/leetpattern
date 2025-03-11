@@ -17,7 +17,34 @@ comments: True
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
 ```python title="19. Remove Nth Node From End of List - Python Solution"
---8<-- "0019_remove_nth_node_from_end_of_list.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Linked List
+def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
+    dummy = ListNode(0, head)
+    fast = slow = dummy
+
+    for _ in range(n + 1):
+        fast = fast.next
+
+    while fast:
+        fast = fast.next
+        slow = slow.next
+
+    slow.next = slow.next.next
+
+    return dummy.next
+
+
+head = [1, 2, 3, 4, 5]
+n = 2
+head = ListNode.create(head)
+print(head)  # 1 -> 2 -> 3 -> 4 -> 5
+print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
+
 ```
 
 ## 61. Rotate List

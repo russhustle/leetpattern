@@ -35,7 +35,38 @@ comments: True
 -   Tags: array, two pointers, sorting
 
 ```python title="88. Merge Sorted Array - Python Solution"
---8<-- "0088_merge_sorted_array.py"
+from typing import List
+
+
+# Left Right Pointers
+def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+    """Merges two sorted arrays in-place."""
+    p1, p2, t = m - 1, n - 1, m + n - 1
+
+    while p1 >= 0 or p2 >= 0:
+        if p1 == -1:
+            nums1[t] = nums2[p2]
+            p2 -= 1
+        elif p2 == -1:
+            nums1[t] = nums1[p1]
+            p1 -= 1
+        elif nums1[p1] > nums2[p2]:
+            nums1[t] = nums1[p1]
+            p1 -= 1
+        else:
+            nums1[t] = nums2[p2]
+            p2 -= 1
+
+        t -= 1
+
+
+nums1 = [1, 2, 3, 0, 0, 0]
+m = 3
+nums2 = [2, 5, 6]
+n = 3
+merge(nums1, m, nums2, n)
+print(nums1)  # [1, 2, 2, 3, 5, 6]
+
 ```
 
 ## 2570. Merge Two 2D Arrays by Summing Values
@@ -57,7 +88,28 @@ comments: True
 -   Tags: array, two pointers, binary search, sorting
 
 ```python title="1385. Find the Distance Value Between Two Arrays - Python Solution"
---8<-- "1385_find_the_distance_value_between_two_arrays.py"
+from bisect import bisect_left
+from typing import List
+
+
+# Binary Search
+def findTheDistanceValue(arr1: List[int], arr2: List[int], d: int) -> int:
+    arr2.sort()
+    res = 0
+
+    for x in arr1:
+        i = bisect_left(arr2, x - d)
+        if i == len(arr2) or arr2[i] > x + d:
+            res += 1
+
+    return res
+
+
+arr1 = [4, 5, 8]
+arr2 = [10, 9, 1, 8]
+d = 2
+print(findTheDistanceValue(arr1, arr2, d))  # 2
+
 ```
 
 ## 925. Long Pressed Name
@@ -91,7 +143,24 @@ comments: True
 -   Tags: two pointers, string, stack, simulation
 
 ```python title="844. Backspace String Compare - Python Solution"
---8<-- "0844_backspace_string_compare.py"
+def backspaceCompare(s: str, t: str) -> bool:
+
+    def build(text):
+        stack = []
+
+        for char in text:
+            if char != "#":
+                stack.append(char)
+            elif stack:
+                stack.pop()
+
+        return "".join(stack)
+
+    return build(s) == build(t)
+
+
+print(backspaceCompare("ab#c", "ad#c"))  # True
+
 ```
 
 ## 986. Interval List Intersections

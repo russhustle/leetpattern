@@ -22,7 +22,35 @@ comments: True
 -   Tags: array, depth first search, breadth first search
 
 ```python title="1306. Jump Game III - Python Solution"
---8<-- "1306_jump_game_iii.py"
+from collections import deque
+from typing import List
+
+
+# BFS
+def canReach(arr: List[int], start: int) -> bool:
+    n = len(arr)
+    visited = [False for _ in range(n)]
+    q = deque([start])
+
+    while q:
+        i = q.popleft()
+
+        if arr[i] == 0:
+            return True
+
+        visited[i] = True
+
+        for j in [i - arr[i], i + arr[i]]:
+            if j in range(n) and not visited[j]:
+                q.append(j)
+
+    return False
+
+
+arr = [4, 2, 3, 0, 3, 1, 2]
+start = 5
+print(canReach(arr, start))  # True
+
 ```
 
 ## 2770. Maximum Number of Jumps to Reach the Last Index

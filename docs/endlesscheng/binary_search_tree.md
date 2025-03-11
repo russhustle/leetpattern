@@ -32,11 +32,111 @@ comments: True
 -   Tags: tree, depth first search, binary search tree, binary tree
 
 ```python title="98. Validate Binary Search Tree - Python Solution"
---8<-- "0098_validate_binary_search_tree.py"
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+def isValidBST(root: Optional[TreeNode]) -> bool:
+    inorder = []  # inorder traversal of BST
+
+    def dfs(node):
+        if not node:
+            return None
+        dfs(node.left)
+        inorder.append(node.val)
+        dfs(node.right)
+
+    dfs(root)
+
+    for i in range(1, len(inorder)):
+        if inorder[i] <= inorder[i - 1]:
+            return False
+
+    return True
+
+
+root = [5, 1, 4, None, None, 3, 6]
+root = build(root)
+print(root)
+#   5__
+#  /   \
+# 1     4
+#      / \
+#     3   6
+print(isValidBST(root))  # False
+# [1, 5, 3, 4, 6]
+
 ```
 
 ```cpp title="98. Validate Binary Search Tree - C++ Solution"
---8<-- "cpp/0098_validate_binary_search_tree.cc"
+#include <cassert>
+#include <vector>
+using namespace std;
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right)
+        : val(x), left(left), right(right) {}
+};
+
+class Solution {
+   private:
+    vector<int> inorder;
+    bool check(vector<int> inorder) {
+        int n = inorder.size();
+        if (n <= 1) return true;
+        for (int i = 1; i < n; i++) {
+            if (inorder[i] <= inorder[i - 1]) return false;
+        }
+        return true;
+    }
+
+   public:
+    bool isValidBST(TreeNode *root) {
+        auto dfs = [&](auto &&self, TreeNode *node) -> void {
+            if (!node) return;
+
+            self(self, node->left);
+            inorder.push_back(node->val);
+            self(self, node->right);
+        };
+
+        dfs(dfs, root);
+
+        return check(inorder);
+    }
+};
+
+int main() {
+    Solution s;
+    TreeNode *root = new TreeNode(2);
+    root->left = new TreeNode(1);
+    root->right = new TreeNode(3);
+    assert(s.isValidBST(root) == true);
+
+    root = new TreeNode(5);
+    root->left = new TreeNode(1);
+    root->right = new TreeNode(4);
+    root->right->left = new TreeNode(3);
+    root->right->right = new TreeNode(6);
+    assert(s.isValidBST(root) == false);
+
+    root = new TreeNode(5);
+    root->left = new TreeNode(4);
+    root->right = new TreeNode(6);
+    root->right->left = new TreeNode(3);
+    root->right->right = new TreeNode(7);
+    assert(s.isValidBST(root) == false);
+
+    return 0;
+}
+
 ```
 
 ## 230. Kth Smallest Element in a BST
@@ -46,7 +146,52 @@ comments: True
 -   Tags: tree, depth first search, binary search tree, binary tree
 
 ```python title="230. Kth Smallest Element in a BST - Python Solution"
---8<-- "0230_kth_smallest_element_in_a_bst.py"
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Recursive
+def kthSmallestRecursive(root: Optional[TreeNode], k: int) -> int:
+    inorder = []
+
+    def dfs(node):
+        if not node:
+            return None
+        dfs(node.left)
+        inorder.append(node.val)
+        dfs(node.right)
+
+    dfs(root)
+    return inorder[k - 1]
+
+
+# Iteratve
+def kthSmallestIteratve(root: Optional[TreeNode], k: int) -> int:
+    stack = []
+    while True:
+        while root:
+            stack.append(root)
+            root = root.left
+        root = stack.pop()
+        k -= 1
+        if not k:
+            return root.val
+        root = root.right
+
+
+root = build([3, 1, 4, None, 2])
+k = 1
+print(root)
+#   __3
+#  /   \
+# 1     4
+#  \
+#   2
+print(kthSmallestRecursive(root, k))  # 1
+print(kthSmallestIteratve(root, k))  # 1
+
 ```
 
 ## 501. Find Mode in Binary Search Tree
@@ -56,7 +201,52 @@ comments: True
 -   Tags: tree, depth first search, binary search tree, binary tree
 
 ```python title="501. Find Mode in Binary Search Tree - Python Solution"
---8<-- "0501_find_mode_in_binary_search_tree.py"
+from typing import List, Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def findMode(root: Optional[TreeNode]) -> List[int]:
+    hashmap = dict()
+
+    def dfs(node):
+        if not node:
+            return None
+        dfs(node.left)
+        if node.val not in hashmap:
+            hashmap[node.val] = 1
+        else:
+            hashmap[node.val] += 1
+        dfs(node.right)
+
+    dfs(root)
+    max_counts = max(hashmap.values())
+    result = []
+
+    for key, value in hashmap.items():
+        if value == max_counts:
+            result.append(key)
+
+    return result
+
+
+root = [1, None, 2, None, None, 2]
+root = build(root)
+print(root)
+# 1__
+#    \
+#     2
+#    /
+#   2
+print(findMode(root))  # [2]
+
 ```
 
 ## 99. Recover Binary Search Tree
@@ -88,7 +278,67 @@ graph TD
 ```
 
 ```python title="700. Search in a Binary Search Tree - Python Solution"
---8<-- "0700_search_in_a_binary_search_tree.py"
+from typing import Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+# 1. Recursive
+def searchBSTRecursive(
+    root: Optional[TreeNode], val: int
+) -> Optional[TreeNode]:
+    if not root:
+        return None
+
+    if root.val > val:
+        return searchBSTRecursive(root.left, val)
+
+    elif root.val < val:
+        return searchBSTRecursive(root.right, val)
+
+    else:
+        return root
+
+
+# 2. Iterative
+def searchBSTIterative(
+    root: Optional[TreeNode], val: int
+) -> Optional[TreeNode]:
+    while root:
+        if root.val > val:
+            root = root.left
+        elif root.val < val:
+            root = root.right
+        else:
+            return root
+    return None
+
+
+root = [4, 2, 7, 1, 3]
+val = 2
+root = build(root)
+print(root)
+#     __4
+#    /   \
+#   2     7
+#  / \
+# 1   3
+print(searchBSTRecursive(root, val))
+#   2
+#  / \
+# 1   3
+print(searchBSTIterative(root, val))
+#   2
+#  / \
+# 1   3
+
 ```
 
 ## 530. Minimum Absolute Difference in BST
@@ -98,7 +348,48 @@ graph TD
 -   Tags: tree, depth first search, breadth first search, binary search tree, binary tree
 
 ```python title="530. Minimum Absolute Difference in BST - Python Solution"
---8<-- "0530_minimum_absolute_difference_in_bst.py"
+from typing import Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def getMinimumDifference(root: Optional[TreeNode]) -> int:
+
+    inorder = []
+    result = float("inf")
+
+    def dfs(node):
+        if not node:
+            return None
+        dfs(node.left)
+        inorder.append(node.val)
+        dfs(node.right)
+
+    dfs(root)
+
+    for i in range(1, len(inorder)):
+        result = min(result, abs(inorder[i] - inorder[i - 1]))
+
+    return result
+
+
+root = [4, 2, 6, 1, 3]
+root = build(root)
+print(root)
+#     __4
+#    /   \
+#   2     6
+#  / \
+# 1   3
+print(getMinimumDifference(root))  # 1
+
 ```
 
 ## 783. Minimum Distance Between BST Nodes

@@ -30,11 +30,71 @@ comments: True
 | `}`  | pop    | ""    |
 
 ```python title="20. Valid Parentheses - Python Solution"
---8<-- "0020_valid_parentheses.py"
+# Stack
+def isValid(s: str) -> bool:
+    hashmap = {
+        ")": "(",
+        "]": "[",
+        "}": "{",
+    }
+    stack = []
+
+    for c in s:
+        if c in hashmap:
+            if stack and stack[-1] == hashmap[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+
+    return True if not stack else False
+
+
+print(isValid("()"))  # True
+print(isValid("()[]{}"))  # True
+print(isValid("(]"))  # False
+
 ```
 
 ```cpp title="20. Valid Parentheses - C++ Solution"
---8<-- "cpp/0020_valid_parentheses.cc"
+#include <cassert>
+#include <stack>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+class Solution {
+   public:
+    bool isValid(string s) {
+        unordered_map<char, char> map{{')', '('}, {'}', '{'}, {']', '['}};
+        stack<char> stack;
+        if (s.length() % 2 == 1) return false;
+
+        for (char& ch : s) {
+            if (stack.empty() || map.find(ch) == map.end()) {
+                stack.push(ch);
+            } else {
+                if (map[ch] != stack.top()) {
+                    return false;
+                }
+                stack.pop();
+            }
+        }
+        return stack.empty();
+    }
+};
+
+int main() {
+    Solution s;
+    assert(s.isValid("()") == true);
+    assert(s.isValid("()[]{}") == true);
+    assert(s.isValid("(]") == false);
+    assert(s.isValid("([)]") == false);
+    assert(s.isValid("{[]}") == true);
+    return 0;
+}
+
 ```
 
 ## 232. Implement Queue using Stacks
@@ -49,7 +109,40 @@ comments: True
     -   `empty()` - Return whether the queue is empty.
 
 ```python title="232. Implement Queue using Stacks - Python Solution"
---8<-- "0232_implement_queue_using_stacks.py"
+class MyQueue:
+    def __init__(self):
+        self.stack_in = []
+        self.stack_out = []
+
+    def push(self, x: int) -> None:
+        self.stack_in.append(x)
+
+    def pop(self) -> int:
+        if self.empty():
+            return None
+
+        if self.stack_out:
+            return self.stack_out.pop()
+        else:
+            for _ in range(len(self.stack_in)):
+                self.stack_out.append(self.stack_in.pop())
+            return self.stack_out.pop()
+
+    def peek(self) -> int:
+        answer = self.pop()
+        self.stack_out.append(answer)
+        return answer
+
+    def empty(self) -> bool:
+        return not (self.stack_in or self.stack_out)
+
+
+obj = MyQueue()
+obj.push(1)
+print(obj.pop())  # 1
+print(obj.peek())  # None
+print(obj.empty())  # False
+
 ```
 
 ## 150. Evaluate Reverse Polish Notation
@@ -68,7 +161,35 @@ comments: True
 | `*`   | pop    | `[9]`    |
 
 ```python title="150. Evaluate Reverse Polish Notation - Python Solution"
---8<-- "0150_evaluate_reverse_polish_notation.py"
+from typing import List
+
+
+# Stack
+def evalRPN(tokens: List[str]) -> int:
+    stack = []
+
+    for c in tokens:
+        if c == "+":
+            stack.append(stack.pop() + stack.pop())
+        elif c == "-":
+            a, b = stack.pop(), stack.pop()
+            stack.append(b - a)
+        elif c == "*":
+            stack.append(stack.pop() * stack.pop())
+        elif c == "/":
+            a, b = stack.pop(), stack.pop()
+            stack.append(int(b / a))
+        else:
+            stack.append(int(c))
+
+    return stack[0]
+
+
+print(evalRPN(["2", "1", "+", "3", "*"]))  # 9
+print(evalRPN(["4", "13", "5", "/", "-"]))  # 2
+print(evalRPN(["18"]))  # 18
+print(evalRPN(["4", "3", "-"]))  # 1
+
 ```
 
 ## 155. Min Stack
@@ -79,11 +200,72 @@ comments: True
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 ```python title="155. Min Stack - Python Solution"
---8<-- "0155_min_stack.py"
+# Stack
+class MinStack:
+
+    def __init__(self):
+        self.stack = []
+
+    def push(self, val: int) -> None:
+        if self.stack:
+            self.stack.append((val, min(val, self.getMin())))
+        else:
+            self.stack.append((val, val))
+
+    def pop(self) -> None:
+        self.stack.pop()
+
+    def top(self) -> int:
+        return self.stack[-1][0]
+
+    def getMin(self) -> int:
+        return self.stack[-1][1]
+
+
+obj = MinStack()
+obj.push(3)
+obj.push(2)
+obj.pop()
+print(obj.top())  # 3
+print(obj.getMin())  # 3
+
 ```
 
 ```cpp title="155. Min Stack - C++ Solution"
---8<-- "cpp/0155_min_stack.cc"
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <stack>
+#include <utility>
+using namespace std;
+
+class MinStack {
+    stack<pair<int, int>> st;
+
+   public:
+    MinStack() { st.emplace(0, INT_MAX); }
+
+    void push(int val) { st.emplace(val, min(getMin(), val)); }
+
+    void pop() { st.pop(); }
+
+    int top() { return st.top().first; }
+
+    int getMin() { return st.top().second; }
+};
+
+int main() {
+    MinStack minStack;
+    minStack.push(-2);
+    minStack.push(0);
+    minStack.push(-3);
+    cout << minStack.getMin() << endl;  // -3
+    minStack.pop();
+    cout << minStack.top() << endl;     // 0
+    cout << minStack.getMin() << endl;  // -2
+    return 0;
+}
+
 ```
 
 ## 42. Trapping Rain Water
@@ -102,11 +284,122 @@ comments: True
 | Monotonic  | O(N) | O(N)  |
 
 ```python title="42. Trapping Rain Water - Python Solution"
---8<-- "0042_trapping_rain_water.py"
+from typing import List
+
+
+# DP
+def trapDP(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    n = len(height)
+    maxLeft, maxRight = [0 for _ in range(n)], [0 for _ in range(n)]
+
+    for i in range(1, n):
+        maxLeft[i] = max(maxLeft[i - 1], height[i - 1])
+
+    for i in range(n - 2, -1, -1):
+        maxRight[i] = max(maxRight[i + 1], height[i + 1])
+
+    res = 0
+    for i in range(n):
+        res += max(0, min(maxLeft[i], maxRight[i]) - height[i])
+
+    return res
+
+
+# Left Right Pointers
+def trapLR(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    left, right = 0, len(height) - 1
+    maxL, maxR = height[left], height[right]
+    res = 0
+
+    while left < right:
+        if maxL < maxR:
+            left += 1
+            maxL = max(maxL, height[left])
+            res += maxL - height[left]
+        else:
+            right -= 1
+            maxR = max(maxR, height[right])
+            res += maxR - height[right]
+
+    return res
+
+
+# Monotonic Stack
+def trapStack(height: List[int]) -> int:
+    stack = []
+    total = 0
+
+    for i in range(len(height)):
+        while stack and height[i] > height[stack[-1]]:
+            top = stack.pop()
+            if not stack:
+                break
+            distance = i - stack[-1] - 1
+            bounded_height = min(height[i], height[stack[-1]]) - height[top]
+            total += distance * bounded_height
+        stack.append(i)
+
+    return total
+
+
+height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+print(trapDP(height))  # 6
+print(trapLR(height))  # 6
+print(trapStack(height))  # 6
+
 ```
 
 ```cpp title="42. Trapping Rain Water - C++ Solution"
---8<-- "cpp/0042_trapping_rain_water.cc"
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+class Solution
+{
+public:
+    int trap(vector<int> &height)
+    {
+        if (height.empty())
+            return 0;
+
+        int res = 0;
+        int left = 0, right = height.size() - 1;
+        int maxL = height[left], maxR = height[right];
+
+        while (left < right)
+        {
+            if (maxL < maxR)
+            {
+                left++;
+                maxL = max(maxL, height[left]);
+                res += maxL - height[left];
+            }
+            else
+            {
+                right--;
+                maxR = max(maxR, height[right]);
+                res += maxR - height[right];
+            }
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    vector<int> height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+    Solution solution;
+    cout << solution.trap(height) << endl;
+    return 0;
+}
+
 ```
 
 ## 224. Basic Calculator
@@ -116,7 +409,44 @@ comments: True
 -   Tags: math, string, stack, recursion
 
 ```python title="224. Basic Calculator - Python Solution"
---8<-- "0224_basic_calculator.py"
+# Stack
+def calculate(s: str) -> int:
+    stack = []
+    result = 0
+    number = 0
+    sign = 1
+
+    for char in s:
+        if char.isdigit():
+            number = number * 10 + int(char)
+
+        elif char == "+":
+            result += sign * number
+            number = 0
+            sign = 1
+        elif char == "-":
+            result += sign * number
+            number = 0
+            sign = -1
+
+        elif char == "(":
+            stack.append(result)
+            stack.append(sign)
+            result = 0
+            sign = 1
+        elif char == ")":
+            result += sign * number
+            number = 0
+            result *= stack.pop()  # pop sign
+            result += stack.pop()  # pop previous result
+
+    result += sign * number
+
+    return result
+
+
+print(calculate("(1+(4+5+2)-3)+(6+8)"))  # 23
+
 ```
 
 ## 84. Largest Rectangle in Histogram
@@ -126,5 +456,27 @@ comments: True
 -   Tags: array, stack, monotonic stack
 
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
---8<-- "0084_largest_rectangle_in_histogram.py"
+from typing import List
+
+
+def largestRectangleArea(heights: List[int]) -> int:
+    maxArea = 0
+    stack = []  # pair: (index, height)
+
+    for i, h in enumerate(heights):
+        start = i
+        while stack and stack[-1][1] > h:
+            index, height = stack.pop()
+            maxArea = max(maxArea, height * (i - index))
+            start = index
+        stack.append((start, h))
+
+    for i, h in stack:
+        maxArea = max(maxArea, h * (len(heights) - i))
+
+    return maxArea
+
+
+print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
+
 ```

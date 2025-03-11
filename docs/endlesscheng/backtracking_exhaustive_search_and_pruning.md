@@ -60,7 +60,53 @@ comments: True
 -   Tags: array, string, backtracking, depth first search, matrix
 
 ```python title="79. Word Search - Python Solution"
---8<-- "0079_word_search.py"
+from typing import List
+
+
+def exist(board: List[List[str]], word: str) -> bool:
+    m, n = len(board), len(board[0])
+    path = set()
+    dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
+
+    def dfs(r, c, i):
+        if i == len(word):
+            return True
+
+        if (
+            r < 0
+            or r >= m
+            or c < 0
+            or c >= n
+            or board[r][c] != word[i]
+            or (r, c) in path
+        ):
+            return False
+
+        path.add((r, c))
+
+        for dr, dc in dirs:
+            if dfs(r + dr, c + dc, i + 1):
+                return True
+
+        path.remove((r, c))
+        return False
+
+    for i in range(m):
+        for j in range(n):
+            if dfs(i, j, 0):
+                return True
+
+    return False
+
+
+board = [
+    ["A", "B", "C", "E"],
+    ["S", "F", "C", "S"],
+    ["A", "D", "E", "E"],
+]
+word = "ABCCED"
+print(exist(board, word))  # True
+
 ```
 
 ## 980. Unique Paths III
@@ -88,7 +134,62 @@ comments: True
 -   Tags: array, string, backtracking, trie, matrix
 
 ```python title="212. Word Search II - Python Solution"
---8<-- "0212_word_search_ii.py"
+from typing import List
+
+from template import TrieNode
+
+
+# Backtracking + Trie
+def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+    root = TrieNode()
+    for word in words:
+        root.addWord(word)
+
+    m, n = len(board), len(board[0])
+    result, visit = set(), set()
+
+    def dfs(r, c, node, word):
+        if (
+            r < 0
+            or r >= m
+            or c < 0
+            or c >= n
+            or (r, c) in visit
+            or board[r][c] not in node.children
+        ):
+            return None
+
+        visit.add((r, c))
+
+        node = node.children[board[r][c]]
+        word += board[r][c]
+        if node.isWord:
+            result.add(word)
+
+        dfs(r - 1, c, node, word)
+        dfs(r + 1, c, node, word)
+        dfs(r, c - 1, node, word)
+        dfs(r, c + 1, node, word)
+
+        visit.remove((r, c))
+
+    for r in range(m):
+        for c in range(n):
+            dfs(r, c, root, "")
+
+    return list(result)
+
+
+board = [
+    ["o", "a", "a", "n"],
+    ["e", "t", "a", "e"],
+    ["i", "h", "k", "r"],
+    ["i", "f", "l", "v"],
+]
+words = ["oath", "pea", "eat", "rain"]
+print(findWords(board, words))
+# ['eat', 'oath']
+
 ```
 
 ## 37. Sudoku Solver
@@ -101,7 +202,72 @@ comments: True
 - Hard
 
 ```python title="37. Sudoku Solver - Python Solution"
---8<-- "0037_sudoku_solver.py"
+from pprint import pprint
+from typing import List
+
+
+# Backtracking - Board
+def solveSudoku(board: List[List[str]]) -> None:
+    """
+    Do not return anything, modify board in-place instead.
+    """
+
+    def backtracking(board: List[List[str]]) -> bool:
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                if board[i][j] != ".":
+                    continue
+                for k in range(1, 10):
+                    if is_valid(i, j, k, board):
+                        board[i][j] = str(k)
+                        if backtracking(board):
+                            return True
+                        board[i][j] = "."
+                return False
+        return True
+
+    def is_valid(row: int, col: int, val: int, board: List[List[str]]) -> bool:
+        for i in range(9):
+            if board[row][i] == str(val):
+                return False
+        for j in range(9):
+            if board[j][col] == str(val):
+                return False
+        start_row = (row // 3) * 3
+        start_col = (col // 3) * 3
+        for i in range(start_row, start_row + 3):
+            for j in range(start_col, start_col + 3):
+                if board[i][j] == str(val):
+                    return False
+        return True
+
+    backtracking(board)
+
+
+board = [
+    ["5", "3", ".", ".", "7", ".", ".", ".", "."],
+    ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+    [".", "9", "8", ".", ".", ".", ".", "6", "."],
+    ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+    ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+    ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+    [".", "6", ".", ".", ".", ".", "2", "8", "."],
+    [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+    [".", ".", ".", ".", "8", ".", ".", "7", "9"],
+]
+
+solveSudoku(board)
+pprint(board)
+# [['5', '3', '4', '6', '7', '8', '9', '1', '2'],
+#  ['6', '7', '2', '1', '9', '5', '3', '4', '8'],
+#  ['1', '9', '8', '3', '4', '2', '5', '6', '7'],
+#  ['8', '5', '9', '7', '6', '1', '4', '2', '3'],
+#  ['4', '2', '6', '8', '5', '3', '7', '9', '1'],
+#  ['7', '1', '3', '9', '2', '4', '8', '5', '6'],
+#  ['9', '6', '1', '5', '3', '7', '2', '8', '4'],
+#  ['2', '8', '7', '4', '1', '9', '6', '3', '5'],
+#  ['3', '4', '5', '2', '8', '6', '1', '7', '9']]
+
 ```
 
 ## 638. Shopping Offers

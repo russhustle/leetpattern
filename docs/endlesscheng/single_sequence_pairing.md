@@ -36,7 +36,29 @@ comments: True
 -   Tags: array, two pointers, greedy, sorting
 
 ```python title="881. Boats to Save People - Python Solution"
---8<-- "0881_boats_to_save_people.py"
+from typing import List
+
+
+# Left Right Pointers
+def numRescueBoats(people: List[int], limit: int) -> int:
+    """Returns the minimum number of boats to rescue people."""
+    people.sort()
+    left, right = 0, len(people) - 1
+    boats = 0
+
+    while left <= right:
+        if people[left] + people[right] <= limit:
+            left += 1
+        right -= 1
+        boats += 1
+
+    return boats
+
+
+people = [3, 2, 2, 1]
+limit = 3
+print(numRescueBoats(people, limit))  # 3
+
 ```
 
 ## 2592. Maximize Greatness of an Array
@@ -52,5 +74,26 @@ comments: True
 -   Tags: array, two pointers, binary search, greedy, sorting
 
 ```python title="2576. Find the Maximum Number of Marked Indices - Python Solution"
---8<-- "2576_find_the_maximum_number_of_marked_indices.py"
+from typing import List
+
+
+# Fast Slow Pointers
+def maxNumOfMarkedIndices(nums: List[int]) -> int:
+    nums.sort()
+    n = len(nums)
+    slow, fast = 0, n // 2
+    count = 0
+
+    while slow < n // 2 and fast < n:
+        if nums[fast] >= 2 * nums[slow]:
+            count += 2
+            slow += 1
+        fast += 1
+
+    return count
+
+
+nums = [3, 5, 2, 4]
+print(maxNumOfMarkedIndices(nums))  # 2
+
 ```

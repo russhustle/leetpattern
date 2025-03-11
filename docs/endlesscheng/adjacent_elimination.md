@@ -50,7 +50,20 @@ comments: True
 | e    | push   | "leetcode" |
 
 ```python title="1544. Make The String Great - Python Solution"
---8<-- "1544_make_the_string_great.py"
+# Stack
+def makeGood(s: str) -> str:
+    stack = []
+
+    for i in range(len(s)):
+        if stack and stack[-1] == s[i].swapcase():
+            stack.pop()
+        else:
+            stack.append(s[i])
+    return "".join(stack)
+
+
+print(makeGood("leEeetcode"))  # "leetcode"
+
 ```
 
 ## 1003. Check If Word Is Valid After Substitutions

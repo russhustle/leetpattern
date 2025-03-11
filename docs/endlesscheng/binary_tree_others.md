@@ -34,7 +34,120 @@ comments: True
 -   Tags: string, tree, depth first search, breadth first search, design, binary tree
 
 ```python title="297. Serialize and Deserialize Binary Tree - Python Solution"
---8<-- "0297_serialize_and_deserialize_binary_tree.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# BFS
+class BFS:
+    def serialize(self, root: Optional[TreeNode]) -> str:
+        if not root:
+            return ""
+
+        res = []
+        q = deque([root])
+
+        while q:
+            node = q.popleft()
+
+            if node:
+                res.append(str(node.val))
+                q.append(node.left)
+                q.append(node.right)
+            else:
+                res.append("null")
+
+        return ",".join(res)
+
+    def deserialize(self, data: str) -> Optional[TreeNode]:
+        if not data:
+            return None
+
+        nodes = data.split(",")
+        root = TreeNode(int(nodes[0]))
+        q = deque([root])
+        index = 1
+
+        while q:
+            node = q.popleft()
+
+            if nodes[index] != "null":
+                node.left = TreeNode(int(nodes[index]))
+                q.append(node.left)
+            index += 1
+
+            if nodes[index] != "null":
+                node.right = TreeNode(int(nodes[index]))
+                q.append(node.right)
+            index += 1
+
+        return root
+
+
+# DFS
+class DFS:
+    def serialize(self, root: Optional[TreeNode]) -> str:
+        def dfs(node):
+            if not node:
+                return ["null"]
+            return [str(node.val)] + dfs(node.left) + dfs(node.right)
+
+        return ",".join(dfs(root))
+
+    def deserialize(self, data: str) -> Optional[TreeNode]:
+        nodes = data.split(",")
+        self.index = 0
+
+        def dfs():
+            if nodes[self.index] == "null":
+                self.index += 1
+                return None
+
+            node = TreeNode(int(nodes[self.index]))
+            self.index += 1
+
+            node.left = dfs()
+            node.right = dfs()
+
+            return node
+
+        root = dfs()
+        return root
+
+
+root = build([1, 2, 3, None, None, 4, 5])
+print(root)
+#   1__
+#  /   \
+# 2     3
+#      / \
+#     4   5
+
+bfs = BFS()
+data1 = bfs.serialize(root)
+print(data1)  # "1,2,3,null,null,4,5,null,null,null,null"
+root1 = bfs.deserialize(data1)
+print(root1)
+#   1__
+#  /   \
+# 2     3
+#      / \
+#     4   5
+
+dfs = DFS()
+data2 = dfs.serialize(root)
+print(data2)  # "1,2,null,null,3,4,null,null,5,null,null"
+root2 = dfs.deserialize(data2)
+print(root2)
+#   1__
+#  /   \
+# 2     3
+#      / \
+#     4   5
+
 ```
 
 ## 449. Serialize and Deserialize BST
@@ -56,7 +169,48 @@ comments: True
 -   Tags: stack, tree, design, binary search tree, binary tree, iterator
 
 ```python title="173. Binary Search Tree Iterator - Python Solution"
---8<-- "0173_binary_search_tree_iterator.py"
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# BST
+class BSTIterator:
+
+    def __init__(self, root: Optional[TreeNode]):
+        self.stack = []
+        self._leftmost_inorder(root)
+
+    def _leftmost_inorder(self, root):
+        while root:
+            self.stack.append(root)
+            root = root.left
+
+    def next(self) -> int:
+        topmost_node = self.stack.pop()
+
+        if topmost_node.right:
+            self._leftmost_inorder(topmost_node.right)
+
+        return topmost_node.val
+
+    def hasNext(self) -> bool:
+        return len(self.stack) > 0
+
+
+root = build([7, 3, 15, None, None, 9, 20])
+print(root)
+#   7__
+#  /   \
+# 3     15
+#      /  \
+#     9    20
+obj = BSTIterator(root)
+print(obj.next())  # 3
+print(obj.next())  # 7
+print(obj.hasNext())  # True
+
 ```
 
 ## 1261. Find Elements in a Contaminated Binary Tree
@@ -96,7 +250,64 @@ comments: True
 -   Tags: binary search, bit manipulation, tree, binary tree
 
 ```python title="222. Count Complete Tree Nodes - Python Solution"
---8<-- "0222_count_complete_tree_nodes.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Recursive
+def countNodesRecursive(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    num = 1 + countNodesRecursive(root.left) + countNodesRecursive(root.right)
+
+    return num
+
+
+# Iterative
+def countNodesIterative(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    q = deque([root])
+    count = 0
+
+    while q:
+        n = len(q)
+
+        for _ in range(n):
+            node = q.popleft()
+            count += 1
+
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+    return count
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# | Recursive  |  O(n)  |  O(n)   |
+# | Iterative  |  O(n)  |  O(n)   |
+# |------------|--------|---------|
+
+root = [1, 2, 3, 4, 5, 6]
+root = build(root)
+print(root)
+#     __1__
+#    /     \
+#   2       3
+#  / \     /
+# 4   5   6
+print(countNodesRecursive(root))  # 6
+print(countNodesIterative(root))  # 6
+
 ```
 
 ## 2049. Count Nodes With the Highest Score
@@ -142,7 +353,55 @@ comments: True
 -   Tags: stack, tree, design, binary search tree, binary tree, iterator
 
 ```python title="1586. Binary Search Tree Iterator II - Python Solution"
---8<-- "1586_binary_search_tree_iterator_ii.py"
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# BST
+class BSTIterator:
+    def __init__(self, root: Optional[TreeNode]):
+        self.nodes = self._inorder(root)
+        self.index = -1
+        self.size = len(self.nodes)
+
+    def _inorder(self, node):
+        if not node:
+            return []
+        return (
+            self._inorder(node.left) + [node.val] + self._inorder(node.right)
+        )
+
+    def hasNext(self) -> bool:
+        return self.index < self.size - 1
+
+    def next(self) -> int:
+        self.index += 1
+        return self.nodes[min(self.index, self.size - 1)]
+
+    def hasPrev(self) -> bool:
+        return self.index > 0
+
+    def prev(self) -> int:
+        self.index -= 1
+        return self.nodes[max(self.index, 0)]
+
+
+root = build([7, 3, 15, None, None, 9, 20])
+print(root)
+#   7__
+#  /   \
+# 3     15
+#      /  \
+#     9    20
+obj = BSTIterator(root)
+print(obj.next())  # 3
+print(obj.next())  # 7
+print(obj.hasNext())  # True
+print(obj.prev())  # 3
+print(obj.prev())  # None
+
 ```
 
 ## 2773. Height of Special Binary Tree

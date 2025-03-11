@@ -52,7 +52,41 @@ F --> I((None))
 ```
 
 ```python title="203. Remove Linked List Elements - Python Solution"
---8<-- "0203_remove_linked_list_elements.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Iterative
+def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
+    dummy = ListNode(0)
+    dummy.next = head
+    cur = dummy
+
+    while cur.next:
+        if cur.next.val == val:
+            cur.next = cur.next.next
+        else:
+            cur = cur.next
+
+    return dummy.next
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |  Iterative  |      O(N)       |    O(1)      |
+# |-------------|-----------------|--------------|
+
+
+nums = [1, 2, 6, 3, 4, 5, 6]
+val = 6
+head = ListNode.create(nums)
+print(head)
+# 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6
+print(removeElements(head, val))
+# 1 -> 2 -> 3 -> 4 -> 5
+
 ```
 
 ## 707. Design Linked List
@@ -63,7 +97,66 @@ F --> I((None))
 -   Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
 
 ```python title="707. Design Linked List - Python Solution"
---8<-- "0707_design_linked_list.py"
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
+class MyLinkedList:
+
+    def __init__(self):
+        self.dummy = ListNode()
+        self.size = 0
+
+    def get(self, index: int) -> int:
+        if index < 0 or index >= self.size:
+            return -1
+
+        current = self.dummy.next
+        for _ in range(index):
+            current = current.next
+
+        return current.val
+
+    def addAtHead(self, val: int) -> None:
+        self.dummy.next = ListNode(val, self.dummy.next)
+        self.size += 1
+
+    def addAtTail(self, val: int) -> None:
+        current = self.dummy
+        while current.next:
+            current = current.next
+        current.next = ListNode(val)
+        self.size += 1
+
+    def addAtIndex(self, index: int, val: int) -> None:
+        if index < 0 or index > self.size:
+            return
+
+        current = self.dummy
+        for i in range(index):
+            current = current.next
+        current.next = ListNode(val, current.next)
+        self.size += 1
+
+    def deleteAtIndex(self, index: int) -> None:
+        if index < 0 or index >= self.size:
+            return
+
+        current = self.dummy
+        for i in range(index):
+            current = current.next
+        current.next = current.next.next
+        self.size -= 1
+
+
+ll = MyLinkedList()
+ll.addAtHead(1)
+ll.addAtTail(3)
+ll.addAtIndex(1, 2)  # 1 -> 2 -> 3
+print(ll.get(1))  # 2
+
 ```
 
 ## 206. Reverse Linked List
@@ -90,7 +183,50 @@ B --> A((1))
 ```
 
 ```python title="206. Reverse Linked List - Python Solution"
---8<-- "0206_reverse_linked_list.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Iterative
+def reverseListIterative(head: Optional[ListNode]) -> Optional[ListNode]:
+    cur = head
+    prev = None
+
+    while cur:
+        temp = cur.next
+        cur.next = prev
+
+        prev = cur
+        cur = temp
+
+    return prev
+
+
+# Recursive
+def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
+    def reverse(cur, prev):
+        if not cur:
+            return prev
+
+        temp = cur.next
+        cur.next = prev
+
+        return reverse(temp, cur)
+
+    return reverse(head, None)
+
+
+nums = [1, 2, 3, 4, 5]
+head1 = ListNode.create(nums)
+print(head1)
+# 1 -> 2 -> 3 -> 4 -> 5
+print(reverseListIterative(head1))
+# 5 -> 4 -> 3 -> 2 -> 1
+head2 = ListNode.create(nums)
+print(reverseListRecursive(head2))
+# 5 -> 4 -> 3 -> 2 -> 1
+
 ```
 
 ## 237. Delete Node in a Linked List
@@ -101,7 +237,19 @@ B --> A((1))
 -   Delete a node in a singly linked list. You are given only the node to be deleted.
 
 ```python title="237. Delete Node in a Linked List - Python Solution"
---8<-- "0237_delete_node_in_a_linked_list.py"
+from template import ListNode
+
+
+def deleteNode(node: ListNode) -> None:
+    node.val = node.next.val
+    node.next = node.next.next
+
+
+head = ListNode.create([4, 5, 1, 9])
+node = head.next
+deleteNode(node)
+print(head)  # 4 -> 1 -> 9
+
 ```
 
 ## 2487. Remove Nodes From Linked List
@@ -112,7 +260,55 @@ B --> A((1))
 -   Remove all nodes from a linked list that have a value greater than `maxValue`.
 
 ```python title="2487. Remove Nodes From Linked List - Python Solution"
---8<-- "2487_remove_nodes_from_linked_list.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Recursive
+def removeNodesRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
+    if not head:
+        return None
+
+    head.next = removeNodesRecursive(head.next)
+
+    if head.next and head.val < head.next.val:
+        return head.next
+
+    return head
+
+
+# Iterative
+def removeNodesIterative(head: Optional[ListNode]) -> Optional[ListNode]:
+    stack = []
+    cur = head
+
+    while cur:
+        # pop all nodes in stack that are smaller than cur
+        while stack and cur.val > stack[-1].val:
+            stack.pop()
+
+        stack.append(cur)
+        cur = cur.next
+
+    # link all nodes in stack
+    dummy = ListNode()
+    cur = dummy
+
+    for node in stack:
+        cur.next = node
+        cur = cur.next
+
+    return dummy.next
+
+
+head = [5, 2, 13, 3, 8]
+head1 = ListNode.create(head)
+print(head1)  # 5 -> 2 -> 13 -> 3 -> 8
+print(removeNodesRecursive(head1))  # 13 -> 8
+head2 = ListNode.create(head)
+print(removeNodesIterative(head2))  # 13 -> 8
+
 ```
 
 ## 24. Swap Nodes in Pairs
@@ -123,7 +319,34 @@ B --> A((1))
 -   Given a linked list, swap every two adjacent nodes and return its head.
 
 ```python title="24. Swap Nodes in Pairs - Python Solution"
---8<-- "0024_swap_nodes_in_pairs.py"
+from typing import Optional
+
+from template import ListNode
+
+
+def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
+    dummy = ListNode(next=head)
+    cur = dummy
+
+    while cur.next and cur.next.next:
+        temp = cur.next
+        temp1 = cur.next.next.next
+
+        cur.next = cur.next.next
+        cur.next.next = temp
+        temp.next = temp1
+        cur = cur.next.next
+
+    return dummy.next
+
+
+nums = [1, 2, 3, 4, 5]
+head = ListNode.create(nums)
+print(head)
+# 1 -> 2 -> 3 -> 4 -> 5
+print(swapPairs(head))
+# 2 -> 1 -> 4 -> 3 -> 5
+
 ```
 
 ## 19. Remove Nth Node From End of List
@@ -134,7 +357,34 @@ B --> A((1))
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
 ```python title="19. Remove Nth Node From End of List - Python Solution"
---8<-- "0019_remove_nth_node_from_end_of_list.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Linked List
+def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
+    dummy = ListNode(0, head)
+    fast = slow = dummy
+
+    for _ in range(n + 1):
+        fast = fast.next
+
+    while fast:
+        fast = fast.next
+        slow = slow.next
+
+    slow.next = slow.next.next
+
+    return dummy.next
+
+
+head = [1, 2, 3, 4, 5]
+n = 2
+head = ListNode.create(head)
+print(head)  # 1 -> 2 -> 3 -> 4 -> 5
+print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
+
 ```
 
 ## 160. Intersection of Two Linked Lists
@@ -156,7 +406,65 @@ c2 --> c3((c3))
 ```
 
 ```python title="160. Intersection of Two Linked Lists - Python Solution"
---8<-- "0160_intersection_of_two_linked_lists.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Hash Set
+def getIntersectionNodeHash(
+    headA: ListNode, headB: ListNode
+) -> Optional[ListNode]:
+    if not headA or not headB:
+        return None
+
+    visited = set()
+    cur = headA
+    while cur:
+        visited.add(cur)
+        cur = cur.next
+
+    cur = headB
+    while cur:
+        if cur in visited:
+            return cur
+        cur = cur.next
+
+    return None
+
+
+# Two Pointers
+def getIntersectionNodeTP(
+    headA: ListNode, headB: ListNode
+) -> Optional[ListNode]:
+    if not headA or not headB:
+        return None
+
+    a, b = headA, headB
+
+    while a != b:
+        a = a.next if a else headB
+        b = b.next if b else headA
+
+    return a
+
+
+listA = [4, 1, 8, 4, 5]
+listB = [5, 6, 1, 8, 4, 5]
+headA = ListNode.create(listA)
+print(headA)
+# 4 -> 1 -> 8 -> 4 -> 5
+headB = ListNode.create(listB)
+print(headB)
+# 5 -> 6 -> 1 -> 8 -> 4 -> 5
+
+headA.intersect(headB, 8)
+
+print(getIntersectionNodeHash(headA, headB))
+# 8 -> 4 -> 5
+print(getIntersectionNodeTP(headA, headB))
+# 8 -> 4 -> 5
+
 ```
 
 ## 141. Linked List Cycle
@@ -182,11 +490,54 @@ D --> B
 ```
 
 ```python title="141. Linked List Cycle - Python Solution"
---8<-- "0141_linked_list_cycle.py"
+from typing import Optional
+
+from template import ListNode
+
+
+def hasCycle(head: Optional[ListNode]) -> bool:
+    slow, fast = head, head
+
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+
+        if slow == fast:
+            return True
+
+    return False
+
+
+print(hasCycle(ListNode.create([3, 2, 0, -4])))  # False
+print(hasCycle(ListNode.create([3, 2, 0, -4], 1)))  # True
+
 ```
 
 ```cpp title="141. Linked List Cycle - C++ Solution"
---8<-- "cpp/0141_linked_list_cycle.cc"
+#include <iostream>
+
+struct ListNode {
+    int val;
+    ListNode* next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
+class Solution {
+   public:
+    bool hasCycle(ListNode* head) {
+        ListNode* slow = head;
+        ListNode* fast = head;
+
+        while (fast && fast->next) {
+            slow = slow->next;
+            fast = fast->next->next;
+
+            if (fast == slow) return true;
+        }
+        return false;
+    }
+};
+
 ```
 
 ## 142. Linked List Cycle II
@@ -205,11 +556,67 @@ D --> B
 ```
 
 ```python title="142. Linked List Cycle II - Python Solution"
---8<-- "0142_linked_list_cycle_ii.py"
+from typing import Optional
+
+from template import ListNode
+
+
+def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
+    slow, fast = head, head
+
+    while fast and fast.next:
+        fast = fast.next.next
+        slow = slow.next
+
+        if slow == fast:
+            slow = head
+            while slow != fast:
+                slow = slow.next
+                fast = fast.next
+            return slow
+
+    return None
+
+
+head1 = ListNode.create([3, 2, 0, -4], 1)
+print(detectCycle(head1).val)  # 2
+head2 = ListNode.create([3, 2, 0, -4])
+print(detectCycle(head2))  # None
+
 ```
 
 ```cpp title="142. Linked List Cycle II - C++ Solution"
---8<-- "cpp/0142_linked_list_cycle_ii.cc"
+#include <iostream>
+
+struct ListNode {
+    int val;
+    ListNode* next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
+class Solution {
+   public:
+    ListNode* detectCycle(ListNode* head) {
+        ListNode* slow = head;
+        ListNode* fast = head;
+
+        while (fast && fast->next) {
+            slow = slow->next;
+            fast = fast->next->next;
+
+            if (fast == slow) {
+                slow = head;
+                while (slow != fast) {
+                    slow = slow->next;
+                    fast = fast->next;
+                }
+                return slow;
+            }
+        }
+        return nullptr;
+    }
+};
+
 ```
 
 ## 2816. Double a Number Represented as a Linked List
@@ -220,7 +627,34 @@ D --> B
 -   Given a number represented as a linked list, double it and return the resulting linked list.
 
 ```python title="2816. Double a Number Represented as a Linked List - Python Solution"
---8<-- "2816_double_a_number_represented_as_a_linked_list.py"
+from typing import Optional
+
+from template import ListNode
+
+
+def doubleIt(head: Optional[ListNode]) -> Optional[ListNode]:
+
+    def twice(node):
+        if not node:
+            return 0
+        doubled_value = node.val * 2 + twice(node.next)
+        node.val = doubled_value % 10
+        return doubled_value // 10
+
+    carry = twice(head)
+
+    if carry:
+        head = ListNode(val=carry, next=head)
+
+    return head
+
+
+head = ListNode.create([1, 2, 3, 4])
+print(head)
+# 1 -> 2 -> 3 -> 4
+print(doubleIt(head))
+# 2 -> 4 -> 6 -> 8
+
 ```
 
 ## 2. Add Two Numbers
@@ -231,9 +665,75 @@ D --> B
 -   Represent the sum of two numbers as a linked list.
 
 ```python title="2. Add Two Numbers - Python Solution"
---8<-- "0002_add_two_numbers.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Linked List
+def addTwoNumbers(
+    l1: Optional[ListNode], l2: Optional[ListNode]
+) -> Optional[ListNode]:
+    dummy = ListNode(0)
+    cur = dummy
+    carry = 0
+
+    while l1 or l2:
+        v1 = l1.val if l1 else 0
+        v2 = l2.val if l2 else 0
+
+        carry, val = divmod(v1 + v2 + carry, 10)
+        cur.next = ListNode(val)
+        cur = cur.next
+
+        if l1:
+            l1 = l1.next
+        if l2:
+            l2 = l2.next
+
+    if carry:
+        cur.next = ListNode(val=carry)
+
+    return dummy.next
+
+
+l1 = ListNode.create([2, 4, 3])
+l2 = ListNode.create([5, 6, 4])
+print(addTwoNumbers(l1, l2))  # 7 -> 0 -> 8
+
 ```
 
 ```cpp title="2. Add Two Numbers - C++ Solution"
---8<-- "cpp/0002_add_two_numbers.cc"
+struct ListNode {
+    int val;
+    ListNode* next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode* next) : val(x), next(next) {}
+};
+
+class Solution {
+   public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode dummy;
+        ListNode* cur = &dummy;
+        int carry = 0;
+
+        while (l1 || l2 || carry) {
+            if (l1) {
+                carry += l1->val;
+                l1 = l1->next;
+            }
+            if (l2) {
+                carry += l2->val;
+                l2 = l2->next;
+            }
+            cur->next = new ListNode(carry % 10);
+            cur = cur->next;
+            carry /= 10;
+        }
+        return dummy.next;
+    }
+};
+
 ```

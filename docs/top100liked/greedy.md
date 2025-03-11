@@ -17,11 +17,112 @@ comments: True
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
---8<-- "0121_best_time_to_buy_and_sell_stock.py"
+from typing import List
+
+
+# Brute Force
+def maxProfitBF(prices: List[int]) -> int:
+    max_profit = 0
+    n = len(prices)
+    for i in range(n):
+        for j in range(i + 1, n):
+            max_profit = max(max_profit, prices[j] - prices[i])
+
+    return max_profit
+
+
+# DP
+def maxProfitDP(prices: List[int]) -> int:
+    dp = [[0] * 2 for _ in range(len(prices))]
+    dp[0][0] = -prices[0]  # buy
+    dp[0][1] = 0  # sell
+
+    for i in range(1, len(prices)):
+        dp[i][0] = max(dp[i - 1][0], -prices[i])  # the lowest price to buy
+        dp[i][1] = max(dp[i - 1][1], dp[i - 1][0] + prices[i])
+
+    return dp[-1][1]
+
+
+# Greedy
+def maxProfitGreedy(prices: List[int]) -> int:
+    max_profit = 0
+    seen_min = prices[0]
+
+    for i in range(1, len(prices)):
+        max_profit = max(max_profit, prices[i] - seen_min)
+        seen_min = min(seen_min, prices[i])
+
+    return max_profit
+
+
+# Fast Slow Pointers
+def maxProfitFS(prices: List[int]) -> int:
+    max_profit = 0
+    slow, fast = 0, 1
+
+    while fast < len(prices):
+        if prices[fast] > prices[slow]:
+            max_profit = max(max_profit, prices[fast] - prices[slow])
+        else:
+            slow = fast
+        fast += 1
+
+    return max_profit
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# | Brute Force|  O(n^2)|  O(1)   |
+# | DP         |  O(n)  |  O(n)   |
+# | Greedy     |  O(n)  |  O(1)   |
+# | Fast Slow  |  O(n)  |  O(1)   |
+# |------------|--------|---------|
+
+
+prices = [7, 1, 5, 3, 6, 4]
+print(maxProfitBF(prices))  # 5
+print(maxProfitDP(prices))  # 5
+print(maxProfitGreedy(prices))  # 5
+print(maxProfitFS(prices))  # 5
+
 ```
 
 ```cpp title="121. Best Time to Buy and Sell Stock - C++ Solution"
---8<-- "cpp/0121_best_time_to_buy_and_sell_stock.cc"
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+class Solution
+{
+public:
+    int maxProfit(vector<int> &prices)
+    {
+        if (prices.size() <= 1)
+            return 0;
+
+        int seen_min = prices[0];
+        int res = 0;
+
+        for (int &price : prices)
+        {
+            res = max(res, price - seen_min);
+            seen_min = min(seen_min, price);
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    vector<int> prices = {7, 1, 5, 3, 6, 4};
+    Solution obj;
+    cout << obj.maxProfit(prices) << endl;
+    return 0;
+}
+
 ```
 
 ## 55. Jump Game
@@ -48,11 +149,55 @@ comments: True
 |   8   |   0   |       8       |     8     |          True           |
 
 ```python title="55. Jump Game - Python Solution"
---8<-- "0055_jump_game.py"
+from typing import List
+
+
+# Greedy - Interval
+def canJump(nums: List[int]) -> bool:
+    maxReach = 0
+    i = 0
+    n = len(nums)
+
+    while i <= maxReach:
+        maxReach = max(maxReach, i + nums[i])
+        if maxReach >= n - 1:
+            return True
+        i += 1
+
+    return False
+
+
+print(canJump([2, 3, 1, 1, 4, 1, 2, 0, 0]))  # True
+
 ```
 
 ```cpp title="55. Jump Game - C++ Solution"
---8<-- "cpp/0055_jump_game.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Solution {
+   public:
+    bool canJump(vector<int>& nums) {
+        int canReach = 0;
+        int n = nums.size();
+
+        for (int i = 0; i < n; i++) {
+            if (i > canReach) return false;
+            canReach = max(canReach, i + nums[i]);
+        }
+        return true;
+    }
+};
+
+int main() {
+    Solution obj;
+    vector<int> nums = {2, 3, 1, 1, 4};
+    cout << obj.canJump(nums) << endl;
+    return 0;
+}
+
 ```
 
 ## 45. Jump Game II
@@ -65,7 +210,31 @@ comments: True
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dJ7sWiOoK7g?si=3kc-pp4rs3Dk7Jqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python title="45. Jump Game II - Python Solution"
---8<-- "0045_jump_game_ii.py"
+from typing import List
+
+
+# Greedy - Interval
+def jump(nums: List[int]) -> int:
+    n = len(nums)
+    if len(nums) == 1:
+        return 0
+
+    maxReach = 0
+    step = 0
+    left, right = 0, 0
+
+    while right < n - 1:
+        for i in range(left, right + 1):
+            maxReach = max(maxReach, i + nums[i])
+        left = right + 1
+        right = maxReach
+        step += 1
+
+    return step
+
+
+print(jump([2, 3, 1, 1, 4, 2, 1]))  # 3
+
 ```
 
 ## 763. Partition Labels
@@ -75,5 +244,63 @@ comments: True
 -   Tags: hash table, two pointers, string, greedy
 
 ```python title="763. Partition Labels - Python Solution"
---8<-- "0763_partition_labels.py"
+from typing import List
+
+
+# 1. Hashmap
+def partitionLabels1(s: str) -> List[int]:
+    # Time complexity: O(nlogn)
+    # Space complexity: O(n)
+    hashmap = {}
+
+    for i, j in enumerate(s):
+        if j not in hashmap:
+            hashmap[j] = [i, i]
+        else:
+            hashmap[j][1] = i
+
+    intervals = list(hashmap.values())
+    intervals.sort(key=lambda x: x[0])
+
+    if len(intervals) < 2:
+        return len(intervals)
+
+    result = []
+    for i in range(1, len(intervals)):
+        if intervals[i][0] < intervals[i - 1][1]:
+            intervals[i][1] = max(intervals[i][1], intervals[i - 1][1])
+        else:
+            result.append(intervals[i][0])
+
+    result.append(intervals[-1][1] + 1)
+
+    if len(result) == 1:
+        return result
+    else:
+        for i in range(len(result) - 1, 0, -1):
+            result[i] -= result[i - 1]
+        return result
+
+
+# 2. Single Pass Partitioning
+def partitionLabels2(s: str) -> List[int]:
+    # Time complexity: O(n)
+    # Space complexity: O(n)
+    last = {c: i for i, c in enumerate(s)}
+
+    start, end = 0, 0
+    result = []
+
+    for i, c in enumerate(s):
+        end = max(end, last[c])
+        if i == end:
+            result.append(end - start + 1)
+            start = i + 1
+
+    return result
+
+
+print(partitionLabels1("abaccd"))  # [3, 2, 1]
+print(partitionLabels2("abaccd"))  # [3, 2, 1]
+
 ```

@@ -16,7 +16,40 @@ comments: True
 -   Tags: backtracking
 
 ```python title="77. Combinations - Python Solution"
---8<-- "0077_combinations.py"
+import itertools
+from typing import List
+
+
+# Backtracking
+def combine(n: int, k: int) -> List[List[int]]:
+    res = []
+
+    def backtrack(start, path):
+        if len(path) == k:
+            res.append(path[:])
+            return None
+
+        for i in range(start, n + 1):
+            path.append(i)
+            backtrack(i + 1, path)
+            path.pop()
+
+    backtrack(1, [])
+
+    return res
+
+
+# itertools
+def combineItertools(n: int, k: int) -> List[List[int]]:
+    path = itertools.combinations(range(1, n + 1), k)
+    return path
+
+
+print(combine(4, 2))
+# [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]
+print(list(combineItertools(4, 2)))
+# [(1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)]
+
 ```
 
 ## 216. Combination Sum III
@@ -26,7 +59,44 @@ comments: True
 -   Tags: array, backtracking
 
 ```python title="216. Combination Sum III - Python Solution"
---8<-- "0216_combination_sum_iii.py"
+import itertools
+from typing import List
+
+
+# 1. Backtracking
+def combinationSum3(k: int, n: int) -> List[List[int]]:
+    path, result = [], []
+
+    def backtracking(start):
+        if len(path) == k and sum(path) == n:
+            result.append(path[:])
+            return
+
+        for i in range(start, 10):
+            path.append(i)
+            backtracking(i + 1)
+            path.pop()
+
+    backtracking(1)
+
+    return result
+
+
+# 2. Itertools
+def combinationSum3Itertools(k: int, n: int) -> List[List[int]]:
+    combinations = itertools.combinations(range(1, 10), k)
+    result = []
+
+    for i in combinations:
+        if sum(i) == n:
+            result.append(i)
+
+    return result
+
+
+print(combinationSum3(3, 7))  # [[1, 2, 4]]
+print(combinationSum3Itertools(3, 7))  # [(1, 2, 4)]
+
 ```
 
 ## 22. Generate Parentheses
@@ -36,7 +106,37 @@ comments: True
 -   Tags: string, dynamic programming, backtracking
 
 ```python title="22. Generate Parentheses - Python Solution"
---8<-- "0022_generate_parentheses.py"
+from typing import List
+
+
+# Stack
+def generateParenthesis(n: int) -> List[str]:
+    stack = []
+    result = []
+
+    def backtrack(openN, closeN):
+        if openN == closeN == n:
+            result.append("".join(stack))
+            return None
+
+        if openN < n:
+            stack.append("(")
+            backtrack(openN + 1, closeN)
+            stack.pop()
+
+        if closeN < openN:
+            stack.append(")")
+            backtrack(openN, closeN + 1)
+            stack.pop()
+
+    backtrack(0, 0)
+
+    return result
+
+
+print(generateParenthesis(3))
+# ['((()))', '(()())', '(())()', '()(())', '()()()']
+
 ```
 
 ## 301. Remove Invalid Parentheses

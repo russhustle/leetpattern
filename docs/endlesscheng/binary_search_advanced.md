@@ -28,7 +28,31 @@ comments: True
 -   Tags: array, two pointers, binary search, sorting
 
 ```python title="2300. Successful Pairs of Spells and Potions - Python Solution"
---8<-- "2300_successful_pairs_of_spells_and_potions.py"
+import bisect
+from typing import List
+
+
+# Binary Search
+def successfulPairs(
+    spells: List[int], potions: List[int], success: int
+) -> List[int]:
+    potions.sort()
+    res = []
+    n = len(potions)
+
+    for spell in spells:
+        target = (success + spell - 1) // spell
+        index = bisect.bisect_left(potions, target)
+        res.append(n - index)
+
+    return res
+
+
+spells = [5, 1, 3]
+potions = [1, 2, 3, 4, 5]
+success = 7
+print(successfulPairs(spells, potions, success))  # [4, 0, 3]
+
 ```
 
 ## 1385. Find the Distance Value Between Two Arrays
@@ -38,7 +62,28 @@ comments: True
 -   Tags: array, two pointers, binary search, sorting
 
 ```python title="1385. Find the Distance Value Between Two Arrays - Python Solution"
---8<-- "1385_find_the_distance_value_between_two_arrays.py"
+from bisect import bisect_left
+from typing import List
+
+
+# Binary Search
+def findTheDistanceValue(arr1: List[int], arr2: List[int], d: int) -> int:
+    arr2.sort()
+    res = 0
+
+    for x in arr1:
+        i = bisect_left(arr2, x - d)
+        if i == len(arr2) or arr2[i] > x + d:
+            res += 1
+
+    return res
+
+
+arr1 = [4, 5, 8]
+arr2 = [10, 9, 1, 8]
+d = 2
+print(findTheDistanceValue(arr1, arr2, d))  # 2
+
 ```
 
 ## 2389. Longest Subsequence With Limited Sum
@@ -60,7 +105,30 @@ comments: True
 -   Tags: array, hash table, binary search, design, segment tree
 
 ```python title="2080. Range Frequency Queries - Python Solution"
---8<-- "2080_range_frequency_queries.py"
+from bisect import bisect_left, bisect_right
+from collections import defaultdict
+from typing import List
+
+
+# Binary Search
+class RangeFreqQuery:
+    def __init__(self, arr: List[int]):
+        self.freq = defaultdict(list)
+        for idx, val in enumerate(arr):
+            self.freq[val].append(idx)
+
+    def query(self, left: int, right: int, value: int) -> int:
+        idxs = self.freq[value]
+        return bisect_right(idxs, right) - bisect_left(idxs, left)
+
+
+arr = [1, 3, 1, 2, 4, 1, 3, 2, 1]
+rfq = RangeFreqQuery(arr)
+print(rfq.query(0, 4, 1))  # 2
+print(rfq.query(2, 8, 1))  # 3
+print(rfq.query(0, 8, 3))  # 2
+print(rfq.query(4, 7, 2))  # 1
+
 ```
 
 ## 2563. Count the Number of Fair Pairs
@@ -76,7 +144,44 @@ comments: True
 -   Tags: array, binary search, sorting
 
 ```cpp title="2070. Most Beautiful Item for Each Query - C++ Solution"
---8<-- "cpp/2070_most_beautiful_item_for_each_query.cc"
+#include <algorithm>
+#include <iostream>
+#include <numeric>
+#include <ranges>
+#include <vector>
+using namespace std;
+
+vector<int> maximumBeauty(vector<vector<int>>& items, vector<int>& queries) {
+    ranges::sort(items, {}, [](auto& item) { return item[0]; });
+    vector<int> idx(queries.size());
+    iota(idx.begin(), idx.end(), 0);
+    ranges::sort(idx, {}, [&](int i) { return queries[i]; });
+
+    vector<int> res(queries.size());
+    int max_beauty = 0, j = 0;
+    for (int i : idx) {
+        int q = queries[i];
+        while (j < items.size() && items[j][0] <= q) {
+            max_beauty = max(max_beauty, items[j][1]);
+            j++;
+        }
+        res[i] = max_beauty;
+    }
+    return res;
+}
+
+int main() {
+    vector<vector<int>> items = {{1, 2}, {2, 4}, {3, 2}, {5, 6}, {3, 5}};
+    vector<int> queries = {1, 2, 3, 4, 5, 6};
+    vector<int> res = maximumBeauty(items, queries);
+    // 2 4 5 5 6 6
+    for (int i : res) {
+        cout << i << " ";
+    }
+    cout << endl;
+    return 0;
+}
+
 ```
 
 ## 981. Time Based Key-Value Store
@@ -86,7 +191,42 @@ comments: True
 -   Tags: hash table, string, binary search, design
 
 ```python title="981. Time Based Key-Value Store - Python Solution"
---8<-- "0981_time_based_key_value_store.py"
+from collections import defaultdict
+
+
+# Binary Search
+class TimeMap:
+
+    def __init__(self):
+        self.keys = defaultdict(list)
+        self.times = dict()
+
+    def set(self, key: str, value: str, timestamp: int) -> None:
+        self.keys[key].append(timestamp)
+        self.times[timestamp] = value
+
+    def get(self, key: str, timestamp: int) -> str:
+        tmp = self.keys[key]
+
+        left, right = 0, len(tmp) - 1
+        while left <= right:
+            mid = left + (right - left) // 2
+            if tmp[mid] > timestamp:
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        return self.times[tmp[right]] if right >= 0 else ""
+
+
+obj = TimeMap()
+obj.set("foo", "bar", 1)
+print(obj.get("foo", 1))  # bar
+print(obj.get("foo", 3))  # bar
+obj.set("foo", "bar2", 4)
+print(obj.get("foo", 4))  # bar2
+print(obj.get("foo", 5))  # bar2
+
 ```
 
 ## 1146. Snapshot Array
@@ -132,7 +272,23 @@ comments: True
 -   Tags: array
 
 ```python title="1287. Element Appearing More Than 25% In Sorted Array - Python Solution"
---8<-- "1287_element_appearing_more_than_25_in_sorted_array.py"
+from bisect import bisect_left, bisect_right
+from typing import List
+
+
+# Binary Search
+def findSpecialInteger(arr: List[int]) -> int:
+    n = len(arr)
+    span = n // 4 + 1
+
+    for i in range(0, n, span):
+        left = bisect_left(arr, arr[i])
+        right = bisect_right(arr, arr[i])
+        if right - left >= span:
+            return arr[i]
+
+    return -1
+
 ```
 
 ## 1150. Check If a Number Is Majority Element in a Sorted Array

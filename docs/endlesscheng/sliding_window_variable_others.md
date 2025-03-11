@@ -44,7 +44,33 @@ comments: True
 -   Tags: hash table, string, sliding window
 
 ```python title="424. Longest Repeating Character Replacement - Python Solution"
---8<-- "0424_longest_repeating_character_replacement.py"
+from collections import defaultdict
+
+
+# Sliding Window - Variable
+def characterReplacement(s: str, k: int) -> int:
+    left = 0
+    maxCount = 0
+    counts = defaultdict(int)
+    maxLen = 0
+
+    for right in range(len(s)):
+        counts[s[right]] += 1
+        maxCount = max(maxCount, counts[s[right]])
+
+        while right - left + 1 - maxCount > k:
+            counts[s[left]] -= 1
+            left += 1
+
+        maxLen = max(maxLen, right - left + 1)
+
+    return maxLen
+
+
+s = "ABAB"
+k = 2
+print(characterReplacement(s, k))  # 4
+
 ```
 
 ## 438. Find All Anagrams in a String
@@ -54,7 +80,38 @@ comments: True
 -   Tags: hash table, string, sliding window
 
 ```python title="438. Find All Anagrams in a String - Python Solution"
---8<-- "0438_find_all_anagrams_in_a_string.py"
+from typing import List
+
+
+# Sliding Window Fixed Size
+def findAnagrams(s: str, p: str) -> List[int]:
+    n, k = len(s), len(p)
+    target = [0 for _ in range(26)]
+    for ch in p:
+        target[ord(ch) - ord("a")] += 1
+
+    count = [0 for _ in range(26)]
+    left = 0
+    res = []
+
+    for right in range(n):
+        count[ord(s[right]) - ord("a")] += 1
+        if right < k - 1:
+            continue
+
+        if count == target:
+            res.append(left)
+
+        count[ord(s[left]) - ord("a")] -= 1
+        left += 1
+
+    return res
+
+
+s = "cbaebabacd"
+p = "abc"
+print(findAnagrams(s, p))  # [0, 6]
+
 ```
 
 ## 1712. Ways to Split Array Into Three Subarrays

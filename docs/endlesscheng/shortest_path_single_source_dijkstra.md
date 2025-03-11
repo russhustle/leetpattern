@@ -58,7 +58,92 @@ graph LR
     -   Space Complexity: O(V)
 
 ```python title="743. Network Delay Time - Python Solution"
---8<-- "0743_network_delay_time.py"
+import heapq
+from collections import defaultdict
+from typing import List
+
+from helper import complexity
+
+
+# 1. Dijkstra - Set
+def networkDelayTime1(times: List[List[int]], n: int, k: int) -> int:
+    graph = defaultdict(list)
+    for u, v, w in times:
+        graph[u].append((v, w))
+
+    heap = [(0, k)]
+    visit = set()
+    t = 0
+
+    while heap:
+        w1, n1 = heapq.heappop(heap)
+        if n1 in visit:
+            continue
+
+        visit.add(n1)
+        t = w1
+
+        for n2, w2 in graph[n1]:
+            heapq.heappush(heap, (w1 + w2, n2))
+
+    return t if len(visit) == n else -1
+
+
+# 2. Dijkstra - Dict
+def networkDelayTime2(times: List[List[int]], n: int, k: int) -> int:
+    graph = defaultdict(list)
+    for u, v, w in times:
+        graph[u].append((v, w))
+
+    heap = [(0, k)]
+    dist = defaultdict(int)
+
+    while heap:
+        w1, n1 = heapq.heappop(heap)
+        if n1 in dist:
+            continue
+
+        dist[n1] = w1
+
+        for n2, w2 in graph[n1]:
+            heapq.heappush(heap, (w1 + w2, n2))
+
+    return max(dist.values()) if len(dist) == n else -1
+
+
+# Bellman-Ford
+def networkDelayTimeBF(times: List[List[int]], n: int, k: int) -> int:
+    delay = {i: float("inf") for i in range(1, n + 1)}
+    delay[k] = 0
+
+    for _ in range(n - 1):
+        for u, v, t in times:
+            delay[v] = min(delay[v], delay[u] + t)
+
+    max_delay = max(delay.values())
+    return max_delay if max_delay < float("inf") else -1
+
+
+table = [
+    ["Dijkstra", "O(E*logV)", "O(V+E)"],
+    ["Bellman-Ford", "O(E*V)", "O(V)"],
+]
+complexity(table)
+# |--------------|-----------|--------|
+# | Approach     | Time      | Space  |
+# |--------------|-----------|--------|
+# | Dijkstra     | O(E*logV) | O(V+E) |
+# | Bellman-Ford | O(E*V)    | O(V)   |
+# |--------------|-----------|--------|
+
+
+times = [[2, 1, 1], [2, 3, 1], [3, 4, 1]]
+n = 4
+k = 2
+print(networkDelayTime1(times, n, k))  # 2
+print(networkDelayTime2(times, n, k))  # 2
+print(networkDelayTimeBF(times, n, k))  # 2
+
 ```
 
 ## 3341. Find Minimum Time to Reach Last Room I
@@ -86,7 +171,89 @@ graph LR
 -   Tags: array, graph, heap priority queue, shortest path
 
 ```python title="1514. Path with Maximum Probability - Python Solution"
---8<-- "1514_path_with_maximum_probability.py"
+import heapq
+from collections import defaultdict
+from typing import List
+
+
+# Dijkstra - Dict
+def maxProbability1(
+    n: int,
+    edges: List[List[int]],
+    succProb: List[float],
+    start_node: int,
+    end_node: int,
+) -> float:
+    graph = defaultdict(list)
+    for i, (u, v) in enumerate(edges):
+        graph[u].append((v, succProb[i]))
+        graph[v].append((u, succProb[i]))
+
+    heap = [(-1, start_node)]
+    max_prob = {i: 0.0 for i in range(n)}
+    max_prob[start_node] = 1.0
+
+    while heap:
+        p1, n1 = heapq.heappop(heap)
+
+        if n1 == end_node:
+            return -p1
+
+        for n2, p2 in graph[n1]:
+            p2 *= -p1
+            if p2 > max_prob[n2]:
+                max_prob[n2] = p2
+                heapq.heappush(heap, (-p2, n2))
+
+    return 0.0
+
+
+# Dijkstra - Set
+def maxProbability2(
+    n: int,
+    edges: List[List[int]],
+    succProb: List[float],
+    start_node: int,
+    end_node: int,
+) -> float:
+    graph = defaultdict(list)
+    for i, (u, v) in enumerate(edges):
+        graph[u].append((v, succProb[i]))
+        graph[v].append((u, succProb[i]))
+
+    heap = [(-1, start_node)]
+    visited = set()
+
+    while heap:
+        p1, n1 = heapq.heappop(heap)
+        visited.add(n1)
+
+        if n1 == end_node:
+            return -p1
+
+        for n2, p2 in graph[n1]:
+            if n2 not in visited:
+                heapq.heappush(heap, (p1 * p2, n2))
+
+    return 0.0
+
+
+# |------------|-----------|-----------|
+# |  Approach  |    Time   |   Space   |
+# |------------|-----------|-----------|
+# |  Dijkstra  | O(E log V)|   O(E)    |
+# |------------|-----------|-----------|
+
+
+n = 3
+edges = [[0, 1], [1, 2], [0, 2]]
+succProb = [0.5, 0.5, 0.2]
+start = 0
+end = 2
+
+print(maxProbability1(n, edges, succProb, start, end))  # 0.25
+print(maxProbability2(n, edges, succProb, start, end))  # 0.25
+
 ```
 
 ## 3342. Find Minimum Time to Reach Last Room II
@@ -103,7 +270,41 @@ graph LR
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
 ```python title="1631. Path With Minimum Effort - Python Solution"
---8<-- "1631_path_with_minimum_effort.py"
+import heapq
+from typing import List
+
+
+# Prim
+def minimumEffortPath(heights: List[List[int]]) -> int:
+    m, n = len(heights), len(heights[0])
+    directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+    visited = [[False] * n for _ in range(m)]
+    heap = [(0, 0, 0)]  # (effort, row, col)
+
+    while heap:
+        effort, r, c = heapq.heappop(heap)
+
+        if visited[r][c]:
+            continue
+
+        if r == m - 1 and c == n - 1:
+            return effort
+
+        visited[r][c] = True
+
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
+
+            if 0 <= nr < m and 0 <= nc < n and not visited[nr][nc]:
+                updated = max(effort, abs(heights[r][c] - heights[nr][nc]))
+                heapq.heappush(heap, (updated, nr, nc))
+
+    return -1
+
+
+heights = [[1, 2, 2], [3, 8, 2], [5, 3, 5]]
+print(minimumEffortPath(heights))  # 2
+
 ```
 
 ## 1786. Number of Restricted Paths From First to Last Node
@@ -125,7 +326,57 @@ graph LR
 -   Tags: dynamic programming, graph, topological sort, shortest path
 
 ```python title="1976. Number of Ways to Arrive at Destination - Python Solution"
---8<-- "1976_number_of_ways_to_arrive_at_destination.py"
+import heapq
+from typing import List
+
+
+# Dijkstra
+def countPaths(n: int, roads: List[List[int]]) -> int:
+    mod = 10**9 + 7
+    graph = [[] for _ in range(n)]
+    for u, v, w in roads:
+        graph[u].append((v, w))
+        graph[v].append((u, w))
+
+    dist = [float("inf") for _ in range(n)]
+    dist[0] = 0
+    count = [0 for _ in range(n)]
+    count[0] = 1
+
+    heap = [(0, 0)]
+
+    while heap:
+        d, u = heapq.heappop(heap)
+        if d > dist[u]:
+            continue
+
+        for v, w in graph[u]:
+            if dist[u] + w < dist[v]:
+                dist[v] = dist[u] + w
+                count[v] = count[u]
+                heapq.heappush(heap, (dist[v], v))
+            elif dist[u] + w == dist[v]:
+                count[v] += count[u]
+                count[v] %= mod
+
+    return count[-1]
+
+
+n = 7
+roads = [
+    [0, 6, 7],
+    [0, 1, 2],
+    [1, 2, 3],
+    [1, 3, 3],
+    [6, 3, 3],
+    [3, 5, 1],
+    [6, 5, 1],
+    [2, 5, 1],
+    [0, 4, 5],
+    [4, 6, 2],
+]
+print(countPaths(n, roads))  # 4
+
 ```
 
 ## 778. Swim in Rising Water
@@ -138,7 +389,42 @@ graph LR
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
 ```python title="778. Swim in Rising Water - Python Solution"
---8<-- "0778_swim_in_rising_water.py"
+import heapq
+from typing import List
+
+
+# Dijkstra's
+def swimInWater(grid: List[List[int]]) -> int:
+    n = len(grid)
+    visited = set()
+    minHeap = [(grid[0][0], 0, 0)]
+    directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+    visited.add((0, 0))
+
+    while minHeap:
+        time, r, c = heapq.heappop(minHeap)
+
+        if r == n - 1 and c == n - 1:
+            return time
+
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
+
+            if nr in range(n) and nc in range(n) and (nr, nc) not in visited:
+                visited.add((nr, nc))
+                heapq.heappush(minHeap, (max(time, grid[nr][nc]), nr, nc))
+
+
+grid = [
+    [0, 1, 2, 3, 4],
+    [24, 23, 22, 21, 5],
+    [12, 13, 14, 15, 16],
+    [11, 17, 18, 19, 20],
+    [10, 9, 8, 7, 6],
+]
+print(swimInWater(grid))  # 16
+
 ```
 
 ## 2662. Minimum Cost of a Path With Special Roads
@@ -172,7 +458,42 @@ graph LR
 -   Tags: graph, heap priority queue, shortest path
 
 ```python title="882. Reachable Nodes In Subdivided Graph - Python Solution"
---8<-- "0882_reachable_nodes_in_subdivided_graph.py"
+import heapq
+from typing import List
+
+
+# Dijkstra's
+def reachableNodes(self, edges: List[List[int]], maxMoves: int, n: int) -> int:
+    graph = {i: {} for i in range(n)}
+    for u, v, cnt in edges:
+        graph[u][v] = cnt
+        graph[v][u] = cnt
+
+    heap = [(-maxMoves, 0)]
+    seen = {}
+
+    while heap:
+        moves, node = heapq.heappop(heap)
+        if node in seen:
+            continue
+        seen[node] = -moves
+        for nxt, cnt in graph[node].items():
+            movesLeft = -moves - cnt - 1
+            if nxt not in seen and movesLeft >= 0:
+                heapq.heappush(heap, (-movesLeft, nxt))
+
+    res = len(seen)
+    for u, v, cnt in edges:
+        res += min(seen.get(u, 0) + seen.get(v, 0), cnt)
+
+    return res
+
+
+edges = [[0, 1, 10], [0, 2, 1], [1, 2, 2]]
+maxMoves = 6
+n = 3
+print(reachableNodes(None, edges, maxMoves, n))  # 13
+
 ```
 
 ## 2203. Minimum Weighted Subgraph With the Required Paths
@@ -216,7 +537,74 @@ graph TD
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python title="787. Cheapest Flights Within K Stops - Python Solution"
---8<-- "0787_cheapest_flights_within_k_stops.py"
+import heapq
+from collections import defaultdict
+from typing import List
+
+
+# Bellman-Ford
+def findCheapestPriceBF(
+    n: int, flights: List[List[int]], src: int, dst: int, k: int
+) -> int:
+    prices = [float("inf") for _ in range(n)]
+    prices[src] = 0
+
+    for _ in range(k + 1):
+        temp = prices[:]
+        for u, v, w in flights:
+            temp[v] = min(temp[v], prices[u] + w)
+        prices = temp
+
+    return prices[dst] if prices[dst] != float("inf") else -1
+
+
+# Dijkstra
+def findCheapestPriceDijkstra(
+    n: int, flights: List[List[int]], src: int, dst: int, k: int
+) -> int:
+    graph = defaultdict(list)
+    for u, v, w in flights:
+        graph[u].append((v, w))
+
+    heap = [(0, src, 0)]  # (price, city, stops)
+    visited = defaultdict(int)  # {city: stops}
+
+    while heap:
+        price, city, stops = heapq.heappop(heap)
+
+        if city == dst:
+            return price
+
+        if stops > k:
+            continue
+
+        if city in visited and visited[city] <= stops:
+            continue
+
+        visited[city] = stops
+
+        for neighbor, cost in graph[city]:
+            heapq.heappush(heap, (price + cost, neighbor, stops + 1))
+
+    return -1
+
+
+# |------------|------------------|---------|
+# |  Approach  |       Time       |  Space  |
+# |------------|------------------|---------|
+# |Bellman-Ford|    O(k * E)      |  O(n)   |
+# | Dijkstra   | O(E * log(V))    |  O(n)   |
+# |------------|------------------|---------|
+
+
+n = 4
+flights = [[0, 1, 100], [1, 2, 100], [2, 0, 100], [1, 3, 600], [2, 3, 200]]
+src = 0
+dst = 3
+k = 1
+print(findCheapestPriceBF(n, flights, src, dst, k))  # 700
+print(findCheapestPriceDijkstra(n, flights, src, dst, k))  # 700
+
 ```
 
 ## 2699. Modify Graph Edge Weights

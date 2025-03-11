@@ -30,7 +30,59 @@ comments: True
 - [教你一步步思考 DP：从记忆化搜索到递推（Python/Java/C++/Go）](https://leetcode.cn/problems/palindrome-partitioning-ii/solutions/3588633/jiao-ni-yi-bu-bu-si-kao-dpcong-ji-yi-hua-bnlb)
 
 ```python title="132. Palindrome Partitioning II - Python Solution"
---8<-- "0132_palindrome_partitioning_ii.py"
+from functools import cache
+
+
+# Memoization
+def minCutMemoization(s: str) -> int:
+    @cache
+    def is_palindrome(left, right):
+        if left >= right:
+            return True
+        return s[left] == s[right] and is_palindrome(left + 1, right - 1)
+
+    @cache
+    def dfs(right):
+        if is_palindrome(0, right):
+            return 0
+        res = float("inf")
+        for left in range(1, right + 1):
+            if is_palindrome(left, right):
+                res = min(res, 1 + dfs(left - 1))
+        return res
+
+    return dfs(len(s) - 1)
+
+
+# Tabulation
+def minCutTabulation(s: str) -> int:
+    n = len(s)
+    is_palindrome = [[True] * n for _ in range(n)]
+
+    for left in range(n - 2, -1, -1):
+        for right in range(left + 1, n):
+            is_palindrome[left][right] = (
+                s[left] == s[right] and is_palindrome[left + 1][right - 1]
+            )
+
+    dp = [0 for _ in range(n)]
+
+    for right, is_pal in enumerate(is_palindrome[0]):
+        if is_pal:
+            continue
+        res = float("inf")
+        for left in range(1, right + 1):
+            if is_palindrome[left][right]:
+                res = min(res, 1 + dp[left - 1])
+        dp[right] = res
+
+    return dp[-1]
+
+
+s = "aab"
+print(minCutMemoization(s))  # 1
+print(minCutTabulation(s))  # 1
+
 ```
 
 ## 2707. Extra Characters in a String
@@ -58,7 +110,59 @@ comments: True
 -   Tags: string, dynamic programming
 
 ```python title="91. Decode Ways - Python Solution"
---8<-- "0091_decode_ways.py"
+# DP
+def numDecodingsDP(s: str) -> int:
+    if not s or s[0] == "0":
+        return 0
+
+    n = len(s)
+    dp = [0] * (n + 1)
+    dp[0] = 1
+
+    for i in range(1, n + 1):
+        # Check single digit decode
+        if s[i - 1] != "0":
+            dp[i] += dp[i - 1]
+
+        # Check two digit decode
+        if i > 1 and "10" <= s[i - 2 : i] <= "26":
+            dp[i] += dp[i - 2]
+
+    return dp[n]
+
+
+# DFS
+def numDecodingsDFS(s: str) -> int:
+    memo = {}
+
+    def dfs(i):
+        if i == len(s):
+            return 1
+
+        if s[i] == "0":
+            return 0
+
+        if i in memo:
+            return memo[i]
+
+        # Single digit decode
+        ways = dfs(i + 1)
+
+        # Two digits decode
+        if i + 1 < len(s) and "10" <= s[i : i + 2] <= "26":
+            ways += dfs(i + 2)
+
+        memo[i] = ways
+
+        return ways
+
+    return dfs(0)
+
+
+s = "226"
+print(numDecodingsDP(s))  # 3
+print(numDecodingsDFS(s))  # 3
+
 ```
 
 ## 639. Decode Ways II

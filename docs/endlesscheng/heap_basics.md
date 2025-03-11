@@ -36,11 +36,87 @@ comments: True
 -   Tags: array, heap priority queue
 
 ```python title="1046. Last Stone Weight - Python Solution"
---8<-- "1046_last_stone_weight.py"
+import heapq
+from typing import List
+
+
+# Heap
+def lastStoneWeightHeap(stones: List[int]) -> int:
+    heap = [-stone for stone in stones]
+    heapq.heapify(heap)
+
+    while len(heap) > 1:
+        s1 = heapq.heappop(heap)
+        s2 = heapq.heappop(heap)
+
+        if s1 != s2:
+            heapq.heappush(heap, s1 - s2)
+
+    return -heap[0] if heap else 0
+
+
+# 0/1 Knapsack
+def lastStoneWeightKnapsack(stones: List[int]) -> int:
+    total = sum(stones)
+    target = total // 2
+
+    dp = [0 for _ in range(target + 1)]
+
+    for i in stones:
+        for j in range(target, i - 1, -1):
+            dp[j] = max(dp[j], dp[j - i] + i)
+
+    return total - 2 * dp[target]
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    Heap     |   O(n log n)    |     O(n)     |
+# |  Knapsack   |      O(n)       |     O(n)     |
+# |-------------|-----------------|--------------|
+
+
+stones = [2, 7, 4, 1, 8, 1]
+print(lastStoneWeightHeap(stones))  # 1
+print(lastStoneWeightKnapsack(stones))  # 1
+
 ```
 
 ```cpp title="1046. Last Stone Weight - C++ Solution"
---8<-- "cpp/1046_last_stone_weight.cc"
+#include <iostream>
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+int lastStoneWeight(vector<int> &stones)
+{
+    priority_queue<int> maxHeap(stones.begin(), stones.end());
+
+    while (maxHeap.size() >= 1)
+    {
+        int first = maxHeap.top();
+        maxHeap.pop();
+        int second = maxHeap.top();
+        maxHeap.pop();
+
+        if (first != second)
+        {
+            maxHeap.push(first - second);
+        }
+    }
+
+    return maxHeap.empty() ? 0 : maxHeap.top();
+}
+
+int main()
+{
+    vector<int> stones = {2, 7, 4, 1, 8, 1};
+    cout << lastStoneWeight(stones) << endl; // 1
+    return 0;
+}
+
 ```
 
 ## 3264. Final Array State After K Multiplication Operations I
@@ -50,7 +126,39 @@ comments: True
 -   Tags: array, math, heap priority queue, simulation
 
 ```python title="3264. Final Array State After K Multiplication Operations I - Python Solution"
---8<-- "3264_final_array_state_after_k_multiplication_operations_i.py"
+import heapq
+from typing import List
+
+
+# Brute Force
+def getFinalStateBF(nums: List[int], k: int, multiplier: int) -> List[int]:
+    for _ in range(k):
+        minNum = min(nums)
+        idx = nums.index(minNum)
+        nums[idx] *= multiplier
+
+    return nums
+
+
+# Heap
+def getFinalStateHeap(nums: List[int], k: int, multiplier: int) -> List[int]:
+    minHeap = []
+    for idx, num in enumerate(nums):
+        heapq.heappush(minHeap, (num, idx))
+
+    for _ in range(k):
+        num, idx = heapq.heappop(minHeap)
+        nums[idx] = num * multiplier
+        heapq.heappush(minHeap, (nums[idx], idx))
+
+    return nums
+
+
+k = 5
+multiplier = 2
+print(getFinalStateBF([2, 1, 3, 5, 6], k, multiplier))  # [8, 4, 6, 5, 6]
+print(getFinalStateHeap([2, 1, 3, 5, 6], k, multiplier))  # [8, 4, 6, 5, 6]
+
 ```
 
 ## 2558. Take Gifts From the Richest Pile
@@ -90,7 +198,33 @@ comments: True
 -   Tags: tree, design, binary search tree, heap priority queue, binary tree, data stream
 
 ```python title="703. Kth Largest Element in a Stream - Python Solution"
---8<-- "0703_kth_largest_element_in_a_stream.py"
+import heapq
+from typing import List
+
+
+# Heap
+class KthLargest:
+
+    def __init__(self, k: int, nums: List[int]):
+        self.k = k
+        self.heap = []
+        for num in nums:
+            self.add(num)
+
+    def add(self, val: int) -> int:
+        heapq.heappush(self.heap, val)
+
+        if len(self.heap) > self.k:
+            heapq.heappop(self.heap)
+
+        return self.heap[0]
+
+
+obj = KthLargest(3, [4, 5, 8, 2])
+print(obj.add(3))  # 4
+print(obj.add(5))  # 5
+print(obj.add(10))  # 5
+
 ```
 
 ## 3275. K-th Nearest Obstacle Queries
@@ -184,7 +318,29 @@ comments: True
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 
 ```python title="253. Meeting Rooms II - Python Solution"
---8<-- "0253_meeting_rooms_ii.py"
+import heapq
+from typing import List
+
+
+# Heap
+def minMeetingRooms(intervals: List[List[int]]) -> int:
+    if not intervals:
+        return 0
+
+    intervals.sort(key=lambda x: x[0])
+    heap = [intervals[0][1]]
+
+    for i in range(1, len(intervals)):
+        if intervals[i][0] >= heap[0]:
+            heapq.heappop(heap)
+        heapq.heappush(heap, intervals[i][1])
+
+    return len(heap)
+
+
+intervals = [[0, 30], [5, 10], [15, 20]]
+print(minMeetingRooms(intervals))  # 2
+
 ```
 
 ## 1167. Minimum Cost to Connect Sticks

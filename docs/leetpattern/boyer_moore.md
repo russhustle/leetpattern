@@ -31,7 +31,45 @@ comments: True
 | 2     | 1       | 2     |
 
 ```python title="169. Majority Element - Python Solution"
---8<-- "0169_majority_element.py"
+from collections import defaultdict
+from typing import List
+
+
+# Hash Map
+def majorityElementHashMap(nums: List[int]) -> int:
+    n = len(nums)
+    freq = defaultdict(int)
+
+    for num in nums:
+        freq[num] += 1
+        if freq[num] > n // 2:
+            return num
+
+
+# Array - Boyer-Moore Voting Algorithm
+def majorityElementArray(nums: List[int]) -> int:
+    res = None
+    count = 0
+
+    for num in nums:
+        if count == 0:
+            res = num
+        count += 1 if num == res else -1
+
+    return res
+
+
+# | Algorithm | Time Complexity | Space Complexity |
+# |-----------|-----------------|------------------|
+# | HashMap   | O(N)            | O(N)             |
+# | Array     | O(N)            | O(1)             |
+# |-----------|-----------------|------------------|
+
+
+nums = [2, 2, 1, 1, 1, 2, 2]
+print(majorityElementArray(nums))  # 2
+print(majorityElementHashMap(nums))  # 2
+
 ```
 
 ## 229. Majority Element II
@@ -41,7 +79,51 @@ comments: True
 -   Tags: array, hash table, sorting, counting
 
 ```python title="229. Majority Element II - Python Solution"
---8<-- "0229_majority_element_ii.py"
+from collections import Counter
+from typing import List
+
+
+# Hash Map
+def majorityElementHash(nums: List[int]) -> List[int]:
+    counts = Counter(nums)
+    target = len(nums) // 3
+    res = []
+
+    for num in nums:
+        if counts[num] > target and num not in res:
+            res.append(num)
+
+    return res
+
+
+# Boyer-Moore
+def majorityElementMoore(nums: List[int]) -> List[int]:
+    if not nums:
+        return []
+
+    cdt1, cnt1 = None, 0
+    cdt2, cnt2 = None, 0
+
+    for num in nums:
+        if num == cdt1:
+            cnt1 += 1
+        elif num == cdt2:
+            cnt2 += 1
+        elif cnt1 == 0:
+            cdt1, cnt1 = num, 1
+        elif cnt2 == 0:
+            cdt2, cnt2 = num, 1
+        else:
+            cnt1 -= 1
+            cnt2 -= 1
+
+    return [n for n in (cdt1, cdt2) if nums.count(n) > len(nums) // 3]
+
+
+nums = [3, 2, 3]
+print(majorityElementHash(nums))  # [3]
+print(majorityElementMoore(nums))  # [3]
+
 ```
 
 ## 287. Find the Duplicate Number
@@ -52,7 +134,30 @@ comments: True
 -   Find the duplicate number in an array containing `n + 1` integers where each integer is between `1` and `n` inclusive.
 
 ```python title="287. Find the Duplicate Number - Python Solution"
---8<-- "0287_find_the_duplicate_number.py"
+from typing import List
+
+
+# Fast Slow Pointer
+def findDuplicate(nums: List[int]) -> int:
+    fast, slow = nums[0], nums[0]
+
+    while True:
+        slow = nums[slow]
+        fast = nums[nums[fast]]
+        if slow == fast:
+            break
+
+    slow = nums[0]
+    while slow != fast:
+        slow = nums[slow]
+        fast = nums[fast]
+
+    return slow
+
+
+nums = [1, 3, 4, 2, 2]
+print(findDuplicate(nums))  # 2
+
 ```
 
 ## 1150. Check If a Number Is Majority Element in a Sorted Array

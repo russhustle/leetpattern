@@ -19,7 +19,32 @@ comments: True
 -   Tags: hash table, string, sliding window
 
 ```python title="1358. Number of Substrings Containing All Three Characters - Python Solution"
---8<-- "1358_number_of_substrings_containing_all_three_characters.py"
+from collections import defaultdict
+
+
+# Sliding Window Variable Size
+def numberOfSubstrings(s: str) -> int:
+    freqs = defaultdict(int)
+    res = 0
+    left = 0
+
+    for right in range(len(s)):
+        freqs[s[right]] += 1
+
+        while len(freqs) == 3:
+            freqs[s[left]] -= 1
+            if freqs[s[left]] == 0:
+                del freqs[s[left]]
+            left += 1
+
+        res += left
+
+    return res
+
+
+s = "abcabc"
+print(numberOfSubstrings(s))  # 10
+
 ```
 
 ## 2962. Count Subarrays Where Max Element Appears at Least K Times

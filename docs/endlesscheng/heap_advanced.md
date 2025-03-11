@@ -42,7 +42,83 @@ comments: True
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q5a5OiGbT6Q?si=SlQg9SKZh1YL62vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python title="23. Merge k Sorted Lists - Python Solution"
---8<-- "0023_merge_k_sorted_lists.py"
+import copy
+import heapq
+from typing import List, Optional
+
+from template import ListNode
+
+
+# Divide and Conquer
+def mergeKListsDC(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    if not lists or len(lists) == 0:
+        return None
+
+    def mergeTwo(l1, l2):
+        dummy = ListNode()
+        cur = dummy
+
+        while l1 and l2:
+            if l1.val < l2.val:
+                cur.next = l1
+                l1 = l1.next
+            else:
+                cur.next = l2
+                l2 = l2.next
+
+            cur = cur.next
+
+        cur.next = l1 if l1 else l2
+
+        return dummy.next
+
+    while len(lists) > 1:
+        merged = []
+
+        for i in range(0, len(lists), 2):
+            l1 = lists[i]
+            l2 = lists[i + 1] if i + 1 < len(lists) else None
+            merged.append(mergeTwo(l1, l2))
+
+        lists = merged
+
+    return lists[0]
+
+
+# Heap - Merge k Sorted
+def mergeKLists(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    dummy = ListNode()
+    cur = dummy
+
+    minHeap = []  # (val, idx, node)
+
+    for idx, head in enumerate(lists):
+        if head:
+            heapq.heappush(minHeap, (head.val, idx, head))
+
+    while minHeap:
+        _, idx, node = heapq.heappop(minHeap)
+        cur.next = node
+        cur = cur.next
+
+        node = node.next
+        if node:
+            heapq.heappush(minHeap, (node.val, idx, node))
+
+    return dummy.next
+
+
+n1 = ListNode.create([1, 4, 5])
+n2 = ListNode.create([1, 3, 4])
+n3 = ListNode.create([2, 6])
+lists = [n1, n2, n3]
+lists1 = copy.deepcopy(lists)
+lists2 = copy.deepcopy(lists)
+print(mergeKListsDC(lists1))
+# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+print(mergeKLists(lists2))
+# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+
 ```
 
 ## 355. Design Twitter
@@ -53,7 +129,49 @@ comments: True
 -   Similar question: [23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (Hard)
 
 ```python title="355. Design Twitter - Python Solution"
---8<-- "0355_design_twitter.py"
+import heapq
+from collections import defaultdict
+from typing import List
+
+
+# Design
+class Twitter:
+
+    def __init__(self):
+        self.tweets = defaultdict(list)
+        self.followees = defaultdict(set)
+        self.time = 0
+
+    def postTweet(self, userId: int, tweetId: int) -> None:
+        self.tweets[userId].append((self.time, tweetId))
+        self.time += 1
+
+    def getNewsFeed(self, userId: int) -> List[int]:
+        news_feed = []
+        news_feed.extend(self.tweets[userId])
+        for followee in self.followees[userId]:
+            news_feed.extend(self.tweets[followee])
+
+        return [tweet for _, tweet in heapq.nlargest(10, news_feed)]
+
+    def follow(self, followerId: int, followeeId: int) -> None:
+        if followerId != followeeId:
+            self.followees[followerId].add(followeeId)
+
+    def unfollow(self, followerId: int, followeeId: int) -> None:
+        if followerId != followeeId:
+            self.followees[followerId].discard(followeeId)
+
+
+twitter = Twitter()
+print(twitter.postTweet(1, 5))  # None
+print(twitter.getNewsFeed(1))  # [5]
+print(twitter.follow(1, 2))  # None
+print(twitter.postTweet(2, 6))  # None
+print(twitter.getNewsFeed(1))  # [6, 5]
+print(twitter.unfollow(1, 2))  # None
+print(twitter.getNewsFeed(1))  # [5]
+
 ```
 
 ## 502. IPO
@@ -63,7 +181,42 @@ comments: True
 -   Tags: array, greedy, sorting, heap priority queue
 
 ```python title="502. IPO - Python Solution"
---8<-- "0502_ipo.py"
+import heapq
+from typing import List
+
+
+# Heap - Two Heaps
+def findMaximizedCapital(
+    k: int, w: int, profits: List[int], capital: List[int]
+) -> int:
+    if not profits or not capital:
+        return w
+
+    minHeap = []
+    maxHeap = []
+
+    for i in range(len(profits)):
+        heapq.heappush(minHeap, (capital[i], profits[i]))
+
+    for _ in range(k):
+        while minHeap and minHeap[0][0] <= w:
+            capital, profit = heapq.heappop(minHeap)
+            heapq.heappush(maxHeap, -profit)
+
+        if not maxHeap:
+            break
+
+        w += -heapq.heappop(maxHeap)
+
+    return w
+
+
+k = 2
+w = 0
+profits = [1, 2, 3]
+capital = [0, 1, 1]
+print(findMaximizedCapital(k, w, profits, capital))  # 4
+
 ```
 
 ## 1705. Maximum Number of Eaten Apples
@@ -82,7 +235,42 @@ comments: True
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
 ```python title="778. Swim in Rising Water - Python Solution"
---8<-- "0778_swim_in_rising_water.py"
+import heapq
+from typing import List
+
+
+# Dijkstra's
+def swimInWater(grid: List[List[int]]) -> int:
+    n = len(grid)
+    visited = set()
+    minHeap = [(grid[0][0], 0, 0)]
+    directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+    visited.add((0, 0))
+
+    while minHeap:
+        time, r, c = heapq.heappop(minHeap)
+
+        if r == n - 1 and c == n - 1:
+            return time
+
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
+
+            if nr in range(n) and nc in range(n) and (nr, nc) not in visited:
+                visited.add((nr, nc))
+                heapq.heappush(minHeap, (max(time, grid[nr][nc]), nr, nc))
+
+
+grid = [
+    [0, 1, 2, 3, 4],
+    [24, 23, 22, 21, 5],
+    [12, 13, 14, 15, 16],
+    [11, 17, 18, 19, 20],
+    [10, 9, 8, 7, 6],
+]
+print(swimInWater(grid))  # 16
+
 ```
 
 ## 1631. Path With Minimum Effort
@@ -93,7 +281,41 @@ comments: True
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
 ```python title="1631. Path With Minimum Effort - Python Solution"
---8<-- "1631_path_with_minimum_effort.py"
+import heapq
+from typing import List
+
+
+# Prim
+def minimumEffortPath(heights: List[List[int]]) -> int:
+    m, n = len(heights), len(heights[0])
+    directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+    visited = [[False] * n for _ in range(m)]
+    heap = [(0, 0, 0)]  # (effort, row, col)
+
+    while heap:
+        effort, r, c = heapq.heappop(heap)
+
+        if visited[r][c]:
+            continue
+
+        if r == m - 1 and c == n - 1:
+            return effort
+
+        visited[r][c] = True
+
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
+
+            if 0 <= nr < m and 0 <= nc < n and not visited[nr][nc]:
+                updated = max(effort, abs(heights[r][c] - heights[nr][nc]))
+                heapq.heappush(heap, (updated, nr, nc))
+
+    return -1
+
+
+heights = [[1, 2, 2], [3, 8, 2], [5, 3, 5]]
+print(minimumEffortPath(heights))  # 2
+
 ```
 
 ## 1354. Construct Target Array With Multiple Sums

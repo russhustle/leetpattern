@@ -36,11 +36,71 @@ comments: True
 | `}`  | pop    | ""    |
 
 ```python title="20. Valid Parentheses - Python Solution"
---8<-- "0020_valid_parentheses.py"
+# Stack
+def isValid(s: str) -> bool:
+    hashmap = {
+        ")": "(",
+        "]": "[",
+        "}": "{",
+    }
+    stack = []
+
+    for c in s:
+        if c in hashmap:
+            if stack and stack[-1] == hashmap[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+
+    return True if not stack else False
+
+
+print(isValid("()"))  # True
+print(isValid("()[]{}"))  # True
+print(isValid("(]"))  # False
+
 ```
 
 ```cpp title="20. Valid Parentheses - C++ Solution"
---8<-- "cpp/0020_valid_parentheses.cc"
+#include <cassert>
+#include <stack>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+class Solution {
+   public:
+    bool isValid(string s) {
+        unordered_map<char, char> map{{')', '('}, {'}', '{'}, {']', '['}};
+        stack<char> stack;
+        if (s.length() % 2 == 1) return false;
+
+        for (char& ch : s) {
+            if (stack.empty() || map.find(ch) == map.end()) {
+                stack.push(ch);
+            } else {
+                if (map[ch] != stack.top()) {
+                    return false;
+                }
+                stack.pop();
+            }
+        }
+        return stack.empty();
+    }
+};
+
+int main() {
+    Solution s;
+    assert(s.isValid("()") == true);
+    assert(s.isValid("()[]{}") == true);
+    assert(s.isValid("(]") == false);
+    assert(s.isValid("([)]") == false);
+    assert(s.isValid("{[]}") == true);
+    return 0;
+}
+
 ```
 
 ## 921. Minimum Add to Make Parentheses Valid
@@ -92,7 +152,30 @@ comments: True
 -   Tags: string, dynamic programming, stack, greedy
 
 ```python title="678. Valid Parenthesis String - Python Solution"
---8<-- "0678_valid_parenthesis_string.py"
+# Greedy
+def checkValidString(s: str) -> bool:
+    min_open, max_open = 0, 0
+
+    for char in s:
+        if char == "(":
+            min_open += 1
+            max_open += 1
+        elif char == ")":
+            min_open = max(min_open - 1, 0)
+            max_open -= 1
+        elif char == "*":
+            min_open = max(min_open - 1, 0)
+            max_open += 1
+
+        if max_open < 0:
+            return False
+
+    return min_open == 0
+
+
+s = "(*))"
+print(checkValidString(s))  # True
+
 ```
 
 ## 1111. Maximum Nesting Depth of Two Valid Parentheses Strings

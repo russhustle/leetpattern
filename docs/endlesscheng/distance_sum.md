@@ -19,7 +19,34 @@ comments: True
 -   Tags: array, math, prefix sum
 
 ```python title="1685. Sum of Absolute Differences in a Sorted Array - Python Solution"
---8<-- "1685_sum_of_absolute_differences_in_a_sorted_array.py"
+from typing import List
+
+
+# Prefix Sum
+def getSumAbsoluteDifferences(nums: List[int]) -> List[int]:
+    n = len(nums)
+    totalSum = sum(nums)
+    prefixSum = 0
+    res = [0 for _ in range(n)]
+
+    for i in range(n):
+        leftSum = prefixSum
+        rightSum = totalSum - prefixSum - nums[i]
+
+        leftCount = i
+        rightCount = n - i - 1
+
+        res[i] = (nums[i] * leftCount - leftSum) + (
+            rightSum - nums[i] * rightCount
+        )
+        prefixSum += nums[i]
+
+    return res
+
+
+nums = [1, 4, 6, 8, 10]
+print(getSumAbsoluteDifferences(nums))  # [24, 15, 13, 15, 21]
+
 ```
 
 ## 2615. Sum of Distances

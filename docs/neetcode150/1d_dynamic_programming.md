@@ -42,11 +42,78 @@ comments: True
 | 10  |    34     |    55     |   89    |
 
 ```python title="70. Climbing Stairs - Python Solution"
---8<-- "0070_climbing_stairs.py"
+from functools import cache
+
+
+# DP
+def climbStairsDP(n: int) -> int:
+    if n <= 2:
+        return n
+
+    dp = [i for i in range(n + 1)]
+
+    for i in range(3, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2]
+
+    return dp[n]
+
+
+# DP (Optimized)
+def climbStairsDPOptimized(n: int) -> int:
+    if n <= 2:
+        return n
+
+    first, second = 1, 2
+
+    for _ in range(3, n + 1):
+        first, second = second, first + second
+
+    return second
+
+
+# Recursion
+def climbStairsRecursion(n: int) -> int:
+    @cache
+    def dfs(i: int) -> int:
+        if i <= 1:
+            return 1
+        return dfs(i - 1) + dfs(i - 2)
+
+    return dfs(n)
+
+
+print(climbStairsDP(10))  # 89
+print(climbStairsDPOptimized(10))  # 89
+print(climbStairsRecursion(10))  # 89
+
 ```
 
 ```cpp title="70. Climbing Stairs - C++ Solution"
---8<-- "cpp/0070_climbing_stairs.cc"
+#include <iostream>
+using namespace std;
+
+int climbStairs(int n) {
+    if (n <= 2) return n;
+    int f1 = 1, f2 = 2;
+    int res;
+
+    int i = 3;
+    while (i <= n) {
+        res = f1 + f2;
+        f1 = f2;
+        f2 = res;
+        ++i;
+    }
+    return res;
+}
+
+int main() {
+    cout << climbStairs(2) << endl;  // 2
+    cout << climbStairs(3) << endl;  // 3
+    cout << climbStairs(6) << endl;  // 13
+    return 0;
+}
+
 ```
 
 ## 746. Min Cost Climbing Stairs
@@ -77,7 +144,23 @@ comments: True
 |  9  |     1     |     5     |    104    |    6    |
 
 ```python title="746. Min Cost Climbing Stairs - Python Solution"
---8<-- "0746_min_cost_climbing_stairs.py"
+from typing import List
+
+
+def minCostClimbingStairs(cost: List[int]) -> int:
+    dp = [0 for _ in range(len(cost))]
+
+    dp[0], dp[1] = cost[0], cost[1]
+
+    for i in range(2, len(cost)):
+        dp[i] = min(dp[i - 1], dp[i - 2]) + cost[i]
+    print(dp)
+    return min(dp[-1], dp[-2])
+
+
+cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+print(minCostClimbingStairs(cost))  # 6
+
 ```
 
 ## 198. House Robber
@@ -104,11 +187,61 @@ comments: True
 |  4  |     1     |    11     |    11     |         12          |   12    |
 
 ```python title="198. House Robber - Python Solution"
---8<-- "0198_house_robber.py"
+from typing import List
+
+
+# DP (House Robber)
+def rob1(nums: List[int]) -> int:
+    if len(nums) < 3:
+        return max(nums)
+
+    dp = [0 for _ in range(len(nums))]
+    dp[0], dp[1] = nums[0], max(nums[0], nums[1])
+
+    for i in range(2, len(nums)):
+        dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
+
+    return dp[-1]
+
+
+# DP (House Robber) Optimized
+def rob2(nums: List[int]) -> int:
+    f0, f1 = 0, 0
+
+    for num in nums:
+        f0, f1 = f1, max(f1, f0 + num)
+
+    return f1
+
+
+nums = [2, 7, 9, 3, 1]
+print(rob1(nums))  # 12
+print(rob2(nums))  # 12
+
 ```
 
 ```cpp title="198. House Robber - C++ Solution"
---8<-- "cpp/0198_house_robber.cc"
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int rob(vector<int> &nums) {
+    int prev = 0, cur = 0, temp = 0;
+
+    for (int num : nums) {
+        temp = cur;
+        cur = max(cur, prev + num);
+        prev = temp;
+    }
+    return cur;
+}
+
+int main() {
+    vector<int> nums = {2, 7, 9, 3, 1};
+    cout << rob(nums) << endl;  // 12
+    return 0;
+}
+
 ```
 
 ## 213. House Robber II
@@ -137,11 +270,101 @@ comments: True
 |  4  |     1     |     9     |    10     |         10          |   10    |
 
 ```python title="213. House Robber II - Python Solution"
---8<-- "0213_house_robber_ii.py"
+from typing import List
+
+
+# DP
+def rob(nums: List[int]) -> int:
+    if len(nums) <= 3:
+        return max(nums)
+
+    def robLinear(nums: List[int]) -> int:
+        dp = [0 for _ in range(len(nums))]
+        dp[0], dp[1] = nums[0], max(nums[0], nums[1])
+
+        for i in range(2, len(nums)):
+            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
+
+        return dp[-1]
+
+    # circle -> linear
+    a = robLinear(nums[1:])  # 2nd house to the last house
+    b = robLinear(nums[:-1])  # 1st house to the 2nd last house
+
+    return max(a, b)
+
+
+nums = [2, 7, 9, 3, 1]
+print(rob(nums))  # 11
+
 ```
 
 ```cpp title="213. House Robber II - C++ Solution"
---8<-- "cpp/0213_house_robber_ii.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// DP
+int robDP(vector<int>& nums) {
+    int n = nums.size();
+    if (n <= 3) return *max_element(nums.begin(), nums.end());
+
+    vector<int> dp1(n, 0), dp2(n, 0);
+
+    dp1[0] = nums[0];
+    dp2[1] = max(nums[0], nums[1]);
+    for (int i = 2; i < n - 1; i++) {
+        dp1[i] = max(dp1[i - 1], dp1[i - 2] + nums[i]);
+    }
+
+    dp2[1] = nums[1];
+    dp2[2] = max(nums[1], nums[2]);
+    for (int i = 3; i < n; i++) {
+        dp1[i] = max(dp1[i - 1], dp1[i - 2] + nums[i]);
+    }
+
+    return max(dp1[n - 2], dp2[n - 1]);
+}
+
+// DP (Space Optimized)
+int robDPOptimized(vector<int>& nums) {
+    int n = nums.size();
+    if (n <= 3) return *max_element(nums.begin(), nums.end());
+
+    int f1 = nums[0];
+    int f2 = max(nums[0], nums[1]);
+    int res1;
+    for (int i = 2; i < n - 1; i++) {
+        res1 = max(f2, f1 + nums[i]);
+        f1 = f2;
+        f2 = res1;
+    }
+
+    f1 = nums[1];
+    f2 = max(nums[1], nums[2]);
+    int res2;
+    for (int i = 3; i < n; i++) {
+        res2 = max(f2, f1 + nums[i]);
+        f1 = f2;
+        f2 = res2;
+    }
+
+    return max(res1, res2);
+}
+
+int main() {
+    vector<int> nums = {2, 3, 2};
+    cout << robDP(nums) << endl;           // 3
+    cout << robDPOptimized(nums) << endl;  // 3
+
+    nums = {1, 2, 3, 1};
+    cout << robDP(nums) << endl;           // 4
+    cout << robDPOptimized(nums) << endl;  // 4
+
+    return 0;
+}
+
 ```
 
 ## 5. Longest Palindromic Substring
@@ -152,7 +375,62 @@ comments: True
 -   Return the longest palindromic substring in `s`.
 
 ```python title="5. Longest Palindromic Substring - Python Solution"
---8<-- "0005_longest_palindromic_substring.py"
+# DP - Interval
+def longestPalindromeDP(s: str) -> str:
+    n = len(s)
+    if n <= 1:
+        return s
+
+    start, maxLen = 0, 1
+
+    # Init
+    dp = [[0] * n for _ in range(n)]
+    for i in range(n):
+        dp[i][i] = 1
+
+    for j in range(1, n):
+        for i in range(j):
+            if s[i] == s[j]:
+                if j - i <= 2:
+                    dp[i][j] = 1
+                else:
+                    dp[i][j] = dp[i + 1][j - 1]
+
+                if dp[i][j] and j - i + 1 > maxLen:
+                    maxLen = j - i + 1
+                    start = i
+
+    return s[start : start + maxLen]
+
+
+# Expand Around Center
+def longestPalindromeCenter(s: str) -> str:
+    def expand_around_center(left, right):
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            left -= 1
+            right += 1
+        return right - left - 1
+
+    if len(s) <= 1:
+        return s
+
+    start, end = 0, 0
+    for i in range(len(s)):
+        len1 = expand_around_center(i, i)  # odd
+        len2 = expand_around_center(i, i + 1)  # even
+
+        maxLen = max(len1, len2)
+        if maxLen > end - start:
+            start = i - (maxLen - 1) // 2
+            end = i + maxLen // 2
+
+    return s[start : end + 1]
+
+
+s = "babad"
+print(longestPalindromeDP(s))  # "bab"
+print(longestPalindromeCenter(s))  # "aba"
+
 ```
 
 ## 647. Palindromic Substrings
@@ -172,7 +450,26 @@ comments: True
 | **e** |  0  |  0  |  0  |  0  |  1  |
 
 ```python title="647. Palindromic Substrings - Python Solution"
---8<-- "0647_palindromic_substrings.py"
+def countSubstrings(s: str) -> int:
+    n = len(s)
+    dp = [[0] * n for _ in range(n)]
+    res = 0
+
+    for i in range(n - 1, -1, -1):
+        for j in range(i, n):
+            if s[i] == s[j]:
+                if j - i <= 1:
+                    dp[i][j] = 1
+                    res += 1
+                elif dp[i + 1][j - 1]:
+                    dp[i][j] = 1
+                    res += 1
+
+    return res
+
+
+print(countSubstrings("abbae"))  # 7
+
 ```
 
 ## 91. Decode Ways
@@ -182,7 +479,59 @@ comments: True
 -   Tags: string, dynamic programming
 
 ```python title="91. Decode Ways - Python Solution"
---8<-- "0091_decode_ways.py"
+# DP
+def numDecodingsDP(s: str) -> int:
+    if not s or s[0] == "0":
+        return 0
+
+    n = len(s)
+    dp = [0] * (n + 1)
+    dp[0] = 1
+
+    for i in range(1, n + 1):
+        # Check single digit decode
+        if s[i - 1] != "0":
+            dp[i] += dp[i - 1]
+
+        # Check two digit decode
+        if i > 1 and "10" <= s[i - 2 : i] <= "26":
+            dp[i] += dp[i - 2]
+
+    return dp[n]
+
+
+# DFS
+def numDecodingsDFS(s: str) -> int:
+    memo = {}
+
+    def dfs(i):
+        if i == len(s):
+            return 1
+
+        if s[i] == "0":
+            return 0
+
+        if i in memo:
+            return memo[i]
+
+        # Single digit decode
+        ways = dfs(i + 1)
+
+        # Two digits decode
+        if i + 1 < len(s) and "10" <= s[i : i + 2] <= "26":
+            ways += dfs(i + 2)
+
+        memo[i] = ways
+
+        return ways
+
+    return dfs(0)
+
+
+s = "226"
+print(numDecodingsDP(s))  # 3
+print(numDecodingsDFS(s))  # 3
+
 ```
 
 ## 322. Coin Change
@@ -192,7 +541,26 @@ comments: True
 -   Tags: array, dynamic programming, breadth first search
 
 ```python title="322. Coin Change - Python Solution"
---8<-- "0322_coin_change.py"
+from typing import List
+
+
+def coinChange(coins: List[int], amount: int) -> int:
+    dp = [float("inf") for _ in range(amount + 1)]
+
+    dp[0] = 0
+
+    for i in range(1, amount + 1):
+        for c in coins:
+            if i - c >= 0:
+                dp[i] = min(dp[i], 1 + dp[i - c])
+
+    return dp[amount] if dp[amount] != float("inf") else -1
+
+
+coins = [1, 2, 5]
+amount = 11
+print(coinChange(coins, amount))  # 3
+
 ```
 
 ## 152. Maximum Product Subarray
@@ -202,7 +570,39 @@ comments: True
 -   Tags: array, dynamic programming
 
 ```python title="152. Maximum Product Subarray - Python Solution"
---8<-- "0152_maximum_product_subarray.py"
+from typing import List
+
+
+# DP - Kadane
+def maxProduct(nums: List[int]) -> int:
+    n = len(nums)
+    dp_max = [0 for _ in range(n)]
+    dp_min = [0 for _ in range(n)]
+
+    dp_max[0] = nums[0]
+    dp_min[0] = nums[0]
+    max_product = nums[0]
+
+    for i in range(1, n):
+        dp_max[i] = max(
+            nums[i],
+            nums[i] * dp_max[i - 1],
+            nums[i] * dp_min[i - 1],
+        )
+        dp_min[i] = min(
+            nums[i],
+            nums[i] * dp_max[i - 1],
+            nums[i] * dp_min[i - 1],
+        )
+
+        max_product = max(max_product, dp_max[i])
+
+    return max_product
+
+
+nums = [2, 3, -2, 4]
+print(maxProduct(nums))  # 6
+
 ```
 
 ## 139. Word Break
@@ -212,7 +612,29 @@ comments: True
 -   Tags: array, hash table, string, dynamic programming, trie, memoization
 
 ```python title="139. Word Break - Python Solution"
---8<-- "0139_word_break.py"
+from typing import List
+
+
+# DP - Knapsack Unbounded
+def wordBreak(s: str, wordDict: List[str]) -> bool:
+    n = len(s)
+    wordSet = set(wordDict)
+    dp = [False for _ in range(n + 1)]
+    dp[0] = True
+
+    for i in range(1, n + 1):
+        for j in range(i):
+            if dp[j] and s[j:i] in wordSet:
+                dp[i] = True
+                break
+
+    return dp[n]
+
+
+s = "leetcode"
+wordDict = ["leet", "code"]
+print(wordBreak(s, wordDict))  # True
+
 ```
 
 ## 300. Longest Increasing Subsequence
@@ -222,7 +644,30 @@ comments: True
 -   Tags: array, binary search, dynamic programming
 
 ```python title="300. Longest Increasing Subsequence - Python Solution"
---8<-- "0300_longest_increasing_subsequence.py"
+from typing import List
+
+
+# DP - LIS
+def lengthOfLIS(nums: List[int]) -> int:
+    # TC: O(n^2)
+    # SC: O(n)
+    n = len(nums)
+    if n <= 1:
+        return n
+
+    dp = [1 for _ in range(n)]
+
+    for i in range(1, n):
+        for j in range(i):
+            if nums[i] > nums[j]:
+                dp[i] = max(dp[i], dp[j] + 1)
+
+    return max(dp)
+
+
+nums = [10, 9, 2, 5, 3, 7, 101, 18]
+print(lengthOfLIS(nums))  # 4
+
 ```
 
 ## 416. Partition Equal Subset Sum
@@ -232,5 +677,43 @@ comments: True
 -   Tags: array, dynamic programming
 
 ```python title="416. Partition Equal Subset Sum - Python Solution"
---8<-- "0416_partition_equal_subset_sum.py"
+from typing import List
+
+from template import knapsack01
+
+
+# DP - Knapsack 01
+def canPartitionTemplate(nums: List[int]) -> bool:
+    total = sum(nums)
+
+    if total % 2 == 1 or len(nums) < 2:
+        return False
+
+    target = total // 2
+
+    return knapsack01(nums, nums, target) == target
+
+
+# DP - Knapsack 01
+def canPartition(nums: List[int]) -> bool:
+    total = sum(nums)
+
+    if total % 2 == 1 or len(nums) < 2:
+        return False
+
+    target = total // 2
+
+    dp = [0 for _ in range(target + 1)]
+
+    for i in range(len(nums)):
+        for j in range(target, nums[i] - 1, -1):
+            dp[j] = max(dp[j], dp[j - nums[i]] + nums[i])
+
+    return dp[target] == target
+
+
+nums = [1, 5, 11, 5]
+print(canPartitionTemplate(nums))  # True
+print(canPartition(nums))  # True
+
 ```

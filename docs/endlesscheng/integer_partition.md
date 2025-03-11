@@ -33,7 +33,26 @@ comments: True
 | `dp[n]`  |   2    |   4    |   6    |   9    |   12    |    18    |
 
 ```python title="343. Integer Break - Python Solution"
---8<-- "0343_integer_break.py"
+def integerBreak(n: int) -> int:
+    dp = [0 for _ in range(n + 1)]
+    dp[2] = 1
+
+    for i in range(3, n + 1):
+        for j in range(2, i):
+            dp[i] = max(dp[i], dp[i - j] * j, (i - j) * j)
+
+    return dp[n]
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    DP       |      O(n^2)     |     O(n)     |
+# |-------------|-----------------|--------------|
+
+n = 8
+print(integerBreak(n))  # 18
+
 ```
 
 ## 1808. Maximize Number of Nice Divisors

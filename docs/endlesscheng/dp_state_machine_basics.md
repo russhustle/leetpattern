@@ -39,7 +39,37 @@ comments: True
 -   Tags: array, dynamic programming, backtracking, greedy, bit manipulation, sorting, enumeration
 
 ```python title="2708. Maximum Strength of a Group - Python Solution"
---8<-- "2708_maximum_strength_of_a_group.py"
+from typing import List
+
+
+# DP
+def maxStrength(nums: List[int]) -> int:
+    if not nums:
+        return 0
+
+    cur_min, cur_max = nums[0], nums[0]
+
+    for i, num in enumerate(nums):
+        if i == 0:
+            continue
+
+        temp_min = min(cur_min, num, num * cur_min, num * cur_max)
+        temp_max = max(cur_max, num, num * cur_min, num * cur_max)
+        cur_min, cur_max = temp_min, temp_max
+
+    return cur_max
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# |  DP        |  O(N)  |  O(1)   |
+# |------------|--------|---------|
+
+
+nums = [3, -1, -5, 2, 5, -9]
+print(maxStrength(nums))  # 1350
+
 ```
 
 ## 2826. Sorting Three Groups
@@ -81,7 +111,61 @@ comments: True
 |     5     |      2      |     4     |      5      |    6    |     5     |
 
 ```python title="376. Wiggle Subsequence - Python Solution"
---8<-- "0376_wiggle_subsequence.py"
+from typing import List
+
+
+# DP
+def wiggleMaxLengthDP(nums: List[int]) -> int:
+    if len(nums) <= 1:
+        return len(nums)
+
+    up = [0 for _ in range(len(nums))]
+    down = [0 for _ in range(len(nums))]
+
+    up[0], down[0] = 1, 1
+
+    for i in range(1, len(nums)):
+        if nums[i] > nums[i - 1]:
+            up[i] = down[i - 1] + 1
+            down[i] = down[i - 1]
+        elif nums[i] < nums[i - 1]:
+            down[i] = up[i - 1] + 1
+            up[i] = up[i - 1]
+        else:
+            up[i] = up[i - 1]
+            down[i] = down[i - 1]
+
+    return max(up[-1], down[-1])
+
+
+# Greedy
+def wiggleMaxLengthGreedy(nums: List[int]) -> int:
+    if len(nums) < 2:
+        return len(nums)
+
+    prev_diff = nums[1] - nums[0]
+    count = 2 if prev_diff != 0 else 1
+
+    for i in range(2, len(nums)):
+        diff = nums[i] - nums[i - 1]
+        if (diff > 0 and prev_diff <= 0) or (diff < 0 and prev_diff >= 0):
+            count += 1
+            prev_diff = diff
+
+    return count
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    DP       |      O(n)       |     O(n)     |
+# |  Greedy     |      O(n)       |     O(1)     |
+# |-------------|-----------------|--------------|
+
+nums = [1, 7, 4, 9, 2, 5]
+print(wiggleMaxLengthDP(nums))  # 6
+print(wiggleMaxLengthGreedy(nums))  # 6
+
 ```
 
 ## 1186. Maximum Subarray Sum with One Deletion
@@ -91,5 +175,24 @@ comments: True
 -   Tags: array, dynamic programming
 
 ```python title="1186. Maximum Subarray Sum with One Deletion - Python Solution"
---8<-- "1186_maximum_subarray_sum_with_one_deletion.py"
+from typing import List
+
+
+# DP - Kadane
+def maximumSum(arr: List[int]) -> int:
+    dp0 = arr[0]
+    dp1 = 0
+    maxSum = dp0
+
+    for i in range(1, len(arr)):
+        dp1 = max(dp1 + arr[i], dp0)  # delete previous element or not
+        dp0 = max(dp0, 0) + arr[i]  # delete current element or not
+        maxSum = max(maxSum, dp0, dp1)  # update result
+
+    return maxSum
+
+
+arr = [1, -2, 0, 3]
+print(maximumSum(arr))  # 4
+
 ```

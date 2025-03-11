@@ -58,7 +58,34 @@ comments: True
 -   Return the minimum number of candies you must give.
 
 ```python title="135. Candy - Python Solution"
---8<-- "0135_candy.py"
+from typing import List
+
+
+# Greedy
+def candy(ratings: List[int]) -> int:
+    # TC: O(n)
+    # SC: O(n)
+    n = len(ratings)
+
+    if n <= 1:
+        return n
+
+    candy = [1 for _ in range(n)]
+
+    for i in range(1, n):
+        if ratings[i] > ratings[i - 1]:
+            candy[i] = candy[i - 1] + 1
+
+    for j in range(n - 2, -1, -1):
+        if ratings[j] > ratings[j + 1]:
+            candy[j] = max(candy[j], candy[j + 1] + 1)
+
+    return sum(candy)
+
+
+ratings = [1, 0, 2]
+print(candy(ratings))  # 5
+
 ```
 
 ## 650. 2 Keys Keyboard
@@ -194,7 +221,47 @@ comments: True
 -   Tags: array, hash table, math, dynamic programming, backtracking, sorting, combinatorics
 
 ```cpp title="2597. The Number of Beautiful Subsets - C++ Solution"
---8<-- "cpp/2597_the_number_of_beautiful_subsets.cc"
+#include <functional>
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+
+using namespace std;
+
+class Solution {
+   public:
+    int beautifulSubsets(vector<int>& nums, int k) {
+        int res = 0;
+        unordered_map<int, int> cnt;
+
+        auto dfs = [&](auto&& self, int i) -> void {
+            if (i == (int)nums.size()) {
+                res++;
+                return;
+            }
+            self(self, i + 1);  // Skip nums[i]
+            int x = nums[i];
+            if (cnt[x - k] == 0 && cnt[x + k] == 0) {
+                cnt[x]++;
+                self(self, i + 1);  // Include nums[i]
+                cnt[x]--;           // Backtrack
+            }
+        };
+
+        dfs(dfs, 0);
+
+        return res - 1;
+    }
+};
+
+int main() {
+    Solution sol;
+    vector<int> nums = {1, 2, 3, 4};
+    int k = 1;
+    cout << sol.beautifulSubsets(nums, k) << endl;
+    return 0;
+}
+
 ```
 
 ## 2638. Count the Number of K-Free Subsets

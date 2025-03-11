@@ -23,7 +23,23 @@ comments: True
 -   Return the minimum number of moves needed to seat everyone.
 
 ```python title="2037. Minimum Number of Moves to Seat Everyone - Python Solution"
---8<-- "2037_minimum_number_of_moves_to_seat_everyone.py"
+from typing import List
+
+
+# Greedy
+def minMovesToSeat(seats: List[int], students: List[int]) -> int:
+    seats.sort()
+    students.sort()
+    moves = 0
+
+    for i, j in zip(seats, students):
+        moves += abs(i - j)
+
+    return moves
+
+
+print(minMovesToSeat([3, 1, 5], [2, 7, 4]))  # 4
+
 ```
 
 ## 455. Assign Cookies
@@ -34,7 +50,34 @@ comments: True
 -   Return the maximum number of your content children that can be satisfied.
 
 ```python title="455. Assign Cookies - Python Solution"
---8<-- "0455_assign_cookies.py"
+from typing import List
+
+
+# Greedy
+def findContentChildren(g: List[int], s: List[int]) -> int:
+    g.sort()
+    s.sort()
+    i, j = 0, 0
+
+    while i < len(g) and j < len(s):
+        if g[i] <= s[j]:
+            i += 1
+        j += 1
+
+    return i
+
+
+# |-------------|-------------|--------------|
+# |   Approach  |    Time     |    Space     |
+# |-------------|-------------|--------------|
+# |   Greedy    | O(N * logN) |    O(1)      |
+# |-------------|-------------|--------------|
+
+
+g = [1, 2, 3]
+s = [1, 1]
+print(findContentChildren(g, s))  # 1
+
 ```
 
 ## 2410. Maximum Matching of Players With Trainers

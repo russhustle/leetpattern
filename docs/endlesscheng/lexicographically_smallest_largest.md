@@ -54,7 +54,25 @@ comments: True
 -   Tags: two pointers, string, greedy
 
 ```python title="2697. Lexicographically Smallest Palindrome - Python Solution"
---8<-- "2697_lexicographically_smallest_palindrome.py"
+def makeSmallestPalindrome(s: str) -> str:
+    n = len(s)
+    s = list(s)
+    left, right = 0, n - 1
+
+    while left < right:
+        if s[left] < s[right]:
+            s[right] = s[left]
+        elif s[left] > s[right]:
+            s[left] = s[right]
+        left += 1
+        right -= 1
+
+    return "".join(s)
+
+
+s = "egcfe"
+print(makeSmallestPalindrome(s))  # "efcfe"
+
 ```
 
 ## 1881. Maximum Value after Insertion
@@ -88,7 +106,22 @@ comments: True
 -   Tags: string, greedy
 
 ```python title="1328. Break a Palindrome - Python Solution"
---8<-- "1328_break_a_palindrome.py"
+# Greedy
+def breakPalindrome(palindrome: str) -> str:
+    n = len(palindrome)
+    if n == 1:
+        return ""
+
+    for i in range(n // 2):
+        if palindrome[i] != "a":
+            return palindrome[:i] + "a" + palindrome[i + 1 :]
+
+    return palindrome[:-1] + "b"
+
+
+palindrome = "abccba"
+print(breakPalindrome(palindrome))  # "aaccba"
+
 ```
 
 ## 2259. Remove Digit From Number to Maximize Result
@@ -141,7 +174,21 @@ comments: True
 -   Return the largest number that is less than or equal to `n` with monotone increasing digits.
 
 ```python title="738. Monotone Increasing Digits - Python Solution"
---8<-- "0738_monotone_increasing_digits.py"
+# Greedy
+def monotoneIncreasingDigits(n: int) -> int:
+    strNum = list(str(n))
+
+    for i in range(len(strNum) - 2, -1, -1):
+        if int(strNum[i]) > int(strNum[i + 1]):
+            strNum[i] = str(int(strNum[i]) - 1)
+            strNum[i + 1 :] = ["9"] * (len(strNum) - (i + 1))
+
+    return int("".join(strNum))
+
+
+n = 332
+print(monotoneIncreasingDigits(n))  # 299
+
 ```
 
 ## 3403. Find the Lexicographically Largest String From the Box I
@@ -175,7 +222,48 @@ comments: True
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
 ```python title="1202. Smallest String With Swaps - Python Solution"
---8<-- "1202_smallest_string_with_swaps.py"
+from collections import defaultdict
+from typing import List
+
+
+# Union Find
+def smallestStringWithSwaps(s: str, pairs: List[List[int]]) -> str:
+    n = len(s)
+    par = list(range(n))
+    components = defaultdict(list)
+
+    def find(node):
+        p = par[node]
+        while par[p] != p:
+            par[p] = par[par[p]]
+            p = par[p]
+        return p
+
+    def union(n1, n2):
+        p1, p2 = find(n1), find(n2)
+
+        if p1 != p2:
+            par[p1] = p2
+
+    for index, j in pairs:
+        union(index, j)
+
+    for index in range(n):
+        components[find(index)].append(index)
+
+    res = list(s)
+    for indices in components.values():
+        chars = sorted([s[index] for index in indices])
+        for index, char in zip(indices, chars):
+            res[index] = char
+
+    return "".join(res)
+
+
+s = "dcab"
+pairs = [[0, 3], [1, 2]]
+print(smallestStringWithSwaps(s, pairs))  # "bacd"
+
 ```
 
 ## 2434. Using a Robot to Print the Lexicographically Smallest String

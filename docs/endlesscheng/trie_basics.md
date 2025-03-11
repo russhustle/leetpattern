@@ -43,7 +43,50 @@ A2 --- R2((R))
 ```
 
 ```python title="208. Implement Trie (Prefix Tree) - Python Solution"
---8<-- "0208_implement_trie_prefix_tree.py"
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.endOfWord = None
+
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word: str) -> None:
+        node = self.root
+
+        for c in word:
+            if c not in node.children:
+                node.children[c] = TrieNode()
+            node = node.children[c]
+        node.endOfWord = True
+
+    def search(self, word: str) -> bool:
+        node = self.root
+
+        for c in word:
+            if c not in node.children:
+                return False
+            node = node.children[c]
+        return node.endOfWord
+
+    def startsWith(self, prefix: str) -> bool:
+        node = self.root
+
+        for c in prefix:
+            if c not in node.children:
+                return False
+            node = node.children[c]
+        return True
+
+
+# Your Trie object will be instantiated and called as such:
+obj = Trie()
+obj.insert("apple")
+print(obj.search("word"))  # False
+print(obj.startsWith("app"))  # True
+
 ```
 
 ## 211. Design Add and Search Words Data Structure
@@ -53,7 +96,53 @@ A2 --- R2((R))
 -   Tags: string, depth first search, design, trie
 
 ```python title="211. Design Add and Search Words Data Structure - Python Solution"
---8<-- "0211_design_add_and_search_words_data_structure.py"
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.word = False
+
+
+class WordDictionary:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def addWord(self, word: str) -> None:
+        node = self.root
+
+        for c in word:
+            if c not in node.children:
+                node.children[c] = TrieNode()
+            node = node.children[c]
+        node.word = True
+
+    def search(self, word: str) -> bool:
+
+        def dfs(j, root):
+            node = root
+
+            for i in range(j, len(word)):
+                c = word[i]
+
+                if c == ".":
+                    for child in node.children.values():
+                        if dfs(i + 1, child):
+                            return True
+                    return False
+                else:
+                    if c not in node.children:
+                        return False
+                    node = node.children[c]
+            return node.word
+
+        return dfs(0, self.root)
+
+
+# Your WordDictionary object will be instantiated and called as such:
+obj = WordDictionary()
+obj.addWord("word")
+print(obj.search("word"))
+print(obj.search("w.rd"))
+
 ```
 
 ## 14. Longest Common Prefix
@@ -63,7 +152,88 @@ A2 --- R2((R))
 -   Tags: string, trie
 
 ```python title="14. Longest Common Prefix - Python Solution"
---8<-- "0014_longest_common_prefix.py"
+from typing import List
+
+
+# Horizontal Scanning
+def longestCommonPrefixHorizontal(strs: List[str]) -> str:
+    if not strs:
+        return ""
+
+    prefix = strs[0]
+    for i in range(1, len(strs)):
+        while not strs[i].startswith(prefix):
+            prefix = prefix[:-1]
+            if not prefix:
+                return ""
+
+    return prefix
+
+
+# Vertical Scanning
+def longestCommonPrefixVertical(strs: List[str]) -> str:
+    if not strs:
+        return ""
+
+    for i in range(len(strs[0])):
+        char = strs[0][i]
+        for j in range(1, len(strs)):
+            if i >= len(strs[j]) or strs[j][i] != char:
+                return strs[0][:i]
+
+    return strs[0]
+
+
+# Divide and Conquer
+def longestCommonPrefixDivideConquer(strs: List[str]) -> str:
+    if not strs:
+        return ""
+
+    def merge(left, right):
+        n = min(len(left), len(right))
+        for i in range(n):
+            if left[i] != right[i]:
+                return left[:i]
+        return left[:n]
+
+    def helper(strs, start, end):
+        if start == end:
+            return strs[start]
+        mid = start + (end - start) // 2
+        left = helper(strs, start, mid)
+        right = helper(strs, mid + 1, end)
+        return merge(left, right)
+
+    return helper(strs, 0, len(strs) - 1)
+
+
+# Binary Search
+def longestCommonPrefixBinarySearch(strs: List[str]) -> str:
+    if not strs:
+        return ""
+
+    def isCommonPrefix(strs, length):
+        prefix = strs[0][:length]
+        return all(s.startswith(prefix) for s in strs)
+
+    minLen = min(len(s) for s in strs)
+    low, high = 0, minLen
+    while low < high:
+        mid = low + (high - low) // 2
+        if isCommonPrefix(strs, mid + 1):
+            low = mid + 1
+        else:
+            high = mid
+
+    return strs[0][:low]
+
+
+strs = ["flower", "flow", "flight"]
+print(longestCommonPrefixHorizontal(strs))  # "fl"
+print(longestCommonPrefixVertical(strs))  # "fl"
+print(longestCommonPrefixDivideConquer(strs))  # "fl"
+print(longestCommonPrefixBinarySearch(strs))  # "fl"
+
 ```
 
 ## 648. Replace Words

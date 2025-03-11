@@ -38,7 +38,48 @@ comments: True
 | 10  |    21     |    34     |   55    |
 
 ```python title="509. Fibonacci Number - Python Solution"
---8<-- "0509_fibonacci_number.py"
+from functools import cache
+
+
+# DP
+def fibDP(n: int) -> int:
+    if n <= 1:
+        return n
+
+    dp = [i for i in range(n + 1)]
+
+    for i in range(2, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2]
+
+    return dp[n]
+
+
+# DP (Optimized)
+def fibDPOptimized(n: int) -> int:
+    if n <= 1:
+        return n
+
+    n1, n2 = 0, 1
+    for _ in range(2, n + 1):
+        n1, n2 = n2, n1 + n2
+
+    return n2
+
+
+# Recursive
+@cache
+def fibRecursive(n: int) -> int:
+    if n <= 1:
+        return n
+
+    return fibRecursive(n - 1) + fibRecursive(n - 2)
+
+
+n = 10
+print(fibDP(n))  # 55
+print(fibDPOptimized(n))  # 55
+print(fibRecursive(n))  # 55
+
 ```
 
 ## 70. Climbing Stairs
@@ -66,11 +107,78 @@ comments: True
 | 10  |    34     |    55     |   89    |
 
 ```python title="70. Climbing Stairs - Python Solution"
---8<-- "0070_climbing_stairs.py"
+from functools import cache
+
+
+# DP
+def climbStairsDP(n: int) -> int:
+    if n <= 2:
+        return n
+
+    dp = [i for i in range(n + 1)]
+
+    for i in range(3, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2]
+
+    return dp[n]
+
+
+# DP (Optimized)
+def climbStairsDPOptimized(n: int) -> int:
+    if n <= 2:
+        return n
+
+    first, second = 1, 2
+
+    for _ in range(3, n + 1):
+        first, second = second, first + second
+
+    return second
+
+
+# Recursion
+def climbStairsRecursion(n: int) -> int:
+    @cache
+    def dfs(i: int) -> int:
+        if i <= 1:
+            return 1
+        return dfs(i - 1) + dfs(i - 2)
+
+    return dfs(n)
+
+
+print(climbStairsDP(10))  # 89
+print(climbStairsDPOptimized(10))  # 89
+print(climbStairsRecursion(10))  # 89
+
 ```
 
 ```cpp title="70. Climbing Stairs - C++ Solution"
---8<-- "cpp/0070_climbing_stairs.cc"
+#include <iostream>
+using namespace std;
+
+int climbStairs(int n) {
+    if (n <= 2) return n;
+    int f1 = 1, f2 = 2;
+    int res;
+
+    int i = 3;
+    while (i <= n) {
+        res = f1 + f2;
+        f1 = f2;
+        f2 = res;
+        ++i;
+    }
+    return res;
+}
+
+int main() {
+    cout << climbStairs(2) << endl;  // 2
+    cout << climbStairs(3) << endl;  // 3
+    cout << climbStairs(6) << endl;  // 13
+    return 0;
+}
+
 ```
 
 ## 746. Min Cost Climbing Stairs
@@ -101,7 +209,23 @@ comments: True
 |  9  |     1     |     5     |    104    |    6    |
 
 ```python title="746. Min Cost Climbing Stairs - Python Solution"
---8<-- "0746_min_cost_climbing_stairs.py"
+from typing import List
+
+
+def minCostClimbingStairs(cost: List[int]) -> int:
+    dp = [0 for _ in range(len(cost))]
+
+    dp[0], dp[1] = cost[0], cost[1]
+
+    for i in range(2, len(cost)):
+        dp[i] = min(dp[i - 1], dp[i - 2]) + cost[i]
+    print(dp)
+    return min(dp[-1], dp[-2])
+
+
+cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+print(minCostClimbingStairs(cost))  # 6
+
 ```
 
 ## 198. House Robber
@@ -128,11 +252,61 @@ comments: True
 |  4  |     1     |    11     |    11     |         12          |   12    |
 
 ```python title="198. House Robber - Python Solution"
---8<-- "0198_house_robber.py"
+from typing import List
+
+
+# DP (House Robber)
+def rob1(nums: List[int]) -> int:
+    if len(nums) < 3:
+        return max(nums)
+
+    dp = [0 for _ in range(len(nums))]
+    dp[0], dp[1] = nums[0], max(nums[0], nums[1])
+
+    for i in range(2, len(nums)):
+        dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
+
+    return dp[-1]
+
+
+# DP (House Robber) Optimized
+def rob2(nums: List[int]) -> int:
+    f0, f1 = 0, 0
+
+    for num in nums:
+        f0, f1 = f1, max(f1, f0 + num)
+
+    return f1
+
+
+nums = [2, 7, 9, 3, 1]
+print(rob1(nums))  # 12
+print(rob2(nums))  # 12
+
 ```
 
 ```cpp title="198. House Robber - C++ Solution"
---8<-- "cpp/0198_house_robber.cc"
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int rob(vector<int> &nums) {
+    int prev = 0, cur = 0, temp = 0;
+
+    for (int num : nums) {
+        temp = cur;
+        cur = max(cur, prev + num);
+        prev = temp;
+    }
+    return cur;
+}
+
+int main() {
+    vector<int> nums = {2, 7, 9, 3, 1};
+    cout << rob(nums) << endl;  // 12
+    return 0;
+}
+
 ```
 
 ## 213. House Robber II
@@ -161,11 +335,101 @@ comments: True
 |  4  |     1     |     9     |    10     |         10          |   10    |
 
 ```python title="213. House Robber II - Python Solution"
---8<-- "0213_house_robber_ii.py"
+from typing import List
+
+
+# DP
+def rob(nums: List[int]) -> int:
+    if len(nums) <= 3:
+        return max(nums)
+
+    def robLinear(nums: List[int]) -> int:
+        dp = [0 for _ in range(len(nums))]
+        dp[0], dp[1] = nums[0], max(nums[0], nums[1])
+
+        for i in range(2, len(nums)):
+            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
+
+        return dp[-1]
+
+    # circle -> linear
+    a = robLinear(nums[1:])  # 2nd house to the last house
+    b = robLinear(nums[:-1])  # 1st house to the 2nd last house
+
+    return max(a, b)
+
+
+nums = [2, 7, 9, 3, 1]
+print(rob(nums))  # 11
+
 ```
 
 ```cpp title="213. House Robber II - C++ Solution"
---8<-- "cpp/0213_house_robber_ii.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// DP
+int robDP(vector<int>& nums) {
+    int n = nums.size();
+    if (n <= 3) return *max_element(nums.begin(), nums.end());
+
+    vector<int> dp1(n, 0), dp2(n, 0);
+
+    dp1[0] = nums[0];
+    dp2[1] = max(nums[0], nums[1]);
+    for (int i = 2; i < n - 1; i++) {
+        dp1[i] = max(dp1[i - 1], dp1[i - 2] + nums[i]);
+    }
+
+    dp2[1] = nums[1];
+    dp2[2] = max(nums[1], nums[2]);
+    for (int i = 3; i < n; i++) {
+        dp1[i] = max(dp1[i - 1], dp1[i - 2] + nums[i]);
+    }
+
+    return max(dp1[n - 2], dp2[n - 1]);
+}
+
+// DP (Space Optimized)
+int robDPOptimized(vector<int>& nums) {
+    int n = nums.size();
+    if (n <= 3) return *max_element(nums.begin(), nums.end());
+
+    int f1 = nums[0];
+    int f2 = max(nums[0], nums[1]);
+    int res1;
+    for (int i = 2; i < n - 1; i++) {
+        res1 = max(f2, f1 + nums[i]);
+        f1 = f2;
+        f2 = res1;
+    }
+
+    f1 = nums[1];
+    f2 = max(nums[1], nums[2]);
+    int res2;
+    for (int i = 3; i < n; i++) {
+        res2 = max(f2, f1 + nums[i]);
+        f1 = f2;
+        f2 = res2;
+    }
+
+    return max(res1, res2);
+}
+
+int main() {
+    vector<int> nums = {2, 3, 2};
+    cout << robDP(nums) << endl;           // 3
+    cout << robDPOptimized(nums) << endl;  // 3
+
+    nums = {1, 2, 3, 1};
+    cout << robDP(nums) << endl;           // 4
+    cout << robDPOptimized(nums) << endl;  // 4
+
+    return 0;
+}
+
 ```
 
 ## 376. Wiggle Subsequence
@@ -189,7 +453,61 @@ comments: True
 |     5     |      2      |     4     |      5      |    6    |     5     |
 
 ```python title="376. Wiggle Subsequence - Python Solution"
---8<-- "0376_wiggle_subsequence.py"
+from typing import List
+
+
+# DP
+def wiggleMaxLengthDP(nums: List[int]) -> int:
+    if len(nums) <= 1:
+        return len(nums)
+
+    up = [0 for _ in range(len(nums))]
+    down = [0 for _ in range(len(nums))]
+
+    up[0], down[0] = 1, 1
+
+    for i in range(1, len(nums)):
+        if nums[i] > nums[i - 1]:
+            up[i] = down[i - 1] + 1
+            down[i] = down[i - 1]
+        elif nums[i] < nums[i - 1]:
+            down[i] = up[i - 1] + 1
+            up[i] = up[i - 1]
+        else:
+            up[i] = up[i - 1]
+            down[i] = down[i - 1]
+
+    return max(up[-1], down[-1])
+
+
+# Greedy
+def wiggleMaxLengthGreedy(nums: List[int]) -> int:
+    if len(nums) < 2:
+        return len(nums)
+
+    prev_diff = nums[1] - nums[0]
+    count = 2 if prev_diff != 0 else 1
+
+    for i in range(2, len(nums)):
+        diff = nums[i] - nums[i - 1]
+        if (diff > 0 and prev_diff <= 0) or (diff < 0 and prev_diff >= 0):
+            count += 1
+            prev_diff = diff
+
+    return count
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    DP       |      O(n)       |     O(n)     |
+# |  Greedy     |      O(n)       |     O(1)     |
+# |-------------|-----------------|--------------|
+
+nums = [1, 7, 4, 9, 2, 5]
+print(wiggleMaxLengthDP(nums))  # 6
+print(wiggleMaxLengthGreedy(nums))  # 6
+
 ```
 
 ## 343. Integer Break
@@ -218,7 +536,26 @@ comments: True
 | `dp[n]`  |   2    |   4    |   6    |   9    |   12    |    18    |
 
 ```python title="343. Integer Break - Python Solution"
---8<-- "0343_integer_break.py"
+def integerBreak(n: int) -> int:
+    dp = [0 for _ in range(n + 1)]
+    dp[2] = 1
+
+    for i in range(3, n + 1):
+        for j in range(2, i):
+            dp[i] = max(dp[i], dp[i - j] * j, (i - j) * j)
+
+    return dp[n]
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    DP       |      O(n^2)     |     O(n)     |
+# |-------------|-----------------|--------------|
+
+n = 8
+print(integerBreak(n))  # 18
+
 ```
 
 ## 1025. Divisor Game
@@ -231,5 +568,36 @@ comments: True
 -   Initialize `dp[1] = False`.
 
 ```python title="1025. Divisor Game - Python Solution"
---8<-- "1025_divisor_game.py"
+# DP
+def divisorGameDP(n: int) -> bool:
+    if n <= 1:
+        return False
+
+    dp = [False for _ in range(n + 1)]
+
+    for i in range(2, n + 1):
+        for j in range(1, i):
+            if i % j == 0 and not dp[i - j]:
+                dp[i] = True
+                break
+
+    return dp[n]
+
+
+# Math
+def divisorGameDPMath(n: int) -> bool:
+    return n % 2 == 0
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |  DP         |      O(n^2)     |    O(n)      |
+# |  Math       |      O(1)       |    O(1)      |
+# |-------------|-----------------|--------------|
+
+n = 2
+print(divisorGameDP(n))  # True
+print(divisorGameDPMath(n))  # True
+
 ```

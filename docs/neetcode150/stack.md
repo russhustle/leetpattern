@@ -30,11 +30,71 @@ comments: True
 | `}`  | pop    | ""    |
 
 ```python title="20. Valid Parentheses - Python Solution"
---8<-- "0020_valid_parentheses.py"
+# Stack
+def isValid(s: str) -> bool:
+    hashmap = {
+        ")": "(",
+        "]": "[",
+        "}": "{",
+    }
+    stack = []
+
+    for c in s:
+        if c in hashmap:
+            if stack and stack[-1] == hashmap[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+
+    return True if not stack else False
+
+
+print(isValid("()"))  # True
+print(isValid("()[]{}"))  # True
+print(isValid("(]"))  # False
+
 ```
 
 ```cpp title="20. Valid Parentheses - C++ Solution"
---8<-- "cpp/0020_valid_parentheses.cc"
+#include <cassert>
+#include <stack>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+class Solution {
+   public:
+    bool isValid(string s) {
+        unordered_map<char, char> map{{')', '('}, {'}', '{'}, {']', '['}};
+        stack<char> stack;
+        if (s.length() % 2 == 1) return false;
+
+        for (char& ch : s) {
+            if (stack.empty() || map.find(ch) == map.end()) {
+                stack.push(ch);
+            } else {
+                if (map[ch] != stack.top()) {
+                    return false;
+                }
+                stack.pop();
+            }
+        }
+        return stack.empty();
+    }
+};
+
+int main() {
+    Solution s;
+    assert(s.isValid("()") == true);
+    assert(s.isValid("()[]{}") == true);
+    assert(s.isValid("(]") == false);
+    assert(s.isValid("([)]") == false);
+    assert(s.isValid("{[]}") == true);
+    return 0;
+}
+
 ```
 
 ## 155. Min Stack
@@ -45,11 +105,72 @@ comments: True
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 ```python title="155. Min Stack - Python Solution"
---8<-- "0155_min_stack.py"
+# Stack
+class MinStack:
+
+    def __init__(self):
+        self.stack = []
+
+    def push(self, val: int) -> None:
+        if self.stack:
+            self.stack.append((val, min(val, self.getMin())))
+        else:
+            self.stack.append((val, val))
+
+    def pop(self) -> None:
+        self.stack.pop()
+
+    def top(self) -> int:
+        return self.stack[-1][0]
+
+    def getMin(self) -> int:
+        return self.stack[-1][1]
+
+
+obj = MinStack()
+obj.push(3)
+obj.push(2)
+obj.pop()
+print(obj.top())  # 3
+print(obj.getMin())  # 3
+
 ```
 
 ```cpp title="155. Min Stack - C++ Solution"
---8<-- "cpp/0155_min_stack.cc"
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <stack>
+#include <utility>
+using namespace std;
+
+class MinStack {
+    stack<pair<int, int>> st;
+
+   public:
+    MinStack() { st.emplace(0, INT_MAX); }
+
+    void push(int val) { st.emplace(val, min(getMin(), val)); }
+
+    void pop() { st.pop(); }
+
+    int top() { return st.top().first; }
+
+    int getMin() { return st.top().second; }
+};
+
+int main() {
+    MinStack minStack;
+    minStack.push(-2);
+    minStack.push(0);
+    minStack.push(-3);
+    cout << minStack.getMin() << endl;  // -3
+    minStack.pop();
+    cout << minStack.top() << endl;     // 0
+    cout << minStack.getMin() << endl;  // -2
+    return 0;
+}
+
 ```
 
 ## 150. Evaluate Reverse Polish Notation
@@ -68,7 +189,35 @@ comments: True
 | `*`   | pop    | `[9]`    |
 
 ```python title="150. Evaluate Reverse Polish Notation - Python Solution"
---8<-- "0150_evaluate_reverse_polish_notation.py"
+from typing import List
+
+
+# Stack
+def evalRPN(tokens: List[str]) -> int:
+    stack = []
+
+    for c in tokens:
+        if c == "+":
+            stack.append(stack.pop() + stack.pop())
+        elif c == "-":
+            a, b = stack.pop(), stack.pop()
+            stack.append(b - a)
+        elif c == "*":
+            stack.append(stack.pop() * stack.pop())
+        elif c == "/":
+            a, b = stack.pop(), stack.pop()
+            stack.append(int(b / a))
+        else:
+            stack.append(int(c))
+
+    return stack[0]
+
+
+print(evalRPN(["2", "1", "+", "3", "*"]))  # 9
+print(evalRPN(["4", "13", "5", "/", "-"]))  # 2
+print(evalRPN(["18"]))  # 18
+print(evalRPN(["4", "3", "-"]))  # 1
+
 ```
 
 ## 22. Generate Parentheses
@@ -78,7 +227,37 @@ comments: True
 -   Tags: string, dynamic programming, backtracking
 
 ```python title="22. Generate Parentheses - Python Solution"
---8<-- "0022_generate_parentheses.py"
+from typing import List
+
+
+# Stack
+def generateParenthesis(n: int) -> List[str]:
+    stack = []
+    result = []
+
+    def backtrack(openN, closeN):
+        if openN == closeN == n:
+            result.append("".join(stack))
+            return None
+
+        if openN < n:
+            stack.append("(")
+            backtrack(openN + 1, closeN)
+            stack.pop()
+
+        if closeN < openN:
+            stack.append(")")
+            backtrack(openN, closeN + 1)
+            stack.pop()
+
+    backtrack(0, 0)
+
+    return result
+
+
+print(generateParenthesis(3))
+# ['((()))', '(()())', '(())()', '()(())', '()()()']
+
 ```
 
 ## 739. Daily Temperatures
@@ -100,7 +279,27 @@ comments: True
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
 ```python title="739. Daily Temperatures - Python Solution"
---8<-- "0739_daily_temperatures.py"
+from typing import List
+
+
+# Monotonic Stack
+def dailyTemperatures(temperatures: List[int]) -> List[int]:
+    res = [0 for _ in range(len(temperatures))]
+    stack = []  # [temp, index]
+
+    for idx, temp in enumerate(temperatures):
+        while stack and temp > stack[-1][0]:
+            _, last_index = stack.pop()
+            res[last_index] = idx - last_index
+
+        stack.append([temp, idx])
+
+    return res
+
+
+print(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
+# [1, 1, 4, 2, 1, 1, 0, 0]
+
 ```
 
 ## 853. Car Fleet
@@ -110,7 +309,25 @@ comments: True
 -   Tags: array, stack, sorting, monotonic stack
 
 ```python title="853. Car Fleet - Python Solution"
---8<-- "0853_car_fleet.py"
+from typing import List
+
+
+# Stack
+def carFleet(target: int, position: List[int], speed: List[int]) -> int:
+    cars = sorted(zip(position, speed), reverse=True)
+    stack = []
+
+    for p, s in cars:
+        time = (target - p) / s
+
+        if not stack or time > stack[-1]:
+            stack.append(time)
+
+    return len(stack)
+
+
+print(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]))  # 3
+
 ```
 
 ## 84. Largest Rectangle in Histogram
@@ -120,5 +337,27 @@ comments: True
 -   Tags: array, stack, monotonic stack
 
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
---8<-- "0084_largest_rectangle_in_histogram.py"
+from typing import List
+
+
+def largestRectangleArea(heights: List[int]) -> int:
+    maxArea = 0
+    stack = []  # pair: (index, height)
+
+    for i, h in enumerate(heights):
+        start = i
+        while stack and stack[-1][1] > h:
+            index, height = stack.pop()
+            maxArea = max(maxArea, height * (i - index))
+            start = index
+        stack.append((start, h))
+
+    for i, h in stack:
+        maxArea = max(maxArea, h * (len(heights) - i))
+
+    return maxArea
+
+
+print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
+
 ```

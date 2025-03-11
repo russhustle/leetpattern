@@ -46,7 +46,27 @@ comments: True
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
 ```python title="739. Daily Temperatures - Python Solution"
---8<-- "0739_daily_temperatures.py"
+from typing import List
+
+
+# Monotonic Stack
+def dailyTemperatures(temperatures: List[int]) -> List[int]:
+    res = [0 for _ in range(len(temperatures))]
+    stack = []  # [temp, index]
+
+    for idx, temp in enumerate(temperatures):
+        while stack and temp > stack[-1][0]:
+            _, last_index = stack.pop()
+            res[last_index] = idx - last_index
+
+        stack.append([temp, idx])
+
+    return res
+
+
+print(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
+# [1, 1, 4, 2, 1, 1, 0, 0]
+
 ```
 
 ## 1475. Final Prices With a Special Discount in a Shop
@@ -62,7 +82,30 @@ comments: True
 -   Tags: array, hash table, stack, monotonic stack
 
 ```python title="496. Next Greater Element I - Python Solution"
---8<-- "0496_next_greater_element_i.py"
+from typing import List
+
+
+# Monotonic Stack
+def nextGreaterElement(nums1: List[int], nums2: List[int]) -> List[int]:
+    next_greater = {}
+    stack = []
+    result = []
+
+    for num in nums2:
+        while stack and num > stack[-1]:
+            next_greater[stack.pop()] = num
+        stack.append(num)
+
+    for num in nums1:
+        result.append(next_greater.get(num, -1))
+
+    return result
+
+
+nums1 = [4, 1, 2]
+nums2 = [1, 3, 4, 2]
+print(nextGreaterElement(nums1, nums2))  # [3, -1, -1]
+
 ```
 
 ## 503. Next Greater Element II
@@ -72,7 +115,27 @@ comments: True
 -   Tags: array, stack, monotonic stack
 
 ```python title="503. Next Greater Element II - Python Solution"
---8<-- "0503_next_greater_element_ii.py"
+from typing import List
+
+
+# Monotonic Stack
+def nextGreaterElements(nums: List[int]) -> List[int]:
+    n = len(nums)
+    result = [-1] * n
+    stack = []
+
+    for i in range(2 * n):
+        while stack and nums[stack[-1]] < nums[i % n]:
+            result[stack.pop()] = nums[i % n]
+        if i < n:
+            stack.append(i)
+
+    return result
+
+
+nums = [1, 2, 1]
+print(nextGreaterElements(nums))  # [2, -1, 2]
+
 ```
 
 ## 1019. Next Greater Node In Linked List
@@ -94,7 +157,25 @@ comments: True
 -   Tags: array, stack, sorting, monotonic stack
 
 ```python title="853. Car Fleet - Python Solution"
---8<-- "0853_car_fleet.py"
+from typing import List
+
+
+# Stack
+def carFleet(target: int, position: List[int], speed: List[int]) -> int:
+    cars = sorted(zip(position, speed), reverse=True)
+    stack = []
+
+    for p, s in cars:
+        time = (target - p) / s
+
+        if not stack or time > stack[-1]:
+            stack.append(time)
+
+    return len(stack)
+
+
+print(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]))  # 3
+
 ```
 
 ## 901. Online Stock Span
@@ -105,7 +186,28 @@ comments: True
 -   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
 ```python title="901. Online Stock Span - Python Solution"
---8<-- "0901_online_stock_span.py"
+from typing import List
+
+
+# Monotonic Stack
+class StockSpanner:
+
+    def __init__(self):
+        self.stack = [(-1, float("inf"))]
+        self.cur_day = -1
+
+    def next(self, price: int) -> int:
+        while price >= self.stack[-1][1]:
+            self.stack.pop()
+        self.cur_day += 1
+        self.stack.append((self.cur_day, price))
+        return self.cur_day - self.stack[-2][0]
+
+
+obj = StockSpanner()
+prices = [100, 80, 60, 70, 60, 75, 85]
+print([obj.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
+
 ```
 
 ## 1124. Longest Well-Performing Interval
@@ -127,7 +229,33 @@ comments: True
 -   Tags: array, binary search, stack, monotonic stack, ordered set
 
 ```python title="456. 132 Pattern - Python Solution"
---8<-- "0456_132_pattern.py"
+from typing import List
+
+
+# Monotonic Stack
+def find132pattern(nums: List[int]) -> bool:
+    n = len(nums)
+    if n < 3:
+        return False
+
+    stack = []
+    second_max = float("-inf")
+
+    for i in range(n - 1, -1, -1):
+        if nums[i] < second_max:
+            return True
+
+        while stack and stack[-1] < nums[i]:
+            second_max = stack.pop()
+
+        stack.append(nums[i])
+
+    return False
+
+
+nums = [-1, 3, 2, 0]
+print(find132pattern(nums))  # True
+
 ```
 
 ## 3113. Find the Number of Subarrays Where Boundary Elements Are Maximum

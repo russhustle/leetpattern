@@ -37,7 +37,31 @@ comments: True
 -   Tags: string, dynamic programming
 
 ```python title="1278. Palindrome Partitioning III - Python Solution"
---8<-- "1278_palindrome_partitioning_iii.py"
+# DP
+def palindromePartition(s: str, k: int) -> int:
+    n = len(s)
+    min_change = [[0] * n for _ in range(n)]
+    for i in range(n - 2, -1, -1):
+        for j in range(i + 1, n):
+            min_change[i][j] = min_change[i + 1][j - 1] + (
+                1 if s[i] != s[j] else 0
+            )
+
+    dp = min_change[0]
+    for i in range(1, k):
+        for right in range(n - k + i, i - 1, -1):
+            dp[right] = min(
+                dp[left - 1] + min_change[left][right]
+                for left in range(i, right + 1)
+            )
+
+    return dp[-1]
+
+
+s = "aabbc"
+k = 3
+print(palindromePartition(s, k))  # 0
+
 ```
 
 ## 1745. Palindrome Partitioning IV
@@ -47,7 +71,34 @@ comments: True
 -   Tags: string, dynamic programming
 
 ```python title="1745. Palindrome Partitioning IV - Python Solution"
---8<-- "1745_palindrome_partitioning_iv.py"
+# DP
+def checkPartitioning(s: str) -> bool:
+    def palidrome_partition(s, k):
+        n = len(s)
+        min_change = [[0] * n for _ in range(n)]
+        for i in range(n - 2, -1, -1):
+            for j in range(i + 1, n):
+                min_change[i][j] = min_change[i + 1][j - 1] + (
+                    1 if s[i] != s[j] else 0
+                )
+
+        dp = min_change[0]
+
+        for i in range(1, k):
+            for right in range(n - k + i, i - 1, -1):
+                dp[right] = min(
+                    dp[left - 1] + min_change[left][right]
+                    for left in range(i, right + 1)
+                )
+
+        return dp[-1]
+
+    return palidrome_partition(s, 3) == 0
+
+
+s = "abcbdd"
+print(checkPartitioning(s))  # True
+
 ```
 
 ## 1335. Minimum Difficulty of a Job Schedule

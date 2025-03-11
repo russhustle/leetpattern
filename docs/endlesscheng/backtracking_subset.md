@@ -28,7 +28,28 @@ comments: True
 -   Tags: array, backtracking, bit manipulation
 
 ```python title="78. Subsets - Python Solution"
---8<-- "0078_subsets.py"
+from typing import List
+
+
+def subsets(nums: List[int]) -> List[List[int]]:
+    path, result = [], []
+
+    def backtracking(startIndex):
+        result.append(path[:])
+
+        for i in range(startIndex, len(nums)):
+            path.append(nums[i])
+            backtracking(i + 1)
+            path.pop()
+
+    backtracking(startIndex=0)
+
+    return result
+
+
+print(subsets([1, 2, 3]))
+# [[], [1], [1, 2], [1, 2, 3], [1, 3], [2], [2, 3], [3]]
+
 ```
 
 ## 784. Letter Case Permutation
@@ -50,7 +71,33 @@ comments: True
 -   Tags: array, dynamic programming, backtracking
 
 ```python title="494. Target Sum - Python Solution"
---8<-- "0494_target_sum.py"
+from typing import List
+
+
+def findTargetSumWays(nums: List[int], target: int) -> int:
+
+    totalSum = sum(nums)
+
+    if abs(target) > totalSum:
+        return 0
+    if (target + totalSum) % 2 == 1:
+        return 0
+
+    targetSum = (target + totalSum) // 2
+    dp = [0] * (targetSum + 1)
+    dp[0] = 1
+
+    for i in range(len(nums)):
+        for j in range(targetSum, nums[i] - 1, -1):
+            dp[j] += dp[j - nums[i]]
+
+    return dp[targetSum]
+
+
+nums = [1, 1, 1, 1, 1]
+target = 3
+print(findTargetSumWays(nums, target))  # 5
+
 ```
 
 ## 2397. Maximum Rows Covered by Columns
@@ -90,7 +137,47 @@ comments: True
 -   Tags: array, hash table, math, dynamic programming, backtracking, sorting, combinatorics
 
 ```cpp title="2597. The Number of Beautiful Subsets - C++ Solution"
---8<-- "cpp/2597_the_number_of_beautiful_subsets.cc"
+#include <functional>
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+
+using namespace std;
+
+class Solution {
+   public:
+    int beautifulSubsets(vector<int>& nums, int k) {
+        int res = 0;
+        unordered_map<int, int> cnt;
+
+        auto dfs = [&](auto&& self, int i) -> void {
+            if (i == (int)nums.size()) {
+                res++;
+                return;
+            }
+            self(self, i + 1);  // Skip nums[i]
+            int x = nums[i];
+            if (cnt[x - k] == 0 && cnt[x + k] == 0) {
+                cnt[x]++;
+                self(self, i + 1);  // Include nums[i]
+                cnt[x]--;           // Backtrack
+            }
+        };
+
+        dfs(dfs, 0);
+
+        return res - 1;
+    }
+};
+
+int main() {
+    Solution sol;
+    vector<int> nums = {1, 2, 3, 4};
+    int k = 1;
+    cout << sol.beautifulSubsets(nums, k) << endl;
+    return 0;
+}
+
 ```
 
 ## 2959. Number of Possible Sets of Closing Branches
@@ -130,5 +217,33 @@ comments: True
 -   Tags: array, backtracking
 
 ```python title="39. Combination Sum - Python Solution"
---8<-- "0039_combination_sum.py"
+from typing import List
+
+
+def combinationSum(candidates: List[int], target: int) -> List[List[int]]:
+    result = []
+    path = []
+
+    def backtracking(total, start):
+        if total > target:
+            return None
+        if total == target:
+            result.append(path[:])
+            return None
+
+        for i in range(start, len(candidates)):
+            total += candidates[i]
+            path.append(candidates[i])
+
+            backtracking(total, i)
+
+            total -= candidates[i]
+            path.pop()
+
+    backtracking(0, 0)
+    return result
+
+
+print(combinationSum([2, 3, 6, 7], 7))  # [[2, 2, 3], [7]]
+
 ```

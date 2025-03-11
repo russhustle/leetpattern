@@ -20,7 +20,49 @@ comments: True
 -   Tags: tree, depth first search, binary search tree, binary tree
 
 ```python title="235. Lowest Common Ancestor of a Binary Search Tree - Python Solution"
---8<-- "0235_lowest_common_ancestor_of_a_binary_search_tree.py"
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def lowestCommonAncestor(
+    root: "TreeNode", p: "TreeNode", q: "TreeNode"
+) -> "TreeNode":
+    while root:
+        if root.val > p.val and root.val > q.val:
+            root = root.left
+        elif root.val < p.val and root.val < q.val:
+            root = root.right
+        else:
+            return root
+
+
+root = [6, 2, 8, 0, 4, 7, 9, None, None, 3, 5]
+root = build(root)
+p = root.left
+q = root.right
+print(root)
+#     ______6__
+#    /         \
+#   2__         8
+#  /   \       / \
+# 0     4     7   9
+#      / \
+#     3   5
+print(lowestCommonAncestor(root, p, q))
+#     ______6__
+#    /         \
+#   2__         8
+#  /   \       / \
+# 0     4     7   9
+#      / \
+#     3   5
+
 ```
 
 ## 236. Lowest Common Ancestor of a Binary Tree
@@ -30,11 +72,98 @@ comments: True
 -   Tags: tree, depth first search, binary tree
 
 ```python title="236. Lowest Common Ancestor of a Binary Tree - Python Solution"
---8<-- "0236_lowest_common_ancestor_of_a_binary_tree.py"
+from typing import List, Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def lowestCommonAncestor(
+    root: "TreeNode", p: "TreeNode", q: "TreeNode"
+) -> "TreeNode":
+    if not root or q == root or p == root:
+        return root
+
+    left = lowestCommonAncestor(root.left, p, q)
+    right = lowestCommonAncestor(root.right, p, q)
+
+    if left and right:
+        return root
+
+    return left or right
+
+
+root = build([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4])
+print(root)
+#     ______3__
+#    /         \
+#   5__         1
+#  /   \       / \
+# 6     2     0   8
+#      / \
+#     7   4
+p = root.left  # 5
+q = root.right  # 1
+print(lowestCommonAncestor(root, p, q))  # 3
+#     ______3__
+#    /         \
+#   5__         1
+#  /   \       / \
+# 6     2     0   8
+#      / \
+#     7   4
+r = root.left.right.right  # 4
+print(lowestCommonAncestor(root, p, r))  # 5
+#   5__
+#  /   \
+# 6     2
+#      / \
+#     7   4
+
 ```
 
 ```cpp title="236. Lowest Common Ancestor of a Binary Tree - C++ Solution"
---8<-- "cpp/0236_lowest_common_ancestor_of_a_binary_tree.cc"
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+using namespace std;
+
+struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode* left, TreeNode* right)
+        : val(x), left(left), right(right) {}
+};
+
+class Solution {
+   public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        if (root == nullptr || root == p || root == q) {
+            return root;
+        }
+
+        TreeNode* left = lowestCommonAncestor(root->left, p, q);
+        TreeNode* right = lowestCommonAncestor(root->right, p, q);
+
+        if (left && right) {
+            return root;
+        }
+
+        return left ? left : right;
+    }
+};
+
+int main() { return 0; }
+
 ```
 
 ## 1123. Lowest Common Ancestor of Deepest Leaves

@@ -43,11 +43,61 @@ comments: True
 -   Tags: array, hash table, prefix sum
 
 ```python title="560. Subarray Sum Equals K - Python Solution"
---8<-- "0560_subarray_sum_equals_k.py"
+from collections import defaultdict
+from typing import List
+
+
+# Prefix Sum
+def subarraySum(nums: List[int], k: int) -> int:
+    preSums = defaultdict(int)
+    preSums[0] = 1
+    curSum = 0
+    res = 0
+
+    for num in nums:
+        curSum += num
+        res += preSums[curSum - k]
+        preSums[curSum] += 1
+
+    return res
+
+
+nums = [1, 1, 1]
+k = 2
+print(subarraySum(nums, k))  # 2
+
 ```
 
 ```cpp title="560. Subarray Sum Equals K - C++ Solution"
---8<-- "cpp/0560_subarray_sum_equals_k.cc"
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+using namespace std;
+
+int subarraySum(vector<int>& nums, int k) {
+    int n = nums.size();
+    vector<int> prefixSum(n + 1);
+    for (int i = 0; i < n; i++) {
+        prefixSum[i + 1] = prefixSum[i] + nums[i];
+    }
+
+    int res = 0;
+    unordered_map<int, int> cnt;
+
+    for (int ps : prefixSum) {
+        if (cnt.find(ps - k) != cnt.end()) res += cnt[ps - k];
+        cnt[ps]++;
+    }
+    return res;
+}
+
+int main() {
+    vector<int> nums = {1, 1, 1};
+    int k = 2;
+    cout << subarraySum(nums, k) << endl;  // 2
+    return 0;
+}
+
 ```
 
 ## 1524. Number of Sub-arrays With Odd Sum
@@ -63,7 +113,49 @@ comments: True
 -   Tags: array, hash table, prefix sum
 
 ```python title="974. Subarray Sums Divisible by K - Python Solution"
---8<-- "0974_subarray_sums_divisible_by_k.py"
+from typing import List
+
+
+def subarraysDivByK_1(nums: List[int], k: int) -> int:
+    mods = {0: 1}
+    prefixSum, result = 0, 0
+
+    for num in nums:
+        prefixSum += num
+        mod = prefixSum % k
+
+        if mod < 0:
+            mod += k
+
+        if mod in mods:
+            result += mods[mod]
+
+        if mod in mods:
+            mods[mod] += 1
+        else:
+            mods[mod] = 1
+
+    return result
+
+
+def subarraysDivByK_2(nums: List[int], k: int) -> int:
+    mods = {0: 1}
+    prefixSum, result = 0, 0
+
+    for num in nums:
+        prefixSum += num
+        mod = prefixSum % k
+        result += mods.get(mod, 0)
+        mods[mod] = mods.get(mod, 0) + 1
+
+    return result
+
+
+nums = [4, 5, 0, -2, -3, 1]
+k = 5
+print(subarraysDivByK_1(nums, k))  # 7
+print(subarraysDivByK_2(nums, k))  # 7
+
 ```
 
 ## 523. Continuous Subarray Sum
@@ -73,7 +165,36 @@ comments: True
 -   Tags: array, hash table, math, prefix sum
 
 ```python title="523. Continuous Subarray Sum - Python Solution"
---8<-- "0523_continuous_subarray_sum.py"
+from typing import List
+
+
+# Prefix Sum
+def checkSubarraySum(nums: List[int], k: int) -> bool:
+    if k == 0:
+        for i in range(1, len(nums)):
+            if nums[i - 1] == 0 and nums[i] == 0:
+                return True
+
+    prefix_sum = 0
+    mod_dict = {0: -1}
+
+    for i, num in enumerate(nums):
+        prefix_sum += num
+        mod = prefix_sum % k
+
+        if mod in mod_dict:
+            if i - mod_dict[mod] > 1:
+                return True
+        else:
+            mod_dict[mod] = i
+
+    return False
+
+
+nums = [23, 2, 4, 6, 7]
+k = 6
+print(checkSubarraySum(nums, k))  # True
+
 ```
 
 ## 437. Path Sum III
@@ -83,7 +204,75 @@ comments: True
 -   Tags: tree, depth first search, binary tree
 
 ```cpp title="437. Path Sum III - C++ Solution"
---8<-- "cpp/0437_path_sum_iii.cc"
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+using namespace std;
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right)
+        : val(x), left(left), right(right) {}
+};
+
+class Solution {
+   public:
+    int pathSum(TreeNode *root, int targetSum) {
+        int res = 0;
+        unordered_map<long long, int> cnt{{0, 1}};
+
+        auto dfs = [&](auto &&self, TreeNode *node, long long cur) {
+            if (!node) return;
+            cur += node->val;
+
+            if (cnt.find(cur - targetSum) != cnt.end())
+                res += cnt[cur - targetSum];
+
+            cnt[cur]++;
+            self(self, node->left, cur);
+            self(self, node->right, cur);
+            cnt[cur]--;
+        };
+
+        dfs(dfs, root, 0);
+        return res;
+    }
+};
+
+int main() {
+    Solution s;
+    {
+        TreeNode *root = new TreeNode(10);
+        root->left = new TreeNode(5);
+        root->right = new TreeNode(-3);
+        root->left->left = new TreeNode(3);
+        root->left->right = new TreeNode(2);
+        root->right->right = new TreeNode(11);
+        root->left->left->left = new TreeNode(3);
+        root->left->left->right = new TreeNode(-2);
+        root->left->right->right = new TreeNode(1);
+        cout << s.pathSum(root, 8) << endl;  // 3
+    }
+    {
+        TreeNode *root = new TreeNode(5);
+        root->left = new TreeNode(4);
+        root->right = new TreeNode(8);
+        root->left->left = new TreeNode(11);
+        root->right->left = new TreeNode(13);
+        root->right->right = new TreeNode(4);
+        root->left->left->left = new TreeNode(7);
+        root->left->left->right = new TreeNode(2);
+        root->right->right->left = new TreeNode(5);
+        root->right->right->right = new TreeNode(1);
+        cout << s.pathSum(root, 22) << endl;  // 3
+    }
+    return 0;
+}
+
 ```
 
 ## 2588. Count the Number of Beautiful Subarrays
@@ -103,7 +292,26 @@ comments: True
 ```
 
 ```python title="2588. Count the Number of Beautiful Subarrays - Python Solution"
---8<-- "2588_count_the_number_of_beautiful_subarrays.py"
+from collections import defaultdict
+from typing import List
+
+
+def beautifulSubarrays(nums: List[int]) -> int:
+    res, s = 0, 0
+    cnt = defaultdict(int)
+    cnt[0] = 1
+
+    for x in nums:
+        s ^= x
+        res += cnt[s]
+        cnt[s] += 1
+
+    return res
+
+
+nums = [4, 3, 1, 2, 4]
+print(beautifulSubarrays(nums))  # 2
+
 ```
 
 ## 525. Contiguous Array
@@ -179,7 +387,29 @@ comments: True
 -   Tags: array, hash table, prefix sum
 
 ```python title="325. Maximum Size Subarray Sum Equals k - Python Solution"
---8<-- "0325_maximum_size_subarray_sum_equals_k.py"
+from typing import List
+
+
+# Prefix Sum
+def maxSubArrayLen(nums: List[int], k: int) -> int:
+    res = 0
+    prefix = 0
+    sumMap = {0: -1}  # sum -> index
+
+    for i, num in enumerate(nums):
+        prefix += num
+        if prefix - k in sumMap:
+            res = max(res, i - sumMap[prefix - k])
+        if prefix not in sumMap:
+            sumMap[prefix] = i
+
+    return res
+
+
+nums = [1, -1, 5, -2, 3]
+k = 3
+print(maxSubArrayLen(nums, k))  # 4
+
 ```
 
 ## 548. Split Array with Equal Sum

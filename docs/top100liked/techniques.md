@@ -17,7 +17,34 @@ comments: True
 -   Tags: array, bit manipulation
 
 ```python title="136. Single Number - Python Solution"
---8<-- "0136_single_number.py"
+from functools import reduce
+from operator import xor
+from typing import List
+
+
+# XOR
+def singleNumber(nums: List[int]) -> int:
+    res = 0
+    for num in nums:
+        res ^= num
+    return res
+
+
+# XOR
+def singleNumberXOR(nums: List[int]) -> int:
+    return reduce(xor, nums)
+
+
+# XOR
+def singleNumberXORLambda(nums: List[int]) -> int:
+    return reduce(lambda x, y: x ^ y, nums)
+
+
+nums = [4, 1, 2, 1, 2]
+print(singleNumber(nums))  # 4
+print(singleNumberXOR(nums))  # 4
+print(singleNumberXORLambda(nums))  # 4
+
 ```
 
 ## 169. Majority Element
@@ -40,7 +67,45 @@ comments: True
 | 2     | 1       | 2     |
 
 ```python title="169. Majority Element - Python Solution"
---8<-- "0169_majority_element.py"
+from collections import defaultdict
+from typing import List
+
+
+# Hash Map
+def majorityElementHashMap(nums: List[int]) -> int:
+    n = len(nums)
+    freq = defaultdict(int)
+
+    for num in nums:
+        freq[num] += 1
+        if freq[num] > n // 2:
+            return num
+
+
+# Array - Boyer-Moore Voting Algorithm
+def majorityElementArray(nums: List[int]) -> int:
+    res = None
+    count = 0
+
+    for num in nums:
+        if count == 0:
+            res = num
+        count += 1 if num == res else -1
+
+    return res
+
+
+# | Algorithm | Time Complexity | Space Complexity |
+# |-----------|-----------------|------------------|
+# | HashMap   | O(N)            | O(N)             |
+# | Array     | O(N)            | O(1)             |
+# |-----------|-----------------|------------------|
+
+
+nums = [2, 2, 1, 1, 1, 2, 2]
+print(majorityElementArray(nums))  # 2
+print(majorityElementHashMap(nums))  # 2
+
 ```
 
 ## 75. Sort Colors
@@ -50,7 +115,33 @@ comments: True
 -   Tags: array, two pointers, sorting
 
 ```python title="75. Sort Colors - Python Solution"
---8<-- "0075_sort_colors.py"
+from typing import List
+
+
+# Left Right Pointers
+def sortColors(nums: List[int]) -> None:
+    """Sorts an array of 0, 1, and 2 in-place.
+    Do not return anything, modify nums in-place instead.
+    """
+    left, right = 0, len(nums) - 1
+    current = 0
+
+    while current <= right:
+        if nums[current] == 0:
+            nums[left], nums[current] = nums[current], nums[left]
+            left += 1
+            current += 1
+        elif nums[current] == 2:
+            nums[right], nums[current] = nums[current], nums[right]
+            right -= 1
+        else:
+            current += 1
+
+
+nums = [2, 0, 2, 1, 1, 0]
+sortColors(nums)
+print(nums)  # [0, 0, 1, 1, 2, 2]
+
 ```
 
 ## 31. Next Permutation
@@ -60,7 +151,37 @@ comments: True
 -   Tags: array, two pointers
 
 ```python title="31. Next Permutation - Python Solution"
---8<-- "0031_next_permutation.py"
+from typing import List
+
+
+def nextPermutation(nums: List[int]) -> None:
+    """
+    Do not return anything, modify nums in-place instead.
+    """
+    n = len(nums)
+    i = n - 1
+    while i > 0 and nums[i - 1] >= nums[i]:
+        i -= 1
+    if i != 0:
+        j = n - 1
+        while nums[j] <= nums[i - 1]:
+            j -= 1
+        nums[i - 1], nums[j] = nums[j], nums[i - 1]
+
+    left, right = i, n - 1
+    while left < right:
+        nums[left], nums[right] = nums[right], nums[left]
+        left += 1
+        right -= 1
+
+
+nums = [1, 2, 3]
+nextPermutation(nums)
+print(nums)  # [1, 3, 2]
+nums = [1, 2, 3, 4, 6, 5]
+nextPermutation(nums)
+print(nums)  # [1, 2, 3, 5, 4, 6]
+
 ```
 
 ## 287. Find the Duplicate Number
@@ -71,5 +192,28 @@ comments: True
 -   Find the duplicate number in an array containing `n + 1` integers where each integer is between `1` and `n` inclusive.
 
 ```python title="287. Find the Duplicate Number - Python Solution"
---8<-- "0287_find_the_duplicate_number.py"
+from typing import List
+
+
+# Fast Slow Pointer
+def findDuplicate(nums: List[int]) -> int:
+    fast, slow = nums[0], nums[0]
+
+    while True:
+        slow = nums[slow]
+        fast = nums[nums[fast]]
+        if slow == fast:
+            break
+
+    slow = nums[0]
+    while slow != fast:
+        slow = nums[slow]
+        fast = nums[fast]
+
+    return slow
+
+
+nums = [1, 3, 4, 2, 2]
+print(findDuplicate(nums))  # 2
+
 ```

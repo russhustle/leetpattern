@@ -34,7 +34,50 @@ B --> A((1))
 ```
 
 ```python title="206. Reverse Linked List - Python Solution"
---8<-- "0206_reverse_linked_list.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Iterative
+def reverseListIterative(head: Optional[ListNode]) -> Optional[ListNode]:
+    cur = head
+    prev = None
+
+    while cur:
+        temp = cur.next
+        cur.next = prev
+
+        prev = cur
+        cur = temp
+
+    return prev
+
+
+# Recursive
+def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
+    def reverse(cur, prev):
+        if not cur:
+            return prev
+
+        temp = cur.next
+        cur.next = prev
+
+        return reverse(temp, cur)
+
+    return reverse(head, None)
+
+
+nums = [1, 2, 3, 4, 5]
+head1 = ListNode.create(nums)
+print(head1)
+# 1 -> 2 -> 3 -> 4 -> 5
+print(reverseListIterative(head1))
+# 5 -> 4 -> 3 -> 2 -> 1
+head2 = ListNode.create(nums)
+print(reverseListRecursive(head2))
+# 5 -> 4 -> 3 -> 2 -> 1
+
 ```
 
 ## 92. Reverse Linked List II
@@ -61,7 +104,40 @@ D --> E((5))
 ```
 
 ```python title="92. Reverse Linked List II - Python Solution"
---8<-- "0092_reverse_linked_list_ii.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Linked List
+def reverseBetween(
+    head: Optional[ListNode], left: int, right: int
+) -> Optional[ListNode]:
+    dummy = ListNode(next=head)
+    p0 = dummy
+    for _ in range(left - 1):
+        p0 = p0.next
+
+    pre = None
+    cur = p0.next
+    for _ in range(right - left + 1):
+        nxt = cur.next
+        cur.next = pre
+        pre = cur
+        cur = nxt
+
+    p0.next.next = cur
+    p0.next = pre
+
+    return dummy.next
+
+
+head = ListNode().create([1, 2, 3, 4, 5])
+left = 2
+right = 4
+print(reverseBetween(head, left, right))
+# 1 -> 4 -> 3 -> 2 -> 5
+
 ```
 
 ## 24. Swap Nodes in Pairs
@@ -72,7 +148,34 @@ D --> E((5))
 -   Given a linked list, swap every two adjacent nodes and return its head.
 
 ```python title="24. Swap Nodes in Pairs - Python Solution"
---8<-- "0024_swap_nodes_in_pairs.py"
+from typing import Optional
+
+from template import ListNode
+
+
+def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
+    dummy = ListNode(next=head)
+    cur = dummy
+
+    while cur.next and cur.next.next:
+        temp = cur.next
+        temp1 = cur.next.next.next
+
+        cur.next = cur.next.next
+        cur.next.next = temp
+        temp.next = temp1
+        cur = cur.next.next
+
+    return dummy.next
+
+
+nums = [1, 2, 3, 4, 5]
+head = ListNode.create(nums)
+print(head)
+# 1 -> 2 -> 3 -> 4 -> 5
+print(swapPairs(head))
+# 2 -> 1 -> 4 -> 3 -> 5
+
 ```
 
 ## 25. Reverse Nodes in k-Group

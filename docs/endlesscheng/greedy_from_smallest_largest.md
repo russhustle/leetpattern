@@ -53,11 +53,65 @@ comments: True
 -   Tags: array, greedy, sorting
 
 ```python title="3074. Apple Redistribution into Boxes - Python Solution"
---8<-- "3074_apple_redistribution_into_boxes.py"
+from typing import List
+
+
+# Greedy
+def minimumBoxes(apple: List[int], capacity: List[int]) -> int:
+    target = sum(apple)
+    capacity.sort(reverse=True)
+    res = 0
+
+    for box in capacity:
+        res += 1
+        target -= box
+        if target <= 0:
+            break
+
+    return res
+
+
+apple = [1, 3, 2]
+capacity = [4, 3, 1, 5, 2]
+assert minimumBoxes(apple, capacity) == 2
+
 ```
 
 ```cpp title="3074. Apple Redistribution into Boxes - C++ Solution"
---8<-- "cpp/3074_apple_redistribution_into_boxes.cc"
+#include <vector>
+#include <numeric>
+#include <algorithm>
+#include <functional>
+#include <iostream>
+
+using namespace std;
+
+class Solution
+{
+public:
+    int minimumBoxes(vector<int> &apple, vector<int> &capacity)
+    {
+        int s = accumulate(apple.begin(), apple.end(), 0);
+        sort(capacity.begin(), capacity.end(), greater<int>());
+
+        int i = 0;
+        while (s > 0)
+        {
+            s -= capacity[i++];
+        }
+        return i;
+    }
+};
+
+int main()
+{
+    Solution s;
+    vector<int> apple = {1, 3, 2};
+    vector<int> capacity = {4, 3, 1, 5, 2};
+    cout << s.minimumBoxes(apple, capacity) << endl;
+    return 0;
+}
+
 ```
 
 ## 2279. Maximum Bags With Full Capacity of Rocks
@@ -80,7 +134,42 @@ comments: True
 -   Return the maximum sum of the array after changing at most `k` elements.
 
 ```python title="1005. Maximize Sum Of Array After K Negations - Python Solution"
---8<-- "1005_maximize_sum_of_array_after_k_negations.py"
+from heapq import heapify, heapreplace
+from typing import List
+
+
+# Greedy
+def largestSumAfterKNegationsGreedy(nums: List[int], k: int) -> int:
+    nums.sort(key=abs, reverse=True)
+
+    for i in range(len(nums)):
+        if nums[i] < 0 and k > 0:
+            nums[i] *= -1
+            k -= 1
+
+    if k % 2:
+        nums[-1] *= -1
+
+    return sum(nums)
+
+
+# Heap
+def largestSumAfterKNegationsHeap(nums: List[int], k: int) -> int:
+    heapify(nums)
+
+    while k and nums[0] < 0:
+        heapreplace(nums, -nums[0])
+        k -= 1
+
+    if k % 2:
+        heapreplace(nums, -nums[0])
+
+    return sum(nums)
+
+
+print(largestSumAfterKNegationsGreedy([4, 2, 3], 1))  # 5
+print(largestSumAfterKNegationsHeap([4, 2, 3], 1))
+
 ```
 
 ## 1481. Least Number of Unique Integers after K Removals
@@ -120,7 +209,28 @@ comments: True
 -   Tags: array, greedy, sorting
 
 ```python title="3075. Maximize Happiness of Selected Children - Python Solution"
---8<-- "3075_maximize_happiness_of_selected_children.py"
+from typing import List
+
+
+# Greedy
+def maximumHappinessSum(happiness: List[int], k: int) -> int:
+    selected = 0
+    happinessScore = 0
+    happiness.sort(reverse=True)
+
+    for score in happiness:
+        if selected == k:
+            return happinessScore
+        happinessScore += max(0, score - selected)
+        selected += 1
+
+    return happinessScore
+
+
+happiness = [1, 2, 3]
+k = 2
+print(maximumHappinessSum(happiness, k))  # 4
+
 ```
 
 ## 2554. Maximum Number of Integers to Choose From a Range I
@@ -166,7 +276,25 @@ comments: True
 -   Tags: array, greedy, sorting, counting
 
 ```python title="945. Minimum Increment to Make Array Unique - Python Solution"
---8<-- "0945_minimum_increment_to_make_array_unique.py"
+from typing import List
+
+
+# Greedy
+def minIncrementForUnique(nums: List[int]) -> int:
+    nums.sort()
+    moves = 0
+
+    for i in range(1, len(nums)):
+        if nums[i] <= nums[i - 1]:
+            moves += nums[i - 1] + 1 - nums[i]
+            nums[i] = nums[i - 1] + 1
+
+    return moves
+
+
+nums = [1, 2, 2]
+print(minIncrementForUnique(nums))  # 1
+
 ```
 
 ## 1846. Maximum Element After Decreasing and Rearranging
@@ -296,7 +424,25 @@ comments: True
 -   Tags: array, greedy
 
 ```python title="624. Maximum Distance in Arrays - Python Solution"
---8<-- "0624_maximum_distance_in_arrays.py"
+from typing import List
+
+
+# Array
+def maxDistance(arrays: List[List[int]]) -> int:
+    mn, mx = float("inf"), float("-inf")
+    res = 0
+
+    for arr in arrays:
+        res = max(res, arr[-1] - mn, mx - arr[0])
+        mn = min(mn, arr[0])
+        mx = max(mx, arr[-1])
+
+    return res
+
+
+arrays = [[1, 2, 3], [4, 5], [1, 2, 3]]
+print(maxDistance(arrays))  # 4
+
 ```
 
 ## 910. Smallest Range II

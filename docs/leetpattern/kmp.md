@@ -17,7 +17,47 @@ comments: True
 -   Tags: two pointers, string, string matching
 
 ```python title="28. Find the Index of the First Occurrence in a String - Python Solution"
---8<-- "0028_find_the_index_of_the_first_occurrence_in_a_string.py"
+from template import LPS
+
+
+# Brute Force
+def strStrBF(haystack: str, needle: str) -> int:
+    m, n = len(haystack), len(needle)
+    for i in range(m - n + 1):
+        if haystack[i : i + n] == needle:
+            return i
+    return -1
+
+
+# KMP
+def strStrKMP(haystack: str, needle: str) -> int:
+    lps = LPS(needle)
+    m, n = len(haystack), len(needle)
+    j = 0
+
+    for i in range(m):
+        while j > 0 and haystack[i] != needle[j]:
+            j = lps[j - 1]
+        if haystack[i] == needle[j]:
+            j += 1
+        if j == n:
+            return i - n + 1
+    return -1
+
+
+# |------------|------------------|---------|
+# |  Approach  |       Time       |  Space  |
+# |------------|------------------|---------|
+# | Brute Force| O((m - n) * n)   | O(1)    |
+# | KMP        | O(m + n)         | O(n)    |
+# |------------|------------------|---------|
+
+
+haystack = "hello"
+needle = "ll"
+print(strStrBF(haystack, needle))  # 2
+print(strStrKMP(haystack, needle))  # 2
+
 ```
 
 ## 459. Repeated Substring Pattern
@@ -27,7 +67,23 @@ comments: True
 -   Tags: string, string matching
 
 ```python title="459. Repeated Substring Pattern - Python Solution"
---8<-- "0459_repeated_substring_pattern.py"
+from template import LPS
+
+
+# KMP
+def repeatedSubstringPattern(s: str) -> bool:
+    lps = LPS(s)
+    length = len(s)
+
+    if lps[-1] != 0 and length % (length - lps[-1]) == 0:
+        return True
+
+    return False
+
+
+s = "abab"
+print(repeatedSubstringPattern(s))  # True
+
 ```
 
 ## 686. Repeated String Match
@@ -37,7 +93,37 @@ comments: True
 -   Tags: string, string matching
 
 ```python title="686. Repeated String Match - Python Solution"
---8<-- "0686_repeated_string_match.py"
+import math
+
+from template import LPS
+
+
+# KMP
+def repeatedStringMatch(a: str, b: str) -> int:
+    min_repeat = math.ceil(len(b) / len(a))
+
+    def kmp(text, pattern):
+        n, m = len(text), len(pattern)
+        lps = LPS(pattern)
+        j = 0
+
+        for i in range(n):
+            while j > 0 and text[i] != pattern[j]:
+                j = lps[j - 1]
+            if text[i] == pattern[j]:
+                j += 1
+            if j == m:
+                return i - j + 1
+        return -1
+
+    for i in range(min_repeat, min_repeat + 2):
+        if kmp(a * i, b) != -1:
+            return i
+    return -1
+
+
+print(repeatedStringMatch("abcd", "cdabcdab"))  # 3
+
 ```
 
 ## 1392. Longest Happy Prefix
@@ -47,7 +133,21 @@ comments: True
 -   Tags: string, rolling hash, string matching, hash function
 
 ```python title="1392. Longest Happy Prefix - Python Solution"
---8<-- "1392_longest_happy_prefix.py"
+from template import LPS
+
+
+# KMP
+def longestPrefix(s: str) -> str:
+    if len(s) <= 1:
+        return ""
+
+    lps = LPS(s)
+
+    return s[: lps[-1]]
+
+
+print(longestPrefix("ababab"))  # abab
+
 ```
 
 ## 214. Shortest Palindrome
@@ -57,5 +157,22 @@ comments: True
 -   Tags: string, rolling hash, string matching, hash function
 
 ```python title="214. Shortest Palindrome - Python Solution"
---8<-- "0214_shortest_palindrome.py"
+from template import LPS
+
+
+# KMP
+def shortestPalindrome(s: str) -> str:
+    if not s:
+        return s
+
+    new = s + "#" + s[::-1]
+    lps = LPS(new)
+
+    add_len = len(s) - lps[-1]
+
+    return s[::-1][:add_len] + s
+
+
+print(shortestPalindrome("aacecaaa"))  # aaacecaaa
+
 ```

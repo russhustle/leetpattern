@@ -28,7 +28,34 @@ comments: True
 -   Tags: array, dynamic programming, binary indexed tree, segment tree
 
 ```python title="673. Number of Longest Increasing Subsequence - Python Solution"
---8<-- "0673_number_of_longest_increasing_subsequence.py"
+from typing import List
+
+
+# DP - LIS
+def findNumberOfLIS(nums: List[int]) -> int:
+    if not nums:
+        return 0
+
+    n = len(nums)
+    dp = [1 for _ in range(n)]
+    counts = [1 for _ in range(n)]
+
+    for i in range(1, n):
+        for j in range(i):
+            if nums[i] > nums[j]:
+                if dp[j] + 1 > dp[i]:
+                    dp[i] = dp[j] + 1
+                    counts[i] = counts[j]
+                elif dp[j] + 1 == dp[i]:
+                    counts[i] += counts[j]
+
+    longest = max(dp)
+    return sum(c for i, c in enumerate(counts) if dp[i] == longest)
+
+
+nums = [1, 3, 5, 4, 7]
+print(findNumberOfLIS(nums))  # 2
+
 ```
 
 ## 354. Russian Doll Envelopes
@@ -38,7 +65,33 @@ comments: True
 -   Tags: array, binary search, dynamic programming, sorting
 
 ```python title="354. Russian Doll Envelopes - Python Solution"
---8<-- "0354_russian_doll_envelopes.py"
+from typing import List
+
+
+# DP - LIS
+def maxEnvelopes(envelopes: List[List[int]]) -> int:
+    envelopes.sort(key=lambda x: (x[0], -x[1]))
+    dp = []
+
+    for w, h in envelopes:
+        left, right = 0, len(dp)
+        while left < right:
+            mid = left + (right - left) // 2
+            if dp[mid][1] < h:
+                left = mid + 1
+            else:
+                right = mid
+        if right == len(dp):
+            dp.append((w, h))
+        else:
+            dp[right] = (w, h)
+
+    return len(dp)
+
+
+envelopes = [[5, 4], [6, 4], [6, 7], [2, 3]]
+print(maxEnvelopes(envelopes))  # 3
+
 ```
 
 ## 1691. Maximum Height by Stacking Cuboids
@@ -54,7 +107,24 @@ comments: True
 -   Tags: array, string, dynamic programming
 
 ```python title="960. Delete Columns to Make Sorted III - Python Solution"
---8<-- "0960_delete_columns_to_make_sorted_iii.py"
+from typing import List
+
+
+# DP - LIS
+def minDeletionSize(strs: List[str]) -> int:
+    if not strs:
+        return 0
+
+    n = len(strs[0])
+    dp = [1 for _ in range(n)]
+
+    for i in range(n):
+        for j in range(i):
+            if all(row[j] <= row[i] for row in strs):
+                dp[i] = max(dp[i], dp[j] + 1)
+
+    return n - max(dp)
+
 ```
 
 ## 2407. Longest Increasing Subsequence II

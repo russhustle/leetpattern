@@ -19,7 +19,26 @@ comments: True
 -   Tags: linked list, math
 
 ```python title="1290. Convert Binary Number in a Linked List to Integer - Python Solution"
---8<-- "1290_convert_binary_number_in_a_linked_list_to_integer.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Linked List
+def getDecimalValue(head: Optional[ListNode]) -> int:
+    res = 0
+
+    while head:
+        res = res * 2 + head.val
+        head = head.next
+
+    return res
+
+
+node = ListNode().create([1, 0, 1])
+print(node)  # 1 -> 0 -> 1
+print(getDecimalValue(node))  # 5
+
 ```
 
 ## 2058. Find the Minimum and Maximum Number of Nodes Between Critical Points
@@ -29,7 +48,44 @@ comments: True
 -   Tags: linked list
 
 ```python title="2058. Find the Minimum and Maximum Number of Nodes Between Critical Points - Python Solution"
---8<-- "2058_find_the_minimum_and_maximum_number_of_nodes_between_critical_points.py"
+from typing import List, Optional
+
+from template import ListNode
+
+
+# Linked List
+def nodesBetweenCriticalPoints(head: Optional[ListNode]) -> List[int]:
+    pre = head.val
+    cur = head.next
+    idx = 0
+    count = 0
+    res = []
+    mn = float("inf")
+
+    while cur.next:
+        idx += 1
+        val = cur.val
+        if pre > val and val < cur.next.val:
+            res.append(idx)
+            count += 1
+        elif pre < val and val > cur.next.val:
+            res.append(idx)
+            count += 1
+
+        if count >= 2:
+            mn = min(mn, res[-1] - res[-2])
+        pre = val
+        cur = cur.next
+
+    if count >= 2:
+        return [mn, res[-1] - res[0]]
+    else:
+        return [-1, -1]
+
+
+node = ListNode().create([5, 3, 1, 2, 5, 1, 2])
+print(nodesBetweenCriticalPoints(node))  # [1, 3]
+
 ```
 
 ## 2181. Merge Nodes in Between Zeros
@@ -39,7 +95,39 @@ comments: True
 -   Tags: linked list, simulation
 
 ```python title="2181. Merge Nodes in Between Zeros - Python Solution"
---8<-- "2181_merge_nodes_in_between_zeros.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Linked List
+def mergeNodes(head: Optional[ListNode]) -> Optional[ListNode]:
+    dummy = ListNode()
+    cur = dummy
+
+    head = head.next
+    temp = 0
+
+    while head.next:
+        if head.val == 0:
+            cur.next = ListNode(temp)
+            cur = cur.next
+            temp = 0
+        else:
+            temp += head.val
+
+        head = head.next
+
+    if temp != 0:
+        cur.next = ListNode(temp)
+
+    return dummy.next
+
+
+root = ListNode.create([0, 3, 1, 0, 4, 5, 2, 0])
+print(root)  # 0 -> 3 -> 1 -> 0 -> 4 -> 5 -> 2 -> 0
+print(mergeNodes(root))  # 4 -> 11
+
 ```
 
 ## 725. Split Linked List in Parts
@@ -55,7 +143,31 @@ comments: True
 -   Tags: array, hash table, linked list
 
 ```python title="817. Linked List Components - Python Solution"
---8<-- "0817_linked_list_components.py"
+from typing import List, Optional
+
+from template import ListNode
+
+
+# Linked List
+def numComponents(head: Optional[ListNode], nums: List[int]) -> int:
+    numSet = set(nums)
+    res = 0
+
+    while head:
+        if head.val in numSet:
+            while head and head.val in numSet:
+                head = head.next
+            res += 1
+        else:
+            head = head.next
+
+    return res
+
+
+head = ListNode().create([0, 1, 2, 3, 4])
+nums = [0, 3, 1, 4]
+print(numComponents(head, nums))  # 2
+
 ```
 
 ## 3062. Winner of the Linked List Game

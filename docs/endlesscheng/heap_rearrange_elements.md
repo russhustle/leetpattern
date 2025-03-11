@@ -26,7 +26,43 @@ comments: True
 -   Tags: hash table, string, greedy, sorting, heap priority queue, counting
 
 ```python title="767. Reorganize String - Python Solution"
---8<-- "0767_reorganize_string.py"
+import heapq
+from collections import Counter
+
+
+def reorganizeString(s: str) -> str:
+    if not s:
+        return ""
+
+    heap = [(-freq, char) for char, freq in Counter(s).items()]  # max heap
+    heapq.heapify(heap)
+
+    result = []
+    prev_count, prev_char = 0, ""
+
+    while heap:
+        count, char = heapq.heappop(heap)  # pop the most frequent character
+        result.append(char)  # append the character to the result
+
+        if (
+            prev_count < 0
+        ):  # if the previous character still has remaining count
+            heapq.heappush(heap, (prev_count, prev_char))
+
+        prev_count = (
+            count + 1
+        )  # update the current character's remaining count
+        prev_char = char  # update the current character
+
+    # check if there is any invalid result
+    if len(result) != len(s):
+        return ""
+
+    return "".join(result)
+
+
+print(reorganizeString("aab"))
+
 ```
 
 ## 1054. Distant Barcodes
@@ -60,7 +96,49 @@ comments: True
 -   Tags: array, hash table, greedy, sorting, heap priority queue, counting
 
 ```python title="621. Task Scheduler - Python Solution"
---8<-- "0621_task_scheduler.py"
+import heapq
+from collections import Counter, deque
+from typing import List
+
+
+# Heap
+def leastInterval1(tasks: List[str], n: int) -> int:
+    count = Counter(tasks)
+    heap = [-c for c in count.values()]
+    heapq.heapify(heap)
+
+    time = 0
+
+    q = deque()
+
+    while heap or q:
+        time += 1
+
+        if heap:
+            cnt = 1 + heapq.heappop(heap)
+            if cnt:
+                q.append((cnt, time + n))
+
+        if q and q[0][1] == time:
+            heapq.heappush(heap, q.popleft()[0])
+
+    return time
+
+
+def leastInterval2(tasks: List[str], n: int) -> int:
+    freq = Counter(tasks)
+
+    maxExec = max(freq.values())
+    maxCount = sum(1 for v in freq.values() if v == maxExec)
+
+    return max((maxExec - 1) * (n + 1) + maxCount, len(tasks))
+
+
+tasks = ["A", "A", "A", "B", "B", "B"]
+n = 2
+print(leastInterval1(tasks, n))  # 8
+print(leastInterval2(tasks, n))  # 8
+
 ```
 
 ## 358. Rearrange String k Distance Apart

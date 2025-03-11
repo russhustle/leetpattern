@@ -63,7 +63,50 @@ comments: True
 -   Tags: hash table, two pointers, string, sliding window
 
 ```python title="567. Permutation in String - Python Solution"
---8<-- "0567_permutation_in_string.py"
+def checkInclusion(s1: str, s2: str) -> bool:
+    if len(s1) > len(s2):
+        return False
+
+    count1 = [0] * 26
+    count2 = [0] * 26
+
+    for i in range(len(s1)):
+        count1[ord(s1[i]) - ord("a")] += 1
+        count2[ord(s2[i]) - ord("a")] += 1
+
+    matches = 0
+    for i in range(26):
+        if count1[i] == count2[i]:
+            matches += 1
+
+    l = 0
+    for r in range(len(s1), len(s2)):
+        if matches == 26:
+            return True
+
+        index = ord(s2[r]) - ord("a")
+        count2[index] += 1
+        if count1[index] == count2[index]:
+            matches += 1
+        elif count1[index] + 1 == count2[index]:
+            matches -= 1
+
+        index = ord(s2[l]) - ord("a")
+        count2[index] -= 1
+        if count1[index] == count2[index]:
+            matches += 1
+        elif count1[index] - 1 == count2[index]:
+            matches -= 1
+
+        l += 1
+
+    return matches == 26
+
+
+s1 = "ab"
+s2 = "eidba"
+print(checkInclusion(s1, s2))  # True
+
 ```
 
 ## 438. Find All Anagrams in a String
@@ -73,7 +116,38 @@ comments: True
 -   Tags: hash table, string, sliding window
 
 ```python title="438. Find All Anagrams in a String - Python Solution"
---8<-- "0438_find_all_anagrams_in_a_string.py"
+from typing import List
+
+
+# Sliding Window Fixed Size
+def findAnagrams(s: str, p: str) -> List[int]:
+    n, k = len(s), len(p)
+    target = [0 for _ in range(26)]
+    for ch in p:
+        target[ord(ch) - ord("a")] += 1
+
+    count = [0 for _ in range(26)]
+    left = 0
+    res = []
+
+    for right in range(n):
+        count[ord(s[right]) - ord("a")] += 1
+        if right < k - 1:
+            continue
+
+        if count == target:
+            res.append(left)
+
+        count[ord(s[left]) - ord("a")] -= 1
+        left += 1
+
+    return res
+
+
+s = "cbaebabacd"
+p = "abc"
+print(findAnagrams(s, p))  # [0, 6]
+
 ```
 
 ## 30. Substring with Concatenation of All Words

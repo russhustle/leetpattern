@@ -21,7 +21,34 @@ comments: True
 -   Tags: array, backtracking
 
 ```python title="46. Permutations - Python Solution"
---8<-- "0046_permutations.py"
+from typing import List
+
+
+def permute(nums: List[int]) -> List[List[int]]:
+    path, result = [], []
+    used = [False for _ in range(len(nums))]
+
+    def backtracking():
+        if len(path) == len(nums):
+            result.append(path[:])
+
+        for i in range(len(nums)):
+            if used[i]:
+                continue
+            used[i] = True
+            path.append(nums[i])
+            backtracking()
+            path.pop()
+            used[i] = False
+
+    backtracking()
+
+    return result
+
+
+print(permute([1, 2, 3]))
+# [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
+
 ```
 
 ## 3376. Minimum Time to Break Locks I
@@ -40,7 +67,58 @@ comments: True
 - [N 皇后](https://leetcode.cn/problems/n-queens/)
 
 ```python title="51. N-Queens - Python Solution"
---8<-- "0051_n_queens.py"
+from typing import List
+
+
+# Backtracking - Board
+def solveNQueens(n: int) -> List[List[str]]:
+    result = []
+    chessboard = ["." * n for _ in range(n)]
+
+    def backtracking(row):
+        if row == n:
+            result.append(chessboard[:])
+            return None
+        for col in range(n):
+            if is_valid(row, col, chessboard):
+                chessboard[row] = (
+                    chessboard[row][:col] + "Q" + chessboard[row][col + 1 :]
+                )
+                backtracking(row + 1)
+                chessboard[row] = (
+                    chessboard[row][:col] + "." + chessboard[row][col + 1 :]
+                )
+
+    def is_valid(row, col, chessboard):
+        for i in range(row):
+            if chessboard[i][col] == "Q":
+                return False
+
+        i, j = row - 1, col - 1
+        while i >= 0 and j >= 0:
+            if chessboard[i][j] == "Q":
+                return False
+            i -= 1
+            j -= 1
+
+        i, j = row - 1, col + 1
+        while i >= 0 and j < len(chessboard):
+            if chessboard[i][j] == "Q":
+                return False
+            i -= 1
+            j += 1
+
+        return True
+
+    backtracking(0)
+
+    return [["".join(row) for row in solution] for solution in result]
+
+
+print(solveNQueens(4))
+# [['.Q..', '...Q', 'Q...', '..Q.'],
+#  ['..Q.', 'Q...', '...Q', '.Q..']]
+
 ```
 
 ## 52. N-Queens II

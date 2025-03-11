@@ -27,7 +27,59 @@ comments: True
 -   Tags: array, hash table, design, queue, simulation
 
 ```python title="353. Design Snake Game - Python Solution"
---8<-- "0353_design_snake_game.py"
+from collections import deque
+from typing import List
+
+
+class SnakeGame:
+
+    def __init__(self, width: int, height: int, food: List[List[int]]):
+        self.width = width
+        self.height = height
+        self.food = deque(food)
+        self.snake = deque([(0, 0)])  # Snake starts at the top-left corner
+        self.snake_body = set([(0, 0)])  # To quickly check for collisions
+        self.score = 0
+        self.dirs = {"U": (-1, 0), "L": (0, -1), "R": (0, 1), "D": (1, 0)}
+
+    def move(self, direction: str) -> int:
+        head = self.snake[0]
+        dx, dy = self.dirs[direction]
+        new_head = (head[0] + dx, head[1] + dy)
+
+        # Check if the new head is out of bounds
+        if not (
+            0 <= new_head[0] < self.height and 0 <= new_head[1] < self.width
+        ):
+            return -1
+
+        # Check if the new head collides with the snake body (excluding the tail)
+        if new_head in self.snake_body and new_head != self.snake[-1]:
+            return -1
+
+        # Check if the new head is on a food cell
+        if self.food and self.food[0] == list(new_head):
+            self.food.popleft()
+            self.score += 1
+        else:
+            tail = self.snake.pop()
+            self.snake_body.remove(tail)
+
+        # Add the new head to the snake
+        self.snake.appendleft(new_head)
+        self.snake_body.add(new_head)
+
+        return self.score
+
+
+snake = SnakeGame(3, 2, [[1, 2], [0, 1]])
+print(snake.move("R"))  # 0
+print(snake.move("D"))  # 0
+print(snake.move("R"))  # 1
+print(snake.move("U"))  # 1
+print(snake.move("L"))  # 2
+print(snake.move("U"))  # -1
+
 ```
 
 ## 604. Design Compressed String Iterator
@@ -43,7 +95,49 @@ comments: True
 -   Tags: array, string, design
 
 ```python title="271. Encode and Decode Strings - Python Solution"
---8<-- "0271_encode_and_decode_strings.py"
+from typing import List
+
+
+class Codec:
+    def encode(self, strs: List[str]) -> str:
+        """Encodes a list of strings to a single string."""
+        encoded = ""
+
+        for s in strs:
+            encoded += str(len(s)) + "#" + s
+
+        return encoded
+
+    def decode(self, s: str) -> List[str]:
+        """Decodes a single string to a list of strings."""
+        decoded = []
+        i = 0
+
+        while i < len(s):
+            j = i
+            while s[j] != "#":
+                j += 1
+
+            strLen = int(s[i:j])
+            decoded.append(s[j + 1 : j + 1 + strLen])
+            i = j + 1 + strLen
+
+        return decoded
+
+
+# |-------------|-------------|--------------|
+# |   Approach  |    Time     |    Space     |
+# |-------------|-------------|--------------|
+# | Two pointers|    O(n)     |     O(n)     |
+# |-------------|-------------|--------------|
+
+
+codec = Codec()
+encoded = codec.encode(["hello", "world"])
+print(encoded)  # "5#hello5#world"
+decoded = codec.decode(encoded)
+print(decoded)  # ["hello", "world"]
+
 ```
 
 ## 281. Zigzag Iterator
@@ -65,7 +159,36 @@ comments: True
 -   Tags: hash table, design, sorting
 
 ```python title="1244. Design A Leaderboard - Python Solution"
---8<-- "1244_design_a_leaderboard.py"
+class Leaderboard:
+
+    def __init__(self):
+        self.scores = {}
+
+    def addScore(self, playerId: int, score: int) -> None:
+        if playerId in self.scores:
+            self.scores[playerId] += score
+        else:
+            self.scores[playerId] = score
+
+    def top(self, K: int) -> int:
+        topK = sorted(self.scores.values(), reverse=True)[:K]
+        return sum(topK)
+
+    def reset(self, playerId: int) -> None:
+        if playerId in self.scores:
+            self.scores[playerId] = 0
+
+
+board = Leaderboard()
+board.addScore(1, 73)
+board.addScore(2, 56)
+board.addScore(3, 39)
+board.addScore(4, 51)
+print(board.top(1))  # 73
+board.reset(1)
+board.reset(2)
+print(board.top(2))  # 90
+
 ```
 
 ## 428. Serialize and Deserialize N-ary Tree

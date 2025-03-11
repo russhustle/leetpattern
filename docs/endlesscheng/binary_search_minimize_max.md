@@ -43,7 +43,41 @@ comments: True
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
 ```python title="1631. Path With Minimum Effort - Python Solution"
---8<-- "1631_path_with_minimum_effort.py"
+import heapq
+from typing import List
+
+
+# Prim
+def minimumEffortPath(heights: List[List[int]]) -> int:
+    m, n = len(heights), len(heights[0])
+    directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+    visited = [[False] * n for _ in range(m)]
+    heap = [(0, 0, 0)]  # (effort, row, col)
+
+    while heap:
+        effort, r, c = heapq.heappop(heap)
+
+        if visited[r][c]:
+            continue
+
+        if r == m - 1 and c == n - 1:
+            return effort
+
+        visited[r][c] = True
+
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
+
+            if 0 <= nr < m and 0 <= nc < n and not visited[nr][nc]:
+                updated = max(effort, abs(heights[r][c] - heights[nr][nc]))
+                heapq.heappush(heap, (updated, nr, nc))
+
+    return -1
+
+
+heights = [[1, 2, 2], [3, 8, 2], [5, 3, 5]]
+print(minimumEffortPath(heights))  # 2
+
 ```
 
 ## 2439. Minimize Maximum of Array
@@ -68,7 +102,42 @@ comments: True
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
 ```python title="778. Swim in Rising Water - Python Solution"
---8<-- "0778_swim_in_rising_water.py"
+import heapq
+from typing import List
+
+
+# Dijkstra's
+def swimInWater(grid: List[List[int]]) -> int:
+    n = len(grid)
+    visited = set()
+    minHeap = [(grid[0][0], 0, 0)]
+    directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+    visited.add((0, 0))
+
+    while minHeap:
+        time, r, c = heapq.heappop(minHeap)
+
+        if r == n - 1 and c == n - 1:
+            return time
+
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
+
+            if nr in range(n) and nc in range(n) and (nr, nc) not in visited:
+                visited.add((nr, nc))
+                heapq.heappush(minHeap, (max(time, grid[nr][nc]), nr, nc))
+
+
+grid = [
+    [0, 1, 2, 3, 4],
+    [24, 23, 22, 21, 5],
+    [12, 13, 14, 15, 16],
+    [11, 17, 18, 19, 20],
+    [10, 9, 8, 7, 6],
+]
+print(swimInWater(grid))  # 16
+
 ```
 
 ## 2616. Minimize the Maximum Difference of Pairs

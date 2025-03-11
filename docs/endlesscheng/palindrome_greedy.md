@@ -29,7 +29,25 @@ comments: True
 -   Return the length of the longest palindrome that can be built with the characters in the string.
 
 ```python title="409. Longest Palindrome - Python Solution"
---8<-- "0409_longest_palindrome.py"
+def longestPalindrome(s: str) -> int:
+    hashmap = dict()
+    result = 0
+
+    for char in s:
+        if char not in hashmap or hashmap[char] == 0:
+            hashmap[char] = 1
+        else:
+            result += 2
+            hashmap[char] = 0
+
+    if any(hashmap.values()):
+        result += 1
+
+    return result
+
+
+print(longestPalindrome("abccccdd"))  # 7
+
 ```
 
 ## 2697. Lexicographically Smallest Palindrome
@@ -39,7 +57,25 @@ comments: True
 -   Tags: two pointers, string, greedy
 
 ```python title="2697. Lexicographically Smallest Palindrome - Python Solution"
---8<-- "2697_lexicographically_smallest_palindrome.py"
+def makeSmallestPalindrome(s: str) -> str:
+    n = len(s)
+    s = list(s)
+    left, right = 0, n - 1
+
+    while left < right:
+        if s[left] < s[right]:
+            s[right] = s[left]
+        elif s[left] > s[right]:
+            s[left] = s[right]
+        left += 1
+        right -= 1
+
+    return "".join(s)
+
+
+s = "egcfe"
+print(makeSmallestPalindrome(s))  # "efcfe"
+
 ```
 
 ## 680. Valid Palindrome II
@@ -55,7 +91,22 @@ comments: True
 -   Tags: string, greedy
 
 ```python title="1328. Break a Palindrome - Python Solution"
---8<-- "1328_break_a_palindrome.py"
+# Greedy
+def breakPalindrome(palindrome: str) -> str:
+    n = len(palindrome)
+    if n == 1:
+        return ""
+
+    for i in range(n // 2):
+        if palindrome[i] != "a":
+            return palindrome[:i] + "a" + palindrome[i + 1 :]
+
+    return palindrome[:-1] + "b"
+
+
+palindrome = "abccba"
+print(breakPalindrome(palindrome))  # "aaccba"
+
 ```
 
 ## 1400. Construct K Palindrome Strings
@@ -65,7 +116,43 @@ comments: True
 -   Tags: hash table, string, greedy, counting
 
 ```python title="1400. Construct K Palindrome Strings - Python Solution"
---8<-- "1400_construct_k_palindrome_strings.py"
+from collections import Counter
+
+
+def canConstructCounter(s: str, k: int) -> bool:
+    if len(s) < k:
+        return False
+
+    counts = Counter(s)
+    odd = 0
+
+    for c in counts.values():
+        odd += c % 2
+
+    return odd <= k
+
+
+def canConstructHash(s: str, k: int) -> bool:
+    if len(s) < k:
+        return False
+
+    counts = [0 for _ in range(26)]
+
+    for ch in s:
+        idx = ord(ch) - ord("a")
+        if counts[idx] == 0:
+            counts[idx] += 1
+        else:
+            counts[idx] -= 1
+
+    return sum(counts) <= k
+
+
+s = "annabelle"
+k = 2
+print(canConstructCounter(s, k))  # True
+print(canConstructHash(s, k))  # True
+
 ```
 
 ## 2131. Longest Palindrome by Concatenating Two Letter Words
@@ -117,7 +204,44 @@ comments: True
 -   Tags: hash table, string, bit manipulation
 
 ```python title="266. Palindrome Permutation - Python Solution"
---8<-- "0266_palindrome_permutation.py"
+from collections import defaultdict
+
+
+# Hash
+def canPermutePalindromeDict(s: str) -> bool:
+    if len(s) == 1:
+        return True
+
+    count = defaultdict(int)
+
+    for ch in s:
+        if count[ch] == 1:
+            count[ch] = 0
+            continue
+        count[ch] = 1
+
+    return sum(count.values()) <= 1
+
+
+# Set
+def canPermutePalindromeSet(s: str) -> bool:
+    if len(s) == 1:
+        return True
+
+    seen = set()
+
+    for ch in s:
+        if ch in seen:
+            seen.remove(ch)
+        else:
+            seen.add(ch)
+
+    return len(seen) <= 1
+
+
+assert canPermutePalindromeDict("carerac") is True
+assert canPermutePalindromeSet("carerac") is True
+
 ```
 
 ## 2422. Merge Operations to Turn Array Into a Palindrome

@@ -44,7 +44,79 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="104. Maximum Depth of Binary Tree - Python Solution"
---8<-- "0104_maximum_depth_of_binary_tree.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Recursive
+def maxDepthRecursive(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    left = maxDepthRecursive(root.left)
+    right = maxDepthRecursive(root.right)
+
+    return 1 + max(left, right)
+
+
+# DFS
+def maxDepthDFS(root: Optional[TreeNode]) -> int:
+    res = 0
+
+    def dfs(node, cnt):
+        if node is None:
+            return
+        cnt += 1
+        nonlocal res
+        res = max(res, cnt)
+
+        dfs(node.left, cnt)
+        dfs(node.right, cnt)
+
+    dfs(root, 0)
+
+    return res
+
+
+# Iterative
+def maxDepthIterative(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    q = deque([root])
+    res = 0
+
+    while q:
+        res += 1
+        n = len(q)
+
+        for _ in range(n):
+            node = q.popleft()
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+    return res
+
+
+root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+root = build(root)
+print(root)
+#     ____1
+#    /     \
+#   2__     2
+#  /   \
+# 3     4
+#      /
+#     5
+print(maxDepthRecursive(root))  # 4
+print(maxDepthIterative(root))  # 4
+print(maxDepthDFS(root))  # 4
+
 ```
 
 ## 111. Minimum Depth of Binary Tree
@@ -54,7 +126,65 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="111. Minimum Depth of Binary Tree - Python Solution"
---8<-- "0111_minimum_depth_of_binary_tree.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Iterative
+def minDepthIterative(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    q = deque([root])
+    res = 0
+
+    while q:
+        res += 1
+
+        for _ in range(len(q)):
+            node = q.popleft()
+
+            if not node.left and not node.right:
+                return res
+
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+
+# Recursive
+def minDepthRecursive(root: Optional[TreeNode]) -> int:
+    if root is None:
+        return 0
+
+    if root.left is None and root.right is not None:
+        return 1 + minDepthRecursive(root.right)
+    if root.left is not None and root.right is None:
+        return 1 + minDepthRecursive(root.left)
+
+    return 1 + min(minDepthRecursive(root.left), minDepthRecursive(root.right))
+
+
+root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+root = build(root)
+print(root)
+"""
+    ____1
+   /     \
+  2__     2
+ /   \
+3     4
+     /
+    5
+
+"""
+print(minDepthIterative(root))  # 2
+print(minDepthRecursive(root))  # 2
+
 ```
 
 ## 965. Univalued Binary Tree
@@ -70,7 +200,89 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="100. Same Tree - Python Solution"
---8<-- "0100_same_tree.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+# 1. Recursive
+def isSameTreeRecursive(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+    if not p and not q:
+        return True
+    if not p or not q:
+        return False
+    if p.val != q.val:
+        return False
+
+    return isSameTreeRecursive(p.left, q.left) and isSameTreeRecursive(
+        p.right, q.right
+    )
+
+
+# 2. Iterative with queue
+def isSameTreeIterativeQueue(
+    p: Optional[TreeNode], q: Optional[TreeNode]
+) -> bool:
+    queue = deque([(p, q)])
+
+    while queue:
+        p, q = queue.popleft()
+
+        if not p and not q:
+            continue
+        if not p or not q:
+            return False
+        if p.val != q.val:
+            return False
+
+        queue.append((p.left, q.left))
+        queue.append((p.right, q.right))
+
+    return True
+
+
+# 3. Iterative with stack
+def isSameTreeIterativeStack(
+    p: Optional[TreeNode], q: Optional[TreeNode]
+) -> bool:
+    stack = [(p, q)]
+
+    while stack:
+        n1, n2 = stack.pop()
+
+        if not n1 and not n2:
+            continue
+        if not n1 or not n2:
+            return False
+        if n1.val != n2.val:
+            return False
+
+        stack.append((n1.left, n2.left))
+        stack.append((n1.right, n2.right))
+
+    return True
+
+
+p1 = build([1, 2, 3])
+q1 = build([1, 2, 3])
+p2 = build([1, 2])
+q2 = build([1, None, 2])
+
+print(isSameTreeRecursive(p1, q1))  # True
+print(isSameTreeRecursive(p2, q2))  # False
+print(isSameTreeIterativeQueue(p1, q1))  # True
+print(isSameTreeIterativeQueue(p2, q2))  # False
+print(isSameTreeIterativeStack(p1, q1))  # True
+print(isSameTreeIterativeStack(p2, q2))  # False
+
 ```
 
 ## 101. Symmetric Tree
@@ -80,7 +292,68 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="101. Symmetric Tree - Python Solution"
---8<-- "0101_symmetric_tree.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Recursive
+def isSymmetricRecursive(root: Optional[TreeNode]) -> bool:
+    if not root:
+        return True
+
+    def check(left, right):
+        if left is right:
+            return True
+        if not left or not right or left.val != right.val:
+            return False
+        outside = check(left.left, right.right)
+        inside = check(left.right, right.left)
+        return outside and inside
+
+    return check(root.left, root.right)
+
+
+# Iterative
+def isSymmetricIterative(root: Optional[TreeNode]) -> bool:
+    if not root:
+        return True
+
+    q = deque()
+    q.append(root.left)
+    q.append(root.right)
+
+    while q:
+        left = q.popleft()
+        right = q.popleft()
+
+        if not left and not right:
+            continue
+
+        if not left or not right or left.val != right.val:
+            return False
+
+        q.append(left.left)
+        q.append(right.right)
+        q.append(left.right)
+        q.append(right.left)
+
+    return True
+
+
+root = [1, 2, 2, 3, 4, 4, 3]
+root = build(root)
+print(root)
+#     __1__
+#    /     \
+#   2       2
+#  / \     / \
+# 3   4   4   3
+print(isSymmetricRecursive(root))  # True
+print(isSymmetricIterative(root))  # True
+
 ```
 
 ## 951. Flip Equivalent Binary Trees
@@ -102,7 +375,52 @@ comments: True
 -   Tags: tree, depth first search, binary tree
 
 ```python title="110. Balanced Binary Tree - Python Solution"
---8<-- "0110_balanced_binary_tree.py"
+from typing import Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+# Recursive
+def isBalanced(root: Optional[TreeNode]) -> bool:
+    def getHeight(node):
+        if not node:
+            return 0
+
+        # post order
+        leftHeight = getHeight(node.left)
+        rightHeight = getHeight(node.right)
+
+        if leftHeight == -1 or rightHeight == -1:
+            return -1
+
+        if abs(leftHeight - rightHeight) > 1:
+            return -1
+        else:
+            return 1 + max(leftHeight, rightHeight)
+
+    if getHeight(root) != -1:
+        return True
+    else:
+        return False
+
+
+root = [3, 9, 20, None, None, 15, 7]
+root = build(root)
+print(root)
+#   3___
+#  /    \
+# 9     _20
+#      /   \
+#     15    7
+print(isBalanced(root))  # True
+
 ```
 
 ## 226. Invert Binary Tree
@@ -112,7 +430,73 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="226. Invert Binary Tree - Python Solution"
---8<-- "0226_invert_binary_tree.py"
+from typing import Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+# Recursive
+def invertTreeRecursive(root: Optional[TreeNode]) -> Optional[TreeNode]:
+    if not root:
+        return root
+
+    root.left, root.right = root.right, root.left
+
+    invertTreeRecursive(root.left)
+    invertTreeRecursive(root.right)
+
+    return root
+
+
+# Iterative
+def invertTreeIterative(root: Optional[TreeNode]) -> Optional[TreeNode]:
+    if not root:
+        return root
+
+    stack = [root]
+
+    while stack:
+        node = stack.pop()
+
+        node.left, node.right = node.right, node.left
+        if node.left:
+            stack.append(node.left)
+        if node.right:
+            stack.append(node.right)
+
+    return root
+
+
+root = build([4, 2, 7, 1, 3, 6, 9])
+print(root)
+#     __4__
+#    /     \
+#   2       7
+#  / \     / \
+# 1   3   6   9
+invertedRecursive = invertTreeRecursive(root)
+print(invertedRecursive)
+#     __4__
+#    /     \
+#   7       2
+#  / \     / \
+# 9   6   3   1
+root = build([4, 2, 7, 1, 3, 6, 9])
+invertedIterative = invertTreeIterative(root)
+print(invertedIterative)
+#     __4__
+#    /     \
+#   7       2
+#  / \     / \
+# 9   6   3   1
+
 ```
 
 ## 617. Merge Two Binary Trees
@@ -122,7 +506,62 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="617. Merge Two Binary Trees - Python Solution"
---8<-- "0617_merge_two_binary_trees.py"
+from typing import List, Optional
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def mergeTrees(
+    root1: Optional[TreeNode], root2: Optional[TreeNode]
+) -> Optional[TreeNode]:
+
+    if not root1:
+        return root2
+    if not root2:
+        return root1
+
+    root = TreeNode()
+
+    root.val += root1.val + root2.val
+    root.left = mergeTrees(root1.left, root2.left)
+    root.right = mergeTrees(root1.right, root2.right)
+
+    return root
+
+
+root1 = TreeNode(1)
+root1.left = TreeNode(3)
+root1.right = TreeNode(2)
+root1.left.left = TreeNode(5)
+#     1
+#    / \
+#   3   2
+#  /
+# 5
+
+root2 = TreeNode(2)
+root2.left = TreeNode(1)
+root2.right = TreeNode(3)
+root2.left.right = TreeNode(4)
+root2.right.right = TreeNode(7)
+#     2
+#    / \
+#   1   3
+#    \   \
+#     4   7
+
+root = mergeTrees(root1, root2)
+#     3
+#    / \
+#   4   5
+#  / \   \
+# 5   4   7
+
 ```
 
 ## 2331. Evaluate Boolean Binary Tree
@@ -132,7 +571,48 @@ comments: True
 -   Tags: tree, depth first search, binary tree
 
 ```python title="2331. Evaluate Boolean Binary Tree - Python Solution"
---8<-- "2331_evaluate_boolean_binary_tree.py"
+from typing import Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+# Recursive
+def evaluateTree(root: Optional[TreeNode]) -> bool:
+    if not root.left and not root.right:
+        return root.val
+
+    left = evaluateTree(root.left)
+    right = evaluateTree(root.right)
+
+    if root.val == 2:
+        return left or right
+    elif root.val == 3:
+        return left and right
+
+
+root = build([2, 1, 3, None, None, 0, 1])
+print(root)
+#   2__
+#  /   \
+# 1     3
+#      / \
+#     0   1
+boolTree = build(["OR", "True", "AND", None, None, "False", "True"])
+print(boolTree)
+#    __OR_______
+#   /           \
+# True        __AND_
+#            /      \
+#         False     True
+print(evaluateTree(root))  # 1
+
 ```
 
 ## 508. Most Frequent Subtree Sum
@@ -196,7 +676,57 @@ comments: True
 -   Tags: tree, depth first search, string matching, binary tree, hash function
 
 ```python title="572. Subtree of Another Tree - Python Solution"
---8<-- "0572_subtree_of_another_tree.py"
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# DFS - Tree
+def isSubtree(root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+    def isSameTree(p, q):
+        if not p and not q:
+            return True
+        if not p or not q:
+            return False
+        if p.val != q.val:
+            return False
+
+        return isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
+
+    if not root:
+        return False
+
+    return (
+        isSameTree(root, subRoot)
+        or isSubtree(root.left, subRoot)
+        or isSubtree(root.right, subRoot)
+    )
+
+
+# |------------|---------|----------|
+# | Approach   | Time    | Space    |
+# |------------|---------|----------|
+# | DFS        | O(n * m)| O(n)     |
+# |------------|---------|----------|
+
+
+root = build([3, 4, 5, 1, 2, None, None, None, None, 0])
+subRoot = build([4, 1, 2])
+print(root)
+#     ____3
+#    /     \
+#   4__     5
+#  /   \
+# 1     2
+#      /
+#     0
+print(subRoot)
+#   4
+#  / \
+# 1   2
+print(isSubtree(root, subRoot))  # False
+
 ```
 
 ## 1530. Number of Good Leaf Nodes Pairs

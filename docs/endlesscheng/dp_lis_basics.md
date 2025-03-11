@@ -17,7 +17,30 @@ comments: True
 -   Tags: array, binary search, dynamic programming
 
 ```python title="300. Longest Increasing Subsequence - Python Solution"
---8<-- "0300_longest_increasing_subsequence.py"
+from typing import List
+
+
+# DP - LIS
+def lengthOfLIS(nums: List[int]) -> int:
+    # TC: O(n^2)
+    # SC: O(n)
+    n = len(nums)
+    if n <= 1:
+        return n
+
+    dp = [1 for _ in range(n)]
+
+    for i in range(1, n):
+        for j in range(i):
+            if nums[i] > nums[j]:
+                dp[i] = max(dp[i], dp[j] + 1)
+
+    return max(dp)
+
+
+nums = [10, 9, 2, 5, 3, 7, 101, 18]
+print(lengthOfLIS(nums))  # 4
+
 ```
 
 ## 2826. Sorting Three Groups
@@ -33,7 +56,36 @@ comments: True
 -   Tags: array, binary search, dynamic programming, greedy
 
 ```python title="1671. Minimum Number of Removals to Make Mountain Array - Python Solution"
---8<-- "1671_minimum_number_of_removals_to_make_mountain_array.py"
+from typing import List
+
+
+# DP - LIS
+def minimumMountainRemovals(nums: List[int]) -> int:
+    n = len(nums)
+    lis = [1 for _ in range(n)]
+    lds = [1 for _ in range(n)]
+
+    for i in range(1, n):
+        for j in range(i):
+            if nums[i] > nums[j]:
+                lis[i] = max(lis[i], lis[j] + 1)
+
+    for i in range(n - 2, -1, -1):
+        for j in range(n - 1, i, -1):
+            if nums[i] > nums[j]:
+                lds[i] = max(lds[i], lds[j] + 1)
+
+    maxLen = 0
+    for i in range(1, n - 1):
+        if lis[i] > 1 and lds[i] > 1:
+            maxLen = max(maxLen, lis[i] + lds[i] - 1)
+
+    return n - maxLen
+
+
+nums = [2, 1, 1, 5, 6, 2, 3, 1]
+print(minimumMountainRemovals(nums))  # 3
+
 ```
 
 ## 1964. Find the Longest Valid Obstacle Course at Each Position

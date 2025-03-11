@@ -74,7 +74,32 @@ comments: True
 -   Tags: array, binary search, sliding window
 
 ```python title="2555. Maximize Win From Two Segments - Python Solution"
---8<-- "2555_maximize_win_from_two_segments.py"
+from typing import List
+
+
+# Sliding Window - Variable
+def maximizeWin(prizePositions: List[int], k: int) -> int:
+    n = len(prizePositions)
+
+    if 2 * k >= prizePositions[-1] - prizePositions[0]:
+        return n
+
+    ans = left = 0
+    mx = [0] * (n + 1)
+
+    for right, p in enumerate(prizePositions):
+        while p - prizePositions[left] > k:
+            left += 1
+        ans = max(ans, mx[left] + right - left + 1)
+        mx[right + 1] = max(mx[right], right - left + 1)
+
+    return ans
+
+
+prizePositions = [1, 1, 2, 2, 3, 3, 5]
+k = 2
+print(maximizeWin(prizePositions, k))  # 7
+
 ```
 
 ## 2009. Minimum Number of Operations to Make Array Continuous
@@ -145,7 +170,35 @@ comments: True
 -   Prerequisite: 3. Longest Substring Without Repeating Characters
 
 ```python title="159. Longest Substring with At Most Two Distinct Characters - Python Solution"
---8<-- "0159_longest_substring_with_at_most_two_distinct_characters.py"
+from collections import defaultdict
+
+
+# Sliding Window - Variable
+def lengthOfLongestSubstringTwoDistinct(s: str) -> int:
+    n = len(s)
+    if n <= 2:
+        return n
+
+    window = defaultdict(int)
+    left, res = 0, 0
+
+    for right in range(n):
+        window[s[right]] += 1
+
+        while len(window) > 2:
+            window[s[left]] -= 1
+            if window[s[left]] == 0:
+                del window[s[left]]
+            left += 1
+
+        res = max(res, right - left + 1)
+
+    return res
+
+
+s = "ccaabbb"
+assert lengthOfLongestSubstringTwoDistinct(s) == 5
+
 ```
 
 ## 340. Longest Substring with At Most K Distinct Characters
@@ -155,5 +208,32 @@ comments: True
 -   Tags: hash table, string, sliding window
 
 ```python title="340. Longest Substring with At Most K Distinct Characters - Python Solution"
---8<-- "0340_longest_substring_with_at_most_k_distinct_characters.py"
+from collections import defaultdict
+
+
+# Sliding Window Variable
+def lengthOfLongestSubstringKDistinct(s: str, k: int) -> int:
+    n = len(s)
+    if n <= k:
+        return n
+
+    window = defaultdict(int)
+    left, res = 0, 0
+
+    for right in range(n):
+        window[s[right]] += 1
+        while len(window) > k:
+            window[s[left]] -= 1
+            if window[s[left]] == 0:
+                del window[s[left]]
+            left += 1
+        res = max(res, right - left + 1)
+
+    return res
+
+
+s = "eceba"
+k = 2
+assert lengthOfLongestSubstringKDistinct(s, k) == 3
+
 ```

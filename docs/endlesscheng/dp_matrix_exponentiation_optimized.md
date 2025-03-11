@@ -40,11 +40,78 @@ comments: True
 | 10  |    34     |    55     |   89    |
 
 ```python title="70. Climbing Stairs - Python Solution"
---8<-- "0070_climbing_stairs.py"
+from functools import cache
+
+
+# DP
+def climbStairsDP(n: int) -> int:
+    if n <= 2:
+        return n
+
+    dp = [i for i in range(n + 1)]
+
+    for i in range(3, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2]
+
+    return dp[n]
+
+
+# DP (Optimized)
+def climbStairsDPOptimized(n: int) -> int:
+    if n <= 2:
+        return n
+
+    first, second = 1, 2
+
+    for _ in range(3, n + 1):
+        first, second = second, first + second
+
+    return second
+
+
+# Recursion
+def climbStairsRecursion(n: int) -> int:
+    @cache
+    def dfs(i: int) -> int:
+        if i <= 1:
+            return 1
+        return dfs(i - 1) + dfs(i - 2)
+
+    return dfs(n)
+
+
+print(climbStairsDP(10))  # 89
+print(climbStairsDPOptimized(10))  # 89
+print(climbStairsRecursion(10))  # 89
+
 ```
 
 ```cpp title="70. Climbing Stairs - C++ Solution"
---8<-- "cpp/0070_climbing_stairs.cc"
+#include <iostream>
+using namespace std;
+
+int climbStairs(int n) {
+    if (n <= 2) return n;
+    int f1 = 1, f2 = 2;
+    int res;
+
+    int i = 3;
+    while (i <= n) {
+        res = f1 + f2;
+        f1 = f2;
+        f2 = res;
+        ++i;
+    }
+    return res;
+}
+
+int main() {
+    cout << climbStairs(2) << endl;  // 2
+    cout << climbStairs(3) << endl;  // 3
+    cout << climbStairs(6) << endl;  // 13
+    return 0;
+}
+
 ```
 
 ## 509. Fibonacci Number
@@ -72,7 +139,48 @@ comments: True
 | 10  |    21     |    34     |   55    |
 
 ```python title="509. Fibonacci Number - Python Solution"
---8<-- "0509_fibonacci_number.py"
+from functools import cache
+
+
+# DP
+def fibDP(n: int) -> int:
+    if n <= 1:
+        return n
+
+    dp = [i for i in range(n + 1)]
+
+    for i in range(2, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2]
+
+    return dp[n]
+
+
+# DP (Optimized)
+def fibDPOptimized(n: int) -> int:
+    if n <= 1:
+        return n
+
+    n1, n2 = 0, 1
+    for _ in range(2, n + 1):
+        n1, n2 = n2, n1 + n2
+
+    return n2
+
+
+# Recursive
+@cache
+def fibRecursive(n: int) -> int:
+    if n <= 1:
+        return n
+
+    return fibRecursive(n - 1) + fibRecursive(n - 2)
+
+
+n = 10
+print(fibDP(n))  # 55
+print(fibDPOptimized(n))  # 55
+print(fibRecursive(n))  # 55
+
 ```
 
 ## 1137. N-th Tribonacci Number

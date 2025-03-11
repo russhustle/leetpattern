@@ -17,7 +17,29 @@ comments: True
 -   Tags: array, hash table, string, dynamic programming, trie, memoization
 
 ```python title="139. Word Break - Python Solution"
---8<-- "0139_word_break.py"
+from typing import List
+
+
+# DP - Knapsack Unbounded
+def wordBreak(s: str, wordDict: List[str]) -> bool:
+    n = len(s)
+    wordSet = set(wordDict)
+    dp = [False for _ in range(n + 1)]
+    dp[0] = True
+
+    for i in range(1, n + 1):
+        for j in range(i):
+            if dp[j] and s[j:i] in wordSet:
+                dp[i] = True
+                break
+
+    return dp[n]
+
+
+s = "leetcode"
+wordDict = ["leet", "code"]
+print(wordBreak(s, wordDict))  # True
+
 ```
 
 ## 279. Perfect Squares
@@ -27,7 +49,24 @@ comments: True
 -   Tags: math, dynamic programming, breadth first search
 
 ```python title="279. Perfect Squares - Python Solution"
---8<-- "0279_perfect_squares.py"
+import math
+
+
+# DP - Knapsack Unbounded
+def numSquares(n: int) -> int:
+    dp = [float("inf") for _ in range(n + 1)]
+    dp[0] = 0
+
+    for i in range(1, n + 1):
+        for j in range(1, int(math.sqrt(n)) + 1):
+            dp[i] = min(dp[i], dp[i - j**2] + 1)
+
+    return dp[n]
+
+
+n = 12
+print(numSquares(n))  # 3
+
 ```
 
 ## 322. Coin Change
@@ -37,7 +76,26 @@ comments: True
 -   Tags: array, dynamic programming, breadth first search
 
 ```python title="322. Coin Change - Python Solution"
---8<-- "0322_coin_change.py"
+from typing import List
+
+
+def coinChange(coins: List[int], amount: int) -> int:
+    dp = [float("inf") for _ in range(amount + 1)]
+
+    dp[0] = 0
+
+    for i in range(1, amount + 1):
+        for c in coins:
+            if i - c >= 0:
+                dp[i] = min(dp[i], 1 + dp[i - c])
+
+    return dp[amount] if dp[amount] != float("inf") else -1
+
+
+coins = [1, 2, 5]
+amount = 11
+print(coinChange(coins, amount))  # 3
+
 ```
 
 ## 518. Coin Change II
@@ -47,7 +105,24 @@ comments: True
 -   Tags: array, dynamic programming
 
 ```python title="518. Coin Change II - Python Solution"
---8<-- "0518_coin_change_ii.py"
+from typing import List
+
+
+def change(amount: int, coins: List[int]) -> int:
+    dp = [0 for _ in range(amount + 1)]
+    dp[0] = 1
+
+    for i in range(len(coins)):
+        for j in range(coins[i], amount + 1):
+            dp[j] += dp[j - coins[i]]
+
+    return dp[-1]
+
+
+amount = 5
+coins = [1, 2, 5]
+print(change(amount, coins))  # 4
+
 ```
 
 ## 377. Combination Sum IV
@@ -57,5 +132,23 @@ comments: True
 -   Tags: array, dynamic programming
 
 ```python title="377. Combination Sum IV - Python Solution"
---8<-- "0377_combination_sum_iv.py"
+from typing import List
+
+
+def combinationSum4(nums: List[int], target: int) -> int:
+    dp = [0 for _ in range(target + 1)]
+    dp[0] = 1
+
+    for i in range(1, target + 1):
+        for j in range(len(nums)):
+            if i - nums[j] >= 0:
+                dp[i] += dp[i - nums[j]]
+
+        return dp[target]
+
+
+nums = [1, 2, 3]
+target = 4
+print(combinationSum4(nums, target))  # 7
+
 ```

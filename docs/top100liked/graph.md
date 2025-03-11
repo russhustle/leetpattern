@@ -31,11 +31,188 @@ comments: True
 ![0200](../assets/0200.jpg)
 
 ```python title="200. Number of Islands - Python Solution"
---8<-- "0200_number_of_islands.py"
+from collections import deque
+from copy import deepcopy
+from typing import List
+
+
+# DFS
+def numIslandsDFS(grid: List[List[str]]) -> int:
+    if not grid:
+        return 0
+
+    m, n = len(grid), len(grid[0])
+    res = 0
+
+    def dfs(r, c):
+        if r < 0 or r >= m or c < 0 or c >= n or grid[r][c] != "1":
+            return
+
+        grid[r][c] = "2"
+
+        dfs(r + 1, c)
+        dfs(r - 1, c)
+        dfs(r, c + 1)
+        dfs(r, c - 1)
+
+    for r in range(m):
+        for c in range(n):
+            if grid[r][c] == "1":
+                dfs(r, c)
+                res += 1
+
+    return res
+
+
+# BFS + Set
+def numIslandsBFS1(grid: List[List[str]]) -> int:
+    if not grid:
+        return 0
+
+    m, n = len(grid), len(grid[0])
+    dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+    visited = set()
+    res = 0
+
+    def bfs(r, c):
+        q = deque([(r, c)])
+
+        while q:
+            row, col = q.popleft()
+
+            for dr, dc in dirs:
+                nr, nc = row + dr, col + dc
+                if (
+                    nr < 0
+                    or nr >= m
+                    or nc < 0
+                    or nc >= n
+                    or grid[nr][nc] == "0"
+                    or (nr, nc) in visited
+                ):
+                    continue
+
+                visited.add((nr, nc))
+                q.append((nr, nc))
+
+    for r in range(m):
+        for c in range(n):
+            if grid[r][c] == "1" and (r, c) not in visited:
+                visited.add((r, c))
+                bfs(r, c)
+                res += 1
+
+    return res
+
+
+# BFS + Grid
+def numIslandsBFS2(grid: List[List[str]]) -> int:
+    if not grid:
+        return 0
+
+    m, n = len(grid), len(grid[0])
+    dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    res = 0
+
+    def bfs(r, c):
+        q = deque([(r, c)])
+
+        while q:
+            row, col = q.popleft()
+
+            for dr, dc in dirs:
+                nr, nc = dr + row, dc + col
+                if (
+                    nr < 0
+                    or nr >= m
+                    or nc < 0
+                    or nc >= n
+                    or grid[nr][nc] != "1"
+                ):
+                    continue
+                grid[nr][nc] = "2"
+                q.append((nr, nc))
+
+    for i in range(m):
+        for j in range(n):
+            if grid[i][j] == "1":
+                grid[i][j] = "2"
+                bfs(i, j)
+                res += 1
+
+    return res
+
+
+grid = [
+    ["1", "1", "1", "1", "0"],
+    ["1", "1", "0", "1", "0"],
+    ["1", "1", "0", "0", "0"],
+    ["0", "0", "0", "0", "0"],
+]
+
+print(numIslandsDFS(deepcopy(grid)))  # 1
+print(numIslandsBFS1(deepcopy(grid)))  # 1
+print(numIslandsBFS2(deepcopy(grid)))  # 1
+
 ```
 
 ```cpp title="200. Number of Islands - C++ Solution"
---8<-- "cpp/0200_number_of_islands.cc"
+#include <vector>
+#include <iostream>
+using namespace std;
+
+class Solution
+{
+private:
+    void dfs(vector<vector<char>> &grid, int r, int c)
+    {
+        int row = grid.size();
+        int col = grid[0].size();
+
+        if (r < 0 || r >= row || c < 0 || c >= col || grid[r][c] != '1')
+        {
+            return;
+        }
+        grid[r][c] = '0';
+
+        dfs(grid, r - 1, c);
+        dfs(grid, r + 1, c);
+        dfs(grid, r, c - 1);
+        dfs(grid, r, c + 1);
+    }
+
+public:
+    int numIslands(vector<vector<char>> &grid)
+    {
+        int m = grid.size(), n = grid[0].size();
+        int res = 0;
+        for (int i = 0; i < m; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (grid[i][j] == '1')
+                {
+                    res++;
+                    dfs(grid, i, j);
+                }
+            }
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    Solution s;
+    vector<vector<char>> grid = {
+        {'1', '1', '0', '0', '0'},
+        {'1', '1', '0', '0', '0'},
+        {'0', '0', '1', '0', '0'},
+        {'0', '0', '0', '1', '1'}};
+    cout << s.numIslands(grid) << endl;
+    return 0;
+}
+
 ```
 
 ## 994. Rotting Oranges
@@ -49,7 +226,48 @@ comments: True
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
 ```python title="994. Rotting Oranges - Python Solution"
---8<-- "0994_rotting_oranges.py"
+from collections import deque
+from typing import List
+
+
+# BFS
+def orangesRotting(grid: List[List[int]]) -> int:
+    # 1. Init
+    q = deque()
+    time, fresh = 0, 0
+    m, n = len(grid), len(grid[0])
+    dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+
+    # 2. Make a queue of rotten oranges and count fresh oranges
+    for r in range(m):
+        for c in range(n):
+            if grid[r][c] == 1:
+                fresh += 1
+            if grid[r][c] == 2:
+                q.append([r, c])
+
+    # 3. BFS
+    while q and fresh > 0:
+        size = len(q)
+
+        for _ in range(size):
+            r, c = q.popleft()
+
+            for dr, dc in dirs:
+                nr, nc = r + dr, c + dc
+                if nr < 0 or nc < 0 or nr >= m or nc >= n or grid[nr][nc] != 1:
+                    continue
+                grid[nr][nc] = 2
+                q.append([nr, nc])
+                fresh -= 1
+        time += 1
+
+    return time if fresh == 0 else -1
+
+
+grid = [[2, 1, 1], [1, 1, 0], [0, 1, 1]]
+print(orangesRotting(grid))
+
 ```
 
 ## 207. Course Schedule
@@ -173,11 +391,184 @@ flowchart LR
 -   All courses are taken. Return `True`.
 
 ```python title="207. Course Schedule - Python Solution"
---8<-- "0207_course_schedule.py"
+from collections import defaultdict, deque
+from typing import List
+
+
+# BFS (Kahn's Algorithm)
+def canFinishBFS(numCourses: int, prerequisites: List[List[int]]) -> bool:
+    graph = defaultdict(list)
+    indegree = defaultdict(int)
+
+    for crs, pre in prerequisites:
+        graph[pre].append(crs)
+        indegree[crs] += 1
+
+    q = deque([i for i in range(numCourses) if indegree[i] == 0])
+    count = 0
+
+    while q:
+        crs = q.popleft()
+        count += 1
+
+        for nxt in graph[crs]:
+            indegree[nxt] -= 1
+
+            if indegree[nxt] == 0:
+                q.append(nxt)
+
+    return count == numCourses
+
+
+# DFS + Set
+def canFinishDFS1(numCourses: int, prerequisites: List[List[int]]) -> bool:
+    graph = defaultdict(list)
+    for crs, pre in prerequisites:
+        graph[crs].append(pre)
+
+    visiting = set()
+
+    def dfs(crs):
+        if crs in visiting:  # cycle detected
+            return False
+        if graph[crs] == []:
+            return True
+
+        visiting.add(crs)
+
+        for pre in graph[crs]:
+            if not dfs(pre):
+                return False
+
+        visiting.remove(crs)
+        graph[crs] = []
+
+        return True
+
+    for crs in range(numCourses):
+        if not dfs(crs):
+            return False
+    return True
+
+
+# DFS + List
+def canFinishDFS2(numCourses: int, prerequisites: List[List[int]]) -> bool:
+    graph = defaultdict(list)
+    for pre, crs in prerequisites:
+        graph[crs].append(pre)
+
+    # 0: init, 1: visiting, 2: visited
+    status = [0] * numCourses
+
+    def dfs(crs):
+        if status[crs] == 1:  # cycle detected
+            return False
+        if status[crs] == 2:
+            return True
+
+        status[crs] = 1
+
+        for pre in graph[crs]:
+            if not dfs(pre):
+                return False
+
+        status[crs] = 2
+        return True
+
+    for crs in range(numCourses):
+        if not dfs(crs):
+            return False
+    return True
+
+
+prerequisites = [[0, 1], [0, 2], [1, 3], [1, 4], [3, 4]]
+print(canFinishBFS(5, prerequisites))  # True
+print(canFinishDFS1(5, prerequisites))  # True
+print(canFinishDFS2(5, prerequisites))  # True
+
 ```
 
 ```cpp title="207. Course Schedule - C++ Solution"
---8<-- "cpp/0207_course_schedule.cc"
+#include <functional>
+#include <iostream>
+#include <queue>
+#include <vector>
+using namespace std;
+
+class Solution {
+   public:
+    // BFS
+    bool canFinishBFS(int numCourses, vector<vector<int>> &prerequisites) {
+        vector<vector<int>> graph(numCourses);
+        vector<int> indegree(numCourses, 0);
+        for (auto &pre : prerequisites) {
+            graph[pre[1]].push_back(pre[0]);
+            indegree[pre[0]]++;
+        }
+
+        queue<int> q;
+        for (int i = 0; i < numCourses; i++) {
+            if (indegree[i] == 0) {
+                q.push(i);
+            }
+        }
+
+        int cnt = 0;
+        while (!q.empty()) {
+            int cur = q.front();
+            q.pop();
+            cnt++;
+
+            for (int nxt : graph[cur]) {
+                indegree[nxt]--;
+                if (indegree[nxt] == 0) {
+                    q.push(nxt);
+                }
+            }
+        }
+        return cnt == numCourses;
+    }
+
+    // DFS
+    bool canFinishDFS(int numCourses, vector<vector<int>> &prerequisites) {
+        vector<vector<int>> graph(numCourses);
+        for (auto &pre : prerequisites) {
+            graph[pre[1]].push_back(pre[0]);
+        }
+        // 0: not visited, 1: visiting, 2: visited
+        vector<int> state(numCourses, 0);
+
+        function<bool(int)> dfs = [&](int pre) -> bool {
+            state[pre] = 1;  // visiting
+            for (int crs : graph[pre]) {
+                if (state[crs] == 1 || (state[crs] == 0 && dfs(crs))) {
+                    return true;
+                }
+            }
+            state[pre] = 2;  // visited
+            return false;
+        };
+
+        for (int i = 0; i < numCourses; i++) {
+            if (state[i] == 0 && dfs(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+};
+
+int main() {
+    Solution sol;
+    vector<vector<int>> prerequisites = {{1, 0}, {2, 1}, {3, 2}, {4, 3},
+                                         {5, 4}, {6, 5}, {7, 6}, {8, 7},
+                                         {9, 8}, {10, 9}};
+    int numCourses = 11;
+    cout << sol.canFinishBFS(numCourses, prerequisites) << endl;
+    cout << sol.canFinishDFS(numCourses, prerequisites) << endl;
+    return 0;
+}
+
 ```
 
 ## 208. Implement Trie (Prefix Tree)
@@ -205,5 +596,48 @@ A2 --- R2((R))
 ```
 
 ```python title="208. Implement Trie (Prefix Tree) - Python Solution"
---8<-- "0208_implement_trie_prefix_tree.py"
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.endOfWord = None
+
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word: str) -> None:
+        node = self.root
+
+        for c in word:
+            if c not in node.children:
+                node.children[c] = TrieNode()
+            node = node.children[c]
+        node.endOfWord = True
+
+    def search(self, word: str) -> bool:
+        node = self.root
+
+        for c in word:
+            if c not in node.children:
+                return False
+            node = node.children[c]
+        return node.endOfWord
+
+    def startsWith(self, prefix: str) -> bool:
+        node = self.root
+
+        for c in prefix:
+            if c not in node.children:
+                return False
+            node = node.children[c]
+        return True
+
+
+# Your Trie object will be instantiated and called as such:
+obj = Trie()
+obj.insert("apple")
+print(obj.search("word"))  # False
+print(obj.startsWith("app"))  # True
+
 ```

@@ -18,7 +18,29 @@ comments: True
 -   Tags: string, dynamic programming
 
 ```python title="1143. Longest Common Subsequence - Python Solution"
---8<-- "1143_longest_common_subsequence.py"
+# DP - LCS
+def longestCommonSubsequence(text1: str, text2: str) -> int:
+    m, n = len(text1), len(text2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    res = 0
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if text1[i - 1] == text2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i][j - 1], dp[i - 1][j])
+
+            if res < dp[i][j]:
+                res = dp[i][j]
+
+    return res
+
+
+text1 = "abcde"
+text2 = "ace"
+print(longestCommonSubsequence(text1, text2))  # 3
+
 ```
 
 ## 583. Delete Operation for Two Strings
@@ -28,7 +50,58 @@ comments: True
 -   Tags: string, dynamic programming
 
 ```python title="583. Delete Operation for Two Strings - Python Solution"
---8<-- "0583_delete_operation_for_two_strings.py"
+# DP - LCS
+def minDistance1(word1: str, word2: str) -> int:
+    m = len(word1)
+    n = len(word2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+
+    for i in range(m + 1):
+        dp[i][0] = i
+    for j in range(n + 1):
+        dp[0][j] = j
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if word1[i - 1] == word2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1]  # no need to delete
+            else:
+                dp[i][j] = min(
+                    dp[i - 1][j] + 1,  # delete word1[i]
+                    dp[i][j - 1] + 1,  # delete word2[j]
+                    dp[i - 1][j - 1] + 2,  # delete both
+                )
+    return dp[-1][-1]
+
+
+# DP - LCS
+def minDistance2(word1: str, word2: str) -> int:
+    def LCS(word1: str, word2: str) -> int:
+        m = len(word1)
+        n = len(word2)
+        dp = [[0] * (n + 1) for _ in range(m + 1)]
+        lcs = 0
+
+        for i in range(1, m + 1):
+            for j in range(1, n + 1):
+                if word1[i - 1] == word2[j - 1]:
+                    dp[i][j] = dp[i - 1][j - 1] + 1
+                else:
+                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+
+                if lcs < dp[i][j]:
+                    lcs = dp[i][j]
+        return lcs
+
+    lcs = LCS(word1, word2)
+    return len(word1) + len(word2) - 2 * lcs
+
+
+word1 = "sea"
+word2 = "eat"
+print(minDistance1(word1, word2))  # 2
+print(minDistance2(word1, word2))  # 2
+
 ```
 
 ## 712. Minimum ASCII Delete Sum for Two Strings
@@ -44,7 +117,33 @@ comments: True
 -   Tags: string, dynamic programming
 
 ```python title="72. Edit Distance - Python Solution"
---8<-- "0072_edit_distance.py"
+def minDistance(word1: str, word2: str) -> int:
+    m = len(word1)
+    n = len(word2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+
+    for i in range(m + 1):
+        dp[i][0] = i
+    for j in range(n + 1):
+        dp[0][j] = j
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if word1[i - 1] == word2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1]  # no operation
+            else:
+                dp[i][j] = 1 + min(
+                    dp[i - 1][j],  # delete
+                    dp[i][j - 1],  # insert
+                    dp[i - 1][j - 1],  # replace
+                )
+    return dp[-1][-1]
+
+
+word1 = "horse"
+word2 = "ros"
+print(minDistance(word1, word2))  # 3
+
 ```
 
 ## 1035. Uncrossed Lines
@@ -54,7 +153,30 @@ comments: True
 -   Tags: array, dynamic programming
 
 ```python title="1035. Uncrossed Lines - Python Solution"
---8<-- "1035_uncrossed_lines.py"
+from typing import List
+
+
+def maxUncrossedLines(nums1: List[int], nums2: List[int]) -> int:
+    m = len(nums1)
+    n = len(nums2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    num = 0
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if nums1[i - 1] == nums2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+
+            if num < dp[i][j]:
+                num = dp[i][j]
+
+    return num
+
+
+print(maxUncrossedLines([1, 4, 2], [1, 2, 4]))  # 2
+
 ```
 
 ## 1458. Max Dot Product of Two Subsequences

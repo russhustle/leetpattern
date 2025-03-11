@@ -38,7 +38,25 @@ comments: True
 -   Tags: two pointers, string
 
 ```python title="344. Reverse String - Python Solution"
---8<-- "0344_reverse_string.py"
+from typing import List
+
+
+def reverseString(s: List[str]) -> None:
+    """
+    Do not return anything, modify s in-place instead.
+    """
+    left, right = 0, len(s) - 1
+
+    while left < right:
+        s[left], s[right] = s[right], s[left]
+        left += 1
+        right -= 1
+
+
+s = ["h", "e", "l", "l", "o"]
+reverseString(s)
+print(s)  # ['o', 'l', 'l', 'e', 'h']
+
 ```
 
 ## 125. Valid Palindrome
@@ -48,7 +66,35 @@ comments: True
 -   Tags: two pointers, string
 
 ```python title="125. Valid Palindrome - Python Solution"
---8<-- "0125_valid_palindrome.py"
+# List Comprehension
+def isPalindrome(s: str) -> bool:
+    s = [char.lower() for char in s if char.isalnum()]
+    return s == s[::-1]
+
+
+# Left Right Pointers
+def isPalindromeLR(s: str) -> bool:
+    left, right = 0, len(s) - 1
+
+    while left < right:
+        while left < right and not s[left].isalnum():
+            left += 1
+        while left < right and not s[right].isalnum():
+            right -= 1
+
+        if s[left].lower() != s[right].lower():
+            return False
+
+        left += 1
+        right -= 1
+
+    return True
+
+
+s = "A man, a plan, a canal: Panama"
+print(isPalindrome(s))  # True
+print(isPalindromeLR(s))  # True
+
 ```
 
 ## 1750. Minimum Length of String After Deleting Similar Ends
@@ -58,7 +104,24 @@ comments: True
 -   Tags: two pointers, string
 
 ```python title="1750. Minimum Length of String After Deleting Similar Ends - Python Solution"
---8<-- "1750_minimum_length_of_string_after_deleting_similar_ends.py"
+# Sliding Window Variable Size
+def minimumLength(s: str) -> int:
+    left, right = 0, len(s) - 1
+
+    while left < right and s[left] == s[right]:
+        val = s[left]
+
+        while left <= right and s[left] == val:
+            left += 1
+        while left <= right and s[right] == val:
+            right -= 1
+
+    return right - left + 1
+
+
+print(minimumLength("cabaabac"))  # 0
+print(minimumLength("aabccabba"))  # 3
+
 ```
 
 ## 2105. Watering Plants II
@@ -74,7 +137,39 @@ comments: True
 -   Tags: array, two pointers, sorting
 
 ```python title="977. Squares of a Sorted Array - Python Solution"
---8<-- "0977_squares_of_a_sorted_array.py"
+from typing import List
+
+
+# Left Right Pointers
+def sortedSquares(nums: List[int]) -> List[int]:
+    """Returns the squares of the sorted array."""
+    n = len(nums)
+    result = [0 for _ in range(n)]
+
+    left, right, tail = 0, n - 1, n - 1
+
+    while left <= right:
+        if abs(nums[left]) >= abs(nums[right]):
+            result[tail] = nums[left] ** 2
+            left += 1
+        else:
+            result[tail] = nums[right] ** 2
+            right -= 1
+        tail -= 1
+
+    return result
+
+
+# |---------------------|------|-------|
+# | Approach            | Time | Space |
+# |---------------------|------|-------|
+# | Left Right Pointers | O(n) | O(n)  |
+# |---------------------|------|-------|
+
+
+nums = [-4, -1, 0, 3, 10]
+print(sortedSquares(nums))  # [0, 1, 9, 16, 100]
+
 ```
 
 ## 658. Find K Closest Elements
@@ -96,7 +191,35 @@ comments: True
 -   Tags: array, two pointers, binary search
 
 ```python title="167. Two Sum II - Input Array Is Sorted - Python Solution"
---8<-- "0167_two_sum_ii_input_array_is_sorted.py"
+from typing import List
+
+
+# Left Right Pointers
+def twoSum(numbers: List[int], target: int) -> List[int]:
+    left, right = 0, len(numbers) - 1
+
+    while left < right:
+        total = numbers[left] + numbers[right]
+
+        if total > target:
+            right -= 1
+        elif total < target:
+            left += 1
+        else:
+            return [left + 1, right + 1]
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# | Left Right |  O(n)  |  O(1)   |
+# |------------|--------|---------|
+
+
+numbers = [2, 7, 11, 15]
+target = 9
+print(twoSum(numbers, target))  # [1, 2]
+
 ```
 
 ## 633. Sum of Square Numbers
@@ -118,11 +241,97 @@ comments: True
 -   Tags: array, two pointers, sorting
 
 ```python title="15. 3Sum - Python Solution"
---8<-- "0015_3sum.py"
+from typing import List
+
+
+# Left Right Pointers
+def threeSum(nums: List[int]) -> List[List[int]]:
+    nums.sort()
+    res = []
+    n = len(nums)
+
+    for i in range(n - 2):
+        if i > 0 and nums[i] == nums[i - 1]:
+            continue
+
+        left, right = i + 1, n - 1
+
+        while left < right:
+            total = nums[i] + nums[left] + nums[right]
+
+            if total > 0:
+                right -= 1
+            elif total < 0:
+                left += 1
+            else:
+                res.append([nums[i], nums[left], nums[right]])
+
+                while left < right and nums[left] == nums[left + 1]:
+                    left += 1
+
+                while left < right and nums[right] == nums[right - 1]:
+                    right -= 1
+
+                left += 1
+                right -= 1
+
+    return res
+
+
+nums = [-1, 0, 1, 2, -1, -4]
+assert threeSum(nums) == [[-1, -1, 2], [-1, 0, 1]]
+
 ```
 
 ```cpp title="15. 3Sum - C++ Solution"
---8<-- "cpp/0015_3sum.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<vector<int>> threeSum(vector<int>& nums) {
+    sort(nums.begin(), nums.end());
+    vector<vector<int>> res;
+    int n = nums.size();
+
+    for (int i = 0; i < n - 2; i++) {
+        if (i > 0 && nums[i] == nums[i - 1]) {
+            continue;
+        }
+
+        int left = i + 1, right = n - 1;
+
+        while (left < right) {
+            int total = nums[i] + nums[left] + nums[right];
+
+            if (total > 0)
+                right--;
+            else if (total < 0)
+                left++;
+            else {
+                res.push_back({nums[i], nums[left], nums[right]});
+                while (left < right && nums[left] == nums[left + 1]) left++;
+                while (left < right && nums[right] == nums[right - 1]) right--;
+                left++;
+                right--;
+            }
+        }
+    }
+    return res;
+}
+
+int main() {
+    vector<int> nums = {-1, 0, 1, 2, -1, -4};
+    vector<vector<int>> res = threeSum(nums);
+    for (auto& v : res) {
+        for (int i : v) {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
 ```
 
 ## 16. 3Sum Closest
@@ -132,11 +341,94 @@ comments: True
 -   Tags: array, two pointers, sorting
 
 ```python title="16. 3Sum Closest - Python Solution"
---8<-- "0016_3sum_closest.py"
+from typing import List
+
+
+# Left Right Pointers
+def threeSumClosest(nums: List[int], target: int) -> int:
+    nums.sort()
+    n = len(nums)
+    res = 0
+    minDiff = float("inf")
+
+    for i in range(n - 2):
+        if i > 0 and nums[i] == nums[i - 1]:
+            continue
+
+        left, right = i + 1, n - 1
+
+        while left < right:
+            total = nums[i] + nums[left] + nums[right]
+
+            if total > target:
+                if total - target < minDiff:
+                    minDiff = total - target
+                    res = total
+                right -= 1
+
+            elif total < target:
+                if target - total < minDiff:
+                    minDiff = target - total
+                    res = total
+                left += 1
+
+            else:
+                return total
+
+    return res
+
+
+nums = [-1, 2, 1, -4]
+target = 1
+assert threeSumClosest(nums, target) == 2
+
 ```
 
 ```cpp title="16. 3Sum Closest - C++ Solution"
---8<-- "cpp/0016_3sum_closest.cc"
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int threeSumClosest(vector<int>& nums, int target) {
+    sort(nums.begin(), nums.end());
+    int n = nums.size();
+    int res = 0;
+    int minDiff = INT_MAX;
+
+    for (int i = 0; i < n - 2; i++) {
+        if (i > 0 && nums[i] == nums[i - 1]) continue;
+
+        int left = i + 1, right = n - 1;
+        while (left < right) {
+            int total = nums[i] + nums[left] + nums[right];
+
+            int diff = abs(total - target);
+            if (diff < minDiff) {
+                minDiff = diff;
+                res = total;
+            }
+
+            if (total > target)
+                right--;
+            else if (total < target)
+                left++;
+            else
+                return total;
+        }
+    }
+    return res;
+}
+
+int main() {
+    vector<int> nums = {-1, 2, 1, -4};
+    int target = 1;
+    cout << threeSumClosest(nums, target) << endl;
+    return 0;
+}
+
 ```
 
 ## 18. 4Sum
@@ -146,7 +438,50 @@ comments: True
 -   Tags: array, two pointers, sorting
 
 ```python title="18. 4Sum - Python Solution"
---8<-- "0018_4sum.py"
+from typing import List
+
+
+# Left Right Pointers
+def fourSum(nums: List[int], target: int) -> List[List[int]]:
+    """Returns all unique quadruplets that sum up to the target."""
+    nums.sort()
+    result = []
+
+    for i in range(len(nums) - 3):
+        if i > 0 and nums[i] == nums[i - 1]:
+            continue
+
+        for j in range(i + 1, len(nums) - 2):
+            if j > i + 1 and nums[j] == nums[j - 1]:
+                continue
+
+            left = j + 1
+            right = len(nums) - 1
+
+            while left < right:
+                total = nums[i] + nums[j] + nums[left] + nums[right]
+
+                if total > target:
+                    right -= 1
+                elif total < target:
+                    left += 1
+                else:
+                    result.append([nums[i], nums[j], nums[left], nums[right]])
+                    while left < right and nums[left] == nums[left + 1]:
+                        left += 1
+                    while left < right and nums[right] == nums[right - 1]:
+                        right -= 1
+                    left += 1
+                    right -= 1
+
+    return result
+
+
+nums = [1, 0, -1, 0, -2, 2]
+target = 0
+print(fourSum(nums, target))
+# [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]
+
 ```
 
 ## 611. Valid Triangle Number
@@ -183,11 +518,83 @@ comments: True
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg){width=300px}
 
 ```python title="11. Container With Most Water - Python Solution"
---8<-- "0011_container_with_most_water.py"
+from typing import List
+
+
+# Brute Force
+def maxAreaBF(height: List[int]) -> int:
+    max_area = 0
+
+    for i in range(len(height)):
+        for j in range(i + 1, len(height)):
+            h = min(height[i], height[j])
+            w = j - i
+            max_area = max(max_area, h * w)
+
+    return max_area
+
+
+# Left Right Pointers
+def maxAreaLR(height: List[int]) -> int:
+    left, right = 0, len(height) - 1
+    res = 0
+
+    while left < right:
+        h = min(height[left], height[right])
+        w = right - left
+        res = max(res, h * w)
+
+        if height[left] < height[right]:
+            left += 1
+        else:
+            right -= 1
+
+    return res
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# | Brute Force| O(n^2) |  O(1)   |
+# | Left Right |  O(n)  |  O(1)   |
+# |------------|--------|---------|
+
+
+height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+print(maxAreaBF(height))  # 49
+print(maxAreaLR(height))  # 49
+
 ```
 
 ```cpp title="11. Container With Most Water - C++ Solution"
---8<-- "cpp/0011_container_with_most_water.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int maxArea(vector<int>& height) {
+    int left = 0, right = height.size() - 1;
+    int res = 0;
+
+    while (left < right) {
+        int h = min(height[left], height[right]);
+        int w = right - left;
+        res = max(res, h * w);
+
+        if (height[left] < height[right])
+            left++;
+        else
+            right--;
+    }
+    return res;
+}
+
+int main() {
+    vector<int> height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+    cout << maxArea(height) << endl;  // 49
+    return 0;
+}
+
 ```
 
 ## 42. Trapping Rain Water
@@ -206,11 +613,122 @@ comments: True
 | Monotonic  | O(N) | O(N)  |
 
 ```python title="42. Trapping Rain Water - Python Solution"
---8<-- "0042_trapping_rain_water.py"
+from typing import List
+
+
+# DP
+def trapDP(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    n = len(height)
+    maxLeft, maxRight = [0 for _ in range(n)], [0 for _ in range(n)]
+
+    for i in range(1, n):
+        maxLeft[i] = max(maxLeft[i - 1], height[i - 1])
+
+    for i in range(n - 2, -1, -1):
+        maxRight[i] = max(maxRight[i + 1], height[i + 1])
+
+    res = 0
+    for i in range(n):
+        res += max(0, min(maxLeft[i], maxRight[i]) - height[i])
+
+    return res
+
+
+# Left Right Pointers
+def trapLR(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    left, right = 0, len(height) - 1
+    maxL, maxR = height[left], height[right]
+    res = 0
+
+    while left < right:
+        if maxL < maxR:
+            left += 1
+            maxL = max(maxL, height[left])
+            res += maxL - height[left]
+        else:
+            right -= 1
+            maxR = max(maxR, height[right])
+            res += maxR - height[right]
+
+    return res
+
+
+# Monotonic Stack
+def trapStack(height: List[int]) -> int:
+    stack = []
+    total = 0
+
+    for i in range(len(height)):
+        while stack and height[i] > height[stack[-1]]:
+            top = stack.pop()
+            if not stack:
+                break
+            distance = i - stack[-1] - 1
+            bounded_height = min(height[i], height[stack[-1]]) - height[top]
+            total += distance * bounded_height
+        stack.append(i)
+
+    return total
+
+
+height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+print(trapDP(height))  # 6
+print(trapLR(height))  # 6
+print(trapStack(height))  # 6
+
 ```
 
 ```cpp title="42. Trapping Rain Water - C++ Solution"
---8<-- "cpp/0042_trapping_rain_water.cc"
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+class Solution
+{
+public:
+    int trap(vector<int> &height)
+    {
+        if (height.empty())
+            return 0;
+
+        int res = 0;
+        int left = 0, right = height.size() - 1;
+        int maxL = height[left], maxR = height[right];
+
+        while (left < right)
+        {
+            if (maxL < maxR)
+            {
+                left++;
+                maxL = max(maxL, height[left]);
+                res += maxL - height[left];
+            }
+            else
+            {
+                right--;
+                maxR = max(maxR, height[right]);
+                res += maxR - height[right];
+            }
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    vector<int> height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+    Solution solution;
+    cout << solution.trap(height) << endl;
+    return 0;
+}
+
 ```
 
 ## 1616. Split Two Strings to Make Palindrome
@@ -238,7 +756,31 @@ comments: True
 -   Tags: array, two pointers, binary search, sorting
 
 ```python title="1099. Two Sum Less Than K - Python Solution"
---8<-- "1099_two_sum_less_than_k.py"
+from typing import List
+
+
+# Left Right Pointers
+def twoSumLessThanK(nums: List[int], k: int) -> int:
+    nums.sort()
+    left, right = 0, len(nums) - 1
+    res = float("-inf")
+
+    while left < right:
+        total = nums[left] + nums[right]
+
+        if total >= k:
+            right -= 1
+        else:
+            res = max(res, total)
+            left += 1
+
+    return res if res != float("-inf") else -1
+
+
+nums = [34, 23, 1, 24, 75, 33, 54, 8]
+k = 60
+print(twoSumLessThanK(nums, k))  # 58
+
 ```
 
 ## 360. Sort Transformed Array

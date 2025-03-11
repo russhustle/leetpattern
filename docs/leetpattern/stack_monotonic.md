@@ -34,7 +34,27 @@ comments: True
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
 ```python title="739. Daily Temperatures - Python Solution"
---8<-- "0739_daily_temperatures.py"
+from typing import List
+
+
+# Monotonic Stack
+def dailyTemperatures(temperatures: List[int]) -> List[int]:
+    res = [0 for _ in range(len(temperatures))]
+    stack = []  # [temp, index]
+
+    for idx, temp in enumerate(temperatures):
+        while stack and temp > stack[-1][0]:
+            _, last_index = stack.pop()
+            res[last_index] = idx - last_index
+
+        stack.append([temp, idx])
+
+    return res
+
+
+print(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
+# [1, 1, 4, 2, 1, 1, 0, 0]
+
 ```
 
 ## 496. Next Greater Element I
@@ -44,7 +64,30 @@ comments: True
 -   Tags: array, hash table, stack, monotonic stack
 
 ```python title="496. Next Greater Element I - Python Solution"
---8<-- "0496_next_greater_element_i.py"
+from typing import List
+
+
+# Monotonic Stack
+def nextGreaterElement(nums1: List[int], nums2: List[int]) -> List[int]:
+    next_greater = {}
+    stack = []
+    result = []
+
+    for num in nums2:
+        while stack and num > stack[-1]:
+            next_greater[stack.pop()] = num
+        stack.append(num)
+
+    for num in nums1:
+        result.append(next_greater.get(num, -1))
+
+    return result
+
+
+nums1 = [4, 1, 2]
+nums2 = [1, 3, 4, 2]
+print(nextGreaterElement(nums1, nums2))  # [3, -1, -1]
+
 ```
 
 ## 503. Next Greater Element II
@@ -54,7 +97,27 @@ comments: True
 -   Tags: array, stack, monotonic stack
 
 ```python title="503. Next Greater Element II - Python Solution"
---8<-- "0503_next_greater_element_ii.py"
+from typing import List
+
+
+# Monotonic Stack
+def nextGreaterElements(nums: List[int]) -> List[int]:
+    n = len(nums)
+    result = [-1] * n
+    stack = []
+
+    for i in range(2 * n):
+        while stack and nums[stack[-1]] < nums[i % n]:
+            result[stack.pop()] = nums[i % n]
+        if i < n:
+            stack.append(i)
+
+    return result
+
+
+nums = [1, 2, 1]
+print(nextGreaterElements(nums))  # [2, -1, 2]
+
 ```
 
 ## 84. Largest Rectangle in Histogram
@@ -64,7 +127,29 @@ comments: True
 -   Tags: array, stack, monotonic stack
 
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
---8<-- "0084_largest_rectangle_in_histogram.py"
+from typing import List
+
+
+def largestRectangleArea(heights: List[int]) -> int:
+    maxArea = 0
+    stack = []  # pair: (index, height)
+
+    for i, h in enumerate(heights):
+        start = i
+        while stack and stack[-1][1] > h:
+            index, height = stack.pop()
+            maxArea = max(maxArea, height * (i - index))
+            start = index
+        stack.append((start, h))
+
+    for i, h in stack:
+        maxArea = max(maxArea, h * (len(heights) - i))
+
+    return maxArea
+
+
+print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
+
 ```
 
 ## 85. Maximal Rectangle
@@ -77,7 +162,44 @@ comments: True
 ![0085](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg){width=300px}
 
 ```python title="85. Maximal Rectangle - Python Solution"
---8<-- "0085_maximal_rectangle.py"
+from typing import List
+
+
+# Monotonic Stack
+def maximalRectangle(matrix: List[List[str]]) -> int:
+    if not matrix or not matrix[0]:
+        return 0
+
+    n = len(matrix[0])
+    heights = [0] * (n + 1)
+    max_area = 0
+
+    for row in matrix:
+        for i in range(n):
+            if row[i] == "1":
+                heights[i] += 1
+            else:
+                heights[i] = 0
+
+        stack = [-1]
+        for i in range(n + 1):
+            while heights[i] < heights[stack[-1]]:
+                h = heights[stack.pop()]
+                w = i - stack[-1] - 1
+                max_area = max(max_area, h * w)
+            stack.append(i)
+
+    return max_area
+
+
+matrix = [
+    ["1", "0", "1", "0", "0"],
+    ["1", "0", "1", "1", "1"],
+    ["1", "1", "1", "1", "1"],
+    ["1", "0", "0", "1", "0"],
+]
+print(maximalRectangle(matrix))  # 6
+
 ```
 
 ## 42. Trapping Rain Water
@@ -96,11 +218,122 @@ comments: True
 | Monotonic  | O(N) | O(N)  |
 
 ```python title="42. Trapping Rain Water - Python Solution"
---8<-- "0042_trapping_rain_water.py"
+from typing import List
+
+
+# DP
+def trapDP(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    n = len(height)
+    maxLeft, maxRight = [0 for _ in range(n)], [0 for _ in range(n)]
+
+    for i in range(1, n):
+        maxLeft[i] = max(maxLeft[i - 1], height[i - 1])
+
+    for i in range(n - 2, -1, -1):
+        maxRight[i] = max(maxRight[i + 1], height[i + 1])
+
+    res = 0
+    for i in range(n):
+        res += max(0, min(maxLeft[i], maxRight[i]) - height[i])
+
+    return res
+
+
+# Left Right Pointers
+def trapLR(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    left, right = 0, len(height) - 1
+    maxL, maxR = height[left], height[right]
+    res = 0
+
+    while left < right:
+        if maxL < maxR:
+            left += 1
+            maxL = max(maxL, height[left])
+            res += maxL - height[left]
+        else:
+            right -= 1
+            maxR = max(maxR, height[right])
+            res += maxR - height[right]
+
+    return res
+
+
+# Monotonic Stack
+def trapStack(height: List[int]) -> int:
+    stack = []
+    total = 0
+
+    for i in range(len(height)):
+        while stack and height[i] > height[stack[-1]]:
+            top = stack.pop()
+            if not stack:
+                break
+            distance = i - stack[-1] - 1
+            bounded_height = min(height[i], height[stack[-1]]) - height[top]
+            total += distance * bounded_height
+        stack.append(i)
+
+    return total
+
+
+height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+print(trapDP(height))  # 6
+print(trapLR(height))  # 6
+print(trapStack(height))  # 6
+
 ```
 
 ```cpp title="42. Trapping Rain Water - C++ Solution"
---8<-- "cpp/0042_trapping_rain_water.cc"
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+class Solution
+{
+public:
+    int trap(vector<int> &height)
+    {
+        if (height.empty())
+            return 0;
+
+        int res = 0;
+        int left = 0, right = height.size() - 1;
+        int maxL = height[left], maxR = height[right];
+
+        while (left < right)
+        {
+            if (maxL < maxR)
+            {
+                left++;
+                maxL = max(maxL, height[left]);
+                res += maxL - height[left];
+            }
+            else
+            {
+                right--;
+                maxR = max(maxR, height[right]);
+                res += maxR - height[right];
+            }
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    vector<int> height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+    Solution solution;
+    cout << solution.trap(height) << endl;
+    return 0;
+}
+
 ```
 
 ## 901. Online Stock Span
@@ -111,7 +344,28 @@ comments: True
 -   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
 ```python title="901. Online Stock Span - Python Solution"
---8<-- "0901_online_stock_span.py"
+from typing import List
+
+
+# Monotonic Stack
+class StockSpanner:
+
+    def __init__(self):
+        self.stack = [(-1, float("inf"))]
+        self.cur_day = -1
+
+    def next(self, price: int) -> int:
+        while price >= self.stack[-1][1]:
+            self.stack.pop()
+        self.cur_day += 1
+        self.stack.append((self.cur_day, price))
+        return self.cur_day - self.stack[-2][0]
+
+
+obj = StockSpanner()
+prices = [100, 80, 60, 70, 60, 75, 85]
+print([obj.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
+
 ```
 
 ## 316. Remove Duplicate Letters
@@ -121,7 +375,25 @@ comments: True
 -   Tags: string, stack, greedy, monotonic stack
 
 ```python title="316. Remove Duplicate Letters - Python Solution"
---8<-- "0316_remove_duplicate_letters.py"
+# Monotonic Stack
+def removeDuplicateLetters(s: str) -> str:
+    stack = []
+    seen = set()
+    last = {c: i for i, c in enumerate(s)}
+
+    for i, c in enumerate(s):
+        if c not in seen:
+            while stack and c < stack[-1] and i < last[stack[-1]]:
+                seen.discard(stack.pop())
+            seen.add(c)
+            stack.append(c)
+
+    return "".join(stack)
+
+
+s = "cbacdcbc"
+print(removeDuplicateLetters(s))  # acdb
+
 ```
 
 ## 456. 132 Pattern
@@ -131,7 +403,33 @@ comments: True
 -   Tags: array, binary search, stack, monotonic stack, ordered set
 
 ```python title="456. 132 Pattern - Python Solution"
---8<-- "0456_132_pattern.py"
+from typing import List
+
+
+# Monotonic Stack
+def find132pattern(nums: List[int]) -> bool:
+    n = len(nums)
+    if n < 3:
+        return False
+
+    stack = []
+    second_max = float("-inf")
+
+    for i in range(n - 1, -1, -1):
+        if nums[i] < second_max:
+            return True
+
+        while stack and stack[-1] < nums[i]:
+            second_max = stack.pop()
+
+        stack.append(nums[i])
+
+    return False
+
+
+nums = [-1, 3, 2, 0]
+print(find132pattern(nums))  # True
+
 ```
 
 ## 2281. Sum of Total Strength of Wizards
@@ -141,5 +439,38 @@ comments: True
 -   Tags: array, stack, monotonic stack, prefix sum
 
 ```python title="2281. Sum of Total Strength of Wizards - Python Solution"
---8<-- "2281_sum_of_total_strength_of_wizards.py"
+from itertools import accumulate
+from typing import List
+
+
+# Monotonic Stack
+def totalStrength(strength: List[int]) -> int:
+    n = len(strength)
+    left = [-1 for _ in range(n)]
+    right = [n for _ in range(n)]
+    stack = []
+
+    for i, v in enumerate(strength):
+        while stack and strength[stack[-1]] >= v:
+            right[stack.pop()] = i
+        if stack:
+            left[i] = stack[-1]
+        stack.append(i)
+
+    prefix_sum = list(accumulate(accumulate(strength, initial=0), initial=0))
+
+    ans = 0
+    for i, v in enumerate(strength):
+        l, r = left[i] + 1, right[i] - 1
+        tot = (i - l + 1) * (prefix_sum[r + 2] - prefix_sum[i + 1]) - (
+            r - i + 1
+        ) * (prefix_sum[i + 1] - prefix_sum[l])
+        ans += v * tot
+
+    return ans % (10**9 + 7)
+
+
+strength = [1, 3, 1, 2]
+print(totalStrength(strength))  # 44
+
 ```

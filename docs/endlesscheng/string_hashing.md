@@ -26,7 +26,47 @@ comments: True
 -   Tags: two pointers, string, string matching
 
 ```python title="28. Find the Index of the First Occurrence in a String - Python Solution"
---8<-- "0028_find_the_index_of_the_first_occurrence_in_a_string.py"
+from template import LPS
+
+
+# Brute Force
+def strStrBF(haystack: str, needle: str) -> int:
+    m, n = len(haystack), len(needle)
+    for i in range(m - n + 1):
+        if haystack[i : i + n] == needle:
+            return i
+    return -1
+
+
+# KMP
+def strStrKMP(haystack: str, needle: str) -> int:
+    lps = LPS(needle)
+    m, n = len(haystack), len(needle)
+    j = 0
+
+    for i in range(m):
+        while j > 0 and haystack[i] != needle[j]:
+            j = lps[j - 1]
+        if haystack[i] == needle[j]:
+            j += 1
+        if j == n:
+            return i - n + 1
+    return -1
+
+
+# |------------|------------------|---------|
+# |  Approach  |       Time       |  Space  |
+# |------------|------------------|---------|
+# | Brute Force| O((m - n) * n)   | O(1)    |
+# | KMP        | O(m + n)         | O(n)    |
+# |------------|------------------|---------|
+
+
+haystack = "hello"
+needle = "ll"
+print(strStrBF(haystack, needle))  # 2
+print(strStrKMP(haystack, needle))  # 2
+
 ```
 
 ## 187. Repeated DNA Sequences
@@ -78,7 +118,27 @@ comments: True
 -   Tags: array, binary search, dynamic programming, sliding window, rolling hash, hash function
 
 ```python title="718. Maximum Length of Repeated Subarray - Python Solution"
---8<-- "0718_maximum_length_of_repeated_subarray.py"
+from typing import List
+
+
+def findLength(nums1: List[int], nums2: List[int]) -> int:
+    m = len(nums1)
+    n = len(nums2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    length = 0
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if nums1[i - 1] == nums2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            if length < dp[i][j]:
+                length = dp[i][j]
+
+    return length
+
+
+print(findLength([1, 2, 3, 2, 1], [3, 2, 1, 4, 7]))  # 3
+
 ```
 
 ## 1923. Longest Common Subpath

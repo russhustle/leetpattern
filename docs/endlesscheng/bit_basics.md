@@ -113,7 +113,45 @@ comments: True
 -   Tags: divide and conquer, bit manipulation
 
 ```python title="191. Number of 1 Bits - Python Solution"
---8<-- "0191_number_of_1_bits.py"
+# Bit Manipulation
+def hammingWeight1(n: int) -> int:
+    res = 0
+
+    while n != 0:
+        n = n & (n - 1)  # Unset the rightmost 1-bit
+        res += 1
+
+    return res
+
+
+def hammingWeight2(n: int) -> int:
+    return bin(n).count("1")
+
+
+def hammingWeight3(n: int) -> int:
+    def decimalToBinary(n: int) -> str:
+        if n == 0:
+            return "0"
+
+        binary = ""
+        while n > 0:
+            binary = str(n % 2) + binary
+            n //= 2
+
+        return binary
+
+    binary = decimalToBinary(n)
+
+    return binary.count("1")
+
+
+n = 11
+print(hammingWeight1(n))  # 3
+print(hammingWeight2(n))  # 3
+
+n = 47
+print(bin(n))
+
 ```
 
 ## 2595. Number of Even and Odd Bits
@@ -137,5 +175,20 @@ comments: True
 -   Tags: dynamic programming, bit manipulation
 
 ```python title="338. Counting Bits - Python Solution"
---8<-- "0338_counting_bits.py"
+from typing import List
+
+
+# Bit Manipulation
+def countBits(n: int) -> List[int]:
+    bits = [0 for _ in range(n + 1)]
+
+    for i in range(1, n + 1):
+        bits[i] = bits[i >> 1] + (i & 1)
+
+    return bits
+
+
+n = 5
+print(countBits(n))  # [0, 1, 1, 2, 1, 2]
+
 ```

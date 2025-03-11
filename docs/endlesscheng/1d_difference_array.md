@@ -50,7 +50,26 @@ comments: True
 -   Return the number of points that intersect with cars.
 
 ```python title="2848. Points That Intersect With Cars - Python Solution"
---8<-- "2848_points_that_intersect_with_cars.py"
+from itertools import accumulate
+from typing import List
+
+
+# Differnce Array
+def numberOfPoints(nums: List[List[int]]) -> int:
+    max_end = max(end for _, end in nums)
+
+    diff = [0] * (max_end + 2)
+
+    for start, end in nums:
+        diff[start] += 1
+        diff[end + 1] -= 1
+
+    return sum(s > 0 for s in accumulate(diff))
+
+
+nums = [[3, 6], [1, 5], [4, 7]]
+print(numberOfPoints(nums))  # 7
+
 ```
 
 ## 1893. Check if All the Integers in a Range Are Covered
@@ -79,7 +98,49 @@ comments: True
 -   Return `False` if the total number of passengers at any point is greater than `capacity`. Otherwise, return `True`.
 
 ```python title="1094. Car Pooling - Python Solution"
---8<-- "1094_car_pooling.py"
+from itertools import accumulate
+from typing import List
+
+
+# Difference Array
+def carPooling1(trips: List[List[int]], capacity: int) -> bool:
+    max_location = 0
+    for trip in trips:
+        max_location = max(max_location, trip[2])
+
+    diff = [0] * (max_location + 1)
+    n = len(diff)
+
+    for num, start, end in trips:
+        diff[start] += num
+        if end < n:
+            diff[end] -= num
+
+    cur = 0
+    for i in range(n):
+        cur += diff[i]
+        if cur > capacity:
+            return False
+
+    return True
+
+
+# Difference Array
+def carPooling2(trips: List[List[int]], capacity: int) -> bool:
+    diff = [0] * 1001
+
+    for num, start, end in trips:
+        diff[start] += num
+        diff[end] -= num
+
+    return all(s <= capacity for s in accumulate(diff))
+
+
+trips = [[2, 1, 5], [3, 3, 7]]
+capacity = 4
+print(carPooling1(trips, capacity))  # False
+print(carPooling2(trips, capacity))  # False
+
 ```
 
 ## 1109. Corporate Flight Bookings
@@ -90,7 +151,29 @@ comments: True
 -   Return the number of seats booked on each flight.
 
 ```python title="1109. Corporate Flight Bookings - Python Solution"
---8<-- "1109_corporate_flight_bookings.py"
+from typing import List
+
+
+# Difference Array
+def corpFlightBookings(bookings: List[List[int]], n: int) -> List[int]:
+    """Return the number of seats booked for each flight."""
+    res = [0 for _ in range(n)]
+
+    for i, j, k in bookings:
+        res[i - 1] += k
+        if j < n:
+            res[j] -= k
+
+    for i in range(1, n):
+        res[i] += res[i - 1]
+
+    return res
+
+
+bookings = [[1, 2, 10], [2, 3, 20], [2, 5, 25]]
+n = 5
+print(corpFlightBookings(bookings, n))  # [10, 55, 45, 25, 25]
+
 ```
 
 ## 3355. Zero Array Transformation I
@@ -109,11 +192,62 @@ comments: True
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python title="56. Merge Intervals - Python Solution"
---8<-- "0056_merge_intervals.py"
+from typing import List
+
+
+# Intervals
+def merge(intervals: List[List[int]]) -> List[List[int]]:
+    n = len(intervals)
+    if n <= 1:
+        return intervals
+
+    intervals.sort(key=lambda x: x[0])
+    res = [intervals[0]]
+
+    for i in range(1, n):
+        if intervals[i][0] <= res[-1][1]:
+            res[-1][1] = max(res[-1][1], intervals[i][1])
+        else:
+            res.append(intervals[i])
+
+    return res
+
+
+print(merge([[1, 3], [2, 6], [8, 10], [15, 18]]))
+# [[1, 6], [8, 10], [15, 18]]
+
 ```
 
 ```cpp title="56. Merge Intervals - C++ Solution"
---8<-- "cpp/0056_merge_intervals.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// Interval
+vector<vector<int>> merge(vector<vector<int>>& intervals) {
+    sort(intervals.begin(), intervals.end());
+    vector<vector<int>> res;
+
+    for (auto& range : intervals) {
+        if (!res.empty() && range[0] <= res.back()[1]) {
+            res.back()[1] = max(res.back()[1], range[1]);
+        } else {
+            res.emplace_back(range);
+        }
+    }
+    return res;
+}
+
+int main() {
+    vector<vector<int>> intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
+    vector<vector<int>> res = merge(intervals);
+    for (auto& range : res) {
+        cout << range[0] << ", " << range[1] << endl;
+    }
+    return 0;
+}
+
 ```
 
 ## 57. Insert Interval
@@ -123,7 +257,49 @@ comments: True
 -   Tags: array
 
 ```python title="57. Insert Interval - Python Solution"
---8<-- "0057_insert_interval.py"
+from typing import List
+
+
+# Interval
+def insert(
+    intervals: List[List[int]], newInterval: List[int]
+) -> List[List[int]]:
+    n = len(intervals)
+
+    if n == 0:
+        return [newInterval]
+
+    if newInterval[1] < intervals[0][0]:
+        return [newInterval] + intervals
+
+    if newInterval[0] > intervals[-1][1]:
+        return intervals + [newInterval]
+
+    i = 0
+    result = []
+
+    while i < n and intervals[i][1] < newInterval[0]:
+        result.append(intervals[i])
+        i += 1
+
+    while i < n and intervals[i][0] <= newInterval[1]:
+        newInterval[0] = min(newInterval[0], intervals[i][0])
+        newInterval[1] = max(newInterval[1], intervals[i][1])
+        i += 1
+
+    result.append(newInterval)
+
+    while i < n:
+        result.append(intervals[i])
+        i += 1
+
+    return result
+
+
+intervals = [[1, 3], [6, 9]]
+newInterval = [2, 5]
+print(insert(intervals, newInterval))  # [[1, 5], [6, 9]]
+
 ```
 
 ## 732. My Calendar III
@@ -163,7 +339,41 @@ comments: True
 -   Tags: array, greedy, sorting, prefix sum
 
 ```python title="1589. Maximum Sum Obtained of Any Permutation - Python Solution"
---8<-- "1589_maximum_sum_obtained_of_any_permutation.py"
+from typing import List
+
+
+# Greedy
+def maxSumRangeQuery(nums: List[int], requests: List[List[int]]) -> int:
+    n = len(nums)
+    freq = [0 for _ in range(n + 1)]
+
+    for start, end in requests:
+        freq[start] += 1
+        if end + 1 < n:
+            freq[end + 1] -= 1
+
+    for i in range(1, n):
+        freq[i] += freq[i - 1]
+
+    freq.pop()
+
+    freq.sort(reverse=True)
+    nums.sort(reverse=True)
+
+    max_sum = 0
+    mod = 10**9 + 7
+
+    for i, j in zip(nums, freq):
+        max_sum += i * j
+        max_sum %= mod
+
+    return max_sum
+
+
+nums = [1, 2, 3, 4, 5]
+requests = [[1, 3], [0, 1]]
+print(maxSumRangeQuery(nums, requests))  # 19
+
 ```
 
 ## 1526. Minimum Number of Increments on Subarrays to Form a Target Array
@@ -251,7 +461,29 @@ comments: True
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 
 ```python title="253. Meeting Rooms II - Python Solution"
---8<-- "0253_meeting_rooms_ii.py"
+import heapq
+from typing import List
+
+
+# Heap
+def minMeetingRooms(intervals: List[List[int]]) -> int:
+    if not intervals:
+        return 0
+
+    intervals.sort(key=lambda x: x[0])
+    heap = [intervals[0][1]]
+
+    for i in range(1, len(intervals)):
+        if intervals[i][0] >= heap[0]:
+            heapq.heappop(heap)
+        heapq.heappush(heap, intervals[i][1])
+
+    return len(heap)
+
+
+intervals = [[0, 30], [5, 10], [15, 20]]
+print(minMeetingRooms(intervals))  # 2
+
 ```
 
 ## 370. Range Addition
@@ -262,7 +494,29 @@ comments: True
 -   Return the final array after applying all the Adition operations.
 
 ```python title="370. Range Addition - Python Solution"
---8<-- "0370_range_addition.py"
+from typing import List
+
+
+# Difference Array
+def getModifiedArray(length: int, updates: List[List[int]]) -> List[int]:
+    result = [0 for _ in range(length)]
+
+    for start, end, inc in updates:
+        result[start] += inc
+
+        if end + 1 < length:
+            result[end + 1] -= inc
+
+    for i in range(1, length):
+        result[i] += result[i - 1]
+
+    return result
+
+
+length = 5
+updates = [[1, 3, 2], [2, 4, 3], [0, 2, -2]]
+print(getModifiedArray(length, updates))  # [-2, 0, 3, 5, 3]
+
 ```
 
 ## 1989. Maximum Number of People That Can Be Caught in Tag

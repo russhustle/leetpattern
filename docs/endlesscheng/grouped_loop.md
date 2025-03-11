@@ -70,7 +70,25 @@ comments: True
 -   Tags: array
 
 ```python title="674. Longest Continuous Increasing Subsequence - Python Solution"
---8<-- "0674_longest_continuous_increasing_subsequence.py"
+from typing import List
+
+
+def findLengthOfLCIS(nums: List[int]) -> int:
+    n = len(nums)
+    if n <= 1:
+        return n
+
+    dp = [1 for _ in range(n)]
+
+    for i in range(1, n):
+        if nums[i] > nums[i - 1]:
+            dp[i] = dp[i - 1] + 1
+
+    return max(dp)
+
+
+print(findLengthOfLCIS([1, 3, 5, 4, 7]))  # 3
+
 ```
 
 ## 978. Longest Turbulent Subarray
@@ -80,7 +98,35 @@ comments: True
 -   Tags: array, dynamic programming, sliding window
 
 ```python title="978. Longest Turbulent Subarray - Python Solution"
---8<-- "0978_longest_turbulent_subarray.py"
+from typing import List
+
+
+# DP - Kadane
+def maxTurbulenceSize(arr: List[int]) -> int:
+    n = len(arr)
+    up = [1 for _ in range(n)]
+    down = [1 for _ in range(n)]
+    maxLen = 1
+
+    for i in range(1, n):
+        if arr[i - 1] < arr[i]:
+            up[i] = down[i - 1] + 1
+            down[i] = 1
+        elif arr[i - 1] > arr[i]:
+            down[i] = up[i - 1] + 1
+            up[i] = 1
+        else:
+            up[i] = 1
+            down[i] = 1
+
+        maxLen = max(maxLen, up[i], down[i])
+
+    return maxLen
+
+
+arr = [9, 4, 2, 10, 7, 8, 8, 1, 9]
+print(maxTurbulenceSize(arr))  # 5
+
 ```
 
 ## 2110. Number of Smooth Descent Periods of a Stock
@@ -114,7 +160,35 @@ comments: True
 -   Tags: array, two pointers, dynamic programming, enumeration
 
 ```python title="845. Longest Mountain in Array - Python Solution"
---8<-- "0845_longest_mountain_in_array.py"
+from typing import List
+
+
+# Left Right Pointers
+def longestMountain(arr: List[int]) -> int:
+    n = len(arr)
+    res = 0
+    left = 0
+
+    while left < n:
+        right = left
+
+        if right < n - 1 and arr[right] < arr[right + 1]:
+            while right < n - 1 and arr[right] < arr[right + 1]:
+                right += 1
+
+            if right < n - 1 and arr[right] > arr[right + 1]:
+                while right < n - 1 and arr[right] > arr[right + 1]:
+                    right += 1
+                res = max(res, right - left + 1)
+
+        left = max(right, left + 1)
+
+    return res
+
+
+arr = [2, 1, 4, 7, 3, 2, 5]
+print(longestMountain(arr))  # 5
+
 ```
 
 ## 2038. Remove Colored Pieces if Both Neighbors are the Same Color

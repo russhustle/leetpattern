@@ -30,7 +30,79 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="104. Maximum Depth of Binary Tree - Python Solution"
---8<-- "0104_maximum_depth_of_binary_tree.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Recursive
+def maxDepthRecursive(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    left = maxDepthRecursive(root.left)
+    right = maxDepthRecursive(root.right)
+
+    return 1 + max(left, right)
+
+
+# DFS
+def maxDepthDFS(root: Optional[TreeNode]) -> int:
+    res = 0
+
+    def dfs(node, cnt):
+        if node is None:
+            return
+        cnt += 1
+        nonlocal res
+        res = max(res, cnt)
+
+        dfs(node.left, cnt)
+        dfs(node.right, cnt)
+
+    dfs(root, 0)
+
+    return res
+
+
+# Iterative
+def maxDepthIterative(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    q = deque([root])
+    res = 0
+
+    while q:
+        res += 1
+        n = len(q)
+
+        for _ in range(n):
+            node = q.popleft()
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+    return res
+
+
+root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+root = build(root)
+print(root)
+#     ____1
+#    /     \
+#   2__     2
+#  /   \
+# 3     4
+#      /
+#     5
+print(maxDepthRecursive(root))  # 4
+print(maxDepthIterative(root))  # 4
+print(maxDepthDFS(root))  # 4
+
 ```
 
 ## 111. Minimum Depth of Binary Tree
@@ -40,7 +112,65 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="111. Minimum Depth of Binary Tree - Python Solution"
---8<-- "0111_minimum_depth_of_binary_tree.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Iterative
+def minDepthIterative(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    q = deque([root])
+    res = 0
+
+    while q:
+        res += 1
+
+        for _ in range(len(q)):
+            node = q.popleft()
+
+            if not node.left and not node.right:
+                return res
+
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+
+# Recursive
+def minDepthRecursive(root: Optional[TreeNode]) -> int:
+    if root is None:
+        return 0
+
+    if root.left is None and root.right is not None:
+        return 1 + minDepthRecursive(root.right)
+    if root.left is not None and root.right is None:
+        return 1 + minDepthRecursive(root.left)
+
+    return 1 + min(minDepthRecursive(root.left), minDepthRecursive(root.right))
+
+
+root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+root = build(root)
+print(root)
+"""
+    ____1
+   /     \
+  2__     2
+ /   \
+3     4
+     /
+    5
+
+"""
+print(minDepthIterative(root))  # 2
+print(minDepthRecursive(root))  # 2
+
 ```
 
 ## 112. Path Sum
@@ -50,7 +180,44 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="112. Path Sum - Python Solution"
---8<-- "0112_path_sum.py"
+from typing import Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+# Recursive
+def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
+    if not root:
+        return False
+
+    if not root.left and not root.right:
+        return root.val == targetSum
+
+    targetSum -= root.val
+
+    return hasPathSum(root.left, targetSum) or hasPathSum(
+        root.right, targetSum
+    )
+
+
+root = build([5, 4, 8, 11, None, 13, 4, 7, 2, None, None, None, None, None, 1])
+print(root)
+#          5___
+#         /    \
+#     ___4     _8
+#    /        /  \
+#   11       13   4
+#  /  \            \
+# 7    2            1
+print(hasPathSum(root, 22))  # True
+
 ```
 
 ## 129. Sum Root to Leaf Numbers
@@ -60,7 +227,39 @@ comments: True
 -   Tags: tree, depth first search, binary tree
 
 ```python title="129. Sum Root to Leaf Numbers - Python Solution"
---8<-- "0129_sum_root_to_leaf_numbers.py"
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+class Solution:
+    def sumNumbers(self, root: Optional[TreeNode]) -> int:
+        self.res = 0
+
+        def dfs(node, cur):
+            if not node:
+                return
+            cur = cur * 10 + node.val
+            if not node.left and not node.right:
+                self.res += cur
+                return
+            dfs(node.left, cur)
+            dfs(node.right, cur)
+
+        dfs(root, 0)
+
+        return self.res
+
+
+root = [1, 2, 3]
+root = build(root)
+print(root)
+#   1
+#  / \
+# 2   3
+print(Solution().sumNumbers(root))  # 25
+
 ```
 
 ## 199. Binary Tree Right Side View
@@ -79,7 +278,47 @@ comments: True
 ```
 
 ```python title="199. Binary Tree Right Side View - Python Solution"
---8<-- "0199_binary_tree_right_side_view.py"
+from collections import deque
+from typing import List, Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Binary Tree
+def rightSideView(root: Optional[TreeNode]) -> List[int]:
+    if not root:
+        return []
+
+    q = deque([root])
+    res = []
+
+    while q:
+        n = len(q)
+        for i in range(n):
+            node = q.popleft()
+            if i == n - 1:
+                res.append(node.val)
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+    return res
+
+
+root = [1, 2, 2, 3, 4, None, 3, None, None, 5]
+root = build(root)
+print(root)
+#     ____1
+#    /     \
+#   2__     2
+#  /   \     \
+# 3     4     3
+#      /
+#     5
+print(rightSideView(root))  # [1, 2, 3, 5]
+
 ```
 
 ## 1448. Count Good Nodes in Binary Tree
@@ -89,7 +328,39 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="1448. Count Good Nodes in Binary Tree - Python Solution"
---8<-- "1448_count_good_nodes_in_binary_tree.py"
+from typing import List
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Tree
+def goodNodes(root: TreeNode) -> int:
+    def dfs(node, max_val):
+        if not node:
+            return 0
+
+        good = 1 if node.val >= max_val else 0
+
+        max_val = max(max_val, node.val)
+
+        good += dfs(node.left, max_val)
+        good += dfs(node.right, max_val)
+
+        return good
+
+    return dfs(root, root.val)
+
+
+root = build([3, 1, 4, 3, None, 1, 5])
+print(root)
+#     3__
+#    /   \
+#   1     4
+#  /     / \
+# 3     1   5
+print(goodNodes(root))  # 4
+
 ```
 
 ## 1457. Pseudo-Palindromic Paths in a Binary Tree

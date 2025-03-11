@@ -15,7 +15,23 @@ comments: True
 -   Tags: math, string, sliding window
 
 ```python title="2269. Find the K-Beauty of a Number - Python Solution"
---8<-- "2269_find_the_k_beauty_of_a_number.py"
+def divisorSubstrings(num: int, k: int) -> int:
+    numStr = str(num)
+    n = len(numStr)
+    res = 0
+
+    for i in range(n - k + 1):
+        x = int(numStr[i : i + k])
+        if x > 0 and num % x == 0:
+            res += 1
+
+    return res
+
+
+num = 240
+k = 2
+print(divisorSubstrings(num, k))  # 2
+
 ```
 
 ## 1984. Minimum Difference Between Highest and Lowest of K Scores

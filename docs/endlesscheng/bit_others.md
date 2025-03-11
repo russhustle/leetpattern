@@ -33,7 +33,34 @@ comments: True
 -   Tags: array, bit manipulation
 
 ```python title="136. Single Number - Python Solution"
---8<-- "0136_single_number.py"
+from functools import reduce
+from operator import xor
+from typing import List
+
+
+# XOR
+def singleNumber(nums: List[int]) -> int:
+    res = 0
+    for num in nums:
+        res ^= num
+    return res
+
+
+# XOR
+def singleNumberXOR(nums: List[int]) -> int:
+    return reduce(xor, nums)
+
+
+# XOR
+def singleNumberXORLambda(nums: List[int]) -> int:
+    return reduce(lambda x, y: x ^ y, nums)
+
+
+nums = [4, 1, 2, 1, 2]
+print(singleNumber(nums))  # 4
+print(singleNumberXOR(nums))  # 4
+print(singleNumberXORLambda(nums))  # 4
+
 ```
 
 ## 287. Find the Duplicate Number
@@ -44,7 +71,30 @@ comments: True
 -   Find the duplicate number in an array containing `n + 1` integers where each integer is between `1` and `n` inclusive.
 
 ```python title="287. Find the Duplicate Number - Python Solution"
---8<-- "0287_find_the_duplicate_number.py"
+from typing import List
+
+
+# Fast Slow Pointer
+def findDuplicate(nums: List[int]) -> int:
+    fast, slow = nums[0], nums[0]
+
+    while True:
+        slow = nums[slow]
+        fast = nums[nums[fast]]
+        if slow == fast:
+            break
+
+    slow = nums[0]
+    while slow != fast:
+        slow = nums[slow]
+        fast = nums[fast]
+
+    return slow
+
+
+nums = [1, 3, 4, 2, 2]
+print(findDuplicate(nums))  # 2
+
 ```
 
 ## 260. Single Number III
@@ -78,7 +128,20 @@ comments: True
 -   Tags: divide and conquer, bit manipulation
 
 ```python title="190. Reverse Bits - Python Solution"
---8<-- "0190_reverse_bits.py"
+# Bit Manipulation
+def reverseBits(n: int) -> int:
+    res = 0
+
+    for i in range(32):
+        res = (res << 1) | (n & 1)
+        n >>= 1
+
+    return res
+
+
+n = 0b00000010100101000001111010011100
+print(reverseBits(n))  # 964176192
+
 ```
 
 ## 371. Sum of Two Integers
@@ -88,7 +151,21 @@ comments: True
 -   Tags: math, bit manipulation
 
 ```python title="371. Sum of Two Integers - Python Solution"
---8<-- "0371_sum_of_two_integers.py"
+# Bit Manipulation
+def getSum(a: int, b: int) -> int:
+    MASK = 0xFFFFFFFF
+    MAX_INT = 0x7FFFFFFF
+
+    while b != 0:
+        temp = (a ^ b) & MASK
+        b = ((a & b) << 1) & MASK
+        a = temp
+
+    return a if a <= MAX_INT else ~(a ^ MASK)
+
+
+print(getSum(1, 2))  # 3
+
 ```
 
 ## 201. Bitwise AND of Numbers Range

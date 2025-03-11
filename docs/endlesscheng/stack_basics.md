@@ -20,7 +20,30 @@ comments: True
 -   Tags: array, stack, simulation
 
 ```python title="1441. Build an Array With Stack Operations - Python Solution"
---8<-- "1441_build_an_array_with_stack_operations.py"
+from typing import List
+
+
+# Stack
+def buildArray(target: List[int], n: int) -> List[str]:
+    res = []
+    m, i, j = len(target), 1, 0
+
+    while i <= n and j < m:
+        res.append("Push")
+        if target[j] != i:
+            res.append("Pop")
+        else:
+            j += 1
+        i += 1
+
+    return res
+
+
+target = [1, 3, 4]
+n = 4
+print(buildArray(target, n))
+# ['Push', 'Push', 'Pop', 'Push', 'Push']
+
 ```
 
 ## 844. Backspace String Compare
@@ -30,7 +53,24 @@ comments: True
 -   Tags: two pointers, string, stack, simulation
 
 ```python title="844. Backspace String Compare - Python Solution"
---8<-- "0844_backspace_string_compare.py"
+def backspaceCompare(s: str, t: str) -> bool:
+
+    def build(text):
+        stack = []
+
+        for char in text:
+            if char != "#":
+                stack.append(char)
+            elif stack:
+                stack.pop()
+
+        return "".join(stack)
+
+    return build(s) == build(t)
+
+
+print(backspaceCompare("ab#c", "ad#c"))  # True
+
 ```
 
 ## 682. Baseball Game
@@ -40,7 +80,29 @@ comments: True
 -   Tags: array, stack, simulation
 
 ```python title="682. Baseball Game - Python Solution"
---8<-- "0682_baseball_game.py"
+from typing import List
+
+
+# Stack
+def calPoints(operations: List[str]) -> int:
+    stack = []
+
+    for op in operations:
+        if op == "+":
+            stack.append(stack[-2] + stack[-1])
+        elif op == "D":
+            stack.append(2 * stack[-1])
+        elif op == "C":
+            stack.pop()
+        else:
+            stack.append(int(op))
+
+    return sum(stack)
+
+
+ops = ["5", "2", "C", "D", "+"]
+print(calPoints(ops))  # 30
+
 ```
 
 ## 2390. Removing Stars From a String
@@ -67,7 +129,22 @@ comments: True
 | e    | push   | "lecoe" |
 
 ```python title="2390. Removing Stars From a String - Python Solution"
---8<-- "2390_removing_stars_from_a_string.py"
+# Stack
+def removeStars(s: str) -> str:
+    stack = []
+
+    for char in s:
+        if char == "*":
+            stack.pop()
+        else:
+            stack.append(char)
+
+    return "".join(stack)
+
+
+s = "leet**cod*e"
+print(removeStars(s))  # "lecoe"
+
 ```
 
 ## 1472. Design Browser History

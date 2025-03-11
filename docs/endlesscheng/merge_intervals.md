@@ -29,11 +29,62 @@ comments: True
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python title="56. Merge Intervals - Python Solution"
---8<-- "0056_merge_intervals.py"
+from typing import List
+
+
+# Intervals
+def merge(intervals: List[List[int]]) -> List[List[int]]:
+    n = len(intervals)
+    if n <= 1:
+        return intervals
+
+    intervals.sort(key=lambda x: x[0])
+    res = [intervals[0]]
+
+    for i in range(1, n):
+        if intervals[i][0] <= res[-1][1]:
+            res[-1][1] = max(res[-1][1], intervals[i][1])
+        else:
+            res.append(intervals[i])
+
+    return res
+
+
+print(merge([[1, 3], [2, 6], [8, 10], [15, 18]]))
+# [[1, 6], [8, 10], [15, 18]]
+
 ```
 
 ```cpp title="56. Merge Intervals - C++ Solution"
---8<-- "cpp/0056_merge_intervals.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// Interval
+vector<vector<int>> merge(vector<vector<int>>& intervals) {
+    sort(intervals.begin(), intervals.end());
+    vector<vector<int>> res;
+
+    for (auto& range : intervals) {
+        if (!res.empty() && range[0] <= res.back()[1]) {
+            res.back()[1] = max(res.back()[1], range[1]);
+        } else {
+            res.emplace_back(range);
+        }
+    }
+    return res;
+}
+
+int main() {
+    vector<vector<int>> intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
+    vector<vector<int>> res = merge(intervals);
+    for (auto& range : res) {
+        cout << range[0] << ", " << range[1] << endl;
+    }
+    return 0;
+}
+
 ```
 
 ## 57. Insert Interval
@@ -43,7 +94,49 @@ comments: True
 -   Tags: array
 
 ```python title="57. Insert Interval - Python Solution"
---8<-- "0057_insert_interval.py"
+from typing import List
+
+
+# Interval
+def insert(
+    intervals: List[List[int]], newInterval: List[int]
+) -> List[List[int]]:
+    n = len(intervals)
+
+    if n == 0:
+        return [newInterval]
+
+    if newInterval[1] < intervals[0][0]:
+        return [newInterval] + intervals
+
+    if newInterval[0] > intervals[-1][1]:
+        return intervals + [newInterval]
+
+    i = 0
+    result = []
+
+    while i < n and intervals[i][1] < newInterval[0]:
+        result.append(intervals[i])
+        i += 1
+
+    while i < n and intervals[i][0] <= newInterval[1]:
+        newInterval[0] = min(newInterval[0], intervals[i][0])
+        newInterval[1] = max(newInterval[1], intervals[i][1])
+        i += 1
+
+    result.append(newInterval)
+
+    while i < n:
+        result.append(intervals[i])
+        i += 1
+
+    return result
+
+
+intervals = [[1, 3], [6, 9]]
+newInterval = [2, 5]
+print(insert(intervals, newInterval))  # [[1, 5], [6, 9]]
+
 ```
 
 ## 55. Jump Game
@@ -70,11 +163,55 @@ comments: True
 |   8   |   0   |       8       |     8     |          True           |
 
 ```python title="55. Jump Game - Python Solution"
---8<-- "0055_jump_game.py"
+from typing import List
+
+
+# Greedy - Interval
+def canJump(nums: List[int]) -> bool:
+    maxReach = 0
+    i = 0
+    n = len(nums)
+
+    while i <= maxReach:
+        maxReach = max(maxReach, i + nums[i])
+        if maxReach >= n - 1:
+            return True
+        i += 1
+
+    return False
+
+
+print(canJump([2, 3, 1, 1, 4, 1, 2, 0, 0]))  # True
+
 ```
 
 ```cpp title="55. Jump Game - C++ Solution"
---8<-- "cpp/0055_jump_game.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Solution {
+   public:
+    bool canJump(vector<int>& nums) {
+        int canReach = 0;
+        int n = nums.size();
+
+        for (int i = 0; i < n; i++) {
+            if (i > canReach) return false;
+            canReach = max(canReach, i + nums[i]);
+        }
+        return true;
+    }
+};
+
+int main() {
+    Solution obj;
+    vector<int> nums = {2, 3, 1, 1, 4};
+    cout << obj.canJump(nums) << endl;
+    return 0;
+}
+
 ```
 
 ## 763. Partition Labels
@@ -84,7 +221,65 @@ comments: True
 -   Tags: hash table, two pointers, string, greedy
 
 ```python title="763. Partition Labels - Python Solution"
---8<-- "0763_partition_labels.py"
+from typing import List
+
+
+# 1. Hashmap
+def partitionLabels1(s: str) -> List[int]:
+    # Time complexity: O(nlogn)
+    # Space complexity: O(n)
+    hashmap = {}
+
+    for i, j in enumerate(s):
+        if j not in hashmap:
+            hashmap[j] = [i, i]
+        else:
+            hashmap[j][1] = i
+
+    intervals = list(hashmap.values())
+    intervals.sort(key=lambda x: x[0])
+
+    if len(intervals) < 2:
+        return len(intervals)
+
+    result = []
+    for i in range(1, len(intervals)):
+        if intervals[i][0] < intervals[i - 1][1]:
+            intervals[i][1] = max(intervals[i][1], intervals[i - 1][1])
+        else:
+            result.append(intervals[i][0])
+
+    result.append(intervals[-1][1] + 1)
+
+    if len(result) == 1:
+        return result
+    else:
+        for i in range(len(result) - 1, 0, -1):
+            result[i] -= result[i - 1]
+        return result
+
+
+# 2. Single Pass Partitioning
+def partitionLabels2(s: str) -> List[int]:
+    # Time complexity: O(n)
+    # Space complexity: O(n)
+    last = {c: i for i, c in enumerate(s)}
+
+    start, end = 0, 0
+    result = []
+
+    for i, c in enumerate(s):
+        end = max(end, last[c])
+        if i == end:
+            result.append(end - start + 1)
+            start = i + 1
+
+    return result
+
+
+print(partitionLabels1("abaccd"))  # [3, 2, 1]
+print(partitionLabels2("abaccd"))  # [3, 2, 1]
+
 ```
 
 ## 3169. Count Days Without Meetings

@@ -22,7 +22,31 @@ comments: True
 -   Tags: array, dynamic programming, matrix
 
 ```python title="64. Minimum Path Sum - Python Solution"
---8<-- "0064_minimum_path_sum.py"
+from typing import List
+
+
+# DP
+def minPathSum(grid: List[List[int]]) -> int:
+    m, n = len(grid), len(grid[0])
+
+    dp = [[0] * n for _ in range(m)]
+    dp[0][0] = grid[0][0]
+
+    for i in range(1, m):
+        dp[i][0] = grid[i][0] + dp[i - 1][0]
+    for j in range(1, n):
+        dp[0][j] = grid[0][j] + dp[0][j - 1]
+
+    for i in range(1, m):
+        for j in range(1, n):
+            dp[i][j] = grid[i][j] + min(dp[i - 1][j], dp[i][j - 1])
+
+    return dp[-1][-1]
+
+
+grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1]]
+print(minPathSum(grid))  # 7
+
 ```
 
 ## 62. Unique Paths
@@ -35,11 +59,50 @@ comments: True
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
 ```python title="62. Unique Paths - Python Solution"
---8<-- "0062_unique_paths.py"
+# DP - 2D
+def uniquePaths(m: int, n: int) -> int:
+    if m == 1 or n == 1:
+        return 1
+
+    dp = [[1] * n for _ in range(m)]
+
+    for i in range(1, m):
+        for j in range(1, n):
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+
+    return dp[-1][-1]
+
+
+print(uniquePaths(m=3, n=7))  # 28
+# [[1, 1, 1,  1,  1,  1,  1],
+#  [1, 2, 3,  4,  5,  6,  7],
+#  [1, 3, 6, 10, 15, 21, 28]]
+
 ```
 
 ```cpp title="62. Unique Paths - C++ Solution"
---8<-- "cpp/0062_unique_paths.cc"
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int uniquePaths(int m, int n) {
+    vector dp(m, vector<int>(n, 1));
+
+    for (int i = 1; i < m; i++) {
+        for (int j = 1; j < n; j++) {
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+        }
+    }
+
+    return dp[m - 1][n - 1];
+}
+
+int main() {
+    int m = 3, n = 7;
+    cout << uniquePaths(m, n) << endl;  // 28
+    return 0;
+}
+
 ```
 
 ## 63. Unique Paths II
@@ -52,7 +115,44 @@ comments: True
 ![63](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
 
 ```python title="63. Unique Paths II - Python Solution"
---8<-- "0063_unique_paths_ii.py"
+from typing import List
+
+
+# DP - 2D
+def uniquePathsWithObstacles(obstacleGrid: List[List[int]]) -> int:
+    if obstacleGrid[0][0] == 1 or obstacleGrid[-1][-1] == 1:
+        return 0
+
+    m, n = len(obstacleGrid), len(obstacleGrid[0])
+    dp = [[0] * n for _ in range(m)]
+
+    for i in range(m):
+        if obstacleGrid[i][0] == 0:
+            dp[i][0] = 1
+        else:
+            break
+
+    for j in range(n):
+        if obstacleGrid[0][j] == 0:
+            dp[0][j] = 1
+        else:
+            break
+
+    for i in range(1, m):
+        for j in range(1, n):
+            if obstacleGrid[i][j] == 1:
+                continue
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+
+    return dp[-1][-1]
+
+
+obstacleGrid = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
+print(uniquePathsWithObstacles(obstacleGrid))  # 2
+# [[1, 1, 1],
+#  [1, 0, 1],
+#  [1, 1, 2]]
+
 ```
 
 ## 120. Triangle
@@ -80,7 +180,34 @@ comments: True
 -   Tags: array, dynamic programming, matrix
 
 ```python title="2684. Maximum Number of Moves in a Grid - Python Solution"
---8<-- "2684_maximum_number_of_moves_in_a_grid.py"
+from typing import List
+
+
+# DFS
+def maxMovesDFS(grid: List[List[int]]) -> int:
+    m, n = len(grid), len(grid[0])
+    res = 0
+
+    def dfs(r, c):
+        nonlocal res
+        res = max(res, c)
+        if res == n - 1:
+            return
+
+        for k in r - 1, r, r + 1:
+            if 0 <= k < m and grid[k][c + 1] > grid[r][c]:
+                dfs(k, c + 1)
+        grid[r][c] = 0
+
+    for i in range(m):
+        dfs(i, 0)
+
+    return res
+
+
+grid = [[2, 4, 3, 5], [5, 4, 9, 3], [3, 4, 2, 11], [10, 9, 13, 15]]
+print(maxMovesDFS(grid))  # 3
+
 ```
 
 ## 2304. Minimum Path Cost in a Grid

@@ -34,7 +34,62 @@ comments: True
 -   Tags: array, string, backtracking, trie, matrix
 
 ```python title="212. Word Search II - Python Solution"
---8<-- "0212_word_search_ii.py"
+from typing import List
+
+from template import TrieNode
+
+
+# Backtracking + Trie
+def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+    root = TrieNode()
+    for word in words:
+        root.addWord(word)
+
+    m, n = len(board), len(board[0])
+    result, visit = set(), set()
+
+    def dfs(r, c, node, word):
+        if (
+            r < 0
+            or r >= m
+            or c < 0
+            or c >= n
+            or (r, c) in visit
+            or board[r][c] not in node.children
+        ):
+            return None
+
+        visit.add((r, c))
+
+        node = node.children[board[r][c]]
+        word += board[r][c]
+        if node.isWord:
+            result.add(word)
+
+        dfs(r - 1, c, node, word)
+        dfs(r + 1, c, node, word)
+        dfs(r, c - 1, node, word)
+        dfs(r, c + 1, node, word)
+
+        visit.remove((r, c))
+
+    for r in range(m):
+        for c in range(n):
+            dfs(r, c, root, "")
+
+    return list(result)
+
+
+board = [
+    ["o", "a", "a", "n"],
+    ["e", "t", "a", "e"],
+    ["i", "h", "k", "r"],
+    ["i", "f", "l", "v"],
+]
+words = ["oath", "pea", "eat", "rain"]
+print(findWords(board, words))
+# ['eat', 'oath']
+
 ```
 
 ## 3093. Longest Common Suffix Queries
@@ -86,7 +141,60 @@ comments: True
 -   Tags: hash table, string, design, trie, sorting
 
 ```python title="588. Design In-Memory File System - Python Solution"
---8<-- "0588_design_in_memory_file_system.py"
+from collections import defaultdict
+
+
+class TrieNode:
+    def __init__(self):
+        self.children = defaultdict(TrieNode)
+        self.content = ""
+
+
+# Trie
+class FileSystem:
+
+    def __init__(self):
+        self.root = TrieNode()
+
+    def ls(self, path: str) -> list:
+        cur = self.root
+
+        if path != "/":
+            paths = path.split("/")[1:]
+            for p in paths:
+                cur = cur.children[p]
+        if cur.content:
+            return [path.split("/")[-1]]
+
+        return sorted(cur.children.keys())
+
+    def mkdir(self, path: str) -> None:
+        cur = self.root
+        paths = path.split("/")[1:]
+        for p in paths:
+            cur = cur.children[p]
+
+    def addContentToFile(self, filePath: str, content: str) -> None:
+        cur = self.root
+        paths = filePath.split("/")[1:]
+        for p in paths:
+            cur = cur.children[p]
+        cur.content += content
+
+    def readContentFromFile(self, filePath: str) -> str:
+        cur = self.root
+        paths = filePath.split("/")[1:]
+        for p in paths:
+            cur = cur.children[p]
+        return cur.content
+
+
+obj = FileSystem()
+obj.mkdir("/a/b/c")
+obj.addContentToFile("/a/b/c/d", "hello")
+print(obj.ls("/"))  # ["a"]
+print(obj.readContentFromFile("/a/b/c/d"))  # "hello"
+
 ```
 
 ## 616. Add Bold Tag in String
@@ -120,7 +228,57 @@ comments: True
 -   Tags: hash table, string, design, trie
 
 ```python title="1166. Design File System - Python Solution"
---8<-- "1166_design_file_system.py"
+from collections import defaultdict
+
+
+class TrieNode:
+    def __init__(self, name):
+        self.name = name
+        self.children = defaultdict(TrieNode)
+        self.value = -1
+
+
+# Trie
+class FileSystem:
+    def __init__(self):
+        self.root = TrieNode("")
+
+    def createPath(self, path: str, value: int) -> bool:
+        paths = path.split("/")[1:]
+        cur = self.root
+
+        for idx, path in enumerate(paths):
+            if path not in cur.children:
+                if idx == len(paths) - 1:
+                    cur.children[path] = TrieNode(path)
+                else:
+                    return False
+            cur = cur.children[path]
+
+        if cur.value != -1:
+            return False
+        cur.value = value
+        return True
+
+    def get(self, path: str) -> int:
+        cur = self.root
+        paths = path.split("/")[1:]
+
+        for path in paths:
+            if path not in cur.children:
+                return -1
+            cur = cur.children[path]
+
+        return cur.value
+
+
+# Your FileSystem object will be instantiated and called as such:
+path = "/a"
+value = 1
+obj = FileSystem()
+print(obj.createPath(path, value))  # False
+print(obj.get(path))  # 1
+
 ```
 
 ## 1858. Longest Word With All Prefixes

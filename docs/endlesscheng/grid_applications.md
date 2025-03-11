@@ -26,7 +26,41 @@ comments: True
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
 ```python title="1631. Path With Minimum Effort - Python Solution"
---8<-- "1631_path_with_minimum_effort.py"
+import heapq
+from typing import List
+
+
+# Prim
+def minimumEffortPath(heights: List[List[int]]) -> int:
+    m, n = len(heights), len(heights[0])
+    directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+    visited = [[False] * n for _ in range(m)]
+    heap = [(0, 0, 0)]  # (effort, row, col)
+
+    while heap:
+        effort, r, c = heapq.heappop(heap)
+
+        if visited[r][c]:
+            continue
+
+        if r == m - 1 and c == n - 1:
+            return effort
+
+        visited[r][c] = True
+
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
+
+            if 0 <= nr < m and 0 <= nc < n and not visited[nr][nc]:
+                updated = max(effort, abs(heights[r][c] - heights[nr][nc]))
+                heapq.heappush(heap, (updated, nr, nc))
+
+    return -1
+
+
+heights = [[1, 2, 2], [3, 8, 2], [5, 3, 5]]
+print(minimumEffortPath(heights))  # 2
+
 ```
 
 ## 778. Swim in Rising Water
@@ -39,7 +73,42 @@ comments: True
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
 ```python title="778. Swim in Rising Water - Python Solution"
---8<-- "0778_swim_in_rising_water.py"
+import heapq
+from typing import List
+
+
+# Dijkstra's
+def swimInWater(grid: List[List[int]]) -> int:
+    n = len(grid)
+    visited = set()
+    minHeap = [(grid[0][0], 0, 0)]
+    directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+    visited.add((0, 0))
+
+    while minHeap:
+        time, r, c = heapq.heappop(minHeap)
+
+        if r == n - 1 and c == n - 1:
+            return time
+
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
+
+            if nr in range(n) and nc in range(n) and (nr, nc) not in visited:
+                visited.add((nr, nc))
+                heapq.heappush(minHeap, (max(time, grid[nr][nc]), nr, nc))
+
+
+grid = [
+    [0, 1, 2, 3, 4],
+    [24, 23, 22, 21, 5],
+    [12, 13, 14, 15, 16],
+    [11, 17, 18, 19, 20],
+    [10, 9, 8, 7, 6],
+]
+print(swimInWater(grid))  # 16
+
 ```
 
 ## 329. Longest Increasing Path in a Matrix
@@ -49,7 +118,38 @@ comments: True
 -   Tags: array, dynamic programming, depth first search, breadth first search, graph, topological sort, memoization, matrix
 
 ```python title="329. Longest Increasing Path in a Matrix - Python Solution"
---8<-- "0329_longest_increasing_path_in_a_matrix.py"
+from typing import List
+
+
+# DP - 2D
+def longestIncreasingPath(matrix: List[List[int]]) -> int:
+    if not matrix:
+        return 0
+    m, n = len(matrix), len(matrix[0])
+    dp = [[0] * n for _ in range(m)]
+    dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+    def dfs(r, c):
+        if dp[r][c]:
+            return dp[r][c]
+        for dr, dc in dirs:
+            nr, nc = r + dr, c + dc
+            if 0 <= nr < m and 0 <= nc < n and matrix[nr][nc] > matrix[r][c]:
+                dp[r][c] = max(dp[r][c], dfs(nr, nc))
+        dp[r][c] += 1
+        return dp[r][c]
+
+    res = float("-inf")
+    for i in range(m):
+        for j in range(n):
+            res = max(res, dfs(i, j))
+
+    return res
+
+
+matrix = [[9, 9, 4], [6, 6, 8], [2, 1, 1]]
+print(longestIncreasingPath(matrix))  # 4
+
 ```
 
 ## 1036. Escape a Large Maze
@@ -65,7 +165,60 @@ comments: True
 -   Tags: array, bit manipulation, breadth first search, matrix
 
 ```python title="864. Shortest Path to Get All Keys - Python Solution"
---8<-- "0864_shortest_path_to_get_all_keys.py"
+from collections import deque
+from typing import List
+
+
+# BFS
+def shortestPathAllKeys(grid: List[str]) -> int:
+    m, n = len(grid), len(grid[0])
+    q = deque()
+    visited = set()
+    total = 0
+    directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+    for r in range(m):
+        for c in range(n):
+            if grid[r][c] == "@":
+                q.append((r, c, 0, 0))
+                visited.add((r, c, 0))
+            if grid[r][c].islower():
+                total += 1
+
+    while q:
+        r, c, keys, steps = q.popleft()
+
+        if keys == (1 << total) - 1:
+            return steps
+
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
+
+            if 0 <= nr < m and 0 <= nc < n:
+                cell = grid[nr][nc]
+
+                if cell == "#":
+                    continue
+
+                new_keys = keys
+                if cell.islower():
+                    new_keys |= 1 << (ord(cell) - ord("a"))
+
+                if cell.isupper() and not (
+                    keys & (1 << (ord(cell) - ord("A")))
+                ):
+                    continue
+
+                if (nr, nc, new_keys) not in visited:
+                    visited.add((nr, nc, new_keys))
+                    q.append((nr, nc, new_keys, steps + 1))
+
+    return -1
+
+
+grid = ["@.a..", "###.#", "b.A.B"]
+print(shortestPathAllKeys(grid))  # 8
+
 ```
 
 ## 1263. Minimum Moves to Move a Box to Their Target Location
@@ -105,7 +258,74 @@ comments: True
 -   Tags: hash table, depth first search, breadth first search, union find, hash function
 
 ```python title="694. Number of Distinct Islands - Python Solution"
---8<-- "0694_number_of_distinct_islands.py"
+from collections import deque
+from copy import deepcopy
+from typing import List
+
+
+# BFS
+def numDistinctIslandsBFS(grid: List[List[int]]) -> int:
+    m, n = len(grid), len(grid[0])
+    shapes = set()
+    dirs = [[1, 0], [0, 1], [0, -1], [-1, 0]]
+
+    def bfs(r, c):
+        q = deque([(r, c)])
+        shape = set()
+        grid[r][c] = 0
+
+        while q:
+            row, col = q.popleft()
+            shape.add((row - r, col - c))
+
+            for dr, dc in dirs:
+                nr, nc = row + dr, col + dc
+                if 0 <= nr < m and 0 <= nc < n and grid[nr][nc] == 1:
+                    q.append((nr, nc))
+                    grid[nr][nc] = 0
+
+        return tuple(shape)
+
+    for i in range(m):
+        for j in range(n):
+            if grid[i][j] == 1:
+                shapes.add(bfs(i, j))
+
+    return len(shapes)
+
+
+# DFS
+def numDistinctIslandsDFS(grid: List[List[int]]) -> int:
+    m, n = len(grid), len(grid[0])
+
+    def dfs(r, c, org, shape):
+        if r < 0 or r >= m or c < 0 or c >= n or grid[r][c] != 1:
+            return
+
+        grid[r][c] = 0
+        shape.add((r - org[0], c - org[1]))
+
+        dfs(r - 1, c, org, shape)
+        dfs(r + 1, c, org, shape)
+        dfs(r, c - 1, org, shape)
+        dfs(r, c + 1, org, shape)
+
+    shapes = set()
+    for i in range(m):
+        for j in range(n):
+            if grid[i][j] == 1:
+                org = [i, j]
+                shape = set()
+                dfs(i, j, org, shape)
+                shapes.add(tuple(shape))
+
+    return len(shapes)
+
+
+grid = [[1, 1, 0, 1, 1], [1, 0, 0, 0, 0], [0, 0, 0, 0, 1], [1, 1, 0, 1, 1]]
+print(numDistinctIslandsBFS(deepcopy(grid)))  # 3
+print(numDistinctIslandsDFS(deepcopy(grid)))  # 3
+
 ```
 
 ## 711. Number of Distinct Islands II

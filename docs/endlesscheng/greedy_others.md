@@ -46,7 +46,25 @@ comments: True
 -   Tags: array, greedy
 
 ```python title="1899. Merge Triplets to Form Target Triplet - Python Solution"
---8<-- "1899_merge_triplets_to_form_target_triplet.py"
+from typing import List
+
+
+def mergeTriplets(triplets: List[List[int]], target: List[int]) -> bool:
+    can_form = [False, False, False]
+
+    for triplet in triplets:
+        if all(triplet[i] <= target[i] for i in range(3)):
+            for i in range(3):
+                if triplet[i] == target[i]:
+                    can_form[i] = True
+
+    return all(can_form)
+
+
+triplets = [[2, 5, 3], [1, 8, 4], [1, 7, 5]]
+target = [2, 7, 5]
+print(mergeTriplets(triplets, target))  # True
+
 ```
 
 ## 2498. Frog Jump II
@@ -62,7 +80,33 @@ comments: True
 -   Tags: array, greedy
 
 ```python title="134. Gas Station - Python Solution"
---8<-- "0134_gas_station.py"
+from typing import List
+
+
+# Greedy
+def canCompleteCircuit(gas: List[int], cost: List[int]) -> int:
+    curSum = 0
+    totalSum = 0
+    start = 0
+
+    for i in range(len(gas)):
+        curSum += gas[i] - cost[i]
+        totalSum += gas[i] - cost[i]
+
+        if curSum < 0:
+            start = i + 1
+            curSum = 0
+
+    if totalSum < 0:
+        return -1
+
+    return start
+
+
+gas = [1, 2, 3, 4, 5]
+cost = [3, 4, 5, 1, 2]
+print(canCompleteCircuit(gas, cost))  # 3
+
 ```
 
 ## 2311. Longest Binary Subsequence Less Than or Equal to K

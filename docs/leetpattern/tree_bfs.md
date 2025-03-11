@@ -31,7 +31,47 @@ comments: True
 ```
 
 ```python title="199. Binary Tree Right Side View - Python Solution"
---8<-- "0199_binary_tree_right_side_view.py"
+from collections import deque
+from typing import List, Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Binary Tree
+def rightSideView(root: Optional[TreeNode]) -> List[int]:
+    if not root:
+        return []
+
+    q = deque([root])
+    res = []
+
+    while q:
+        n = len(q)
+        for i in range(n):
+            node = q.popleft()
+            if i == n - 1:
+                res.append(node.val)
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+    return res
+
+
+root = [1, 2, 2, 3, 4, None, 3, None, None, 5]
+root = build(root)
+print(root)
+#     ____1
+#    /     \
+#   2__     2
+#  /   \     \
+# 3     4     3
+#      /
+#     5
+print(rightSideView(root))  # [1, 2, 3, 5]
+
 ```
 
 ## 111. Minimum Depth of Binary Tree
@@ -41,7 +81,65 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="111. Minimum Depth of Binary Tree - Python Solution"
---8<-- "0111_minimum_depth_of_binary_tree.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Iterative
+def minDepthIterative(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    q = deque([root])
+    res = 0
+
+    while q:
+        res += 1
+
+        for _ in range(len(q)):
+            node = q.popleft()
+
+            if not node.left and not node.right:
+                return res
+
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+
+# Recursive
+def minDepthRecursive(root: Optional[TreeNode]) -> int:
+    if root is None:
+        return 0
+
+    if root.left is None and root.right is not None:
+        return 1 + minDepthRecursive(root.right)
+    if root.left is not None and root.right is None:
+        return 1 + minDepthRecursive(root.left)
+
+    return 1 + min(minDepthRecursive(root.left), minDepthRecursive(root.right))
+
+
+root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+root = build(root)
+print(root)
+"""
+    ____1
+   /     \
+  2__     2
+ /   \
+3     4
+     /
+    5
+
+"""
+print(minDepthIterative(root))  # 2
+print(minDepthRecursive(root))  # 2
+
 ```
 
 ## 104. Maximum Depth of Binary Tree
@@ -51,7 +149,79 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="104. Maximum Depth of Binary Tree - Python Solution"
---8<-- "0104_maximum_depth_of_binary_tree.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Recursive
+def maxDepthRecursive(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    left = maxDepthRecursive(root.left)
+    right = maxDepthRecursive(root.right)
+
+    return 1 + max(left, right)
+
+
+# DFS
+def maxDepthDFS(root: Optional[TreeNode]) -> int:
+    res = 0
+
+    def dfs(node, cnt):
+        if node is None:
+            return
+        cnt += 1
+        nonlocal res
+        res = max(res, cnt)
+
+        dfs(node.left, cnt)
+        dfs(node.right, cnt)
+
+    dfs(root, 0)
+
+    return res
+
+
+# Iterative
+def maxDepthIterative(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    q = deque([root])
+    res = 0
+
+    while q:
+        res += 1
+        n = len(q)
+
+        for _ in range(n):
+            node = q.popleft()
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+    return res
+
+
+root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+root = build(root)
+print(root)
+#     ____1
+#    /     \
+#   2__     2
+#  /   \
+# 3     4
+#      /
+#     5
+print(maxDepthRecursive(root))  # 4
+print(maxDepthIterative(root))  # 4
+print(maxDepthDFS(root))  # 4
+
 ```
 
 ## 637. Average of Levels in Binary Tree
@@ -61,7 +231,60 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="637. Average of Levels in Binary Tree - Python Solution"
---8<-- "0637_average_of_levels_in_binary_tree.py"
+from collections import deque
+from statistics import mean
+from typing import List, Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def averageOfLevels(root: Optional[TreeNode]) -> List[float]:
+    if not root:
+        return []
+
+    queue = deque([root])
+    result = []
+
+    while queue:
+        level = []
+        size = len(queue)
+
+        for _ in range(size):
+            node = queue.popleft()
+            level.append(node.val)
+
+            if node.left:
+                queue.append(node.left)
+
+            if node.right:
+                queue.append(node.right)
+
+        result.append(mean(level))
+
+    return result
+
+
+root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+root = build(root)
+print(root)
+"""
+    ____1
+   /     \
+  2__     2
+ /   \
+3     4
+     /
+    5
+"""
+print(averageOfLevels(root))  # [1, 2, 3.5, 5]
+
 ```
 
 ## 429. N-ary Tree Level Order Traversal
@@ -71,7 +294,55 @@ comments: True
 -   Tags: tree, breadth first search
 
 ```python title="429. N-ary Tree Level Order Traversal - Python Solution"
---8<-- "0429_n_ary_tree_level_order_traversal.py"
+from collections import deque
+from typing import List, Optional
+
+
+class Node:
+    def __init__(self, val=None, children=None):
+        self.val = val
+        self.children = children
+
+
+def levelOrder(root: Optional[Node]) -> List[List[int]]:
+    if not root:
+        return []
+
+    queue = deque([root])
+    result = []
+
+    while queue:
+        level = []
+        size = len(queue)
+
+        for _ in range(size):
+            node = queue.popleft()
+            level.append(node.val)
+
+            for child in node.children:
+                queue.append(child)
+
+        result.append(level)
+
+    return result
+
+
+root = Node(
+    1,
+    [
+        Node(
+            3,
+            [
+                Node(5, []),
+                Node(6, []),
+            ],
+        ),
+        Node(2, []),
+        Node(4, []),
+    ],
+)
+print(levelOrder(root))  # [[1], [3, 2, 4], [5, 6]]
+
 ```
 
 ## 515. Find Largest Value in Each Tree Row
@@ -81,7 +352,55 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="515. Find Largest Value in Each Tree Row - Python Solution"
---8<-- "0515_find_largest_value_in_each_tree_row.py"
+from collections import deque
+from typing import List, Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def largestValues(root: Optional[TreeNode]) -> List[int]:
+    if not root:
+        return []
+
+    queue = deque([root])
+    result = []
+
+    while queue:
+        levelMax = float("-inf")
+        for _ in range(len(queue)):
+            node = queue.popleft()
+
+            levelMax = max(levelMax, node.val)
+
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+
+        result.append(levelMax)
+
+    return result
+
+
+root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+root = build(root)
+print(root)
+#     ____1
+#    /     \
+#   2__     2
+#  /   \
+# 3     4
+#      /
+#     5
+print(largestValues(root))  # [1, 2, 4, 5]
+
 ```
 
 ## 116. Populating Next Right Pointers in Each Node
@@ -92,7 +411,80 @@ comments: True
 -   Perfect Binary Tree
 
 ```python title="116. Populating Next Right Pointers in Each Node - Python Solution"
---8<-- "0116_populating_next_right_pointers_in_each_node.py"
+from collections import deque
+from typing import Optional
+
+
+class Node:
+    def __init__(
+        self,
+        val: int = 0,
+        left: "Node" = None,
+        right: "Node" = None,
+        next: "Node" = None,
+    ):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.next = next
+
+
+def connect(root: "Optional[Node]") -> "Optional[Node]":
+    if not root:
+        return root
+
+    queue = deque([root])
+
+    while queue:
+        size = len(queue)
+        prev = None
+
+        for _ in range(size):
+            node = queue.popleft()
+
+            if prev:
+                prev.next = node
+            prev = node
+
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+    return root
+
+
+# Perfect binary tree creation
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+root.right.left = Node(6)
+root.right.right = Node(7)
+#     __1__
+#    /     \
+#   2__     3
+#  /   \   / \
+# 4     5 6   7
+
+
+# Connect the nodes
+connect(root)
+#      __1__ -> None
+#     /     \
+#   _2_ ->  3 -> None
+#  /   \   / \
+# 4 -> 5->6-> 7 -> None
+
+
+assert root.next is None
+assert root.left.next == root.right
+assert root.left.left.next == root.left.right
+assert root.left.right.next == root.right.left
+assert root.right.left.next == root.right.right
+assert root.right.right.next is None
+print("All tests passed.")
+
 ```
 
 ## 117. Populating Next Right Pointers in Each Node II
@@ -102,7 +494,80 @@ comments: True
 -   Tags: linked list, tree, depth first search, breadth first search, binary tree
 
 ```python title="117. Populating Next Right Pointers in Each Node II - Python Solution"
---8<-- "0117_populating_next_right_pointers_in_each_node_ii.py"
+from collections import deque
+
+
+class Node:
+    def __init__(
+        self,
+        val: int = 0,
+        left: "Node" = None,
+        right: "Node" = None,
+        next: "Node" = None,
+    ):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.next = next
+
+
+def connect(root: "Node") -> "Node":
+    if not root:
+        return root
+
+    queue = deque([root])
+
+    while queue:
+        size = len(queue)
+        prev = None
+
+        for _ in range(size):
+            node = queue.popleft()
+
+            if prev:
+                prev.next = node
+
+            prev = node
+
+            if node.left:
+                queue.append(node.left)
+
+            if node.right:
+                queue.append(node.right)
+
+    return root
+
+
+# Binary tree creation
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+root.right.right = Node(7)
+#       1
+#      / \
+#     2   3
+#    / \   \
+#   4   5   7
+
+# Connect the nodes
+connect(root)
+#       1 -> None
+#      / \
+#     2 -> 3 -> None
+#    / \    \
+#   4 -> 5 -> 7 -> None
+
+assert root.next is None
+assert root.left.next == root.right
+assert root.right.next is None
+assert root.left.left.next == root.left.right
+assert root.left.right.next == root.right.right
+assert root.right.right.next is None
+
+print("All tests passed.")
+
 ```
 
 ## 513. Find Bottom Left Tree Value
@@ -112,7 +577,55 @@ comments: True
 -   Tags: tree, depth first search, breadth first search, binary tree
 
 ```python title="513. Find Bottom Left Tree Value - Python Solution"
---8<-- "0513_find_bottom_left_tree_value.py"
+from collections import deque
+from typing import Optional
+
+from binarytree import build
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def findBottomLeftValue(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    queue = deque([root])
+    result = 0
+
+    while queue:
+        size = len(queue)
+
+        for i in range(size):
+            node = queue.popleft()
+            if i == 0:
+                result = node.val
+
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+
+    return result
+
+
+root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+root = build(root)
+print(root)
+#     ____1
+#    /     \
+#   2__     2
+#  /   \
+# 3     4
+#      /
+#     5
+
+print(findBottomLeftValue(root))  # 5
+
 ```
 
 ## 863. All Nodes Distance K in Binary Tree
@@ -122,5 +635,53 @@ comments: True
 -   Tags: hash table, tree, depth first search, breadth first search, binary tree
 
 ```python title="863. All Nodes Distance K in Binary Tree - Python Solution"
---8<-- "0863_all_nodes_distance_k_in_binary_tree.py"
+from collections import deque
+from typing import List
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# BFS
+def distanceK(root: TreeNode, target: TreeNode, k: int) -> List[int]:
+    parent = dict()
+
+    def dfs(node, par=None):
+        if node:
+            parent[node] = par
+            dfs(node.left, node)
+            dfs(node.right, node)
+
+    dfs(root)
+
+    q = deque([(target, 0)])
+    seen = set([target])
+
+    while q:
+        node, dist = q.popleft()
+
+        if dist == k:
+            return [node.val] + [node.val for node, _ in q]
+
+        for nei in (node.left, node.right, parent[node]):
+            if nei and nei not in seen:
+                seen.add(nei)
+                q.append((nei, dist + 1))
+
+    return []
+
+
+root = build([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4])
+print(root)
+#     ______3__
+#    /         \
+#   5__         1
+#  /   \       / \
+# 6     2     0   8
+#      / \
+#     7   4
+target = root.left
+k = 2
+print(distanceK(root, target, k))  # [7, 4, 1]
+
 ```

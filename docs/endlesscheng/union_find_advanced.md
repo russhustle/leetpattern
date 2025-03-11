@@ -35,7 +35,48 @@ comments: True
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
 ```python title="1202. Smallest String With Swaps - Python Solution"
---8<-- "1202_smallest_string_with_swaps.py"
+from collections import defaultdict
+from typing import List
+
+
+# Union Find
+def smallestStringWithSwaps(s: str, pairs: List[List[int]]) -> str:
+    n = len(s)
+    par = list(range(n))
+    components = defaultdict(list)
+
+    def find(node):
+        p = par[node]
+        while par[p] != p:
+            par[p] = par[par[p]]
+            p = par[p]
+        return p
+
+    def union(n1, n2):
+        p1, p2 = find(n1), find(n2)
+
+        if p1 != p2:
+            par[p1] = p2
+
+    for index, j in pairs:
+        union(index, j)
+
+    for index in range(n):
+        components[find(index)].append(index)
+
+    res = list(s)
+    for indices in components.values():
+        chars = sorted([s[index] for index in indices])
+        for index, char in zip(indices, chars):
+            res[index] = char
+
+    return "".join(res)
+
+
+s = "dcab"
+pairs = [[0, 3], [1, 2]]
+print(smallestStringWithSwaps(s, pairs))  # "bacd"
+
 ```
 
 ## 1061. Lexicographically Smallest Equivalent String
@@ -45,7 +86,40 @@ comments: True
 -   Tags: string, union find
 
 ```python title="1061. Lexicographically Smallest Equivalent String - Python Solution"
---8<-- "1061_lexicographically_smallest_equivalent_string.py"
+# Union Find
+def smallestEquivalentString(s1: str, s2: str, baseStr: str) -> str:
+    parent = {chr(i): chr(i) for i in range(ord("a"), ord("z") + 1)}
+
+    def find(n):
+        p = parent[n]
+        while parent[p] != p:
+            parent[p] = parent[parent[p]]
+            p = parent[p]
+        return p
+
+    def union(n1, n2):
+        p1, p2 = find(n1), find(n2)
+        if p1 != p2:
+            if p1 < p2:
+                parent[p2] = p1
+            else:
+                parent[p1] = p2
+
+    for i in range(len(s1)):
+        union(s1[i], s2[i])
+
+    result = []
+    for c in baseStr:
+        result.append(find(c))
+
+    return "".join(result)
+
+
+s1 = "parker"
+s2 = "morris"
+baseStr = "parser"
+print(smallestEquivalentString(s1, s2, baseStr))  # "makkek"
+
 ```
 
 ## 1722. Minimize Hamming Distance After Swap Operations
@@ -67,7 +141,79 @@ comments: True
 -   Tags: depth first search, breadth first search, union find, graph
 
 ```python title="684. Redundant Connection - Python Solution"
---8<-- "0684_redundant_connection.py"
+from typing import List
+
+
+class UnionFind:
+    def __init__(self, n):
+        self.par = {i: i for i in range(1, n + 1)}
+        self.rank = {i: 1 for i in range(1, n + 1)}
+
+    def find(self, n):
+        p = self.par[n]
+        while self.par[p] != p:
+            self.par[p] = self.par[self.par[p]]
+            p = self.par[p]
+        return p
+
+    def union(self, n1, n2):
+        p1, p2 = self.find(n1), self.find(n2)
+
+        if p1 == p2:
+            return False
+
+        if self.rank[p1] > self.rank[p2]:
+            self.par[p2] = p1
+        elif self.rank[p1] < self.rank[p2]:
+            self.par[p1] = p2
+        else:
+            self.par[p2] = p1
+            self.rank[p1] += 1
+
+        return True
+
+
+# Union Find
+def findRedundantConnectionUF(edges: List[List[int]]) -> List[int]:
+    n = len(edges)
+    uf = UnionFind(n)
+
+    for u, v in edges:
+        if not uf.union(u, v):
+            return (u, v)
+
+
+# DFS
+def findRedundantConnectionDFS(edges: List[List[int]]) -> List[int]:
+    graph, cycle = {}, {}
+    for a, b in edges:
+        graph.setdefault(a, []).append(b)
+        graph.setdefault(b, []).append(a)
+
+    def dfs(node, parent):
+        if node in cycle:
+            for k in list(cycle.keys()):
+                if k == node:
+                    return True
+                del cycle[k]
+
+        cycle[node] = None
+        for child in graph[node]:
+            if child != parent and dfs(child, node):
+                return True
+        del cycle[node]
+        return False
+
+    dfs(edges[0][0], -1)
+    for a, b in edges[::-1]:
+        if a in cycle and b in cycle:
+            return (a, b)
+
+
+edges = [[1, 2], [1, 3], [2, 3]]
+print(findRedundantConnectionUF(edges))  # (2, 3)
+print(findRedundantConnectionDFS(edges))  # (2, 3)
+
 ```
 
 ## 685. Redundant Connection II
@@ -77,7 +223,59 @@ comments: True
 -   Tags: depth first search, breadth first search, union find, graph
 
 ```python title="685. Redundant Connection II - Python Solution"
---8<-- "0685_redundant_connection_ii.py"
+from typing import List
+
+
+# Union Find
+def findRedundantDirectedConnectionUF(edges: List[List[int]]) -> List[int]:
+    n = len(edges)
+    uf = UnionFind(n + 1)
+    parent = list(range(n + 1))
+    candidates = []
+
+    for u, v in edges:
+        if parent[v] != v:
+            candidates.append([parent[v], v])
+            candidates.append([u, v])
+        else:
+            parent[v] = u
+
+    if not candidates:
+        for u, v in edges:
+            if not uf.union(u, v):
+                return [u, v]
+
+    for u, v in edges:
+        if [u, v] == candidates[1]:
+            continue
+        if not uf.union(u, v):
+            return candidates[0]
+
+    return candidates[1]
+
+
+class UnionFind:
+    def __init__(self, n):
+        self.par = {i: i for i in range(1, n + 1)}
+
+    def find(self, n):
+        p = self.par[n]
+        while p != self.par[p]:
+            self.par[p] = self.par[self.par[p]]
+            p = self.par[p]
+        return p
+
+    def union(self, n1, n2):
+        p1, p2 = self.find(n1), self.find(n2)
+        if p1 == p2:
+            return False
+        self.par[p1] = p2
+        return True
+
+
+edges = [[1, 2], [1, 3], [2, 3]]
+print(findRedundantDirectedConnectionUF(edges))
+
 ```
 
 ## 947. Most Stones Removed with Same Row or Column
@@ -93,7 +291,55 @@ comments: True
 -   Tags: array, hash table, string, depth first search, breadth first search, union find
 
 ```python title="839. Similar String Groups - Python Solution"
---8<-- "0839_similar_string_groups.py"
+from collections import defaultdict
+from typing import List
+
+
+# Union Find
+def numSimilarGroups(strs: List[str]) -> int:
+    n = len(strs)
+    parent = list(range(n))
+    rank = [0 for _ in range(n)]
+
+    def find(n):
+        p = parent[n]
+        while parent[p] != p:
+            parent[p] = parent[parent[p]]
+            p = parent[p]
+        return p
+
+    def union(n1, n2):
+        p1, p2 = find(n1), find(n2)
+        if p1 == p2:
+            return
+        if rank[p1] > rank[p2]:
+            parent[p2] = p1
+        elif rank[p1] < rank[p2]:
+            parent[p1] = p2
+        else:
+            parent[p2] = p1
+            rank[p1] += 1
+
+    def is_similar(s1, s2):
+        diff = 0
+        for c1, c2 in zip(s1, s2):
+            if c1 != c2:
+                diff += 1
+            if diff > 2:
+                return False
+        return True
+
+    for i in range(n):
+        for j in range(i + 1, n):
+            if is_similar(strs[i], strs[j]):
+                union(i, j)
+
+    return sum(find(i) == i for i in range(n))
+
+
+strs = ["tars", "rats", "arts", "star"]
+print(numSimilarGroups(strs))  # 2
+
 ```
 
 ## 1970. Last Day Where You Can Still Cross
@@ -118,7 +364,69 @@ comments: True
 ![1579](../assets/1579.png){width=200px}
 
 ```python title="1579. Remove Max Number of Edges to Keep Graph Fully Traversable - Python Solution"
---8<-- "1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.py"
+from typing import List
+
+
+# Kruskal
+def maxNumEdgesToRemove(n: int, edges: List[List[int]]) -> int:
+    alice, bob = UnionFind(n), UnionFind(n)
+    visited = 0
+
+    for t, u, v in edges:
+        if t == 3:
+            if alice.union(u, v) | bob.union(u, v):
+                visited += 1
+
+    for t, u, v in edges:
+        if t == 1:
+            if alice.union(u, v):
+                visited += 1
+        elif t == 2:
+            if bob.union(u, v):
+                visited += 1
+
+    if alice.components > 1 or bob.components > 1:
+        return -1
+
+    return len(edges) - visited
+
+
+class UnionFind:
+    def __init__(self, n):
+        self.parent = {i: i for i in range(1, n + 1)}
+        self.rank = {i: 0 for i in range(1, n + 1)}
+        self.components = n
+
+    def find(self, n):
+        p = self.parent[n]
+        while self.parent[p] != p:
+            self.parent[p] = self.parent[self.parent[p]]
+            p = self.parent[p]
+        return p
+
+    def union(self, n1, n2):
+        p1, p2 = self.find(n1), self.find(n2)
+
+        if p1 == p2:
+            return False
+
+        if self.rank[p1] > self.rank[p2]:
+            self.parent[p2] = p1
+        elif self.rank[p1] < self.rank[p2]:
+            self.parent[p1] = p2
+        else:
+            self.parent[p2] = p1
+            self.rank[p1] += 1
+
+        self.components -= 1
+
+        return True
+
+
+n = 4
+edges = [[3, 1, 2], [3, 2, 3], [1, 1, 3], [1, 2, 4], [1, 1, 2], [2, 3, 4]]
+print(maxNumEdgesToRemove(n, edges))  # 2
+
 ```
 
 ## 959. Regions Cut By Slashes

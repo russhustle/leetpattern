@@ -39,7 +39,38 @@ comments: True
 -   Tags: string, sliding window
 
 ```python title="2904. Shortest and Lexicographically Smallest Beautiful String - Python Solution"
---8<-- "2904_shortest_and_lexicographically_smallest_beautiful_string.py"
+# Sliding Window Variable Size
+def shortestBeautifulSubstring(s: str, k: int) -> str:
+    n = len(s)
+    left = 0
+    oneCount = 0
+    minLen = float("inf")
+    res = ""
+
+    for right in range(n):
+        if s[right] == "1":
+            oneCount += 1
+
+        while oneCount == k:
+            size = right - left + 1
+
+            if size < minLen:
+                minLen = size
+                res = s[left : right + 1]
+            elif size == minLen:
+                res = min(res, s[left : right + 1])
+
+            if s[left] == "1":
+                oneCount -= 1
+            left += 1
+
+    return res
+
+
+s = "100011001"
+k = 3
+print(shortestBeautifulSubstring(s, k))  # 11001
+
 ```
 
 ## 3213. Construct String with Minimum Cost
@@ -61,7 +92,27 @@ comments: True
 -   Tags: array, binary search, dynamic programming, sliding window, rolling hash, hash function
 
 ```python title="718. Maximum Length of Repeated Subarray - Python Solution"
---8<-- "0718_maximum_length_of_repeated_subarray.py"
+from typing import List
+
+
+def findLength(nums1: List[int], nums2: List[int]) -> int:
+    m = len(nums1)
+    n = len(nums2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    length = 0
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if nums1[i - 1] == nums2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            if length < dp[i][j]:
+                length = dp[i][j]
+
+    return length
+
+
+print(findLength([1, 2, 3, 2, 1], [3, 2, 1, 4, 7]))  # 3
+
 ```
 
 ## 1923. Longest Common Subpath

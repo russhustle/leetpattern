@@ -30,7 +30,25 @@ comments: True
 -   Tags: string, stack, greedy, monotonic stack
 
 ```python title="316. Remove Duplicate Letters - Python Solution"
---8<-- "0316_remove_duplicate_letters.py"
+# Monotonic Stack
+def removeDuplicateLetters(s: str) -> str:
+    stack = []
+    seen = set()
+    last = {c: i for i, c in enumerate(s)}
+
+    for i, c in enumerate(s):
+        if c not in seen:
+            while stack and c < stack[-1] and i < last[stack[-1]]:
+                seen.discard(stack.pop())
+            seen.add(c)
+            stack.append(c)
+
+    return "".join(stack)
+
+
+s = "cbacdcbc"
+print(removeDuplicateLetters(s))  # acdb
+
 ```
 
 ## 1081. Smallest Subsequence of Distinct Characters

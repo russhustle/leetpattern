@@ -105,7 +105,26 @@ comments: True
 ```
 
 ```python title="2588. Count the Number of Beautiful Subarrays - Python Solution"
---8<-- "2588_count_the_number_of_beautiful_subarrays.py"
+from collections import defaultdict
+from typing import List
+
+
+def beautifulSubarrays(nums: List[int]) -> int:
+    res, s = 0, 0
+    cnt = defaultdict(int)
+    cnt[0] = 1
+
+    for x in nums:
+        s ^= x
+        res += cnt[s]
+        cnt[s] += 1
+
+    return res
+
+
+nums = [4, 3, 1, 2, 4]
+print(beautifulSubarrays(nums))  # 2
+
 ```
 
 ## 2564. Substring XOR Queries

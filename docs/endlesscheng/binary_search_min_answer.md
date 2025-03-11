@@ -37,7 +37,40 @@ comments: True
 -   Tags: array, binary search
 
 ```python title="1870. Minimum Speed to Arrive on Time - Python Solution"
---8<-- "1870_minimum_speed_to_arrive_on_time.py"
+import math
+from typing import List
+
+
+# Binary Search
+def minSpeedOnTime(dist: List[int], hour: float) -> int:
+    if hour < len(dist) - 1:
+        return -1
+
+    def time_needed(speed):
+        total_time = 0
+        for i in range(len(dist) - 1):
+            total_time += math.ceil(dist[i] / speed)
+        total_time += dist[-1] / speed
+        return total_time
+
+    left, right = 1, 10**7
+    result = -1
+
+    while left <= right:
+        mid = left + (right - left) // 2
+        if time_needed(mid) <= hour:
+            result = mid
+            right = mid - 1
+        else:
+            left = mid + 1
+
+    return result
+
+
+dist = [1, 3, 2]
+hour = 6
+print(minSpeedOnTime(dist, hour))  # 1
+
 ```
 
 ## 1011. Capacity To Ship Packages Within D Days
@@ -48,7 +81,41 @@ comments: True
 -   A conveyor belt has packages that must be shipped from one port to another within `D` days. The `i-th` package has a weight of `weights[i]`. Each day, we load the ship with packages on the conveyor belt. The ship will be loaded with packages up to its capacity. The ship will not be loaded beyond its capacity. Return the least weight capacity of the ship.
 
 ```python title="1011. Capacity To Ship Packages Within D Days - Python Solution"
---8<-- "1011_capacity_to_ship_packages_within_d_days.py"
+from typing import List
+
+
+# Binary Search
+def shipWithinDays(weights: List[int], days: int) -> int:
+
+    def canShip(weights, D, capacity):
+        days = 1
+        current_weight = 0
+
+        for weight in weights:
+            if current_weight + weight > capacity:
+                days += 1
+                current_weight = 0
+            current_weight += weight
+
+        return days <= D
+
+    left, right = max(weights), sum(weights)
+
+    while left <= right:
+        mid = left + (right - left) // 2
+
+        if canShip(weights, days, mid):
+            right = mid - 1
+        else:
+            left = mid + 1
+
+    return left
+
+
+weights = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+days = 5
+print(shipWithinDays(weights, days))  # 15
+
 ```
 
 ## 875. Koko Eating Bananas
@@ -59,7 +126,34 @@ comments: True
 -   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
 
 ```python title="875. Koko Eating Bananas - Python Solution"
---8<-- "0875_koko_eating_bananas.py"
+from typing import List
+
+
+# Binary Search
+def minEatingSpeed(piles: List[int], h: int) -> int:
+    def canEat(piles, k, h):
+        hours = 0
+        for pile in piles:
+            hours += (pile + k - 1) // k
+        return hours <= h
+
+    left, right = 1, max(piles)
+
+    while left <= right:
+        mid = left + (right - left) // 2
+
+        if canEat(piles, mid, h):
+            right = mid - 1
+        else:
+            left = mid + 1
+
+    return left
+
+
+piles = [3, 6, 7, 11]
+h = 8
+print(minEatingSpeed(piles, h))  # 4
+
 ```
 
 ## 3296. Minimum Number of Seconds to Make Mountain Height Zero

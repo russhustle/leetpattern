@@ -47,11 +47,56 @@ comments: True
 | Hashmap  |      O(n)       |       O(n)       |
 
 ```python title="1. Two Sum - Python Solution"
---8<-- "0001_two_sum.py"
+from typing import List
+
+
+# Hashmap
+def twoSum(nums: List[int], target: int) -> List[int]:
+    hashmap = {}  # val: idx
+
+    for idx, val in enumerate(nums):
+        if (target - val) in hashmap:
+            return [hashmap[target - val], idx]
+
+        hashmap[val] = idx
+
+
+nums = [2, 7, 11, 15]
+target = 18
+assert twoSum(nums, target) == [1, 2]
+
 ```
 
 ```cpp title="1. Two Sum - C++ Solution"
---8<-- "cpp/0001_two_sum.cc"
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+
+using namespace std;
+
+vector<int> twoSum(vector<int> &nums, int target) {
+    unordered_map<int, int> hashmap;
+
+    for (size_t i = 0; i < nums.size(); i++) {
+        int complement = target - nums[i];
+
+        if (hashmap.find(complement) != hashmap.end()) {
+            return {hashmap[complement], (int)i};
+        }
+        hashmap[nums[i]] = (int)i;
+    }
+
+    return {-1, -1};
+}
+
+int main() {
+    vector<int> nums = {2, 7, 11, 15};
+    int target = 9;
+    vector<int> result = twoSum(nums, target);
+    cout << result[0] << ", " << result[1] << endl;
+    return 0;
+}
+
 ```
 
 ## 146. LRU Cache
@@ -69,11 +114,205 @@ comments: True
 | Hash Map           | To store the key-node pairs.  |
 
 ```python title="146. LRU Cache - Python Solution"
---8<-- "0146_lru_cache.py"
+from collections import OrderedDict
+
+
+# Doubly Linked List
+class Node:
+    def __init__(self, key=0, val=0):
+        self.key = key
+        self.val = val
+        self.prev = None
+        self.next = None
+
+
+class LRUCache:
+
+    def __init__(self, capacity: int):
+        self.cap = capacity
+        self.cache = {}
+        self.head = Node()
+        self.tail = Node()
+        self.head.next = self.tail
+        self.tail.prev = self.head
+
+    def remove(self, node):
+        node.prev.next = node.next
+        node.next.prev = node.prev
+
+    def add_to_last(self, node):
+        self.tail.prev.next = node
+        node.prev = self.tail.prev
+        node.next = self.tail
+        self.tail.prev = node
+
+    def move_to_last(self, node):
+        self.remove(node)
+        self.add_to_last(node)
+
+    def get(self, key: int) -> int:
+        if key not in self.cache:
+            return -1
+        node = self.cache[key]
+        self.move_to_last(node)
+        return node.val
+
+    def put(self, key: int, value: int) -> None:
+        if key in self.cache:
+            node = self.cache[key]
+            node.val = value
+            self.move_to_last(node)
+            return None
+
+        if len(self.cache) == self.cap:
+            del self.cache[self.head.next.key]
+            self.remove(self.head.next)
+
+        node = Node(key=key, val=value)
+        self.cache[key] = node
+        self.add_to_last(node)
+
+
+# OrderedDict
+class LRUCacheOrderedDict:
+    def __init__(self, capacity: int):
+        self.cache = OrderedDict()
+        self.cap = capacity
+
+    def get(self, key: int):
+        if key not in self.cache:
+            return -1
+        self.cache.move_to_end(key, last=True)
+        return self.cache[key]
+
+    def put(self, key: int, value: int):
+        if key in self.cache:
+            self.cache.move_to_end(key, last=True)
+        elif len(self.cache) >= self.cap:
+            self.cache.popitem(last=False)
+
+        self.cache[key] = value
+
+
+cache = LRUCache(2)
+cache.put(1, 1)
+cache.put(2, 2)
+assert cache.get(1) == 1
+cache.put(3, 3)
+assert cache.get(2) == -1
+cache.put(4, 4)
+assert cache.get(1) == -1
+assert cache.get(3) == 3
+assert cache.get(4) == 4
+
+
+cache = LRUCacheOrderedDict(2)
+cache.put(1, 1)
+cache.put(2, 2)
+assert cache.get(1) == 1
+cache.put(3, 3)
+assert cache.get(2) == -1
+cache.put(4, 4)
+assert cache.get(1) == -1
+assert cache.get(3) == 3
+assert cache.get(4) == 4
+
+print("LRU Cache passed")
+print("LRU Cache Ordered Dict passed")
+
 ```
 
 ```cpp title="146. LRU Cache - C++ Solution"
---8<-- "cpp/0146_lru_cache.cc"
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+class Node {
+   public:
+    int key;
+    int val;
+    Node *prev;
+    Node *next;
+
+    Node(int k = 0, int v = 0) : key(k), val(v), prev(nullptr), next(nullptr) {}
+};
+
+class LRUCache {
+   private:
+    int cap;
+    unordered_map<int, Node *> cache;
+    Node *head;
+    Node *tail;
+
+    void remove(Node *node) {
+        node->prev->next = node->next;
+        node->next->prev = node->prev;
+    }
+
+    void insert_to_last(Node *node) {
+        tail->prev->next = node;
+        node->prev = tail->prev;
+        tail->prev = node;
+        node->next = tail;
+    }
+
+    void move_to_last(Node *node) {
+        remove(node);
+        insert_to_last(node);
+    }
+
+   public:
+    LRUCache(int capacity) {
+        this->cap = capacity;
+        head = new Node();
+        tail = new Node();
+        head->next = tail;
+        tail->prev = head;
+    }
+
+    int get(int key) {
+        if (cache.find(key) != cache.end()) {
+            Node *node = cache[key];
+            move_to_last(node);
+            return node->val;
+        }
+        return -1;
+    }
+
+    void put(int key, int value) {
+        if (cache.find(key) != cache.end()) {
+            Node *node = cache[key];
+            node->val = value;
+            move_to_last(node);
+        } else {
+            Node *newNode = new Node(key, value);
+            cache[key] = newNode;
+            insert_to_last(newNode);
+
+            if ((int)cache.size() > cap) {
+                Node *removed = head->next;
+                remove(removed);
+                cache.erase(removed->key);
+                delete removed;
+            }
+        }
+    }
+};
+
+int main() {
+    LRUCache lru(2);
+    lru.put(1, 1);
+    lru.put(2, 2);
+    cout << lru.get(1) << endl;  // 1
+    lru.put(3, 3);
+    cout << lru.get(2) << endl;  // -1
+    lru.put(4, 4);
+    cout << lru.get(1) << endl;  // -1
+    cout << lru.get(3) << endl;  // 3
+    cout << lru.get(4) << endl;  // 4
+    return 0;
+}
+
 ```
 
 ## 200. Number of Islands
@@ -98,11 +337,188 @@ comments: True
 ![0200](../assets/0200.jpg)
 
 ```python title="200. Number of Islands - Python Solution"
---8<-- "0200_number_of_islands.py"
+from collections import deque
+from copy import deepcopy
+from typing import List
+
+
+# DFS
+def numIslandsDFS(grid: List[List[str]]) -> int:
+    if not grid:
+        return 0
+
+    m, n = len(grid), len(grid[0])
+    res = 0
+
+    def dfs(r, c):
+        if r < 0 or r >= m or c < 0 or c >= n or grid[r][c] != "1":
+            return
+
+        grid[r][c] = "2"
+
+        dfs(r + 1, c)
+        dfs(r - 1, c)
+        dfs(r, c + 1)
+        dfs(r, c - 1)
+
+    for r in range(m):
+        for c in range(n):
+            if grid[r][c] == "1":
+                dfs(r, c)
+                res += 1
+
+    return res
+
+
+# BFS + Set
+def numIslandsBFS1(grid: List[List[str]]) -> int:
+    if not grid:
+        return 0
+
+    m, n = len(grid), len(grid[0])
+    dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+    visited = set()
+    res = 0
+
+    def bfs(r, c):
+        q = deque([(r, c)])
+
+        while q:
+            row, col = q.popleft()
+
+            for dr, dc in dirs:
+                nr, nc = row + dr, col + dc
+                if (
+                    nr < 0
+                    or nr >= m
+                    or nc < 0
+                    or nc >= n
+                    or grid[nr][nc] == "0"
+                    or (nr, nc) in visited
+                ):
+                    continue
+
+                visited.add((nr, nc))
+                q.append((nr, nc))
+
+    for r in range(m):
+        for c in range(n):
+            if grid[r][c] == "1" and (r, c) not in visited:
+                visited.add((r, c))
+                bfs(r, c)
+                res += 1
+
+    return res
+
+
+# BFS + Grid
+def numIslandsBFS2(grid: List[List[str]]) -> int:
+    if not grid:
+        return 0
+
+    m, n = len(grid), len(grid[0])
+    dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    res = 0
+
+    def bfs(r, c):
+        q = deque([(r, c)])
+
+        while q:
+            row, col = q.popleft()
+
+            for dr, dc in dirs:
+                nr, nc = dr + row, dc + col
+                if (
+                    nr < 0
+                    or nr >= m
+                    or nc < 0
+                    or nc >= n
+                    or grid[nr][nc] != "1"
+                ):
+                    continue
+                grid[nr][nc] = "2"
+                q.append((nr, nc))
+
+    for i in range(m):
+        for j in range(n):
+            if grid[i][j] == "1":
+                grid[i][j] = "2"
+                bfs(i, j)
+                res += 1
+
+    return res
+
+
+grid = [
+    ["1", "1", "1", "1", "0"],
+    ["1", "1", "0", "1", "0"],
+    ["1", "1", "0", "0", "0"],
+    ["0", "0", "0", "0", "0"],
+]
+
+print(numIslandsDFS(deepcopy(grid)))  # 1
+print(numIslandsBFS1(deepcopy(grid)))  # 1
+print(numIslandsBFS2(deepcopy(grid)))  # 1
+
 ```
 
 ```cpp title="200. Number of Islands - C++ Solution"
---8<-- "cpp/0200_number_of_islands.cc"
+#include <vector>
+#include <iostream>
+using namespace std;
+
+class Solution
+{
+private:
+    void dfs(vector<vector<char>> &grid, int r, int c)
+    {
+        int row = grid.size();
+        int col = grid[0].size();
+
+        if (r < 0 || r >= row || c < 0 || c >= col || grid[r][c] != '1')
+        {
+            return;
+        }
+        grid[r][c] = '0';
+
+        dfs(grid, r - 1, c);
+        dfs(grid, r + 1, c);
+        dfs(grid, r, c - 1);
+        dfs(grid, r, c + 1);
+    }
+
+public:
+    int numIslands(vector<vector<char>> &grid)
+    {
+        int m = grid.size(), n = grid[0].size();
+        int res = 0;
+        for (int i = 0; i < m; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (grid[i][j] == '1')
+                {
+                    res++;
+                    dfs(grid, i, j);
+                }
+            }
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    Solution s;
+    vector<vector<char>> grid = {
+        {'1', '1', '0', '0', '0'},
+        {'1', '1', '0', '0', '0'},
+        {'0', '0', '1', '0', '0'},
+        {'0', '0', '0', '1', '1'}};
+    cout << s.numIslands(grid) << endl;
+    return 0;
+}
+
 ```
 
 ## 42. Trapping Rain Water
@@ -121,11 +537,122 @@ comments: True
 | Monotonic  | O(N) | O(N)  |
 
 ```python title="42. Trapping Rain Water - Python Solution"
---8<-- "0042_trapping_rain_water.py"
+from typing import List
+
+
+# DP
+def trapDP(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    n = len(height)
+    maxLeft, maxRight = [0 for _ in range(n)], [0 for _ in range(n)]
+
+    for i in range(1, n):
+        maxLeft[i] = max(maxLeft[i - 1], height[i - 1])
+
+    for i in range(n - 2, -1, -1):
+        maxRight[i] = max(maxRight[i + 1], height[i + 1])
+
+    res = 0
+    for i in range(n):
+        res += max(0, min(maxLeft[i], maxRight[i]) - height[i])
+
+    return res
+
+
+# Left Right Pointers
+def trapLR(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    left, right = 0, len(height) - 1
+    maxL, maxR = height[left], height[right]
+    res = 0
+
+    while left < right:
+        if maxL < maxR:
+            left += 1
+            maxL = max(maxL, height[left])
+            res += maxL - height[left]
+        else:
+            right -= 1
+            maxR = max(maxR, height[right])
+            res += maxR - height[right]
+
+    return res
+
+
+# Monotonic Stack
+def trapStack(height: List[int]) -> int:
+    stack = []
+    total = 0
+
+    for i in range(len(height)):
+        while stack and height[i] > height[stack[-1]]:
+            top = stack.pop()
+            if not stack:
+                break
+            distance = i - stack[-1] - 1
+            bounded_height = min(height[i], height[stack[-1]]) - height[top]
+            total += distance * bounded_height
+        stack.append(i)
+
+    return total
+
+
+height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+print(trapDP(height))  # 6
+print(trapLR(height))  # 6
+print(trapStack(height))  # 6
+
 ```
 
 ```cpp title="42. Trapping Rain Water - C++ Solution"
---8<-- "cpp/0042_trapping_rain_water.cc"
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+class Solution
+{
+public:
+    int trap(vector<int> &height)
+    {
+        if (height.empty())
+            return 0;
+
+        int res = 0;
+        int left = 0, right = height.size() - 1;
+        int maxL = height[left], maxR = height[right];
+
+        while (left < right)
+        {
+            if (maxL < maxR)
+            {
+                left++;
+                maxL = max(maxL, height[left]);
+                res += maxL - height[left];
+            }
+            else
+            {
+                right--;
+                maxR = max(maxR, height[right]);
+                res += maxR - height[right];
+            }
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    vector<int> height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+    Solution solution;
+    cout << solution.trap(height) << endl;
+    return 0;
+}
+
 ```
 
 ## 49. Group Anagrams
@@ -135,7 +662,35 @@ comments: True
 -   Tags: array, hash table, string, sorting
 
 ```python title="49. Group Anagrams - Python Solution"
---8<-- "0049_group_anagrams.py"
+from collections import defaultdict
+from typing import List
+
+
+# Hash - List
+def groupAnagrams(strs: List[str]) -> List[List[str]]:
+    result = defaultdict(list)
+
+    for s in strs:
+        count = [0] * 26
+        for i in s:
+            count[ord(i) - ord("a")] += 1
+
+        result[tuple(count)].append(s)
+
+    return list(result.values())
+
+
+# |-------------|-----------------|--------------|
+# |  Approach   |      Time       |    Space     |
+# |-------------|-----------------|--------------|
+# |    Hash     |     O(n * k)    |     O(n)     |
+# |-------------|-----------------|--------------|
+
+
+strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+print(groupAnagrams(strs))
+# [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+
 ```
 
 ## 121. Best Time to Buy and Sell Stock
@@ -146,11 +701,112 @@ comments: True
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
---8<-- "0121_best_time_to_buy_and_sell_stock.py"
+from typing import List
+
+
+# Brute Force
+def maxProfitBF(prices: List[int]) -> int:
+    max_profit = 0
+    n = len(prices)
+    for i in range(n):
+        for j in range(i + 1, n):
+            max_profit = max(max_profit, prices[j] - prices[i])
+
+    return max_profit
+
+
+# DP
+def maxProfitDP(prices: List[int]) -> int:
+    dp = [[0] * 2 for _ in range(len(prices))]
+    dp[0][0] = -prices[0]  # buy
+    dp[0][1] = 0  # sell
+
+    for i in range(1, len(prices)):
+        dp[i][0] = max(dp[i - 1][0], -prices[i])  # the lowest price to buy
+        dp[i][1] = max(dp[i - 1][1], dp[i - 1][0] + prices[i])
+
+    return dp[-1][1]
+
+
+# Greedy
+def maxProfitGreedy(prices: List[int]) -> int:
+    max_profit = 0
+    seen_min = prices[0]
+
+    for i in range(1, len(prices)):
+        max_profit = max(max_profit, prices[i] - seen_min)
+        seen_min = min(seen_min, prices[i])
+
+    return max_profit
+
+
+# Fast Slow Pointers
+def maxProfitFS(prices: List[int]) -> int:
+    max_profit = 0
+    slow, fast = 0, 1
+
+    while fast < len(prices):
+        if prices[fast] > prices[slow]:
+            max_profit = max(max_profit, prices[fast] - prices[slow])
+        else:
+            slow = fast
+        fast += 1
+
+    return max_profit
+
+
+# |------------|------- |---------|
+# |  Approach  |  Time  |  Space  |
+# |------------|--------|---------|
+# | Brute Force|  O(n^2)|  O(1)   |
+# | DP         |  O(n)  |  O(n)   |
+# | Greedy     |  O(n)  |  O(1)   |
+# | Fast Slow  |  O(n)  |  O(1)   |
+# |------------|--------|---------|
+
+
+prices = [7, 1, 5, 3, 6, 4]
+print(maxProfitBF(prices))  # 5
+print(maxProfitDP(prices))  # 5
+print(maxProfitGreedy(prices))  # 5
+print(maxProfitFS(prices))  # 5
+
 ```
 
 ```cpp title="121. Best Time to Buy and Sell Stock - C++ Solution"
---8<-- "cpp/0121_best_time_to_buy_and_sell_stock.cc"
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+class Solution
+{
+public:
+    int maxProfit(vector<int> &prices)
+    {
+        if (prices.size() <= 1)
+            return 0;
+
+        int seen_min = prices[0];
+        int res = 0;
+
+        for (int &price : prices)
+        {
+            res = max(res, price - seen_min);
+            seen_min = min(seen_min, price);
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    vector<int> prices = {7, 1, 5, 3, 6, 4};
+    Solution obj;
+    cout << obj.maxProfit(prices) << endl;
+    return 0;
+}
+
 ```
 
 ## 56. Merge Intervals
@@ -163,11 +819,62 @@ comments: True
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python title="56. Merge Intervals - Python Solution"
---8<-- "0056_merge_intervals.py"
+from typing import List
+
+
+# Intervals
+def merge(intervals: List[List[int]]) -> List[List[int]]:
+    n = len(intervals)
+    if n <= 1:
+        return intervals
+
+    intervals.sort(key=lambda x: x[0])
+    res = [intervals[0]]
+
+    for i in range(1, n):
+        if intervals[i][0] <= res[-1][1]:
+            res[-1][1] = max(res[-1][1], intervals[i][1])
+        else:
+            res.append(intervals[i])
+
+    return res
+
+
+print(merge([[1, 3], [2, 6], [8, 10], [15, 18]]))
+# [[1, 6], [8, 10], [15, 18]]
+
 ```
 
 ```cpp title="56. Merge Intervals - C++ Solution"
---8<-- "cpp/0056_merge_intervals.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// Interval
+vector<vector<int>> merge(vector<vector<int>>& intervals) {
+    sort(intervals.begin(), intervals.end());
+    vector<vector<int>> res;
+
+    for (auto& range : intervals) {
+        if (!res.empty() && range[0] <= res.back()[1]) {
+            res.back()[1] = max(res.back()[1], range[1]);
+        } else {
+            res.emplace_back(range);
+        }
+    }
+    return res;
+}
+
+int main() {
+    vector<vector<int>> intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
+    vector<vector<int>> res = merge(intervals);
+    for (auto& range : res) {
+        cout << range[0] << ", " << range[1] << endl;
+    }
+    return 0;
+}
+
 ```
 
 ## 207. Course Schedule
@@ -291,11 +998,184 @@ flowchart LR
 -   All courses are taken. Return `True`.
 
 ```python title="207. Course Schedule - Python Solution"
---8<-- "0207_course_schedule.py"
+from collections import defaultdict, deque
+from typing import List
+
+
+# BFS (Kahn's Algorithm)
+def canFinishBFS(numCourses: int, prerequisites: List[List[int]]) -> bool:
+    graph = defaultdict(list)
+    indegree = defaultdict(int)
+
+    for crs, pre in prerequisites:
+        graph[pre].append(crs)
+        indegree[crs] += 1
+
+    q = deque([i for i in range(numCourses) if indegree[i] == 0])
+    count = 0
+
+    while q:
+        crs = q.popleft()
+        count += 1
+
+        for nxt in graph[crs]:
+            indegree[nxt] -= 1
+
+            if indegree[nxt] == 0:
+                q.append(nxt)
+
+    return count == numCourses
+
+
+# DFS + Set
+def canFinishDFS1(numCourses: int, prerequisites: List[List[int]]) -> bool:
+    graph = defaultdict(list)
+    for crs, pre in prerequisites:
+        graph[crs].append(pre)
+
+    visiting = set()
+
+    def dfs(crs):
+        if crs in visiting:  # cycle detected
+            return False
+        if graph[crs] == []:
+            return True
+
+        visiting.add(crs)
+
+        for pre in graph[crs]:
+            if not dfs(pre):
+                return False
+
+        visiting.remove(crs)
+        graph[crs] = []
+
+        return True
+
+    for crs in range(numCourses):
+        if not dfs(crs):
+            return False
+    return True
+
+
+# DFS + List
+def canFinishDFS2(numCourses: int, prerequisites: List[List[int]]) -> bool:
+    graph = defaultdict(list)
+    for pre, crs in prerequisites:
+        graph[crs].append(pre)
+
+    # 0: init, 1: visiting, 2: visited
+    status = [0] * numCourses
+
+    def dfs(crs):
+        if status[crs] == 1:  # cycle detected
+            return False
+        if status[crs] == 2:
+            return True
+
+        status[crs] = 1
+
+        for pre in graph[crs]:
+            if not dfs(pre):
+                return False
+
+        status[crs] = 2
+        return True
+
+    for crs in range(numCourses):
+        if not dfs(crs):
+            return False
+    return True
+
+
+prerequisites = [[0, 1], [0, 2], [1, 3], [1, 4], [3, 4]]
+print(canFinishBFS(5, prerequisites))  # True
+print(canFinishDFS1(5, prerequisites))  # True
+print(canFinishDFS2(5, prerequisites))  # True
+
 ```
 
 ```cpp title="207. Course Schedule - C++ Solution"
---8<-- "cpp/0207_course_schedule.cc"
+#include <functional>
+#include <iostream>
+#include <queue>
+#include <vector>
+using namespace std;
+
+class Solution {
+   public:
+    // BFS
+    bool canFinishBFS(int numCourses, vector<vector<int>> &prerequisites) {
+        vector<vector<int>> graph(numCourses);
+        vector<int> indegree(numCourses, 0);
+        for (auto &pre : prerequisites) {
+            graph[pre[1]].push_back(pre[0]);
+            indegree[pre[0]]++;
+        }
+
+        queue<int> q;
+        for (int i = 0; i < numCourses; i++) {
+            if (indegree[i] == 0) {
+                q.push(i);
+            }
+        }
+
+        int cnt = 0;
+        while (!q.empty()) {
+            int cur = q.front();
+            q.pop();
+            cnt++;
+
+            for (int nxt : graph[cur]) {
+                indegree[nxt]--;
+                if (indegree[nxt] == 0) {
+                    q.push(nxt);
+                }
+            }
+        }
+        return cnt == numCourses;
+    }
+
+    // DFS
+    bool canFinishDFS(int numCourses, vector<vector<int>> &prerequisites) {
+        vector<vector<int>> graph(numCourses);
+        for (auto &pre : prerequisites) {
+            graph[pre[1]].push_back(pre[0]);
+        }
+        // 0: not visited, 1: visiting, 2: visited
+        vector<int> state(numCourses, 0);
+
+        function<bool(int)> dfs = [&](int pre) -> bool {
+            state[pre] = 1;  // visiting
+            for (int crs : graph[pre]) {
+                if (state[crs] == 1 || (state[crs] == 0 && dfs(crs))) {
+                    return true;
+                }
+            }
+            state[pre] = 2;  // visited
+            return false;
+        };
+
+        for (int i = 0; i < numCourses; i++) {
+            if (state[i] == 0 && dfs(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+};
+
+int main() {
+    Solution sol;
+    vector<vector<int>> prerequisites = {{1, 0}, {2, 1}, {3, 2}, {4, 3},
+                                         {5, 4}, {6, 5}, {7, 6}, {8, 7},
+                                         {9, 8}, {10, 9}};
+    int numCourses = 11;
+    cout << sol.canFinishBFS(numCourses, prerequisites) << endl;
+    cout << sol.canFinishDFS(numCourses, prerequisites) << endl;
+    return 0;
+}
+
 ```
 
 ## 23. Merge k Sorted Lists
@@ -308,7 +1188,83 @@ flowchart LR
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q5a5OiGbT6Q?si=SlQg9SKZh1YL62vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python title="23. Merge k Sorted Lists - Python Solution"
---8<-- "0023_merge_k_sorted_lists.py"
+import copy
+import heapq
+from typing import List, Optional
+
+from template import ListNode
+
+
+# Divide and Conquer
+def mergeKListsDC(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    if not lists or len(lists) == 0:
+        return None
+
+    def mergeTwo(l1, l2):
+        dummy = ListNode()
+        cur = dummy
+
+        while l1 and l2:
+            if l1.val < l2.val:
+                cur.next = l1
+                l1 = l1.next
+            else:
+                cur.next = l2
+                l2 = l2.next
+
+            cur = cur.next
+
+        cur.next = l1 if l1 else l2
+
+        return dummy.next
+
+    while len(lists) > 1:
+        merged = []
+
+        for i in range(0, len(lists), 2):
+            l1 = lists[i]
+            l2 = lists[i + 1] if i + 1 < len(lists) else None
+            merged.append(mergeTwo(l1, l2))
+
+        lists = merged
+
+    return lists[0]
+
+
+# Heap - Merge k Sorted
+def mergeKLists(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    dummy = ListNode()
+    cur = dummy
+
+    minHeap = []  # (val, idx, node)
+
+    for idx, head in enumerate(lists):
+        if head:
+            heapq.heappush(minHeap, (head.val, idx, head))
+
+    while minHeap:
+        _, idx, node = heapq.heappop(minHeap)
+        cur.next = node
+        cur = cur.next
+
+        node = node.next
+        if node:
+            heapq.heappush(minHeap, (node.val, idx, node))
+
+    return dummy.next
+
+
+n1 = ListNode.create([1, 4, 5])
+n2 = ListNode.create([1, 3, 4])
+n3 = ListNode.create([2, 6])
+lists = [n1, n2, n3]
+lists1 = copy.deepcopy(lists)
+lists2 = copy.deepcopy(lists)
+print(mergeKListsDC(lists1))
+# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+print(mergeKLists(lists2))
+# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+
 ```
 
 ## 347. Top K Frequent Elements
@@ -318,7 +1274,35 @@ flowchart LR
 -   Tags: array, hash table, divide and conquer, sorting, heap priority queue, bucket sort, counting, quickselect
 
 ```python title="347. Top K Frequent Elements - Python Solution"
---8<-- "0347_top_k_frequent_elements.py"
+import heapq
+from collections import Counter
+from typing import List
+
+
+# Heap + Counter
+def topKFrequent(nums: List[int], k: int) -> List[int]:
+    minHeap = []
+
+    for val, freq in Counter(nums).items():
+        if len(minHeap) < k:
+            heapq.heappush(minHeap, (freq, val))
+        else:
+            heapq.heappushpop(minHeap, (freq, val))
+
+    return [i for _, i in minHeap]
+
+
+# Counter (Most Common)
+def topKFrequentCounter(nums: List[int], k: int) -> List[int]:
+    commons = Counter(nums).most_common(k)
+    return [i for i, _ in commons]
+
+
+nums = [1, 1, 1, 2, 2, 3]
+k = 2
+print(topKFrequent(nums, k))  # [1, 2]
+print(topKFrequentCounter(nums, k))  # [1, 2]
+
 ```
 
 ## 88. Merge Sorted Array
@@ -328,7 +1312,38 @@ flowchart LR
 -   Tags: array, two pointers, sorting
 
 ```python title="88. Merge Sorted Array - Python Solution"
---8<-- "0088_merge_sorted_array.py"
+from typing import List
+
+
+# Left Right Pointers
+def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+    """Merges two sorted arrays in-place."""
+    p1, p2, t = m - 1, n - 1, m + n - 1
+
+    while p1 >= 0 or p2 >= 0:
+        if p1 == -1:
+            nums1[t] = nums2[p2]
+            p2 -= 1
+        elif p2 == -1:
+            nums1[t] = nums1[p1]
+            p1 -= 1
+        elif nums1[p1] > nums2[p2]:
+            nums1[t] = nums1[p1]
+            p1 -= 1
+        else:
+            nums1[t] = nums2[p2]
+            p2 -= 1
+
+        t -= 1
+
+
+nums1 = [1, 2, 3, 0, 0, 0]
+m = 3
+nums2 = [2, 5, 6]
+n = 3
+merge(nums1, m, nums2, n)
+print(nums1)  # [1, 2, 2, 3, 5, 6]
+
 ```
 
 ## 15. 3Sum
@@ -338,11 +1353,97 @@ flowchart LR
 -   Tags: array, two pointers, sorting
 
 ```python title="15. 3Sum - Python Solution"
---8<-- "0015_3sum.py"
+from typing import List
+
+
+# Left Right Pointers
+def threeSum(nums: List[int]) -> List[List[int]]:
+    nums.sort()
+    res = []
+    n = len(nums)
+
+    for i in range(n - 2):
+        if i > 0 and nums[i] == nums[i - 1]:
+            continue
+
+        left, right = i + 1, n - 1
+
+        while left < right:
+            total = nums[i] + nums[left] + nums[right]
+
+            if total > 0:
+                right -= 1
+            elif total < 0:
+                left += 1
+            else:
+                res.append([nums[i], nums[left], nums[right]])
+
+                while left < right and nums[left] == nums[left + 1]:
+                    left += 1
+
+                while left < right and nums[right] == nums[right - 1]:
+                    right -= 1
+
+                left += 1
+                right -= 1
+
+    return res
+
+
+nums = [-1, 0, 1, 2, -1, -4]
+assert threeSum(nums) == [[-1, -1, 2], [-1, 0, 1]]
+
 ```
 
 ```cpp title="15. 3Sum - C++ Solution"
---8<-- "cpp/0015_3sum.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<vector<int>> threeSum(vector<int>& nums) {
+    sort(nums.begin(), nums.end());
+    vector<vector<int>> res;
+    int n = nums.size();
+
+    for (int i = 0; i < n - 2; i++) {
+        if (i > 0 && nums[i] == nums[i - 1]) {
+            continue;
+        }
+
+        int left = i + 1, right = n - 1;
+
+        while (left < right) {
+            int total = nums[i] + nums[left] + nums[right];
+
+            if (total > 0)
+                right--;
+            else if (total < 0)
+                left++;
+            else {
+                res.push_back({nums[i], nums[left], nums[right]});
+                while (left < right && nums[left] == nums[left + 1]) left++;
+                while (left < right && nums[right] == nums[right - 1]) right--;
+                left++;
+                right--;
+            }
+        }
+    }
+    return res;
+}
+
+int main() {
+    vector<int> nums = {-1, 0, 1, 2, -1, -4};
+    vector<vector<int>> res = threeSum(nums);
+    for (auto& v : res) {
+        for (int i : v) {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
 ```
 
 ## 127. Word Ladder
@@ -360,7 +1461,51 @@ flowchart LR
 | BFS      | O(n \* m^2) | O(n \* m) |
 
 ```python title="127. Word Ladder - Python Solution"
---8<-- "0127_word_ladder.py"
+from collections import defaultdict, deque
+from typing import List
+
+
+# BFS
+def ladderLength(beginWord: str, endWord: str, wordList: List[str]) -> int:
+    if endWord not in wordList:
+        return 0
+
+    n = len(beginWord)
+    graph = defaultdict(list)  # pattern: words
+    wordList.append(beginWord)
+
+    for word in wordList:
+        for i in range(n):
+            pattern = word[:i] + "*" + word[i + 1 :]
+            graph[pattern].append(word)
+
+    visited = set([beginWord])
+    q = deque([beginWord])
+    res = 1
+
+    while q:
+        size = len(q)
+        for _ in range(size):
+            word = q.popleft()
+            if word == endWord:
+                return res
+
+            for i in range(n):
+                pattern = word[:i] + "*" + word[i + 1 :]
+                for neighbor in graph[pattern]:
+                    if neighbor not in visited:
+                        visited.add(neighbor)
+                        q.append(neighbor)
+        res += 1
+
+    return 0
+
+
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
+print(ladderLength(beginWord, endWord, wordList))  # 5
+
 ```
 
 ## 55. Jump Game
@@ -387,11 +1532,55 @@ flowchart LR
 |   8   |   0   |       8       |     8     |          True           |
 
 ```python title="55. Jump Game - Python Solution"
---8<-- "0055_jump_game.py"
+from typing import List
+
+
+# Greedy - Interval
+def canJump(nums: List[int]) -> bool:
+    maxReach = 0
+    i = 0
+    n = len(nums)
+
+    while i <= maxReach:
+        maxReach = max(maxReach, i + nums[i])
+        if maxReach >= n - 1:
+            return True
+        i += 1
+
+    return False
+
+
+print(canJump([2, 3, 1, 1, 4, 1, 2, 0, 0]))  # True
+
 ```
 
 ```cpp title="55. Jump Game - C++ Solution"
---8<-- "cpp/0055_jump_game.cc"
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Solution {
+   public:
+    bool canJump(vector<int>& nums) {
+        int canReach = 0;
+        int n = nums.size();
+
+        for (int i = 0; i < n; i++) {
+            if (i > canReach) return false;
+            canReach = max(canReach, i + nums[i]);
+        }
+        return true;
+    }
+};
+
+int main() {
+    Solution obj;
+    vector<int> nums = {2, 3, 1, 1, 4};
+    cout << obj.canJump(nums) << endl;
+    return 0;
+}
+
 ```
 
 ## 3. Longest Substring Without Repeating Characters
@@ -405,11 +1594,67 @@ flowchart LR
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wiGpQwVHdE0?si=GlOc9C5w5Vy71iTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```python title="3. Longest Substring Without Repeating Characters - Python Solution"
---8<-- "0003_longest_substring_without_repeating_characters.py"
+# Sliding Window Variable Size
+def lengthOfLongestSubstring(s: str) -> int:
+    n = len(s)
+    if n <= 1:
+        return n
+
+    window = set()
+    left = 0
+    res = 0
+
+    for right in range(n):
+        while s[right] in window:
+            window.remove(s[left])
+            left += 1
+        window.add(s[right])
+        res = max(res, right - left + 1)
+
+    return res
+
+
+s = "abcabcbb"
+assert lengthOfLongestSubstring(s) == 3
+
 ```
 
 ```cpp title="3. Longest Substring Without Repeating Characters - C++ Solution"
---8<-- "cpp/0003_longest_substring_without_repeating_characters.cc"
+#include <iostream>
+#include <string>
+#include <unordered_set>
+using namespace std;
+
+int lengthOfLongestSubstring(string s) {
+    int n = s.length();
+    int res = 0;
+    int left = 0;
+    unordered_set<char> window;
+
+    for (int right = 0; right < n; right++) {
+        char ch = s[right];
+
+        while (window.find(ch) != window.end()) {
+            window.erase(s[left]);
+            left++;
+        }
+
+        window.insert(ch);
+        res = max(res, right - left + 1);
+    }
+    return (int)res;
+}
+
+int main() {
+    string s = "abcabcbb";
+    cout << lengthOfLongestSubstring(s) << endl;  // 3
+    s = "bbbbb";
+    cout << lengthOfLongestSubstring(s) << endl;  // 1
+    s = "pwwkew";
+    cout << lengthOfLongestSubstring(s) << endl;  // 3
+    return 0;
+}
+
 ```
 
 ## 14. Longest Common Prefix
@@ -419,7 +1664,88 @@ flowchart LR
 -   Tags: string, trie
 
 ```python title="14. Longest Common Prefix - Python Solution"
---8<-- "0014_longest_common_prefix.py"
+from typing import List
+
+
+# Horizontal Scanning
+def longestCommonPrefixHorizontal(strs: List[str]) -> str:
+    if not strs:
+        return ""
+
+    prefix = strs[0]
+    for i in range(1, len(strs)):
+        while not strs[i].startswith(prefix):
+            prefix = prefix[:-1]
+            if not prefix:
+                return ""
+
+    return prefix
+
+
+# Vertical Scanning
+def longestCommonPrefixVertical(strs: List[str]) -> str:
+    if not strs:
+        return ""
+
+    for i in range(len(strs[0])):
+        char = strs[0][i]
+        for j in range(1, len(strs)):
+            if i >= len(strs[j]) or strs[j][i] != char:
+                return strs[0][:i]
+
+    return strs[0]
+
+
+# Divide and Conquer
+def longestCommonPrefixDivideConquer(strs: List[str]) -> str:
+    if not strs:
+        return ""
+
+    def merge(left, right):
+        n = min(len(left), len(right))
+        for i in range(n):
+            if left[i] != right[i]:
+                return left[:i]
+        return left[:n]
+
+    def helper(strs, start, end):
+        if start == end:
+            return strs[start]
+        mid = start + (end - start) // 2
+        left = helper(strs, start, mid)
+        right = helper(strs, mid + 1, end)
+        return merge(left, right)
+
+    return helper(strs, 0, len(strs) - 1)
+
+
+# Binary Search
+def longestCommonPrefixBinarySearch(strs: List[str]) -> str:
+    if not strs:
+        return ""
+
+    def isCommonPrefix(strs, length):
+        prefix = strs[0][:length]
+        return all(s.startswith(prefix) for s in strs)
+
+    minLen = min(len(s) for s in strs)
+    low, high = 0, minLen
+    while low < high:
+        mid = low + (high - low) // 2
+        if isCommonPrefix(strs, mid + 1):
+            low = mid + 1
+        else:
+            high = mid
+
+    return strs[0][:low]
+
+
+strs = ["flower", "flow", "flight"]
+print(longestCommonPrefixHorizontal(strs))  # "fl"
+print(longestCommonPrefixVertical(strs))  # "fl"
+print(longestCommonPrefixDivideConquer(strs))  # "fl"
+print(longestCommonPrefixBinarySearch(strs))  # "fl"
+
 ```
 
 ## 210. Course Schedule II
@@ -432,11 +1758,159 @@ flowchart LR
 ![0207](../assets/0207.png){width=300px}
 
 ```python title="210. Course Schedule II - Python Solution"
---8<-- "0210_course_schedule_ii.py"
+from collections import defaultdict, deque
+from typing import List
+
+
+# 1. BFS - Kahn's Algorithm
+def findOrderBFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+    graph = defaultdict(list)
+    indegree = defaultdict(int)
+
+    for crs, pre in prerequisites:
+        graph[pre].append(crs)
+        indegree[crs] += 1
+
+    q = deque([i for i in range(numCourses) if indegree[i] == 0])
+    order = []
+
+    while q:
+        pre = q.popleft()
+        order.append(pre)
+
+        for crs in graph[pre]:
+            indegree[crs] -= 1
+            if indegree[crs] == 0:
+                q.append(crs)
+
+    return order if len(order) == numCourses else []
+
+
+# 2. DFS + Set
+def findOrderDFS1(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
+    adj = defaultdict(list)
+    for crs, pre in prerequisites:
+        adj[crs].append(pre)
+
+    visit, cycle = set(), set()
+    order = []
+
+    def dfs(crs):
+        if crs in cycle:
+            return False
+        if crs in visit:
+            return True
+
+        cycle.add(crs)
+        for pre in adj[crs]:
+            if not dfs(pre):
+                return False
+
+        cycle.remove(crs)
+        visit.add(crs)
+        order.append(crs)
+        return True
+
+    for crs in range(numCourses):
+        if not dfs(crs):
+            return []
+
+    return order
+
+
+# 3. DFS + List
+def findOrderDFS2(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
+    adj = defaultdict(list)
+    for pre, crs in prerequisites:
+        adj[crs].append(pre)
+
+    # 0: not visited, 1: visiting, 2: visited
+    state = [0] * numCourses
+    order = []
+
+    def dfs(crs):
+        if state[crs] == 1:
+            return False
+        if state[crs] == 2:
+            return True
+
+        state[crs] = 1
+
+        for pre in adj[crs]:
+            if not dfs(pre):
+                return False
+
+        state[crs] = 2
+        order.append(crs)
+        return True
+
+    for crs in range(numCourses):
+        if not dfs(crs):
+            return []
+
+    return order[::-1]
+
+
+numCourses = 5
+prerequisites = [[0, 1], [0, 2], [1, 3], [1, 4], [3, 4]]
+print(findOrderBFS(numCourses, prerequisites))  # [2, 4, 3, 1, 0]
+print(findOrderDFS1(numCourses, prerequisites))  # [4, 3, 1, 2, 0]
+print(findOrderDFS2(numCourses, prerequisites))  # [4, 3, 2, 1, 0]
+
 ```
 
 ```cpp title="210. Course Schedule II - C++ Solution"
---8<-- "cpp/0210_course_schedule_ii.cc"
+#include <iostream>
+#include <queue>
+#include <vector>
+using namespace std;
+
+class Solution {
+   public:
+    // BFS
+    vector<int> findOrderBFS(int numCourses,
+                             vector<vector<int>> &prerequisites) {
+        vector<vector<int>> graph(numCourses);
+        vector<int> indegree(numCourses, 0);
+
+        for (auto &pre : prerequisites) {
+            graph[pre[1]].push_back(pre[0]);
+            indegree[pre[0]]++;
+        }
+
+        queue<int> q;
+        for (int i = 0; i < numCourses; i++)
+            if (indegree[i] == 0) q.push(i);
+
+        vector<int> order;
+
+        while (!q.empty()) {
+            int cur = q.front();
+            q.pop();
+            order.push_back(cur);
+
+            for (int nxt : graph[cur]) {
+                indegree[nxt]--;
+                if (indegree[nxt] == 0) q.push(nxt);
+            }
+        }
+
+        return (int)order.size() == numCourses ? order : vector<int>{};
+    }
+};
+
+int main() {
+    Solution obj;
+    vector<vector<int>> prerequisites{{1, 0}, {2, 0}, {3, 1}, {3, 2}};
+    vector<int> res = obj.findOrderBFS(4, prerequisites);
+    for (size_t i = 0; i < res.size(); i++) cout << res[i] << "\n";
+    return 0;
+}
+
 ```
 
 ## 138. Copy List with Random Pointer
@@ -446,7 +1920,45 @@ flowchart LR
 -   Tags: hash table, linked list
 
 ```python title="138. Copy List with Random Pointer - Python Solution"
---8<-- "0138_copy_list_with_random_pointer.py"
+from typing import Optional
+
+
+class Node:
+    def __init__(self, x: int, next: "Node" = None, random: "Node" = None):
+        self.val = int(x)
+        self.next = next
+        self.random = random
+
+
+def copyRandomList(head: "Optional[Node]") -> "Optional[Node]":
+    if not head:
+        return None
+
+    # Copy nodes and link them together
+    cur = head
+    while cur:
+        new_node = Node(cur.val)
+        new_node.next = cur.next
+        cur.next = new_node
+        cur = new_node.next
+
+    # Copy random pointers
+    cur = head
+    while cur:
+        cur.next.random = cur.random.next if cur.random else None
+        cur = cur.next.next
+
+    # Separate the original and copied lists
+    cur = head
+    new_head = head.next
+    while cur:
+        new_node = cur.next
+        cur.next = new_node.next
+        new_node.next = new_node.next.next if new_node.next else None
+        cur = cur.next
+
+    return new_head
+
 ```
 
 ## 20. Valid Parentheses
@@ -467,11 +1979,71 @@ flowchart LR
 | `}`  | pop    | ""    |
 
 ```python title="20. Valid Parentheses - Python Solution"
---8<-- "0020_valid_parentheses.py"
+# Stack
+def isValid(s: str) -> bool:
+    hashmap = {
+        ")": "(",
+        "]": "[",
+        "}": "{",
+    }
+    stack = []
+
+    for c in s:
+        if c in hashmap:
+            if stack and stack[-1] == hashmap[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+
+    return True if not stack else False
+
+
+print(isValid("()"))  # True
+print(isValid("()[]{}"))  # True
+print(isValid("(]"))  # False
+
 ```
 
 ```cpp title="20. Valid Parentheses - C++ Solution"
---8<-- "cpp/0020_valid_parentheses.cc"
+#include <cassert>
+#include <stack>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+class Solution {
+   public:
+    bool isValid(string s) {
+        unordered_map<char, char> map{{')', '('}, {'}', '{'}, {']', '['}};
+        stack<char> stack;
+        if (s.length() % 2 == 1) return false;
+
+        for (char& ch : s) {
+            if (stack.empty() || map.find(ch) == map.end()) {
+                stack.push(ch);
+            } else {
+                if (map[ch] != stack.top()) {
+                    return false;
+                }
+                stack.pop();
+            }
+        }
+        return stack.empty();
+    }
+};
+
+int main() {
+    Solution s;
+    assert(s.isValid("()") == true);
+    assert(s.isValid("()[]{}") == true);
+    assert(s.isValid("(]") == false);
+    assert(s.isValid("([)]") == false);
+    assert(s.isValid("{[]}") == true);
+    return 0;
+}
+
 ```
 
 ## 2. Add Two Numbers
@@ -482,11 +2054,77 @@ flowchart LR
 -   Represent the sum of two numbers as a linked list.
 
 ```python title="2. Add Two Numbers - Python Solution"
---8<-- "0002_add_two_numbers.py"
+from typing import Optional
+
+from template import ListNode
+
+
+# Linked List
+def addTwoNumbers(
+    l1: Optional[ListNode], l2: Optional[ListNode]
+) -> Optional[ListNode]:
+    dummy = ListNode(0)
+    cur = dummy
+    carry = 0
+
+    while l1 or l2:
+        v1 = l1.val if l1 else 0
+        v2 = l2.val if l2 else 0
+
+        carry, val = divmod(v1 + v2 + carry, 10)
+        cur.next = ListNode(val)
+        cur = cur.next
+
+        if l1:
+            l1 = l1.next
+        if l2:
+            l2 = l2.next
+
+    if carry:
+        cur.next = ListNode(val=carry)
+
+    return dummy.next
+
+
+l1 = ListNode.create([2, 4, 3])
+l2 = ListNode.create([5, 6, 4])
+print(addTwoNumbers(l1, l2))  # 7 -> 0 -> 8
+
 ```
 
 ```cpp title="2. Add Two Numbers - C++ Solution"
---8<-- "cpp/0002_add_two_numbers.cc"
+struct ListNode {
+    int val;
+    ListNode* next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode* next) : val(x), next(next) {}
+};
+
+class Solution {
+   public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode dummy;
+        ListNode* cur = &dummy;
+        int carry = 0;
+
+        while (l1 || l2 || carry) {
+            if (l1) {
+                carry += l1->val;
+                l1 = l1->next;
+            }
+            if (l2) {
+                carry += l2->val;
+                l2 = l2->next;
+            }
+            cur->next = new ListNode(carry % 10);
+            cur = cur->next;
+            carry /= 10;
+        }
+        return dummy.next;
+    }
+};
+
 ```
 
 ## 70. Climbing Stairs
@@ -514,11 +2152,78 @@ flowchart LR
 | 10  |    34     |    55     |   89    |
 
 ```python title="70. Climbing Stairs - Python Solution"
---8<-- "0070_climbing_stairs.py"
+from functools import cache
+
+
+# DP
+def climbStairsDP(n: int) -> int:
+    if n <= 2:
+        return n
+
+    dp = [i for i in range(n + 1)]
+
+    for i in range(3, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2]
+
+    return dp[n]
+
+
+# DP (Optimized)
+def climbStairsDPOptimized(n: int) -> int:
+    if n <= 2:
+        return n
+
+    first, second = 1, 2
+
+    for _ in range(3, n + 1):
+        first, second = second, first + second
+
+    return second
+
+
+# Recursion
+def climbStairsRecursion(n: int) -> int:
+    @cache
+    def dfs(i: int) -> int:
+        if i <= 1:
+            return 1
+        return dfs(i - 1) + dfs(i - 2)
+
+    return dfs(n)
+
+
+print(climbStairsDP(10))  # 89
+print(climbStairsDPOptimized(10))  # 89
+print(climbStairsRecursion(10))  # 89
+
 ```
 
 ```cpp title="70. Climbing Stairs - C++ Solution"
---8<-- "cpp/0070_climbing_stairs.cc"
+#include <iostream>
+using namespace std;
+
+int climbStairs(int n) {
+    if (n <= 2) return n;
+    int f1 = 1, f2 = 2;
+    int res;
+
+    int i = 3;
+    while (i <= n) {
+        res = f1 + f2;
+        f1 = f2;
+        f2 = res;
+        ++i;
+    }
+    return res;
+}
+
+int main() {
+    cout << climbStairs(2) << endl;  // 2
+    cout << climbStairs(3) << endl;  // 3
+    cout << climbStairs(6) << endl;  // 13
+    return 0;
+}
+
 ```
 
 ## 238. Product of Array Except Self
@@ -535,11 +2240,100 @@ flowchart LR
 | Prefix (Optimized) | O(n) | O(1)  |
 
 ```python title="238. Product of Array Except Self - Python Solution"
---8<-- "0238_product_of_array_except_self.py"
+from typing import List
+
+
+# Prefix
+def productExceptSelf(nums: List[int]) -> List[int]:
+    n = len(nums)
+    prefix = [1 for _ in range(n)]
+    suffix = [1 for _ in range(n)]
+
+    for i in range(1, n):
+        prefix[i] = nums[i - 1] * prefix[i - 1]
+
+    for i in range(n - 2, -1, -1):
+        suffix[i] = nums[i + 1] * suffix[i + 1]
+
+    result = [i * j for i, j in zip(prefix, suffix)]
+
+    return result
+
+
+# Prefix (Optimized)
+def productExceptSelfOptimized(nums: List[int]) -> List[int]:
+    n = len(nums)
+    result = [1 for _ in range(n)]
+
+    prefix = 1
+    for i in range(n):
+        result[i] = prefix
+        prefix *= nums[i]
+
+    suffix = 1
+    for i in range(n - 1, -1, -1):
+        result[i] *= suffix
+        suffix *= nums[i]
+
+    return result
+
+
+print(productExceptSelf([1, 2, 3, 4]))
+# [24, 12, 8, 6]
+print(productExceptSelfOptimized([1, 2, 3, 4]))
+# [24, 12, 8, 6]
+
 ```
 
 ```cpp title="238. Product of Array Except Self - C++ Solution"
---8<-- "cpp/0238_product_of_array_except_self.cc"
+#include <vector>
+#include <iostream>
+using namespace std;
+
+// Prefix Sum
+class Solution
+{
+public:
+    vector<int> productExceptSelf(vector<int> &nums)
+    {
+        int n = nums.size();
+        vector<int> prefix(n, 1);
+        vector<int> suffix(n, 1);
+        vector<int> res(n, 1);
+
+        for (int i = 1; i < n; i++)
+        {
+            prefix[i] = prefix[i - 1] * nums[i - 1];
+        }
+
+        for (int i = n - 2; i >= 0; i--)
+        {
+            suffix[i] = suffix[i + 1] * nums[i + 1];
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            res[i] = prefix[i] * suffix[i];
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    vector<int> nums = {1, 2, 3, 4};
+    Solution obj;
+    vector<int> result = obj.productExceptSelf(nums);
+
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << "\n";
+    }
+    cout << endl;
+    // 24, 12, 8, 6
+    return 0;
+}
+
 ```
 
 ## 560. Subarray Sum Equals K
@@ -549,11 +2343,61 @@ flowchart LR
 -   Tags: array, hash table, prefix sum
 
 ```python title="560. Subarray Sum Equals K - Python Solution"
---8<-- "0560_subarray_sum_equals_k.py"
+from collections import defaultdict
+from typing import List
+
+
+# Prefix Sum
+def subarraySum(nums: List[int], k: int) -> int:
+    preSums = defaultdict(int)
+    preSums[0] = 1
+    curSum = 0
+    res = 0
+
+    for num in nums:
+        curSum += num
+        res += preSums[curSum - k]
+        preSums[curSum] += 1
+
+    return res
+
+
+nums = [1, 1, 1]
+k = 2
+print(subarraySum(nums, k))  # 2
+
 ```
 
 ```cpp title="560. Subarray Sum Equals K - C++ Solution"
---8<-- "cpp/0560_subarray_sum_equals_k.cc"
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+using namespace std;
+
+int subarraySum(vector<int>& nums, int k) {
+    int n = nums.size();
+    vector<int> prefixSum(n + 1);
+    for (int i = 0; i < n; i++) {
+        prefixSum[i + 1] = prefixSum[i] + nums[i];
+    }
+
+    int res = 0;
+    unordered_map<int, int> cnt;
+
+    for (int ps : prefixSum) {
+        if (cnt.find(ps - k) != cnt.end()) res += cnt[ps - k];
+        cnt[ps]++;
+    }
+    return res;
+}
+
+int main() {
+    vector<int> nums = {1, 1, 1};
+    int k = 2;
+    cout << subarraySum(nums, k) << endl;  // 2
+    return 0;
+}
+
 ```
 
 ## 4. Median of Two Sorted Arrays
@@ -563,7 +2407,69 @@ flowchart LR
 -   Tags: array, binary search, divide and conquer
 
 ```python title="4. Median of Two Sorted Arrays - Python Solution"
---8<-- "0004_median_of_two_sorted_arrays.py"
+from typing import List
+
+
+# Brute Force
+def findMedianSortedArraysBF(nums1: List[int], nums2: List[int]) -> float:
+    nums = sorted(nums1 + nums2)
+    n = len(nums)
+    if n % 2 == 0:
+        return (nums[n // 2 - 1] + nums[n // 2]) / 2
+    else:
+        return nums[n // 2]
+
+
+# Binary Search
+def findMedianSortedArraysBS(nums1: List[int], nums2: List[int]) -> float:
+    if len(nums1) > len(nums2):
+        nums1, nums2 = nums2, nums1
+
+    m, n = len(nums1), len(nums2)
+    imin, imax, half_len = 0, m, (m + n + 1) // 2
+
+    while imin <= imax:
+        i = (imin + imax) // 2
+        j = half_len - i
+
+        if i < m and nums2[j - 1] > nums1[i]:
+            imin = i + 1
+        elif i > 0 and nums1[i - 1] > nums2[j]:
+            imax = i - 1
+        else:
+            if i == 0:
+                max_of_left = nums2[j - 1]
+            elif j == 0:
+                max_of_left = nums1[i - 1]
+            else:
+                max_of_left = max(nums1[i - 1], nums2[j - 1])
+
+            if (m + n) % 2 == 1:
+                return max_of_left
+
+            if i == m:
+                min_of_right = nums2[j]
+            elif j == n:
+                min_of_right = nums1[i]
+            else:
+                min_of_right = min(nums1[i], nums2[j])
+
+            return (max_of_left + min_of_right) / 2
+
+
+# |--------------|-----------------|--------------|
+# | Approach     | Time            | Space        |
+# |--------------|-----------------|--------------|
+# | Brute Force  | O((n+m)log(n+m))| O(n+m)       |
+# | Binary Search| O(log(min(n,m)))| O(1)         |
+# |--------------|-----------------|--------------|
+
+
+nums1 = [1, 3]
+nums2 = [2]
+print(findMedianSortedArraysBF(nums1, nums2))  # 2.0
+print(findMedianSortedArraysBS(nums1, nums2))  # 2.0
+
 ```
 
 ## 79. Word Search
@@ -573,7 +2479,53 @@ flowchart LR
 -   Tags: array, string, backtracking, depth first search, matrix
 
 ```python title="79. Word Search - Python Solution"
---8<-- "0079_word_search.py"
+from typing import List
+
+
+def exist(board: List[List[str]], word: str) -> bool:
+    m, n = len(board), len(board[0])
+    path = set()
+    dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
+
+    def dfs(r, c, i):
+        if i == len(word):
+            return True
+
+        if (
+            r < 0
+            or r >= m
+            or c < 0
+            or c >= n
+            or board[r][c] != word[i]
+            or (r, c) in path
+        ):
+            return False
+
+        path.add((r, c))
+
+        for dr, dc in dirs:
+            if dfs(r + dr, c + dc, i + 1):
+                return True
+
+        path.remove((r, c))
+        return False
+
+    for i in range(m):
+        for j in range(n):
+            if dfs(i, j, 0):
+                return True
+
+    return False
+
+
+board = [
+    ["A", "B", "C", "E"],
+    ["S", "F", "C", "S"],
+    ["A", "D", "E", "E"],
+]
+word = "ABCCED"
+print(exist(board, word))  # True
+
 ```
 
 ## 22. Generate Parentheses
@@ -583,7 +2535,37 @@ flowchart LR
 -   Tags: string, dynamic programming, backtracking
 
 ```python title="22. Generate Parentheses - Python Solution"
---8<-- "0022_generate_parentheses.py"
+from typing import List
+
+
+# Stack
+def generateParenthesis(n: int) -> List[str]:
+    stack = []
+    result = []
+
+    def backtrack(openN, closeN):
+        if openN == closeN == n:
+            result.append("".join(stack))
+            return None
+
+        if openN < n:
+            stack.append("(")
+            backtrack(openN + 1, closeN)
+            stack.pop()
+
+        if closeN < openN:
+            stack.append(")")
+            backtrack(openN, closeN + 1)
+            stack.pop()
+
+    backtrack(0, 0)
+
+    return result
+
+
+print(generateParenthesis(3))
+# ['((()))', '(()())', '(())()', '()(())', '()()()']
+
 ```
 
 ## 215. Kth Largest Element in an Array
@@ -593,7 +2575,23 @@ flowchart LR
 -   Tags: array, divide and conquer, sorting, heap priority queue, quickselect
 
 ```python title="215. Kth Largest Element in an Array - Python Solution"
---8<-- "0215_kth_largest_element_in_an_array.py"
+import heapq
+from typing import List
+
+
+def findKthLargest(nums: List[int], k: int) -> int:
+    minHeap = []
+    for i, num in enumerate(nums):
+        heapq.heappush(minHeap, num)
+        if i >= k:
+            heapq.heappop(minHeap)
+    return minHeap[0]
+
+
+nums = [3, 2, 1, 5, 6, 4]
+k = 2
+print(findKthLargest(nums, k))  # 5
+
 ```
 
 ## 295. Find Median from Data Stream
@@ -603,11 +2601,97 @@ flowchart LR
 -   Tags: two pointers, design, sorting, heap priority queue, data stream
 
 ```python title="295. Find Median from Data Stream - Python Solution"
---8<-- "0295_find_median_from_data_stream.py"
+from heapq import heappop, heappush
+
+
+# Dual Heaps
+class MedianFinder:
+
+    def __init__(self):
+        self.minHeap = []
+        self.maxHeap = []
+        self.min_size = 0
+        self.max_size = 0
+
+    def addNum(self, num: int) -> None:
+        heappush(self.maxHeap, -num)
+        heappush(self.minHeap, -heappop(self.maxHeap))
+        self.min_size += 1
+
+        if self.min_size > self.max_size:
+            heappush(self.maxHeap, -heappop(self.minHeap))
+            self.min_size -= 1
+            self.max_size += 1
+
+    def findMedian(self) -> float:
+        if self.min_size == self.max_size:
+            return (-self.maxHeap[0] + self.minHeap[0]) / 2.0
+        return -self.maxHeap[0]
+
+
+obj = MedianFinder()
+obj.addNum(1)
+obj.addNum(2)
+assert obj.findMedian() == 1.5
+obj.addNum(3)
+assert obj.findMedian() == 2
+obj.addNum(4)
+assert obj.findMedian() == 2.5
+obj.addNum(5)
+assert obj.findMedian() == 3
+print("All Passed.")
+
 ```
 
 ```cpp title="295. Find Median from Data Stream - C++ Solution"
---8<-- "cpp/0295_find_median_from_data_stream.cc"
+#include <iostream>
+#include <queue>
+#include <vector>
+using namespace std;
+
+class MedianFinder {
+   private:
+    priority_queue<int> maxHeap;
+    priority_queue<int, vector<int>, greater<int>> minHeap;
+    int max_size = 0;
+    int min_size = 0;
+
+   public:
+    MedianFinder() {}
+
+    void addNum(int num) {
+        if (min_size == max_size) {
+            minHeap.push(num);
+            maxHeap.push(minHeap.top());
+            minHeap.pop();
+            max_size++;
+        } else {
+            maxHeap.push(num);
+            minHeap.push(maxHeap.top());
+            maxHeap.pop();
+            min_size++;
+        }
+    }
+
+    double findMedian() {
+        if (min_size == max_size) {
+            return (maxHeap.top() + minHeap.top()) / 2.0;
+        } else {
+            return (double)maxHeap.top();
+        }
+    }
+};
+
+int main() {
+    MedianFinder* obj = new MedianFinder();
+    obj->addNum(1);
+    obj->addNum(2);
+    cout << obj->findMedian() << endl;  // 1.5
+    obj->addNum(3);
+    cout << obj->findMedian() << endl;  // 2
+    return 0;
+}
+
 ```
 
 ## 5. Longest Palindromic Substring
@@ -618,7 +2702,62 @@ flowchart LR
 -   Return the longest palindromic substring in `s`.
 
 ```python title="5. Longest Palindromic Substring - Python Solution"
---8<-- "0005_longest_palindromic_substring.py"
+# DP - Interval
+def longestPalindromeDP(s: str) -> str:
+    n = len(s)
+    if n <= 1:
+        return s
+
+    start, maxLen = 0, 1
+
+    # Init
+    dp = [[0] * n for _ in range(n)]
+    for i in range(n):
+        dp[i][i] = 1
+
+    for j in range(1, n):
+        for i in range(j):
+            if s[i] == s[j]:
+                if j - i <= 2:
+                    dp[i][j] = 1
+                else:
+                    dp[i][j] = dp[i + 1][j - 1]
+
+                if dp[i][j] and j - i + 1 > maxLen:
+                    maxLen = j - i + 1
+                    start = i
+
+    return s[start : start + maxLen]
+
+
+# Expand Around Center
+def longestPalindromeCenter(s: str) -> str:
+    def expand_around_center(left, right):
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            left -= 1
+            right += 1
+        return right - left - 1
+
+    if len(s) <= 1:
+        return s
+
+    start, end = 0, 0
+    for i in range(len(s)):
+        len1 = expand_around_center(i, i)  # odd
+        len2 = expand_around_center(i, i + 1)  # even
+
+        maxLen = max(len1, len2)
+        if maxLen > end - start:
+            start = i - (maxLen - 1) // 2
+            end = i + maxLen // 2
+
+    return s[start : end + 1]
+
+
+s = "babad"
+print(longestPalindromeDP(s))  # "bab"
+print(longestPalindromeCenter(s))  # "aba"
+
 ```
 
 ## 33. Search in Rotated Sorted Array
@@ -628,5 +2767,35 @@ flowchart LR
 -   Tags: array, binary search
 
 ```python title="33. Search in Rotated Sorted Array - Python Solution"
---8<-- "0033_search_in_rotated_sorted_array.py"
+from typing import List
+
+
+# Binary Search
+def search(nums: List[int], target: int) -> int:
+    left, right = 0, len(nums) - 1
+
+    while left <= right:
+        mid = left + (right - left) // 2
+
+        if nums[mid] == target:
+            return mid
+
+        if nums[left] <= nums[mid]:
+            if nums[left] <= target < nums[mid]:
+                right = mid - 1
+            else:
+                left = mid + 1
+        else:
+            if nums[mid] < target <= nums[right]:
+                left = mid + 1
+            else:
+                right = mid - 1
+
+    return -1
+
+
+nums = [4, 5, 6, 7, 0, 1, 2]
+target = 0
+print(search(nums, target))  # 4
+
 ```

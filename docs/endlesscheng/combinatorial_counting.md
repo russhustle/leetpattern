@@ -41,11 +41,50 @@ comments: True
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
 ```python title="62. Unique Paths - Python Solution"
---8<-- "0062_unique_paths.py"
+# DP - 2D
+def uniquePaths(m: int, n: int) -> int:
+    if m == 1 or n == 1:
+        return 1
+
+    dp = [[1] * n for _ in range(m)]
+
+    for i in range(1, m):
+        for j in range(1, n):
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+
+    return dp[-1][-1]
+
+
+print(uniquePaths(m=3, n=7))  # 28
+# [[1, 1, 1,  1,  1,  1,  1],
+#  [1, 2, 3,  4,  5,  6,  7],
+#  [1, 3, 6, 10, 15, 21, 28]]
+
 ```
 
 ```cpp title="62. Unique Paths - C++ Solution"
---8<-- "cpp/0062_unique_paths.cc"
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int uniquePaths(int m, int n) {
+    vector dp(m, vector<int>(n, 1));
+
+    for (int i = 1; i < m; i++) {
+        for (int j = 1; j < n; j++) {
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+        }
+    }
+
+    return dp[m - 1][n - 1];
+}
+
+int main() {
+    int m = 3, n = 7;
+    cout << uniquePaths(m, n) << endl;  // 28
+    return 0;
+}
+
 ```
 
 ## 357. Count Numbers with Unique Digits

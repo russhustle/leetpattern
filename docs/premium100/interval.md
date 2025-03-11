@@ -23,7 +23,23 @@ comments: True
 -   Tags: array, sorting
 
 ```python title="252. Meeting Rooms - Python Solution"
---8<-- "0252_meeting_rooms.py"
+from typing import List
+
+
+# Interval
+def canAttendMeetings(intervals: List[List[int]]) -> bool:
+    intervals.sort(key=lambda x: x[0])
+
+    for i in range(1, len(intervals)):
+        if intervals[i][0] < intervals[i - 1][1]:
+            return False
+
+    return True
+
+
+intervals = [[0, 30], [5, 10], [15, 20]]
+print(canAttendMeetings(intervals))  # False
+
 ```
 
 ## 253. Meeting Rooms II
@@ -33,7 +49,29 @@ comments: True
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 
 ```python title="253. Meeting Rooms II - Python Solution"
---8<-- "0253_meeting_rooms_ii.py"
+import heapq
+from typing import List
+
+
+# Heap
+def minMeetingRooms(intervals: List[List[int]]) -> int:
+    if not intervals:
+        return 0
+
+    intervals.sort(key=lambda x: x[0])
+    heap = [intervals[0][1]]
+
+    for i in range(1, len(intervals)):
+        if intervals[i][0] >= heap[0]:
+            heapq.heappop(heap)
+        heapq.heappush(heap, intervals[i][1])
+
+    return len(heap)
+
+
+intervals = [[0, 30], [5, 10], [15, 20]]
+print(minMeetingRooms(intervals))  # 2
+
 ```
 
 ## 616. Add Bold Tag in String

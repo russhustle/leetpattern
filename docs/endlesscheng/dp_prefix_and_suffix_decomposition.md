@@ -90,7 +90,32 @@ comments: True
 -   Tags: array, dynamic programming, sliding window
 
 ```python title="1493. Longest Subarray of 1's After Deleting One Element - Python Solution"
---8<-- "1493_longest_subarray_of_1s_after_deleting_one_element.py"
+from typing import List
+
+
+# Sliding Window Variable Size
+def longestSubarray(nums: List[int]) -> int:
+    zeroCount = 0
+    res = 0
+    left = 0
+
+    for right in range(len(nums)):
+        if nums[right] == 0:
+            zeroCount += 1
+
+        while zeroCount > 1:
+            if nums[left] == 0:
+                zeroCount -= 1
+            left += 1
+
+        res = max(res, right - left)
+
+    return res
+
+
+nums = [1, 1, 0, 1]
+print(longestSubarray(nums))  # 3
+
 ```
 
 ## 845. Longest Mountain in Array
@@ -100,7 +125,35 @@ comments: True
 -   Tags: array, two pointers, dynamic programming, enumeration
 
 ```python title="845. Longest Mountain in Array - Python Solution"
---8<-- "0845_longest_mountain_in_array.py"
+from typing import List
+
+
+# Left Right Pointers
+def longestMountain(arr: List[int]) -> int:
+    n = len(arr)
+    res = 0
+    left = 0
+
+    while left < n:
+        right = left
+
+        if right < n - 1 and arr[right] < arr[right + 1]:
+            while right < n - 1 and arr[right] < arr[right + 1]:
+                right += 1
+
+            if right < n - 1 and arr[right] > arr[right + 1]:
+                while right < n - 1 and arr[right] > arr[right + 1]:
+                    right += 1
+                res = max(res, right - left + 1)
+
+        left = max(right, left + 1)
+
+    return res
+
+
+arr = [2, 1, 4, 7, 3, 2, 5]
+print(longestMountain(arr))  # 5
+
 ```
 
 ## 2012. Sum of Beauty in the Array
@@ -110,7 +163,33 @@ comments: True
 -   Tags: array
 
 ```python title="2012. Sum of Beauty in the Array - Python Solution"
---8<-- "2012_sum_of_beauty_in_the_array.py"
+from typing import List
+
+
+# DP Prefix and Suffix Decomposition
+def sumOfBeauties(nums: List[int]) -> int:
+    n = len(nums)
+    suf_min = [0] * n
+    suf_min[n - 1] = nums[n - 1]
+    for i in range(n - 2, 1, -1):
+        suf_min[i] = min(suf_min[i + 1], nums[i])
+
+    res = 0
+    pre_max = nums[0]
+    for i in range(1, n - 1):
+        x = nums[i]
+        if pre_max < x < suf_min[i + 1]:
+            res += 2
+        elif nums[i - 1] < x < nums[i + 1]:
+            res += 1
+        pre_max = max(pre_max, x)
+
+    return res
+
+
+nums = [2, 4, 6, 4, 5]
+print(sumOfBeauties(nums))  # 1
+
 ```
 
 ## 2909. Minimum Sum of Mountain Triplets II
@@ -150,7 +229,51 @@ comments: True
 -   Tags: array, dynamic programming
 
 ```python title="123. Best Time to Buy and Sell Stock III - Python Solution"
---8<-- "0123_best_time_to_buy_and_sell_stock_iii.py"
+from typing import List
+
+
+# 1. DP
+def maxProfitDP1(prices: List[int]) -> int:
+    n = len(prices)
+    if n <= 1:
+        return 0
+
+    dp = [[0] * 5 for _ in range(n)]
+
+    dp[0][0] = 0  # no transaction
+    dp[0][1] = -prices[0]  # buy 1
+    dp[0][2] = 0  # sell 1
+    dp[0][3] = -prices[0]  # buy 2
+    dp[0][4] = 0  # sell 2
+
+    for i in range(1, n):
+        dp[i][0] = dp[i - 1][0]
+        dp[i][1] = max(dp[i - 1][1], -prices[i])
+        dp[i][2] = max(dp[i - 1][2], dp[i - 1][1] + prices[i])
+        dp[i][3] = max(dp[i - 1][3], dp[i - 1][2] - prices[i])
+        dp[i][4] = max(dp[i - 1][4], dp[i - 1][3] + prices[i])
+
+    return dp[-1][4]
+
+
+# 2. DP - Optimized
+def maxProfitDP2(prices: List[int]) -> int:
+    b1, b2 = float("inf"), float("inf")
+    s1, s2 = 0, 0
+
+    for price in prices:
+        b1 = min(b1, price)
+        s1 = max(s1, price - b1)
+        b2 = min(b2, price - s1)
+        s2 = max(s2, price - b2)
+
+    return s2
+
+
+prices = [3, 3, 5, 0, 0, 3, 1, 4]
+print(maxProfitDP1(prices))  # 6
+print(maxProfitDP2(prices))  # 6
+
 ```
 
 ## 2222. Number of Ways to Select Buildings
@@ -214,7 +337,26 @@ comments: True
 -   Tags: array, dynamic programming
 
 ```python title="1186. Maximum Subarray Sum with One Deletion - Python Solution"
---8<-- "1186_maximum_subarray_sum_with_one_deletion.py"
+from typing import List
+
+
+# DP - Kadane
+def maximumSum(arr: List[int]) -> int:
+    dp0 = arr[0]
+    dp1 = 0
+    maxSum = dp0
+
+    for i in range(1, len(arr)):
+        dp1 = max(dp1 + arr[i], dp0)  # delete previous element or not
+        dp0 = max(dp0, 0) + arr[i]  # delete current element or not
+        maxSum = max(maxSum, dp0, dp1)  # update result
+
+    return maxSum
+
+
+arr = [1, -2, 0, 3]
+print(maximumSum(arr))  # 4
+
 ```
 
 ## 42. Trapping Rain Water
@@ -233,11 +375,122 @@ comments: True
 | Monotonic  | O(N) | O(N)  |
 
 ```python title="42. Trapping Rain Water - Python Solution"
---8<-- "0042_trapping_rain_water.py"
+from typing import List
+
+
+# DP
+def trapDP(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    n = len(height)
+    maxLeft, maxRight = [0 for _ in range(n)], [0 for _ in range(n)]
+
+    for i in range(1, n):
+        maxLeft[i] = max(maxLeft[i - 1], height[i - 1])
+
+    for i in range(n - 2, -1, -1):
+        maxRight[i] = max(maxRight[i + 1], height[i + 1])
+
+    res = 0
+    for i in range(n):
+        res += max(0, min(maxLeft[i], maxRight[i]) - height[i])
+
+    return res
+
+
+# Left Right Pointers
+def trapLR(height: List[int]) -> int:
+    if not height:
+        return 0
+
+    left, right = 0, len(height) - 1
+    maxL, maxR = height[left], height[right]
+    res = 0
+
+    while left < right:
+        if maxL < maxR:
+            left += 1
+            maxL = max(maxL, height[left])
+            res += maxL - height[left]
+        else:
+            right -= 1
+            maxR = max(maxR, height[right])
+            res += maxR - height[right]
+
+    return res
+
+
+# Monotonic Stack
+def trapStack(height: List[int]) -> int:
+    stack = []
+    total = 0
+
+    for i in range(len(height)):
+        while stack and height[i] > height[stack[-1]]:
+            top = stack.pop()
+            if not stack:
+                break
+            distance = i - stack[-1] - 1
+            bounded_height = min(height[i], height[stack[-1]]) - height[top]
+            total += distance * bounded_height
+        stack.append(i)
+
+    return total
+
+
+height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+print(trapDP(height))  # 6
+print(trapLR(height))  # 6
+print(trapStack(height))  # 6
+
 ```
 
 ```cpp title="42. Trapping Rain Water - C++ Solution"
---8<-- "cpp/0042_trapping_rain_water.cc"
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+class Solution
+{
+public:
+    int trap(vector<int> &height)
+    {
+        if (height.empty())
+            return 0;
+
+        int res = 0;
+        int left = 0, right = height.size() - 1;
+        int maxL = height[left], maxR = height[right];
+
+        while (left < right)
+        {
+            if (maxL < maxR)
+            {
+                left++;
+                maxL = max(maxL, height[left]);
+                res += maxL - height[left];
+            }
+            else
+            {
+                right--;
+                maxR = max(maxR, height[right]);
+                res += maxR - height[right];
+            }
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    vector<int> height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+    Solution solution;
+    cout << solution.trap(height) << endl;
+    return 0;
+}
+
 ```
 
 ## 2711. Difference of Number of Distinct Values on Diagonals
@@ -265,7 +518,36 @@ comments: True
 -   Tags: array, binary search, dynamic programming, greedy
 
 ```python title="1671. Minimum Number of Removals to Make Mountain Array - Python Solution"
---8<-- "1671_minimum_number_of_removals_to_make_mountain_array.py"
+from typing import List
+
+
+# DP - LIS
+def minimumMountainRemovals(nums: List[int]) -> int:
+    n = len(nums)
+    lis = [1 for _ in range(n)]
+    lds = [1 for _ in range(n)]
+
+    for i in range(1, n):
+        for j in range(i):
+            if nums[i] > nums[j]:
+                lis[i] = max(lis[i], lis[j] + 1)
+
+    for i in range(n - 2, -1, -1):
+        for j in range(n - 1, i, -1):
+            if nums[i] > nums[j]:
+                lds[i] = max(lds[i], lds[j] + 1)
+
+    maxLen = 0
+    for i in range(1, n - 1):
+        if lis[i] > 1 and lds[i] > 1:
+            maxLen = max(maxLen, lis[i] + lds[i] - 1)
+
+    return n - maxLen
+
+
+nums = [2, 1, 1, 5, 6, 2, 3, 1]
+print(minimumMountainRemovals(nums))  # 3
+
 ```
 
 ## 1888. Minimum Number of Flips to Make the Binary String Alternating
@@ -288,11 +570,100 @@ comments: True
 | Prefix (Optimized) | O(n) | O(1)  |
 
 ```python title="238. Product of Array Except Self - Python Solution"
---8<-- "0238_product_of_array_except_self.py"
+from typing import List
+
+
+# Prefix
+def productExceptSelf(nums: List[int]) -> List[int]:
+    n = len(nums)
+    prefix = [1 for _ in range(n)]
+    suffix = [1 for _ in range(n)]
+
+    for i in range(1, n):
+        prefix[i] = nums[i - 1] * prefix[i - 1]
+
+    for i in range(n - 2, -1, -1):
+        suffix[i] = nums[i + 1] * suffix[i + 1]
+
+    result = [i * j for i, j in zip(prefix, suffix)]
+
+    return result
+
+
+# Prefix (Optimized)
+def productExceptSelfOptimized(nums: List[int]) -> List[int]:
+    n = len(nums)
+    result = [1 for _ in range(n)]
+
+    prefix = 1
+    for i in range(n):
+        result[i] = prefix
+        prefix *= nums[i]
+
+    suffix = 1
+    for i in range(n - 1, -1, -1):
+        result[i] *= suffix
+        suffix *= nums[i]
+
+    return result
+
+
+print(productExceptSelf([1, 2, 3, 4]))
+# [24, 12, 8, 6]
+print(productExceptSelfOptimized([1, 2, 3, 4]))
+# [24, 12, 8, 6]
+
 ```
 
 ```cpp title="238. Product of Array Except Self - C++ Solution"
---8<-- "cpp/0238_product_of_array_except_self.cc"
+#include <vector>
+#include <iostream>
+using namespace std;
+
+// Prefix Sum
+class Solution
+{
+public:
+    vector<int> productExceptSelf(vector<int> &nums)
+    {
+        int n = nums.size();
+        vector<int> prefix(n, 1);
+        vector<int> suffix(n, 1);
+        vector<int> res(n, 1);
+
+        for (int i = 1; i < n; i++)
+        {
+            prefix[i] = prefix[i - 1] * nums[i - 1];
+        }
+
+        for (int i = n - 2; i >= 0; i--)
+        {
+            suffix[i] = suffix[i + 1] * nums[i + 1];
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            res[i] = prefix[i] * suffix[i];
+        }
+        return res;
+    }
+};
+
+int main()
+{
+    vector<int> nums = {1, 2, 3, 4};
+    Solution obj;
+    vector<int> result = obj.productExceptSelf(nums);
+
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << "\n";
+    }
+    cout << endl;
+    // 24, 12, 8, 6
+    return 0;
+}
+
 ```
 
 ## 2906. Construct Product Matrix
@@ -344,7 +715,34 @@ comments: True
 -   Tags: array, dynamic programming, binary indexed tree, enumeration, prefix sum
 
 ```python title="2552. Count Increasing Quadruplets - Python Solution"
---8<-- "2552_count_increasing_quadruplets.py"
+from typing import List
+
+
+# DP
+def countQuadruplets(nums: List[int]) -> int:
+    n = len(nums)
+    great = [[0] * (n + 1) for _ in range(n)]
+    less = [0 for _ in range(n + 1)]
+
+    for k in range(n - 2, 1, -1):
+        great[k] = great[k + 1].copy()
+        for x in range(1, nums[k + 1]):
+            great[k][x] += 1
+
+    ans = 0
+
+    for j in range(1, n - 1):
+        for x in range(nums[j - 1] + 1, n + 1):
+            less[x] += 1
+        for k in range(j + 1, n - 1):
+            if nums[j] > nums[k]:
+                ans += less[nums[k]] * great[k][nums[j]]
+    return ans
+
+
+nums = [1, 3, 2, 4, 5]
+print(countQuadruplets(nums))  # 2
+
 ```
 
 ## 3302. Find the Lexicographically Smallest Valid Sequence

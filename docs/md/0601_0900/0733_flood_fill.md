@@ -5,9 +5,9 @@
   It checks adjacent cells (up, down, left, right) of a starting point to determine whether they belong to the same region.
   Typically, it involves modifying or marking the cells that belong to the same connected component.
 
-![flood_fill](../assets/flood_fill_example.png)
+![flood_fill](../../assets/flood_fill_example.png)
 
-![733](../assets/0733.jpg)
+![733](../../assets/0733.jpg)
 
 |  1  |   1   |  1  |
 | :-: | :---: | :-: |

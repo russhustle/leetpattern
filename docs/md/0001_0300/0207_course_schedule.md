@@ -9,9 +9,9 @@
     - Indegree: Number of incoming edges to a vertex
   - Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
 
-![ts1](../assets/graph_ts1.png)
+![ts1](../../assets/graph_ts1.png)
 
-![ts2](../assets/graph_ts2.png)
+![ts2](../../assets/graph_ts2.png)
 
 Course to prerequisites mapping
 

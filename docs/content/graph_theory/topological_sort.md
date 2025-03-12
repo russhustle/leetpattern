@@ -26,9 +26,9 @@ comments: True
     - Indegree: Number of incoming edges to a vertex
   - Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
 
-![ts1](../assets/graph_ts1.png)
+![ts1](../../assets/graph_ts1.png)
 
-![ts2](../assets/graph_ts2.png)
+![ts2](../../assets/graph_ts2.png)
 
 Course to prerequisites mapping
 
@@ -318,7 +318,7 @@ int main() {
 -   Tags: depth first search, breadth first search, graph, topological sort
 - Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
-![0207](../assets/0207.png)
+![0207](../../assets/0207.png)
 
 ```python title="210. Course Schedule II - Python Solution"
 from collections import defaultdict, deque

@@ -4,7 +4,7 @@ comments: True
 
 # EndlessCheng 灵茶山艾府
 
-![endlesscheng](../assets/endlesscheng.png)
+![endlesscheng](../../assets/endlesscheng.png)
 (_As of 2025 February_)
 
 - [EndlessCheng 灵茶山艾府 - LeetCode](https://leetcode.cn/u/endlesscheng/)

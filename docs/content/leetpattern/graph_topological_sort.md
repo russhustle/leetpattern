@@ -20,7 +20,7 @@ comments: True
 - Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
 - ✅ Return the vertices with indegree 0.
 
-![1557](../assets/1557.png)
+![1557](../../assets/1557.png)
 
 - `edges = [[0, 1], [0, 2], [2, 5], [3, 4], [4, 2]]`
 - Initialization
@@ -97,9 +97,9 @@ print(findSmallestSetOfVertices(n, edges))  # [0, 3]
     - Indegree: Number of incoming edges to a vertex
   - Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
 
-![ts1](../assets/graph_ts1.png)
+![ts1](../../assets/graph_ts1.png)
 
-![ts2](../assets/graph_ts2.png)
+![ts2](../../assets/graph_ts2.png)
 
 Course to prerequisites mapping
 
@@ -389,7 +389,7 @@ int main() {
 -   Tags: depth first search, breadth first search, graph, topological sort
 - Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
-![0207](../assets/0207.png)
+![0207](../../assets/0207.png)
 
 ```python title="210. Course Schedule II - Python Solution"
 from collections import defaultdict, deque
@@ -776,7 +776,7 @@ print(largestPathValue(colors, edges))  # 3
 -   Tags: graph, topological sort
 - Return the minimum number of semesters needed to take all courses.
 
-![1136](../assets/1136.png)
+![1136](../../assets/1136.png)
 
 ```python title="1136. Parallel Courses - Python Solution"
 from collections import deque

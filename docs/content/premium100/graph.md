@@ -235,7 +235,7 @@ print(numDistinctIslandsDFS(deepcopy(grid)))  # 3
 -   Tags: graph, topological sort
 - Return the minimum number of semesters needed to take all courses.
 
-![1136](../assets/1136.png)
+![1136](../../assets/1136.png)
 
 ```python title="1136. Parallel Courses - Python Solution"
 from collections import deque

@@ -19,7 +19,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-preorder-traversal/) (Easy)
 
 -   Tags: stack, tree, depth first search, binary tree
-![tree_traversal](../assets/tree_traversal_dfs_bfs.png)
+![tree_traversal](../../assets/tree_traversal_dfs_bfs.png)
 
 ### Example 1
 

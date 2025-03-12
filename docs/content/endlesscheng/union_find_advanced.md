@@ -359,9 +359,9 @@ print(numSimilarGroups(strs))  # 2
 -   [LeetCode](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) | [LeetCode CH](https://leetcode.cn/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) (Hard)
 
 -   Tags: union find, graph
--   Return the maximum number of edges you can remove so that the graph remains fully traversable.
+- Return the maximum number of edges you can remove so that the graph remains fully traversable.
 
-![1579](../assets/1579.png){width=200px}
+![1579](../../assets/1579.png){width=200px}
 
 ```python title="1579. Remove Max Number of Edges to Keep Graph Fully Traversable - Python Solution"
 from typing import List

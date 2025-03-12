@@ -650,9 +650,9 @@ print(numOfMinutesBFS(n, headID, manager, informTime))  # 1
 -   [LeetCode](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [LeetCode CH](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard)
 
 -   Tags: union find, graph, heap priority queue, minimum spanning tree
-- ![1168_0](../assets/1168_0.png)
+- ![1168_0](../../assets/1168_0.png)
 
-- ![1168_1](../assets/1168_1.png)
+- ![1168_1](../../assets/1168_1.png)
 
 ```python title="1168. Optimize Water Distribution in a Village - Python Solution"
 import heapq

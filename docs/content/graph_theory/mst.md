@@ -60,28 +60,28 @@ print(minimumCost(n, connections))  # 6
 -   [LeetCode](https://leetcode.com/problems/min-cost-to-connect-all-points/) | [LeetCode CH](https://leetcode.cn/problems/min-cost-to-connect-all-points/) (Medium)
 
 -   Tags: array, union find, graph, minimum spanning tree
--   **Tree**: a connected acyclic graph
--   **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
--   **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
--   Prim's Algorithm
-    -   Data Structure: Heap
-    -   Time Complexity: O(E \* logV)
-    -   Space Complexity: O(V + E)
--   Kruskal's Algorithm
+- **Tree**: a connected acyclic graph
+- **Spanning Tree**: a subgraph that is a tree and connects all the vertices together
+- **Minimum Spanning Tree (MST)**: a spanning tree with the minimum possible sum of edge weights
+- Prim's Algorithm
+  - Data Structure: Heap
+  - Time Complexity: O(E \* logV)
+  - Space Complexity: O(V + E)
+- Kruskal's Algorithm
 
-    -   Union Find
-    -   Time Complexity: O(E \* logV)
-    -   Space Complexity: O(V + E)
+  - Union Find
+  - Time Complexity: O(E \* logV)
+  - Space Complexity: O(V + E)
 
--   Demonstration
+- Demonstration
 
 Example graph
 
-![mst1](../assets/mst_1.png)
+![mst1](../../assets/mst_1.png)
 
 MST
 
-![mst2](../assets/mst_2.png)
+![mst2](../../assets/mst_2.png)
 
 ```python title="1584. Min Cost to Connect All Points - Python Solution"
 import heapq
@@ -177,9 +177,9 @@ print(minCostConnectPointsKruskal(points))  # 20
 -   [LeetCode](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) | [LeetCode CH](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) (Hard)
 
 -   Tags: union find, graph, heap priority queue, minimum spanning tree
-- ![1168_0](../assets/1168_0.png)
+- ![1168_0](../../assets/1168_0.png)
 
-- ![1168_1](../assets/1168_1.png)
+- ![1168_1](../../assets/1168_1.png)
 
 ```python title="1168. Optimize Water Distribution in a Village - Python Solution"
 import heapq

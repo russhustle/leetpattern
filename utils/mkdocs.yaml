@@ -112,6 +112,7 @@ plugins:
 - exclude:
     glob:
     - "md/*.md"
+    - "content/home/*.md"
 
 extra:
   creator: Sihan A

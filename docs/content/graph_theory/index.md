@@ -20,7 +20,7 @@ comment: True
 
 - **Undirected graph**: A graph in which edges have no direction.
 
-![undirected_graph](../assets/undirected_graph.png)
+![undirected_graph](../../assets/undirected_graph.png)
 
 - **Directed graph**: A graph in which edges have direction.
 
@@ -43,28 +43,28 @@ D --> A
 
 - **Acyclic graph**: A graph in which there is no cycle.
 
-![acyclic_graph](../assets/graph_acyclic.png)
+![acyclic_graph](../../assets/graph_acyclic.png)
 
 - **Directed Acyclic Graph** (DAG): A directed graph with no cycles.
   - Topological sort
 
-![dag](../assets/graph_dag.png)
+![dag](../../assets/graph_dag.png)
 
 - **Weighted graph**: A graph in which edges have weights.
 
-![weighted](../assets/graph_weighted.png)
+![weighted](../../assets/graph_weighted.png)
 
 - **Connected Graph**: A graph in which there is a path between every pair of vertices.
 
-![connected](../assets/graph_connected.png)
+![connected](../../assets/graph_connected.png)
 
 - **Disconnected Graph**: A graph in which there is no path between some pairs of vertices.
 
-![disconnected](../assets/graph_disconnected.png)
+![disconnected](../../assets/graph_disconnected.png)
 
 - **Eulerian path**: A path that visits every edge exactly once, e.g., `5 -> 4 -> 1 -> 2 -> 3`.
 
-![eulerian](../assets/graph_eulerian.png)
+![eulerian](../../assets/graph_eulerian.png)
 
 ### Representation
 

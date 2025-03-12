@@ -59,7 +59,7 @@ print(findJudge(n, trust))  # 4
 - Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
 - ✅ Return the vertices with indegree 0.
 
-![1557](../assets/1557.png)
+![1557](../../assets/1557.png)
 
 - `edges = [[0, 1], [0, 2], [2, 5], [3, 4], [4, 2]]`
 - Initialization

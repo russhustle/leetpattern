@@ -44,12 +44,14 @@ def create_problem_files(qid: int):
     """Create problem files for a given leetcode question ID"""
     df = pd.read_parquet(os.path.join("utils", "questions.parquet"))
     row = df.loc[qid]
-    problem_md_path = os.path.join("docs", "md", row["basename"] + ".md")
+    problem_md_path = row["md_path"]
     check_make_file(problem_md_path)
 
     if row["categorySlug"] == "algorithms":
-        problem_py_path = os.path.join("src", row["basename"] + ".py")
+        problem_py_path = row["python_path"]
         check_make_file(problem_py_path)
+        problem_cc_path = row["cpp_path"]
+        check_make_file(problem_cc_path)
         print("created", problem_py_path)
     elif row["categorySlug"] == "database":
         problem_sql_path = os.path.join("src", "sql", row["basename"] + ".sql")
@@ -65,8 +67,8 @@ def code(category: str, row: DataFrame) -> str:
     title = f"{row["QID"]}. {row["title"]}"
 
     if category == "algorithms":
-        py_path = os.path.join("src", basename + ".py")
-        cc_path = os.path.join("src", "cpp", basename + ".cc")
+        py_path = row["python_path"]
+        cc_path = row["cpp_path"]
         content = ""
 
         if file_not_empty(py_path):

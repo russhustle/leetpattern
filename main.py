@@ -24,85 +24,85 @@ def topic_progress(
     content = ""
     for problem in problems:
         row = df.loc[problem]
-
         if category == "algorithms":
-            py_path = os.path.join("src", row["basename"] + ".py")
-            cc_path = os.path.join("src", "cpp", row["basename"] + ".cc")
-            completed = file_not_empty(py_path) or file_not_empty(cc_path)
+            completed = file_not_empty(row["python_path"])
+            completed = completed or file_not_empty(row["cpp_path"])
             progress = "x" if completed else " "
-
         elif category == "sql":
-            sql_path = os.path.join("src", "sql", row["basename"] + ".sql")
-            progress = "x" if file_not_empty(sql_path) else " "
-
+            progress = "x" if file_not_empty(row["sql_path"]) else " "
         content += (
             f"- [{progress}] [{row['QID']}. {row['title']}]({row['urlCh']})"
         )
         content += f" ({row['difficulty']})"
         content += " 👑\n" if row["paidOnly"] else "\n"
-
     return content + "\n"
 
 
-def create(config_path: str) -> str:
+def make_list_mkdocs(config_path):
+    """Generate mkdocs list for the config."""
     cfg = load_config_yaml(os.path.join("config", config_path + ".yaml"))
-    src = os.path.join("src")
-    docs = os.path.join("docs")
-    folder = os.path.join(docs, cfg.dir)
-    if not os.path.exists(folder):
-        os.makedirs(folder)
+    mkdocs = f"  - {cfg.name}:\n"
+    mkdocs += f"    - Home: content/{cfg.dir}/index.md\n"
+    for topic, _ in cfg.topics.items():
+        md_path_name = topic.lower().replace(" ", "_") + ".md"
+        mkdocs += f"    - {topic}: content/{cfg.dir}/{md_path_name}\n"
+    return mkdocs
 
-    comments = "---\ncomments: True\n---\n\n"
 
-    # index.md
-    index_md_path = os.path.join(folder, "index.md")
-    if not os.path.exists(index_md_path):
-        with open(index_md_path, "w") as f:
+def make_list_index(config: str):
+    """Generate index.md for the config.
+
+    Args:
+        config_path (str): Path to the config file.
+    """
+    cfg = load_config_yaml(os.path.join("config", config + ".yaml"))
+    dir_md = os.path.join("docs", "content", "home", cfg.dir + ".md")
+    index_md = os.path.join("docs", "content", cfg.dir, "index.md")
+
+    if not os.path.exists(dir_md):
+        comments = "---\ncomments: True\n---\n\n"
+        with open(dir_md, "w") as f:
             f.write(comments + f"# {cfg.name}\n\n")
 
-    df = pd.read_parquet(os.path.join("utils", "questions.parquet"))
+    with open(dir_md, "r") as f:
+        content = f.read()
 
-    # mkdocs
-    mkdocs = f"  - {cfg.name}:\n"
-    mkdocs += f"    - Home: {cfg.dir}/index.md\n"
+    with open(index_md, "w") as f:
+        f.write(content)
+
+
+def make_list_md(config_path):
+    cfg = load_config_yaml(os.path.join("config", config_path + ".yaml"))
+    folder = os.path.join("docs", "content", cfg.dir)
+    df = pd.read_parquet(os.path.join("utils", "questions.parquet"))
+    comments = "---\ncomments: True\n---\n\n"
+
+    if not os.path.exists(folder):
+        os.makedirs(folder)
 
     for topic, problems in cfg.topics.items():
         md_path_name = topic.lower().replace(" ", "_") + ".md"
         md_path = os.path.join(folder, md_path_name)
 
-        mkdocs += f"    - {topic}: {cfg.dir}/{md_path_name}\n"
-
         content = comments
         content += f"# {topic}\n\n"
         content += topic_progress(df, problems, cfg.category)
-        problems = cfg.topics[topic]
 
         for idx in problems:
             row = df.loc[idx]
 
             # file checks
-            problem_md_path = os.path.join(docs, "md", row["basename"] + ".md")
-            check_make_file(problem_md_path)
+            check_make_file(row["md_path"])
             if cfg.category == "algorithms":
-                problem_py_path = os.path.join(src, row["basename"] + ".py")
-                problem_cc_path = os.path.join(
-                    src, "cpp", row["basename"] + ".cc"
-                )
-                check_make_file(problem_py_path)
-                check_make_file(problem_cc_path)
+                check_make_file(row["python_path"])
+                check_make_file(row["cpp_path"])
             elif cfg.category == "sql":
-                problem_sql_path = os.path.join(
-                    src, "sql", row["basename"] + ".sql"
-                )
-                problem_txt_path = os.path.join(
-                    src, "sql", row["basename"] + ".txt"
-                )
-                check_make_file(problem_sql_path)
-                check_make_file(problem_txt_path)
+                check_make_file(row["sql_path"])
+                check_make_file(row["txt_path"])
 
             content += row["markdown"]
 
-            with open(problem_md_path, "r") as f:
+            with open(row["md_path"], "r") as f:
                 content += f.read() + "\n"
 
             content += code(cfg.category, row)
@@ -110,29 +110,33 @@ def create(config_path: str) -> str:
         with open(md_path, "w") as f:
             f.write(content)
 
-    return mkdocs
-
 
 def main():
     main_configuration = os.path.join("config", "main.yaml")
     default_mkdocs = os.path.join("utils", "mkdocs.yaml")
     output_mkdocs = os.path.join("mkdocs.yaml")
 
-    with open(main_configuration, "r") as file:
-        configs = yaml.safe_load(file)
+    with open(main_configuration, "r") as f:
+        configs = yaml.safe_load(f)
 
     mkdocs = ""
     for config in configs:
-        mkdocs += create(config) + "\n"
+        make_list_md(config)
+        make_list_index(config)
+        mkdocs += make_list_mkdocs(config) + "\n"
 
     # inset mkdocs into default_mkdocs line 3
-    with open(default_mkdocs, "r") as file:
-        lines = file.readlines()
+    with open(default_mkdocs, "r") as f:
+        lines = f.readlines()
         lines.insert(3, mkdocs)
 
-    with open(output_mkdocs, "w") as file:
-        file.writelines(lines)
+    with open(output_mkdocs, "w") as f:
+        f.writelines(lines)
 
 
 if __name__ == "__main__":
+    # make_list_md("blind75")
+    # make_list_index("blind75")
+    # mkdocs = make_list_mkdocs("blind75")
+    # print(mkdocs)
     main()

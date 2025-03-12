@@ -17,10 +17,10 @@ comments: True
 
 ## 739. Daily Temperatures
 
-- [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/daily-temperatures/) | [LeetCode CH](https://leetcode.cn/problems/daily-temperatures/) (Medium)
 
-- Tags: array, stack, monotonic stack
-- Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
+-   Tags: array, stack, monotonic stack
+-   Return an array `res` such that `res[i]` is the number of days you have to wait after the `ith` day to get a warmer temperature.
 
 | Index | Temp | > stack last | stack                           | result    |
 | ----- | ---- | ------------ | ------------------------------- | --------- |
@@ -59,9 +59,9 @@ print(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
 
 ## 496. Next Greater Element I
 
-- [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
 
-- Tags: array, hash table, stack, monotonic stack
+-   Tags: array, hash table, stack, monotonic stack
 
 ```python title="496. Next Greater Element I - Python Solution"
 from typing import List
@@ -92,9 +92,9 @@ print(nextGreaterElement(nums1, nums2))  # [3, -1, -1]
 
 ## 503. Next Greater Element II
 
-- [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)
 
-- Tags: array, stack, monotonic stack
+-   Tags: array, stack, monotonic stack
 
 ```python title="503. Next Greater Element II - Python Solution"
 from typing import List
@@ -122,9 +122,9 @@ print(nextGreaterElements(nums))  # [2, -1, 2]
 
 ## 84. Largest Rectangle in Histogram
 
-- [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 
-- Tags: array, stack, monotonic stack
+-   Tags: array, stack, monotonic stack
 
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
 from typing import List
@@ -154,9 +154,9 @@ print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
 
 ## 85. Maximal Rectangle
 
-- [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | [LeetCode CH](https://leetcode.cn/problems/maximal-rectangle/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | [LeetCode CH](https://leetcode.cn/problems/maximal-rectangle/) (Hard)
 
-- Tags: array, dynamic programming, stack, matrix, monotonic stack
+-   Tags: array, dynamic programming, stack, matrix, monotonic stack
 - Return the area of the largest rectangle that can be formed within a rectangle of 1's.
 
 ![0085](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg)
@@ -204,10 +204,10 @@ print(maximalRectangle(matrix))  # 6
 
 ## 42. Trapping Rain Water
 
-- [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
 
-- Tags: array, two pointers, dynamic programming, stack, monotonic stack
-- ![42](../assets/0042.png)
+-   Tags: array, two pointers, dynamic programming, stack, monotonic stack
+-   ![42](../assets/0042.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZI2z5pq0TqA?si=OEYg01dbmzvmtIwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -338,10 +338,10 @@ int main()
 
 ## 901. Online Stock Span
 
-- [LeetCode](https://leetcode.com/problems/online-stock-span/) | [LeetCode CH](https://leetcode.cn/problems/online-stock-span/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/online-stock-span/) | [LeetCode CH](https://leetcode.cn/problems/online-stock-span/) (Medium)
 
-- Tags: stack, design, monotonic stack, data stream
-- Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
+-   Tags: stack, design, monotonic stack, data stream
+-   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
 ```python title="901. Online Stock Span - Python Solution"
 from typing import List
@@ -370,9 +370,9 @@ print([obj.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
 
 ## 316. Remove Duplicate Letters
 
-- [LeetCode](https://leetcode.com/problems/remove-duplicate-letters/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/remove-duplicate-letters/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)
 
-- Tags: string, stack, greedy, monotonic stack
+-   Tags: string, stack, greedy, monotonic stack
 
 ```python title="316. Remove Duplicate Letters - Python Solution"
 # Monotonic Stack
@@ -398,9 +398,9 @@ print(removeDuplicateLetters(s))  # acdb
 
 ## 456. 132 Pattern
 
-- [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
 
-- Tags: array, binary search, stack, monotonic stack, ordered set
+-   Tags: array, binary search, stack, monotonic stack, ordered set
 
 ```python title="456. 132 Pattern - Python Solution"
 from typing import List
@@ -434,9 +434,9 @@ print(find132pattern(nums))  # True
 
 ## 2281. Sum of Total Strength of Wizards
 
-- [LeetCode](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
 
-- Tags: array, stack, monotonic stack, prefix sum
+-   Tags: array, stack, monotonic stack, prefix sum
 
 ```python title="2281. Sum of Total Strength of Wizards - Python Solution"
 from itertools import accumulate

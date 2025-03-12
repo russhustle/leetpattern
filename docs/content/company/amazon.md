@@ -37,10 +37,10 @@ comments: True
 
 ## 1. Two Sum
 
-- [LeetCode](https://leetcode.com/problems/two-sum/) | [LeetCode CH](https://leetcode.cn/problems/two-sum/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/two-sum/) | [LeetCode CH](https://leetcode.cn/problems/two-sum/) (Easy)
 
-- Tags: array, hash table
-- Return the indices of the two numbers such that they add up to a specific target.
+-   Tags: array, hash table
+-   Return the indices of the two numbers such that they add up to a specific target.
 
 | Approach | Time Complexity | Space Complexity |
 | :------: | :-------------: | :--------------: |
@@ -101,9 +101,9 @@ int main() {
 
 ## 146. LRU Cache
 
-- [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/lru-cache/) | [LeetCode CH](https://leetcode.cn/problems/lru-cache/) (Medium)
 
-- Tags: hash table, linked list, design, doubly linked list
+-   Tags: hash table, linked list, design, doubly linked list
 - Design and implement a data structure for **Least Recently Used (LRU) cache**. It should support the following operations: get and put.
 - [lru](https://media.geeksforgeeks.org/wp-content/uploads/20240909142802/Working-of-LRU-Cache-copy-2.webp)
 - ![146](https://miro.medium.com/v2/resize:fit:650/0*fOwBd3z0XtHh7WN1.png)
@@ -317,22 +317,22 @@ int main() {
 
 ## 200. Number of Islands
 
-- [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
 
-- Tags: array, depth first search, breadth first search, union find, matrix
-- Count the number of islands in a 2D grid.
-- Method 1: DFS
-- Method 2: BFS (use a queue to traverse the grid)
+-   Tags: array, depth first search, breadth first search, union find, matrix
+-   Count the number of islands in a 2D grid.
+-   Method 1: DFS
+-   Method 2: BFS (use a queue to traverse the grid)
 
-- How to keep track of visited cells?
+-   How to keep track of visited cells?
 
-  1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
-  2. Use a set to store the visited cells.
+    1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
+    2. Use a set to store the visited cells.
 
-- Steps:
-  1. Init: variables
-  2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
-  3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
+-   Steps:
+    1. Init: variables
+    2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
+    3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
 ![0200](../assets/0200.jpg)
 
@@ -523,10 +523,10 @@ int main()
 
 ## 42. Trapping Rain Water
 
-- [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
 
-- Tags: array, two pointers, dynamic programming, stack, monotonic stack
-- ![42](../assets/0042.png)
+-   Tags: array, two pointers, dynamic programming, stack, monotonic stack
+-   ![42](../assets/0042.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZI2z5pq0TqA?si=OEYg01dbmzvmtIwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -657,9 +657,9 @@ int main()
 
 ## 49. Group Anagrams
 
-- [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
 
-- Tags: array, hash table, string, sorting
+-   Tags: array, hash table, string, sorting
 
 ```python title="49. Group Anagrams - Python Solution"
 from collections import defaultdict
@@ -695,10 +695,10 @@ print(groupAnagrams(strs))
 
 ## 121. Best Time to Buy and Sell Stock
 
-- [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
 
-- Tags: array, dynamic programming
-- Return the maximum profit that can be achieved from buying on one day and selling on another day.
+-   Tags: array, dynamic programming
+-   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
 from typing import List
@@ -811,10 +811,10 @@ int main()
 
 ## 56. Merge Intervals
 
-- [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
 
-- Tags: array, sorting
-- Merge all overlapping intervals.
+-   Tags: array, sorting
+-   Merge all overlapping intervals.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -879,9 +879,9 @@ int main() {
 
 ## 207. Course Schedule
 
-- [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
 
-- Tags: depth first search, breadth first search, graph, topological sort
+-   Tags: depth first search, breadth first search, graph, topological sort
 - Return true if it is possible to finish all courses, otherwise return false.
 - Dependency relationships imply the topological sort algorithm.
 - Cycle detection
@@ -1180,10 +1180,10 @@ int main() {
 
 ## 23. Merge k Sorted Lists
 
-- [LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
 
-- Tags: linked list, divide and conquer, heap priority queue, merge sort
-- Prerequisite: 21. Merge Two Sorted Lists
+-   Tags: linked list, divide and conquer, heap priority queue, merge sort
+-   Prerequisite: 21. Merge Two Sorted Lists
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q5a5OiGbT6Q?si=SlQg9SKZh1YL62vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -1269,9 +1269,9 @@ print(mergeKLists(lists2))
 
 ## 347. Top K Frequent Elements
 
-- [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
 
-- Tags: array, hash table, divide and conquer, sorting, heap priority queue, bucket sort, counting, quickselect
+-   Tags: array, hash table, divide and conquer, sorting, heap priority queue, bucket sort, counting, quickselect
 
 ```python title="347. Top K Frequent Elements - Python Solution"
 import heapq
@@ -1307,9 +1307,9 @@ print(topKFrequentCounter(nums, k))  # [1, 2]
 
 ## 88. Merge Sorted Array
 
-- [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
 
-- Tags: array, two pointers, sorting
+-   Tags: array, two pointers, sorting
 
 ```python title="88. Merge Sorted Array - Python Solution"
 from typing import List
@@ -1348,9 +1348,9 @@ print(nums1)  # [1, 2, 2, 3, 5, 6]
 
 ## 15. 3Sum
 
-- [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
-- Tags: array, two pointers, sorting
+-   Tags: array, two pointers, sorting
 
 ```python title="15. 3Sum - Python Solution"
 from typing import List
@@ -1448,11 +1448,11 @@ int main() {
 
 ## 127. Word Ladder
 
-- [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
 
-- Tags: hash table, string, breadth first search
-- The most classic BFS problem.
-- Return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.
+-   Tags: hash table, string, breadth first search
+-   The most classic BFS problem.
+-   Return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h9iTnkgv05E?si=51-3ZwweoJrPqRW9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -1510,14 +1510,14 @@ print(ladderLength(beginWord, endWord, wordList))  # 5
 
 ## 55. Jump Game
 
-- [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/jump-game/) | [LeetCode CH](https://leetcode.cn/problems/jump-game/) (Medium)
 
-- Tags: array, dynamic programming, greedy
-- Return `True` if you can reach the last index, otherwise `False`.
+-   Tags: array, dynamic programming, greedy
+-   Return `True` if you can reach the last index, otherwise `False`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yan0cv2cLy8?si=musT5NViPicljg7x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-- Example: `[2, 3, 1, 1, 4, 1, 2, 0, 0]`
+-   Example: `[2, 3, 1, 1, 4, 1, 2, 0, 0]`
 
 | Index | Value | Index + Value | Max Reach | Max Reach >= Last Index |
 | :---: | :---: | :-----------: | :-------: | :---------------------: |
@@ -1585,11 +1585,11 @@ int main() {
 
 ## 3. Longest Substring Without Repeating Characters
 
-- [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
 
-- Tags: hash table, string, sliding window
-- Classic sliding window problem. Use a set to keep track of the characters in the current window.
-- Return the length of the longest substring without repeating characters.
+-   Tags: hash table, string, sliding window
+-   Classic sliding window problem. Use a set to keep track of the characters in the current window.
+-   Return the length of the longest substring without repeating characters.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wiGpQwVHdE0?si=GlOc9C5w5Vy71iTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -1659,9 +1659,9 @@ int main() {
 
 ## 14. Longest Common Prefix
 
-- [LeetCode](https://leetcode.com/problems/longest-common-prefix/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-prefix/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/longest-common-prefix/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-prefix/) (Easy)
 
-- Tags: string, trie
+-   Tags: string, trie
 
 ```python title="14. Longest Common Prefix - Python Solution"
 from typing import List
@@ -1750,9 +1750,9 @@ print(longestCommonPrefixBinarySearch(strs))  # "fl"
 
 ## 210. Course Schedule II
 
-- [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
 
-- Tags: depth first search, breadth first search, graph, topological sort
+-   Tags: depth first search, breadth first search, graph, topological sort
 - Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
 ![0207](../assets/0207.png)
@@ -1915,9 +1915,9 @@ int main() {
 
 ## 138. Copy List with Random Pointer
 
-- [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/) | [LeetCode CH](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/) | [LeetCode CH](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
 
-- Tags: hash table, linked list
+-   Tags: hash table, linked list
 
 ```python title="138. Copy List with Random Pointer - Python Solution"
 from typing import Optional
@@ -1963,11 +1963,11 @@ def copyRandomList(head: "Optional[Node]") -> "Optional[Node]":
 
 ## 20. Valid Parentheses
 
-- [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
 
-- Tags: string, stack
-- Determine if the input string is valid.
-- Steps for the string `()[]{}`:
+-   Tags: string, stack
+-   Determine if the input string is valid.
+-   Steps for the string `()[]{}`:
 
 | char | action | stack |
 | ---- | ------ | ----- |
@@ -2048,10 +2048,10 @@ int main() {
 
 ## 2. Add Two Numbers
 
-- [LeetCode](https://leetcode.com/problems/add-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/add-two-numbers/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/add-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/add-two-numbers/) (Medium)
 
-- Tags: linked list, math, recursion
-- Represent the sum of two numbers as a linked list.
+-   Tags: linked list, math, recursion
+-   Represent the sum of two numbers as a linked list.
 
 ```python title="2. Add Two Numbers - Python Solution"
 from typing import Optional
@@ -2129,13 +2129,13 @@ class Solution {
 
 ## 70. Climbing Stairs
 
-- [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/climbing-stairs/) | [LeetCode CH](https://leetcode.cn/problems/climbing-stairs/) (Easy)
 
-- Tags: math, dynamic programming, memoization
-- Return the number of distinct ways to reach the top of the stairs.
-- `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
-- Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
-- Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
+-   Tags: math, dynamic programming, memoization
+-   Return the number of distinct ways to reach the top of the stairs.
+-   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
+-   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
+-   Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
 
 |  n  | `dp[n-2]` | `dp[n-1]` | `dp[n]` |
 | :-: | :-------: | :-------: | :-----: |
@@ -2228,11 +2228,11 @@ int main() {
 
 ## 238. Product of Array Except Self
 
-- [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) | [LeetCode CH](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) | [LeetCode CH](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
 
-- Tags: array, prefix sum
-- Classic **Prefix Sum** problem
-- Return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
+-   Tags: array, prefix sum
+-   Classic **Prefix Sum** problem
+-   Return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
 
 | Approach           | Time | Space |
 | ------------------ | ---- | ----- |
@@ -2338,9 +2338,9 @@ int main()
 
 ## 560. Subarray Sum Equals K
 
-- [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
 
-- Tags: array, hash table, prefix sum
+-   Tags: array, hash table, prefix sum
 
 ```python title="560. Subarray Sum Equals K - Python Solution"
 from collections import defaultdict
@@ -2402,9 +2402,9 @@ int main() {
 
 ## 4. Median of Two Sorted Arrays
 
-- [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
 
-- Tags: array, binary search, divide and conquer
+-   Tags: array, binary search, divide and conquer
 
 ```python title="4. Median of Two Sorted Arrays - Python Solution"
 from typing import List
@@ -2474,9 +2474,9 @@ print(findMedianSortedArraysBS(nums1, nums2))  # 2.0
 
 ## 79. Word Search
 
-- [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 
-- Tags: array, string, backtracking, depth first search, matrix
+-   Tags: array, string, backtracking, depth first search, matrix
 
 ```python title="79. Word Search - Python Solution"
 from typing import List
@@ -2530,9 +2530,9 @@ print(exist(board, word))  # True
 
 ## 22. Generate Parentheses
 
-- [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
 
-- Tags: string, dynamic programming, backtracking
+-   Tags: string, dynamic programming, backtracking
 
 ```python title="22. Generate Parentheses - Python Solution"
 from typing import List
@@ -2570,9 +2570,9 @@ print(generateParenthesis(3))
 
 ## 215. Kth Largest Element in an Array
 
-- [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
 
-- Tags: array, divide and conquer, sorting, heap priority queue, quickselect
+-   Tags: array, divide and conquer, sorting, heap priority queue, quickselect
 
 ```python title="215. Kth Largest Element in an Array - Python Solution"
 import heapq
@@ -2596,9 +2596,9 @@ print(findKthLargest(nums, k))  # 5
 
 ## 295. Find Median from Data Stream
 
-- [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 
-- Tags: two pointers, design, sorting, heap priority queue, data stream
+-   Tags: two pointers, design, sorting, heap priority queue, data stream
 
 ```python title="295. Find Median from Data Stream - Python Solution"
 from heapq import heappop, heappush
@@ -2696,10 +2696,10 @@ int main() {
 
 ## 5. Longest Palindromic Substring
 
-- [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [LeetCode CH](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
 
-- Tags: two pointers, string, dynamic programming
-- Return the longest palindromic substring in `s`.
+-   Tags: two pointers, string, dynamic programming
+-   Return the longest palindromic substring in `s`.
 
 ```python title="5. Longest Palindromic Substring - Python Solution"
 # DP - Interval
@@ -2762,9 +2762,9 @@ print(longestPalindromeCenter(s))  # "aba"
 
 ## 33. Search in Rotated Sorted Array
 
-- [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 
-- Tags: array, binary search
+-   Tags: array, binary search
 
 ```python title="33. Search in Rotated Sorted Array - Python Solution"
 from typing import List

@@ -17,9 +17,9 @@ comments: True
 
 ## 733. Flood Fill
 
-- [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
 
-- Tags: array, depth first search, breadth first search, matrix
+-   Tags: array, depth first search, breadth first search, matrix
 - Replace all the pixels of the same color starting from the given pixel.
 - In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
 - Edge cases: If the starting pixel is already the target color, return the image as it is.
@@ -123,9 +123,9 @@ print(floodFillBFS(image, sr, sc, 2))
 
 ## 542. 01 Matrix
 
-- [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
 
-- Tags: array, dynamic programming, breadth first search, matrix
+-   Tags: array, dynamic programming, breadth first search, matrix
 
 ```python title="542. 01 Matrix - Python Solution"
 from collections import deque
@@ -165,9 +165,9 @@ print(updateMatrix(mat))
 
 ## 133. Clone Graph
 
-- [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 
-- Tags: hash table, depth first search, breadth first search, graph
+-   Tags: hash table, depth first search, breadth first search, graph
 
 ```python title="133. Clone Graph - Python Solution"
 from collections import deque
@@ -226,9 +226,9 @@ def cloneGraphBFS(node: Optional["Node"]) -> Optional["Node"]:
 
 ## 207. Course Schedule
 
-- [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
 
-- Tags: depth first search, breadth first search, graph, topological sort
+-   Tags: depth first search, breadth first search, graph, topological sort
 - Return true if it is possible to finish all courses, otherwise return false.
 - Dependency relationships imply the topological sort algorithm.
 - Cycle detection
@@ -527,22 +527,22 @@ int main() {
 
 ## 200. Number of Islands
 
-- [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
 
-- Tags: array, depth first search, breadth first search, union find, matrix
-- Count the number of islands in a 2D grid.
-- Method 1: DFS
-- Method 2: BFS (use a queue to traverse the grid)
+-   Tags: array, depth first search, breadth first search, union find, matrix
+-   Count the number of islands in a 2D grid.
+-   Method 1: DFS
+-   Method 2: BFS (use a queue to traverse the grid)
 
-- How to keep track of visited cells?
+-   How to keep track of visited cells?
 
-  1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
-  2. Use a set to store the visited cells.
+    1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
+    2. Use a set to store the visited cells.
 
-- Steps:
-  1. Init: variables
-  2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
-  3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
+-   Steps:
+    1. Init: variables
+    2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
+    3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
 ![0200](../assets/0200.jpg)
 
@@ -733,11 +733,11 @@ int main()
 
 ## 994. Rotting Oranges
 
-- [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
 
-- Tags: array, breadth first search, matrix
-- Return the minimum number of minutes that must elapse until no cell has a fresh orange.
-- Hint: Multi-source BFS to count the level.
+-   Tags: array, breadth first search, matrix
+-   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
+-   Hint: Multi-source BFS to count the level.
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
@@ -788,9 +788,9 @@ print(orangesRotting(grid))
 
 ## 721. Accounts Merge
 
-- [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 
-- Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
+-   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 
 ```python title="721. Accounts Merge - Python Solution"
 from collections import defaultdict
@@ -861,9 +861,9 @@ print(accountsMerge(accounts))
 
 ## 79. Word Search
 
-- [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 
-- Tags: array, string, backtracking, depth first search, matrix
+-   Tags: array, string, backtracking, depth first search, matrix
 
 ```python title="79. Word Search - Python Solution"
 from typing import List
@@ -917,9 +917,9 @@ print(exist(board, word))  # True
 
 ## 310. Minimum Height Trees
 
-- [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 
-- Tags: depth first search, breadth first search, graph, topological sort
+-   Tags: depth first search, breadth first search, graph, topological sort
 
 ```python title="310. Minimum Height Trees - Python Solution"
 from collections import deque
@@ -961,11 +961,11 @@ print(findMinHeightTrees(n, edges))  # [3, 4]
 
 ## 127. Word Ladder
 
-- [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
+-   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
 
-- Tags: hash table, string, breadth first search
-- The most classic BFS problem.
-- Return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.
+-   Tags: hash table, string, breadth first search
+-   The most classic BFS problem.
+-   Return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h9iTnkgv05E?si=51-3ZwweoJrPqRW9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

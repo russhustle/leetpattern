@@ -10,9 +10,9 @@ comments: True
 
 ## 125. Valid Palindrome
 
-- [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
+-   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 
-- Tags: two pointers, string
+-   Tags: two pointers, string
 
 ```python title="125. Valid Palindrome - Python Solution"
 # List Comprehension
@@ -48,9 +48,9 @@ print(isPalindromeLR(s))  # True
 
 ## 15. 3Sum
 
-- [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
-- Tags: array, two pointers, sorting
+-   Tags: array, two pointers, sorting
 
 ```python title="15. 3Sum - Python Solution"
 from typing import List
@@ -148,9 +148,9 @@ int main() {
 
 ## 11. Container With Most Water
 
-- [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
+-   [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
 
-- Tags: array, two pointers, greedy
+-   Tags: array, two pointers, greedy
 - Return the maximum area of water that can be trapped between the vertical lines.
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)

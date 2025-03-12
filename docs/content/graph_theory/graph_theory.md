@@ -12,10 +12,10 @@ comments: True
 
 ## 997. Find the Town Judge
 
--   [LeetCode](https://leetcode.com/problems/find-the-town-judge/) | [LeetCode CH](https://leetcode.cn/problems/find-the-town-judge/) (Easy)
+- [LeetCode](https://leetcode.com/problems/find-the-town-judge/) | [LeetCode CH](https://leetcode.cn/problems/find-the-town-judge/) (Easy)
 
--   Tags: array, hash table, graph
--   `trust = [[1, 3], [2, 3], [1, 2], [4, 3]]`
+- Tags: array, hash table, graph
+- `trust = [[1, 3], [2, 3], [1, 2], [4, 3]]`
 
 ```mermaid
 flowchart LR
@@ -53,16 +53,16 @@ print(findJudge(n, trust))  # 4
 
 ## 1557. Minimum Number of Vertices to Reach All Nodes
 
--   [LeetCode](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
+- [LeetCode](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
 
--   Tags: graph
--   Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
--   ✅ Return the vertices with indegree 0.
+- Tags: graph
+- Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
+- ✅ Return the vertices with indegree 0.
 
-![1557](../assets/1557.png){width=300px}
+![1557](../assets/1557.png)
 
--   `edges = [[0, 1], [0, 2], [2, 5], [3, 4], [4, 2]]`
--   Initialization
+- `edges = [[0, 1], [0, 2], [2, 5], [3, 4], [4, 2]]`
+- Initialization
 
 |   `src`   |  0  |  0  |  2  |  3  |  4  |     |
 | :-------: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -122,9 +122,9 @@ print(findSmallestSetOfVertices(n, edges))  # [0, 3]
 
 ## 1615. Maximal Network Rank
 
--   [LeetCode](https://leetcode.com/problems/maximal-network-rank/) | [LeetCode CH](https://leetcode.cn/problems/maximal-network-rank/) (Medium)
+- [LeetCode](https://leetcode.com/problems/maximal-network-rank/) | [LeetCode CH](https://leetcode.cn/problems/maximal-network-rank/) (Medium)
 
--   Tags: graph
+- Tags: graph
 
 ```python title="1615. Maximal Network Rank - Python Solution"
 from collections import defaultdict
@@ -160,10 +160,10 @@ print(maximalNetworkRank(n, roads))  # 4
 
 ## 785. Is Graph Bipartite?
 
--   [LeetCode](https://leetcode.com/problems/is-graph-bipartite/) | [LeetCode CH](https://leetcode.cn/problems/is-graph-bipartite/) (Medium)
+- [LeetCode](https://leetcode.com/problems/is-graph-bipartite/) | [LeetCode CH](https://leetcode.cn/problems/is-graph-bipartite/) (Medium)
 
--   Tags: depth first search, breadth first search, union find, graph
--   Determine if a graph is bipartite.
+- Tags: depth first search, breadth first search, union find, graph
+- Determine if a graph is bipartite.
 
 How to group
 
@@ -246,9 +246,9 @@ print(isBipartiteDFS(graph))  # False
 
 ## 261. Graph Valid Tree
 
--   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
+- [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 
--   Tags: depth first search, breadth first search, union find, graph
+- Tags: depth first search, breadth first search, union find, graph
 
 ```python title="261. Graph Valid Tree - Python Solution"
 from collections import defaultdict

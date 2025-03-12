@@ -20,22 +20,22 @@ comments: True
 
 ## 200. Number of Islands
 
--   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+- [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
 
--   Tags: array, depth first search, breadth first search, union find, matrix
--   Count the number of islands in a 2D grid.
--   Method 1: DFS
--   Method 2: BFS (use a queue to traverse the grid)
+- Tags: array, depth first search, breadth first search, union find, matrix
+- Count the number of islands in a 2D grid.
+- Method 1: DFS
+- Method 2: BFS (use a queue to traverse the grid)
 
--   How to keep track of visited cells?
+- How to keep track of visited cells?
 
-    1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
-    2. Use a set to store the visited cells.
+  1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
+  2. Use a set to store the visited cells.
 
--   Steps:
-    1. Init: variables
-    2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
-    3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
+- Steps:
+  1. Init: variables
+  2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
+  3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
 ![0200](../assets/0200.jpg)
 
@@ -226,9 +226,9 @@ int main()
 
 ## 695. Max Area of Island
 
--   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+- [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 
--   Tags: array, depth first search, breadth first search, union find, matrix
+- Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="695. Max Area of Island - Python Solution"
 from collections import deque
@@ -410,9 +410,9 @@ int main() {
 
 ## 133. Clone Graph
 
--   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
+- [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 
--   Tags: hash table, depth first search, breadth first search, graph
+- Tags: hash table, depth first search, breadth first search, graph
 
 ```python title="133. Clone Graph - Python Solution"
 from collections import deque
@@ -471,10 +471,10 @@ def cloneGraphBFS(node: Optional["Node"]) -> Optional["Node"]:
 
 ## 286. Walls and Gates
 
--   [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
+- [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
 
--   Tags: array, breadth first search, matrix
-![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
+- Tags: array, breadth first search, matrix
+  ![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
 
 ```python title="286. Walls and Gates - Python Solution"
 from collections import deque
@@ -536,11 +536,11 @@ print(rooms)
 
 ## 994. Rotting Oranges
 
--   [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
+- [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [LeetCode CH](https://leetcode.cn/problems/rotting-oranges/) (Medium)
 
--   Tags: array, breadth first search, matrix
--   Return the minimum number of minutes that must elapse until no cell has a fresh orange.
--   Hint: Multi-source BFS to count the level.
+- Tags: array, breadth first search, matrix
+- Return the minimum number of minutes that must elapse until no cell has a fresh orange.
+- Hint: Multi-source BFS to count the level.
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
@@ -591,9 +591,9 @@ print(orangesRotting(grid))
 
 ## 417. Pacific Atlantic Water Flow
 
--   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+- [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 
--   Tags: array, depth first search, breadth first search, matrix
+- Tags: array, depth first search, breadth first search, matrix
 
 ```python title="417. Pacific Atlantic Water Flow - Python Solution"
 from collections import deque
@@ -683,9 +683,9 @@ print(pacificAtlanticBFS(heights))
 
 ## 130. Surrounded Regions
 
--   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
+- [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
 
--   Tags: array, depth first search, breadth first search, union find, matrix
+- Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="130. Surrounded Regions - Python Solution"
 from collections import deque
@@ -797,23 +797,23 @@ pprint(board2)
 
 ## 207. Course Schedule
 
--   [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
+- [LeetCode](https://leetcode.com/problems/course-schedule/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule/) (Medium)
 
--   Tags: depth first search, breadth first search, graph, topological sort
--   Return true if it is possible to finish all courses, otherwise return false.
--   Dependency relationships imply the topological sort algorithm.
--   Cycle detection
--   Topological Sort
-    -   DAG (Directed Acyclic Graph)
-    -   Time complexity: O(V+E)
-    -   Space complexity: O(V+E)
-    -   Prerequisites: Indegree (Look at the problem 1557. Minimum Number of Vertices to Reach All Nodes)
-        -   Indegree: Number of incoming edges to a vertex
-    -   Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
+- Tags: depth first search, breadth first search, graph, topological sort
+- Return true if it is possible to finish all courses, otherwise return false.
+- Dependency relationships imply the topological sort algorithm.
+- Cycle detection
+- Topological Sort
+  - DAG (Directed Acyclic Graph)
+  - Time complexity: O(V+E)
+  - Space complexity: O(V+E)
+  - Prerequisites: Indegree (Look at the problem 1557. Minimum Number of Vertices to Reach All Nodes)
+    - Indegree: Number of incoming edges to a vertex
+  - Applications: task scheduling, course scheduling, build systems, dependency resolution, compiler optimization, etc.
 
-![ts1](../assets/graph_ts1.png){width=300px}
+![ts1](../assets/graph_ts1.png)
 
-![ts2](../assets/graph_ts2.png){width=300px}
+![ts2](../assets/graph_ts2.png)
 
 Course to prerequisites mapping
 
@@ -847,20 +847,20 @@ flowchart LR
 
 Initialize
 
--   graph
+- graph
 
 | prerequisite | 1     | 2     | 3     | 4        |
 | ------------ | ----- | ----- | ----- | -------- |
 | course       | `[0]` | `[0]` | `[1]` | `[1, 3]` |
 
--   in-degree
+- in-degree
 
 |           | 0   | 1   | 2   | 3   | 4   |
 | --------- | --- | --- | --- | --- | --- |
 | in-degree | 2   | 2   | 0   | 1   | 0   |
 
--   queue: `[2, 4]`
--   pop `2` from the queue
+- queue: `[2, 4]`
+- pop `2` from the queue
 
 ```mermaid
 flowchart LR
@@ -874,8 +874,8 @@ flowchart LR
 | --------- | --- | --- | --- | --- | --- |
 | in-degree | 1   | 2   | 0   | 1   | 0   |
 
--   queue: `[4]`
--   pop `4` from the queue
+- queue: `[4]`
+- pop `4` from the queue
 
 ```mermaid
 flowchart LR
@@ -887,8 +887,8 @@ flowchart LR
 | --------- | --- | --- | --- | --- | --- |
 | in-degree | 1   | 1   | 0   | 0   | 0   |
 
--   queue: `[3]`
--   pop `3` from the queue
+- queue: `[3]`
+- pop `3` from the queue
 
 ```mermaid
 flowchart LR
@@ -899,8 +899,8 @@ flowchart LR
 | --------- | --- | --- | --- | --- | --- |
 | in-degree | 1   | 0   | 0   | 0   | 0   |
 
--   queue: `[1]`
--   pop `1` from the queue
+- queue: `[1]`
+- pop `1` from the queue
 
 ```mermaid
 flowchart LR
@@ -911,9 +911,9 @@ flowchart LR
 | --------- | --- | --- | --- | --- | --- |
 | in-degree | 0   | 0   | 0   | 0   | 0   |
 
--   queue: `[0]`
--   pop `0` from the queue
--   All courses are taken. Return `True`.
+- queue: `[0]`
+- pop `0` from the queue
+- All courses are taken. Return `True`.
 
 ```python title="207. Course Schedule - Python Solution"
 from collections import defaultdict, deque
@@ -1098,12 +1098,12 @@ int main() {
 
 ## 210. Course Schedule II
 
--   [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
+- [LeetCode](https://leetcode.com/problems/course-schedule-ii/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
 
--   Tags: depth first search, breadth first search, graph, topological sort
--   Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
+- Tags: depth first search, breadth first search, graph, topological sort
+- Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
-![0207](../assets/0207.png){width=300px}
+![0207](../assets/0207.png)
 
 ```python title="210. Course Schedule II - Python Solution"
 from collections import defaultdict, deque
@@ -1263,9 +1263,9 @@ int main() {
 
 ## 261. Graph Valid Tree
 
--   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
+- [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 
--   Tags: depth first search, breadth first search, union find, graph
+- Tags: depth first search, breadth first search, union find, graph
 
 ```python title="261. Graph Valid Tree - Python Solution"
 from collections import defaultdict
@@ -1305,9 +1305,9 @@ print(validTree(5, [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]))  # False
 
 ## 323. Number of Connected Components in an Undirected Graph
 
--   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
+- [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 
--   Tags: depth first search, breadth first search, union find, graph
+- Tags: depth first search, breadth first search, union find, graph
 
 ```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"
 from typing import List
@@ -1359,9 +1359,9 @@ print(countComponents(5, [[0, 1], [1, 2], [3, 4]]))  # 2
 
 ## 684. Redundant Connection
 
--   [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
+- [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
 
--   Tags: depth first search, breadth first search, union find, graph
+- Tags: depth first search, breadth first search, union find, graph
 
 ```python title="684. Redundant Connection - Python Solution"
 from typing import List
@@ -1441,11 +1441,11 @@ print(findRedundantConnectionDFS(edges))  # (2, 3)
 
 ## 127. Word Ladder
 
--   [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
+- [LeetCode](https://leetcode.com/problems/word-ladder/) | [LeetCode CH](https://leetcode.cn/problems/word-ladder/) (Hard)
 
--   Tags: hash table, string, breadth first search
--   The most classic BFS problem.
--   Return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.
+- Tags: hash table, string, breadth first search
+- The most classic BFS problem.
+- Return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h9iTnkgv05E?si=51-3ZwweoJrPqRW9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

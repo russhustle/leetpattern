@@ -18,10 +18,10 @@ comments: True
 
 ## 1. Two Sum
 
--   [LeetCode](https://leetcode.com/problems/two-sum/) | [LeetCode CH](https://leetcode.cn/problems/two-sum/) (Easy)
+- [LeetCode](https://leetcode.com/problems/two-sum/) | [LeetCode CH](https://leetcode.cn/problems/two-sum/) (Easy)
 
--   Tags: array, hash table
--   Return the indices of the two numbers such that they add up to a specific target.
+- Tags: array, hash table
+- Return the indices of the two numbers such that they add up to a specific target.
 
 | Approach | Time Complexity | Space Complexity |
 | :------: | :-------------: | :--------------: |
@@ -82,10 +82,10 @@ int main() {
 
 ## 121. Best Time to Buy and Sell Stock
 
--   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
+- [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
 
--   Tags: array, dynamic programming
--   Return the maximum profit that can be achieved from buying on one day and selling on another day.
+- Tags: array, dynamic programming
+- Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
 from typing import List
@@ -198,10 +198,10 @@ int main()
 
 ## 169. Majority Element
 
--   [LeetCode](https://leetcode.com/problems/majority-element/) | [LeetCode CH](https://leetcode.cn/problems/majority-element/) (Easy)
+- [LeetCode](https://leetcode.com/problems/majority-element/) | [LeetCode CH](https://leetcode.cn/problems/majority-element/) (Easy)
 
--   Tags: array, hash table, divide and conquer, sorting, counting
--   Return the majority element in an array. The majority element is the element that appears more than `n // 2` times.
+- Tags: array, hash table, divide and conquer, sorting, counting
+- Return the majority element in an array. The majority element is the element that appears more than `n // 2` times.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7pnhv842keE?si=fBYlNfKzdkiLgkF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -259,10 +259,10 @@ print(majorityElementHashMap(nums))  # 2
 
 ## 217. Contains Duplicate
 
--   [LeetCode](https://leetcode.com/problems/contains-duplicate/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate/) (Easy)
+- [LeetCode](https://leetcode.com/problems/contains-duplicate/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate/) (Easy)
 
--   Tags: array, hash table, sorting
--   Return True if the array contains any duplicates, otherwise return False.
+- Tags: array, hash table, sorting
+- Return True if the array contains any duplicates, otherwise return False.
 
 ```python title="217. Contains Duplicate - Python Solution"
 from typing import List
@@ -317,9 +317,9 @@ print(containsDuplicateSet([1, 2, 3, 1]))  # True
 
 ## 57. Insert Interval
 
--   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
+- [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
 
--   Tags: array
+- Tags: array
 
 ```python title="57. Insert Interval - Python Solution"
 from typing import List
@@ -369,9 +369,9 @@ print(insert(intervals, newInterval))  # [[1, 5], [6, 9]]
 
 ## 15. 3Sum
 
--   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
+- [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
--   Tags: array, two pointers, sorting
+- Tags: array, two pointers, sorting
 
 ```python title="15. 3Sum - Python Solution"
 from typing import List
@@ -469,11 +469,11 @@ int main() {
 
 ## 238. Product of Array Except Self
 
--   [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) | [LeetCode CH](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
+- [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) | [LeetCode CH](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
 
--   Tags: array, prefix sum
--   Classic **Prefix Sum** problem
--   Return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
+- Tags: array, prefix sum
+- Classic **Prefix Sum** problem
+- Return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
 
 | Approach           | Time | Space |
 | ------------------ | ---- | ----- |
@@ -579,9 +579,9 @@ int main()
 
 ## 39. Combination Sum
 
--   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
+- [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
 
--   Tags: array, backtracking
+- Tags: array, backtracking
 
 ```python title="39. Combination Sum - Python Solution"
 from typing import List
@@ -617,10 +617,10 @@ print(combinationSum([2, 3, 6, 7], 7))  # [[2, 2, 3], [7]]
 
 ## 56. Merge Intervals
 
--   [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
+- [LeetCode](https://leetcode.com/problems/merge-intervals/) | [LeetCode CH](https://leetcode.cn/problems/merge-intervals/) (Medium)
 
--   Tags: array, sorting
--   Merge all overlapping intervals.
+- Tags: array, sorting
+- Merge all overlapping intervals.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -685,9 +685,9 @@ int main() {
 
 ## 75. Sort Colors
 
--   [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
+- [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
 
--   Tags: array, two pointers, sorting
+- Tags: array, two pointers, sorting
 
 ```python title="75. Sort Colors - Python Solution"
 from typing import List
@@ -721,12 +721,12 @@ print(nums)  # [0, 0, 1, 1, 2, 2]
 
 ## 11. Container With Most Water
 
--   [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
+- [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
 
--   Tags: array, two pointers, greedy
--   Return the maximum area of water that can be trapped between the vertical lines.
+- Tags: array, two pointers, greedy
+- Return the maximum area of water that can be trapped between the vertical lines.
 
-![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg){width=300px}
+![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
 
 ```python title="11. Container With Most Water - Python Solution"
 from typing import List

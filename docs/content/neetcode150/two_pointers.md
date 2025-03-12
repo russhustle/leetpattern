@@ -12,9 +12,9 @@ comments: True
 
 ## 125. Valid Palindrome
 
--   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
+- [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 
--   Tags: two pointers, string
+- Tags: two pointers, string
 
 ```python title="125. Valid Palindrome - Python Solution"
 # List Comprehension
@@ -50,9 +50,9 @@ print(isPalindromeLR(s))  # True
 
 ## 167. Two Sum II - Input Array Is Sorted
 
--   [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
+- [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
 
--   Tags: array, two pointers, binary search
+- Tags: array, two pointers, binary search
 
 ```python title="167. Two Sum II - Input Array Is Sorted - Python Solution"
 from typing import List
@@ -88,9 +88,9 @@ print(twoSum(numbers, target))  # [1, 2]
 
 ## 15. 3Sum
 
--   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
+- [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
--   Tags: array, two pointers, sorting
+- Tags: array, two pointers, sorting
 
 ```python title="15. 3Sum - Python Solution"
 from typing import List
@@ -188,12 +188,12 @@ int main() {
 
 ## 11. Container With Most Water
 
--   [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
+- [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
 
--   Tags: array, two pointers, greedy
--   Return the maximum area of water that can be trapped between the vertical lines.
+- Tags: array, two pointers, greedy
+- Return the maximum area of water that can be trapped between the vertical lines.
 
-![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg){width=300px}
+![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
 
 ```python title="11. Container With Most Water - Python Solution"
 from typing import List
@@ -277,10 +277,10 @@ int main() {
 
 ## 42. Trapping Rain Water
 
--   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+- [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
 
--   Tags: array, two pointers, dynamic programming, stack, monotonic stack
--   ![42](../assets/0042.png)
+- Tags: array, two pointers, dynamic programming, stack, monotonic stack
+- ![42](../assets/0042.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZI2z5pq0TqA?si=OEYg01dbmzvmtIwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

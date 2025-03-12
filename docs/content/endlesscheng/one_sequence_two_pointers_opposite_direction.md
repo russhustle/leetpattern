@@ -33,9 +33,9 @@ comments: True
 
 ## 344. Reverse String
 
--   [LeetCode](https://leetcode.com/problems/reverse-string/) | [LeetCode CH](https://leetcode.cn/problems/reverse-string/) (Easy)
+- [LeetCode](https://leetcode.com/problems/reverse-string/) | [LeetCode CH](https://leetcode.cn/problems/reverse-string/) (Easy)
 
--   Tags: two pointers, string
+- Tags: two pointers, string
 
 ```python title="344. Reverse String - Python Solution"
 from typing import List
@@ -61,9 +61,9 @@ print(s)  # ['o', 'l', 'l', 'e', 'h']
 
 ## 125. Valid Palindrome
 
--   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
+- [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 
--   Tags: two pointers, string
+- Tags: two pointers, string
 
 ```python title="125. Valid Palindrome - Python Solution"
 # List Comprehension
@@ -99,9 +99,9 @@ print(isPalindromeLR(s))  # True
 
 ## 1750. Minimum Length of String After Deleting Similar Ends
 
--   [LeetCode](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | [LeetCode CH](https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/) (Medium)
+- [LeetCode](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | [LeetCode CH](https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/) (Medium)
 
--   Tags: two pointers, string
+- Tags: two pointers, string
 
 ```python title="1750. Minimum Length of String After Deleting Similar Ends - Python Solution"
 # Sliding Window Variable Size
@@ -126,15 +126,15 @@ print(minimumLength("aabccabba"))  # 3
 
 ## 2105. Watering Plants II
 
--   [LeetCode](https://leetcode.com/problems/watering-plants-ii/) | [LeetCode CH](https://leetcode.cn/problems/watering-plants-ii/) (Medium)
+- [LeetCode](https://leetcode.com/problems/watering-plants-ii/) | [LeetCode CH](https://leetcode.cn/problems/watering-plants-ii/) (Medium)
 
--   Tags: array, two pointers, simulation
+- Tags: array, two pointers, simulation
 
 ## 977. Squares of a Sorted Array
 
--   [LeetCode](https://leetcode.com/problems/squares-of-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
+- [LeetCode](https://leetcode.com/problems/squares-of-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
 
--   Tags: array, two pointers, sorting
+- Tags: array, two pointers, sorting
 
 ```python title="977. Squares of a Sorted Array - Python Solution"
 from typing import List
@@ -174,21 +174,21 @@ print(sortedSquares(nums))  # [0, 1, 9, 16, 100]
 
 ## 658. Find K Closest Elements
 
--   [LeetCode](https://leetcode.com/problems/find-k-closest-elements/) | [LeetCode CH](https://leetcode.cn/problems/find-k-closest-elements/) (Medium)
+- [LeetCode](https://leetcode.com/problems/find-k-closest-elements/) | [LeetCode CH](https://leetcode.cn/problems/find-k-closest-elements/) (Medium)
 
--   Tags: array, two pointers, binary search, sliding window, sorting, heap priority queue
+- Tags: array, two pointers, binary search, sliding window, sorting, heap priority queue
 
 ## 1471. The k Strongest Values in an Array
 
--   [LeetCode](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/the-k-strongest-values-in-an-array/) (Medium)
+- [LeetCode](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/the-k-strongest-values-in-an-array/) (Medium)
 
--   Tags: array, two pointers, sorting
+- Tags: array, two pointers, sorting
 
 ## 167. Two Sum II - Input Array Is Sorted
 
--   [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
+- [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
 
--   Tags: array, two pointers, binary search
+- Tags: array, two pointers, binary search
 
 ```python title="167. Two Sum II - Input Array Is Sorted - Python Solution"
 from typing import List
@@ -224,21 +224,21 @@ print(twoSum(numbers, target))  # [1, 2]
 
 ## 633. Sum of Square Numbers
 
--   [LeetCode](https://leetcode.com/problems/sum-of-square-numbers/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-square-numbers/) (Medium)
+- [LeetCode](https://leetcode.com/problems/sum-of-square-numbers/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-square-numbers/) (Medium)
 
--   Tags: math, two pointers, binary search
+- Tags: math, two pointers, binary search
 
 ## 2824. Count Pairs Whose Sum is Less than Target
 
--   [LeetCode](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | [LeetCode CH](https://leetcode.cn/problems/count-pairs-whose-sum-is-less-than-target/) (Easy)
+- [LeetCode](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | [LeetCode CH](https://leetcode.cn/problems/count-pairs-whose-sum-is-less-than-target/) (Easy)
 
--   Tags: array, two pointers, binary search, sorting
+- Tags: array, two pointers, binary search, sorting
 
 ## 15. 3Sum
 
--   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
+- [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
--   Tags: array, two pointers, sorting
+- Tags: array, two pointers, sorting
 
 ```python title="15. 3Sum - Python Solution"
 from typing import List
@@ -336,9 +336,9 @@ int main() {
 
 ## 16. 3Sum Closest
 
--   [LeetCode](https://leetcode.com/problems/3sum-closest/) | [LeetCode CH](https://leetcode.cn/problems/3sum-closest/) (Medium)
+- [LeetCode](https://leetcode.com/problems/3sum-closest/) | [LeetCode CH](https://leetcode.cn/problems/3sum-closest/) (Medium)
 
--   Tags: array, two pointers, sorting
+- Tags: array, two pointers, sorting
 
 ```python title="16. 3Sum Closest - Python Solution"
 from typing import List
@@ -433,9 +433,9 @@ int main() {
 
 ## 18. 4Sum
 
--   [LeetCode](https://leetcode.com/problems/4sum/) | [LeetCode CH](https://leetcode.cn/problems/4sum/) (Medium)
+- [LeetCode](https://leetcode.com/problems/4sum/) | [LeetCode CH](https://leetcode.cn/problems/4sum/) (Medium)
 
--   Tags: array, two pointers, sorting
+- Tags: array, two pointers, sorting
 
 ```python title="18. 4Sum - Python Solution"
 from typing import List
@@ -486,36 +486,36 @@ print(fourSum(nums, target))
 
 ## 611. Valid Triangle Number
 
--   [LeetCode](https://leetcode.com/problems/valid-triangle-number/) | [LeetCode CH](https://leetcode.cn/problems/valid-triangle-number/) (Medium)
+- [LeetCode](https://leetcode.com/problems/valid-triangle-number/) | [LeetCode CH](https://leetcode.cn/problems/valid-triangle-number/) (Medium)
 
--   Tags: array, two pointers, binary search, greedy, sorting
+- Tags: array, two pointers, binary search, greedy, sorting
 
 ## 1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers
 
--   [LeetCode](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) (Medium)
+- [LeetCode](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) (Medium)
 
--   Tags: array, hash table, math, two pointers
+- Tags: array, hash table, math, two pointers
 
 ## 923. 3Sum With Multiplicity
 
--   [LeetCode](https://leetcode.com/problems/3sum-with-multiplicity/) | [LeetCode CH](https://leetcode.cn/problems/3sum-with-multiplicity/) (Medium)
+- [LeetCode](https://leetcode.com/problems/3sum-with-multiplicity/) | [LeetCode CH](https://leetcode.cn/problems/3sum-with-multiplicity/) (Medium)
 
--   Tags: array, hash table, two pointers, sorting, counting
+- Tags: array, hash table, two pointers, sorting, counting
 
 ## 948. Bag of Tokens
 
--   [LeetCode](https://leetcode.com/problems/bag-of-tokens/) | [LeetCode CH](https://leetcode.cn/problems/bag-of-tokens/) (Medium)
+- [LeetCode](https://leetcode.com/problems/bag-of-tokens/) | [LeetCode CH](https://leetcode.cn/problems/bag-of-tokens/) (Medium)
 
--   Tags: array, two pointers, greedy, sorting
+- Tags: array, two pointers, greedy, sorting
 
 ## 11. Container With Most Water
 
--   [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
+- [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [LeetCode CH](https://leetcode.cn/problems/container-with-most-water/) (Medium)
 
--   Tags: array, two pointers, greedy
--   Return the maximum area of water that can be trapped between the vertical lines.
+- Tags: array, two pointers, greedy
+- Return the maximum area of water that can be trapped between the vertical lines.
 
-![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg){width=300px}
+![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
 
 ```python title="11. Container With Most Water - Python Solution"
 from typing import List
@@ -599,10 +599,10 @@ int main() {
 
 ## 42. Trapping Rain Water
 
--   [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
+- [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [LeetCode CH](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
 
--   Tags: array, two pointers, dynamic programming, stack, monotonic stack
--   ![42](../assets/0042.png)
+- Tags: array, two pointers, dynamic programming, stack, monotonic stack
+- ![42](../assets/0042.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZI2z5pq0TqA?si=OEYg01dbmzvmtIwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -733,27 +733,27 @@ int main()
 
 ## 1616. Split Two Strings to Make Palindrome
 
--   [LeetCode](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/split-two-strings-to-make-palindrome/) (Medium)
+- [LeetCode](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/split-two-strings-to-make-palindrome/) (Medium)
 
--   Tags: two pointers, string
+- Tags: two pointers, string
 
 ## 1498. Number of Subsequences That Satisfy the Given Sum Condition
 
--   [LeetCode](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) | [LeetCode CH](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) (Medium)
+- [LeetCode](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) | [LeetCode CH](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) (Medium)
 
--   Tags: array, two pointers, binary search, sorting
+- Tags: array, two pointers, binary search, sorting
 
 ## 1782. Count Pairs Of Nodes
 
--   [LeetCode](https://leetcode.com/problems/count-pairs-of-nodes/) | [LeetCode CH](https://leetcode.cn/problems/count-pairs-of-nodes/) (Hard)
+- [LeetCode](https://leetcode.com/problems/count-pairs-of-nodes/) | [LeetCode CH](https://leetcode.cn/problems/count-pairs-of-nodes/) (Hard)
 
--   Tags: array, two pointers, binary search, graph, sorting
+- Tags: array, two pointers, binary search, graph, sorting
 
 ## 1099. Two Sum Less Than K
 
--   [LeetCode](https://leetcode.com/problems/two-sum-less-than-k/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-less-than-k/) (Easy)
+- [LeetCode](https://leetcode.com/problems/two-sum-less-than-k/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-less-than-k/) (Easy)
 
--   Tags: array, two pointers, binary search, sorting
+- Tags: array, two pointers, binary search, sorting
 
 ```python title="1099. Two Sum Less Than K - Python Solution"
 from typing import List
@@ -785,18 +785,18 @@ print(twoSumLessThanK(nums, k))  # 58
 
 ## 360. Sort Transformed Array
 
--   [LeetCode](https://leetcode.com/problems/sort-transformed-array/) | [LeetCode CH](https://leetcode.cn/problems/sort-transformed-array/) (Medium)
+- [LeetCode](https://leetcode.com/problems/sort-transformed-array/) | [LeetCode CH](https://leetcode.cn/problems/sort-transformed-array/) (Medium)
 
--   Tags: array, math, two pointers, sorting
+- Tags: array, math, two pointers, sorting
 
 ## 2422. Merge Operations to Turn Array Into a Palindrome
 
--   [LeetCode](https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/merge-operations-to-turn-array-into-a-palindrome/) (Medium)
+- [LeetCode](https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/merge-operations-to-turn-array-into-a-palindrome/) (Medium)
 
--   Tags: array, two pointers, greedy
+- Tags: array, two pointers, greedy
 
 ## 259. 3Sum Smaller
 
--   [LeetCode](https://leetcode.com/problems/3sum-smaller/) | [LeetCode CH](https://leetcode.cn/problems/3sum-smaller/) (Medium)
+- [LeetCode](https://leetcode.com/problems/3sum-smaller/) | [LeetCode CH](https://leetcode.cn/problems/3sum-smaller/) (Medium)
 
--   Tags: array, two pointers, binary search, sorting
+- Tags: array, two pointers, binary search, sorting

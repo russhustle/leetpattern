@@ -14,17 +14,17 @@ comments: True
 
 ## 733. Flood Fill
 
--   [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
+- [LeetCode](https://leetcode.com/problems/flood-fill/) | [LeetCode CH](https://leetcode.cn/problems/flood-fill/) (Easy)
 
--   Tags: array, depth first search, breadth first search, matrix
--   Replace all the pixels of the same color starting from the given pixel.
--   In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
--   Edge cases: If the starting pixel is already the target color, return the image as it is.
--   **Flood Fill** is essentially a graph traversal algorithm (like BFS or DFS) applied to matrices (2D grids).
-    It checks adjacent cells (up, down, left, right) of a starting point to determine whether they belong to the same region.
-    Typically, it involves modifying or marking the cells that belong to the same connected component.
+- Tags: array, depth first search, breadth first search, matrix
+- Replace all the pixels of the same color starting from the given pixel.
+- In other words, find the connected component of the starting pixel and change the color of all the pixels in that component.
+- Edge cases: If the starting pixel is already the target color, return the image as it is.
+- **Flood Fill** is essentially a graph traversal algorithm (like BFS or DFS) applied to matrices (2D grids).
+  It checks adjacent cells (up, down, left, right) of a starting point to determine whether they belong to the same region.
+  Typically, it involves modifying or marking the cells that belong to the same connected component.
 
-![flood_fill](../assets/flood_fill_example.png){width=300px}
+![flood_fill](../assets/flood_fill_example.png)
 
 ![733](../assets/0733.jpg)
 
@@ -120,22 +120,22 @@ print(floodFillBFS(image, sr, sc, 2))
 
 ## 200. Number of Islands
 
--   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
+- [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
 
--   Tags: array, depth first search, breadth first search, union find, matrix
--   Count the number of islands in a 2D grid.
--   Method 1: DFS
--   Method 2: BFS (use a queue to traverse the grid)
+- Tags: array, depth first search, breadth first search, union find, matrix
+- Count the number of islands in a 2D grid.
+- Method 1: DFS
+- Method 2: BFS (use a queue to traverse the grid)
 
--   How to keep track of visited cells?
+- How to keep track of visited cells?
 
-    1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
-    2. Use a set to store the visited cells.
+  1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
+  2. Use a set to store the visited cells.
 
--   Steps:
-    1. Init: variables
-    2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
-    3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
+- Steps:
+  1. Init: variables
+  2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
+  3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
 ![0200](../assets/0200.jpg)
 
@@ -326,9 +326,9 @@ int main()
 
 ## 695. Max Area of Island
 
--   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
+- [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 
--   Tags: array, depth first search, breadth first search, union find, matrix
+- Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="695. Max Area of Island - Python Solution"
 from collections import deque
@@ -510,9 +510,9 @@ int main() {
 
 ## 463. Island Perimeter
 
--   [LeetCode](https://leetcode.com/problems/island-perimeter/) | [LeetCode CH](https://leetcode.cn/problems/island-perimeter/) (Easy)
+- [LeetCode](https://leetcode.com/problems/island-perimeter/) | [LeetCode CH](https://leetcode.cn/problems/island-perimeter/) (Easy)
 
--   Tags: array, depth first search, breadth first search, matrix
+- Tags: array, depth first search, breadth first search, matrix
 
 ```python title="463. Island Perimeter - Python Solution"
 from typing import List
@@ -575,9 +575,9 @@ print(islandPerimeter(grid))  # 16
 
 ## 130. Surrounded Regions
 
--   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
+- [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
 
--   Tags: array, depth first search, breadth first search, union find, matrix
+- Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="130. Surrounded Regions - Python Solution"
 from collections import deque
@@ -689,9 +689,9 @@ pprint(board2)
 
 ## 417. Pacific Atlantic Water Flow
 
--   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
+- [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 
--   Tags: array, depth first search, breadth first search, matrix
+- Tags: array, depth first search, breadth first search, matrix
 
 ```python title="417. Pacific Atlantic Water Flow - Python Solution"
 from collections import deque
@@ -781,9 +781,9 @@ print(pacificAtlanticBFS(heights))
 
 ## 827. Making A Large Island
 
--   [LeetCode](https://leetcode.com/problems/making-a-large-island/) | [LeetCode CH](https://leetcode.cn/problems/making-a-large-island/) (Hard)
+- [LeetCode](https://leetcode.com/problems/making-a-large-island/) | [LeetCode CH](https://leetcode.cn/problems/making-a-large-island/) (Hard)
 
--   Tags: array, depth first search, breadth first search, union find, matrix
+- Tags: array, depth first search, breadth first search, union find, matrix
 
 ```python title="827. Making A Large Island - Python Solution"
 from collections import defaultdict

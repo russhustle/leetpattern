@@ -30,7 +30,9 @@ from typing import List
 
 
 # BFS
-def shortestDistanceAfterQueries(n: int, queries: List[List[int]]) -> List[int]:
+def shortestDistanceAfterQueries(
+    n: int, queries: List[List[int]]
+) -> List[int]:
     g = [[] for _ in range(n)]
     for i in range(n - 1):
         g[i].append(i + 1)
@@ -152,7 +154,9 @@ from typing import List
 
 
 # BFS
-def numBusesToDestination(routes: List[List[int]], source: int, target: int) -> int:
+def numBusesToDestination(
+    routes: List[List[int]], source: int, target: int
+) -> int:
     if source == target:
         return 0
 

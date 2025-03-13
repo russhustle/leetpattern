@@ -143,7 +143,11 @@ def medianSlidingWindow1(nums: List[int], k: int) -> List[float]:
         heapq.heappush(max_heap, (-n, idx))
 
     res = [
-        ((min_heap[0][0] - max_heap[0][0]) / 2 if k % 2 == 0 else min_heap[0][0] * 1.0)
+        (
+            (min_heap[0][0] - max_heap[0][0]) / 2
+            if k % 2 == 0
+            else min_heap[0][0] * 1.0
+        )
     ]
 
     for i in range(k, len(nums)):

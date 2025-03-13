@@ -186,7 +186,9 @@ from typing import List
 
 
 # Heap - Two Heaps
-def findMaximizedCapital(k: int, w: int, profits: List[int], capital: List[int]) -> int:
+def findMaximizedCapital(
+    k: int, w: int, profits: List[int], capital: List[int]
+) -> int:
     if not profits or not capital:
         return w
 

@@ -428,7 +428,13 @@ def numIslandsBFS2(grid: List[List[str]]) -> int:
 
             for dr, dc in dirs:
                 nr, nc = dr + row, dc + col
-                if nr < 0 or nr >= m or nc < 0 or nc >= n or grid[nr][nc] != "1":
+                if (
+                    nr < 0
+                    or nr >= m
+                    or nc < 0
+                    or nc >= n
+                    or grid[nr][nc] != "1"
+                ):
                     continue
                 grid[nr][nc] = "2"
                 q.append((nr, nc))
@@ -1781,7 +1787,9 @@ def findOrderBFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
 
 
 # 2. DFS + Set
-def findOrderDFS1(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+def findOrderDFS1(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
     adj = defaultdict(list)
     for crs, pre in prerequisites:
         adj[crs].append(pre)
@@ -1813,7 +1821,9 @@ def findOrderDFS1(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
 
 
 # 3. DFS + List
-def findOrderDFS2(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+def findOrderDFS2(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
     adj = defaultdict(list)
     for pre, crs in prerequisites:
         adj[crs].append(pre)
@@ -2050,7 +2060,9 @@ from template import ListNode
 
 
 # Linked List
-def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+def addTwoNumbers(
+    l1: Optional[ListNode], l2: Optional[ListNode]
+) -> Optional[ListNode]:
     dummy = ListNode(0)
     cur = dummy
     carry = 0

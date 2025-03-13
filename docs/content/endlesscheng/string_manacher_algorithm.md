@@ -163,7 +163,9 @@ def checkPartitioning(s: str) -> bool:
         min_change = [[0] * n for _ in range(n)]
         for i in range(n - 2, -1, -1):
             for j in range(i + 1, n):
-                min_change[i][j] = min_change[i + 1][j - 1] + (1 if s[i] != s[j] else 0)
+                min_change[i][j] = min_change[i + 1][j - 1] + (
+                    1 if s[i] != s[j] else 0
+                )
 
         dp = min_change[0]
 

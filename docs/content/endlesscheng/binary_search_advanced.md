@@ -33,7 +33,9 @@ from typing import List
 
 
 # Binary Search
-def successfulPairs(spells: List[int], potions: List[int], success: int) -> List[int]:
+def successfulPairs(
+    spells: List[int], potions: List[int], success: int
+) -> List[int]:
     potions.sort()
     res = []
     n = len(potions)

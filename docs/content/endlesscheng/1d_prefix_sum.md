@@ -104,9 +104,9 @@ def totalStrength(strength: List[int]) -> int:
     ans = 0
     for i, v in enumerate(strength):
         l, r = left[i] + 1, right[i] - 1
-        tot = (i - l + 1) * (prefix_sum[r + 2] - prefix_sum[i + 1]) - (r - i + 1) * (
-            prefix_sum[i + 1] - prefix_sum[l]
-        )
+        tot = (i - l + 1) * (prefix_sum[r + 2] - prefix_sum[i + 1]) - (
+            r - i + 1
+        ) * (prefix_sum[i + 1] - prefix_sum[l])
         ans += v * tot
 
     return ans % (10**9 + 7)

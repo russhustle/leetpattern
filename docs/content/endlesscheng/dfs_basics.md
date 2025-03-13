@@ -198,7 +198,9 @@ from typing import List
 
 
 # DFS (Adjacency List)
-def validPathDFS(n: int, edges: List[List[int]], source: int, destination: int) -> bool:
+def validPathDFS(
+    n: int, edges: List[List[int]], source: int, destination: int
+) -> bool:
     if not edges and source != destination:
         return False
 
@@ -655,7 +657,9 @@ def minMalwareSpread(graph: List[List[int]], initial: List[int]) -> int:
             visited = set()
             v = []
             dfs(i)
-            if len(v) == 1 and (len(visited) > mx or len(visited) == mx and v[0] < ans):
+            if len(v) == 1 and (
+                len(visited) > mx or len(visited) == mx and v[0] < ans
+            ):
                 ans, mx = v[0], len(visited)
     return ans
 

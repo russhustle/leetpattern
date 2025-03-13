@@ -261,7 +261,9 @@ from typing import List
 
 
 # BFS
-def numBusesToDestination(routes: List[List[int]], source: int, target: int) -> int:
+def numBusesToDestination(
+    routes: List[List[int]], source: int, target: int
+) -> int:
     if source == target:
         return 0
 

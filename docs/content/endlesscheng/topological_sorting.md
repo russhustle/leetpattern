@@ -128,7 +128,9 @@ def findOrderBFS(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
 
 
 # 2. DFS + Set
-def findOrderDFS1(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+def findOrderDFS1(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
     adj = defaultdict(list)
     for crs, pre in prerequisites:
         adj[crs].append(pre)
@@ -160,7 +162,9 @@ def findOrderDFS1(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
 
 
 # 3. DFS + List
-def findOrderDFS2(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+def findOrderDFS2(
+    numCourses: int, prerequisites: List[List[int]]
+) -> List[int]:
     adj = defaultdict(list)
     for pre, crs in prerequisites:
         adj[crs].append(pre)

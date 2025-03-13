@@ -341,7 +341,9 @@ def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
 
     targetSum -= root.val
 
-    return hasPathSum(root.left, targetSum) or hasPathSum(root.right, targetSum)
+    return hasPathSum(root.left, targetSum) or hasPathSum(
+        root.right, targetSum
+    )
 
 
 root = build([5, 4, 8, 11, None, 13, 4, 7, 2, None, None, None, None, None, 1])
@@ -437,11 +439,15 @@ def isSameTreeRecursive(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
     if p.val != q.val:
         return False
 
-    return isSameTreeRecursive(p.left, q.left) and isSameTreeRecursive(p.right, q.right)
+    return isSameTreeRecursive(p.left, q.left) and isSameTreeRecursive(
+        p.right, q.right
+    )
 
 
 # 2. Iterative with queue
-def isSameTreeIterativeQueue(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+def isSameTreeIterativeQueue(
+    p: Optional[TreeNode], q: Optional[TreeNode]
+) -> bool:
     queue = deque([(p, q)])
 
     while queue:
@@ -461,7 +467,9 @@ def isSameTreeIterativeQueue(p: Optional[TreeNode], q: Optional[TreeNode]) -> bo
 
 
 # 3. Iterative with stack
-def isSameTreeIterativeStack(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+def isSameTreeIterativeStack(
+    p: Optional[TreeNode], q: Optional[TreeNode]
+) -> bool:
     stack = [(p, q)]
 
     while stack:
@@ -511,7 +519,9 @@ class TreeNode:
         self.right = right
 
 
-def lowestCommonAncestor(root: "TreeNode", p: "TreeNode", q: "TreeNode") -> "TreeNode":
+def lowestCommonAncestor(
+    root: "TreeNode", p: "TreeNode", q: "TreeNode"
+) -> "TreeNode":
     while root:
         if root.val > p.val and root.val > q.val:
             root = root.left
@@ -563,7 +573,9 @@ class TreeNode:
         self.right = right
 
 
-def lowestCommonAncestor(root: "TreeNode", p: "TreeNode", q: "TreeNode") -> "TreeNode":
+def lowestCommonAncestor(
+    root: "TreeNode", p: "TreeNode", q: "TreeNode"
+) -> "TreeNode":
     if not root or q == root or p == root:
         return root
 

@@ -231,7 +231,13 @@ def numIslandsBFS2(grid: List[List[str]]) -> int:
 
             for dr, dc in dirs:
                 nr, nc = dr + row, dc + col
-                if nr < 0 or nr >= m or nc < 0 or nc >= n or grid[nr][nc] != "1":
+                if (
+                    nr < 0
+                    or nr >= m
+                    or nc < 0
+                    or nc >= n
+                    or grid[nr][nc] != "1"
+                ):
                     continue
                 grid[nr][nc] = "2"
                 q.append((nr, nc))
@@ -342,7 +348,9 @@ def maxAreaOfIslandDFS(grid: List[List[int]]) -> int:
 
         grid[r][c] = 2
 
-        return 1 + dfs(r - 1, c) + dfs(r + 1, c) + dfs(r, c + 1) + dfs(r, c - 1)
+        return (
+            1 + dfs(r - 1, c) + dfs(r + 1, c) + dfs(r, c + 1) + dfs(r, c - 1)
+        )
 
     area = 0
     for r in range(m):

@@ -44,7 +44,9 @@ from template import ListNode
 
 
 # Hash Set
-def getIntersectionNodeHash(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+def getIntersectionNodeHash(
+    headA: ListNode, headB: ListNode
+) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -64,7 +66,9 @@ def getIntersectionNodeHash(headA: ListNode, headB: ListNode) -> Optional[ListNo
 
 
 # Two Pointers
-def getIntersectionNodeTP(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+def getIntersectionNodeTP(
+    headA: ListNode, headB: ListNode
+) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -461,7 +465,9 @@ from template import ListNode
 
 
 # Linked List
-def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+def addTwoNumbers(
+    l1: Optional[ListNode], l2: Optional[ListNode]
+) -> Optional[ListNode]:
     dummy = ListNode(0)
     cur = dummy
     carry = 0

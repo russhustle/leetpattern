@@ -785,9 +785,7 @@ class SnakeGame:
         new_head = (head[0] + dx, head[1] + dy)
 
         # Check if the new head is out of bounds
-        if not (
-            0 <= new_head[0] < self.height and 0 <= new_head[1] < self.width
-        ):
+        if not (0 <= new_head[0] < self.height and 0 <= new_head[1] < self.width):
             return -1
 
         # Check if the new head collides with the snake body (excluding the tail)

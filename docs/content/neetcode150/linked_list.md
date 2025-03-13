@@ -316,9 +316,7 @@ from template import ListNode
 
 
 # Linked List
-def addTwoNumbers(
-    l1: Optional[ListNode], l2: Optional[ListNode]
-) -> Optional[ListNode]:
+def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode(0)
     cur = dummy
     carry = 0

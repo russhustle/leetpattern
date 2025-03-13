@@ -73,9 +73,7 @@ from typing import List
 
 
 # Monotonic Queue
-def maximumRobots(
-    chargeTimes: List[int], runningCosts: List[int], budget: int
-) -> int:
+def maximumRobots(chargeTimes: List[int], runningCosts: List[int], budget: int) -> int:
     ans = sum_cost = left = 0
     q = deque()
 

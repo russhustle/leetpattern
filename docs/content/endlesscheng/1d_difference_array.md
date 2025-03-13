@@ -261,9 +261,7 @@ from typing import List
 
 
 # Interval
-def insert(
-    intervals: List[List[int]], newInterval: List[int]
-) -> List[List[int]]:
+def insert(intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
     n = len(intervals)
 
     if n == 0:

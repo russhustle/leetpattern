@@ -98,9 +98,7 @@ from template import ListNode
 
 
 # Linked List
-def modifiedList(
-    nums: List[int], head: Optional[ListNode]
-) -> Optional[ListNode]:
+def modifiedList(nums: List[int], head: Optional[ListNode]) -> Optional[ListNode]:
     numSet = set(nums)
     dummy = ListNode(0, head)
     cur = dummy

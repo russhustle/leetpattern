@@ -55,9 +55,7 @@ class TreeNode:
 
 
 # 1. Recursive
-def searchBSTRecursive(
-    root: Optional[TreeNode], val: int
-) -> Optional[TreeNode]:
+def searchBSTRecursive(root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
     if not root:
         return None
 
@@ -72,9 +70,7 @@ def searchBSTRecursive(
 
 
 # 2. Iterative
-def searchBSTIterative(
-    root: Optional[TreeNode], val: int
-) -> Optional[TreeNode]:
+def searchBSTIterative(root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
     while root:
         if root.val > val:
             root = root.left
@@ -342,9 +338,7 @@ class TreeNode:
         self.right = right
 
 
-def lowestCommonAncestor(
-    root: "TreeNode", p: "TreeNode", q: "TreeNode"
-) -> "TreeNode":
+def lowestCommonAncestor(root: "TreeNode", p: "TreeNode", q: "TreeNode") -> "TreeNode":
     while root:
         if root.val > p.val and root.val > q.val:
             root = root.left
@@ -507,9 +501,7 @@ class TreeNode:
         self.right = right
 
 
-def trimBST(
-    root: Optional[TreeNode], low: int, high: int
-) -> Optional[TreeNode]:
+def trimBST(root: Optional[TreeNode], low: int, high: int) -> Optional[TreeNode]:
     if root is None:
         return None
 
@@ -891,9 +883,7 @@ class BSTIterator:
     def _inorder(self, node):
         if not node:
             return []
-        return (
-            self._inorder(node.left) + [node.val] + self._inorder(node.right)
-        )
+        return self._inorder(node.left) + [node.val] + self._inorder(node.right)
 
     def hasNext(self) -> bool:
         return self.index < self.size - 1

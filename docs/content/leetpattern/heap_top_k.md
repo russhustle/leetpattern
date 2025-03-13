@@ -283,14 +283,10 @@ def reorganizeString(s: str) -> str:
         count, char = heapq.heappop(heap)  # pop the most frequent character
         result.append(char)  # append the character to the result
 
-        if (
-            prev_count < 0
-        ):  # if the previous character still has remaining count
+        if prev_count < 0:  # if the previous character still has remaining count
             heapq.heappush(heap, (prev_count, prev_char))
 
-        prev_count = (
-            count + 1
-        )  # update the current character's remaining count
+        prev_count = count + 1  # update the current character's remaining count
         prev_char = char  # update the current character
 
     # check if there is any invalid result

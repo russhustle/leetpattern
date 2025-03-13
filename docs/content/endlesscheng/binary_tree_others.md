@@ -369,9 +369,7 @@ class BSTIterator:
     def _inorder(self, node):
         if not node:
             return []
-        return (
-            self._inorder(node.left) + [node.val] + self._inorder(node.right)
-        )
+        return self._inorder(node.left) + [node.val] + self._inorder(node.right)
 
     def hasNext(self) -> bool:
         return self.index < self.size - 1

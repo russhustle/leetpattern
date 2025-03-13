@@ -123,19 +123,19 @@ print(floodFillBFS(image, sr, sc, 2))
 -   [LeetCode](https://leetcode.com/problems/number-of-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-- Count the number of islands in a 2D grid.
-- Method 1: DFS
-- Method 2: BFS (use a queue to traverse the grid)
+-   Count the number of islands in a 2D grid.
+-   Method 1: DFS
+-   Method 2: BFS (use a queue to traverse the grid)
 
-- How to keep track of visited cells?
+-   How to keep track of visited cells?
 
-  1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
-  2. Use a set to store the visited cells.
+    1. Mark the visited cell as `0` (or any other value) to avoid revisiting it.
+    2. Use a set to store the visited cells.
 
-- Steps:
-  1. Init: variables
-  2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
-  3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
+-   Steps:
+    1. Init: variables
+    2. DFS/BFS: starting from the cell with `1`, turn all the connected `1`s to `0`.
+    3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
 ![0200](../../assets/0200.jpg)
 
@@ -231,13 +231,7 @@ def numIslandsBFS2(grid: List[List[str]]) -> int:
 
             for dr, dc in dirs:
                 nr, nc = dr + row, dc + col
-                if (
-                    nr < 0
-                    or nr >= m
-                    or nc < 0
-                    or nc >= n
-                    or grid[nr][nc] != "1"
-                ):
+                if nr < 0 or nr >= m or nc < 0 or nc >= n or grid[nr][nc] != "1":
                     continue
                 grid[nr][nc] = "2"
                 q.append((nr, nc))
@@ -348,9 +342,7 @@ def maxAreaOfIslandDFS(grid: List[List[int]]) -> int:
 
         grid[r][c] = 2
 
-        return (
-            1 + dfs(r - 1, c) + dfs(r + 1, c) + dfs(r, c + 1) + dfs(r, c - 1)
-        )
+        return 1 + dfs(r - 1, c) + dfs(r + 1, c) + dfs(r, c + 1) + dfs(r, c - 1)
 
     area = 0
     for r in range(m):

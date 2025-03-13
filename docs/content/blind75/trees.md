@@ -203,15 +203,11 @@ def isSameTreeRecursive(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
     if p.val != q.val:
         return False
 
-    return isSameTreeRecursive(p.left, q.left) and isSameTreeRecursive(
-        p.right, q.right
-    )
+    return isSameTreeRecursive(p.left, q.left) and isSameTreeRecursive(p.right, q.right)
 
 
 # 2. Iterative with queue
-def isSameTreeIterativeQueue(
-    p: Optional[TreeNode], q: Optional[TreeNode]
-) -> bool:
+def isSameTreeIterativeQueue(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
     queue = deque([(p, q)])
 
     while queue:
@@ -231,9 +227,7 @@ def isSameTreeIterativeQueue(
 
 
 # 3. Iterative with stack
-def isSameTreeIterativeStack(
-    p: Optional[TreeNode], q: Optional[TreeNode]
-) -> bool:
+def isSameTreeIterativeStack(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
     stack = [(p, q)]
 
     while stack:
@@ -343,9 +337,7 @@ class TreeNode:
         self.right = right
 
 
-def lowestCommonAncestor(
-    root: "TreeNode", p: "TreeNode", q: "TreeNode"
-) -> "TreeNode":
+def lowestCommonAncestor(root: "TreeNode", p: "TreeNode", q: "TreeNode") -> "TreeNode":
     while root:
         if root.val > p.val and root.val > q.val:
             root = root.left

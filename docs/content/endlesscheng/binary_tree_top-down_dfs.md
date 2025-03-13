@@ -202,9 +202,7 @@ def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
 
     targetSum -= root.val
 
-    return hasPathSum(root.left, targetSum) or hasPathSum(
-        root.right, targetSum
-    )
+    return hasPathSum(root.left, targetSum) or hasPathSum(root.right, targetSum)
 
 
 root = build([5, 4, 8, 11, None, 13, 4, 7, 2, None, None, None, None, None, 1])

@@ -121,9 +121,7 @@ from typing import List
 
 
 # Heap - Merge K Sorted
-def kSmallestPairs(
-    nums1: List[int], nums2: List[int], k: int
-) -> List[List[int]]:
+def kSmallestPairs(nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
     if not nums1 or not nums2 or k <= 0:
         return []
 

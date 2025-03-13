@@ -456,9 +456,7 @@ def shortestPathAllKeys(grid: List[str]) -> int:
                 if cell.islower():
                     new_keys |= 1 << (ord(cell) - ord("a"))
 
-                if cell.isupper() and not (
-                    keys & (1 << (ord(cell) - ord("A")))
-                ):
+                if cell.isupper() and not (keys & (1 << (ord(cell) - ord("A")))):
                     continue
 
                 if (nr, nc, new_keys) not in visited:

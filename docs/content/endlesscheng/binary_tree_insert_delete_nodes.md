@@ -140,9 +140,7 @@ class TreeNode:
         self.right = right
 
 
-def trimBST(
-    root: Optional[TreeNode], low: int, high: int
-) -> Optional[TreeNode]:
+def trimBST(root: Optional[TreeNode], low: int, high: int) -> Optional[TreeNode]:
     if root is None:
         return None
 

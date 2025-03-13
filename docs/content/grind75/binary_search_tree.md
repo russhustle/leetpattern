@@ -25,9 +25,7 @@ class TreeNode:
         self.right = right
 
 
-def lowestCommonAncestor(
-    root: "TreeNode", p: "TreeNode", q: "TreeNode"
-) -> "TreeNode":
+def lowestCommonAncestor(root: "TreeNode", p: "TreeNode", q: "TreeNode") -> "TreeNode":
     while root:
         if root.val > p.val and root.val > q.val:
             root = root.left

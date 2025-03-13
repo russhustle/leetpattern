@@ -251,9 +251,7 @@ def maximumLength(nums: List[int], k: int) -> int:
 
     for num in nums:
         for c in range(k, -1, -1):
-            count[c][num] = (
-                max(count[c][num], result[c - 1] if c > 0 else 0) + 1
-            )
+            count[c][num] = max(count[c][num], result[c - 1] if c > 0 else 0) + 1
             result[c] = max(result[c], count[c][num])
 
     return max(result)

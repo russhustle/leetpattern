@@ -36,9 +36,7 @@ def getSumAbsoluteDifferences(nums: List[int]) -> List[int]:
         leftCount = i
         rightCount = n - i - 1
 
-        res[i] = (nums[i] * leftCount - leftSum) + (
-            rightSum - nums[i] * rightCount
-        )
+        res[i] = (nums[i] * leftCount - leftSum) + (rightSum - nums[i] * rightCount)
         prefixSum += nums[i]
 
     return res

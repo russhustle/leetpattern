@@ -188,9 +188,7 @@ from typing import List
 
 
 # Prim
-def minCostToSupplyWater1(
-    n: int, wells: List[int], pipes: List[List[int]]
-) -> int:
+def minCostToSupplyWater1(n: int, wells: List[int], pipes: List[List[int]]) -> int:
     graph = defaultdict(list)
 
     for h1, h2, cost in pipes:
@@ -223,9 +221,7 @@ def minCostToSupplyWater1(
 
 
 # Kruskal
-def minCostToSupplyWater2(
-    n: int, wells: List[int], pipes: List[List[int]]
-) -> int:
+def minCostToSupplyWater2(n: int, wells: List[int], pipes: List[List[int]]) -> int:
     par = list(range(n + 1))
     rank = [0] * (n + 1)
 

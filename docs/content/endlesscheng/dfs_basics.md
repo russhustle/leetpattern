@@ -9,8 +9,8 @@ comments: True
 - [x] [797. All Paths From Source to Target](https://leetcode.cn/problems/all-paths-from-source-to-target/) (Medium)
 - [x] [841. Keys and Rooms](https://leetcode.cn/problems/keys-and-rooms/) (Medium)
 - [x] [2316. Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
-- [ ] [1319. Number of Operations to Make Network Connected](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) (Medium)
-- [ ] [2492. Minimum Score of a Path Between Two Cities](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
+- [x] [1319. Number of Operations to Make Network Connected](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) (Medium)
+- [x] [2492. Minimum Score of a Path Between Two Cities](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
 - [ ] [3387. Maximize Amount After Two Days of Conversions](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
 - [ ] [3310. Remove Methods From Project](https://leetcode.cn/problems/remove-methods-from-project/) (Medium)
 - [ ] [2685. Count the Number of Complete Components](https://leetcode.cn/problems/count-the-number-of-complete-components/) (Medium)
@@ -483,12 +483,123 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/number-of-operations-to-make-network-connected/) | [LeetCode CH](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
+- Return the minimum number of operations needed to make all computers connected.
+
+![1319](https://assets.leetcode.com/uploads/2020/01/02/sample_1_1677.png)
+
+```python title="1319. Number of Operations to Make Network Connected - Python Solution"
+"""
+Edge case: If the number of connections is less than n - 1, it is impossible to connect all the computers.
+"""
+
+from collections import defaultdict, deque
+from typing import List
+
+
+# DFS
+def makeConnectedDFS(n: int, connections: List[List[int]]) -> int:
+    if len(connections) < n - 1:
+        return -1
+
+    graph = defaultdict(list)
+    for u, v in connections:
+        graph[u].append(v)
+        graph[v].append(u)
+
+    visited = set()
+    component_count = 0
+
+    def dfs(node):
+        for i in graph[node]:
+            if i not in visited:
+                visited.add(i)
+                dfs(i)
+
+    for i in range(n):
+        if i not in visited:
+            visited.add(i)
+            dfs(i)
+            component_count += 1
+
+    return component_count - 1
+
+
+# BFS
+def makeConnectedBFS(n: int, connections: List[List[int]]) -> int:
+    if len(connections) < n - 1:
+        return -1
+
+    visited = set()
+    graph = defaultdict(list)
+    for u, v in connections:
+        graph[u].append(v)
+        graph[v].append(u)
+
+    def bfs(node):
+        q = deque([node])
+        while q:
+            cur = q.popleft()
+            for nxt in graph[cur]:
+                if nxt not in visited:
+                    q.append(nxt)
+                    visited.add(nxt)
+
+    component_count = 0
+    for i in range(n):
+        if i not in visited:
+            visited.add(i)
+            bfs(i)
+            component_count += 1
+
+    return component_count - 1
+
+
+n = 4
+connections = [[0, 1], [0, 2], [1, 2]]
+print(makeConnectedDFS(n, connections))  # 1
+print(makeConnectedBFS(n, connections))  # 1
+
+```
 
 ## 2492. Minimum Score of a Path Between Two Cities
 
 -   [LeetCode](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/) | [LeetCode CH](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
+
+```python title="2492. Minimum Score of a Path Between Two Cities - Python Solution"
+from collections import defaultdict
+from typing import List
+
+
+# DFS
+def minScoreDFS(n: int, roads: List[List[int]]) -> int:
+    graph = defaultdict(list)
+    for u, v, w in roads:
+        graph[u].append((v, w))
+        graph[v].append((u, w))
+
+    res = float("inf")
+    visited = set([1])
+
+    def dfs(node):
+        nonlocal res
+        for nxt, dist in graph[node]:
+            res = min(res, dist)
+            if nxt not in visited:
+                visited.add(nxt)
+                dfs(nxt)
+
+    dfs(1)
+
+    return res
+
+
+n = 4
+roads = [[1, 2, 9], [2, 3, 6], [2, 4, 5], [1, 4, 7]]
+print(minScoreDFS(n, roads))  # 5
+
+```
 
 ## 3387. Maximize Amount After Two Days of Conversions
 

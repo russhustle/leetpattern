@@ -13,7 +13,7 @@ topics:
     Sliding Window Variable Min: [ 209, 2904, 1234, 2875, 76, 632 ]
     Sliding Window Variable Subarrays Longer: [ 1358, 2962, 3325, 2799, 2537, 3298, 2495 ]
     Sliding Window Variable Subarrays Shorter: [ 713, 3258, 2302, 2762, 3134, 3261, 2743 ]
-    Sliding Window Variable Subarrays Exact: [ 930, 1248, 3306, 992 ]
+    Sliding Window Variable Subarrays Exact: [ 930, 1248, 3305, 3306, 992 ]
     Sliding Window Variable Others: [ 1438, 825, 2401, 1156, 424, 438, 1712, 1918 ]
     ## One Sequence Two Pointers
     One Sequence Two Pointers Opposite Direction: [ 344, 125, 1750, 2105, 977, 658, 1471, 167, 633, 2824, 15, 16, 18, 611, 1577, 923, 948, 11, 42, 1616, 1498, 1782, 1099, 360, 2422, 259 ]

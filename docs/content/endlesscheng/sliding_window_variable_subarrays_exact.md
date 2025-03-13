@@ -6,7 +6,8 @@ comments: True
 
 - [ ] [930. Binary Subarrays With Sum](https://leetcode.cn/problems/binary-subarrays-with-sum/) (Medium)
 - [x] [1248. Count Number of Nice Subarrays](https://leetcode.cn/problems/count-number-of-nice-subarrays/) (Medium)
-- [ ] [3306. Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) (Medium)
+- [x] [3305. Count of Substrings Containing Every Vowel and K Consonants I](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/) (Medium)
+- [x] [3306. Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) (Medium)
 - [x] [992. Subarrays with K Different Integers](https://leetcode.cn/problems/subarrays-with-k-different-integers/) (Hard)
 
 ## 930. Binary Subarrays With Sum
@@ -50,11 +51,109 @@ print(numberOfSubarrays(nums, k))  # 2
 
 ```
 
+## 3305. Count of Substrings Containing Every Vowel and K Consonants I
+
+-   [LeetCode](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/) | [LeetCode CH](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/) (Medium)
+
+-   Tags: hash table, string, sliding window
+
+```python title="3305. Count of Substrings Containing Every Vowel and K Consonants I - Python Solution"
+from collections import defaultdict
+
+
+# Sliding Window Variable Subarrays Exact
+def countOfSubstrings(word: str, k: int) -> int:
+    vowels = {"a", "e", "i", "o", "u"}
+    n = len(word)
+
+    def count(m: int) -> int:
+        occur = defaultdict(int)
+        valid_vow_cnt, con_cnt = 0, 0
+        left = 0
+        res = 0
+
+        for right in range(n):
+            while left < n and (con_cnt < m or valid_vow_cnt < 5):
+                if word[left] in vowels:
+                    if occur[word[left]] == 0:
+                        valid_vow_cnt += 1
+                    occur[word[left]] += 1
+                else:
+                    con_cnt += 1
+                left += 1
+
+            if con_cnt >= m and valid_vow_cnt == 5:
+                res += n - left + 1
+
+            if word[right] in vowels:
+                occur[word[right]] -= 1
+                if occur[word[right]] == 0:
+                    valid_vow_cnt -= 1
+            else:
+                con_cnt -= 1
+
+        return res
+
+    return count(k) - count(k + 1)
+
+
+word = "ieaouqqieaouqq"
+k = 1
+print(countOfSubstrings(word, k))  # 3
+
+```
+
 ## 3306. Count of Substrings Containing Every Vowel and K Consonants II
 
 -   [LeetCode](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | [LeetCode CH](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) (Medium)
 
 -   Tags: hash table, string, sliding window
+
+```python title="3306. Count of Substrings Containing Every Vowel and K Consonants II - Python Solution"
+from collections import defaultdict
+
+
+# Sliding Window Variable Subarrays Exact
+def countOfSubstrings(word: str, k: int) -> int:
+    vowels = {"a", "e", "i", "o", "u"}
+    n = len(word)
+
+    def count(m: int) -> int:
+        occur = defaultdict(int)
+        valid_vow_cnt, con_cnt = 0, 0
+        left = 0
+        res = 0
+
+        for right in range(n):
+            while left < n and (con_cnt < m or valid_vow_cnt < 5):
+                if word[left] in vowels:
+                    if occur[word[left]] == 0:
+                        valid_vow_cnt += 1
+                    occur[word[left]] += 1
+                else:
+                    con_cnt += 1
+                left += 1
+
+            if con_cnt >= m and valid_vow_cnt == 5:
+                res += n - left + 1
+
+            if word[right] in vowels:
+                occur[word[right]] -= 1
+                if occur[word[right]] == 0:
+                    valid_vow_cnt -= 1
+            else:
+                con_cnt -= 1
+
+        return res
+
+    return count(k) - count(k + 1)
+
+
+word = "ieaouqqieaouqq"
+k = 1
+print(countOfSubstrings(word, k))  # 3
+
+```
 
 ## 992. Subarrays with K Different Integers
 

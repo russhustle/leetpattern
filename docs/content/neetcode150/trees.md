@@ -970,7 +970,6 @@ from binarytree import build
 
 
 def maxPathSum(root: Optional[TreeNode]) -> int:
-
     res = float("-inf")
 
     def dfs(node):

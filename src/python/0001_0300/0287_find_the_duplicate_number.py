@@ -1,7 +1,7 @@
 from typing import List
 
 
-# Fast Slow Pointer
+# Floyd Cycle Detection Algorithm
 def findDuplicate(nums: List[int]) -> int:
     fast, slow = nums[0], nums[0]
 

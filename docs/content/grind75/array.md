@@ -690,32 +690,54 @@ int main() {
 -   Tags: array, two pointers, sorting
 
 ```python title="75. Sort Colors - Python Solution"
+from copy import deepcopy
 from typing import List
 
 
 # Left Right Pointers
-def sortColors(nums: List[int]) -> None:
-    """Sorts an array of 0, 1, and 2 in-place.
+def sort_colors_lr_pointers(nums: List[int]) -> None:
+    """
+    Do not return anything, modify nums in-place instead.
+    """
+    n = len(nums)
+    left = 0
+    for right in range(n):
+        if nums[right] == 0:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+
+    for right in range(left, n):
+        if nums[right] == 1:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+
+
+# Three Pointers
+def sort_colors_three_pointers(nums: List[int]) -> None:
+    """
     Do not return anything, modify nums in-place instead.
     """
     left, right = 0, len(nums) - 1
-    current = 0
+    cur = 0
 
-    while current <= right:
-        if nums[current] == 0:
-            nums[left], nums[current] = nums[current], nums[left]
+    while cur <= right:
+        if nums[cur] == 0:
+            nums[left], nums[cur] = nums[cur], nums[left]
             left += 1
-            current += 1
-        elif nums[current] == 2:
-            nums[right], nums[current] = nums[current], nums[right]
+            cur += 1
+        elif nums[cur] == 2:
+            nums[right], nums[cur] = nums[cur], nums[right]
             right -= 1
         else:
-            current += 1
+            cur += 1
 
 
 nums = [2, 0, 2, 1, 1, 0]
-sortColors(nums)
-print(nums)  # [0, 0, 1, 1, 2, 2]
+nums1, nums2 = deepcopy(nums), deepcopy(nums)
+sort_colors_lr_pointers(nums1)
+print(nums1)  # [0, 0, 1, 1, 2, 2]
+sort_colors_three_pointers(nums2)
+print(nums2)  # [0, 0, 1, 1, 2, 2]
 
 ```
 

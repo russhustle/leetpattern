@@ -232,12 +232,12 @@ from template import ListNode
 # Linked List
 def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     dummy = ListNode(0, head)
-    fast = slow = dummy
+    fast, slow = dummy, dummy
 
-    for _ in range(n + 1):
+    for _ in range(n):
         fast = fast.next
 
-    while fast:
+    while fast.next:
         fast = fast.next
         slow = slow.next
 
@@ -316,7 +316,9 @@ from template import ListNode
 
 
 # Linked List
-def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+def addTwoNumbers(
+    l1: Optional[ListNode], l2: Optional[ListNode]
+) -> Optional[ListNode]:
     dummy = ListNode()
     cur = dummy
     carry = 0
@@ -460,12 +462,34 @@ class Solution {
 
 -   Tags: array, two pointers, binary search, bit manipulation
 -   Find the duplicate number in an array containing `n + 1` integers where each integer is between `1` and `n` inclusive.
+-   Floyd's Tortoise and Hare (Cycle Detection)
+    -   141. Linked List Cycle
+    -   142. Linked List Cycle II
+-   Time Complexity: O(n)
+-   Space Complexity: O(1)
+
+Example: `nums = [1, 3, 4, 2, 2]`
+
+|  0   |  1   |  2   |  3   |  4   |
+| :--: | :--: | :--: | :--: | :--: |
+|  1   |  3   |  4   |  2   |  2   |
+
+
+
+```mermaid
+graph LR
+0((0)) --> 1((1))
+1 --> 3((3))
+2((2))--> 4((4))
+3 --> 2
+4 --> 2
+```
 
 ```python title="287. Find the Duplicate Number - Python Solution"
 from typing import List
 
 
-# Fast Slow Pointer
+# Floyd Cycle Detection Algorithm
 def findDuplicate(nums: List[int]) -> int:
     fast, slow = nums[0], nums[0]
 

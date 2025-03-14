@@ -6,12 +6,12 @@ from template import ListNode
 # Linked List
 def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     dummy = ListNode(0, head)
-    fast = slow = dummy
+    fast, slow = dummy, dummy
 
-    for _ in range(n + 1):
+    for _ in range(n):
         fast = fast.next
 
-    while fast:
+    while fast.next:
         fast = fast.next
         slow = slow.next
 

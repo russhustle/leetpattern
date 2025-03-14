@@ -2,8 +2,8 @@ from typing import List, Optional
 
 
 class ListNode:
-    def __init__(self, value=0, next=None):
-        self.val = value
+    def __init__(self, val=0, next=None):
+        self.val = val
         self.next = next
 
     @staticmethod
@@ -19,12 +19,12 @@ class ListNode:
         if not nums:
             return None
 
-        head = ListNode(value=nums[0])
+        head = ListNode(val=nums[0])
         cur = head
         cycle_node = None
 
         for i, val in enumerate(nums[1:], start=1):
-            cur.next = ListNode(value=val)
+            cur.next = ListNode(val=val)
             cur = cur.next
             if i == pos:
                 cycle_node = cur

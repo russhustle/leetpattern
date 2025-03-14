@@ -150,7 +150,6 @@ print(reverseBetween(head, left, right))
 ```python title="24. Swap Nodes in Pairs - Python Solution"
 from typing import Optional
 
-
 from template import ListNode
 
 

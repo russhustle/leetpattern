@@ -3,8 +3,8 @@ name = "lettpattern"
 version = "0.1.0"
 description = ""
 authors = ["Sihan A"]
-readme = "README.md"
-package-mode = false
+readme = "docs/README.md"
+packages = [{ include = "template", from = "./src" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"

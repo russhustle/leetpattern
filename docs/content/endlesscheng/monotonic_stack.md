@@ -54,12 +54,12 @@ def dailyTemperatures(temperatures: List[int]) -> List[int]:
     res = [0 for _ in range(len(temperatures))]
     stack = []  # [temp, index]
 
-    for idx, temp in enumerate(temperatures):
+    for i, temp in enumerate(temperatures):
         while stack and temp > stack[-1][0]:
-            _, last_index = stack.pop()
-            res[last_index] = idx - last_index
+            _, idx = stack.pop()
+            res[idx] = i - idx
 
-        stack.append([temp, idx])
+        stack.append([temp, i])
 
     return res
 

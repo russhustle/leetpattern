@@ -287,12 +287,12 @@ def dailyTemperatures(temperatures: List[int]) -> List[int]:
     res = [0 for _ in range(len(temperatures))]
     stack = []  # [temp, index]
 
-    for idx, temp in enumerate(temperatures):
+    for i, temp in enumerate(temperatures):
         while stack and temp > stack[-1][0]:
-            _, last_index = stack.pop()
-            res[last_index] = idx - last_index
+            _, idx = stack.pop()
+            res[idx] = i - idx
 
-        stack.append([temp, idx])
+        stack.append([temp, i])
 
     return res
 
@@ -340,22 +340,23 @@ print(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]))  # 3
 from typing import List
 
 
+# Monotonic Stack
 def largestRectangleArea(heights: List[int]) -> int:
-    maxArea = 0
-    stack = []  # pair: (index, height)
+    stack = []
+    max_area = 0
+    n = len(heights)
 
-    for i, h in enumerate(heights):
-        start = i
-        while stack and stack[-1][1] > h:
-            index, height = stack.pop()
-            maxArea = max(maxArea, height * (i - index))
-            start = index
-        stack.append((start, h))
+    for i in range(n + 1):
+        h = 0 if i == n else heights[i]
 
-    for i, h in stack:
-        maxArea = max(maxArea, h * (len(heights) - i))
+        while stack and h < heights[stack[-1]]:
+            height = heights[stack.pop()]
+            width = i if not stack else i - stack[-1] - 1
+            max_area = max(max_area, height * width)
 
-    return maxArea
+        stack.append(i)
+
+    return max_area
 
 
 print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10

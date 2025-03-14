@@ -316,10 +316,8 @@ from template import ListNode
 
 
 # Linked List
-def addTwoNumbers(
-    l1: Optional[ListNode], l2: Optional[ListNode]
-) -> Optional[ListNode]:
-    dummy = ListNode(0)
+def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    dummy = ListNode()
     cur = dummy
     carry = 0
 
@@ -392,16 +390,16 @@ class Solution {
 
 ```mermaid
 graph LR
-A[3] --> B[2]
-B --> C[0]
-C --> D[-4]
+A((3)) --> B((2))
+B --> C((0))
+C --> D((-4))
 ```
 
 ```mermaid
 graph LR
-A[3] --> B[2]
-B --> C[0]
-C --> D[-4]
+A((3)) --> B((2))
+B --> C((0))
+C --> D((-4))
 D --> B
 ```
 

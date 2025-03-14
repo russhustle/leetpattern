@@ -228,16 +228,16 @@ print(isPalindrome(head))  # True
 
 ```mermaid
 graph LR
-A[3] --> B[2]
-B --> C[0]
-C --> D[-4]
+A((3)) --> B((2))
+B --> C((0))
+C --> D((-4))
 ```
 
 ```mermaid
 graph LR
-A[3] --> B[2]
-B --> C[0]
-C --> D[-4]
+A((3)) --> B((2))
+B --> C((0))
+C --> D((-4))
 D --> B
 ```
 
@@ -465,10 +465,8 @@ from template import ListNode
 
 
 # Linked List
-def addTwoNumbers(
-    l1: Optional[ListNode], l2: Optional[ListNode]
-) -> Optional[ListNode]:
-    dummy = ListNode(0)
+def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    dummy = ListNode()
     cur = dummy
     carry = 0
 
@@ -580,21 +578,26 @@ print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
 ```python title="24. Swap Nodes in Pairs - Python Solution"
 from typing import Optional
 
+
 from template import ListNode
 
 
+# Linked List
 def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
-    dummy = ListNode(next=head)
-    cur = dummy
+    dummy = ListNode(0, head)
+    n0 = dummy
+    n1 = dummy.next
 
-    while cur.next and cur.next.next:
-        temp = cur.next
-        temp1 = cur.next.next.next
+    while n1 and n1.next:
+        n2 = n1.next
+        n3 = n2.next
 
-        cur.next = cur.next.next
-        cur.next.next = temp
-        temp.next = temp1
-        cur = cur.next.next
+        n0.next = n2
+        n2.next = n1
+        n1.next = n3
+
+        n0 = n1
+        n1 = n3
 
     return dummy.next
 

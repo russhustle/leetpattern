@@ -45,13 +45,13 @@ def searchRangeBS(nums: List[int], target: int) -> List[int]:
 
 # Bisect
 def searchRangeBSBisect(nums: List[int], target: int) -> List[int]:
+    if not nums:
+        return [-1, -1]
+
     left = bisect_left(nums, target)
     right = bisect_left(nums, target + 1) - 1
 
-    if left <= right:
-        return [left, right]
-
-    return [-1, -1]
+    return [left, right] if left <= right else [-1, -1]
 
 
 nums = [5, 7, 7, 8, 8, 10]

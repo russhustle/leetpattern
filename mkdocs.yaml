@@ -454,6 +454,7 @@ nav:
   - Company:
     - Home: content/company/index.md
     - Amazon: content/company/amazon.md
+    - Indeed: content/company/indeed.md
 
 
 - About: about.md

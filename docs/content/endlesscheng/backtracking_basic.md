@@ -11,6 +11,9 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [LeetCode CH](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
 
 -   Tags: hash table, string, backtracking
+-   Return all possible letter combinations that the number could represent.
+
+![17](https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png)
 
 ```python title="17. Letter Combinations of a Phone Number - Python Solution"
 from typing import List

@@ -31,24 +31,51 @@ comments: True
 from typing import List
 
 
-def subsets(nums: List[int]) -> List[List[int]]:
-    path, result = [], []
+# Iterative Inclusion Backtracking
+def subsets_iterative_inclusion(nums: List[int]) -> List[List[int]]:
+    n = len(nums)
+    res, path = [], []
 
-    def backtracking(startIndex):
-        result.append(path[:])
+    def dfs(i):
+        res.append(path.copy())
 
-        for i in range(startIndex, len(nums)):
-            path.append(nums[i])
-            backtracking(i + 1)
+        for j in range(i, n):
+            path.append(nums[j])
+            dfs(j + 1)
             path.pop()
 
-    backtracking(startIndex=0)
+    dfs(0)
 
-    return result
+    return res
 
 
-print(subsets([1, 2, 3]))
+# Binary Decision Backtracking
+def subsets_binary_decision(nums: List[int]) -> List[List[int]]:
+    n = len(nums)
+    res, path = [], []
+
+    def dfs(i):
+        if i == n:
+            res.append(path.copy())
+            return
+
+        # Exclude
+        dfs(i + 1)
+
+        # Include
+        path.append(nums[i])
+        dfs(i + 1)
+        path.pop()
+
+    dfs(0)
+
+    return res
+
+
+print(subsets_iterative_inclusion([1, 2, 3]))
 # [[], [1], [1, 2], [1, 2, 3], [1, 3], [2], [2, 3], [3]]
+print(subsets_binary_decision([1, 2, 3]))
+# [[], [3], [2], [2, 3], [1], [1, 3], [1, 2], [1, 2, 3]]
 
 ```
 

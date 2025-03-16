@@ -23,7 +23,9 @@ from typing import List
 
 
 #  Simulation
-def sumEvenAfterQueries(nums: List[int], queries: List[List[int]]) -> List[int]:
+def sumEvenAfterQueries(
+    nums: List[int], queries: List[List[int]]
+) -> List[int]:
     res = []
     cur = sum(i for i in nums if i % 2 == 0)
 
@@ -126,8 +128,7 @@ int main() {
 
 -   Tags: linked list, divide and conquer, heap priority queue, merge sort
 -   Prerequisite: 21. Merge Two Sorted Lists
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q5a5OiGbT6Q?si=SlQg9SKZh1YL62vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Video explanation: [23. Merge K Sorted Lists - NeetCode](https://youtu.be/q5a5OiGbT6Q?si=SQ2dCvsYQ3LQctPh)
 
 ```python title="23. Merge k Sorted Lists - Python Solution"
 import copy

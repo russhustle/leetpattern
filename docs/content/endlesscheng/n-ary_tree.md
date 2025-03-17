@@ -10,7 +10,7 @@ comments: True
 - [x] [429. N-ary Tree Level Order Traversal](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/) (Medium)
 - [ ] [427. Construct Quad Tree](https://leetcode.cn/problems/construct-quad-tree/) (Medium)
 - [ ] [558. Logical OR of Two Binary Grids Represented as Quad-Trees](https://leetcode.cn/problems/logical-or-of-two-binary-grids-represented-as-quad-trees/) (Medium)
-- [ ] [428. Serialize and Deserialize N-ary Tree](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard) 👑
+- [x] [428. Serialize and Deserialize N-ary Tree](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard) 👑
 - [ ] [1490. Clone N-ary Tree](https://leetcode.cn/problems/clone-n-ary-tree/) (Medium) 👑
 - [ ] [1506. Find Root of N-Ary Tree](https://leetcode.cn/problems/find-root-of-n-ary-tree/) (Medium) 👑
 - [x] [1522. Diameter of N-Ary Tree](https://leetcode.cn/problems/diameter-of-n-ary-tree/) (Medium) 👑
@@ -109,6 +109,72 @@ print(levelOrder(root))  # [[1], [3, 2, 4], [5, 6]]
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard)
 
 -   Tags: string, tree, depth first search, breadth first search
+
+```python title="428. Serialize and Deserialize N-ary Tree - Python Solution"
+from typing import List, Optional
+
+
+class Node(object):
+    def __init__(
+        self, val: Optional[int] = None, children: Optional[List["Node"]] = None
+    ):
+        if children is None:
+            children = []
+        self.val = val
+        self.children = children
+
+
+# DFS
+class CodecDFS:
+    def serialize(self, root: "Node") -> str:
+        """Encodes a tree to a single string.
+
+        :type root: Node
+        :rtype: str
+        """
+        if not root:
+            return "*"
+
+        data = ""
+        data += str(root.val) + "|" + str(len(root.children))
+        for child in root.children:
+            data += "|" + self.serialize(child)
+        return data
+
+    def deserialize(self, data: str) -> "Node":
+        """Decodes your encoded data to tree.
+
+        :type data: str
+        :rtype: Node
+        """
+        if data == "*":
+            return None
+
+        data = data.split("|")[::-1]
+
+        def dfs(data):
+            root = Node(int(data.pop()))
+            size = int(data.pop())
+            for i in range(size):
+                root.children.append(dfs(data))
+            return root
+
+        return dfs(data)
+
+
+if __name__ == "__main__":
+    obj = CodecDFS()
+    root = Node(1, [Node(3, [Node(5), Node(6)]), Node(2), Node(4)])
+    data = obj.serialize(root)
+    print(data)  # 1|3|3|2|5|0|6|0|2|0|4|0
+    root = obj.deserialize(data)
+    print(root.val)  # 1
+    print(root.children[0].val)  # 3
+    print(root.children[1].val)  # 2
+    print(root.children[2].val)  # 4
+    print(root.children[0].children[0].val)  # 5
+
+```
 
 ## 1490. Clone N-ary Tree
 

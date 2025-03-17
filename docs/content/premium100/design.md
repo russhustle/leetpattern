@@ -11,7 +11,7 @@ comments: True
 - [ ] [281. Zigzag Iterator](https://leetcode.cn/problems/zigzag-iterator/) (Medium) 👑
 - [ ] [716. Max Stack](https://leetcode.cn/problems/max-stack/) (Hard) 👑
 - [x] [1244. Design A Leaderboard](https://leetcode.cn/problems/design-a-leaderboard/) (Medium) 👑
-- [ ] [428. Serialize and Deserialize N-ary Tree](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard) 👑
+- [x] [428. Serialize and Deserialize N-ary Tree](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard) 👑
 - [ ] [431. Encode N-ary Tree to Binary Tree](https://leetcode.cn/problems/encode-n-ary-tree-to-binary-tree/) (Hard) 👑
 
 ## 348. Design Tic-Tac-Toe
@@ -196,6 +196,72 @@ print(board.top(2))  # 90
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard)
 
 -   Tags: string, tree, depth first search, breadth first search
+
+```python title="428. Serialize and Deserialize N-ary Tree - Python Solution"
+from typing import List, Optional
+
+
+class Node(object):
+    def __init__(
+        self, val: Optional[int] = None, children: Optional[List["Node"]] = None
+    ):
+        if children is None:
+            children = []
+        self.val = val
+        self.children = children
+
+
+# DFS
+class CodecDFS:
+    def serialize(self, root: "Node") -> str:
+        """Encodes a tree to a single string.
+
+        :type root: Node
+        :rtype: str
+        """
+        if not root:
+            return "*"
+
+        data = ""
+        data += str(root.val) + "|" + str(len(root.children))
+        for child in root.children:
+            data += "|" + self.serialize(child)
+        return data
+
+    def deserialize(self, data: str) -> "Node":
+        """Decodes your encoded data to tree.
+
+        :type data: str
+        :rtype: Node
+        """
+        if data == "*":
+            return None
+
+        data = data.split("|")[::-1]
+
+        def dfs(data):
+            root = Node(int(data.pop()))
+            size = int(data.pop())
+            for i in range(size):
+                root.children.append(dfs(data))
+            return root
+
+        return dfs(data)
+
+
+if __name__ == "__main__":
+    obj = CodecDFS()
+    root = Node(1, [Node(3, [Node(5), Node(6)]), Node(2), Node(4)])
+    data = obj.serialize(root)
+    print(data)  # 1|3|3|2|5|0|6|0|2|0|4|0
+    root = obj.deserialize(data)
+    print(root.val)  # 1
+    print(root.children[0].val)  # 3
+    print(root.children[1].val)  # 2
+    print(root.children[2].val)  # 4
+    print(root.children[0].children[0].val)  # 5
+
+```
 
 ## 431. Encode N-ary Tree to Binary Tree
 

@@ -16,7 +16,7 @@ comments: True
 - [ ] [3434. Maximum Frequency After Subarray Operation](https://leetcode.cn/problems/maximum-frequency-after-subarray-operation/) (Medium)
 - [ ] [1955. Count Number of Special Subsequences](https://leetcode.cn/problems/count-number-of-special-subsequences/) (Hard)
 - [ ] [3068. Find the Maximum Sum of Node Values](https://leetcode.cn/problems/find-the-maximum-sum-of-node-values/) (Hard)
-- [ ] [2272. Substring With Largest Variance](https://leetcode.cn/problems/substring-with-largest-variance/) (Hard)
+- [x] [2272. Substring With Largest Variance](https://leetcode.cn/problems/substring-with-largest-variance/) (Hard)
 - [ ] [276. Paint Fence](https://leetcode.cn/problems/paint-fence/) (Medium) 👑
 - [ ] [1746. Maximum Subarray Sum After One Operation](https://leetcode.cn/problems/maximum-subarray-sum-after-one-operation/) (Medium) 👑
 - [ ] [2036. Maximum Alternating Subarray Sum](https://leetcode.cn/problems/maximum-alternating-subarray-sum/) (Medium) 👑
@@ -100,6 +100,35 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/substring-with-largest-variance/) | [LeetCode CH](https://leetcode.cn/problems/substring-with-largest-variance/) (Hard)
 
 -   Tags: array, dynamic programming
+
+```python title="2272. Substring With Largest Variance - Python Solution"
+from itertools import permutations
+from math import inf
+from string import ascii_lowercase
+
+
+# DP State Machine
+def largestVariance(s: str) -> int:
+    res = 0
+
+    for a, b in permutations(ascii_lowercase, 2):
+        f0, f1 = 0, -inf
+        for ch in s:
+            if ch == a:
+                f0 = max(f0, 0) + 1
+                f1 += 1
+            elif ch == b:
+                f1 = f0 = max(f0, 0) - 1
+
+            res = max(res, f1)
+    return res
+
+
+if __name__ == "__main__":
+    s = "aababbb"
+    print(largestVariance(s))  # 3
+
+```
 
 ## 276. Paint Fence
 

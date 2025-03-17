@@ -11,7 +11,7 @@ comments: True
 - [ ] [1190. Reverse Substrings Between Each Pair of Parentheses](https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/) (Medium)
 - [ ] [856. Score of Parentheses](https://leetcode.cn/problems/score-of-parentheses/) (Medium)
 - [ ] [1249. Minimum Remove to Make Valid Parentheses](https://leetcode.cn/problems/minimum-remove-to-make-valid-parentheses/) (Medium)
-- [ ] [1963. Minimum Number of Swaps to Make the String Balanced](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/) (Medium)
+- [x] [1963. Minimum Number of Swaps to Make the String Balanced](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/) (Medium)
 - [x] [678. Valid Parenthesis String](https://leetcode.cn/problems/valid-parenthesis-string/) (Medium)
 - [ ] [1111. Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.cn/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) (Medium)
 - [ ] [1541. Minimum Insertions to Balance a Parentheses String](https://leetcode.cn/problems/minimum-insertions-to-balance-a-parentheses-string/) (Medium)
@@ -144,6 +144,28 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/) (Medium)
 
 -   Tags: two pointers, string, stack, greedy
+
+```python title="1963. Minimum Number of Swaps to Make the String Balanced - Python Solution"
+def minSwaps(s: str) -> int:
+    res, balance = 0, 0
+
+    for char in s:
+        if char == "[":
+            balance += 1
+        elif balance > 0:
+            balance -= 1
+        else:
+            res += 1
+            balance += 1
+
+    return res
+
+
+if __name__ == "__main__":
+    print(minSwaps("][]["))  # 1
+    print(minSwaps("]]][[["))  # 2
+
+```
 
 ## 678. Valid Parenthesis String
 

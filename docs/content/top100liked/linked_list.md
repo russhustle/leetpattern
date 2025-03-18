@@ -13,7 +13,7 @@ comments: True
 - [x] [2. Add Two Numbers](https://leetcode.cn/problems/add-two-numbers/) (Medium)
 - [x] [19. Remove Nth Node From End of List](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) (Medium)
 - [x] [24. Swap Nodes in Pairs](https://leetcode.cn/problems/swap-nodes-in-pairs/) (Medium)
-- [ ] [25. Reverse Nodes in k-Group](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
+- [x] [25. Reverse Nodes in k-Group](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 - [x] [138. Copy List with Random Pointer](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
 - [x] [148. Sort List](https://leetcode.cn/problems/sort-list/) (Medium)
 - [x] [23. Merge k Sorted Lists](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
@@ -228,17 +228,17 @@ print(isPalindrome(head))  # True
 
 ```mermaid
 graph LR
-A((3)) --> B((2))
-B --> C((0))
-C --> D((-4))
+    A((3)) --> B((2))
+    B --> C((0))
+    C --> D((4))
 ```
 
 ```mermaid
 graph LR
-A((3)) --> B((2))
-B --> C((0))
-C --> D((-4))
-D --> B
+    A((3)) --> B((2))
+    B --> C((0))
+    C --> D((4))
+    D --> B
 ```
 
 ```python title="141. Linked List Cycle - Python Solution"
@@ -617,6 +617,49 @@ print(swapPairs(head))
 -   [LeetCode](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [LeetCode CH](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 
 -   Tags: linked list, recursion
+
+```python title="25. Reverse Nodes in k-Group - Python Solution"
+from typing import Optional
+
+from template import ListNode
+
+
+# Linked List
+def reverseKGroup(head: Optional[ListNode], k: int) -> Optional[ListNode]:
+    n = 0
+    cur = head
+    while cur:
+        n += 1
+        cur = cur.next
+
+    p0 = dummy = ListNode(next=head)
+    pre = None
+    cur = head
+
+    while n >= k:
+        n -= k
+        for _ in range(k):
+            nxt = cur.next
+            cur.next = pre
+            pre = cur
+            cur = nxt
+
+        nxt = p0.next
+        nxt.next = cur
+        p0.next = pre
+        p0 = nxt
+
+    return dummy.next
+
+
+if __name__ == "__main__":
+    head = [1, 2, 3, 4, 5]
+    k = 2
+    head = ListNode.create(head)
+    print(head)  # 1 -> 2 -> 3 -> 4 -> 5
+    print(reverseKGroup(head, k))  # 2 -> 1 -> 4 -> 3 -> 5
+
+```
 
 ## 138. Copy List with Random Pointer
 

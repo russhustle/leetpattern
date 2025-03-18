@@ -7,7 +7,7 @@ comments: True
 - [x] [206. Reverse Linked List](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
 - [x] [92. Reverse Linked List II](https://leetcode.cn/problems/reverse-linked-list-ii/) (Medium)
 - [x] [24. Swap Nodes in Pairs](https://leetcode.cn/problems/swap-nodes-in-pairs/) (Medium)
-- [ ] [25. Reverse Nodes in k-Group](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
+- [x] [25. Reverse Nodes in k-Group](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 - [ ] [2074. Reverse Nodes in Even Length Groups](https://leetcode.cn/problems/reverse-nodes-in-even-length-groups/) (Medium)
 
 ## 206. Reverse Linked List
@@ -187,6 +187,49 @@ print(swapPairs(head))
 -   [LeetCode](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [LeetCode CH](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 
 -   Tags: linked list, recursion
+
+```python title="25. Reverse Nodes in k-Group - Python Solution"
+from typing import Optional
+
+from template import ListNode
+
+
+# Linked List
+def reverseKGroup(head: Optional[ListNode], k: int) -> Optional[ListNode]:
+    n = 0
+    cur = head
+    while cur:
+        n += 1
+        cur = cur.next
+
+    p0 = dummy = ListNode(next=head)
+    pre = None
+    cur = head
+
+    while n >= k:
+        n -= k
+        for _ in range(k):
+            nxt = cur.next
+            cur.next = pre
+            pre = cur
+            cur = nxt
+
+        nxt = p0.next
+        nxt.next = cur
+        p0.next = pre
+        p0 = nxt
+
+    return dummy.next
+
+
+if __name__ == "__main__":
+    head = [1, 2, 3, 4, 5]
+    k = 2
+    head = ListNode.create(head)
+    print(head)  # 1 -> 2 -> 3 -> 4 -> 5
+    print(reverseKGroup(head, k))  # 2 -> 1 -> 4 -> 3 -> 5
+
+```
 
 ## 2074. Reverse Nodes in Even Length Groups
 

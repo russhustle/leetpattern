@@ -99,17 +99,17 @@ class Solution {
 
 ```mermaid
 graph LR
-A((3)) --> B((2))
-B --> C((0))
-C --> D((-4))
+    A((3)) --> B((2))
+    B --> C((0))
+    C --> D((4))
 ```
 
 ```mermaid
 graph LR
-A((3)) --> B((2))
-B --> C((0))
-C --> D((-4))
-D --> B
+    A((3)) --> B((2))
+    B --> C((0))
+    C --> D((4))
+    D --> B
 ```
 
 ```python title="141. Linked List Cycle - Python Solution"

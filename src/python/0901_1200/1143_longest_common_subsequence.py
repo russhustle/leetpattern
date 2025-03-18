@@ -1,7 +1,9 @@
-# DP - LCS
+# DP (LCS)
 def longestCommonSubsequence(text1: str, text2: str) -> int:
     """
     Computes the length of the longest common subsequence between two strings.
+
+    dp[i][j]: the length of the LCS between text1[:i] and text2[:j].
 
     Args:
         text1 (str): The first string.

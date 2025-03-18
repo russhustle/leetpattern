@@ -116,7 +116,9 @@ from typing import List, Optional
 
 class Node(object):
     def __init__(
-        self, val: Optional[int] = None, children: Optional[List["Node"]] = None
+        self,
+        val: Optional[int] = None,
+        children: Optional[List["Node"]] = None,
     ):
         if children is None:
             children = []

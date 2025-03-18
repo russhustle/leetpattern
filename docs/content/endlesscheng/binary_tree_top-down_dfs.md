@@ -19,7 +19,7 @@ comments: True
 - [ ] [1372. Longest ZigZag Path in a Binary Tree](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/) (Medium)
 - [ ] [971. Flip Binary Tree To Match Preorder Traversal](https://leetcode.cn/problems/flip-binary-tree-to-match-preorder-traversal/) (Medium)
 - [ ] [2689. Extract Kth Character From The Rope Tree](https://leetcode.cn/problems/extract-kth-character-from-the-rope-tree/) (Easy) 👑
-- [ ] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium) 👑
+- [x] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium) 👑
 - [ ] [1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.cn/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/) (Medium) 👑
 - [ ] [545. Boundary of Binary Tree](https://leetcode.cn/problems/boundary-of-binary-tree/) (Medium) 👑
 
@@ -422,6 +422,51 @@ print(goodNodes(root))  # 4
 -   [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
+
+```python title="298. Binary Tree Longest Consecutive Sequence - Python Solution"
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Binary Tree
+def longestConsecutive(root: Optional[TreeNode]) -> int:
+    res = 0
+
+    def dfs(node):
+        if not node:
+            return 0
+
+        left, right = dfs(node.left), dfs(node.right)
+        cur = 1
+        if node.left and node.left.val == (node.val + 1):
+            cur = max(cur, left + 1)
+        if node.right and node.right.val == (node.val + 1):
+            cur = max(cur, right + 1)
+
+        nonlocal res
+        res = max(res, cur)
+        return cur
+
+    dfs(root)
+
+    return res
+
+
+if __name__ == "__main__":
+    root = build([1, 3, 2, 4, None, None, None, 5])
+    print(root)
+    #       1
+    #      / \
+    #     3   2
+    #    /
+    #   4
+    #  /
+    # 5
+    print(longestConsecutive(root))  # 3
+
+```
 
 ## 1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree
 

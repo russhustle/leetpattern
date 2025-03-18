@@ -26,7 +26,7 @@ comments: True
 - [ ] [1145. Binary Tree Coloring Game](https://leetcode.cn/problems/binary-tree-coloring-game/) (Medium)
 - [x] [572. Subtree of Another Tree](https://leetcode.cn/problems/subtree-of-another-tree/) (Easy)
 - [ ] [1530. Number of Good Leaf Nodes Pairs](https://leetcode.cn/problems/number-of-good-leaf-nodes-pairs/) (Medium)
-- [ ] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium) 👑
+- [x] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium) 👑
 - [ ] [250. Count Univalue Subtrees](https://leetcode.cn/problems/count-univalue-subtrees/) (Medium) 👑
 - [ ] [1973. Count Nodes Equal to Sum of Descendants](https://leetcode.cn/problems/count-nodes-equal-to-sum-of-descendants/) (Medium) 👑
 - [ ] [663. Equal Tree Partition](https://leetcode.cn/problems/equal-tree-partition/) (Medium) 👑
@@ -740,6 +740,51 @@ print(isSubtree(root, subRoot))  # False
 -   [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
+
+```python title="298. Binary Tree Longest Consecutive Sequence - Python Solution"
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Binary Tree
+def longestConsecutive(root: Optional[TreeNode]) -> int:
+    res = 0
+
+    def dfs(node):
+        if not node:
+            return 0
+
+        left, right = dfs(node.left), dfs(node.right)
+        cur = 1
+        if node.left and node.left.val == (node.val + 1):
+            cur = max(cur, left + 1)
+        if node.right and node.right.val == (node.val + 1):
+            cur = max(cur, right + 1)
+
+        nonlocal res
+        res = max(res, cur)
+        return cur
+
+    dfs(root)
+
+    return res
+
+
+if __name__ == "__main__":
+    root = build([1, 3, 2, 4, None, None, None, 5])
+    print(root)
+    #       1
+    #      / \
+    #     3   2
+    #    /
+    #   4
+    #  /
+    # 5
+    print(longestConsecutive(root))  # 3
+
+```
 
 ## 250. Count Univalue Subtrees
 

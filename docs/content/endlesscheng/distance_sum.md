@@ -4,6 +4,8 @@ comments: True
 
 # Distance Sum
 
+## Table of Contents
+
 - [x] [1685. Sum of Absolute Differences in a Sorted Array](https://leetcode.cn/problems/sum-of-absolute-differences-in-a-sorted-array/) (Medium)
 - [ ] [2615. Sum of Distances](https://leetcode.cn/problems/sum-of-distances/) (Medium)
 - [ ] [2602. Minimum Operations to Make All Array Elements Equal](https://leetcode.cn/problems/minimum-operations-to-make-all-array-elements-equal/) (Medium)

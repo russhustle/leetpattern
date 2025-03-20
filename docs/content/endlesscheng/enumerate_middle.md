@@ -4,6 +4,8 @@ comments: True
 
 # Enumerate Middle
 
+## Table of Contents
+
 - [ ] [2909. Minimum Sum of Mountain Triplets II](https://leetcode.cn/problems/minimum-sum-of-mountain-triplets-ii/) (Medium)
 - [ ] [1930. Unique Length-3 Palindromic Subsequences](https://leetcode.cn/problems/unique-length-3-palindromic-subsequences/) (Medium)
 - [ ] [3128. Right Triangles](https://leetcode.cn/problems/right-triangles/) (Medium)

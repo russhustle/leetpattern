@@ -4,6 +4,8 @@ comments: True
 
 # Median Greedy
 
+## Table of Contents
+
 - [ ] [462. Minimum Moves to Equal Array Elements II](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements-ii/) (Medium)
 - [ ] [2033. Minimum Operations to Make a Uni-Value Grid](https://leetcode.cn/problems/minimum-operations-to-make-a-uni-value-grid/) (Medium)
 - [ ] [2448. Minimum Cost to Make Array Equal](https://leetcode.cn/problems/minimum-cost-to-make-array-equal/) (Hard)

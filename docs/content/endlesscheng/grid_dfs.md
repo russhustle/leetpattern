@@ -4,6 +4,8 @@ comments: True
 
 # Grid DFS
 
+## Table of Contents
+
 - [x] [200. Number of Islands](https://leetcode.cn/problems/number-of-islands/) (Medium)
 - [x] [695. Max Area of Island](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 - [x] [463. Island Perimeter](https://leetcode.cn/problems/island-perimeter/) (Easy)

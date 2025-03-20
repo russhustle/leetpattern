@@ -4,6 +4,8 @@ comments: True
 
 # Randomized Algorithms
 
+## Table of Contents
+
 - [ ] [398. Random Pick Index](https://leetcode.cn/problems/random-pick-index/) (Medium)
 - [ ] [382. Linked List Random Node](https://leetcode.cn/problems/linked-list-random-node/) (Medium)
 - [ ] [384. Shuffle an Array](https://leetcode.cn/problems/shuffle-an-array/) (Medium)

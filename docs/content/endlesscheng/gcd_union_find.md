@@ -4,6 +4,8 @@ comments: True
 
 # GCD Union Find
 
+## Table of Contents
+
 - [ ] [2709. Greatest Common Divisor Traversal](https://leetcode.cn/problems/greatest-common-divisor-traversal/) (Hard)
 - [ ] [1627. Graph Connectivity With Threshold](https://leetcode.cn/problems/graph-connectivity-with-threshold/) (Hard)
 - [x] [952. Largest Component Size by Common Factor](https://leetcode.cn/problems/largest-component-size-by-common-factor/) (Hard)

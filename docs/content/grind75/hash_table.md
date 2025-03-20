@@ -4,6 +4,8 @@ comments: True
 
 # Hash Table
 
+## Table of Contents
+
 - [x] [383. Ransom Note](https://leetcode.cn/problems/ransom-note/) (Easy)
 
 ## 383. Ransom Note

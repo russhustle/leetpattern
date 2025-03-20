@@ -4,6 +4,8 @@ comments: True
 
 # String Z Function
 
+## Table of Contents
+
 - [ ] [2223. Sum of Scores of Built Strings](https://leetcode.cn/problems/sum-of-scores-of-built-strings/) (Hard)
 - [ ] [3031. Minimum Time to Revert Word to Initial State II](https://leetcode.cn/problems/minimum-time-to-revert-word-to-initial-state-ii/) (Hard)
 - [ ] [3045. Count Prefix and Suffix Pairs II](https://leetcode.cn/problems/count-prefix-and-suffix-pairs-ii/) (Hard)

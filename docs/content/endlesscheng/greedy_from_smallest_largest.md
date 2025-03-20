@@ -4,6 +4,8 @@ comments: True
 
 # Greedy from Smallest Largest
 
+## Table of Contents
+
 - [x] [3074. Apple Redistribution into Boxes](https://leetcode.cn/problems/apple-redistribution-into-boxes/) (Easy)
 - [ ] [2279. Maximum Bags With Full Capacity of Rocks](https://leetcode.cn/problems/maximum-bags-with-full-capacity-of-rocks/) (Medium)
 - [ ] [1833. Maximum Ice Cream Bars](https://leetcode.cn/problems/maximum-ice-cream-bars/) (Medium)

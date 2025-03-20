@@ -4,6 +4,8 @@ comments: True
 
 # Contribution Method
 
+## Table of Contents
+
 - [ ] [907. Sum of Subarray Minimums](https://leetcode.cn/problems/sum-of-subarray-minimums/) (Medium)
 - [ ] [2104. Sum of Subarray Ranges](https://leetcode.cn/problems/sum-of-subarray-ranges/) (Medium)
 - [ ] [1856. Maximum Subarray Min-Product](https://leetcode.cn/problems/maximum-subarray-min-product/) (Medium)

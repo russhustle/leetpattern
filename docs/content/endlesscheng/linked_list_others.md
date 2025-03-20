@@ -4,6 +4,8 @@ comments: True
 
 # Linked List Others
 
+## Table of Contents
+
 - [x] [138. Copy List with Random Pointer](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
 - [ ] [382. Linked List Random Node](https://leetcode.cn/problems/linked-list-random-node/) (Medium)
 - [ ] [430. Flatten a Multilevel Doubly Linked List](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/) (Medium)

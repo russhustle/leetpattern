@@ -4,6 +4,8 @@ comments: True
 
 # Standard Traversal
 
+## Table of Contents
+
 - [x] [547. Number of Provinces](https://leetcode.cn/problems/number-of-provinces/) (Medium)
 - [x] [802. Find Eventual Safe States](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
 - [x] [841. Keys and Rooms](https://leetcode.cn/problems/keys-and-rooms/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Variable Subarrays Longer
 
+## Table of Contents
+
 - [x] [1358. Number of Substrings Containing All Three Characters](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) (Medium)
 - [ ] [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) (Medium)
 - [ ] [3325. Count Substrings With K-Frequency Characters I](https://leetcode.cn/problems/count-substrings-with-k-frequency-characters-i/) (Medium)

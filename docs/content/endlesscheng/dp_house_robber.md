@@ -4,6 +4,8 @@ comments: True
 
 # DP House Robber
 
+## Table of Contents
+
 - [x] [198. House Robber](https://leetcode.cn/problems/house-robber/) (Medium)
 - [x] [740. Delete and Earn](https://leetcode.cn/problems/delete-and-earn/) (Medium)
 - [ ] [2320. Count Number of Ways to Place Houses](https://leetcode.cn/problems/count-number-of-ways-to-place-houses/) (Medium)

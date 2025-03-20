@@ -4,6 +4,8 @@ comments: True
 
 # Backtracking
 
+## Table of Contents
+
 - [x] [39. Combination Sum](https://leetcode.cn/problems/combination-sum/) (Medium)
 - [x] [79. Word Search](https://leetcode.cn/problems/word-search/) (Medium)
 

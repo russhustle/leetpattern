@@ -4,6 +4,8 @@ comments: True
 
 # Bit Others
 
+## Table of Contents
+
 - [x] [136. Single Number](https://leetcode.cn/problems/single-number/) (Easy)
 - [x] [287. Find the Duplicate Number](https://leetcode.cn/problems/find-the-duplicate-number/) (Medium)
 - [ ] [260. Single Number III](https://leetcode.cn/problems/single-number-iii/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # DP Other Optimized
 
+## Table of Contents
+
 - [ ] [1937. Maximum Number of Points with Cost](https://leetcode.cn/problems/maximum-number-of-points-with-cost/) (Medium)
 - [ ] [2713. Maximum Strictly Increasing Cells in a Matrix](https://leetcode.cn/problems/maximum-strictly-increasing-cells-in-a-matrix/) (Hard)
 - [ ] [3181. Maximum Total Reward Using Operations II](https://leetcode.cn/problems/maximum-total-reward-using-operations-ii/) (Hard)

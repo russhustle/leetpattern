@@ -4,6 +4,8 @@ comments: True
 
 # Two Sequences Two Pointers
 
+## Table of Contents
+
 - [ ] [2540. Minimum Common Value](https://leetcode.cn/problems/minimum-common-value/) (Easy)
 - [x] [88. Merge Sorted Array](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
 - [ ] [2570. Merge Two 2D Arrays by Summing Values](https://leetcode.cn/problems/merge-two-2d-arrays-by-summing-values/) (Easy)

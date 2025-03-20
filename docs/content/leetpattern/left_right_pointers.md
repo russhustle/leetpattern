@@ -4,6 +4,8 @@ comments: True
 
 # Left Right Pointers
 
+## Table of Contents
+
 - [x] [9. Palindrome Number](https://leetcode.cn/problems/palindrome-number/) (Easy)
 - [x] [15. 3Sum](https://leetcode.cn/problems/3sum/) (Medium)
 - [x] [18. 4Sum](https://leetcode.cn/problems/4sum/) (Medium)

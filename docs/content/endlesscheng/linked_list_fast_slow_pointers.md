@@ -4,6 +4,8 @@ comments: True
 
 # Linked List Fast Slow Pointers
 
+## Table of Contents
+
 - [x] [876. Middle of the Linked List](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
 - [x] [2095. Delete the Middle Node of a Linked List](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) (Medium)
 - [x] [234. Palindrome Linked List](https://leetcode.cn/problems/palindrome-linked-list/) (Easy)

@@ -4,6 +4,8 @@ comments: True
 
 # Intervals
 
+## Table of Contents
+
 - [x] [55. Jump Game](https://leetcode.cn/problems/jump-game/) (Medium)
 - [x] [45. Jump Game II](https://leetcode.cn/problems/jump-game-ii/) (Medium)
 - [x] [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)

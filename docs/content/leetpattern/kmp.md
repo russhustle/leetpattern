@@ -4,6 +4,8 @@ comments: True
 
 # KMP
 
+## Table of Contents
+
 - [x] [28. Find the Index of the First Occurrence in a String](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
 - [x] [459. Repeated Substring Pattern](https://leetcode.cn/problems/repeated-substring-pattern/) (Easy)
 - [x] [686. Repeated String Match](https://leetcode.cn/problems/repeated-string-match/) (Medium)

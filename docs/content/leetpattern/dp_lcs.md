@@ -4,6 +4,8 @@ comments: True
 
 # DP LCS
 
+## Table of Contents
+
 - [x] [1143. Longest Common Subsequence](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
 - [x] [72. Edit Distance](https://leetcode.cn/problems/edit-distance/) (Medium)
 - [x] [115. Distinct Subsequences](https://leetcode.cn/problems/distinct-subsequences/) (Hard)

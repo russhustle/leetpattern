@@ -4,6 +4,8 @@ comments: True
 
 # Inclusion Exclusion Principle
 
+## Table of Contents
+
 - [ ] [2652. Sum Multiples](https://leetcode.cn/problems/sum-multiples/) (Easy)
 - [ ] [878. Nth Magical Number](https://leetcode.cn/problems/nth-magical-number/) (Hard)
 - [ ] [1201. Ugly Number III](https://leetcode.cn/problems/ugly-number-iii/) (Medium)

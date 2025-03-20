@@ -4,6 +4,8 @@ comments: True
 
 # N-ary Tree
 
+## Table of Contents
+
 - [ ] [589. N-ary Tree Preorder Traversal](https://leetcode.cn/problems/n-ary-tree-preorder-traversal/) (Easy)
 - [ ] [590. N-ary Tree Postorder Traversal](https://leetcode.cn/problems/n-ary-tree-postorder-traversal/) (Easy)
 - [ ] [559. Maximum Depth of N-ary Tree](https://leetcode.cn/problems/maximum-depth-of-n-ary-tree/) (Easy)

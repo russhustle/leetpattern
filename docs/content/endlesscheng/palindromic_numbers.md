@@ -4,6 +4,8 @@ comments: True
 
 # Palindromic Numbers
 
+## Table of Contents
+
 - [x] [9. Palindrome Number](https://leetcode.cn/problems/palindrome-number/) (Easy)
 - [ ] [2396. Strictly Palindromic Number](https://leetcode.cn/problems/strictly-palindromic-number/) (Medium)
 - [ ] [2217. Find Palindrome With Fixed Length](https://leetcode.cn/problems/find-palindrome-with-fixed-length/) (Medium)

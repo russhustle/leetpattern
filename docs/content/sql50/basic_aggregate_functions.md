@@ -4,6 +4,8 @@ comments: True
 
 # Basic Aggregate Functions
 
+## Table of Contents
+
 - [x] [620. Not Boring Movies](https://leetcode.cn/problems/not-boring-movies/) (Easy)
 - [x] [1251. Average Selling Price](https://leetcode.cn/problems/average-selling-price/) (Easy)
 - [x] [1075. Project Employees I](https://leetcode.cn/problems/project-employees-i/) (Easy)

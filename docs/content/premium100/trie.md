@@ -4,6 +4,8 @@ comments: True
 
 # Trie
 
+## Table of Contents
+
 - [x] [588. Design In-Memory File System](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard) 👑
 - [ ] [642. Design Search Autocomplete System](https://leetcode.cn/problems/design-search-autocomplete-system/) (Hard) 👑
 

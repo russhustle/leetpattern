@@ -4,6 +4,8 @@ comments: True
 
 # Other Interval Greedy
 
+## Table of Contents
+
 - [ ] [1288. Remove Covered Intervals](https://leetcode.cn/problems/remove-covered-intervals/) (Medium)
 - [ ] [2054. Two Best Non-Overlapping Events](https://leetcode.cn/problems/two-best-non-overlapping-events/) (Medium)
 - [ ] [1705. Maximum Number of Eaten Apples](https://leetcode.cn/problems/maximum-number-of-eaten-apples/) (Medium)

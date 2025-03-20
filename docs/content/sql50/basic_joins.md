@@ -4,6 +4,8 @@ comments: True
 
 # Basic Joins
 
+## Table of Contents
+
 - [x] [1378. Replace Employee ID With The Unique Identifier](https://leetcode.cn/problems/replace-employee-id-with-the-unique-identifier/) (Easy)
 - [x] [1068. Product Sales Analysis I](https://leetcode.cn/problems/product-sales-analysis-i/) (Easy)
 - [x] [1581. Customer Who Visited but Did Not Make Any Transactions](https://leetcode.cn/problems/customer-who-visited-but-did-not-make-any-transactions/) (Easy)

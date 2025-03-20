@@ -4,6 +4,8 @@ comments: True
 
 # 1D Difference Array
 
+## Table of Contents
+
 - [x] [2848. Points That Intersect With Cars](https://leetcode.cn/problems/points-that-intersect-with-cars/) (Easy)
 - [ ] [1893. Check if All the Integers in a Range Are Covered](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/) (Easy)
 - [ ] [1854. Maximum Population Year](https://leetcode.cn/problems/maximum-population-year/) (Easy)

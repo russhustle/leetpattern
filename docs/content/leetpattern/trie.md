@@ -4,6 +4,8 @@ comments: True
 
 # Trie
 
+## Table of Contents
+
 - [x] [208. Implement Trie (Prefix Tree)](https://leetcode.cn/problems/implement-trie-prefix-tree/) (Medium)
 - [x] [211. Design Add and Search Words Data Structure](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) (Medium)
 - [x] [212. Word Search II](https://leetcode.cn/problems/word-search-ii/) (Hard)

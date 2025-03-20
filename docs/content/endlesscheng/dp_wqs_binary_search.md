@@ -4,6 +4,8 @@ comments: True
 
 # DP WQS Binary Search
 
+## Table of Contents
+
 - [x] [188. Best Time to Buy and Sell Stock IV](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) (Hard)
 - [ ] [2209. Minimum White Tiles After Covering With Carpets](https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/) (Hard)
 

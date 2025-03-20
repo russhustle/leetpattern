@@ -4,6 +4,8 @@ comments: True
 
 # Strongly and Biconnected Components
 
+## Table of Contents
+
 - [x] [1192. Critical Connections in a Network](https://leetcode.cn/problems/critical-connections-in-a-network/) (Hard)
 - [ ] [1568. Minimum Number of Days to Disconnect Island](https://leetcode.cn/problems/minimum-number-of-days-to-disconnect-island/) (Hard)
 - [ ] [3383. Minimum Runes to Add to Cast Spell](https://leetcode.cn/problems/minimum-runes-to-add-to-cast-spell/) (Hard) 👑

@@ -4,6 +4,8 @@ comments: True
 
 # Boyer Moore
 
+## Table of Contents
+
 - [x] [169. Majority Element](https://leetcode.cn/problems/majority-element/) (Easy)
 - [x] [229. Majority Element II](https://leetcode.cn/problems/majority-element-ii/) (Medium)
 - [x] [287. Find the Duplicate Number](https://leetcode.cn/problems/find-the-duplicate-number/) (Medium)

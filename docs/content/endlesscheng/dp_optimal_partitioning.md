@@ -4,6 +4,8 @@ comments: True
 
 # DP Optimal Partitioning
 
+## Table of Contents
+
 - [x] [132. Palindrome Partitioning II](https://leetcode.cn/problems/palindrome-partitioning-ii/) (Hard)
 - [ ] [2707. Extra Characters in a String](https://leetcode.cn/problems/extra-characters-in-a-string/) (Medium)
 - [ ] [3196. Maximize Total Cost of Alternating Subarrays](https://leetcode.cn/problems/maximize-total-cost-of-alternating-subarrays/) (Medium)

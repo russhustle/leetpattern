@@ -4,6 +4,8 @@ comments: True
 
 # Heap Advanced
 
+## Table of Contents
+
 - [x] [23. Merge k Sorted Lists](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
 - [x] [355. Design Twitter](https://leetcode.cn/problems/design-twitter/) (Medium)
 - [x] [502. IPO](https://leetcode.cn/problems/ipo/) (Hard)

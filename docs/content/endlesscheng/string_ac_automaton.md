@@ -4,6 +4,8 @@ comments: True
 
 # String AC Automaton
 
+## Table of Contents
+
 - [ ] [1032. Stream of Characters](https://leetcode.cn/problems/stream-of-characters/) (Hard)
 - [ ] [1408. String Matching in an Array](https://leetcode.cn/problems/string-matching-in-an-array/) (Easy)
 - [ ] [3213. Construct String with Minimum Cost](https://leetcode.cn/problems/construct-string-with-minimum-cost/) (Hard)

@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Maximize Min
 
+## Table of Contents
+
 - [ ] [3281. Maximize Score of Numbers in Ranges](https://leetcode.cn/problems/maximize-score-of-numbers-in-ranges/) (Medium)
 - [ ] [2517. Maximum Tastiness of Candy Basket](https://leetcode.cn/problems/maximum-tastiness-of-candy-basket/) (Medium)
 - [ ] [1552. Magnetic Force Between Two Balls](https://leetcode.cn/problems/magnetic-force-between-two-balls/) (Medium)

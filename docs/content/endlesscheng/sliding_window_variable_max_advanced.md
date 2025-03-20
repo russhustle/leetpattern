@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Variable Max Advanced
 
+## Table of Contents
+
 - [ ] [2730. Find the Longest Semi-Repetitive Substring](https://leetcode.cn/problems/find-the-longest-semi-repetitive-substring/) (Medium)
 - [ ] [2779. Maximum Beauty of an Array After Applying Operation](https://leetcode.cn/problems/maximum-beauty-of-an-array-after-applying-operation/) (Medium)
 - [ ] [1838. Frequency of the Most Frequent Element](https://leetcode.cn/problems/frequency-of-the-most-frequent-element/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Probability and Expectation
 
+## Table of Contents
+
 - [ ] [1227. Airplane Seat Assignment Probability](https://leetcode.cn/problems/airplane-seat-assignment-probability/) (Medium)
 - [ ] [688. Knight Probability in Chessboard](https://leetcode.cn/problems/knight-probability-in-chessboard/) (Medium)
 - [ ] [837. New 21 Game](https://leetcode.cn/problems/new-21-game/) (Medium)

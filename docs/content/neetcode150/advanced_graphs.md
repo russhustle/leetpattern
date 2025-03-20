@@ -4,6 +4,8 @@ comments: True
 
 # Advanced Graphs
 
+## Table of Contents
+
 - [x] [332. Reconstruct Itinerary](https://leetcode.cn/problems/reconstruct-itinerary/) (Hard)
 - [x] [1584. Min Cost to Connect All Points](https://leetcode.cn/problems/min-cost-to-connect-all-points/) (Medium)
 - [x] [743. Network Delay Time](https://leetcode.cn/problems/network-delay-time/) (Medium)

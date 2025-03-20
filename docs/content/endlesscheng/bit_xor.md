@@ -4,6 +4,8 @@ comments: True
 
 # Bit XOR
 
+## Table of Contents
+
 - [ ] [1486. XOR Operation in an Array](https://leetcode.cn/problems/xor-operation-in-an-array/) (Easy)
 - [ ] [1720. Decode XORed Array](https://leetcode.cn/problems/decode-xored-array/) (Easy)
 - [ ] [2433. Find The Original Array of Prefix Xor](https://leetcode.cn/problems/find-the-original-array-of-prefix-xor/) (Medium)

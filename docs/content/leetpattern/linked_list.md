@@ -4,6 +4,8 @@ comments: True
 
 # Linked List
 
+## Table of Contents
+
 - [x] [203. Remove Linked List Elements](https://leetcode.cn/problems/remove-linked-list-elements/) (Easy)
 - [x] [707. Design Linked List](https://leetcode.cn/problems/design-linked-list/) (Medium)
 - [x] [206. Reverse Linked List](https://leetcode.cn/problems/reverse-linked-list/) (Easy)

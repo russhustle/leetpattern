@@ -4,6 +4,8 @@ comments: True
 
 # Bit Trial and Error Method
 
+## Table of Contents
+
 - [ ] [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://leetcode.cn/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/) (Medium)
 - [ ] [421. Maximum XOR of Two Numbers in an Array](https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/) (Medium)
 - [ ] [2935. Maximum Strong Pair XOR II](https://leetcode.cn/problems/maximum-strong-pair-xor-ii/) (Hard)

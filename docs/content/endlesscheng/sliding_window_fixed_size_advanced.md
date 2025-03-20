@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Fixed Size Advanced
 
+## Table of Contents
+
 - [ ] [1461. Check If a String Contains All Binary Codes of Size K](https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) (Medium)
 - [ ] [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together-ii/) (Medium)
 - [ ] [1297. Maximum Number of Occurrences of a Substring](https://leetcode.cn/problems/maximum-number-of-occurrences-of-a-substring/) (Medium)

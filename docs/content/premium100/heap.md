@@ -4,6 +4,8 @@ comments: True
 
 # Heap
 
+## Table of Contents
+
 - [ ] [1086. High Five](https://leetcode.cn/problems/high-five/) (Easy) 👑
 - [ ] [1167. Minimum Cost to Connect Sticks](https://leetcode.cn/problems/minimum-cost-to-connect-sticks/) (Medium) 👑
 - [ ] [1057. Campus Bikes](https://leetcode.cn/problems/campus-bikes/) (Medium) 👑

@@ -4,6 +4,8 @@ comments: True
 
 # Heap Merge K Sorted
 
+## Table of Contents
+
 - [x] [23. Merge k Sorted Lists](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
 - [x] [373. Find K Pairs with Smallest Sums](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) (Medium)
 - [x] [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)

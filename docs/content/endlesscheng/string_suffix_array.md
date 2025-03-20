@@ -4,6 +4,8 @@ comments: True
 
 # String Suffix Array
 
+## Table of Contents
+
 - [ ] [1163. Last Substring in Lexicographical Order](https://leetcode.cn/problems/last-substring-in-lexicographical-order/) (Hard)
 - [ ] [1754. Largest Merge Of Two Strings](https://leetcode.cn/problems/largest-merge-of-two-strings/) (Medium)
 - [x] [2904. Shortest and Lexicographically Smallest Beautiful String](https://leetcode.cn/problems/shortest-and-lexicographically-smallest-beautiful-string/) (Medium)

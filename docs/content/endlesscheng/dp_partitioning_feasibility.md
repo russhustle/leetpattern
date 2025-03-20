@@ -4,6 +4,8 @@ comments: True
 
 # DP Partitioning Feasibility
 
+## Table of Contents
+
 - [ ] [2369. Check if There is a Valid Partition For The Array](https://leetcode.cn/problems/check-if-there-is-a-valid-partition-for-the-array/) (Medium)
 - [x] [139. Word Break](https://leetcode.cn/problems/word-break/) (Medium)
 

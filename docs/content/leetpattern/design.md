@@ -4,6 +4,8 @@ comments: True
 
 # Design
 
+## Table of Contents
+
 - [x] [146. LRU Cache](https://leetcode.cn/problems/lru-cache/) (Medium)
 - [x] [355. Design Twitter](https://leetcode.cn/problems/design-twitter/) (Medium)
 - [x] [588. Design In-Memory File System](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard) 👑

@@ -4,6 +4,8 @@ comments: True
 
 # Math
 
+## Table of Contents
+
 - [x] [1945. Sum of Digits of String After Convert](https://leetcode.cn/problems/sum-of-digits-of-string-after-convert/) (Easy)
 - [x] [1894. Find the Student that Will Replace the Chalk](https://leetcode.cn/problems/find-the-student-that-will-replace-the-chalk/) (Medium)
 - [x] [7. Reverse Integer](https://leetcode.cn/problems/reverse-integer/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Graph Tarjan
 
+## Table of Contents
+
 - [x] [1192. Critical Connections in a Network](https://leetcode.cn/problems/critical-connections-in-a-network/) (Hard)
 
 ## 1192. Critical Connections in a Network

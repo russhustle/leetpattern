@@ -21,7 +21,7 @@ def topic_progress(
     Returns:
         str: List of problems with progress.
     """
-    content = ""
+    content = "## Table of Contents\n\n"
     for problem in problems:
         row = df.loc[problem]
         if category == "algorithms":

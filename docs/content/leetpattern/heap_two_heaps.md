@@ -4,6 +4,8 @@ comments: True
 
 # Heap Two Heaps
 
+## Table of Contents
+
 - [x] [295. Find Median from Data Stream](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 - [x] [480. Sliding Window Median](https://leetcode.cn/problems/sliding-window-median/) (Hard)
 - [x] [502. IPO](https://leetcode.cn/problems/ipo/) (Hard)

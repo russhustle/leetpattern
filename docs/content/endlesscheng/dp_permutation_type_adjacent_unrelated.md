@@ -4,6 +4,8 @@ comments: True
 
 # DP Permutation Type Adjacent Unrelated
 
+## Table of Contents
+
 - [ ] [526. Beautiful Arrangement](https://leetcode.cn/problems/beautiful-arrangement/) (Medium)
 - [ ] [3376. Minimum Time to Break Locks I](https://leetcode.cn/problems/minimum-time-to-break-locks-i/) (Medium)
 - [ ] [1879. Minimum XOR Sum of Two Arrays](https://leetcode.cn/problems/minimum-xor-sum-of-two-arrays/) (Hard)

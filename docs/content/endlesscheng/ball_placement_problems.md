@@ -4,6 +4,8 @@ comments: True
 
 # Ball Placement Problems
 
+## Table of Contents
+
 - [ ] [1641. Count Sorted Vowel Strings](https://leetcode.cn/problems/count-sorted-vowel-strings/) (Medium)
 - [ ] [1621. Number of Sets of K Non-Overlapping Line Segments](https://leetcode.cn/problems/number-of-sets-of-k-non-overlapping-line-segments/) (Medium)
 - [ ] [920. Number of Music Playlists](https://leetcode.cn/problems/number-of-music-playlists/) (Hard)

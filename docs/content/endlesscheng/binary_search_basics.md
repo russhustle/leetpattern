@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Basics
 
+## Table of Contents
+
 - [x] [34. Find First and Last Position of Element in Sorted Array](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) (Medium)
 - [x] [35. Search Insert Position](https://leetcode.cn/problems/search-insert-position/) (Easy)
 - [x] [704. Binary Search](https://leetcode.cn/problems/binary-search/) (Easy)

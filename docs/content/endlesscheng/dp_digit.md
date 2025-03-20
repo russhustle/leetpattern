@@ -4,6 +4,8 @@ comments: True
 
 # DP Digit
 
+## Table of Contents
+
 - [ ] [2719. Count of Integers](https://leetcode.cn/problems/count-of-integers/) (Hard)
 - [ ] [1742. Maximum Number of Balls in a Box](https://leetcode.cn/problems/maximum-number-of-balls-in-a-box/) (Easy)
 - [ ] [2843.   Count Symmetric Integers](https://leetcode.cn/problems/count-symmetric-integers/) (Easy)

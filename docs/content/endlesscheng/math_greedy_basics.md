@@ -4,6 +4,8 @@ comments: True
 
 # Math Greedy Basics
 
+## Table of Contents
+
 - [ ] [2160. Minimum Sum of Four Digit Number After Splitting Digits](https://leetcode.cn/problems/minimum-sum-of-four-digit-number-after-splitting-digits/) (Easy)
 - [ ] [2578. Split With Minimum Sum](https://leetcode.cn/problems/split-with-minimum-sum/) (Easy)
 - [ ] [2244. Minimum Rounds to Complete All Tasks](https://leetcode.cn/problems/minimum-rounds-to-complete-all-tasks/) (Medium)

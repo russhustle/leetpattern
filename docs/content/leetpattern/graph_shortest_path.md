@@ -4,6 +4,8 @@ comments: True
 
 # Graph Shortest Path
 
+## Table of Contents
+
 - [x] [743. Network Delay Time](https://leetcode.cn/problems/network-delay-time/) (Medium)
 - [x] [778. Swim in Rising Water](https://leetcode.cn/problems/swim-in-rising-water/) (Hard)
 - [x] [1631. Path With Minimum Effort](https://leetcode.cn/problems/path-with-minimum-effort/) (Medium)

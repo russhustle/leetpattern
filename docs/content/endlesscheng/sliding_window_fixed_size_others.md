@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Fixed Size Others
 
+## Table of Contents
+
 - [x] [2269. Find the K-Beauty of a Number](https://leetcode.cn/problems/find-the-k-beauty-of-a-number/) (Easy)
 - [ ] [1984. Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) (Easy)
 - [ ] [220. Contains Duplicate III](https://leetcode.cn/problems/contains-duplicate-iii/) (Hard)

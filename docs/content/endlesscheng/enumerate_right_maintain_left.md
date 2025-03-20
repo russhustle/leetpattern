@@ -4,6 +4,8 @@ comments: True
 
 # Enumerate Right Maintain Left
 
+## Table of Contents
+
 - [x] [1. Two Sum](https://leetcode.cn/problems/two-sum/) (Easy)
 - [x] [1512. Number of Good Pairs](https://leetcode.cn/problems/number-of-good-pairs/) (Easy)
 - [x] [2001. Number of Pairs of Interchangeable Rectangles](https://leetcode.cn/problems/number-of-pairs-of-interchangeable-rectangles/) (Medium)

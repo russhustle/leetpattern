@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Top-Down DFS
 
+## Table of Contents
+
 - [x] [104. Maximum Depth of Binary Tree](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 - [x] [111. Minimum Depth of Binary Tree](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) (Easy)
 - [x] [112. Path Sum](https://leetcode.cn/problems/path-sum/) (Easy)

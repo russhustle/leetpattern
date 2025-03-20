@@ -4,6 +4,8 @@ comments: True
 
 # Prime Factorization
 
+## Table of Contents
+
 - [ ] [2521. Distinct Prime Factors of Product of Array](https://leetcode.cn/problems/distinct-prime-factors-of-product-of-array/) (Medium)
 - [ ] [2507. Smallest Value After Replacing With Sum of Prime Factors](https://leetcode.cn/problems/smallest-value-after-replacing-with-sum-of-prime-factors/) (Medium)
 - [ ] [3326. Minimum Division Operations to Make Array Non Decreasing](https://leetcode.cn/problems/minimum-division-operations-to-make-array-non-decreasing/) (Medium)

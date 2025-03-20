@@ -4,6 +4,8 @@ comments: True
 
 # Prefix Sum
 
+## Table of Contents
+
 - [x] [2574. Left and Right Sum Differences](https://leetcode.cn/problems/left-and-right-sum-differences/) (Easy)
 - [x] [1732. Find the Highest Altitude](https://leetcode.cn/problems/find-the-highest-altitude/) (Easy)
 - [x] [303. Range Sum Query - Immutable](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)

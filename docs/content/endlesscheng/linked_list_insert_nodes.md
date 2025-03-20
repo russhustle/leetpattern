@@ -4,6 +4,8 @@ comments: True
 
 # Linked List Insert Nodes
 
+## Table of Contents
+
 - [ ] [2807. Insert Greatest Common Divisors in Linked List](https://leetcode.cn/problems/insert-greatest-common-divisors-in-linked-list/) (Medium)
 - [ ] [147. Insertion Sort List](https://leetcode.cn/problems/insertion-sort-list/) (Medium)
 - [ ] [708. Insert into a Sorted Circular Linked List](https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/) (Medium) 👑

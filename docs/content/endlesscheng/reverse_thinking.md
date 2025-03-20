@@ -4,6 +4,8 @@ comments: True
 
 # Reverse Thinking
 
+## Table of Contents
+
 - [ ] [2139. Minimum Moves to Reach Target Score](https://leetcode.cn/problems/minimum-moves-to-reach-target-score/) (Medium)
 - [ ] [1558. Minimum Numbers of Function Calls to Make Target Array](https://leetcode.cn/problems/minimum-numbers-of-function-calls-to-make-target-array/) (Medium)
 - [ ] [554. Brick Wall](https://leetcode.cn/problems/brick-wall/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # XOR Trie
 
+## Table of Contents
+
 - [ ] [421. Maximum XOR of Two Numbers in an Array](https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/) (Medium)
 - [ ] [2935. Maximum Strong Pair XOR II](https://leetcode.cn/problems/maximum-strong-pair-xor-ii/) (Hard)
 - [ ] [1707. Maximum XOR With an Element From Array](https://leetcode.cn/problems/maximum-xor-with-an-element-from-array/) (Hard)

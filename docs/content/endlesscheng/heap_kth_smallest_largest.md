@@ -4,6 +4,8 @@ comments: True
 
 # Heap Kth Smallest Largest
 
+## Table of Contents
+
 - [x] [264. Ugly Number II](https://leetcode.cn/problems/ugly-number-ii/) (Medium)
 - [x] [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)
 - [x] [373. Find K Pairs with Smallest Sums](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) (Medium)

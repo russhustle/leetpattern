@@ -4,6 +4,8 @@ comments: True
 
 # Fundamental Cycle
 
+## Table of Contents
+
 - [ ] [2359. Find Closest Node to Given Two Nodes](https://leetcode.cn/problems/find-closest-node-to-given-two-nodes/) (Medium)
 - [ ] [2360. Longest Cycle in a Graph](https://leetcode.cn/problems/longest-cycle-in-a-graph/) (Hard)
 - [x] [684. Redundant Connection](https://leetcode.cn/problems/redundant-connection/) (Medium)

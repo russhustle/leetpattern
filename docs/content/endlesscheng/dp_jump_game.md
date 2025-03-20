@@ -4,6 +4,8 @@ comments: True
 
 # DP Jump Game
 
+## Table of Contents
+
 - [x] [1306. Jump Game III](https://leetcode.cn/problems/jump-game-iii/) (Medium)
 - [ ] [2770. Maximum Number of Jumps to Reach the Last Index](https://leetcode.cn/problems/maximum-number-of-jumps-to-reach-the-last-index/) (Medium)
 - [ ] [403. Frog Jump](https://leetcode.cn/problems/frog-jump/) (Hard)

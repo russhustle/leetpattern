@@ -4,6 +4,8 @@ comments: True
 
 # Union Find
 
+## Table of Contents
+
 - [x] [721. Accounts Merge](https://leetcode.cn/problems/accounts-merge/) (Medium)
 - [x] [990. Satisfiability of Equality Equations](https://leetcode.cn/problems/satisfiability-of-equality-equations/) (Medium)
 - [x] [1061. Lexicographically Smallest Equivalent String](https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/) (Medium)

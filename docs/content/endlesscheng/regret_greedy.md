@@ -4,6 +4,8 @@ comments: True
 
 # Regret Greedy
 
+## Table of Contents
+
 - [ ] [1642. Furthest Building You Can Reach](https://leetcode.cn/problems/furthest-building-you-can-reach/) (Medium)
 - [ ] [630. Course Schedule III](https://leetcode.cn/problems/course-schedule-iii/) (Hard)
 - [ ] [871. Minimum Number of Refueling Stops](https://leetcode.cn/problems/minimum-number-of-refueling-stops/) (Hard)

@@ -4,6 +4,8 @@ comments: True
 
 # General Tree DFS Timestamp
 
+## Table of Contents
+
 - [ ] [2322. Minimum Score After Removals on a Tree](https://leetcode.cn/problems/minimum-score-after-removals-on-a-tree/) (Hard)
 - [ ] [3327. Check if DFS Strings Are Palindromes](https://leetcode.cn/problems/check-if-dfs-strings-are-palindromes/) (Hard)
 

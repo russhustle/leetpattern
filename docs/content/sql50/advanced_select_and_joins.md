@@ -4,6 +4,8 @@ comments: True
 
 # Advanced Select and Joins
 
+## Table of Contents
+
 - [ ] [1731. The Number of Employees Which Report to Each Employee](https://leetcode.cn/problems/the-number-of-employees-which-report-to-each-employee/) (Easy)
 - [ ] [1789. Primary Department for Each Employee](https://leetcode.cn/problems/primary-department-for-each-employee/) (Easy)
 - [ ] [610. Triangle Judgement](https://leetcode.cn/problems/triangle-judgement/) (Easy)

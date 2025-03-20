@@ -4,6 +4,8 @@ comments: True
 
 # Bit Manipulation
 
+## Table of Contents
+
 - [x] [136. Single Number](https://leetcode.cn/problems/single-number/) (Easy)
 - [x] [191. Number of 1 Bits](https://leetcode.cn/problems/number-of-1-bits/) (Easy)
 - [x] [338. Counting Bits](https://leetcode.cn/problems/counting-bits/) (Easy)

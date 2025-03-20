@@ -4,6 +4,8 @@ comments: True
 
 # DP LIS Advanced
 
+## Table of Contents
+
 - [ ] [1626. Best Team With No Conflicts](https://leetcode.cn/problems/best-team-with-no-conflicts/) (Medium)
 - [x] [673. Number of Longest Increasing Subsequence](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) (Medium)
 - [x] [354. Russian Doll Envelopes](https://leetcode.cn/problems/russian-doll-envelopes/) (Hard)

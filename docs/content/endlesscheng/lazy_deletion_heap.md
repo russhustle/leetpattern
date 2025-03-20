@@ -4,6 +4,8 @@ comments: True
 
 # Lazy Deletion Heap
 
+## Table of Contents
+
 - [ ] [2349. Design a Number Container System](https://leetcode.cn/problems/design-a-number-container-system/) (Medium)
 - [ ] [2353. Design a Food Rating System](https://leetcode.cn/problems/design-a-food-rating-system/) (Medium)
 - [ ] [3092. Most Frequent IDs](https://leetcode.cn/problems/most-frequent-ids/) (Medium)

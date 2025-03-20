@@ -4,6 +4,8 @@ comments: True
 
 # Grid BFS
 
+## Table of Contents
+
 - [x] [1926. Nearest Exit from Entrance in Maze](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)
 - [x] [1091. Shortest Path in Binary Matrix](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) (Medium)
 - [x] [1162. As Far from Land as Possible](https://leetcode.cn/problems/as-far-from-land-as-possible/) (Medium)

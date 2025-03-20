@@ -4,6 +4,8 @@ comments: True
 
 # Backtracking Basic
 
+## Table of Contents
+
 - [x] [17. Letter Combinations of a Phone Number](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) (Medium)
 
 ## 17. Letter Combinations of a Phone Number

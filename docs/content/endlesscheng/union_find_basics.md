@@ -4,6 +4,8 @@ comments: True
 
 # Union Find Basics
 
+## Table of Contents
+
 - [x] [990. Satisfiability of Equality Equations](https://leetcode.cn/problems/satisfiability-of-equality-equations/) (Medium)
 - [x] [721. Accounts Merge](https://leetcode.cn/problems/accounts-merge/) (Medium)
 - [ ] [737. Sentence Similarity II](https://leetcode.cn/problems/sentence-similarity-ii/) (Medium) 👑

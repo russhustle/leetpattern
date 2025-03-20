@@ -4,6 +4,8 @@ comments: True
 
 # Queue Basics
 
+## Table of Contents
+
 - [ ] [933. Number of Recent Calls](https://leetcode.cn/problems/number-of-recent-calls/) (Easy)
 - [ ] [950. Reveal Cards In Increasing Order](https://leetcode.cn/problems/reveal-cards-in-increasing-order/) (Medium)
 - [ ] [649. Dota2 Senate](https://leetcode.cn/problems/dota2-senate/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search
 
+## Table of Contents
+
 - [x] [35. Search Insert Position](https://leetcode.cn/problems/search-insert-position/) (Easy)
 - [x] [74. Search a 2D Matrix](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 - [x] [34. Find First and Last Position of Element in Sorted Array](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) (Medium)

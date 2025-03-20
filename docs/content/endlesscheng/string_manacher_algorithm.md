@@ -4,6 +4,8 @@ comments: True
 
 # String Manacher Algorithm
 
+## Table of Contents
+
 - [x] [5. Longest Palindromic Substring](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
 - [x] [647. Palindromic Substrings](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
 - [x] [214. Shortest Palindrome](https://leetcode.cn/problems/shortest-palindrome/) (Hard)

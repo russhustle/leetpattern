@@ -4,6 +4,8 @@ comments: True
 
 # Graph Others
 
+## Table of Contents
+
 - [ ] [1042. Flower Planting With No Adjacent](https://leetcode.cn/problems/flower-planting-with-no-adjacent/) (Medium)
 - [ ] [1761. Minimum Degree of a Connected Trio in a Graph](https://leetcode.cn/problems/minimum-degree-of-a-connected-trio-in-a-graph/) (Hard)
 - [ ] [2508. Add Edges to Make Degrees of All Nodes Even](https://leetcode.cn/problems/add-edges-to-make-degrees-of-all-nodes-even/) (Hard)

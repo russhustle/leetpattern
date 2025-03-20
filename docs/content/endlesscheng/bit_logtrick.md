@@ -4,6 +4,8 @@ comments: True
 
 # Bit LogTrick
 
+## Table of Contents
+
 - [ ] [3097. Shortest Subarray With OR at Least K II](https://leetcode.cn/problems/shortest-subarray-with-or-at-least-k-ii/) (Medium)
 - [ ] [2411. Smallest Subarrays With Maximum Bitwise OR](https://leetcode.cn/problems/smallest-subarrays-with-maximum-bitwise-or/) (Medium)
 - [ ] [3209. Number of Subarrays With AND Value of K](https://leetcode.cn/problems/number-of-subarrays-with-and-value-of-k/) (Hard)

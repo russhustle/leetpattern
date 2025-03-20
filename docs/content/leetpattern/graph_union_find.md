@@ -4,6 +4,8 @@ comments: True
 
 # Graph Union Find
 
+## Table of Contents
+
 - [x] [547. Number of Provinces](https://leetcode.cn/problems/number-of-provinces/) (Medium)
 - [x] [684. Redundant Connection](https://leetcode.cn/problems/redundant-connection/) (Medium)
 - [x] [323. Number of Connected Components in an Undirected Graph](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium) 👑

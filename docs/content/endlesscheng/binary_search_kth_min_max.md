@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Kth Min Max
 
+## Table of Contents
+
 - [ ] [668. Kth Smallest Number in Multiplication Table](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/) (Hard)
 - [x] [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)
 - [ ] [719. Find K-th Smallest Pair Distance](https://leetcode.cn/problems/find-k-th-smallest-pair-distance/) (Hard)

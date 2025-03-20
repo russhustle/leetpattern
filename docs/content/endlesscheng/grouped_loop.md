@@ -4,6 +4,8 @@ comments: True
 
 # Grouped Loop
 
+## Table of Contents
+
 - [ ] [1446. Consecutive Characters](https://leetcode.cn/problems/consecutive-characters/) (Easy)
 - [ ] [1869. Longer Contiguous Segments of Ones than Zeros](https://leetcode.cn/problems/longer-contiguous-segments-of-ones-than-zeros/) (Easy)
 - [ ] [2414. Length of the Longest Alphabetical Continuous Substring](https://leetcode.cn/problems/length-of-the-longest-alphabetical-continuous-substring/) (Medium)

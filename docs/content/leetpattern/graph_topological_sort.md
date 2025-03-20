@@ -4,6 +4,8 @@ comments: True
 
 # Graph Topological Sort
 
+## Table of Contents
+
 - [x] [1557. Minimum Number of Vertices to Reach All Nodes](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
 - [x] [207. Course Schedule](https://leetcode.cn/problems/course-schedule/) (Medium)
 - [x] [210. Course Schedule II](https://leetcode.cn/problems/course-schedule-ii/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Bottom-Up DFS
 
+## Table of Contents
+
 - [x] [104. Maximum Depth of Binary Tree](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 - [x] [111. Minimum Depth of Binary Tree](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) (Easy)
 - [ ] [965. Univalued Binary Tree](https://leetcode.cn/problems/univalued-binary-tree/) (Easy)

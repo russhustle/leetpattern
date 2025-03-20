@@ -4,6 +4,8 @@ comments: True
 
 # 2D Difference Array
 
+## Table of Contents
+
 - [ ] [2536. Increment Submatrices by One](https://leetcode.cn/problems/increment-submatrices-by-one/) (Medium)
 - [ ] [850. Rectangle Area II](https://leetcode.cn/problems/rectangle-area-ii/) (Hard)
 - [ ] [2132. Stamping the Grid](https://leetcode.cn/problems/stamping-the-grid/) (Hard)

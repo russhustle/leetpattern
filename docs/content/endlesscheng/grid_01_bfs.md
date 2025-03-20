@@ -4,6 +4,8 @@ comments: True
 
 # Grid 01 BFS
 
+## Table of Contents
+
 - [ ] [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) (Hard)
 - [ ] [2290. Minimum Obstacle Removal to Reach Corner](https://leetcode.cn/problems/minimum-obstacle-removal-to-reach-corner/) (Hard)
 - [ ] [3286. Find a Safe Walk Through a Grid](https://leetcode.cn/problems/find-a-safe-walk-through-a-grid/) (Medium)

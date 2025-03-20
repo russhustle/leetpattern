@@ -4,6 +4,8 @@ comments: True
 
 # Linked List
 
+## Table of Contents
+
 - [x] [1474. Delete N Nodes After M Nodes of a Linked List](https://leetcode.cn/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) (Easy) 👑
 - [ ] [708. Insert into a Sorted Circular Linked List](https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/) (Medium) 👑
 - [ ] [369. Plus One Linked List](https://leetcode.cn/problems/plus-one-linked-list/) (Medium) 👑

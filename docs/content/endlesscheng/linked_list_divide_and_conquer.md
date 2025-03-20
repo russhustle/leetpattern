@@ -4,6 +4,8 @@ comments: True
 
 # Linked List Divide and Conquer
 
+## Table of Contents
+
 - [x] [23. Merge k Sorted Lists](https://leetcode.cn/problems/merge-k-sorted-lists/) (Hard)
 - [x] [148. Sort List](https://leetcode.cn/problems/sort-list/) (Medium)
 

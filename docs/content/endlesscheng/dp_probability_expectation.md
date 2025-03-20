@@ -4,6 +4,8 @@ comments: True
 
 # DP Probability Expectation
 
+## Table of Contents
+
 - [ ] [688. Knight Probability in Chessboard](https://leetcode.cn/problems/knight-probability-in-chessboard/) (Medium)
 - [ ] [837. New 21 Game](https://leetcode.cn/problems/new-21-game/) (Medium)
 - [ ] [1467. Probability of a Two Boxes Having The Same Number of Distinct Balls](https://leetcode.cn/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/) (Hard)

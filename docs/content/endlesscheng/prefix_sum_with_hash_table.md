@@ -4,6 +4,8 @@ comments: True
 
 # Prefix Sum with Hash Table
 
+## Table of Contents
+
 - [ ] [930. Binary Subarrays With Sum](https://leetcode.cn/problems/binary-subarrays-with-sum/) (Medium)
 - [x] [560. Subarray Sum Equals K](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
 - [ ] [1524. Number of Sub-arrays With Odd Sum](https://leetcode.cn/problems/number-of-sub-arrays-with-odd-sum/) (Medium)

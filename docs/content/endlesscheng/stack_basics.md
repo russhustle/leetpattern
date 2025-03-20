@@ -4,6 +4,8 @@ comments: True
 
 # Stack Basics
 
+## Table of Contents
+
 - [x] [1441. Build an Array With Stack Operations](https://leetcode.cn/problems/build-an-array-with-stack-operations/) (Medium)
 - [x] [844. Backspace String Compare](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
 - [x] [682. Baseball Game](https://leetcode.cn/problems/baseball-game/) (Easy)

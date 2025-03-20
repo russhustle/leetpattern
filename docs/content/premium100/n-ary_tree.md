@@ -4,6 +4,8 @@ comments: True
 
 # N-ary Tree
 
+## Table of Contents
+
 - [ ] [1490. Clone N-ary Tree](https://leetcode.cn/problems/clone-n-ary-tree/) (Medium) 👑
 - [ ] [1506. Find Root of N-Ary Tree](https://leetcode.cn/problems/find-root-of-n-ary-tree/) (Medium) 👑
 - [x] [1522. Diameter of N-Ary Tree](https://leetcode.cn/problems/diameter-of-n-ary-tree/) (Medium) 👑

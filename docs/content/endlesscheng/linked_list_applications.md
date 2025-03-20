@@ -4,6 +4,8 @@ comments: True
 
 # Linked List Applications
 
+## Table of Contents
+
 - [ ] [1019. Next Greater Node In Linked List](https://leetcode.cn/problems/next-greater-node-in-linked-list/) (Medium)
 - [x] [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) (Medium)
 - [x] [707. Design Linked List](https://leetcode.cn/problems/design-linked-list/) (Medium)

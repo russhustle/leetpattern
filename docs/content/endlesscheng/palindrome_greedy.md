@@ -4,6 +4,8 @@ comments: True
 
 # Palindrome Greedy
 
+## Table of Contents
+
 - [x] [409. Longest Palindrome](https://leetcode.cn/problems/longest-palindrome/) (Easy)
 - [x] [2697. Lexicographically Smallest Palindrome](https://leetcode.cn/problems/lexicographically-smallest-palindrome/) (Easy)
 - [ ] [680. Valid Palindrome II](https://leetcode.cn/problems/valid-palindrome-ii/) (Easy)

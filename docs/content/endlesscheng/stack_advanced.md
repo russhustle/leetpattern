@@ -4,6 +4,8 @@ comments: True
 
 # Stack Advanced
 
+## Table of Contents
+
 - [ ] [3170. Lexicographically Minimum String After Removing Stars](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
 - [x] [155. Min Stack](https://leetcode.cn/problems/min-stack/) (Medium)
 - [ ] [1381. Design a Stack With Increment Operation](https://leetcode.cn/problems/design-a-stack-with-increment-operation/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Multiplication Principle
 
+## Table of Contents
+
 - [ ] [2125. Number of Laser Beams in a Bank](https://leetcode.cn/problems/number-of-laser-beams-in-a-bank/) (Medium)
 - [ ] [3128. Right Triangles](https://leetcode.cn/problems/right-triangles/) (Medium)
 - [ ] [1573. Number of Ways to Split a String](https://leetcode.cn/problems/number-of-ways-to-split-a-string/) (Medium)

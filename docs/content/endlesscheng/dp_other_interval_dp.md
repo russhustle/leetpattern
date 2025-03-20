@@ -4,6 +4,8 @@ comments: True
 
 # DP Other Interval DP
 
+## Table of Contents
+
 - [x] [5. Longest Palindromic Substring](https://leetcode.cn/problems/longest-palindromic-substring/) (Medium)
 - [x] [647. Palindromic Substrings](https://leetcode.cn/problems/palindromic-substrings/) (Medium)
 - [ ] [3040. Maximum Number of Operations With the Same Score II](https://leetcode.cn/problems/maximum-number-of-operations-with-the-same-score-ii/) (Medium)

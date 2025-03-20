@@ -4,6 +4,8 @@ comments: True
 
 # Factorial Decomposition
 
+## Table of Contents
+
 - [ ] [172. Factorial Trailing Zeroes](https://leetcode.cn/problems/factorial-trailing-zeroes/) (Medium)
 - [ ] [793. Preimage Size of Factorial Zeroes Function](https://leetcode.cn/problems/preimage-size-of-factorial-zeroes-function/) (Hard)
 

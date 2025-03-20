@@ -4,6 +4,8 @@ comments: True
 
 # One Sequence Two Pointers Opposite Direction
 
+## Table of Contents
+
 - [x] [344. Reverse String](https://leetcode.cn/problems/reverse-string/) (Easy)
 - [x] [125. Valid Palindrome](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 - [x] [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/) (Medium)

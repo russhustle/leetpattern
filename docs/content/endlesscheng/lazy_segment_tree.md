@@ -4,6 +4,8 @@ comments: True
 
 # Lazy Segment Tree
 
+## Table of Contents
+
 - [ ] [2589. Minimum Time to Complete All Tasks](https://leetcode.cn/problems/minimum-time-to-complete-all-tasks/) (Hard)
 - [ ] [2569. Handling Sum Queries After Update](https://leetcode.cn/problems/handling-sum-queries-after-update/) (Hard)
 - [ ] [1622. Fancy Sequence](https://leetcode.cn/problems/fancy-sequence/) (Hard)

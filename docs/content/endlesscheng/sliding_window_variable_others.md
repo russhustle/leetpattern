@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Variable Others
 
+## Table of Contents
+
 - [ ] [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) (Medium)
 - [ ] [825. Friends Of Appropriate Ages](https://leetcode.cn/problems/friends-of-appropriate-ages/) (Medium)
 - [ ] [2401. Longest Nice Subarray](https://leetcode.cn/problems/longest-nice-subarray/) (Medium)

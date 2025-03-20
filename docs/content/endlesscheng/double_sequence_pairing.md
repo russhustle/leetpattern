@@ -4,6 +4,8 @@ comments: True
 
 # Double Sequence Pairing
 
+## Table of Contents
+
 - [x] [2037. Minimum Number of Moves to Seat Everyone](https://leetcode.cn/problems/minimum-number-of-moves-to-seat-everyone/) (Easy)
 - [x] [455. Assign Cookies](https://leetcode.cn/problems/assign-cookies/) (Easy)
 - [ ] [2410. Maximum Matching of Players With Trainers](https://leetcode.cn/problems/maximum-matching-of-players-with-trainers/) (Medium)

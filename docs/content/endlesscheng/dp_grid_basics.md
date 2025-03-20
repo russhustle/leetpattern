@@ -4,6 +4,8 @@ comments: True
 
 # DP Grid Basics
 
+## Table of Contents
+
 - [x] [64. Minimum Path Sum](https://leetcode.cn/problems/minimum-path-sum/) (Medium)
 - [x] [62. Unique Paths](https://leetcode.cn/problems/unique-paths/) (Medium)
 - [x] [63. Unique Paths II](https://leetcode.cn/problems/unique-paths-ii/) (Medium)

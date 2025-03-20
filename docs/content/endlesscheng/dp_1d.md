@@ -4,6 +4,8 @@ comments: True
 
 # DP 1D
 
+## Table of Contents
+
 - [ ] [2944. Minimum Number of Coins for Fruits](https://leetcode.cn/problems/minimum-number-of-coins-for-fruits/) (Medium)
 - [ ] [2140. Solving Questions With Brainpower](https://leetcode.cn/problems/solving-questions-with-brainpower/) (Medium)
 - [x] [983. Minimum Cost For Tickets](https://leetcode.cn/problems/minimum-cost-for-tickets/) (Medium)

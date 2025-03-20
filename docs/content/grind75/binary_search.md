@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search
 
+## Table of Contents
+
 - [x] [704. Binary Search](https://leetcode.cn/problems/binary-search/) (Easy)
 - [x] [278. First Bad Version](https://leetcode.cn/problems/first-bad-version/) (Easy)
 - [x] [33. Search in Rotated Sorted Array](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)

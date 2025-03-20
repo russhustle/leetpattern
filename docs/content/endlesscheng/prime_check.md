@@ -4,6 +4,8 @@ comments: True
 
 # Prime Check
 
+## Table of Contents
+
 - [ ] [3115. Maximum Prime Difference](https://leetcode.cn/problems/maximum-prime-difference/) (Medium)
 - [x] [2614. Prime In Diagonal](https://leetcode.cn/problems/prime-in-diagonal/) (Easy)
 - [ ] [762. Prime Number of Set Bits in Binary Representation](https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation/) (Easy)

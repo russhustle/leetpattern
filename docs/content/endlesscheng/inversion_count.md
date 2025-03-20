@@ -4,6 +4,8 @@ comments: True
 
 # Inversion Count
 
+## Table of Contents
+
 - [ ] [315. Count of Smaller Numbers After Self](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) (Hard)
 - [ ] [493. Reverse Pairs](https://leetcode.cn/problems/reverse-pairs/) (Hard)
 - [ ] [327. Count of Range Sum](https://leetcode.cn/problems/count-of-range-sum/) (Hard)

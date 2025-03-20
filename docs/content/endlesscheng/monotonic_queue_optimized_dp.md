@@ -4,6 +4,8 @@ comments: True
 
 # Monotonic Queue Optimized DP
 
+## Table of Contents
+
 - [ ] [2944. Minimum Number of Coins for Fruits](https://leetcode.cn/problems/minimum-number-of-coins-for-fruits/) (Medium)
 - [ ] [1696. Jump Game VI](https://leetcode.cn/problems/jump-game-vi/) (Medium)
 - [ ] [1425. Constrained Subsequence Sum](https://leetcode.cn/problems/constrained-subsequence-sum/) (Hard)

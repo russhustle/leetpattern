@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree
 
+## Table of Contents
+
 - [x] [298. Binary Tree Longest Consecutive Sequence](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium) 👑
 - [ ] [549. Binary Tree Longest Consecutive Sequence II](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence-ii/) (Medium) 👑
 - [ ] [250. Count Univalue Subtrees](https://leetcode.cn/problems/count-univalue-subtrees/) (Medium) 👑

@@ -4,6 +4,8 @@ comments: True
 
 # Bit Manipulation
 
+## Table of Contents
+
 - [ ] [2595. Number of Even and Odd Bits](https://leetcode.cn/problems/number-of-even-and-odd-bits/) (Easy)
 
 ## 2595. Number of Even and Odd Bits

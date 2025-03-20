@@ -4,6 +4,8 @@ comments: True
 
 # DP Transform X to Y
 
+## Table of Contents
+
 - [ ] [397. Integer Replacement](https://leetcode.cn/problems/integer-replacement/) (Medium)
 - [ ] [2998. Minimum Number of Operations to Make X and Y Equal](https://leetcode.cn/problems/minimum-number-of-operations-to-make-x-and-y-equal/) (Medium)
 - [ ] [2059. Minimum Operations to Convert Number](https://leetcode.cn/problems/minimum-operations-to-convert-number/) (Medium)

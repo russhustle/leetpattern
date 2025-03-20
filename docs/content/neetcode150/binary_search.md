@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search
 
+## Table of Contents
+
 - [x] [704. Binary Search](https://leetcode.cn/problems/binary-search/) (Easy)
 - [x] [74. Search a 2D Matrix](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 - [x] [875. Koko Eating Bananas](https://leetcode.cn/problems/koko-eating-bananas/) (Medium)

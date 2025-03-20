@@ -4,6 +4,8 @@ comments: True
 
 # Manhattan Distance
 
+## Table of Contents
+
 - [ ] [3443. Maximum Manhattan Distance After K Changes](https://leetcode.cn/problems/maximum-manhattan-distance-after-k-changes/) (Medium)
 - [ ] [1131. Maximum of Absolute Value Expression](https://leetcode.cn/problems/maximum-of-absolute-value-expression/) (Medium)
 - [ ] [3102. Minimize Manhattan Distances](https://leetcode.cn/problems/minimize-manhattan-distances/) (Hard)

@@ -4,6 +4,8 @@ comments: True
 
 # Rectangles and Polygons
 
+## Table of Contents
+
 - [ ] [836. Rectangle Overlap](https://leetcode.cn/problems/rectangle-overlap/) (Easy)
 - [ ] [223. Rectangle Area](https://leetcode.cn/problems/rectangle-area/) (Medium)
 - [ ] [593. Valid Square](https://leetcode.cn/problems/valid-square/) (Medium)

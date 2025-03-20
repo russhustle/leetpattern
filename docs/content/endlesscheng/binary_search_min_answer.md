@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Min Answer
 
+## Table of Contents
+
 - [ ] [1283. Find the Smallest Divisor Given a Threshold](https://leetcode.cn/problems/find-the-smallest-divisor-given-a-threshold/) (Medium)
 - [ ] [2187. Minimum Time to Complete Trips](https://leetcode.cn/problems/minimum-time-to-complete-trips/) (Medium)
 - [x] [1870. Minimum Speed to Arrive on Time](https://leetcode.cn/problems/minimum-speed-to-arrive-on-time/) (Medium)

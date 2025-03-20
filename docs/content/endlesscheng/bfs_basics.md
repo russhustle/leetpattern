@@ -4,6 +4,8 @@ comments: True
 
 # BFS Basics
 
+## Table of Contents
+
 - [x] [3243. Shortest Distance After Road Addition Queries I](https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-i/) (Medium)
 - [ ] [1311. Get Watched Videos by Your Friends](https://leetcode.cn/problems/get-watched-videos-by-your-friends/) (Medium)
 - [x] [1129. Shortest Path with Alternating Colors](https://leetcode.cn/problems/shortest-path-with-alternating-colors/) (Medium)

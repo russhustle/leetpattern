@@ -4,6 +4,8 @@ comments: True
 
 # One Sequence Two Pointers Same Direction
 
+## Table of Contents
+
 - [ ] [1574. Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.cn/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) (Medium)
 - [ ] [2972. Count the Number of Incremovable Subarrays II](https://leetcode.cn/problems/count-the-number-of-incremovable-subarrays-ii/) (Hard)
 - [ ] [2122. Recover the Original Array](https://leetcode.cn/problems/recover-the-original-array/) (Hard)

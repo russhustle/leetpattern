@@ -4,6 +4,8 @@ comments: True
 
 # Hash Counting
 
+## Table of Contents
+
 - [x] [242. Valid Anagram](https://leetcode.cn/problems/valid-anagram/) (Easy)
 - [x] [560. Subarray Sum Equals K](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
 - [x] [49. Group Anagrams](https://leetcode.cn/problems/group-anagrams/) (Medium)

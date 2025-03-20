@@ -4,6 +4,8 @@ comments: True
 
 # Basic Inequality
 
+## Table of Contents
+
 - [ ] [3081. Replace Question Marks in String to Minimize Its Value](https://leetcode.cn/problems/replace-question-marks-in-string-to-minimize-its-value/) (Medium)
 - [ ] [1969. Minimum Non-Zero Product of the Array Elements](https://leetcode.cn/problems/minimum-non-zero-product-of-the-array-elements/) (Medium)
 - [ ] [2939. Maximum Xor Product](https://leetcode.cn/problems/maximum-xor-product/) (Medium)

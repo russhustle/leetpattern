@@ -4,6 +4,8 @@ comments: True
 
 # Enumerate then Greedy
 
+## Table of Contents
+
 - [ ] [2171. Removing Minimum Number of Magic Beans](https://leetcode.cn/problems/removing-minimum-number-of-magic-beans/) (Medium)
 - [ ] [3085. Minimum Deletions to Make String K-Special](https://leetcode.cn/problems/minimum-deletions-to-make-string-k-special/) (Medium)
 - [ ] [1727. Largest Submatrix With Rearrangements](https://leetcode.cn/problems/largest-submatrix-with-rearrangements/) (Medium)

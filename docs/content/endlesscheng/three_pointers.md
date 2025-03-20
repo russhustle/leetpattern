@@ -4,6 +4,8 @@ comments: True
 
 # Three Pointers
 
+## Table of Contents
+
 - [ ] [2367. Number of Arithmetic Triplets](https://leetcode.cn/problems/number-of-arithmetic-triplets/) (Easy)
 - [ ] [2563. Count the Number of Fair Pairs](https://leetcode.cn/problems/count-the-number-of-fair-pairs/) (Medium)
 - [ ] [795. Number of Subarrays with Bounded Maximum](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Advanced
 
+## Table of Contents
+
 - [x] [2300. Successful Pairs of Spells and Potions](https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/) (Medium)
 - [x] [1385. Find the Distance Value Between Two Arrays](https://leetcode.cn/problems/find-the-distance-value-between-two-arrays/) (Easy)
 - [ ] [2389. Longest Subsequence With Limited Sum](https://leetcode.cn/problems/longest-subsequence-with-limited-sum/) (Easy)

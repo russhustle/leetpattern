@@ -4,6 +4,8 @@ comments: True
 
 # Bit Basics
 
+## Table of Contents
+
 - [ ] [3370. Smallest Number With All Set Bits](https://leetcode.cn/problems/smallest-number-with-all-set-bits/) (Easy)
 - [ ] [3226. Number of Bit Changes to Make Two Integers Equal](https://leetcode.cn/problems/number-of-bit-changes-to-make-two-integers-equal/) (Easy)
 - [ ] [1356. Sort Integers by The Number of 1 Bits](https://leetcode.cn/problems/sort-integers-by-the-number-of-1-bits/) (Easy)

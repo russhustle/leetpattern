@@ -4,6 +4,8 @@ comments: True
 
 # Shortest Path Single Source Dijkstra
 
+## Table of Contents
+
 - [x] [743. Network Delay Time](https://leetcode.cn/problems/network-delay-time/) (Medium)
 - [ ] [3341. Find Minimum Time to Reach Last Room I](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-i/) (Medium)
 - [ ] [3112. Minimum Time to Visit Disappearing Nodes](https://leetcode.cn/problems/minimum-time-to-visit-disappearing-nodes/) (Medium)

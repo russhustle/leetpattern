@@ -4,6 +4,8 @@ comments: True
 
 # Bit Contribution Method
 
+## Table of Contents
+
 - [ ] [477. Total Hamming Distance](https://leetcode.cn/problems/total-hamming-distance/) (Medium)
 - [ ] [1863. Sum of All Subset XOR Totals](https://leetcode.cn/problems/sum-of-all-subset-xor-totals/) (Easy)
 - [ ] [2425. Bitwise XOR of All Pairings](https://leetcode.cn/problems/bitwise-xor-of-all-pairings/) (Medium)

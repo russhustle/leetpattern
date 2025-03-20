@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search
 
+## Table of Contents
+
 - [ ] [1228. Missing Number In Arithmetic Progression](https://leetcode.cn/problems/missing-number-in-arithmetic-progression/) (Easy) 👑
 - [ ] [1060. Missing Element in Sorted Array](https://leetcode.cn/problems/missing-element-in-sorted-array/) (Medium) 👑
 - [ ] [1533. Find the Index of the Large Integer](https://leetcode.cn/problems/find-the-index-of-the-large-integer/) (Medium) 👑

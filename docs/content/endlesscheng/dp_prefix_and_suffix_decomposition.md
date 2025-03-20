@@ -4,6 +4,8 @@ comments: True
 
 # DP Prefix and Suffix Decomposition
 
+## Table of Contents
+
 - [ ] [724. Find Pivot Index](https://leetcode.cn/problems/find-pivot-index/) (Easy)
 - [ ] [1991. Find the Middle Index in Array](https://leetcode.cn/problems/find-the-middle-index-in-array/) (Easy)
 - [ ] [2270. Number of Ways to Split Array](https://leetcode.cn/problems/number-of-ways-to-split-array/) (Medium)

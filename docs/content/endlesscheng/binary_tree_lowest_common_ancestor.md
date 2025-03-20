@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Lowest Common Ancestor
 
+## Table of Contents
+
 - [x] [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
 - [x] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 - [ ] [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/) (Medium)

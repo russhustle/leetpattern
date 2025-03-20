@@ -4,6 +4,8 @@ comments: True
 
 # Trie
 
+## Table of Contents
+
 - [x] [208. Implement Trie (Prefix Tree)](https://leetcode.cn/problems/implement-trie-prefix-tree/) (Medium)
 - [x] [139. Word Break](https://leetcode.cn/problems/word-break/) (Medium)
 

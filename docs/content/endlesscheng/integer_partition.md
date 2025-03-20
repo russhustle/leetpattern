@@ -4,6 +4,8 @@ comments: True
 
 # Integer Partition
 
+## Table of Contents
+
 - [x] [343. Integer Break](https://leetcode.cn/problems/integer-break/) (Medium)
 - [ ] [1808. Maximize Number of Nice Divisors](https://leetcode.cn/problems/maximize-number-of-nice-divisors/) (Hard)
 

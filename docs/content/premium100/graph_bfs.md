@@ -4,6 +4,8 @@ comments: True
 
 # Graph BFS
 
+## Table of Contents
+
 - [x] [490. The Maze](https://leetcode.cn/problems/the-maze/) (Medium) 👑
 - [x] [505. The Maze II](https://leetcode.cn/problems/the-maze-ii/) (Medium) 👑
 - [x] [499. The Maze III](https://leetcode.cn/problems/the-maze-iii/) (Hard) 👑

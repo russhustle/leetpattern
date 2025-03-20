@@ -4,6 +4,8 @@ comments: True
 
 # Prime Preprocessing
 
+## Table of Contents
+
 - [ ] [204. Count Primes](https://leetcode.cn/problems/count-primes/) (Medium)
 - [ ] [2761. Prime Pairs With Target Sum](https://leetcode.cn/problems/prime-pairs-with-target-sum/) (Medium)
 - [ ] [3233. Find the Count of Numbers Which Are Not Special](https://leetcode.cn/problems/find-the-count-of-numbers-which-are-not-special/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Game Theory
 
+## Table of Contents
+
 - [ ] [292. Nim Game](https://leetcode.cn/problems/nim-game/) (Easy)
 - [x] [1025. Divisor Game](https://leetcode.cn/problems/divisor-game/) (Easy)
 - [ ] [3227. Vowels Game in a String](https://leetcode.cn/problems/vowels-game-in-a-string/) (Medium)

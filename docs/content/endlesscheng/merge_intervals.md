@@ -4,6 +4,8 @@ comments: True
 
 # Merge Intervals
 
+## Table of Contents
+
 - [x] [56. Merge Intervals](https://leetcode.cn/problems/merge-intervals/) (Medium)
 - [x] [57. Insert Interval](https://leetcode.cn/problems/insert-interval/) (Medium)
 - [x] [55. Jump Game](https://leetcode.cn/problems/jump-game/) (Medium)

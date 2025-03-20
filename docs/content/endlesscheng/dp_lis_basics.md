@@ -4,6 +4,8 @@ comments: True
 
 # DP LIS Basics
 
+## Table of Contents
+
 - [x] [300. Longest Increasing Subsequence](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 - [ ] [2826. Sorting Three Groups](https://leetcode.cn/problems/sorting-three-groups/) (Medium)
 - [x] [1671. Minimum Number of Removals to Make Mountain Array](https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array/) (Hard)

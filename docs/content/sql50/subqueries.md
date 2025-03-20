@@ -4,6 +4,8 @@ comments: True
 
 # Subqueries
 
+## Table of Contents
+
 - [ ] [1978. Employees Whose Manager Left the Company](https://leetcode.cn/problems/employees-whose-manager-left-the-company/) (Easy)
 - [ ] [626. Exchange Seats](https://leetcode.cn/problems/exchange-seats/) (Medium)
 - [ ] [1341. Movie Rating](https://leetcode.cn/problems/movie-rating/) (Medium)

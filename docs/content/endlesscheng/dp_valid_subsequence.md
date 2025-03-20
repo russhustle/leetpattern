@@ -4,6 +4,8 @@ comments: True
 
 # DP Valid Subsequence
 
+## Table of Contents
+
 - [ ] [2501. Longest Square Streak in an Array](https://leetcode.cn/problems/longest-square-streak-in-an-array/) (Medium)
 - [ ] [1218. Longest Arithmetic Subsequence of Given Difference](https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/) (Medium)
 - [ ] [1027. Longest Arithmetic Subsequence](https://leetcode.cn/problems/longest-arithmetic-subsequence/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Points and Lines
 
+## Table of Contents
+
 - [ ] [1232. Check If It Is a Straight Line](https://leetcode.cn/problems/check-if-it-is-a-straight-line/) (Easy)
 - [ ] [2280. Minimum Lines to Represent a Line Chart](https://leetcode.cn/problems/minimum-lines-to-represent-a-line-chart/) (Medium)
 - [ ] [1610. Maximum Number of Visible Points](https://leetcode.cn/problems/maximum-number-of-visible-points/) (Hard)

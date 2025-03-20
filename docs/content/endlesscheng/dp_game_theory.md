@@ -4,6 +4,8 @@ comments: True
 
 # DP Game Theory
 
+## Table of Contents
+
 - [x] [1025. Divisor Game](https://leetcode.cn/problems/divisor-game/) (Easy)
 - [ ] [877. Stone Game](https://leetcode.cn/problems/stone-game/) (Medium)
 - [ ] [486. Predict the Winner](https://leetcode.cn/problems/predict-the-winner/) (Medium)

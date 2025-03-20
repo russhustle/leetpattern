@@ -4,6 +4,8 @@ comments: True
 
 # Stack
 
+## Table of Contents
+
 - [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
 - [x] [155. Min Stack](https://leetcode.cn/problems/min-stack/) (Medium)
 - [x] [394. Decode String](https://leetcode.cn/problems/decode-string/) (Medium)

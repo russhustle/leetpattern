@@ -4,6 +4,8 @@ comments: True
 
 # Hash
 
+## Table of Contents
+
 - [x] [1. Two Sum](https://leetcode.cn/problems/two-sum/) (Easy)
 - [x] [49. Group Anagrams](https://leetcode.cn/problems/group-anagrams/) (Medium)
 - [x] [128. Longest Consecutive Sequence](https://leetcode.cn/problems/longest-consecutive-sequence/) (Medium)

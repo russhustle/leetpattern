@@ -4,6 +4,8 @@ comments: True
 
 # Sorting Inequality
 
+## Table of Contents
+
 - [ ] [2285. Maximum Total Importance of Roads](https://leetcode.cn/problems/maximum-total-importance-of-roads/) (Medium)
 - [ ] [3016. Minimum Number of Pushes to Type Word II](https://leetcode.cn/problems/minimum-number-of-pushes-to-type-word-ii/) (Medium)
 - [ ] [1402. Reducing Dishes](https://leetcode.cn/problems/reducing-dishes/) (Hard)

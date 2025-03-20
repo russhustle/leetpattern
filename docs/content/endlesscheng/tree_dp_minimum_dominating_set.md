@@ -4,6 +4,8 @@ comments: True
 
 # Tree DP Minimum Dominating Set
 
+## Table of Contents
+
 - [x] [968. Binary Tree Cameras](https://leetcode.cn/problems/binary-tree-cameras/) (Hard)
 
 ## 968. Binary Tree Cameras

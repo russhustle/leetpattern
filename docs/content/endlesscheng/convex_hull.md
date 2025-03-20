@@ -4,6 +4,8 @@ comments: True
 
 # Convex Hull
 
+## Table of Contents
+
 - [ ] [587. Erect the Fence](https://leetcode.cn/problems/erect-the-fence/) (Hard)
 
 ## 587. Erect the Fence

@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Variable Min
 
+## Table of Contents
+
 - [x] [209. Minimum Size Subarray Sum](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
 - [x] [2904. Shortest and Lexicographically Smallest Beautiful String](https://leetcode.cn/problems/shortest-and-lexicographically-smallest-beautiful-string/) (Medium)
 - [ ] [1234. Replace the Substring for Balanced String](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/) (Medium)

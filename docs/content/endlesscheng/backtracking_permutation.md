@@ -4,6 +4,8 @@ comments: True
 
 # Backtracking Permutation
 
+## Table of Contents
+
 - [x] [46. Permutations](https://leetcode.cn/problems/permutations/) (Medium)
 - [ ] [3376. Minimum Time to Break Locks I](https://leetcode.cn/problems/minimum-time-to-break-locks-i/) (Medium)
 - [x] [51. N-Queens](https://leetcode.cn/problems/n-queens/) (Hard)

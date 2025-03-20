@@ -4,6 +4,8 @@ comments: True
 
 # DP Climbing Stairs
 
+## Table of Contents
+
 - [x] [70. Climbing Stairs](https://leetcode.cn/problems/climbing-stairs/) (Easy)
 - [x] [746. Min Cost Climbing Stairs](https://leetcode.cn/problems/min-cost-climbing-stairs/) (Easy)
 - [x] [377. Combination Sum IV](https://leetcode.cn/problems/combination-sum-iv/) (Medium)

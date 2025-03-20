@@ -4,6 +4,8 @@ comments: True
 
 # Coprime
 
+## Table of Contents
+
 - [ ] [2748. Number of Beautiful Pairs](https://leetcode.cn/problems/number-of-beautiful-pairs/) (Easy)
 - [ ] [1447. Simplified Fractions](https://leetcode.cn/problems/simplified-fractions/) (Medium)
 - [ ] [1766. Tree of Coprimes](https://leetcode.cn/problems/tree-of-coprimes/) (Hard)

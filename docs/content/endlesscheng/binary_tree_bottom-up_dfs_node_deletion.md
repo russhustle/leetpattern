@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Bottom-Up DFS Node Deletion
 
+## Table of Contents
+
 - [ ] [814. Binary Tree Pruning](https://leetcode.cn/problems/binary-tree-pruning/) (Medium)
 - [ ] [1325. Delete Leaves With a Given Value](https://leetcode.cn/problems/delete-leaves-with-a-given-value/) (Medium)
 - [ ] [1110. Delete Nodes And Return Forest](https://leetcode.cn/problems/delete-nodes-and-return-forest/) (Medium)

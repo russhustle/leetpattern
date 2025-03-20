@@ -4,6 +4,8 @@ comments: True
 
 # Monotonic Stack
 
+## Table of Contents
+
 - [x] [739. Daily Temperatures](https://leetcode.cn/problems/daily-temperatures/) (Medium)
 - [ ] [1475. Final Prices With a Special Discount in a Shop](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/) (Easy)
 - [x] [496. Next Greater Element I](https://leetcode.cn/problems/next-greater-element-i/) (Easy)

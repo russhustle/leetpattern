@@ -4,6 +4,8 @@ comments: True
 
 # Stack
 
+## Table of Contents
+
 - [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
 - [x] [155. Min Stack](https://leetcode.cn/problems/min-stack/) (Medium)
 - [x] [150. Evaluate Reverse Polish Notation](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)

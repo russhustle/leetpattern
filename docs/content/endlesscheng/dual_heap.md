@@ -4,6 +4,8 @@ comments: True
 
 # Dual Heap
 
+## Table of Contents
+
 - [ ] [2102. Sequentially Ordinal Rank Tracker](https://leetcode.cn/problems/sequentially-ordinal-rank-tracker/) (Hard)
 - [x] [295. Find Median from Data Stream](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 - [x] [480. Sliding Window Median](https://leetcode.cn/problems/sliding-window-median/) (Hard)

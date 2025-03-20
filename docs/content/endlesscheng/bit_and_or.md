@@ -4,6 +4,8 @@ comments: True
 
 # Bit AND OR
 
+## Table of Contents
+
 - [ ] [2980. Check if Bitwise OR Has Trailing Zeros](https://leetcode.cn/problems/check-if-bitwise-or-has-trailing-zeros/) (Easy)
 - [ ] [1318. Minimum Flips to Make a OR b Equal to c](https://leetcode.cn/problems/minimum-flips-to-make-a-or-b-equal-to-c/) (Medium)
 - [ ] [2419. Longest Subarray With Maximum Bitwise AND](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) (Medium)

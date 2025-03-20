@@ -4,6 +4,8 @@ comments: True
 
 # Lexicographically Smallest
 
+## Table of Contents
+
 - [ ] [402. Remove K Digits](https://leetcode.cn/problems/remove-k-digits/) (Medium)
 - [ ] [1673. Find the Most Competitive Subsequence](https://leetcode.cn/problems/find-the-most-competitive-subsequence/) (Medium)
 - [x] [316. Remove Duplicate Letters](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)

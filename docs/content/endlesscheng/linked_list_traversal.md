@@ -4,6 +4,8 @@ comments: True
 
 # Linked List Traversal
 
+## Table of Contents
+
 - [x] [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/) (Easy)
 - [x] [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.cn/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) (Medium)
 - [x] [2181. Merge Nodes in Between Zeros](https://leetcode.cn/problems/merge-nodes-in-between-zeros/) (Medium)

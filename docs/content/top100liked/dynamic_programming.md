@@ -4,6 +4,8 @@ comments: True
 
 # Dynamic Programming
 
+## Table of Contents
+
 - [x] [70. Climbing Stairs](https://leetcode.cn/problems/climbing-stairs/) (Easy)
 - [x] [118. Pascal's Triangle](https://leetcode.cn/problems/pascals-triangle/) (Easy)
 - [x] [198. House Robber](https://leetcode.cn/problems/house-robber/) (Medium)

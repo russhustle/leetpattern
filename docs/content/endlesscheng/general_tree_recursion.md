@@ -4,6 +4,8 @@ comments: True
 
 # General Tree Recursion
 
+## Table of Contents
+
 - [ ] [3331. Find Subtree Sizes After Changes](https://leetcode.cn/problems/find-subtree-sizes-after-changes/) (Medium)
 
 ## 3331. Find Subtree Sizes After Changes

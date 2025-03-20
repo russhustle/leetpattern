@@ -4,6 +4,8 @@ comments: True
 
 # Sorting and Grouping
 
+## Table of Contents
+
 - [ ] [2356. Number of Unique Subjects Taught by Each Teacher](https://leetcode.cn/problems/number-of-unique-subjects-taught-by-each-teacher/) (Easy)
 - [ ] [1141. User Activity for the Past 30 Days I](https://leetcode.cn/problems/user-activity-for-the-past-30-days-i/) (Easy)
 - [ ] [1070. Product Sales Analysis III](https://leetcode.cn/problems/product-sales-analysis-iii/) (Medium)

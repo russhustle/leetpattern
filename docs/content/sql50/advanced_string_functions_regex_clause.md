@@ -4,6 +4,8 @@ comments: True
 
 # Advanced String Functions Regex Clause
 
+## Table of Contents
+
 - [ ] [1667. Fix Names in a Table](https://leetcode.cn/problems/fix-names-in-a-table/) (Easy)
 - [ ] [1527. Patients With a Condition](https://leetcode.cn/problems/patients-with-a-condition/) (Easy)
 - [ ] [196. Delete Duplicate Emails](https://leetcode.cn/problems/delete-duplicate-emails/) (Easy)

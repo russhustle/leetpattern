@@ -4,6 +4,8 @@ comments: True
 
 # Adjacent Different
 
+## Table of Contents
+
 - [ ] [2335. Minimum Amount of Time to Fill Cups](https://leetcode.cn/problems/minimum-amount-of-time-to-fill-cups/) (Easy)
 - [ ] [1753. Maximum Score From Removing Stones](https://leetcode.cn/problems/maximum-score-from-removing-stones/) (Medium)
 - [ ] [1054. Distant Barcodes](https://leetcode.cn/problems/distant-barcodes/) (Medium)

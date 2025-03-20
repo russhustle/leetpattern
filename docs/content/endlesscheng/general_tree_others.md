@@ -4,6 +4,8 @@ comments: True
 
 # General Tree Others
 
+## Table of Contents
+
 - [ ] [2003. Smallest Missing Genetic Value in Each Subtree](https://leetcode.cn/problems/smallest-missing-genetic-value-in-each-subtree/) (Hard)
 - [ ] [2867. Count Valid Paths in a Tree](https://leetcode.cn/problems/count-valid-paths-in-a-tree/) (Hard)
 - [ ] [2421. Number of Good Paths](https://leetcode.cn/problems/number-of-good-paths/) (Hard)

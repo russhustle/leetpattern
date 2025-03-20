@@ -4,6 +4,8 @@ comments: True
 
 # DP Trie
 
+## Table of Contents
+
 - [x] [139. Word Break](https://leetcode.cn/problems/word-break/) (Medium)
 - [ ] [140. Word Break II](https://leetcode.cn/problems/word-break-ii/) (Hard)
 - [ ] [472. Concatenated Words](https://leetcode.cn/problems/concatenated-words/) (Hard)

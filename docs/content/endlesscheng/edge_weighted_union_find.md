@@ -4,6 +4,8 @@ comments: True
 
 # Edge Weighted Union Find
 
+## Table of Contents
+
 - [x] [399. Evaluate Division](https://leetcode.cn/problems/evaluate-division/) (Medium)
 - [ ] [2307. Check for Contradictions in Equations](https://leetcode.cn/problems/check-for-contradictions-in-equations/) (Hard) 👑
 

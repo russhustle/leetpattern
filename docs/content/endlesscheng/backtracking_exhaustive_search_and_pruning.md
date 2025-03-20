@@ -4,6 +4,8 @@ comments: True
 
 # Backtracking Exhaustive Search and Pruning
 
+## Table of Contents
+
 - [ ] [3211. Generate Binary Strings Without Adjacent Zeros](https://leetcode.cn/problems/generate-binary-strings-without-adjacent-zeros/) (Medium)
 - [ ] [967. Numbers With Same Consecutive Differences](https://leetcode.cn/problems/numbers-with-same-consecutive-differences/) (Medium)
 - [ ] [1415. The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.cn/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) (Medium)

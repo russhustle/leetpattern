@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Variable Subarrays Exact
 
+## Table of Contents
+
 - [ ] [930. Binary Subarrays With Sum](https://leetcode.cn/problems/binary-subarrays-with-sum/) (Medium)
 - [x] [1248. Count Number of Nice Subarrays](https://leetcode.cn/problems/count-number-of-nice-subarrays/) (Medium)
 - [x] [3305. Count of Substrings Containing Every Vowel and K Consonants I](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/) (Medium)

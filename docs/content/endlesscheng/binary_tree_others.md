@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Others
 
+## Table of Contents
+
 - [x] [297. Serialize and Deserialize Binary Tree](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
 - [ ] [449. Serialize and Deserialize BST](https://leetcode.cn/problems/serialize-and-deserialize-bst/) (Medium)
 - [ ] [652. Find Duplicate Subtrees](https://leetcode.cn/problems/find-duplicate-subtrees/) (Medium)

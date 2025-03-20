@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Max Answer
 
+## Table of Contents
+
 - [ ] [275. H-Index II](https://leetcode.cn/problems/h-index-ii/) (Medium)
 - [ ] [2226. Maximum Candies Allocated to K Children](https://leetcode.cn/problems/maximum-candies-allocated-to-k-children/) (Medium)
 - [ ] [2982. Find Longest Special Substring That Occurs Thrice II](https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-ii/) (Medium)

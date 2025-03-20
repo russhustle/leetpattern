@@ -4,6 +4,8 @@ comments: True
 
 # General Tree Bottom-Up DFS
 
+## Table of Contents
+
 - [ ] [3249. Count the Number of Good Nodes](https://leetcode.cn/problems/count-the-number-of-good-nodes/) (Medium)
 - [ ] [1519. Number of Nodes in the Sub-Tree With the Same Label](https://leetcode.cn/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/) (Medium)
 - [ ] [2872. Maximum Number of K-Divisible Components](https://leetcode.cn/problems/maximum-number-of-k-divisible-components/) (Hard)

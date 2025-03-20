@@ -4,6 +4,8 @@ comments: True
 
 # Partitioning Greedy
 
+## Table of Contents
+
 - [ ] [1221. Split a String in Balanced Strings](https://leetcode.cn/problems/split-a-string-in-balanced-strings/) (Easy)
 - [ ] [2405. Optimal Partition of String](https://leetcode.cn/problems/optimal-partition-of-string/) (Medium)
 - [ ] [2294. Partition Array Such That Maximum Difference Is K](https://leetcode.cn/problems/partition-array-such-that-maximum-difference-is-k/) (Medium)

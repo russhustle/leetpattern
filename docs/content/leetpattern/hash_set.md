@@ -4,6 +4,8 @@ comments: True
 
 # Hash Set
 
+## Table of Contents
+
 - [x] [349. Intersection of Two Arrays](https://leetcode.cn/problems/intersection-of-two-arrays/) (Easy)
 
 ## 349. Intersection of Two Arrays

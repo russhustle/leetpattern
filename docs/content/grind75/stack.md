@@ -4,6 +4,8 @@ comments: True
 
 # Stack
 
+## Table of Contents
+
 - [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
 - [x] [232. Implement Queue using Stacks](https://leetcode.cn/problems/implement-queue-using-stacks/) (Easy)
 - [x] [150. Evaluate Reverse Polish Notation](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)

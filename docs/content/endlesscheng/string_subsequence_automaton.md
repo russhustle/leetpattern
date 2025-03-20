@@ -4,6 +4,8 @@ comments: True
 
 # String Subsequence Automaton
 
+## Table of Contents
+
 - [ ] [792. Number of Matching Subsequences](https://leetcode.cn/problems/number-of-matching-subsequences/) (Medium)
 - [ ] [514. Freedom Trail](https://leetcode.cn/problems/freedom-trail/) (Hard)
 - [ ] [2014. Longest Subsequence Repeated k Times](https://leetcode.cn/problems/longest-subsequence-repeated-k-times/) (Hard)

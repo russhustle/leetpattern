@@ -4,6 +4,8 @@ comments: True
 
 # Graph
 
+## Table of Contents
+
 - [ ] [277. Find the Celebrity](https://leetcode.cn/problems/find-the-celebrity/) (Medium) 👑
 - [ ] [582. Kill Process](https://leetcode.cn/problems/kill-process/) (Medium) 👑
 - [x] [323. Number of Connected Components in an Undirected Graph](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium) 👑

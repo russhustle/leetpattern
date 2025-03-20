@@ -4,6 +4,8 @@ comments: True
 
 # Grid Applications
 
+## Table of Contents
+
 - [x] [1631. Path With Minimum Effort](https://leetcode.cn/problems/path-with-minimum-effort/) (Medium)
 - [x] [778. Swim in Rising Water](https://leetcode.cn/problems/swim-in-rising-water/) (Hard)
 - [x] [329. Longest Increasing Path in a Matrix](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) (Hard)

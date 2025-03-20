@@ -4,6 +4,8 @@ comments: True
 
 # Greedy from Left Right
 
+## Table of Contents
+
 - [ ] [3402. Minimum Operations to Make Columns Strictly Increasing](https://leetcode.cn/problems/minimum-operations-to-make-columns-strictly-increasing/) (Easy)
 - [ ] [3191. Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.cn/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) (Medium)
 - [ ] [1827. Minimum Operations to Make the Array Increasing](https://leetcode.cn/problems/minimum-operations-to-make-the-array-increasing/) (Easy)

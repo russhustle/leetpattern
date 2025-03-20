@@ -4,6 +4,8 @@ comments: True
 
 # Tree DP Other
 
+## Table of Contents
+
 - [ ] [2925. Maximum Score After Applying Operations on a Tree](https://leetcode.cn/problems/maximum-score-after-applying-operations-on-a-tree/) (Medium)
 - [ ] [3068. Find the Maximum Sum of Node Values](https://leetcode.cn/problems/find-the-maximum-sum-of-node-values/) (Hard)
 - [ ] [2920. Maximum Points After Collecting Coins From All Nodes](https://leetcode.cn/problems/maximum-points-after-collecting-coins-from-all-nodes/) (Hard)

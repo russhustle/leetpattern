@@ -4,6 +4,8 @@ comments: True
 
 # Equivalent Transformation
 
+## Table of Contents
+
 - [ ] [3375. Minimum Operations to Make Array Values Equal to K](https://leetcode.cn/problems/minimum-operations-to-make-array-values-equal-to-k/) (Easy)
 - [ ] [2914. Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.cn/problems/minimum-number-of-changes-to-make-binary-string-beautiful/) (Medium)
 - [ ] [3365. Rearrange K Substrings to Form Target String](https://leetcode.cn/problems/rearrange-k-substrings-to-form-target-string/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Tree
 
+## Table of Contents
+
 - [ ] [270. Closest Binary Search Tree Value](https://leetcode.cn/problems/closest-binary-search-tree-value/) (Easy) 👑
 - [ ] [272. Closest Binary Search Tree Value II](https://leetcode.cn/problems/closest-binary-search-tree-value-ii/) (Hard) 👑
 - [ ] [255. Verify Preorder Sequence in Binary Search Tree](https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/) (Medium) 👑

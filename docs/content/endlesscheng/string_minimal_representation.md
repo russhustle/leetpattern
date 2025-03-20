@@ -4,6 +4,8 @@ comments: True
 
 # String Minimal Representation
 
+## Table of Contents
+
 - [ ] [1163. Last Substring in Lexicographical Order](https://leetcode.cn/problems/last-substring-in-lexicographical-order/) (Hard)
 - [ ] [899. Orderly Queue](https://leetcode.cn/problems/orderly-queue/) (Hard)
 - [ ] [3403. Find the Lexicographically Largest String From the Box I](https://leetcode.cn/problems/find-the-lexicographically-largest-string-from-the-box-i/) (Medium)

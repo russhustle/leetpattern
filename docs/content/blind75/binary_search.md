@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search
 
+## Table of Contents
+
 - [x] [153. Find Minimum in Rotated Sorted Array](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
 - [x] [33. Search in Rotated Sorted Array](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 

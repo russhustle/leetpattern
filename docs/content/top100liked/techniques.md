@@ -4,6 +4,8 @@ comments: True
 
 # Techniques
 
+## Table of Contents
+
 - [x] [136. Single Number](https://leetcode.cn/problems/single-number/) (Easy)
 - [x] [169. Majority Element](https://leetcode.cn/problems/majority-element/) (Easy)
 - [x] [75. Sort Colors](https://leetcode.cn/problems/sort-colors/) (Medium)

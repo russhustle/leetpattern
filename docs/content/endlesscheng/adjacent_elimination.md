@@ -4,6 +4,8 @@ comments: True
 
 # Adjacent Elimination
 
+## Table of Contents
+
 - [ ] [2696. Minimum String Length After Removing Substrings](https://leetcode.cn/problems/minimum-string-length-after-removing-substrings/) (Easy)
 - [ ] [1047. Remove All Adjacent Duplicates In String](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) (Easy)
 - [x] [1544. Make The String Great](https://leetcode.cn/problems/make-the-string-great/) (Easy)

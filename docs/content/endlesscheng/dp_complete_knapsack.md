@@ -4,6 +4,8 @@ comments: True
 
 # DP Complete Knapsack
 
+## Table of Contents
+
 - [x] [322. Coin Change](https://leetcode.cn/problems/coin-change/) (Medium)
 - [x] [518. Coin Change II](https://leetcode.cn/problems/coin-change-ii/) (Medium)
 - [x] [279. Perfect Squares](https://leetcode.cn/problems/perfect-squares/) (Medium)

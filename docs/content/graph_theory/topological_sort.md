@@ -4,6 +4,8 @@ comments: True
 
 # Topological Sort
 
+## Table of Contents
+
 - [x] [207. Course Schedule](https://leetcode.cn/problems/course-schedule/) (Medium)
 - [x] [210. Course Schedule II](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
 - [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard) 👑

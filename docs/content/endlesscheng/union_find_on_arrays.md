@@ -4,6 +4,8 @@ comments: True
 
 # Union Find on Arrays
 
+## Table of Contents
+
 - [ ] [1562. Find Latest Group of Size M](https://leetcode.cn/problems/find-latest-group-of-size-m/) (Medium)
 - [ ] [1488. Avoid Flood in The City](https://leetcode.cn/problems/avoid-flood-in-the-city/) (Medium)
 - [ ] [2382. Maximum Segment Sum After Removals](https://leetcode.cn/problems/maximum-segment-sum-after-removals/) (Hard)

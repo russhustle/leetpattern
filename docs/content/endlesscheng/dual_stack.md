@@ -4,6 +4,8 @@ comments: True
 
 # Dual Stack
 
+## Table of Contents
+
 - [ ] [2296. Design a Text Editor](https://leetcode.cn/problems/design-a-text-editor/) (Hard)
 
 ## 2296. Design a Text Editor

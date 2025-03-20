@@ -4,6 +4,8 @@ comments: True
 
 # Two Sequences Subsequence Checking
 
+## Table of Contents
+
 - [x] [392. Is Subsequence](https://leetcode.cn/problems/is-subsequence/) (Easy)
 - [ ] [524. Longest Word in Dictionary through Deleting](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/) (Medium)
 - [ ] [2486. Append Characters to String to Make Subsequence](https://leetcode.cn/problems/append-characters-to-string-to-make-subsequence/) (Medium)

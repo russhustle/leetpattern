@@ -4,6 +4,8 @@ comments: True
 
 # DP Subrectangle
 
+## Table of Contents
+
 - [ ] [3148. Maximum Difference Score in a Grid](https://leetcode.cn/problems/maximum-difference-score-in-a-grid/) (Medium)
 - [ ] [221. Maximal Square](https://leetcode.cn/problems/maximal-square/) (Medium)
 - [ ] [1277. Count Square Submatrices with All Ones](https://leetcode.cn/problems/count-square-submatrices-with-all-ones/) (Medium)

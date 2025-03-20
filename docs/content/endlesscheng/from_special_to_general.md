@@ -4,6 +4,8 @@ comments: True
 
 # From Special to General
 
+## Table of Contents
+
 - [ ] [2745. Construct the Longest New String](https://leetcode.cn/problems/construct-the-longest-new-string/) (Medium)
 - [ ] [2611. Mice and Cheese](https://leetcode.cn/problems/mice-and-cheese/) (Medium)
 - [ ] [1029. Two City Scheduling](https://leetcode.cn/problems/two-city-scheduling/) (Medium)

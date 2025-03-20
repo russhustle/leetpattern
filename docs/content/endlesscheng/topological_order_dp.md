@@ -4,6 +4,8 @@ comments: True
 
 # Topological Order DP
 
+## Table of Contents
+
 - [ ] [2050. Parallel Courses III](https://leetcode.cn/problems/parallel-courses-iii/) (Hard)
 - [x] [1857. Largest Color Value in a Directed Graph](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
 

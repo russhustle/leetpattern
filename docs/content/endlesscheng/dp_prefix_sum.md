@@ -4,6 +4,8 @@ comments: True
 
 # DP Prefix Sum
 
+## Table of Contents
+
 - [ ] [2327. Number of People Aware of a Secret](https://leetcode.cn/problems/number-of-people-aware-of-a-secret/) (Medium)
 - [ ] [1871. Jump Game VII](https://leetcode.cn/problems/jump-game-vii/) (Medium)
 - [ ] [1997. First Day Where You Have Been in All the Rooms](https://leetcode.cn/problems/first-day-where-you-have-been-in-all-the-rooms/) (Medium)

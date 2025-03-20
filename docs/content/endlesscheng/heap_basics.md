@@ -4,6 +4,8 @@ comments: True
 
 # Heap Basics
 
+## Table of Contents
+
 - [x] [1046. Last Stone Weight](https://leetcode.cn/problems/last-stone-weight/) (Easy)
 - [x] [3264. Final Array State After K Multiplication Operations I](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/) (Easy)
 - [ ] [2558. Take Gifts From the Richest Pile](https://leetcode.cn/problems/take-gifts-from-the-richest-pile/) (Easy)

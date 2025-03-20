@@ -4,6 +4,8 @@ comments: True
 
 # Least Common Multiple
 
+## Table of Contents
+
 - [ ] [2413. Smallest Even Multiple](https://leetcode.cn/problems/smallest-even-multiple/) (Easy)
 - [ ] [3334. Find the Maximum Factor Score of Array](https://leetcode.cn/problems/find-the-maximum-factor-score-of-array/) (Medium)
 - [ ] [2197. Replace Non-Coprime Numbers in Array](https://leetcode.cn/problems/replace-non-coprime-numbers-in-array/) (Hard)

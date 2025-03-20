@@ -4,6 +4,8 @@ comments: True
 
 # Stack
 
+## Table of Contents
+
 - [x] [2390. Removing Stars From a String](https://leetcode.cn/problems/removing-stars-from-a-string/) (Medium)
 - [x] [1544. Make The String Great](https://leetcode.cn/problems/make-the-string-great/) (Easy)
 - [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)

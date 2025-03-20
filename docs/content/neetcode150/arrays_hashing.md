@@ -4,6 +4,8 @@ comments: True
 
 # Arrays Hashing
 
+## Table of Contents
+
 - [x] [217. Contains Duplicate](https://leetcode.cn/problems/contains-duplicate/) (Easy)
 - [x] [242. Valid Anagram](https://leetcode.cn/problems/valid-anagram/) (Easy)
 - [x] [1. Two Sum](https://leetcode.cn/problems/two-sum/) (Easy)

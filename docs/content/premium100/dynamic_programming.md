@@ -4,6 +4,8 @@ comments: True
 
 # Dynamic Programming
 
+## Table of Contents
+
 - [ ] [276. Paint Fence](https://leetcode.cn/problems/paint-fence/) (Medium) 👑
 - [ ] [256. Paint House](https://leetcode.cn/problems/paint-house/) (Medium) 👑
 - [ ] [265. Paint House II](https://leetcode.cn/problems/paint-house-ii/) (Hard) 👑

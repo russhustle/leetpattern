@@ -4,6 +4,8 @@ comments: True
 
 # Monotonic Queue
 
+## Table of Contents
+
 - [x] [239. Sliding Window Maximum](https://leetcode.cn/problems/sliding-window-maximum/) (Hard)
 - [ ] [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) (Medium)
 - [ ] [2762. Continuous Subarrays](https://leetcode.cn/problems/continuous-subarrays/) (Medium)

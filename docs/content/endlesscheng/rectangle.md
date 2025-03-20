@@ -4,6 +4,8 @@ comments: True
 
 # Rectangle
 
+## Table of Contents
+
 - [x] [84. Largest Rectangle in Histogram](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 - [ ] [1793. Maximum Score of a Good Subarray](https://leetcode.cn/problems/maximum-score-of-a-good-subarray/) (Hard)
 - [x] [85. Maximal Rectangle](https://leetcode.cn/problems/maximal-rectangle/) (Hard)

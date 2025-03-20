@@ -4,6 +4,8 @@ comments: True
 
 # Tree Feature
 
+## Table of Contents
+
 - [x] [101. Symmetric Tree](https://leetcode.cn/problems/symmetric-tree/) (Easy)
 - [x] [222. Count Complete Tree Nodes](https://leetcode.cn/problems/count-complete-tree-nodes/) (Easy)
 - [x] [110. Balanced Binary Tree](https://leetcode.cn/problems/balanced-binary-tree/) (Easy)

@@ -4,6 +4,8 @@ comments: True
 
 # Hashing
 
+## Table of Contents
+
 - [ ] [760. Find Anagram Mappings](https://leetcode.cn/problems/find-anagram-mappings/) (Easy) 👑
 - [x] [266. Palindrome Permutation](https://leetcode.cn/problems/palindrome-permutation/) (Easy) 👑
 - [ ] [734. Sentence Similarity](https://leetcode.cn/problems/sentence-similarity/) (Easy) 👑

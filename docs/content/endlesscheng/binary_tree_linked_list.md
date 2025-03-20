@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Linked List
 
+## Table of Contents
+
 - [x] [114. Flatten Binary Tree to Linked List](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) (Medium)
 - [ ] [1367. Linked List in Binary Tree](https://leetcode.cn/problems/linked-list-in-binary-tree/) (Medium)
 - [x] [109. Convert Sorted List to Binary Search Tree](https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/) (Medium)

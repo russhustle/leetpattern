@@ -4,6 +4,8 @@ comments: True
 
 # Simulation
 
+## Table of Contents
+
 - [x] [874. Walking Robot Simulation](https://leetcode.cn/problems/walking-robot-simulation/) (Medium)
 
 ## 874. Walking Robot Simulation

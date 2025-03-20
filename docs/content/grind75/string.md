@@ -4,6 +4,8 @@ comments: True
 
 # String
 
+## Table of Contents
+
 - [x] [125. Valid Palindrome](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 - [x] [242. Valid Anagram](https://leetcode.cn/problems/valid-anagram/) (Easy)
 - [x] [409. Longest Palindrome](https://leetcode.cn/problems/longest-palindrome/) (Easy)

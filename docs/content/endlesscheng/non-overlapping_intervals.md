@@ -4,6 +4,8 @@ comments: True
 
 # Non-Overlapping Intervals
 
+## Table of Contents
+
 - [x] [435. Non-overlapping Intervals](https://leetcode.cn/problems/non-overlapping-intervals/) (Medium)
 - [ ] [646. Maximum Length of Pair Chain](https://leetcode.cn/problems/maximum-length-of-pair-chain/) (Medium)
 - [ ] [1520. Maximum Number of Non-Overlapping Substrings](https://leetcode.cn/problems/maximum-number-of-non-overlapping-substrings/) (Hard)

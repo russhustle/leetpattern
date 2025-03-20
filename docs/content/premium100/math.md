@@ -4,6 +4,8 @@ comments: True
 
 # Math
 
+## Table of Contents
+
 - [ ] [1134. Armstrong Number](https://leetcode.cn/problems/armstrong-number/) (Easy) 👑
 - [ ] [1180. Count Substrings with Only One Distinct Letter](https://leetcode.cn/problems/count-substrings-with-only-one-distinct-letter/) (Easy) 👑
 - [ ] [1538. Guess the Majority in a Hidden Array](https://leetcode.cn/problems/guess-the-majority-in-a-hidden-array/) (Medium) 👑

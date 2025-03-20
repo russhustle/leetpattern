@@ -4,6 +4,8 @@ comments: True
 
 # Trie Advanced
 
+## Table of Contents
+
 - [ ] [676. Implement Magic Dictionary](https://leetcode.cn/problems/implement-magic-dictionary/) (Medium)
 - [x] [212. Word Search II](https://leetcode.cn/problems/word-search-ii/) (Hard)
 - [ ] [3093. Longest Common Suffix Queries](https://leetcode.cn/problems/longest-common-suffix-queries/) (Hard)

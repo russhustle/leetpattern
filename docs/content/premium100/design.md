@@ -4,6 +4,8 @@ comments: True
 
 # Design
 
+## Table of Contents
+
 - [ ] [348. Design Tic-Tac-Toe](https://leetcode.cn/problems/design-tic-tac-toe/) (Medium) 👑
 - [x] [353. Design Snake Game](https://leetcode.cn/problems/design-snake-game/) (Medium) 👑
 - [ ] [604. Design Compressed String Iterator](https://leetcode.cn/problems/design-compressed-string-iterator/) (Easy) 👑

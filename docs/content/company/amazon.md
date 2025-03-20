@@ -4,6 +4,8 @@ comments: True
 
 # Amazon
 
+## Table of Contents
+
 - [x] [1. Two Sum](https://leetcode.cn/problems/two-sum/) (Easy)
 - [x] [146. LRU Cache](https://leetcode.cn/problems/lru-cache/) (Medium)
 - [x] [200. Number of Islands](https://leetcode.cn/problems/number-of-islands/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # DP LIS
 
+## Table of Contents
+
 - [x] [300. Longest Increasing Subsequence](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 - [x] [673. Number of Longest Increasing Subsequence](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) (Medium)
 - [x] [354. Russian Doll Envelopes](https://leetcode.cn/problems/russian-doll-envelopes/) (Hard)

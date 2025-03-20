@@ -4,6 +4,8 @@ comments: True
 
 # Brain Teasers
 
+## Table of Contents
+
 - [ ] [2733. Neither Minimum nor Maximum](https://leetcode.cn/problems/neither-minimum-nor-maximum/) (Easy)
 - [ ] [1903. Largest Odd Number in String](https://leetcode.cn/problems/largest-odd-number-in-string/) (Easy)
 - [ ] [2549. Count Distinct Numbers on Board](https://leetcode.cn/problems/count-distinct-numbers-on-board/) (Easy)

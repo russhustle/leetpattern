@@ -4,6 +4,8 @@ comments: True
 
 # Interval Grouping
 
+## Table of Contents
+
 - [ ] [2406. Divide Intervals Into Minimum Number of Groups](https://leetcode.cn/problems/divide-intervals-into-minimum-number-of-groups/) (Medium)
 - [x] [253. Meeting Rooms II](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium) 👑
 

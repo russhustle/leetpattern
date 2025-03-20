@@ -4,6 +4,8 @@ comments: True
 
 # Matrix
 
+## Table of Contents
+
 - [x] [54. Spiral Matrix](https://leetcode.cn/problems/spiral-matrix/) (Medium)
 
 ## 54. Spiral Matrix

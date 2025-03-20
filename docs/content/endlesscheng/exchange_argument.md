@@ -4,6 +4,8 @@ comments: True
 
 # Exchange Argument
 
+## Table of Contents
+
 - [ ] [2895. Minimum Processing Time](https://leetcode.cn/problems/minimum-processing-time/) (Medium)
 - [ ] [3457. Eat Pizzas!](https://leetcode.cn/problems/eat-pizzas/) (Medium)
 - [ ] [1665. Minimum Initial Energy to Finish Tasks](https://leetcode.cn/problems/minimum-initial-energy-to-finish-tasks/) (Hard)

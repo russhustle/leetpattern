@@ -4,6 +4,8 @@ comments: True
 
 # DP Monotonic Stack
 
+## Table of Contents
+
 - [ ] [1335. Minimum Difficulty of a Job Schedule](https://leetcode.cn/problems/minimum-difficulty-of-a-job-schedule/) (Hard)
 - [ ] [2866. Beautiful Towers II](https://leetcode.cn/problems/beautiful-towers-ii/) (Medium)
 - [ ] [2617. Minimum Number of Visited Cells in a Grid](https://leetcode.cn/problems/minimum-number-of-visited-cells-in-a-grid/) (Hard)

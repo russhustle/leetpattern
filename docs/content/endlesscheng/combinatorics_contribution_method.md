@@ -4,6 +4,8 @@ comments: True
 
 # Combinatorics Contribution Method
 
+## Table of Contents
+
 - [ ] [2063. Vowels of All Substrings](https://leetcode.cn/problems/vowels-of-all-substrings/) (Medium)
 - [ ] [1588. Sum of All Odd Length Subarrays](https://leetcode.cn/problems/sum-of-all-odd-length-subarrays/) (Easy)
 - [ ] [2681. Power of Heroes](https://leetcode.cn/problems/power-of-heroes/) (Hard)

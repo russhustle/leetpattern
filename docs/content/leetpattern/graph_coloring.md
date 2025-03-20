@@ -4,6 +4,8 @@ comments: True
 
 # Graph Coloring
 
+## Table of Contents
+
 - [x] [785. Is Graph Bipartite?](https://leetcode.cn/problems/is-graph-bipartite/) (Medium)
 - [x] [886. Possible Bipartition](https://leetcode.cn/problems/possible-bipartition/) (Medium)
 - [x] [924. Minimize Malware Spread](https://leetcode.cn/problems/minimize-malware-spread/) (Hard)

@@ -4,6 +4,8 @@ comments: True
 
 # DP Multi-Dimensional
 
+## Table of Contents
+
 - [ ] [2400. Number of Ways to Reach a Position After Exactly k Steps](https://leetcode.cn/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) (Medium)
 - [ ] [1824. Minimum Sideway Jumps](https://leetcode.cn/problems/minimum-sideway-jumps/) (Medium)
 - [ ] [3332. Maximum Points Tourist Can Earn](https://leetcode.cn/problems/maximum-points-tourist-can-earn/) (Medium)

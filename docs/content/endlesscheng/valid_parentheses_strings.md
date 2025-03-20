@@ -4,6 +4,8 @@ comments: True
 
 # Valid Parentheses Strings
 
+## Table of Contents
+
 - [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
 - [ ] [921. Minimum Add to Make Parentheses Valid](https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid/) (Medium)
 - [ ] [1021. Remove Outermost Parentheses](https://leetcode.cn/problems/remove-outermost-parentheses/) (Easy)

@@ -4,6 +4,8 @@ comments: True
 
 # Greedy Others
 
+## Table of Contents
+
 - [ ] [2740. Find the Value of the Partition](https://leetcode.cn/problems/find-the-value-of-the-partition/) (Medium)
 - [ ] [1033. Moving Stones Until Consecutive](https://leetcode.cn/problems/moving-stones-until-consecutive/) (Medium)
 - [ ] [1864. Minimum Number of Swaps to Make the Binary String Alternating](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/) (Medium)

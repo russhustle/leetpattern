@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Indirect Value
 
+## Table of Contents
+
 - [ ] [3143. Maximum Points Inside the Square](https://leetcode.cn/problems/maximum-points-inside-the-square/) (Medium)
 - [ ] [1648. Sell Diminishing-Valued Colored Balls](https://leetcode.cn/problems/sell-diminishing-valued-colored-balls/) (Medium)
 

@@ -4,6 +4,8 @@ comments: True
 
 # Trees
 
+## Table of Contents
+
 - [x] [226. Invert Binary Tree](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
 - [x] [104. Maximum Depth of Binary Tree](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 - [x] [100. Same Tree](https://leetcode.cn/problems/same-tree/) (Easy)

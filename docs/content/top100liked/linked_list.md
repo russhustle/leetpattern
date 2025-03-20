@@ -4,6 +4,8 @@ comments: True
 
 # Linked List
 
+## Table of Contents
+
 - [x] [160. Intersection of Two Linked Lists](https://leetcode.cn/problems/intersection-of-two-linked-lists/) (Easy)
 - [x] [206. Reverse Linked List](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
 - [x] [234. Palindrome Linked List](https://leetcode.cn/problems/palindrome-linked-list/) (Easy)

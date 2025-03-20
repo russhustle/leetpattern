@@ -4,6 +4,8 @@ comments: True
 
 # DP Subset State Compression
 
+## Table of Contents
+
 - [ ] [2305. Fair Distribution of Cookies](https://leetcode.cn/problems/fair-distribution-of-cookies/) (Medium)
 - [ ] [1986. Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.cn/problems/minimum-number-of-work-sessions-to-finish-the-tasks/) (Medium)
 - [ ] [1723. Find Minimum Time to Finish All Jobs](https://leetcode.cn/problems/find-minimum-time-to-finish-all-jobs/) (Hard)

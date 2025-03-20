@@ -4,6 +4,8 @@ comments: True
 
 # DP Longest Palindromic Subsequence
 
+## Table of Contents
+
 - [x] [516. Longest Palindromic Subsequence](https://leetcode.cn/problems/longest-palindromic-subsequence/) (Medium)
 - [ ] [730. Count Different Palindromic Subsequences](https://leetcode.cn/problems/count-different-palindromic-subsequences/) (Hard)
 - [ ] [1312. Minimum Insertion Steps to Make a String Palindrome](https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/) (Hard)

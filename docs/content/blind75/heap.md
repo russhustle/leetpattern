@@ -4,6 +4,8 @@ comments: True
 
 # Heap
 
+## Table of Contents
+
 - [x] [295. Find Median from Data Stream](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 
 ## 295. Find Median from Data Stream

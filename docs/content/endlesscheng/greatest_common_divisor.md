@@ -4,6 +4,8 @@ comments: True
 
 # Greatest Common Divisor
 
+## Table of Contents
+
 - [ ] [1979. Find Greatest Common Divisor of Array](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) (Easy)
 - [ ] [2807. Insert Greatest Common Divisors in Linked List](https://leetcode.cn/problems/insert-greatest-common-divisors-in-linked-list/) (Medium)
 - [ ] [914. X of a Kind in a Deck of Cards](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/) (Easy)

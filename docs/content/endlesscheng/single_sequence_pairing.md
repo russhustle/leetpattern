@@ -4,6 +4,8 @@ comments: True
 
 # Single Sequence Pairing
 
+## Table of Contents
+
 - [ ] [2144. Minimum Cost of Buying Candies With Discount](https://leetcode.cn/problems/minimum-cost-of-buying-candies-with-discount/) (Easy)
 - [ ] [561. Array Partition](https://leetcode.cn/problems/array-partition/) (Easy)
 - [ ] [1877. Minimize Maximum Pair Sum in Array](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) (Medium)

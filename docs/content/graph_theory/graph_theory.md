@@ -4,6 +4,8 @@ comments: True
 
 # Graph Theory
 
+## Table of Contents
+
 - [x] [997. Find the Town Judge](https://leetcode.cn/problems/find-the-town-judge/) (Easy)
 - [x] [1557. Minimum Number of Vertices to Reach All Nodes](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
 - [x] [1615. Maximal Network Rank](https://leetcode.cn/problems/maximal-network-rank/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Inductive Method
 
+## Table of Contents
+
 - [ ] [2952. Minimum Number of Coins to be Added](https://leetcode.cn/problems/minimum-number-of-coins-to-be-added/) (Medium)
 - [ ] [330. Patching Array](https://leetcode.cn/problems/patching-array/) (Hard)
 - [ ] [1798. Maximum Number of Consecutive Values You Can Make](https://leetcode.cn/problems/maximum-number-of-consecutive-values-you-can-make/) (Medium)

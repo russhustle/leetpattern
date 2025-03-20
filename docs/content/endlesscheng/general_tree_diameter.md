@@ -4,6 +4,8 @@ comments: True
 
 # General Tree Diameter
 
+## Table of Contents
+
 - [ ] [2246. Longest Path With Different Adjacent Characters](https://leetcode.cn/problems/longest-path-with-different-adjacent-characters/) (Hard)
 - [ ] [3203. Find Minimum Diameter After Merging Two Trees](https://leetcode.cn/problems/find-minimum-diameter-after-merging-two-trees/) (Hard)
 - [ ] [1617. Count Subtrees With Max Distance Between Cities](https://leetcode.cn/problems/count-subtrees-with-max-distance-between-cities/) (Hard)

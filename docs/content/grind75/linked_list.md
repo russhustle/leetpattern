@@ -4,6 +4,8 @@ comments: True
 
 # Linked List
 
+## Table of Contents
+
 - [x] [21. Merge Two Sorted Lists](https://leetcode.cn/problems/merge-two-sorted-lists/) (Easy)
 - [x] [141. Linked List Cycle](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
 - [x] [206. Reverse Linked List](https://leetcode.cn/problems/reverse-linked-list/) (Easy)

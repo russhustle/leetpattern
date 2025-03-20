@@ -4,6 +4,8 @@ comments: True
 
 # Array
 
+## Table of Contents
+
 - [x] [1. Two Sum](https://leetcode.cn/problems/two-sum/) (Easy)
 - [x] [121. Best Time to Buy and Sell Stock](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) (Easy)
 - [x] [169. Majority Element](https://leetcode.cn/problems/majority-element/) (Easy)

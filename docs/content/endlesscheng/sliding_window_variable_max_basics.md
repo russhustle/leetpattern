@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Variable Max Basics
 
+## Table of Contents
+
 - [x] [3. Longest Substring Without Repeating Characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
 - [x] [3090. Maximum Length Substring With Two Occurrences](https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/) (Easy)
 - [x] [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) (Medium)

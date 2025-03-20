@@ -4,6 +4,8 @@ comments: True
 
 # DP Kadane
 
+## Table of Contents
+
 - [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 - [x] [918. Maximum Sum Circular Subarray](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
 - [x] [152. Maximum Product Subarray](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)

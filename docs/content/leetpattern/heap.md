@@ -4,6 +4,8 @@ comments: True
 
 # Heap
 
+## Table of Contents
+
 - [x] [1046. Last Stone Weight](https://leetcode.cn/problems/last-stone-weight/) (Easy)
 
 ## 1046. Last Stone Weight

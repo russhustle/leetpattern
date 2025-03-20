@@ -4,6 +4,8 @@ comments: True
 
 # Greedy
 
+## Table of Contents
+
 - [x] [455. Assign Cookies](https://leetcode.cn/problems/assign-cookies/) (Easy)
 - [x] [1005. Maximize Sum Of Array After K Negations](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) (Easy)
 - [x] [860. Lemonade Change](https://leetcode.cn/problems/lemonade-change/) (Easy)

@@ -4,6 +4,8 @@ comments: True
 
 # DP LCS Basics
 
+## Table of Contents
+
 - [x] [1143. Longest Common Subsequence](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
 - [x] [583. Delete Operation for Two Strings](https://leetcode.cn/problems/delete-operation-for-two-strings/) (Medium)
 - [ ] [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/) (Medium)

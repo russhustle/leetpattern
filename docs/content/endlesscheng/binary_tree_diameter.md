@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Diameter
 
+## Table of Contents
+
 - [x] [543. Diameter of Binary Tree](https://leetcode.cn/problems/diameter-of-binary-tree/) (Easy)
 - [ ] [687. Longest Univalue Path](https://leetcode.cn/problems/longest-univalue-path/) (Medium)
 - [x] [124. Binary Tree Maximum Path Sum](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)

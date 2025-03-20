@@ -4,6 +4,8 @@ comments: True
 
 # Number Theory Others
 
+## Table of Contents
+
 - [ ] [326. Power of Three](https://leetcode.cn/problems/power-of-three/) (Easy)
 - [ ] [633. Sum of Square Numbers](https://leetcode.cn/problems/sum-of-square-numbers/) (Medium)
 - [x] [279. Perfect Squares](https://leetcode.cn/problems/perfect-squares/) (Medium)

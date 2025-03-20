@@ -4,6 +4,8 @@ comments: True
 
 # Hash Map
 
+## Table of Contents
+
 - [x] [383. Ransom Note](https://leetcode.cn/problems/ransom-note/) (Easy)
 - [x] [350. Intersection of Two Arrays II](https://leetcode.cn/problems/intersection-of-two-arrays-ii/) (Easy)
 - [x] [1. Two Sum](https://leetcode.cn/problems/two-sum/) (Easy)

@@ -4,6 +4,8 @@ comments: True
 
 # Math Others
 
+## Table of Contents
+
 - [ ] [1523. Count Odd Numbers in an Interval Range](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) (Easy)
 - [ ] [2829. Determine the Minimum Sum of a k-avoiding Array](https://leetcode.cn/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) (Medium)
 - [ ] [2579. Count Total Number of Colored Cells](https://leetcode.cn/problems/count-total-number-of-colored-cells/) (Medium)

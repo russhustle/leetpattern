@@ -4,6 +4,8 @@ comments: True
 
 # Heap Rearrange Elements
 
+## Table of Contents
+
 - [ ] [984. String Without AAA or BBB](https://leetcode.cn/problems/string-without-aaa-or-bbb/) (Medium)
 - [x] [767. Reorganize String](https://leetcode.cn/problems/reorganize-string/) (Medium)
 - [ ] [1054. Distant Barcodes](https://leetcode.cn/problems/distant-barcodes/) (Medium)

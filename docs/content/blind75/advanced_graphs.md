@@ -4,6 +4,8 @@ comments: True
 
 # Advanced Graphs
 
+## Table of Contents
+
 - [x] [269. Alien Dictionary](https://leetcode.cn/problems/alien-dictionary/) (Hard) 👑
 
 ## 269. Alien Dictionary

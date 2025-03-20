@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Fixed
 
+## Table of Contents
+
 - [x] [643. Maximum Average Subarray I](https://leetcode.cn/problems/maximum-average-subarray-i/) (Easy)
 - [x] [219. Contains Duplicate II](https://leetcode.cn/problems/contains-duplicate-ii/) (Easy)
 - [x] [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)

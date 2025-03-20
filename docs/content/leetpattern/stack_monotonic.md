@@ -4,6 +4,8 @@ comments: True
 
 # Stack Monotonic
 
+## Table of Contents
+
 - [x] [739. Daily Temperatures](https://leetcode.cn/problems/daily-temperatures/) (Medium)
 - [x] [496. Next Greater Element I](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
 - [x] [503. Next Greater Element II](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Array
 
+## Table of Contents
+
 - [x] [414. Third Maximum Number](https://leetcode.cn/problems/third-maximum-number/) (Easy)
 - [x] [169. Majority Element](https://leetcode.cn/problems/majority-element/) (Easy)
 - [x] [2022. Convert 1D Array Into 2D Array](https://leetcode.cn/problems/convert-1d-array-into-2d-array/) (Easy)

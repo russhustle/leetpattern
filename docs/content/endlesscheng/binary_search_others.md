@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Others
 
+## Table of Contents
+
 - [x] [69. Sqrt(x)](https://leetcode.cn/problems/sqrtx/) (Easy)
 - [x] [74. Search a 2D Matrix](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 - [x] [240. Search a 2D Matrix II](https://leetcode.cn/problems/search-a-2d-matrix-ii/) (Medium)

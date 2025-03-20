@@ -4,6 +4,8 @@ comments: True
 
 # Binary Search Minimize Max
 
+## Table of Contents
+
 - [ ] [410. Split Array Largest Sum](https://leetcode.cn/problems/split-array-largest-sum/) (Hard)
 - [ ] [2064. Minimized Maximum of Products Distributed to Any Store](https://leetcode.cn/problems/minimized-maximum-of-products-distributed-to-any-store/) (Medium)
 - [ ] [1760. Minimum Limit of Balls in a Bag](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) (Medium)

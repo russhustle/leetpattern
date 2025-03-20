@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Recursion
 
+## Table of Contents
+
 - [x] [538. Convert BST to Greater Tree](https://leetcode.cn/problems/convert-bst-to-greater-tree/) (Medium)
 - [ ] [1038. Binary Search Tree to Greater Sum Tree](https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/) (Medium)
 - [ ] [865. Smallest Subtree with all the Deepest Nodes](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/) (Medium)

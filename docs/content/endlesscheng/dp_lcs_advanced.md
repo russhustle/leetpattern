@@ -4,6 +4,8 @@ comments: True
 
 # DP LCS Advanced
 
+## Table of Contents
+
 - [ ] [3290. Maximum Multiplication Score](https://leetcode.cn/problems/maximum-multiplication-score/) (Medium)
 - [x] [115. Distinct Subsequences](https://leetcode.cn/problems/distinct-subsequences/) (Hard)
 - [ ] [3316. Find Maximum Removals From Source String](https://leetcode.cn/problems/find-maximum-removals-from-source-string/) (Medium)

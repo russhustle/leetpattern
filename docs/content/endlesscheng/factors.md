@@ -4,6 +4,8 @@ comments: True
 
 # Factors
 
+## Table of Contents
+
 - [ ] [2427. Number of Common Factors](https://leetcode.cn/problems/number-of-common-factors/) (Easy)
 - [ ] [1952. Three Divisors](https://leetcode.cn/problems/three-divisors/) (Easy)
 - [ ] [1492. The kth Factor of n](https://leetcode.cn/problems/the-kth-factor-of-n/) (Medium)

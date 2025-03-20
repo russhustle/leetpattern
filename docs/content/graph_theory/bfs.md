@@ -4,6 +4,8 @@ comments: True
 
 # BFS
 
+## Table of Contents
+
 - [x] [1926. Nearest Exit from Entrance in Maze](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)
 - [x] [934. Shortest Bridge](https://leetcode.cn/problems/shortest-bridge/) (Medium)
 - [x] [433. Minimum Genetic Mutation](https://leetcode.cn/problems/minimum-genetic-mutation/) (Medium)

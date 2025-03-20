@@ -4,6 +4,8 @@ comments: True
 
 # Union Find Advanced
 
+## Table of Contents
+
 - [x] [1202. Smallest String With Swaps](https://leetcode.cn/problems/smallest-string-with-swaps/) (Medium)
 - [x] [1061. Lexicographically Smallest Equivalent String](https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/) (Medium)
 - [ ] [1722. Minimize Hamming Distance After Swap Operations](https://leetcode.cn/problems/minimize-hamming-distance-after-swap-operations/) (Medium)

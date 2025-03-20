@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Construction
 
+## Table of Contents
+
 - [x] [108. Convert Sorted Array to Binary Search Tree](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) (Easy)
 - [x] [654. Maximum Binary Tree](https://leetcode.cn/problems/maximum-binary-tree/) (Medium)
 - [ ] [998. Maximum Binary Tree II](https://leetcode.cn/problems/maximum-binary-tree-ii/) (Medium)

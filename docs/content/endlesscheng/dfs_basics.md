@@ -4,6 +4,8 @@ comments: True
 
 # DFS Basics
 
+## Table of Contents
+
 - [x] [547. Number of Provinces](https://leetcode.cn/problems/number-of-provinces/) (Medium)
 - [x] [1971. Find if Path Exists in Graph](https://leetcode.cn/problems/find-if-path-exists-in-graph/) (Easy)
 - [x] [797. All Paths From Source to Target](https://leetcode.cn/problems/all-paths-from-source-to-target/) (Medium)

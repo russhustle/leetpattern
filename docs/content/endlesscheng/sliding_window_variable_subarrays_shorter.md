@@ -4,6 +4,8 @@ comments: True
 
 # Sliding Window Variable Subarrays Shorter
 
+## Table of Contents
+
 - [x] [713. Subarray Product Less Than K](https://leetcode.cn/problems/subarray-product-less-than-k/) (Medium)
 - [ ] [3258. Count Substrings That Satisfy K-Constraint I](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) (Easy)
 - [ ] [2302. Count Subarrays With Score Less Than K](https://leetcode.cn/problems/count-subarrays-with-score-less-than-k/) (Hard)

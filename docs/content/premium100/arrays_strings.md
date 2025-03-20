@@ -4,6 +4,8 @@ comments: True
 
 # Arrays Strings
 
+## Table of Contents
+
 - [x] [624. Maximum Distance in Arrays](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 - [x] [280. Wiggle Sort](https://leetcode.cn/problems/wiggle-sort/) (Medium) 👑
 - [ ] [1056. Confusing Number](https://leetcode.cn/problems/confusing-number/) (Easy) 👑

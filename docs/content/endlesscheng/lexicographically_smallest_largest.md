@@ -4,6 +4,8 @@ comments: True
 
 # Lexicographically Smallest Largest
 
+## Table of Contents
+
 - [ ] [1323. Maximum 69 Number](https://leetcode.cn/problems/maximum-69-number/) (Easy)
 - [ ] [3216. Lexicographically Smallest String After a Swap](https://leetcode.cn/problems/lexicographically-smallest-string-after-a-swap/) (Easy)
 - [x] [2697. Lexicographically Smallest Palindrome](https://leetcode.cn/problems/lexicographically-smallest-palindrome/) (Easy)

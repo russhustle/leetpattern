@@ -4,6 +4,8 @@ comments: True
 
 # Combinatorial Counting
 
+## Table of Contents
+
 - [x] [62. Unique Paths](https://leetcode.cn/problems/unique-paths/) (Medium)
 - [ ] [357. Count Numbers with Unique Digits](https://leetcode.cn/problems/count-numbers-with-unique-digits/) (Medium)
 - [ ] [1175. Prime Arrangements](https://leetcode.cn/problems/prime-arrangements/) (Easy)

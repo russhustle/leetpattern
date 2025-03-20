@@ -4,6 +4,8 @@ comments: True
 
 # Binary
 
+## Table of Contents
+
 - [ ] [67. Add Binary](https://leetcode.cn/problems/add-binary/) (Easy)
 
 ## 67. Add Binary

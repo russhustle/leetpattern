@@ -4,6 +4,8 @@ comments: True
 
 # Fenwick Tree
 
+## Table of Contents
+
 - [ ] [307. Range Sum Query - Mutable](https://leetcode.cn/problems/range-sum-query-mutable/) (Medium)
 - [ ] [3072. Distribute Elements Into Two Arrays II](https://leetcode.cn/problems/distribute-elements-into-two-arrays-ii/) (Hard)
 - [ ] [3187. Peaks in Array](https://leetcode.cn/problems/peaks-in-array/) (Hard)

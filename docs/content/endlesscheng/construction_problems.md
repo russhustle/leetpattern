@@ -4,6 +4,8 @@ comments: True
 
 # Construction Problems
 
+## Table of Contents
+
 - [ ] [942. DI String Match](https://leetcode.cn/problems/di-string-match/) (Easy)
 - [ ] [1968. Array With Elements Not Equal to Average of Neighbors](https://leetcode.cn/problems/array-with-elements-not-equal-to-average-of-neighbors/) (Medium)
 - [ ] [1253. Reconstruct a 2-Row Binary Matrix](https://leetcode.cn/problems/reconstruct-a-2-row-binary-matrix/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # DP Permutation Type Adjacent Related
 
+## Table of Contents
+
 - [ ] [996. Number of Squareful Arrays](https://leetcode.cn/problems/number-of-squareful-arrays/) (Hard)
 - [ ] [2741. Special Permutations](https://leetcode.cn/problems/special-permutations/) (Medium)
 - [ ] [1681. Minimum Incompatibility](https://leetcode.cn/problems/minimum-incompatibility/) (Hard)

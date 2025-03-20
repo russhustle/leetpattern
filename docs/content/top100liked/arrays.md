@@ -4,6 +4,8 @@ comments: True
 
 # Arrays
 
+## Table of Contents
+
 - [x] [53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 - [x] [56. Merge Intervals](https://leetcode.cn/problems/merge-intervals/) (Medium)
 - [x] [189. Rotate Array](https://leetcode.cn/problems/rotate-array/) (Medium)

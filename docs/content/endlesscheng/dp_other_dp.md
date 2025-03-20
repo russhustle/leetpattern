@@ -4,6 +4,8 @@ comments: True
 
 # DP Other DP
 
+## Table of Contents
+
 - [ ] [1387. Sort Integers by The Power Value](https://leetcode.cn/problems/sort-integers-by-the-power-value/) (Medium)
 - [ ] [823. Binary Trees With Factors](https://leetcode.cn/problems/binary-trees-with-factors/) (Medium)
 - [ ] [940. Distinct Subsequences II](https://leetcode.cn/problems/distinct-subsequences-ii/) (Hard)

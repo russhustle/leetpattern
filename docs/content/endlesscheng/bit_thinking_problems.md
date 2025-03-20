@@ -4,6 +4,8 @@ comments: True
 
 # Bit Thinking Problems
 
+## Table of Contents
+
 - [ ] [2546. Apply Bitwise Operations to Make Strings Equal](https://leetcode.cn/problems/apply-bitwise-operations-to-make-strings-equal/) (Medium)
 - [ ] [1558. Minimum Numbers of Function Calls to Make Target Array](https://leetcode.cn/problems/minimum-numbers-of-function-calls-to-make-target-array/) (Medium)
 - [ ] [2571. Minimum Operations to Reduce an Integer to 0](https://leetcode.cn/problems/minimum-operations-to-reduce-an-integer-to-0/) (Medium)

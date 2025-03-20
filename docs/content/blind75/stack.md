@@ -4,6 +4,8 @@ comments: True
 
 # Stack
 
+## Table of Contents
+
 - [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
 
 ## 20. Valid Parentheses

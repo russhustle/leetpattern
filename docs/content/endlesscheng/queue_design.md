@@ -4,6 +4,8 @@ comments: True
 
 # Queue Design
 
+## Table of Contents
+
 - [x] [225. Implement Stack using Queues](https://leetcode.cn/problems/implement-stack-using-queues/) (Easy)
 - [x] [232. Implement Queue using Stacks](https://leetcode.cn/problems/implement-queue-using-stacks/) (Easy)
 - [x] [622. Design Circular Queue](https://leetcode.cn/problems/design-circular-queue/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # Queue
 
+## Table of Contents
+
 - [ ] [346. Moving Average from Data Stream](https://leetcode.cn/problems/moving-average-from-data-stream/) (Easy) 👑
 - [ ] [1429. First Unique Number](https://leetcode.cn/problems/first-unique-number/) (Medium) 👑
 

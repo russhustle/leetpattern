@@ -4,6 +4,8 @@ comments: True
 
 # DP Constrained Number of Partitions
 
+## Table of Contents
+
 - [ ] [410. Split Array Largest Sum](https://leetcode.cn/problems/split-array-largest-sum/) (Hard)
 - [ ] [813. Largest Sum of Averages](https://leetcode.cn/problems/largest-sum-of-averages/) (Medium)
 - [x] [1278. Palindrome Partitioning III](https://leetcode.cn/problems/palindrome-partitioning-iii/) (Hard)

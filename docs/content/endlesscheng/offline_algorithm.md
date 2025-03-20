@@ -4,6 +4,8 @@ comments: True
 
 # Offline Algorithm
 
+## Table of Contents
+
 - [ ] [2343. Query Kth Smallest Trimmed Number](https://leetcode.cn/problems/query-kth-smallest-trimmed-number/) (Medium)
 - [x] [2070. Most Beautiful Item for Each Query](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) (Medium)
 - [ ] [1847. Closest Room](https://leetcode.cn/problems/closest-room/) (Hard)

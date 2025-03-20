@@ -4,6 +4,8 @@ comments: True
 
 # 1D Prefix Sum
 
+## Table of Contents
+
 - [ ] [1310. XOR Queries of a Subarray](https://leetcode.cn/problems/xor-queries-of-a-subarray/) (Medium)
 - [ ] [2438. Range Product Queries of Powers](https://leetcode.cn/problems/range-product-queries-of-powers/) (Medium)
 - [ ] [1895. Largest Magic Square](https://leetcode.cn/problems/largest-magic-square/) (Medium)

@@ -4,6 +4,8 @@ comments: True
 
 # General Tree Topological Sort
 
+## Table of Contents
+
 - [x] [310. Minimum Height Trees](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 - [ ] [2603. Collect Coins in a Tree](https://leetcode.cn/problems/collect-coins-in-a-tree/) (Hard)
 

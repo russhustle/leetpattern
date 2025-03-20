@@ -4,6 +4,8 @@ comments: True
 
 # One Sequence Two Pointers In-Place Modification
 
+## Table of Contents
+
 - [x] [27. Remove Element](https://leetcode.cn/problems/remove-element/) (Easy)
 - [x] [26. Remove Duplicates from Sorted Array](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) (Easy)
 - [x] [80. Remove Duplicates from Sorted Array II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) (Medium)

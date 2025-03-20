@@ -4,6 +4,8 @@ comments: True
 
 # Binary Tree Backtracking
 
+## Table of Contents
+
 - [x] [257. Binary Tree Paths](https://leetcode.cn/problems/binary-tree-paths/) (Easy)
 - [ ] [113. Path Sum II](https://leetcode.cn/problems/path-sum-ii/) (Medium)
 - [x] [437. Path Sum III](https://leetcode.cn/problems/path-sum-iii/) (Medium)

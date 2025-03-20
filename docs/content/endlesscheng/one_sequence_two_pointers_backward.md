@@ -4,6 +4,8 @@ comments: True
 
 # One Sequence Two Pointers Backward
 
+## Table of Contents
+
 - [ ] [1793. Maximum Score of a Good Subarray](https://leetcode.cn/problems/maximum-score-of-a-good-subarray/) (Hard)
 
 ## 1793. Maximum Score of a Good Subarray

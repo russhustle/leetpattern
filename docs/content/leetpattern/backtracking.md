@@ -150,30 +150,33 @@ from typing import List
 
 
 def combinationSum(candidates: List[int], target: int) -> List[List[int]]:
-    result = []
-    path = []
+    n = len(candidates)
+    res, path = [], []
 
-    def backtracking(total, start):
+    def dfs(total, start):
         if total > target:
-            return None
+            return
         if total == target:
-            result.append(path[:])
-            return None
+            res.append(path.copy())
+            return
 
-        for i in range(start, len(candidates)):
+        for i in range(start, n):
             total += candidates[i]
             path.append(candidates[i])
-
-            backtracking(total, i)
-
+            dfs(total, i)
             total -= candidates[i]
             path.pop()
 
-    backtracking(0, 0)
-    return result
+    dfs(0, 0)
+
+    return res
 
 
-print(combinationSum([2, 3, 6, 7], 7))  # [[2, 2, 3], [7]]
+if __name__ == "__main__":
+    print(combinationSum([2, 3, 5], 8))
+    # [[2, 2, 2, 2], [2, 3, 3], [3, 5]]
+    print(combinationSum([2, 3, 6, 7], 7))
+    # [[2, 2, 3], [7]]
 
 ```
 
@@ -279,27 +282,29 @@ from typing import List
 
 # Backtracking
 def partition(s: str) -> List[List[str]]:
-    res = []
     n = len(s)
+    res, path = [], []
 
-    def backtrack(idx, path):
-        if idx == n:
-            res.append(path[:])
-            return None
+    def dfs(start):
+        if start == n:
+            res.append(path.copy())
+            return
 
-        for j in range(idx, n):
-            cur = s[idx : j + 1]
+        for end in range(start, n):
+            cur = s[start : end + 1]
             if cur == cur[::-1]:
                 path.append(cur)
-                backtrack(j + 1, path)
+                dfs(end + 1)
                 path.pop()
 
-    backtrack(0, [])
+    dfs(0)
 
     return res
 
 
-print(partition("aab"))  # [['a', 'a', 'b'], ['aa', 'b']]
+if __name__ == "__main__":
+    print(partition("aab"))
+    # [['a', 'a', 'b'], ['aa', 'b']]
 
 ```
 
@@ -581,24 +586,20 @@ print(permuteUnique([1, 1, 2]))
 from typing import List
 
 
-# Backtracking - Board
+# Backtracking
 def solveNQueens(n: int) -> List[List[str]]:
-    result = []
-    chessboard = ["." * n for _ in range(n)]
+    res = []
+    board = ["." * n for _ in range(n)]
 
-    def backtracking(row):
+    def dfs(row):
         if row == n:
-            result.append(chessboard[:])
+            res.append(board[:])
             return None
         for col in range(n):
-            if is_valid(row, col, chessboard):
-                chessboard[row] = (
-                    chessboard[row][:col] + "Q" + chessboard[row][col + 1 :]
-                )
-                backtracking(row + 1)
-                chessboard[row] = (
-                    chessboard[row][:col] + "." + chessboard[row][col + 1 :]
-                )
+            if is_valid(row, col, board):
+                board[row] = board[row][:col] + "Q" + board[row][col + 1 :]
+                dfs(row + 1)
+                board[row] = board[row][:col] + "." + board[row][col + 1 :]
 
     def is_valid(row, col, chessboard):
         for i in range(row):
@@ -621,14 +622,47 @@ def solveNQueens(n: int) -> List[List[str]]:
 
         return True
 
-    backtracking(0)
+    dfs(0)
 
-    return [["".join(row) for row in solution] for solution in result]
+    return [["".join(row) for row in i] for i in res]
 
 
-print(solveNQueens(4))
-# [['.Q..', '...Q', 'Q...', '..Q.'],
-#  ['..Q.', 'Q...', '...Q', '.Q..']]
+# Backtracking
+def solveNQueens2(n: int) -> List[List[str]]:
+    res = []
+    queens = [0] * n
+    col = [False] * n
+    diag1 = [False] * (n * 2 - 1)
+    diag2 = [False] * (n * 2 - 1)
+
+    def dfs(r: int) -> None:
+        if r == n:
+            res.append(["." * c + "Q" + "." * (n - 1 - c) for c in queens])
+            return
+
+        for c, ok in enumerate(col):
+            if not ok and not diag1[r + c] and not diag2[r - c]:
+                queens[r] = c
+                col[c] = diag1[r + c] = diag2[r - c] = True
+                dfs(r + 1)
+                col[c] = diag1[r + c] = diag2[r - c] = False
+
+    dfs(0)
+
+    return res
+
+
+if __name__ == "__main__":
+    print(solveNQueens(4))
+    # [['.Q..', '...Q', 'Q...', '..Q.'],
+    #  ['..Q.', 'Q...', '...Q', '.Q..']]
+    print(solveNQueens(1))
+    # [['Q']]
+    print(solveNQueens2(4))
+    # [['.Q..', '...Q', 'Q...', '..Q.'],
+    #  ['..Q.', 'Q...', '...Q', '.Q..']]
+    print(solveNQueens2(1))
+    # [['Q']]
 
 ```
 

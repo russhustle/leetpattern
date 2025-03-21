@@ -18,7 +18,7 @@ comments: True
 - [ ] [1111. Maximum Nesting Depth of Two Valid Parentheses Strings](https://leetcode.cn/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) (Medium)
 - [ ] [1541. Minimum Insertions to Balance a Parentheses String](https://leetcode.cn/problems/minimum-insertions-to-balance-a-parentheses-string/) (Medium)
 - [ ] [2116. Check if a Parentheses String Can Be Valid](https://leetcode.cn/problems/check-if-a-parentheses-string-can-be-valid/) (Medium)
-- [ ] [32. Longest Valid Parentheses](https://leetcode.cn/problems/longest-valid-parentheses/) (Hard)
+- [x] [32. Longest Valid Parentheses](https://leetcode.cn/problems/longest-valid-parentheses/) (Hard)
 
 ## 20. Valid Parentheses
 
@@ -225,3 +225,28 @@ print(checkValidString(s))  # True
 -   [LeetCode](https://leetcode.com/problems/longest-valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/longest-valid-parentheses/) (Hard)
 
 -   Tags: string, dynamic programming, stack
+
+```python title="32. Longest Valid Parentheses - Python Solution"
+# Stack
+def longestValidParentheses(s: str) -> int:
+    stack = [-1]
+    res = 0
+
+    for i, ch in enumerate(s):
+        if ch == "(":
+            stack.append(i)
+        elif ch == ")":
+            stack.pop()
+            if stack:
+                res = max(res, i - stack[-1])
+            else:
+                stack.append(i)
+
+    return res
+
+
+if __name__ == "__main__":
+    print(longestValidParentheses("(()"))  # 2
+    print(longestValidParentheses(")()())"))  # 4
+
+```

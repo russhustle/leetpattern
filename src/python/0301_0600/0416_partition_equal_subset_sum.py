@@ -1,6 +1,24 @@
+from functools import cache
 from typing import List
 
 from template import knapsack01
+
+
+# Memoization
+def canPartitionMemoization(nums: List[int]) -> bool:
+    total = sum(nums)
+    n = len(nums)
+
+    if total % 2 == 1 or n <= 1:
+        return False
+
+    @cache
+    def dfs(i, j):
+        if i < 0:
+            return j == 0
+        return j >= nums[i] and dfs(i - 1, j - nums[i]) or dfs(i - 1, j)
+
+    return dfs(n - 1, total // 2)
 
 
 # DP - Knapsack 01
@@ -33,6 +51,8 @@ def canPartition(nums: List[int]) -> bool:
     return dp[target] == target
 
 
-nums = [1, 5, 11, 5]
-print(canPartitionTemplate(nums))  # True
-print(canPartition(nums))  # True
+if __name__ == "__main__":
+    nums = [1, 5, 11, 5]
+    print(canPartitionTemplate(nums))  # True
+    print(canPartition(nums))  # True
+    print(canPartitionMemoization(nums))  # True

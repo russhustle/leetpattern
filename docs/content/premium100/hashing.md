@@ -8,7 +8,7 @@ comments: True
 
 - [ ] [760. Find Anagram Mappings](https://leetcode.cn/problems/find-anagram-mappings/) (Easy) 👑
 - [x] [266. Palindrome Permutation](https://leetcode.cn/problems/palindrome-permutation/) (Easy) 👑
-- [ ] [734. Sentence Similarity](https://leetcode.cn/problems/sentence-similarity/) (Easy) 👑
+- [x] [734. Sentence Similarity](https://leetcode.cn/problems/sentence-similarity/) (Easy) 👑
 - [ ] [1165. Single-Row Keyboard](https://leetcode.cn/problems/single-row-keyboard/) (Easy) 👑
 - [ ] [249. Group Shifted Strings](https://leetcode.cn/problems/group-shifted-strings/) (Medium) 👑
 - [ ] [1133. Largest Unique Number](https://leetcode.cn/problems/largest-unique-number/) (Easy) 👑
@@ -73,6 +73,31 @@ assert canPermutePalindromeSet("carerac") is True
 -   [LeetCode](https://leetcode.com/problems/sentence-similarity/) | [LeetCode CH](https://leetcode.cn/problems/sentence-similarity/) (Easy)
 
 -   Tags: array, hash table, string
+
+```python title="734. Sentence Similarity - Python Solution"
+# Hash Set
+def areSentencesSimilar(sentence1, sentence2, similarPairs):
+    if len(sentence1) != len(sentence2):
+        return False
+
+    sim = set(map(tuple, similarPairs))
+
+    for i in range(len(sentence1)):
+        s1, s2 = sentence1[i], sentence2[i]
+        if s1 == s2 or (s1, s2) in sim or (s2, s1) in sim:
+            continue
+        return False
+
+    return True
+
+
+if __name__ == "__main__":
+    sentence1 = ["great", "acting", "skills"]
+    sentence2 = ["fine", "drama", "talent"]
+    similarPairs = [["great", "fine"], ["drama", "acting"], ["skills", "talent"]]
+    print(areSentencesSimilar(sentence1, sentence2, similarPairs))  # True
+
+```
 
 ## 1165. Single-Row Keyboard
 

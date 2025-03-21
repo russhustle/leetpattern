@@ -33,7 +33,7 @@ comments: True
 - [x] [42. Trapping Rain Water](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
 - [ ] [2711. Difference of Number of Distinct Values on Diagonals](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) (Medium)
 - [ ] [1477. Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.cn/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/) (Medium)
-- [ ] [2680. Maximum OR](https://leetcode.cn/problems/maximum-or/) (Medium)
+- [x] [2680. Maximum OR](https://leetcode.cn/problems/maximum-or/) (Medium)
 - [x] [1671. Minimum Number of Removals to Make Mountain Array](https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array/) (Hard)
 - [ ] [1888. Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.cn/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) (Medium)
 - [x] [238. Product of Array Except Self](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
@@ -512,6 +512,40 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/maximum-or/) | [LeetCode CH](https://leetcode.cn/problems/maximum-or/) (Medium)
 
 -   Tags: array, greedy, bit manipulation, prefix sum
+
+```python title="2680. Maximum OR - Python Solution"
+from typing import List
+
+
+# Greedy
+def maximumOr(nums: List[int], k: int) -> int:
+    """Maximum OR of Array After k Operations
+
+    Args:
+        nums (List[int]): provided list of integers
+        k (int): number of operations
+
+    Returns:
+        int: maximum OR of array after k operations
+    """
+    n = len(nums)
+    suffix = [0 for _ in range(n)]
+
+    for i in range(n - 2, -1, -1):
+        suffix[i] = suffix[i + 1] | nums[i + 1]
+
+    res, pre = 0, 0
+    for num, suf in zip(nums, suffix):
+        res = max(res, pre | (num << k) | suf)
+        pre |= num
+
+    return res
+
+
+if __name__ == "__main__":
+    print(maximumOr(nums=[8, 1, 2], k=2))  # 35
+
+```
 
 ## 1671. Minimum Number of Removals to Make Mountain Array
 

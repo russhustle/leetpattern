@@ -11,7 +11,7 @@ comments: True
 - [ ] [2419. Longest Subarray With Maximum Bitwise AND](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) (Medium)
 - [ ] [2871. Split Array Into Maximum Number of Subarrays](https://leetcode.cn/problems/split-array-into-maximum-number-of-subarrays/) (Medium)
 - [ ] [2401. Longest Nice Subarray](https://leetcode.cn/problems/longest-nice-subarray/) (Medium)
-- [ ] [2680. Maximum OR](https://leetcode.cn/problems/maximum-or/) (Medium)
+- [x] [2680. Maximum OR](https://leetcode.cn/problems/maximum-or/) (Medium)
 - [ ] [3133. Minimum Array End](https://leetcode.cn/problems/minimum-array-end/) (Medium)
 - [ ] [3108. Minimum Cost Walk in Weighted Graph](https://leetcode.cn/problems/minimum-cost-walk-in-weighted-graph/) (Hard)
 - [ ] [3117. Minimum Sum of Values by Dividing Array](https://leetcode.cn/problems/minimum-sum-of-values-by-dividing-array/) (Hard)
@@ -52,6 +52,40 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-or/) | [LeetCode CH](https://leetcode.cn/problems/maximum-or/) (Medium)
 
 -   Tags: array, greedy, bit manipulation, prefix sum
+
+```python title="2680. Maximum OR - Python Solution"
+from typing import List
+
+
+# Greedy
+def maximumOr(nums: List[int], k: int) -> int:
+    """Maximum OR of Array After k Operations
+
+    Args:
+        nums (List[int]): provided list of integers
+        k (int): number of operations
+
+    Returns:
+        int: maximum OR of array after k operations
+    """
+    n = len(nums)
+    suffix = [0 for _ in range(n)]
+
+    for i in range(n - 2, -1, -1):
+        suffix[i] = suffix[i + 1] | nums[i + 1]
+
+    res, pre = 0, 0
+    for num, suf in zip(nums, suffix):
+        res = max(res, pre | (num << k) | suf)
+        pre |= num
+
+    return res
+
+
+if __name__ == "__main__":
+    print(maximumOr(nums=[8, 1, 2], k=2))  # 35
+
+```
 
 ## 3133. Minimum Array End
 

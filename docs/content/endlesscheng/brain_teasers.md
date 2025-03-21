@@ -31,7 +31,7 @@ comments: True
 - [ ] [1297. Maximum Number of Occurrences of a Substring](https://leetcode.cn/problems/maximum-number-of-occurrences-of-a-substring/) (Medium)
 - [ ] [3282. Reach End of Array With Max Score](https://leetcode.cn/problems/reach-end-of-array-with-max-score/) (Medium)
 - [ ] [2332. The Latest Time to Catch a Bus](https://leetcode.cn/problems/the-latest-time-to-catch-a-bus/) (Medium)
-- [ ] [2680. Maximum OR](https://leetcode.cn/problems/maximum-or/) (Medium)
+- [x] [2680. Maximum OR](https://leetcode.cn/problems/maximum-or/) (Medium)
 - [ ] [2731. Movement of Robots](https://leetcode.cn/problems/movement-of-robots/) (Medium)
 - [ ] [2556. Disconnect Path in a Binary Matrix by at Most One Flip](https://leetcode.cn/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/) (Medium)
 - [ ] [3125. Maximum Number That Makes Result of Bitwise AND Zero](https://leetcode.cn/problems/maximum-number-that-makes-result-of-bitwise-and-zero/) (Medium) 👑
@@ -220,6 +220,40 @@ print(countWays(nums))  # 3
 -   [LeetCode](https://leetcode.com/problems/maximum-or/) | [LeetCode CH](https://leetcode.cn/problems/maximum-or/) (Medium)
 
 -   Tags: array, greedy, bit manipulation, prefix sum
+
+```python title="2680. Maximum OR - Python Solution"
+from typing import List
+
+
+# Greedy
+def maximumOr(nums: List[int], k: int) -> int:
+    """Maximum OR of Array After k Operations
+
+    Args:
+        nums (List[int]): provided list of integers
+        k (int): number of operations
+
+    Returns:
+        int: maximum OR of array after k operations
+    """
+    n = len(nums)
+    suffix = [0 for _ in range(n)]
+
+    for i in range(n - 2, -1, -1):
+        suffix[i] = suffix[i + 1] | nums[i + 1]
+
+    res, pre = 0, 0
+    for num, suf in zip(nums, suffix):
+        res = max(res, pre | (num << k) | suf)
+        pre |= num
+
+    return res
+
+
+if __name__ == "__main__":
+    print(maximumOr(nums=[8, 1, 2], k=2))  # 35
+
+```
 
 ## 2731. Movement of Robots
 

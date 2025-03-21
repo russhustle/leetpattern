@@ -29,27 +29,29 @@ from typing import List
 
 # Backtracking
 def partition(s: str) -> List[List[str]]:
-    res = []
     n = len(s)
+    res, path = [], []
 
-    def backtrack(idx, path):
-        if idx == n:
-            res.append(path[:])
-            return None
+    def dfs(start):
+        if start == n:
+            res.append(path.copy())
+            return
 
-        for j in range(idx, n):
-            cur = s[idx : j + 1]
+        for end in range(start, n):
+            cur = s[start : end + 1]
             if cur == cur[::-1]:
                 path.append(cur)
-                backtrack(j + 1, path)
+                dfs(end + 1)
                 path.pop()
 
-    backtrack(0, [])
+    dfs(0)
 
     return res
 
 
-print(partition("aab"))  # [['a', 'a', 'b'], ['aa', 'b']]
+if __name__ == "__main__":
+    print(partition("aab"))
+    # [['a', 'a', 'b'], ['aa', 'b']]
 
 ```
 

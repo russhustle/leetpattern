@@ -15,7 +15,7 @@ comments: True
 - [x] [300. Longest Increasing Subsequence](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 - [x] [152. Maximum Product Subarray](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
 - [x] [416. Partition Equal Subset Sum](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
-- [ ] [32. Longest Valid Parentheses](https://leetcode.cn/problems/longest-valid-parentheses/) (Hard)
+- [x] [32. Longest Valid Parentheses](https://leetcode.cn/problems/longest-valid-parentheses/) (Hard)
 
 ## 70. Climbing Stairs
 
@@ -410,6 +410,24 @@ print(maxProduct(nums))  # 6
 from typing import List
 
 from template import knapsack01
+from functools import cache
+
+
+# Memoization
+def canPartitionMemoization(nums: List[int]) -> bool:
+    total = sum(nums)
+    n = len(nums)
+
+    if total % 2 == 1 or n <= 1:
+        return False
+
+    @cache
+    def dfs(i, j):
+        if i < 0:
+            return j == 0
+        return j >= nums[i] and dfs(i - 1, j - nums[i]) or dfs(i - 1, j)
+
+    return dfs(n - 1, total // 2)
 
 
 # DP - Knapsack 01
@@ -442,9 +460,11 @@ def canPartition(nums: List[int]) -> bool:
     return dp[target] == target
 
 
-nums = [1, 5, 11, 5]
-print(canPartitionTemplate(nums))  # True
-print(canPartition(nums))  # True
+if __name__ == "__main__":
+    nums = [1, 5, 11, 5]
+    print(canPartitionTemplate(nums))  # True
+    print(canPartition(nums))  # True
+    print(canPartitionMemoization(nums))  # True
 
 ```
 
@@ -453,3 +473,28 @@ print(canPartition(nums))  # True
 -   [LeetCode](https://leetcode.com/problems/longest-valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/longest-valid-parentheses/) (Hard)
 
 -   Tags: string, dynamic programming, stack
+
+```python title="32. Longest Valid Parentheses - Python Solution"
+# Stack
+def longestValidParentheses(s: str) -> int:
+    stack = [-1]
+    res = 0
+
+    for i, ch in enumerate(s):
+        if ch == "(":
+            stack.append(i)
+        elif ch == ")":
+            stack.pop()
+            if stack:
+                res = max(res, i - stack[-1])
+            else:
+                stack.append(i)
+
+    return res
+
+
+if __name__ == "__main__":
+    print(longestValidParentheses("(()"))  # 2
+    print(longestValidParentheses(")()())"))  # 4
+
+```

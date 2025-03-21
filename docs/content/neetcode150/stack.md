@@ -232,33 +232,56 @@ print(evalRPN(["4", "3", "-"]))  # 1
 from typing import List
 
 
-# Stack
-def generateParenthesis(n: int) -> List[str]:
-    stack = []
-    result = []
+# Backtracking
+def generateParenthesis1(n: int) -> List[str]:
+    path, res = [], []
 
-    def backtrack(openN, closeN):
+    def dfs(openN, closeN):
         if openN == closeN == n:
-            result.append("".join(stack))
-            return None
+            res.append("".join(path))
+            return
 
         if openN < n:
-            stack.append("(")
-            backtrack(openN + 1, closeN)
-            stack.pop()
+            path.append("(")
+            dfs(openN + 1, closeN)
+            path.pop()
 
         if closeN < openN:
-            stack.append(")")
-            backtrack(openN, closeN + 1)
-            stack.pop()
+            path.append(")")
+            dfs(openN, closeN + 1)
+            path.pop()
 
-    backtrack(0, 0)
+    dfs(0, 0)
 
-    return result
+    return res
 
 
-print(generateParenthesis(3))
-# ['((()))', '(()())', '(())()', '()(())', '()()()']
+# Backtracking
+def generateParenthesis2(n: int) -> List[str]:
+    m = n * 2
+    res, path = [], [""] * m
+
+    def dfs(i, left):
+        if i == m:
+            res.append("".join(path))
+            return
+
+        if left < n:
+            path[i] = "("
+            dfs(i + 1, left + 1)
+        if i - left < left:
+            path[i] = ")"
+            dfs(i + 1, left)
+
+    dfs(0, 0)
+    return res
+
+
+if __name__ == "__main__":
+    print(generateParenthesis1(3))
+    # ['((()))', '(()())', '(())()', '()(())', '()()()']
+    print(generateParenthesis2(3))
+    # ['((()))', '(()())', '(())()', '()(())', '()()()']
 
 ```
 

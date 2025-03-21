@@ -250,29 +250,32 @@ from typing import List
 
 
 def combinationSum(candidates: List[int], target: int) -> List[List[int]]:
-    result = []
-    path = []
+    n = len(candidates)
+    res, path = [], []
 
-    def backtracking(total, start):
+    def dfs(total, start):
         if total > target:
-            return None
+            return
         if total == target:
-            result.append(path[:])
-            return None
+            res.append(path.copy())
+            return
 
-        for i in range(start, len(candidates)):
+        for i in range(start, n):
             total += candidates[i]
             path.append(candidates[i])
-
-            backtracking(total, i)
-
+            dfs(total, i)
             total -= candidates[i]
             path.pop()
 
-    backtracking(0, 0)
-    return result
+    dfs(0, 0)
+
+    return res
 
 
-print(combinationSum([2, 3, 6, 7], 7))  # [[2, 2, 3], [7]]
+if __name__ == "__main__":
+    print(combinationSum([2, 3, 5], 8))
+    # [[2, 2, 2, 2], [2, 3, 3], [3, 5]]
+    print(combinationSum([2, 3, 6, 7], 7))
+    # [[2, 2, 3], [7]]
 
 ```

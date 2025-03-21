@@ -407,10 +407,10 @@ print(maxProduct(nums))  # 6
 -   Tags: array, dynamic programming
 
 ```python title="416. Partition Equal Subset Sum - Python Solution"
+from functools import cache
 from typing import List
 
 from template import knapsack01
-from functools import cache
 
 
 # Memoization

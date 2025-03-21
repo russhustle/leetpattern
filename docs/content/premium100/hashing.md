@@ -94,7 +94,11 @@ def areSentencesSimilar(sentence1, sentence2, similarPairs):
 if __name__ == "__main__":
     sentence1 = ["great", "acting", "skills"]
     sentence2 = ["fine", "drama", "talent"]
-    similarPairs = [["great", "fine"], ["drama", "acting"], ["skills", "talent"]]
+    similarPairs = [
+        ["great", "fine"],
+        ["drama", "acting"],
+        ["skills", "talent"],
+    ]
     print(areSentencesSimilar(sentence1, sentence2, similarPairs))  # True
 
 ```

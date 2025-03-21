@@ -14,7 +14,7 @@ comments: True
 - [x] [674. Longest Continuous Increasing Subsequence](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) (Easy)
 - [x] [978. Longest Turbulent Subarray](https://leetcode.cn/problems/longest-turbulent-subarray/) (Medium)
 - [ ] [2110. Number of Smooth Descent Periods of a Stock](https://leetcode.cn/problems/number-of-smooth-descent-periods-of-a-stock/) (Medium)
-- [ ] [228. Summary Ranges](https://leetcode.cn/problems/summary-ranges/) (Easy)
+- [x] [228. Summary Ranges](https://leetcode.cn/problems/summary-ranges/) (Easy)
 - [ ] [2760. Longest Even Odd Subarray With Threshold](https://leetcode.cn/problems/longest-even-odd-subarray-with-threshold/) (Easy)
 - [ ] [1887. Reduction Operations to Make the Array Elements Equal](https://leetcode.cn/problems/reduction-operations-to-make-the-array-elements-equal/) (Medium)
 - [x] [845. Longest Mountain in Array](https://leetcode.cn/problems/longest-mountain-in-array/) (Medium)
@@ -142,6 +142,39 @@ print(maxTurbulenceSize(arr))  # 5
 -   [LeetCode](https://leetcode.com/problems/summary-ranges/) | [LeetCode CH](https://leetcode.cn/problems/summary-ranges/) (Easy)
 
 -   Tags: array
+
+```python title="228. Summary Ranges - Python Solution"
+from typing import List
+
+
+# Variable Sliding Window
+def summaryRanges(nums: List[int]) -> List[str]:
+    left, right = 0, 0
+    n = len(nums)
+    res = []
+
+    while left < n:
+        while right + 1 < n and nums[right] + 1 == nums[right + 1]:
+            right += 1
+
+        if left == right:
+            res.append(f"{nums[left]}")
+        else:
+            res.append(f"{nums[left]}->{nums[right]}")
+
+        right += 1
+        left = right
+
+    return res
+
+
+if __name__ == "__main__":
+    print(summaryRanges([0, 1, 2, 4, 5, 7]))
+    # ["0->2", "4->5", "7"]
+    print(summaryRanges([0, 2, 3, 4, 6, 8, 9]))
+    # ["0", "2->4", "6", "8->9"]
+
+```
 
 ## 2760. Longest Even Odd Subarray With Threshold
 

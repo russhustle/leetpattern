@@ -7,7 +7,7 @@ comments: True
 ## Table of Contents
 
 - [ ] [1523. Count Odd Numbers in an Interval Range](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/) (Easy)
-- [ ] [2829. Determine the Minimum Sum of a k-avoiding Array](https://leetcode.cn/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) (Medium)
+- [x] [2829. Determine the Minimum Sum of a k-avoiding Array](https://leetcode.cn/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) (Medium)
 - [ ] [2579. Count Total Number of Colored Cells](https://leetcode.cn/problems/count-total-number-of-colored-cells/) (Medium)
 - [ ] [2834. Find the Minimum Possible Sum of a Beautiful Array](https://leetcode.cn/problems/find-the-minimum-possible-sum-of-a-beautiful-array/) (Medium)
 - [ ] [1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.cn/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/) (Medium)
@@ -49,6 +49,19 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | [LeetCode CH](https://leetcode.cn/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) (Medium)
 
 -   Tags: math, greedy
+
+```python title="2829. Determine the Minimum Sum of a k-avoiding Array - Python Solution"
+def minimumSum(n: int, k: int) -> int:
+    m = min(k // 2, n)
+    return (m * (m + 1) + (k * 2 + n - m - 1) * (n - m)) // 2
+
+
+if __name__ == "__main__":
+    n = 5
+    k = 4
+    print(minimumSum(n, k))  # 18
+
+```
 
 ## 2579. Count Total Number of Colored Cells
 

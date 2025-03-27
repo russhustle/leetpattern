@@ -20,7 +20,7 @@ comments: True
 - [ ] [3228. Maximum Number of Operations to Move Ones to the End](https://leetcode.cn/problems/maximum-number-of-operations-to-move-ones-to-the-end/) (Medium)
 - [ ] [2086. Minimum Number of Food Buckets to Feed the Hamsters](https://leetcode.cn/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/) (Medium)
 - [ ] [2571. Minimum Operations to Reduce an Integer to 0](https://leetcode.cn/problems/minimum-operations-to-reduce-an-integer-to-0/) (Medium)
-- [ ] [2712. Minimum Cost to Make All Characters Equal](https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/) (Medium)
+- [x] [2712. Minimum Cost to Make All Characters Equal](https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/) (Medium)
 - [ ] [3326. Minimum Division Operations to Make Array Non Decreasing](https://leetcode.cn/problems/minimum-division-operations-to-make-array-non-decreasing/) (Medium)
 - [ ] [1536. Minimum Swaps to Arrange a Binary Grid](https://leetcode.cn/problems/minimum-swaps-to-arrange-a-binary-grid/) (Medium)
 - [ ] [2673. Make Costs of Paths Equal in a Binary Tree](https://leetcode.cn/problems/make-costs-of-paths-equal-in-a-binary-tree/) (Medium)
@@ -121,6 +121,23 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/) (Medium)
 
 -   Tags: string, dynamic programming, greedy
+
+```python title="2712. Minimum Cost to Make All Characters Equal - Python Solution"
+def minimumCost(s: str) -> int:
+    n = len(s)
+    res = 0
+    for i in range(1, n):
+        if s[i - 1] != s[i]:
+            res += min(i, n - i)
+
+    return res
+
+
+if __name__ == "__main__":
+    s = "0011"
+    print(minimumCost(s))  # 2
+
+```
 
 ## 3326. Minimum Division Operations to Make Array Non Decreasing
 

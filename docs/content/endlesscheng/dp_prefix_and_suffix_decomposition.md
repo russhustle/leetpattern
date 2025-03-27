@@ -27,11 +27,11 @@ comments: True
 - [ ] [2100. Find Good Days to Rob the Bank](https://leetcode.cn/problems/find-good-days-to-rob-the-bank/) (Medium)
 - [ ] [926. Flip String to Monotone Increasing](https://leetcode.cn/problems/flip-string-to-monotone-increasing/) (Medium)
 - [ ] [334. Increasing Triplet Subsequence](https://leetcode.cn/problems/increasing-triplet-subsequence/) (Medium)
-- [ ] [2712. Minimum Cost to Make All Characters Equal](https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/) (Medium)
+- [x] [2712. Minimum Cost to Make All Characters Equal](https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/) (Medium)
 - [ ] [1653. Minimum Deletions to Make String Balanced](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) (Medium)
 - [x] [1186. Maximum Subarray Sum with One Deletion](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/) (Medium)
 - [x] [42. Trapping Rain Water](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
-- [ ] [2711. Difference of Number of Distinct Values on Diagonals](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) (Medium)
+- [x] [2711. Difference of Number of Distinct Values on Diagonals](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) (Medium)
 - [ ] [1477. Find Two Non-overlapping Sub-arrays Each With Target Sum](https://leetcode.cn/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/) (Medium)
 - [x] [2680. Maximum OR](https://leetcode.cn/problems/maximum-or/) (Medium)
 - [x] [1671. Minimum Number of Removals to Make Mountain Array](https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array/) (Hard)
@@ -326,6 +326,23 @@ print(maxProfitDP2(prices))  # 6
 
 -   Tags: string, dynamic programming, greedy
 
+```python title="2712. Minimum Cost to Make All Characters Equal - Python Solution"
+def minimumCost(s: str) -> int:
+    n = len(s)
+    res = 0
+    for i in range(1, n):
+        if s[i - 1] != s[i]:
+            res += min(i, n - i)
+
+    return res
+
+
+if __name__ == "__main__":
+    s = "0011"
+    print(minimumCost(s))  # 2
+
+```
+
 ## 1653. Minimum Deletions to Make String Balanced
 
 -   [LeetCode](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | [LeetCode CH](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) (Medium)
@@ -500,6 +517,41 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/) | [LeetCode CH](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) (Medium)
 
 -   Tags: array, hash table, matrix
+
+```python title="2711. Difference of Number of Distinct Values on Diagonals - Python Solution"
+from typing import List
+
+
+def differenceOfDistinctValues(grid: List[List[int]]) -> List[List[int]]:
+    m, n = len(grid), len(grid[0])
+    res = [[0] * n for _ in range(m)]
+    st = set()
+
+    for k in range(1, m + n):
+        min_j = max(n - k, 0)
+        max_j = min(m + n - 1 - k, n - 1)
+
+        st.clear()
+        for j in range(min_j, max_j + 1):
+            i = k + j - n
+            res[i][j] = len(st)
+            st.add(grid[i][j])
+
+        st.clear()
+        for j in range(max_j, min_j - 1, -1):
+            i = k + j - n
+            res[i][j] = abs(res[i][j] - len(st))
+            st.add(grid[i][j])
+
+    return res
+
+
+if __name__ == "__main__":
+    grid = [[1, 2, 3], [3, 1, 5], [3, 2, 1]]
+    print(differenceOfDistinctValues(grid))
+    # [[1, 1, 0], [1, 0, 1], [0, 1, 1]]
+
+```
 
 ## 1477. Find Two Non-overlapping Sub-arrays Each With Target Sum
 

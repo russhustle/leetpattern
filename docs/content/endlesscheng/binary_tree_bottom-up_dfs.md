@@ -35,7 +35,7 @@ comments: True
 - [ ] [1120. Maximum Average Subtree](https://leetcode.cn/problems/maximum-average-subtree/) (Medium) 👑
 - [ ] [2792. Count Nodes That Are Great Enough](https://leetcode.cn/problems/count-nodes-that-are-great-enough/) (Hard) 👑
 - [ ] [333. Largest BST Subtree](https://leetcode.cn/problems/largest-bst-subtree/) (Medium) 👑
-- [ ] [366. Find Leaves of Binary Tree](https://leetcode.cn/problems/find-leaves-of-binary-tree/) (Medium) 👑
+- [x] [366. Find Leaves of Binary Tree](https://leetcode.cn/problems/find-leaves-of-binary-tree/) (Medium) 👑
 - [ ] [156. Binary Tree Upside Down](https://leetcode.cn/problems/binary-tree-upside-down/) (Medium) 👑
 - [ ] [1612. Check If Two Expression Trees are Equivalent](https://leetcode.cn/problems/check-if-two-expression-trees-are-equivalent/) (Medium) 👑
 
@@ -829,6 +829,40 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-leaves-of-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
+
+```python title="366. Find Leaves of Binary Tree - Python Solution"
+from collections import defaultdict
+from typing import List, Optional
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+def findLeaves(root: Optional[TreeNode]) -> List[List[int]]:
+    depths = defaultdict(list)
+
+    def dfs(node):
+        if not node:
+            return 0
+        l, r = dfs(node.left), dfs(node.right)
+        depth = 1 + max(l, r)
+        depths[depth].append(node.val)
+        return depth
+
+    dfs(root)
+    return [i for i in depths.values()]
+
+
+if __name__ == "__main__":
+    root = build([1, 2, 3, 4, 5])
+    print(root)
+    #     __1
+    #    /   \
+    #   2     3
+    #  / \
+    # 4   5
+    print(findLeaves(root))  # [[4, 5, 3], [2], [1]]
+
+```
 
 ## 156. Binary Tree Upside Down
 

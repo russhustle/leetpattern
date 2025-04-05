@@ -9,7 +9,7 @@ comments: True
 - [ ] [2909. Minimum Sum of Mountain Triplets II](https://leetcode.cn/problems/minimum-sum-of-mountain-triplets-ii/) (Medium)
 - [ ] [1930. Unique Length-3 Palindromic Subsequences](https://leetcode.cn/problems/unique-length-3-palindromic-subsequences/) (Medium)
 - [ ] [3128. Right Triangles](https://leetcode.cn/problems/right-triangles/) (Medium)
-- [ ] [2874. Maximum Value of an Ordered Triplet II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
+- [x] [2874. Maximum Value of an Ordered Triplet II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
 - [ ] [447. Number of Boomerangs](https://leetcode.cn/problems/number-of-boomerangs/) (Medium)
 - [x] [456. 132 Pattern](https://leetcode.cn/problems/132-pattern/) (Medium)
 - [ ] [3067. Count Pairs of Connectable Servers in a Weighted Tree Network](https://leetcode.cn/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/) (Medium)
@@ -43,6 +43,29 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | [LeetCode CH](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
 
 -   Tags: array
+
+```python title="2874. Maximum Value of an Ordered Triplet II - Python Solution"
+from typing import List
+
+
+def maximumTripletValue(nums: List[int]) -> int:
+    res = 0
+    max_diff = 0
+    max_prev = 0
+
+    for num in nums:
+        res = max(res, max_diff * num)
+        max_diff = max(max_diff, max_prev - num)
+        max_prev = max(max_prev, num)
+
+    return res
+
+
+if __name__ == "__main__":
+    nums = [12, 6, 1, 2, 7]
+    print(maximumTripletValue(nums))  # 77
+
+```
 
 ## 447. Number of Boomerangs
 

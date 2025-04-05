@@ -2,14 +2,12 @@ from typing import List
 
 
 def maximumTripletValue(nums: List[int]) -> int:
-    res = 0
-    max_diff = 0
-    max_prev = 0
+    res, max_diff, pre_max = 0, 0, 0
 
     for num in nums:
         res = max(res, max_diff * num)
-        max_diff = max(max_diff, max_prev - num)
-        max_prev = max(max_prev, num)
+        max_diff = max(max_diff, pre_max - num)
+        pre_max = max(pre_max, num)
 
     return res
 

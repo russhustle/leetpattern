@@ -20,7 +20,7 @@ comments: True
 - [ ] [3185. Count Pairs That Form a Complete Day II](https://leetcode.cn/problems/count-pairs-that-form-a-complete-day-ii/) (Medium)
 - [ ] [2506. Count Pairs Of Similar Strings](https://leetcode.cn/problems/count-pairs-of-similar-strings/) (Easy)
 - [ ] [2748. Number of Beautiful Pairs](https://leetcode.cn/problems/number-of-beautiful-pairs/) (Easy)
-- [ ] [2874. Maximum Value of an Ordered Triplet II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
+- [x] [2874. Maximum Value of an Ordered Triplet II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
 - [ ] [1014. Best Sightseeing Pair](https://leetcode.cn/problems/best-sightseeing-pair/) (Medium)
 - [ ] [1814. Count Nice Pairs in an Array](https://leetcode.cn/problems/count-nice-pairs-in-an-array/) (Medium)
 - [ ] [2905. Find Indices With Index and Value Difference II](https://leetcode.cn/problems/find-indices-with-index-and-value-difference-ii/) (Medium)
@@ -481,6 +481,29 @@ print(maximumSum(nums))  # 54
 -   [LeetCode](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | [LeetCode CH](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
 
 -   Tags: array
+
+```python title="2874. Maximum Value of an Ordered Triplet II - Python Solution"
+from typing import List
+
+
+def maximumTripletValue(nums: List[int]) -> int:
+    res = 0
+    max_diff = 0
+    max_prev = 0
+
+    for num in nums:
+        res = max(res, max_diff * num)
+        max_diff = max(max_diff, max_prev - num)
+        max_prev = max(max_prev, num)
+
+    return res
+
+
+if __name__ == "__main__":
+    nums = [12, 6, 1, 2, 7]
+    print(maximumTripletValue(nums))  # 77
+
+```
 
 ## 1014. Best Sightseeing Pair
 

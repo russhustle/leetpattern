@@ -18,7 +18,7 @@ comments: True
 - [ ] [2483. Minimum Penalty for a Shop](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) (Medium)
 - [ ] [1525. Number of Good Ways to Split a String](https://leetcode.cn/problems/number-of-good-ways-to-split-a-string/) (Medium)
 - [ ] [3354. Make Array Elements Equal to Zero](https://leetcode.cn/problems/make-array-elements-equal-to-zero/) (Easy)
-- [ ] [2874. Maximum Value of an Ordered Triplet II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
+- [x] [2874. Maximum Value of an Ordered Triplet II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
 - [x] [123. Best Time to Buy and Sell Stock III](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) (Hard)
 - [ ] [2222. Number of Ways to Select Buildings](https://leetcode.cn/problems/number-of-ways-to-select-buildings/) (Medium)
 - [ ] [1031. Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.cn/problems/maximum-sum-of-two-non-overlapping-subarrays/) (Medium)
@@ -223,6 +223,29 @@ print(sumOfBeauties(nums))  # 1
 -   [LeetCode](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | [LeetCode CH](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
 
 -   Tags: array
+
+```python title="2874. Maximum Value of an Ordered Triplet II - Python Solution"
+from typing import List
+
+
+def maximumTripletValue(nums: List[int]) -> int:
+    res = 0
+    max_diff = 0
+    max_prev = 0
+
+    for num in nums:
+        res = max(res, max_diff * num)
+        max_diff = max(max_diff, max_prev - num)
+        max_prev = max(max_prev, num)
+
+    return res
+
+
+if __name__ == "__main__":
+    nums = [12, 6, 1, 2, 7]
+    print(maximumTripletValue(nums))  # 77
+
+```
 
 ## 123. Best Time to Buy and Sell Stock III
 

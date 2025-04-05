@@ -7,7 +7,7 @@ comments: True
 ## Table of Contents
 
 - [ ] [2944. Minimum Number of Coins for Fruits](https://leetcode.cn/problems/minimum-number-of-coins-for-fruits/) (Medium)
-- [ ] [2140. Solving Questions With Brainpower](https://leetcode.cn/problems/solving-questions-with-brainpower/) (Medium)
+- [x] [2140. Solving Questions With Brainpower](https://leetcode.cn/problems/solving-questions-with-brainpower/) (Medium)
 - [x] [983. Minimum Cost For Tickets](https://leetcode.cn/problems/minimum-cost-for-tickets/) (Medium)
 - [ ] [2901. Longest Unequal Adjacent Groups Subsequence II](https://leetcode.cn/problems/longest-unequal-adjacent-groups-subsequence-ii/) (Medium)
 - [ ] [3144. Minimum Substring Partition of Equal Character Frequency](https://leetcode.cn/problems/minimum-substring-partition-of-equal-character-frequency/) (Medium)
@@ -30,6 +30,28 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/solving-questions-with-brainpower/) | [LeetCode CH](https://leetcode.cn/problems/solving-questions-with-brainpower/) (Medium)
 
 -   Tags: array, dynamic programming
+
+```python title="2140. Solving Questions With Brainpower - Python Solution"
+from typing import List
+from functools import cache
+
+
+# Memoization
+def mostPoints(questions: List[List[int]]) -> int:
+    @cache
+    def dfs(i: int) -> int:
+        if i >= len(questions):
+            return 0
+        return max(dfs(i + 1), dfs(i + questions[i][1] + 1) + questions[i][0])
+
+    return dfs(0)
+
+
+if __name__ == "__main__":
+    questions = [[3, 2], [4, 3], [4, 4], [2, 5]]
+    print(mostPoints(questions))  # 5
+
+```
 
 ## 983. Minimum Cost For Tickets
 

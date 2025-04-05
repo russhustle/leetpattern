@@ -833,6 +833,7 @@ if __name__ == "__main__":
 ```python title="366. Find Leaves of Binary Tree - Python Solution"
 from collections import defaultdict
 from typing import List, Optional
+
 from binarytree import Node as TreeNode
 from binarytree import build
 

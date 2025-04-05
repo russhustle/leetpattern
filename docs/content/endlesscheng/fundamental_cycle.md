@@ -7,7 +7,7 @@ comments: True
 ## Table of Contents
 
 - [ ] [2359. Find Closest Node to Given Two Nodes](https://leetcode.cn/problems/find-closest-node-to-given-two-nodes/) (Medium)
-- [ ] [2360. Longest Cycle in a Graph](https://leetcode.cn/problems/longest-cycle-in-a-graph/) (Hard)
+- [x] [2360. Longest Cycle in a Graph](https://leetcode.cn/problems/longest-cycle-in-a-graph/) (Hard)
 - [x] [684. Redundant Connection](https://leetcode.cn/problems/redundant-connection/) (Medium)
 - [x] [685. Redundant Connection II](https://leetcode.cn/problems/redundant-connection-ii/) (Hard)
 - [ ] [2876. Count Visited Nodes in a Directed Graph](https://leetcode.cn/problems/count-visited-nodes-in-a-directed-graph/) (Hard)
@@ -26,6 +26,34 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-cycle-in-a-graph/) | [LeetCode CH](https://leetcode.cn/problems/longest-cycle-in-a-graph/) (Hard)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
+
+```python title="2360. Longest Cycle in a Graph - Python Solution"
+from typing import List
+
+
+def longestCycle(edges: List[int]) -> int:
+    n = len(edges)
+    res = -1
+    cur = 1
+    vis = [0 for _ in range(n)]
+
+    for i in range(n):
+        start = cur
+        while i != -1 and vis[i] == 0:
+            vis[i] = cur
+            cur += 1
+            i = edges[i]
+        if i != -1 and vis[i] >= start:
+            res = max(res, cur - vis[i])
+
+    return res
+
+
+if __name__ == "__main__":
+    edges = [3, 3, 4, 2, 3]
+    print(longestCycle(edges))  # 3
+
+```
 
 ## 684. Redundant Connection
 

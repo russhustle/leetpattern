@@ -8,7 +8,7 @@ comments: True
 
 - [x] [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
 - [x] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
-- [ ] [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/) (Medium)
+- [x] [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/) (Medium)
 - [ ] [2096. Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.cn/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) (Medium)
 - [ ] [1740. Find Distance in a Binary Tree](https://leetcode.cn/problems/find-distance-in-a-binary-tree/) (Medium) 👑
 - [ ] [1644. Lowest Common Ancestor of a Binary Tree II](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree-ii/) (Medium) 👑
@@ -173,6 +173,50 @@ int main() { return 0; }
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/) (Medium)
 
 -   Tags: hash table, tree, depth first search, breadth first search, binary tree
+
+```python title="1123. Lowest Common Ancestor of Deepest Leaves - Python Solution"
+from typing import Optional
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Lowest Common Ancestor
+def lcaDeepestLeaves(root: Optional[TreeNode]) -> Optional[TreeNode]:
+    res = None
+    max_depth = -1
+
+    def dfs(node, depth) -> int:
+        nonlocal res, max_depth
+        if not node:
+            max_depth = max(max_depth, depth)
+            return depth
+        left_max_depth = dfs(node.left, depth + 1)
+        right_max_depth = dfs(node.right, depth + 1)
+        if left_max_depth == right_max_depth == max_depth:
+            res = node
+        return max(left_max_depth, right_max_depth)
+
+    dfs(root, 0)
+    return res
+
+
+if __name__ == "__main__":
+    root = [3, 5, 1, 6, 2, 0, 8, None, None, 7, 4]
+    root = build(root)
+    print(root)
+    #     ______3__
+    #    /         \
+    #   5__         1
+    #  /   \       / \
+    # 6     2     0   8
+    #      / \
+    #     7   4
+    print(lcaDeepestLeaves(root))  # 2
+    #   2
+    #  / \
+    # 7   4
+
+```
 
 ## 2096. Step-By-Step Directions From a Binary Tree Node to Another
 

@@ -7,7 +7,7 @@ comments: True
 ## Table of Contents
 
 - [ ] [477. Total Hamming Distance](https://leetcode.cn/problems/total-hamming-distance/) (Medium)
-- [ ] [1863. Sum of All Subset XOR Totals](https://leetcode.cn/problems/sum-of-all-subset-xor-totals/) (Easy)
+- [x] [1863. Sum of All Subset XOR Totals](https://leetcode.cn/problems/sum-of-all-subset-xor-totals/) (Easy)
 - [ ] [2425. Bitwise XOR of All Pairings](https://leetcode.cn/problems/bitwise-xor-of-all-pairings/) (Medium)
 - [ ] [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) (Medium)
 - [ ] [1835. Find XOR Sum of All Pairs Bitwise AND](https://leetcode.cn/problems/find-xor-sum-of-all-pairs-bitwise-and/) (Hard)
@@ -25,6 +25,22 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-all-subset-xor-totals/) (Easy)
 
 -   Tags: array, math, backtracking, bit manipulation, combinatorics, enumeration
+
+```python title="1863. Sum of All Subset XOR Totals - Python Solution"
+from functools import reduce
+from operator import or_
+from typing import List
+
+
+def subsetXORSum(nums: List[int]) -> int:
+    return reduce(or_, nums) << (len(nums) - 1)
+
+
+if __name__ == "__main__":
+    nums = [5, 1, 6]
+    print(subsetXORSum(nums))  # 28
+
+```
 
 ## 2425. Bitwise XOR of All Pairings
 

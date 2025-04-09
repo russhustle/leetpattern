@@ -452,11 +452,6 @@ nav:
     - String Suffix Array: content/endlesscheng/string_suffix_array.md
     - String Subsequence Automaton: content/endlesscheng/string_subsequence_automaton.md
 
-  - Company:
-    - Home: content/company/index.md
-    - Amazon: content/company/amazon.md
-    - Indeed: content/company/indeed.md
-
 
 - About: about.md
 

@@ -32,8 +32,8 @@ comments: True
 -   Tags: array, dynamic programming
 
 ```python title="2140. Solving Questions With Brainpower - Python Solution"
-from typing import List
 from functools import cache
+from typing import List
 
 
 # Memoization

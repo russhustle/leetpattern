@@ -176,6 +176,7 @@ int main() { return 0; }
 
 ```python title="1123. Lowest Common Ancestor of Deepest Leaves - Python Solution"
 from typing import Optional
+
 from binarytree import Node as TreeNode
 from binarytree import build
 

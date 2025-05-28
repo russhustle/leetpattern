@@ -1,3 +1,7 @@
+"""
+-   Return the maximum profit you can achieve with the given transaction fee.
+"""
+
 from typing import List
 
 

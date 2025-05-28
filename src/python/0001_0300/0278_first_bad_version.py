@@ -1,3 +1,8 @@
+"""
+-   Find the first bad version given a function `isBadVersion`.
+"""
+
+
 # Binary Search
 def firstBadVersion(n: int) -> int:
     left, right = 1, n

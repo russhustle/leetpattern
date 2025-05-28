@@ -1,3 +1,7 @@
+"""
+-   Return a square matrix filled with elements from 1 to n^2 in spiral order.
+"""
+
 from pprint import pprint
 from typing import List
 

@@ -1,3 +1,10 @@
+"""
+-   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
+
+![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
+"""
+
+
 # DP - 2D
 def uniquePaths(m: int, n: int) -> int:
     if m == 1 or n == 1:

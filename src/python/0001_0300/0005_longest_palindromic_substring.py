@@ -1,3 +1,8 @@
+"""
+-   Return the longest palindromic substring in `s`.
+"""
+
+
 # DP - Interval
 def longestPalindromeDP(s: str) -> str:
     n = len(s)

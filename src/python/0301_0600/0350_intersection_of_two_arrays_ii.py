@@ -1,3 +1,7 @@
+"""
+-   Return the intersection of two arrays.
+"""
+
 from collections import defaultdict
 from typing import List
 

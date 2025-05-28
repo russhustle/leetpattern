@@ -1,3 +1,8 @@
+"""
+-   Return true if the given number is a palindrome. Otherwise, return false.
+"""
+
+
 # Reverse
 def isPalindromeReverse(x: int) -> bool:
     if x < 0:

@@ -1,3 +1,7 @@
+"""
+-   Return the minimum number of candies you must give.
+"""
+
 from typing import List
 
 

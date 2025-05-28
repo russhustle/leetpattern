@@ -1,3 +1,7 @@
+"""
+-   Return any permutation of the items that satisfies the requirements.
+"""
+
 from collections import defaultdict, deque
 from typing import List
 

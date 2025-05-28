@@ -1,3 +1,8 @@
+"""
+-   Determine if a positive integer is a perfect square without using any built-in library function.
+"""
+
+
 # Binary Search
 def isPerfectSquare(num: int) -> bool:
     if num < 2:

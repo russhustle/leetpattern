@@ -1,3 +1,8 @@
+"""
+-   Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
+"""
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val

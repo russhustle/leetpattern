@@ -1,3 +1,17 @@
+"""
+- Tree: a connected acyclic graph
+- Spanning Tree: a subgraph that is a tree and connects all the vertices together
+- Minimum Spanning Tree (MST): a spanning tree with the minimum possible sum of edge weights
+- Prim's Algorithm
+  - Data Structure: Heap
+  - Time Complexity: O(E * logV)
+  - Space Complexity: O(V + E)
+- Kruskal's Algorithm
+  - Union Find
+  - Time Complexity: O(E * logV)
+  - Space Complexity: O(V + E)
+"""
+
 import heapq
 from collections import defaultdict
 from typing import List
@@ -80,6 +94,7 @@ def minCostConnectPointsKruskal(points: List[List[int]]) -> int:
     return cost
 
 
-points = [[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]
-print(minCostConnectPointsPrim(points))  # 20
-print(minCostConnectPointsKruskal(points))  # 20
+if __name__ == "__main__":
+    points = [[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]
+    print(minCostConnectPointsPrim(points))  # 20
+    print(minCostConnectPointsKruskal(points))  # 20

@@ -1,3 +1,7 @@
+"""
+-   Return the maximum profit you can achieve.
+"""
+
 from typing import List
 
 

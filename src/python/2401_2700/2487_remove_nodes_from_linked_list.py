@@ -1,3 +1,7 @@
+"""
+-   Remove all nodes from a linked list that have a value greater than `maxValue`.
+"""
+
 from typing import Optional
 
 from template import ListNode

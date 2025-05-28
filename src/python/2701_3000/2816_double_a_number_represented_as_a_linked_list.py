@@ -1,3 +1,7 @@
+"""
+-   Given a number represented as a linked list, double it and return the resulting linked list.
+"""
+
 from typing import Optional
 
 from template import ListNode

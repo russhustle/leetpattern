@@ -1,3 +1,7 @@
+"""
+![538](https://assets.leetcode.com/uploads/2019/05/02/tree.png)
+"""
+
 from typing import Optional
 
 from binarytree import build

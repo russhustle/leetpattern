@@ -1,4 +1,12 @@
 """
+-   Return the indices of the two numbers such that they add up to a specific target.
+
+| Approach | Time Complexity | Space Complexity |
+| :------: | :-------------: | :--------------: |
+| Hashmap  |      O(n)       |       O(n)       |
+"""
+
+"""
 - Return the indices of the two numbers such that they add up to a specific target.
 - Approach: Use a hashmap to store the indices of the numbers.
 - Time Complexity: O(n)

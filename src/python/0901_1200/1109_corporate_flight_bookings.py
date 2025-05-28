@@ -1,3 +1,7 @@
+"""
+-   Return the number of seats booked on each flight.
+"""
+
 from typing import List
 
 

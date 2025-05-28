@@ -1,3 +1,7 @@
+"""
+-   Given a linked list, swap every two adjacent nodes and return its head.
+"""
+
 from typing import Optional
 
 from template import ListNode

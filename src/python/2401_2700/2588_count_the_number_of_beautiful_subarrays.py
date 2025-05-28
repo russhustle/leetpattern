@@ -1,3 +1,16 @@
+"""
+- `nums = [4, 3, 1, 2, 4]`
+- In bianry
+
+```
+4 -> 100
+3 -> 011
+1 -> 001
+2 -> 010
+4 -> 100
+```
+"""
+
 from collections import defaultdict
 from typing import List
 

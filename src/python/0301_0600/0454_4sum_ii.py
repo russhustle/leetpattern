@@ -1,3 +1,7 @@
+"""
+-   Return the number of tuples `(i, j, k, l)` such that `A[i] + B[j] + C[k] + D[l] == 0`.
+"""
+
 from collections import defaultdict
 from typing import List
 

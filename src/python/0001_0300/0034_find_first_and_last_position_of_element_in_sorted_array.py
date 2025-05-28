@@ -1,3 +1,7 @@
+"""
+-   Find the starting and ending position of a given target value in a sorted array.
+"""
+
 from bisect import bisect_left
 from typing import List
 

@@ -1,3 +1,7 @@
+"""
+-   Perfect Binary Tree
+"""
+
 from collections import deque
 from typing import Optional
 

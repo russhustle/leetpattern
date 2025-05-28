@@ -1,3 +1,11 @@
+"""
+- `n=5`, `queries = [[2,4],[0,2],[0,4]]`
+- ![1](https://assets.leetcode.com/uploads/2024/06/28/image8.jpg)
+- ![2](https://assets.leetcode.com/uploads/2024/06/28/image9.jpg)
+- ![3](https://assets.leetcode.com/uploads/2024/06/28/image10.jpg)
+- Output: `[3,2,1]`
+"""
+
 from collections import deque
 from itertools import count
 from typing import List

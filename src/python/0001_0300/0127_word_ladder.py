@@ -1,3 +1,11 @@
+"""
+-   The most classic BFS problem.
+-   Return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.
+-   Approach: BFS
+-   Time Complexity: O(n * m^2)
+-   Space Complexity: O(n * m)
+"""
+
 from collections import defaultdict, deque
 from typing import List
 

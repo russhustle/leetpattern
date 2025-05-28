@@ -1,3 +1,7 @@
+"""
+-   Implement binary search algorithm.
+"""
+
 from typing import List
 
 

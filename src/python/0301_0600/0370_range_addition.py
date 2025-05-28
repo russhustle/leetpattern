@@ -1,3 +1,7 @@
+"""
+-   Return the final array after applying all the Adition operations.
+"""
+
 from typing import List
 
 

@@ -1,3 +1,7 @@
+"""
+-   Return the number of points that intersect with cars.
+"""
+
 from itertools import accumulate
 from typing import List
 

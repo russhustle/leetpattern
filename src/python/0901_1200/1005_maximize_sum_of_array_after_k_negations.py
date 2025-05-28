@@ -1,3 +1,7 @@
+"""
+-   Return the maximum sum of the array after changing at most `k` elements.
+"""
+
 from heapq import heapify, heapreplace
 from typing import List
 

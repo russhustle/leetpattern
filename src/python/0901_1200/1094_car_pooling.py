@@ -1,3 +1,7 @@
+"""
+-   Return `False` if the total number of passengers at any point is greater than `capacity`. Otherwise, return `True`.
+"""
+
 from itertools import accumulate
 from typing import List
 

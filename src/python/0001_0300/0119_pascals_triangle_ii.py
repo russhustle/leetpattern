@@ -1,3 +1,7 @@
+"""
+-   Return the `rowIndex`th row of Pascal's triangle.
+"""
+
 from typing import List
 
 

@@ -1,3 +1,7 @@
+"""
+-   Reconstruct the queue.
+"""
+
 from typing import List
 
 

@@ -1,3 +1,7 @@
+"""
+-   Represent the sum of two numbers as a linked list.
+"""
+
 from typing import Optional
 
 from template import ListNode

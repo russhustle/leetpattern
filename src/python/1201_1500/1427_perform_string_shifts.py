@@ -1,3 +1,7 @@
+"""
+-   Calculate the net shift direction and amount by combining all operations, then apply a single rotation to the string using slicing.
+"""
+
 from typing import List
 
 

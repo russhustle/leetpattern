@@ -1,3 +1,7 @@
+"""
+-   Return the correct order of characters in the alien language.
+"""
+
 from collections import defaultdict, deque
 from typing import List
 

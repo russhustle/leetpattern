@@ -40,6 +40,24 @@ def file_not_empty(file_path: str):
     return os.path.getsize(file_path) != 0
 
 
+def extract_docstring(file_path: str) -> str:
+    """Extract docstring from a Python file.
+    Returns empty string if file doesn't exist or has no docstring."""
+    if not os.path.exists(file_path) or not file_not_empty(file_path):
+        return ""
+
+    with open(file_path, "r") as f:
+        content = f.read().strip()
+
+    # Look for triple-quoted docstring at the beginning of the file
+    if content.startswith('"""'):
+        end_idx = content.find('"""', 3)
+        if end_idx != -1:
+            return content[3:end_idx].strip() + "\n\n"
+
+    return ""
+
+
 def create_problem_files(qid: int):
     """Create problem files for a given leetcode question ID"""
     df = pd.read_parquet(os.path.join("utils", "questions.parquet"))
@@ -64,18 +82,29 @@ def create_problem_files(qid: int):
 def code(category: str, row: DataFrame) -> str:
     """Code snippet for the problem"""
     basename = row["basename"]
-    title = f"{row["QID"]}. {row["title"]}"
+    title = f"{row['QID']}. {row['title']}"
+    content = ""
 
     if category == "algorithms":
         py_path = row["python_path"]
         cc_path = row["cpp_path"]
-        content = ""
+
+        # Extract docstring from Python file if it exists
+        py_docstring = extract_docstring(py_path)
+        if py_docstring:
+            content += py_docstring
 
         if file_not_empty(py_path):
             with open(py_path, "r") as f:
-                py_content = f.read()
+                py_content = f.read().strip()
 
-            py_content = f'```python title="{title} - Python Solution"\n{py_content}\n```\n\n'
+            # Remove docstring from the code snippet if it exists
+            if py_content.startswith('"""'):
+                end_idx = py_content.find('"""', 3)
+                if end_idx != -1:
+                    py_content = py_content[end_idx + 3 :].strip()
+
+            py_content = f'\n```python title="{title} - Python Solution"\n{py_content}\n\n```\n\n'
             content += py_content
 
         if file_not_empty(cc_path):

@@ -92,7 +92,6 @@ def make_list_md(config_path):
             row = df.loc[idx]
 
             # file checks
-            check_make_file(row["md_path"])
             if cfg.category == "algorithms":
                 check_make_file(row["python_path"])
                 check_make_file(row["cpp_path"])
@@ -100,11 +99,11 @@ def make_list_md(config_path):
                 check_make_file(row["sql_path"])
                 check_make_file(row["txt_path"])
 
-            content += row["markdown"]
+            # Add the markdown content from row if available
+            if "markdown" in row and row["markdown"]:
+                content += row["markdown"]
 
-            with open(row["md_path"], "r") as f:
-                content += f.read() + "\n"
-
+            # Instead of reading from md_path, we'll use docstrings from Python files
             content += code(cfg.category, row)
 
         with open(md_path, "w") as f:

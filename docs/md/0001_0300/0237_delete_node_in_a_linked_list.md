@@ -1,1 +1,0 @@
--   Delete a node in a singly linked list. You are given only the node to be deleted.

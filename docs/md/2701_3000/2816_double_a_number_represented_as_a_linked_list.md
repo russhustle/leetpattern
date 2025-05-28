@@ -1,1 +1,0 @@
--   Given a number represented as a linked list, double it and return the resulting linked list.

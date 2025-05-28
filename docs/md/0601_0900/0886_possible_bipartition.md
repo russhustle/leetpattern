@@ -1,1 +1,0 @@
--   Determine if a graph can be divided into two groups such that no two nodes of the same group are connected.

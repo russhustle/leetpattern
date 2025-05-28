@@ -1,1 +1,0 @@
--   Implement binary search algorithm.

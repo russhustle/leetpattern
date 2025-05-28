@@ -1,1 +1,0 @@
--   Return the number of points that intersect with cars.

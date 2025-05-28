@@ -1,3 +1,0 @@
--   Allow at most two duplicates.
--   fast pointer: explore the array
--   slow pointer: point to the position to be replaced

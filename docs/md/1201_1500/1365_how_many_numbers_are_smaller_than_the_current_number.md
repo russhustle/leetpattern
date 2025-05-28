@@ -1,1 +1,0 @@
--   For each number in the array, return how many numbers are smaller than it.

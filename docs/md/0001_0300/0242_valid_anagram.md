@@ -1,2 +1,0 @@
--   Return true if an input string is an anagram of another string.
--   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.

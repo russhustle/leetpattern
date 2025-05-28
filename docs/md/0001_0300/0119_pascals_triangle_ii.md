@@ -1,1 +1,0 @@
--   Return the `rowIndex`th row of Pascal's triangle.

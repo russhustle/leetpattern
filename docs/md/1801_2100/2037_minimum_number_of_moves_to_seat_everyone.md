@@ -1,1 +1,0 @@
--   Return the minimum number of moves needed to seat everyone.

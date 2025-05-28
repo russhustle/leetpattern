@@ -1,1 +1,0 @@
--   Return any permutation of the items that satisfies the requirements.

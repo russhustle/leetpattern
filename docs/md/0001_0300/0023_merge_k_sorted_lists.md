@@ -1,2 +1,0 @@
--   Prerequisite: 21. Merge Two Sorted Lists
--   Video explanation: [23. Merge K Sorted Lists - NeetCode](https://youtu.be/q5a5OiGbT6Q?si=SQ2dCvsYQ3LQctPh)

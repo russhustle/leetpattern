@@ -6,7 +6,7 @@ comments: True
 
 ## Table of Contents
 
-- [ ] [760. Find Anagram Mappings](https://leetcode.cn/problems/find-anagram-mappings/) (Easy) 👑
+- [x] [760. Find Anagram Mappings](https://leetcode.cn/problems/find-anagram-mappings/) (Easy) 👑
 - [x] [266. Palindrome Permutation](https://leetcode.cn/problems/palindrome-permutation/) (Easy) 👑
 - [x] [734. Sentence Similarity](https://leetcode.cn/problems/sentence-similarity/) (Easy) 👑
 - [ ] [1165. Single-Row Keyboard](https://leetcode.cn/problems/single-row-keyboard/) (Easy) 👑
@@ -20,6 +20,26 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-anagram-mappings/) | [LeetCode CH](https://leetcode.cn/problems/find-anagram-mappings/) (Easy)
 
 -   Tags: array, hash table
+
+```python title="760. Find Anagram Mappings - Python Solution"
+from typing import List
+
+
+def anagramMappings(nums1: List[int], nums2: List[int]) -> List[int]:
+    hashmap = {val: idx for idx, val in enumerate(nums2)}
+
+    return [hashmap[num] for num in nums1]
+
+
+if __name__ == "__main__":
+    nums1 = [12, 28, 46, 32, 50]
+    nums2 = [50, 12, 32, 46, 28]
+    print(anagramMappings(nums1, nums2))  # [1, 4, 3, 2, 0]
+    nums1 = [1, 2, 3]
+    nums2 = [3, 2, 1]
+    print(anagramMappings(nums1, nums2))  # [2, 1, 0]
+
+```
 
 ## 266. Palindrome Permutation
 

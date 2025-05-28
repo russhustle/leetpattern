@@ -8,8 +8,8 @@ comments: True
 
 - [x] [624. Maximum Distance in Arrays](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 - [x] [280. Wiggle Sort](https://leetcode.cn/problems/wiggle-sort/) (Medium) 👑
-- [ ] [1056. Confusing Number](https://leetcode.cn/problems/confusing-number/) (Easy) 👑
-- [ ] [1427. Perform String Shifts](https://leetcode.cn/problems/perform-string-shifts/) (Easy) 👑
+- [x] [1056. Confusing Number](https://leetcode.cn/problems/confusing-number/) (Easy) 👑
+- [x] [1427. Perform String Shifts](https://leetcode.cn/problems/perform-string-shifts/) (Easy) 👑
 - [ ] [161. One Edit Distance](https://leetcode.cn/problems/one-edit-distance/) (Medium) 👑
 - [ ] [186. Reverse Words in a String II](https://leetcode.cn/problems/reverse-words-in-a-string-ii/) (Medium) 👑
 - [ ] [1055. Shortest Way to Form String](https://leetcode.cn/problems/shortest-way-to-form-string/) (Medium) 👑
@@ -108,11 +108,153 @@ int main() {
 
 -   Tags: math
 
+```python title="1056. Confusing Number - Python Solution"
+def confusingNumber(n: int) -> bool:
+    rotate_map = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
+    original = str(n)
+    rotated = ""
+
+    for ch in reversed(original):
+        if ch not in rotate_map:
+            return False
+        rotated += rotate_map[ch]
+
+    return rotated != original
+
+
+if __name__ == "__main__":
+    print(confusingNumber(6))  # True
+    print(confusingNumber(89))  # True
+    print(confusingNumber(11))  # False
+
+```
+
+```cpp title="1056. Confusing Number - C++ Solution"
+#include <iostream>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+class Solution {
+   public:
+    bool confusingNumber(int n) {
+        static const unordered_map<char, char> rotationMap = {
+            {'0', '0'}, {'1', '1'}, {'6', '9'}, {'8', '8'}, {'9', '6'}};
+
+        string numStr = to_string(n);
+        string rotated;
+        rotated.reserve(numStr.size());
+
+        for (int i = numStr.size() - 1; i >= 0; --i) {
+            char currentDigit = numStr[i];
+
+            auto it = rotationMap.find(currentDigit);
+            if (it == rotationMap.end()) {
+                return false;
+            }
+
+            rotated.push_back(it->second);
+        }
+
+        return rotated != numStr;
+    }
+};
+
+int main() {
+    Solution sol;
+    cout << boolalpha;  // Print boolean values as true/false
+    cout << sol.confusingNumber(6) << endl;    // true
+    cout << sol.confusingNumber(89) << endl;   // true
+    cout << sol.confusingNumber(11) << endl;   // false
+    cout << sol.confusingNumber(25) << endl;   // false
+    cout << sol.confusingNumber(916) << endl;  // true
+    cout << sol.confusingNumber(101) << endl;  // false
+
+    return 0;
+}
+
+```
+
 ## 1427. Perform String Shifts
 
 -   [LeetCode](https://leetcode.com/problems/perform-string-shifts/) | [LeetCode CH](https://leetcode.cn/problems/perform-string-shifts/) (Easy)
 
 -   Tags: array, math, string
+-   Calculate the net shift direction and amount by combining all operations, then apply a single rotation to the string using slicing.
+
+```python title="1427. Perform String Shifts - Python Solution"
+from typing import List
+
+
+def stringShift(s: str, shift: List[List[int]]) -> str:
+    total_shift = 0
+    for direction, amount in shift:
+        if direction == 0:
+            total_shift -= amount
+        else:
+            total_shift += amount
+
+    total_shift %= len(s)
+
+    if total_shift == 0:
+        return s
+
+    if total_shift > 0:
+        return s[-total_shift:] + s[:-total_shift]
+    else:
+        total_shift = abs(total_shift)
+        return s[total_shift:] + s[:total_shift]
+
+```
+
+```cpp title="1427. Perform String Shifts - C++ Solution"
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class Solution {
+   public:
+    string stringShift(string s, vector<vector<int>>& shift) {
+        int total_shift = 0;
+        for (const auto& op : shift) {
+            if (op[0] == 0) {
+                total_shift -= op[1];
+            } else {
+                total_shift += op[1];
+            }
+        }
+
+        int n = s.length();
+        total_shift =
+            ((total_shift % n) + n) % n;  // Handle negative shift properly
+
+        if (total_shift == 0) {
+            return s;
+        }
+
+        return s.substr(n - total_shift) + s.substr(0, n - total_shift);
+    }
+};
+
+int main() {
+    Solution solution;
+
+    string s1 = "abc";
+    vector<vector<int>> shift1 = {{0, 1}, {1, 2}};
+    cout << "Input: s = \"abc\", shift = [[0,1],[1,2]]" << endl;
+    cout << "Output: " << solution.stringShift(s1, shift1) << endl;
+
+    string s2 = "abcdefg";
+    vector<vector<int>> shift2 = {{1, 1}, {1, 1}, {0, 2}, {1, 3}};
+    cout << "Input: s = \"abcdefg\", shift = [[1,1],[1,1],[0,2],[1,3]]" << endl;
+    cout << "Output: " << solution.stringShift(s2, shift2) << endl;
+
+    return 0;
+}
+
+```
 
 ## 161. One Edit Distance
 

@@ -17,7 +17,7 @@ comments: True
 - [ ] [3275. K-th Nearest Obstacle Queries](https://leetcode.cn/problems/k-th-nearest-obstacle-queries/) (Medium)
 - [ ] [2208. Minimum Operations to Halve Array Sum](https://leetcode.cn/problems/minimum-operations-to-halve-array-sum/) (Medium)
 - [ ] [2233. Maximum Product After K Increments](https://leetcode.cn/problems/maximum-product-after-k-increments/) (Medium)
-- [ ] [3296. Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) (Medium)
+- [x] [3296. Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) (Medium)
 - [ ] [1942. The Number of the Smallest Unoccupied Chair](https://leetcode.cn/problems/the-number-of-the-smallest-unoccupied-chair/) (Medium)
 - [ ] [1801. Number of Orders in the Backlog](https://leetcode.cn/problems/number-of-orders-in-the-backlog/) (Medium)
 - [ ] [2406. Divide Intervals Into Minimum Number of Groups](https://leetcode.cn/problems/divide-intervals-into-minimum-number-of-groups/) (Medium)
@@ -244,6 +244,59 @@ print(obj.add(10))  # 5
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) (Medium)
 
 -   Tags: array, math, binary search, greedy, heap priority queue
+
+```python title="3296. Minimum Number of Seconds to Make Mountain Height Zero - Python Solution"
+from bisect import bisect_left
+from heapq import heapify, heapreplace
+from math import isqrt
+from typing import List
+
+
+# Min Heap
+def minNumberOfSecondsMinHeap(
+    mountainHeight: int, workerTimes: List[int]
+) -> int:
+    minHeap = [(t, t, t) for t in workerTimes]
+    heapify(minHeap)
+
+    for _ in range(mountainHeight):
+        nxt, delta, base = minHeap[0]
+        heapreplace(
+            minHeap,
+            (
+                nxt + delta + base,
+                delta + base,
+                base,
+            ),
+        )
+    return nxt
+
+
+# Binary Search Min Answer
+def minNumberOfSecondsBinarySearchMin(
+    mountainHeight: int, workerTimes: List[int]
+) -> int:
+    def check(m: int) -> bool:
+        left_h = mountainHeight
+        for t in workerTimes:
+            left_h -= (isqrt(m // t * 8 + 1) - 1) // 2
+            if left_h <= 0:
+                return True
+        return False
+
+    max_t = max(workerTimes)
+    h = (mountainHeight - 1) // len(workerTimes) + 1
+    return bisect_left(range(max_t * h * (h + 1) // 2), True, 1, key=check)
+
+
+if __name__ == "__main__":
+    mountainHeight = 4
+    workerTimes = [2, 1, 1]
+    assert minNumberOfSecondsMinHeap(mountainHeight, workerTimes) == 3
+    assert minNumberOfSecondsBinarySearchMin(mountainHeight, workerTimes) == 3
+
+```
+
 ## 1942. The Number of the Smallest Unoccupied Chair
 
 -   [LeetCode](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/) | [LeetCode CH](https://leetcode.cn/problems/the-number-of-the-smallest-unoccupied-chair/) (Medium)

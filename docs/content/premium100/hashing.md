@@ -9,7 +9,7 @@ comments: True
 - [x] [760. Find Anagram Mappings](https://leetcode.cn/problems/find-anagram-mappings/) (Easy) 👑
 - [x] [266. Palindrome Permutation](https://leetcode.cn/problems/palindrome-permutation/) (Easy) 👑
 - [x] [734. Sentence Similarity](https://leetcode.cn/problems/sentence-similarity/) (Easy) 👑
-- [ ] [1165. Single-Row Keyboard](https://leetcode.cn/problems/single-row-keyboard/) (Easy) 👑
+- [x] [1165. Single-Row Keyboard](https://leetcode.cn/problems/single-row-keyboard/) (Easy) 👑
 - [ ] [249. Group Shifted Strings](https://leetcode.cn/problems/group-shifted-strings/) (Medium) 👑
 - [ ] [1133. Largest Unique Number](https://leetcode.cn/problems/largest-unique-number/) (Easy) 👑
 - [ ] [1426. Counting Elements](https://leetcode.cn/problems/counting-elements/) (Easy) 👑
@@ -128,6 +128,28 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/single-row-keyboard/) | [LeetCode CH](https://leetcode.cn/problems/single-row-keyboard/) (Easy)
 
 -   Tags: hash table, string
+
+```python title="1165. Single-Row Keyboard - Python Solution"
+def calculateTime(keyboard: str, word: str) -> int:
+    pos = {char: i for i, char in enumerate(keyboard)}
+    cur = 0
+    res = 0
+
+    for ch in word:
+        target = pos[ch]
+        res += abs(target - cur)
+        cur = target
+
+    return res
+
+
+if __name__ == "__main__":
+    keyboard = "pqrstuvwxyzabcdefghijklmno"
+    word = "leetcode"
+    print(calculateTime(keyboard, word))  # 73
+
+```
+
 ## 249. Group Shifted Strings
 
 -   [LeetCode](https://leetcode.com/problems/group-shifted-strings/) | [LeetCode CH](https://leetcode.cn/problems/group-shifted-strings/) (Medium)

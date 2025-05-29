@@ -6,7 +6,7 @@ comments: True
 
 ## Table of Contents
 
-- [ ] [275. H-Index II](https://leetcode.cn/problems/h-index-ii/) (Medium)
+- [x] [275. H-Index II](https://leetcode.cn/problems/h-index-ii/) (Medium)
 - [ ] [2226. Maximum Candies Allocated to K Children](https://leetcode.cn/problems/maximum-candies-allocated-to-k-children/) (Medium)
 - [ ] [2982. Find Longest Special Substring That Occurs Thrice II](https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-ii/) (Medium)
 - [x] [2576. Find the Maximum Number of Marked Indices](https://leetcode.cn/problems/find-the-maximum-number-of-marked-indices/) (Medium)
@@ -28,6 +28,35 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/h-index-ii/) | [LeetCode CH](https://leetcode.cn/problems/h-index-ii/) (Medium)
 
 -   Tags: array, binary search
+- Hint: logarithmic time -- binary search
+
+
+```python title="275. H-Index II - Python Solution"
+from typing import List
+
+
+# Binary Search Max Answer
+def hIndex(citations: List[int]) -> int:
+    n = len(citations)
+    left, right = 0, n - 1
+
+    while left <= right:
+        mid = left + (right - left) // 2
+
+        if citations[mid] >= n - mid:
+            right = mid - 1
+        else:
+            left = mid + 1
+
+    return n - left
+
+
+if __name__ == "__main__":
+    citations = [0, 1, 3, 5, 6]
+    assert hIndex(citations) == 3
+
+```
+
 ## 2226. Maximum Candies Allocated to K Children
 
 -   [LeetCode](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) | [LeetCode CH](https://leetcode.cn/problems/maximum-candies-allocated-to-k-children/) (Medium)

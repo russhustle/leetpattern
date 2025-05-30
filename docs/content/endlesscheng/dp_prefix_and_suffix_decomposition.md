@@ -90,7 +90,7 @@ comments: True
 from typing import List
 
 
-# Sliding Window Variable Size
+# Sliding Window Variable Max
 def longestSubarray(nums: List[int]) -> int:
     zeroCount = 0
     res = 0

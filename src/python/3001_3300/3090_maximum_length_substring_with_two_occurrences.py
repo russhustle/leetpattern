@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 
-# Sliding Window Variable Size
+# Sliding Window Variable Max
 def maximumLengthSubstring(s: str) -> int:
     n = len(s)
     if n <= 2:
@@ -24,5 +24,6 @@ def maximumLengthSubstring(s: str) -> int:
     return res
 
 
-s = "bcbbbcba"
-print(maximumLengthSubstring(s))  # 4
+if __name__ == "__main__":
+    s = "bcbbbcba"
+    assert maximumLengthSubstring(s) == 4

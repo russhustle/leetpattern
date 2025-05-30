@@ -1,23 +1,21 @@
 """
--   Classic sliding window problem. Use a set to keep track of the characters in the current window.
--   Return the length of the longest substring without repeating characters.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wiGpQwVHdE0?si=GlOc9C5w5Vy71iTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+- Classic variable sliding window problem. Use a set to keep track of the characters in the current window.
+- Return the length of the longest substring without repeating characters.
 """
 
 
-# Sliding Window Variable Size
+# Sliding Window Variable Max
 def lengthOfLongestSubstring(s: str) -> int:
     n = len(s)
     if n <= 1:
         return n
 
-    window = set()
     left = 0
     res = 0
+    window = set()
 
     for right in range(n):
-        while s[right] in window:
+        while left < right and s[right] in window:
             window.remove(s[left])
             left += 1
         window.add(s[right])
@@ -26,5 +24,6 @@ def lengthOfLongestSubstring(s: str) -> int:
     return res
 
 
-s = "abcabcbb"
-assert lengthOfLongestSubstring(s) == 3
+if __name__ == "__main__":
+    s = "abcabcbb"
+    assert lengthOfLongestSubstring(s) == 3

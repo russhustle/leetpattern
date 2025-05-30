@@ -15,32 +15,30 @@ comments: True
 - [x] [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) (Medium)
 - [x] [2024. Maximize the Confusion of an Exam](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/) (Medium)
 - [x] [1004. Max Consecutive Ones III](https://leetcode.cn/problems/max-consecutive-ones-iii/) (Medium)
-- [ ] [1658. Minimum Operations to Reduce X to Zero](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/) (Medium)
+- [x] [1658. Minimum Operations to Reduce X to Zero](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/) (Medium)
 
 ## 3. Longest Substring Without Repeating Characters
 
 -   [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) (Medium)
 
 -   Tags: hash table, string, sliding window
--   Classic sliding window problem. Use a set to keep track of the characters in the current window.
--   Return the length of the longest substring without repeating characters.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wiGpQwVHdE0?si=GlOc9C5w5Vy71iTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+- Classic variable sliding window problem. Use a set to keep track of the characters in the current window.
+- Return the length of the longest substring without repeating characters.
 
 
 ```python title="3. Longest Substring Without Repeating Characters - Python Solution"
-# Sliding Window Variable Size
+# Sliding Window Variable Max
 def lengthOfLongestSubstring(s: str) -> int:
     n = len(s)
     if n <= 1:
         return n
 
-    window = set()
     left = 0
     res = 0
+    window = set()
 
     for right in range(n):
-        while s[right] in window:
+        while left < right and s[right] in window:
             window.remove(s[left])
             left += 1
         window.add(s[right])
@@ -49,8 +47,9 @@ def lengthOfLongestSubstring(s: str) -> int:
     return res
 
 
-s = "abcabcbb"
-assert lengthOfLongestSubstring(s) == 3
+if __name__ == "__main__":
+    s = "abcabcbb"
+    assert lengthOfLongestSubstring(s) == 3
 
 ```
 
@@ -102,7 +101,7 @@ int main() {
 from collections import defaultdict
 
 
-# Sliding Window Variable Size
+# Sliding Window Variable Max
 def maximumLengthSubstring(s: str) -> int:
     n = len(s)
     if n <= 2:
@@ -125,8 +124,9 @@ def maximumLengthSubstring(s: str) -> int:
     return res
 
 
-s = "bcbbbcba"
-print(maximumLengthSubstring(s))  # 4
+if __name__ == "__main__":
+    s = "bcbbbcba"
+    assert maximumLengthSubstring(s) == 4
 
 ```
 
@@ -140,7 +140,7 @@ print(maximumLengthSubstring(s))  # 4
 from typing import List
 
 
-# Sliding Window Variable Size
+# Sliding Window Variable Max
 def longestSubarray(nums: List[int]) -> int:
     zeroCount = 0
     res = 0
@@ -421,3 +421,41 @@ print(longestOnes(nums, k))  # 6
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/) (Medium)
 
 -   Tags: array, hash table, binary search, sliding window, prefix sum
+
+```python title="1658. Minimum Operations to Reduce X to Zero - Python Solution"
+from typing import List
+
+
+# Sliding Window Variable Max
+def minOperations(nums: List[int], x: int) -> int:
+    window = 0
+    total = sum(nums)
+    target = total - x
+    n = len(nums)
+    left = 0
+    maxLen = 0
+
+    if target < 0:
+        return -1
+    if target == 0:
+        return n
+
+    for right in range(n):
+        window += nums[right]
+
+        while left <= right and window > target:
+            window -= nums[left]
+            left += 1
+
+        if window == target:
+            maxLen = max(maxLen, right - left + 1)
+
+    return -1 if not maxLen else n - maxLen
+
+
+if __name__ == "__main__":
+    nums = [1, 1, 4, 2, 3]
+    x = 5
+    assert minOperations(nums, x) == 2
+
+```

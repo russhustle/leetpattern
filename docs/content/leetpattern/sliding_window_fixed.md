@@ -117,6 +117,8 @@ print(containsNearbyDuplicateWindow(nums, k))  # True
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
 
 -   Tags: string, sliding window
+- [Templace tutorial by 灵山茶艾府](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/2809359/tao-lu-jiao-ni-jie-jue-ding-chang-hua-ch-fzfo)
+
 
 ```python title="1456. Maximum Number of Vowels in a Substring of Given Length - Python Solution"
 # Sliding Window Fixed Size
@@ -160,10 +162,36 @@ def maxVowels2(s: str, k: int) -> int:
     return res
 
 
-s = "abciiidef"
-k = 3
-print(maxVowels1(s, k))  # 3
-print(maxVowels2(s, k))  # 3
+# Template: Sliding Window Fixed Size
+def templateMaxVowels(s: str, k: int) -> int:
+    res, cnt = 0, 0
+
+    for idx, ch in enumerate(s):
+        # ADD - add new element to window
+        if ch in "aeiou":
+            cnt += 1
+
+        # FORM - continue until window is fully formed
+        if idx < k - 1:
+            continue
+
+        # UPDATE - update result with current window
+        res = max(res, cnt)
+
+        # REMOVE - remove element leaving the window
+        if s[idx - k + 1] in "aeiou":
+            cnt -= 1
+
+    return res
+
+
+if __name__ == "__main__":
+    s = "abciiidef"
+    k = 3
+    assert maxVowels1(s, k) == 3
+    assert maxVowels2(s, k) == 3
+    assert templateMaxVowels(s, k) == 3
+    print("All tests passed!")
 
 ```
 

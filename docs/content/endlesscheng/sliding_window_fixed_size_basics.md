@@ -16,17 +16,19 @@ comments: True
 - [x] [1423. Maximum Points You Can Obtain from Cards](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/) (Medium)
 - [x] [1052. Grumpy Bookstore Owner](https://leetcode.cn/problems/grumpy-bookstore-owner/) (Medium)
 - [x] [1652. Defuse the Bomb](https://leetcode.cn/problems/defuse-the-bomb/) (Easy)
-- [ ] [1176. Diet Plan Performance](https://leetcode.cn/problems/diet-plan-performance/) (Easy) 👑
-- [ ] [1100. Find K-Length Substrings With No Repeated Characters](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium) 👑
-- [ ] [1852. Distinct Numbers in Each Subarray](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium) 👑
+- [x] [1176. Diet Plan Performance](https://leetcode.cn/problems/diet-plan-performance/) (Easy) 👑
+- [x] [1100. Find K-Length Substrings With No Repeated Characters](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium) 👑
+- [x] [1852. Distinct Numbers in Each Subarray](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium) 👑
 - [x] [1151. Minimum Swaps to Group All 1's Together](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium) 👑
-- [ ] [2107. Number of Unique Flavors After Sharing K Candies](https://leetcode.cn/problems/number-of-unique-flavors-after-sharing-k-candies/) (Medium) 👑
+- [x] [2107. Number of Unique Flavors After Sharing K Candies](https://leetcode.cn/problems/number-of-unique-flavors-after-sharing-k-candies/) (Medium) 👑
 
 ## 1456. Maximum Number of Vowels in a Substring of Given Length
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) (Medium)
 
 -   Tags: string, sliding window
+- [Templace tutorial by 灵山茶艾府](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/2809359/tao-lu-jiao-ni-jie-jue-ding-chang-hua-ch-fzfo)
+
 
 ```python title="1456. Maximum Number of Vowels in a Substring of Given Length - Python Solution"
 # Sliding Window Fixed Size
@@ -70,10 +72,36 @@ def maxVowels2(s: str, k: int) -> int:
     return res
 
 
-s = "abciiidef"
-k = 3
-print(maxVowels1(s, k))  # 3
-print(maxVowels2(s, k))  # 3
+# Template: Sliding Window Fixed Size
+def templateMaxVowels(s: str, k: int) -> int:
+    res, cnt = 0, 0
+
+    for idx, ch in enumerate(s):
+        # ADD - add new element to window
+        if ch in "aeiou":
+            cnt += 1
+
+        # FORM - continue until window is fully formed
+        if idx < k - 1:
+            continue
+
+        # UPDATE - update result with current window
+        res = max(res, cnt)
+
+        # REMOVE - remove element leaving the window
+        if s[idx - k + 1] in "aeiou":
+            cnt -= 1
+
+    return res
+
+
+if __name__ == "__main__":
+    s = "abciiidef"
+    k = 3
+    assert maxVowels1(s, k) == 3
+    assert maxVowels2(s, k) == 3
+    assert templateMaxVowels(s, k) == 3
+    print("All tests passed!")
 
 ```
 
@@ -450,16 +478,129 @@ print(decrypt(code, k))  # [12, 5, 6, 13]
 -   [LeetCode](https://leetcode.com/problems/diet-plan-performance/) | [LeetCode CH](https://leetcode.cn/problems/diet-plan-performance/) (Easy)
 
 -   Tags: array, sliding window
+
+```python title="1176. Diet Plan Performance - Python Solution"
+from typing import List
+
+
+# Sliding Window Fixed Size
+def dietPlanPerformance(
+    calories: List[int], k: int, lower: int, upper: int
+) -> int:
+    res, T = 0, 0
+
+    for i in range(len(calories)):
+        T += calories[i]
+
+        if i < k - 1:
+            continue
+
+        if T < lower:
+            res -= 1
+        elif T > upper:
+            res += 1
+
+        T -= calories[i - k + 1]
+
+    return res
+
+
+if __name__ == "__main__":
+    calories = [1, 2, 3, 4, 5]
+    k = 1
+    lower = 3
+    upper = 3
+
+    assert dietPlanPerformance(calories, k, lower, upper) == 0
+
+```
+
 ## 1100. Find K-Length Substrings With No Repeated Characters
 
 -   [LeetCode](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [LeetCode CH](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
 
 -   Tags: hash table, string, sliding window
+
+```python title="1100. Find K-Length Substrings With No Repeated Characters - Python Solution"
+from collections import defaultdict
+
+
+# Sliding Window Fixed Size
+def numKLenSubstrNoRepeats(s: str, k: int) -> int:
+    n = len(s)
+    if k > n:
+        return 0
+
+    counts = defaultdict(int)
+    res = 0
+
+    for i, ch in enumerate(s):
+        # add to the window
+        counts[ch] += 1
+
+        # form a valid window
+        if i < k - 1:
+            continue
+
+        # update
+        res += 1 if len(counts) == k else 0
+
+        # remove from the window
+        first = i - k + 1
+        counts[s[first]] -= 1
+        if counts[s[first]] == 0:
+            del counts[s[first]]
+
+    return res
+
+
+if __name__ == "__main__":
+    s = "havefunonleetcode"
+    k = 5
+
+    assert numKLenSubstrNoRepeats(s, k) == 6
+
+```
+
 ## 1852. Distinct Numbers in Each Subarray
 
 -   [LeetCode](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [LeetCode CH](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium)
 
 -   Tags: array, hash table, sliding window
+
+```python title="1852. Distinct Numbers in Each Subarray - Python Solution"
+from collections import defaultdict
+from typing import List
+
+
+# Sliding Window Fixed Size
+def distinctNumbers(nums: List[int], k: int) -> List[int]:
+    res = []
+    counts = defaultdict(int)
+
+    for right in range(len(nums)):
+        counts[nums[right]] += 1  # add
+
+        if right < k - 1:  # form
+            continue
+
+        res.append(len(counts))  # update
+
+        left = right - k + 1  # remove
+        counts[nums[left]] -= 1
+        if counts[nums[left]] == 0:
+            del counts[nums[left]]
+
+    return res
+
+
+if __name__ == "__main__":
+    nums = [1, 2, 3, 2, 2, 1, 3]
+    k = 3
+    assert distinctNumbers(nums, k) == [3, 2, 2, 2, 3]
+
+```
+
 ## 1151. Minimum Swaps to Group All 1's Together
 
 -   [LeetCode](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [LeetCode CH](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
@@ -503,3 +644,42 @@ print(minSwaps(data))  # 1
 -   [LeetCode](https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/) | [LeetCode CH](https://leetcode.cn/problems/number-of-unique-flavors-after-sharing-k-candies/) (Medium)
 
 -   Tags: array, hash table, sliding window
+
+```python title="2107. Number of Unique Flavors After Sharing K Candies - Python Solution"
+from collections import Counter
+from typing import List
+
+
+# Sliding Window Fixed Size
+def shareCandies(candies: List[int], k: int) -> int:
+    res = 0
+    n = len(candies)
+    counts = Counter(candies)
+
+    if k >= n:
+        return 0
+    if k == 0:
+        return len(counts)
+
+    for right in range(n):
+        counts[candies[right]] -= 1  # remove
+        if counts[candies[right]] == 0:
+            del counts[candies[right]]
+
+        if right < k - 1:  # form the window
+            continue
+
+        res = max(res, len(counts))  # update
+
+        left = right - k + 1  # add
+        counts[candies[left]] += 1
+
+    return res
+
+
+if __name__ == "__main__":
+    candies = [1, 2, 2, 3, 4, 3]
+    k = 3
+    assert shareCandies(candies, k) == 3
+
+```

@@ -12,5 +12,6 @@ def canAttendMeetings(intervals: List[List[int]]) -> bool:
     return True
 
 
-intervals = [[0, 30], [5, 10], [15, 20]]
-print(canAttendMeetings(intervals))  # False
+if __name__ == "__main__":
+    intervals = [[0, 30], [5, 10], [15, 20]]
+    assert not canAttendMeetings(intervals)

@@ -1,0 +1,33 @@
+from typing import List
+
+
+def validWordSquare(words: List[str]) -> bool:
+    n = len(words)
+
+    for i in range(n):
+        for j in range(len(words[i])):
+            if j >= n or i >= len(words[j]) or words[i][j] != words[j][i]:
+                return False
+    return True
+
+
+# Zip
+def validWordSquareZip(words: List[str]) -> bool:
+    max_len = max(len(word) for word in words)
+    padded_words = [word.ljust(max_len) for word in words]
+    transposed = ["".join(col) for col in zip(*padded_words)]
+    return padded_words == transposed
+
+
+if __name__ == "__main__":
+    words1 = ["abcd", "bnrt", "crmy", "dtye"]
+    assert validWordSquare(words1)
+    assert validWordSquareZip(words1)
+
+    words2 = ["abcd", "bnrt", "crm", "dt"]
+    assert validWordSquare(words2)
+    assert validWordSquareZip(words2)
+
+    words3 = ["ball", "area", "read", "lady"]
+    assert not validWordSquare(words3)
+    assert not validWordSquareZip(words3)

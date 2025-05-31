@@ -6,7 +6,7 @@ comments: True
 
 ## Table of Contents
 
-- [ ] [163. Missing Ranges](https://leetcode.cn/problems/missing-ranges/) (Easy) 👑
+- [x] [163. Missing Ranges](https://leetcode.cn/problems/missing-ranges/) (Easy) 👑
 - [x] [252. Meeting Rooms](https://leetcode.cn/problems/meeting-rooms/) (Easy) 👑
 - [x] [253. Meeting Rooms II](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium) 👑
 - [ ] [616. Add Bold Tag in String](https://leetcode.cn/problems/add-bold-tag-in-string/) (Medium) 👑
@@ -17,6 +17,67 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/missing-ranges/) | [LeetCode CH](https://leetcode.cn/problems/missing-ranges/) (Easy)
 
 -   Tags: array
+
+```python title="163. Missing Ranges - Python Solution"
+from typing import List
+
+
+def findMissingRanges(
+    nums: List[int], lower: int, upper: int
+) -> List[List[int]]:
+    n = len(nums)
+    res = []
+    if n == 0:
+        return [[lower, upper]]
+
+    # start
+    if nums[0] > lower:
+        res.append([lower, nums[0] - 1])
+
+    # middle
+    for i in range(n - 1):
+        if nums[i] + 1 < nums[i + 1]:
+            res.append([nums[i] + 1, nums[i + 1] - 1])
+
+    # end
+    if nums[-1] < upper:
+        res.append([nums[-1] + 1, upper])
+
+    return res
+
+
+def findMissingRangesCompact(
+    nums: List[int], lower: int, upper: int
+) -> List[List[int]]:
+    res = []
+
+    for num in nums + [upper + 1]:
+        if num > lower:
+            res.append([lower, num - 1])
+        lower = num + 1
+
+    return res
+
+
+if __name__ == "__main__":
+    nums = [0, 1, 3, 50, 75]
+    lower = 0
+    upper = 99
+    assert findMissingRanges(nums, lower, upper) == [
+        [2, 2],
+        [4, 49],
+        [51, 74],
+        [76, 99],
+    ]
+    assert findMissingRangesCompact(nums, lower, upper) == [
+        [2, 2],
+        [4, 49],
+        [51, 74],
+        [76, 99],
+    ]
+
+```
+
 ## 252. Meeting Rooms
 
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms/) (Easy)
@@ -38,8 +99,9 @@ def canAttendMeetings(intervals: List[List[int]]) -> bool:
     return True
 
 
-intervals = [[0, 30], [5, 10], [15, 20]]
-print(canAttendMeetings(intervals))  # False
+if __name__ == "__main__":
+    intervals = [[0, 30], [5, 10], [15, 20]]
+    assert not canAttendMeetings(intervals)
 
 ```
 
@@ -48,6 +110,8 @@ print(canAttendMeetings(intervals))  # False
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms-ii/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms-ii/) (Medium)
 
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
+- Given an array of meeting time `intervals` where `intervals[i] = [start_i, end_i]`, return the minimum number of conference rooms required.
+
 
 ```python title="253. Meeting Rooms II - Python Solution"
 import heapq
@@ -60,18 +124,19 @@ def minMeetingRooms(intervals: List[List[int]]) -> int:
         return 0
 
     intervals.sort(key=lambda x: x[0])
-    heap = [intervals[0][1]]
+    minHeap = [intervals[0][1]]
 
     for i in range(1, len(intervals)):
-        if intervals[i][0] >= heap[0]:
-            heapq.heappop(heap)
-        heapq.heappush(heap, intervals[i][1])
+        if intervals[i][0] >= minHeap[0]:
+            heapq.heappop(minHeap)
+        heapq.heappush(minHeap, intervals[i][1])
 
-    return len(heap)
+    return len(minHeap)
 
 
-intervals = [[0, 30], [5, 10], [15, 20]]
-print(minMeetingRooms(intervals))  # 2
+if __name__ == "__main__":
+    intervals = [[0, 30], [5, 10], [15, 20]]
+    assert minMeetingRooms(intervals) == 2
 
 ```
 

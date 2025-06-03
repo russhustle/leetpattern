@@ -9,13 +9,14 @@ comments: True
 - [ ] [2652. Sum Multiples](https://leetcode.cn/problems/sum-multiples/) (Easy)
 - [ ] [878. Nth Magical Number](https://leetcode.cn/problems/nth-magical-number/) (Hard)
 - [ ] [1201. Ugly Number III](https://leetcode.cn/problems/ugly-number-iii/) (Medium)
-- [ ] [2929. Distribute Candies Among Children II](https://leetcode.cn/problems/distribute-candies-among-children-ii/) (Medium)
+- [x] [2928. Distribute Candies Among Children I](https://leetcode.cn/problems/distribute-candies-among-children-i/) (Easy)
+- [x] [2929. Distribute Candies Among Children II](https://leetcode.cn/problems/distribute-candies-among-children-ii/) (Medium)
 - [ ] [2930. Number of Strings Which Can Be Rearranged to Contain Substring](https://leetcode.cn/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/) (Medium)
 - [ ] [2513. Minimize the Maximum of Two Arrays](https://leetcode.cn/problems/minimize-the-maximum-of-two-arrays/) (Medium)
 - [ ] [3116. Kth Smallest Amount With Single Denomination Combination](https://leetcode.cn/problems/kth-smallest-amount-with-single-denomination-combination/) (Hard)
 - [ ] [3130. Find All Possible Stable Binary Arrays II](https://leetcode.cn/problems/find-all-possible-stable-binary-arrays-ii/) (Hard)
 - [ ] [3336. Find the Number of Subsequences With Equal GCD](https://leetcode.cn/problems/find-the-number-of-subsequences-with-equal-gcd/) (Hard)
-- [ ] [2927. Distribute Candies Among Children III](https://leetcode.cn/problems/distribute-candies-among-children-iii/) (Hard) 👑
+- [x] [2927. Distribute Candies Among Children III](https://leetcode.cn/problems/distribute-candies-among-children-iii/) (Hard) 👑
 
 ## 2652. Sum Multiples
 
@@ -32,11 +33,56 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/ugly-number-iii/) | [LeetCode CH](https://leetcode.cn/problems/ugly-number-iii/) (Medium)
 
 -   Tags: math, binary search, combinatorics, number theory
+## 2928. Distribute Candies Among Children I
+
+-   [LeetCode](https://leetcode.com/problems/distribute-candies-among-children-i/) | [LeetCode CH](https://leetcode.cn/problems/distribute-candies-among-children-i/) (Easy)
+
+-   Tags: math, combinatorics, enumeration
+
+```python title="2928. Distribute Candies Among Children I - Python Solution"
+def distributeCandies(n: int, limit: int) -> int:
+    def c2(n: int) -> int:
+        return n * (n - 1) // 2 if n > 1 else 0
+
+    return (
+        c2(n + 2)
+        - 3 * c2(n - limit + 1)
+        + 3 * c2(n - 2 * limit)
+        - c2(n - 3 * limit - 1)
+    )
+
+
+if __name__ == "__main__":
+    assert distributeCandies(5, 2) == 3
+    assert distributeCandies(3, 3) == 10
+
+```
+
 ## 2929. Distribute Candies Among Children II
 
 -   [LeetCode](https://leetcode.com/problems/distribute-candies-among-children-ii/) | [LeetCode CH](https://leetcode.cn/problems/distribute-candies-among-children-ii/) (Medium)
 
 -   Tags: math, combinatorics, enumeration
+
+```python title="2929. Distribute Candies Among Children II - Python Solution"
+def distributeCandies(n: int, limit: int) -> int:
+    def c2(n: int) -> int:
+        return n * (n - 1) // 2 if n > 1 else 0
+
+    return (
+        c2(n + 2)
+        - 3 * c2(n - limit + 1)
+        + 3 * c2(n - 2 * limit)
+        - c2(n - 3 * limit - 1)
+    )
+
+
+if __name__ == "__main__":
+    assert distributeCandies(5, 2) == 3
+    assert distributeCandies(3, 3) == 10
+
+```
+
 ## 2930. Number of Strings Which Can Be Rearranged to Contain Substring
 
 -   [LeetCode](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/) | [LeetCode CH](https://leetcode.cn/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/) (Medium)
@@ -67,3 +113,22 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/distribute-candies-among-children-iii/) | [LeetCode CH](https://leetcode.cn/problems/distribute-candies-among-children-iii/) (Hard)
 
 -   Tags: math, combinatorics
+
+```python title="2927. Distribute Candies Among Children III - Python Solution"
+def distributeCandies(n: int, limit: int) -> int:
+    def c2(n: int) -> int:
+        return n * (n - 1) // 2 if n > 1 else 0
+
+    return (
+        c2(n + 2)
+        - 3 * c2(n - limit + 1)
+        + 3 * c2(n - 2 * limit)
+        - c2(n - 3 * limit - 1)
+    )
+
+
+if __name__ == "__main__":
+    assert distributeCandies(5, 2) == 3
+    assert distributeCandies(3, 3) == 10
+
+```

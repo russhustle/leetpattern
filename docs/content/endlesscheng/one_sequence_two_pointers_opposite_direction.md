@@ -9,7 +9,7 @@ comments: True
 - [x] [344. Reverse String](https://leetcode.cn/problems/reverse-string/) (Easy)
 - [x] [125. Valid Palindrome](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 - [x] [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/) (Medium)
-- [ ] [2105. Watering Plants II](https://leetcode.cn/problems/watering-plants-ii/) (Medium)
+- [x] [2105. Watering Plants II](https://leetcode.cn/problems/watering-plants-ii/) (Medium)
 - [x] [977. Squares of a Sorted Array](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
 - [ ] [658. Find K Closest Elements](https://leetcode.cn/problems/find-k-closest-elements/) (Medium)
 - [ ] [1471. The k Strongest Values in an Array](https://leetcode.cn/problems/the-k-strongest-values-in-an-array/) (Medium)
@@ -131,6 +131,45 @@ print(minimumLength("aabccabba"))  # 3
 -   [LeetCode](https://leetcode.com/problems/watering-plants-ii/) | [LeetCode CH](https://leetcode.cn/problems/watering-plants-ii/) (Medium)
 
 -   Tags: array, two pointers, simulation
+
+```python title="2105. Watering Plants II - Python Solution"
+from typing import List
+
+
+# Right Left Pointers
+def minimumRefill(plants: List[int], capacityA: int, capacityB: int) -> int:
+    i, j = 0, len(plants) - 1
+    a, b = capacityA, capacityB
+    res = 0
+
+    while i < j:
+        if a < plants[i]:
+            res += 1
+            a = capacityA
+        if b < plants[j]:
+            res += 1
+            b = capacityB
+
+        a -= plants[i]
+        b -= plants[j]
+        i += 1
+        j -= 1
+
+    if i == j and max(a, b) < plants[i]:
+        res += 1
+
+    return res
+
+
+if __name__ == "__main__":
+    assert minimumRefill([2, 2, 3, 3], 5, 5) == 1
+    assert minimumRefill([2, 2, 3, 3], 3, 4) == 2
+    assert minimumRefill([5, 5], 10, 10) == 0
+    assert minimumRefill([1, 2, 4, 4], 4, 4) == 1
+    assert minimumRefill([1, 1, 1], 2, 2) == 0
+
+```
+
 ## 977. Squares of a Sorted Array
 
 -   [LeetCode](https://leetcode.com/problems/squares-of-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)

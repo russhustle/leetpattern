@@ -14,9 +14,9 @@ comments: True
 - [x] [624. Maximum Distance in Arrays](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 - [x] [2815. Max Pair Sum in an Array](https://leetcode.cn/problems/max-pair-sum-in-an-array/) (Easy)
 - [x] [2342. Max Sum of a Pair With Equal Sum of Digits](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) (Medium)
-- [ ] [1679. Max Number of K-Sum Pairs](https://leetcode.cn/problems/max-number-of-k-sum-pairs/) (Medium)
-- [ ] [2260. Minimum Consecutive Cards to Pick Up](https://leetcode.cn/problems/minimum-consecutive-cards-to-pick-up/) (Medium)
-- [ ] [1010. Pairs of Songs With Total Durations Divisible by 60](https://leetcode.cn/problems/pairs-of-songs-with-total-durations-divisible-by-60/) (Medium)
+- [x] [1679. Max Number of K-Sum Pairs](https://leetcode.cn/problems/max-number-of-k-sum-pairs/) (Medium)
+- [x] [2260. Minimum Consecutive Cards to Pick Up](https://leetcode.cn/problems/minimum-consecutive-cards-to-pick-up/) (Medium)
+- [x] [1010. Pairs of Songs With Total Durations Divisible by 60](https://leetcode.cn/problems/pairs-of-songs-with-total-durations-divisible-by-60/) (Medium)
 - [ ] [3185. Count Pairs That Form a Complete Day II](https://leetcode.cn/problems/count-pairs-that-form-a-complete-day-ii/) (Medium)
 - [ ] [2506. Count Pairs Of Similar Strings](https://leetcode.cn/problems/count-pairs-of-similar-strings/) (Easy)
 - [ ] [2748. Number of Beautiful Pairs](https://leetcode.cn/problems/number-of-beautiful-pairs/) (Easy)
@@ -446,16 +446,106 @@ print(maximumSum(nums))  # 54
 -   [LeetCode](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | [LeetCode CH](https://leetcode.cn/problems/max-number-of-k-sum-pairs/) (Medium)
 
 -   Tags: array, hash table, two pointers, sorting
+
+```python title="1679. Max Number of K-Sum Pairs - Python Solution"
+from collections import defaultdict
+from typing import List
+
+
+# Enumerate Right Maintain Left
+def maxOperations(nums: List[int], k: int) -> int:
+    counts = defaultdict(int)
+
+    res = 0
+    for num in nums:
+        if num >= k:
+            continue
+
+        j = k - num
+        if j in counts:
+            res += 1
+            counts[j] -= 1
+            if counts[j] == 0:
+                del counts[j]
+        else:
+            counts[num] += 1
+
+    return res
+
+
+if __name__ == "__main__":
+    assert maxOperations([1, 2, 3, 4], 5) == 2
+    assert maxOperations([3, 1, 3, 4, 3], 6) == 1
+
+```
+
 ## 2260. Minimum Consecutive Cards to Pick Up
 
 -   [LeetCode](https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/) | [LeetCode CH](https://leetcode.cn/problems/minimum-consecutive-cards-to-pick-up/) (Medium)
 
 -   Tags: array, hash table, sliding window
+
+```python title="2260. Minimum Consecutive Cards to Pick Up - Python Solution"
+from typing import List
+
+
+# Enumerate Right Maintain Left
+def minimumCardPickup(cards: List[int]) -> int:
+    n = len(cards)
+    res = n + 1
+    last = {}
+
+    for idx, card in enumerate(cards):
+        if card in last:
+            res = min(res, idx - last[card] + 1)
+        last[card] = idx
+
+    return res if res != n + 1 else -1
+
+
+if __name__ == "__main__":
+    assert minimumCardPickup([1, 2, 3, 4, 5]) == -1
+    assert minimumCardPickup([1, 2, 3, 2, 3]) == 3
+
+```
+
 ## 1010. Pairs of Songs With Total Durations Divisible by 60
 
 -   [LeetCode](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [LeetCode CH](https://leetcode.cn/problems/pairs-of-songs-with-total-durations-divisible-by-60/) (Medium)
 
 -   Tags: array, hash table, counting
+
+```python title="1010. Pairs of Songs With Total Durations Divisible by 60 - Python Solution"
+from collections import defaultdict
+from typing import List
+
+
+# Enumerate Right Maintain Left
+def numPairsDivisibleBy60(time: List[int]) -> int:
+    if not time or len(time) < 2:
+        return 0
+
+    count = defaultdict(int)
+    res = 0
+    time = [t % 60 for t in time]
+
+    for t in time:
+        if t == 0:
+            res += count[0]
+        else:
+            res += count[60 - t]
+        count[t] += 1
+
+    return res
+
+
+if __name__ == "__main__":
+    assert numPairsDivisibleBy60([30, 20, 150, 100, 40]) == 3
+    assert numPairsDivisibleBy60([60, 60, 60]) == 3
+    assert numPairsDivisibleBy60([10, 50, 30, 20, 40]) == 2
+
+```
+
 ## 3185. Count Pairs That Form a Complete Day II
 
 -   [LeetCode](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/) | [LeetCode CH](https://leetcode.cn/problems/count-pairs-that-form-a-complete-day-ii/) (Medium)

@@ -8,8 +8,8 @@ comments: True
 
 - [x] [1557. Minimum Number of Vertices to Reach All Nodes](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/) (Medium)
 - [x] [210. Course Schedule II](https://leetcode.cn/problems/course-schedule-ii/) (Medium)
-- [ ] [1462. Course Schedule IV](https://leetcode.cn/problems/course-schedule-iv/) (Medium)
-- [ ] [2115. Find All Possible Recipes from Given Supplies](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) (Medium)
+- [x] [1462. Course Schedule IV](https://leetcode.cn/problems/course-schedule-iv/) (Medium)
+- [x] [2115. Find All Possible Recipes from Given Supplies](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) (Medium)
 - [ ] [851. Loud and Rich](https://leetcode.cn/problems/loud-and-rich/) (Medium)
 - [x] [310. Minimum Height Trees](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 - [ ] [2392. Build a Matrix With Conditions](https://leetcode.cn/problems/build-a-matrix-with-conditions/) (Hard)
@@ -223,11 +223,104 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/course-schedule-iv/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-iv/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
+
+```python title="1462. Course Schedule IV - Python Solution"
+from collections import defaultdict, deque
+from typing import List
+
+
+# Topological Sort
+def checkIfPrerequisite(
+    numCourses: int, prerequisites: List[List[int]], queries: List[List[int]]
+) -> List[bool]:
+    graph = defaultdict(list)
+    indegree = defaultdict(int)
+    record = defaultdict(set)  # store all prerequisites for each course
+
+    for a, b in prerequisites:
+        graph[a].append(b)
+        indegree[b] += 1
+
+    q = deque([i for i in range(numCourses) if indegree[i] == 0])
+
+    while q:
+        cur = q.popleft()
+        for nxt in graph[cur]:
+            record[nxt].add(cur)
+            record[nxt].update(record[cur])
+
+            indegree[nxt] -= 1
+            if indegree[nxt] == 0:
+                q.append(nxt)
+
+    res = []
+    for u, v in queries:
+        res.append(u in record[v])
+    return res
+
+
+if __name__ == "__main__":
+    numCourses = 2
+    prerequisites = [[1, 0]]
+    queries = [[0, 1], [1, 0]]
+    assert checkIfPrerequisite(numCourses, prerequisites, queries) == [
+        False,
+        True,
+    ]
+    numCourses = 3
+    prerequisites = [[1, 2], [1, 0], [2, 0]]
+    queries = [[1, 0], [1, 2]]
+    assert checkIfPrerequisite(numCourses, prerequisites, queries) == [
+        True,
+        True,
+    ]
+
+```
+
 ## 2115. Find All Possible Recipes from Given Supplies
 
 -   [LeetCode](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) | [LeetCode CH](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) (Medium)
 
 -   Tags: array, hash table, string, graph, topological sort
+
+```python title="2115. Find All Possible Recipes from Given Supplies - Python Solution"
+from collections import defaultdict, deque
+from typing import List
+
+
+# Topological Sort
+def findAllRecipes(
+    recipes: List[str], ingredients: List[List[str]], supplies: List[str]
+) -> List[str]:
+    graph = defaultdict(list)
+    indegree = defaultdict(int)
+
+    for a, b in zip(recipes, ingredients):
+        for i in b:
+            graph[i].append(a)
+        indegree[a] = len(b)
+
+    res = []
+    q = deque(supplies)
+
+    while q:
+        cur = q.popleft()
+        for nxt in graph[cur]:
+            indegree[nxt] -= 1
+            if indegree[nxt] == 0:
+                q.append(nxt)
+                res.append(nxt)
+    return res
+
+
+if __name__ == "__main__":
+    recipes = ["bread"]
+    ingredients = [["yeast", "flour"]]
+    supplies = ["yeast", "flour", "corn"]
+    assert findAllRecipes(recipes, ingredients, supplies) == ["bread"]
+
+```
+
 ## 851. Loud and Rich
 
 -   [LeetCode](https://leetcode.com/problems/loud-and-rich/) | [LeetCode CH](https://leetcode.cn/problems/loud-and-rich/) (Medium)

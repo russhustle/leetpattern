@@ -6,7 +6,7 @@ comments: True
 
 ## Table of Contents
 
-- [ ] [1626. Best Team With No Conflicts](https://leetcode.cn/problems/best-team-with-no-conflicts/) (Medium)
+- [x] [1626. Best Team With No Conflicts](https://leetcode.cn/problems/best-team-with-no-conflicts/) (Medium)
 - [x] [673. Number of Longest Increasing Subsequence](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) (Medium)
 - [x] [354. Russian Doll Envelopes](https://leetcode.cn/problems/russian-doll-envelopes/) (Hard)
 - [ ] [1691. Maximum Height by Stacking Cuboids ](https://leetcode.cn/problems/maximum-height-by-stacking-cuboids/) (Hard)
@@ -22,6 +22,33 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/best-team-with-no-conflicts/) | [LeetCode CH](https://leetcode.cn/problems/best-team-with-no-conflicts/) (Medium)
 
 -   Tags: array, dynamic programming, sorting
+
+```python title="1626. Best Team With No Conflicts - Python Solution"
+from typing import List
+
+
+# DP - LIS
+def bestTeamScore(scores: List[int], ages: List[int]) -> int:
+    n = len(scores)
+    pairs = sorted(zip(scores, ages))  # sort
+    dp = [0 for _ in range(n)]
+
+    # LIS
+    for i in range(n):
+        for j in range(i):
+            if pairs[i][1] >= pairs[j][1]:
+                dp[i] = max(dp[i], dp[j])
+        dp[i] += pairs[i][0]
+
+    return max(dp)
+
+
+if __name__ == "__main__":
+    assert bestTeamScore([1, 3, 5, 10, 15], [1, 2, 3, 4, 5]) == 34
+    assert bestTeamScore([4, 5, 6, 5], [2, 1, 2, 1]) == 16
+
+```
+
 ## 673. Number of Longest Increasing Subsequence
 
 -   [LeetCode](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) (Medium)

@@ -12,7 +12,7 @@ comments: True
 - [x] [872. Leaf-Similar Trees](https://leetcode.cn/problems/leaf-similar-trees/) (Easy)
 - [x] [404. Sum of Left Leaves](https://leetcode.cn/problems/sum-of-left-leaves/) (Easy)
 - [ ] [671. Second Minimum Node In a Binary Tree](https://leetcode.cn/problems/second-minimum-node-in-a-binary-tree/) (Easy)
-- [ ] [1469. Find All The Lonely Nodes](https://leetcode.cn/problems/find-all-the-lonely-nodes/) (Easy) 👑
+- [x] [1469. Find All The Lonely Nodes](https://leetcode.cn/problems/find-all-the-lonely-nodes/) (Easy) 👑
 - [ ] [1214. Two Sum BSTs](https://leetcode.cn/problems/two-sum-bsts/) (Medium) 👑
 - [ ] [2764. Is Array a Preorder of Some ‌Binary Tree](https://leetcode.cn/problems/is-array-a-preorder-of-some-binary-tree/) (Medium) 👑
 
@@ -449,6 +449,59 @@ print(sumOfLeftLeaves(root))  # 24
 -   [LeetCode](https://leetcode.com/problems/find-all-the-lonely-nodes/) | [LeetCode CH](https://leetcode.cn/problems/find-all-the-lonely-nodes/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
+
+```python title="1469. Find All The Lonely Nodes - Python Solution"
+from typing import List, Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+# Binary Tree Traversal
+def getLonelyNodes(root: Optional[TreeNode]) -> List[int]:
+    res = []
+
+    def dfs(node):
+        if not node:
+            return False
+
+        left = dfs(node.left)
+        right = dfs(node.right)
+        if left and not right:
+            res.append(node.left.val)
+        if not left and right:
+            res.append(node.right.val)
+
+        return True
+
+    dfs(root)
+
+    return res
+
+
+if __name__ == "__main__":
+    root = build([1, 2, 3, None, 4])
+    print(root)
+    #    __1
+    #  /   \
+    # 2     3
+    #  \
+    #   4
+    assert getLonelyNodes(root) == [4]
+
+    root = build([7, 1, 4, 6, None, 5, 3, None, None, None, None, None, 2])
+    print(root)
+    #     7____
+    #    /     \
+    #   1     __4
+    #  /     /   \
+    # 6     5     3
+    #        \
+    #         2
+    assert getLonelyNodes(root) == [6, 2]
+
+```
+
 ## 1214. Two Sum BSTs
 
 -   [LeetCode](https://leetcode.com/problems/two-sum-bsts/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-bsts/) (Medium)

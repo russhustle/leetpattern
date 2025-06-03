@@ -17,7 +17,7 @@ comments: True
 - [ ] [1096. Brace Expansion II](https://leetcode.cn/problems/brace-expansion-ii/) (Hard)
 - [ ] [1896. Minimum Cost to Change the Final Value of Expression](https://leetcode.cn/problems/minimum-cost-to-change-the-final-value-of-expression/) (Hard)
 - [x] [770. Basic Calculator IV](https://leetcode.cn/problems/basic-calculator-iv/) (Hard)
-- [ ] [439. Ternary Expression Parser](https://leetcode.cn/problems/ternary-expression-parser/) (Medium) 👑
+- [x] [439. Ternary Expression Parser](https://leetcode.cn/problems/ternary-expression-parser/) (Medium) 👑
 - [x] [772. Basic Calculator III](https://leetcode.cn/problems/basic-calculator-iii/) (Hard) 👑
 - [ ] [1087. Brace Expansion](https://leetcode.cn/problems/brace-expansion/) (Medium) 👑
 - [ ] [1597. Build Binary Expression Tree From Infix Expression](https://leetcode.cn/problems/build-binary-expression-tree-from-infix-expression/) (Hard) 👑
@@ -334,6 +334,38 @@ print(calculator.basicCalculatorIV(expression, evalvars, evalints))
 -   [LeetCode](https://leetcode.com/problems/ternary-expression-parser/) | [LeetCode CH](https://leetcode.cn/problems/ternary-expression-parser/) (Medium)
 
 -   Tags: string, stack, recursion
+
+```python title="439. Ternary Expression Parser - Python Solution"
+# Stack
+def parseTernary(expression: str) -> str:
+    stack = []
+    i = len(expression) - 1
+
+    while i >= 0:
+        c = expression[i]
+        if stack and stack[-1] == "?":
+            stack.pop()  # remove '?'
+            true_val = stack.pop()
+            stack.pop()  # remove ':'
+            false_val = stack.pop()
+            if c == "T":
+                stack.append(true_val)
+            else:
+                stack.append(false_val)
+        else:
+            stack.append(c)
+        i -= 1
+
+    return stack[-1]
+
+
+if __name__ == "__main__":
+    assert parseTernary("T?2:3") == "2"
+    assert parseTernary("F?1:T?4:5") == "4"
+    assert parseTernary("T?T?F:5:3") == "F"
+
+```
+
 ## 772. Basic Calculator III
 
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-iii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)

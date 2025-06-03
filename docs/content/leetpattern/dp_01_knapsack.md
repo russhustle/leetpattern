@@ -152,25 +152,30 @@ print(findTargetSumWays(nums, target))  # 5
 -   [LeetCode](https://leetcode.com/problems/last-stone-weight/) | [LeetCode CH](https://leetcode.cn/problems/last-stone-weight/) (Easy)
 
 -   Tags: array, heap priority queue
+- Heap
+    - Time: O(n log n); Space: O(n)
+- 0/1 Knapsack
+    - Time: O(n); Space: O(n)
+
 
 ```python title="1046. Last Stone Weight - Python Solution"
-import heapq
+from heapq import heapify, heappop, heappush
 from typing import List
 
 
 # Heap
 def lastStoneWeightHeap(stones: List[int]) -> int:
-    heap = [-stone for stone in stones]
-    heapq.heapify(heap)
+    maxHeap = [-s for s in stones]
+    heapify(maxHeap)
 
-    while len(heap) > 1:
-        s1 = heapq.heappop(heap)
-        s2 = heapq.heappop(heap)
+    while len(maxHeap) > 1:
+        s1 = heappop(maxHeap)
+        s2 = heappop(maxHeap)
 
         if s1 != s2:
-            heapq.heappush(heap, s1 - s2)
+            heappush(maxHeap, s1 - s2)
 
-    return -heap[0] if heap else 0
+    return -maxHeap[0] if maxHeap else 0
 
 
 # 0/1 Knapsack
@@ -187,17 +192,10 @@ def lastStoneWeightKnapsack(stones: List[int]) -> int:
     return total - 2 * dp[target]
 
 
-# |-------------|-----------------|--------------|
-# |  Approach   |      Time       |    Space     |
-# |-------------|-----------------|--------------|
-# |    Heap     |   O(n log n)    |     O(n)     |
-# |  Knapsack   |      O(n)       |     O(n)     |
-# |-------------|-----------------|--------------|
-
-
-stones = [2, 7, 4, 1, 8, 1]
-print(lastStoneWeightHeap(stones))  # 1
-print(lastStoneWeightKnapsack(stones))  # 1
+if __name__ == "__main__":
+    stones = [2, 7, 4, 1, 8, 1]
+    assert lastStoneWeightHeap(stones) == 1
+    assert lastStoneWeightKnapsack(stones) == 1
 
 ```
 

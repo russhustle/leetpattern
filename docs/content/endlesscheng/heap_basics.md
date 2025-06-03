@@ -8,8 +8,8 @@ comments: True
 
 - [x] [1046. Last Stone Weight](https://leetcode.cn/problems/last-stone-weight/) (Easy)
 - [x] [3264. Final Array State After K Multiplication Operations I](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/) (Easy)
-- [ ] [2558. Take Gifts From the Richest Pile](https://leetcode.cn/problems/take-gifts-from-the-richest-pile/) (Easy)
-- [ ] [2336. Smallest Number in Infinite Set](https://leetcode.cn/problems/smallest-number-in-infinite-set/) (Medium)
+- [x] [2558. Take Gifts From the Richest Pile](https://leetcode.cn/problems/take-gifts-from-the-richest-pile/) (Easy)
+- [x] [2336. Smallest Number in Infinite Set](https://leetcode.cn/problems/smallest-number-in-infinite-set/) (Medium)
 - [ ] [2530. Maximal Score After Applying K Operations](https://leetcode.cn/problems/maximal-score-after-applying-k-operations/) (Medium)
 - [ ] [3066. Minimum Operations to Exceed Threshold Value II](https://leetcode.cn/problems/minimum-operations-to-exceed-threshold-value-ii/) (Medium)
 - [ ] [1962. Remove Stones to Minimize the Total](https://leetcode.cn/problems/remove-stones-to-minimize-the-total/) (Medium)
@@ -36,25 +36,30 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/last-stone-weight/) | [LeetCode CH](https://leetcode.cn/problems/last-stone-weight/) (Easy)
 
 -   Tags: array, heap priority queue
+- Heap
+    - Time: O(n log n); Space: O(n)
+- 0/1 Knapsack
+    - Time: O(n); Space: O(n)
+
 
 ```python title="1046. Last Stone Weight - Python Solution"
-import heapq
+from heapq import heapify, heappop, heappush
 from typing import List
 
 
 # Heap
 def lastStoneWeightHeap(stones: List[int]) -> int:
-    heap = [-stone for stone in stones]
-    heapq.heapify(heap)
+    maxHeap = [-s for s in stones]
+    heapify(maxHeap)
 
-    while len(heap) > 1:
-        s1 = heapq.heappop(heap)
-        s2 = heapq.heappop(heap)
+    while len(maxHeap) > 1:
+        s1 = heappop(maxHeap)
+        s2 = heappop(maxHeap)
 
         if s1 != s2:
-            heapq.heappush(heap, s1 - s2)
+            heappush(maxHeap, s1 - s2)
 
-    return -heap[0] if heap else 0
+    return -maxHeap[0] if maxHeap else 0
 
 
 # 0/1 Knapsack
@@ -71,17 +76,10 @@ def lastStoneWeightKnapsack(stones: List[int]) -> int:
     return total - 2 * dp[target]
 
 
-# |-------------|-----------------|--------------|
-# |  Approach   |      Time       |    Space     |
-# |-------------|-----------------|--------------|
-# |    Heap     |   O(n log n)    |     O(n)     |
-# |  Knapsack   |      O(n)       |     O(n)     |
-# |-------------|-----------------|--------------|
-
-
-stones = [2, 7, 4, 1, 8, 1]
-print(lastStoneWeightHeap(stones))  # 1
-print(lastStoneWeightKnapsack(stones))  # 1
+if __name__ == "__main__":
+    stones = [2, 7, 4, 1, 8, 1]
+    assert lastStoneWeightHeap(stones) == 1
+    assert lastStoneWeightKnapsack(stones) == 1
 
 ```
 
@@ -168,11 +166,83 @@ print(getFinalStateHeap([2, 1, 3, 5, 6], k, multiplier))  # [8, 4, 6, 5, 6]
 -   [LeetCode](https://leetcode.com/problems/take-gifts-from-the-richest-pile/) | [LeetCode CH](https://leetcode.cn/problems/take-gifts-from-the-richest-pile/) (Easy)
 
 -   Tags: array, heap priority queue, simulation
+
+```python title="2558. Take Gifts From the Richest Pile - Python Solution"
+from heapq import heapify, heappop, heappush
+from math import isqrt
+from typing import List
+
+
+# Heap
+def pickGifts(gifts: List[int], k: int) -> int:
+    maxHeap = [-g for g in gifts]
+    heapify(maxHeap)
+
+    for _ in range(k):
+        cur = heappop(maxHeap)
+
+        if cur == -1:
+            heappush(maxHeap, cur)
+            break
+
+        heappush(maxHeap, -isqrt(-cur))
+
+    return sum(-i for i in maxHeap)
+
+
+if __name__ == "__main__":
+    assert pickGifts([25, 64, 9, 4, 100], 4) == 29
+    assert pickGifts([1, 1, 1, 1], 4) == 0
+
+```
+
 ## 2336. Smallest Number in Infinite Set
 
 -   [LeetCode](https://leetcode.com/problems/smallest-number-in-infinite-set/) | [LeetCode CH](https://leetcode.cn/problems/smallest-number-in-infinite-set/) (Medium)
 
 -   Tags: hash table, design, heap priority queue, ordered set
+
+```python title="2336. Smallest Number in Infinite Set - Python Solution"
+from heapq import heappop, heappush
+
+
+# Heap
+class SmallestInfiniteSet:
+    def __init__(self):
+        self.cur_min = 1
+        self.added = set()
+        self.min_heap = []
+
+    def popSmallest(self) -> int:
+        if self.min_heap:
+            res = heappop(self.min_heap)
+            self.added.remove(res)
+            return res
+
+        res = self.cur_min
+        self.cur_min += 1
+        return res
+
+    def addBack(self, num: int) -> None:
+        if num < self.cur_min and num not in self.added:
+            self.added.add(num)
+            heappush(self.min_heap, num)
+
+
+if __name__ == "__main__":
+    sis = SmallestInfiniteSet()
+    assert sis.popSmallest() == 1
+    sis.addBack(2)
+    assert sis.popSmallest() == 2
+    assert sis.popSmallest() == 3
+    sis.addBack(1)
+    assert sis.popSmallest() == 1
+    assert sis.popSmallest() == 4
+    sis.addBack(3)
+    assert sis.popSmallest() == 3
+
+```
+
 ## 2530. Maximal Score After Applying K Operations
 
 -   [LeetCode](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [LeetCode CH](https://leetcode.cn/problems/maximal-score-after-applying-k-operations/) (Medium)

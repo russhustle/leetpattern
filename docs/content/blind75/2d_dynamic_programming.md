@@ -73,29 +73,26 @@ int main() {
 -   Tags: string, dynamic programming
 
 ```python title="1143. Longest Common Subsequence - Python Solution"
-# DP (LCS)
-def longestCommonSubsequence(text1: str, text2: str) -> int:
-    """
-    Computes the length of the longest common subsequence between two strings.
+from functools import cache
 
-    dp[i][j]: the length of the LCS between text1[:i] and text2[:j].
 
-    Args:
-        text1 (str): The first string.
-        text2 (str): The second string.
+# DP - LCS
+def longestCommonSubsequenceMemo(text1: str, text2: str) -> int:
+    m, n = len(text1), len(text2)
 
-    Returns:
-        int: The length of the longest common subsequence.
+    @cache
+    def dfs(i: int, j: int) -> int:
+        if i < 0 or j < 0:
+            return 0
+        if text1[i] == text2[j]:
+            return dfs(i - 1, j - 1) + 1
+        return max(dfs(i - 1, j), dfs(i, j - 1))
 
-    Example:
-        >>> longestCommonSubsequence("abcde", "ace")
-        3
-        >>> longestCommonSubsequence("abc", "abc")
-        3
-        >>> longestCommonSubsequence("abc", "def")
-        0
-    """
+    return dfs(m - 1, n - 1)
 
+
+# DP - LCS
+def longestCommonSubsequenceTable(text1: str, text2: str) -> int:
     m, n = len(text1), len(text2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
 
@@ -110,8 +107,9 @@ def longestCommonSubsequence(text1: str, text2: str) -> int:
 
 
 if __name__ == "__main__":
-    import doctest
-
-    doctest.testmod()
+    assert longestCommonSubsequenceMemo("abcde", "ace") == 3
+    assert longestCommonSubsequenceTable("abcde", "ace") == 3
+    assert longestCommonSubsequenceMemo("abc", "abc") == 3
+    assert longestCommonSubsequenceTable("abc", "abc") == 3
 
 ```

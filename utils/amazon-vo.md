@@ -1,7 +1,7 @@
 # Amazon VO
 
 -   [ ] LC 772. Basic Calculator III (Stack)
--   [ ] LC 359. Logger Rate Limiter
+-   [ ] LC 359. Logger Rate Limiter (Hash Map)
 -   [ ] LC 146. LRU Cache (Doubly Linked List)
 -   [ ] LC 207 Course Schedule I (Topological Sort)
 -   [ ] LC 210 Course Schedule II (Topological Sort)

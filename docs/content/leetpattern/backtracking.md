@@ -82,25 +82,6 @@ from typing import List
 
 # Backtracking
 def letterCombinations(digits: str) -> List[str]:
-    """Return all possible letter combinations that the number could represent.
-
-    Args:
-        digits (str): A string containing digits from 2-9 inclusive.
-
-    Returns:
-        List[str]: All possible letter combinations.
-
-    Complexity:
-        Time: O(4^n), where n is the number of digits in the input string.
-        Space: O(4^n), where n is the number of digits in the input string.
-
-    Example:
-        >>> letterCombinations("23")
-        ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf']
-        >>> letterCombinations("")
-        []
-    """
-
     letter_map = {
         "2": "abc",
         "3": "def",
@@ -134,9 +115,17 @@ def letterCombinations(digits: str) -> List[str]:
 
 
 if __name__ == "__main__":
-    import doctest
-
-    doctest.testmod()
+    assert letterCombinations("23") == [
+        "ad",
+        "ae",
+        "af",
+        "bd",
+        "be",
+        "bf",
+        "cd",
+        "ce",
+        "cf",
+    ]
 
 ```
 

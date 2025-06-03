@@ -60,48 +60,7 @@ print(findJudge(n, trust))  # 4
 
 -   Tags: graph
 - Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
-- ✅ Return the vertices with indegree 0.
-
-![1557](../../assets/1557.png)
-
-- `edges = [[0, 1], [0, 2], [2, 5], [3, 4], [4, 2]]`
-- Initialization
-
-|   `src`   |  0  |  0  |  2  |  3  |  4  |     |
-| :-------: | :-: | :-: | :-: | :-: | :-: | :-: |
-|   `dst`   |  1  |  2  |  5  |  4  |  2  |     |
-|   node    |  0  |  1  |  2  |  3  |  4  |  5  |
-| in-degree |  0  |  0  |  0  |  0  |  0  |  0  |
-
-|   `src`   |   0   |   0   |  2  |  3  |  4  |     |
-| :-------: | :---: | :---: | :-: | :-: | :-: | :-: |
-|   `dst`   | **1** |   2   |  5  |  4  |  2  |     |
-|   node    |   0   | **1** |  2  |  3  |  4  |  5  |
-| in-degree |   0   | **1** |  0  |  0  |  0  |  0  |
-
-|   `src`   |  0  |   0   |   2   |  3  |  4  |     |
-| :-------: | :-: | :---: | :---: | :-: | :-: | :-: |
-|   `dst`   |  1  | **2** |   5   |  4  |  2  |     |
-|   node    |  0  |   1   | **2** |  3  |  4  |  5  |
-| in-degree |  0  |   1   | **1** |  0  |  0  |  0  |
-
-|   `src`   |  0  |  0  |   2   |  3  |  4  |       |
-| :-------: | :-: | :-: | :---: | :-: | :-: | :---: |
-|   `dst`   |  1  |  2  | **5** |  4  |  2  |       |
-|   node    |  0  |  1  |   2   |  3  |  4  | **5** |
-| in-degree |  0  |  1  |   1   |  0  |  0  | **1** |
-
-|   `src`   |  0  |  0  |  2  |   3   |   4   |     |
-| :-------: | :-: | :-: | :-: | :---: | :---: | :-: |
-|   `dst`   |  1  |  2  |  5  | **4** |   2   |     |
-|   node    |  0  |  1  |  2  |   3   | **4** |  5  |
-| in-degree |  0  |  1  |  1  |   0   | **1** |  1  |
-
-|   `src`   |  0  |  0  |   2   |  3  |   4   |     |
-| :-------: | :-: | :-: | :---: | :-: | :---: | :-: |
-|   `dst`   |  1  |  2  |   5   |  4  | **2** |     |
-|   node    |  0  |  1  | **2** |  3  |   4   |  5  |
-| in-degree |  0  |  1  | **2** |  0  |   1   |  1  |
+- Hint: Return the vertices with indegree 0.
 
 
 ```python title="1557. Minimum Number of Vertices to Reach All Nodes - Python Solution"
@@ -112,15 +71,16 @@ from typing import List
 def findSmallestSetOfVertices(n: int, edges: List[List[int]]) -> List[int]:
     indegree = {i: 0 for i in range(n)}
 
-    for a, b in edges:
-        indegree[b] += 1
+    for _, end in edges:
+        indegree[end] += 1
 
     return [i for i in range(n) if indegree[i] == 0]
 
 
-n = 6
-edges = [[0, 1], [0, 2], [2, 5], [3, 4], [4, 2]]
-print(findSmallestSetOfVertices(n, edges))  # [0, 3]
+if __name__ == "__main__":
+    n = 6
+    edges = [[0, 1], [0, 2], [2, 5], [3, 4], [4, 2]]
+    assert findSmallestSetOfVertices(n, edges) == [0, 3]
 
 ```
 

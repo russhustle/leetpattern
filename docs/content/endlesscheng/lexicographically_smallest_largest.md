@@ -22,7 +22,7 @@ comments: True
 - [ ] [2375. Construct Smallest Number From DI String](https://leetcode.cn/problems/construct-smallest-number-from-di-string/) (Medium)
 - [ ] [2182. Construct String With Repeat Limit](https://leetcode.cn/problems/construct-string-with-repeat-limit/) (Medium)
 - [x] [738. Monotone Increasing Digits](https://leetcode.cn/problems/monotone-increasing-digits/) (Medium)
-- [ ] [3403. Find the Lexicographically Largest String From the Box I](https://leetcode.cn/problems/find-the-lexicographically-largest-string-from-the-box-i/) (Medium)
+- [x] [3403. Find the Lexicographically Largest String From the Box I](https://leetcode.cn/problems/find-the-lexicographically-largest-string-from-the-box-i/) (Medium)
 - [ ] [3170. Lexicographically Minimum String After Removing Stars](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
 - [ ] [1363. Largest Multiple of Three](https://leetcode.cn/problems/largest-multiple-of-three/) (Hard)
 - [ ] [1754. Largest Merge Of Two Strings](https://leetcode.cn/problems/largest-merge-of-two-strings/) (Medium)
@@ -186,6 +186,22 @@ print(monotoneIncreasingDigits(n))  # 299
 -   [LeetCode](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | [LeetCode CH](https://leetcode.cn/problems/find-the-lexicographically-largest-string-from-the-box-i/) (Medium)
 
 -   Tags: two pointers, string, enumeration
+
+```python title="3403. Find the Lexicographically Largest String From the Box I - Python Solution"
+# Lexicographically Smallest/Largest
+def answerString(word: str, numFriends: int) -> str:
+    if numFriends == 1:
+        return word
+
+    n = len(word)
+    return max(word[i : i + n - numFriends + 1] for i in range(n))
+
+
+if __name__ == "__main__":
+    assert answerString("dbca", 2) == "dbc"
+
+```
+
 ## 3170. Lexicographically Minimum String After Removing Stars
 
 -   [LeetCode](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/) | [LeetCode CH](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)

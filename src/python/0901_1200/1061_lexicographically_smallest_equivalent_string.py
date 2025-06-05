@@ -27,7 +27,8 @@ def smallestEquivalentString(s1: str, s2: str, baseStr: str) -> str:
     return "".join(result)
 
 
-s1 = "parker"
-s2 = "morris"
-baseStr = "parser"
-print(smallestEquivalentString(s1, s2, baseStr))  # "makkek"
+if __name__ == "__main__":
+    s1 = "parker"
+    s2 = "morris"
+    baseStr = "parser"
+    assert smallestEquivalentString(s1, s2, baseStr) == "makkek"

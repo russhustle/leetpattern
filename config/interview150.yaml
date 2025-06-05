@@ -1,0 +1,54 @@
+category: algorithms
+dir: interview150
+name: Interview 150
+topics:
+    Arrays String:
+        [
+            88,
+            27,
+            26,
+            80,
+            169,
+            189,
+            121,
+            122,
+            55,
+            45,
+            274,
+            380,
+            238,
+            134,
+            135,
+            42,
+            13,
+            12,
+            58,
+            14,
+            151,
+            6,
+            28,
+            68,
+        ]
+    Two Pointers: [125, 392, 167, 11, 15]
+    Sliding Window: [209, 3, 30, 76]
+    Matrix: [36, 54, 48, 73, 289]
+    Hash Table: [383, 205, 290, 242, 49, 1, 202, 219, 128]
+    Intervals: [228, 56, 57, 452]
+    Stack: [20, 71, 155, 150, 224]
+    Linked List: [141, 2, 21, 138, 92, 25, 19, 82, 61, 86, 146]
+    Binary Tree:
+        [104, 100, 226, 101, 105, 106, 117, 114, 112, 129, 124, 173, 222, 236]
+    Binary Tree Level Order: [199, 637, 102, 103]
+    Binary Search Tree: [530, 230, 98]
+    Graph: [200, 130, 133, 399, 207, 210]
+    Graph BFS: [909, 433, 127]
+    Trie: [208, 211, 212]
+    Backtracking: [17, 77, 46, 39, 52, 22, 79]
+    Divide and Conquer: [108, 148, 427, 23]
+    Kadane Algorithm: [53, 918]
+    Binary Search: [35, 74, 162, 33, 34, 153, 4]
+    Heap: [215, 502, 373, 295]
+    Bit Manipulation: [67, 190, 191, 136, 137, 201]
+    Math: [9, 66, 172, 69, 50, 149]
+    1D Dynamic Programming: [70, 198, 139, 322, 300]
+    Multidimensional DP: [120, 64, 63, 5, 97, 72, 123, 188, 221]

@@ -249,7 +249,8 @@ if __name__ == "__main__":
 from collections import deque
 from typing import List, Optional
 
-from binarytree import build, Node as TreeNode
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 # Binary Tree BFS

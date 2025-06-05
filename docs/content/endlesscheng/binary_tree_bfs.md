@@ -379,7 +379,8 @@ print(largestValues(root))  # [1, 2, 4, 5]
 from collections import deque
 from typing import List, Optional
 
-from binarytree import build, Node as TreeNode
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 # Binary Tree BFS

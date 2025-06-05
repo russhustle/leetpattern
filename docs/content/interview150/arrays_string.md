@@ -16,13 +16,13 @@ comments: True
 - [x] [122. Best Time to Buy and Sell Stock II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) (Medium)
 - [x] [55. Jump Game](https://leetcode.cn/problems/jump-game/) (Medium)
 - [x] [45. Jump Game II](https://leetcode.cn/problems/jump-game-ii/) (Medium)
-- [ ] [274. H-Index](https://leetcode.cn/problems/h-index/) (Medium)
+- [x] [274. H-Index](https://leetcode.cn/problems/h-index/) (Medium)
 - [x] [380. Insert Delete GetRandom O(1)](https://leetcode.cn/problems/insert-delete-getrandom-o1/) (Medium)
 - [x] [238. Product of Array Except Self](https://leetcode.cn/problems/product-of-array-except-self/) (Medium)
 - [x] [134. Gas Station](https://leetcode.cn/problems/gas-station/) (Medium)
 - [x] [135. Candy](https://leetcode.cn/problems/candy/) (Hard)
 - [x] [42. Trapping Rain Water](https://leetcode.cn/problems/trapping-rain-water/) (Hard)
-- [ ] [13. Roman to Integer](https://leetcode.cn/problems/roman-to-integer/) (Easy)
+- [x] [13. Roman to Integer](https://leetcode.cn/problems/roman-to-integer/) (Easy)
 - [ ] [12. Integer to Roman](https://leetcode.cn/problems/integer-to-roman/) (Medium)
 - [x] [58. Length of Last Word](https://leetcode.cn/problems/length-of-last-word/) (Easy)
 - [x] [14. Longest Common Prefix](https://leetcode.cn/problems/longest-common-prefix/) (Easy)
@@ -625,6 +625,34 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/h-index/) | [LeetCode CH](https://leetcode.cn/problems/h-index/) (Medium)
 
 -   Tags: array, sorting, counting sort
+
+```python title="274. H-Index - Python Solution"
+from typing import List
+
+
+# Arrays
+def hIndex(citations: List[int]) -> int:
+    n = len(citations)
+    cnt = [0 for _ in range(n + 1)]
+
+    for c in citations:
+        cnt[min(c, n)] += 1
+
+    s = 0
+    for i in range(n, -1, -1):
+        s += cnt[i]
+        if s >= i:
+            return i
+
+
+if __name__ == "__main__":
+    assert hIndex([3, 0, 6, 1, 5]) == 3
+    assert hIndex([1, 3, 1]) == 1
+    assert hIndex([1, 2, 3, 4, 5]) == 3
+    assert hIndex([0, 0, 0]) == 0
+
+```
+
 ## 380. Insert Delete GetRandom O(1)
 
 -   [LeetCode](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [LeetCode CH](https://leetcode.cn/problems/insert-delete-getrandom-o1/) (Medium)
@@ -998,6 +1026,42 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/roman-to-integer/) | [LeetCode CH](https://leetcode.cn/problems/roman-to-integer/) (Easy)
 
 -   Tags: hash table, math, string
+
+```python title="13. Roman to Integer - Python Solution"
+from itertools import pairwise
+
+
+# Arrays
+def romanToInt(s: str) -> int:
+    ROMAN = {
+        "I": 1,
+        "V": 5,
+        "X": 10,
+        "L": 50,
+        "C": 100,
+        "D": 500,
+        "M": 1000,
+    }
+
+    res = 0
+
+    for x, y in pairwise(s):
+        x, y = ROMAN[x], ROMAN[y]
+        res += x if x >= y else -x
+
+    return res + ROMAN[s[-1]]
+
+
+if __name__ == "__main__":
+    assert romanToInt("III") == 3
+    assert romanToInt("IV") == 4
+    assert romanToInt("IX") == 9
+    assert romanToInt("LVIII") == 58
+    assert romanToInt("MCMXCIV") == 1994
+    assert romanToInt("MMXXIII") == 2023
+
+```
+
 ## 12. Integer to Roman
 
 -   [LeetCode](https://leetcode.com/problems/integer-to-roman/) | [LeetCode CH](https://leetcode.cn/problems/integer-to-roman/) (Medium)

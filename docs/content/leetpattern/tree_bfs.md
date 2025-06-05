@@ -31,8 +31,8 @@ from binarytree import Node as TreeNode
 from binarytree import build
 
 
-# Binary Tree
-def rightSideView(root: Optional[TreeNode]) -> List[int]:
+# Binary Tree BFS
+def rightSideViewBFS(root: Optional[TreeNode]) -> List[int]:
     if not root:
         return []
 
@@ -53,17 +53,38 @@ def rightSideView(root: Optional[TreeNode]) -> List[int]:
     return res
 
 
-root = [1, 2, 2, 3, 4, None, 3, None, None, 5]
-root = build(root)
-print(root)
-#     ____1
-#    /     \
-#   2__     2
-#  /   \     \
-# 3     4     3
-#      /
-#     5
-print(rightSideView(root))  # [1, 2, 3, 5]
+# Binary Tree DFS
+def rightSideViewDFS(root: Optional[TreeNode]) -> List[int]:
+    """后序遍历，先右后左，遇到的第一个节点就是该深度的最右侧节点"""
+    ans = []
+
+    def dfs(node, depth):
+        if node is None:
+            return
+        if depth == len(ans):  # 这个深度首次遇到
+            ans.append(node.val)
+
+        dfs(node.right, depth + 1)
+        dfs(node.left, depth + 1)
+
+    dfs(root, 0)
+
+    return ans
+
+
+if __name__ == "__main__":
+    root = [1, 2, 2, 3, 4, None, 3, None, None, 5]
+    root = build(root)
+    print(root)
+    #     ____1
+    #    /     \
+    #   2__     2
+    #  /   \     \
+    # 3     4     3
+    #      /
+    #     5
+    assert rightSideViewBFS(root) == [1, 2, 3, 5]
+    assert rightSideViewDFS(root) == [1, 2, 3, 5]
 
 ```
 
@@ -201,19 +222,20 @@ def maxDepthIterative(root: Optional[TreeNode]) -> int:
     return res
 
 
-root = [1, 2, 2, 3, 4, None, None, None, None, 5]
-root = build(root)
-print(root)
-#     ____1
-#    /     \
-#   2__     2
-#  /   \
-# 3     4
-#      /
-#     5
-print(maxDepthRecursive(root))  # 4
-print(maxDepthIterative(root))  # 4
-print(maxDepthDFS(root))  # 4
+if __name__ == "__main__":
+    root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+    root = build(root)
+    print(root)
+    #     ____1
+    #    /     \
+    #   2__     2
+    #  /   \
+    # 3     4
+    #      /
+    #     5
+    assert maxDepthRecursive(root) == 4
+    assert maxDepthDFS(root) == 4
+    assert maxDepthIterative(root) == 4
 
 ```
 
@@ -225,58 +247,47 @@ print(maxDepthDFS(root))  # 4
 
 ```python title="637. Average of Levels in Binary Tree - Python Solution"
 from collections import deque
-from statistics import mean
 from typing import List, Optional
 
+from binarytree import Node as TreeNode
 from binarytree import build
 
 
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-
+# Binary Tree BFS
 def averageOfLevels(root: Optional[TreeNode]) -> List[float]:
     if not root:
         return []
 
-    queue = deque([root])
-    result = []
+    q = deque([root])
+    res = []
 
-    while queue:
-        level = []
-        size = len(queue)
+    while q:
+        n = len(q)
+        level = 0
+        for _ in range(n):
+            cur = q.popleft()
+            level += cur.val
 
-        for _ in range(size):
-            node = queue.popleft()
-            level.append(node.val)
+            if cur.left:
+                q.append(cur.left)
+            if cur.right:
+                q.append(cur.right)
 
-            if node.left:
-                queue.append(node.left)
+        res.append(float(level / n))
 
-            if node.right:
-                queue.append(node.right)
-
-        result.append(mean(level))
-
-    return result
+    return res
 
 
-root = [1, 2, 2, 3, 4, None, None, None, None, 5]
-root = build(root)
-print(root)
-"""
-    ____1
-   /     \
-  2__     2
- /   \
-3     4
-     /
-    5
-"""
-print(averageOfLevels(root))  # [1, 2, 3.5, 5]
+if __name__ == "__main__":
+    root = [3, 9, 20, None, None, 15, 7]
+    root = build(root)
+    print(root)
+    #   3___
+    #  /    \
+    # 9     _20
+    #      /   \
+    #     15    7
+    assert averageOfLevels(root) == [3.00000, 14.50000, 11.00000]
 
 ```
 

@@ -10,11 +10,11 @@ comments: True
 - [x] [3264. Final Array State After K Multiplication Operations I](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/) (Easy)
 - [x] [2558. Take Gifts From the Richest Pile](https://leetcode.cn/problems/take-gifts-from-the-richest-pile/) (Easy)
 - [x] [2336. Smallest Number in Infinite Set](https://leetcode.cn/problems/smallest-number-in-infinite-set/) (Medium)
-- [ ] [2530. Maximal Score After Applying K Operations](https://leetcode.cn/problems/maximal-score-after-applying-k-operations/) (Medium)
-- [ ] [3066. Minimum Operations to Exceed Threshold Value II](https://leetcode.cn/problems/minimum-operations-to-exceed-threshold-value-ii/) (Medium)
-- [ ] [1962. Remove Stones to Minimize the Total](https://leetcode.cn/problems/remove-stones-to-minimize-the-total/) (Medium)
+- [x] [2530. Maximal Score After Applying K Operations](https://leetcode.cn/problems/maximal-score-after-applying-k-operations/) (Medium)
+- [x] [3066. Minimum Operations to Exceed Threshold Value II](https://leetcode.cn/problems/minimum-operations-to-exceed-threshold-value-ii/) (Medium)
+- [x] [1962. Remove Stones to Minimize the Total](https://leetcode.cn/problems/remove-stones-to-minimize-the-total/) (Medium)
 - [x] [703. Kth Largest Element in a Stream](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
-- [ ] [3275. K-th Nearest Obstacle Queries](https://leetcode.cn/problems/k-th-nearest-obstacle-queries/) (Medium)
+- [x] [3275. K-th Nearest Obstacle Queries](https://leetcode.cn/problems/k-th-nearest-obstacle-queries/) (Medium)
 - [ ] [2208. Minimum Operations to Halve Array Sum](https://leetcode.cn/problems/minimum-operations-to-halve-array-sum/) (Medium)
 - [ ] [2233. Maximum Product After K Increments](https://leetcode.cn/problems/maximum-product-after-k-increments/) (Medium)
 - [x] [3296. Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) (Medium)
@@ -248,16 +248,94 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [LeetCode CH](https://leetcode.cn/problems/maximal-score-after-applying-k-operations/) (Medium)
 
 -   Tags: array, greedy, heap priority queue
+
+```python title="2530. Maximal Score After Applying K Operations - Python Solution"
+from heapq import heapify, heappop, heappush
+from math import ceil
+from typing import List
+
+
+# Heap
+def maxKelements(nums: List[int], k: int) -> int:
+    res = 0
+    maxHeap = [-n for n in nums]
+    heapify(maxHeap)
+
+    while k > 0:
+        cur = -heappop(maxHeap)
+        res += cur
+        heappush(maxHeap, -ceil(cur / 3))
+        k -= 1
+
+    return res
+
+
+if __name__ == "__main__":
+    assert maxKelements([10, 10, 10, 10, 10], 5) == 50
+    assert maxKelements([1, 10, 3, 3, 3], 3) == 17
+    assert maxKelements([1, 2, 3, 4, 5], 5) == 16
+
+```
+
 ## 3066. Minimum Operations to Exceed Threshold Value II
 
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-exceed-threshold-value-ii/) (Medium)
 
 -   Tags: array, heap priority queue, simulation
+
+```python title="3066. Minimum Operations to Exceed Threshold Value II - Python Solution"
+from heapq import heapify, heappop, heappush
+from typing import List
+
+
+# Heap
+def minOperations(nums: List[int], k: int) -> int:
+    heapify(nums)
+    res = 0
+
+    while nums[0] < k:
+        x = heappop(nums)
+        y = heappop(nums)
+        heappush(nums, x * 2 + y)
+        res += 1
+
+    return res
+
+
+if __name__ == "__main__":
+    assert minOperations([2, 11, 10, 1, 3], 10) == 2
+    assert minOperations([1, 1, 2, 4, 9], 20) == 4
+
+```
+
 ## 1962. Remove Stones to Minimize the Total
 
 -   [LeetCode](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | [LeetCode CH](https://leetcode.cn/problems/remove-stones-to-minimize-the-total/) (Medium)
 
 -   Tags: array, greedy, heap priority queue
+
+```python title="1962. Remove Stones to Minimize the Total - Python Solution"
+from heapq import heapify, heapreplace
+from typing import List
+
+
+# Heap
+def minStoneSum(piles: List[int], k: int) -> int:
+    maxHeap = [-p for p in piles]
+    heapify(maxHeap)
+
+    for _ in range(k):
+        heapreplace(maxHeap, maxHeap[0] // 2)
+
+    return -sum(maxHeap)
+
+
+if __name__ == "__main__":
+    assert minStoneSum([5, 4, 9], 2) == 12
+    assert minStoneSum([4, 3, 6, 7], 3) == 12
+
+```
+
 ## 703. Kth Largest Element in a Stream
 
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
@@ -299,6 +377,40 @@ print(obj.add(10))  # 5
 -   [LeetCode](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | [LeetCode CH](https://leetcode.cn/problems/k-th-nearest-obstacle-queries/) (Medium)
 
 -   Tags: array, heap priority queue
+
+```python title="3275. K-th Nearest Obstacle Queries - Python Solution"
+from heapq import heappop, heappush
+from typing import List
+
+
+# Heap
+def resultsArray(queries: List[List[int]], k: int) -> List[int]:
+    n = len(queries)
+    res = [-1 for _ in range(n)]
+    maxHeap = []
+
+    for i in range(n):
+        dist = abs(queries[i][0]) + abs(queries[i][1])
+        heappush(maxHeap, -dist)
+
+        if i < k - 1:
+            continue
+
+        while len(maxHeap) > k:
+            heappop(maxHeap)
+
+        res[i] = -maxHeap[0]
+
+    return res
+
+
+if __name__ == "__main__":
+    queries = [[1, 2], [3, 4], [2, 3], [-3, 0]]
+    k = 2
+    assert resultsArray(queries, k) == [-1, 7, 5, 3]
+
+```
+
 ## 2208. Minimum Operations to Halve Array Sum
 
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-halve-array-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-halve-array-sum/) (Medium)

@@ -151,19 +151,20 @@ def maxDepthIterative(root: Optional[TreeNode]) -> int:
     return res
 
 
-root = [1, 2, 2, 3, 4, None, None, None, None, 5]
-root = build(root)
-print(root)
-#     ____1
-#    /     \
-#   2__     2
-#  /   \
-# 3     4
-#      /
-#     5
-print(maxDepthRecursive(root))  # 4
-print(maxDepthIterative(root))  # 4
-print(maxDepthDFS(root))  # 4
+if __name__ == "__main__":
+    root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+    root = build(root)
+    print(root)
+    #     ____1
+    #    /     \
+    #   2__     2
+    #  /   \
+    # 3     4
+    #      /
+    #     5
+    assert maxDepthRecursive(root) == 4
+    assert maxDepthDFS(root) == 4
+    assert maxDepthIterative(root) == 4
 
 ```
 
@@ -714,8 +715,8 @@ from binarytree import Node as TreeNode
 from binarytree import build
 
 
-# Binary Tree
-def rightSideView(root: Optional[TreeNode]) -> List[int]:
+# Binary Tree BFS
+def rightSideViewBFS(root: Optional[TreeNode]) -> List[int]:
     if not root:
         return []
 
@@ -736,17 +737,38 @@ def rightSideView(root: Optional[TreeNode]) -> List[int]:
     return res
 
 
-root = [1, 2, 2, 3, 4, None, 3, None, None, 5]
-root = build(root)
-print(root)
-#     ____1
-#    /     \
-#   2__     2
-#  /   \     \
-# 3     4     3
-#      /
-#     5
-print(rightSideView(root))  # [1, 2, 3, 5]
+# Binary Tree DFS
+def rightSideViewDFS(root: Optional[TreeNode]) -> List[int]:
+    """后序遍历，先右后左，遇到的第一个节点就是该深度的最右侧节点"""
+    ans = []
+
+    def dfs(node, depth):
+        if node is None:
+            return
+        if depth == len(ans):  # 这个深度首次遇到
+            ans.append(node.val)
+
+        dfs(node.right, depth + 1)
+        dfs(node.left, depth + 1)
+
+    dfs(root, 0)
+
+    return ans
+
+
+if __name__ == "__main__":
+    root = [1, 2, 2, 3, 4, None, 3, None, None, 5]
+    root = build(root)
+    print(root)
+    #     ____1
+    #    /     \
+    #   2__     2
+    #  /   \     \
+    # 3     4     3
+    #      /
+    #     5
+    assert rightSideViewBFS(root) == [1, 2, 3, 5]
+    assert rightSideViewDFS(root) == [1, 2, 3, 5]
 
 ```
 

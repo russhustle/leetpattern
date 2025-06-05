@@ -105,19 +105,20 @@ def maxDepthIterative(root: Optional[TreeNode]) -> int:
     return res
 
 
-root = [1, 2, 2, 3, 4, None, None, None, None, 5]
-root = build(root)
-print(root)
-#     ____1
-#    /     \
-#   2__     2
-#  /   \
-# 3     4
-#      /
-#     5
-print(maxDepthRecursive(root))  # 4
-print(maxDepthIterative(root))  # 4
-print(maxDepthDFS(root))  # 4
+if __name__ == "__main__":
+    root = [1, 2, 2, 3, 4, None, None, None, None, 5]
+    root = build(root)
+    print(root)
+    #     ____1
+    #    /     \
+    #   2__     2
+    #  /   \
+    # 3     4
+    #      /
+    #     5
+    assert maxDepthRecursive(root) == 4
+    assert maxDepthDFS(root) == 4
+    assert maxDepthIterative(root) == 4
 
 ```
 

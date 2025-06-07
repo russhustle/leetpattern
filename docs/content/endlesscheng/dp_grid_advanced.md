@@ -48,8 +48,8 @@ comments: True
 
 ```python title="329. Longest Increasing Path in a Matrix - Python Solution"
 from collections import deque
-from typing import List
 from functools import cache
+from typing import List
 
 
 # BFS - Topological Sort
@@ -66,11 +66,17 @@ def longestIncreasingPathBFS(matrix: List[List[int]]) -> int:
         for j in range(n):
             for dr, dc in dirs:
                 nr, nc = i + dr, j + dc
-                if 0 <= nr < m and 0 <= nc < n and matrix[nr][nc] > matrix[i][j]:
+                if (
+                    0 <= nr < m
+                    and 0 <= nc < n
+                    and matrix[nr][nc] > matrix[i][j]
+                ):
                     indegree[nr][nc] += 1
 
     # Start with cells that have no smaller neighbors
-    queue = deque((i, j) for i in range(m) for j in range(n) if indegree[i][j] == 0)
+    queue = deque(
+        (i, j) for i in range(m) for j in range(n) if indegree[i][j] == 0
+    )
 
     res = 0
     while queue:
@@ -79,7 +85,11 @@ def longestIncreasingPathBFS(matrix: List[List[int]]) -> int:
             r, c = queue.popleft()
             for dr, dc in dirs:
                 nr, nc = r + dr, c + dc
-                if 0 <= nr < m and 0 <= nc < n and matrix[nr][nc] > matrix[r][c]:
+                if (
+                    0 <= nr < m
+                    and 0 <= nc < n
+                    and matrix[nr][nc] > matrix[r][c]
+                ):
                     indegree[nr][nc] -= 1
                     if indegree[nr][nc] == 0:
                         queue.append((nr, nc))

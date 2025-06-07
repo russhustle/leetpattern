@@ -186,15 +186,13 @@ print(minReorderDFS(n, connections))  # 2
 -   [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-![286](https://assets.leetcode.com/uploads/2021/01/03/grid.jpg)
-
 
 ```python title="286. Walls and Gates - Python Solution"
 from collections import deque
 from typing import List
 
 
-# Multi-source BFS
+# Multi-Source BFS
 def wallsAndGates(rooms: List[List[int]]) -> None:
     """
     Do not return anything, modify rooms in-place instead.
@@ -205,8 +203,8 @@ def wallsAndGates(rooms: List[List[int]]) -> None:
 
     def addRoom(r, c):
         if (
-            r in range(m)
-            and c in range(n)
+            0 <= r < m
+            and 0 <= c < n
             and (r, c) not in visited
             and rooms[r][c] != -1
         ):
@@ -232,18 +230,20 @@ def wallsAndGates(rooms: List[List[int]]) -> None:
         dist += 1
 
 
-rooms = [
-    [2147483647, -1, 0, 2147483647],
-    [2147483647, 2147483647, 2147483647, -1],
-    [2147483647, -1, 2147483647, -1],
-    [0, -1, 2147483647, 2147483647],
-]
-wallsAndGates(rooms)
-print(rooms)
-# [[3, -1, 0,  1],
-#  [2,  2, 1, -1],
-#  [1, -1, 2, -1],
-#  [0, -1, 3,  4]]
+if __name__ == "__main__":
+    rooms = [
+        [2147483647, -1, 0, 2147483647],
+        [2147483647, 2147483647, 2147483647, -1],
+        [2147483647, -1, 2147483647, -1],
+        [0, -1, 2147483647, 2147483647],
+    ]
+    wallsAndGates(rooms)
+    assert rooms == [
+        [3, -1, 0, 1],
+        [2, 2, 1, -1],
+        [1, -1, 2, -1],
+        [0, -1, 3, 4],
+    ]
 
 ```
 

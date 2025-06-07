@@ -1,22 +1,8 @@
 """
--   Return the number of distinct ways to reach the top of the stairs.
--   `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
--   Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
--   Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
-
-|  n  | `dp[n-2]` | `dp[n-1]` | `dp[n]` |
-| :-: | :-------: | :-------: | :-----: |
-|  0  |     -     |     -     |    0    |
-|  1  |     -     |     -     |    1    |
-|  2  |     -     |     1     |    2    |
-|  3  |     1     |     2     |    3    |
-|  4  |     2     |     3     |    5    |
-|  5  |     3     |     5     |    8    |
-|  6  |     5     |     8     |   13    |
-|  7  |     8     |    13     |   21    |
-|  8  |    13     |    21     |   34    |
-|  9  |    21     |    34     |   55    |
-| 10  |    34     |    55     |   89    |
+- Return the number of distinct ways to reach the top of the stairs.
+- `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
+- Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
+- Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
 """
 
 from functools import cache
@@ -59,6 +45,21 @@ def climbStairsRecursion(n: int) -> int:
     return dfs(n)
 
 
-print(climbStairsDP(10))  # 89
-print(climbStairsDPOptimized(10))  # 89
-print(climbStairsRecursion(10))  # 89
+# Greedy
+def climbStairsGreedy(n: int) -> int:
+    if n <= 2:
+        return n
+
+    p1, p2 = 1, 2
+
+    for _ in range(3, n + 1):
+        p1, p2 = p2, p1 + p2
+
+    return p2
+
+
+if __name__ == "__main__":
+    assert climbStairsDP(10) == 89
+    assert climbStairsDPOptimized(10) == 89
+    assert climbStairsRecursion(10) == 89
+    assert climbStairsGreedy(10) == 89

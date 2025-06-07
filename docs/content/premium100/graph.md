@@ -7,7 +7,7 @@ comments: True
 ## Table of Contents
 
 - [ ] [277. Find the Celebrity](https://leetcode.cn/problems/find-the-celebrity/) (Medium) 👑
-- [ ] [582. Kill Process](https://leetcode.cn/problems/kill-process/) (Medium) 👑
+- [x] [582. Kill Process](https://leetcode.cn/problems/kill-process/) (Medium) 👑
 - [x] [323. Number of Connected Components in an Undirected Graph](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium) 👑
 - [ ] [1059. All Paths from Source Lead to Destination](https://leetcode.cn/problems/all-paths-from-source-lead-to-destination/) (Medium) 👑
 - [ ] [1236. Web Crawler](https://leetcode.cn/problems/web-crawler/) (Medium) 👑
@@ -25,6 +25,39 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/kill-process/) | [LeetCode CH](https://leetcode.cn/problems/kill-process/) (Medium)
 
 -   Tags: array, hash table, tree, depth first search, breadth first search
+
+```python title="582. Kill Process - Python Solution"
+from collections import defaultdict, deque
+from typing import List
+
+
+# BFS
+def killProcess(pid: List[int], ppid: List[int], kill: int) -> List[int]:
+    graph = defaultdict(list)
+
+    for u, v in zip(ppid, pid):
+        graph[u].append(v)
+
+    q = deque([kill])
+    res = []
+
+    while q:
+        cur = q.popleft()
+        res.append(cur)
+        for nxt in graph[cur]:
+            q.append(nxt)
+
+    return res
+
+
+if __name__ == "__main__":
+    pid = [1, 3, 10, 5]
+    ppid = [3, 0, 5, 3]
+    kill = 5
+    assert killProcess(pid, ppid, kill) == [5, 10]
+
+```
+
 ## 323. Number of Connected Components in an Undirected Graph
 
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)

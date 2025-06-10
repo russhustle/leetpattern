@@ -36,21 +36,24 @@ def isValid(s: str) -> bool:
     }
     stack = []
 
-    for c in s:
-        if c in hashmap:
-            if stack and stack[-1] == hashmap[c]:
+    for ch in s:
+        if ch in hashmap:
+            if stack and stack[-1] == hashmap[ch]:
                 stack.pop()
             else:
                 return False
         else:
-            stack.append(c)
+            stack.append(ch)
 
     return True if not stack else False
 
 
-print(isValid("()"))  # True
-print(isValid("()[]{}"))  # True
-print(isValid("(]"))  # False
+if __name__ == "__main__":
+    assert isValid("()[]{}")
+    assert not isValid("(]")
+    assert not isValid("([)]")
+    assert isValid("{[]}")
+    assert isValid("")
 
 ```
 

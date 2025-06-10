@@ -60,7 +60,7 @@ nav:
 
   - Templates:
     - Home: content/templates/index.md
-    - sliding window: content/templates/sliding_window.md
+    - Sliding Window: content/templates/sliding_window.md
 
   - Top 100 Liked:
     - Home: content/top100liked/index.md

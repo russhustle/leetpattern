@@ -585,11 +585,10 @@ print(islandPerimeter(grid))  # 16
 ```python title="130. Surrounded Regions - Python Solution"
 from collections import deque
 from copy import deepcopy
-from pprint import pprint
 from typing import List
 
 
-# 1. DFS
+# DFS
 def solveDFS(board: List[List[str]]) -> None:
     """
     Do not return anything, modify board in-place instead.
@@ -600,7 +599,7 @@ def solveDFS(board: List[List[str]]) -> None:
     m, n = len(board), len(board[0])
 
     def capture(r, c):
-        if r not in range(m) or c not in range(n) or board[r][c] != "O":
+        if r < 0 or r >= m or c < 0 or c >= n or board[r][c] != "O":
             return None
 
         board[r][c] = "T"
@@ -625,7 +624,7 @@ def solveDFS(board: List[List[str]]) -> None:
                 board[r][c] = "O"
 
 
-# 2. BFS
+# BFS
 def solveBFS(board: List[List[str]]) -> None:
     """
     Do not return anything, modify board in-place instead.
@@ -634,7 +633,7 @@ def solveBFS(board: List[List[str]]) -> None:
         return None
 
     m, n = len(board), len(board[0])
-    directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+    dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
     def capture(r, c):
         q = deque([(r, c)])
@@ -642,12 +641,12 @@ def solveBFS(board: List[List[str]]) -> None:
         while q:
             row, col = q.popleft()
 
-            for dr, dc in directions:
+            for dr, dc in dirs:
                 nr = row + dr
                 nc = col + dc
-                if nr in range(m) and nc in range(n) and board[nr][nc] == "O":
-                    q.append((nr, nc))
+                if 0 <= nr < m and 0 <= nc < n and board[nr][nc] == "O":
                     board[nr][nc] = "T"
+                    q.append((nr, nc))
 
     for r in range(m):
         for c in range(n):
@@ -666,27 +665,31 @@ def solveBFS(board: List[List[str]]) -> None:
                 board[r][c] = "O"
 
 
-board = [
-    ["X", "X", "X", "X"],
-    ["X", "O", "O", "X"],
-    ["X", "X", "O", "X"],
-    ["X", "O", "X", "X"],
-]
-board1 = deepcopy(board)
-solveDFS(board1)
-pprint(board1)
-# [['X', 'X', 'X', 'X'],
-#  ['X', 'X', 'X', 'X'],
-#  ['X', 'X', 'X', 'X'],
-#  ['X', 'O', 'X', 'X']]
+if __name__ == "__main__":
+    board = [
+        ["X", "X", "X", "X"],
+        ["X", "O", "O", "X"],
+        ["X", "X", "O", "X"],
+        ["X", "O", "X", "X"],
+    ]
 
-board2 = deepcopy(board)
-solveBFS(board2)
-pprint(board2)
-# [['X', 'X', 'X', 'X'],
-#  ['X', 'X', 'X', 'X'],
-#  ['X', 'X', 'X', 'X'],
-#  ['X', 'O', 'X', 'X']]
+    b = deepcopy(board)
+    solveDFS(b)
+    assert b == [
+        ["X", "X", "X", "X"],
+        ["X", "X", "X", "X"],
+        ["X", "X", "X", "X"],
+        ["X", "O", "X", "X"],
+    ]
+
+    b = deepcopy(board)
+    solveBFS(b)
+    assert b == [
+        ["X", "X", "X", "X"],
+        ["X", "X", "X", "X"],
+        ["X", "X", "X", "X"],
+        ["X", "O", "X", "X"],
+    ]
 
 ```
 

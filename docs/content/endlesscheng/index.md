@@ -8,6 +8,7 @@ comments: True
 (_As of 2025 February_)
 
 -   [EndlessCheng 灵茶山艾府 - LeetCode](https://leetcode.cn/u/endlesscheng/)
+-   [EndlessCheng 灵茶山艾府 - GitHub](https://github.com/EndlessCheng)
 -   题单
 
     -   [滑动窗口与双指针（定长/不定长/单序列/双序列/三指针）](https://leetcode.cn/circle/discuss/0viNMK/)
@@ -79,8 +80,6 @@ comments: True
 | Grid     | Grid BFS          |          |
 | Grid     | Grid 01 BFS       |          |
 | Grid     | Grid Applications |          |
-
-
 
 ### Bit
 

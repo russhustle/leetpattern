@@ -24,7 +24,7 @@ comments: True
 - [ ] [510. Inorder Successor in BST II](https://leetcode.cn/problems/inorder-successor-in-bst-ii/) (Medium) 👑
 - [ ] [270. Closest Binary Search Tree Value](https://leetcode.cn/problems/closest-binary-search-tree-value/) (Easy) 👑
 - [ ] [272. Closest Binary Search Tree Value II](https://leetcode.cn/problems/closest-binary-search-tree-value-ii/) (Hard) 👑
-- [ ] [255. Verify Preorder Sequence in Binary Search Tree](https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/) (Medium) 👑
+- [x] [255. Verify Preorder Sequence in Binary Search Tree](https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/) (Medium) 👑
 - [ ] [1902. Depth of BST Given Insertion Order](https://leetcode.cn/problems/depth-of-bst-given-insertion-order/) (Medium) 👑
 
 ## 98. Validate Binary Search Tree
@@ -459,6 +459,32 @@ print(getMinimumDifference(root))  # 1
 -   [LeetCode](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/) (Medium)
 
 -   Tags: array, stack, tree, binary search tree, recursion, monotonic stack, binary tree
+
+```python title="255. Verify Preorder Sequence in Binary Search Tree - Python Solution"
+from typing import List
+
+
+# BST
+def verifyPreorder(preorder: List[int]) -> bool:
+    stack = []
+    low = float("-inf")
+
+    for value in preorder:
+        if value < low:
+            return False
+        while stack and value > stack[-1]:
+            low = stack.pop()
+        stack.append(value)
+
+    return True
+
+
+if __name__ == "__main__":
+    assert verifyPreorder([8, 5, 1, 7, 10, 12]) is True
+    assert verifyPreorder([8, 5, 4, 3, 2, 1]) is True
+
+```
+
 ## 1902. Depth of BST Given Insertion Order
 
 -   [LeetCode](https://leetcode.com/problems/depth-of-bst-given-insertion-order/) | [LeetCode CH](https://leetcode.cn/problems/depth-of-bst-given-insertion-order/) (Medium)

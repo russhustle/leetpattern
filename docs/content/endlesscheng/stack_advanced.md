@@ -6,7 +6,7 @@ comments: True
 
 ## Table of Contents
 
-- [ ] [3170. Lexicographically Minimum String After Removing Stars](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
+- [x] [3170. Lexicographically Minimum String After Removing Stars](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
 - [x] [155. Min Stack](https://leetcode.cn/problems/min-stack/) (Medium)
 - [ ] [1381. Design a Stack With Increment Operation](https://leetcode.cn/problems/design-a-stack-with-increment-operation/) (Medium)
 - [ ] [636. Exclusive Time of Functions](https://leetcode.cn/problems/exclusive-time-of-functions/) (Medium)
@@ -21,6 +21,31 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/) | [LeetCode CH](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
 
 -   Tags: hash table, string, stack, greedy, heap priority queue
+
+```python title="3170. Lexicographically Minimum String After Removing Stars - Python Solution"
+from itertools import chain
+
+
+# Stack
+def clearStars(s: str) -> str:
+    stacks = [[] for _ in range(26)]
+    for i, c in enumerate(s):
+        if c != "*":
+            stacks[ord(c) - ord("a")].append(i)
+            continue
+
+        for st in stacks:
+            if st:
+                st.pop()
+                break
+    return "".join(s[i] for i in sorted(chain.from_iterable(stacks)))
+
+
+if __name__ == "__main__":
+    assert clearStars("aaba*") == "aab"
+
+```
+
 ## 155. Min Stack
 
 -   [LeetCode](https://leetcode.com/problems/min-stack/) | [LeetCode CH](https://leetcode.cn/problems/min-stack/) (Medium)

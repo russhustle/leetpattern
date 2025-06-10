@@ -58,6 +58,10 @@ nav:
     - Simulation: content/leetpattern/simulation.md
     - Design: content/leetpattern/design.md
 
+  - Templates:
+    - Home: content/templates/index.md
+    - sliding window: content/templates/sliding_window.md
+
   - Top 100 Liked:
     - Home: content/top100liked/index.md
     - Hash: content/top100liked/hash.md

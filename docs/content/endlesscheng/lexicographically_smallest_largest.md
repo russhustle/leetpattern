@@ -23,7 +23,7 @@ comments: True
 - [ ] [2182. Construct String With Repeat Limit](https://leetcode.cn/problems/construct-string-with-repeat-limit/) (Medium)
 - [x] [738. Monotone Increasing Digits](https://leetcode.cn/problems/monotone-increasing-digits/) (Medium)
 - [x] [3403. Find the Lexicographically Largest String From the Box I](https://leetcode.cn/problems/find-the-lexicographically-largest-string-from-the-box-i/) (Medium)
-- [ ] [3170. Lexicographically Minimum String After Removing Stars](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
+- [x] [3170. Lexicographically Minimum String After Removing Stars](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
 - [ ] [1363. Largest Multiple of Three](https://leetcode.cn/problems/largest-multiple-of-three/) (Hard)
 - [ ] [1754. Largest Merge Of Two Strings](https://leetcode.cn/problems/largest-merge-of-two-strings/) (Medium)
 - [x] [1202. Smallest String With Swaps](https://leetcode.cn/problems/smallest-string-with-swaps/) (Medium)
@@ -207,6 +207,31 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/) | [LeetCode CH](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
 
 -   Tags: hash table, string, stack, greedy, heap priority queue
+
+```python title="3170. Lexicographically Minimum String After Removing Stars - Python Solution"
+from itertools import chain
+
+
+# Stack
+def clearStars(s: str) -> str:
+    stacks = [[] for _ in range(26)]
+    for i, c in enumerate(s):
+        if c != "*":
+            stacks[ord(c) - ord("a")].append(i)
+            continue
+
+        for st in stacks:
+            if st:
+                st.pop()
+                break
+    return "".join(s[i] for i in sorted(chain.from_iterable(stacks)))
+
+
+if __name__ == "__main__":
+    assert clearStars("aaba*") == "aab"
+
+```
+
 ## 1363. Largest Multiple of Three
 
 -   [LeetCode](https://leetcode.com/problems/largest-multiple-of-three/) | [LeetCode CH](https://leetcode.cn/problems/largest-multiple-of-three/) (Hard)

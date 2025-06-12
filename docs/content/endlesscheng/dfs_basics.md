@@ -13,7 +13,7 @@ comments: True
 - [x] [2316. Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
 - [x] [1319. Number of Operations to Make Network Connected](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/) (Medium)
 - [x] [2492. Minimum Score of a Path Between Two Cities](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
-- [ ] [3387. Maximize Amount After Two Days of Conversions](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
+- [x] [3387. Maximize Amount After Two Days of Conversions](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
 - [ ] [3310. Remove Methods From Project](https://leetcode.cn/problems/remove-methods-from-project/) (Medium)
 - [ ] [2685. Count the Number of Complete Components](https://leetcode.cn/problems/count-the-number-of-complete-components/) (Medium)
 - [ ] [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.cn/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) (Medium)
@@ -610,6 +610,57 @@ print(minScoreDFS(n, roads))  # 5
 -   [LeetCode](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [LeetCode CH](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
 
 -   Tags: array, string, depth first search, breadth first search, graph
+
+```python title="3387. Maximize Amount After Two Days of Conversions - Python Solution"
+from collections import defaultdict
+from typing import List
+
+
+# DFS
+def maxAmount(
+    initialCurrency: str,
+    pairs1: List[List[str]],
+    rates1: List[float],
+    pairs2: List[List[str]],
+    rates2: List[float],
+) -> float:
+
+    def cal_amount(pairs, rates, initialCurrency):
+        graph = defaultdict(list)
+
+        for (u, v), r in zip(pairs, rates):
+            graph[u].append((v, r))
+            graph[v].append((u, 1.0 / r))
+
+        amount = {}
+
+        def dfs(x, cur):
+            amount[x] = cur
+            for to, rate in graph[x]:
+                if to not in amount:
+                    dfs(to, cur * rate)
+
+        dfs(initialCurrency, 1.0)
+
+        return amount
+
+    day1 = cal_amount(pairs1, rates1, initialCurrency)
+    day2 = cal_amount(pairs2, rates2, initialCurrency)
+
+    return max(day1.get(x, 0.0) / a2 for x, a2 in day2.items())
+
+
+if __name__ == "__main__":
+    initialCurrency = "EUR"
+    pairs1 = [["EUR", "USD"], ["USD", "JPY"]]
+    rates1 = [2.0, 3.0]
+    pairs2 = [["JPY", "USD"], ["USD", "CHF"], ["CHF", "EUR"]]
+    rates2 = [4.0, 5.0, 6.0]
+
+    assert maxAmount(initialCurrency, pairs1, rates1, pairs2, rates2) == 720.0
+
+```
+
 ## 3310. Remove Methods From Project
 
 -   [LeetCode](https://leetcode.com/problems/remove-methods-from-project/) | [LeetCode CH](https://leetcode.cn/problems/remove-methods-from-project/) (Medium)

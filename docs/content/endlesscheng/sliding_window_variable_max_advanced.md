@@ -7,7 +7,7 @@ comments: True
 ## Table of Contents
 
 - [x] [2730. Find the Longest Semi-Repetitive Substring](https://leetcode.cn/problems/find-the-longest-semi-repetitive-substring/) (Medium)
-- [ ] [2779. Maximum Beauty of an Array After Applying Operation](https://leetcode.cn/problems/maximum-beauty-of-an-array-after-applying-operation/) (Medium)
+- [x] [2779. Maximum Beauty of an Array After Applying Operation](https://leetcode.cn/problems/maximum-beauty-of-an-array-after-applying-operation/) (Medium)
 - [ ] [1838. Frequency of the Most Frequent Element](https://leetcode.cn/problems/frequency-of-the-most-frequent-element/) (Medium)
 - [ ] [2516. Take K of Each Character From Left and Right](https://leetcode.cn/problems/take-k-of-each-character-from-left-and-right/) (Medium)
 - [ ] [2831. Find the Longest Equal Subarray](https://leetcode.cn/problems/find-the-longest-equal-subarray/) (Medium)
@@ -68,6 +68,29 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/) | [LeetCode CH](https://leetcode.cn/problems/maximum-beauty-of-an-array-after-applying-operation/) (Medium)
 
 -   Tags: array, binary search, sliding window, sorting
+
+```python title="2779. Maximum Beauty of an Array After Applying Operation - Python Solution"
+from typing import List
+
+
+# Sliding Window Variable Max
+def maximumBeauty(nums: List[int], k: int) -> int:
+    nums.sort()
+    res, left = 0, 0
+
+    for right, x in enumerate(nums):
+        while x - nums[left] > k * 2:
+            left += 1
+        res = max(res, right - left + 1)
+
+    return res
+
+
+if __name__ == "__main__":
+    assert maximumBeauty([4, 6, 1, 2], 2) == 3
+
+```
+
 ## 1838. Frequency of the Most Frequent Element
 
 -   [LeetCode](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | [LeetCode CH](https://leetcode.cn/problems/frequency-of-the-most-frequent-element/) (Medium)

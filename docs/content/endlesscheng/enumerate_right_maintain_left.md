@@ -21,8 +21,8 @@ comments: True
 - [ ] [2506. Count Pairs Of Similar Strings](https://leetcode.cn/problems/count-pairs-of-similar-strings/) (Easy)
 - [ ] [2748. Number of Beautiful Pairs](https://leetcode.cn/problems/number-of-beautiful-pairs/) (Easy)
 - [x] [2874. Maximum Value of an Ordered Triplet II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
-- [ ] [1014. Best Sightseeing Pair](https://leetcode.cn/problems/best-sightseeing-pair/) (Medium)
-- [ ] [1814. Count Nice Pairs in an Array](https://leetcode.cn/problems/count-nice-pairs-in-an-array/) (Medium)
+- [x] [1014. Best Sightseeing Pair](https://leetcode.cn/problems/best-sightseeing-pair/) (Medium)
+- [x] [1814. Count Nice Pairs in an Array](https://leetcode.cn/problems/count-nice-pairs-in-an-array/) (Medium)
 - [ ] [2905. Find Indices With Index and Value Difference II](https://leetcode.cn/problems/find-indices-with-index-and-value-difference-ii/) (Medium)
 - [ ] [1031. Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.cn/problems/maximum-sum-of-two-non-overlapping-subarrays/) (Medium)
 - [x] [2555. Maximize Win From Two Segments](https://leetcode.cn/problems/maximize-win-from-two-segments/) (Medium)
@@ -595,11 +595,67 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/best-sightseeing-pair/) | [LeetCode CH](https://leetcode.cn/problems/best-sightseeing-pair/) (Medium)
 
 -   Tags: array, dynamic programming
+
+```python title="1014. Best Sightseeing Pair - Python Solution"
+from typing import List
+
+
+# Enumeate Right Maintain Left
+def maxScoreSightseeingPair(values: List[int]) -> int:
+    max_i = values[0] + 0
+    res = 0
+
+    for j in range(1, len(values)):
+        res = max(res, max_i + values[j] - j)
+        max_i = max(max_i, values[j] + j)
+
+    return res
+
+
+if __name__ == "__main__":
+    assert maxScoreSightseeingPair([8, 1, 5, 2, 6]) == 11
+    assert maxScoreSightseeingPair([1, 2]) == 2
+    assert maxScoreSightseeingPair([1, 3, 5]) == 7
+    assert maxScoreSightseeingPair([1, 2, 3, 4, 5]) == 8
+
+```
+
 ## 1814. Count Nice Pairs in an Array
 
 -   [LeetCode](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/count-nice-pairs-in-an-array/) (Medium)
 
 -   Tags: array, hash table, math, counting
+
+```python title="1814. Count Nice Pairs in an Array - Python Solution"
+from collections import defaultdict
+from typing import List
+
+
+# Enumerate Right Maintain Left
+def countNicePairs(nums: List[int]) -> int:
+    rev = lambda n: int(str(n)[::-1])
+    cnt = defaultdict(int)
+    MOD = 10**9 + 7
+    res = 0
+
+    for num in nums:
+        cnt[num - rev(num)] += 1
+
+    for i in cnt.values():
+        res += i * (i - 1) // 2  # math.comb(i, 2)
+
+    return res % MOD
+
+
+if __name__ == "__main__":
+    assert countNicePairs([42, 11, 1, 97]) == 2
+    assert countNicePairs([13, 10, 35, 24, 76]) == 4
+    assert countNicePairs([100, 200, 300]) == 0
+    assert countNicePairs([123, 321, 456, 654]) == 2
+    assert countNicePairs([12, 21, 34, 43]) == 2
+
+```
+
 ## 2905. Find Indices With Index and Value Difference II
 
 -   [LeetCode](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) | [LeetCode CH](https://leetcode.cn/problems/find-indices-with-index-and-value-difference-ii/) (Medium)

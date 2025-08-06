@@ -2,12 +2,12 @@
 -   Generate the first `numRows` of Pascal's triangle.
 
 ```plaintext
-                 numRows    index
-     1              1         0
-    1 1             2         1
-   1 2 1            3         2
-  1 3 3 1           4         3
- 1 4 6 4 1          5         4
+                 numRows
+     1              1
+    1 1             2
+   1 2 1            3
+  1 3 3 1           4
+ 1 4 6 4 1          5
 ```
 """
 
@@ -27,9 +27,10 @@ def generate(numRows: int) -> List[List[int]]:
     return dp
 
 
-print(generate(numRows=5))
-#     [[1],
-#    [1, 1],
-#   [1, 2, 1],
-#  [1, 3, 3, 1],
-# [1, 4, 6, 4, 1]]
+if __name__ == "__main__":
+    print(generate(numRows=5))
+    # [[1],
+    #  [1, 1],
+    #  [1, 2, 1],
+    #  [1, 3, 3, 1],
+    #  [1, 4, 6, 4, 1]]

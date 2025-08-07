@@ -8,7 +8,7 @@ comments: True
 
 - [ ] [1221. Split a String in Balanced Strings](https://leetcode.cn/problems/split-a-string-in-balanced-strings/) (Easy)
 - [ ] [2405. Optimal Partition of String](https://leetcode.cn/problems/optimal-partition-of-string/) (Medium)
-- [ ] [2294. Partition Array Such That Maximum Difference Is K](https://leetcode.cn/problems/partition-array-such-that-maximum-difference-is-k/) (Medium)
+- [x] [2294. Partition Array Such That Maximum Difference Is K](https://leetcode.cn/problems/partition-array-such-that-maximum-difference-is-k/) (Medium)
 - [ ] [2358. Maximum Number of Groups Entering a Competition](https://leetcode.cn/problems/maximum-number-of-groups-entering-a-competition/) (Medium)
 - [ ] [2522. Partition String Into Substrings With Values at Most K](https://leetcode.cn/problems/partition-string-into-substrings-with-values-at-most-k/) (Medium)
 - [ ] [1546. Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](https://leetcode.cn/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) (Medium)
@@ -30,6 +30,29 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/) | [LeetCode CH](https://leetcode.cn/problems/partition-array-such-that-maximum-difference-is-k/) (Medium)
 
 -   Tags: array, greedy, sorting
+
+```python title="2294. Partition Array Such That Maximum Difference Is K - Python Solution"
+from typing import List
+
+
+def partitionArray(nums: List[int], k: int) -> int:
+    nums.sort()
+    mn = float("-inf")
+    res = 0
+
+    for num in nums:
+        if num - mn > k:
+            res += 1
+            mn = num
+
+    return res
+
+
+if __name__ == "__main__":
+    assert partitionArray([3, 6, 1, 2, 5], 2) == 2
+
+```
+
 ## 2358. Maximum Number of Groups Entering a Competition
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-groups-entering-a-competition/) (Medium)

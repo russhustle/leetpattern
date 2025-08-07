@@ -14,7 +14,7 @@ comments: True
 - [ ] [826. Most Profit Assigning Work](https://leetcode.cn/problems/most-profit-assigning-work/) (Medium)
 - [ ] [2449. Minimum Number of Operations to Make Arrays Similar](https://leetcode.cn/problems/minimum-number-of-operations-to-make-arrays-similar/) (Hard)
 - [ ] [1889. Minimum Space Wasted From Packaging](https://leetcode.cn/problems/minimum-space-wasted-from-packaging/) (Hard)
-- [ ] [2561. Rearranging Fruits](https://leetcode.cn/problems/rearranging-fruits/) (Hard)
+- [x] [2561. Rearranging Fruits](https://leetcode.cn/problems/rearranging-fruits/) (Hard)
 - [ ] [2323. Find Minimum Time to Finish All Jobs II](https://leetcode.cn/problems/find-minimum-time-to-finish-all-jobs-ii/) (Medium) 👑
 
 ## 2037. Minimum Number of Moves to Seat Everyone
@@ -119,6 +119,42 @@ print(findContentChildren(g, s))  # 1
 -   [LeetCode](https://leetcode.com/problems/rearranging-fruits/) | [LeetCode CH](https://leetcode.cn/problems/rearranging-fruits/) (Hard)
 
 -   Tags: array, hash table, greedy
+
+```python title="2561. Rearranging Fruits - Python Solution"
+from collections import defaultdict
+from typing import List
+
+
+def minCost(basket1: List[int], basket2: List[int]) -> int:
+    cnt = defaultdict(int)
+    for x, y in zip(basket1, basket2):
+        cnt[x] += 1
+        cnt[y] -= 1
+
+    a, b = [], []
+    for x, c in cnt.items():
+        if c % 2:
+            return -1
+
+        if c > 0:
+            a.extend([x] * (c // 2))
+        else:
+            b.extend([x] * (-c // 2))
+
+    a.sort()
+    b.sort(reverse=True)
+    mn = min(cnt)
+
+    return sum(min(x, y, mn * 2) for x, y in zip(a, b))
+
+
+if __name__ == "__main__":
+    basket1 = [4, 2, 2, 2]
+    basket2 = [1, 4, 1, 2]
+    assert minCost(basket1, basket2) == 1
+
+```
+
 ## 2323. Find Minimum Time to Finish All Jobs II
 
 -   [LeetCode](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-time-to-finish-all-jobs-ii/) (Medium)

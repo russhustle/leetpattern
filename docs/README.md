@@ -4,7 +4,7 @@
 
 Welcome! This project is dedicated to helping you master coding interviews by breaking down common problem-solving patterns.
 
-If you find this resource useful, please consider starring ⭐️ the repository on GitHub. Your support helps others discover the project and motivates continued development!
+If you find this resource useful, please consider starring ⭐️ the [repository on GitHub](https://github.com/russhustle/leetpattern). Your support helps others discover the project and motivates continued development!
 
 📚 Inside, you'll find a curated collection of patterns for tackling LeetCode problems. Use these guides to strengthen your understanding of algorithms and data structures, and to approach interview questions with confidence.
 

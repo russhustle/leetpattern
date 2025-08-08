@@ -1,5 +1,5 @@
 serve:
-	poetry run mkdocs serve
+	uv run mkdocs serve
 
 
 search:
@@ -17,13 +17,13 @@ push:
 	git push
 
 sync:
-	poetry run python utils/sync.py
+	uv run python utils/sync.py
 
 format:
-	poetry run pre-commit run --all-files || $(MAKE) format
+	uv run pre-commit run --all-files || $(MAKE) format
 
 build:
-	poetry run python main.py
+	uv run python main.py
 
 run:
 	$(MAKE) build

@@ -849,4 +849,3 @@ board.reset(2)
 print(board.top(2))  # 90
 
 ```
-

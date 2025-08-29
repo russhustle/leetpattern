@@ -181,4 +181,3 @@ print(longestConsecutiveSet(nums))  # 4
 print(longestConsecutiveUF(nums))  # 4
 
 ```
-

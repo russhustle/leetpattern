@@ -273,4 +273,3 @@ print(findMinArrowShotsGreedy1(points))  # 2
 print(findMinArrowShotsGreedy2(points))  # 2
 
 ```
-

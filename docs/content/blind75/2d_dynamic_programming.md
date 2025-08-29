@@ -110,4 +110,3 @@ if __name__ == "__main__":
     assert longestCommonSubsequenceTable("abc", "abc") == 3
 
 ```
-

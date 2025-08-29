@@ -42,4 +42,3 @@ wordDict = ["leet", "code"]
 print(wordBreak(s, wordDict))  # True
 
 ```
-

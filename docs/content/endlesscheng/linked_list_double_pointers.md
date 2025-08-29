@@ -99,4 +99,3 @@ print(getIntersectionNodeTP(headA, headB))
 # 8 -> 4 -> 5
 
 ```
-

@@ -285,4 +285,3 @@ print(partitionLabels1("abaccd"))  # [3, 2, 1]
 print(partitionLabels2("abaccd"))  # [3, 2, 1]
 
 ```
-

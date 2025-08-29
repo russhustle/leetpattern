@@ -192,4 +192,3 @@ k = 2
 print(subarraysWithKDistinct(nums, k))  # 7
 
 ```
-

@@ -405,4 +405,3 @@ print(maxConsecutiveAnswers1(answerKey, k))  # 4
 print(maxConsecutiveAnswers2(answerKey, k))  # 4
 
 ```
-

@@ -216,4 +216,3 @@ ch = "d"
 print(reversePrefix(word, ch))  # "dcbaefd"
 
 ```
-

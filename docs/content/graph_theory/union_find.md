@@ -241,4 +241,3 @@ strs = ["tars", "rats", "arts", "star"]
 print(numSimilarGroups(strs))  # 2
 
 ```
-

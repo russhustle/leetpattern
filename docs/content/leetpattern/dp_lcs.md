@@ -347,4 +347,3 @@ def maxUncrossedLines(nums1: List[int], nums2: List[int]) -> int:
 print(maxUncrossedLines([1, 4, 2], [1, 2, 4]))  # 2
 
 ```
-

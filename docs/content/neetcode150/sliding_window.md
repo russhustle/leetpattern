@@ -397,4 +397,3 @@ k = 3
 print(maxSlidingWindow(nums, k))  # [3, 3, 5, 5, 6, 7]
 
 ```
-

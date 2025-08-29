@@ -181,4 +181,3 @@ print(possibleBipartitionBFS(n, dislikes))  # True
 print(possibleBipartitionDFS(n, dislikes))  # True
 
 ```
-

@@ -226,4 +226,3 @@ initial = [0, 1]
 print(minMalwareSpread(graph, initial))  # 0
 
 ```
-

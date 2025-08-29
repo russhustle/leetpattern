@@ -50,4 +50,3 @@ print(intersectionSet(nums1, nums2))  # [2]
 print(intersectionHash(nums1, nums2))  # [2]
 
 ```
-

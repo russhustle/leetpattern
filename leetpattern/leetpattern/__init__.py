@@ -4,12 +4,12 @@ __version__ = "0.2.0"
 __author__ = "Sihan A"
 
 from .core.config import ConfigManager
-from .core.problem import Problem, ProblemRepository
 from .core.generator import DocumentationGenerator
+from .core.problem import Problem, ProblemRepository
 
 __all__ = [
     "ConfigManager",
-    "Problem", 
+    "Problem",
     "ProblemRepository",
     "DocumentationGenerator",
 ]

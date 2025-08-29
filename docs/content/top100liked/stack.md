@@ -279,4 +279,3 @@ def largestRectangleArea(heights: List[int]) -> int:
 print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
 
 ```
-

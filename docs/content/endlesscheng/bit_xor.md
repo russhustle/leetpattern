@@ -74,7 +74,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-xor-beauty-of-array/) | [LeetCode CH](https://leetcode.cn/problems/find-xor-beauty-of-array/) (Medium)
 
 -   Tags: array, math, bit manipulation
-## 2317. Maximum XOR After Operations 
+## 2317. Maximum XOR After Operations
 
 -   [LeetCode](https://leetcode.com/problems/maximum-xor-after-operations/) | [LeetCode CH](https://leetcode.cn/problems/maximum-xor-after-operations/) (Medium)
 

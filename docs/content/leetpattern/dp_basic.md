@@ -597,4 +597,3 @@ print(divisorGameDP(n))  # True
 print(divisorGameDPMath(n))  # True
 
 ```
-

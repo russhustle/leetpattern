@@ -372,4 +372,3 @@ edges = [
 print(findCriticalAndPseudoCriticalEdges(n, edges))
 
 ```
-

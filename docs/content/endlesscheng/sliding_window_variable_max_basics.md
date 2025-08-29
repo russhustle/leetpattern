@@ -475,4 +475,3 @@ if __name__ == "__main__":
     assert minOperations(nums, x) == 2
 
 ```
-

@@ -119,7 +119,7 @@ print(maxEnvelopes(envelopes))  # 3
 
 ```
 
-## 1691. Maximum Height by Stacking Cuboids 
+## 1691. Maximum Height by Stacking Cuboids
 
 -   [LeetCode](https://leetcode.com/problems/maximum-height-by-stacking-cuboids/) | [LeetCode CH](https://leetcode.cn/problems/maximum-height-by-stacking-cuboids/) (Hard)
 

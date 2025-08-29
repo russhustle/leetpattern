@@ -235,4 +235,3 @@ capital = [0, 1, 1]
 print(findMaximizedCapital(k, w, profits, capital))  # 4
 
 ```
-

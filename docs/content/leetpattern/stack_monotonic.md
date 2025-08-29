@@ -471,4 +471,3 @@ strength = [1, 3, 1, 2]
 print(totalStrength(strength))  # 44
 
 ```
-

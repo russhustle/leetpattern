@@ -129,4 +129,3 @@ if __name__ == "__main__":
     assert distributeCandies(3, 3) == 10
 
 ```
-

@@ -1115,4 +1115,3 @@ print(root)
 print(maxPathSum(root))  # 42
 
 ```
-

@@ -93,4 +93,3 @@ nums = [3, 5, 2, 4]
 print(maxNumOfMarkedIndices(nums))  # 2
 
 ```
-

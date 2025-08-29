@@ -66,4 +66,3 @@ edges = [[0, 1], [0, 2], [2, 3], [3, 4]]
 print(largestPathValue(colors, edges))  # 3
 
 ```
-

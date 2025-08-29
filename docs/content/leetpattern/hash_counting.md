@@ -230,4 +230,3 @@ p = "abc"
 print(findAnagrams(s, p))  # [0, 6]
 
 ```
-

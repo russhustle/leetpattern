@@ -634,4 +634,3 @@ if __name__ == "__main__":
     assert lengthOfLISTable([7, 7, 7, 7]) == 1
 
 ```
-

@@ -106,4 +106,3 @@ print(obj.empty())  # False
 print(obj.pop())  # 3
 
 ```
-

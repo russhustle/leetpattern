@@ -48,4 +48,3 @@ obstacles = [[2, 4]]
 print(robotSim(commands, obstacles))  # 65
 
 ```
-

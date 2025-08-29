@@ -1007,4 +1007,3 @@ wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
 print(ladderLength(beginWord, endWord, wordList))  # 5
 
 ```
-

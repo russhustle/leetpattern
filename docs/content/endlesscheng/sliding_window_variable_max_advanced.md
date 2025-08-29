@@ -272,4 +272,3 @@ k = 2
 assert lengthOfLongestSubstringKDistinct(s, k) == 3
 
 ```
-

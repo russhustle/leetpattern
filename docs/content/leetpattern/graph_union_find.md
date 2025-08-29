@@ -824,4 +824,3 @@ n = 4
 print(earliestAcq(logs, n))  # 3
 
 ```
-

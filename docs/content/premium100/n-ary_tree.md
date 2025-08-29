@@ -68,4 +68,3 @@ root.children[0].children[1].children = [Node(6)]
 print(diameter(root))  # 4
 
 ```
-

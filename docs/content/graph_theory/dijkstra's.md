@@ -324,4 +324,3 @@ hole = [0, 1]
 print(findShortestWay(maze, ball, hole))  # "lul"
 
 ```
-

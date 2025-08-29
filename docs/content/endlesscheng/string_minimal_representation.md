@@ -39,4 +39,3 @@ if __name__ == "__main__":
     assert answerString("dbca", 2) == "dbc"
 
 ```
-

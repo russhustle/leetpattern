@@ -586,4 +586,3 @@ if __name__ == "__main__":
     assert connectSticks([1, 1, 1]) == 5
 
 ```
-

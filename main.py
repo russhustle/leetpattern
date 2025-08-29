@@ -14,6 +14,7 @@ Examples:
 """
 
 import sys
+
 from leetpattern.leetpattern.cli.commands import main
 
 if __name__ == "__main__":

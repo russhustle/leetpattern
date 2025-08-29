@@ -47,4 +47,3 @@ if __name__ == "__main__":
     assert minMeetingRooms(intervals) == 2
 
 ```
-

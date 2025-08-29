@@ -623,4 +623,3 @@ head = ListNode().create([1, 2, -3, 3, 1])
 print(removeZeroSumSublists(head))  # 3 -> 1
 
 ```
-

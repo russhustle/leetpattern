@@ -226,4 +226,3 @@ print(kthSmallestRecursive(root, k))  # 1
 print(kthSmallestIteratve(root, k))  # 1
 
 ```
-

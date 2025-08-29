@@ -27,7 +27,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/most-frequent-ids/) | [LeetCode CH](https://leetcode.cn/problems/most-frequent-ids/) (Medium)
 
 -   Tags: array, hash table, heap priority queue, ordered set
-## 2034. Stock Price Fluctuation 
+## 2034. Stock Price Fluctuation
 
 -   [LeetCode](https://leetcode.com/problems/stock-price-fluctuation/) | [LeetCode CH](https://leetcode.cn/problems/stock-price-fluctuation/) (Medium)
 

@@ -203,4 +203,3 @@ print(kthSmallestHeap(matrix, k))  # 13
 print(kthSmallestBinarySearch(matrix, k))  # 13
 
 ```
-

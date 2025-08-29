@@ -290,4 +290,3 @@ if __name__ == "__main__":
     assert smallestRangeSliding(nums) == [20, 24]
 
 ```
-

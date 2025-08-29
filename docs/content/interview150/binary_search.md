@@ -328,4 +328,3 @@ print(findMedianSortedArraysBF(nums1, nums2))  # 2.0
 print(findMedianSortedArraysBS(nums1, nums2))  # 2.0
 
 ```
-

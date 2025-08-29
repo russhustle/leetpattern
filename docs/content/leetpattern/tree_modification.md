@@ -356,4 +356,3 @@ root = mergeTrees(root1, root2)
 # 5   4   7
 
 ```
-

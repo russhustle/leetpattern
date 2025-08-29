@@ -199,4 +199,3 @@ print(obj.search("word"))
 print(obj.search("w.rd"))
 
 ```
-

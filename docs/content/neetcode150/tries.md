@@ -199,4 +199,3 @@ print(findWords(board, words))
 # ['eat', 'oath']
 
 ```
-

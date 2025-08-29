@@ -721,4 +721,3 @@ requests = [[1, 3], [0, 1]]
 print(maxSumRangeQuery(nums, requests))  # 19
 
 ```
-

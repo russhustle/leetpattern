@@ -217,7 +217,7 @@ print(medianSlidingWindow2(nums, k))
 -   [LeetCode](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/) | [LeetCode CH](https://leetcode.cn/problems/find-x-sum-of-all-k-long-subarrays-ii/) (Hard)
 
 -   Tags: array, hash table, sliding window, heap priority queue
-## 3369. Design an Array Statistics Tracker 
+## 3369. Design an Array Statistics Tracker
 
 -   [LeetCode](https://leetcode.com/problems/design-an-array-statistics-tracker/) | [LeetCode CH](https://leetcode.cn/problems/design-an-array-statistics-tracker/) (Hard)
 

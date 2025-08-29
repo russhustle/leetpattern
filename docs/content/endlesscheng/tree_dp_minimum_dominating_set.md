@@ -55,4 +55,3 @@ print(root)
 print(minCameraCover(root))  # 1
 
 ```
-

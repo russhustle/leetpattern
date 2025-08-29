@@ -158,4 +158,3 @@ def getSum(a: int, b: int) -> int:
 print(getSum(1, 2))  # 3
 
 ```
-

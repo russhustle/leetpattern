@@ -326,4 +326,3 @@ k = 3
 print(kthSmallestPrimeFraction(arr, k))  # [2, 5]
 
 ```
-

@@ -159,4 +159,3 @@ nums = [[3, 6], [1, 5], [4, 7]]
 print(numberOfPoints(nums))  # 7
 
 ```
-

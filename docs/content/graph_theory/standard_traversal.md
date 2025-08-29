@@ -556,4 +556,3 @@ connections = [[0, 1], [1, 2], [2, 0], [1, 3]]
 print(criticalConnections(n, connections))  # [[1, 3]]
 
 ```
-

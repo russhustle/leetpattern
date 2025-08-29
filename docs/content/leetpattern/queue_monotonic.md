@@ -184,4 +184,3 @@ budget = 25
 print(maximumRobots(chargeTimes, runningCosts, budget))  # 3
 
 ```
-

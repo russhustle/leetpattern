@@ -303,4 +303,3 @@ relations = [[1, 3], [2, 3]]
 print(minimumSemesters(n, relations))  # 2
 
 ```
-

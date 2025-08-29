@@ -669,4 +669,3 @@ if __name__ == "__main__":
     assert shareCandies(candies, k) == 3
 
 ```
-

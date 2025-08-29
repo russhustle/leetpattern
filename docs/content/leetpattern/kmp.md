@@ -173,4 +173,3 @@ def shortestPalindrome(s: str) -> str:
 print(shortestPalindrome("aacecaaa"))  # aaacecaaa
 
 ```
-

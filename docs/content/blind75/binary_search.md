@@ -75,4 +75,3 @@ target = 0
 print(search(nums, target))  # 4
 
 ```
-

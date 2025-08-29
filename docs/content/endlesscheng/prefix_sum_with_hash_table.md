@@ -414,7 +414,7 @@ print(maxSubArrayLen(nums, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/number-of-divisible-substrings/) | [LeetCode CH](https://leetcode.cn/problems/number-of-divisible-substrings/) (Medium)
 
 -   Tags: hash table, string, counting, prefix sum
-## 3364. Minimum Positive Sum Subarray 
+## 3364. Minimum Positive Sum Subarray
 
 -   [LeetCode](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/minimum-positive-sum-subarray/) (Easy)
 

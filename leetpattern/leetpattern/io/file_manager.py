@@ -6,7 +6,7 @@ from typing import Optional
 
 class FileManager:
     """Handles file operations with proper error handling."""
-    
+
     @staticmethod
     def check_create_file(file_path: str) -> None:
         """Create an empty file if it does not exist."""
@@ -17,7 +17,7 @@ class FileManager:
                     f.write("")
             except Exception as e:
                 print(f"Warning: Failed to create file {file_path}: {e}")
-    
+
     @staticmethod
     def is_file_empty(file_path: str) -> bool:
         """Check if a file exists and is not empty."""
@@ -27,25 +27,27 @@ class FileManager:
             return os.path.getsize(file_path) == 0
         except OSError:
             return True
-    
+
     @staticmethod
     def file_exists_and_not_empty(file_path: str) -> bool:
         """Check if a file exists and is not empty."""
-        return os.path.exists(file_path) and not FileManager.is_file_empty(file_path)
-    
+        return os.path.exists(file_path) and not FileManager.is_file_empty(
+            file_path
+        )
+
     @staticmethod
     def read_file_safe(file_path: str) -> str:
         """Read file content safely with error handling."""
         if not os.path.exists(file_path):
             return ""
-        
+
         try:
             with open(file_path, "r", encoding="utf-8") as f:
                 return f.read()
         except Exception as e:
             print(f"Warning: Failed to read file {file_path}: {e}")
             return ""
-    
+
     @staticmethod
     def write_file_safe(file_path: str, content: str) -> bool:
         """Write content to file safely with error handling."""
@@ -54,39 +56,41 @@ class FileManager:
             dir_path = os.path.dirname(file_path)
             if dir_path:  # Only create if there's actually a directory path
                 os.makedirs(dir_path, exist_ok=True)
-            
+
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(content)
             return True
         except Exception as e:
             print(f"Error: Failed to write file {file_path}: {e}")
             return False
-    
+
     @staticmethod
     def extract_docstring(file_path: str) -> str:
         """Extract docstring from a Python file."""
         if not FileManager.file_exists_and_not_empty(file_path):
             return ""
-        
+
         content = FileManager.read_file_safe(file_path).strip()
         if not content:
             return ""
-        
+
         # Look for triple-quoted docstring at the beginning of the file
         if content.startswith('"""'):
             end_idx = content.find('"""', 3)
             if end_idx != -1:
                 return content[3:end_idx].strip() + "\n\n"
-        
+
         return ""
-    
+
     @staticmethod
-    def remove_empty_files(directories: list[str], extensions: list[str]) -> None:
+    def remove_empty_files(
+        directories: list[str], extensions: list[str]
+    ) -> None:
         """Remove empty files from specified directories."""
         for directory in directories:
             if not os.path.exists(directory):
                 continue
-                
+
             try:
                 for filename in os.listdir(directory):
                     if any(filename.endswith(ext) for ext in extensions):

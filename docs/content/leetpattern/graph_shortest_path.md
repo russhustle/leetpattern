@@ -801,4 +801,3 @@ roads = [
 print(countPaths(n, roads))  # 4
 
 ```
-

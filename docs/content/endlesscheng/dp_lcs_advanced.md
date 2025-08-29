@@ -126,7 +126,7 @@ print(isInterleaveDFS(s1, s2, s3))  # False
 
 ```
 
-## 1092. Shortest Common Supersequence 
+## 1092. Shortest Common Supersequence
 
 -   [LeetCode](https://leetcode.com/problems/shortest-common-supersequence/) | [LeetCode CH](https://leetcode.cn/problems/shortest-common-supersequence/) (Hard)
 

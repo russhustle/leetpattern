@@ -271,4 +271,3 @@ def calculate(s: str) -> int:
 print(calculate("(1+(4+5+2)-3)+(6+8)"))  # 23
 
 ```
-

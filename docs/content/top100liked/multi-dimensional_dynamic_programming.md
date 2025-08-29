@@ -270,4 +270,3 @@ if __name__ == "__main__":
     print(minDistanceDP(word1, word2))  # 3
 
 ```
-

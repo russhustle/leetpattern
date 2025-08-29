@@ -296,4 +296,3 @@ duplicateZeros(arr)
 print(arr)  # [1, 0, 0, 2, 3, 0, 0, 4]
 
 ```
-

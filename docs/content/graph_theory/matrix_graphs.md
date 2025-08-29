@@ -33,7 +33,6 @@ comments: True
 
 ![0200](../../assets/0200.jpg)
 
-
 ```python title="200. Number of Islands - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -216,7 +215,6 @@ int main()
     cout << s.numIslands(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 1020. Number of Enclaves
@@ -224,7 +222,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/number-of-enclaves/) | [LeetCode CH](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="1020. Number of Enclaves - Python Solution"
 from typing import List
 
@@ -279,7 +276,6 @@ print(numEnclaves(grid))  # 3
 -   [LeetCode](https://leetcode.com/problems/number-of-closed-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="1254. Number of Closed Islands - Python Solution"
 from typing import List
 
@@ -341,7 +337,6 @@ print(closedIsland(grid))  # 2
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="695. Max Area of Island - Python Solution"
 from collections import deque
 from typing import List
@@ -516,7 +511,6 @@ int main() {
     cout << s.maxAreaOfIsland(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 417. Pacific Atlantic Water Flow
@@ -524,7 +518,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="417. Pacific Atlantic Water Flow - Python Solution"
 from collections import deque
 from typing import List
@@ -610,3 +603,4 @@ print(pacificAtlanticBFS(heights))
 # [(4, 0), (0, 4), (3, 1), (1, 4), (3, 0), (2, 2), (1, 3)]
 
 ```
+

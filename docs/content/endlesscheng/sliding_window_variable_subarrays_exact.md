@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-nice-subarrays/) (Medium)
 
 -   Tags: array, hash table, math, sliding window, prefix sum
-
 ```python title="1248. Count Number of Nice Subarrays - Python Solution"
 from typing import List
 
@@ -57,7 +56,6 @@ print(numberOfSubarrays(nums, k))  # 2
 -   [LeetCode](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/) | [LeetCode CH](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="3305. Count of Substrings Containing Every Vowel and K Consonants I - Python Solution"
 from collections import defaultdict
 
@@ -109,7 +107,6 @@ print(countOfSubstrings(word, k))  # 3
 -   [LeetCode](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | [LeetCode CH](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="3306. Count of Substrings Containing Every Vowel and K Consonants II - Python Solution"
 from collections import defaultdict
 
@@ -161,7 +158,6 @@ print(countOfSubstrings(word, k))  # 3
 -   [LeetCode](https://leetcode.com/problems/subarrays-with-k-different-integers/) | [LeetCode CH](https://leetcode.cn/problems/subarrays-with-k-different-integers/) (Hard)
 
 -   Tags: array, hash table, sliding window, counting
-
 ```python title="992. Subarrays with K Different Integers - Python Solution"
 from typing import List
 
@@ -196,3 +192,4 @@ k = 2
 print(subarraysWithKDistinct(nums, k))  # 7
 
 ```
+

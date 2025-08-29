@@ -36,7 +36,6 @@ comments: True
 | dp[7]=12  |         |         |         |         |          | 12*1=12  |
 | `dp[n]`   | 2       | 4       | 6       | 9       | 12       | 18       |
 
-
 ```python title="343. Integer Break - Python Solution"
 def integerBreak(n: int) -> int:
     dp = [0 for _ in range(n + 1)]

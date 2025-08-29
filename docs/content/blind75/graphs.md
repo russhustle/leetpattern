@@ -34,7 +34,6 @@ comments: True
 
 ![0200](../../assets/0200.jpg)
 
-
 ```python title="200. Number of Islands - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -217,7 +216,6 @@ int main()
     cout << s.numIslands(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 133. Clone Graph
@@ -225,7 +223,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 
 -   Tags: hash table, depth first search, breadth first search, graph
-
 ```python title="133. Clone Graph - Python Solution"
 from collections import deque
 from typing import Optional
@@ -286,7 +283,6 @@ def cloneGraphBFS(node: Optional["Node"]) -> Optional["Node"]:
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="417. Pacific Atlantic Water Flow - Python Solution"
 from collections import deque
 from typing import List
@@ -493,7 +489,6 @@ flowchart LR
 - pop `0` from the queue
 - All courses are taken. Return `True`.
 
-
 ```python title="207. Course Schedule - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -672,7 +667,6 @@ int main() {
     cout << sol.canFinishDFS(numCourses, prerequisites) << endl;
     return 0;
 }
-
 ```
 
 ## 261. Graph Valid Tree
@@ -680,7 +674,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="261. Graph Valid Tree - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -722,7 +715,6 @@ print(validTree(5, [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]))  # False
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"
 from typing import List
 
@@ -770,3 +762,4 @@ class UnionFind:
 print(countComponents(5, [[0, 1], [1, 2], [3, 4]]))  # 2
 
 ```
+

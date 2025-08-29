@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="199. Binary Tree Right Side View - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -87,7 +86,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="637. Average of Levels in Binary Tree - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -139,7 +137,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="102. Binary Tree Level Order Traversal - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -189,7 +186,6 @@ print(levelOrder(tree))  # [[3], [9, 20], [15, 7]]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="103. Binary Tree Zigzag Level Order Traversal - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -233,3 +229,4 @@ print(tree)
 print(zigzagLevelOrder(tree))  # [[3], [20, 9], [15, 7]]
 
 ```
+

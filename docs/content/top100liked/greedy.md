@@ -18,7 +18,6 @@ comments: True
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
-
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
 from typing import List
 
@@ -125,7 +124,6 @@ int main()
     cout << obj.maxProfit(prices) << endl;
     return 0;
 }
-
 ```
 
 ## 55. Jump Game
@@ -134,7 +132,6 @@ int main()
 
 -   Tags: array, dynamic programming, greedy
 - Return `True` if you can reach the last index, otherwise `False`.
-
 
 ```python title="55. Jump Game - Python Solution"
 from typing import List
@@ -187,7 +184,6 @@ int main() {
     cout << obj.canJump(nums) << endl;
     return 0;
 }
-
 ```
 
 ## 45. Jump Game II
@@ -196,7 +192,6 @@ int main() {
 
 -   Tags: array, dynamic programming, greedy
 - Return the minimum number of jumps to reach the last index.
-
 
 ```python title="45. Jump Game II - Python Solution"
 from typing import List
@@ -234,7 +229,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
 
 -   Tags: hash table, two pointers, string, greedy
-
 ```python title="763. Partition Labels - Python Solution"
 from typing import List
 
@@ -291,3 +285,4 @@ print(partitionLabels1("abaccd"))  # [3, 2, 1]
 print(partitionLabels2("abaccd"))  # [3, 2, 1]
 
 ```
+

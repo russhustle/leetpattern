@@ -15,7 +15,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | [LeetCode CH](https://leetcode.cn/problems/minimum-absolute-difference-in-bst/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary search tree, binary tree
-
 ```python title="530. Minimum Absolute Difference in BST - Python Solution"
 from typing import Optional
 
@@ -66,7 +65,6 @@ print(getMinimumDifference(root))  # 1
 -   [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="230. Kth Smallest Element in a BST - Python Solution"
 from typing import Optional
 
@@ -121,7 +119,6 @@ print(kthSmallestIteratve(root, k))  # 1
 -   [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="98. Validate Binary Search Tree - Python Solution"
 from typing import Optional
 
@@ -227,5 +224,5 @@ int main() {
 
     return 0;
 }
-
 ```
+

@@ -20,7 +20,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/rotate-image/) | [LeetCode CH](https://leetcode.cn/problems/rotate-image/) (Medium)
 
 -   Tags: array, math, matrix
-
 ```python title="48. Rotate Image - Python Solution"
 from copy import deepcopy
 from typing import List
@@ -81,7 +80,6 @@ print(matrix2)
 
 -   Tags: array, matrix, simulation
 -   Return all elements of the matrix in spiral order.
-
 
 ```python title="54. Spiral Matrix - Python Solution"
 from typing import List
@@ -153,7 +151,6 @@ print(spiralOrderMath([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]))
 -   [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/) | [LeetCode CH](https://leetcode.cn/problems/set-matrix-zeroes/) (Medium)
 
 -   Tags: array, hash table, matrix
-
 ```python title="73. Set Matrix Zeroes - Python Solution"
 from copy import deepcopy
 from typing import List
@@ -254,7 +251,6 @@ print(matrix2)
 -   Return `True` if the number is a happy number, otherwise, return `False`.
 -   A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
 
-
 ```python title="202. Happy Number - Python Solution"
 def isHappy(n: int) -> bool:
 
@@ -290,7 +286,6 @@ print(isHappy(n))  # True
 -   [LeetCode](https://leetcode.com/problems/plus-one/) | [LeetCode CH](https://leetcode.cn/problems/plus-one/) (Easy)
 
 -   Tags: array, math
-
 ```python title="66. Plus One - Python Solution"
 from typing import List
 
@@ -319,7 +314,6 @@ print(plusOne(digits))  # [4, 3, 2, 2]
 -   [LeetCode](https://leetcode.com/problems/powx-n/) | [LeetCode CH](https://leetcode.cn/problems/powx-n/) (Medium)
 
 -   Tags: math, recursion
-
 ```python title="50. Pow(x, n) - Python Solution"
 # Iterative
 def myPowIterative(x: float, n: int) -> float:
@@ -368,7 +362,6 @@ print(myPowRecursive(x, n))  # 1024.0
 -   [LeetCode](https://leetcode.com/problems/multiply-strings/) | [LeetCode CH](https://leetcode.cn/problems/multiply-strings/) (Medium)
 
 -   Tags: math, string, simulation
-
 ```python title="43. Multiply Strings - Python Solution"
 # Math
 def multiply(num1: str, num2: str) -> str:
@@ -402,7 +395,6 @@ print(multiply(num1, num2))  # "6"
 -   [LeetCode](https://leetcode.com/problems/fraction-to-recurring-decimal/) | [LeetCode CH](https://leetcode.cn/problems/fraction-to-recurring-decimal/) (Medium)
 
 -   Tags: hash table, math, string
-
 ```python title="166. Fraction to Recurring Decimal - Python Solution"
 # Math
 def fractionToDecimal(numerator: int, denominator: int) -> str:
@@ -447,3 +439,4 @@ denominator = 333
 print(fractionToDecimal(numerator, denominator))  # 0.(012)
 
 ```
+

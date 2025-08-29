@@ -33,7 +33,6 @@ graph TD
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ```python title="787. Cheapest Flights Within K Stops - Python Solution"
 import heapq
 from collections import defaultdict
@@ -110,7 +109,6 @@ print(findCheapestPriceDijkstra(n, flights, src, dst, k))  # 700
 -   [LeetCode](https://leetcode.com/problems/path-with-maximum-probability/) | [LeetCode CH](https://leetcode.cn/problems/path-with-maximum-probability/) (Medium)
 
 -   Tags: array, graph, heap priority queue, shortest path
-
 ```python title="1514. Path with Maximum Probability - Python Solution"
 import heapq
 from collections import defaultdict
@@ -202,7 +200,6 @@ print(maxProbability2(n, edges, succProb, start, end))  # 0.25
 -   [LeetCode](https://leetcode.com/problems/the-maze-ii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-ii/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
-
 ```python title="505. The Maze II - Python Solution"
 import heapq
 from typing import List
@@ -263,7 +260,6 @@ print(shortestDistance(maze, start, destination))  # 12
 -   [LeetCode](https://leetcode.com/problems/the-maze-iii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-iii/) (Hard)
 
 -   Tags: array, string, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
-
 ```python title="499. The Maze III - Python Solution"
 import heapq
 from typing import List
@@ -328,3 +324,4 @@ hole = [0, 1]
 print(findShortestWay(maze, ball, hole))  # "lul"
 
 ```
+

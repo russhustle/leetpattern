@@ -28,7 +28,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/perfect-squares/) | [LeetCode CH](https://leetcode.cn/problems/perfect-squares/) (Medium)
 
 -   Tags: math, dynamic programming, breadth first search
-
 ```python title="279. Perfect Squares - Python Solution"
 import math
 

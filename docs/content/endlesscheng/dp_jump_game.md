@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/jump-game-iii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-iii/) (Medium)
 
 -   Tags: array, depth first search, breadth first search
-
 ```python title="1306. Jump Game III - Python Solution"
 from collections import deque
 from typing import List

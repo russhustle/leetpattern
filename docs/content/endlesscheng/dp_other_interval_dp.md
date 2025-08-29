@@ -32,7 +32,6 @@ comments: True
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
 
-
 ```python title="5. Longest Palindromic Substring - Python Solution"
 # DP - Interval
 def longestPalindromeDP(s: str) -> str:
@@ -107,7 +106,6 @@ print(longestPalindromeCenter(s))  # "aba"
 | **b** |  0  |  0  |  1  |  0  |  0  |
 | **a** |  0  |  0  |  0  |  1  |  0  |
 | **e** |  0  |  0  |  0  |  0  |  1  |
-
 
 ```python title="647. Palindromic Substrings - Python Solution"
 def countSubstrings(s: str) -> int:

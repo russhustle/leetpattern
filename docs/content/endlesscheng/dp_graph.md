@@ -28,7 +28,6 @@ comments: True
 - ![3](https://assets.leetcode.com/uploads/2024/06/28/image10.jpg)
 - Output: `[3,2,1]`
 
-
 ```python title="3243. Shortest Distance After Road Addition Queries I - Python Solution"
 from collections import deque
 from itertools import count
@@ -94,7 +93,6 @@ graph TD
 ```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="787. Cheapest Flights Within K Stops - Python Solution"
 import heapq
@@ -182,7 +180,6 @@ print(findCheapestPriceDijkstra(n, flights, src, dst, k))  # 700
 -   [LeetCode](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) | [LeetCode CH](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
 
 -   Tags: dynamic programming, graph, topological sort, shortest path
-
 ```python title="1976. Number of Ways to Arrive at Destination - Python Solution"
 import heapq
 from typing import List
@@ -242,7 +239,6 @@ print(countPaths(n, roads))  # 4
 -   [LeetCode](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [LeetCode CH](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
 
 -   Tags: hash table, dynamic programming, graph, topological sort, memoization, counting
-
 ```python title="1857. Largest Color Value in a Directed Graph - Python Solution"
 from collections import defaultdict, deque
 from typing import List

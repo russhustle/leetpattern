@@ -25,7 +25,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 
 -   Tags: two pointers, design, sorting, heap priority queue, data stream
-
 ```python title="295. Find Median from Data Stream - Python Solution"
 from heapq import heappop, heappush
 
@@ -117,7 +116,6 @@ int main() {
     cout << obj->findMedian() << endl;  // 2
     return 0;
 }
-
 ```
 
 ## 480. Sliding Window Median
@@ -125,7 +123,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/sliding-window-median/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-median/) (Hard)
 
 -   Tags: array, hash table, sliding window, heap priority queue
-
 ```python title="480. Sliding Window Median - Python Solution"
 import heapq
 from typing import List
@@ -220,7 +217,7 @@ print(medianSlidingWindow2(nums, k))
 -   [LeetCode](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/) | [LeetCode CH](https://leetcode.cn/problems/find-x-sum-of-all-k-long-subarrays-ii/) (Hard)
 
 -   Tags: array, hash table, sliding window, heap priority queue
-## 3369. Design an Array Statistics Tracker
+## 3369. Design an Array Statistics Tracker 
 
 -   [LeetCode](https://leetcode.com/problems/design-an-array-statistics-tracker/) | [LeetCode CH](https://leetcode.cn/problems/design-an-array-statistics-tracker/) (Hard)
 

@@ -32,7 +32,6 @@ comments: True
 | 2     | 0       | 1     |
 | 2     | 1       | 2     |
 
-
 ```python title="169. Majority Element - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -80,7 +79,6 @@ print(majorityElementHashMap(nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/majority-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/majority-element-ii/) (Medium)
 
 -   Tags: array, hash table, sorting, counting
-
 ```python title="229. Majority Element II - Python Solution"
 from collections import Counter
 from typing import List
@@ -157,7 +155,6 @@ graph LR
 3 --> 2
 4 --> 2
 ```
-
 
 ```python title="287. Find the Duplicate Number - Python Solution"
 from typing import List

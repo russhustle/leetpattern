@@ -27,7 +27,6 @@ comments: True
 - Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
 - Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
 
-
 ```python title="70. Climbing Stairs - Python Solution"
 from functools import cache
 
@@ -115,7 +114,6 @@ int main() {
     cout << climbStairs(6) << endl;  // 13
     return 0;
 }
-
 ```
 
 ## 509. Fibonacci Number
@@ -141,7 +139,6 @@ int main() {
 |  8  |     8     |    13     |   21    |
 |  9  |    13     |    21     |   34    |
 | 10  |    21     |    34     |   55    |
-
 
 ```python title="509. Fibonacci Number - Python Solution"
 from functools import cache

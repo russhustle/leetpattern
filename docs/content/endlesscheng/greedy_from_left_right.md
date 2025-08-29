@@ -107,7 +107,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/) (Medium)
 
 -   Tags: string, dynamic programming, greedy
-
 ```python title="2712. Minimum Cost to Make All Characters Equal - Python Solution"
 def minimumCost(s: str) -> int:
     n = len(s)

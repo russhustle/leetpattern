@@ -132,7 +132,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/happy-students/) | [LeetCode CH](https://leetcode.cn/problems/happy-students/) (Medium)
 
 -   Tags: array, sorting, enumeration
-
 ```python title="2860. Happy Students - Python Solution"
 from typing import List
 
@@ -196,7 +195,6 @@ print(countWays(nums))  # 3
 -   [LeetCode](https://leetcode.com/problems/maximum-or/) | [LeetCode CH](https://leetcode.cn/problems/maximum-or/) (Medium)
 
 -   Tags: array, greedy, bit manipulation, prefix sum
-
 ```python title="2680. Maximum OR - Python Solution"
 from typing import List
 

@@ -27,7 +27,6 @@ comments: True
 -   Tags: array, binary search
 - 二分答案的关键是找到单调性，然后分析出判断条件
 
-
 ```python title="1283. Find the Smallest Divisor Given a Threshold - Python Solution"
 from typing import List
 
@@ -61,7 +60,6 @@ if __name__ == "__main__":
 - Left: always insufficient trips
 - Right: always sufficient trips
 
-
 ```python title="2187. Minimum Time to Complete Trips - Python Solution"
 from typing import List
 
@@ -94,7 +92,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [LeetCode CH](https://leetcode.cn/problems/minimum-speed-to-arrive-on-time/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="1870. Minimum Speed to Arrive on Time - Python Solution"
 import math
 from typing import List
@@ -138,7 +135,6 @@ print(minSpeedOnTime(dist, hour))  # 1
 
 -   Tags: array, binary search
 -   A conveyor belt has packages that must be shipped from one port to another within `D` days. The `i-th` package has a weight of `weights[i]`. Each day, we load the ship with packages on the conveyor belt. The ship will be loaded with packages up to its capacity. The ship will not be loaded beyond its capacity. Return the least weight capacity of the ship.
-
 
 ```python title="1011. Capacity To Ship Packages Within D Days - Python Solution"
 from typing import List
@@ -185,7 +181,6 @@ print(shipWithinDays(weights, days))  # 15
 -   Tags: array, binary search
 -   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
 
-
 ```python title="875. Koko Eating Bananas - Python Solution"
 from typing import List
 
@@ -222,7 +217,6 @@ print(minEatingSpeed(piles, h))  # 4
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) (Medium)
 
 -   Tags: array, math, binary search, greedy, heap priority queue
-
 ```python title="3296. Minimum Number of Seconds to Make Mountain Height Zero - Python Solution"
 from bisect import bisect_left
 from heapq import heapify, heapreplace
@@ -280,7 +274,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/heaters/) | [LeetCode CH](https://leetcode.cn/problems/heaters/) (Medium)
 
 -   Tags: array, two pointers, binary search, sorting
-
 ```python title="475. Heaters - Python Solution"
 from bisect import bisect_left, bisect_right
 from math import inf
@@ -337,7 +330,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-time-to-repair-cars/) | [LeetCode CH](https://leetcode.cn/problems/minimum-time-to-repair-cars/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="2594. Minimum Time to Repair Cars - Python Solution"
 from math import isqrt
 from typing import List
@@ -368,7 +360,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="1482. Minimum Number of Days to Make m Bouquets - Python Solution"
 from typing import List
 
@@ -419,7 +410,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | [LeetCode CH](https://leetcode.cn/problems/earliest-second-to-mark-indices-i/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="3048. Earliest Second to Mark Indices I - Python Solution"
 from bisect import bisect_left
 from typing import List

@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/valid-sudoku/) | [LeetCode CH](https://leetcode.cn/problems/valid-sudoku/) (Medium)
 
 -   Tags: array, hash table, matrix
-
 ```python title="36. Valid Sudoku - Python Solution"
 from typing import List
 
@@ -70,7 +69,6 @@ print(isValidSudoku(board))  # True
 
 -   Tags: array, matrix, simulation
 -   Return all elements of the matrix in spiral order.
-
 
 ```python title="54. Spiral Matrix - Python Solution"
 from typing import List
@@ -142,7 +140,6 @@ print(spiralOrderMath([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]))
 -   [LeetCode](https://leetcode.com/problems/rotate-image/) | [LeetCode CH](https://leetcode.cn/problems/rotate-image/) (Medium)
 
 -   Tags: array, math, matrix
-
 ```python title="48. Rotate Image - Python Solution"
 from copy import deepcopy
 from typing import List
@@ -202,7 +199,6 @@ print(matrix2)
 -   [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/) | [LeetCode CH](https://leetcode.cn/problems/set-matrix-zeroes/) (Medium)
 
 -   Tags: array, hash table, matrix
-
 ```python title="73. Set Matrix Zeroes - Python Solution"
 from copy import deepcopy
 from typing import List

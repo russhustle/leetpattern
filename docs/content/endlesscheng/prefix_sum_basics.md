@@ -23,7 +23,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/range-sum-query-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)
 
 -   Tags: array, design, prefix sum
-
 ```python title="303. Range Sum Query - Immutable - Python Solution"
 from typing import List
 
@@ -95,7 +94,6 @@ print("PASSED")
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming
-
 ```python title="53. Maximum Subarray - Python Solution"
 from typing import List
 

@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-1-bits/) | [LeetCode CH](https://leetcode.cn/problems/number-of-1-bits/) (Easy)
 
 -   Tags: divide and conquer, bit manipulation
-
 ```python title="191. Number of 1 Bits - Python Solution"
 # Bit Manipulation
 def hammingWeight1(n: int) -> int:
@@ -65,7 +64,6 @@ print(bin(n))
 -   [LeetCode](https://leetcode.com/problems/counting-bits/) | [LeetCode CH](https://leetcode.cn/problems/counting-bits/) (Easy)
 
 -   Tags: dynamic programming, bit manipulation
-
 ```python title="338. Counting Bits - Python Solution"
 from typing import List
 
@@ -90,7 +88,6 @@ print(countBits(n))  # [0, 1, 1, 2, 1, 2]
 -   [LeetCode](https://leetcode.com/problems/reverse-bits/) | [LeetCode CH](https://leetcode.cn/problems/reverse-bits/) (Easy)
 
 -   Tags: divide and conquer, bit manipulation
-
 ```python title="190. Reverse Bits - Python Solution"
 # Bit Manipulation
 def reverseBits(n: int) -> int:
@@ -113,7 +110,6 @@ print(reverseBits(n))  # 964176192
 -   [LeetCode](https://leetcode.com/problems/missing-number/) | [LeetCode CH](https://leetcode.cn/problems/missing-number/) (Easy)
 
 -   Tags: array, hash table, math, binary search, bit manipulation, sorting
-
 ```python title="268. Missing Number - Python Solution"
 from typing import List
 
@@ -145,7 +141,6 @@ print(missingNumberXOR(nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/sum-of-two-integers/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-two-integers/) (Medium)
 
 -   Tags: math, bit manipulation
-
 ```python title="371. Sum of Two Integers - Python Solution"
 # Bit Manipulation
 def getSum(a: int, b: int) -> int:
@@ -163,3 +158,4 @@ def getSum(a: int, b: int) -> int:
 print(getSum(1, 2))  # 3
 
 ```
+

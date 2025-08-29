@@ -47,7 +47,6 @@ comments: True
 
 ![0200](../../assets/0200.jpg)
 
-
 ```python title="200. Number of Islands - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -230,7 +229,6 @@ int main()
     cout << s.numIslands(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 695. Max Area of Island
@@ -238,7 +236,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="695. Max Area of Island - Python Solution"
 from collections import deque
 from typing import List
@@ -413,7 +410,6 @@ int main() {
     cout << s.maxAreaOfIsland(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 463. Island Perimeter
@@ -421,7 +417,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/island-perimeter/) | [LeetCode CH](https://leetcode.cn/problems/island-perimeter/) (Easy)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="463. Island Perimeter - Python Solution"
 from typing import List
 
@@ -486,7 +481,6 @@ print(islandPerimeter(grid))  # 16
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-fish-in-a-grid/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="2658. Maximum Number of Fish in a Grid - Python Solution"
 from typing import List
 
@@ -524,7 +518,6 @@ print(findMaxFish(grid))  # 7
 -   [LeetCode](https://leetcode.com/problems/coloring-a-border/) | [LeetCode CH](https://leetcode.cn/problems/coloring-a-border/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="1034. Coloring A Border - Python Solution"
 from typing import List
 
@@ -581,7 +574,6 @@ print(colorBorder(grid, row, col, color))  # [[1, 3, 3], [2, 3, 3]]
 -   [LeetCode](https://leetcode.com/problems/number-of-enclaves/) | [LeetCode CH](https://leetcode.cn/problems/number-of-enclaves/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="1020. Number of Enclaves - Python Solution"
 from typing import List
 
@@ -636,7 +628,6 @@ print(numEnclaves(grid))  # 3
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 
 -   Tags: array, dynamic programming, matrix
-
 ```python title="2684. Maximum Number of Moves in a Grid - Python Solution"
 from typing import List
 
@@ -673,7 +664,6 @@ print(maxMovesDFS(grid))  # 3
 -   [LeetCode](https://leetcode.com/problems/number-of-closed-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-closed-islands/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="1254. Number of Closed Islands - Python Solution"
 from typing import List
 
@@ -735,7 +725,6 @@ print(closedIsland(grid))  # 2
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="130. Surrounded Regions - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -852,7 +841,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/count-sub-islands/) | [LeetCode CH](https://leetcode.cn/problems/count-sub-islands/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="1905. Count Sub Islands - Python Solution"
 from typing import List
 
@@ -911,7 +899,6 @@ print(countSubIslandsDFS(grid1, grid2))  # 3
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="417. Pacific Atlantic Water Flow - Python Solution"
 from collections import deque
 from typing import List
@@ -1013,7 +1000,6 @@ print(pacificAtlanticBFS(heights))
 -   [LeetCode](https://leetcode.com/problems/making-a-large-island/) | [LeetCode CH](https://leetcode.cn/problems/making-a-large-island/) (Hard)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="827. Making A Large Island - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -1073,7 +1059,6 @@ print(largestIsland(grid))  # 3
 -   [LeetCode](https://leetcode.com/problems/number-of-islands-ii/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands-ii/) (Hard)
 
 -   Tags: array, hash table, union find
-
 ```python title="305. Number of Islands II - Python Solution"
 from collections import defaultdict
 from typing import List

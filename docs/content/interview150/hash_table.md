@@ -29,7 +29,6 @@ graph LR
     B["Ransom Note: abc"] --> C
 ```
 
-
 ```python title="383. Ransom Note - Python Solution"
 from collections import Counter, defaultdict
 
@@ -102,7 +101,6 @@ print(canConstructCounter(ransomNote, magazine))  # True
 -   Tags: hash table, string, sorting
 -   Return true if an input string is an anagram of another string.
 -   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
-
 
 ```python title="242. Valid Anagram - Python Solution"
 from collections import Counter
@@ -182,7 +180,6 @@ print(isAnagramCounter(s, t))  # True
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
 
 -   Tags: array, hash table, string, sorting
-
 ```python title="49. Group Anagrams - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -224,7 +221,6 @@ print(groupAnagrams(strs))
 - Approach: Use a hashmap to store the indices of the numbers.
 - Time Complexity: O(n)
 - Space Complexity: O(n)
-
 
 ```python title="1. Two Sum - Python Solution"
 from typing import List
@@ -276,7 +272,6 @@ int main() {
     cout << result[0] << ", " << result[1] << endl;
     return 0;
 }
-
 ```
 
 ## 202. Happy Number
@@ -286,7 +281,6 @@ int main() {
 -   Tags: hash table, math, two pointers
 -   Return `True` if the number is a happy number, otherwise, return `False`.
 -   A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
-
 
 ```python title="202. Happy Number - Python Solution"
 def isHappy(n: int) -> bool:
@@ -323,7 +317,6 @@ print(isHappy(n))  # True
 -   [LeetCode](https://leetcode.com/problems/contains-duplicate-ii/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate-ii/) (Easy)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="219. Contains Duplicate II - Python Solution"
 from typing import List
 
@@ -370,7 +363,6 @@ print(containsNearbyDuplicateWindow(nums, k))  # True
 -   [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-consecutive-sequence/) (Medium)
 
 -   Tags: array, hash table, union find
-
 ```python title="128. Longest Consecutive Sequence - Python Solution"
 from typing import List
 
@@ -438,3 +430,4 @@ print(longestConsecutiveSet(nums))  # 4
 print(longestConsecutiveUF(nums))  # 4
 
 ```
+

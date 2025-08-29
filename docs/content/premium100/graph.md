@@ -25,7 +25,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/kill-process/) | [LeetCode CH](https://leetcode.cn/problems/kill-process/) (Medium)
 
 -   Tags: array, hash table, tree, depth first search, breadth first search
-
 ```python title="582. Kill Process - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -63,7 +62,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"
 from typing import List
 
@@ -127,7 +125,6 @@ print(countComponents(5, [[0, 1], [1, 2], [3, 4]]))  # 2
 -   [LeetCode](https://leetcode.com/problems/number-of-islands-ii/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands-ii/) (Hard)
 
 -   Tags: array, hash table, union find
-
 ```python title="305. Number of Islands II - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -187,7 +184,6 @@ print(numIslands2(m, n, positions))  # [1, 1, 2, 3]
 -   [LeetCode](https://leetcode.com/problems/number-of-distinct-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium)
 
 -   Tags: hash table, depth first search, breadth first search, union find, hash function
-
 ```python title="694. Number of Distinct Islands - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -268,7 +264,6 @@ print(numDistinctIslandsDFS(deepcopy(grid)))  # 3
 
 ![1136](../../assets/1136.png)
 
-
 ```python title="1136. Parallel Courses - Python Solution"
 from collections import deque
 from typing import List
@@ -308,3 +303,4 @@ relations = [[1, 3], [2, 3]]
 print(minimumSemesters(n, relations))  # 2
 
 ```
+

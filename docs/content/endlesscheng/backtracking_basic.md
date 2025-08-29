@@ -17,7 +17,6 @@ comments: True
 
 ![17](https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png)
 
-
 ```python title="17. Letter Combinations of a Phone Number - Python Solution"
 from typing import List
 
@@ -70,3 +69,4 @@ if __name__ == "__main__":
     ]
 
 ```
+

@@ -26,7 +26,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-snake-game/) | [LeetCode CH](https://leetcode.cn/problems/design-snake-game/) (Medium)
 
 -   Tags: array, hash table, design, queue, simulation
-
 ```python title="353. Design Snake Game - Python Solution"
 from collections import deque
 from typing import List
@@ -93,7 +92,6 @@ print(snake.move("U"))  # -1
 -   [LeetCode](https://leetcode.com/problems/encode-and-decode-strings/) | [LeetCode CH](https://leetcode.cn/problems/encode-and-decode-strings/) (Medium)
 
 -   Tags: array, string, design
-
 ```python title="271. Encode and Decode Strings - Python Solution"
 from typing import List
 
@@ -155,7 +153,6 @@ print(decoded)  # ["hello", "world"]
 -   [LeetCode](https://leetcode.com/problems/design-a-leaderboard/) | [LeetCode CH](https://leetcode.cn/problems/design-a-leaderboard/) (Medium)
 
 -   Tags: hash table, design, sorting
-
 ```python title="1244. Design A Leaderboard - Python Solution"
 class Leaderboard:
 
@@ -194,7 +191,6 @@ print(board.top(2))  # 90
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard)
 
 -   Tags: string, tree, depth first search, breadth first search
-
 ```python title="428. Serialize and Deserialize N-ary Tree - Python Solution"
 from typing import List, Optional
 

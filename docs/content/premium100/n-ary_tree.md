@@ -25,7 +25,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/diameter-of-n-ary-tree/) | [LeetCode CH](https://leetcode.cn/problems/diameter-of-n-ary-tree/) (Medium)
 
 -   Tags: tree, depth first search
-
 ```python title="1522. Diameter of N-Ary Tree - Python Solution"
 from typing import List, Optional
 
@@ -69,3 +68,4 @@ root.children[0].children[1].children = [Node(6)]
 print(diameter(root))  # 4
 
 ```
+

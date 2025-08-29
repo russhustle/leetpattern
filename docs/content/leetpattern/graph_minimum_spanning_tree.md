@@ -30,7 +30,6 @@ comments: True
   - Time Complexity: O(E * logV)
   - Space Complexity: O(V + E)
 
-
 ```python title="1584. Min Cost to Connect All Points - Python Solution"
 import heapq
 from collections import defaultdict
@@ -126,7 +125,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [LeetCode CH](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) (Medium)
 
 -   Tags: union find, graph, heap priority queue, minimum spanning tree
-
 ```python title="1135. Connecting Cities With Minimum Cost - Python Solution"
 import heapq
 from collections import defaultdict
@@ -175,7 +173,6 @@ print(minimumCost(n, connections))  # 6
 - ![1168_0](../../assets/1168_0.png)
 
 - ![1168_1](../../assets/1168_1.png)
-
 
 ```python title="1168. Optimize Water Distribution in a Village - Python Solution"
 import heapq
@@ -281,7 +278,6 @@ print(minCostToSupplyWater2(n, wells, pipes))  # 3
 -   [LeetCode](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
 
 -   Tags: union find, graph, sorting, minimum spanning tree, strongly connected component
-
 ```python title="1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree - Python Solution"
 from typing import List
 
@@ -386,7 +382,6 @@ print(findCriticalAndPseudoCriticalEdges(n, edges))
 -   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
-
 ```python title="1631. Path With Minimum Effort - Python Solution"
 import heapq
 from typing import List
@@ -433,7 +428,6 @@ print(minimumEffortPath(heights))  # 2
 - Return the maximum number of edges you can remove so that the graph remains fully traversable.
 
 ![1579](../../assets/1579.png){width=200px}
-
 
 ```python title="1579. Remove Max Number of Edges to Keep Graph Fully Traversable - Python Solution"
 from typing import List
@@ -500,3 +494,4 @@ edges = [[3, 1, 2], [3, 2, 3], [1, 1, 3], [1, 2, 4], [1, 1, 2], [2, 3, 4]]
 print(maxNumEdgesToRemove(n, edges))  # 2
 
 ```
+

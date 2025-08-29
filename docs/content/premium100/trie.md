@@ -14,7 +14,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/design-in-memory-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard)
 
 -   Tags: hash table, string, design, trie, sorting
-
 ```python title="588. Design In-Memory File System - Python Solution"
 from collections import defaultdict
 

@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/) | [LeetCode CH](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
 
 -   Tags: hash table, linked list
-
 ```python title="138. Copy List with Random Pointer - Python Solution"
 from typing import Optional
 

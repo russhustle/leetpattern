@@ -49,7 +49,6 @@ comments: True
 | d    | push   | "leetcod"  |
 | e    | push   | "leetcode" |
 
-
 ```python title="1544. Make The String Great - Python Solution"
 # Stack
 def makeGood(s: str) -> str:

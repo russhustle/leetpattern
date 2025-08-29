@@ -27,7 +27,6 @@ comments: True
 - Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
 - Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
 
-
 ```python title="70. Climbing Stairs - Python Solution"
 from functools import cache
 
@@ -115,7 +114,6 @@ int main() {
     cout << climbStairs(6) << endl;  // 13
     return 0;
 }
-
 ```
 
 ## 118. Pascal's Triangle
@@ -133,7 +131,6 @@ int main() {
   1 3 3 1           4
  1 4 6 4 1          5
 ```
-
 
 ```python title="118. Pascal's Triangle - Python Solution"
 from typing import List
@@ -184,7 +181,6 @@ if __name__ == "__main__":
 |  2  |     9     |     2     |     7     |         11          |   11    |
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
-
 
 ```python title="198. House Robber - Python Solution"
 from typing import List
@@ -241,7 +237,6 @@ int main() {
     cout << rob(nums) << endl;  // 12
     return 0;
 }
-
 ```
 
 ## 279. Perfect Squares
@@ -249,7 +244,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/perfect-squares/) | [LeetCode CH](https://leetcode.cn/problems/perfect-squares/) (Medium)
 
 -   Tags: math, dynamic programming, breadth first search
-
 ```python title="279. Perfect Squares - Python Solution"
 import math
 
@@ -276,7 +270,6 @@ print(numSquares(n))  # 3
 -   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
 
 -   Tags: array, dynamic programming, breadth first search
-
 ```python title="322. Coin Change - Python Solution"
 from typing import List
 
@@ -305,7 +298,6 @@ print(coinChange(coins, amount))  # 3
 -   [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
 
 -   Tags: array, hash table, string, dynamic programming, trie, memoization
-
 ```python title="139. Word Break - Python Solution"
 from typing import List
 
@@ -335,7 +327,6 @@ print(wordBreak(s, wordDict))  # True
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 
 -   Tags: array, binary search, dynamic programming
-
 ```python title="300. Longest Increasing Subsequence - Python Solution"
 from functools import cache
 from typing import List
@@ -389,7 +380,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="152. Maximum Product Subarray - Python Solution"
 from typing import List
 
@@ -431,7 +421,6 @@ print(maxProduct(nums))  # 6
 -   [LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/) | [LeetCode CH](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="416. Partition Equal Subset Sum - Python Solution"
 from functools import cache
 from typing import List
@@ -499,7 +488,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/longest-valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/longest-valid-parentheses/) (Hard)
 
 -   Tags: string, dynamic programming, stack
-
 ```python title="32. Longest Valid Parentheses - Python Solution"
 # Stack
 def longestValidParentheses(s: str) -> int:
@@ -524,3 +512,4 @@ if __name__ == "__main__":
     print(longestValidParentheses(")()())"))  # 4
 
 ```
+

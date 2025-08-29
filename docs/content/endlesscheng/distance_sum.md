@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-absolute-differences-in-a-sorted-array/) (Medium)
 
 -   Tags: array, math, prefix sum
-
 ```python title="1685. Sum of Absolute Differences in a Sorted Array - Python Solution"
 from typing import List
 

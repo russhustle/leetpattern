@@ -18,7 +18,6 @@ comments: True
 -   Prerequisite: 21. Merge Two Sorted Lists
 -   Video explanation: [23. Merge K Sorted Lists - NeetCode](https://youtu.be/q5a5OiGbT6Q?si=SQ2dCvsYQ3LQctPh)
 
-
 ```python title="23. Merge k Sorted Lists - Python Solution"
 import copy
 import heapq
@@ -104,7 +103,6 @@ print(mergeKLists(lists2))
 -   [LeetCode](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [LeetCode CH](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) (Medium)
 
 -   Tags: array, heap priority queue
-
 ```python title="373. Find K Pairs with Smallest Sums - Python Solution"
 import heapq
 from typing import List
@@ -148,7 +146,6 @@ print(kSmallestPairs(nums1, nums2, k))
 
 -   Tags: array, binary search, sorting, heap priority queue, matrix
 -   Given an `n x n` matrix where each of the rows and columns are sorted in ascending order, return the `k-th` smallest element in the matrix.
-
 
 ```python title="378. Kth Smallest Element in a Sorted Matrix - Python Solution"
 from heapq import heapify, heappop, heappush
@@ -206,3 +203,4 @@ print(kthSmallestHeap(matrix, k))  # 13
 print(kthSmallestBinarySearch(matrix, k))  # 13
 
 ```
+

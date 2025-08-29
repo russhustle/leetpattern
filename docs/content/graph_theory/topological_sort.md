@@ -132,7 +132,6 @@ flowchart LR
 - pop `0` from the queue
 - All courses are taken. Return `True`.
 
-
 ```python title="207. Course Schedule - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -311,7 +310,6 @@ int main() {
     cout << sol.canFinishDFS(numCourses, prerequisites) << endl;
     return 0;
 }
-
 ```
 
 ## 210. Course Schedule II
@@ -322,7 +320,6 @@ int main() {
 - Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
 ![0207](../../assets/0207.png)
-
 
 ```python title="210. Course Schedule II - Python Solution"
 from collections import defaultdict, deque
@@ -477,7 +474,6 @@ int main() {
     for (size_t i = 0; i < res.size(); i++) cout << res[i] << "\n";
     return 0;
 }
-
 ```
 
 ## 269. Alien Dictionary
@@ -486,7 +482,6 @@ int main() {
 
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
-
 
 ```python title="269. Alien Dictionary - Python Solution"
 from collections import defaultdict, deque
@@ -579,7 +574,6 @@ print(alienOrderDFS(words))  # wertf
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return any permutation of the items that satisfies the requirements.
 
-
 ```python title="1203. Sort Items by Groups Respecting Dependencies - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -655,7 +649,6 @@ print(sortItems(n, m, group, beforeItems))
 -   [LeetCode](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [LeetCode CH](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
 
 -   Tags: hash table, dynamic programming, graph, topological sort, memoization, counting
-
 ```python title="1857. Largest Color Value in a Directed Graph - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -703,3 +696,4 @@ edges = [[0, 1], [0, 2], [2, 3], [3, 4]]
 print(largestPathValue(colors, edges))  # 3
 
 ```
+

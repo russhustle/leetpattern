@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning/) (Medium)
 
 -   Tags: string, dynamic programming, backtracking
-
 ```python title="131. Palindrome Partitioning - Python Solution"
 from typing import List
 
@@ -85,7 +84,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/restore-ip-addresses/) | [LeetCode CH](https://leetcode.cn/problems/restore-ip-addresses/) (Medium)
 
 -   Tags: string, backtracking
-
 ```python title="93. Restore IP Addresses - Python Solution"
 from typing import List
 

@@ -27,7 +27,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-component-size-by-common-factor/) | [LeetCode CH](https://leetcode.cn/problems/largest-component-size-by-common-factor/) (Hard)
 
 -   Tags: array, hash table, math, union find, number theory
-
 ```python title="952. Largest Component Size by Common Factor - Python Solution"
 from collections import defaultdict
 from typing import List

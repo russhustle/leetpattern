@@ -40,7 +40,6 @@ graph LR
     D --> B
 ```
 
-
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
@@ -89,7 +88,6 @@ class Solution {
         return false;
     }
 };
-
 ```
 
 ## 2. Add Two Numbers
@@ -98,7 +96,6 @@ class Solution {
 
 -   Tags: linked list, math, recursion
 -   Represent the sum of two numbers as a linked list.
-
 
 ```python title="2. Add Two Numbers - Python Solution"
 from typing import Optional
@@ -171,7 +168,6 @@ class Solution {
         return dummy.next;
     }
 };
-
 ```
 
 ## 21. Merge Two Sorted Lists
@@ -182,7 +178,6 @@ class Solution {
 -   Merge the two lists into one sorted list.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIdigk956u0?si=2cVoU6DujA3Mgtlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="21. Merge Two Sorted Lists - Python Solution"
 from typing import Optional
@@ -252,7 +247,6 @@ class Solution {
         return dummy.next;
     }
 };
-
 ```
 
 ## 138. Copy List with Random Pointer
@@ -260,7 +254,6 @@ class Solution {
 -   [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/) | [LeetCode CH](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
 
 -   Tags: hash table, linked list
-
 ```python title="138. Copy List with Random Pointer - Python Solution"
 from typing import Optional
 
@@ -326,7 +319,6 @@ C --> D((2))
 D --> E((5))
 ```
 
-
 ```python title="92. Reverse Linked List II - Python Solution"
 from typing import Optional
 
@@ -369,7 +361,6 @@ print(reverseBetween(head, left, right))
 -   [LeetCode](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [LeetCode CH](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 
 -   Tags: linked list, recursion
-
 ```python title="25. Reverse Nodes in k-Group - Python Solution"
 from typing import Optional
 
@@ -420,7 +411,6 @@ if __name__ == "__main__":
 -   Tags: linked list, two pointers
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
-
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
 
@@ -457,7 +447,6 @@ print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
 -   [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
 
 -   Tags: linked list, two pointers
-
 ```python title="82. Remove Duplicates from Sorted List II - Python Solution"
 from typing import Optional
 
@@ -508,7 +497,6 @@ print(deleteDuplicates(head))  # 2 -> 4 -> 5
 | ------------------ | ----------------------------- |
 | Doubly Linked List | To store the key-value pairs. |
 | Hash Map           | To store the key-node pairs.  |
-
 
 ```python title="146. LRU Cache - Python Solution"
 from collections import OrderedDict
@@ -709,5 +697,5 @@ int main() {
     cout << lru.get(4) << endl;  // 4
     return 0;
 }
-
 ```
+

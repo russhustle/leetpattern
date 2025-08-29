@@ -20,7 +20,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming
-
 ```python title="53. Maximum Subarray - Python Solution"
 from typing import List
 
@@ -82,7 +81,6 @@ print(maxSubArrayPrefixSum(nums))  # 6
 -   Tags: array, dynamic programming, greedy
 - Return `True` if you can reach the last index, otherwise `False`.
 
-
 ```python title="55. Jump Game - Python Solution"
 from typing import List
 
@@ -134,7 +132,6 @@ int main() {
     cout << obj.canJump(nums) << endl;
     return 0;
 }
-
 ```
 
 ## 45. Jump Game II
@@ -143,7 +140,6 @@ int main() {
 
 -   Tags: array, dynamic programming, greedy
 - Return the minimum number of jumps to reach the last index.
-
 
 ```python title="45. Jump Game II - Python Solution"
 from typing import List
@@ -181,7 +177,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
 
 -   Tags: array, greedy
-
 ```python title="134. Gas Station - Python Solution"
 from typing import List
 
@@ -217,7 +212,6 @@ print(canCompleteCircuit(gas, cost))  # 3
 -   [LeetCode](https://leetcode.com/problems/hand-of-straights/) | [LeetCode CH](https://leetcode.cn/problems/hand-of-straights/) (Medium)
 
 -   Tags: array, hash table, greedy, sorting
-
 ```python title="846. Hand of Straights - Python Solution"
 from collections import Counter
 from typing import List
@@ -252,7 +246,6 @@ print(isNStraightHand(hand, groupSize))  # True
 -   [LeetCode](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | [LeetCode CH](https://leetcode.cn/problems/merge-triplets-to-form-target-triplet/) (Medium)
 
 -   Tags: array, greedy
-
 ```python title="1899. Merge Triplets to Form Target Triplet - Python Solution"
 from typing import List
 
@@ -280,7 +273,6 @@ print(mergeTriplets(triplets, target))  # True
 -   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
 
 -   Tags: hash table, two pointers, string, greedy
-
 ```python title="763. Partition Labels - Python Solution"
 from typing import List
 
@@ -343,7 +335,6 @@ print(partitionLabels2("abaccd"))  # [3, 2, 1]
 -   [LeetCode](https://leetcode.com/problems/valid-parenthesis-string/) | [LeetCode CH](https://leetcode.cn/problems/valid-parenthesis-string/) (Medium)
 
 -   Tags: string, dynamic programming, stack, greedy
-
 ```python title="678. Valid Parenthesis String - Python Solution"
 # Greedy
 def checkValidString(s: str) -> bool:
@@ -370,3 +361,4 @@ s = "(*))"
 print(checkValidString(s))  # True
 
 ```
+

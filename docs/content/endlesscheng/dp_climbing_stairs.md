@@ -23,7 +23,6 @@ comments: True
 - Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
 - Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
 
-
 ```python title="70. Climbing Stairs - Python Solution"
 from functools import cache
 
@@ -111,7 +110,6 @@ int main() {
     cout << climbStairs(6) << endl;  // 13
     return 0;
 }
-
 ```
 
 ## 746. Min Cost Climbing Stairs
@@ -141,7 +139,6 @@ int main() {
 |  8  |    100    |     4     |     5     |   104   |
 |  9  |     1     |     5     |    104    |    6    |
 
-
 ```python title="746. Min Cost Climbing Stairs - Python Solution"
 from typing import List
 
@@ -167,7 +164,6 @@ print(minCostClimbingStairs(cost))  # 6
 -   [LeetCode](https://leetcode.com/problems/combination-sum-iv/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="377. Combination Sum IV - Python Solution"
 from typing import List
 

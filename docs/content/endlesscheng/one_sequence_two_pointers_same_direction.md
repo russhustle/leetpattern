@@ -89,7 +89,6 @@ int main() {
     cout << res << endl;  // 14
     return 0;
 }
-
 ```
 
 ## 3323. Minimize Connected Groups by Inserting Interval

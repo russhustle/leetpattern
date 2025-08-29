@@ -33,7 +33,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/single-number/) | [LeetCode CH](https://leetcode.cn/problems/single-number/) (Easy)
 
 -   Tags: array, bit manipulation
-
 ```python title="136. Single Number - Python Solution"
 from functools import reduce
 from operator import xor
@@ -94,7 +93,6 @@ graph LR
 4 --> 2
 ```
 
-
 ```python title="287. Find the Duplicate Number - Python Solution"
 from typing import List
 
@@ -147,7 +145,6 @@ print(findDuplicate(nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/reverse-bits/) | [LeetCode CH](https://leetcode.cn/problems/reverse-bits/) (Easy)
 
 -   Tags: divide and conquer, bit manipulation
-
 ```python title="190. Reverse Bits - Python Solution"
 # Bit Manipulation
 def reverseBits(n: int) -> int:
@@ -170,7 +167,6 @@ print(reverseBits(n))  # 964176192
 -   [LeetCode](https://leetcode.com/problems/sum-of-two-integers/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-two-integers/) (Medium)
 
 -   Tags: math, bit manipulation
-
 ```python title="371. Sum of Two Integers - Python Solution"
 # Bit Manipulation
 def getSum(a: int, b: int) -> int:

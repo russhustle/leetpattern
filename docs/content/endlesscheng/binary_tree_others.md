@@ -34,7 +34,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
 
 -   Tags: string, tree, depth first search, breadth first search, design, binary tree
-
 ```python title="297. Serialize and Deserialize Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -167,7 +166,6 @@ print(root2)
 -   [LeetCode](https://leetcode.com/problems/binary-search-tree-iterator/) | [LeetCode CH](https://leetcode.cn/problems/binary-search-tree-iterator/) (Medium)
 
 -   Tags: stack, tree, design, binary search tree, binary tree, iterator
-
 ```python title="173. Binary Search Tree Iterator - Python Solution"
 from typing import Optional
 
@@ -243,7 +241,6 @@ print(obj.hasNext())  # True
 -   [LeetCode](https://leetcode.com/problems/count-complete-tree-nodes/) | [LeetCode CH](https://leetcode.cn/problems/count-complete-tree-nodes/) (Easy)
 
 -   Tags: binary search, bit manipulation, tree, binary tree
-
 ```python title="222. Count Complete Tree Nodes - Python Solution"
 from collections import deque
 from typing import Optional
@@ -340,7 +337,6 @@ print(countNodesIterative(root))  # 6
 -   [LeetCode](https://leetcode.com/problems/binary-search-tree-iterator-ii/) | [LeetCode CH](https://leetcode.cn/problems/binary-search-tree-iterator-ii/) (Medium)
 
 -   Tags: stack, tree, design, binary search tree, binary tree, iterator
-
 ```python title="1586. Binary Search Tree Iterator II - Python Solution"
 from typing import Optional
 

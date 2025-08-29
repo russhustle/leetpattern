@@ -35,7 +35,6 @@ graph LR
     -   Time Complexity: O(E * logV)
     -   Space Complexity: O(V)
 
-
 ```python title="743. Network Delay Time - Python Solution"
 import heapq
 from collections import defaultdict
@@ -140,7 +139,6 @@ graph TD
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ```python title="787. Cheapest Flights Within K Stops - Python Solution"
 import heapq
 from collections import defaultdict
@@ -211,3 +209,4 @@ print(findCheapestPriceBF(n, flights, src, dst, k))  # 700
 print(findCheapestPriceDijkstra(n, flights, src, dst, k))  # 700
 
 ```
+

@@ -41,7 +41,6 @@ comments: True
 - 0/1 Knapsack
     - Time: O(n); Space: O(n)
 
-
 ```python title="1046. Last Stone Weight - Python Solution"
 from heapq import heapify, heappop, heappush
 from typing import List
@@ -116,7 +115,6 @@ int main()
     cout << lastStoneWeight(stones) << endl; // 1
     return 0;
 }
-
 ```
 
 ## 3264. Final Array State After K Multiplication Operations I
@@ -124,7 +122,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/) | [LeetCode CH](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/) (Easy)
 
 -   Tags: array, math, heap priority queue, simulation
-
 ```python title="3264. Final Array State After K Multiplication Operations I - Python Solution"
 import heapq
 from typing import List
@@ -166,7 +163,6 @@ print(getFinalStateHeap([2, 1, 3, 5, 6], k, multiplier))  # [8, 4, 6, 5, 6]
 -   [LeetCode](https://leetcode.com/problems/take-gifts-from-the-richest-pile/) | [LeetCode CH](https://leetcode.cn/problems/take-gifts-from-the-richest-pile/) (Easy)
 
 -   Tags: array, heap priority queue, simulation
-
 ```python title="2558. Take Gifts From the Richest Pile - Python Solution"
 from heapq import heapify, heappop, heappush
 from math import isqrt
@@ -201,7 +197,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/smallest-number-in-infinite-set/) | [LeetCode CH](https://leetcode.cn/problems/smallest-number-in-infinite-set/) (Medium)
 
 -   Tags: hash table, design, heap priority queue, ordered set
-
 ```python title="2336. Smallest Number in Infinite Set - Python Solution"
 from heapq import heappop, heappush
 
@@ -248,7 +243,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) | [LeetCode CH](https://leetcode.cn/problems/maximal-score-after-applying-k-operations/) (Medium)
 
 -   Tags: array, greedy, heap priority queue
-
 ```python title="2530. Maximal Score After Applying K Operations - Python Solution"
 from heapq import heapify, heappop, heappush
 from math import ceil
@@ -282,7 +276,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-exceed-threshold-value-ii/) (Medium)
 
 -   Tags: array, heap priority queue, simulation
-
 ```python title="3066. Minimum Operations to Exceed Threshold Value II - Python Solution"
 from heapq import heapify, heappop, heappush
 from typing import List
@@ -313,7 +306,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | [LeetCode CH](https://leetcode.cn/problems/remove-stones-to-minimize-the-total/) (Medium)
 
 -   Tags: array, greedy, heap priority queue
-
 ```python title="1962. Remove Stones to Minimize the Total - Python Solution"
 from heapq import heapify, heapreplace
 from typing import List
@@ -341,7 +333,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
 
 -   Tags: tree, design, binary search tree, heap priority queue, binary tree, data stream
-
 ```python title="703. Kth Largest Element in a Stream - Python Solution"
 import heapq
 from typing import List
@@ -377,7 +368,6 @@ print(obj.add(10))  # 5
 -   [LeetCode](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | [LeetCode CH](https://leetcode.cn/problems/k-th-nearest-obstacle-queries/) (Medium)
 
 -   Tags: array, heap priority queue
-
 ```python title="3275. K-th Nearest Obstacle Queries - Python Solution"
 from heapq import heappop, heappush
 from typing import List
@@ -426,7 +416,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) (Medium)
 
 -   Tags: array, math, binary search, greedy, heap priority queue
-
 ```python title="3296. Minimum Number of Seconds to Make Mountain Height Zero - Python Solution"
 from bisect import bisect_left
 from heapq import heapify, heapreplace
@@ -536,7 +525,6 @@ if __name__ == "__main__":
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 - Given an array of meeting time `intervals` where `intervals[i] = [start_i, end_i]`, return the minimum number of conference rooms required.
 
-
 ```python title="253. Meeting Rooms II - Python Solution"
 import heapq
 from typing import List
@@ -569,7 +557,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-to-connect-sticks/) (Medium)
 
 -   Tags: array, greedy, heap priority queue
-
 ```python title="1167. Minimum Cost to Connect Sticks - Python Solution"
 from heapq import heapify, heappop, heappush
 from typing import List
@@ -599,3 +586,4 @@ if __name__ == "__main__":
     assert connectSticks([1, 1, 1]) == 5
 
 ```
+

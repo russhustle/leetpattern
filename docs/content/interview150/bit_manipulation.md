@@ -23,7 +23,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/reverse-bits/) | [LeetCode CH](https://leetcode.cn/problems/reverse-bits/) (Easy)
 
 -   Tags: divide and conquer, bit manipulation
-
 ```python title="190. Reverse Bits - Python Solution"
 # Bit Manipulation
 def reverseBits(n: int) -> int:
@@ -46,7 +45,6 @@ print(reverseBits(n))  # 964176192
 -   [LeetCode](https://leetcode.com/problems/number-of-1-bits/) | [LeetCode CH](https://leetcode.cn/problems/number-of-1-bits/) (Easy)
 
 -   Tags: divide and conquer, bit manipulation
-
 ```python title="191. Number of 1 Bits - Python Solution"
 # Bit Manipulation
 def hammingWeight1(n: int) -> int:
@@ -94,7 +92,6 @@ print(bin(n))
 -   [LeetCode](https://leetcode.com/problems/single-number/) | [LeetCode CH](https://leetcode.cn/problems/single-number/) (Easy)
 
 -   Tags: array, bit manipulation
-
 ```python title="136. Single Number - Python Solution"
 from functools import reduce
 from operator import xor

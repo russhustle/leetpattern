@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) (Easy)
 
 -   Tags: linked list
-
 ```python title="1474. Delete N Nodes After M Nodes of a Linked List - Python Solution"
 from typing import Optional
 

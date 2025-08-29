@@ -27,7 +27,6 @@ flowchart LR
     4((4)) --> 3((3))
 ```
 
-
 ```python title="997. Find the Town Judge - Python Solution"
 from typing import List
 
@@ -62,7 +61,6 @@ print(findJudge(n, trust))  # 4
 - Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
 - Hint: Return the vertices with indegree 0.
 
-
 ```python title="1557. Minimum Number of Vertices to Reach All Nodes - Python Solution"
 from typing import List
 
@@ -89,7 +87,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximal-network-rank/) | [LeetCode CH](https://leetcode.cn/problems/maximal-network-rank/) (Medium)
 
 -   Tags: graph
-
 ```python title="1615. Maximal Network Rank - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -135,7 +132,6 @@ How to group
 | -------- | --------- | ------- | ------- | ----------- |
 | Method 1 | -1        | 0       | 1       | `1 - color` |
 | Method 2 | 0         | 1       | -1      | `-color`    |
-
 
 ```python title="785. Is Graph Bipartite? - Python Solution"
 from collections import deque
@@ -214,7 +210,6 @@ print(isBipartiteDFS(graph))  # False
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="261. Graph Valid Tree - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -250,3 +245,4 @@ print(validTree(5, [[0, 1], [0, 2], [0, 3], [1, 4]]))  # True
 print(validTree(5, [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]))  # False
 
 ```
+

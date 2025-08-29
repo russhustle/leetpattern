@@ -18,7 +18,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 
 -   Tags: array, stack, monotonic stack
-
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
 from typing import List
 
@@ -59,7 +58,6 @@ print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
 - Return the area of the largest rectangle that can be formed within a rectangle of 1's.
 
 ![0085](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg)
-
 
 ```python title="85. Maximal Rectangle - Python Solution"
 from typing import List
@@ -121,7 +119,6 @@ print(maximalRectangle(matrix))  # 6
 | DP         | O(N) | O(N)  |
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
-
 
 ```python title="42. Trapping Rain Water - Python Solution"
 from typing import List
@@ -239,7 +236,6 @@ int main()
     cout << solution.trap(height) << endl;
     return 0;
 }
-
 ```
 
 ## 755. Pour Water

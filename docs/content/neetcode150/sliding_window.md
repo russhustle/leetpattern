@@ -20,7 +20,6 @@ comments: True
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
-
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
 from typing import List
 
@@ -127,7 +126,6 @@ int main()
     cout << obj.maxProfit(prices) << endl;
     return 0;
 }
-
 ```
 
 ## 3. Longest Substring Without Repeating Characters
@@ -138,7 +136,6 @@ int main()
 - Classic variable sliding window problem. Use a set to keep track of the characters in the current window.
 - Return the length of the longest substring without repeating characters.
 - [Template tutorial by 灵山茶艾府](https://leetcode.cn/problems/longest-substring-without-repeating-characters/solutions/1959540/xia-biao-zong-suan-cuo-qing-kan-zhe-by-e-iaks)
-
 
 ```python title="3. Longest Substring Without Repeating Characters - Python Solution"
 from collections import defaultdict
@@ -228,7 +225,6 @@ int main() {
     cout << lengthOfLongestSubstring(s) << endl;  // 3
     return 0;
 }
-
 ```
 
 ## 424. Longest Repeating Character Replacement
@@ -236,7 +232,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/) | [LeetCode CH](https://leetcode.cn/problems/longest-repeating-character-replacement/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="424. Longest Repeating Character Replacement - Python Solution"
 from collections import defaultdict
 
@@ -272,7 +267,6 @@ print(characterReplacement(s, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="76. Minimum Window Substring - Python Solution"
 from collections import Counter
 
@@ -321,7 +315,6 @@ print(minWindow(s, t))  # BANC
 -   [LeetCode](https://leetcode.com/problems/permutation-in-string/) | [LeetCode CH](https://leetcode.cn/problems/permutation-in-string/) (Medium)
 
 -   Tags: hash table, two pointers, string, sliding window
-
 ```python title="567. Permutation in String - Python Solution"
 def checkInclusion(s1: str, s2: str) -> bool:
     if len(s1) > len(s2):
@@ -374,7 +367,6 @@ print(checkInclusion(s1, s2))  # True
 -   [LeetCode](https://leetcode.com/problems/sliding-window-maximum/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-maximum/) (Hard)
 
 -   Tags: array, queue, sliding window, heap priority queue, monotonic queue
-
 ```python title="239. Sliding Window Maximum - Python Solution"
 from collections import deque
 from typing import List
@@ -405,3 +397,4 @@ k = 3
 print(maxSlidingWindow(nums, k))  # [3, 3, 5, 5, 6, 7]
 
 ```
+

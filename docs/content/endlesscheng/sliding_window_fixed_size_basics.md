@@ -31,7 +31,6 @@ comments: True
 - [Templace tutorial by 灵山茶艾府](https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/2809359/tao-lu-jiao-ni-jie-jue-ding-chang-hua-ch-fzfo)
   -  Technique: add-update-remove (入-更新-出)
 
-
 ```python title="1456. Maximum Number of Vowels in a Substring of Given Length - Python Solution"
 # Template of Sliding Window Fixed Size
 def templateMaxVowels(s: str, k: int) -> int:
@@ -111,7 +110,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximum-average-subarray-i/) | [LeetCode CH](https://leetcode.cn/problems/maximum-average-subarray-i/) (Easy)
 
 -   Tags: array, sliding window
-
 ```python title="643. Maximum Average Subarray I - Python Solution"
 from typing import List
 
@@ -161,7 +159,6 @@ print(findMaxAverage2(nums, k))  # 12.75
 -   [LeetCode](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | [LeetCode CH](https://leetcode.cn/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) (Medium)
 
 -   Tags: array, sliding window
-
 ```python title="1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold - Python Solution"
 from typing import List
 
@@ -197,7 +194,6 @@ print(numOfSubarrays(arr, k, threshold))  # 3
 -   [LeetCode](https://leetcode.com/problems/k-radius-subarray-averages/) | [LeetCode CH](https://leetcode.cn/problems/k-radius-subarray-averages/) (Medium)
 
 -   Tags: array, sliding window
-
 ```python title="2090. K Radius Subarray Averages - Python Solution"
 from typing import List
 
@@ -238,7 +234,6 @@ print(getAverages(nums, k))
 -   [LeetCode](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | [LeetCode CH](https://leetcode.cn/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) (Easy)
 
 -   Tags: string, sliding window
-
 ```python title="2379. Minimum Recolors to Get K Consecutive Black Blocks - Python Solution"
 # Sliding Window Fixed Size
 def minimumRecolors(blocks: str, k: int) -> int:
@@ -270,7 +265,6 @@ print(minimumRecolors(blocks, k))  # 3
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-of-almost-unique-subarray/) (Medium)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="2841. Maximum Sum of Almost Unique Subarray - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -312,7 +306,6 @@ print(maxSum(nums, m, k))  # 18
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-of-distinct-subarrays-with-length-k/) (Medium)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="2461. Maximum Sum of Distinct Subarrays With Length K - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -354,7 +347,6 @@ print(maximumSubarraySum(nums, k))  # 15
 -   [LeetCode](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/) | [LeetCode CH](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/) (Medium)
 
 -   Tags: array, sliding window, prefix sum
-
 ```python title="1423. Maximum Points You Can Obtain from Cards - Python Solution"
 from typing import List
 
@@ -394,7 +386,6 @@ print(maxScore(cardPoints, k))  # 12
 
 -   Tags: array, sliding window
 -   Hint: Maximize the number of _unsatisfied customers_ in the fixed window of `minutes`.
-
 
 ```python title="1052. Grumpy Bookstore Owner - Python Solution"
 from typing import List
@@ -439,7 +430,6 @@ print(maxSatisfied(customers, grumpy, minutes))  # 16
 -   How to deal with the _circular array_?
     -   Trick: mod (index % length)
 
-
 ```python title="1652. Defuse the Bomb - Python Solution"
 from typing import List
 
@@ -479,7 +469,6 @@ print(decrypt(code, k))  # [12, 5, 6, 13]
 -   [LeetCode](https://leetcode.com/problems/diet-plan-performance/) | [LeetCode CH](https://leetcode.cn/problems/diet-plan-performance/) (Easy)
 
 -   Tags: array, sliding window
-
 ```python title="1176. Diet Plan Performance - Python Solution"
 from typing import List
 
@@ -521,7 +510,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [LeetCode CH](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="1100. Find K-Length Substrings With No Repeated Characters - Python Solution"
 from collections import defaultdict
 
@@ -568,7 +556,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [LeetCode CH](https://leetcode.cn/problems/distinct-numbers-in-each-subarray/) (Medium)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="1852. Distinct Numbers in Each Subarray - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -607,7 +594,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [LeetCode CH](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) (Medium)
 
 -   Tags: array, sliding window
-
 ```python title="1151. Minimum Swaps to Group All 1's Together - Python Solution"
 from typing import List
 
@@ -645,7 +631,6 @@ print(minSwaps(data))  # 1
 -   [LeetCode](https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/) | [LeetCode CH](https://leetcode.cn/problems/number-of-unique-flavors-after-sharing-k-candies/) (Medium)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="2107. Number of Unique Flavors After Sharing K Candies - Python Solution"
 from collections import Counter
 from typing import List
@@ -684,3 +669,4 @@ if __name__ == "__main__":
     assert shareCandies(candies, k) == 3
 
 ```
+

@@ -39,7 +39,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sqrtx/) | [LeetCode CH](https://leetcode.cn/problems/sqrtx/) (Easy)
 
 -   Tags: math, binary search
-
 ```python title="69. Sqrt(x) - Python Solution"
 # Left Right Pointers
 def mySqrt(x: int) -> int:
@@ -69,7 +68,6 @@ print(mySqrt(x))  # 2
 -   [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 
 -   Tags: array, binary search, matrix
-
 ```python title="74. Search a 2D Matrix - Python Solution"
 from typing import List
 
@@ -108,7 +106,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix-ii/) (Medium)
 
 -   Tags: array, binary search, divide and conquer, matrix
-
 ```python title="240. Search a 2D Matrix II - Python Solution"
 from typing import List
 
@@ -152,7 +149,6 @@ print(searchMatrix(matrix, target))  # False
 
 -   Tags: binary search, interactive
 -   Find the first bad version given a function `isBadVersion`.
-
 
 ```python title="278. First Bad Version - Python Solution"
 # Binary Search
@@ -205,7 +201,6 @@ def isBadVersion(version: int) -> bool:
 -   [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="153. Find Minimum in Rotated Sorted Array - Python Solution"
 from typing import List
 
@@ -239,7 +234,6 @@ print(findMin(nums))  # 0
 -   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="33. Search in Rotated Sorted Array - Python Solution"
 from typing import List
 
@@ -284,7 +278,6 @@ print(search(nums, target))  # 4
 -   [LeetCode](https://leetcode.com/problems/count-complete-tree-nodes/) | [LeetCode CH](https://leetcode.cn/problems/count-complete-tree-nodes/) (Easy)
 
 -   Tags: binary search, bit manipulation, tree, binary tree
-
 ```python title="222. Count Complete Tree Nodes - Python Solution"
 from collections import deque
 from typing import Optional
@@ -361,7 +354,6 @@ print(countNodesIterative(root))  # 6
 -   [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
 
 -   Tags: array, binary search, divide and conquer
-
 ```python title="4. Median of Two Sorted Arrays - Python Solution"
 from typing import List
 

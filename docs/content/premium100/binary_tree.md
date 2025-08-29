@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="298. Binary Tree Longest Consecutive Sequence - Python Solution"
 from typing import Optional
 
@@ -90,7 +89,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-leaves-of-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="366. Find Leaves of Binary Tree - Python Solution"
 from collections import defaultdict
 from typing import List, Optional

@@ -77,7 +77,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-i/) | [LeetCode CH](https://leetcode.cn/problems/find-the-maximum-length-of-a-good-subsequence-i/) (Medium)
 
 -   Tags: array, hash table, dynamic programming
-
 ```python title="3176. Find the Maximum Length of a Good Subsequence I - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -215,7 +214,6 @@ print(maximumLength(nums, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/) | [LeetCode CH](https://leetcode.cn/problems/find-the-maximum-length-of-a-good-subsequence-ii/) (Hard)
 
 -   Tags: array, hash table, dynamic programming
-
 ```python title="3177. Find the Maximum Length of a Good Subsequence II - Python Solution"
 from collections import defaultdict
 from typing import List

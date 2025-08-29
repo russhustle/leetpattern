@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/symmetric-tree/) | [LeetCode CH](https://leetcode.cn/problems/symmetric-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="101. Symmetric Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -93,7 +92,6 @@ print(isSymmetricIterative(root))  # True
 -   [LeetCode](https://leetcode.com/problems/count-complete-tree-nodes/) | [LeetCode CH](https://leetcode.cn/problems/count-complete-tree-nodes/) (Easy)
 
 -   Tags: binary search, bit manipulation, tree, binary tree
-
 ```python title="222. Count Complete Tree Nodes - Python Solution"
 from collections import deque
 from typing import Optional
@@ -160,7 +158,6 @@ print(countNodesIterative(root))  # 6
 -   [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/balanced-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="110. Balanced Binary Tree - Python Solution"
 from typing import Optional
 
@@ -215,7 +212,6 @@ print(isBalanced(root))  # True
 -   [LeetCode](https://leetcode.com/problems/binary-tree-paths/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-paths/) (Easy)
 
 -   Tags: string, backtracking, tree, depth first search, binary tree
-
 ```python title="257. Binary Tree Paths - Python Solution"
 from typing import List, Optional
 
@@ -262,7 +258,6 @@ print(binaryTreePaths(root))  # ['1->2->5', '1->3']
 -   [LeetCode](https://leetcode.com/problems/sum-of-left-leaves/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-left-leaves/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="404. Sum of Left Leaves - Python Solution"
 from typing import Optional
 
@@ -319,7 +314,6 @@ print(sumOfLeftLeaves(root))  # 24
 -   [LeetCode](https://leetcode.com/problems/path-sum/) | [LeetCode CH](https://leetcode.cn/problems/path-sum/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="112. Path Sum - Python Solution"
 from typing import Optional
 
@@ -366,7 +360,6 @@ print(hasPathSum(root, 22))  # True
 -   [LeetCode](https://leetcode.com/problems/evaluate-boolean-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-boolean-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="2331. Evaluate Boolean Binary Tree - Python Solution"
 from typing import Optional
 
@@ -417,7 +410,6 @@ print(evaluateTree(root))  # 1
 -   [LeetCode](https://leetcode.com/problems/same-tree/) | [LeetCode CH](https://leetcode.cn/problems/same-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="100. Same Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -509,7 +501,6 @@ print(isSameTreeIterativeStack(p2, q2))  # False
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="235. Lowest Common Ancestor of a Binary Search Tree - Python Solution"
 from binarytree import build
 
@@ -561,7 +552,6 @@ print(lowestCommonAncestor(root, p, q))
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="236. Lowest Common Ancestor of a Binary Tree - Python Solution"
 from typing import List, Optional
 
@@ -654,5 +644,5 @@ class Solution {
 };
 
 int main() { return 0; }
-
 ```
+

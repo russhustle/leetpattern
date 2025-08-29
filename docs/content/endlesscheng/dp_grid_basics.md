@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-path-sum/) (Medium)
 
 -   Tags: array, dynamic programming, matrix
-
 ```python title="64. Minimum Path Sum - Python Solution"
 from typing import List
 
@@ -59,7 +58,6 @@ print(minPathSum(grid))  # 7
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
-
 
 ```python title="62. Unique Paths - Python Solution"
 # DP - 2D
@@ -105,7 +103,6 @@ int main() {
     cout << uniquePaths(m, n) << endl;  // 28
     return 0;
 }
-
 ```
 
 ## 63. Unique Paths II
@@ -116,7 +113,6 @@ int main() {
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid with obstacles.
 
 ![63](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
-
 
 ```python title="63. Unique Paths II - Python Solution"
 from typing import List
@@ -179,7 +175,6 @@ print(uniquePathsWithObstacles(obstacleGrid))  # 2
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 
 -   Tags: array, dynamic programming, matrix
-
 ```python title="2684. Maximum Number of Moves in a Grid - Python Solution"
 from typing import List
 

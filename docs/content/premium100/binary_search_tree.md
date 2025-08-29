@@ -27,7 +27,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/) (Medium)
 
 -   Tags: array, stack, tree, binary search tree, recursion, monotonic stack, binary tree
-
 ```python title="255. Verify Preorder Sequence in Binary Search Tree - Python Solution"
 from typing import List
 

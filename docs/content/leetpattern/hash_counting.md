@@ -19,7 +19,6 @@ comments: True
 -   Return true if an input string is an anagram of another string.
 -   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
 
-
 ```python title="242. Valid Anagram - Python Solution"
 from collections import Counter
 
@@ -98,7 +97,6 @@ print(isAnagramCounter(s, t))  # True
 -   [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
 
 -   Tags: array, hash table, prefix sum
-
 ```python title="560. Subarray Sum Equals K - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -154,7 +152,6 @@ int main() {
     cout << subarraySum(nums, k) << endl;  // 2
     return 0;
 }
-
 ```
 
 ## 49. Group Anagrams
@@ -162,7 +159,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
 
 -   Tags: array, hash table, string, sorting
-
 ```python title="49. Group Anagrams - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -200,7 +196,6 @@ print(groupAnagrams(strs))
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="438. Find All Anagrams in a String - Python Solution"
 from typing import List
 
@@ -235,3 +230,4 @@ p = "abc"
 print(findAnagrams(s, p))  # [0, 6]
 
 ```
+

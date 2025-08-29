@@ -48,7 +48,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | [LeetCode CH](https://leetcode.cn/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) (Medium)
 
 -   Tags: math, greedy
-
 ```python title="2829. Determine the Minimum Sum of a k-avoiding Array - Python Solution"
 def minimumSum(n: int, k: int) -> int:
     m = min(k // 2, n)
@@ -142,7 +141,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/fraction-to-recurring-decimal/) | [LeetCode CH](https://leetcode.cn/problems/fraction-to-recurring-decimal/) (Medium)
 
 -   Tags: hash table, math, string
-
 ```python title="166. Fraction to Recurring Decimal - Python Solution"
 # Math
 def fractionToDecimal(numerator: int, denominator: int) -> str:

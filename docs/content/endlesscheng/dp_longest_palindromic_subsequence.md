@@ -30,7 +30,6 @@ comments: True
 |  a  |  0  |  0  |  0  |        1         |      1       |
 |  b  |  0  |  0  |  0  |        0         |      1       |
 
-
 ```python title="516. Longest Palindromic Subsequence - Python Solution"
 def longestPalindromeSubseq(s: str) -> int:
     n = len(s)

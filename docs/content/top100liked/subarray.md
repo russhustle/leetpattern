@@ -15,7 +15,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
 
 -   Tags: array, hash table, prefix sum
-
 ```python title="560. Subarray Sum Equals K - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -71,7 +70,6 @@ int main() {
     cout << subarraySum(nums, k) << endl;  // 2
     return 0;
 }
-
 ```
 
 ## 239. Sliding Window Maximum
@@ -79,7 +77,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/sliding-window-maximum/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-maximum/) (Hard)
 
 -   Tags: array, queue, sliding window, heap priority queue, monotonic queue
-
 ```python title="239. Sliding Window Maximum - Python Solution"
 from collections import deque
 from typing import List
@@ -116,7 +113,6 @@ print(maxSlidingWindow(nums, k))  # [3, 3, 5, 5, 6, 7]
 -   [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="76. Minimum Window Substring - Python Solution"
 from collections import Counter
 
@@ -159,3 +155,4 @@ t = "ABC"
 print(minWindow(s, t))  # BANC
 
 ```
+

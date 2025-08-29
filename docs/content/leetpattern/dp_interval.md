@@ -26,7 +26,6 @@ comments: True
 |  a  |  0  |  0  |  0  |        1         |      1       |
 |  b  |  0  |  0  |  0  |        0         |      1       |
 
-
 ```python title="516. Longest Palindromic Subsequence - Python Solution"
 def longestPalindromeSubseq(s: str) -> int:
     n = len(s)
@@ -64,7 +63,6 @@ print(longestPalindromeSubseq("bbbab"))  # 4
 | **a** |  0  |  0  |  0  |  1  |  0  |
 | **e** |  0  |  0  |  0  |  0  |  1  |
 
-
 ```python title="647. Palindromic Substrings - Python Solution"
 def countSubstrings(s: str) -> int:
     n = len(s)
@@ -94,7 +92,6 @@ print(countSubstrings("abbae"))  # 7
 
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
-
 
 ```python title="5. Longest Palindromic Substring - Python Solution"
 # DP - Interval
@@ -154,3 +151,4 @@ print(longestPalindromeDP(s))  # "bab"
 print(longestPalindromeCenter(s))  # "aba"
 
 ```
+

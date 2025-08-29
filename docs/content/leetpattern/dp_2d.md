@@ -27,7 +27,6 @@ comments: True
  1 4 6 4 1          5
 ```
 
-
 ```python title="118. Pascal's Triangle - Python Solution"
 from typing import List
 
@@ -62,7 +61,6 @@ if __name__ == "__main__":
 -   Tags: array, dynamic programming
 -   Return the `rowIndex`th row of Pascal's triangle.
 
-
 ```python title="119. Pascal's Triangle II - Python Solution"
 from typing import List
 
@@ -92,7 +90,6 @@ print(getRow(rowIndex=3))  # [1, 3, 3, 1]
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid.
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
-
 
 ```python title="62. Unique Paths - Python Solution"
 # DP - 2D
@@ -138,7 +135,6 @@ int main() {
     cout << uniquePaths(m, n) << endl;  // 28
     return 0;
 }
-
 ```
 
 ## 63. Unique Paths II
@@ -149,7 +145,6 @@ int main() {
 -   Count the number of unique paths to reach the bottom-right corner of a `m x n` grid with obstacles.
 
 ![63](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
-
 
 ```python title="63. Unique Paths II - Python Solution"
 from typing import List
@@ -191,3 +186,4 @@ print(uniquePathsWithObstacles(obstacleGrid))  # 2
 #  [1, 1, 2]]
 
 ```
+

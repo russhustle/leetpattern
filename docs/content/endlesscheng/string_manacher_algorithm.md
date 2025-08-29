@@ -20,7 +20,6 @@ comments: True
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
 
-
 ```python title="5. Longest Palindromic Substring - Python Solution"
 # DP - Interval
 def longestPalindromeDP(s: str) -> str:
@@ -96,7 +95,6 @@ print(longestPalindromeCenter(s))  # "aba"
 | **a** |  0  |  0  |  0  |  1  |  0  |
 | **e** |  0  |  0  |  0  |  0  |  1  |
 
-
 ```python title="647. Palindromic Substrings - Python Solution"
 def countSubstrings(s: str) -> int:
     n = len(s)
@@ -125,7 +123,6 @@ print(countSubstrings("abbae"))  # 7
 -   [LeetCode](https://leetcode.com/problems/shortest-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/shortest-palindrome/) (Hard)
 
 -   Tags: string, rolling hash, string matching, hash function
-
 ```python title="214. Shortest Palindrome - Python Solution"
 from template import LPS
 
@@ -157,7 +154,6 @@ print(shortestPalindrome("aacecaaa"))  # aaacecaaa
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning-iv/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning-iv/) (Hard)
 
 -   Tags: string, dynamic programming
-
 ```python title="1745. Palindrome Partitioning IV - Python Solution"
 # DP
 def checkPartitioning(s: str) -> bool:

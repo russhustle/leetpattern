@@ -15,7 +15,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/permutations/) | [LeetCode CH](https://leetcode.cn/problems/permutations/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="46. Permutations - Python Solution"
 from typing import List
 
@@ -56,7 +55,6 @@ print(permute([1, 2, 3]))
 -   [LeetCode](https://leetcode.com/problems/subsets/) | [LeetCode CH](https://leetcode.cn/problems/subsets/) (Medium)
 
 -   Tags: array, backtracking, bit manipulation
-
 ```python title="78. Subsets - Python Solution"
 from typing import List
 
@@ -118,7 +116,6 @@ print(subsets_binary_decision([1, 2, 3]))
 
 ![17](https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png)
 
-
 ```python title="17. Letter Combinations of a Phone Number - Python Solution"
 from typing import List
 
@@ -171,3 +168,4 @@ if __name__ == "__main__":
     ]
 
 ```
+

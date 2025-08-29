@@ -23,7 +23,6 @@ comments: True
 -   Tags: array, hash table, sorting
 -   Return True if the array contains any duplicates, otherwise return False.
 
-
 ```python title="217. Contains Duplicate - Python Solution"
 from typing import List
 
@@ -82,7 +81,6 @@ print(containsDuplicateSet([1, 2, 3, 1]))  # True
 -   Tags: hash table, string, sorting
 -   Return true if an input string is an anagram of another string.
 -   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
-
 
 ```python title="242. Valid Anagram - Python Solution"
 from collections import Counter
@@ -167,7 +165,6 @@ print(isAnagramCounter(s, t))  # True
 - Time Complexity: O(n)
 - Space Complexity: O(n)
 
-
 ```python title="1. Two Sum - Python Solution"
 from typing import List
 
@@ -218,7 +215,6 @@ int main() {
     cout << result[0] << ", " << result[1] << endl;
     return 0;
 }
-
 ```
 
 ## 49. Group Anagrams
@@ -226,7 +222,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
 
 -   Tags: array, hash table, string, sorting
-
 ```python title="49. Group Anagrams - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -264,7 +259,6 @@ print(groupAnagrams(strs))
 -   [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, sorting, heap priority queue, bucket sort, counting, quickselect
-
 ```python title="347. Top K Frequent Elements - Python Solution"
 import heapq
 from collections import Counter
@@ -302,7 +296,6 @@ print(topKFrequentCounter(nums, k))  # [1, 2]
 -   [LeetCode](https://leetcode.com/problems/encode-and-decode-strings/) | [LeetCode CH](https://leetcode.cn/problems/encode-and-decode-strings/) (Medium)
 
 -   Tags: array, string, design
-
 ```python title="271. Encode and Decode Strings - Python Solution"
 from typing import List
 
@@ -361,7 +354,6 @@ print(decoded)  # ["hello", "world"]
 | ------------------ | ---- | ----- |
 | Prefix             | O(n) | O(n)  |
 | Prefix (Optimized) | O(n) | O(1)  |
-
 
 ```python title="238. Product of Array Except Self - Python Solution"
 from typing import List
@@ -457,7 +449,6 @@ int main()
     // 24, 12, 8, 6
     return 0;
 }
-
 ```
 
 ## 36. Valid Sudoku
@@ -465,7 +456,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/valid-sudoku/) | [LeetCode CH](https://leetcode.cn/problems/valid-sudoku/) (Medium)
 
 -   Tags: array, hash table, matrix
-
 ```python title="36. Valid Sudoku - Python Solution"
 from typing import List
 
@@ -517,7 +507,6 @@ print(isValidSudoku(board))  # True
 -   [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-consecutive-sequence/) (Medium)
 
 -   Tags: array, hash table, union find
-
 ```python title="128. Longest Consecutive Sequence - Python Solution"
 from typing import List
 
@@ -585,3 +574,4 @@ print(longestConsecutiveSet(nums))  # 4
 print(longestConsecutiveUF(nums))  # 4
 
 ```
+

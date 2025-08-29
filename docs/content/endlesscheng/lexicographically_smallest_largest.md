@@ -52,7 +52,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/lexicographically-smallest-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/lexicographically-smallest-palindrome/) (Easy)
 
 -   Tags: two pointers, string, greedy
-
 ```python title="2697. Lexicographically Smallest Palindrome - Python Solution"
 def makeSmallestPalindrome(s: str) -> str:
     n = len(s)
@@ -100,7 +99,6 @@ print(makeSmallestPalindrome(s))  # "efcfe"
 -   [LeetCode](https://leetcode.com/problems/break-a-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/break-a-palindrome/) (Medium)
 
 -   Tags: string, greedy
-
 ```python title="1328. Break a Palindrome - Python Solution"
 # Greedy
 def breakPalindrome(palindrome: str) -> str:
@@ -162,7 +160,6 @@ print(breakPalindrome(palindrome))  # "aaccba"
 -   Tags: math, greedy
 -   Return the largest number that is less than or equal to `n` with monotone increasing digits.
 
-
 ```python title="738. Monotone Increasing Digits - Python Solution"
 # Greedy
 def monotoneIncreasingDigits(n: int) -> int:
@@ -186,7 +183,6 @@ print(monotoneIncreasingDigits(n))  # 299
 -   [LeetCode](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | [LeetCode CH](https://leetcode.cn/problems/find-the-lexicographically-largest-string-from-the-box-i/) (Medium)
 
 -   Tags: two pointers, string, enumeration
-
 ```python title="3403. Find the Lexicographically Largest String From the Box I - Python Solution"
 # Lexicographically Smallest/Largest
 def answerString(word: str, numFriends: int) -> str:
@@ -207,7 +203,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/) | [LeetCode CH](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
 
 -   Tags: hash table, string, stack, greedy, heap priority queue
-
 ```python title="3170. Lexicographically Minimum String After Removing Stars - Python Solution"
 from itertools import chain
 
@@ -247,7 +242,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/smallest-string-with-swaps/) | [LeetCode CH](https://leetcode.cn/problems/smallest-string-with-swaps/) (Medium)
 
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
-
 ```python title="1202. Smallest String With Swaps - Python Solution"
 from collections import defaultdict
 from typing import List

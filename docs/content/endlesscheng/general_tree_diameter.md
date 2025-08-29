@@ -38,7 +38,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/tree-diameter/) | [LeetCode CH](https://leetcode.cn/problems/tree-diameter/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, graph, topological sort
-
 ```python title="1245. Tree Diameter - Python Solution"
 from collections import defaultdict, deque
 from typing import List

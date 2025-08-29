@@ -28,7 +28,7 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/) | [LeetCode CH](https://leetcode.cn/problems/form-largest-integer-with-digits-that-add-up-to-target/) (Hard)
 
 -   Tags: array, dynamic programming
-## 1092. Shortest Common Supersequence
+## 1092. Shortest Common Supersequence 
 
 -   [LeetCode](https://leetcode.com/problems/shortest-common-supersequence/) | [LeetCode CH](https://leetcode.cn/problems/shortest-common-supersequence/) (Hard)
 

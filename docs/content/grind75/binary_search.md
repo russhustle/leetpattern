@@ -19,7 +19,6 @@ comments: True
 -   Tags: array, binary search
 - Implement binary search algorithm.
 
-
 ```python title="704. Binary Search - Python Solution"
 from typing import List
 
@@ -91,7 +90,6 @@ if __name__ == "__main__":
 -   Tags: binary search, interactive
 -   Find the first bad version given a function `isBadVersion`.
 
-
 ```python title="278. First Bad Version - Python Solution"
 # Binary Search
 def firstBadVersion(n: int) -> int:
@@ -118,7 +116,6 @@ def isBadVersion(version: int) -> bool:
 -   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="33. Search in Rotated Sorted Array - Python Solution"
 from typing import List
 
@@ -158,7 +155,6 @@ print(search(nums, target))  # 4
 -   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
 
 -   Tags: hash table, string, binary search, design
-
 ```python title="981. Time Based Key-Value Store - Python Solution"
 from collections import defaultdict
 

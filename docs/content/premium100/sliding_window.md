@@ -18,7 +18,6 @@ comments: True
 -   Tags: hash table, string, sliding window
 -   Prerequisite: 3. Longest Substring Without Repeating Characters
 
-
 ```python title="159. Longest Substring with At Most Two Distinct Characters - Python Solution"
 from collections import defaultdict
 
@@ -56,7 +55,6 @@ assert lengthOfLongestSubstringTwoDistinct(s) == 5
 -   [LeetCode](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="340. Longest Substring with At Most K Distinct Characters - Python Solution"
 from collections import defaultdict
 
@@ -98,7 +96,6 @@ assert lengthOfLongestSubstringKDistinct(s, k) == 3
 -   [LeetCode](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/) | [LeetCode CH](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="1100. Find K-Length Substrings With No Repeated Characters - Python Solution"
 from collections import defaultdict
 
@@ -139,3 +136,4 @@ if __name__ == "__main__":
     assert numKLenSubstrNoRepeats(s, k) == 6
 
 ```
+

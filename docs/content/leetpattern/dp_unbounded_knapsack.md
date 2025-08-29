@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
 
 -   Tags: array, hash table, string, dynamic programming, trie, memoization
-
 ```python title="139. Word Break - Python Solution"
 from typing import List
 
@@ -47,7 +46,6 @@ print(wordBreak(s, wordDict))  # True
 -   [LeetCode](https://leetcode.com/problems/perfect-squares/) | [LeetCode CH](https://leetcode.cn/problems/perfect-squares/) (Medium)
 
 -   Tags: math, dynamic programming, breadth first search
-
 ```python title="279. Perfect Squares - Python Solution"
 import math
 
@@ -74,7 +72,6 @@ print(numSquares(n))  # 3
 -   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
 
 -   Tags: array, dynamic programming, breadth first search
-
 ```python title="322. Coin Change - Python Solution"
 from typing import List
 
@@ -103,7 +100,6 @@ print(coinChange(coins, amount))  # 3
 -   [LeetCode](https://leetcode.com/problems/coin-change-ii/) | [LeetCode CH](https://leetcode.cn/problems/coin-change-ii/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="518. Coin Change II - Python Solution"
 from typing import List
 
@@ -130,7 +126,6 @@ print(change(amount, coins))  # 4
 -   [LeetCode](https://leetcode.com/problems/combination-sum-iv/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iv/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="377. Combination Sum IV - Python Solution"
 from typing import List
 
@@ -152,3 +147,4 @@ target = 4
 print(combinationSum4(nums, target))  # 7
 
 ```
+

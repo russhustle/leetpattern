@@ -51,7 +51,6 @@ comments: True
 -   Tags: array, hash table, prefix sum
 -   Return the number of points that intersect with cars.
 
-
 ```python title="2848. Points That Intersect With Cars - Python Solution"
 from itertools import accumulate
 from typing import List
@@ -96,7 +95,6 @@ print(numberOfPoints(nums))  # 7
 
 -   Tags: array, sorting, heap priority queue, simulation, prefix sum
 -   Return `False` if the total number of passengers at any point is greater than `capacity`. Otherwise, return `True`.
-
 
 ```python title="1094. Car Pooling - Python Solution"
 from itertools import accumulate
@@ -151,7 +149,6 @@ print(carPooling2(trips, capacity))  # False
 -   Tags: array, prefix sum
 -   Return the number of seats booked on each flight.
 
-
 ```python title="1109. Corporate Flight Bookings - Python Solution"
 from typing import List
 
@@ -191,7 +188,6 @@ print(corpFlightBookings(bookings, n))  # [10, 55, 45, 25, 25]
 -   Merge all overlapping intervals.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="56. Merge Intervals - Python Solution"
 from typing import List
@@ -249,7 +245,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 57. Insert Interval
@@ -257,7 +252,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
 
 -   Tags: array
-
 ```python title="57. Insert Interval - Python Solution"
 from typing import List
 
@@ -334,7 +328,6 @@ print(insert(intervals, newInterval))  # [[1, 5], [6, 9]]
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
 
 -   Tags: array, greedy, sorting, prefix sum
-
 ```python title="1589. Maximum Sum Obtained of Any Permutation - Python Solution"
 from typing import List
 
@@ -445,7 +438,6 @@ print(maxSumRangeQuery(nums, requests))  # 19
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 - Given an array of meeting time `intervals` where `intervals[i] = [start_i, end_i]`, return the minimum number of conference rooms required.
 
-
 ```python title="253. Meeting Rooms II - Python Solution"
 import heapq
 from typing import List
@@ -479,7 +471,6 @@ if __name__ == "__main__":
 
 -   Tags: array, prefix sum
 -   Return the final array after applying all the Adition operations.
-
 
 ```python title="370. Range Addition - Python Solution"
 from typing import List

@@ -15,7 +15,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/binary-tree-paths/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-paths/) (Easy)
 
 -   Tags: string, backtracking, tree, depth first search, binary tree
-
 ```python title="257. Binary Tree Paths - Python Solution"
 from typing import List, Optional
 
@@ -136,5 +135,5 @@ int main() {
     }
     return 0;
 }
-
 ```
+

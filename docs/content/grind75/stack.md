@@ -31,7 +31,6 @@ comments: True
 | `{`  | push   | "{"   |
 | `}`  | pop    | ""    |
 
-
 ```python title="20. Valid Parentheses - Python Solution"
 # Stack
 def isValid(s: str) -> bool:
@@ -100,7 +99,6 @@ int main() {
     assert(s.isValid("{[]}") == true);
     return 0;
 }
-
 ```
 
 ## 232. Implement Queue using Stacks
@@ -113,7 +111,6 @@ int main() {
     -   `pop()` - Removes the element from in front of queue.
     -   `peek()` - Get the front element.
     -   `empty()` - Return whether the queue is empty.
-
 
 ```python title="232. Implement Queue using Stacks - Python Solution"
 class MyQueue:
@@ -167,7 +164,6 @@ print(obj.empty())  # False
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
 
-
 ```python title="150. Evaluate Reverse Polish Notation - Python Solution"
 from typing import List
 
@@ -206,7 +202,6 @@ print(evalRPN(["4", "3", "-"]))  # 1
 
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-
 
 ```python title="155. Min Stack - Python Solution"
 # Stack
@@ -274,7 +269,6 @@ int main() {
     cout << minStack.getMin() << endl;  // -2
     return 0;
 }
-
 ```
 
 ## 42. Trapping Rain Water
@@ -291,7 +285,6 @@ int main() {
 | DP         | O(N) | O(N)  |
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
-
 
 ```python title="42. Trapping Rain Water - Python Solution"
 from typing import List
@@ -409,7 +402,6 @@ int main()
     cout << solution.trap(height) << endl;
     return 0;
 }
-
 ```
 
 ## 224. Basic Calculator
@@ -417,7 +409,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)
 
 -   Tags: math, string, stack, recursion
-
 ```python title="224. Basic Calculator - Python Solution"
 # Stack
 def calculate(s: str) -> int:
@@ -464,7 +455,6 @@ print(calculate("(1+(4+5+2)-3)+(6+8)"))  # 23
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 
 -   Tags: array, stack, monotonic stack
-
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
 from typing import List
 
@@ -491,3 +481,4 @@ def largestRectangleArea(heights: List[int]) -> int:
 print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
 
 ```
+

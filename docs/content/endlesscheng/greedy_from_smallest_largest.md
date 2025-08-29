@@ -53,7 +53,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/apple-redistribution-into-boxes/) | [LeetCode CH](https://leetcode.cn/problems/apple-redistribution-into-boxes/) (Easy)
 
 -   Tags: array, greedy, sorting
-
 ```python title="3074. Apple Redistribution into Boxes - Python Solution"
 from typing import List
 
@@ -113,7 +112,6 @@ int main()
     cout << s.minimumBoxes(apple, capacity) << endl;
     return 0;
 }
-
 ```
 
 ## 2279. Maximum Bags With Full Capacity of Rocks
@@ -132,7 +130,6 @@ int main()
 
 -   Tags: array, greedy, sorting
 -   Return the maximum sum of the array after changing at most `k` elements.
-
 
 ```python title="1005. Maximize Sum Of Array After K Negations - Python Solution"
 from heapq import heapify, heapreplace
@@ -203,7 +200,6 @@ print(largestSumAfterKNegationsHeap([4, 2, 3], 1))
 -   [LeetCode](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [LeetCode CH](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) (Medium)
 
 -   Tags: array, greedy, sorting
-
 ```python title="3075. Maximize Happiness of Selected Children - Python Solution"
 from typing import List
 
@@ -264,7 +260,6 @@ print(maximumHappinessSum(happiness, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [LeetCode CH](https://leetcode.cn/problems/minimum-increment-to-make-array-unique/) (Medium)
 
 -   Tags: array, greedy, sorting, counting
-
 ```python title="945. Minimum Increment to Make Array Unique - Python Solution"
 from typing import List
 
@@ -392,7 +387,6 @@ print(minIncrementForUnique(nums))  # 1
 -   [LeetCode](https://leetcode.com/problems/maximum-distance-in-arrays/) | [LeetCode CH](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 
 -   Tags: array, greedy
-
 ```python title="624. Maximum Distance in Arrays - Python Solution"
 from typing import List
 

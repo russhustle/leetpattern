@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subsets-ii/) | [LeetCode CH](https://leetcode.cn/problems/subsets-ii/) (Medium)
 
 -   Tags: array, backtracking, bit manipulation
-
 ```python title="90. Subsets II - Python Solution"
 from typing import List
 
@@ -50,7 +49,6 @@ print(subsetsWithDup([1, 2, 2]))
 -   [LeetCode](https://leetcode.com/problems/combination-sum-ii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-ii/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="40. Combination Sum II - Python Solution"
 from typing import List
 
@@ -93,7 +91,6 @@ print(combinationSum2([10, 1, 2, 7, 6, 1, 5], 8))
 -   [LeetCode](https://leetcode.com/problems/non-decreasing-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/non-decreasing-subsequences/) (Medium)
 
 -   Tags: array, hash table, backtracking, bit manipulation
-
 ```python title="491. Non-decreasing Subsequences - Python Solution"
 from typing import List
 
@@ -131,7 +128,6 @@ print(findSubsequences([4, 6, 7, 7]))
 -   [LeetCode](https://leetcode.com/problems/permutations-ii/) | [LeetCode CH](https://leetcode.cn/problems/permutations-ii/) (Medium)
 
 -   Tags: array, backtracking, sorting
-
 ```python title="47. Permutations II - Python Solution"
 from typing import List
 

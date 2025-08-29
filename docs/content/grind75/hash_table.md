@@ -21,7 +21,6 @@ graph LR
     B["Ransom Note: abc"] --> C
 ```
 
-
 ```python title="383. Ransom Note - Python Solution"
 from collections import Counter, defaultdict
 
@@ -76,3 +75,4 @@ print(canConstructDict(ransomNote, magazine))  # True
 print(canConstructCounter(ransomNote, magazine))  # True
 
 ```
+

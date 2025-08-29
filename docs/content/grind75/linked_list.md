@@ -21,7 +21,6 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIdigk956u0?si=2cVoU6DujA3Mgtlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ```python title="21. Merge Two Sorted Lists - Python Solution"
 from typing import Optional
 
@@ -90,7 +89,6 @@ class Solution {
         return dummy.next;
     }
 };
-
 ```
 
 ## 141. Linked List Cycle
@@ -114,7 +112,6 @@ graph LR
     C --> D((4))
     D --> B
 ```
-
 
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
@@ -164,7 +161,6 @@ class Solution {
         return false;
     }
 };
-
 ```
 
 ## 206. Reverse Linked List
@@ -189,7 +185,6 @@ D --> C((3))
 C --> B((2))
 B --> A((1))
 ```
-
 
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
@@ -243,7 +238,6 @@ print(reverseListRecursive(head2))
 -   [LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
 
 -   Tags: linked list, two pointers
-
 ```python title="876. Middle of the Linked List - Python Solution"
 from typing import Optional
 
@@ -281,7 +275,6 @@ print(middleNode(ListNode.create([1, 2, 3, 4, 5, 6])))
 | ------------------ | ----------------------------- |
 | Doubly Linked List | To store the key-value pairs. |
 | Hash Map           | To store the key-node pairs.  |
-
 
 ```python title="146. LRU Cache - Python Solution"
 from collections import OrderedDict
@@ -482,5 +475,5 @@ int main() {
     cout << lru.get(4) << endl;  // 4
     return 0;
 }
-
 ```
+

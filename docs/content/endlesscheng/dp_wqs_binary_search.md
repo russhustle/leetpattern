@@ -14,7 +14,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) (Hard)
 
 -   Tags: array, dynamic programming
-
 ```python title="188. Best Time to Buy and Sell Stock IV - Python Solution"
 from typing import List
 

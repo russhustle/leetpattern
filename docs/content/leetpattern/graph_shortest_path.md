@@ -44,7 +44,6 @@ graph LR
     -   Time Complexity: O(E * logV)
     -   Space Complexity: O(V)
 
-
 ```python title="743. Network Delay Time - Python Solution"
 import heapq
 from collections import defaultdict
@@ -136,7 +135,6 @@ if __name__ == "__main__":
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
-
 ```python title="778. Swim in Rising Water - Python Solution"
 import heapq
 from typing import List
@@ -182,7 +180,6 @@ print(swimInWater(grid))  # 16
 
 -   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
-
 
 ```python title="1631. Path With Minimum Effort - Python Solution"
 import heapq
@@ -243,7 +240,6 @@ graph TD
 ```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="787. Cheapest Flights Within K Stops - Python Solution"
 import heapq
@@ -321,7 +317,6 @@ print(findCheapestPriceDijkstra(n, flights, src, dst, k))  # 700
 -   [LeetCode](https://leetcode.com/problems/path-with-maximum-probability/) | [LeetCode CH](https://leetcode.cn/problems/path-with-maximum-probability/) (Medium)
 
 -   Tags: array, graph, heap priority queue, shortest path
-
 ```python title="1514. Path with Maximum Probability - Python Solution"
 import heapq
 from collections import defaultdict
@@ -413,7 +408,6 @@ print(maxProbability2(n, edges, succProb, start, end))  # 0.25
 -   [LeetCode](https://leetcode.com/problems/the-maze-ii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-ii/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
-
 ```python title="505. The Maze II - Python Solution"
 import heapq
 from typing import List
@@ -474,7 +468,6 @@ print(shortestDistance(maze, start, destination))  # 12
 -   [LeetCode](https://leetcode.com/problems/the-maze-iii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-iii/) (Hard)
 
 -   Tags: array, string, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
-
 ```python title="499. The Maze III - Python Solution"
 import heapq
 from typing import List
@@ -545,7 +538,6 @@ print(findShortestWay(maze, ball, hole))  # "lul"
 -   [LeetCode](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/) | [LeetCode CH](https://leetcode.cn/problems/reachable-nodes-in-subdivided-graph/) (Hard)
 
 -   Tags: graph, heap priority queue, shortest path
-
 ```python title="882. Reachable Nodes In Subdivided Graph - Python Solution"
 import heapq
 from typing import List
@@ -590,7 +582,6 @@ print(reachableNodes(None, edges, maxMoves, n))  # 13
 -   [LeetCode](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | [LeetCode CH](https://leetcode.cn/problems/time-needed-to-inform-all-employees/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search
-
 ```python title="1376. Time Needed to Inform All Employees - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -652,7 +643,6 @@ print(numOfMinutesBFS(n, headID, manager, informTime))  # 1
 - ![1168_0](../../assets/1168_0.png)
 
 - ![1168_1](../../assets/1168_1.png)
-
 
 ```python title="1168. Optimize Water Distribution in a Village - Python Solution"
 import heapq
@@ -758,7 +748,6 @@ print(minCostToSupplyWater2(n, wells, pipes))  # 3
 -   [LeetCode](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) | [LeetCode CH](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
 
 -   Tags: dynamic programming, graph, topological sort, shortest path
-
 ```python title="1976. Number of Ways to Arrive at Destination - Python Solution"
 import heapq
 from typing import List
@@ -812,3 +801,4 @@ roads = [
 print(countPaths(n, roads))  # 4
 
 ```
+

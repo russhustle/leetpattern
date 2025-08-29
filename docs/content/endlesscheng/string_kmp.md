@@ -24,7 +24,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
 
 -   Tags: two pointers, string, string matching
-
 ```python title="28. Find the Index of the First Occurrence in a String - Python Solution"
 from template import LPS
 
@@ -74,7 +73,6 @@ print(strStrKMP(haystack, needle))  # 2
 -   [LeetCode](https://leetcode.com/problems/rotate-string/) | [LeetCode CH](https://leetcode.cn/problems/rotate-string/) (Easy)
 
 -   Tags: string, string matching
-
 ```python title="796. Rotate String - Python Solution"
 # String
 def rotateString(s: str, goal: str) -> bool:
@@ -99,7 +97,6 @@ print(rotateString(s, goal))  # True
 -   [LeetCode](https://leetcode.com/problems/longest-happy-prefix/) | [LeetCode CH](https://leetcode.cn/problems/longest-happy-prefix/) (Hard)
 
 -   Tags: string, rolling hash, string matching, hash function
-
 ```python title="1392. Longest Happy Prefix - Python Solution"
 from template import LPS
 
@@ -138,7 +135,6 @@ print(longestPrefix("ababab"))  # abab
 -   [LeetCode](https://leetcode.com/problems/repeated-substring-pattern/) | [LeetCode CH](https://leetcode.cn/problems/repeated-substring-pattern/) (Easy)
 
 -   Tags: string, string matching
-
 ```python title="459. Repeated Substring Pattern - Python Solution"
 from template import LPS
 
@@ -169,7 +165,6 @@ print(repeatedSubstringPattern(s))  # True
 -   [LeetCode](https://leetcode.com/problems/shortest-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/shortest-palindrome/) (Hard)
 
 -   Tags: string, rolling hash, string matching, hash function
-
 ```python title="214. Shortest Palindrome - Python Solution"
 from template import LPS
 
@@ -196,7 +191,6 @@ print(shortestPalindrome("aacecaaa"))  # aaacecaaa
 -   [LeetCode](https://leetcode.com/problems/repeated-string-match/) | [LeetCode CH](https://leetcode.cn/problems/repeated-string-match/) (Medium)
 
 -   Tags: string, string matching
-
 ```python title="686. Repeated String Match - Python Solution"
 import math
 

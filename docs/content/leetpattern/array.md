@@ -19,7 +19,6 @@ comments: True
 -   Tags: array, sorting
 -   Return the third maximum number in an array. If the third maximum does not exist, return the maximum number.
 
-
 ```python title="414. Third Maximum Number - Python Solution"
 from typing import List
 
@@ -79,7 +78,6 @@ print(thirdMaxCompare([3, 2, 1]))  # 1
 | 2     | 0       | 1     |
 | 2     | 1       | 2     |
 
-
 ```python title="169. Majority Element - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -127,7 +125,6 @@ print(majorityElementHashMap(nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/convert-1d-array-into-2d-array/) | [LeetCode CH](https://leetcode.cn/problems/convert-1d-array-into-2d-array/) (Easy)
 
 -   Tags: array, matrix, simulation
-
 ```python title="2022. Convert 1D Array Into 2D Array - Python Solution"
 from typing import List
 
@@ -166,7 +163,6 @@ print(construct2DArray(original, m, n))  # [[1, 2], [3, 4]]
 
 -   Tags: array, matrix, simulation
 -   Return all elements of the matrix in spiral order.
-
 
 ```python title="54. Spiral Matrix - Python Solution"
 from typing import List
@@ -240,7 +236,6 @@ print(spiralOrderMath([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]))
 -   Tags: array, matrix, simulation
 -   Return a square matrix filled with elements from 1 to n^2 in spiral order.
 
-
 ```python title="59. Spiral Matrix II - Python Solution"
 from pprint import pprint
 from typing import List
@@ -283,3 +278,4 @@ pprint(generateMatrix(5))
 #  [13, 12, 11, 10, 9]]
 
 ```
+

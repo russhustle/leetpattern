@@ -29,7 +29,6 @@ comments: True
 -   `dp[n]` stores the result of the game when the number is `n`.
 -   Initialize `dp[1] = False`.
 
-
 ```python title="1025. Divisor Game - Python Solution"
 # DP
 def divisorGameDP(n: int) -> bool:

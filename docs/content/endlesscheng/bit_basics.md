@@ -99,7 +99,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-1-bits/) | [LeetCode CH](https://leetcode.cn/problems/number-of-1-bits/) (Easy)
 
 -   Tags: divide and conquer, bit manipulation
-
 ```python title="191. Number of 1 Bits - Python Solution"
 # Bit Manipulation
 def hammingWeight1(n: int) -> int:
@@ -156,18 +155,11 @@ print(bin(n))
 > Note that bits are indexed from right to left in the binary representation of a number.
 > Return the array [even, odd].
 
-
-```python title="2595. Number of Even and Odd Bits - Python Solution"
-
-
-```
-
 ## 338. Counting Bits
 
 -   [LeetCode](https://leetcode.com/problems/counting-bits/) | [LeetCode CH](https://leetcode.cn/problems/counting-bits/) (Easy)
 
 -   Tags: dynamic programming, bit manipulation
-
 ```python title="338. Counting Bits - Python Solution"
 from typing import List
 
@@ -186,3 +178,4 @@ n = 5
 print(countBits(n))  # [0, 1, 1, 2, 1, 2]
 
 ```
+

@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) (Easy)
 
 -   Tags: array, divide and conquer, tree, binary search tree, binary tree
-
 ```python title="108. Convert Sorted Array to Binary Search Tree - Python Solution"
 from typing import List, Optional
 
@@ -84,7 +83,6 @@ class Solution {
 };
 
 int main() { return 0; }
-
 ```
 
 ## 148. Sort List
@@ -92,7 +90,6 @@ int main() { return 0; }
 -   [LeetCode](https://leetcode.com/problems/sort-list/) | [LeetCode CH](https://leetcode.cn/problems/sort-list/) (Medium)
 
 -   Tags: linked list, two pointers, divide and conquer, sorting, merge sort
-
 ```python title="148. Sort List - Python Solution"
 from typing import Optional
 
@@ -174,7 +171,6 @@ print(sortListDivideConquer(head))  # 1 -> 2 -> 3 -> 4
 -   Prerequisite: 21. Merge Two Sorted Lists
 -   Video explanation: [23. Merge K Sorted Lists - NeetCode](https://youtu.be/q5a5OiGbT6Q?si=SQ2dCvsYQ3LQctPh)
 
-
 ```python title="23. Merge k Sorted Lists - Python Solution"
 import copy
 import heapq
@@ -254,3 +250,4 @@ print(mergeKLists(lists2))
 # 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
 
 ```
+

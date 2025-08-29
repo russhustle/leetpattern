@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/diameter-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="543. Diameter of Binary Tree - Python Solution"
 from typing import Optional
 
@@ -100,7 +99,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## 687. Longest Univalue Path
@@ -113,7 +111,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)
 
 -   Tags: dynamic programming, tree, depth first search, binary tree
-
 ```python title="124. Binary Tree Maximum Path Sum - Python Solution"
 from typing import Optional
 

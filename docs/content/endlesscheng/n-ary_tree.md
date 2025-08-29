@@ -38,7 +38,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/n-ary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/) (Medium)
 
 -   Tags: tree, breadth first search
-
 ```python title="429. N-ary Tree Level Order Traversal - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -106,7 +105,6 @@ print(levelOrder(root))  # [[1], [3, 2, 4], [5, 6]]
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-n-ary-tree/) (Hard)
 
 -   Tags: string, tree, depth first search, breadth first search
-
 ```python title="428. Serialize and Deserialize N-ary Tree - Python Solution"
 from typing import List, Optional
 
@@ -190,7 +188,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/diameter-of-n-ary-tree/) | [LeetCode CH](https://leetcode.cn/problems/diameter-of-n-ary-tree/) (Medium)
 
 -   Tags: tree, depth first search
-
 ```python title="1522. Diameter of N-Ary Tree - Python Solution"
 from typing import List, Optional
 

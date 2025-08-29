@@ -40,7 +40,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/) | [LeetCode CH](https://leetcode.cn/problems/longest-repeating-character-replacement/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="424. Longest Repeating Character Replacement - Python Solution"
 from collections import defaultdict
 
@@ -76,7 +75,6 @@ print(characterReplacement(s, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="438. Find All Anagrams in a String - Python Solution"
 from typing import List
 

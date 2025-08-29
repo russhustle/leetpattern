@@ -53,7 +53,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/best-team-with-no-conflicts/) | [LeetCode CH](https://leetcode.cn/problems/best-team-with-no-conflicts/) (Medium)
 
 -   Tags: array, dynamic programming, sorting
-
 ```python title="1626. Best Team With No Conflicts - Python Solution"
 from typing import List
 

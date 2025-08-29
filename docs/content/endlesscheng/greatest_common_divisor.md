@@ -76,7 +76,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/max-points-on-a-line/) | [LeetCode CH](https://leetcode.cn/problems/max-points-on-a-line/) (Hard)
 
 -   Tags: array, hash table, math, geometry
-
 ```python title="149. Max Points on a Line - Python Solution"
 from collections import defaultdict
 from typing import List

@@ -21,7 +21,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | [LeetCode CH](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-
 ```python title="1926. Nearest Exit from Entrance in Maze - Python Solution"
 from collections import deque
 from typing import List
@@ -60,7 +59,6 @@ print(nearestExit(maze, entrance))  # 1
 -   [LeetCode](https://leetcode.com/problems/shortest-bridge/) | [LeetCode CH](https://leetcode.cn/problems/shortest-bridge/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="934. Shortest Bridge - Python Solution"
 from collections import deque
 from typing import List
@@ -124,7 +122,6 @@ print(shortestBridge(grid))  # 1
 -   [LeetCode](https://leetcode.com/problems/minimum-genetic-mutation/) | [LeetCode CH](https://leetcode.cn/problems/minimum-genetic-mutation/) (Medium)
 
 -   Tags: hash table, string, breadth first search
-
 ```python title="433. Minimum Genetic Mutation - Python Solution"
 from collections import deque
 from typing import List
@@ -171,7 +168,6 @@ print(minMutation(startGene, endGene, bank))  # 2
 -   Approach: BFS
 -   Time Complexity: O(n * m^2)
 -   Space Complexity: O(n * m)
-
 
 ```python title="127. Word Ladder - Python Solution"
 from collections import defaultdict, deque
@@ -226,7 +222,6 @@ print(ladderLength(beginWord, endWord, wordList))  # 5
 -   [LeetCode](https://leetcode.com/problems/jump-game-iii/) | [LeetCode CH](https://leetcode.cn/problems/jump-game-iii/) (Medium)
 
 -   Tags: array, depth first search, breadth first search
-
 ```python title="1306. Jump Game III - Python Solution"
 from collections import deque
 from typing import List
@@ -264,7 +259,6 @@ print(canReach(arr, start))  # True
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
 
 -   Tags: array, dynamic programming, breadth first search, matrix
-
 ```python title="542. 01 Matrix - Python Solution"
 from collections import deque
 from typing import List
@@ -306,7 +300,6 @@ print(updateMatrix(mat))
 -   [LeetCode](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-
 ```python title="1091. Shortest Path in Binary Matrix - Python Solution"
 from collections import deque
 from typing import List
@@ -357,7 +350,6 @@ print(shortestPathBinaryMatrix(grid))  # 4
 -   [LeetCode](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) (Medium)
 
 -   Tags: hash table, tree, depth first search, breadth first search, binary tree
-
 ```python title="863. All Nodes Distance K in Binary Tree - Python Solution"
 from collections import deque
 from typing import List
@@ -415,7 +407,6 @@ print(distanceK(root, target, k))  # [7, 4, 1]
 -   [LeetCode](https://leetcode.com/problems/shortest-path-to-get-all-keys/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-to-get-all-keys/) (Hard)
 
 -   Tags: array, bit manipulation, breadth first search, matrix
-
 ```python title="864. Shortest Path to Get All Keys - Python Solution"
 from collections import deque
 from typing import List
@@ -472,3 +463,4 @@ grid = ["@.a..", "###.#", "b.A.B"]
 print(shortestPathAllKeys(grid))  # 8
 
 ```
+

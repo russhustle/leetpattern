@@ -34,7 +34,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="88. Merge Sorted Array - Python Solution"
 from typing import List
 
@@ -85,7 +84,6 @@ print(nums1)  # [1, 2, 2, 3, 5, 6]
 -   [LeetCode](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | [LeetCode CH](https://leetcode.cn/problems/find-the-distance-value-between-two-arrays/) (Easy)
 
 -   Tags: array, two pointers, binary search, sorting
-
 ```python title="1385. Find the Distance Value Between Two Arrays - Python Solution"
 from bisect import bisect_left
 from typing import List
@@ -136,7 +134,6 @@ print(findTheDistanceValue(arr1, arr2, d))  # 2
 -   [LeetCode](https://leetcode.com/problems/backspace-string-compare/) | [LeetCode CH](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
 
 -   Tags: two pointers, string, stack, simulation
-
 ```python title="844. Backspace String Compare - Python Solution"
 def backspaceCompare(s: str, t: str) -> bool:
 

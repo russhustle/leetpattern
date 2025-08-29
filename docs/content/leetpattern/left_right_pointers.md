@@ -25,7 +25,6 @@ comments: True
 -   Tags: math
 -   Return true if the given number is a palindrome. Otherwise, return false.
 
-
 ```python title="9. Palindrome Number - Python Solution"
 # Reverse
 def isPalindromeReverse(x: int) -> bool:
@@ -72,7 +71,6 @@ print(isPalindromeLR(x))  # True
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="15. 3Sum - Python Solution"
 from typing import List
 
@@ -164,7 +162,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 18. 4Sum
@@ -172,7 +169,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/4sum/) | [LeetCode CH](https://leetcode.cn/problems/4sum/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="18. 4Sum - Python Solution"
 from typing import List
 
@@ -225,7 +221,6 @@ print(fourSum(nums, target))
 -   [LeetCode](https://leetcode.com/problems/sqrtx/) | [LeetCode CH](https://leetcode.cn/problems/sqrtx/) (Easy)
 
 -   Tags: math, binary search
-
 ```python title="69. Sqrt(x) - Python Solution"
 # Left Right Pointers
 def mySqrt(x: int) -> int:
@@ -255,7 +250,6 @@ print(mySqrt(x))  # 2
 -   [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="88. Merge Sorted Array - Python Solution"
 from typing import List
 
@@ -296,7 +290,6 @@ print(nums1)  # [1, 2, 2, 3, 5, 6]
 -   [LeetCode](https://leetcode.com/problems/squares-of-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="977. Squares of a Sorted Array - Python Solution"
 from typing import List
 
@@ -338,7 +331,6 @@ print(sortedSquares(nums))  # [0, 1, 9, 16, 100]
 -   [LeetCode](https://leetcode.com/problems/boats-to-save-people/) | [LeetCode CH](https://leetcode.cn/problems/boats-to-save-people/) (Medium)
 
 -   Tags: array, two pointers, greedy, sorting
-
 ```python title="881. Boats to Save People - Python Solution"
 from typing import List
 
@@ -370,7 +362,6 @@ print(numRescueBoats(people, limit))  # 3
 -   [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="75. Sort Colors - Python Solution"
 from copy import deepcopy
 from typing import List
@@ -428,7 +419,6 @@ print(nums2)  # [0, 0, 1, 1, 2, 2]
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 
 -   Tags: two pointers, string
-
 ```python title="125. Valid Palindrome - Python Solution"
 # List Comprehension
 def isPalindrome(s: str) -> bool:
@@ -466,7 +456,6 @@ print(isPalindromeLR(s))  # True
 -   [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
 
 -   Tags: array, two pointers, binary search
-
 ```python title="167. Two Sum II - Input Array Is Sorted - Python Solution"
 from typing import List
 
@@ -507,7 +496,6 @@ print(twoSum(numbers, target))  # [1, 2]
 - Return the maximum area of water that can be trapped between the vertical lines.
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
-
 
 ```python title="11. Container With Most Water - Python Solution"
 from typing import List
@@ -586,5 +574,5 @@ int main() {
     cout << maxArea(height) << endl;  // 49
     return 0;
 }
-
 ```
+

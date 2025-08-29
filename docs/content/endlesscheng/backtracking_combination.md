@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combinations/) | [LeetCode CH](https://leetcode.cn/problems/combinations/) (Medium)
 
 -   Tags: backtracking
-
 ```python title="77. Combinations - Python Solution"
 import itertools
 from typing import List
@@ -59,7 +58,6 @@ print(list(combineItertools(4, 2)))
 -   [LeetCode](https://leetcode.com/problems/combination-sum-iii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iii/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="216. Combination Sum III - Python Solution"
 import itertools
 from typing import List
@@ -106,7 +104,6 @@ print(combinationSum3Itertools(3, 7))  # [(1, 2, 4)]
 -   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
 
 -   Tags: string, dynamic programming, backtracking
-
 ```python title="22. Generate Parentheses - Python Solution"
 from typing import List
 

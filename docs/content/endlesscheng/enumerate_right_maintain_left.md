@@ -45,7 +45,6 @@ comments: True
 - Time Complexity: O(n)
 - Space Complexity: O(n)
 
-
 ```python title="1. Two Sum - Python Solution"
 from typing import List
 
@@ -96,7 +95,6 @@ int main() {
     cout << result[0] << ", " << result[1] << endl;
     return 0;
 }
-
 ```
 
 ## 1512. Number of Good Pairs
@@ -104,7 +102,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/number-of-good-pairs/) | [LeetCode CH](https://leetcode.cn/problems/number-of-good-pairs/) (Easy)
 
 -   Tags: array, hash table, math, counting
-
 ```python title="1512. Number of Good Pairs - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -132,7 +129,6 @@ print(numIdenticalPairs(nums))  # 4
 -   [LeetCode](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/) | [LeetCode CH](https://leetcode.cn/problems/number-of-pairs-of-interchangeable-rectangles/) (Medium)
 
 -   Tags: array, hash table, math, counting, number theory
-
 ```python title="2001. Number of Pairs of Interchangeable Rectangles - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -161,7 +157,6 @@ print(interchangeableRectangles(rectangles))  # 6
 -   [LeetCode](https://leetcode.com/problems/contains-duplicate-ii/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate-ii/) (Easy)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="219. Contains Duplicate II - Python Solution"
 from typing import List
 
@@ -209,7 +204,6 @@ print(containsNearbyDuplicateWindow(nums, k))  # True
 
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
-
 
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
 from typing import List
@@ -317,7 +311,6 @@ int main()
     cout << obj.maxProfit(prices) << endl;
     return 0;
 }
-
 ```
 
 ## 624. Maximum Distance in Arrays
@@ -325,7 +318,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/maximum-distance-in-arrays/) | [LeetCode CH](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 
 -   Tags: array, greedy
-
 ```python title="624. Maximum Distance in Arrays - Python Solution"
 from typing import List
 
@@ -353,7 +345,6 @@ print(maxDistance(arrays))  # 4
 -   [LeetCode](https://leetcode.com/problems/max-pair-sum-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/max-pair-sum-in-an-array/) (Easy)
 
 -   Tags: array, hash table
-
 ```python title="2815. Max Pair Sum in an Array - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -407,7 +398,6 @@ print(maxSumArray(nums))  # 5902
 -   [LeetCode](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [LeetCode CH](https://leetcode.cn/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) (Medium)
 
 -   Tags: array, hash table, sorting, heap priority queue
-
 ```python title="2342. Max Sum of a Pair With Equal Sum of Digits - Python Solution"
 from typing import List
 
@@ -446,7 +436,6 @@ print(maximumSum(nums))  # 54
 -   [LeetCode](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | [LeetCode CH](https://leetcode.cn/problems/max-number-of-k-sum-pairs/) (Medium)
 
 -   Tags: array, hash table, two pointers, sorting
-
 ```python title="1679. Max Number of K-Sum Pairs - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -484,7 +473,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/) | [LeetCode CH](https://leetcode.cn/problems/minimum-consecutive-cards-to-pick-up/) (Medium)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="2260. Minimum Consecutive Cards to Pick Up - Python Solution"
 from typing import List
 
@@ -514,7 +502,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [LeetCode CH](https://leetcode.cn/problems/pairs-of-songs-with-total-durations-divisible-by-60/) (Medium)
 
 -   Tags: array, hash table, counting
-
 ```python title="1010. Pairs of Songs With Total Durations Divisible by 60 - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -566,7 +553,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | [LeetCode CH](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
 
 -   Tags: array
-
 ```python title="2874. Maximum Value of an Ordered Triplet II - Python Solution"
 from typing import List
 
@@ -595,7 +581,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/best-sightseeing-pair/) | [LeetCode CH](https://leetcode.cn/problems/best-sightseeing-pair/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="1014. Best Sightseeing Pair - Python Solution"
 from typing import List
 
@@ -625,7 +610,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/count-nice-pairs-in-an-array/) (Medium)
 
 -   Tags: array, hash table, math, counting
-
 ```python title="1814. Count Nice Pairs in an Array - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -671,7 +655,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximize-win-from-two-segments/) | [LeetCode CH](https://leetcode.cn/problems/maximize-win-from-two-segments/) (Medium)
 
 -   Tags: array, binary search, sliding window
-
 ```python title="2555. Maximize Win From Two Segments - Python Solution"
 from typing import List
 
@@ -737,7 +720,6 @@ print(maximizeWin(prizePositions, k))  # 7
 
 -   Tags: array, hash table
 -   Return the number of tuples `(i, j, k, l)` such that `A[i] + B[j] + C[k] + D[l] == 0`.
-
 
 ```python title="454. 4Sum II - Python Solution"
 from collections import defaultdict

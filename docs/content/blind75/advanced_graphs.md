@@ -15,7 +15,6 @@ comments: True
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
 
-
 ```python title="269. Alien Dictionary - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -99,3 +98,4 @@ print(alienOrderBFS(words))  # wertf
 print(alienOrderDFS(words))  # wertf
 
 ```
+

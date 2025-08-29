@@ -59,7 +59,6 @@ graph LR
     -   Time Complexity: O(E * logV)
     -   Space Complexity: O(V)
 
-
 ```python title="743. Network Delay Time - Python Solution"
 import heapq
 from collections import defaultdict
@@ -162,7 +161,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/path-with-maximum-probability/) | [LeetCode CH](https://leetcode.cn/problems/path-with-maximum-probability/) (Medium)
 
 -   Tags: array, graph, heap priority queue, shortest path
-
 ```python title="1514. Path with Maximum Probability - Python Solution"
 import heapq
 from collections import defaultdict
@@ -261,7 +259,6 @@ print(maxProbability2(n, edges, succProb, start, end))  # 0.25
 -   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
-
 ```python title="1631. Path With Minimum Effort - Python Solution"
 import heapq
 from typing import List
@@ -315,7 +312,6 @@ print(minimumEffortPath(heights))  # 2
 -   [LeetCode](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) | [LeetCode CH](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
 
 -   Tags: dynamic programming, graph, topological sort, shortest path
-
 ```python title="1976. Number of Ways to Arrive at Destination - Python Solution"
 import heapq
 from typing import List
@@ -378,7 +374,6 @@ print(countPaths(n, roads))  # 4
 -   Return the minimum time when you can reach the target.
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
-
 
 ```python title="778. Swim in Rising Water - Python Solution"
 import heapq
@@ -444,7 +439,6 @@ print(swimInWater(grid))  # 16
 -   [LeetCode](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/) | [LeetCode CH](https://leetcode.cn/problems/reachable-nodes-in-subdivided-graph/) (Hard)
 
 -   Tags: graph, heap priority queue, shortest path
-
 ```python title="882. Reachable Nodes In Subdivided Graph - Python Solution"
 import heapq
 from typing import List
@@ -520,7 +514,6 @@ graph TD
 ```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="787. Cheapest Flights Within K Stops - Python Solution"
 import heapq

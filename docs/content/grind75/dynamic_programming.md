@@ -22,7 +22,6 @@ comments: True
 - Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
 - Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
 
-
 ```python title="70. Climbing Stairs - Python Solution"
 from functools import cache
 
@@ -110,7 +109,6 @@ int main() {
     cout << climbStairs(6) << endl;  // 13
     return 0;
 }
-
 ```
 
 ## 53. Maximum Subarray
@@ -118,7 +116,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming
-
 ```python title="53. Maximum Subarray - Python Solution"
 from typing import List
 
@@ -178,7 +175,6 @@ print(maxSubArrayPrefixSum(nums))  # 6
 -   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
 
 -   Tags: array, dynamic programming, breadth first search
-
 ```python title="322. Coin Change - Python Solution"
 from typing import List
 
@@ -207,7 +203,6 @@ print(coinChange(coins, amount))  # 3
 -   [LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/) | [LeetCode CH](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="416. Partition Equal Subset Sum - Python Solution"
 from functools import cache
 from typing import List
@@ -279,7 +274,6 @@ if __name__ == "__main__":
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
-
 ```python title="62. Unique Paths - Python Solution"
 # DP - 2D
 def uniquePaths(m: int, n: int) -> int:
@@ -324,5 +318,5 @@ int main() {
     cout << uniquePaths(m, n) << endl;  // 28
     return 0;
 }
-
 ```
+

@@ -20,7 +20,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="235. Lowest Common Ancestor of a Binary Search Tree - Python Solution"
 from binarytree import build
 
@@ -72,7 +71,6 @@ print(lowestCommonAncestor(root, p, q))
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="236. Lowest Common Ancestor of a Binary Tree - Python Solution"
 from typing import List, Optional
 
@@ -165,7 +163,6 @@ class Solution {
 };
 
 int main() { return 0; }
-
 ```
 
 ## 1123. Lowest Common Ancestor of Deepest Leaves
@@ -173,7 +170,6 @@ int main() { return 0; }
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/) (Medium)
 
 -   Tags: hash table, tree, depth first search, breadth first search, binary tree
-
 ```python title="1123. Lowest Common Ancestor of Deepest Leaves - Python Solution"
 from typing import Optional
 

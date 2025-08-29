@@ -29,7 +29,6 @@ comments: True
 | `{`  | push   | "{"   |
 | `}`  | pop    | ""    |
 
-
 ```python title="20. Valid Parentheses - Python Solution"
 # Stack
 def isValid(s: str) -> bool:
@@ -98,7 +97,6 @@ int main() {
     assert(s.isValid("{[]}") == true);
     return 0;
 }
-
 ```
 
 ## 71. Simplify Path
@@ -112,7 +110,6 @@ int main() {
 
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-
 
 ```python title="155. Min Stack - Python Solution"
 # Stack
@@ -180,7 +177,6 @@ int main() {
     cout << minStack.getMin() << endl;  // -2
     return 0;
 }
-
 ```
 
 ## 150. Evaluate Reverse Polish Notation
@@ -197,7 +193,6 @@ int main() {
 | `+`   | pop    | `[3]`    |
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
-
 
 ```python title="150. Evaluate Reverse Polish Notation - Python Solution"
 from typing import List
@@ -236,7 +231,6 @@ print(evalRPN(["4", "3", "-"]))  # 1
 -   [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)
 
 -   Tags: math, string, stack, recursion
-
 ```python title="224. Basic Calculator - Python Solution"
 # Stack
 def calculate(s: str) -> int:
@@ -277,3 +271,4 @@ def calculate(s: str) -> int:
 print(calculate("(1+(4+5+2)-3)+(6+8)"))  # 23
 
 ```
+

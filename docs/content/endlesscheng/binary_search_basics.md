@@ -19,7 +19,6 @@ comments: True
 -   Tags: array, binary search
 -   Find the starting and ending position of a given target value in a sorted array.
 
-
 ```python title="34. Find First and Last Position of Element in Sorted Array - Python Solution"
 from bisect import bisect_left
 from typing import List
@@ -112,7 +111,6 @@ int main()
   cout << res[0] << ", " << res[1] << endl;
   return 0;
 }
-
 ```
 
 ## 35. Search Insert Position
@@ -121,7 +119,6 @@ int main()
 
 -   Tags: array, binary search
 -   Return the index of the target if it is found. If not, return the index where it would be if it were inserted in order.
-
 
 ```python title="35. Search Insert Position - Python Solution"
 from typing import List
@@ -155,7 +152,6 @@ print(searchInsert(nums, target))  # 2
 
 -   Tags: array, binary search
 - Implement binary search algorithm.
-
 
 ```python title="704. Binary Search - Python Solution"
 from typing import List
@@ -226,7 +222,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | [LeetCode CH](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) (Easy)
 
 -   Tags: array, binary search
-
 ```python title="744. Find Smallest Letter Greater Than Target - Python Solution"
 from typing import List
 
@@ -256,7 +251,6 @@ print(nextGreatestLetter(letters, target))  # c
 -   [LeetCode](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/) | [LeetCode CH](https://leetcode.cn/problems/maximum-count-of-positive-integer-and-negative-integer/) (Easy)
 
 -   Tags: array, binary search, counting
-
 ```python title="2529. Maximum Count of Positive Integer and Negative Integer - Python Solution"
 from bisect import bisect_left, bisect_right
 from typing import List
@@ -274,3 +268,4 @@ nums = [-2, -1, -1, 1, 2, 3]
 print(maximumCount(nums))  # 3
 
 ```
+

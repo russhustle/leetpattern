@@ -35,7 +35,6 @@ comments: True
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
 
-
 ```python title="198. House Robber - Python Solution"
 from typing import List
 
@@ -91,7 +90,6 @@ int main() {
     cout << rob(nums) << endl;  // 12
     return 0;
 }
-
 ```
 
 ## 740. Delete and Earn
@@ -99,7 +97,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/delete-and-earn/) | [LeetCode CH](https://leetcode.cn/problems/delete-and-earn/) (Medium)
 
 -   Tags: array, hash table, dynamic programming
-
 ```python title="740. Delete and Earn - Python Solution"
 from typing import List
 
@@ -154,7 +151,6 @@ print(deleteAndEarn(nums))  # 9
 |  2  |     9     |     -     |     7     |          -          |    9    |
 |  3  |     3     |     7     |     9     |         10          |   10    |
 |  4  |     1     |     9     |    10     |         10          |   10    |
-
 
 ```python title="213. House Robber II - Python Solution"
 from typing import List
@@ -251,7 +247,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## 3186. Maximum Total Damage With Spell Casting

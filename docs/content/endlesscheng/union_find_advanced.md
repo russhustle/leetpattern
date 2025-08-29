@@ -35,7 +35,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/smallest-string-with-swaps/) | [LeetCode CH](https://leetcode.cn/problems/smallest-string-with-swaps/) (Medium)
 
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
-
 ```python title="1202. Smallest String With Swaps - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -86,7 +85,6 @@ print(smallestStringWithSwaps(s, pairs))  # "bacd"
 -   [LeetCode](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/) | [LeetCode CH](https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/) (Medium)
 
 -   Tags: string, union find
-
 ```python title="1061. Lexicographically Smallest Equivalent String - Python Solution"
 # Union Find
 def smallestEquivalentString(s1: str, s2: str, baseStr: str) -> str:
@@ -140,7 +138,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="684. Redundant Connection - Python Solution"
 from typing import List
 
@@ -222,7 +219,6 @@ print(findRedundantConnectionDFS(edges))  # (2, 3)
 -   [LeetCode](https://leetcode.com/problems/redundant-connection-ii/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection-ii/) (Hard)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="685. Redundant Connection II - Python Solution"
 from typing import List
 
@@ -289,7 +285,6 @@ print(findRedundantDirectedConnectionUF(edges))
 -   [LeetCode](https://leetcode.com/problems/similar-string-groups/) | [LeetCode CH](https://leetcode.cn/problems/similar-string-groups/) (Hard)
 
 -   Tags: array, hash table, string, depth first search, breadth first search, union find
-
 ```python title="839. Similar String Groups - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -360,7 +355,6 @@ print(numSimilarGroups(strs))  # 2
 - Return the maximum number of edges you can remove so that the graph remains fully traversable.
 
 ![1579](../../assets/1579.png){width=200px}
-
 
 ```python title="1579. Remove Max Number of Edges to Keep Graph Fully Traversable - Python Solution"
 from typing import List

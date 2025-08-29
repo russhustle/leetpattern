@@ -25,7 +25,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/left-and-right-sum-differences/) | [LeetCode CH](https://leetcode.cn/problems/left-and-right-sum-differences/) (Easy)
 
 -   Tags: array, prefix sum
-
 ```python title="2574. Left and Right Sum Differences - Python Solution"
 from typing import List
 
@@ -69,7 +68,6 @@ print(leftRightDifferencePointer(nums))  # [15, 1, 11, 22]
 -   [LeetCode](https://leetcode.com/problems/find-the-highest-altitude/) | [LeetCode CH](https://leetcode.cn/problems/find-the-highest-altitude/) (Easy)
 
 -   Tags: array, prefix sum
-
 ```python title="1732. Find the Highest Altitude - Python Solution"
 from typing import List
 
@@ -94,7 +92,6 @@ print(largestAltitude(gain))  # 1
 -   [LeetCode](https://leetcode.com/problems/range-sum-query-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-immutable/) (Easy)
 
 -   Tags: array, design, prefix sum
-
 ```python title="303. Range Sum Query - Immutable - Python Solution"
 from typing import List
 
@@ -126,7 +123,6 @@ print("PASSED")
 -   [LeetCode](https://leetcode.com/problems/range-sum-query-2d-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-2d-immutable/) (Medium)
 
 -   Tags: array, design, matrix, prefix sum
-
 ```python title="304. Range Sum Query 2D - Immutable - Python Solution"
 from typing import List
 
@@ -178,7 +174,6 @@ print("PASSED")
 -   [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
 
 -   Tags: array, hash table, prefix sum
-
 ```python title="560. Subarray Sum Equals K - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -234,7 +229,6 @@ int main() {
     cout << subarraySum(nums, k) << endl;  // 2
     return 0;
 }
-
 ```
 
 ## 238. Product of Array Except Self
@@ -249,7 +243,6 @@ int main() {
 | ------------------ | ---- | ----- |
 | Prefix             | O(n) | O(n)  |
 | Prefix (Optimized) | O(n) | O(1)  |
-
 
 ```python title="238. Product of Array Except Self - Python Solution"
 from typing import List
@@ -345,7 +338,6 @@ int main()
     // 24, 12, 8, 6
     return 0;
 }
-
 ```
 
 ## 974. Subarray Sums Divisible by K
@@ -353,7 +345,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/subarray-sums-divisible-by-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sums-divisible-by-k/) (Medium)
 
 -   Tags: array, hash table, prefix sum
-
 ```python title="974. Subarray Sums Divisible by K - Python Solution"
 from typing import List
 
@@ -405,7 +396,6 @@ print(subarraysDivByK_2(nums, k))  # 7
 -   [LeetCode](https://leetcode.com/problems/minimum-size-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
 
 -   Tags: array, binary search, sliding window, prefix sum
-
 ```python title="209. Minimum Size Subarray Sum - Python Solution"
 import bisect
 from typing import List
@@ -458,7 +448,6 @@ print(minSubArrayLenSW(target, nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/continuous-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/continuous-subarray-sum/) (Medium)
 
 -   Tags: array, hash table, math, prefix sum
-
 ```python title="523. Continuous Subarray Sum - Python Solution"
 from typing import List
 
@@ -497,7 +486,6 @@ print(checkSubarraySum(nums, k))  # True
 -   [LeetCode](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/count-number-of-nice-subarrays/) (Medium)
 
 -   Tags: array, hash table, math, sliding window, prefix sum
-
 ```python title="1248. Count Number of Nice Subarrays - Python Solution"
 from typing import List
 
@@ -532,7 +520,6 @@ print(numberOfSubarrays(nums, k))  # 2
 -   [LeetCode](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/maximum-size-subarray-sum-equals-k/) (Medium)
 
 -   Tags: array, hash table, prefix sum
-
 ```python title="325. Maximum Size Subarray Sum Equals k - Python Solution"
 from typing import List
 
@@ -564,7 +551,6 @@ print(maxSubArrayLen(nums, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/) | [LeetCode CH](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/) (Hard)
 
 -   Tags: array, binary search, queue, sliding window, heap priority queue, prefix sum, monotonic queue
-
 ```python title="862. Shortest Subarray with Sum at Least K - Python Solution"
 from collections import deque
 from typing import List
@@ -602,7 +588,6 @@ print(shortestSubarray(nums, k))  # 3
 -   [LeetCode](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) (Medium)
 
 -   Tags: hash table, linked list
-
 ```python title="1171. Remove Zero Sum Consecutive Nodes from Linked List - Python Solution"
 from typing import Optional
 
@@ -638,3 +623,4 @@ head = ListNode().create([1, 2, -3, 3, 1])
 print(removeZeroSumSublists(head))  # 3 -> 1
 
 ```
+

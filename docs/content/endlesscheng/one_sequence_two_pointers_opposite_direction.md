@@ -38,7 +38,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/reverse-string/) | [LeetCode CH](https://leetcode.cn/problems/reverse-string/) (Easy)
 
 -   Tags: two pointers, string
-
 ```python title="344. Reverse String - Python Solution"
 from typing import List
 
@@ -66,7 +65,6 @@ print(s)  # ['o', 'l', 'l', 'e', 'h']
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 
 -   Tags: two pointers, string
-
 ```python title="125. Valid Palindrome - Python Solution"
 # List Comprehension
 def isPalindrome(s: str) -> bool:
@@ -104,7 +102,6 @@ print(isPalindromeLR(s))  # True
 -   [LeetCode](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | [LeetCode CH](https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/) (Medium)
 
 -   Tags: two pointers, string
-
 ```python title="1750. Minimum Length of String After Deleting Similar Ends - Python Solution"
 # Sliding Window Variable Size
 def minimumLength(s: str) -> int:
@@ -131,7 +128,6 @@ print(minimumLength("aabccabba"))  # 3
 -   [LeetCode](https://leetcode.com/problems/watering-plants-ii/) | [LeetCode CH](https://leetcode.cn/problems/watering-plants-ii/) (Medium)
 
 -   Tags: array, two pointers, simulation
-
 ```python title="2105. Watering Plants II - Python Solution"
 from typing import List
 
@@ -175,7 +171,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/squares-of-a-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/squares-of-a-sorted-array/) (Easy)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="977. Squares of a Sorted Array - Python Solution"
 from typing import List
 
@@ -227,7 +222,6 @@ print(sortedSquares(nums))  # [0, 1, 9, 16, 100]
 -   [LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) (Medium)
 
 -   Tags: array, two pointers, binary search
-
 ```python title="167. Two Sum II - Input Array Is Sorted - Python Solution"
 from typing import List
 
@@ -275,7 +269,6 @@ print(twoSum(numbers, target))  # [1, 2]
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="15. 3Sum - Python Solution"
 from typing import List
 
@@ -367,7 +360,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 16. 3Sum Closest
@@ -375,7 +367,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/3sum-closest/) | [LeetCode CH](https://leetcode.cn/problems/3sum-closest/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="16. 3Sum Closest - Python Solution"
 from typing import List
 
@@ -464,7 +455,6 @@ int main() {
     cout << threeSumClosest(nums, target) << endl;
     return 0;
 }
-
 ```
 
 ## 18. 4Sum
@@ -472,7 +462,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/4sum/) | [LeetCode CH](https://leetcode.cn/problems/4sum/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="18. 4Sum - Python Solution"
 from typing import List
 
@@ -548,7 +537,6 @@ print(fourSum(nums, target))
 - Return the maximum area of water that can be trapped between the vertical lines.
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
-
 
 ```python title="11. Container With Most Water - Python Solution"
 from typing import List
@@ -627,7 +615,6 @@ int main() {
     cout << maxArea(height) << endl;  // 49
     return 0;
 }
-
 ```
 
 ## 42. Trapping Rain Water
@@ -644,7 +631,6 @@ int main() {
 | DP         | O(N) | O(N)  |
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
-
 
 ```python title="42. Trapping Rain Water - Python Solution"
 from typing import List
@@ -762,7 +748,6 @@ int main()
     cout << solution.trap(height) << endl;
     return 0;
 }
-
 ```
 
 ## 1616. Split Two Strings to Make Palindrome
@@ -785,7 +770,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/two-sum-less-than-k/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-less-than-k/) (Easy)
 
 -   Tags: array, two pointers, binary search, sorting
-
 ```python title="1099. Two Sum Less Than K - Python Solution"
 from typing import List
 

@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/can-make-palindrome-from-substring/) | [LeetCode CH](https://leetcode.cn/problems/can-make-palindrome-from-substring/) (Medium)
 
 -   Tags: array, hash table, string, bit manipulation, prefix sum
-
 ```python title="1177. Can Make Palindrome from Substring - Python Solution"
 from typing import List
 

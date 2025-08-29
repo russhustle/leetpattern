@@ -38,7 +38,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/distribute-candies-among-children-i/) | [LeetCode CH](https://leetcode.cn/problems/distribute-candies-among-children-i/) (Easy)
 
 -   Tags: math, combinatorics, enumeration
-
 ```python title="2928. Distribute Candies Among Children I - Python Solution"
 def distributeCandies(n: int, limit: int) -> int:
     def c2(n: int) -> int:
@@ -63,7 +62,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/distribute-candies-among-children-ii/) | [LeetCode CH](https://leetcode.cn/problems/distribute-candies-among-children-ii/) (Medium)
 
 -   Tags: math, combinatorics, enumeration
-
 ```python title="2929. Distribute Candies Among Children II - Python Solution"
 def distributeCandies(n: int, limit: int) -> int:
     def c2(n: int) -> int:
@@ -113,7 +111,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/distribute-candies-among-children-iii/) | [LeetCode CH](https://leetcode.cn/problems/distribute-candies-among-children-iii/) (Hard)
 
 -   Tags: math, combinatorics
-
 ```python title="2927. Distribute Candies Among Children III - Python Solution"
 def distributeCandies(n: int, limit: int) -> int:
     def c2(n: int) -> int:
@@ -132,3 +129,4 @@ if __name__ == "__main__":
     assert distributeCandies(3, 3) == 10
 
 ```
+

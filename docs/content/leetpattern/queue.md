@@ -20,7 +20,6 @@ comments: True
     -   `peek()` - Get the front element.
     -   `empty()` - Return whether the queue is empty.
 
-
 ```python title="232. Implement Queue using Stacks - Python Solution"
 class MyQueue:
     def __init__(self):
@@ -63,7 +62,6 @@ print(obj.empty())  # False
 -   [LeetCode](https://leetcode.com/problems/implement-stack-using-queues/) | [LeetCode CH](https://leetcode.cn/problems/implement-stack-using-queues/) (Easy)
 
 -   Tags: stack, design, queue
-
 ```python title="225. Implement Stack using Queues - Python Solution"
 from collections import deque
 
@@ -108,3 +106,4 @@ print(obj.empty())  # False
 print(obj.pop())  # 3
 
 ```
+

@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/summary-ranges/) | [LeetCode CH](https://leetcode.cn/problems/summary-ranges/) (Easy)
 
 -   Tags: array
-
 ```python title="228. Summary Ranges - Python Solution"
 from typing import List
 
@@ -58,7 +57,6 @@ if __name__ == "__main__":
 -   Merge all overlapping intervals.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="56. Merge Intervals - Python Solution"
 from typing import List
@@ -116,7 +114,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 57. Insert Interval
@@ -124,7 +121,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
 
 -   Tags: array
-
 ```python title="57. Insert Interval - Python Solution"
 from typing import List
 
@@ -183,7 +179,6 @@ print(insert(intervals, newInterval))  # [[1, 5], [6, 9]]
 -   Differece between two versions
     1. Start from 1: if there is no overlap, we add one more arrow.
     2. Start from the number of balloons: if there is overlap, we need to reduce one arrow.
-
 
 ```python title="452. Minimum Number of Arrows to Burst Balloons - Python Solution"
 from typing import List
@@ -278,3 +273,4 @@ print(findMinArrowShotsGreedy1(points))  # 2
 print(findMinArrowShotsGreedy2(points))  # 2
 
 ```
+

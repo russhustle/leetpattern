@@ -25,7 +25,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-cycle-in-a-graph/) | [LeetCode CH](https://leetcode.cn/problems/longest-cycle-in-a-graph/) (Hard)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
-
 ```python title="2360. Longest Cycle in a Graph - Python Solution"
 from typing import List
 
@@ -59,7 +58,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="684. Redundant Connection - Python Solution"
 from typing import List
 
@@ -141,7 +139,6 @@ print(findRedundantConnectionDFS(edges))  # (2, 3)
 -   [LeetCode](https://leetcode.com/problems/redundant-connection-ii/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection-ii/) (Hard)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="685. Redundant Connection II - Python Solution"
 from typing import List
 

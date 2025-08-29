@@ -20,6 +20,7 @@ class StockSpanner:
         return self.cur_day - self.stack[-2][0]
 
 
-obj = StockSpanner()
-prices = [100, 80, 60, 70, 60, 75, 85]
-print([obj.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
+if __name__ == "__main__":
+    ss = StockSpanner()
+    prices = [100, 80, 60, 70, 60, 75, 85]
+    print([ss.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]

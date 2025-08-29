@@ -30,7 +30,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="104. Maximum Depth of Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -113,7 +112,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="111. Minimum Depth of Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -181,7 +179,6 @@ print(minDepthRecursive(root))  # 2
 -   [LeetCode](https://leetcode.com/problems/path-sum/) | [LeetCode CH](https://leetcode.cn/problems/path-sum/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="112. Path Sum - Python Solution"
 from typing import Optional
 
@@ -228,7 +225,6 @@ print(hasPathSum(root, 22))  # True
 -   [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [LeetCode CH](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="129. Sum Root to Leaf Numbers - Python Solution"
 from typing import Optional
 
@@ -270,7 +266,6 @@ print(Solution().sumNumbers(root))  # 25
 -   [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="199. Binary Tree Right Side View - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -341,7 +336,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="1448. Count Good Nodes in Binary Tree - Python Solution"
 from typing import List
 
@@ -428,7 +422,6 @@ print(goodNodes(root))  # 4
 -   [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="298. Binary Tree Longest Consecutive Sequence - Python Solution"
 from typing import Optional
 

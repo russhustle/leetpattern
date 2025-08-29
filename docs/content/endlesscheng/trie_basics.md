@@ -44,7 +44,6 @@ A2 --- T2((T))
 A2 --- R2((R))
 ```
 
-
 ```python title="208. Implement Trie (Prefix Tree) - Python Solution"
 class TrieNode:
     def __init__(self):
@@ -97,7 +96,6 @@ print(obj.startsWith("app"))  # True
 -   [LeetCode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | [LeetCode CH](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) (Medium)
 
 -   Tags: string, depth first search, design, trie
-
 ```python title="211. Design Add and Search Words Data Structure - Python Solution"
 class TrieNode:
     def __init__(self):
@@ -153,7 +151,6 @@ print(obj.search("w.rd"))
 -   [LeetCode](https://leetcode.com/problems/longest-common-prefix/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-prefix/) (Easy)
 
 -   Tags: string, trie
-
 ```python title="14. Longest Common Prefix - Python Solution"
 from typing import List
 

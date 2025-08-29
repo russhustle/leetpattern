@@ -33,7 +33,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/word-search-ii/) | [LeetCode CH](https://leetcode.cn/problems/word-search-ii/) (Hard)
 
 -   Tags: array, string, backtracking, trie, matrix
-
 ```python title="212. Word Search II - Python Solution"
 from typing import List
 
@@ -133,7 +132,6 @@ print(findWords(board, words))
 -   [LeetCode](https://leetcode.com/problems/design-in-memory-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard)
 
 -   Tags: hash table, string, design, trie, sorting
-
 ```python title="588. Design In-Memory File System - Python Solution"
 from collections import defaultdict
 
@@ -216,7 +214,6 @@ print(obj.readContentFromFile("/a/b/c/d"))  # "hello"
 -   [LeetCode](https://leetcode.com/problems/design-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-file-system/) (Medium)
 
 -   Tags: hash table, string, design, trie
-
 ```python title="1166. Design File System - Python Solution"
 from collections import defaultdict
 

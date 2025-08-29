@@ -28,7 +28,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) | [LeetCode CH](https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/) (Medium)
 
 -   Tags: array, two pointers, binary search, sorting
-
 ```python title="2300. Successful Pairs of Spells and Potions - Python Solution"
 import bisect
 from typing import List
@@ -62,7 +61,6 @@ print(successfulPairs(spells, potions, success))  # [4, 0, 3]
 -   [LeetCode](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | [LeetCode CH](https://leetcode.cn/problems/find-the-distance-value-between-two-arrays/) (Easy)
 
 -   Tags: array, two pointers, binary search, sorting
-
 ```python title="1385. Find the Distance Value Between Two Arrays - Python Solution"
 from bisect import bisect_left
 from typing import List
@@ -103,7 +101,6 @@ print(findTheDistanceValue(arr1, arr2, d))  # 2
 -   [LeetCode](https://leetcode.com/problems/range-frequency-queries/) | [LeetCode CH](https://leetcode.cn/problems/range-frequency-queries/) (Medium)
 
 -   Tags: array, hash table, binary search, design, segment tree
-
 ```python title="2080. Range Frequency Queries - Python Solution"
 from bisect import bisect_left, bisect_right
 from collections import defaultdict
@@ -179,7 +176,6 @@ int main() {
     cout << endl;
     return 0;
 }
-
 ```
 
 ## 981. Time Based Key-Value Store
@@ -187,7 +183,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
 
 -   Tags: hash table, string, binary search, design
-
 ```python title="981. Time Based Key-Value Store - Python Solution"
 from collections import defaultdict
 
@@ -262,7 +257,6 @@ print(obj.get("foo", 5))  # bar2
 -   [LeetCode](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/element-appearing-more-than-25-in-sorted-array/) (Easy)
 
 -   Tags: array
-
 ```python title="1287. Element Appearing More Than 25% In Sorted Array - Python Solution"
 from bisect import bisect_left, bisect_right
 from typing import List

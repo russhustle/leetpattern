@@ -18,7 +18,6 @@ comments: True
 -   Tags: tree, depth first search, binary search tree, binary tree
 ![538](https://assets.leetcode.com/uploads/2019/05/02/tree.png)
 
-
 ```python title="538. Convert BST to Greater Tree - Python Solution"
 from typing import Optional
 

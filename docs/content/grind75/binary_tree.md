@@ -21,7 +21,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="226. Invert Binary Tree - Python Solution"
 from typing import Optional
 
@@ -97,7 +96,6 @@ print(invertedIterative)
 -   [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/balanced-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="110. Balanced Binary Tree - Python Solution"
 from typing import Optional
 
@@ -152,7 +150,6 @@ print(isBalanced(root))  # True
 -   [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/diameter-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="543. Diameter of Binary Tree - Python Solution"
 from typing import Optional
 
@@ -235,7 +232,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## 104. Maximum Depth of Binary Tree
@@ -243,7 +239,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="104. Maximum Depth of Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -326,7 +321,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="102. Binary Tree Level Order Traversal - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -376,7 +370,6 @@ print(levelOrder(tree))  # [[3], [9, 20], [15, 7]]
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="236. Lowest Common Ancestor of a Binary Tree - Python Solution"
 from typing import List, Optional
 
@@ -469,7 +462,6 @@ class Solution {
 };
 
 int main() { return 0; }
-
 ```
 
 ## 199. Binary Tree Right Side View
@@ -477,7 +469,6 @@ int main() { return 0; }
 -   [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="199. Binary Tree Right Side View - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -548,7 +539,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, tree, binary tree
-
 ```python title="105. Construct Binary Tree from Preorder and Inorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -648,7 +638,6 @@ int main() {
     cout << root->right->right->val << endl;  // 7
     return 0;
 }
-
 ```
 
 ## 297. Serialize and Deserialize Binary Tree
@@ -656,7 +645,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
 
 -   Tags: string, tree, depth first search, breadth first search, design, binary tree
-
 ```python title="297. Serialize and Deserialize Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -773,3 +761,4 @@ print(root2)
 #     4   5
 
 ```
+

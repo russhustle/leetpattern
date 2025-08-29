@@ -41,7 +41,6 @@ comments: True
 | *    | pop    | "leco"  |
 | e    | push   | "lecoe" |
 
-
 ```python title="2390. Removing Stars From a String - Python Solution"
 # Stack
 def removeStars(s: str) -> str:
@@ -82,7 +81,6 @@ print(removeStars(s))  # "lecoe"
 | d    | push   | "leetcod"  |
 | e    | push   | "leetcode" |
 
-
 ```python title="1544. Make The String Great - Python Solution"
 # Stack
 def makeGood(s: str) -> str:
@@ -116,7 +114,6 @@ print(makeGood("leEeetcode"))  # "leetcode"
 | `]`  | pop    | ""    |
 | `{`  | push   | "{"   |
 | `}`  | pop    | ""    |
-
 
 ```python title="20. Valid Parentheses - Python Solution"
 # Stack
@@ -186,7 +183,6 @@ int main() {
     assert(s.isValid("{[]}") == true);
     return 0;
 }
-
 ```
 
 ## 155. Min Stack
@@ -195,7 +191,6 @@ int main() {
 
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-
 
 ```python title="155. Min Stack - Python Solution"
 # Stack
@@ -263,7 +258,6 @@ int main() {
     cout << minStack.getMin() << endl;  // -2
     return 0;
 }
-
 ```
 
 ## 150. Evaluate Reverse Polish Notation
@@ -280,7 +274,6 @@ int main() {
 | `+`   | pop    | `[3]`    |
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
-
 
 ```python title="150. Evaluate Reverse Polish Notation - Python Solution"
 from typing import List
@@ -319,7 +312,6 @@ print(evalRPN(["4", "3", "-"]))  # 1
 -   [LeetCode](https://leetcode.com/problems/decode-string/) | [LeetCode CH](https://leetcode.cn/problems/decode-string/) (Medium)
 
 -   Tags: string, stack, recursion
-
 ```python title="394. Decode String - Python Solution"
 # Stack
 def decodeString(s: str) -> str:
@@ -352,7 +344,6 @@ print(decodeString(s))  # accaccacc
 -   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
 
 -   Tags: string, dynamic programming, backtracking
-
 ```python title="22. Generate Parentheses - Python Solution"
 from typing import List
 
@@ -415,7 +406,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
 
 -   Tags: array, stack, sorting, monotonic stack
-
 ```python title="853. Car Fleet - Python Solution"
 from typing import List
 
@@ -443,7 +433,6 @@ print(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]))  # 3
 -   [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)
 
 -   Tags: math, string, stack, recursion
-
 ```python title="224. Basic Calculator - Python Solution"
 # Stack
 def calculate(s: str) -> int:
@@ -490,7 +479,6 @@ print(calculate("(1+(4+5+2)-3)+(6+8)"))  # 23
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-ii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-ii/) (Medium)
 
 -   Tags: math, string, stack
-
 ```python title="227. Basic Calculator II - Python Solution"
 # Stack
 def calculate(s: str) -> int:
@@ -527,7 +515,6 @@ print(calculate(s))  # 7
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-iii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
 
 -   Tags: math, string, stack, recursion
-
 ```python title="772. Basic Calculator III - Python Solution"
 # Stack
 def calculate(s: str) -> int:
@@ -575,7 +562,6 @@ print(calculate(s))  # 21
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-iv/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iv/) (Hard)
 
 -   Tags: hash table, math, string, stack, recursion
-
 ```python title="770. Basic Calculator IV - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -708,3 +694,4 @@ print(calculator.basicCalculatorIV(expression, evalvars, evalints))
 # ['-1*a', '14']
 
 ```
+

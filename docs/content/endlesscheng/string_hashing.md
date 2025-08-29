@@ -26,7 +26,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
 
 -   Tags: two pointers, string, string matching
-
 ```python title="28. Find the Index of the First Occurrence in a String - Python Solution"
 from template import LPS
 
@@ -111,7 +110,6 @@ print(strStrKMP(haystack, needle))  # 2
 -   [LeetCode](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) (Medium)
 
 -   Tags: array, binary search, dynamic programming, sliding window, rolling hash, hash function
-
 ```python title="718. Maximum Length of Repeated Subarray - Python Solution"
 from typing import List
 

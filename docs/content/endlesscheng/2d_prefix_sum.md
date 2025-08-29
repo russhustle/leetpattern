@@ -23,7 +23,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/range-sum-query-2d-immutable/) | [LeetCode CH](https://leetcode.cn/problems/range-sum-query-2d-immutable/) (Medium)
 
 -   Tags: array, design, matrix, prefix sum
-
 ```python title="304. Range Sum Query 2D - Immutable - Python Solution"
 from typing import List
 

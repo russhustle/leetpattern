@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/best-team-with-no-conflicts/) | [LeetCode CH](https://leetcode.cn/problems/best-team-with-no-conflicts/) (Medium)
 
 -   Tags: array, dynamic programming, sorting
-
 ```python title="1626. Best Team With No Conflicts - Python Solution"
 from typing import List
 
@@ -54,7 +53,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) (Medium)
 
 -   Tags: array, dynamic programming, binary indexed tree, segment tree
-
 ```python title="673. Number of Longest Increasing Subsequence - Python Solution"
 from typing import List
 
@@ -91,7 +89,6 @@ print(findNumberOfLIS(nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/russian-doll-envelopes/) | [LeetCode CH](https://leetcode.cn/problems/russian-doll-envelopes/) (Hard)
 
 -   Tags: array, binary search, dynamic programming, sorting
-
 ```python title="354. Russian Doll Envelopes - Python Solution"
 from typing import List
 
@@ -122,7 +119,7 @@ print(maxEnvelopes(envelopes))  # 3
 
 ```
 
-## 1691. Maximum Height by Stacking Cuboids
+## 1691. Maximum Height by Stacking Cuboids 
 
 -   [LeetCode](https://leetcode.com/problems/maximum-height-by-stacking-cuboids/) | [LeetCode CH](https://leetcode.cn/problems/maximum-height-by-stacking-cuboids/) (Hard)
 
@@ -132,7 +129,6 @@ print(maxEnvelopes(envelopes))  # 3
 -   [LeetCode](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/) | [LeetCode CH](https://leetcode.cn/problems/delete-columns-to-make-sorted-iii/) (Hard)
 
 -   Tags: array, string, dynamic programming
-
 ```python title="960. Delete Columns to Make Sorted III - Python Solution"
 from typing import List
 

@@ -27,7 +27,6 @@ comments: True
 -   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
 
-
 ```python title="1631. Path With Minimum Effort - Python Solution"
 import heapq
 from typing import List
@@ -75,7 +74,6 @@ print(minimumEffortPath(heights))  # 2
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
-
 ```python title="778. Swim in Rising Water - Python Solution"
 import heapq
 from typing import List
@@ -120,7 +118,6 @@ print(swimInWater(grid))  # 16
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) (Hard)
 
 -   Tags: array, dynamic programming, depth first search, breadth first search, graph, topological sort, memoization, matrix
-
 ```python title="329. Longest Increasing Path in a Matrix - Python Solution"
 from collections import deque
 from functools import cache
@@ -214,7 +211,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/shortest-path-to-get-all-keys/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-to-get-all-keys/) (Hard)
 
 -   Tags: array, bit manipulation, breadth first search, matrix
-
 ```python title="864. Shortest Path to Get All Keys - Python Solution"
 from collections import deque
 from typing import List
@@ -302,7 +298,6 @@ print(shortestPathAllKeys(grid))  # 8
 -   [LeetCode](https://leetcode.com/problems/number-of-distinct-islands/) | [LeetCode CH](https://leetcode.cn/problems/number-of-distinct-islands/) (Medium)
 
 -   Tags: hash table, depth first search, breadth first search, union find, hash function
-
 ```python title="694. Number of Distinct Islands - Python Solution"
 from collections import deque
 from copy import deepcopy

@@ -20,7 +20,6 @@ comments: True
 -   Tags: array, two pointers
 -   Remove all instances of a given value in-place.
 
-
 ```python title="27. Remove Element - Python Solution"
 from typing import List
 
@@ -70,7 +69,6 @@ int main() {
     cout << removeElement(nums, val) << endl;  // 2
     return 0;
 }
-
 ```
 
 ## 26. Remove Duplicates from Sorted Array
@@ -79,7 +77,6 @@ int main() {
 
 -   Tags: array, two pointers
 -   Remove duplicates in-place.
-
 
 ```python title="26. Remove Duplicates from Sorted Array - Python Solution"
 from typing import List
@@ -111,7 +108,6 @@ print(removeDuplicates(nums))  # 2
 -   fast pointer: explore the array
 -   slow pointer: point to the position to be replaced
 
-
 ```python title="80. Remove Duplicates from Sorted Array II - Python Solution"
 from typing import List
 
@@ -142,7 +138,6 @@ print(removeDuplicates(nums))
 
 -   Tags: array, two pointers
 -   Move all zeroes to the end of the array while maintaining the relative order of the non-zero elements.
-
 
 ```python title="283. Move Zeroes - Python Solution"
 from typing import List
@@ -195,7 +190,6 @@ int main() {
     cout << endl;
     return 0;
 }
-
 ```
 
 ## 1089. Duplicate Zeros
@@ -204,7 +198,6 @@ int main() {
 
 -   Tags: array, two pointers
 -   Duplicate each occurrence of zero, shifting the remaining elements to the right.
-
 
 ```python title="1089. Duplicate Zeros - Python Solution"
 from typing import List
@@ -277,7 +270,6 @@ graph LR
 4 --> 2
 ```
 
-
 ```python title="287. Find the Duplicate Number - Python Solution"
 from typing import List
 
@@ -304,3 +296,4 @@ nums = [1, 3, 4, 2, 2]
 print(findDuplicate(nums))  # 2
 
 ```
+

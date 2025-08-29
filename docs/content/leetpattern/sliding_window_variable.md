@@ -24,7 +24,6 @@ comments: True
 - Return the length of the longest substring without repeating characters.
 - [Template tutorial by 灵山茶艾府](https://leetcode.cn/problems/longest-substring-without-repeating-characters/solutions/1959540/xia-biao-zong-suan-cuo-qing-kan-zhe-by-e-iaks)
 
-
 ```python title="3. Longest Substring Without Repeating Characters - Python Solution"
 from collections import defaultdict
 
@@ -113,7 +112,6 @@ int main() {
     cout << lengthOfLongestSubstring(s) << endl;  // 3
     return 0;
 }
-
 ```
 
 ## 159. Longest Substring with At Most Two Distinct Characters
@@ -122,7 +120,6 @@ int main() {
 
 -   Tags: hash table, string, sliding window
 -   Prerequisite: 3. Longest Substring Without Repeating Characters
-
 
 ```python title="159. Longest Substring with At Most Two Distinct Characters - Python Solution"
 from collections import defaultdict
@@ -161,7 +158,6 @@ assert lengthOfLongestSubstringTwoDistinct(s) == 5
 -   [LeetCode](https://leetcode.com/problems/longest-repeating-character-replacement/) | [LeetCode CH](https://leetcode.cn/problems/longest-repeating-character-replacement/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="424. Longest Repeating Character Replacement - Python Solution"
 from collections import defaultdict
 
@@ -197,7 +193,6 @@ print(characterReplacement(s, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/get-equal-substrings-within-budget/) | [LeetCode CH](https://leetcode.cn/problems/get-equal-substrings-within-budget/) (Medium)
 
 -   Tags: string, binary search, sliding window, prefix sum
-
 ```python title="1208. Get Equal Substrings Within Budget - Python Solution"
 # Sliding Window - Variable
 def equalSubstring(s: str, t: str, maxCost: int) -> int:
@@ -229,7 +224,6 @@ print(equalSubstring(s, t, maxCost))  # 3
 -   [LeetCode](https://leetcode.com/problems/max-consecutive-ones-iii/) | [LeetCode CH](https://leetcode.cn/problems/max-consecutive-ones-iii/) (Medium)
 
 -   Tags: array, binary search, sliding window, prefix sum
-
 ```python title="1004. Max Consecutive Ones III - Python Solution"
 from typing import List
 
@@ -265,7 +259,6 @@ print(longestOnes(nums, k))  # 6
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="438. Find All Anagrams in a String - Python Solution"
 from typing import List
 
@@ -306,7 +299,6 @@ print(findAnagrams(s, p))  # [0, 6]
 -   [LeetCode](https://leetcode.com/problems/subarrays-with-k-different-integers/) | [LeetCode CH](https://leetcode.cn/problems/subarrays-with-k-different-integers/) (Hard)
 
 -   Tags: array, hash table, sliding window, counting
-
 ```python title="992. Subarrays with K Different Integers - Python Solution"
 from typing import List
 
@@ -347,7 +339,6 @@ print(subarraysWithKDistinct(nums, k))  # 7
 -   [LeetCode](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | [LeetCode CH](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/) (Medium)
 
 -   Tags: string, binary search, sliding window, prefix sum
-
 ```python title="2024. Maximize the Confusion of an Exam - Python Solution"
 # Sliding Window - Variable
 def maxConsecutiveAnswers1(answerKey: str, k: int) -> int:
@@ -414,3 +405,4 @@ print(maxConsecutiveAnswers1(answerKey, k))  # 4
 print(maxConsecutiveAnswers2(answerKey, k))  # 4
 
 ```
+

@@ -21,7 +21,6 @@ comments: True
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 - Given an array of meeting time `intervals` where `intervals[i] = [start_i, end_i]`, return the minimum number of conference rooms required.
 
-
 ```python title="253. Meeting Rooms II - Python Solution"
 import heapq
 from typing import List
@@ -48,3 +47,4 @@ if __name__ == "__main__":
     assert minMeetingRooms(intervals) == 2
 
 ```
+

@@ -47,7 +47,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-or/) | [LeetCode CH](https://leetcode.cn/problems/maximum-or/) (Medium)
 
 -   Tags: array, greedy, bit manipulation, prefix sum
-
 ```python title="2680. Maximum OR - Python Solution"
 from typing import List
 

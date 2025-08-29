@@ -53,7 +53,6 @@ B --> D((3))
 F --> I((None))
 ```
 
-
 ```python title="203. Remove Linked List Elements - Python Solution"
 from typing import Optional
 
@@ -98,7 +97,6 @@ print(removeElements(head, val))
 
 -   Tags: linked list, design
 -   Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
-
 
 ```python title="707. Design Linked List - Python Solution"
 class ListNode:
@@ -186,7 +184,6 @@ C --> B((2))
 B --> A((1))
 ```
 
-
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
 
@@ -241,7 +238,6 @@ print(reverseListRecursive(head2))
 -   Tags: linked list
 -   Delete a node in a singly linked list. You are given only the node to be deleted.
 
-
 ```python title="237. Delete Node in a Linked List - Python Solution"
 from template import ListNode
 
@@ -264,7 +260,6 @@ print(head)  # 4 -> 1 -> 9
 
 -   Tags: linked list, stack, recursion, monotonic stack
 -   Remove all nodes from a linked list that have a value greater than `maxValue`.
-
 
 ```python title="2487. Remove Nodes From Linked List - Python Solution"
 from typing import Optional
@@ -325,7 +320,6 @@ print(removeNodesIterative(head2))  # 13 -> 8
 -   Tags: linked list, recursion
 -   Given a linked list, swap every two adjacent nodes and return its head.
 
-
 ```python title="24. Swap Nodes in Pairs - Python Solution"
 from typing import Optional
 
@@ -367,7 +361,6 @@ print(swapPairs(head))
 
 -   Tags: linked list, two pointers
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
-
 
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
@@ -417,7 +410,6 @@ graph LR
     c1 --> c2((c2))
     c2 --> c3((c3))
 ```
-
 
 ```python title="160. Intersection of Two Linked Lists - Python Solution"
 from typing import Optional
@@ -503,7 +495,6 @@ graph LR
     D --> B
 ```
 
-
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
@@ -552,7 +543,6 @@ class Solution {
         return false;
     }
 };
-
 ```
 
 ## 142. Linked List Cycle II
@@ -569,7 +559,6 @@ B --> C[0]
 C --> D[-4]
 D --> B
 ```
-
 
 ```python title="142. Linked List Cycle II - Python Solution"
 from typing import Optional
@@ -632,7 +621,6 @@ class Solution {
         return nullptr;
     }
 };
-
 ```
 
 ## 2816. Double a Number Represented as a Linked List
@@ -641,7 +629,6 @@ class Solution {
 
 -   Tags: linked list, math, stack
 -   Given a number represented as a linked list, double it and return the resulting linked list.
-
 
 ```python title="2816. Double a Number Represented as a Linked List - Python Solution"
 from typing import Optional
@@ -680,7 +667,6 @@ print(doubleIt(head))
 
 -   Tags: linked list, math, recursion
 -   Represent the sum of two numbers as a linked list.
-
 
 ```python title="2. Add Two Numbers - Python Solution"
 from typing import Optional
@@ -753,5 +739,5 @@ class Solution {
         return dummy.next;
     }
 };
-
 ```
+

@@ -25,7 +25,6 @@ comments: True
 | `{`  | push   | "{"   |
 | `}`  | pop    | ""    |
 
-
 ```python title="20. Valid Parentheses - Python Solution"
 # Stack
 def isValid(s: str) -> bool:
@@ -94,5 +93,5 @@ int main() {
     assert(s.isValid("{[]}") == true);
     return 0;
 }
-
 ```
+

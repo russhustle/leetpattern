@@ -28,7 +28,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subsets/) | [LeetCode CH](https://leetcode.cn/problems/subsets/) (Medium)
 
 -   Tags: array, backtracking, bit manipulation
-
 ```python title="78. Subsets - Python Solution"
 from typing import List
 
@@ -96,7 +95,6 @@ print(subsets_binary_decision([1, 2, 3]))
 -   [LeetCode](https://leetcode.com/problems/target-sum/) | [LeetCode CH](https://leetcode.cn/problems/target-sum/) (Medium)
 
 -   Tags: array, dynamic programming, backtracking
-
 ```python title="494. Target Sum - Python Solution"
 from typing import List
 
@@ -198,7 +196,6 @@ int main() {
     cout << sol.beautifulSubsets(nums, k) << endl;
     return 0;
 }
-
 ```
 
 ## 2959. Number of Possible Sets of Closing Branches
@@ -231,7 +228,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="39. Combination Sum - Python Solution"
 from typing import List
 
@@ -266,3 +262,4 @@ if __name__ == "__main__":
     # [[2, 2, 3], [7]]
 
 ```
+

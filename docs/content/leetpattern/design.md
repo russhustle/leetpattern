@@ -32,7 +32,6 @@ comments: True
 | Doubly Linked List | To store the key-value pairs. |
 | Hash Map           | To store the key-node pairs.  |
 
-
 ```python title="146. LRU Cache - Python Solution"
 from collections import OrderedDict
 
@@ -232,7 +231,6 @@ int main() {
     cout << lru.get(4) << endl;  // 4
     return 0;
 }
-
 ```
 
 ## 355. Design Twitter
@@ -241,7 +239,6 @@ int main() {
 
 -   Tags: hash table, linked list, design, heap priority queue
 -   Similar question: [23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (Hard)
-
 
 ```python title="355. Design Twitter - Python Solution"
 import heapq
@@ -294,7 +291,6 @@ print(twitter.getNewsFeed(1))  # [5]
 -   [LeetCode](https://leetcode.com/problems/design-in-memory-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-in-memory-file-system/) (Hard)
 
 -   Tags: hash table, string, design, trie, sorting
-
 ```python title="588. Design In-Memory File System - Python Solution"
 from collections import defaultdict
 
@@ -357,7 +353,6 @@ print(obj.readContentFromFile("/a/b/c/d"))  # "hello"
 -   [LeetCode](https://leetcode.com/problems/lfu-cache/) | [LeetCode CH](https://leetcode.cn/problems/lfu-cache/) (Hard)
 
 -   Tags: hash table, linked list, design, doubly linked list
-
 ```python title="460. LFU Cache - Python Solution"
 from collections import OrderedDict, defaultdict
 
@@ -440,7 +435,6 @@ print(lfu.get(3))  # 3
 -   [LeetCode](https://leetcode.com/problems/design-file-system/) | [LeetCode CH](https://leetcode.cn/problems/design-file-system/) (Medium)
 
 -   Tags: hash table, string, design, trie
-
 ```python title="1166. Design File System - Python Solution"
 from collections import defaultdict
 
@@ -500,7 +494,6 @@ print(obj.get(path))  # 1
 -   [LeetCode](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [LeetCode CH](https://leetcode.cn/problems/insert-delete-getrandom-o1/) (Medium)
 
 -   Tags: array, hash table, math, design, randomized
-
 ```python title="380. Insert Delete GetRandom O(1) - Python Solution"
 import random
 
@@ -547,7 +540,6 @@ print(obj.remove(1))  # True
 -   [LeetCode](https://leetcode.com/problems/design-hit-counter/) | [LeetCode CH](https://leetcode.cn/problems/design-hit-counter/) (Medium)
 
 -   Tags: array, binary search, design, queue, data stream
-
 ```python title="362. Design Hit Counter - Python Solution"
 from collections import deque
 
@@ -583,7 +575,6 @@ print(obj.getHits(301))  # 3
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
 
 -   Tags: string, tree, depth first search, breadth first search, design, binary tree
-
 ```python title="297. Serialize and Deserialize Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -706,7 +697,6 @@ print(root2)
 -   [LeetCode](https://leetcode.com/problems/design-circular-queue/) | [LeetCode CH](https://leetcode.cn/problems/design-circular-queue/) (Medium)
 
 -   Tags: array, linked list, design, queue
-
 ```python title="622. Design Circular Queue - Python Solution"
 # Design
 class MyCircularQueue:
@@ -766,7 +756,6 @@ print(obj.deQueue())  # True
 -   [LeetCode](https://leetcode.com/problems/design-snake-game/) | [LeetCode CH](https://leetcode.cn/problems/design-snake-game/) (Medium)
 
 -   Tags: array, hash table, design, queue, simulation
-
 ```python title="353. Design Snake Game - Python Solution"
 from collections import deque
 from typing import List
@@ -828,7 +817,6 @@ print(snake.move("U"))  # -1
 -   [LeetCode](https://leetcode.com/problems/design-a-leaderboard/) | [LeetCode CH](https://leetcode.cn/problems/design-a-leaderboard/) (Medium)
 
 -   Tags: hash table, design, sorting
-
 ```python title="1244. Design A Leaderboard - Python Solution"
 class Leaderboard:
 
@@ -861,3 +849,4 @@ board.reset(2)
 print(board.top(2))  # 90
 
 ```
+

@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/missing-ranges/) | [LeetCode CH](https://leetcode.cn/problems/missing-ranges/) (Easy)
 
 -   Tags: array
-
 ```python title="163. Missing Ranges - Python Solution"
 from typing import List
 
@@ -83,7 +82,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms/) (Easy)
 
 -   Tags: array, sorting
-
 ```python title="252. Meeting Rooms - Python Solution"
 from typing import List
 
@@ -115,7 +113,6 @@ if __name__ == "__main__":
 
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 - Given an array of meeting time `intervals` where `intervals[i] = [start_i, end_i]`, return the minimum number of conference rooms required.
-
 
 ```python title="253. Meeting Rooms II - Python Solution"
 import heapq

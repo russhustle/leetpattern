@@ -35,7 +35,6 @@ JFK --> ATL
 ATL --> SFO
 ```
 
-
 ```python title="332. Reconstruct Itinerary - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -123,7 +122,6 @@ print(findItinerary2(tickets))
   - Union Find
   - Time Complexity: O(E * logV)
   - Space Complexity: O(V + E)
-
 
 ```python title="1584. Min Cost to Connect All Points - Python Solution"
 import heapq
@@ -241,7 +239,6 @@ graph LR
     -   Time Complexity: O(E * logV)
     -   Space Complexity: O(V)
 
-
 ```python title="743. Network Delay Time - Python Solution"
 import heapq
 from collections import defaultdict
@@ -333,7 +330,6 @@ if __name__ == "__main__":
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
-
 ```python title="778. Swim in Rising Water - Python Solution"
 import heapq
 from typing import List
@@ -379,7 +375,6 @@ print(swimInWater(grid))  # 16
 
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
-
 
 ```python title="269. Alien Dictionary - Python Solution"
 from collections import defaultdict, deque
@@ -487,7 +482,6 @@ graph TD
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5eIK3zUdYmE?si=aBR0VbHXTgNuVlGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ```python title="787. Cheapest Flights Within K Stops - Python Solution"
 import heapq
 from collections import defaultdict
@@ -558,3 +552,4 @@ print(findCheapestPriceBF(n, flights, src, dst, k))  # 700
 print(findCheapestPriceDijkstra(n, flights, src, dst, k))  # 700
 
 ```
+

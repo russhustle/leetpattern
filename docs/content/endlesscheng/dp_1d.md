@@ -29,7 +29,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/solving-questions-with-brainpower/) | [LeetCode CH](https://leetcode.cn/problems/solving-questions-with-brainpower/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="2140. Solving Questions With Brainpower - Python Solution"
 from functools import cache
 from typing import List
@@ -57,7 +56,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-for-tickets/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-for-tickets/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="983. Minimum Cost For Tickets - Python Solution"
 from typing import List
 

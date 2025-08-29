@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/is-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/is-subsequence/) (Easy)
 
 -   Tags: two pointers, string, dynamic programming
-
 ```python title="392. Is Subsequence - Python Solution"
 # DP - LCS
 def isSubsequenceLCS(s: str, t: str) -> bool:

@@ -13,7 +13,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/walking-robot-simulation/) | [LeetCode CH](https://leetcode.cn/problems/walking-robot-simulation/) (Medium)
 
 -   Tags: array, hash table, simulation
-
 ```python title="874. Walking Robot Simulation - Python Solution"
 from typing import List
 
@@ -49,3 +48,4 @@ obstacles = [[2, 4]]
 print(robotSim(commands, obstacles))  # 65
 
 ```
+

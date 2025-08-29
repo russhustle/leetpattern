@@ -21,7 +21,6 @@ comments: True
 -   Tags: array, binary search
 - Implement binary search algorithm.
 
-
 ```python title="704. Binary Search - Python Solution"
 from typing import List
 
@@ -91,7 +90,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 
 -   Tags: array, binary search, matrix
-
 ```python title="74. Search a 2D Matrix - Python Solution"
 from typing import List
 
@@ -132,7 +130,6 @@ if __name__ == "__main__":
 -   Tags: array, binary search
 -   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
 
-
 ```python title="875. Koko Eating Bananas - Python Solution"
 from typing import List
 
@@ -169,7 +166,6 @@ print(minEatingSpeed(piles, h))  # 4
 -   [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="153. Find Minimum in Rotated Sorted Array - Python Solution"
 from typing import List
 
@@ -198,7 +194,6 @@ print(findMin(nums))  # 0
 -   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="33. Search in Rotated Sorted Array - Python Solution"
 from typing import List
 
@@ -238,7 +233,6 @@ print(search(nums, target))  # 4
 -   [LeetCode](https://leetcode.com/problems/time-based-key-value-store/) | [LeetCode CH](https://leetcode.cn/problems/time-based-key-value-store/) (Medium)
 
 -   Tags: hash table, string, binary search, design
-
 ```python title="981. Time Based Key-Value Store - Python Solution"
 from collections import defaultdict
 
@@ -283,7 +277,6 @@ print(obj.get("foo", 5))  # bar2
 -   [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
 
 -   Tags: array, binary search, divide and conquer
-
 ```python title="4. Median of Two Sorted Arrays - Python Solution"
 from typing import List
 
@@ -349,3 +342,4 @@ print(findMedianSortedArraysBF(nums1, nums2))  # 2.0
 print(findMedianSortedArraysBS(nums1, nums2))  # 2.0
 
 ```
+

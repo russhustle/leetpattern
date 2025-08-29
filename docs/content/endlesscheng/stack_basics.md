@@ -20,7 +20,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/build-an-array-with-stack-operations/) | [LeetCode CH](https://leetcode.cn/problems/build-an-array-with-stack-operations/) (Medium)
 
 -   Tags: array, stack, simulation
-
 ```python title="1441. Build an Array With Stack Operations - Python Solution"
 from typing import List
 
@@ -53,7 +52,6 @@ print(buildArray(target, n))
 -   [LeetCode](https://leetcode.com/problems/backspace-string-compare/) | [LeetCode CH](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
 
 -   Tags: two pointers, string, stack, simulation
-
 ```python title="844. Backspace String Compare - Python Solution"
 def backspaceCompare(s: str, t: str) -> bool:
 
@@ -80,7 +78,6 @@ print(backspaceCompare("ab#c", "ad#c"))  # True
 -   [LeetCode](https://leetcode.com/problems/baseball-game/) | [LeetCode CH](https://leetcode.cn/problems/baseball-game/) (Easy)
 
 -   Tags: array, stack, simulation
-
 ```python title="682. Baseball Game - Python Solution"
 from typing import List
 
@@ -128,7 +125,6 @@ print(calPoints(ops))  # 30
 | d    | push   | "lecod" |
 | *    | pop    | "leco"  |
 | e    | push   | "lecoe" |
-
 
 ```python title="2390. Removing Stars From a String - Python Solution"
 # Stack

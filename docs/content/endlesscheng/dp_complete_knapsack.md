@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
 
 -   Tags: array, dynamic programming, breadth first search
-
 ```python title="322. Coin Change - Python Solution"
 from typing import List
 
@@ -46,7 +45,6 @@ print(coinChange(coins, amount))  # 3
 -   [LeetCode](https://leetcode.com/problems/coin-change-ii/) | [LeetCode CH](https://leetcode.cn/problems/coin-change-ii/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="518. Coin Change II - Python Solution"
 from typing import List
 
@@ -73,7 +71,6 @@ print(change(amount, coins))  # 4
 -   [LeetCode](https://leetcode.com/problems/perfect-squares/) | [LeetCode CH](https://leetcode.cn/problems/perfect-squares/) (Medium)
 
 -   Tags: math, dynamic programming, breadth first search
-
 ```python title="279. Perfect Squares - Python Solution"
 import math
 

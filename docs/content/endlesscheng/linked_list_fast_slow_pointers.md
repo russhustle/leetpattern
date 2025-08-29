@@ -21,7 +21,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/middle-of-the-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/middle-of-the-linked-list/) (Easy)
 
 -   Tags: linked list, two pointers
-
 ```python title="876. Middle of the Linked List - Python Solution"
 from typing import Optional
 
@@ -51,7 +50,6 @@ print(middleNode(ListNode.create([1, 2, 3, 4, 5, 6])))
 -   [LeetCode](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) (Medium)
 
 -   Tags: linked list, two pointers
-
 ```python title="2095. Delete the Middle Node of a Linked List - Python Solution"
 from typing import Optional
 
@@ -85,7 +83,6 @@ print(deleteMiddle(node))
 -   [LeetCode](https://leetcode.com/problems/palindrome-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-linked-list/) (Easy)
 
 -   Tags: linked list, two pointers, stack, recursion
-
 ```python title="234. Palindrome Linked List - Python Solution"
 from typing import Optional
 
@@ -135,7 +132,6 @@ print(isPalindrome(head))  # True
 -   [LeetCode](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/) (Medium)
 
 -   Tags: linked list, two pointers, stack
-
 ```python title="2130. Maximum Twin Sum of a Linked List - Python Solution"
 from typing import Optional
 
@@ -182,7 +178,6 @@ print(pairSum(node))  # 7
 -   [LeetCode](https://leetcode.com/problems/reorder-list/) | [LeetCode CH](https://leetcode.cn/problems/reorder-list/) (Medium)
 
 -   Tags: linked list, two pointers, stack, recursion
-
 ```python title="143. Reorder List - Python Solution"
 from typing import Optional
 
@@ -249,7 +244,6 @@ graph LR
     D --> B
 ```
 
-
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
@@ -298,7 +292,6 @@ class Solution {
         return false;
     }
 };
-
 ```
 
 ## 142. Linked List Cycle II
@@ -315,7 +308,6 @@ B --> C[0]
 C --> D[-4]
 D --> B
 ```
-
 
 ```python title="142. Linked List Cycle II - Python Solution"
 from typing import Optional
@@ -378,7 +370,6 @@ class Solution {
         return nullptr;
     }
 };
-
 ```
 
 ## 457. Circular Array Loop

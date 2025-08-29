@@ -28,7 +28,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/remove-duplicate-letters/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)
 
 -   Tags: string, stack, greedy, monotonic stack
-
 ```python title="316. Remove Duplicate Letters - Python Solution"
 # Monotonic Stack
 def removeDuplicateLetters(s: str) -> str:

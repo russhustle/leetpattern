@@ -15,7 +15,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/ternary-expression-parser/) | [LeetCode CH](https://leetcode.cn/problems/ternary-expression-parser/) (Medium)
 
 -   Tags: string, stack, recursion
-
 ```python title="439. Ternary Expression Parser - Python Solution"
 # Stack
 def parseTernary(expression: str) -> str:
@@ -57,7 +56,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-iii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
 
 -   Tags: math, string, stack, recursion
-
 ```python title="772. Basic Calculator III - Python Solution"
 # Stack
 def calculate(s: str) -> int:
@@ -99,3 +97,4 @@ s = "2*(5+5*2)/3+(6/2+8)"
 print(calculate(s))  # 21
 
 ```
+

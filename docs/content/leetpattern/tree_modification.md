@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="226. Invert Binary Tree - Python Solution"
 from typing import Optional
 
@@ -93,7 +92,6 @@ print(invertedIterative)
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, tree, binary tree
-
 ```python title="105. Construct Binary Tree from Preorder and Inorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -193,7 +191,6 @@ int main() {
     cout << root->right->right->val << endl;  // 7
     return 0;
 }
-
 ```
 
 ## 106. Construct Binary Tree from Inorder and Postorder Traversal
@@ -201,7 +198,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, tree, binary tree
-
 ```python title="106. Construct Binary Tree from Inorder and Postorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -256,7 +252,6 @@ print(root)
 -   [LeetCode](https://leetcode.com/problems/maximum-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-binary-tree/) (Medium)
 
 -   Tags: array, divide and conquer, stack, tree, monotonic stack, binary tree
-
 ```python title="654. Maximum Binary Tree - Python Solution"
 from typing import List, Optional
 
@@ -303,7 +298,6 @@ root = constructMaximumBinaryTree(nums)
 -   [LeetCode](https://leetcode.com/problems/merge-two-binary-trees/) | [LeetCode CH](https://leetcode.cn/problems/merge-two-binary-trees/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="617. Merge Two Binary Trees - Python Solution"
 from typing import List, Optional
 
@@ -362,3 +356,4 @@ root = mergeTrees(root1, root2)
 # 5   4   7
 
 ```
+

@@ -39,7 +39,6 @@ comments: True
 |  9  |    13     |    21     |   34    |
 | 10  |    21     |    34     |   55    |
 
-
 ```python title="509. Fibonacci Number - Python Solution"
 from functools import cache
 
@@ -94,7 +93,6 @@ print(fibRecursive(n))  # 55
 - `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
 - Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
 - Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
-
 
 ```python title="70. Climbing Stairs - Python Solution"
 from functools import cache
@@ -183,7 +181,6 @@ int main() {
     cout << climbStairs(6) << endl;  // 13
     return 0;
 }
-
 ```
 
 ## 746. Min Cost Climbing Stairs
@@ -212,7 +209,6 @@ int main() {
 |  7  |     1     |    103    |     4     |    5    |
 |  8  |    100    |     4     |     5     |   104   |
 |  9  |     1     |     5     |    104    |    6    |
-
 
 ```python title="746. Min Cost Climbing Stairs - Python Solution"
 from typing import List
@@ -256,7 +252,6 @@ print(minCostClimbingStairs(cost))  # 6
 |  2  |     9     |     2     |     7     |         11          |   11    |
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
-
 
 ```python title="198. House Robber - Python Solution"
 from typing import List
@@ -313,7 +308,6 @@ int main() {
     cout << rob(nums) << endl;  // 12
     return 0;
 }
-
 ```
 
 ## 213. House Robber II
@@ -340,7 +334,6 @@ int main() {
 |  2  |     9     |     -     |     7     |          -          |    9    |
 |  3  |     3     |     7     |     9     |         10          |   10    |
 |  4  |     1     |     9     |    10     |         10          |   10    |
-
 
 ```python title="213. House Robber II - Python Solution"
 from typing import List
@@ -437,7 +430,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## 376. Wiggle Subsequence
@@ -459,7 +451,6 @@ int main() {
 |     9     |      4      |     2     |      3      |    4    |     3     |
 |     2     |      9      |     4     |      3      |    4    |     5     |
 |     5     |      2      |     4     |      5      |    6    |     5     |
-
 
 ```python title="376. Wiggle Subsequence - Python Solution"
 from typing import List
@@ -546,7 +537,6 @@ print(wiggleMaxLengthGreedy(nums))  # 6
 | dp[7]=12  |         |         |         |         |          | 12*1=12  |
 | `dp[n]`   | 2       | 4       | 6       | 9       | 12       | 18       |
 
-
 ```python title="343. Integer Break - Python Solution"
 def integerBreak(n: int) -> int:
     dp = [0 for _ in range(n + 1)]
@@ -572,7 +562,6 @@ if __name__ == "__main__":
 -   Return `True` if Alice wins the game, assuming both players play optimally.
 -   `dp[n]` stores the result of the game when the number is `n`.
 -   Initialize `dp[1] = False`.
-
 
 ```python title="1025. Divisor Game - Python Solution"
 # DP
@@ -608,3 +597,4 @@ print(divisorGameDP(n))  # True
 print(divisorGameDPMath(n))  # True
 
 ```
+

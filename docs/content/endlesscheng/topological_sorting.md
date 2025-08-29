@@ -30,7 +30,6 @@ comments: True
 - Return a list of integers representing the minimum number of vertices needed to traverse all the nodes.
 - Hint: Return the vertices with indegree 0.
 
-
 ```python title="1557. Minimum Number of Vertices to Reach All Nodes - Python Solution"
 from typing import List
 
@@ -60,7 +59,6 @@ if __name__ == "__main__":
 - Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
 ![0207](../../assets/0207.png)
-
 
 ```python title="210. Course Schedule II - Python Solution"
 from collections import defaultdict, deque
@@ -215,7 +213,6 @@ int main() {
     for (size_t i = 0; i < res.size(); i++) cout << res[i] << "\n";
     return 0;
 }
-
 ```
 
 ## 1462. Course Schedule IV
@@ -223,7 +220,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/course-schedule-iv/) | [LeetCode CH](https://leetcode.cn/problems/course-schedule-iv/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
-
 ```python title="1462. Course Schedule IV - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -282,7 +278,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) | [LeetCode CH](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/) (Medium)
 
 -   Tags: array, hash table, string, graph, topological sort
-
 ```python title="2115. Find All Possible Recipes from Given Supplies - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -331,7 +326,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
-
 ```python title="310. Minimum Height Trees - Python Solution"
 from collections import deque
 from typing import List
@@ -380,7 +374,6 @@ print(findMinHeightTrees(n, edges))  # [3, 4]
 -   [LeetCode](https://leetcode.com/problems/find-eventual-safe-states/) | [LeetCode CH](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
-
 ```python title="802. Find Eventual Safe States - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -447,7 +440,6 @@ print(eventualSafeNodesDFS(graph))  # [2, 4, 5, 6]
 
 -   Tags: depth first search, breadth first search, graph, topological sort
 -   Return any permutation of the items that satisfies the requirements.
-
 
 ```python title="1203. Sort Items by Groups Respecting Dependencies - Python Solution"
 from collections import defaultdict, deque
@@ -530,7 +522,6 @@ print(sortItems(n, m, group, beforeItems))
 
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
-
 
 ```python title="269. Alien Dictionary - Python Solution"
 from collections import defaultdict, deque
@@ -635,7 +626,6 @@ print(alienOrderDFS(words))  # wertf
 
 ![1136](../../assets/1136.png)
 
-
 ```python title="1136. Parallel Courses - Python Solution"
 from collections import deque
 from typing import List
@@ -675,3 +665,4 @@ relations = [[1, 3], [2, 3]]
 print(minimumSemesters(n, relations))  # 2
 
 ```
+

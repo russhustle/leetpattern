@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/) | [LeetCode CH](https://leetcode.cn/problems/partition-equal-subset-sum/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="416. Partition Equal Subset Sum - Python Solution"
 from functools import cache
 from typing import List
@@ -85,7 +84,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/ones-and-zeroes/) | [LeetCode CH](https://leetcode.cn/problems/ones-and-zeroes/) (Medium)
 
 -   Tags: array, string, dynamic programming
-
 ```python title="474. Ones and Zeroes - Python Solution"
 from typing import List
 
@@ -116,7 +114,6 @@ print(findMaxForm(strs, m, n))  # 4
 -   [LeetCode](https://leetcode.com/problems/target-sum/) | [LeetCode CH](https://leetcode.cn/problems/target-sum/) (Medium)
 
 -   Tags: array, dynamic programming, backtracking
-
 ```python title="494. Target Sum - Python Solution"
 from typing import List
 
@@ -156,7 +153,6 @@ print(findTargetSumWays(nums, target))  # 5
     - Time: O(n log n); Space: O(n)
 - 0/1 Knapsack
     - Time: O(n); Space: O(n)
-
 
 ```python title="1046. Last Stone Weight - Python Solution"
 from heapq import heapify, heappop, heappush
@@ -232,7 +228,6 @@ int main()
     cout << lastStoneWeight(stones) << endl; // 1
     return 0;
 }
-
 ```
 
 ## 1049. Last Stone Weight II
@@ -240,7 +235,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/last-stone-weight-ii/) | [LeetCode CH](https://leetcode.cn/problems/last-stone-weight-ii/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="1049. Last Stone Weight II - Python Solution"
 from typing import List
 
@@ -263,3 +257,4 @@ stones = [2, 7, 4, 1, 8, 1]
 print(lastStoneWeightII(stones))  # 1
 
 ```
+

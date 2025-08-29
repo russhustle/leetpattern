@@ -44,7 +44,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-number/) | [LeetCode CH](https://leetcode.cn/problems/largest-number/) (Medium)
 
 -   Tags: array, string, greedy, sorting
-
 ```python title="179. Largest Number - Python Solution"
 from functools import cmp_to_key
 from typing import List

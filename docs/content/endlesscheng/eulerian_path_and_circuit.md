@@ -32,7 +32,6 @@ JFK --> ATL
 ATL --> SFO
 ```
 
-
 ```python title="332. Reconstruct Itinerary - Python Solution"
 from collections import defaultdict
 from typing import List

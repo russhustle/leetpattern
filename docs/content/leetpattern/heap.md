@@ -18,7 +18,6 @@ comments: True
 - 0/1 Knapsack
     - Time: O(n); Space: O(n)
 
-
 ```python title="1046. Last Stone Weight - Python Solution"
 from heapq import heapify, heappop, heappush
 from typing import List
@@ -93,5 +92,5 @@ int main()
     cout << lastStoneWeight(stones) << endl; // 1
     return 0;
 }
-
 ```
+

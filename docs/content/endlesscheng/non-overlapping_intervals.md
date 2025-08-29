@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/non-overlapping-intervals/) | [LeetCode CH](https://leetcode.cn/problems/non-overlapping-intervals/) (Medium)
 
 -   Tags: array, dynamic programming, greedy, sorting
-
 ```python title="435. Non-overlapping Intervals - Python Solution"
 from typing import List
 

@@ -18,7 +18,6 @@ comments: True
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
-
 ```python title="62. Unique Paths - Python Solution"
 # DP - 2D
 def uniquePaths(m: int, n: int) -> int:
@@ -63,7 +62,6 @@ int main() {
     cout << uniquePaths(m, n) << endl;  // 28
     return 0;
 }
-
 ```
 
 ## 1143. Longest Common Subsequence
@@ -71,7 +69,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="1143. Longest Common Subsequence - Python Solution"
 from functools import cache
 
@@ -113,3 +110,4 @@ if __name__ == "__main__":
     assert longestCommonSubsequenceTable("abc", "abc") == 3
 
 ```
+

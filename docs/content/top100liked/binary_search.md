@@ -20,7 +20,6 @@ comments: True
 -   Tags: array, binary search
 -   Return the index of the target if it is found. If not, return the index where it would be if it were inserted in order.
 
-
 ```python title="35. Search Insert Position - Python Solution"
 from typing import List
 
@@ -52,7 +51,6 @@ print(searchInsert(nums, target))  # 2
 -   [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix/) (Medium)
 
 -   Tags: array, binary search, matrix
-
 ```python title="74. Search a 2D Matrix - Python Solution"
 from typing import List
 
@@ -92,7 +90,6 @@ if __name__ == "__main__":
 
 -   Tags: array, binary search
 -   Find the starting and ending position of a given target value in a sorted array.
-
 
 ```python title="34. Find First and Last Position of Element in Sorted Array - Python Solution"
 from bisect import bisect_left
@@ -186,7 +183,6 @@ int main()
   cout << res[0] << ", " << res[1] << endl;
   return 0;
 }
-
 ```
 
 ## 33. Search in Rotated Sorted Array
@@ -194,7 +190,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/search-in-rotated-sorted-array/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="33. Search in Rotated Sorted Array - Python Solution"
 from typing import List
 
@@ -234,7 +229,6 @@ print(search(nums, target))  # 4
 -   [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="153. Find Minimum in Rotated Sorted Array - Python Solution"
 from typing import List
 
@@ -263,7 +257,6 @@ print(findMin(nums))  # 0
 -   [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [LeetCode CH](https://leetcode.cn/problems/median-of-two-sorted-arrays/) (Hard)
 
 -   Tags: array, binary search, divide and conquer
-
 ```python title="4. Median of Two Sorted Arrays - Python Solution"
 from typing import List
 
@@ -329,3 +322,4 @@ print(findMedianSortedArraysBF(nums1, nums2))  # 2.0
 print(findMedianSortedArraysBS(nums1, nums2))  # 2.0
 
 ```
+

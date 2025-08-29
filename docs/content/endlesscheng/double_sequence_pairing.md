@@ -24,7 +24,6 @@ comments: True
 -   Tags: array, greedy, sorting, counting sort
 -   Return the minimum number of moves needed to seat everyone.
 
-
 ```python title="2037. Minimum Number of Moves to Seat Everyone - Python Solution"
 from typing import List
 
@@ -51,7 +50,6 @@ print(minMovesToSeat([3, 1, 5], [2, 7, 4]))  # 4
 
 -   Tags: array, two pointers, greedy, sorting
 -   Return the maximum number of your content children that can be satisfied.
-
 
 ```python title="455. Assign Cookies - Python Solution"
 from typing import List
@@ -119,7 +117,6 @@ print(findContentChildren(g, s))  # 1
 -   [LeetCode](https://leetcode.com/problems/rearranging-fruits/) | [LeetCode CH](https://leetcode.cn/problems/rearranging-fruits/) (Hard)
 
 -   Tags: array, hash table, greedy
-
 ```python title="2561. Rearranging Fruits - Python Solution"
 from collections import defaultdict
 from typing import List

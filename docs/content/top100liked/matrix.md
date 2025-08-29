@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/) | [LeetCode CH](https://leetcode.cn/problems/set-matrix-zeroes/) (Medium)
 
 -   Tags: array, hash table, matrix
-
 ```python title="73. Set Matrix Zeroes - Python Solution"
 from copy import deepcopy
 from typing import List
@@ -116,7 +115,6 @@ print(matrix2)
 -   Tags: array, matrix, simulation
 -   Return all elements of the matrix in spiral order.
 
-
 ```python title="54. Spiral Matrix - Python Solution"
 from typing import List
 
@@ -187,7 +185,6 @@ print(spiralOrderMath([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]))
 -   [LeetCode](https://leetcode.com/problems/rotate-image/) | [LeetCode CH](https://leetcode.cn/problems/rotate-image/) (Medium)
 
 -   Tags: array, math, matrix
-
 ```python title="48. Rotate Image - Python Solution"
 from copy import deepcopy
 from typing import List
@@ -247,7 +244,6 @@ print(matrix2)
 -   [LeetCode](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [LeetCode CH](https://leetcode.cn/problems/search-a-2d-matrix-ii/) (Medium)
 
 -   Tags: array, binary search, divide and conquer, matrix
-
 ```python title="240. Search a 2D Matrix II - Python Solution"
 from typing import List
 
@@ -279,3 +275,4 @@ target = 20
 print(searchMatrix(matrix, target))  # False
 
 ```
+

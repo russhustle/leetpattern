@@ -31,7 +31,6 @@ comments: True
 -   Tags: string, dynamic programming
 - [教你一步步思考 DP：从记忆化搜索到递推（Python/Java/C++/Go）](https://leetcode.cn/problems/palindrome-partitioning-ii/solutions/3588633/jiao-ni-yi-bu-bu-si-kao-dpcong-ji-yi-hua-bnlb)
 
-
 ```python title="132. Palindrome Partitioning II - Python Solution"
 from functools import cache
 
@@ -108,7 +107,6 @@ print(minCutTabulation(s))  # 1
 -   [LeetCode](https://leetcode.com/problems/decode-ways/) | [LeetCode CH](https://leetcode.cn/problems/decode-ways/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="91. Decode Ways - Python Solution"
 # DP
 def numDecodingsDP(s: str) -> int:

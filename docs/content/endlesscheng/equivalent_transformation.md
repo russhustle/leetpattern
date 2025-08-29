@@ -62,7 +62,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
 
 -   Tags: array, hash table, string, sorting
-
 ```python title="49. Group Anagrams - Python Solution"
 from collections import defaultdict
 from typing import List

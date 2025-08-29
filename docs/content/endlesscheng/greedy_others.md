@@ -43,7 +43,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | [LeetCode CH](https://leetcode.cn/problems/merge-triplets-to-form-target-triplet/) (Medium)
 
 -   Tags: array, greedy
-
 ```python title="1899. Merge Triplets to Form Target Triplet - Python Solution"
 from typing import List
 
@@ -76,7 +75,6 @@ print(mergeTriplets(triplets, target))  # True
 -   [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
 
 -   Tags: array, greedy
-
 ```python title="134. Gas Station - Python Solution"
 from typing import List
 

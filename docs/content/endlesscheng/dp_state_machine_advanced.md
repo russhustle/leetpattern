@@ -90,7 +90,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/substring-with-largest-variance/) | [LeetCode CH](https://leetcode.cn/problems/substring-with-largest-variance/) (Hard)
 
 -   Tags: array, dynamic programming
-
 ```python title="2272. Substring With Largest Variance - Python Solution"
 from itertools import permutations
 from math import inf

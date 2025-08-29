@@ -21,7 +21,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/permutations/) | [LeetCode CH](https://leetcode.cn/problems/permutations/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="46. Permutations - Python Solution"
 from typing import List
 
@@ -70,7 +69,6 @@ print(permute([1, 2, 3]))
 - Hard
 - [N-Queens](https://leetcode.com/problems/n-queens/)
 - [N 皇后](https://leetcode.cn/problems/n-queens/)
-
 
 ```python title="51. N-Queens - Python Solution"
 from typing import List

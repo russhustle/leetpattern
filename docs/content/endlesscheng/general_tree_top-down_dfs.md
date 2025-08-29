@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | [LeetCode CH](https://leetcode.cn/problems/time-needed-to-inform-all-employees/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search
-
 ```python title="1376. Time Needed to Inform All Employees - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -96,7 +95,6 @@ print(numOfMinutesBFS(n, headID, manager, informTime))  # 1
 -   [LeetCode](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) | [LeetCode CH](https://leetcode.cn/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search
-
 ```python title="3372. Maximize the Number of Target Nodes After Connecting Trees I - Python Solution"
 from typing import Callable, List, Tuple
 

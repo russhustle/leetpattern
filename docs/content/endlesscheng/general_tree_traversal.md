@@ -22,7 +22,6 @@ comments: True
 -   Tags: depth first search, breadth first search, graph
 -   ![1466](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
 
-
 ```python title="1466. Reorder Routes to Make All Paths Lead to the City Zero - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -78,7 +77,6 @@ print(minReorderDFS(n, connections))  # 2
 -   [LeetCode](https://leetcode.com/problems/kill-process/) | [LeetCode CH](https://leetcode.cn/problems/kill-process/) (Medium)
 
 -   Tags: array, hash table, tree, depth first search, breadth first search
-
 ```python title="582. Kill Process - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -110,3 +108,4 @@ if __name__ == "__main__":
     assert killProcess(pid, ppid, kill) == [5, 10]
 
 ```
+

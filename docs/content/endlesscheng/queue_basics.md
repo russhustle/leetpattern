@@ -35,7 +35,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/moving-average-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/moving-average-from-data-stream/) (Easy)
 
 -   Tags: array, design, queue, data stream
-
 ```python title="346. Moving Average from Data Stream - Python Solution"
 from collections import deque
 
@@ -74,7 +73,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/design-hit-counter/) | [LeetCode CH](https://leetcode.cn/problems/design-hit-counter/) (Medium)
 
 -   Tags: array, binary search, design, queue, data stream
-
 ```python title="362. Design Hit Counter - Python Solution"
 from collections import deque
 
@@ -115,7 +113,6 @@ print(obj.getHits(301))  # 3
 -   [LeetCode](https://leetcode.com/problems/first-unique-number/) | [LeetCode CH](https://leetcode.cn/problems/first-unique-number/) (Medium)
 
 -   Tags: array, hash table, design, queue, data stream
-
 ```python title="1429. First Unique Number - Python Solution"
 from collections import defaultdict, deque
 from typing import List

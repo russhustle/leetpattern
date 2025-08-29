@@ -42,7 +42,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sum-equals-k/) (Medium)
 
 -   Tags: array, hash table, prefix sum
-
 ```python title="560. Subarray Sum Equals K - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -98,7 +97,6 @@ int main() {
     cout << subarraySum(nums, k) << endl;  // 2
     return 0;
 }
-
 ```
 
 ## 1524. Number of Sub-arrays With Odd Sum
@@ -111,7 +109,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/subarray-sums-divisible-by-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-sums-divisible-by-k/) (Medium)
 
 -   Tags: array, hash table, prefix sum
-
 ```python title="974. Subarray Sums Divisible by K - Python Solution"
 from typing import List
 
@@ -163,7 +160,6 @@ print(subarraysDivByK_2(nums, k))  # 7
 -   [LeetCode](https://leetcode.com/problems/continuous-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/continuous-subarray-sum/) (Medium)
 
 -   Tags: array, hash table, math, prefix sum
-
 ```python title="523. Continuous Subarray Sum - Python Solution"
 from typing import List
 
@@ -271,7 +267,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 2588. Count the Number of Beautiful Subarrays
@@ -289,7 +284,6 @@ int main() {
 2 -> 010
 4 -> 100
 ```
-
 
 ```python title="2588. Count the Number of Beautiful Subarrays - Python Solution"
 from collections import defaultdict
@@ -374,7 +368,6 @@ print(beautifulSubarrays(nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) | [LeetCode CH](https://leetcode.cn/problems/maximum-size-subarray-sum-equals-k/) (Medium)
 
 -   Tags: array, hash table, prefix sum
-
 ```python title="325. Maximum Size Subarray Sum Equals k - Python Solution"
 from typing import List
 
@@ -421,7 +414,7 @@ print(maxSubArrayLen(nums, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/number-of-divisible-substrings/) | [LeetCode CH](https://leetcode.cn/problems/number-of-divisible-substrings/) (Medium)
 
 -   Tags: hash table, string, counting, prefix sum
-## 3364. Minimum Positive Sum Subarray
+## 3364. Minimum Positive Sum Subarray 
 
 -   [LeetCode](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/minimum-positive-sum-subarray/) (Easy)
 

@@ -35,7 +35,6 @@ C --> B((2))
 B --> A((1))
 ```
 
-
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
 
@@ -106,7 +105,6 @@ C --> D((2))
 D --> E((5))
 ```
 
-
 ```python title="92. Reverse Linked List II - Python Solution"
 from typing import Optional
 
@@ -151,7 +149,6 @@ print(reverseBetween(head, left, right))
 -   Tags: linked list, recursion
 -   Given a linked list, swap every two adjacent nodes and return its head.
 
-
 ```python title="24. Swap Nodes in Pairs - Python Solution"
 from typing import Optional
 
@@ -192,7 +189,6 @@ print(swapPairs(head))
 -   [LeetCode](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [LeetCode CH](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 
 -   Tags: linked list, recursion
-
 ```python title="25. Reverse Nodes in k-Group - Python Solution"
 from typing import Optional
 

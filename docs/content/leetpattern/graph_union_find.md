@@ -37,7 +37,6 @@ comments: True
 --8<-- "template/union_find.py"
 ```
 
-
 ```python title="547. Number of Provinces - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -185,7 +184,6 @@ print(findCircleNumUF(isConnected))  # 2
 -   [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="684. Redundant Connection - Python Solution"
 from typing import List
 
@@ -267,7 +265,6 @@ print(findRedundantConnectionDFS(edges))  # (2, 3)
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"
 from typing import List
 
@@ -321,7 +318,6 @@ print(countComponents(5, [[0, 1], [1, 2], [3, 4]]))  # 2
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
-
 ```python title="721. Accounts Merge - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -394,7 +390,6 @@ print(accountsMerge(accounts))
 -   [LeetCode](https://leetcode.com/problems/satisfiability-of-equality-equations/) | [LeetCode CH](https://leetcode.cn/problems/satisfiability-of-equality-equations/) (Medium)
 
 -   Tags: array, string, union find, graph
-
 ```python title="990. Satisfiability of Equality Equations - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -454,7 +449,6 @@ print(equationsPossible(equations))  # False
 -   [LeetCode](https://leetcode.com/problems/largest-component-size-by-common-factor/) | [LeetCode CH](https://leetcode.cn/problems/largest-component-size-by-common-factor/) (Hard)
 
 -   Tags: array, hash table, math, union find, number theory
-
 ```python title="952. Largest Component Size by Common Factor - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -524,7 +518,6 @@ print(largestComponentSize(nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/similar-string-groups/) | [LeetCode CH](https://leetcode.cn/problems/similar-string-groups/) (Hard)
 
 -   Tags: array, hash table, string, depth first search, breadth first search, union find
-
 ```python title="839. Similar String Groups - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -582,7 +575,6 @@ print(numSimilarGroups(strs))  # 2
 -   [LeetCode](https://leetcode.com/problems/number-of-islands-ii/) | [LeetCode CH](https://leetcode.cn/problems/number-of-islands-ii/) (Hard)
 
 -   Tags: array, hash table, union find
-
 ```python title="305. Number of Islands II - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -642,7 +634,6 @@ print(numIslands2(m, n, positions))  # [1, 1, 2, 3]
 -   [LeetCode](https://leetcode.com/problems/smallest-string-with-swaps/) | [LeetCode CH](https://leetcode.cn/problems/smallest-string-with-swaps/) (Medium)
 
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
-
 ```python title="1202. Smallest String With Swaps - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -693,7 +684,6 @@ print(smallestStringWithSwaps(s, pairs))  # "bacd"
 -   [LeetCode](https://leetcode.com/problems/redundant-connection-ii/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection-ii/) (Hard)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="685. Redundant Connection II - Python Solution"
 from typing import List
 
@@ -755,7 +745,6 @@ print(findRedundantDirectedConnectionUF(edges))
 -   [LeetCode](https://leetcode.com/problems/evaluate-division/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-division/) (Medium)
 
 -   Tags: array, string, depth first search, breadth first search, union find, graph, shortest path
-
 ```python title="399. Evaluate Division - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -804,7 +793,6 @@ print(calcEquation(equations, values, queries))  # [6.0, 0.5, -1.0, 1.0, -1.0]
 -   [LeetCode](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/) | [LeetCode CH](https://leetcode.cn/problems/the-earliest-moment-when-everyone-become-friends/) (Medium)
 
 -   Tags: array, union find, sorting
-
 ```python title="1101. The Earliest Moment When Everyone Become Friends - Python Solution"
 from typing import List
 
@@ -836,3 +824,4 @@ n = 4
 print(earliestAcq(logs, n))  # 3
 
 ```
+

@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="490. The Maze - Python Solution"
 from collections import deque
 from typing import List
@@ -75,7 +74,6 @@ print(hasPathBFS(maze, start, destination))  # True
 -   [LeetCode](https://leetcode.com/problems/the-maze-ii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-ii/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
-
 ```python title="505. The Maze II - Python Solution"
 import heapq
 from typing import List
@@ -136,7 +134,6 @@ print(shortestDistance(maze, start, destination))  # 12
 -   [LeetCode](https://leetcode.com/problems/the-maze-iii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-iii/) (Hard)
 
 -   Tags: array, string, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
-
 ```python title="499. The Maze III - Python Solution"
 import heapq
 from typing import List
@@ -212,7 +209,6 @@ print(findShortestWay(maze, ball, hole))  # "lul"
 -   [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-
 ```python title="286. Walls and Gates - Python Solution"
 from collections import deque
 from typing import List
@@ -284,7 +280,6 @@ if __name__ == "__main__":
 
 -   Tags: array, string, depth first search, breadth first search, graph, topological sort
 -   Return the correct order of characters in the alien language.
-
 
 ```python title="269. Alien Dictionary - Python Solution"
 from collections import defaultdict, deque
@@ -369,3 +364,4 @@ print(alienOrderBFS(words))  # wertf
 print(alienOrderDFS(words))  # wertf
 
 ```
+

@@ -25,7 +25,6 @@ comments: True
 - ![3](https://assets.leetcode.com/uploads/2024/06/28/image10.jpg)
 - Output: `[3,2,1]`
 
-
 ```python title="3243. Shortest Distance After Road Addition Queries I - Python Solution"
 from collections import deque
 from itertools import count
@@ -80,7 +79,6 @@ print(shortestDistanceAfterQueries(n, queries))  # [3, 2, 1]
 -   [LeetCode](https://leetcode.com/problems/shortest-path-with-alternating-colors/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-with-alternating-colors/) (Medium)
 
 -   Tags: breadth first search, graph
-
 ```python title="1129. Shortest Path with Alternating Colors - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -146,7 +144,6 @@ print(shortestAlternatingPaths(n, red_edges, blue_edges))  # [0, 1, -1]
 -   [LeetCode](https://leetcode.com/problems/bus-routes/) | [LeetCode CH](https://leetcode.cn/problems/bus-routes/) (Hard)
 
 -   Tags: array, hash table, breadth first search
-
 ```python title="815. Bus Routes - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -191,3 +188,4 @@ target = 6
 print(numBusesToDestination(routes, source, target))  # 2
 
 ```
+

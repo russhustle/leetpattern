@@ -33,7 +33,6 @@ comments: True
 --8<-- "template/union_find.py"
 ```
 
-
 ```python title="547. Number of Provinces - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -181,7 +180,6 @@ print(findCircleNumUF(isConnected))  # 2
 -   [LeetCode](https://leetcode.com/problems/find-eventual-safe-states/) | [LeetCode CH](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
-
 ```python title="802. Find Eventual Safe States - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -242,7 +240,6 @@ print(eventualSafeNodesDFS(graph))  # [2, 4, 5, 6]
 -   [LeetCode](https://leetcode.com/problems/keys-and-rooms/) | [LeetCode CH](https://leetcode.cn/problems/keys-and-rooms/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph
-
 ```python title="841. Keys and Rooms - Python Solution"
 from collections import deque
 from typing import List
@@ -292,7 +289,6 @@ print(canVisitAllRoomsBFS(rooms))  # False
 -   [LeetCode](https://leetcode.com/problems/shortest-path-with-alternating-colors/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-with-alternating-colors/) (Medium)
 
 -   Tags: breadth first search, graph
-
 ```python title="1129. Shortest Path with Alternating Colors - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -343,7 +339,6 @@ print(shortestAlternatingPaths(n, red_edges, blue_edges))  # [0, 1, -1]
 -   [LeetCode](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | [LeetCode CH](https://leetcode.cn/problems/time-needed-to-inform-all-employees/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search
-
 ```python title="1376. Time Needed to Inform All Employees - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -404,7 +399,6 @@ print(numOfMinutesBFS(n, headID, manager, informTime))  # 1
 -   Tags: depth first search, breadth first search, graph
 -   ![1466](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
 
-
 ```python title="1466. Reorder Routes to Make All Paths Lead to the City Zero - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -460,7 +454,6 @@ print(minReorderDFS(n, connections))  # 2
 -   [LeetCode](https://leetcode.com/problems/all-paths-from-source-to-target/) | [LeetCode CH](https://leetcode.cn/problems/all-paths-from-source-to-target/) (Medium)
 
 -   Tags: backtracking, depth first search, breadth first search, graph
-
 ```python title="797. All Paths From Source to Target - Python Solution"
 from collections import deque
 from typing import List
@@ -515,7 +508,6 @@ print(allPathsSourceTargetBFS(graph))  # [[0, 1, 3], [0, 2, 3]]
 -   [LeetCode](https://leetcode.com/problems/critical-connections-in-a-network/) | [LeetCode CH](https://leetcode.cn/problems/critical-connections-in-a-network/) (Hard)
 
 -   Tags: depth first search, graph, biconnected component
-
 ```python title="1192. Critical Connections in a Network - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -564,3 +556,4 @@ connections = [[0, 1], [1, 2], [2, 0], [1, 3]]
 print(criticalConnections(n, connections))  # [[1, 3]]
 
 ```
+

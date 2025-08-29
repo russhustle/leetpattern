@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
 
 -   Tags: array, divide and conquer, sorting, heap priority queue, quickselect
-
 ```python title="215. Kth Largest Element in an Array - Python Solution"
 import heapq
 from typing import List
@@ -42,7 +41,6 @@ print(findKthLargest(nums, k))  # 5
 -   [LeetCode](https://leetcode.com/problems/ipo/) | [LeetCode CH](https://leetcode.cn/problems/ipo/) (Hard)
 
 -   Tags: array, greedy, sorting, heap priority queue
-
 ```python title="502. IPO - Python Solution"
 import heapq
 from typing import List
@@ -87,7 +85,6 @@ print(findMaximizedCapital(k, w, profits, capital))  # 4
 -   [LeetCode](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [LeetCode CH](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) (Medium)
 
 -   Tags: array, heap priority queue
-
 ```python title="373. Find K Pairs with Smallest Sums - Python Solution"
 import heapq
 from typing import List
@@ -130,7 +127,6 @@ print(kSmallestPairs(nums1, nums2, k))
 -   [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 
 -   Tags: two pointers, design, sorting, heap priority queue, data stream
-
 ```python title="295. Find Median from Data Stream - Python Solution"
 from heapq import heappop, heappush
 
@@ -222,5 +218,5 @@ int main() {
     cout << obj->findMedian() << endl;  // 2
     return 0;
 }
-
 ```
+

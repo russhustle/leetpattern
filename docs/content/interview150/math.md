@@ -20,7 +20,6 @@ comments: True
 -   Tags: math
 -   Return true if the given number is a palindrome. Otherwise, return false.
 
-
 ```python title="9. Palindrome Number - Python Solution"
 # Reverse
 def isPalindromeReverse(x: int) -> bool:
@@ -67,7 +66,6 @@ print(isPalindromeLR(x))  # True
 -   [LeetCode](https://leetcode.com/problems/plus-one/) | [LeetCode CH](https://leetcode.cn/problems/plus-one/) (Easy)
 
 -   Tags: array, math
-
 ```python title="66. Plus One - Python Solution"
 from typing import List
 
@@ -101,7 +99,6 @@ print(plusOne(digits))  # [4, 3, 2, 2]
 -   [LeetCode](https://leetcode.com/problems/sqrtx/) | [LeetCode CH](https://leetcode.cn/problems/sqrtx/) (Easy)
 
 -   Tags: math, binary search
-
 ```python title="69. Sqrt(x) - Python Solution"
 # Left Right Pointers
 def mySqrt(x: int) -> int:
@@ -131,7 +128,6 @@ print(mySqrt(x))  # 2
 -   [LeetCode](https://leetcode.com/problems/powx-n/) | [LeetCode CH](https://leetcode.cn/problems/powx-n/) (Medium)
 
 -   Tags: math, recursion
-
 ```python title="50. Pow(x, n) - Python Solution"
 # Iterative
 def myPowIterative(x: float, n: int) -> float:
@@ -180,7 +176,6 @@ print(myPowRecursive(x, n))  # 1024.0
 -   [LeetCode](https://leetcode.com/problems/max-points-on-a-line/) | [LeetCode CH](https://leetcode.cn/problems/max-points-on-a-line/) (Hard)
 
 -   Tags: array, hash table, math, geometry
-
 ```python title="149. Max Points on a Line - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -212,3 +207,4 @@ points = [[1, 1], [3, 2], [5, 3], [4, 1], [2, 3], [1, 4]]
 print(maxPoints(points))  # 4
 
 ```
+

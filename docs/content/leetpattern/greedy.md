@@ -30,7 +30,6 @@ comments: True
 -   Tags: array, two pointers, greedy, sorting
 -   Return the maximum number of your content children that can be satisfied.
 
-
 ```python title="455. Assign Cookies - Python Solution"
 from typing import List
 
@@ -68,7 +67,6 @@ print(findContentChildren(g, s))  # 1
 
 -   Tags: array, greedy, sorting
 -   Return the maximum sum of the array after changing at most `k` elements.
-
 
 ```python title="1005. Maximize Sum Of Array After K Negations - Python Solution"
 from heapq import heapify, heapreplace
@@ -116,7 +114,6 @@ print(largestSumAfterKNegationsHeap([4, 2, 3], 1))
 -   Tags: array, greedy
 -   Return `True` if and only if you can provide every customer with correct change.
 
-
 ```python title="860. Lemonade Change - Python Solution"
 from typing import List
 
@@ -163,7 +160,6 @@ print(lemonadeChange([5, 5, 5, 10, 20]))  # True
 -   Tags: array, greedy, sorting, counting sort
 -   Return the minimum number of moves needed to seat everyone.
 
-
 ```python title="2037. Minimum Number of Moves to Seat Everyone - Python Solution"
 from typing import List
 
@@ -203,7 +199,6 @@ print(minMovesToSeat([3, 1, 5], [2, 7, 4]))  # 4
 |     9     |      4      |     2     |      3      |    4    |     3     |
 |     2     |      9      |     4     |      3      |    4    |     5     |
 |     5     |      2      |     4     |      5      |    6    |     5     |
-
 
 ```python title="376. Wiggle Subsequence - Python Solution"
 from typing import List
@@ -270,7 +265,6 @@ print(wiggleMaxLengthGreedy(nums))  # 6
 -   Tags: math, greedy
 -   Return the largest number that is less than or equal to `n` with monotone increasing digits.
 
-
 ```python title="738. Monotone Increasing Digits - Python Solution"
 # Greedy
 def monotoneIncreasingDigits(n: int) -> int:
@@ -295,7 +289,6 @@ print(monotoneIncreasingDigits(n))  # 299
 
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve.
-
 
 ```python title="122. Best Time to Buy and Sell Stock II - Python Solution"
 from typing import List
@@ -367,7 +360,6 @@ print(maxProfitGreedy(prices))  # 7
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve with the given transaction fee.
 
-
 ```python title="714. Best Time to Buy and Sell Stock with Transaction Fee - Python Solution"
 from typing import List
 
@@ -429,7 +421,6 @@ print(maxProfitGreedy(prices, fee))  # 8
 -   Tags: array, greedy
 -   Return the minimum number of candies you must give.
 
-
 ```python title="135. Candy - Python Solution"
 from typing import List
 
@@ -468,7 +459,6 @@ print(candy(ratings))  # 5
 -   Tags: array, binary indexed tree, segment tree, sorting
 -   Reconstruct the queue.
 
-
 ```python title="406. Queue Reconstruction by Height - Python Solution"
 from typing import List
 
@@ -495,7 +485,6 @@ print(reconstructQueue(people))
 -   [LeetCode](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | [LeetCode CH](https://leetcode.cn/problems/maximize-happiness-of-selected-children/) (Medium)
 
 -   Tags: array, greedy, sorting
-
 ```python title="3075. Maximize Happiness of Selected Children - Python Solution"
 from typing import List
 
@@ -526,7 +515,6 @@ print(maximumHappinessSum(happiness, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/minimum-increment-to-make-array-unique/) | [LeetCode CH](https://leetcode.cn/problems/minimum-increment-to-make-array-unique/) (Medium)
 
 -   Tags: array, greedy, sorting, counting
-
 ```python title="945. Minimum Increment to Make Array Unique - Python Solution"
 from typing import List
 
@@ -554,7 +542,6 @@ print(minIncrementForUnique(nums))  # 1
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming
-
 ```python title="53. Maximum Subarray - Python Solution"
 from typing import List
 
@@ -614,7 +601,6 @@ print(maxSubArrayPrefixSum(nums))  # 6
 -   [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
 
 -   Tags: array, greedy
-
 ```python title="134. Gas Station - Python Solution"
 from typing import List
 
@@ -650,7 +636,6 @@ print(canCompleteCircuit(gas, cost))  # 3
 -   [LeetCode](https://leetcode.com/problems/binary-tree-cameras/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-cameras/) (Hard)
 
 -   Tags: dynamic programming, tree, depth first search, binary tree
-
 ```python title="968. Binary Tree Cameras - Python Solution"
 from typing import Optional
 
@@ -699,7 +684,6 @@ print(minCameraCover(root))  # 1
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
 
 -   Tags: array, greedy, sorting, prefix sum
-
 ```python title="1589. Maximum Sum Obtained of Any Permutation - Python Solution"
 from typing import List
 
@@ -737,3 +721,4 @@ requests = [[1, 3], [0, 1]]
 print(maxSumRangeQuery(nums, requests))  # 19
 
 ```
+

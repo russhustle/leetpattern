@@ -25,7 +25,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/distinct-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/distinct-subsequences/) (Hard)
 
 -   Tags: string, dynamic programming
-
 ```python title="115. Distinct Subsequences - Python Solution"
 def numDistinct(s: str, t: str) -> int:
     m = len(s)
@@ -67,7 +66,6 @@ print(numDistinct(s, t))  # 3
 -   [LeetCode](https://leetcode.com/problems/interleaving-string/) | [LeetCode CH](https://leetcode.cn/problems/interleaving-string/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="97. Interleaving String - Python Solution"
 # DP - 2D
 def isInterleaveDP(s1: str, s2: str, s3: str) -> bool:
@@ -128,7 +126,7 @@ print(isInterleaveDFS(s1, s2, s3))  # False
 
 ```
 
-## 1092. Shortest Common Supersequence
+## 1092. Shortest Common Supersequence 
 
 -   [LeetCode](https://leetcode.com/problems/shortest-common-supersequence/) | [LeetCode CH](https://leetcode.cn/problems/shortest-common-supersequence/) (Hard)
 

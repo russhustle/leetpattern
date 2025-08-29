@@ -22,7 +22,6 @@ comments: True
 -   Tags: array, binary search
 - Implement binary search algorithm.
 
-
 ```python title="704. Binary Search - Python Solution"
 from typing import List
 
@@ -94,7 +93,6 @@ if __name__ == "__main__":
 -   Tags: array, binary search
 -   Return the index of the target if it is found. If not, return the index where it would be if it were inserted in order.
 
-
 ```python title="35. Search Insert Position - Python Solution"
 from typing import List
 
@@ -128,7 +126,6 @@ print(searchInsert(nums, target))  # 2
 -   Tags: binary search, interactive
 -   Find the first bad version given a function `isBadVersion`.
 
-
 ```python title="278. First Bad Version - Python Solution"
 # Binary Search
 def firstBadVersion(n: int) -> int:
@@ -156,7 +153,6 @@ def isBadVersion(version: int) -> bool:
 
 -   Tags: array, binary search
 -   Find the starting and ending position of a given target value in a sorted array.
-
 
 ```python title="34. Find First and Last Position of Element in Sorted Array - Python Solution"
 from bisect import bisect_left
@@ -250,7 +246,6 @@ int main()
   cout << res[0] << ", " << res[1] << endl;
   return 0;
 }
-
 ```
 
 ## 367. Valid Perfect Square
@@ -259,7 +254,6 @@ int main()
 
 -   Tags: math, binary search
 -   Determine if a positive integer is a perfect square without using any built-in library function.
-
 
 ```python title="367. Valid Perfect Square - Python Solution"
 # Binary Search
@@ -293,7 +287,6 @@ print(isPerfectSquare(num))  # True
 
 -   Tags: array, binary search
 -   Koko loves to eat bananas. She wants to eat all the bananas within `H` hours. Each pile has a number of bananas. The `i-th` pile has `piles[i]` bananas. Return the minimum integer `K` such that she can eat all the bananas within `H` hours.
-
 
 ```python title="875. Koko Eating Bananas - Python Solution"
 from typing import List
@@ -332,7 +325,6 @@ print(minEatingSpeed(piles, h))  # 4
 
 -   Tags: array, binary search
 -   A conveyor belt has packages that must be shipped from one port to another within `D` days. The `i-th` package has a weight of `weights[i]`. Each day, we load the ship with packages on the conveyor belt. The ship will be loaded with packages up to its capacity. The ship will not be loaded beyond its capacity. Return the least weight capacity of the ship.
-
 
 ```python title="1011. Capacity To Ship Packages Within D Days - Python Solution"
 from typing import List
@@ -378,7 +370,6 @@ print(shipWithinDays(weights, days))  # 15
 
 -   Tags: array, binary search, sorting, heap priority queue, matrix
 -   Given an `n x n` matrix where each of the rows and columns are sorted in ascending order, return the `k-th` smallest element in the matrix.
-
 
 ```python title="378. Kth Smallest Element in a Sorted Matrix - Python Solution"
 from heapq import heapify, heappop, heappush
@@ -436,3 +427,4 @@ print(kthSmallestHeap(matrix, k))  # 13
 print(kthSmallestBinarySearch(matrix, k))  # 13
 
 ```
+

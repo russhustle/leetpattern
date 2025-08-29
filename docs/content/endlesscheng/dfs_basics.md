@@ -46,7 +46,6 @@ comments: True
 --8<-- "template/union_find.py"
 ```
 
-
 ```python title="547. Number of Provinces - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -194,7 +193,6 @@ print(findCircleNumUF(isConnected))  # 2
 -   [LeetCode](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [LeetCode CH](https://leetcode.cn/problems/find-if-path-exists-in-graph/) (Easy)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="1971. Find if Path Exists in Graph - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -243,7 +241,6 @@ print(validPathDFS(n, edges, source, destination))  # True
 -   [LeetCode](https://leetcode.com/problems/all-paths-from-source-to-target/) | [LeetCode CH](https://leetcode.cn/problems/all-paths-from-source-to-target/) (Medium)
 
 -   Tags: backtracking, depth first search, breadth first search, graph
-
 ```python title="797. All Paths From Source to Target - Python Solution"
 from collections import deque
 from typing import List
@@ -298,7 +295,6 @@ print(allPathsSourceTargetBFS(graph))  # [[0, 1, 3], [0, 2, 3]]
 -   [LeetCode](https://leetcode.com/problems/keys-and-rooms/) | [LeetCode CH](https://leetcode.cn/problems/keys-and-rooms/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph
-
 ```python title="841. Keys and Rooms - Python Solution"
 from collections import deque
 from typing import List
@@ -348,7 +344,6 @@ print(canVisitAllRoomsBFS(rooms))  # False
 -   [LeetCode](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="2316. Count Unreachable Pairs of Nodes in an Undirected Graph - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -478,7 +473,6 @@ int main()
     cout << s.countPairs(7, edges) << endl;
     return 0;
 }
-
 ```
 
 ## 1319. Number of Operations to Make Network Connected
@@ -489,7 +483,6 @@ int main()
 - Return the minimum number of operations needed to make all computers connected.
 
 ![1319](https://assets.leetcode.com/uploads/2020/01/02/sample_1_1677.png)
-
 
 ```python title="1319. Number of Operations to Make Network Connected - Python Solution"
 """
@@ -570,7 +563,6 @@ print(makeConnectedBFS(n, connections))  # 1
 -   [LeetCode](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/) | [LeetCode CH](https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="2492. Minimum Score of a Path Between Two Cities - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -610,7 +602,6 @@ print(minScoreDFS(n, roads))  # 5
 -   [LeetCode](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | [LeetCode CH](https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/) (Medium)
 
 -   Tags: array, string, depth first search, breadth first search, graph
-
 ```python title="3387. Maximize Amount After Two Days of Conversions - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -681,7 +672,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimize-malware-spread/) | [LeetCode CH](https://leetcode.cn/problems/minimize-malware-spread/) (Hard)
 
 -   Tags: array, hash table, depth first search, breadth first search, union find, graph
-
 ```python title="924. Minimize Malware Spread - Python Solution"
 from typing import List
 
@@ -731,7 +721,6 @@ print(minMalwareSpread(graph, initial))  # 0
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
-
 ```python title="721. Accounts Merge - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -919,7 +908,6 @@ flowchart LR
 - pop `0` from the queue
 - All courses are taken. Return `True`.
 
-
 ```python title="207. Course Schedule - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -1098,7 +1086,6 @@ int main() {
     cout << sol.canFinishDFS(numCourses, prerequisites) << endl;
     return 0;
 }
-
 ```
 
 ## 802. Find Eventual Safe States
@@ -1106,7 +1093,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/find-eventual-safe-states/) | [LeetCode CH](https://leetcode.cn/problems/find-eventual-safe-states/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
-
 ```python title="802. Find Eventual Safe States - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -1182,7 +1168,6 @@ print(eventualSafeNodesDFS(graph))  # [2, 4, 5, 6]
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="261. Graph Valid Tree - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -1224,7 +1209,6 @@ print(validTree(5, [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]))  # False
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"
 from typing import List
 
@@ -1272,3 +1256,4 @@ class UnionFind:
 print(countComponents(5, [[0, 1], [1, 2], [3, 4]]))  # 2
 
 ```
+

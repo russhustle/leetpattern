@@ -18,7 +18,6 @@ comments: True
 -   Tags: array, sorting, heap priority queue, simulation, prefix sum
 -   Return `False` if the total number of passengers at any point is greater than `capacity`. Otherwise, return `True`.
 
-
 ```python title="1094. Car Pooling - Python Solution"
 from itertools import accumulate
 from typing import List
@@ -72,7 +71,6 @@ print(carPooling2(trips, capacity))  # False
 -   Tags: array, prefix sum
 -   Return the final array after applying all the Adition operations.
 
-
 ```python title="370. Range Addition - Python Solution"
 from typing import List
 
@@ -105,7 +103,6 @@ print(getModifiedArray(length, updates))  # [-2, 0, 3, 5, 3]
 
 -   Tags: array, prefix sum
 -   Return the number of seats booked on each flight.
-
 
 ```python title="1109. Corporate Flight Bookings - Python Solution"
 from typing import List
@@ -140,7 +137,6 @@ print(corpFlightBookings(bookings, n))  # [10, 55, 45, 25, 25]
 -   Tags: array, hash table, prefix sum
 -   Return the number of points that intersect with cars.
 
-
 ```python title="2848. Points That Intersect With Cars - Python Solution"
 from itertools import accumulate
 from typing import List
@@ -163,3 +159,4 @@ nums = [[3, 6], [1, 5], [4, 7]]
 print(numberOfPoints(nums))  # 7
 
 ```
+

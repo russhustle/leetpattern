@@ -72,7 +72,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
 
 -   Tags: array, stack, monotonic stack, prefix sum
-
 ```python title="2281. Sum of Total Strength of Wizards - Python Solution"
 from itertools import accumulate
 from typing import List

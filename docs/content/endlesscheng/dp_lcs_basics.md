@@ -18,7 +18,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="1143. Longest Common Subsequence - Python Solution"
 from functools import cache
 
@@ -66,7 +65,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/delete-operation-for-two-strings/) | [LeetCode CH](https://leetcode.cn/problems/delete-operation-for-two-strings/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="583. Delete Operation for Two Strings - Python Solution"
 # DP - LCS
 def minDistance1(word1: str, word2: str) -> int:
@@ -132,7 +130,6 @@ print(minDistance2(word1, word2))  # 2
 -   [LeetCode](https://leetcode.com/problems/edit-distance/) | [LeetCode CH](https://leetcode.cn/problems/edit-distance/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="72. Edit Distance - Python Solution"
 from functools import cache
 
@@ -191,7 +188,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/uncrossed-lines/) | [LeetCode CH](https://leetcode.cn/problems/uncrossed-lines/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="1035. Uncrossed Lines - Python Solution"
 from typing import List
 

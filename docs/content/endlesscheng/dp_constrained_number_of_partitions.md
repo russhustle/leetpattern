@@ -35,7 +35,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning-iii/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning-iii/) (Hard)
 
 -   Tags: string, dynamic programming
-
 ```python title="1278. Palindrome Partitioning III - Python Solution"
 # DP
 def palindromePartition(s: str, k: int) -> int:
@@ -69,7 +68,6 @@ print(palindromePartition(s, k))  # 0
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning-iv/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning-iv/) (Hard)
 
 -   Tags: string, dynamic programming
-
 ```python title="1745. Palindrome Partitioning IV - Python Solution"
 # DP
 def checkPartitioning(s: str) -> bool:

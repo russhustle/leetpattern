@@ -22,7 +22,6 @@ comments: True
 - Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
 - Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
 
-
 ```python title="70. Climbing Stairs - Python Solution"
 from functools import cache
 
@@ -110,7 +109,6 @@ int main() {
     cout << climbStairs(6) << endl;  // 13
     return 0;
 }
-
 ```
 
 ## 198. House Robber
@@ -135,7 +133,6 @@ int main() {
 |  2  |     9     |     2     |     7     |         11          |   11    |
 |  3  |     3     |     7     |    11     |         10          |   11    |
 |  4  |     1     |    11     |    11     |         12          |   12    |
-
 
 ```python title="198. House Robber - Python Solution"
 from typing import List
@@ -192,7 +189,6 @@ int main() {
     cout << rob(nums) << endl;  // 12
     return 0;
 }
-
 ```
 
 ## 139. Word Break
@@ -200,7 +196,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
 
 -   Tags: array, hash table, string, dynamic programming, trie, memoization
-
 ```python title="139. Word Break - Python Solution"
 from typing import List
 
@@ -230,7 +225,6 @@ print(wordBreak(s, wordDict))  # True
 -   [LeetCode](https://leetcode.com/problems/coin-change/) | [LeetCode CH](https://leetcode.cn/problems/coin-change/) (Medium)
 
 -   Tags: array, dynamic programming, breadth first search
-
 ```python title="322. Coin Change - Python Solution"
 from typing import List
 
@@ -259,7 +253,6 @@ print(coinChange(coins, amount))  # 3
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 
 -   Tags: array, binary search, dynamic programming
-
 ```python title="300. Longest Increasing Subsequence - Python Solution"
 from functools import cache
 from typing import List
@@ -307,3 +300,4 @@ if __name__ == "__main__":
     assert lengthOfLISTable([7, 7, 7, 7]) == 1
 
 ```
+

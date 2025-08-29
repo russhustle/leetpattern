@@ -14,7 +14,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming
-
 ```python title="53. Maximum Subarray - Python Solution"
 from typing import List
 
@@ -76,7 +75,6 @@ print(maxSubArrayPrefixSum(nums))  # 6
 -   Tags: array, dynamic programming, greedy
 - Return `True` if you can reach the last index, otherwise `False`.
 
-
 ```python title="55. Jump Game - Python Solution"
 from typing import List
 
@@ -128,5 +126,5 @@ int main() {
     cout << obj.canJump(nums) << endl;
     return 0;
 }
-
 ```
+

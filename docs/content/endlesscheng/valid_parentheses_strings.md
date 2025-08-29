@@ -37,7 +37,6 @@ comments: True
 | `{`  | push   | "{"   |
 | `}`  | pop    | ""    |
 
-
 ```python title="20. Valid Parentheses - Python Solution"
 # Stack
 def isValid(s: str) -> bool:
@@ -106,7 +105,6 @@ int main() {
     assert(s.isValid("{[]}") == true);
     return 0;
 }
-
 ```
 
 ## 921. Minimum Add to Make Parentheses Valid
@@ -144,7 +142,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/) (Medium)
 
 -   Tags: two pointers, string, stack, greedy
-
 ```python title="1963. Minimum Number of Swaps to Make the String Balanced - Python Solution"
 def minSwaps(s: str) -> int:
     res, balance = 0, 0
@@ -172,7 +169,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/valid-parenthesis-string/) | [LeetCode CH](https://leetcode.cn/problems/valid-parenthesis-string/) (Medium)
 
 -   Tags: string, dynamic programming, stack, greedy
-
 ```python title="678. Valid Parenthesis String - Python Solution"
 # Greedy
 def checkValidString(s: str) -> bool:
@@ -215,7 +211,6 @@ print(checkValidString(s))  # True
 -   [LeetCode](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/) | [LeetCode CH](https://leetcode.cn/problems/check-if-a-parentheses-string-can-be-valid/) (Medium)
 
 -   Tags: string, stack, greedy
-
 ```python title="2116. Check if a Parentheses String Can Be Valid - Python Solution"
 # Valid Parentheses Strings
 def canBeValid(s: str, locked: str) -> bool:
@@ -289,7 +284,6 @@ int main() {
     cout << (canBeValid(s, locked) ? "true" : "false") << endl;  // true
     return 0;
 }
-
 ```
 
 ## 32. Longest Valid Parentheses
@@ -297,7 +291,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/longest-valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/longest-valid-parentheses/) (Hard)
 
 -   Tags: string, dynamic programming, stack
-
 ```python title="32. Longest Valid Parentheses - Python Solution"
 # Stack
 def longestValidParentheses(s: str) -> int:
@@ -322,3 +315,4 @@ if __name__ == "__main__":
     print(longestValidParentheses(")()())"))  # 4
 
 ```
+

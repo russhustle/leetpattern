@@ -20,7 +20,6 @@ comments: True
 - Time Complexity: O(n)
 - Space Complexity: O(n)
 
-
 ```python title="1. Two Sum - Python Solution"
 from typing import List
 
@@ -71,7 +70,6 @@ int main() {
     cout << result[0] << ", " << result[1] << endl;
     return 0;
 }
-
 ```
 
 ## 49. Group Anagrams
@@ -79,7 +77,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/group-anagrams/) | [LeetCode CH](https://leetcode.cn/problems/group-anagrams/) (Medium)
 
 -   Tags: array, hash table, string, sorting
-
 ```python title="49. Group Anagrams - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -117,7 +114,6 @@ print(groupAnagrams(strs))
 -   [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-consecutive-sequence/) (Medium)
 
 -   Tags: array, hash table, union find
-
 ```python title="128. Longest Consecutive Sequence - Python Solution"
 from typing import List
 
@@ -185,3 +181,4 @@ print(longestConsecutiveSet(nums))  # 4
 print(longestConsecutiveUF(nums))  # 4
 
 ```
+

@@ -25,7 +25,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) (Easy)
 
 -   Tags: array, divide and conquer, tree, binary search tree, binary tree
-
 ```python title="108. Convert Sorted Array to Binary Search Tree - Python Solution"
 from typing import List, Optional
 
@@ -93,7 +92,6 @@ class Solution {
 };
 
 int main() { return 0; }
-
 ```
 
 ## 654. Maximum Binary Tree
@@ -101,7 +99,6 @@ int main() { return 0; }
 -   [LeetCode](https://leetcode.com/problems/maximum-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-binary-tree/) (Medium)
 
 -   Tags: array, divide and conquer, stack, tree, monotonic stack, binary tree
-
 ```python title="654. Maximum Binary Tree - Python Solution"
 from typing import List, Optional
 
@@ -168,7 +165,6 @@ root = constructMaximumBinaryTree(nums)
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, tree, binary tree
-
 ```python title="105. Construct Binary Tree from Preorder and Inorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -268,7 +264,6 @@ int main() {
     cout << root->right->right->val << endl;  // 7
     return 0;
 }
-
 ```
 
 ## 106. Construct Binary Tree from Inorder and Postorder Traversal
@@ -276,7 +271,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, tree, binary tree
-
 ```python title="106. Construct Binary Tree from Inorder and Postorder Traversal - Python Solution"
 from typing import List, Optional
 

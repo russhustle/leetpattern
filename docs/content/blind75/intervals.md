@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
 
 -   Tags: array
-
 ```python title="57. Insert Interval - Python Solution"
 from typing import List
 
@@ -72,7 +71,6 @@ print(insert(intervals, newInterval))  # [[1, 5], [6, 9]]
 -   Merge all overlapping intervals.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="56. Merge Intervals - Python Solution"
 from typing import List
@@ -130,7 +128,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 252. Meeting Rooms
@@ -138,7 +135,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/meeting-rooms/) | [LeetCode CH](https://leetcode.cn/problems/meeting-rooms/) (Easy)
 
 -   Tags: array, sorting
-
 ```python title="252. Meeting Rooms - Python Solution"
 from typing import List
 
@@ -170,7 +166,6 @@ if __name__ == "__main__":
 
 -   Tags: array, two pointers, greedy, sorting, heap priority queue, prefix sum
 - Given an array of meeting time `intervals` where `intervals[i] = [start_i, end_i]`, return the minimum number of conference rooms required.
-
 
 ```python title="253. Meeting Rooms II - Python Solution"
 import heapq

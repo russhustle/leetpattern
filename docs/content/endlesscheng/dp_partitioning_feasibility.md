@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/word-break/) | [LeetCode CH](https://leetcode.cn/problems/word-break/) (Medium)
 
 -   Tags: array, hash table, string, dynamic programming, trie, memoization
-
 ```python title="139. Word Break - Python Solution"
 from typing import List
 
@@ -43,3 +42,4 @@ wordDict = ["leet", "code"]
 print(wordBreak(s, wordDict))  # True
 
 ```
+

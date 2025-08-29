@@ -50,7 +50,6 @@ comments: True
 | ==2== | ==2== |   0   |
 | ==2== |   0   |   1   |
 
-
 ```python title="733. Flood Fill - Python Solution"
 from collections import deque
 from typing import List
@@ -141,7 +140,6 @@ print(floodFillBFS(image, sr, sc, 2))
     3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
 ![0200](../../assets/0200.jpg)
-
 
 ```python title="200. Number of Islands - Python Solution"
 from collections import deque
@@ -325,7 +323,6 @@ int main()
     cout << s.numIslands(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 695. Max Area of Island
@@ -333,7 +330,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="695. Max Area of Island - Python Solution"
 from collections import deque
 from typing import List
@@ -508,7 +504,6 @@ int main() {
     cout << s.maxAreaOfIsland(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 463. Island Perimeter
@@ -516,7 +511,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/island-perimeter/) | [LeetCode CH](https://leetcode.cn/problems/island-perimeter/) (Easy)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="463. Island Perimeter - Python Solution"
 from typing import List
 
@@ -581,7 +575,6 @@ print(islandPerimeter(grid))  # 16
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="130. Surrounded Regions - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -698,7 +691,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="417. Pacific Atlantic Water Flow - Python Solution"
 from collections import deque
 from typing import List
@@ -790,7 +782,6 @@ print(pacificAtlanticBFS(heights))
 -   [LeetCode](https://leetcode.com/problems/making-a-large-island/) | [LeetCode CH](https://leetcode.cn/problems/making-a-large-island/) (Hard)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="827. Making A Large Island - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -844,3 +835,4 @@ grid = [[1, 0], [0, 1]]
 print(largestIsland(grid))  # 3
 
 ```
+

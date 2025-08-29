@@ -33,7 +33,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/boats-to-save-people/) | [LeetCode CH](https://leetcode.cn/problems/boats-to-save-people/) (Medium)
 
 -   Tags: array, two pointers, greedy, sorting
-
 ```python title="881. Boats to Save People - Python Solution"
 from typing import List
 
@@ -70,7 +69,6 @@ print(numRescueBoats(people, limit))  # 3
 -   [LeetCode](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) | [LeetCode CH](https://leetcode.cn/problems/find-the-maximum-number-of-marked-indices/) (Medium)
 
 -   Tags: array, two pointers, binary search, greedy, sorting
-
 ```python title="2576. Find the Maximum Number of Marked Indices - Python Solution"
 from typing import List
 
@@ -95,3 +93,4 @@ nums = [3, 5, 2, 4]
 print(maxNumOfMarkedIndices(nums))  # 2
 
 ```
+

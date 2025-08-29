@@ -21,7 +21,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/) | [LeetCode CH](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/) (Medium)
 
 -   Tags: hash table, string, stack, greedy, heap priority queue
-
 ```python title="3170. Lexicographically Minimum String After Removing Stars - Python Solution"
 from itertools import chain
 
@@ -52,7 +51,6 @@ if __name__ == "__main__":
 
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-
 
 ```python title="155. Min Stack - Python Solution"
 # Stack
@@ -120,7 +118,6 @@ int main() {
     cout << minStack.getMin() << endl;  // -2
     return 0;
 }
-
 ```
 
 ## 1381. Design a Stack With Increment Operation

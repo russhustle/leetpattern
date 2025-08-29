@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 
 -   Tags: array, binary search, dynamic programming
-
 ```python title="300. Longest Increasing Subsequence - Python Solution"
 from functools import cache
 from typing import List
@@ -71,7 +70,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/sorting-three-groups/) | [LeetCode CH](https://leetcode.cn/problems/sorting-three-groups/) (Medium)
 
 -   Tags: array, binary search, dynamic programming
-
 ```python title="2826. Sorting Three Groups - Python Solution"
 from functools import cache
 from typing import List
@@ -140,7 +138,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array/) (Hard)
 
 -   Tags: array, binary search, dynamic programming, greedy
-
 ```python title="1671. Minimum Number of Removals to Make Mountain Array - Python Solution"
 from typing import List
 

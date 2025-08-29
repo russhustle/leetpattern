@@ -24,7 +24,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) (Medium)
 
 -   Tags: hash table, linked list
-
 ```python title="1171. Remove Zero Sum Consecutive Nodes from Linked List - Python Solution"
 from typing import Optional
 
@@ -67,7 +66,6 @@ print(removeZeroSumSublists(head))  # 3 -> 1
 
 -   Tags: linked list, design
 -   Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
-
 
 ```python title="707. Design Linked List - Python Solution"
 class ListNode:
@@ -145,7 +143,6 @@ print(ll.get(1))  # 2
 | ------------------ | ----------------------------- |
 | Doubly Linked List | To store the key-value pairs. |
 | Hash Map           | To store the key-node pairs.  |
-
 
 ```python title="146. LRU Cache - Python Solution"
 from collections import OrderedDict
@@ -346,7 +343,6 @@ int main() {
     cout << lru.get(4) << endl;  // 4
     return 0;
 }
-
 ```
 
 ## 460. LFU Cache
@@ -354,7 +350,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/lfu-cache/) | [LeetCode CH](https://leetcode.cn/problems/lfu-cache/) (Hard)
 
 -   Tags: hash table, linked list, design, doubly linked list
-
 ```python title="460. LFU Cache - Python Solution"
 from collections import OrderedDict, defaultdict
 

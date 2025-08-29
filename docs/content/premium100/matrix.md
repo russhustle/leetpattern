@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/valid-word-square/) | [LeetCode CH](https://leetcode.cn/problems/valid-word-square/) (Easy)
 
 -   Tags: array, matrix
-
 ```python title="422. Valid Word Square - Python Solution"
 from typing import List
 

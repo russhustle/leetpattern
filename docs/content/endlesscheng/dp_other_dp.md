@@ -56,7 +56,6 @@ comments: True
 -   Tags: array, greedy
 -   Return the minimum number of candies you must give.
 
-
 ```python title="135. Candy - Python Solution"
 from typing import List
 
@@ -239,7 +238,6 @@ int main() {
     cout << sol.beautifulSubsets(nums, k) << endl;
     return 0;
 }
-
 ```
 
 ## 2638. Count the Number of K-Free Subsets

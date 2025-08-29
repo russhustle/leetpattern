@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | [LeetCode CH](https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/) (Easy)
 
 -   Tags: linked list, math
-
 ```python title="1290. Convert Binary Number in a Linked List to Integer - Python Solution"
 from typing import Optional
 
@@ -48,7 +47,6 @@ print(getDecimalValue(node))  # 5
 -   [LeetCode](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) | [LeetCode CH](https://leetcode.cn/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) (Medium)
 
 -   Tags: linked list
-
 ```python title="2058. Find the Minimum and Maximum Number of Nodes Between Critical Points - Python Solution"
 from typing import List, Optional
 
@@ -95,7 +93,6 @@ print(nodesBetweenCriticalPoints(node))  # [1, 3]
 -   [LeetCode](https://leetcode.com/problems/merge-nodes-in-between-zeros/) | [LeetCode CH](https://leetcode.cn/problems/merge-nodes-in-between-zeros/) (Medium)
 
 -   Tags: linked list, simulation
-
 ```python title="2181. Merge Nodes in Between Zeros - Python Solution"
 from typing import Optional
 
@@ -142,7 +139,6 @@ print(mergeNodes(root))  # 4 -> 11
 -   [LeetCode](https://leetcode.com/problems/linked-list-components/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-components/) (Medium)
 
 -   Tags: array, hash table, linked list
-
 ```python title="817. Linked List Components - Python Solution"
 from typing import List, Optional
 

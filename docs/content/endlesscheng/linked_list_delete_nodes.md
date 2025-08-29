@@ -49,7 +49,6 @@ B --> D((3))
 F --> I((None))
 ```
 
-
 ```python title="203. Remove Linked List Elements - Python Solution"
 from typing import Optional
 
@@ -93,7 +92,6 @@ print(removeElements(head, val))
 -   [LeetCode](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | [LeetCode CH](https://leetcode.cn/problems/delete-nodes-from-linked-list-present-in-array/) (Medium)
 
 -   Tags: array, hash table, linked list
-
 ```python title="3217. Delete Nodes From Linked List Present in Array - Python Solution"
 from typing import List, Optional
 
@@ -128,7 +126,6 @@ print(modifiedList(nums, head))  # 4 -> 5
 -   [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) (Easy)
 
 -   Tags: linked list
-
 ```python title="83. Remove Duplicates from Sorted List - Python Solution"
 from typing import Optional
 
@@ -160,7 +157,6 @@ print(deleteDuplicates(head))  # 1 -> 2 -> 3
 -   [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
 
 -   Tags: linked list, two pointers
-
 ```python title="82. Remove Duplicates from Sorted List II - Python Solution"
 from typing import Optional
 
@@ -195,7 +191,6 @@ print(deleteDuplicates(head))  # 2 -> 4 -> 5
 -   Tags: linked list
 -   Delete a node in a singly linked list. You are given only the node to be deleted.
 
-
 ```python title="237. Delete Node in a Linked List - Python Solution"
 from template import ListNode
 
@@ -223,7 +218,6 @@ print(head)  # 4 -> 1 -> 9
 
 -   Tags: linked list, stack, recursion, monotonic stack
 -   Remove all nodes from a linked list that have a value greater than `maxValue`.
-
 
 ```python title="2487. Remove Nodes From Linked List - Python Solution"
 from typing import Optional

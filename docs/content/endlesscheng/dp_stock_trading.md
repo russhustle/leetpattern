@@ -20,7 +20,6 @@ comments: True
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
 
-
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
 from typing import List
 
@@ -127,7 +126,6 @@ int main()
     cout << obj.maxProfit(prices) << endl;
     return 0;
 }
-
 ```
 
 ## 122. Best Time to Buy and Sell Stock II
@@ -136,7 +134,6 @@ int main()
 
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve.
-
 
 ```python title="122. Best Time to Buy and Sell Stock II - Python Solution"
 from typing import List
@@ -206,7 +203,6 @@ print(maxProfitGreedy(prices))  # 7
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) (Hard)
 
 -   Tags: array, dynamic programming
-
 ```python title="123. Best Time to Buy and Sell Stock III - Python Solution"
 from typing import List
 
@@ -260,7 +256,6 @@ print(maxProfitDP2(prices))  # 6
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) (Hard)
 
 -   Tags: array, dynamic programming
-
 ```python title="188. Best Time to Buy and Sell Stock IV - Python Solution"
 from typing import List
 
@@ -295,7 +290,6 @@ print(maxProfit(k, prices))  # 2
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="309. Best Time to Buy and Sell Stock with Cooldown - Python Solution"
 from typing import List
 
@@ -340,7 +334,6 @@ print(maxProfit(prices))  # 3
 
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve with the given transaction fee.
-
 
 ```python title="714. Best Time to Buy and Sell Stock with Transaction Fee - Python Solution"
 from typing import List
@@ -395,3 +388,4 @@ print(maxProfitDP(prices, fee))  # 8
 print(maxProfitGreedy(prices, fee))  # 8
 
 ```
+

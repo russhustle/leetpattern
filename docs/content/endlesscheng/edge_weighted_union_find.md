@@ -14,7 +14,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/evaluate-division/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-division/) (Medium)
 
 -   Tags: array, string, depth first search, breadth first search, union find, graph, shortest path
-
 ```python title="399. Evaluate Division - Python Solution"
 from collections import defaultdict
 from typing import List

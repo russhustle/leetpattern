@@ -13,7 +13,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/intersection-of-two-arrays/) | [LeetCode CH](https://leetcode.cn/problems/intersection-of-two-arrays/) (Easy)
 
 -   Tags: array, hash table, two pointers, binary search, sorting
-
 ```python title="349. Intersection of Two Arrays - Python Solution"
 from typing import List
 
@@ -51,3 +50,4 @@ print(intersectionSet(nums1, nums2))  # [2]
 print(intersectionHash(nums1, nums2))  # [2]
 
 ```
+

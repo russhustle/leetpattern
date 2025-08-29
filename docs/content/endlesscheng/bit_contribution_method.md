@@ -24,7 +24,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-all-subset-xor-totals/) (Easy)
 
 -   Tags: array, math, backtracking, bit manipulation, combinatorics, enumeration
-
 ```python title="1863. Sum of All Subset XOR Totals - Python Solution"
 from functools import reduce
 from operator import or_

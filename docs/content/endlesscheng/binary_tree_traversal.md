@@ -144,7 +144,6 @@ graph TD
 | Postorder   | Left, Right, Root | DFS or Stack   | `[3, 4, 1, 5, 6, 2, 0]`       |
 | Level Order | Level by Level    | BFS with Queue | `[[0], [1, 2], [3, 4, 5, 6]]` |
 
-
 ```python title="144. Binary Tree Preorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -206,7 +205,6 @@ print(preorderTraversalIterative(tree))  # [0, 1, 3, 4, 2, 5, 6]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-inorder-traversal/) (Easy)
 
 -   Tags: stack, tree, depth first search, binary tree
-
 ```python title="94. Binary Tree Inorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -269,7 +267,6 @@ print(inorderTraversalIterative(tree))  # [3, 1, 4, 0, 5, 2, 6]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-postorder-traversal/) (Easy)
 
 -   Tags: stack, tree, depth first search, binary tree
-
 ```python title="145. Binary Tree Postorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -331,7 +328,6 @@ print(postorderTraversalIterative(tree))  # [3, 4, 1, 5, 6, 2, 0]
 -   [LeetCode](https://leetcode.com/problems/leaf-similar-trees/) | [LeetCode CH](https://leetcode.cn/problems/leaf-similar-trees/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="872. Leaf-Similar Trees - Python Solution"
 from typing import Optional
 
@@ -387,7 +383,6 @@ print(leafSimilar(root1, root2))  # True
 -   [LeetCode](https://leetcode.com/problems/sum-of-left-leaves/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-left-leaves/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="404. Sum of Left Leaves - Python Solution"
 from typing import Optional
 
@@ -449,7 +444,6 @@ print(sumOfLeftLeaves(root))  # 24
 -   [LeetCode](https://leetcode.com/problems/find-all-the-lonely-nodes/) | [LeetCode CH](https://leetcode.cn/problems/find-all-the-lonely-nodes/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="1469. Find All The Lonely Nodes - Python Solution"
 from typing import List, Optional
 

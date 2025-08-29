@@ -30,7 +30,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/) | [LeetCode CH](https://leetcode.cn/problems/partition-array-such-that-maximum-difference-is-k/) (Medium)
 
 -   Tags: array, greedy, sorting
-
 ```python title="2294. Partition Array Such That Maximum Difference Is K - Python Solution"
 from typing import List
 

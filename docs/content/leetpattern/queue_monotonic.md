@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming, queue, monotonic queue
-
 ```python title="918. Maximum Sum Circular Subarray - Python Solution"
 from collections import deque
 from typing import List
@@ -75,7 +74,6 @@ print(maxSubarraySumCircularMQ(nums))  # 3
 -   [LeetCode](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/) | [LeetCode CH](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/) (Hard)
 
 -   Tags: array, binary search, queue, sliding window, heap priority queue, prefix sum, monotonic queue
-
 ```python title="862. Shortest Subarray with Sum at Least K - Python Solution"
 from collections import deque
 from typing import List
@@ -113,7 +111,6 @@ print(shortestSubarray(nums, k))  # 3
 -   [LeetCode](https://leetcode.com/problems/sliding-window-maximum/) | [LeetCode CH](https://leetcode.cn/problems/sliding-window-maximum/) (Hard)
 
 -   Tags: array, queue, sliding window, heap priority queue, monotonic queue
-
 ```python title="239. Sliding Window Maximum - Python Solution"
 from collections import deque
 from typing import List
@@ -150,7 +147,6 @@ print(maxSlidingWindow(nums, k))  # [3, 3, 5, 5, 6, 7]
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-robots-within-budget/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-robots-within-budget/) (Hard)
 
 -   Tags: array, binary search, queue, sliding window, heap priority queue, prefix sum, monotonic queue
-
 ```python title="2398. Maximum Number of Robots Within Budget - Python Solution"
 from collections import deque
 from typing import List
@@ -188,3 +184,4 @@ budget = 25
 print(maximumRobots(chargeTimes, runningCosts, budget))  # 3
 
 ```
+

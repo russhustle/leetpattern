@@ -22,7 +22,6 @@ comments: True
     1. Start from 1: if there is no overlap, we add one more arrow.
     2. Start from the number of balloons: if there is overlap, we need to reduce one arrow.
 
-
 ```python title="452. Minimum Number of Arrows to Burst Balloons - Python Solution"
 from typing import List
 

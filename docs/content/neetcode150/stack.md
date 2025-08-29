@@ -31,7 +31,6 @@ comments: True
 | `{`  | push   | "{"   |
 | `}`  | pop    | ""    |
 
-
 ```python title="20. Valid Parentheses - Python Solution"
 # Stack
 def isValid(s: str) -> bool:
@@ -100,7 +99,6 @@ int main() {
     assert(s.isValid("{[]}") == true);
     return 0;
 }
-
 ```
 
 ## 155. Min Stack
@@ -109,7 +107,6 @@ int main() {
 
 -   Tags: stack, design
 -   Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-
 
 ```python title="155. Min Stack - Python Solution"
 # Stack
@@ -177,7 +174,6 @@ int main() {
     cout << minStack.getMin() << endl;  // -2
     return 0;
 }
-
 ```
 
 ## 150. Evaluate Reverse Polish Notation
@@ -194,7 +190,6 @@ int main() {
 | `+`   | pop    | `[3]`    |
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
-
 
 ```python title="150. Evaluate Reverse Polish Notation - Python Solution"
 from typing import List
@@ -233,7 +228,6 @@ print(evalRPN(["4", "3", "-"]))  # 1
 -   [LeetCode](https://leetcode.com/problems/generate-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/generate-parentheses/) (Medium)
 
 -   Tags: string, dynamic programming, backtracking
-
 ```python title="22. Generate Parentheses - Python Solution"
 from typing import List
 
@@ -309,7 +303,6 @@ if __name__ == "__main__":
 | 6     | 76   | True         | `[ [76, 6] ]`                   | 0         |
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
-
 ```python title="739. Daily Temperatures - Python Solution"
 from typing import List
 
@@ -339,7 +332,6 @@ print(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
 -   [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
 
 -   Tags: array, stack, sorting, monotonic stack
-
 ```python title="853. Car Fleet - Python Solution"
 from typing import List
 
@@ -367,7 +359,6 @@ print(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]))  # 3
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 
 -   Tags: array, stack, monotonic stack
-
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
 from typing import List
 
@@ -394,3 +385,4 @@ def largestRectangleArea(heights: List[int]) -> int:
 print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
 
 ```
+

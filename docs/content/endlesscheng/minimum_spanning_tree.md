@@ -29,7 +29,6 @@ comments: True
   - Time Complexity: O(E * logV)
   - Space Complexity: O(V + E)
 
-
 ```python title="1584. Min Cost to Connect All Points - Python Solution"
 import heapq
 from collections import defaultdict
@@ -125,7 +124,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) (Hard)
 
 -   Tags: union find, graph, sorting, minimum spanning tree, strongly connected component
-
 ```python title="1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree - Python Solution"
 from typing import List
 
@@ -228,7 +226,6 @@ print(findCriticalAndPseudoCriticalEdges(n, edges))
 -   [LeetCode](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) | [LeetCode CH](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) (Medium)
 
 -   Tags: union find, graph, heap priority queue, minimum spanning tree
-
 ```python title="1135. Connecting Cities With Minimum Cost - Python Solution"
 import heapq
 from collections import defaultdict
@@ -277,7 +274,6 @@ print(minimumCost(n, connections))  # 6
 - ![1168_0](../../assets/1168_0.png)
 
 - ![1168_1](../../assets/1168_1.png)
-
 
 ```python title="1168. Optimize Water Distribution in a Village - Python Solution"
 import heapq

@@ -21,7 +21,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subsets/) | [LeetCode CH](https://leetcode.cn/problems/subsets/) (Medium)
 
 -   Tags: array, backtracking, bit manipulation
-
 ```python title="78. Subsets - Python Solution"
 from typing import List
 
@@ -79,7 +78,6 @@ print(subsets_binary_decision([1, 2, 3]))
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="39. Combination Sum - Python Solution"
 from typing import List
 
@@ -120,7 +118,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/combination-sum-ii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-ii/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="40. Combination Sum II - Python Solution"
 from typing import List
 
@@ -163,7 +160,6 @@ print(combinationSum2([10, 1, 2, 7, 6, 1, 5], 8))
 -   [LeetCode](https://leetcode.com/problems/permutations/) | [LeetCode CH](https://leetcode.cn/problems/permutations/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="46. Permutations - Python Solution"
 from typing import List
 
@@ -204,7 +200,6 @@ print(permute([1, 2, 3]))
 -   [LeetCode](https://leetcode.com/problems/subsets-ii/) | [LeetCode CH](https://leetcode.cn/problems/subsets-ii/) (Medium)
 
 -   Tags: array, backtracking, bit manipulation
-
 ```python title="90. Subsets II - Python Solution"
 from typing import List
 
@@ -237,7 +232,6 @@ print(subsetsWithDup([1, 2, 2]))
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 
 -   Tags: array, string, backtracking, depth first search, matrix
-
 ```python title="79. Word Search - Python Solution"
 from typing import List
 
@@ -293,7 +287,6 @@ print(exist(board, word))  # True
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning/) (Medium)
 
 -   Tags: string, dynamic programming, backtracking
-
 ```python title="131. Palindrome Partitioning - Python Solution"
 from typing import List
 
@@ -334,7 +327,6 @@ if __name__ == "__main__":
 -   Return all possible letter combinations that the number could represent.
 
 ![17](https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png)
-
 
 ```python title="17. Letter Combinations of a Phone Number - Python Solution"
 from typing import List
@@ -397,7 +389,6 @@ if __name__ == "__main__":
 - Hard
 - [N-Queens](https://leetcode.com/problems/n-queens/)
 - [N 皇后](https://leetcode.cn/problems/n-queens/)
-
 
 ```python title="51. N-Queens - Python Solution"
 from typing import List
@@ -482,3 +473,4 @@ if __name__ == "__main__":
     # [['Q']]
 
 ```
+

@@ -18,7 +18,6 @@ comments: True
 -   Tags: linked list, two pointers
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
-
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
 
@@ -65,7 +64,6 @@ print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
 -   [LeetCode](https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) (Easy)
 
 -   Tags: linked list
-
 ```python title="1474. Delete N Nodes After M Nodes of a Linked List - Python Solution"
 from typing import Optional
 
@@ -105,3 +103,4 @@ if __name__ == "__main__":
     # 1 -> 2 -> 6 -> 7 -> 11 -> 12
 
 ```
+

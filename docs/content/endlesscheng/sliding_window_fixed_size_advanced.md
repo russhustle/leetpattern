@@ -57,7 +57,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/permutation-in-string/) | [LeetCode CH](https://leetcode.cn/problems/permutation-in-string/) (Medium)
 
 -   Tags: hash table, two pointers, string, sliding window
-
 ```python title="567. Permutation in String - Python Solution"
 def checkInclusion(s1: str, s2: str) -> bool:
     if len(s1) > len(s2):
@@ -110,7 +109,6 @@ print(checkInclusion(s1, s2))  # True
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="438. Find All Anagrams in a String - Python Solution"
 from typing import List
 

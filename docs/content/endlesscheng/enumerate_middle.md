@@ -40,7 +40,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | [LeetCode CH](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
 
 -   Tags: array
-
 ```python title="2874. Maximum Value of an Ordered Triplet II - Python Solution"
 from typing import List
 
@@ -74,7 +73,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
 
 -   Tags: array, binary search, stack, monotonic stack, ordered set
-
 ```python title="456. 132 Pattern - Python Solution"
 from typing import List
 
@@ -130,7 +128,6 @@ print(find132pattern(nums))  # True
 -   [LeetCode](https://leetcode.com/problems/count-increasing-quadruplets/) | [LeetCode CH](https://leetcode.cn/problems/count-increasing-quadruplets/) (Hard)
 
 -   Tags: array, dynamic programming, binary indexed tree, enumeration, prefix sum
-
 ```python title="2552. Count Increasing Quadruplets - Python Solution"
 from typing import List
 

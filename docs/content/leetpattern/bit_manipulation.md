@@ -22,8 +22,3 @@ comments: True
 > Note that bits are indexed from right to left in the binary representation of a number.
 > Return the array [even, odd].
 
-
-```python title="2595. Number of Even and Odd Bits - Python Solution"
-
-
-```

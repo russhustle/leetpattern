@@ -42,7 +42,6 @@ comments: True
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
-
 ```python title="62. Unique Paths - Python Solution"
 # DP - 2D
 def uniquePaths(m: int, n: int) -> int:
@@ -87,7 +86,6 @@ int main() {
     cout << uniquePaths(m, n) << endl;  // 28
     return 0;
 }
-
 ```
 
 ## 357. Count Numbers with Unique Digits

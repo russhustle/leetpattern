@@ -28,7 +28,6 @@ comments: True
 - Time Complexity: O(n)
 - Space Complexity: O(n)
 
-
 ```python title="1. Two Sum - Python Solution"
 from typing import List
 
@@ -79,7 +78,6 @@ int main() {
     cout << result[0] << ", " << result[1] << endl;
     return 0;
 }
-
 ```
 
 ## 121. Best Time to Buy and Sell Stock
@@ -88,7 +86,6 @@ int main() {
 
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
-
 
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
 from typing import List
@@ -196,7 +193,6 @@ int main()
     cout << obj.maxProfit(prices) << endl;
     return 0;
 }
-
 ```
 
 ## 169. Majority Element
@@ -217,7 +213,6 @@ int main()
 | 1     | 1       | 1     |
 | 2     | 0       | 1     |
 | 2     | 1       | 2     |
-
 
 ```python title="169. Majority Element - Python Solution"
 from collections import defaultdict
@@ -267,7 +262,6 @@ print(majorityElementHashMap(nums))  # 2
 
 -   Tags: array, hash table, sorting
 -   Return True if the array contains any duplicates, otherwise return False.
-
 
 ```python title="217. Contains Duplicate - Python Solution"
 from typing import List
@@ -325,7 +319,6 @@ print(containsDuplicateSet([1, 2, 3, 1]))  # True
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
 
 -   Tags: array
-
 ```python title="57. Insert Interval - Python Solution"
 from typing import List
 
@@ -377,7 +370,6 @@ print(insert(intervals, newInterval))  # [[1, 5], [6, 9]]
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="15. 3Sum - Python Solution"
 from typing import List
 
@@ -469,7 +461,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 238. Product of Array Except Self
@@ -484,7 +475,6 @@ int main() {
 | ------------------ | ---- | ----- |
 | Prefix             | O(n) | O(n)  |
 | Prefix (Optimized) | O(n) | O(1)  |
-
 
 ```python title="238. Product of Array Except Self - Python Solution"
 from typing import List
@@ -580,7 +570,6 @@ int main()
     // 24, 12, 8, 6
     return 0;
 }
-
 ```
 
 ## 39. Combination Sum
@@ -588,7 +577,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="39. Combination Sum - Python Solution"
 from typing import List
 
@@ -632,7 +620,6 @@ if __name__ == "__main__":
 -   Merge all overlapping intervals.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="56. Merge Intervals - Python Solution"
 from typing import List
@@ -690,7 +677,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 75. Sort Colors
@@ -698,7 +684,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="75. Sort Colors - Python Solution"
 from copy import deepcopy
 from typing import List
@@ -759,7 +744,6 @@ print(nums2)  # [0, 0, 1, 1, 2, 2]
 - Return the maximum area of water that can be trapped between the vertical lines.
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
-
 
 ```python title="11. Container With Most Water - Python Solution"
 from typing import List
@@ -838,5 +822,5 @@ int main() {
     cout << maxArea(height) << endl;  // 49
     return 0;
 }
-
 ```
+

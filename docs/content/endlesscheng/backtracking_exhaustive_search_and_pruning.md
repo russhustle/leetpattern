@@ -56,7 +56,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 
 -   Tags: array, string, backtracking, depth first search, matrix
-
 ```python title="79. Word Search - Python Solution"
 from typing import List
 
@@ -127,7 +126,6 @@ print(exist(board, word))  # True
 -   [LeetCode](https://leetcode.com/problems/word-search-ii/) | [LeetCode CH](https://leetcode.cn/problems/word-search-ii/) (Hard)
 
 -   Tags: array, string, backtracking, trie, matrix
-
 ```python title="212. Word Search II - Python Solution"
 from typing import List
 
@@ -195,7 +193,6 @@ print(findWords(board, words))
 - [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
 - [解数独](https://leetcode.cn/problems/sudoku-solver/)
 - Hard
-
 
 ```python title="37. Sudoku Solver - Python Solution"
 from pprint import pprint

@@ -47,7 +47,6 @@ comments: True
 | 6     | 76   | True         | `[ [76, 6] ]`                   | 0         |
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
-
 ```python title="739. Daily Temperatures - Python Solution"
 from typing import List
 
@@ -82,7 +81,6 @@ print(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
 
 -   Tags: array, hash table, stack, monotonic stack
-
 ```python title="496. Next Greater Element I - Python Solution"
 from typing import List
 
@@ -115,7 +113,6 @@ print(nextGreaterElement(nums1, nums2))  # [3, -1, -1]
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)
 
 -   Tags: array, stack, monotonic stack
-
 ```python title="503. Next Greater Element II - Python Solution"
 from typing import List
 
@@ -155,7 +152,6 @@ print(nextGreaterElements(nums))  # [2, -1, 2]
 -   [LeetCode](https://leetcode.com/problems/car-fleet/) | [LeetCode CH](https://leetcode.cn/problems/car-fleet/) (Medium)
 
 -   Tags: array, stack, sorting, monotonic stack
-
 ```python title="853. Car Fleet - Python Solution"
 from typing import List
 
@@ -185,7 +181,6 @@ print(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]))  # 3
 -   Tags: stack, design, monotonic stack, data stream
 -   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
 
-
 ```python title="901. Online Stock Span - Python Solution"
 from typing import List
 
@@ -205,9 +200,10 @@ class StockSpanner:
         return self.cur_day - self.stack[-2][0]
 
 
-obj = StockSpanner()
-prices = [100, 80, 60, 70, 60, 75, 85]
-print([obj.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
+if __name__ == "__main__":
+    ss = StockSpanner()
+    prices = [100, 80, 60, 70, 60, 75, 85]
+    print([ss.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
 
 ```
 
@@ -226,7 +222,6 @@ print([obj.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
 -   [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
 
 -   Tags: array, binary search, stack, monotonic stack, ordered set
-
 ```python title="456. 132 Pattern - Python Solution"
 from typing import List
 

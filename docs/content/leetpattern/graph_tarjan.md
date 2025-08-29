@@ -13,7 +13,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/critical-connections-in-a-network/) | [LeetCode CH](https://leetcode.cn/problems/critical-connections-in-a-network/) (Hard)
 
 -   Tags: depth first search, graph, biconnected component
-
 ```python title="1192. Critical Connections in a Network - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -62,3 +61,4 @@ connections = [[0, 1], [1, 2], [2, 0], [1, 3]]
 print(criticalConnections(n, connections))  # [[1, 3]]
 
 ```
+

@@ -26,7 +26,6 @@ comments: True
 - Return the length of the longest substring without repeating characters.
 - [Template tutorial by 灵山茶艾府](https://leetcode.cn/problems/longest-substring-without-repeating-characters/solutions/1959540/xia-biao-zong-suan-cuo-qing-kan-zhe-by-e-iaks)
 
-
 ```python title="3. Longest Substring Without Repeating Characters - Python Solution"
 from collections import defaultdict
 
@@ -115,7 +114,6 @@ int main() {
     cout << lengthOfLongestSubstring(s) << endl;  // 3
     return 0;
 }
-
 ```
 
 ## 3090. Maximum Length Substring With Two Occurrences
@@ -123,7 +121,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/) | [LeetCode CH](https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/) (Easy)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="3090. Maximum Length Substring With Two Occurrences - Python Solution"
 from collections import defaultdict
 
@@ -162,7 +159,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [LeetCode CH](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) (Medium)
 
 -   Tags: array, dynamic programming, sliding window
-
 ```python title="1493. Longest Subarray of 1's After Deleting One Element - Python Solution"
 from typing import List
 
@@ -197,7 +193,6 @@ print(longestSubarray(nums))  # 3
 -   [LeetCode](https://leetcode.com/problems/get-equal-substrings-within-budget/) | [LeetCode CH](https://leetcode.cn/problems/get-equal-substrings-within-budget/) (Medium)
 
 -   Tags: string, binary search, sliding window, prefix sum
-
 ```python title="1208. Get Equal Substrings Within Budget - Python Solution"
 # Sliding Window - Variable
 def equalSubstring(s: str, t: str, maxCost: int) -> int:
@@ -229,7 +224,6 @@ print(equalSubstring(s, t, maxCost))  # 3
 -   [LeetCode](https://leetcode.com/problems/fruit-into-baskets/) | [LeetCode CH](https://leetcode.cn/problems/fruit-into-baskets/) (Medium)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="904. Fruit Into Baskets - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -268,7 +262,6 @@ print(totalFruit(fruits))  # 4
 -   [LeetCode](https://leetcode.com/problems/maximum-erasure-value/) | [LeetCode CH](https://leetcode.cn/problems/maximum-erasure-value/) (Medium)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="1695. Maximum Erasure Value - Python Solution"
 from typing import List
 
@@ -303,7 +296,6 @@ print(maximumUniqueSubarray(nums))  # 17
 -   [LeetCode](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | [LeetCode CH](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) (Medium)
 
 -   Tags: array, hash table, sliding window
-
 ```python title="2958. Length of Longest Subarray With at Most K Frequency - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -339,7 +331,6 @@ print(maxSubarrayLength(nums, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | [LeetCode CH](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/) (Medium)
 
 -   Tags: string, binary search, sliding window, prefix sum
-
 ```python title="2024. Maximize the Confusion of an Exam - Python Solution"
 # Sliding Window - Variable
 def maxConsecutiveAnswers1(answerKey: str, k: int) -> int:
@@ -412,7 +403,6 @@ print(maxConsecutiveAnswers2(answerKey, k))  # 4
 -   [LeetCode](https://leetcode.com/problems/max-consecutive-ones-iii/) | [LeetCode CH](https://leetcode.cn/problems/max-consecutive-ones-iii/) (Medium)
 
 -   Tags: array, binary search, sliding window, prefix sum
-
 ```python title="1004. Max Consecutive Ones III - Python Solution"
 from typing import List
 
@@ -448,7 +438,6 @@ print(longestOnes(nums, k))  # 6
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/) (Medium)
 
 -   Tags: array, hash table, binary search, sliding window, prefix sum
-
 ```python title="1658. Minimum Operations to Reduce X to Zero - Python Solution"
 from typing import List
 
@@ -486,3 +475,4 @@ if __name__ == "__main__":
     assert minOperations(nums, x) == 2
 
 ```
+

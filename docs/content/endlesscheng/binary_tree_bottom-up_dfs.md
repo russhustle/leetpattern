@@ -44,7 +44,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="104. Maximum Depth of Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -127,7 +126,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="111. Minimum Depth of Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -200,7 +198,6 @@ print(minDepthRecursive(root))  # 2
 -   [LeetCode](https://leetcode.com/problems/same-tree/) | [LeetCode CH](https://leetcode.cn/problems/same-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="100. Same Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -292,7 +289,6 @@ print(isSameTreeIterativeStack(p2, q2))  # False
 -   [LeetCode](https://leetcode.com/problems/symmetric-tree/) | [LeetCode CH](https://leetcode.cn/problems/symmetric-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="101. Symmetric Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -373,7 +369,6 @@ print(isSymmetricIterative(root))  # True
 -   [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/balanced-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="110. Balanced Binary Tree - Python Solution"
 from typing import Optional
 
@@ -428,7 +423,6 @@ print(isBalanced(root))  # True
 -   [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="226. Invert Binary Tree - Python Solution"
 from typing import Optional
 
@@ -504,7 +498,6 @@ print(invertedIterative)
 -   [LeetCode](https://leetcode.com/problems/merge-two-binary-trees/) | [LeetCode CH](https://leetcode.cn/problems/merge-two-binary-trees/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="617. Merge Two Binary Trees - Python Solution"
 from typing import List, Optional
 
@@ -569,7 +562,6 @@ root = mergeTrees(root1, root2)
 -   [LeetCode](https://leetcode.com/problems/evaluate-boolean-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-boolean-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="2331. Evaluate Boolean Binary Tree - Python Solution"
 from typing import Optional
 
@@ -665,7 +657,6 @@ print(evaluateTree(root))  # 1
 -   [LeetCode](https://leetcode.com/problems/subtree-of-another-tree/) | [LeetCode CH](https://leetcode.cn/problems/subtree-of-another-tree/) (Easy)
 
 -   Tags: tree, depth first search, string matching, binary tree, hash function
-
 ```python title="572. Subtree of Another Tree - Python Solution"
 from typing import Optional
 
@@ -730,7 +721,6 @@ print(isSubtree(root, subRoot))  # False
 -   [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="298. Binary Tree Longest Consecutive Sequence - Python Solution"
 from typing import Optional
 
@@ -811,7 +801,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/find-leaves-of-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="366. Find Leaves of Binary Tree - Python Solution"
 from collections import defaultdict
 from typing import List, Optional

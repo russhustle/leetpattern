@@ -14,7 +14,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming
-
 ```python title="53. Maximum Subarray - Python Solution"
 from typing import List
 
@@ -74,7 +73,6 @@ print(maxSubArrayPrefixSum(nums))  # 6
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming, queue, monotonic queue
-
 ```python title="918. Maximum Sum Circular Subarray - Python Solution"
 from collections import deque
 from typing import List
@@ -127,3 +125,4 @@ print(maxSubarraySumCircularKadane(nums))  # 3
 print(maxSubarraySumCircularMQ(nums))  # 3
 
 ```
+

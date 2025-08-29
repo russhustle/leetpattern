@@ -15,7 +15,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-element-in-an-array/) (Medium)
 
 -   Tags: array, divide and conquer, sorting, heap priority queue, quickselect
-
 ```python title="215. Kth Largest Element in an Array - Python Solution"
 import heapq
 from typing import List
@@ -41,7 +40,6 @@ print(findKthLargest(nums, k))  # 5
 -   [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) | [LeetCode CH](https://leetcode.cn/problems/top-k-frequent-elements/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, sorting, heap priority queue, bucket sort, counting, quickselect
-
 ```python title="347. Top K Frequent Elements - Python Solution"
 import heapq
 from collections import Counter
@@ -79,7 +77,6 @@ print(topKFrequentCounter(nums, k))  # [1, 2]
 -   [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 
 -   Tags: two pointers, design, sorting, heap priority queue, data stream
-
 ```python title="295. Find Median from Data Stream - Python Solution"
 from heapq import heappop, heappush
 
@@ -171,5 +168,5 @@ int main() {
     cout << obj->findMedian() << endl;  // 2
     return 0;
 }
-
 ```
+

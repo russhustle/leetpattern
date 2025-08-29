@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming
-
 ```python title="53. Maximum Subarray - Python Solution"
 from typing import List
 
@@ -81,7 +80,6 @@ print(maxSubArrayPrefixSum(nums))  # 6
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ```python title="56. Merge Intervals - Python Solution"
 from typing import List
 
@@ -138,7 +136,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 189. Rotate Array
@@ -154,7 +151,6 @@ graph TD
     B --Reverse first k elements--> C[5 6 7 4 3 2 1]
     C --Reverse remaining n-k elements--> D[5 6 7 1 2 3 4];
 ```
-
 
 ```python title="189. Rotate Array - Python Solution"
 from typing import List
@@ -212,7 +208,6 @@ int main() {
     cout << endl;
     return 0;
 }
-
 ```
 
 ## 238. Product of Array Except Self
@@ -227,7 +222,6 @@ int main() {
 | ------------------ | ---- | ----- |
 | Prefix             | O(n) | O(n)  |
 | Prefix (Optimized) | O(n) | O(1)  |
-
 
 ```python title="238. Product of Array Except Self - Python Solution"
 from typing import List
@@ -323,7 +317,6 @@ int main()
     // 24, 12, 8, 6
     return 0;
 }
-
 ```
 
 ## 41. First Missing Positive
@@ -331,7 +324,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/first-missing-positive/) | [LeetCode CH](https://leetcode.cn/problems/first-missing-positive/) (Hard)
 
 -   Tags: array, hash table
-
 ```python title="41. First Missing Positive - Python Solution"
 from typing import List
 
@@ -356,3 +348,4 @@ if __name__ == "__main__":
     print(firstMissingPositive(nums))  # 2
 
 ```
+

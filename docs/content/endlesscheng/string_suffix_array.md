@@ -37,7 +37,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | [LeetCode CH](https://leetcode.cn/problems/shortest-and-lexicographically-smallest-beautiful-string/) (Medium)
 
 -   Tags: string, sliding window
-
 ```python title="2904. Shortest and Lexicographically Smallest Beautiful String - Python Solution"
 # Sliding Window Variable Size
 def shortestBeautifulSubstring(s: str, k: int) -> str:
@@ -88,7 +87,6 @@ print(shortestBeautifulSubstring(s, k))  # 11001
 -   [LeetCode](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) (Medium)
 
 -   Tags: array, binary search, dynamic programming, sliding window, rolling hash, hash function
-
 ```python title="718. Maximum Length of Repeated Subarray - Python Solution"
 from typing import List
 

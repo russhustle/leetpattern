@@ -17,7 +17,6 @@ comments: True
 -   Prerequisite: 21. Merge Two Sorted Lists
 -   Video explanation: [23. Merge K Sorted Lists - NeetCode](https://youtu.be/q5a5OiGbT6Q?si=SQ2dCvsYQ3LQctPh)
 
-
 ```python title="23. Merge k Sorted Lists - Python Solution"
 import copy
 import heapq
@@ -103,7 +102,6 @@ print(mergeKLists(lists2))
 -   [LeetCode](https://leetcode.com/problems/sort-list/) | [LeetCode CH](https://leetcode.cn/problems/sort-list/) (Medium)
 
 -   Tags: linked list, two pointers, divide and conquer, sorting, merge sort
-
 ```python title="148. Sort List - Python Solution"
 from typing import Optional
 
@@ -171,3 +169,4 @@ print(sortListSort(head))  # 1 -> 2 -> 3 -> 4
 print(sortListDivideConquer(head))  # 1 -> 2 -> 3 -> 4
 
 ```
+

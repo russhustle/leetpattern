@@ -39,7 +39,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/) (Medium)
 
 -   Tags: array, greedy, sorting, prefix sum
-
 ```python title="1589. Maximum Sum Obtained of Any Permutation - Python Solution"
 from typing import List
 

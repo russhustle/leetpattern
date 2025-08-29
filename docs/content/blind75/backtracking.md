@@ -14,7 +14,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="39. Combination Sum - Python Solution"
 from typing import List
 
@@ -55,7 +54,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 
 -   Tags: array, string, backtracking, depth first search, matrix
-
 ```python title="79. Word Search - Python Solution"
 from typing import List
 
@@ -105,3 +103,4 @@ word = "ABCCED"
 print(exist(board, word))  # True
 
 ```
+

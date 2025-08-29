@@ -53,7 +53,6 @@ comments: True
 | ==2== | ==2== |   0   |
 | ==2== |   0   |   1   |
 
-
 ```python title="733. Flood Fill - Python Solution"
 from collections import deque
 from typing import List
@@ -129,7 +128,6 @@ print(floodFillBFS(image, sr, sc, 2))
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
 
 -   Tags: array, dynamic programming, breadth first search, matrix
-
 ```python title="542. 01 Matrix - Python Solution"
 from collections import deque
 from typing import List
@@ -171,7 +169,6 @@ print(updateMatrix(mat))
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 
 -   Tags: hash table, depth first search, breadth first search, graph
-
 ```python title="133. Clone Graph - Python Solution"
 from collections import deque
 from typing import Optional
@@ -346,7 +343,6 @@ flowchart LR
 - queue: `[0]`
 - pop `0` from the queue
 - All courses are taken. Return `True`.
-
 
 ```python title="207. Course Schedule - Python Solution"
 from collections import defaultdict, deque
@@ -526,7 +522,6 @@ int main() {
     cout << sol.canFinishDFS(numCourses, prerequisites) << endl;
     return 0;
 }
-
 ```
 
 ## 200. Number of Islands
@@ -549,7 +544,6 @@ int main() {
     3. Traverse the grid, and if the cell is `1`, increment the count and call DFS/BFS.
 
 ![0200](../../assets/0200.jpg)
-
 
 ```python title="200. Number of Islands - Python Solution"
 from collections import deque
@@ -733,7 +727,6 @@ int main()
     cout << s.numIslands(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 994. Rotting Oranges
@@ -745,7 +738,6 @@ int main()
 -   Hint: Multi-source BFS to count the level.
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
-
 
 ```python title="994. Rotting Oranges - Python Solution"
 from collections import deque
@@ -792,7 +784,6 @@ assert orangesRotting(grid) == 4
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
-
 ```python title="721. Accounts Merge - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -865,7 +856,6 @@ print(accountsMerge(accounts))
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 
 -   Tags: array, string, backtracking, depth first search, matrix
-
 ```python title="79. Word Search - Python Solution"
 from typing import List
 
@@ -921,7 +911,6 @@ print(exist(board, word))  # True
 -   [LeetCode](https://leetcode.com/problems/minimum-height-trees/) | [LeetCode CH](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
 
 -   Tags: depth first search, breadth first search, graph, topological sort
-
 ```python title="310. Minimum Height Trees - Python Solution"
 from collections import deque
 from typing import List
@@ -971,7 +960,6 @@ print(findMinHeightTrees(n, edges))  # [3, 4]
 -   Time Complexity: O(n * m^2)
 -   Space Complexity: O(n * m)
 
-
 ```python title="127. Word Ladder - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -1019,3 +1007,4 @@ wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
 print(ladderLength(beginWord, endWord, wordList))  # 5
 
 ```
+

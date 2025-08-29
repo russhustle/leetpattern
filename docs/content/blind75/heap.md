@@ -13,7 +13,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-median-from-data-stream/) | [LeetCode CH](https://leetcode.cn/problems/find-median-from-data-stream/) (Hard)
 
 -   Tags: two pointers, design, sorting, heap priority queue, data stream
-
 ```python title="295. Find Median from Data Stream - Python Solution"
 from heapq import heappop, heappush
 
@@ -105,5 +104,5 @@ int main() {
     cout << obj->findMedian() << endl;  // 2
     return 0;
 }
-
 ```
+

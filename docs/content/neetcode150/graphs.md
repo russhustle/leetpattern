@@ -41,7 +41,6 @@ comments: True
 
 ![0200](../../assets/0200.jpg)
 
-
 ```python title="200. Number of Islands - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -224,7 +223,6 @@ int main()
     cout << s.numIslands(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 695. Max Area of Island
@@ -232,7 +230,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/max-area-of-island/) | [LeetCode CH](https://leetcode.cn/problems/max-area-of-island/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="695. Max Area of Island - Python Solution"
 from collections import deque
 from typing import List
@@ -407,7 +404,6 @@ int main() {
     cout << s.maxAreaOfIsland(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 133. Clone Graph
@@ -415,7 +411,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 
 -   Tags: hash table, depth first search, breadth first search, graph
-
 ```python title="133. Clone Graph - Python Solution"
 from collections import deque
 from typing import Optional
@@ -476,7 +471,6 @@ def cloneGraphBFS(node: Optional["Node"]) -> Optional["Node"]:
 -   [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-
 ```python title="286. Walls and Gates - Python Solution"
 from collections import deque
 from typing import List
@@ -547,7 +541,6 @@ if __name__ == "__main__":
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-
 ```python title="994. Rotting Oranges - Python Solution"
 from collections import deque
 from typing import List
@@ -593,7 +586,6 @@ assert orangesRotting(grid) == 4
 -   [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [LeetCode CH](https://leetcode.cn/problems/pacific-atlantic-water-flow/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="417. Pacific Atlantic Water Flow - Python Solution"
 from collections import deque
 from typing import List
@@ -685,7 +677,6 @@ print(pacificAtlanticBFS(heights))
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="130. Surrounded Regions - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -917,7 +908,6 @@ flowchart LR
 - pop `0` from the queue
 - All courses are taken. Return `True`.
 
-
 ```python title="207. Course Schedule - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -1096,7 +1086,6 @@ int main() {
     cout << sol.canFinishDFS(numCourses, prerequisites) << endl;
     return 0;
 }
-
 ```
 
 ## 210. Course Schedule II
@@ -1107,7 +1096,6 @@ int main() {
 - Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
 ![0207](../../assets/0207.png)
-
 
 ```python title="210. Course Schedule II - Python Solution"
 from collections import defaultdict, deque
@@ -1262,7 +1250,6 @@ int main() {
     for (size_t i = 0; i < res.size(); i++) cout << res[i] << "\n";
     return 0;
 }
-
 ```
 
 ## 261. Graph Valid Tree
@@ -1270,7 +1257,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/graph-valid-tree/) | [LeetCode CH](https://leetcode.cn/problems/graph-valid-tree/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="261. Graph Valid Tree - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -1312,7 +1298,6 @@ print(validTree(5, [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]))  # False
 -   [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [LeetCode CH](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="323. Number of Connected Components in an Undirected Graph - Python Solution"
 from typing import List
 
@@ -1366,7 +1351,6 @@ print(countComponents(5, [[0, 1], [1, 2], [3, 4]]))  # 2
 -   [LeetCode](https://leetcode.com/problems/redundant-connection/) | [LeetCode CH](https://leetcode.cn/problems/redundant-connection/) (Medium)
 
 -   Tags: depth first search, breadth first search, union find, graph
-
 ```python title="684. Redundant Connection - Python Solution"
 from typing import List
 
@@ -1454,7 +1438,6 @@ print(findRedundantConnectionDFS(edges))  # (2, 3)
 -   Time Complexity: O(n * m^2)
 -   Space Complexity: O(n * m)
 
-
 ```python title="127. Word Ladder - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -1502,3 +1485,4 @@ wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
 print(ladderLength(beginWord, endWord, wordList))  # 5
 
 ```
+

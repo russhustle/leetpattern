@@ -18,7 +18,6 @@ comments: True
 - Return the length of the longest substring without repeating characters.
 - [Template tutorial by 灵山茶艾府](https://leetcode.cn/problems/longest-substring-without-repeating-characters/solutions/1959540/xia-biao-zong-suan-cuo-qing-kan-zhe-by-e-iaks)
 
-
 ```python title="3. Longest Substring Without Repeating Characters - Python Solution"
 from collections import defaultdict
 
@@ -107,7 +106,6 @@ int main() {
     cout << lengthOfLongestSubstring(s) << endl;  // 3
     return 0;
 }
-
 ```
 
 ## 438. Find All Anagrams in a String
@@ -115,7 +113,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="438. Find All Anagrams in a String - Python Solution"
 from typing import List
 
@@ -150,3 +147,4 @@ p = "abc"
 print(findAnagrams(s, p))  # [0, 6]
 
 ```
+

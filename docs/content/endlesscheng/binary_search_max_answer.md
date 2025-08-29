@@ -30,7 +30,6 @@ comments: True
 -   Tags: array, binary search
 - Hint: logarithmic time -- binary search
 
-
 ```python title="275. H-Index II - Python Solution"
 from typing import List
 
@@ -62,7 +61,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) | [LeetCode CH](https://leetcode.cn/problems/maximum-candies-allocated-to-k-children/) (Medium)
 
 -   Tags: array, binary search
-
 ```python title="2226. Maximum Candies Allocated to K Children - Python Solution"
 from typing import List
 
@@ -119,7 +117,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) | [LeetCode CH](https://leetcode.cn/problems/find-the-maximum-number-of-marked-indices/) (Medium)
 
 -   Tags: array, two pointers, binary search, greedy, sorting
-
 ```python title="2576. Find the Maximum Number of Marked Indices - Python Solution"
 from typing import List
 

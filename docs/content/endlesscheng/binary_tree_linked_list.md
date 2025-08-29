@@ -43,7 +43,6 @@ class Solution {
         head = root;
     }
 };
-
 ```
 
 ## 1367. Linked List in Binary Tree
@@ -57,7 +56,6 @@ class Solution {
 
 -   Tags: linked list, divide and conquer, tree, binary search tree, binary tree
 ![109](https://assets.leetcode.com/uploads/2020/08/17/linked.jpg)
-
 
 ```python title="109. Convert Sorted List to Binary Search Tree - Python Solution"
 from typing import Optional
@@ -136,7 +134,6 @@ print("All passed")
 
 -   Tags: linked list, tree, depth first search, breadth first search, binary tree
 -   Perfect Binary Tree
-
 
 ```python title="116. Populating Next Right Pointers in Each Node - Python Solution"
 from collections import deque
@@ -220,7 +217,6 @@ print("All tests passed.")
 -   [LeetCode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | [LeetCode CH](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) (Medium)
 
 -   Tags: linked list, tree, depth first search, breadth first search, binary tree
-
 ```python title="117. Populating Next Right Pointers in Each Node II - Python Solution"
 from collections import deque
 

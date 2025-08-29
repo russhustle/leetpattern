@@ -141,7 +141,6 @@ graph TD
 | Postorder   | Left, Right, Root | DFS or Stack   | `[3, 4, 1, 5, 6, 2, 0]`       |
 | Level Order | Level by Level    | BFS with Queue | `[[0], [1, 2], [3, 4, 5, 6]]` |
 
-
 ```python title="144. Binary Tree Preorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -203,7 +202,6 @@ print(preorderTraversalIterative(tree))  # [0, 1, 3, 4, 2, 5, 6]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-inorder-traversal/) (Easy)
 
 -   Tags: stack, tree, depth first search, binary tree
-
 ```python title="94. Binary Tree Inorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -266,7 +264,6 @@ print(inorderTraversalIterative(tree))  # [3, 1, 4, 0, 5, 2, 6]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-postorder-traversal/) (Easy)
 
 -   Tags: stack, tree, depth first search, binary tree
-
 ```python title="145. Binary Tree Postorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -328,7 +325,6 @@ print(postorderTraversalIterative(tree))  # [3, 4, 1, 5, 6, 2, 0]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="102. Binary Tree Level Order Traversal - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -378,7 +374,6 @@ print(levelOrder(tree))  # [[3], [9, 20], [15, 7]]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="107. Binary Tree Level Order Traversal II - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -428,7 +423,6 @@ print(levelOrderBottom(tree))  # [[15, 7], [9, 20], [3]]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="103. Binary Tree Zigzag Level Order Traversal - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -472,3 +466,4 @@ print(tree)
 print(zigzagLevelOrder(tree))  # [[3], [20, 9], [15, 7]]
 
 ```
+

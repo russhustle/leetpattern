@@ -38,7 +38,6 @@ comments: True
 | `3`   | push   | `[3, 3]` |
 | `*`   | pop    | `[9]`    |
 
-
 ```python title="150. Evaluate Reverse Polish Notation - Python Solution"
 from typing import List
 
@@ -81,7 +80,6 @@ print(evalRPN(["4", "3", "-"]))  # 1
 -   [LeetCode](https://leetcode.com/problems/basic-calculator/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator/) (Hard)
 
 -   Tags: math, string, stack, recursion
-
 ```python title="224. Basic Calculator - Python Solution"
 # Stack
 def calculate(s: str) -> int:
@@ -128,7 +126,6 @@ print(calculate("(1+(4+5+2)-3)+(6+8)"))  # 23
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-ii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-ii/) (Medium)
 
 -   Tags: math, string, stack
-
 ```python title="227. Basic Calculator II - Python Solution"
 # Stack
 def calculate(s: str) -> int:
@@ -195,7 +192,6 @@ print(calculate(s))  # 7
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-iv/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iv/) (Hard)
 
 -   Tags: hash table, math, string, stack, recursion
-
 ```python title="770. Basic Calculator IV - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -334,7 +330,6 @@ print(calculator.basicCalculatorIV(expression, evalvars, evalints))
 -   [LeetCode](https://leetcode.com/problems/ternary-expression-parser/) | [LeetCode CH](https://leetcode.cn/problems/ternary-expression-parser/) (Medium)
 
 -   Tags: string, stack, recursion
-
 ```python title="439. Ternary Expression Parser - Python Solution"
 # Stack
 def parseTernary(expression: str) -> str:
@@ -371,7 +366,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/basic-calculator-iii/) | [LeetCode CH](https://leetcode.cn/problems/basic-calculator-iii/) (Hard)
 
 -   Tags: math, string, stack, recursion
-
 ```python title="772. Basic Calculator III - Python Solution"
 # Stack
 def calculate(s: str) -> int:

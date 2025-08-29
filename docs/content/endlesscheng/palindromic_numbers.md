@@ -25,7 +25,6 @@ comments: True
 -   Tags: math
 -   Return true if the given number is a palindrome. Otherwise, return false.
 
-
 ```python title="9. Palindrome Number - Python Solution"
 # Reverse
 def isPalindromeReverse(x: int) -> bool:

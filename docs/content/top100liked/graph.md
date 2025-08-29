@@ -32,7 +32,6 @@ comments: True
 
 ![0200](../../assets/0200.jpg)
 
-
 ```python title="200. Number of Islands - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -215,7 +214,6 @@ int main()
     cout << s.numIslands(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 994. Rotting Oranges
@@ -227,7 +225,6 @@ int main()
 -   Hint: Multi-source BFS to count the level.
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
-
 
 ```python title="994. Rotting Oranges - Python Solution"
 from collections import deque
@@ -388,7 +385,6 @@ flowchart LR
 - queue: `[0]`
 - pop `0` from the queue
 - All courses are taken. Return `True`.
-
 
 ```python title="207. Course Schedule - Python Solution"
 from collections import defaultdict, deque
@@ -568,7 +564,6 @@ int main() {
     cout << sol.canFinishDFS(numCourses, prerequisites) << endl;
     return 0;
 }
-
 ```
 
 ## 208. Implement Trie (Prefix Tree)
@@ -594,7 +589,6 @@ B1 --- A2((A))
 A2 --- T2((T))
 A2 --- R2((R))
 ```
-
 
 ```python title="208. Implement Trie (Prefix Tree) - Python Solution"
 class TrieNode:
@@ -642,3 +636,4 @@ print(obj.search("word"))  # False
 print(obj.startsWith("app"))  # True
 
 ```
+

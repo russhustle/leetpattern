@@ -32,7 +32,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/) | [LeetCode CH](https://leetcode.cn/problems/find-the-longest-semi-repetitive-substring/) (Medium)
 
 -   Tags: string, sliding window
-
 ```python title="2730. Find the Longest Semi-Repetitive Substring - Python Solution"
 # Sliding Window Variable Max
 def longestSemiRepetitiveSubstring(s: str) -> int:
@@ -68,7 +67,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/) | [LeetCode CH](https://leetcode.cn/problems/maximum-beauty-of-an-array-after-applying-operation/) (Medium)
 
 -   Tags: array, binary search, sliding window, sorting
-
 ```python title="2779. Maximum Beauty of an Array After Applying Operation - Python Solution"
 from typing import List
 
@@ -121,7 +119,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximize-win-from-two-segments/) | [LeetCode CH](https://leetcode.cn/problems/maximize-win-from-two-segments/) (Medium)
 
 -   Tags: array, binary search, sliding window
-
 ```python title="2555. Maximize Win From Two Segments - Python Solution"
 from typing import List
 
@@ -208,7 +205,6 @@ print(maximizeWin(prizePositions, k))  # 7
 -   Tags: hash table, string, sliding window
 -   Prerequisite: 3. Longest Substring Without Repeating Characters
 
-
 ```python title="159. Longest Substring with At Most Two Distinct Characters - Python Solution"
 from collections import defaultdict
 
@@ -246,7 +242,6 @@ assert lengthOfLongestSubstringTwoDistinct(s) == 5
 -   [LeetCode](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | [LeetCode CH](https://leetcode.cn/problems/longest-substring-with-at-most-k-distinct-characters/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="340. Longest Substring with At Most K Distinct Characters - Python Solution"
 from collections import defaultdict
 
@@ -277,3 +272,4 @@ k = 2
 assert lengthOfLongestSubstringKDistinct(s, k) == 3
 
 ```
+

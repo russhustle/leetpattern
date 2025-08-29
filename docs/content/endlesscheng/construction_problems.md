@@ -99,7 +99,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/wiggle-sort/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-sort/) (Medium)
 
 -   Tags: array, greedy, sorting
-
 ```python title="280. Wiggle Sort - Python Solution"
 from typing import List
 
@@ -151,7 +150,6 @@ int main() {
     cout << endl;
     return 0;
 }
-
 ```
 
 ## 484. Find Permutation

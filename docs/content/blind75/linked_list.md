@@ -36,7 +36,6 @@ C --> B((2))
 B --> A((1))
 ```
 
-
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
 
@@ -92,7 +91,6 @@ print(reverseListRecursive(head2))
 -   Merge the two lists into one sorted list.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIdigk956u0?si=2cVoU6DujA3Mgtlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="21. Merge Two Sorted Lists - Python Solution"
 from typing import Optional
@@ -162,7 +160,6 @@ class Solution {
         return dummy.next;
     }
 };
-
 ```
 
 ## 143. Reorder List
@@ -170,7 +167,6 @@ class Solution {
 -   [LeetCode](https://leetcode.com/problems/reorder-list/) | [LeetCode CH](https://leetcode.cn/problems/reorder-list/) (Medium)
 
 -   Tags: linked list, two pointers, stack, recursion
-
 ```python title="143. Reorder List - Python Solution"
 from typing import Optional
 
@@ -221,7 +217,6 @@ print(head)  # 1 -> 6 -> 2 -> 5 -> 3 -> 4
 
 -   Tags: linked list, two pointers
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
-
 
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
@@ -276,7 +271,6 @@ graph LR
     D --> B
 ```
 
-
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
@@ -325,7 +319,6 @@ class Solution {
         return false;
     }
 };
-
 ```
 
 ## 23. Merge k Sorted Lists
@@ -335,7 +328,6 @@ class Solution {
 -   Tags: linked list, divide and conquer, heap priority queue, merge sort
 -   Prerequisite: 21. Merge Two Sorted Lists
 -   Video explanation: [23. Merge K Sorted Lists - NeetCode](https://youtu.be/q5a5OiGbT6Q?si=SQ2dCvsYQ3LQctPh)
-
 
 ```python title="23. Merge k Sorted Lists - Python Solution"
 import copy
@@ -416,3 +408,4 @@ print(mergeKLists(lists2))
 # 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
 
 ```
+

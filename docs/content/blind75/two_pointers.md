@@ -15,7 +15,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 
 -   Tags: two pointers, string
-
 ```python title="125. Valid Palindrome - Python Solution"
 # List Comprehension
 def isPalindrome(s: str) -> bool:
@@ -53,7 +52,6 @@ print(isPalindromeLR(s))  # True
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="15. 3Sum - Python Solution"
 from typing import List
 
@@ -145,7 +143,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 11. Container With Most Water
@@ -156,7 +153,6 @@ int main() {
 - Return the maximum area of water that can be trapped between the vertical lines.
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
-
 
 ```python title="11. Container With Most Water - Python Solution"
 from typing import List
@@ -235,5 +231,5 @@ int main() {
     cout << maxArea(height) << endl;  // 49
     return 0;
 }
-
 ```
+

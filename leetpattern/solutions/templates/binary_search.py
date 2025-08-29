@@ -1,9 +1,6 @@
 from typing import List
 
 
-from typing import List
-
-
 def binary_search(a: List[int], x: int) -> int:
     """
     Perform binary search to find the index of x in sorted list a.

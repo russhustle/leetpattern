@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [LeetCode CH](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) (Hard)
 
 -   Tags: hash table, dynamic programming, graph, topological sort, memoization, counting
-
 ```python title="1857. Largest Color Value in a Directed Graph - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -67,3 +66,4 @@ edges = [[0, 1], [0, 2], [2, 3], [3, 4]]
 print(largestPathValue(colors, edges))  # 3
 
 ```
+

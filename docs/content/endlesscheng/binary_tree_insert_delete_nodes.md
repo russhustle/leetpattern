@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) (Medium)
 
 -   Tags: tree, binary search tree, binary tree
-
 ```python title="701. Insert into a Binary Search Tree - Python Solution"
 from typing import Optional
 
@@ -66,7 +65,6 @@ insertIntoBST(root, 5)
 -   [LeetCode](https://leetcode.com/problems/delete-node-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/delete-node-in-a-bst/) (Medium)
 
 -   Tags: tree, binary search tree, binary tree
-
 ```python title="450. Delete Node in a BST - Python Solution"
 from typing import Optional
 
@@ -130,7 +128,6 @@ deleteNode(root, 3)
 -   [LeetCode](https://leetcode.com/problems/trim-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/trim-a-binary-search-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="669. Trim a Binary Search Tree - Python Solution"
 from typing import Optional
 

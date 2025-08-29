@@ -22,7 +22,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/prime-in-diagonal/) | [LeetCode CH](https://leetcode.cn/problems/prime-in-diagonal/) (Easy)
 
 -   Tags: array, math, matrix, number theory
-
 ```python title="2614. Prime In Diagonal - Python Solution"
 from math import isqrt
 from typing import List

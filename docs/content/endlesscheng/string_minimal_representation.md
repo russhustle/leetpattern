@@ -25,7 +25,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | [LeetCode CH](https://leetcode.cn/problems/find-the-lexicographically-largest-string-from-the-box-i/) (Medium)
 
 -   Tags: two pointers, string, enumeration
-
 ```python title="3403. Find the Lexicographically Largest String From the Box I - Python Solution"
 # Lexicographically Smallest/Largest
 def answerString(word: str, numFriends: int) -> str:
@@ -40,3 +39,4 @@ if __name__ == "__main__":
     assert answerString("dbca", 2) == "dbc"
 
 ```
+

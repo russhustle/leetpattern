@@ -27,7 +27,6 @@ graph LR
     B["Ransom Note: abc"] --> C
 ```
 
-
 ```python title="383. Ransom Note - Python Solution"
 from collections import Counter, defaultdict
 
@@ -90,7 +89,6 @@ print(canConstructCounter(ransomNote, magazine))  # True
 -   Tags: array, hash table, two pointers, binary search, sorting
 -   Return the intersection of two arrays.
 
-
 ```python title="350. Intersection of Two Arrays II - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -133,7 +131,6 @@ print(intersect(nums1, nums2))  # [2, 2]
 - Approach: Use a hashmap to store the indices of the numbers.
 - Time Complexity: O(n)
 - Space Complexity: O(n)
-
 
 ```python title="1. Two Sum - Python Solution"
 from typing import List
@@ -185,7 +182,6 @@ int main() {
     cout << result[0] << ", " << result[1] << endl;
     return 0;
 }
-
 ```
 
 ## 409. Longest Palindrome
@@ -194,7 +190,6 @@ int main() {
 
 -   Tags: hash table, string, greedy
 -   Return the length of the longest palindrome that can be built with the characters in the string.
-
 
 ```python title="409. Longest Palindrome - Python Solution"
 def longestPalindrome(s: str) -> int:
@@ -224,7 +219,6 @@ print(longestPalindrome("abccccdd"))  # 7
 
 -   Tags: array, hash table, sorting, counting
 -   For each number in the array, return how many numbers are smaller than it.
-
 
 ```python title="1365. How Many Numbers Are Smaller Than the Current Number - Python Solution"
 from typing import List
@@ -258,7 +252,6 @@ print(smallerNumbersThanCurrent(nums))  # [4, 0, 1, 1, 3]
 -   Tags: hash table, math, two pointers
 -   Return `True` if the number is a happy number, otherwise, return `False`.
 -   A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
-
 
 ```python title="202. Happy Number - Python Solution"
 def isHappy(n: int) -> bool:
@@ -297,7 +290,6 @@ print(isHappy(n))  # True
 -   Tags: array, hash table
 -   Return the number of tuples `(i, j, k, l)` such that `A[i] + B[j] + C[k] + D[l] == 0`.
 
-
 ```python title="454. 4Sum II - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -329,3 +321,4 @@ nums4 = [0, 2]
 print(fourSumCount(nums1, nums2, nums3, nums4))  # 2
 
 ```
+

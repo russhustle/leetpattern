@@ -15,7 +15,6 @@ comments: True
 -   Tags: array, matrix, simulation
 -   Return all elements of the matrix in spiral order.
 
-
 ```python title="54. Spiral Matrix - Python Solution"
 from typing import List
 
@@ -80,3 +79,4 @@ print(spiralOrderMath([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]))
 # [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
 
 ```
+

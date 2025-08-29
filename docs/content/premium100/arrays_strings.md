@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-distance-in-arrays/) | [LeetCode CH](https://leetcode.cn/problems/maximum-distance-in-arrays/) (Medium)
 
 -   Tags: array, greedy
-
 ```python title="624. Maximum Distance in Arrays - Python Solution"
 from typing import List
 
@@ -47,7 +46,6 @@ print(maxDistance(arrays))  # 4
 -   [LeetCode](https://leetcode.com/problems/wiggle-sort/) | [LeetCode CH](https://leetcode.cn/problems/wiggle-sort/) (Medium)
 
 -   Tags: array, greedy, sorting
-
 ```python title="280. Wiggle Sort - Python Solution"
 from typing import List
 
@@ -99,7 +97,6 @@ int main() {
     cout << endl;
     return 0;
 }
-
 ```
 
 ## 1056. Confusing Number
@@ -107,7 +104,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/confusing-number/) | [LeetCode CH](https://leetcode.cn/problems/confusing-number/) (Easy)
 
 -   Tags: math
-
 ```python title="1056. Confusing Number - Python Solution"
 def confusingNumber(n: int) -> bool:
     rotate_map = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
@@ -172,7 +168,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## 1427. Perform String Shifts
@@ -181,7 +176,6 @@ int main() {
 
 -   Tags: array, math, string
 -   Calculate the net shift direction and amount by combining all operations, then apply a single rotation to the string using slicing.
-
 
 ```python title="1427. Perform String Shifts - Python Solution"
 from typing import List
@@ -254,7 +248,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## 161. One Edit Distance

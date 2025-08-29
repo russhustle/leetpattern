@@ -30,7 +30,6 @@ comments: True
 -   Tags: hash table, string, greedy
 -   Return the length of the longest palindrome that can be built with the characters in the string.
 
-
 ```python title="409. Longest Palindrome - Python Solution"
 def longestPalindrome(s: str) -> int:
     hashmap = dict()
@@ -58,7 +57,6 @@ print(longestPalindrome("abccccdd"))  # 7
 -   [LeetCode](https://leetcode.com/problems/lexicographically-smallest-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/lexicographically-smallest-palindrome/) (Easy)
 
 -   Tags: two pointers, string, greedy
-
 ```python title="2697. Lexicographically Smallest Palindrome - Python Solution"
 def makeSmallestPalindrome(s: str) -> str:
     n = len(s)
@@ -91,7 +89,6 @@ print(makeSmallestPalindrome(s))  # "efcfe"
 -   [LeetCode](https://leetcode.com/problems/break-a-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/break-a-palindrome/) (Medium)
 
 -   Tags: string, greedy
-
 ```python title="1328. Break a Palindrome - Python Solution"
 # Greedy
 def breakPalindrome(palindrome: str) -> str:
@@ -116,7 +113,6 @@ print(breakPalindrome(palindrome))  # "aaccba"
 -   [LeetCode](https://leetcode.com/problems/construct-k-palindrome-strings/) | [LeetCode CH](https://leetcode.cn/problems/construct-k-palindrome-strings/) (Medium)
 
 -   Tags: hash table, string, greedy, counting
-
 ```python title="1400. Construct K Palindrome Strings - Python Solution"
 from collections import Counter
 
@@ -197,7 +193,6 @@ print(canConstructHash(s, k))  # True
 -   [LeetCode](https://leetcode.com/problems/palindrome-permutation/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-permutation/) (Easy)
 
 -   Tags: hash table, string, bit manipulation
-
 ```python title="266. Palindrome Permutation - Python Solution"
 from collections import defaultdict
 

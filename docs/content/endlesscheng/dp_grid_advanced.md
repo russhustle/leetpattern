@@ -45,7 +45,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) (Hard)
 
 -   Tags: array, dynamic programming, depth first search, breadth first search, graph, topological sort, memoization, matrix
-
 ```python title="329. Longest Increasing Path in a Matrix - Python Solution"
 from collections import deque
 from functools import cache

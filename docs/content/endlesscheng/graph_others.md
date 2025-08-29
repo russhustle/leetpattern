@@ -44,7 +44,6 @@ comments: True
 
 ![1579](../../assets/1579.png){width=200px}
 
-
 ```python title="1579. Remove Max Number of Edges to Keep Graph Fully Traversable - Python Solution"
 from typing import List
 

@@ -20,7 +20,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-anagram-mappings/) | [LeetCode CH](https://leetcode.cn/problems/find-anagram-mappings/) (Easy)
 
 -   Tags: array, hash table
-
 ```python title="760. Find Anagram Mappings - Python Solution"
 from typing import List
 
@@ -46,7 +45,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/palindrome-permutation/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-permutation/) (Easy)
 
 -   Tags: hash table, string, bit manipulation
-
 ```python title="266. Palindrome Permutation - Python Solution"
 from collections import defaultdict
 
@@ -93,7 +91,6 @@ assert canPermutePalindromeSet("carerac") is True
 -   [LeetCode](https://leetcode.com/problems/sentence-similarity/) | [LeetCode CH](https://leetcode.cn/problems/sentence-similarity/) (Easy)
 
 -   Tags: array, hash table, string
-
 ```python title="734. Sentence Similarity - Python Solution"
 # Hash Set
 def areSentencesSimilar(sentence1, sentence2, similarPairs):
@@ -128,7 +125,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/single-row-keyboard/) | [LeetCode CH](https://leetcode.cn/problems/single-row-keyboard/) (Easy)
 
 -   Tags: hash table, string
-
 ```python title="1165. Single-Row Keyboard - Python Solution"
 def calculateTime(keyboard: str, word: str) -> int:
     pos = {char: i for i, char in enumerate(keyboard)}

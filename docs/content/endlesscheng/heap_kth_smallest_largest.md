@@ -18,7 +18,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/ugly-number-ii/) | [LeetCode CH](https://leetcode.cn/problems/ugly-number-ii/) (Medium)
 
 -   Tags: hash table, math, dynamic programming, heap priority queue
-
 ```python title="264. Ugly Number II - Python Solution"
 import heapq
 
@@ -53,7 +52,6 @@ print(nthUglyNumber(10))  # 12
 
 -   Tags: array, binary search, sorting, heap priority queue, matrix
 -   Given an `n x n` matrix where each of the rows and columns are sorted in ascending order, return the `k-th` smallest element in the matrix.
-
 
 ```python title="378. Kth Smallest Element in a Sorted Matrix - Python Solution"
 from heapq import heapify, heappop, heappush
@@ -117,7 +115,6 @@ print(kthSmallestBinarySearch(matrix, k))  # 13
 -   [LeetCode](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [LeetCode CH](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) (Medium)
 
 -   Tags: array, heap priority queue
-
 ```python title="373. Find K Pairs with Smallest Sums - Python Solution"
 import heapq
 from typing import List
@@ -165,7 +162,6 @@ print(kSmallestPairs(nums1, nums2, k))
 -   [LeetCode](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | [LeetCode CH](https://leetcode.cn/problems/k-th-smallest-prime-fraction/) (Medium)
 
 -   Tags: array, two pointers, binary search, sorting, heap priority queue
-
 ```python title="786. K-th Smallest Prime Fraction - Python Solution"
 import heapq
 from typing import List

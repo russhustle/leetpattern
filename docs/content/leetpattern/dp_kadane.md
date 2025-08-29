@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming
-
 ```python title="53. Maximum Subarray - Python Solution"
 from typing import List
 
@@ -77,7 +76,6 @@ print(maxSubArrayPrefixSum(nums))  # 6
 -   [LeetCode](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-sum-circular-subarray/) (Medium)
 
 -   Tags: array, divide and conquer, dynamic programming, queue, monotonic queue
-
 ```python title="918. Maximum Sum Circular Subarray - Python Solution"
 from collections import deque
 from typing import List
@@ -136,7 +134,6 @@ print(maxSubarraySumCircularMQ(nums))  # 3
 -   [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-subarray/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="152. Maximum Product Subarray - Python Solution"
 from typing import List
 
@@ -178,7 +175,6 @@ print(maxProduct(nums))  # 6
 -   [LeetCode](https://leetcode.com/problems/longest-turbulent-subarray/) | [LeetCode CH](https://leetcode.cn/problems/longest-turbulent-subarray/) (Medium)
 
 -   Tags: array, dynamic programming, sliding window
-
 ```python title="978. Longest Turbulent Subarray - Python Solution"
 from typing import List
 
@@ -217,7 +213,6 @@ print(maxTurbulenceSize(arr))  # 5
 
 -   Tags: array, dynamic programming
 - [灵神：教你一步步思考动态规划 - 从记忆化搜索到递推](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/solutions/2321829/jiao-ni-yi-bu-bu-si-kao-dong-tai-gui-hua-hzz6))
-
 
 ```python title="1186. Maximum Subarray Sum with One Deletion - Python Solution"
 from functools import cache
@@ -258,3 +253,4 @@ if __name__ == "__main__":
     assert maximumSumMemo(arr) == 4
 
 ```
+

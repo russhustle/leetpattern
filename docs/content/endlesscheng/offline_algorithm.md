@@ -66,7 +66,6 @@ int main() {
     cout << endl;
     return 0;
 }
-
 ```
 
 ## 1847. Closest Room

@@ -22,7 +22,6 @@ comments: True
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-
 ```python title="994. Rotting Oranges - Python Solution"
 from collections import deque
 from typing import List
@@ -73,7 +72,6 @@ assert orangesRotting(grid) == 4
 -   Approach: BFS
 -   Time Complexity: O(n * m^2)
 -   Space Complexity: O(n * m)
-
 
 ```python title="127. Word Ladder - Python Solution"
 from collections import defaultdict, deque
@@ -130,7 +128,6 @@ print(ladderLength(beginWord, endWord, wordList))  # 5
 -   Tags: depth first search, breadth first search, graph
 -   ![1466](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
 
-
 ```python title="1466. Reorder Routes to Make All Paths Lead to the City Zero - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -186,7 +183,6 @@ print(minReorderDFS(n, connections))  # 2
 -   [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-
 ```python title="286. Walls and Gates - Python Solution"
 from collections import deque
 from typing import List
@@ -252,7 +248,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/bus-routes/) | [LeetCode CH](https://leetcode.cn/problems/bus-routes/) (Hard)
 
 -   Tags: array, hash table, breadth first search
-
 ```python title="815. Bus Routes - Python Solution"
 from collections import defaultdict, deque
 from typing import List
@@ -297,3 +292,4 @@ target = 6
 print(numBusesToDestination(routes, source, target))  # 2
 
 ```
+

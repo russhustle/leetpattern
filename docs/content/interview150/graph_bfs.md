@@ -20,7 +20,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-genetic-mutation/) | [LeetCode CH](https://leetcode.cn/problems/minimum-genetic-mutation/) (Medium)
 
 -   Tags: hash table, string, breadth first search
-
 ```python title="433. Minimum Genetic Mutation - Python Solution"
 from collections import deque
 from typing import List
@@ -67,7 +66,6 @@ print(minMutation(startGene, endGene, bank))  # 2
 -   Approach: BFS
 -   Time Complexity: O(n * m^2)
 -   Space Complexity: O(n * m)
-
 
 ```python title="127. Word Ladder - Python Solution"
 from collections import defaultdict, deque
@@ -116,3 +114,4 @@ wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
 print(ladderLength(beginWord, endWord, wordList))  # 5
 
 ```
+

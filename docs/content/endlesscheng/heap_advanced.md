@@ -42,7 +42,6 @@ comments: True
 -   Prerequisite: 21. Merge Two Sorted Lists
 -   Video explanation: [23. Merge K Sorted Lists - NeetCode](https://youtu.be/q5a5OiGbT6Q?si=SQ2dCvsYQ3LQctPh)
 
-
 ```python title="23. Merge k Sorted Lists - Python Solution"
 import copy
 import heapq
@@ -130,7 +129,6 @@ print(mergeKLists(lists2))
 -   Tags: hash table, linked list, design, heap priority queue
 -   Similar question: [23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (Hard)
 
-
 ```python title="355. Design Twitter - Python Solution"
 import heapq
 from collections import defaultdict
@@ -182,7 +180,6 @@ print(twitter.getNewsFeed(1))  # [5]
 -   [LeetCode](https://leetcode.com/problems/ipo/) | [LeetCode CH](https://leetcode.cn/problems/ipo/) (Hard)
 
 -   Tags: array, greedy, sorting, heap priority queue
-
 ```python title="502. IPO - Python Solution"
 import heapq
 from typing import List
@@ -236,7 +233,6 @@ print(findMaximizedCapital(k, w, profits, capital))  # 4
 
 ![778](https://assets.leetcode.com/uploads/2021/06/29/swim2-grid-1.jpg)
 
-
 ```python title="778. Swim in Rising Water - Python Solution"
 import heapq
 from typing import List
@@ -282,7 +278,6 @@ print(swimInWater(grid))  # 16
 
 -   Tags: array, binary search, depth first search, breadth first search, union find, heap priority queue, matrix
 -   Return the minimum effort required to travel from the top-left to the bottom-right corner.
-
 
 ```python title="1631. Path With Minimum Effort - Python Solution"
 import heapq
@@ -342,7 +337,6 @@ print(minimumEffortPath(heights))  # 2
 -   [LeetCode](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | [LeetCode CH](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/) (Hard)
 
 -   Tags: array, hash table, greedy, sliding window, sorting, heap priority queue
-
 ```python title="632. Smallest Range Covering Elements from K Lists - Python Solution"
 from heapq import heapify, heapreplace
 from math import inf

@@ -38,7 +38,6 @@ graph LR
     c2 --> c3((c3))
 ```
 
-
 ```python title="160. Intersection of Two Linked Lists - Python Solution"
 from typing import Optional
 
@@ -100,3 +99,4 @@ print(getIntersectionNodeTP(headA, headB))
 # 8 -> 4 -> 5
 
 ```
+

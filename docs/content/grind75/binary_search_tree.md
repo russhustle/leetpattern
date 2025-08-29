@@ -15,7 +15,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="235. Lowest Common Ancestor of a Binary Search Tree - Python Solution"
 from binarytree import build
 
@@ -67,7 +66,6 @@ print(lowestCommonAncestor(root, p, q))
 -   [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="98. Validate Binary Search Tree - Python Solution"
 from typing import Optional
 
@@ -173,7 +171,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## 230. Kth Smallest Element in a BST
@@ -181,7 +178,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="230. Kth Smallest Element in a BST - Python Solution"
 from typing import Optional
 
@@ -230,3 +226,4 @@ print(kthSmallestRecursive(root, k))  # 1
 print(kthSmallestIteratve(root, k))  # 1
 
 ```
+

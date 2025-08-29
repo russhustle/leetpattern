@@ -35,7 +35,6 @@ comments: True
 | 6     | 76   | True         | `[ [76, 6] ]`                   | 0         |
 | 7     | 73   | False        | `[[76, 6], [73, 7]]`            | 0         |
 
-
 ```python title="739. Daily Temperatures - Python Solution"
 from typing import List
 
@@ -65,7 +64,6 @@ print(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-i/) (Easy)
 
 -   Tags: array, hash table, stack, monotonic stack
-
 ```python title="496. Next Greater Element I - Python Solution"
 from typing import List
 
@@ -98,7 +96,6 @@ print(nextGreaterElement(nums1, nums2))  # [3, -1, -1]
 -   [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [LeetCode CH](https://leetcode.cn/problems/next-greater-element-ii/) (Medium)
 
 -   Tags: array, stack, monotonic stack
-
 ```python title="503. Next Greater Element II - Python Solution"
 from typing import List
 
@@ -128,7 +125,6 @@ print(nextGreaterElements(nums))  # [2, -1, 2]
 -   [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [LeetCode CH](https://leetcode.cn/problems/largest-rectangle-in-histogram/) (Hard)
 
 -   Tags: array, stack, monotonic stack
-
 ```python title="84. Largest Rectangle in Histogram - Python Solution"
 from typing import List
 
@@ -164,7 +160,6 @@ print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
 - Return the area of the largest rectangle that can be formed within a rectangle of 1's.
 
 ![0085](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg)
-
 
 ```python title="85. Maximal Rectangle - Python Solution"
 from typing import List
@@ -221,7 +216,6 @@ print(maximalRectangle(matrix))  # 6
 | DP         | O(N) | O(N)  |
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
-
 
 ```python title="42. Trapping Rain Water - Python Solution"
 from typing import List
@@ -339,7 +333,6 @@ int main()
     cout << solution.trap(height) << endl;
     return 0;
 }
-
 ```
 
 ## 901. Online Stock Span
@@ -348,7 +341,6 @@ int main()
 
 -   Tags: stack, design, monotonic stack, data stream
 -   Design a class `StockSpanner` to return the number of consecutive days (including the current day) the price of the stock has been less than or equal to the current price.
-
 
 ```python title="901. Online Stock Span - Python Solution"
 from typing import List
@@ -369,9 +361,10 @@ class StockSpanner:
         return self.cur_day - self.stack[-2][0]
 
 
-obj = StockSpanner()
-prices = [100, 80, 60, 70, 60, 75, 85]
-print([obj.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
+if __name__ == "__main__":
+    ss = StockSpanner()
+    prices = [100, 80, 60, 70, 60, 75, 85]
+    print([ss.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
 
 ```
 
@@ -380,7 +373,6 @@ print([obj.next(price) for price in prices])  # [1, 1, 1, 2, 1, 4, 6]
 -   [LeetCode](https://leetcode.com/problems/remove-duplicate-letters/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicate-letters/) (Medium)
 
 -   Tags: string, stack, greedy, monotonic stack
-
 ```python title="316. Remove Duplicate Letters - Python Solution"
 # Monotonic Stack
 def removeDuplicateLetters(s: str) -> str:
@@ -408,7 +400,6 @@ print(removeDuplicateLetters(s))  # acdb
 -   [LeetCode](https://leetcode.com/problems/132-pattern/) | [LeetCode CH](https://leetcode.cn/problems/132-pattern/) (Medium)
 
 -   Tags: array, binary search, stack, monotonic stack, ordered set
-
 ```python title="456. 132 Pattern - Python Solution"
 from typing import List
 
@@ -444,7 +435,6 @@ print(find132pattern(nums))  # True
 -   [LeetCode](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-total-strength-of-wizards/) (Hard)
 
 -   Tags: array, stack, monotonic stack, prefix sum
-
 ```python title="2281. Sum of Total Strength of Wizards - Python Solution"
 from itertools import accumulate
 from typing import List
@@ -481,3 +471,4 @@ strength = [1, 3, 1, 2]
 print(totalStrength(strength))  # 44
 
 ```
+

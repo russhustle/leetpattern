@@ -48,7 +48,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/reorganize-string/) | [LeetCode CH](https://leetcode.cn/problems/reorganize-string/) (Medium)
 
 -   Tags: hash table, string, greedy, sorting, heap priority queue, counting
-
 ```python title="767. Reorganize String - Python Solution"
 import heapq
 from collections import Counter
@@ -99,7 +98,6 @@ print(reorganizeString("aab"))
 -   [LeetCode](https://leetcode.com/problems/task-scheduler/) | [LeetCode CH](https://leetcode.cn/problems/task-scheduler/) (Medium)
 
 -   Tags: array, hash table, greedy, sorting, heap priority queue, counting
-
 ```python title="621. Task Scheduler - Python Solution"
 import heapq
 from collections import Counter, deque

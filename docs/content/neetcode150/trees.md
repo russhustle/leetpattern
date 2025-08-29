@@ -27,7 +27,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="226. Invert Binary Tree - Python Solution"
 from typing import Optional
 
@@ -103,7 +102,6 @@ print(invertedIterative)
 -   [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="104. Maximum Depth of Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -186,7 +184,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/diameter-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="543. Diameter of Binary Tree - Python Solution"
 from typing import Optional
 
@@ -269,7 +266,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## 110. Balanced Binary Tree
@@ -277,7 +273,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/balanced-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="110. Balanced Binary Tree - Python Solution"
 from typing import Optional
 
@@ -332,7 +327,6 @@ print(isBalanced(root))  # True
 -   [LeetCode](https://leetcode.com/problems/same-tree/) | [LeetCode CH](https://leetcode.cn/problems/same-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="100. Same Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -424,7 +418,6 @@ print(isSameTreeIterativeStack(p2, q2))  # False
 -   [LeetCode](https://leetcode.com/problems/subtree-of-another-tree/) | [LeetCode CH](https://leetcode.cn/problems/subtree-of-another-tree/) (Easy)
 
 -   Tags: tree, depth first search, string matching, binary tree, hash function
-
 ```python title="572. Subtree of Another Tree - Python Solution"
 from typing import Optional
 
@@ -484,7 +477,6 @@ print(isSubtree(root, subRoot))  # False
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="235. Lowest Common Ancestor of a Binary Search Tree - Python Solution"
 from binarytree import build
 
@@ -536,7 +528,6 @@ print(lowestCommonAncestor(root, p, q))
 -   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="102. Binary Tree Level Order Traversal - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -586,7 +577,6 @@ print(levelOrder(tree))  # [[3], [9, 20], [15, 7]]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="199. Binary Tree Right Side View - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -657,7 +647,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="1448. Count Good Nodes in Binary Tree - Python Solution"
 from typing import List
 
@@ -699,7 +688,6 @@ print(goodNodes(root))  # 4
 -   [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [LeetCode CH](https://leetcode.cn/problems/validate-binary-search-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="98. Validate Binary Search Tree - Python Solution"
 from typing import Optional
 
@@ -805,7 +793,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## 230. Kth Smallest Element in a BST
@@ -813,7 +800,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [LeetCode CH](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) (Medium)
 
 -   Tags: tree, depth first search, binary search tree, binary tree
-
 ```python title="230. Kth Smallest Element in a BST - Python Solution"
 from typing import Optional
 
@@ -868,7 +854,6 @@ print(kthSmallestIteratve(root, k))  # 1
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, tree, binary tree
-
 ```python title="105. Construct Binary Tree from Preorder and Inorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -968,7 +953,6 @@ int main() {
     cout << root->right->right->val << endl;  // 7
     return 0;
 }
-
 ```
 
 ## 124. Binary Tree Maximum Path Sum
@@ -976,7 +960,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)
 
 -   Tags: dynamic programming, tree, depth first search, binary tree
-
 ```python title="124. Binary Tree Maximum Path Sum - Python Solution"
 from typing import Optional
 
@@ -1021,7 +1004,6 @@ print(maxPathSum(root))  # 42
 -   [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) (Hard)
 
 -   Tags: string, tree, depth first search, breadth first search, design, binary tree
-
 ```python title="297. Serialize and Deserialize Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -1138,3 +1120,4 @@ print(root2)
 #     4   5
 
 ```
+

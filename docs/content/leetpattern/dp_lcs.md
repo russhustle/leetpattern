@@ -20,7 +20,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="1143. Longest Common Subsequence - Python Solution"
 from functools import cache
 
@@ -68,7 +67,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/edit-distance/) | [LeetCode CH](https://leetcode.cn/problems/edit-distance/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="72. Edit Distance - Python Solution"
 from functools import cache
 
@@ -127,7 +125,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/distinct-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/distinct-subsequences/) (Hard)
 
 -   Tags: string, dynamic programming
-
 ```python title="115. Distinct Subsequences - Python Solution"
 def numDistinct(s: str, t: str) -> int:
     m = len(s)
@@ -159,7 +156,6 @@ print(numDistinct(s, t))  # 3
 -   [LeetCode](https://leetcode.com/problems/is-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/is-subsequence/) (Easy)
 
 -   Tags: two pointers, string, dynamic programming
-
 ```python title="392. Is Subsequence - Python Solution"
 # DP - LCS
 def isSubsequenceLCS(s: str, t: str) -> bool:
@@ -209,7 +205,6 @@ print(isSubsequenceTP(s, t))  # True
 -   [LeetCode](https://leetcode.com/problems/delete-operation-for-two-strings/) | [LeetCode CH](https://leetcode.cn/problems/delete-operation-for-two-strings/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="583. Delete Operation for Two Strings - Python Solution"
 # DP - LCS
 def minDistance1(word1: str, word2: str) -> int:
@@ -270,7 +265,6 @@ print(minDistance2(word1, word2))  # 2
 -   [LeetCode](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) (Easy)
 
 -   Tags: array
-
 ```python title="674. Longest Continuous Increasing Subsequence - Python Solution"
 from typing import List
 
@@ -298,7 +292,6 @@ print(findLengthOfLCIS([1, 3, 5, 4, 7]))  # 3
 -   [LeetCode](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | [LeetCode CH](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) (Medium)
 
 -   Tags: array, binary search, dynamic programming, sliding window, rolling hash, hash function
-
 ```python title="718. Maximum Length of Repeated Subarray - Python Solution"
 from typing import List
 
@@ -328,7 +321,6 @@ print(findLength([1, 2, 3, 2, 1], [3, 2, 1, 4, 7]))  # 3
 -   [LeetCode](https://leetcode.com/problems/uncrossed-lines/) | [LeetCode CH](https://leetcode.cn/problems/uncrossed-lines/) (Medium)
 
 -   Tags: array, dynamic programming
-
 ```python title="1035. Uncrossed Lines - Python Solution"
 from typing import List
 
@@ -355,3 +347,4 @@ def maxUncrossedLines(nums1: List[int], nums2: List[int]) -> int:
 print(maxUncrossedLines([1, 4, 2], [1, 2, 4]))  # 2
 
 ```
+

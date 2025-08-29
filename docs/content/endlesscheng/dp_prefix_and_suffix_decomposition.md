@@ -85,7 +85,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [LeetCode CH](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) (Medium)
 
 -   Tags: array, dynamic programming, sliding window
-
 ```python title="1493. Longest Subarray of 1's After Deleting One Element - Python Solution"
 from typing import List
 
@@ -120,7 +119,6 @@ print(longestSubarray(nums))  # 3
 -   [LeetCode](https://leetcode.com/problems/longest-mountain-in-array/) | [LeetCode CH](https://leetcode.cn/problems/longest-mountain-in-array/) (Medium)
 
 -   Tags: array, two pointers, dynamic programming, enumeration
-
 ```python title="845. Longest Mountain in Array - Python Solution"
 from typing import List
 
@@ -158,7 +156,6 @@ print(longestMountain(arr))  # 5
 -   [LeetCode](https://leetcode.com/problems/sum-of-beauty-in-the-array/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-beauty-in-the-array/) (Medium)
 
 -   Tags: array
-
 ```python title="2012. Sum of Beauty in the Array - Python Solution"
 from typing import List
 
@@ -214,7 +211,6 @@ print(sumOfBeauties(nums))  # 1
 -   [LeetCode](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | [LeetCode CH](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) (Medium)
 
 -   Tags: array
-
 ```python title="2874. Maximum Value of an Ordered Triplet II - Python Solution"
 from typing import List
 
@@ -243,7 +239,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [LeetCode CH](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) (Hard)
 
 -   Tags: array, dynamic programming
-
 ```python title="123. Best Time to Buy and Sell Stock III - Python Solution"
 from typing import List
 
@@ -332,7 +327,6 @@ print(maxProfitDP2(prices))  # 6
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/) (Medium)
 
 -   Tags: string, dynamic programming, greedy
-
 ```python title="2712. Minimum Cost to Make All Characters Equal - Python Solution"
 def minimumCost(s: str) -> int:
     n = len(s)
@@ -361,7 +355,6 @@ if __name__ == "__main__":
 
 -   Tags: array, dynamic programming
 - [灵神：教你一步步思考动态规划 - 从记忆化搜索到递推](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/solutions/2321829/jiao-ni-yi-bu-bu-si-kao-dong-tai-gui-hua-hzz6))
-
 
 ```python title="1186. Maximum Subarray Sum with One Deletion - Python Solution"
 from functools import cache
@@ -417,7 +410,6 @@ if __name__ == "__main__":
 | DP         | O(N) | O(N)  |
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
-
 
 ```python title="42. Trapping Rain Water - Python Solution"
 from typing import List
@@ -535,7 +527,6 @@ int main()
     cout << solution.trap(height) << endl;
     return 0;
 }
-
 ```
 
 ## 2711. Difference of Number of Distinct Values on Diagonals
@@ -543,7 +534,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/) | [LeetCode CH](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) (Medium)
 
 -   Tags: array, hash table, matrix
-
 ```python title="2711. Difference of Number of Distinct Values on Diagonals - Python Solution"
 from typing import List
 
@@ -589,7 +579,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximum-or/) | [LeetCode CH](https://leetcode.cn/problems/maximum-or/) (Medium)
 
 -   Tags: array, greedy, bit manipulation, prefix sum
-
 ```python title="2680. Maximum OR - Python Solution"
 from typing import List
 
@@ -629,7 +618,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array/) (Hard)
 
 -   Tags: array, binary search, dynamic programming, greedy
-
 ```python title="1671. Minimum Number of Removals to Make Mountain Array - Python Solution"
 from typing import List
 
@@ -680,7 +668,6 @@ print(minimumMountainRemovals(nums))  # 3
 | ------------------ | ---- | ----- |
 | Prefix             | O(n) | O(n)  |
 | Prefix (Optimized) | O(n) | O(1)  |
-
 
 ```python title="238. Product of Array Except Self - Python Solution"
 from typing import List
@@ -776,7 +763,6 @@ int main()
     // 24, 12, 8, 6
     return 0;
 }
-
 ```
 
 ## 2906. Construct Product Matrix
@@ -819,7 +805,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/count-increasing-quadruplets/) | [LeetCode CH](https://leetcode.cn/problems/count-increasing-quadruplets/) (Hard)
 
 -   Tags: array, dynamic programming, binary indexed tree, enumeration, prefix sum
-
 ```python title="2552. Count Increasing Quadruplets - Python Solution"
 from typing import List
 

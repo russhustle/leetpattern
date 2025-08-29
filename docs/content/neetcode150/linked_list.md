@@ -41,7 +41,6 @@ C --> B((2))
 B --> A((1))
 ```
 
-
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
 
@@ -97,7 +96,6 @@ print(reverseListRecursive(head2))
 -   Merge the two lists into one sorted list.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIdigk956u0?si=2cVoU6DujA3Mgtlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="21. Merge Two Sorted Lists - Python Solution"
 from typing import Optional
@@ -167,7 +165,6 @@ class Solution {
         return dummy.next;
     }
 };
-
 ```
 
 ## 143. Reorder List
@@ -175,7 +172,6 @@ class Solution {
 -   [LeetCode](https://leetcode.com/problems/reorder-list/) | [LeetCode CH](https://leetcode.cn/problems/reorder-list/) (Medium)
 
 -   Tags: linked list, two pointers, stack, recursion
-
 ```python title="143. Reorder List - Python Solution"
 from typing import Optional
 
@@ -227,7 +223,6 @@ print(head)  # 1 -> 6 -> 2 -> 5 -> 3 -> 4
 -   Tags: linked list, two pointers
 -   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
-
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
 
@@ -264,7 +259,6 @@ print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
 -   [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/) | [LeetCode CH](https://leetcode.cn/problems/copy-list-with-random-pointer/) (Medium)
 
 -   Tags: hash table, linked list
-
 ```python title="138. Copy List with Random Pointer - Python Solution"
 from typing import Optional
 
@@ -313,7 +307,6 @@ def copyRandomList(head: "Optional[Node]") -> "Optional[Node]":
 
 -   Tags: linked list, math, recursion
 -   Represent the sum of two numbers as a linked list.
-
 
 ```python title="2. Add Two Numbers - Python Solution"
 from typing import Optional
@@ -386,7 +379,6 @@ class Solution {
         return dummy.next;
     }
 };
-
 ```
 
 ## 141. Linked List Cycle
@@ -410,7 +402,6 @@ graph LR
     C --> D((4))
     D --> B
 ```
-
 
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
@@ -460,7 +451,6 @@ class Solution {
         return false;
     }
 };
-
 ```
 
 ## 287. Find the Duplicate Number
@@ -491,7 +481,6 @@ graph LR
 3 --> 2
 4 --> 2
 ```
-
 
 ```python title="287. Find the Duplicate Number - Python Solution"
 from typing import List
@@ -533,7 +522,6 @@ print(findDuplicate(nums))  # 2
 | ------------------ | ----------------------------- |
 | Doubly Linked List | To store the key-value pairs. |
 | Hash Map           | To store the key-node pairs.  |
-
 
 ```python title="146. LRU Cache - Python Solution"
 from collections import OrderedDict
@@ -734,7 +722,6 @@ int main() {
     cout << lru.get(4) << endl;  // 4
     return 0;
 }
-
 ```
 
 ## 23. Merge k Sorted Lists
@@ -744,7 +731,6 @@ int main() {
 -   Tags: linked list, divide and conquer, heap priority queue, merge sort
 -   Prerequisite: 21. Merge Two Sorted Lists
 -   Video explanation: [23. Merge K Sorted Lists - NeetCode](https://youtu.be/q5a5OiGbT6Q?si=SQ2dCvsYQ3LQctPh)
-
 
 ```python title="23. Merge k Sorted Lists - Python Solution"
 import copy
@@ -831,7 +817,6 @@ print(mergeKLists(lists2))
 -   [LeetCode](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [LeetCode CH](https://leetcode.cn/problems/reverse-nodes-in-k-group/) (Hard)
 
 -   Tags: linked list, recursion
-
 ```python title="25. Reverse Nodes in k-Group - Python Solution"
 from typing import Optional
 
@@ -874,3 +859,4 @@ if __name__ == "__main__":
     print(reverseKGroup(head, k))  # 2 -> 1 -> 4 -> 3 -> 5
 
 ```
+

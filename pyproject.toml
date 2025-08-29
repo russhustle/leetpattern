@@ -1,5 +1,5 @@
 [project]
-name = "lettpattern"
+name = "leetpattern"
 version = "0.2.0"
 description = ""
 authors = [{ name = "Sihan A" }]

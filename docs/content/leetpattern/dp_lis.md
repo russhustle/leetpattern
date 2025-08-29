@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-increasing-subsequence/) (Medium)
 
 -   Tags: array, binary search, dynamic programming
-
 ```python title="300. Longest Increasing Subsequence - Python Solution"
 from functools import cache
 from typing import List
@@ -73,7 +72,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/number-of-longest-increasing-subsequence/) (Medium)
 
 -   Tags: array, dynamic programming, binary indexed tree, segment tree
-
 ```python title="673. Number of Longest Increasing Subsequence - Python Solution"
 from typing import List
 
@@ -110,7 +108,6 @@ print(findNumberOfLIS(nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/russian-doll-envelopes/) | [LeetCode CH](https://leetcode.cn/problems/russian-doll-envelopes/) (Hard)
 
 -   Tags: array, binary search, dynamic programming, sorting
-
 ```python title="354. Russian Doll Envelopes - Python Solution"
 from typing import List
 
@@ -146,7 +143,6 @@ print(maxEnvelopes(envelopes))  # 3
 -   [LeetCode](https://leetcode.com/problems/delete-columns-to-make-sorted-iii/) | [LeetCode CH](https://leetcode.cn/problems/delete-columns-to-make-sorted-iii/) (Hard)
 
 -   Tags: array, string, dynamic programming
-
 ```python title="960. Delete Columns to Make Sorted III - Python Solution"
 from typing import List
 
@@ -173,7 +169,6 @@ def minDeletionSize(strs: List[str]) -> int:
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array/) (Hard)
 
 -   Tags: array, binary search, dynamic programming, greedy
-
 ```python title="1671. Minimum Number of Removals to Make Mountain Array - Python Solution"
 from typing import List
 
@@ -212,7 +207,6 @@ print(minimumMountainRemovals(nums))  # 3
 -   [LeetCode](https://leetcode.com/problems/valid-mountain-array/) | [LeetCode CH](https://leetcode.cn/problems/valid-mountain-array/) (Easy)
 
 -   Tags: array
-
 ```python title="941. Valid Mountain Array - Python Solution"
 from typing import List
 
@@ -263,7 +257,6 @@ print(validMountainArrayLP(arr))  # True
 -   [LeetCode](https://leetcode.com/problems/longest-mountain-in-array/) | [LeetCode CH](https://leetcode.cn/problems/longest-mountain-in-array/) (Medium)
 
 -   Tags: array, two pointers, dynamic programming, enumeration
-
 ```python title="845. Longest Mountain in Array - Python Solution"
 from typing import List
 
@@ -295,3 +288,4 @@ arr = [2, 1, 4, 7, 3, 2, 5]
 print(longestMountain(arr))  # 5
 
 ```
+

@@ -37,7 +37,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="102. Binary Tree Level Order Traversal - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -87,7 +86,6 @@ print(levelOrder(tree))  # [[3], [9, 20], [15, 7]]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="103. Binary Tree Zigzag Level Order Traversal - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -137,7 +135,6 @@ print(zigzagLevelOrder(tree))  # [[3], [20, 9], [15, 7]]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
-
 ```python title="107. Binary Tree Level Order Traversal II - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -187,7 +184,6 @@ print(levelOrderBottom(tree))  # [[15, 7], [9, 20], [3]]
 -   [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="199. Binary Tree Right Side View - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -258,7 +254,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/find-bottom-left-tree-value/) | [LeetCode CH](https://leetcode.cn/problems/find-bottom-left-tree-value/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="513. Find Bottom Left Tree Value - Python Solution"
 from collections import deque
 from typing import Optional
@@ -316,7 +311,6 @@ print(findBottomLeftValue(root))  # 5
 -   [LeetCode](https://leetcode.com/problems/find-largest-value-in-each-tree-row/) | [LeetCode CH](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="515. Find Largest Value in Each Tree Row - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -374,7 +368,6 @@ print(largestValues(root))  # [1, 2, 4, 5]
 -   [LeetCode](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="637. Average of Levels in Binary Tree - Python Solution"
 from collections import deque
 from typing import List, Optional
@@ -426,7 +419,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="1161. Maximum Level Sum of a Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -487,7 +479,6 @@ print(maxLevelSum(root))  # 2
 -   [LeetCode](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-sum-in-a-binary-tree/) (Medium)
 
 -   Tags: tree, breadth first search, sorting, binary tree
-
 ```python title="2583. Kth Largest Sum in a Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -534,7 +525,6 @@ print(kthLargestLevelSum(root, k))  # 13
 -   [LeetCode](https://leetcode.com/problems/deepest-leaves-sum/) | [LeetCode CH](https://leetcode.cn/problems/deepest-leaves-sum/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="1302. Deepest Leaves Sum - Python Solution"
 from collections import deque
 from typing import Optional
@@ -603,7 +593,6 @@ print(deepestLeavesSum(root))  # 15
 -   [LeetCode](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) (Medium)
 
 -   Tags: hash table, tree, depth first search, breadth first search, binary tree
-
 ```python title="863. All Nodes Distance K in Binary Tree - Python Solution"
 from collections import deque
 from typing import List

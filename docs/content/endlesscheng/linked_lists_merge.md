@@ -20,7 +20,6 @@ comments: True
 -   Tags: linked list, math, recursion
 -   Represent the sum of two numbers as a linked list.
 
-
 ```python title="2. Add Two Numbers - Python Solution"
 from typing import Optional
 
@@ -92,7 +91,6 @@ class Solution {
         return dummy.next;
     }
 };
-
 ```
 
 ## 445. Add Two Numbers II
@@ -106,7 +104,6 @@ class Solution {
 
 -   Tags: linked list, math, stack
 -   Given a number represented as a linked list, double it and return the resulting linked list.
-
 
 ```python title="2816. Double a Number Represented as a Linked List - Python Solution"
 from typing import Optional
@@ -147,7 +144,6 @@ print(doubleIt(head))
 -   Merge the two lists into one sorted list.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIdigk956u0?si=2cVoU6DujA3Mgtlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ```python title="21. Merge Two Sorted Lists - Python Solution"
 from typing import Optional
@@ -217,7 +213,6 @@ class Solution {
         return dummy.next;
     }
 };
-
 ```
 
 ## 369. Plus One Linked List

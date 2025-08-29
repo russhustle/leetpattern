@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/reverse-string/) | [LeetCode CH](https://leetcode.cn/problems/reverse-string/) (Easy)
 
 -   Tags: two pointers, string
-
 ```python title="344. Reverse String - Python Solution"
 from typing import List
 
@@ -47,7 +46,6 @@ print(s)  # ['o', 'l', 'l', 'e', 'h']
 -   [LeetCode](https://leetcode.com/problems/reverse-string-ii/) | [LeetCode CH](https://leetcode.cn/problems/reverse-string-ii/) (Easy)
 
 -   Tags: two pointers, string
-
 ```python title="541. Reverse String II - Python Solution"
 def reverseStr(s: str, k: int) -> str:
     def reverse_substring(text):
@@ -77,7 +75,6 @@ print(reverseStr(s, k))  # "bacdfeg"
 -   [LeetCode](https://leetcode.com/problems/reverse-words-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/reverse-words-in-a-string/) (Medium)
 
 -   Tags: two pointers, string
-
 ```python title="151. Reverse Words in a String - Python Solution"
 def reverseWords(s: str) -> str:
     words = s.split()
@@ -102,7 +99,6 @@ print(reverseWords(s))  # "blue is sky the"
 -   [LeetCode](https://leetcode.com/problems/length-of-last-word/) | [LeetCode CH](https://leetcode.cn/problems/length-of-last-word/) (Easy)
 
 -   Tags: string
-
 ```python title="58. Length of Last Word - Python Solution"
 def lengthOfLastWord(s: str) -> int:
     n = 0
@@ -125,7 +121,6 @@ print(lengthOfLastWord("Hello World"))  # 5
 -   [LeetCode](https://leetcode.com/problems/backspace-string-compare/) | [LeetCode CH](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
 
 -   Tags: two pointers, string, stack, simulation
-
 ```python title="844. Backspace String Compare - Python Solution"
 def backspaceCompare(s: str, t: str) -> bool:
 
@@ -152,7 +147,6 @@ print(backspaceCompare("ab#c", "ad#c"))  # True
 -   [LeetCode](https://leetcode.com/problems/counting-words-with-a-given-prefix/) | [LeetCode CH](https://leetcode.cn/problems/counting-words-with-a-given-prefix/) (Easy)
 
 -   Tags: array, string, string matching
-
 ```python title="2185. Counting Words With a Given Prefix - Python Solution"
 from typing import List
 
@@ -196,7 +190,6 @@ print(prefixCount2(words, pref))  # 2
 -   [LeetCode](https://leetcode.com/problems/reverse-prefix-of-word/) | [LeetCode CH](https://leetcode.cn/problems/reverse-prefix-of-word/) (Easy)
 
 -   Tags: two pointers, string, stack
-
 ```python title="2000. Reverse Prefix of Word - Python Solution"
 def reversePrefix(word: str, ch: str) -> str:
     if ch not in word:
@@ -223,3 +216,4 @@ ch = "d"
 print(reversePrefix(word, ch))  # "dcbaefd"
 
 ```
+

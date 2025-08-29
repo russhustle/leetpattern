@@ -36,7 +36,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-strength-of-a-group/) | [LeetCode CH](https://leetcode.cn/problems/maximum-strength-of-a-group/) (Medium)
 
 -   Tags: array, dynamic programming, backtracking, greedy, bit manipulation, sorting, enumeration
-
 ```python title="2708. Maximum Strength of a Group - Python Solution"
 from typing import List
 
@@ -76,7 +75,6 @@ print(maxStrength(nums))  # 1350
 -   [LeetCode](https://leetcode.com/problems/sorting-three-groups/) | [LeetCode CH](https://leetcode.cn/problems/sorting-three-groups/) (Medium)
 
 -   Tags: array, binary search, dynamic programming
-
 ```python title="2826. Sorting Three Groups - Python Solution"
 from functools import cache
 from typing import List
@@ -170,7 +168,6 @@ if __name__ == "__main__":
 |     2     |      9      |     4     |      3      |    4    |     5     |
 |     5     |      2      |     4     |      5      |    6    |     5     |
 
-
 ```python title="376. Wiggle Subsequence - Python Solution"
 from typing import List
 
@@ -236,7 +233,6 @@ print(wiggleMaxLengthGreedy(nums))  # 6
 -   Tags: array, dynamic programming
 - [灵神：教你一步步思考动态规划 - 从记忆化搜索到递推](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/solutions/2321829/jiao-ni-yi-bu-bu-si-kao-dong-tai-gui-hua-hzz6))
 
-
 ```python title="1186. Maximum Subarray Sum with One Deletion - Python Solution"
 from functools import cache
 from math import inf
@@ -276,3 +272,4 @@ if __name__ == "__main__":
     assert maximumSumMemo(arr) == 4
 
 ```
+

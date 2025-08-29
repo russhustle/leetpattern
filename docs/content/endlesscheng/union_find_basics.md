@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/satisfiability-of-equality-equations/) | [LeetCode CH](https://leetcode.cn/problems/satisfiability-of-equality-equations/) (Medium)
 
 -   Tags: array, string, union find, graph
-
 ```python title="990. Satisfiability of Equality Equations - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -77,7 +76,6 @@ print(equationsPossible(equations))  # False
 -   [LeetCode](https://leetcode.com/problems/accounts-merge/) | [LeetCode CH](https://leetcode.cn/problems/accounts-merge/) (Medium)
 
 -   Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
-
 ```python title="721. Accounts Merge - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -155,7 +153,6 @@ print(accountsMerge(accounts))
 -   [LeetCode](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/) | [LeetCode CH](https://leetcode.cn/problems/the-earliest-moment-when-everyone-become-friends/) (Medium)
 
 -   Tags: array, union find, sorting
-
 ```python title="1101. The Earliest Moment When Everyone Become Friends - Python Solution"
 from typing import List
 

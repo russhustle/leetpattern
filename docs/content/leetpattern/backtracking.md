@@ -28,7 +28,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/combinations/) | [LeetCode CH](https://leetcode.cn/problems/combinations/) (Medium)
 
 -   Tags: backtracking
-
 ```python title="77. Combinations - Python Solution"
 import itertools
 from typing import List
@@ -74,7 +73,6 @@ print(list(combineItertools(4, 2)))
 -   Return all possible letter combinations that the number could represent.
 
 ![17](https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png)
-
 
 ```python title="17. Letter Combinations of a Phone Number - Python Solution"
 from typing import List
@@ -134,7 +132,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/combination-sum/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="39. Combination Sum - Python Solution"
 from typing import List
 
@@ -175,7 +172,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/combination-sum-ii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-ii/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="40. Combination Sum II - Python Solution"
 from typing import List
 
@@ -218,7 +214,6 @@ print(combinationSum2([10, 1, 2, 7, 6, 1, 5], 8))
 -   [LeetCode](https://leetcode.com/problems/combination-sum-iii/) | [LeetCode CH](https://leetcode.cn/problems/combination-sum-iii/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="216. Combination Sum III - Python Solution"
 import itertools
 from typing import List
@@ -265,7 +260,6 @@ print(combinationSum3Itertools(3, 7))  # [(1, 2, 4)]
 -   [LeetCode](https://leetcode.com/problems/palindrome-partitioning/) | [LeetCode CH](https://leetcode.cn/problems/palindrome-partitioning/) (Medium)
 
 -   Tags: string, dynamic programming, backtracking
-
 ```python title="131. Palindrome Partitioning - Python Solution"
 from typing import List
 
@@ -303,7 +297,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/restore-ip-addresses/) | [LeetCode CH](https://leetcode.cn/problems/restore-ip-addresses/) (Medium)
 
 -   Tags: string, backtracking
-
 ```python title="93. Restore IP Addresses - Python Solution"
 from typing import List
 
@@ -357,7 +350,6 @@ print(restoreIpAddresses("25525511135"))
 -   [LeetCode](https://leetcode.com/problems/subsets/) | [LeetCode CH](https://leetcode.cn/problems/subsets/) (Medium)
 
 -   Tags: array, backtracking, bit manipulation
-
 ```python title="78. Subsets - Python Solution"
 from typing import List
 
@@ -415,7 +407,6 @@ print(subsets_binary_decision([1, 2, 3]))
 -   [LeetCode](https://leetcode.com/problems/subsets-ii/) | [LeetCode CH](https://leetcode.cn/problems/subsets-ii/) (Medium)
 
 -   Tags: array, backtracking, bit manipulation
-
 ```python title="90. Subsets II - Python Solution"
 from typing import List
 
@@ -448,7 +439,6 @@ print(subsetsWithDup([1, 2, 2]))
 -   [LeetCode](https://leetcode.com/problems/non-decreasing-subsequences/) | [LeetCode CH](https://leetcode.cn/problems/non-decreasing-subsequences/) (Medium)
 
 -   Tags: array, hash table, backtracking, bit manipulation
-
 ```python title="491. Non-decreasing Subsequences - Python Solution"
 from typing import List
 
@@ -486,7 +476,6 @@ print(findSubsequences([4, 6, 7, 7]))
 -   [LeetCode](https://leetcode.com/problems/permutations/) | [LeetCode CH](https://leetcode.cn/problems/permutations/) (Medium)
 
 -   Tags: array, backtracking
-
 ```python title="46. Permutations - Python Solution"
 from typing import List
 
@@ -527,7 +516,6 @@ print(permute([1, 2, 3]))
 -   [LeetCode](https://leetcode.com/problems/permutations-ii/) | [LeetCode CH](https://leetcode.cn/problems/permutations-ii/) (Medium)
 
 -   Tags: array, backtracking, sorting
-
 ```python title="47. Permutations II - Python Solution"
 from typing import List
 
@@ -571,7 +559,6 @@ print(permuteUnique([1, 1, 2]))
 - Hard
 - [N-Queens](https://leetcode.com/problems/n-queens/)
 - [N 皇后](https://leetcode.cn/problems/n-queens/)
-
 
 ```python title="51. N-Queens - Python Solution"
 from typing import List
@@ -666,7 +653,6 @@ if __name__ == "__main__":
 - [解数独](https://leetcode.cn/problems/sudoku-solver/)
 - Hard
 
-
 ```python title="37. Sudoku Solver - Python Solution"
 from pprint import pprint
 from typing import List
@@ -741,7 +727,6 @@ pprint(board)
 -   [LeetCode](https://leetcode.com/problems/word-search/) | [LeetCode CH](https://leetcode.cn/problems/word-search/) (Medium)
 
 -   Tags: array, string, backtracking, depth first search, matrix
-
 ```python title="79. Word Search - Python Solution"
 from typing import List
 
@@ -797,7 +782,6 @@ print(exist(board, word))  # True
 -   [LeetCode](https://leetcode.com/problems/word-search-ii/) | [LeetCode CH](https://leetcode.cn/problems/word-search-ii/) (Hard)
 
 -   Tags: array, string, backtracking, trie, matrix
-
 ```python title="212. Word Search II - Python Solution"
 from typing import List
 
@@ -856,3 +840,4 @@ print(findWords(board, words))
 # ['eat', 'oath']
 
 ```
+

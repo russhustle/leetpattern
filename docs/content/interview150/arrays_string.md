@@ -36,7 +36,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode CH](https://leetcode.cn/problems/merge-sorted-array/) (Easy)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="88. Merge Sorted Array - Python Solution"
 from typing import List
 
@@ -78,7 +77,6 @@ print(nums1)  # [1, 2, 2, 3, 5, 6]
 
 -   Tags: array, two pointers
 -   Remove all instances of a given value in-place.
-
 
 ```python title="27. Remove Element - Python Solution"
 from typing import List
@@ -129,7 +127,6 @@ int main() {
     cout << removeElement(nums, val) << endl;  // 2
     return 0;
 }
-
 ```
 
 ## 26. Remove Duplicates from Sorted Array
@@ -138,7 +135,6 @@ int main() {
 
 -   Tags: array, two pointers
 -   Remove duplicates in-place.
-
 
 ```python title="26. Remove Duplicates from Sorted Array - Python Solution"
 from typing import List
@@ -169,7 +165,6 @@ print(removeDuplicates(nums))  # 2
 -   Allow at most two duplicates.
 -   fast pointer: explore the array
 -   slow pointer: point to the position to be replaced
-
 
 ```python title="80. Remove Duplicates from Sorted Array II - Python Solution"
 from typing import List
@@ -213,7 +208,6 @@ print(removeDuplicates(nums))
 | 1     | 1       | 1     |
 | 2     | 0       | 1     |
 | 2     | 1       | 2     |
-
 
 ```python title="169. Majority Element - Python Solution"
 from collections import defaultdict
@@ -271,7 +265,6 @@ graph TD
     C --Reverse remaining n-k elements--> D[5 6 7 1 2 3 4];
 ```
 
-
 ```python title="189. Rotate Array - Python Solution"
 from typing import List
 
@@ -328,7 +321,6 @@ int main() {
     cout << endl;
     return 0;
 }
-
 ```
 
 ## 121. Best Time to Buy and Sell Stock
@@ -337,7 +329,6 @@ int main() {
 
 -   Tags: array, dynamic programming
 -   Return the maximum profit that can be achieved from buying on one day and selling on another day.
-
 
 ```python title="121. Best Time to Buy and Sell Stock - Python Solution"
 from typing import List
@@ -445,7 +436,6 @@ int main()
     cout << obj.maxProfit(prices) << endl;
     return 0;
 }
-
 ```
 
 ## 122. Best Time to Buy and Sell Stock II
@@ -454,7 +444,6 @@ int main()
 
 -   Tags: array, dynamic programming, greedy
 -   Return the maximum profit you can achieve.
-
 
 ```python title="122. Best Time to Buy and Sell Stock II - Python Solution"
 from typing import List
@@ -526,7 +515,6 @@ print(maxProfitGreedy(prices))  # 7
 -   Tags: array, dynamic programming, greedy
 - Return `True` if you can reach the last index, otherwise `False`.
 
-
 ```python title="55. Jump Game - Python Solution"
 from typing import List
 
@@ -578,7 +566,6 @@ int main() {
     cout << obj.canJump(nums) << endl;
     return 0;
 }
-
 ```
 
 ## 45. Jump Game II
@@ -587,7 +574,6 @@ int main() {
 
 -   Tags: array, dynamic programming, greedy
 - Return the minimum number of jumps to reach the last index.
-
 
 ```python title="45. Jump Game II - Python Solution"
 from typing import List
@@ -625,7 +611,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/h-index/) | [LeetCode CH](https://leetcode.cn/problems/h-index/) (Medium)
 
 -   Tags: array, sorting, counting sort
-
 ```python title="274. H-Index - Python Solution"
 from typing import List
 
@@ -658,7 +643,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [LeetCode CH](https://leetcode.cn/problems/insert-delete-getrandom-o1/) (Medium)
 
 -   Tags: array, hash table, math, design, randomized
-
 ```python title="380. Insert Delete GetRandom O(1) - Python Solution"
 import random
 
@@ -712,7 +696,6 @@ print(obj.remove(1))  # True
 | ------------------ | ---- | ----- |
 | Prefix             | O(n) | O(n)  |
 | Prefix (Optimized) | O(n) | O(1)  |
-
 
 ```python title="238. Product of Array Except Self - Python Solution"
 from typing import List
@@ -808,7 +791,6 @@ int main()
     // 24, 12, 8, 6
     return 0;
 }
-
 ```
 
 ## 134. Gas Station
@@ -816,7 +798,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/gas-station/) | [LeetCode CH](https://leetcode.cn/problems/gas-station/) (Medium)
 
 -   Tags: array, greedy
-
 ```python title="134. Gas Station - Python Solution"
 from typing import List
 
@@ -853,7 +834,6 @@ print(canCompleteCircuit(gas, cost))  # 3
 
 -   Tags: array, greedy
 -   Return the minimum number of candies you must give.
-
 
 ```python title="135. Candy - Python Solution"
 from typing import List
@@ -900,7 +880,6 @@ print(candy(ratings))  # 5
 | DP         | O(N) | O(N)  |
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
-
 
 ```python title="42. Trapping Rain Water - Python Solution"
 from typing import List
@@ -1018,7 +997,6 @@ int main()
     cout << solution.trap(height) << endl;
     return 0;
 }
-
 ```
 
 ## 13. Roman to Integer
@@ -1026,7 +1004,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/roman-to-integer/) | [LeetCode CH](https://leetcode.cn/problems/roman-to-integer/) (Easy)
 
 -   Tags: hash table, math, string
-
 ```python title="13. Roman to Integer - Python Solution"
 from itertools import pairwise
 
@@ -1072,7 +1049,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/length-of-last-word/) | [LeetCode CH](https://leetcode.cn/problems/length-of-last-word/) (Easy)
 
 -   Tags: string
-
 ```python title="58. Length of Last Word - Python Solution"
 def lengthOfLastWord(s: str) -> int:
     n = 0
@@ -1095,7 +1071,6 @@ print(lengthOfLastWord("Hello World"))  # 5
 -   [LeetCode](https://leetcode.com/problems/longest-common-prefix/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-prefix/) (Easy)
 
 -   Tags: string, trie
-
 ```python title="14. Longest Common Prefix - Python Solution"
 from typing import List
 
@@ -1186,7 +1161,6 @@ print(longestCommonPrefixBinarySearch(strs))  # "fl"
 -   [LeetCode](https://leetcode.com/problems/reverse-words-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/reverse-words-in-a-string/) (Medium)
 
 -   Tags: two pointers, string
-
 ```python title="151. Reverse Words in a String - Python Solution"
 def reverseWords(s: str) -> str:
     words = s.split()
@@ -1216,7 +1190,6 @@ print(reverseWords(s))  # "blue is sky the"
 -   [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
 
 -   Tags: two pointers, string, string matching
-
 ```python title="28. Find the Index of the First Occurrence in a String - Python Solution"
 from template import LPS
 

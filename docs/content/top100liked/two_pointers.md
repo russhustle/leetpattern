@@ -18,7 +18,6 @@ comments: True
 -   Tags: array, two pointers
 -   Move all zeroes to the end of the array while maintaining the relative order of the non-zero elements.
 
-
 ```python title="283. Move Zeroes - Python Solution"
 from typing import List
 
@@ -70,7 +69,6 @@ int main() {
     cout << endl;
     return 0;
 }
-
 ```
 
 ## 11. Container With Most Water
@@ -81,7 +79,6 @@ int main() {
 - Return the maximum area of water that can be trapped between the vertical lines.
 
 ![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
-
 
 ```python title="11. Container With Most Water - Python Solution"
 from typing import List
@@ -160,7 +157,6 @@ int main() {
     cout << maxArea(height) << endl;  // 49
     return 0;
 }
-
 ```
 
 ## 15. 3Sum
@@ -168,7 +164,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/3sum/) | [LeetCode CH](https://leetcode.cn/problems/3sum/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="15. 3Sum - Python Solution"
 from typing import List
 
@@ -260,7 +255,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 42. Trapping Rain Water
@@ -277,7 +271,6 @@ int main() {
 | DP         | O(N) | O(N)  |
 | Left Right | O(N) | O(1)  |
 | Monotonic  | O(N) | O(N)  |
-
 
 ```python title="42. Trapping Rain Water - Python Solution"
 from typing import List
@@ -395,5 +388,5 @@ int main()
     cout << solution.trap(height) << endl;
     return 0;
 }
-
 ```
+

@@ -17,7 +17,6 @@ comments: True
 -   Tags: array, dynamic programming, greedy
 - Return the minimum number of jumps to reach the last index.
 
-
 ```python title="45. Jump Game II - Python Solution"
 from typing import List
 

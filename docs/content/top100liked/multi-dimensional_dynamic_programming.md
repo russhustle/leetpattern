@@ -21,7 +21,6 @@ comments: True
 
 ![62](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 
-
 ```python title="62. Unique Paths - Python Solution"
 # DP - 2D
 def uniquePaths(m: int, n: int) -> int:
@@ -66,7 +65,6 @@ int main() {
     cout << uniquePaths(m, n) << endl;  // 28
     return 0;
 }
-
 ```
 
 ## 64. Minimum Path Sum
@@ -74,7 +72,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/minimum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-path-sum/) (Medium)
 
 -   Tags: array, dynamic programming, matrix
-
 ```python title="64. Minimum Path Sum - Python Solution"
 from typing import List
 
@@ -109,7 +106,6 @@ print(minPathSum(grid))  # 7
 
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
-
 
 ```python title="5. Longest Palindromic Substring - Python Solution"
 # DP - Interval
@@ -175,7 +171,6 @@ print(longestPalindromeCenter(s))  # "aba"
 -   [LeetCode](https://leetcode.com/problems/longest-common-subsequence/) | [LeetCode CH](https://leetcode.cn/problems/longest-common-subsequence/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="1143. Longest Common Subsequence - Python Solution"
 from functools import cache
 
@@ -223,7 +218,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/edit-distance/) | [LeetCode CH](https://leetcode.cn/problems/edit-distance/) (Medium)
 
 -   Tags: string, dynamic programming
-
 ```python title="72. Edit Distance - Python Solution"
 from functools import cache
 
@@ -276,3 +270,4 @@ if __name__ == "__main__":
     print(minDistanceDP(word1, word2))  # 3
 
 ```
+

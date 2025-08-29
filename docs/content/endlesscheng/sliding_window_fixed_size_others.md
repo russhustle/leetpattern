@@ -15,7 +15,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | [LeetCode CH](https://leetcode.cn/problems/find-the-k-beauty-of-a-number/) (Easy)
 
 -   Tags: math, string, sliding window
-
 ```python title="2269. Find the K-Beauty of a Number - Python Solution"
 def divisorSubstrings(num: int, k: int) -> int:
     numStr = str(num)

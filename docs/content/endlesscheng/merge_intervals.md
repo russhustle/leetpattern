@@ -30,7 +30,6 @@ comments: True
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ```python title="56. Merge Intervals - Python Solution"
 from typing import List
 
@@ -87,7 +86,6 @@ int main() {
     }
     return 0;
 }
-
 ```
 
 ## 57. Insert Interval
@@ -95,7 +93,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/insert-interval/) | [LeetCode CH](https://leetcode.cn/problems/insert-interval/) (Medium)
 
 -   Tags: array
-
 ```python title="57. Insert Interval - Python Solution"
 from typing import List
 
@@ -149,7 +146,6 @@ print(insert(intervals, newInterval))  # [[1, 5], [6, 9]]
 -   Tags: array, dynamic programming, greedy
 - Return `True` if you can reach the last index, otherwise `False`.
 
-
 ```python title="55. Jump Game - Python Solution"
 from typing import List
 
@@ -201,7 +197,6 @@ int main() {
     cout << obj.canJump(nums) << endl;
     return 0;
 }
-
 ```
 
 ## 763. Partition Labels
@@ -209,7 +204,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/partition-labels/) | [LeetCode CH](https://leetcode.cn/problems/partition-labels/) (Medium)
 
 -   Tags: hash table, two pointers, string, greedy
-
 ```python title="763. Partition Labels - Python Solution"
 from typing import List
 

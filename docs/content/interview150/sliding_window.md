@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-size-subarray-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-size-subarray-sum/) (Medium)
 
 -   Tags: array, binary search, sliding window, prefix sum
-
 ```python title="209. Minimum Size Subarray Sum - Python Solution"
 import bisect
 from typing import List
@@ -72,7 +71,6 @@ print(minSubArrayLenSW(target, nums))  # 2
 - Classic variable sliding window problem. Use a set to keep track of the characters in the current window.
 - Return the length of the longest substring without repeating characters.
 - [Template tutorial by 灵山茶艾府](https://leetcode.cn/problems/longest-substring-without-repeating-characters/solutions/1959540/xia-biao-zong-suan-cuo-qing-kan-zhe-by-e-iaks)
-
 
 ```python title="3. Longest Substring Without Repeating Characters - Python Solution"
 from collections import defaultdict
@@ -162,7 +160,6 @@ int main() {
     cout << lengthOfLongestSubstring(s) << endl;  // 3
     return 0;
 }
-
 ```
 
 ## 30. Substring with Concatenation of All Words
@@ -175,7 +172,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="76. Minimum Window Substring - Python Solution"
 from collections import Counter
 
@@ -218,3 +214,4 @@ t = "ABC"
 print(minWindow(s, t))  # BANC
 
 ```
+

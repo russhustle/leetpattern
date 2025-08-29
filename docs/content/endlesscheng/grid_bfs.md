@@ -32,7 +32,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | [LeetCode CH](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-
 ```python title="1926. Nearest Exit from Entrance in Maze - Python Solution"
 from collections import deque
 from typing import List
@@ -71,7 +70,6 @@ print(nearestExit(maze, entrance))  # 1
 -   [LeetCode](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [LeetCode CH](https://leetcode.cn/problems/shortest-path-in-binary-matrix/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-
 ```python title="1091. Shortest Path in Binary Matrix - Python Solution"
 from collections import deque
 from typing import List
@@ -122,7 +120,6 @@ print(shortestPathBinaryMatrix(grid))  # 4
 -   [LeetCode](https://leetcode.com/problems/as-far-from-land-as-possible/) | [LeetCode CH](https://leetcode.cn/problems/as-far-from-land-as-possible/) (Medium)
 
 -   Tags: array, dynamic programming, breadth first search, matrix
-
 ```python title="1162. As Far from Land as Possible - Python Solution"
 from collections import deque
 from typing import List
@@ -163,7 +160,6 @@ print(maxDistance(grid))  # 4
 -   [LeetCode](https://leetcode.com/problems/01-matrix/) | [LeetCode CH](https://leetcode.cn/problems/01-matrix/) (Medium)
 
 -   Tags: array, dynamic programming, breadth first search, matrix
-
 ```python title="542. 01 Matrix - Python Solution"
 from collections import deque
 from typing import List
@@ -210,7 +206,6 @@ print(updateMatrix(mat))
 
 ![994](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-
 ```python title="994. Rotting Oranges - Python Solution"
 from collections import deque
 from typing import List
@@ -256,7 +251,6 @@ assert orangesRotting(grid) == 4
 -   [LeetCode](https://leetcode.com/problems/map-of-highest-peak/) | [LeetCode CH](https://leetcode.cn/problems/map-of-highest-peak/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-
 ```python title="1765. Map of Highest Peak - Python Solution"
 from collections import deque
 from typing import List
@@ -302,7 +296,6 @@ print(highestPeak(isWater))
 -   [LeetCode](https://leetcode.com/problems/shortest-bridge/) | [LeetCode CH](https://leetcode.cn/problems/shortest-bridge/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="934. Shortest Bridge - Python Solution"
 from collections import deque
 from typing import List
@@ -401,7 +394,6 @@ print(shortestBridge(grid))  # 1
 -   [LeetCode](https://leetcode.com/problems/walls-and-gates/) | [LeetCode CH](https://leetcode.cn/problems/walls-and-gates/) (Medium)
 
 -   Tags: array, breadth first search, matrix
-
 ```python title="286. Walls and Gates - Python Solution"
 from collections import deque
 from typing import List
@@ -467,7 +459,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/the-maze/) | [LeetCode CH](https://leetcode.cn/problems/the-maze/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, matrix
-
 ```python title="490. The Maze - Python Solution"
 from collections import deque
 from typing import List
@@ -523,7 +514,6 @@ print(hasPathBFS(maze, start, destination))  # True
 -   [LeetCode](https://leetcode.com/problems/the-maze-ii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-ii/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
-
 ```python title="505. The Maze II - Python Solution"
 import heapq
 from typing import List
@@ -584,7 +574,6 @@ print(shortestDistance(maze, start, destination))  # 12
 -   [LeetCode](https://leetcode.com/problems/the-maze-iii/) | [LeetCode CH](https://leetcode.cn/problems/the-maze-iii/) (Hard)
 
 -   Tags: array, string, depth first search, breadth first search, graph, heap priority queue, matrix, shortest path
-
 ```python title="499. The Maze III - Python Solution"
 import heapq
 from typing import List

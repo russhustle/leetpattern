@@ -16,7 +16,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/high-five/) | [LeetCode CH](https://leetcode.cn/problems/high-five/) (Easy)
 
 -   Tags: array, hash table, sorting, heap priority queue
-
 ```python title="1086. High Five - Python Solution"
 from collections import defaultdict
 from heapq import heappush, heappushpop
@@ -62,7 +61,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | [LeetCode CH](https://leetcode.cn/problems/minimum-cost-to-connect-sticks/) (Medium)
 
 -   Tags: array, greedy, heap priority queue
-
 ```python title="1167. Minimum Cost to Connect Sticks - Python Solution"
 from heapq import heapify, heappop, heappush
 from typing import List
@@ -98,7 +96,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/campus-bikes/) | [LeetCode CH](https://leetcode.cn/problems/campus-bikes/) (Medium)
 
 -   Tags: array, greedy, sorting
-
 ```python title="1057. Campus Bikes - Python Solution"
 from heapq import heappop, heappush
 from typing import List

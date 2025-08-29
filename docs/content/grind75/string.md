@@ -20,7 +20,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [LeetCode CH](https://leetcode.cn/problems/valid-palindrome/) (Easy)
 
 -   Tags: two pointers, string
-
 ```python title="125. Valid Palindrome - Python Solution"
 # List Comprehension
 def isPalindrome(s: str) -> bool:
@@ -60,7 +59,6 @@ print(isPalindromeLR(s))  # True
 -   Tags: hash table, string, sorting
 -   Return true if an input string is an anagram of another string.
 -   An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once, e.g., `listen` is an anagram of `silent`.
-
 
 ```python title="242. Valid Anagram - Python Solution"
 from collections import Counter
@@ -142,7 +140,6 @@ print(isAnagramCounter(s, t))  # True
 -   Tags: hash table, string, greedy
 -   Return the length of the longest palindrome that can be built with the characters in the string.
 
-
 ```python title="409. Longest Palindrome - Python Solution"
 def longestPalindrome(s: str) -> int:
     hashmap = dict()
@@ -173,7 +170,6 @@ print(longestPalindrome("abccccdd"))  # 7
 - Classic variable sliding window problem. Use a set to keep track of the characters in the current window.
 - Return the length of the longest substring without repeating characters.
 - [Template tutorial by 灵山茶艾府](https://leetcode.cn/problems/longest-substring-without-repeating-characters/solutions/1959540/xia-biao-zong-suan-cuo-qing-kan-zhe-by-e-iaks)
-
 
 ```python title="3. Longest Substring Without Repeating Characters - Python Solution"
 from collections import defaultdict
@@ -263,7 +259,6 @@ int main() {
     cout << lengthOfLongestSubstring(s) << endl;  // 3
     return 0;
 }
-
 ```
 
 ## 8. String to Integer (atoi)
@@ -277,7 +272,6 @@ int main() {
 
 -   Tags: two pointers, string, dynamic programming
 -   Return the longest palindromic substring in `s`.
-
 
 ```python title="5. Longest Palindromic Substring - Python Solution"
 # DP - Interval
@@ -343,7 +337,6 @@ print(longestPalindromeCenter(s))  # "aba"
 -   [LeetCode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="438. Find All Anagrams in a String - Python Solution"
 from typing import List
 
@@ -384,7 +377,6 @@ print(findAnagrams(s, p))  # [0, 6]
 -   [LeetCode](https://leetcode.com/problems/minimum-window-substring/) | [LeetCode CH](https://leetcode.cn/problems/minimum-window-substring/) (Hard)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="76. Minimum Window Substring - Python Solution"
 from collections import Counter
 
@@ -427,3 +419,4 @@ t = "ABC"
 print(minWindow(s, t))  # BANC
 
 ```
+

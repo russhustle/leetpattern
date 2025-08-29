@@ -19,7 +19,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | [LeetCode CH](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) (Medium)
 
 -   Tags: hash table, string, sliding window
-
 ```python title="1358. Number of Substrings Containing All Three Characters - Python Solution"
 from collections import defaultdict
 

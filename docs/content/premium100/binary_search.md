@@ -18,7 +18,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/missing-number-in-arithmetic-progression/) | [LeetCode CH](https://leetcode.cn/problems/missing-number-in-arithmetic-progression/) (Easy)
 
 -   Tags: array, math
-
 ```python title="1228. Missing Number In Arithmetic Progression - Python Solution"
 from typing import List
 

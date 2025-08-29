@@ -17,7 +17,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/single-number/) | [LeetCode CH](https://leetcode.cn/problems/single-number/) (Easy)
 
 -   Tags: array, bit manipulation
-
 ```python title="136. Single Number - Python Solution"
 from functools import reduce
 from operator import xor
@@ -68,7 +67,6 @@ print(singleNumberXORLambda(nums))  # 4
 | 2     | 0       | 1     |
 | 2     | 1       | 2     |
 
-
 ```python title="169. Majority Element - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -116,7 +114,6 @@ print(majorityElementHashMap(nums))  # 2
 -   [LeetCode](https://leetcode.com/problems/sort-colors/) | [LeetCode CH](https://leetcode.cn/problems/sort-colors/) (Medium)
 
 -   Tags: array, two pointers, sorting
-
 ```python title="75. Sort Colors - Python Solution"
 from copy import deepcopy
 from typing import List
@@ -174,7 +171,6 @@ print(nums2)  # [0, 0, 1, 1, 2, 2]
 -   [LeetCode](https://leetcode.com/problems/next-permutation/) | [LeetCode CH](https://leetcode.cn/problems/next-permutation/) (Medium)
 
 -   Tags: array, two pointers
-
 ```python title="31. Next Permutation - Python Solution"
 from typing import List
 
@@ -238,7 +234,6 @@ graph LR
 4 --> 2
 ```
 
-
 ```python title="287. Find the Duplicate Number - Python Solution"
 from typing import List
 
@@ -265,3 +260,4 @@ nums = [1, 3, 4, 2, 2]
 print(findDuplicate(nums))  # 2
 
 ```
+

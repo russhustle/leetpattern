@@ -26,7 +26,6 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="104. Maximum Depth of Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -109,7 +108,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/same-tree/) | [LeetCode CH](https://leetcode.cn/problems/same-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="100. Same Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -201,7 +199,6 @@ print(isSameTreeIterativeStack(p2, q2))  # False
 -   [LeetCode](https://leetcode.com/problems/invert-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/invert-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="226. Invert Binary Tree - Python Solution"
 from typing import Optional
 
@@ -277,7 +274,6 @@ print(invertedIterative)
 -   [LeetCode](https://leetcode.com/problems/symmetric-tree/) | [LeetCode CH](https://leetcode.cn/problems/symmetric-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="101. Symmetric Tree - Python Solution"
 from collections import deque
 from typing import Optional
@@ -348,7 +344,6 @@ print(isSymmetricIterative(root))  # True
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, tree, binary tree
-
 ```python title="105. Construct Binary Tree from Preorder and Inorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -448,7 +443,6 @@ int main() {
     cout << root->right->right->val << endl;  // 7
     return 0;
 }
-
 ```
 
 ## 106. Construct Binary Tree from Inorder and Postorder Traversal
@@ -456,7 +450,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) (Medium)
 
 -   Tags: array, hash table, divide and conquer, tree, binary tree
-
 ```python title="106. Construct Binary Tree from Inorder and Postorder Traversal - Python Solution"
 from typing import List, Optional
 
@@ -511,7 +504,6 @@ print(root)
 -   [LeetCode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | [LeetCode CH](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) (Medium)
 
 -   Tags: linked list, tree, depth first search, breadth first search, binary tree
-
 ```python title="117. Populating Next Right Pointers in Each Node II - Python Solution"
 from collections import deque
 
@@ -619,7 +611,6 @@ class Solution {
         head = root;
     }
 };
-
 ```
 
 ## 112. Path Sum
@@ -627,7 +618,6 @@ class Solution {
 -   [LeetCode](https://leetcode.com/problems/path-sum/) | [LeetCode CH](https://leetcode.cn/problems/path-sum/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-
 ```python title="112. Path Sum - Python Solution"
 from typing import Optional
 
@@ -674,7 +664,6 @@ print(hasPathSum(root, 22))  # True
 -   [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [LeetCode CH](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="129. Sum Root to Leaf Numbers - Python Solution"
 from typing import Optional
 
@@ -716,7 +705,6 @@ print(Solution().sumNumbers(root))  # 25
 -   [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) (Hard)
 
 -   Tags: dynamic programming, tree, depth first search, binary tree
-
 ```python title="124. Binary Tree Maximum Path Sum - Python Solution"
 from typing import Optional
 
@@ -761,7 +749,6 @@ print(maxPathSum(root))  # 42
 -   [LeetCode](https://leetcode.com/problems/binary-search-tree-iterator/) | [LeetCode CH](https://leetcode.cn/problems/binary-search-tree-iterator/) (Medium)
 
 -   Tags: stack, tree, design, binary search tree, binary tree, iterator
-
 ```python title="173. Binary Search Tree Iterator - Python Solution"
 from typing import Optional
 
@@ -812,7 +799,6 @@ print(obj.hasNext())  # True
 -   [LeetCode](https://leetcode.com/problems/count-complete-tree-nodes/) | [LeetCode CH](https://leetcode.cn/problems/count-complete-tree-nodes/) (Easy)
 
 -   Tags: binary search, bit manipulation, tree, binary tree
-
 ```python title="222. Count Complete Tree Nodes - Python Solution"
 from collections import deque
 from typing import Optional
@@ -879,7 +865,6 @@ print(countNodesIterative(root))  # 6
 -   [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-
 ```python title="236. Lowest Common Ancestor of a Binary Tree - Python Solution"
 from typing import List, Optional
 
@@ -972,5 +957,5 @@ class Solution {
 };
 
 int main() { return 0; }
-
 ```
+

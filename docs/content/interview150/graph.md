@@ -34,7 +34,6 @@ comments: True
 
 ![0200](../../assets/0200.jpg)
 
-
 ```python title="200. Number of Islands - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -217,7 +216,6 @@ int main()
     cout << s.numIslands(grid) << endl;
     return 0;
 }
-
 ```
 
 ## 130. Surrounded Regions
@@ -225,7 +223,6 @@ int main()
 -   [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [LeetCode CH](https://leetcode.cn/problems/surrounded-regions/) (Medium)
 
 -   Tags: array, depth first search, breadth first search, union find, matrix
-
 ```python title="130. Surrounded Regions - Python Solution"
 from collections import deque
 from copy import deepcopy
@@ -342,7 +339,6 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/clone-graph/) | [LeetCode CH](https://leetcode.cn/problems/clone-graph/) (Medium)
 
 -   Tags: hash table, depth first search, breadth first search, graph
-
 ```python title="133. Clone Graph - Python Solution"
 from collections import deque
 from typing import Optional
@@ -403,7 +399,6 @@ def cloneGraphBFS(node: Optional["Node"]) -> Optional["Node"]:
 -   [LeetCode](https://leetcode.com/problems/evaluate-division/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-division/) (Medium)
 
 -   Tags: array, string, depth first search, breadth first search, union find, graph, shortest path
-
 ```python title="399. Evaluate Division - Python Solution"
 from collections import defaultdict
 from typing import List
@@ -566,7 +561,6 @@ flowchart LR
 - queue: `[0]`
 - pop `0` from the queue
 - All courses are taken. Return `True`.
-
 
 ```python title="207. Course Schedule - Python Solution"
 from collections import defaultdict, deque
@@ -746,7 +740,6 @@ int main() {
     cout << sol.canFinishDFS(numCourses, prerequisites) << endl;
     return 0;
 }
-
 ```
 
 ## 210. Course Schedule II
@@ -757,7 +750,6 @@ int main() {
 - Return the ordering of courses you should take to finish all courses. If there are multiple valid answers, return any of them.
 
 ![0207](../../assets/0207.png)
-
 
 ```python title="210. Course Schedule II - Python Solution"
 from collections import defaultdict, deque
@@ -912,5 +904,5 @@ int main() {
     for (size_t i = 0; i < res.size(); i++) cout << res[i] << "\n";
     return 0;
 }
-
 ```
+

@@ -2,9 +2,7 @@
 
 import os
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional
-
-import yaml
+from typing import Dict, List
 
 from ..io.yaml_loader import YamlLoader
 

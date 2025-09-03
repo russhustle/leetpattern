@@ -81,19 +81,3 @@ class DocumentationGenerator:
         except Exception as e:
             print(f"Error during documentation generation: {e}")
             return False
-
-    def create_problem_files(self, qid: int) -> bool:
-        """Create problem files for a given LeetCode question ID."""
-        problem = self.problem_repo.get_problem(qid)
-        if not problem:
-            print(f"Error: Problem {qid} not found")
-            return False
-
-        print(f"Creating files for problem {qid}: {problem.title}")
-
-        # Note: File creation is now disabled by default
-        # This method is kept for compatibility but does nothing
-        print(
-            "Auto file creation is disabled. Please create files manually if needed."
-        )
-        return True

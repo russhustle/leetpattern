@@ -2,10 +2,12 @@
 
 import sys
 from typing import Optional
-
+import os
 import typer
 
 from .generator import DocumentationGenerator
+from .problem import ProblemRepository
+from .file_manager import FileManager
 
 app = typer.Typer(
     name="leetpattern",
@@ -42,10 +44,38 @@ def generate(
 
 
 @app.command()
-def create(qid: int) -> None:
-    """Create problem files (disabled)."""
-    typer.echo("Auto file creation is disabled.")
-    typer.echo("Please create problem files manually if needed.")
+def create(
+    qid: int,
+    language: str = typer.Option(
+        "py", "--lang", help="Programming language (py, cc, sql)"
+    ),
+) -> None:
+    """Create problem files."""
+    problem = ProblemRepository().get_problem(qid)
+    if not problem:
+        typer.echo(f"Problem {qid} not found", err=True)
+        raise typer.Exit(1)
+
+    # Validate language option
+    valid_languages = {"py", "cc", "sql"}
+    if language not in valid_languages:
+        typer.echo(
+            f"Invalid language '{language}'. Valid options: {', '.join(valid_languages)}",
+            err=True,
+        )
+        raise typer.Exit(1)
+
+    # Generate different file paths based on language
+    if language == "py":
+        file_path = problem.python_path
+    elif language == "cc":
+        file_path = problem.cpp_path
+    elif language == "sql":
+        file_path = problem.sql_path
+
+    file_manager = FileManager()
+
+    file_manager.check_create_file(file_path)
 
 
 def main() -> int:

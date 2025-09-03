@@ -1159,20 +1159,6 @@ dependencies = [
     { name = "typer" },
 ]
 
-[package.optional-dependencies]
-dev = [
-    { name = "black" },
-    { name = "fastparquet" },
-    { name = "flake8" },
-    { name = "graphviz" },
-    { name = "matplotlib" },
-    { name = "networkx" },
-    { name = "pre-commit" },
-    { name = "prompt-toolkit" },
-    { name = "pyarrow" },
-    { name = "pylint" },
-]
-
 [package.dev-dependencies]
 dev = [
     { name = "black" },
@@ -1190,27 +1176,16 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "binarytree", specifier = ">=6.5.1" },
-    { name = "black", marker = "extra == 'dev'", specifier = ">=24.8.0" },
-    { name = "fastparquet", marker = "extra == 'dev'", specifier = ">=2024.11.0" },
-    { name = "flake8", marker = "extra == 'dev'", specifier = ">=7.1.1" },
-    { name = "graphviz", marker = "extra == 'dev'", specifier = ">=0.20.3" },
-    { name = "matplotlib", marker = "extra == 'dev'", specifier = ">=3.9.2" },
     { name = "mkdocs-exclude", specifier = ">=1.0.2" },
     { name = "mkdocs-git-revision-date-localized-plugin", specifier = ">=1.2.7" },
     { name = "mkdocs-material", specifier = ">=9.5.31" },
     { name = "mkdocs-static-i18n", specifier = ">=1.3.0" },
-    { name = "networkx", marker = "extra == 'dev'", specifier = ">=3.3" },
     { name = "notebook", specifier = ">=7.2.1" },
     { name = "pandas", specifier = ">=2.2.3" },
-    { name = "pre-commit", marker = "extra == 'dev'", specifier = ">=3.8.0" },
-    { name = "prompt-toolkit", marker = "extra == 'dev'", specifier = ">=3.0.50" },
-    { name = "pyarrow", marker = "extra == 'dev'", specifier = ">=19.0.1" },
-    { name = "pylint", marker = "extra == 'dev'", specifier = ">=3.2.6" },
     { name = "pymdown-extensions", specifier = ">=10.9" },
     { name = "sortedcontainers", specifier = ">=2.4.0" },
     { name = "typer", specifier = ">=0.17.3" },
 ]
-provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
 dev = [

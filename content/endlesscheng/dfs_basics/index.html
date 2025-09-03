@@ -12837,34 +12837,7 @@
 <li>Time Complexity: O(log(n))</li>
 <li>Space Complexity: O(n)</li>
 </ul>
-<div class="language-python highlight"><span class="filename">template/union_find.py</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">UnionFind</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">par</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)}</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">rank</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)}</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">find</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="n">p</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">par</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">par</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">!=</span> <span class="n">p</span><span class="p">:</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">par</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">par</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">par</span><span class="p">[</span><span class="n">p</span><span class="p">]]</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>            <span class="n">p</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">par</span><span class="p">[</span><span class="n">p</span><span class="p">]</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="k">return</span> <span class="n">p</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">union</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">):</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">n1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">n2</span><span class="p">)</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        <span class="k">if</span> <span class="n">p1</span> <span class="o">==</span> <span class="n">p2</span><span class="p">:</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            <span class="k">return</span> <span class="kc">None</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">p2</span><span class="p">]:</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">par</span><span class="p">[</span><span class="n">p2</span><span class="p">]</span> <span class="o">=</span> <span class="n">p1</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">p2</span><span class="p">]:</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">par</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span> <span class="o">=</span> <span class="n">p2</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">par</span><span class="p">[</span><span class="n">p2</span><span class="p">]</span> <span class="o">=</span> <span class="n">p1</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">[</span><span class="n">p1</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">connected</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">):</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">n1</span><span class="p">)</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">n2</span><span class="p">)</span>
+<div class="language-python highlight"><span class="filename">template/union_find.py</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>
 </span></code></pre></div>
 <div class="language-python highlight"><span class="filename">547. Number of Provinces - Python Solution</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
@@ -13011,9 +12984,7 @@
 <p><a href="https://leetcode.com/problems/find-if-path-exists-in-graph/">LeetCode</a> | <a href="https://leetcode.cn/problems/find-if-path-exists-in-graph/">LeetCode CH</a> (Easy)</p>
 </li>
 <li>
-<p>Tags: depth first search, breadth first search, union find, graph</p>
-</li>
-</ul>
+<p>Tags: depth first search, breadth first search, union find, graph
 <div class="language-python highlight"><span class="filename">1971. Find if Path Exists in Graph - Python Solution</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
@@ -13053,16 +13024,16 @@
 </span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="n">source</span> <span class="o">=</span> <span class="mi">0</span>
 </span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a><span class="n">destination</span> <span class="o">=</span> <span class="mi">2</span>
 </span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a><span class="nb">print</span><span class="p">(</span><span class="n">validPathDFS</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">edges</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">destination</span><span class="p">))</span>  <span class="c1"># True</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <h2 id="797-all-paths-from-source-to-target">797. All Paths From Source to Target<a class="headerlink" href="#797-all-paths-from-source-to-target" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><a href="https://leetcode.com/problems/all-paths-from-source-to-target/">LeetCode</a> | <a href="https://leetcode.cn/problems/all-paths-from-source-to-target/">LeetCode CH</a> (Medium)</p>
 </li>
 <li>
-<p>Tags: backtracking, depth first search, breadth first search, graph</p>
-</li>
-</ul>
+<p>Tags: backtracking, depth first search, breadth first search, graph
 <div class="language-python highlight"><span class="filename">797. All Paths From Source to Target - Python Solution</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
@@ -13108,16 +13079,16 @@
 </span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="n">graph</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="p">[]]</span>
 </span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="nb">print</span><span class="p">(</span><span class="n">allPathsSourceTargetDFS</span><span class="p">(</span><span class="n">graph</span><span class="p">))</span>  <span class="c1"># [[0, 1, 3], [0, 2, 3]]</span>
 </span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="nb">print</span><span class="p">(</span><span class="n">allPathsSourceTargetBFS</span><span class="p">(</span><span class="n">graph</span><span class="p">))</span>  <span class="c1"># [[0, 1, 3], [0, 2, 3]]</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <h2 id="841-keys-and-rooms">841. Keys and Rooms<a class="headerlink" href="#841-keys-and-rooms" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><a href="https://leetcode.com/problems/keys-and-rooms/">LeetCode</a> | <a href="https://leetcode.cn/problems/keys-and-rooms/">LeetCode CH</a> (Medium)</p>
 </li>
 <li>
-<p>Tags: depth first search, breadth first search, graph</p>
-</li>
-</ul>
+<p>Tags: depth first search, breadth first search, graph
 <div class="language-python highlight"><span class="filename">841. Keys and Rooms - Python Solution</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">deque</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
@@ -13158,16 +13129,16 @@
 </span><span id="__span-4-38"><a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="n">rooms</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
 </span><span id="__span-4-39"><a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="nb">print</span><span class="p">(</span><span class="n">canVisitAllRoomsDFS</span><span class="p">(</span><span class="n">rooms</span><span class="p">))</span>  <span class="c1"># False</span>
 </span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="nb">print</span><span class="p">(</span><span class="n">canVisitAllRoomsBFS</span><span class="p">(</span><span class="n">rooms</span><span class="p">))</span>  <span class="c1"># False</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <h2 id="2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph">2316. Count Unreachable Pairs of Nodes in an Undirected Graph<a class="headerlink" href="#2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><a href="https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/">LeetCode</a> | <a href="https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/">LeetCode CH</a> (Medium)</p>
 </li>
 <li>
-<p>Tags: depth first search, breadth first search, union find, graph</p>
-</li>
-</ul>
+<p>Tags: depth first search, breadth first search, union find, graph
 <div class="language-python highlight"><span class="filename">2316. Count Unreachable Pairs of Nodes in an Undirected Graph - Python Solution</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
@@ -13231,7 +13202,9 @@
 </span><span id="__span-5-61"><a id="__codelineno-5-61" name="__codelineno-5-61" href="#__codelineno-5-61"></a><span class="n">edges</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
 </span><span id="__span-5-62"><a id="__codelineno-5-62" name="__codelineno-5-62" href="#__codelineno-5-62"></a><span class="nb">print</span><span class="p">(</span><span class="n">countPairsList1</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">edges</span><span class="p">))</span>  <span class="c1"># 14</span>
 </span><span id="__span-5-63"><a id="__codelineno-5-63" name="__codelineno-5-63" href="#__codelineno-5-63"></a><span class="nb">print</span><span class="p">(</span><span class="n">countPairsList2</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">edges</span><span class="p">))</span>  <span class="c1"># 14</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <div class="language-cpp highlight"><span class="filename">2316. Count Unreachable Pairs of Nodes in an Undirected Graph - C++ Solution</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unordered_map&gt;</span>
@@ -13382,9 +13355,7 @@
 <p><a href="https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/">LeetCode</a> | <a href="https://leetcode.cn/problems/minimum-score-of-a-path-between-two-cities/">LeetCode CH</a> (Medium)</p>
 </li>
 <li>
-<p>Tags: depth first search, breadth first search, union find, graph</p>
-</li>
-</ul>
+<p>Tags: depth first search, breadth first search, union find, graph
 <div class="language-python highlight"><span class="filename">2492. Minimum Score of a Path Between Two Cities - Python Solution</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
@@ -13415,16 +13386,16 @@
 </span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">4</span>
 </span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="n">roads</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span>
 </span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="nb">print</span><span class="p">(</span><span class="n">minScoreDFS</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">roads</span><span class="p">))</span>  <span class="c1"># 5</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <h2 id="3387-maximize-amount-after-two-days-of-conversions">3387. Maximize Amount After Two Days of Conversions<a class="headerlink" href="#3387-maximize-amount-after-two-days-of-conversions" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><a href="https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/">LeetCode</a> | <a href="https://leetcode.cn/problems/maximize-amount-after-two-days-of-conversions/">LeetCode CH</a> (Medium)</p>
 </li>
 <li>
-<p>Tags: array, string, depth first search, breadth first search, graph</p>
-</li>
-</ul>
+<p>Tags: array, string, depth first search, breadth first search, graph
 <div class="language-python highlight"><span class="filename">3387. Maximize Amount After Two Days of Conversions - Python Solution</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
@@ -13471,7 +13442,9 @@
 </span><span id="__span-9-44"><a id="__codelineno-9-44" name="__codelineno-9-44" href="#__codelineno-9-44"></a>    <span class="n">rates2</span> <span class="o">=</span> <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">]</span>
 </span><span id="__span-9-45"><a id="__codelineno-9-45" name="__codelineno-9-45" href="#__codelineno-9-45"></a>
 </span><span id="__span-9-46"><a id="__codelineno-9-46" name="__codelineno-9-46" href="#__codelineno-9-46"></a>    <span class="k">assert</span> <span class="n">maxAmount</span><span class="p">(</span><span class="n">initialCurrency</span><span class="p">,</span> <span class="n">pairs1</span><span class="p">,</span> <span class="n">rates1</span><span class="p">,</span> <span class="n">pairs2</span><span class="p">,</span> <span class="n">rates2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">720.0</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <h2 id="3310-remove-methods-from-project">3310. Remove Methods From Project<a class="headerlink" href="#3310-remove-methods-from-project" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -13505,9 +13478,7 @@
 <p><a href="https://leetcode.com/problems/minimize-malware-spread/">LeetCode</a> | <a href="https://leetcode.cn/problems/minimize-malware-spread/">LeetCode CH</a> (Hard)</p>
 </li>
 <li>
-<p>Tags: array, hash table, depth first search, breadth first search, union find, graph</p>
-</li>
-</ul>
+<p>Tags: array, hash table, depth first search, breadth first search, union find, graph
 <div class="language-python highlight"><span class="filename">924. Minimize Malware Spread - Python Solution</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
 </span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
@@ -13543,7 +13514,9 @@
 </span><span id="__span-10-33"><a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a><span class="n">graph</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
 </span><span id="__span-10-34"><a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a><span class="n">initial</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 </span><span id="__span-10-35"><a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a><span class="nb">print</span><span class="p">(</span><span class="n">minMalwareSpread</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">initial</span><span class="p">))</span>  <span class="c1"># 0</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <h2 id="2101-detonate-the-maximum-bombs">2101. Detonate the Maximum Bombs<a class="headerlink" href="#2101-detonate-the-maximum-bombs" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -13559,9 +13532,7 @@
 <p><a href="https://leetcode.com/problems/accounts-merge/">LeetCode</a> | <a href="https://leetcode.cn/problems/accounts-merge/">LeetCode CH</a> (Medium)</p>
 </li>
 <li>
-<p>Tags: array, hash table, string, depth first search, breadth first search, union find, sorting</p>
-</li>
-</ul>
+<p>Tags: array, hash table, string, depth first search, breadth first search, union find, sorting
 <div class="language-python highlight"><span class="filename">721. Accounts Merge - Python Solution</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
@@ -13625,7 +13596,9 @@
 </span><span id="__span-11-61"><a id="__codelineno-11-61" name="__codelineno-11-61" href="#__codelineno-11-61"></a><span class="c1"># [[&#39;John&#39;, &#39;john00@mail.com&#39;, &#39;john_newyork@mail.com&#39;, &#39;johnsmith@mail.com&#39;],</span>
 </span><span id="__span-11-62"><a id="__codelineno-11-62" name="__codelineno-11-62" href="#__codelineno-11-62"></a><span class="c1"># [&#39;Mary&#39;, &#39;mary@mail.com&#39;],</span>
 </span><span id="__span-11-63"><a id="__codelineno-11-63" name="__codelineno-11-63" href="#__codelineno-11-63"></a><span class="c1"># [&#39;John&#39;, &#39;johnnybravo@mail.com&#39;]]</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <h2 id="207-course-schedule">207. Course Schedule<a class="headerlink" href="#207-course-schedule" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -14058,9 +14031,7 @@
 <p><a href="https://leetcode.com/problems/find-eventual-safe-states/">LeetCode</a> | <a href="https://leetcode.cn/problems/find-eventual-safe-states/">LeetCode CH</a> (Medium)</p>
 </li>
 <li>
-<p>Tags: depth first search, breadth first search, graph, topological sort</p>
-</li>
-</ul>
+<p>Tags: depth first search, breadth first search, graph, topological sort
 <div class="language-python highlight"><span class="filename">802. Find Eventual Safe States - Python Solution</span><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">deque</span>
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
@@ -14112,7 +14083,9 @@
 </span><span id="__span-14-49"><a id="__codelineno-14-49" name="__codelineno-14-49" href="#__codelineno-14-49"></a><span class="n">graph</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="p">[],</span> <span class="p">[]]</span>
 </span><span id="__span-14-50"><a id="__codelineno-14-50" name="__codelineno-14-50" href="#__codelineno-14-50"></a><span class="nb">print</span><span class="p">(</span><span class="n">eventualSafeNodesTS</span><span class="p">(</span><span class="n">graph</span><span class="p">))</span>  <span class="c1"># [2, 4, 5, 6]</span>
 </span><span id="__span-14-51"><a id="__codelineno-14-51" name="__codelineno-14-51" href="#__codelineno-14-51"></a><span class="nb">print</span><span class="p">(</span><span class="n">eventualSafeNodesDFS</span><span class="p">(</span><span class="n">graph</span><span class="p">))</span>  <span class="c1"># [2, 4, 5, 6]</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <h2 id="928-minimize-malware-spread-ii">928. Minimize Malware Spread II<a class="headerlink" href="#928-minimize-malware-spread-ii" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -14146,9 +14119,7 @@
 <p><a href="https://leetcode.com/problems/graph-valid-tree/">LeetCode</a> | <a href="https://leetcode.cn/problems/graph-valid-tree/">LeetCode CH</a> (Medium)</p>
 </li>
 <li>
-<p>Tags: depth first search, breadth first search, union find, graph</p>
-</li>
-</ul>
+<p>Tags: depth first search, breadth first search, union find, graph
 <div class="language-python highlight"><span class="filename">261. Graph Valid Tree - Python Solution</span><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
@@ -14181,16 +14152,16 @@
 </span><span id="__span-15-30"><a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>
 </span><span id="__span-15-31"><a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a><span class="nb">print</span><span class="p">(</span><span class="n">validTree</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]))</span>  <span class="c1"># True</span>
 </span><span id="__span-15-32"><a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a><span class="nb">print</span><span class="p">(</span><span class="n">validTree</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]))</span>  <span class="c1"># False</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 <h2 id="323-number-of-connected-components-in-an-undirected-graph">323. Number of Connected Components in an Undirected Graph<a class="headerlink" href="#323-number-of-connected-components-in-an-undirected-graph" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><a href="https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/">LeetCode</a> | <a href="https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/">LeetCode CH</a> (Medium)</p>
 </li>
 <li>
-<p>Tags: depth first search, breadth first search, union find, graph</p>
-</li>
-</ul>
+<p>Tags: depth first search, breadth first search, union find, graph
 <div class="language-python highlight"><span class="filename">323. Number of Connected Components in an Undirected Graph - Python Solution</span><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 </span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
 </span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
@@ -14235,7 +14206,9 @@
 </span><span id="__span-16-42"><a id="__codelineno-16-42" name="__codelineno-16-42" href="#__codelineno-16-42"></a>
 </span><span id="__span-16-43"><a id="__codelineno-16-43" name="__codelineno-16-43" href="#__codelineno-16-43"></a>
 </span><span id="__span-16-44"><a id="__codelineno-16-44" name="__codelineno-16-44" href="#__codelineno-16-44"></a><span class="nb">print</span><span class="p">(</span><span class="n">countComponents</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]))</span>  <span class="c1"># 2</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
+</li>
+</ul>
 
 
 
@@ -14258,7 +14231,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="June 12, 2025 04:46:46 UTC"><span class="timeago" datetime="2025-06-12T04:46:46+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 12, 2025 04:46:46 UTC">2025-06-12</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="August 29, 2025 03:37:35 UTC"><span class="timeago" datetime="2025-08-29T03:37:35+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 29, 2025 03:37:35 UTC">2025-08-29</span>
   </span>
 
     

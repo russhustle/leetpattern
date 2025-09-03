@@ -2,8 +2,8 @@
 
 from typing import Dict, List
 
-from ..processors.markdown_processor import MarkdownProcessor
-from ..processors.mkdocs_builder import MkDocsBuilder
+from .markdown_processor import MarkdownProcessor
+from .mkdocs_builder import MkDocsBuilder
 from .config import Config, ConfigManager
 from .problem import ProblemRepository
 

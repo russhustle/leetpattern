@@ -3,9 +3,9 @@
 import os
 from typing import List
 
-from ..core.config import Config
-from ..core.problem import Problem, ProblemRepository
-from ..io.file_manager import FileManager
+from .config import Config
+from .problem import Problem, ProblemRepository
+from .file_manager import FileManager
 from .code_extractor import CodeExtractor
 
 
@@ -27,29 +27,25 @@ class MarkdownProcessor:
             if category == "algorithms":
                 py_completed = (
                     problem.python_path
-                    and self.file_manager.file_exists_and_not_empty(
-                        problem.python_path
-                    )
+                    and self.file_manager.file_exists_and_not_empty(problem.python_path)
                 )
                 cpp_completed = (
                     problem.cpp_path
-                    and self.file_manager.file_exists_and_not_empty(
-                        problem.cpp_path
-                    )
+                    and self.file_manager.file_exists_and_not_empty(problem.cpp_path)
                 )
                 completed = py_completed or cpp_completed
             elif category == "sql":
                 completed = (
                     problem.sql_path
-                    and self.file_manager.file_exists_and_not_empty(
-                        problem.sql_path
-                    )
+                    and self.file_manager.file_exists_and_not_empty(problem.sql_path)
                 )
             else:
                 completed = False
 
             progress = "x" if completed else " "
-            content += f"- [{progress}] [{problem.qid}. {problem.title}]({problem.url_ch})"
+            content += (
+                f"- [{progress}] [{problem.qid}. {problem.title}]({problem.url_ch})"
+            )
             content += f" ({problem.difficulty})"
             content += " 👑\n" if problem.paid_only else "\n"
 

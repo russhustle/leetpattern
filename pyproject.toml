@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [project.scripts]
-leetpattern = "leetpattern.cli.commands:main"
+leetpattern = "leetpattern.core.commands:main"
 
 [project.optional-dependencies]
 dev = [

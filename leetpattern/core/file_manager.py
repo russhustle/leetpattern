@@ -1,7 +1,6 @@
 """File management utilities."""
 
 import os
-from typing import Optional
 
 
 class FileManager:
@@ -31,9 +30,7 @@ class FileManager:
     @staticmethod
     def file_exists_and_not_empty(file_path: str) -> bool:
         """Check if a file exists and is not empty."""
-        return os.path.exists(file_path) and not FileManager.is_file_empty(
-            file_path
-        )
+        return os.path.exists(file_path) and not FileManager.is_file_empty(file_path)
 
     @staticmethod
     def read_file_safe(file_path: str) -> str:
@@ -83,9 +80,7 @@ class FileManager:
         return ""
 
     @staticmethod
-    def remove_empty_files(
-        directories: list[str], extensions: list[str]
-    ) -> None:
+    def remove_empty_files(directories: list[str], extensions: list[str]) -> None:
         """Remove empty files from specified directories."""
         for directory in directories:
             if not os.path.exists(directory):

@@ -4,7 +4,7 @@ import os
 from dataclasses import dataclass, field
 from typing import Dict, List
 
-from ..io.yaml_loader import YamlLoader
+from .yaml_loader import YamlLoader
 
 
 @dataclass

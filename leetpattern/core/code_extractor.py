@@ -2,8 +2,8 @@
 
 from typing import Optional
 
-from ..core.problem import Problem
-from ..io.file_manager import FileManager
+from .problem import Problem
+from .file_manager import FileManager
 
 
 class CodeExtractor:
@@ -19,22 +19,15 @@ class CodeExtractor:
 
         # Extract docstring from Python file if it exists
         if problem.python_path:
-            py_docstring = self.file_manager.extract_docstring(
-                problem.python_path
-            )
+            py_docstring = self.file_manager.extract_docstring(problem.python_path)
             if py_docstring:
                 content += py_docstring
 
         # Add Python solution
-        if (
+        if problem.python_path and self.file_manager.file_exists_and_not_empty(
             problem.python_path
-            and self.file_manager.file_exists_and_not_empty(
-                problem.python_path
-            )
         ):
-            py_content = self.file_manager.read_file_safe(
-                problem.python_path
-            ).strip()
+            py_content = self.file_manager.read_file_safe(problem.python_path).strip()
 
             # Remove docstring from the code snippet if it exists
             if py_content.startswith('"""'):
@@ -52,7 +45,9 @@ class CodeExtractor:
         ):
             cc_content = self.file_manager.read_file_safe(problem.cpp_path)
             if cc_content.strip():  # Only add if there's actual code content
-                cc_content = f'```cpp title="{title} - C++ Solution"\n{cc_content}```\n\n'
+                cc_content = (
+                    f'```cpp title="{title} - C++ Solution"\n{cc_content}```\n\n'
+                )
                 content += cc_content
 
         return content

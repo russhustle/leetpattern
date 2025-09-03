@@ -23,7 +23,7 @@ format:
 	uv run pre-commit run --all-files || $(MAKE) format
 
 build:
-	leetpattern generate
+	lpn generate
 
 run:
 	$(MAKE) build

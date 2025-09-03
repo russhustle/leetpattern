@@ -407,8 +407,8 @@ if __name__ == "__main__":
 
 -   Tags: array, greedy, heap priority queue
 ```python title="2208. Minimum Operations to Halve Array Sum - Python Solution"
-from typing import List
 import heapq
+from typing import List
 
 
 def halveArray(nums: List[int]) -> int:

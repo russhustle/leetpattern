@@ -304,7 +304,16 @@ def gameOfLife(board: List[List[int]]) -> None:
     """
     Do not return anything, modify board in-place instead.
     """
-    DIRS = [[1, 0], [0, 1], [-1, 0], [0, -1], [1, 1], [1, -1], [-1, 1], [-1, -1]]
+    DIRS = [
+        [1, 0],
+        [0, 1],
+        [-1, 0],
+        [0, -1],
+        [1, 1],
+        [1, -1],
+        [-1, 1],
+        [-1, -1],
+    ]
     m, n = len(board), len(board[0])
 
     def count_live(r, c):

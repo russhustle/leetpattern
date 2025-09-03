@@ -2,9 +2,9 @@
 
 from typing import Dict, List
 
+from .config import Config, ConfigManager
 from .markdown_processor import MarkdownProcessor
 from .mkdocs_builder import MkDocsBuilder
-from .config import Config, ConfigManager
 from .problem import ProblemRepository
 
 

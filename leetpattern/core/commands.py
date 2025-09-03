@@ -6,7 +6,6 @@ from typing import Optional
 import typer
 
 from .generator import DocumentationGenerator
-from .problem_creator import ProblemCreator
 
 app = typer.Typer(
     name="leetpattern",

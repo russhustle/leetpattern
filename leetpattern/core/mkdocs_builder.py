@@ -30,7 +30,9 @@ class MkDocsBuilder:
         output_mkdocs = "mkdocs.yaml"
 
         if not os.path.exists(default_mkdocs):
-            print(f"Warning: Default MkDocs template not found: {default_mkdocs}")
+            print(
+                f"Warning: Default MkDocs template not found: {default_mkdocs}"
+            )
             return False
 
         # Read default template

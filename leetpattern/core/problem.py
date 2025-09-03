@@ -16,6 +16,7 @@ class Problem:
     title: str
     difficulty: str
     category: str
+    url: str = ""
     url_ch: str = ""
     paid_only: bool = False
     python_path: Optional[str] = None
@@ -78,30 +79,27 @@ class ProblemRepository:
 
     def _row_to_problem(self, row: pd.Series, qid: int) -> Problem:
         """Convert DataFrame row to Problem object."""
-        # Update file paths to match new structure
-        python_path = row.get("python_path")
-        if python_path:
-            python_path = python_path.replace(
-                "src/python/", "leetpattern/solutions/python/"
-            )
+        sub_folder_index = (qid - 1) // 300
+        start = sub_folder_index * 300 + 1
+        end = (sub_folder_index + 1) * 300
+        sub_folder = f"{start:04d}_{end:04d}"
 
-        cpp_path = row.get("cpp_path")
-        if cpp_path:
-            cpp_path = cpp_path.replace(
-                "src/cpp/", "leetpattern/solutions/cpp/"
-            )
+        py_folder = f"leetpattern/solutions/python/{sub_folder}/"
+        cpp_folder = f"leetpattern/solutions/cpp/{sub_folder}/"
+        sql_folder = "leetpattern/solutions/sql/"
 
-        sql_path = row.get("sql_path")
-        if sql_path:
-            sql_path = sql_path.replace(
-                "src/sql/", "leetpattern/solutions/sql/"
-            )
+        basename = f"{qid:04d}_{row['titleSlug']}"
+
+        python_path = f"{py_folder}/{basename}.py"
+        cpp_path = f"{cpp_folder}/{basename}.cc"
+        sql_path = f"{sql_folder}/{basename}.sql"
 
         return Problem(
             qid=qid,
             title=row.get("title", ""),
             difficulty=row.get("difficulty", ""),
             category=row.get("categorySlug", ""),
+            url=row.get("url", ""),
             url_ch=row.get("urlCh", ""),
             paid_only=row.get("paidOnly", False),
             python_path=python_path,
@@ -109,6 +107,6 @@ class ProblemRepository:
             sql_path=sql_path,
             txt_path=row.get("txt_path"),
             md_path=row.get("md_path"),
-            basename=row.get("basename"),
+            basename=basename,
             markdown=row.get("markdown"),
         )

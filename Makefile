@@ -23,7 +23,7 @@ format:
 	uv run pre-commit run --all-files || $(MAKE) format
 
 build:
-	uv run python main.py
+	leetpattern generate
 
 run:
 	$(MAKE) build

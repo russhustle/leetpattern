@@ -18,6 +18,9 @@ dependencies = [
     "typer>=0.17.3",
 ]
 
+[project.scripts]
+leetpattern = "leetpattern.cli.commands:main"
+
 [project.optional-dependencies]
 dev = [
     "matplotlib>=3.9.2",

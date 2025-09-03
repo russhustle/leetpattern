@@ -15,7 +15,7 @@ comments: True
 - [x] [1962. Remove Stones to Minimize the Total](https://leetcode.cn/problems/remove-stones-to-minimize-the-total/) (Medium)
 - [x] [703. Kth Largest Element in a Stream](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) (Easy)
 - [x] [3275. K-th Nearest Obstacle Queries](https://leetcode.cn/problems/k-th-nearest-obstacle-queries/) (Medium)
-- [ ] [2208. Minimum Operations to Halve Array Sum](https://leetcode.cn/problems/minimum-operations-to-halve-array-sum/) (Medium)
+- [x] [2208. Minimum Operations to Halve Array Sum](https://leetcode.cn/problems/minimum-operations-to-halve-array-sum/) (Medium)
 - [ ] [2233. Maximum Product After K Increments](https://leetcode.cn/problems/maximum-product-after-k-increments/) (Medium)
 - [x] [3296. Minimum Number of Seconds to Make Mountain Height Zero](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) (Medium)
 - [ ] [1942. The Number of the Smallest Unoccupied Chair](https://leetcode.cn/problems/the-number-of-the-smallest-unoccupied-chair/) (Medium)
@@ -406,6 +406,38 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/minimum-operations-to-halve-array-sum/) | [LeetCode CH](https://leetcode.cn/problems/minimum-operations-to-halve-array-sum/) (Medium)
 
 -   Tags: array, greedy, heap priority queue
+```python title="2208. Minimum Operations to Halve Array Sum - Python Solution"
+from typing import List
+import heapq
+
+
+def halveArray(nums: List[int]) -> int:
+    if not nums:
+        return 0
+
+    res = 0
+    cur_sum = sum(nums)
+    target = cur_sum / 2
+
+    max_heap = [-num for num in nums]  # max heap
+    heapq.heapify(max_heap)
+
+    while cur_sum > target:
+        mx = -heapq.heappop(max_heap)
+        new = mx / 2
+        heapq.heappush(max_heap, -new)
+        cur_sum -= new
+        res += 1
+
+    return res
+
+
+if __name__ == "__main__":
+    assert halveArray([5, 19, 8, 1]) == 3
+    assert halveArray([3, 8, 20]) == 3
+
+```
+
 ## 2233. Maximum Product After K Increments
 
 -   [LeetCode](https://leetcode.com/problems/maximum-product-after-k-increments/) | [LeetCode CH](https://leetcode.cn/problems/maximum-product-after-k-increments/) (Medium)

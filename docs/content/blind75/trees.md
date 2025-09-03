@@ -578,16 +578,11 @@ def kthSmallestIteratve(root: Optional[TreeNode], k: int) -> int:
         root = root.right
 
 
-root = build([3, 1, 4, None, 2])
-k = 1
-print(root)
-#   __3
-#  /   \
-# 1     4
-#  \
-#   2
-print(kthSmallestRecursive(root, k))  # 1
-print(kthSmallestIteratve(root, k))  # 1
+if __name__ == "__main__":
+    root = build([3, 1, 4, None, 2])
+    k = 1
+    assert kthSmallestRecursive(root, k) == 1
+    assert kthSmallestIteratve(root, k) == 1
 
 ```
 

@@ -29,34 +29,39 @@ class TreeNode:
 
 
 def getMinimumDifference(root: Optional[TreeNode]) -> int:
+    res = float("inf")
+    pre = float("-inf")
 
-    inorder = []
-    result = float("inf")
-
-    def dfs(node):
+    def dfs(node):  # inorder traversal
         if not node:
-            return None
+            return
+
         dfs(node.left)
-        inorder.append(node.val)
+
+        nonlocal res, pre
+        res = min(res, node.val - pre)
+        pre = node.val
+
+        if res == 1:  # the minimum possible difference
+            return
+
         dfs(node.right)
 
     dfs(root)
 
-    for i in range(1, len(inorder)):
-        result = min(result, abs(inorder[i] - inorder[i - 1]))
-
-    return result
+    return res
 
 
-root = [4, 2, 6, 1, 3]
-root = build(root)
-print(root)
-#     __4
-#    /   \
-#   2     6
-#  / \
-# 1   3
-print(getMinimumDifference(root))  # 1
+if __name__ == "__main__":
+    root = [4, 2, 6, 1, 3]
+    root = build(root)
+    print(root)
+    #     __4
+    #    /   \
+    #   2     6
+    #  / \
+    # 1   3
+    assert getMinimumDifference(root) == 1
 
 ```
 
@@ -101,16 +106,11 @@ def kthSmallestIteratve(root: Optional[TreeNode], k: int) -> int:
         root = root.right
 
 
-root = build([3, 1, 4, None, 2])
-k = 1
-print(root)
-#   __3
-#  /   \
-# 1     4
-#  \
-#   2
-print(kthSmallestRecursive(root, k))  # 1
-print(kthSmallestIteratve(root, k))  # 1
+if __name__ == "__main__":
+    root = build([3, 1, 4, None, 2])
+    k = 1
+    assert kthSmallestRecursive(root, k) == 1
+    assert kthSmallestIteratve(root, k) == 1
 
 ```
 

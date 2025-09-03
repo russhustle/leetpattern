@@ -1,13 +1,14 @@
 """Command line interface commands using Typer."""
 
+import os
 import sys
 from typing import Optional
-import os
+
 import typer
 
+from .file_manager import FileManager
 from .generator import DocumentationGenerator
 from .problem import ProblemRepository
-from .file_manager import FileManager
 
 app = typer.Typer(
     name="leetpattern",
@@ -76,6 +77,34 @@ def create(
     file_manager = FileManager()
 
     file_manager.check_create_file(file_path)
+
+
+@app.command()
+def show(
+    qid: int,
+    language: str = typer.Option(
+        "py", "--lang", help="Programming language (py, cc, sql)"
+    ),
+):
+    """Show problem files."""
+    problem = ProblemRepository().get_problem(qid)
+    file_path = None
+
+    if language == "py":
+        file_path = problem.python_path
+    elif language == "cc":
+        file_path = problem.cpp_path
+    elif language == "sql":
+        file_path = problem.sql_path
+
+    # print the file content
+    if file_path:
+        with open(file_path, "r") as f:
+            content = f.read()
+            typer.echo(content)
+            typer.echo(f"\n--- End of file: {file_path} ---")
+    else:
+        typer.echo(f"File for Problem {qid} not found", err=True)
 
 
 def main() -> int:

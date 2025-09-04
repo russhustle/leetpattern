@@ -20,12 +20,13 @@ sync:
 	uv run python utils/sync.py
 
 format:
-	uv run pre-commit run --all-files || $(MAKE) format
+	uv run pre-commit run --all-files
 
 build:
 	lpn generate
 
 run:
 	$(MAKE) build
+	$(MAKE) format
 	$(MAKE) format
 	$(MAKE) clean

@@ -23,7 +23,7 @@ format:
 	uv run pre-commit run --all-files
 
 build:
-	lpn generate
+	uv run lpn generate
 
 run:
 	$(MAKE) build

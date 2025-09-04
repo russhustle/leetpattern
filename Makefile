@@ -27,6 +27,5 @@ build:
 
 run:
 	$(MAKE) build
-	$(MAKE) format
-	$(MAKE) format
+	$(MAKE) format || $(MAKE) format
 	$(MAKE) clean

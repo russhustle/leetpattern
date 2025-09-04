@@ -50,6 +50,9 @@ class ProblemRepository:
         """Get a single problem by QID."""
         try:
             row = self.df.loc[qid]
+            # handle case where multiple rows match
+            if isinstance(row, pd.DataFrame):
+                row = row.iloc[0]
             return self._row_to_problem(row, qid)
         except KeyError:
             return None
@@ -70,7 +73,12 @@ class ProblemRepository:
         category_df = self.df[self.df["categorySlug"] == category]
         problems = []
 
-        for qid, row in category_df.iterrows():
+        for index, row in category_df.iterrows():
+            qid = (
+                int(index)
+                if isinstance(index, (int, float))
+                else row.get("qid", index)
+            )
             problem = self._row_to_problem(row, qid)
             if problem:
                 problems.append(problem)
@@ -90,9 +98,9 @@ class ProblemRepository:
 
         basename = f"{qid:04d}_{row['titleSlug']}"
 
-        python_path = f"{py_folder}/{basename}.py"
-        cpp_path = f"{cpp_folder}/{basename}.cc"
-        sql_path = f"{sql_folder}/{basename}.sql"
+        python_path = f"{py_folder}{basename}.py"
+        cpp_path = f"{cpp_folder}{basename}.cc"
+        sql_path = f"{sql_folder}{basename}.sql"
 
         return Problem(
             qid=qid,

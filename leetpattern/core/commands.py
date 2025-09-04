@@ -73,9 +73,22 @@ def create(
         file_path = problem.cpp_path
     elif language == "sql":
         file_path = problem.sql_path
+    else:
+        # This should be unreachable due to validation above, but let's be explicit
+        typer.echo(
+            f"Invalid language '{language}'. Valid options: {', '.join(valid_languages)}",
+            err=True,
+        )
+        raise typer.Exit(1)
+
+    if not file_path:
+        typer.echo(
+            f"No file path available for problem {qid} in language {language}",
+            err=True,
+        )
+        raise typer.Exit(1)
 
     file_manager = FileManager()
-
     file_manager.check_create_file(file_path)
 
 
@@ -88,7 +101,10 @@ def show(
 ):
     """Show problem files."""
     problem = ProblemRepository().get_problem(qid)
-    file_path = None
+
+    if not problem:
+        typer.echo(f"Problem {qid} not found", err=True)
+        raise typer.Exit(1)
 
     if language == "py":
         file_path = problem.python_path
@@ -96,15 +112,24 @@ def show(
         file_path = problem.cpp_path
     elif language == "sql":
         file_path = problem.sql_path
+    else:
+        typer.echo(
+            f"Invalid language '{language}'. Valid options: py, cc, sql",
+            err=True,
+        )
+        raise typer.Exit(1)
 
     # print the file content
-    if file_path:
+    if file_path and os.path.exists(file_path):
         with open(file_path, "r") as f:
             content = f.read()
             typer.echo(content)
-            typer.echo(f"\n--- End of file: {file_path} ---")
+            typer.echo(f"\n{file_path}")
     else:
-        typer.echo(f"File for Problem {qid} not found", err=True)
+        typer.echo(
+            f"File for Problem {qid} ({language}) not found or doesn't exist: {file_path}",
+            err=True,
+        )
 
 
 def main() -> int:

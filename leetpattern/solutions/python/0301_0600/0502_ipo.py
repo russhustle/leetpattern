@@ -6,30 +6,34 @@ from typing import List
 def findMaximizedCapital(
     k: int, w: int, profits: List[int], capital: List[int]
 ) -> int:
+    """
+    Time Complexity: O(k log N)
+    Space Complexity: O(N)
+    """
     if not profits or not capital:
         return w
 
-    minHeap = []
-    maxHeap = []
+    if w >= max(capital) and k >= len(capital):
+        return sum(profits) + w
 
-    for i in range(len(profits)):
-        heapq.heappush(minHeap, (capital[i], profits[i]))
+    max_profit = []
+    min_capital = [(c, p) for c, p in zip(capital, profits)]
+    heapq.heapify(min_capital)
 
     for _ in range(k):
-        while minHeap and minHeap[0][0] <= w:
-            capital, profit = heapq.heappop(minHeap)
-            heapq.heappush(maxHeap, -profit)
+        while min_capital and min_capital[0][0] <= w:
+            _, pro = heapq.heappop(min_capital)
+            heapq.heappush(max_profit, -pro)
 
-        if not maxHeap:
-            break
-
-        w += -heapq.heappop(maxHeap)
+        if max_profit:
+            w += -heapq.heappop(max_profit)
 
     return w
 
 
-k = 2
-w = 0
-profits = [1, 2, 3]
-capital = [0, 1, 1]
-print(findMaximizedCapital(k, w, profits, capital))  # 4
+if __name__ == "__main__":
+    k = 2
+    w = 0
+    profits = [1, 2, 3]
+    capital = [0, 1, 1]
+    assert findMaximizedCapital(k, w, profits, capital) == 4

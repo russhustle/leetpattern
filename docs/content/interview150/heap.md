@@ -22,17 +22,18 @@ from typing import List
 
 
 def findKthLargest(nums: List[int], k: int) -> int:
-    minHeap = []
+    min_heap = []
+
     for i, num in enumerate(nums):
-        heapq.heappush(minHeap, num)
+        heapq.heappush(min_heap, num)
         if i >= k:
-            heapq.heappop(minHeap)
-    return minHeap[0]
+            heapq.heappop(min_heap)
+
+    return min_heap[0]
 
 
-nums = [3, 2, 1, 5, 6, 4]
-k = 2
-print(findKthLargest(nums, k))  # 5
+if __name__ == "__main__":
+    assert findKthLargest([3, 2, 1, 5, 6, 4], 2) == 5
 
 ```
 
@@ -50,33 +51,37 @@ from typing import List
 def findMaximizedCapital(
     k: int, w: int, profits: List[int], capital: List[int]
 ) -> int:
+    """
+    Time Complexity: O(k log N)
+    Space Complexity: O(N)
+    """
     if not profits or not capital:
         return w
 
-    minHeap = []
-    maxHeap = []
+    if w >= max(capital) and k >= len(capital):
+        return sum(profits) + w
 
-    for i in range(len(profits)):
-        heapq.heappush(minHeap, (capital[i], profits[i]))
+    max_profit = []
+    min_capital = [(c, p) for c, p in zip(capital, profits)]
+    heapq.heapify(min_capital)
 
     for _ in range(k):
-        while minHeap and minHeap[0][0] <= w:
-            capital, profit = heapq.heappop(minHeap)
-            heapq.heappush(maxHeap, -profit)
+        while min_capital and min_capital[0][0] <= w:
+            _, pro = heapq.heappop(min_capital)
+            heapq.heappush(max_profit, -pro)
 
-        if not maxHeap:
-            break
-
-        w += -heapq.heappop(maxHeap)
+        if max_profit:
+            w += -heapq.heappop(max_profit)
 
     return w
 
 
-k = 2
-w = 0
-profits = [1, 2, 3]
-capital = [0, 1, 1]
-print(findMaximizedCapital(k, w, profits, capital))  # 4
+if __name__ == "__main__":
+    k = 2
+    w = 0
+    profits = [1, 2, 3]
+    capital = [0, 1, 1]
+    assert findMaximizedCapital(k, w, profits, capital) == 4
 
 ```
 
@@ -97,7 +102,7 @@ def kSmallestPairs(
     if not nums1 or not nums2 or k <= 0:
         return []
 
-    result = []
+    res = []
     min_heap = []
 
     for j in range(min(k, len(nums2))):
@@ -105,20 +110,20 @@ def kSmallestPairs(
 
     while k > 0 and min_heap:
         _, i, j = heapq.heappop(min_heap)
-        result.append([nums1[i], nums2[j]])
+        res.append([nums1[i], nums2[j]])
         k -= 1
 
         if i + 1 < len(nums1):
             heapq.heappush(min_heap, (nums1[i + 1] + nums2[j], i + 1, j))
 
-    return result
+    return res
 
 
-nums1 = [1, 2, 4, 5, 6]
-nums2 = [3, 5, 7, 9]
-k = 3
-print(kSmallestPairs(nums1, nums2, k))
-# [[1, 3], [2, 3], [1, 5]]
+if __name__ == "__main__":
+    nums1 = [1, 2, 4, 5, 6]
+    nums2 = [3, 5, 7, 9]
+    k = 3
+    assert kSmallestPairs(nums1, nums2, k) == [[1, 3], [2, 3], [1, 5]]
 
 ```
 

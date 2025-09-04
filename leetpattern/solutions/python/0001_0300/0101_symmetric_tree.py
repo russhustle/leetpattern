@@ -6,7 +6,7 @@ from binarytree import build
 
 
 # Recursive
-def isSymmetricRecursive(root: Optional[TreeNode]) -> bool:
+def is_symmetric_recursive(root: Optional[TreeNode]) -> bool:
     if not root:
         return True
 
@@ -23,7 +23,7 @@ def isSymmetricRecursive(root: Optional[TreeNode]) -> bool:
 
 
 # Iterative
-def isSymmetricIterative(root: Optional[TreeNode]) -> bool:
+def is_symmetric_iterative(root: Optional[TreeNode]) -> bool:
     if not root:
         return True
 
@@ -49,13 +49,14 @@ def isSymmetricIterative(root: Optional[TreeNode]) -> bool:
     return True
 
 
-root = [1, 2, 2, 3, 4, 4, 3]
-root = build(root)
-print(root)
-#     __1__
-#    /     \
-#   2       2
-#  / \     / \
-# 3   4   4   3
-print(isSymmetricRecursive(root))  # True
-print(isSymmetricIterative(root))  # True
+if __name__ == "__main__":
+    root = [1, 2, 2, 3, 4, 4, 3]
+    root = build(root)
+    print(root)
+    #     __1__
+    #    /     \
+    #   2       2
+    #  / \     / \
+    # 3   4   4   3
+    assert is_symmetric_recursive(root) is True
+    assert is_symmetric_iterative(root) is True

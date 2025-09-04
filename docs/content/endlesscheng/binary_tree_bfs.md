@@ -14,11 +14,11 @@ comments: True
 - [x] [515. Find Largest Value in Each Tree Row](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/) (Medium)
 - [x] [637. Average of Levels in Binary Tree](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) (Easy)
 - [x] [1161. Maximum Level Sum of a Binary Tree](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) (Medium)
-- [ ] [993. Cousins in Binary Tree](https://leetcode.cn/problems/cousins-in-binary-tree/) (Easy)
+- [x] [993. Cousins in Binary Tree](https://leetcode.cn/problems/cousins-in-binary-tree/) (Easy)
 - [x] [2583. Kth Largest Sum in a Binary Tree](https://leetcode.cn/problems/kth-largest-sum-in-a-binary-tree/) (Medium)
 - [x] [1302. Deepest Leaves Sum](https://leetcode.cn/problems/deepest-leaves-sum/) (Medium)
-- [ ] [2415. Reverse Odd Levels of Binary Tree](https://leetcode.cn/problems/reverse-odd-levels-of-binary-tree/) (Medium)
-- [ ] [1609. Even Odd Tree](https://leetcode.cn/problems/even-odd-tree/) (Medium)
+- [x] [2415. Reverse Odd Levels of Binary Tree](https://leetcode.cn/problems/reverse-odd-levels-of-binary-tree/) (Medium)
+- [x] [1609. Even Odd Tree](https://leetcode.cn/problems/even-odd-tree/) (Medium)
 - [ ] [623. Add One Row to Tree](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
 - [ ] [2471. Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.cn/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/) (Medium)
 - [x] [863. All Nodes Distance K in Binary Tree](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) (Medium)
@@ -103,9 +103,9 @@ def zigzagLevelOrder(root: Optional[TreeNode]) -> List[List[int]]:
 
     while q:
         level = []
-        n = len(q)
+        size = len(q)
 
-        for _ in range(n):
+        for _ in range(size):
             cur = q.popleft()
             level.append(cur.val)
 
@@ -114,19 +114,20 @@ def zigzagLevelOrder(root: Optional[TreeNode]) -> List[List[int]]:
             if cur.right:
                 q.append(cur.right)
 
-        res.append(level if len(res) % 2 == 0 else level[::-1])
+        res.append(level if not len(res) % 2 else level[::-1])
 
     return res
 
 
-tree = build([3, 9, 20, None, None, 15, 7])
-print(tree)
-#   3___
-#  /    \
-# 9     _20
-#      /   \
-#     15    7
-print(zigzagLevelOrder(tree))  # [[3], [20, 9], [15, 7]]
+if __name__ == "__main__":
+    tree = build([3, 9, 20, None, None, 15, 7])
+    print(tree)
+    #   3___
+    #  /    \
+    # 9     _20
+    #      /   \
+    #     15    7
+    assert zigzagLevelOrder(tree) == [[3], [20, 9], [15, 7]]
 
 ```
 
@@ -474,6 +475,56 @@ print(maxLevelSum(root))  # 2
 -   [LeetCode](https://leetcode.com/problems/cousins-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/cousins-in-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
+```python title="993. Cousins in Binary Tree - Python Solution"
+from collections import deque
+from math import inf
+from typing import Optional
+
+from binarytree import build, Node as TreeNode
+
+
+def is_cousins_bfs(root: Optional[TreeNode], x: int, y: int) -> bool:
+    if not root:
+        return False
+
+    q = deque([(root, inf)])
+
+    while q:
+        size = len(q)
+        p1, p2 = None, None
+
+        for _ in range(size):
+            cur, par = q.popleft()
+            val = cur.val
+            if x == val:
+                p1 = par
+            if y == val:
+                p2 = par
+
+            if cur.left:
+                q.append((cur.left, val))
+            if cur.right:
+                q.append((cur.right, val))
+
+        # Check if both found at same level
+        if p1 and p2:
+            return p1 != p2  # Same level, different parents
+        elif p1 or p2:
+            return False  # Only one found at this level
+
+    return False
+
+
+if __name__ == "__main__":
+    root = build([1, 2, 3, None, 4, None, 5])
+    assert is_cousins_bfs(root, 5, 4)
+    root = build([1, 2, 3, None, 4])
+    assert not is_cousins_bfs(root, 2, 3)
+    root = build([1, 2, 3, 4])
+    assert not is_cousins_bfs(root, 4, 3)
+
+```
+
 ## 2583. Kth Largest Sum in a Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/kth-largest-sum-in-a-binary-tree/) (Medium)
@@ -573,11 +624,120 @@ print(deepestLeavesSum(root))  # 15
 -   [LeetCode](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/reverse-odd-levels-of-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
+```python title="2415. Reverse Odd Levels of Binary Tree - Python Solution"
+from collections import deque
+from typing import Optional
+from binarytree import build, Node as TreeNode
+
+
+def reverseOddLevels(root: Optional[TreeNode]) -> Optional[TreeNode]:
+    if not root:
+        return None
+
+    q = deque([root])
+    level = -1
+
+    while q:
+        size = len(q)
+        nodes = []
+        level += 1
+
+        for _ in range(size):
+            node = q.popleft()
+            nodes.append(node)
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+        if level % 2 == 1:
+            i, j = 0, len(nodes) - 1
+            while i < j:
+                nodes[i].val, nodes[j].val = nodes[j].val, nodes[i].val
+                i += 1
+                j -= 1
+
+    return root
+
+
+if __name__ == "__main__":
+    root = build([2, 3, 5, 8, 13, 21, 34])
+    print(root)
+    #     ___2___
+    #    /       \
+    #   3        _5
+    #  / \      /  \
+    # 8   13   21   34
+    print(reverseOddLevels(root))
+    #     ___2___
+    #    /       \
+    #   5        _3
+    #  / \      /  \
+    # 8   13   21   34
+
+```
+
 ## 1609. Even Odd Tree
 
 -   [LeetCode](https://leetcode.com/problems/even-odd-tree/) | [LeetCode CH](https://leetcode.cn/problems/even-odd-tree/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
+```python title="1609. Even Odd Tree - Python Solution"
+from collections import deque
+from itertools import pairwise
+from typing import Optional
+from binarytree import build, Node as TreeNode
+
+
+def isEvenOddTree(root: Optional[TreeNode]) -> bool:
+    if not root:
+        return True
+
+    q = deque([root])
+    level = 0
+
+    while q:
+        size = len(q)
+        prev = None
+
+        for _ in range(size):
+            node = q.popleft()
+
+            if level % 2 == 0:
+                if node.val % 2 == 0:
+                    return False
+                if prev and node.val <= prev:
+                    return False
+            else:
+                if node.val % 2 == 1:
+                    return False
+                if prev and node.val >= prev:
+                    return False
+
+            prev = node.val
+
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+        level += 1
+
+    return True
+
+
+if __name__ == "__main__":
+    root = build([5, 4, 2, 3, 3, 7])
+    print(root)
+    #     __5__
+    #    /     \
+    #   4       2
+    #  / \     /
+    # 3   3   7
+    assert isEvenOddTree(root) is False
+
+```
+
 ## 623. Add One Row to Tree
 
 -   [LeetCode](https://leetcode.com/problems/add-one-row-to-tree/) | [LeetCode CH](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)

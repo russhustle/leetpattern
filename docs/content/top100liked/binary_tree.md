@@ -255,7 +255,7 @@ from binarytree import build
 
 
 # Recursive
-def isSymmetricRecursive(root: Optional[TreeNode]) -> bool:
+def is_symmetric_recursive(root: Optional[TreeNode]) -> bool:
     if not root:
         return True
 
@@ -272,7 +272,7 @@ def isSymmetricRecursive(root: Optional[TreeNode]) -> bool:
 
 
 # Iterative
-def isSymmetricIterative(root: Optional[TreeNode]) -> bool:
+def is_symmetric_iterative(root: Optional[TreeNode]) -> bool:
     if not root:
         return True
 
@@ -298,16 +298,17 @@ def isSymmetricIterative(root: Optional[TreeNode]) -> bool:
     return True
 
 
-root = [1, 2, 2, 3, 4, 4, 3]
-root = build(root)
-print(root)
-#     __1__
-#    /     \
-#   2       2
-#  / \     / \
-# 3   4   4   3
-print(isSymmetricRecursive(root))  # True
-print(isSymmetricIterative(root))  # True
+if __name__ == "__main__":
+    root = [1, 2, 2, 3, 4, 4, 3]
+    root = build(root)
+    print(root)
+    #     __1__
+    #    /     \
+    #   2       2
+    #  / \     / \
+    # 3   4   4   3
+    assert is_symmetric_recursive(root) is True
+    assert is_symmetric_iterative(root) is True
 
 ```
 
@@ -529,14 +530,16 @@ int main() { return 0; }
 
 -   Tags: tree, depth first search, binary search tree, binary tree
 ```python title="98. Validate Binary Search Tree - Python Solution"
+from itertools import pairwise
+from math import inf
 from typing import Optional
 
 from binarytree import Node as TreeNode
 from binarytree import build
 
 
-def isValidBST(root: Optional[TreeNode]) -> bool:
-    inorder = []  # inorder traversal of BST
+def isValidBST1(root: Optional[TreeNode]) -> bool:
+    inorder = []  # inorder traversal
 
     def dfs(node):
         if not node:
@@ -547,23 +550,45 @@ def isValidBST(root: Optional[TreeNode]) -> bool:
 
     dfs(root)
 
-    for i in range(1, len(inorder)):
-        if inorder[i] <= inorder[i - 1]:
+    for a, b in pairwise(inorder):
+        if a >= b:
             return False
 
     return True
 
 
-root = [5, 1, 4, None, None, 3, 6]
-root = build(root)
-print(root)
-#   5__
-#  /   \
-# 1     4
-#      / \
-#     3   6
-print(isValidBST(root))  # False
-# [1, 5, 3, 4, 6]
+def isValidBST2(root: Optional[TreeNode]) -> bool:
+    if not root:
+        return True
+    pre = -inf
+
+    def dfs(node):
+        if not node:
+            return True
+        if not dfs(node.left):
+            return False
+
+        nonlocal pre
+        if node.val <= pre:
+            return False
+        pre = node.val
+
+        return dfs(node.right)
+
+    return dfs(root)
+
+
+if __name__ == "__main__":
+    root = [5, 1, 4, None, None, 3, 6]
+    root = build(root)
+    print(root)
+    #   5__
+    #  /   \
+    # 1     4
+    #      / \
+    #     3   6
+    assert not isValidBST1(root)  # [1, 5, 3, 4, 6]
+    assert not isValidBST2(root)  # [1, 5, 3, 4, 6]
 
 ```
 

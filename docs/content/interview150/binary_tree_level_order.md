@@ -203,9 +203,9 @@ def zigzagLevelOrder(root: Optional[TreeNode]) -> List[List[int]]:
 
     while q:
         level = []
-        n = len(q)
+        size = len(q)
 
-        for _ in range(n):
+        for _ in range(size):
             cur = q.popleft()
             level.append(cur.val)
 
@@ -214,18 +214,19 @@ def zigzagLevelOrder(root: Optional[TreeNode]) -> List[List[int]]:
             if cur.right:
                 q.append(cur.right)
 
-        res.append(level if len(res) % 2 == 0 else level[::-1])
+        res.append(level if not len(res) % 2 else level[::-1])
 
     return res
 
 
-tree = build([3, 9, 20, None, None, 15, 7])
-print(tree)
-#   3___
-#  /    \
-# 9     _20
-#      /   \
-#     15    7
-print(zigzagLevelOrder(tree))  # [[3], [20, 9], [15, 7]]
+if __name__ == "__main__":
+    tree = build([3, 9, 20, None, None, 15, 7])
+    print(tree)
+    #   3___
+    #  /    \
+    # 9     _20
+    #      /   \
+    #     15    7
+    assert zigzagLevelOrder(tree) == [[3], [20, 9], [15, 7]]
 
 ```

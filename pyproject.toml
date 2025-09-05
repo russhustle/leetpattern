@@ -42,4 +42,23 @@ dev-dependencies = [
     "graphviz>=0.20.3",
     "prompt-toolkit>=3.0.50",
     "pytest>=8.4.2",
+    "pytest-cov>=6.2.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--strict-markers",
+    "--tb=short",
+    "--cov=leetpattern/utils",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "unit: marks tests as unit tests",
+    "integration: marks tests as integration tests",
 ]

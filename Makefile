@@ -25,6 +25,9 @@ format:
 build:
 	uv run lpn generate
 
+test:
+	uv run pytest
+
 run:
 	$(MAKE) build
 	$(MAKE) format || $(MAKE) format

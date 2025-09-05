@@ -7,7 +7,7 @@ comments: True
 ## Table of Contents
 
 - [x] [20. Valid Parentheses](https://leetcode.cn/problems/valid-parentheses/) (Easy)
-- [ ] [71. Simplify Path](https://leetcode.cn/problems/simplify-path/) (Medium)
+- [x] [71. Simplify Path](https://leetcode.cn/problems/simplify-path/) (Medium)
 - [x] [155. Min Stack](https://leetcode.cn/problems/min-stack/) (Medium)
 - [x] [150. Evaluate Reverse Polish Notation](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
 - [x] [224. Basic Calculator](https://leetcode.cn/problems/basic-calculator/) (Hard)
@@ -104,6 +104,31 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/simplify-path/) | [LeetCode CH](https://leetcode.cn/problems/simplify-path/) (Medium)
 
 -   Tags: string, stack
+```python title="71. Simplify Path - Python Solution"
+def simplify_path_stack(path: str) -> str:
+    if not path:
+        return "/"
+
+    stack = []
+
+    for p in path.split("/"):
+        if p == "" or p == ".":
+            continue
+        if p != "..":
+            stack.append(p)
+        elif stack:
+            stack.pop()
+    return "/" + "/".join(stack)
+
+
+if __name__ == "__main__":
+    assert simplify_path_stack("/home/") == "/home"
+    assert simplify_path_stack("/../") == "/"
+    assert simplify_path_stack("/home//foo/") == "/home/foo"
+    assert simplify_path_stack("/a/./b/../../c/") == "/c"
+
+```
+
 ## 155. Min Stack
 
 -   [LeetCode](https://leetcode.com/problems/min-stack/) | [LeetCode CH](https://leetcode.cn/problems/min-stack/) (Medium)

@@ -10,10 +10,10 @@ comments: True
 - [x] [844. Backspace String Compare](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
 - [x] [682. Baseball Game](https://leetcode.cn/problems/baseball-game/) (Easy)
 - [x] [2390. Removing Stars From a String](https://leetcode.cn/problems/removing-stars-from-a-string/) (Medium)
-- [ ] [1472. Design Browser History](https://leetcode.cn/problems/design-browser-history/) (Medium)
+- [x] [1472. Design Browser History](https://leetcode.cn/problems/design-browser-history/) (Medium)
 - [ ] [946. Validate Stack Sequences](https://leetcode.cn/problems/validate-stack-sequences/) (Medium)
 - [ ] [3412. Find Mirror Score of a String](https://leetcode.cn/problems/find-mirror-score-of-a-string/) (Medium)
-- [ ] [71. Simplify Path](https://leetcode.cn/problems/simplify-path/) (Medium)
+- [x] [71. Simplify Path](https://leetcode.cn/problems/simplify-path/) (Medium)
 
 ## 1441. Build an Array With Stack Operations
 
@@ -150,6 +150,42 @@ print(removeStars(s))  # "lecoe"
 -   [LeetCode](https://leetcode.com/problems/design-browser-history/) | [LeetCode CH](https://leetcode.cn/problems/design-browser-history/) (Medium)
 
 -   Tags: array, linked list, stack, design, doubly linked list, data stream
+```python title="1472. Design Browser History - Python Solution"
+class BrowserHistory:
+
+    def __init__(self, homepage: str):
+        self.hist = [homepage]
+        self.cur = 0
+
+    def visit(self, url: str) -> None:
+        self.cur += 1
+        del self.hist[self.cur :]
+        self.hist.append(url)
+
+    def back(self, steps: int) -> str:
+        self.cur = max(self.cur - steps, 0)
+        return self.hist[self.cur]
+
+    def forward(self, steps: int) -> str:
+        self.cur = min(self.cur + steps, len(self.hist) - 1)
+        return self.hist[self.cur]
+
+
+if __name__ == "__main__":
+    obj = BrowserHistory("leetcode.com")
+    obj.visit("google.com")
+    obj.visit("facebook.com")
+    obj.visit("youtube.com")
+    assert obj.back(1) == "facebook.com"
+    assert obj.back(1) == "google.com"
+    assert obj.forward(1) == "facebook.com"
+    obj.visit("linkedin.com")
+    assert obj.forward(2) == "linkedin.com"
+    assert obj.back(2) == "google.com"
+    assert obj.back(7) == "leetcode.com"
+
+```
+
 ## 946. Validate Stack Sequences
 
 -   [LeetCode](https://leetcode.com/problems/validate-stack-sequences/) | [LeetCode CH](https://leetcode.cn/problems/validate-stack-sequences/) (Medium)
@@ -165,3 +201,27 @@ print(removeStars(s))  # "lecoe"
 -   [LeetCode](https://leetcode.com/problems/simplify-path/) | [LeetCode CH](https://leetcode.cn/problems/simplify-path/) (Medium)
 
 -   Tags: string, stack
+```python title="71. Simplify Path - Python Solution"
+def simplify_path_stack(path: str) -> str:
+    if not path:
+        return "/"
+
+    stack = []
+
+    for p in path.split("/"):
+        if p == "" or p == ".":
+            continue
+        if p != "..":
+            stack.append(p)
+        elif stack:
+            stack.pop()
+    return "/" + "/".join(stack)
+
+
+if __name__ == "__main__":
+    assert simplify_path_stack("/home/") == "/home"
+    assert simplify_path_stack("/../") == "/"
+    assert simplify_path_stack("/home//foo/") == "/home/foo"
+    assert simplify_path_stack("/a/./b/../../c/") == "/c"
+
+```

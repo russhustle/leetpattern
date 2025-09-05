@@ -1,28 +1,10 @@
-from collections import defaultdict, deque
+from collections import deque
 from typing import Dict, List
+from .graph import compute_degrees_from_adjacency_list
 
 
-# 1. BFS - Khan's algorithm
-def topologicalSortBFS(graph: Dict[str, List[str]]) -> List[str]:
-    """Topological sort of a directed acyclic graph using BFS
-
-    Args:
-        graph (Dict[List]): Adjacency list representation of the graph
-        Example:
-        {
-            'A': ['B', 'C'],
-            'B': ['D'],
-            'C': ['D'],
-            'D': []
-        }
-
-    Returns:
-        List: Topological order of the graph
-    """
-    indegree = defaultdict(int)
-    for node in graph:
-        for neighbor in graph[node]:
-            indegree[neighbor] += 1
+def khans_algorithm(graph: Dict[int, List[int]]) -> List[int]:
+    indegree, _ = compute_degrees_from_adjacency_list(graph)
 
     q = deque([node for node in graph if indegree[node] == 0])
     order = []
@@ -74,9 +56,3 @@ def topologicalSortDFS(graph: Dict[str, List[str]]) -> List[str]:
             dfs(node)
 
     return order[::-1]
-
-
-graph = {"A": ["B", "C"], "B": ["D"], "C": ["D"], "D": []}
-
-print(topologicalSortBFS(graph))  # ['A', 'B', 'C', 'D']
-print(topologicalSortDFS(graph))  # ['A', 'C', 'B', 'D']

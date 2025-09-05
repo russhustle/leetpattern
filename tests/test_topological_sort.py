@@ -1,4 +1,5 @@
 import pytest
+
 from leetpattern.utils import khans_algorithm, topological_sort_dfs
 
 
@@ -78,6 +79,6 @@ def test_both_algorithms_same_result():
     graph = {0: [1, 2], 1: [3], 2: [3], 3: [4], 4: []}
     khan_result = khans_algorithm(graph)
     dfs_result = topological_sort_dfs(graph)
-    
+
     assert len(khan_result) == len(dfs_result)
     assert set(khan_result) == set(dfs_result)

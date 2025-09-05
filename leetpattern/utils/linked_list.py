@@ -1,65 +1,76 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
-    @staticmethod
-    def create(nums: List[int], pos=-1) -> Optional["ListNode"]:
-        """Create a linked list from a list of integers.
 
-        Args:
-            nums (List[int]): List of integers.
-            pos (int, optional): Position of the cycle node. Defaults to -1.
-        Returns:
-            Optional[ListNode]: Head of the linked list.
-        """
-        if not nums:
-            return None
+def list_from_array(nums: list[int]) -> ListNode | None:
+    if not nums:
+        return None
 
-        head = ListNode(val=nums[0])
-        cur = head
-        cycle_node = None
+    head = ListNode(nums[0])
+    cur = head
+    for num in nums[1:]:
+        cur.next = ListNode(num)
+        cur = cur.next
+    return head
 
-        for i, val in enumerate(nums[1:], start=1):
-            cur.next = ListNode(val=val)
-            cur = cur.next
-            if i == pos:
-                cycle_node = cur
 
-        if pos >= 0:
-            cur.next = cycle_node
+def list_to_array(head: ListNode | None) -> list[int]:
+    array = []
+    while head:
+        array.append(head.val)
+        head = head.next
+    return array
 
+
+def get_length(head: ListNode | None) -> int:
+    length = 0
+    while head:
+        length += 1
+        head = head.next
+    return length
+
+
+def make_cycle(head: ListNode | None, pos: int) -> ListNode | None:
+    """Create a cycle in the linked list at the given position (0-indexed)."""
+    if not head or pos < 0:
         return head
 
-    def __str__(self):
-        """String representation of the linked list."""
-        result = []
-        cur = self
-        visited = set()
+    nodes = []
+    cur = head
+    while cur:
+        nodes.append(cur)
+        cur = cur.next
 
-        while cur and cur not in visited:
-            result.append(str(cur.val))
-            visited.add(cur)
-            cur = cur.next
+    if pos < len(nodes):
+        nodes[-1].next = nodes[pos]
+    return head
 
-        if cur:
-            result.append("...")
 
-        return " -> ".join(result)
+def has_cycle(head: ListNode | None) -> bool:
+    """Detect if a linked list has a cycle using Floyd's Cycle Detection Algorithm."""
+    if not head or not head.next:
+        return False
 
-    def intersect(self, other: "ListNode", val: int) -> None:
-        cur = self
-        while cur and cur.val != val:
-            cur = cur.next
+    fast, slow = head, head
 
-        if not cur:
-            raise ValueError(f"Value {val} not found in the list.")
+    while fast and fast.next:
+        slow = slow.next  # type: ignore
+        fast = fast.next.next
 
-        cur_other = other
-        while cur_other.next:
-            cur_other = cur_other.next
+        if slow == fast:
+            return True
 
-        cur_other.next = cur
+    return False
+
+
+def reverse_list(head: ListNode | None) -> ListNode | None:
+    prev = None
+    cur = head
+    while cur:
+        next_node = cur.next
+        cur.next = prev
+        prev = cur
+        cur = next_node
+    return prev

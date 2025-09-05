@@ -1,11 +1,15 @@
-from typing import Optional
-from binarytree import build, Node as TreeNode
 from collections import deque
 from copy import deepcopy
+from typing import Optional
+
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 # BFS
-def addOneRow_bfs(root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
+def addOneRow_bfs(
+    root: Optional[TreeNode], val: int, depth: int
+) -> Optional[TreeNode]:
     if not root:
         return None
 
@@ -38,7 +42,9 @@ def addOneRow_bfs(root: Optional[TreeNode], val: int, depth: int) -> Optional[Tr
 
 
 # DFS
-def addOneRow_dfs(root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
+def addOneRow_dfs(
+    root: Optional[TreeNode], val: int, depth: int
+) -> Optional[TreeNode]:
     if depth == 1:
         new = TreeNode(val)
         new.left = root

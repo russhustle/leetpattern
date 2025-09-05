@@ -1,5 +1,3 @@
-import pytest
-
 from leetpattern.utils.trie import Trie, TrieNode
 
 

@@ -1,5 +1,3 @@
-import pytest
-
 from leetpattern.utils.graph_utils import (build_adjacency_list_from_edges,
                                            compute_degrees_from_adjacency_list,
                                            transpose_edges)

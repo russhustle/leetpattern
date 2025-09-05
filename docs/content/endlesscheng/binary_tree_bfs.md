@@ -19,8 +19,8 @@ comments: True
 - [x] [1302. Deepest Leaves Sum](https://leetcode.cn/problems/deepest-leaves-sum/) (Medium)
 - [x] [2415. Reverse Odd Levels of Binary Tree](https://leetcode.cn/problems/reverse-odd-levels-of-binary-tree/) (Medium)
 - [x] [1609. Even Odd Tree](https://leetcode.cn/problems/even-odd-tree/) (Medium)
-- [ ] [623. Add One Row to Tree](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
-- [ ] [2471. Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.cn/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/) (Medium)
+- [x] [623. Add One Row to Tree](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
+- [x] [2471. Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.cn/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/) (Medium)
 - [x] [863. All Nodes Distance K in Binary Tree](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) (Medium)
 - [ ] [2641. Cousins in Binary Tree II](https://leetcode.cn/problems/cousins-in-binary-tree-ii/) (Medium)
 - [ ] [919. Complete Binary Tree Inserter](https://leetcode.cn/problems/complete-binary-tree-inserter/) (Medium)
@@ -480,7 +480,8 @@ from collections import deque
 from math import inf
 from typing import Optional
 
-from binarytree import build, Node as TreeNode
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 def is_cousins_bfs(root: Optional[TreeNode], x: int, y: int) -> bool:
@@ -627,7 +628,9 @@ print(deepestLeavesSum(root))  # 15
 ```python title="2415. Reverse Odd Levels of Binary Tree - Python Solution"
 from collections import deque
 from typing import Optional
-from binarytree import build, Node as TreeNode
+
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 def reverseOddLevels(root: Optional[TreeNode]) -> Optional[TreeNode]:
@@ -684,9 +687,10 @@ if __name__ == "__main__":
 -   Tags: tree, breadth first search, binary tree
 ```python title="1609. Even Odd Tree - Python Solution"
 from collections import deque
-from itertools import pairwise
 from typing import Optional
-from binarytree import build, Node as TreeNode
+
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 def isEvenOddTree(root: Optional[TreeNode]) -> bool:
@@ -743,11 +747,174 @@ if __name__ == "__main__":
 -   [LeetCode](https://leetcode.com/problems/add-one-row-to-tree/) | [LeetCode CH](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
+```python title="623. Add One Row to Tree - Python Solution"
+from typing import Optional
+from binarytree import build, Node as TreeNode
+from collections import deque
+from copy import deepcopy
+
+
+# BFS
+def addOneRow_bfs(root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
+    if not root:
+        return None
+
+    if depth == 1:
+        new = TreeNode(val)
+        new.left = root
+        return new
+
+    q = deque([root])
+    cur = 1
+
+    while q:
+        size = len(q)
+        for _ in range(size):
+            node = q.popleft()
+
+            if cur == depth - 1:
+                old_left, old_right = node.left, node.right
+                node.left, node.right = TreeNode(val), TreeNode(val)
+                node.left.left = old_left
+                node.right.right = old_right
+            else:
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+        cur += 1
+
+    return root
+
+
+# DFS
+def addOneRow_dfs(root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
+    if depth == 1:
+        new = TreeNode(val)
+        new.left = root
+        return new
+
+    def dfs(node, cur):
+        if not node:
+            return
+        if cur == depth - 1:
+            old_left, old_right = node.left, node.right
+            node.left = TreeNode(val, old_left, None)
+            node.right = TreeNode(val, None, old_right)
+        else:
+            dfs(node.left, cur + 1)
+            dfs(node.right, cur + 1)
+
+    dfs(root, 1)
+
+    return root
+
+
+if __name__ == "__main__":
+    root = build([4, 2, 6, 3, 1, 5])
+    print(root)
+    #     __4__
+    #    /     \
+    #   2       6
+    #  / \     /
+    # 3   1   5
+    print(addOneRow_bfs(deepcopy(root), 1, 2))
+    #         4
+    #        / \
+    #     __1   1__
+    #    /         \
+    #   2           6
+    #  / \         /
+    # 3   1       5
+    print(addOneRow_dfs(deepcopy(root), 1, 2))
+    #         4
+    #        / \
+    #     __1   1__
+    #    /         \
+    #   2           6
+    #  / \         /
+    # 3   1       5
+
+```
+
 ## 2471. Minimum Number of Operations to Sort a Binary Tree by Level
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/) (Medium)
 
 -   Tags: tree, breadth first search, binary tree
+```python title="2471. Minimum Number of Operations to Sort a Binary Tree by Level - Python Solution"
+from collections import deque
+from typing import Optional
+from binarytree import Node as TreeNode
+from binarytree import build
+
+
+def _min_swaps_to_sort(nums):
+    """
+    Calculate the minimum number of swaps to sort the array.
+    Method: Permutation Cycle
+    """
+    n = len(nums)
+    arr = [(num, i) for i, num in enumerate(nums)]
+    arr.sort(key=lambda x: x[0])
+
+    visited = [False] * n
+    res = 0
+
+    for i in range(n):
+        if visited[i] or arr[i][1] == i:
+            continue
+
+        cycle_len = 0
+        j = i
+        while not visited[j]:
+            visited[j] = True
+            j = arr[j][1]
+            cycle_len += 1
+
+        if cycle_len > 1:
+            res += cycle_len - 1
+
+    return res
+
+
+def minimumOperations_bfs(root: Optional[TreeNode]) -> int:
+    if not root:
+        return 0
+
+    res = 0
+    q = deque([root])
+
+    while q:
+        size = len(q)
+        level = []
+        for _ in range(size):
+            node = q.popleft()
+            level.append(node.val)
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
+
+        res += _min_swaps_to_sort(level)
+
+    return res
+
+
+if __name__ == "__main__":
+    root = build([1, 4, 3, 7, 6, 8, 5, None, None, None, None, 9, None, 10])
+    print(root)
+    #     __1____
+    #    /       \
+    #   4         3___
+    #  / \       /    \
+    # 7   6     8     _5
+    #          /     /
+    #         9     10
+    assert minimumOperations_bfs(root) == 3
+
+```
+
 ## 863. All Nodes Distance K in Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) (Medium)

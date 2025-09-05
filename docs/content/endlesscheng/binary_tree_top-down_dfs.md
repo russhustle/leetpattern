@@ -17,7 +17,7 @@ comments: True
 - [ ] [988. Smallest String Starting From Leaf](https://leetcode.cn/problems/smallest-string-starting-from-leaf/) (Medium)
 - [ ] [1026. Maximum Difference Between Node and Ancestor](https://leetcode.cn/problems/maximum-difference-between-node-and-ancestor/) (Medium)
 - [ ] [1022. Sum of Root To Leaf Binary Numbers](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/) (Easy)
-- [ ] [623. Add One Row to Tree](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
+- [x] [623. Add One Row to Tree](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
 - [ ] [1372. Longest ZigZag Path in a Binary Tree](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/) (Medium)
 - [ ] [971. Flip Binary Tree To Match Preorder Traversal](https://leetcode.cn/problems/flip-binary-tree-to-match-preorder-traversal/) (Medium)
 - [ ] [2689. Extract Kth Character From The Rope Tree](https://leetcode.cn/problems/extract-kth-character-from-the-rope-tree/) (Easy) 👑
@@ -402,6 +402,96 @@ print(goodNodes(root))  # 4
 -   [LeetCode](https://leetcode.com/problems/add-one-row-to-tree/) | [LeetCode CH](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
+```python title="623. Add One Row to Tree - Python Solution"
+from typing import Optional
+from binarytree import build, Node as TreeNode
+from collections import deque
+from copy import deepcopy
+
+
+# BFS
+def addOneRow_bfs(root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
+    if not root:
+        return None
+
+    if depth == 1:
+        new = TreeNode(val)
+        new.left = root
+        return new
+
+    q = deque([root])
+    cur = 1
+
+    while q:
+        size = len(q)
+        for _ in range(size):
+            node = q.popleft()
+
+            if cur == depth - 1:
+                old_left, old_right = node.left, node.right
+                node.left, node.right = TreeNode(val), TreeNode(val)
+                node.left.left = old_left
+                node.right.right = old_right
+            else:
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+        cur += 1
+
+    return root
+
+
+# DFS
+def addOneRow_dfs(root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
+    if depth == 1:
+        new = TreeNode(val)
+        new.left = root
+        return new
+
+    def dfs(node, cur):
+        if not node:
+            return
+        if cur == depth - 1:
+            old_left, old_right = node.left, node.right
+            node.left = TreeNode(val, old_left, None)
+            node.right = TreeNode(val, None, old_right)
+        else:
+            dfs(node.left, cur + 1)
+            dfs(node.right, cur + 1)
+
+    dfs(root, 1)
+
+    return root
+
+
+if __name__ == "__main__":
+    root = build([4, 2, 6, 3, 1, 5])
+    print(root)
+    #     __4__
+    #    /     \
+    #   2       6
+    #  / \     /
+    # 3   1   5
+    print(addOneRow_bfs(deepcopy(root), 1, 2))
+    #         4
+    #        / \
+    #     __1   1__
+    #    /         \
+    #   2           6
+    #  / \         /
+    # 3   1       5
+    print(addOneRow_dfs(deepcopy(root), 1, 2))
+    #         4
+    #        / \
+    #     __1   1__
+    #    /         \
+    #   2           6
+    #  / \         /
+    # 3   1       5
+
+```
+
 ## 1372. Longest ZigZag Path in a Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/) (Medium)

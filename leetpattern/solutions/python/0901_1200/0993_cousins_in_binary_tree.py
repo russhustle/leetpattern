@@ -2,7 +2,8 @@ from collections import deque
 from math import inf
 from typing import Optional
 
-from binarytree import build, Node as TreeNode
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 def is_cousins_bfs(root: Optional[TreeNode], x: int, y: int) -> bool:

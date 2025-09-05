@@ -1,7 +1,8 @@
 from collections import deque
-from itertools import pairwise
 from typing import Optional
-from binarytree import build, Node as TreeNode
+
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 def isEvenOddTree(root: Optional[TreeNode]) -> bool:

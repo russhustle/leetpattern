@@ -1,6 +1,8 @@
 from collections import deque
 from typing import Optional
-from binarytree import build, Node as TreeNode
+
+from binarytree import Node as TreeNode
+from binarytree import build
 
 
 def reverseOddLevels(root: Optional[TreeNode]) -> Optional[TreeNode]:

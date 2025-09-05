@@ -1,6 +1,6 @@
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array
 
 
 # Linked List
@@ -58,7 +58,7 @@ def sortListDivideConquer(head: Optional[ListNode]) -> Optional[ListNode]:
     return merge_two_lists(head, head2)
 
 
-head = ListNode().create([4, 2, 1, 3])
+head = list_from_array([4, 2, 1, 3])
 print(head)  # 4 -> 2 -> 1 -> 3
 print(sortListSort(head))  # 1 -> 2 -> 3 -> 4
 print(sortListDivideConquer(head))  # 1 -> 2 -> 3 -> 4

@@ -1,5 +1,6 @@
 import pytest
-from leetpattern.utils.trie import TrieNode, Trie
+
+from leetpattern.utils.trie import Trie, TrieNode
 
 
 # Tests for TrieNode
@@ -91,7 +92,11 @@ def test_add_word_duplicate():
 
     # Should still work correctly
     hello_node = (
-        trie.root.children["h"].children["e"].children["l"].children["l"].children["o"]
+        trie.root.children["h"]
+        .children["e"]
+        .children["l"]
+        .children["l"]
+        .children["o"]
     )
     assert hello_node.is_word is True
 

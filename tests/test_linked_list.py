@@ -1,13 +1,8 @@
 import pytest
-from leetpattern.utils import (
-    ListNode,
-    list_from_array,
-    list_to_array,
-    get_length,
-    make_cycle,
-    has_cycle,
-    reverse_list,
-)
+
+from leetpattern.utils import (ListNode, get_length, has_cycle,
+                               list_from_array, list_to_array, make_cycle,
+                               reverse_list)
 
 
 # Tests for ListNode

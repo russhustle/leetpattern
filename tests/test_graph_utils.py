@@ -1,9 +1,8 @@
 import pytest
-from leetpattern.utils.graph_utils import (
-    compute_degrees_from_adjacency_list,
-    transpose_edges,
-    build_adjacency_list_from_edges,
-)
+
+from leetpattern.utils.graph_utils import (build_adjacency_list_from_edges,
+                                           compute_degrees_from_adjacency_list,
+                                           transpose_edges)
 
 
 def test_compute_degrees_empty_graph():
@@ -63,13 +62,7 @@ def test_compute_degrees_multiple_edges_to_same_node():
 
 
 def test_compute_degrees_complex_graph():
-    graph = {
-        0: [1, 2, 3],
-        1: [2, 4],
-        2: [4],
-        3: [2, 4],
-        4: []
-    }
+    graph = {0: [1, 2, 3], 1: [2, 4], 2: [4], 3: [2, 4], 4: []}
     in_deg, out_deg = compute_degrees_from_adjacency_list(graph)
     assert in_deg == {0: 0, 1: 1, 2: 3, 3: 1, 4: 3}
     assert out_deg == {0: 3, 1: 2, 2: 1, 3: 2, 4: 0}
@@ -87,8 +80,12 @@ def test_compute_degrees_return_types():
     in_deg, out_deg = compute_degrees_from_adjacency_list(graph)
     assert isinstance(in_deg, dict)
     assert isinstance(out_deg, dict)
-    assert all(isinstance(k, int) and isinstance(v, int) for k, v in in_deg.items())
-    assert all(isinstance(k, int) and isinstance(v, int) for k, v in out_deg.items())
+    assert all(
+        isinstance(k, int) and isinstance(v, int) for k, v in in_deg.items()
+    )
+    assert all(
+        isinstance(k, int) and isinstance(v, int) for k, v in out_deg.items()
+    )
 
 
 # Tests for transpose_edges
@@ -200,4 +197,8 @@ def test_build_adjacency_list_return_types():
     assert isinstance(result, dict)
     assert all(isinstance(k, int) for k in result.keys())
     assert all(isinstance(v, list) for v in result.values())
-    assert all(isinstance(neighbor, int) for neighbors in result.values() for neighbor in neighbors)
+    assert all(
+        isinstance(neighbor, int)
+        for neighbors in result.values()
+        for neighbor in neighbors
+    )

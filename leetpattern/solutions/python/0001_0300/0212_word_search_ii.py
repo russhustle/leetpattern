@@ -1,13 +1,13 @@
 from typing import List
 
-from template import TrieNode
+from leetpattern.utils import Trie
 
 
 # Backtracking + Trie
 def findWords(board: List[List[str]], words: List[str]) -> List[str]:
-    root = TrieNode()
+    trie = Trie()
     for word in words:
-        root.addWord(word)
+        trie.add_word(word)
 
     m, n = len(board), len(board[0])
     result, visit = set(), set()
@@ -27,7 +27,7 @@ def findWords(board: List[List[str]], words: List[str]) -> List[str]:
 
         node = node.children[board[r][c]]
         word += board[r][c]
-        if node.isWord:
+        if node.is_word:
             result.add(word)
 
         dfs(r - 1, c, node, word)
@@ -39,17 +39,18 @@ def findWords(board: List[List[str]], words: List[str]) -> List[str]:
 
     for r in range(m):
         for c in range(n):
-            dfs(r, c, root, "")
+            dfs(r, c, trie.root, "")
 
     return list(result)
 
 
-board = [
-    ["o", "a", "a", "n"],
-    ["e", "t", "a", "e"],
-    ["i", "h", "k", "r"],
-    ["i", "f", "l", "v"],
-]
-words = ["oath", "pea", "eat", "rain"]
-print(findWords(board, words))
-# ['eat', 'oath']
+def test_find_words():
+    board = [
+        ["o", "a", "a", "n"],
+        ["e", "t", "a", "e"],
+        ["i", "h", "k", "r"],
+        ["i", "f", "l", "v"],
+    ]
+    words = ["oath", "pea", "eat", "rain"]
+    result = findWords(board, words)
+    assert sorted(result) == ["eat", "oath"]

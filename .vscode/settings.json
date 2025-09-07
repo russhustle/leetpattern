@@ -162,5 +162,6 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "C_Cpp.formatting": "default",
   "C_Cpp.vcFormat.indent.withinParentheses": "indent",
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }"
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+  "claudeCodeChat.permissions.yoloMode": false
 }

@@ -100,11 +100,11 @@ class Solution {
 ```python title="2. Add Two Numbers - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
-def addTwoNumbers(
+def add_two_numbers(
     l1: Optional[ListNode], l2: Optional[ListNode]
 ) -> Optional[ListNode]:
     dummy = ListNode()
@@ -130,9 +130,11 @@ def addTwoNumbers(
     return dummy.next
 
 
-l1 = ListNode.create([2, 4, 3])
-l2 = ListNode.create([5, 6, 4])
-print(addTwoNumbers(l1, l2))  # 7 -> 0 -> 8
+def test_add_two_numbers():
+    l1 = list_from_array([2, 4, 3])
+    l2 = list_from_array([5, 6, 4])
+    result = add_two_numbers(l1, l2)
+    assert list_to_array(result) == [7, 0, 8]
 
 ```
 
@@ -175,18 +177,16 @@ class Solution {
 -   [LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-two-sorted-lists/) (Easy)
 
 -   Tags: linked list, recursion
--   Merge the two lists into one sorted list.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XIdigk956u0?si=2cVoU6DujA3Mgtlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Task: Merge the two linked lists into one sorted list.
 
 ```python title="21. Merge Two Sorted Lists - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
-def mergeTwoLists(
+def merge_two_lists(
     list1: Optional[ListNode], list2: Optional[ListNode]
 ) -> Optional[ListNode]:
     dummy = ListNode()
@@ -207,12 +207,6 @@ def mergeTwoLists(
         cur.next = list2
 
     return dummy.next
-
-
-list1 = ListNode.create([1, 2, 4])
-list2 = ListNode.create([1, 3, 4])
-print(mergeTwoLists(list1, list2))
-# 1 -> 1 -> 2 -> 3 -> 4 -> 4
 
 ```
 

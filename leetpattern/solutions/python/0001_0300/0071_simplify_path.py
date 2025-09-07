@@ -14,7 +14,7 @@ def simplify_path_stack(path: str) -> str:
     return "/" + "/".join(stack)
 
 
-if __name__ == "__main__":
+def test_simplify_path_stack():
     assert simplify_path_stack("/home/") == "/home"
     assert simplify_path_stack("/../") == "/"
     assert simplify_path_stack("/home//foo/") == "/home/foo"

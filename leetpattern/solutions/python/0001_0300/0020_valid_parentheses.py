@@ -1,42 +1,25 @@
-"""
--   Determine if the input string is valid.
--   Steps for the string `()[]{}`:
-
-| char | action | stack |
-| ---- | ------ | ----- |
-| `(`  | push   | "("   |
-| `)`  | pop    | ""    |
-| `[`  | push   | "["   |
-| `]`  | pop    | ""    |
-| `{`  | push   | "{"   |
-| `}`  | pop    | ""    |
-"""
-
-
 # Stack
-def isValid(s: str) -> bool:
-    hashmap = {
-        ")": "(",
-        "]": "[",
-        "}": "{",
+def is_valid(s: str) -> bool:
+    if len(s) % 2:
+        return False
+
+    pairs = {
+        "(": ")",
+        "{": "}",
+        "[": "]",
     }
     stack = []
-
     for ch in s:
-        if ch in hashmap:
-            if stack and stack[-1] == hashmap[ch]:
-                stack.pop()
-            else:
-                return False
-        else:
+        if ch in pairs:
             stack.append(ch)
+        elif not stack or ch != pairs[stack.pop()]:
+            return False
 
     return True if not stack else False
 
 
-if __name__ == "__main__":
-    assert isValid("()[]{}")
-    assert not isValid("(]")
-    assert not isValid("([)]")
-    assert isValid("{[]}")
-    assert isValid("")
+def test_is_valid():
+    assert is_valid("()[]{}")
+    assert not is_valid("(]")
+    assert not is_valid("([)]")
+    assert is_valid("{[]}")

@@ -671,11 +671,11 @@ print(doubleIt(head))
 ```python title="2. Add Two Numbers - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
-def addTwoNumbers(
+def add_two_numbers(
     l1: Optional[ListNode], l2: Optional[ListNode]
 ) -> Optional[ListNode]:
     dummy = ListNode()
@@ -701,9 +701,11 @@ def addTwoNumbers(
     return dummy.next
 
 
-l1 = ListNode.create([2, 4, 3])
-l2 = ListNode.create([5, 6, 4])
-print(addTwoNumbers(l1, l2))  # 7 -> 0 -> 8
+def test_add_two_numbers():
+    l1 = list_from_array([2, 4, 3])
+    l2 = list_from_array([5, 6, 4])
+    result = add_two_numbers(l1, l2)
+    assert list_to_array(result) == [7, 0, 8]
 
 ```
 

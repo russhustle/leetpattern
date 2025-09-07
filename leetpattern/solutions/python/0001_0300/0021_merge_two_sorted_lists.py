@@ -1,16 +1,14 @@
 """
--   Merge the two lists into one sorted list.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XIdigk956u0?si=2cVoU6DujA3Mgtlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+-   Task: Merge the two linked lists into one sorted list.
 """
 
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
-def mergeTwoLists(
+def merge_two_lists(
     list1: Optional[ListNode], list2: Optional[ListNode]
 ) -> Optional[ListNode]:
     dummy = ListNode()
@@ -31,9 +29,3 @@ def mergeTwoLists(
         cur.next = list2
 
     return dummy.next
-
-
-list1 = ListNode.create([1, 2, 4])
-list2 = ListNode.create([1, 3, 4])
-print(mergeTwoLists(list1, list2))
-# 1 -> 1 -> 2 -> 3 -> 4 -> 4

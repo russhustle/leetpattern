@@ -19,46 +19,32 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [LeetCode CH](https://leetcode.cn/problems/valid-parentheses/) (Easy)
 
 -   Tags: string, stack
--   Determine if the input string is valid.
--   Steps for the string `()[]{}`:
-
-| char | action | stack |
-| ---- | ------ | ----- |
-| `(`  | push   | "("   |
-| `)`  | pop    | ""    |
-| `[`  | push   | "["   |
-| `]`  | pop    | ""    |
-| `{`  | push   | "{"   |
-| `}`  | pop    | ""    |
-
 ```python title="20. Valid Parentheses - Python Solution"
 # Stack
-def isValid(s: str) -> bool:
-    hashmap = {
-        ")": "(",
-        "]": "[",
-        "}": "{",
+def is_valid(s: str) -> bool:
+    if len(s) % 2:
+        return False
+
+    pairs = {
+        "(": ")",
+        "{": "}",
+        "[": "]",
     }
     stack = []
-
     for ch in s:
-        if ch in hashmap:
-            if stack and stack[-1] == hashmap[ch]:
-                stack.pop()
-            else:
-                return False
-        else:
+        if ch in pairs:
             stack.append(ch)
+        elif not stack or ch != pairs[stack.pop()]:
+            return False
 
     return True if not stack else False
 
 
-if __name__ == "__main__":
-    assert isValid("()[]{}")
-    assert not isValid("(]")
-    assert not isValid("([)]")
-    assert isValid("{[]}")
-    assert isValid("")
+def test_is_valid():
+    assert is_valid("()[]{}")
+    assert not is_valid("(]")
+    assert not is_valid("([)]")
+    assert is_valid("{[]}")
 
 ```
 
@@ -181,16 +167,6 @@ int main() {
 -   [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [LeetCode CH](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) (Medium)
 
 -   Tags: array, math, stack
--   Steps for the list `["2", "1", "+", "3", "*"]`:
-
-| token | action | stack    |
-| ----- | ------ | -------- |
-| `2`   | push   | `[2]`    |
-| `1`   | push   | `[2, 1]` |
-| `+`   | pop    | `[3]`    |
-| `3`   | push   | `[3, 3]` |
-| `*`   | pop    | `[9]`    |
-
 ```python title="150. Evaluate Reverse Polish Notation - Python Solution"
 from typing import List
 
@@ -216,10 +192,11 @@ def evalRPN(tokens: List[str]) -> int:
     return stack[0]
 
 
-print(evalRPN(["2", "1", "+", "3", "*"]))  # 9
-print(evalRPN(["4", "13", "5", "/", "-"]))  # 2
-print(evalRPN(["18"]))  # 18
-print(evalRPN(["4", "3", "-"]))  # 1
+def test_evalRPN():
+    print(evalRPN(["2", "1", "+", "3", "*"]))  # 9
+    print(evalRPN(["4", "13", "5", "/", "-"]))  # 2
+    print(evalRPN(["18"]))  # 18
+    print(evalRPN(["4", "3", "-"]))  # 1
 
 ```
 

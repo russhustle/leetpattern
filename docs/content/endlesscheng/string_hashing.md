@@ -27,7 +27,7 @@ comments: True
 
 -   Tags: two pointers, string, string matching
 ```python title="28. Find the Index of the First Occurrence in a String - Python Solution"
-from template import LPS
+from leetpattern.utils import LPS
 
 
 # Brute Force

@@ -52,7 +52,7 @@ F --> I((None))
 ```python title="203. Remove Linked List Elements - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Iterative
@@ -79,7 +79,7 @@ def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
 
 nums = [1, 2, 6, 3, 4, 5, 6]
 val = 6
-head = ListNode.create(nums)
+head = list_from_array(nums)
 print(head)
 # 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6
 print(removeElements(head, val))
@@ -129,7 +129,7 @@ def test_modified_list():
 ```python title="83. Remove Duplicates from Sorted List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -160,7 +160,7 @@ print(deleteDuplicates(head))  # 1 -> 2 -> 3
 ```python title="82. Remove Duplicates from Sorted List II - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -192,7 +192,7 @@ print(deleteDuplicates(head))  # 2 -> 4 -> 5
 -   Delete a node in a singly linked list. You are given only the node to be deleted.
 
 ```python title="237. Delete Node in a Linked List - Python Solution"
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def deleteNode(node: ListNode) -> None:
@@ -200,7 +200,7 @@ def deleteNode(node: ListNode) -> None:
     node.next = node.next.next
 
 
-head = ListNode.create([4, 5, 1, 9])
+head = list_from_array([4, 5, 1, 9])
 node = head.next
 deleteNode(node)
 print(head)  # 4 -> 1 -> 9
@@ -222,15 +222,14 @@ print(head)  # 4 -> 1 -> 9
 ```python title="2487. Remove Nodes From Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-# Recursive
-def removeNodesRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
+def remove_nodes_recursive(head: Optional[ListNode]) -> Optional[ListNode]:
     if not head:
         return None
 
-    head.next = removeNodesRecursive(head.next)
+    head.next = remove_nodes_recursive(head.next)
 
     if head.next and head.val < head.next.val:
         return head.next
@@ -238,20 +237,17 @@ def removeNodesRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
     return head
 
 
-# Iterative
-def removeNodesIterative(head: Optional[ListNode]) -> Optional[ListNode]:
+def remove_nodes_iterative(head: Optional[ListNode]) -> Optional[ListNode]:
     stack = []
     cur = head
 
     while cur:
-        # pop all nodes in stack that are smaller than cur
         while stack and cur.val > stack[-1].val:
             stack.pop()
 
         stack.append(cur)
         cur = cur.next
 
-    # link all nodes in stack
     dummy = ListNode()
     cur = dummy
 
@@ -262,12 +258,11 @@ def removeNodesIterative(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-head = [5, 2, 13, 3, 8]
-head1 = ListNode.create(head)
-print(head1)  # 5 -> 2 -> 13 -> 3 -> 8
-print(removeNodesRecursive(head1))  # 13 -> 8
-head2 = ListNode.create(head)
-print(removeNodesIterative(head2))  # 13 -> 8
+def test_remove_nodes() -> None:
+    head = list_from_array([5, 2, 13, 3, 8])
+    assert (list_to_array(remove_nodes_recursive(head))) == [13, 8]
+    head = list_from_array([5, 2, 13, 3, 8])
+    assert (list_to_array(remove_nodes_iterative(head))) == [13, 8]
 
 ```
 

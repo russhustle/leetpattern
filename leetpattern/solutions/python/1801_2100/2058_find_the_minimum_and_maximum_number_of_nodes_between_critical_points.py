@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List

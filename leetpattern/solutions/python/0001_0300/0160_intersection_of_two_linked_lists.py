@@ -15,7 +15,7 @@ graph LR
 
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Hash Set
@@ -58,10 +58,10 @@ def getIntersectionNodeTP(
 
 listA = [4, 1, 8, 4, 5]
 listB = [5, 6, 1, 8, 4, 5]
-headA = ListNode.create(listA)
+headA = list_from_array(listA)
 print(headA)
 # 4 -> 1 -> 8 -> 4 -> 5
-headB = ListNode.create(listB)
+headB = list_from_array(listB)
 print(headB)
 # 5 -> 6 -> 1 -> 8 -> 4 -> 5
 

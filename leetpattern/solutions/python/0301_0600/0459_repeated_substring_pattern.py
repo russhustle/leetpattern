@@ -1,4 +1,4 @@
-from template import LPS
+from leetpattern.utils import LPS
 
 
 # KMP

@@ -38,7 +38,7 @@ B --> A((1))
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Iterative
@@ -71,12 +71,12 @@ def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 nums = [1, 2, 3, 4, 5]
-head1 = ListNode.create(nums)
+head1 = list_from_array(nums)
 print(head1)
 # 1 -> 2 -> 3 -> 4 -> 5
 print(reverseListIterative(head1))
 # 5 -> 4 -> 3 -> 2 -> 1
-head2 = ListNode.create(nums)
+head2 = list_from_array(nums)
 print(reverseListRecursive(head2))
 # 5 -> 4 -> 3 -> 2 -> 1
 
@@ -169,11 +169,10 @@ def test_reverse_between():
 ```python title="24. Swap Nodes in Pairs - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-# Linked List
-def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
+def swap_pairs(head: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode(0, head)
     n0 = dummy
     n1 = dummy.next
@@ -192,12 +191,9 @@ def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-nums = [1, 2, 3, 4, 5]
-head = ListNode.create(nums)
-print(head)
-# 1 -> 2 -> 3 -> 4 -> 5
-print(swapPairs(head))
-# 2 -> 1 -> 4 -> 3 -> 5
+def test_swap_pairs():
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert list_to_array(swap_pairs(head)) == [2, 1, 4, 3, 5]
 
 ```
 
@@ -209,11 +205,11 @@ print(swapPairs(head))
 ```python title="25. Reverse Nodes in k-Group - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
-def reverseKGroup(head: Optional[ListNode], k: int) -> Optional[ListNode]:
+def reverse_k_group(head: Optional[ListNode], k: int) -> Optional[ListNode]:
     n = 0
     cur = head
     while cur:
@@ -240,12 +236,9 @@ def reverseKGroup(head: Optional[ListNode], k: int) -> Optional[ListNode]:
     return dummy.next
 
 
-if __name__ == "__main__":
-    head = [1, 2, 3, 4, 5]
-    k = 2
-    head = ListNode.create(head)
-    print(head)  # 1 -> 2 -> 3 -> 4 -> 5
-    print(reverseKGroup(head, k))  # 2 -> 1 -> 4 -> 3 -> 5
+def test_reverse_k_group():
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert list_to_array(reverse_k_group(head, 2)) == [2, 1, 4, 3, 5]
 
 ```
 

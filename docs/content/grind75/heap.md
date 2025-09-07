@@ -206,11 +206,12 @@ import copy
 import heapq
 from typing import List, Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-# Divide and Conquer
-def mergeKListsDC(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+def merge_k_lists_divide_conquer(
+    lists: List[Optional[ListNode]],
+) -> Optional[ListNode]:
     if not lists or len(lists) == 0:
         return None
 
@@ -245,38 +246,43 @@ def mergeKListsDC(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
     return lists[0]
 
 
-# Heap - Merge k Sorted
-def mergeKLists(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+def merge_k_lists_heap(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
     dummy = ListNode()
     cur = dummy
 
-    minHeap = []  # (val, idx, node)
+    min_heap = []  # (val, idx, node)
 
     for idx, head in enumerate(lists):
         if head:
-            heapq.heappush(minHeap, (head.val, idx, head))
+            heapq.heappush(min_heap, (head.val, idx, head))
 
-    while minHeap:
-        _, idx, node = heapq.heappop(minHeap)
+    while min_heap:
+        _, idx, node = heapq.heappop(min_heap)
         cur.next = node
         cur = cur.next
 
         node = node.next
         if node:
-            heapq.heappush(minHeap, (node.val, idx, node))
+            heapq.heappush(min_heap, (node.val, idx, node))
 
     return dummy.next
 
 
-n1 = ListNode.create([1, 4, 5])
-n2 = ListNode.create([1, 3, 4])
-n3 = ListNode.create([2, 6])
-lists = [n1, n2, n3]
-lists1 = copy.deepcopy(lists)
-lists2 = copy.deepcopy(lists)
-print(mergeKListsDC(lists1))
-# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
-print(mergeKLists(lists2))
-# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+def test_merge_k_lists() -> None:
+    n1 = list_from_array([1, 4])
+    n2 = list_from_array([1, 3])
+    n3 = list_from_array([2, 6])
+    lists = [n1, n2, n3]
+    lists1 = copy.deepcopy(lists)
+    lists2 = copy.deepcopy(lists)
+    assert (list_to_array(merge_k_lists_divide_conquer(lists1))) == [
+        1,
+        1,
+        2,
+        3,
+        4,
+        6,
+    ]
+    assert (list_to_array(merge_k_lists_heap(lists2))) == [1, 1, 2, 3, 4, 6]
 
 ```

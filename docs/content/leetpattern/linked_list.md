@@ -56,7 +56,7 @@ F --> I((None))
 ```python title="203. Remove Linked List Elements - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Iterative
@@ -83,7 +83,7 @@ def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
 
 nums = [1, 2, 6, 3, 4, 5, 6]
 val = 6
-head = ListNode.create(nums)
+head = list_from_array(nums)
 print(head)
 # 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6
 print(removeElements(head, val))
@@ -187,7 +187,7 @@ B --> A((1))
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Iterative
@@ -220,12 +220,12 @@ def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 nums = [1, 2, 3, 4, 5]
-head1 = ListNode.create(nums)
+head1 = list_from_array(nums)
 print(head1)
 # 1 -> 2 -> 3 -> 4 -> 5
 print(reverseListIterative(head1))
 # 5 -> 4 -> 3 -> 2 -> 1
-head2 = ListNode.create(nums)
+head2 = list_from_array(nums)
 print(reverseListRecursive(head2))
 # 5 -> 4 -> 3 -> 2 -> 1
 
@@ -239,7 +239,7 @@ print(reverseListRecursive(head2))
 -   Delete a node in a singly linked list. You are given only the node to be deleted.
 
 ```python title="237. Delete Node in a Linked List - Python Solution"
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def deleteNode(node: ListNode) -> None:
@@ -247,7 +247,7 @@ def deleteNode(node: ListNode) -> None:
     node.next = node.next.next
 
 
-head = ListNode.create([4, 5, 1, 9])
+head = list_from_array([4, 5, 1, 9])
 node = head.next
 deleteNode(node)
 print(head)  # 4 -> 1 -> 9
@@ -264,15 +264,14 @@ print(head)  # 4 -> 1 -> 9
 ```python title="2487. Remove Nodes From Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-# Recursive
-def removeNodesRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
+def remove_nodes_recursive(head: Optional[ListNode]) -> Optional[ListNode]:
     if not head:
         return None
 
-    head.next = removeNodesRecursive(head.next)
+    head.next = remove_nodes_recursive(head.next)
 
     if head.next and head.val < head.next.val:
         return head.next
@@ -280,20 +279,17 @@ def removeNodesRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
     return head
 
 
-# Iterative
-def removeNodesIterative(head: Optional[ListNode]) -> Optional[ListNode]:
+def remove_nodes_iterative(head: Optional[ListNode]) -> Optional[ListNode]:
     stack = []
     cur = head
 
     while cur:
-        # pop all nodes in stack that are smaller than cur
         while stack and cur.val > stack[-1].val:
             stack.pop()
 
         stack.append(cur)
         cur = cur.next
 
-    # link all nodes in stack
     dummy = ListNode()
     cur = dummy
 
@@ -304,12 +300,11 @@ def removeNodesIterative(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-head = [5, 2, 13, 3, 8]
-head1 = ListNode.create(head)
-print(head1)  # 5 -> 2 -> 13 -> 3 -> 8
-print(removeNodesRecursive(head1))  # 13 -> 8
-head2 = ListNode.create(head)
-print(removeNodesIterative(head2))  # 13 -> 8
+def test_remove_nodes() -> None:
+    head = list_from_array([5, 2, 13, 3, 8])
+    assert (list_to_array(remove_nodes_recursive(head))) == [13, 8]
+    head = list_from_array([5, 2, 13, 3, 8])
+    assert (list_to_array(remove_nodes_iterative(head))) == [13, 8]
 
 ```
 
@@ -323,11 +318,10 @@ print(removeNodesIterative(head2))  # 13 -> 8
 ```python title="24. Swap Nodes in Pairs - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-# Linked List
-def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
+def swap_pairs(head: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode(0, head)
     n0 = dummy
     n1 = dummy.next
@@ -346,12 +340,9 @@ def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-nums = [1, 2, 3, 4, 5]
-head = ListNode.create(nums)
-print(head)
-# 1 -> 2 -> 3 -> 4 -> 5
-print(swapPairs(head))
-# 2 -> 1 -> 4 -> 3 -> 5
+def test_swap_pairs():
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert list_to_array(swap_pairs(head)) == [2, 1, 4, 3, 5]
 
 ```
 
@@ -365,7 +356,7 @@ print(swapPairs(head))
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
@@ -385,11 +376,9 @@ def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     return dummy.next
 
 
-head = [1, 2, 3, 4, 5]
-n = 2
-head = ListNode.create(head)
-print(head)  # 1 -> 2 -> 3 -> 4 -> 5
-print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
+def test_removeNthFromEnd() -> None:
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert (list_to_array(removeNthFromEnd(head, 2))) == [1, 2, 3, 5]
 
 ```
 
@@ -414,13 +403,11 @@ graph LR
 ```python title="160. Intersection of Two Linked Lists - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Hash Set
-def getIntersectionNodeHash(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
+def getIntersectionNodeHash(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -440,9 +427,7 @@ def getIntersectionNodeHash(
 
 
 # Two Pointers
-def getIntersectionNodeTP(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
+def getIntersectionNodeTP(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -457,10 +442,10 @@ def getIntersectionNodeTP(
 
 listA = [4, 1, 8, 4, 5]
 listB = [5, 6, 1, 8, 4, 5]
-headA = ListNode.create(listA)
+headA = list_from_array(listA)
 print(headA)
 # 4 -> 1 -> 8 -> 4 -> 5
-headB = ListNode.create(listB)
+headB = list_from_array(listB)
 print(headB)
 # 5 -> 6 -> 1 -> 8 -> 4 -> 5
 
@@ -498,7 +483,7 @@ graph LR
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def hasCycle(head: Optional[ListNode]) -> bool:
@@ -514,8 +499,8 @@ def hasCycle(head: Optional[ListNode]) -> bool:
     return False
 
 
-print(hasCycle(ListNode.create([3, 2, 0, -4])))  # False
-print(hasCycle(ListNode.create([3, 2, 0, -4], 1)))  # True
+print(hasCycle(list_from_array([3, 2, 0, -4])))  # False
+print(hasCycle(list_from_array([3, 2, 0, -4], 1)))  # True
 
 ```
 
@@ -563,7 +548,7 @@ D --> B
 ```python title="142. Linked List Cycle II - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
@@ -583,9 +568,9 @@ def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
     return None
 
 
-head1 = ListNode.create([3, 2, 0, -4], 1)
+head1 = list_from_array([3, 2, 0, -4], 1)
 print(detectCycle(head1).val)  # 2
-head2 = ListNode.create([3, 2, 0, -4])
+head2 = list_from_array([3, 2, 0, -4])
 print(detectCycle(head2))  # None
 
 ```
@@ -633,7 +618,7 @@ class Solution {
 ```python title="2816. Double a Number Represented as a Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 def doubleIt(head: Optional[ListNode]) -> Optional[ListNode]:
@@ -653,11 +638,9 @@ def doubleIt(head: Optional[ListNode]) -> Optional[ListNode]:
     return head
 
 
-head = ListNode.create([1, 2, 3, 4])
-print(head)
-# 1 -> 2 -> 3 -> 4
-print(doubleIt(head))
-# 2 -> 4 -> 6 -> 8
+def test_doubleIt() -> None:
+    head = list_from_array([9, 9, 9])
+    assert (list_to_array(doubleIt(head))) == [1, 9, 9, 8]
 
 ```
 

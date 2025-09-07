@@ -42,13 +42,11 @@ graph LR
 ```python title="160. Intersection of Two Linked Lists - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Hash Set
-def getIntersectionNodeHash(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
+def getIntersectionNodeHash(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -68,9 +66,7 @@ def getIntersectionNodeHash(
 
 
 # Two Pointers
-def getIntersectionNodeTP(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
+def getIntersectionNodeTP(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -85,10 +81,10 @@ def getIntersectionNodeTP(
 
 listA = [4, 1, 8, 4, 5]
 listB = [5, 6, 1, 8, 4, 5]
-headA = ListNode.create(listA)
+headA = list_from_array(listA)
 print(headA)
 # 4 -> 1 -> 8 -> 4 -> 5
-headB = ListNode.create(listB)
+headB = list_from_array(listB)
 print(headB)
 # 5 -> 6 -> 1 -> 8 -> 4 -> 5
 
@@ -127,7 +123,7 @@ B --> A((1))
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Iterative
@@ -160,12 +156,12 @@ def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 nums = [1, 2, 3, 4, 5]
-head1 = ListNode.create(nums)
+head1 = list_from_array(nums)
 print(head1)
 # 1 -> 2 -> 3 -> 4 -> 5
 print(reverseListIterative(head1))
 # 5 -> 4 -> 3 -> 2 -> 1
-head2 = ListNode.create(nums)
+head2 = list_from_array(nums)
 print(reverseListRecursive(head2))
 # 5 -> 4 -> 3 -> 2 -> 1
 
@@ -179,7 +175,7 @@ print(reverseListRecursive(head2))
 ```python title="234. Palindrome Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -245,7 +241,7 @@ graph LR
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def hasCycle(head: Optional[ListNode]) -> bool:
@@ -261,8 +257,8 @@ def hasCycle(head: Optional[ListNode]) -> bool:
     return False
 
 
-print(hasCycle(ListNode.create([3, 2, 0, -4])))  # False
-print(hasCycle(ListNode.create([3, 2, 0, -4], 1)))  # True
+print(hasCycle(list_from_array([3, 2, 0, -4])))  # False
+print(hasCycle(list_from_array([3, 2, 0, -4], 1)))  # True
 
 ```
 
@@ -310,7 +306,7 @@ D --> B
 ```python title="142. Linked List Cycle II - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
@@ -330,9 +326,9 @@ def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
     return None
 
 
-head1 = ListNode.create([3, 2, 0, -4], 1)
+head1 = list_from_array([3, 2, 0, -4], 1)
 print(detectCycle(head1).val)  # 2
-head2 = ListNode.create([3, 2, 0, -4])
+head2 = list_from_array([3, 2, 0, -4])
 print(detectCycle(head2))  # None
 
 ```
@@ -533,7 +529,7 @@ class Solution {
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
@@ -553,11 +549,9 @@ def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     return dummy.next
 
 
-head = [1, 2, 3, 4, 5]
-n = 2
-head = ListNode.create(head)
-print(head)  # 1 -> 2 -> 3 -> 4 -> 5
-print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
+def test_removeNthFromEnd() -> None:
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert (list_to_array(removeNthFromEnd(head, 2))) == [1, 2, 3, 5]
 
 ```
 
@@ -571,11 +565,10 @@ print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
 ```python title="24. Swap Nodes in Pairs - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-# Linked List
-def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
+def swap_pairs(head: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode(0, head)
     n0 = dummy
     n1 = dummy.next
@@ -594,12 +587,9 @@ def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-nums = [1, 2, 3, 4, 5]
-head = ListNode.create(nums)
-print(head)
-# 1 -> 2 -> 3 -> 4 -> 5
-print(swapPairs(head))
-# 2 -> 1 -> 4 -> 3 -> 5
+def test_swap_pairs():
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert list_to_array(swap_pairs(head)) == [2, 1, 4, 3, 5]
 
 ```
 
@@ -611,11 +601,11 @@ print(swapPairs(head))
 ```python title="25. Reverse Nodes in k-Group - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
-def reverseKGroup(head: Optional[ListNode], k: int) -> Optional[ListNode]:
+def reverse_k_group(head: Optional[ListNode], k: int) -> Optional[ListNode]:
     n = 0
     cur = head
     while cur:
@@ -642,12 +632,9 @@ def reverseKGroup(head: Optional[ListNode], k: int) -> Optional[ListNode]:
     return dummy.next
 
 
-if __name__ == "__main__":
-    head = [1, 2, 3, 4, 5]
-    k = 2
-    head = ListNode.create(head)
-    print(head)  # 1 -> 2 -> 3 -> 4 -> 5
-    print(reverseKGroup(head, k))  # 2 -> 1 -> 4 -> 3 -> 5
+def test_reverse_k_group():
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert list_to_array(reverse_k_group(head, 2)) == [2, 1, 4, 3, 5]
 
 ```
 
@@ -784,11 +771,12 @@ import copy
 import heapq
 from typing import List, Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-# Divide and Conquer
-def mergeKListsDC(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+def merge_k_lists_divide_conquer(
+    lists: List[Optional[ListNode]],
+) -> Optional[ListNode]:
     if not lists or len(lists) == 0:
         return None
 
@@ -823,39 +811,44 @@ def mergeKListsDC(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
     return lists[0]
 
 
-# Heap - Merge k Sorted
-def mergeKLists(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+def merge_k_lists_heap(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
     dummy = ListNode()
     cur = dummy
 
-    minHeap = []  # (val, idx, node)
+    min_heap = []  # (val, idx, node)
 
     for idx, head in enumerate(lists):
         if head:
-            heapq.heappush(minHeap, (head.val, idx, head))
+            heapq.heappush(min_heap, (head.val, idx, head))
 
-    while minHeap:
-        _, idx, node = heapq.heappop(minHeap)
+    while min_heap:
+        _, idx, node = heapq.heappop(min_heap)
         cur.next = node
         cur = cur.next
 
         node = node.next
         if node:
-            heapq.heappush(minHeap, (node.val, idx, node))
+            heapq.heappush(min_heap, (node.val, idx, node))
 
     return dummy.next
 
 
-n1 = ListNode.create([1, 4, 5])
-n2 = ListNode.create([1, 3, 4])
-n3 = ListNode.create([2, 6])
-lists = [n1, n2, n3]
-lists1 = copy.deepcopy(lists)
-lists2 = copy.deepcopy(lists)
-print(mergeKListsDC(lists1))
-# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
-print(mergeKLists(lists2))
-# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+def test_merge_k_lists() -> None:
+    n1 = list_from_array([1, 4])
+    n2 = list_from_array([1, 3])
+    n3 = list_from_array([2, 6])
+    lists = [n1, n2, n3]
+    lists1 = copy.deepcopy(lists)
+    lists2 = copy.deepcopy(lists)
+    assert (list_to_array(merge_k_lists_divide_conquer(lists1))) == [
+        1,
+        1,
+        2,
+        3,
+        4,
+        6,
+    ]
+    assert (list_to_array(merge_k_lists_heap(lists2))) == [1, 1, 2, 3, 4, 6]
 
 ```
 

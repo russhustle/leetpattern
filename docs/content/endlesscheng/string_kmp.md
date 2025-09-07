@@ -25,7 +25,7 @@ comments: True
 
 -   Tags: two pointers, string, string matching
 ```python title="28. Find the Index of the First Occurrence in a String - Python Solution"
-from template import LPS
+from leetpattern.utils import LPS
 
 
 # Brute Force
@@ -98,7 +98,7 @@ print(rotateString(s, goal))  # True
 
 -   Tags: string, rolling hash, string matching, hash function
 ```python title="1392. Longest Happy Prefix - Python Solution"
-from template import LPS
+from leetpattern.utils import LPS
 
 
 # KMP
@@ -136,7 +136,7 @@ print(longestPrefix("ababab"))  # abab
 
 -   Tags: string, string matching
 ```python title="459. Repeated Substring Pattern - Python Solution"
-from template import LPS
+from leetpattern.utils import LPS
 
 
 # KMP
@@ -166,7 +166,7 @@ print(repeatedSubstringPattern(s))  # True
 
 -   Tags: string, rolling hash, string matching, hash function
 ```python title="214. Shortest Palindrome - Python Solution"
-from template import LPS
+from leetpattern.utils import LPS
 
 
 # KMP
@@ -194,7 +194,7 @@ print(shortestPalindrome("aacecaaa"))  # aaacecaaa
 ```python title="686. Repeated String Match - Python Solution"
 import math
 
-from template import LPS
+from leetpattern.utils import LPS
 
 
 # KMP

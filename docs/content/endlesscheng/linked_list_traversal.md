@@ -22,7 +22,7 @@ comments: True
 ```python title="1290. Convert Binary Number in a Linked List to Integer - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -50,7 +50,7 @@ print(getDecimalValue(node))  # 5
 ```python title="2058. Find the Minimum and Maximum Number of Nodes Between Critical Points - Python Solution"
 from typing import List, Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -96,7 +96,7 @@ print(nodesBetweenCriticalPoints(node))  # [1, 3]
 ```python title="2181. Merge Nodes in Between Zeros - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -123,7 +123,7 @@ def mergeNodes(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-root = ListNode.create([0, 3, 1, 0, 4, 5, 2, 0])
+root = list_from_array([0, 3, 1, 0, 4, 5, 2, 0])
 print(root)  # 0 -> 3 -> 1 -> 0 -> 4 -> 5 -> 2 -> 0
 print(mergeNodes(root))  # 4 -> 11
 
@@ -142,7 +142,7 @@ print(mergeNodes(root))  # 4 -> 11
 ```python title="817. Linked List Components - Python Solution"
 from typing import List, Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List

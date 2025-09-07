@@ -1,6 +1,6 @@
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -27,6 +27,6 @@ def mergeNodes(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-root = ListNode.create([0, 3, 1, 0, 4, 5, 2, 0])
+root = list_from_array([0, 3, 1, 0, 4, 5, 2, 0])
 print(root)  # 0 -> 3 -> 1 -> 0 -> 4 -> 5 -> 2 -> 0
 print(mergeNodes(root))  # 4 -> 11

@@ -20,7 +20,7 @@ B --> A((1))
 
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Iterative
@@ -53,11 +53,11 @@ def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 nums = [1, 2, 3, 4, 5]
-head1 = ListNode.create(nums)
+head1 = list_from_array(nums)
 print(head1)
 # 1 -> 2 -> 3 -> 4 -> 5
 print(reverseListIterative(head1))
 # 5 -> 4 -> 3 -> 2 -> 1
-head2 = ListNode.create(nums)
+head2 = list_from_array(nums)
 print(reverseListRecursive(head2))
 # 5 -> 4 -> 3 -> 2 -> 1

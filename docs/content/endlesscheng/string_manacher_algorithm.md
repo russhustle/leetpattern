@@ -124,7 +124,7 @@ print(countSubstrings("abbae"))  # 7
 
 -   Tags: string, rolling hash, string matching, hash function
 ```python title="214. Shortest Palindrome - Python Solution"
-from template import LPS
+from leetpattern.utils import LPS
 
 
 # KMP

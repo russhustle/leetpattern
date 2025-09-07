@@ -21,7 +21,7 @@ comments: True
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
@@ -41,11 +41,9 @@ def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     return dummy.next
 
 
-head = [1, 2, 3, 4, 5]
-n = 2
-head = ListNode.create(head)
-print(head)  # 1 -> 2 -> 3 -> 4 -> 5
-print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
+def test_removeNthFromEnd() -> None:
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert (list_to_array(removeNthFromEnd(head, 2))) == [1, 2, 3, 5]
 
 ```
 
@@ -67,13 +65,11 @@ print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
 ```python title="1474. Delete N Nodes After M Nodes of a Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
-def deleteNodes(
-    head: Optional[ListNode], m: int, n: int
-) -> Optional[ListNode]:
+def deleteNodes(head: Optional[ListNode], m: int, n: int) -> Optional[ListNode]:
     dummy = ListNode(0, head)
     cur = dummy
 
@@ -95,7 +91,7 @@ if __name__ == "__main__":
     head = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
     m = 2
     n = 3
-    head = ListNode.create(head)
+    head = list_from_array(head)
     print(head)
     # 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13
     head = deleteNodes(head, m, n)

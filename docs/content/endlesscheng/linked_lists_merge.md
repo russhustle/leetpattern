@@ -110,7 +110,7 @@ class Solution {
 ```python title="2816. Double a Number Represented as a Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 def doubleIt(head: Optional[ListNode]) -> Optional[ListNode]:
@@ -130,11 +130,9 @@ def doubleIt(head: Optional[ListNode]) -> Optional[ListNode]:
     return head
 
 
-head = ListNode.create([1, 2, 3, 4])
-print(head)
-# 1 -> 2 -> 3 -> 4
-print(doubleIt(head))
-# 2 -> 4 -> 6 -> 8
+def test_doubleIt() -> None:
+    head = list_from_array([9, 9, 9])
+    assert (list_to_array(doubleIt(head))) == [1, 9, 9, 8]
 
 ```
 

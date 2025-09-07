@@ -31,7 +31,7 @@ F --> I((None))
 
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Iterative
@@ -58,7 +58,7 @@ def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
 
 nums = [1, 2, 6, 3, 4, 5, 6]
 val = 6
-head = ListNode.create(nums)
+head = list_from_array(nums)
 print(head)
 # 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6
 print(removeElements(head, val))

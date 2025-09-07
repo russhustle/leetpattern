@@ -4,11 +4,10 @@
 
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-# Linked List
-def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
+def swap_pairs(head: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode(0, head)
     n0 = dummy
     n1 = dummy.next
@@ -27,9 +26,6 @@ def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-nums = [1, 2, 3, 4, 5]
-head = ListNode.create(nums)
-print(head)
-# 1 -> 2 -> 3 -> 4 -> 5
-print(swapPairs(head))
-# 2 -> 1 -> 4 -> 3 -> 5
+def test_swap_pairs():
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert list_to_array(swap_pairs(head)) == [2, 1, 4, 3, 5]

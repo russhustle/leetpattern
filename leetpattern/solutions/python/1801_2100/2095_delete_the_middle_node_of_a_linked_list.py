@@ -1,6 +1,6 @@
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -19,6 +19,6 @@ def deleteMiddle(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-node = ListNode.create([1, 2, 3, 4, 5])
+node = list_from_array([1, 2, 3, 4, 5])
 print(deleteMiddle(node))
 # 1 -> 2 -> 4 -> 5

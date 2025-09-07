@@ -43,7 +43,7 @@ graph LR
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def hasCycle(head: Optional[ListNode]) -> bool:
@@ -59,8 +59,8 @@ def hasCycle(head: Optional[ListNode]) -> bool:
     return False
 
 
-print(hasCycle(ListNode.create([3, 2, 0, -4])))  # False
-print(hasCycle(ListNode.create([3, 2, 0, -4], 1)))  # True
+print(hasCycle(list_from_array([3, 2, 0, -4])))  # False
+print(hasCycle(list_from_array([3, 2, 0, -4], 1)))  # True
 
 ```
 
@@ -375,11 +375,11 @@ def test_reverse_between():
 ```python title="25. Reverse Nodes in k-Group - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
-def reverseKGroup(head: Optional[ListNode], k: int) -> Optional[ListNode]:
+def reverse_k_group(head: Optional[ListNode], k: int) -> Optional[ListNode]:
     n = 0
     cur = head
     while cur:
@@ -406,12 +406,9 @@ def reverseKGroup(head: Optional[ListNode], k: int) -> Optional[ListNode]:
     return dummy.next
 
 
-if __name__ == "__main__":
-    head = [1, 2, 3, 4, 5]
-    k = 2
-    head = ListNode.create(head)
-    print(head)  # 1 -> 2 -> 3 -> 4 -> 5
-    print(reverseKGroup(head, k))  # 2 -> 1 -> 4 -> 3 -> 5
+def test_reverse_k_group():
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert list_to_array(reverse_k_group(head, 2)) == [2, 1, 4, 3, 5]
 
 ```
 
@@ -425,7 +422,7 @@ if __name__ == "__main__":
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
@@ -445,11 +442,9 @@ def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     return dummy.next
 
 
-head = [1, 2, 3, 4, 5]
-n = 2
-head = ListNode.create(head)
-print(head)  # 1 -> 2 -> 3 -> 4 -> 5
-print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
+def test_removeNthFromEnd() -> None:
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert (list_to_array(removeNthFromEnd(head, 2))) == [1, 2, 3, 5]
 
 ```
 
@@ -461,7 +456,7 @@ print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
 ```python title="82. Remove Duplicates from Sorted List II - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List

@@ -693,7 +693,7 @@ if __name__ == "__main__":
 from functools import cache
 from typing import List
 
-from template import knapsack01
+from leetpattern.utils import knapsack01
 
 
 # Memoization

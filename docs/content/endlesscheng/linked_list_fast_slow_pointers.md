@@ -24,7 +24,7 @@ comments: True
 ```python title="876. Middle of the Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -38,9 +38,9 @@ def middleNode(head: Optional[ListNode]) -> Optional[ListNode]:
     return slow
 
 
-print(middleNode(ListNode.create([1, 2, 3, 4, 5])))
+print(middleNode(list_from_array([1, 2, 3, 4, 5])))
 # 3 -> 4 -> 5
-print(middleNode(ListNode.create([1, 2, 3, 4, 5, 6])))
+print(middleNode(list_from_array([1, 2, 3, 4, 5, 6])))
 # 4 -> 5 -> 6
 
 ```
@@ -53,7 +53,7 @@ print(middleNode(ListNode.create([1, 2, 3, 4, 5, 6])))
 ```python title="2095. Delete the Middle Node of a Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -72,7 +72,7 @@ def deleteMiddle(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-node = ListNode.create([1, 2, 3, 4, 5])
+node = list_from_array([1, 2, 3, 4, 5])
 print(deleteMiddle(node))
 # 1 -> 2 -> 4 -> 5
 
@@ -86,7 +86,7 @@ print(deleteMiddle(node))
 ```python title="234. Palindrome Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -135,7 +135,7 @@ print(isPalindrome(head))  # True
 ```python title="2130. Maximum Twin Sum of a Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -181,7 +181,7 @@ print(pairSum(node))  # 7
 ```python title="143. Reorder List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -215,7 +215,7 @@ def reorderList(head: Optional[ListNode]) -> None:
         first, second = temp1, temp2
 
 
-head = ListNode.create([1, 2, 3, 4, 5, 6])
+head = list_from_array([1, 2, 3, 4, 5, 6])
 print(head)  # 1 -> 2 -> 3 -> 4 -> 5 -> 6
 reorderList(head)
 print(head)  # 1 -> 6 -> 2 -> 5 -> 3 -> 4
@@ -247,7 +247,7 @@ graph LR
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def hasCycle(head: Optional[ListNode]) -> bool:
@@ -263,8 +263,8 @@ def hasCycle(head: Optional[ListNode]) -> bool:
     return False
 
 
-print(hasCycle(ListNode.create([3, 2, 0, -4])))  # False
-print(hasCycle(ListNode.create([3, 2, 0, -4], 1)))  # True
+print(hasCycle(list_from_array([3, 2, 0, -4])))  # False
+print(hasCycle(list_from_array([3, 2, 0, -4], 1)))  # True
 
 ```
 
@@ -312,7 +312,7 @@ D --> B
 ```python title="142. Linked List Cycle II - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
@@ -332,9 +332,9 @@ def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
     return None
 
 
-head1 = ListNode.create([3, 2, 0, -4], 1)
+head1 = list_from_array([3, 2, 0, -4], 1)
 print(detectCycle(head1).val)  # 2
-head2 = ListNode.create([3, 2, 0, -4])
+head2 = list_from_array([3, 2, 0, -4])
 print(detectCycle(head2))  # None
 
 ```

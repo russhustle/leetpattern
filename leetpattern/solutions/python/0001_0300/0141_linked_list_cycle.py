@@ -19,7 +19,7 @@ graph LR
 
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def hasCycle(head: Optional[ListNode]) -> bool:
@@ -35,5 +35,5 @@ def hasCycle(head: Optional[ListNode]) -> bool:
     return False
 
 
-print(hasCycle(ListNode.create([3, 2, 0, -4])))  # False
-print(hasCycle(ListNode.create([3, 2, 0, -4], 1)))  # True
+print(hasCycle(list_from_array([3, 2, 0, -4])))  # False
+print(hasCycle(list_from_array([3, 2, 0, -4], 1)))  # True

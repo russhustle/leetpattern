@@ -37,7 +37,7 @@ comments: True
 from collections import defaultdict, deque
 from typing import List
 
-from template import UnionFind
+from leetpattern.utils import UnionFind
 
 
 # DFS (Adjacency Matrix)

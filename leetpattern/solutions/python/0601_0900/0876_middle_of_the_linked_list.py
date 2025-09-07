@@ -1,6 +1,6 @@
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -14,7 +14,7 @@ def middleNode(head: Optional[ListNode]) -> Optional[ListNode]:
     return slow
 
 
-print(middleNode(ListNode.create([1, 2, 3, 4, 5])))
+print(middleNode(list_from_array([1, 2, 3, 4, 5])))
 # 3 -> 4 -> 5
-print(middleNode(ListNode.create([1, 2, 3, 4, 5, 6])))
+print(middleNode(list_from_array([1, 2, 3, 4, 5, 6])))
 # 4 -> 5 -> 6

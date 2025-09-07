@@ -1,6 +1,6 @@
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Prefix Sum

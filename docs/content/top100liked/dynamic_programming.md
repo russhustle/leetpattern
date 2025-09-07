@@ -425,7 +425,7 @@ print(maxProduct(nums))  # 6
 from functools import cache
 from typing import List
 
-from template import knapsack01
+from leetpattern.utils import knapsack01
 
 
 # Memoization

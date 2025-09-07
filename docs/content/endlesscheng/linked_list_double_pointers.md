@@ -41,13 +41,11 @@ graph LR
 ```python title="160. Intersection of Two Linked Lists - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Hash Set
-def getIntersectionNodeHash(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
+def getIntersectionNodeHash(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -67,9 +65,7 @@ def getIntersectionNodeHash(
 
 
 # Two Pointers
-def getIntersectionNodeTP(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
+def getIntersectionNodeTP(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -84,10 +80,10 @@ def getIntersectionNodeTP(
 
 listA = [4, 1, 8, 4, 5]
 listB = [5, 6, 1, 8, 4, 5]
-headA = ListNode.create(listA)
+headA = list_from_array(listA)
 print(headA)
 # 4 -> 1 -> 8 -> 4 -> 5
-headB = ListNode.create(listB)
+headB = list_from_array(listB)
 print(headB)
 # 5 -> 6 -> 1 -> 8 -> 4 -> 5
 

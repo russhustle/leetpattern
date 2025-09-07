@@ -591,7 +591,7 @@ print(shortestSubarray(nums, k))  # 3
 ```python title="1171. Remove Zero Sum Consecutive Nodes from Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Prefix Sum

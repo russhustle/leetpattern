@@ -12,7 +12,7 @@ D --> B
 
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
@@ -32,7 +32,7 @@ def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
     return None
 
 
-head1 = ListNode.create([3, 2, 0, -4], 1)
+head1 = list_from_array([3, 2, 0, -4], 1)
 print(detectCycle(head1).val)  # 2
-head2 = ListNode.create([3, 2, 0, -4])
+head2 = list_from_array([3, 2, 0, -4])
 print(detectCycle(head2))  # None

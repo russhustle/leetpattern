@@ -4,7 +4,7 @@
 
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
@@ -24,8 +24,6 @@ def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     return dummy.next
 
 
-head = [1, 2, 3, 4, 5]
-n = 2
-head = ListNode.create(head)
-print(head)  # 1 -> 2 -> 3 -> 4 -> 5
-print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
+def test_removeNthFromEnd() -> None:
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert (list_to_array(removeNthFromEnd(head, 2))) == [1, 2, 3, 5]

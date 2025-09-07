@@ -39,7 +39,7 @@ B --> A((1))
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Iterative
@@ -72,12 +72,12 @@ def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 nums = [1, 2, 3, 4, 5]
-head1 = ListNode.create(nums)
+head1 = list_from_array(nums)
 print(head1)
 # 1 -> 2 -> 3 -> 4 -> 5
 print(reverseListIterative(head1))
 # 5 -> 4 -> 3 -> 2 -> 1
-head2 = ListNode.create(nums)
+head2 = list_from_array(nums)
 print(reverseListRecursive(head2))
 # 5 -> 4 -> 3 -> 2 -> 1
 
@@ -162,7 +162,7 @@ class Solution {
 ```python title="143. Reorder List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -196,7 +196,7 @@ def reorderList(head: Optional[ListNode]) -> None:
         first, second = temp1, temp2
 
 
-head = ListNode.create([1, 2, 3, 4, 5, 6])
+head = list_from_array([1, 2, 3, 4, 5, 6])
 print(head)  # 1 -> 2 -> 3 -> 4 -> 5 -> 6
 reorderList(head)
 print(head)  # 1 -> 6 -> 2 -> 5 -> 3 -> 4
@@ -213,7 +213,7 @@ print(head)  # 1 -> 6 -> 2 -> 5 -> 3 -> 4
 ```python title="19. Remove Nth Node From End of List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
 # Linked List
@@ -233,11 +233,9 @@ def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     return dummy.next
 
 
-head = [1, 2, 3, 4, 5]
-n = 2
-head = ListNode.create(head)
-print(head)  # 1 -> 2 -> 3 -> 4 -> 5
-print(removeNthFromEnd(head, n))  # 1 -> 2 -> 3 -> 5
+def test_removeNthFromEnd() -> None:
+    head = list_from_array([1, 2, 3, 4, 5])
+    assert (list_to_array(removeNthFromEnd(head, 2))) == [1, 2, 3, 5]
 
 ```
 
@@ -266,7 +264,7 @@ graph LR
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def hasCycle(head: Optional[ListNode]) -> bool:
@@ -282,8 +280,8 @@ def hasCycle(head: Optional[ListNode]) -> bool:
     return False
 
 
-print(hasCycle(ListNode.create([3, 2, 0, -4])))  # False
-print(hasCycle(ListNode.create([3, 2, 0, -4], 1)))  # True
+print(hasCycle(list_from_array([3, 2, 0, -4])))  # False
+print(hasCycle(list_from_array([3, 2, 0, -4], 1)))  # True
 
 ```
 
@@ -326,11 +324,12 @@ import copy
 import heapq
 from typing import List, Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-# Divide and Conquer
-def mergeKListsDC(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+def merge_k_lists_divide_conquer(
+    lists: List[Optional[ListNode]],
+) -> Optional[ListNode]:
     if not lists or len(lists) == 0:
         return None
 
@@ -365,38 +364,43 @@ def mergeKListsDC(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
     return lists[0]
 
 
-# Heap - Merge k Sorted
-def mergeKLists(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+def merge_k_lists_heap(lists: List[Optional[ListNode]]) -> Optional[ListNode]:
     dummy = ListNode()
     cur = dummy
 
-    minHeap = []  # (val, idx, node)
+    min_heap = []  # (val, idx, node)
 
     for idx, head in enumerate(lists):
         if head:
-            heapq.heappush(minHeap, (head.val, idx, head))
+            heapq.heappush(min_heap, (head.val, idx, head))
 
-    while minHeap:
-        _, idx, node = heapq.heappop(minHeap)
+    while min_heap:
+        _, idx, node = heapq.heappop(min_heap)
         cur.next = node
         cur = cur.next
 
         node = node.next
         if node:
-            heapq.heappush(minHeap, (node.val, idx, node))
+            heapq.heappush(min_heap, (node.val, idx, node))
 
     return dummy.next
 
 
-n1 = ListNode.create([1, 4, 5])
-n2 = ListNode.create([1, 3, 4])
-n3 = ListNode.create([2, 6])
-lists = [n1, n2, n3]
-lists1 = copy.deepcopy(lists)
-lists2 = copy.deepcopy(lists)
-print(mergeKListsDC(lists1))
-# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
-print(mergeKLists(lists2))
-# 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+def test_merge_k_lists() -> None:
+    n1 = list_from_array([1, 4])
+    n2 = list_from_array([1, 3])
+    n3 = list_from_array([2, 6])
+    lists = [n1, n2, n3]
+    lists1 = copy.deepcopy(lists)
+    lists2 = copy.deepcopy(lists)
+    assert (list_to_array(merge_k_lists_divide_conquer(lists1))) == [
+        1,
+        1,
+        2,
+        3,
+        4,
+        6,
+    ]
+    assert (list_to_array(merge_k_lists_heap(lists2))) == [1, 1, 2, 3, 4, 6]
 
 ```

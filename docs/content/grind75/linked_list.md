@@ -108,7 +108,7 @@ graph LR
 ```python title="141. Linked List Cycle - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 def hasCycle(head: Optional[ListNode]) -> bool:
@@ -124,8 +124,8 @@ def hasCycle(head: Optional[ListNode]) -> bool:
     return False
 
 
-print(hasCycle(ListNode.create([3, 2, 0, -4])))  # False
-print(hasCycle(ListNode.create([3, 2, 0, -4], 1)))  # True
+print(hasCycle(list_from_array([3, 2, 0, -4])))  # False
+print(hasCycle(list_from_array([3, 2, 0, -4], 1)))  # True
 
 ```
 
@@ -181,7 +181,7 @@ B --> A((1))
 ```python title="206. Reverse Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Iterative
@@ -214,12 +214,12 @@ def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 nums = [1, 2, 3, 4, 5]
-head1 = ListNode.create(nums)
+head1 = list_from_array(nums)
 print(head1)
 # 1 -> 2 -> 3 -> 4 -> 5
 print(reverseListIterative(head1))
 # 5 -> 4 -> 3 -> 2 -> 1
-head2 = ListNode.create(nums)
+head2 = list_from_array(nums)
 print(reverseListRecursive(head2))
 # 5 -> 4 -> 3 -> 2 -> 1
 
@@ -233,7 +233,7 @@ print(reverseListRecursive(head2))
 ```python title="876. Middle of the Linked List - Python Solution"
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -247,9 +247,9 @@ def middleNode(head: Optional[ListNode]) -> Optional[ListNode]:
     return slow
 
 
-print(middleNode(ListNode.create([1, 2, 3, 4, 5])))
+print(middleNode(list_from_array([1, 2, 3, 4, 5])))
 # 3 -> 4 -> 5
-print(middleNode(ListNode.create([1, 2, 3, 4, 5, 6])))
+print(middleNode(list_from_array([1, 2, 3, 4, 5, 6])))
 # 4 -> 5 -> 6
 
 ```

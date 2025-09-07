@@ -1,6 +1,6 @@
 from typing import Optional
 
-from template import ListNode
+from leetpattern.utils import ListNode
 
 
 # Linked List
@@ -34,7 +34,7 @@ def reorderList(head: Optional[ListNode]) -> None:
         first, second = temp1, temp2
 
 
-head = ListNode.create([1, 2, 3, 4, 5, 6])
+head = list_from_array([1, 2, 3, 4, 5, 6])
 print(head)  # 1 -> 2 -> 3 -> 4 -> 5 -> 6
 reorderList(head)
 print(head)  # 1 -> 6 -> 2 -> 5 -> 3 -> 4

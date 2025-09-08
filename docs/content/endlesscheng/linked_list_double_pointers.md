@@ -45,7 +45,9 @@ from leetpattern.utils import ListNode
 
 
 # Hash Set
-def getIntersectionNodeHash(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+def getIntersectionNodeHash(
+    headA: ListNode, headB: ListNode
+) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -65,7 +67,9 @@ def getIntersectionNodeHash(headA: ListNode, headB: ListNode) -> Optional[ListNo
 
 
 # Two Pointers
-def getIntersectionNodeTP(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+def getIntersectionNodeTP(
+    headA: ListNode, headB: ListNode
+) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 

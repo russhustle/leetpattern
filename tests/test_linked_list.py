@@ -1,4 +1,4 @@
-from leetpattern.utils import (ListNode, LinkedList, get_length, has_cycle,
+from leetpattern.utils import (LinkedList, ListNode, get_length, has_cycle,
                                list_from_array, list_to_array, make_cycle,
                                reverse_list)
 
@@ -15,7 +15,7 @@ def test_listnode_with_next():
     node1 = ListNode(5, node2)
     assert node1.val == 5
     assert node1.next == node2
-    assert node1.next.val == 10
+    assert node1.next.val == 10  # type: ignore
 
 
 # Tests for list_from_array

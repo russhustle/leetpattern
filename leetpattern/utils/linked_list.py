@@ -2,7 +2,9 @@ from typing import List, Optional
 
 
 class ListNode:
-    def __init__(self, val: int = 0, next: Optional["ListNode"] = None) -> None:
+    def __init__(
+        self, val: int = 0, next: Optional["ListNode"] = None
+    ) -> None:
         self.val = val
         self.next = next
 
@@ -16,13 +18,17 @@ class ListNode:
 
 
 class LinkedList:
-    def __init__(self, input_data: Optional[List[int] | ListNode] = None) -> None:
+    def __init__(
+        self, input_data: Optional[List[int] | ListNode] = None
+    ) -> None:
         if isinstance(input_data, list):
             self.head = list_from_array(input_data)
         elif isinstance(input_data, ListNode) or input_data is None:
             self.head = input_data
         else:
-            raise ValueError("Invalid input: must be a list of ints or a ListNode")
+            raise ValueError(
+                "Invalid input: must be a list of ints or a ListNode"
+            )
 
     def to_array(self) -> List[int]:
         return list_to_array(self.head)

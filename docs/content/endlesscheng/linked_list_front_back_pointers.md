@@ -69,7 +69,9 @@ from leetpattern.utils import ListNode
 
 
 # Linked List
-def deleteNodes(head: Optional[ListNode], m: int, n: int) -> Optional[ListNode]:
+def deleteNodes(
+    head: Optional[ListNode], m: int, n: int
+) -> Optional[ListNode]:
     dummy = ListNode(0, head)
     cur = dummy
 

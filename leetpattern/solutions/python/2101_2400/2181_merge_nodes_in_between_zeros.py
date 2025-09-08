@@ -1,10 +1,12 @@
 from typing import Optional
 
-from leetpattern.utils import ListNode
+from leetpattern.utils import LinkedList, ListNode
 
 
-# Linked List
-def mergeNodes(head: Optional[ListNode]) -> Optional[ListNode]:
+def merge_nodes(head: Optional[ListNode]) -> Optional[ListNode]:
+    if not head or not head.next:
+        return head
+
     dummy = ListNode()
     cur = dummy
 
@@ -27,6 +29,7 @@ def mergeNodes(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-root = list_from_array([0, 3, 1, 0, 4, 5, 2, 0])
-print(root)  # 0 -> 3 -> 1 -> 0 -> 4 -> 5 -> 2 -> 0
-print(mergeNodes(root))  # 4 -> 11
+def test_merge_nodes():
+    root = LinkedList([0, 3, 1, 0, 4, 5, 2, 0])
+    res = merge_nodes(root.head)
+    assert LinkedList(res).to_array() == [4, 11]

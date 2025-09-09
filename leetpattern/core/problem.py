@@ -21,6 +21,7 @@ class Problem:
     paid_only: bool = False
     python_path: Optional[str] = None
     cpp_path: Optional[str] = None
+    javascript_path: Optional[str] = None
     sql_path: Optional[str] = None
     txt_path: Optional[str] = None
     md_path: Optional[str] = None
@@ -94,12 +95,14 @@ class ProblemRepository:
 
         py_folder = f"leetpattern/solutions/python/{sub_folder}/"
         cpp_folder = f"leetpattern/solutions/cpp/{sub_folder}/"
+        js_folder = f"leetpattern/solutions/javascript/{sub_folder}/"
         sql_folder = "leetpattern/solutions/sql/"
 
         basename = f"{qid:04d}_{row['titleSlug']}"
 
         python_path = f"{py_folder}{basename}.py"
         cpp_path = f"{cpp_folder}{basename}.cc"
+        javascript_path = f"{js_folder}{basename}.js"
         sql_path = f"{sql_folder}{basename}.sql"
 
         return Problem(
@@ -112,6 +115,7 @@ class ProblemRepository:
             paid_only=row.get("paidOnly", False),
             python_path=python_path,
             cpp_path=cpp_path,
+            javascript_path=javascript_path,
             sql_path=sql_path,
             txt_path=row.get("txt_path"),
             md_path=row.get("md_path"),

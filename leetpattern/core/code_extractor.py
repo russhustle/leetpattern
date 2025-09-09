@@ -25,6 +25,14 @@ class CodeExtractor:
             if py_docstring:
                 content += py_docstring
 
+        # Extract JSDoc comment from JavaScript file if it exists
+        if problem.javascript_path:
+            js_comment = self.file_manager.extract_js_comment(
+                problem.javascript_path
+            )
+            if js_comment:
+                content += js_comment
+
         # Add Python solution
         if (
             problem.python_path
@@ -54,6 +62,27 @@ class CodeExtractor:
             if cc_content.strip():  # Only add if there's actual code content
                 cc_content = f'```cpp title="{title} - C++ Solution"\n{cc_content}```\n\n'
                 content += cc_content
+
+        # Add JavaScript solution
+        if (
+            problem.javascript_path
+            and self.file_manager.file_exists_and_not_empty(
+                problem.javascript_path
+            )
+        ):
+            js_content = self.file_manager.read_file_safe(
+                problem.javascript_path
+            ).strip()
+
+            # Remove JSDoc comment from the code snippet if it exists
+            if js_content.startswith("/**"):
+                end_idx = js_content.find("*/", 3)
+                if end_idx != -1:
+                    js_content = js_content[end_idx + 2 :].strip()
+
+            if js_content:  # Only add if there's actual code content
+                js_content = f'```javascript title="{title} - JavaScript Solution"\n{js_content}```\n\n'
+                content += js_content
 
         return content
 

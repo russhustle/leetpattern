@@ -85,6 +85,36 @@ class FileManager:
         return ""
 
     @staticmethod
+    def extract_js_comment(file_path: str) -> str:
+        """Extract JSDoc comment from a JavaScript file."""
+        if not FileManager.file_exists_and_not_empty(file_path):
+            return ""
+
+        content = FileManager.read_file_safe(file_path).strip()
+        if not content:
+            return ""
+
+        # Look for JSDoc comment at the beginning of the file
+        if content.startswith("/**"):
+            end_idx = content.find("*/", 3)
+            if end_idx != -1:
+                # Clean up JSDoc comment formatting
+                comment_content = content[3:end_idx].strip()
+                lines = comment_content.split("\n")
+                cleaned_lines = []
+                for line in lines:
+                    cleaned_line = line.strip()
+                    if cleaned_line.startswith("*"):
+                        cleaned_line = cleaned_line[1:].strip()
+                    if cleaned_line and not cleaned_line.startswith("@"):
+                        cleaned_lines.append(cleaned_line)
+
+                if cleaned_lines:
+                    return "\n".join(cleaned_lines) + "\n\n"
+
+        return ""
+
+    @staticmethod
     def remove_empty_files(
         directories: list[str], extensions: list[str]
     ) -> None:

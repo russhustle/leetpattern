@@ -48,7 +48,7 @@ def generate(
 def create(
     qid: int,
     language: str = typer.Option(
-        "py", "--lang", help="Programming language (py, cc, sql)"
+        "py", "--lang", help="Programming language (py, cc, js, sql)"
     ),
 ) -> None:
     """Create problem files."""
@@ -58,7 +58,7 @@ def create(
         raise typer.Exit(1)
 
     # Validate language option
-    valid_languages = {"py", "cc", "sql"}
+    valid_languages = {"py", "cc", "js", "sql"}
     if language not in valid_languages:
         typer.echo(
             f"Invalid language '{language}'. Valid options: {', '.join(valid_languages)}",
@@ -71,6 +71,8 @@ def create(
         file_path = problem.python_path
     elif language == "cc":
         file_path = problem.cpp_path
+    elif language == "js":
+        file_path = problem.javascript_path
     elif language == "sql":
         file_path = problem.sql_path
     else:
@@ -96,7 +98,7 @@ def create(
 def show(
     qid: int,
     language: str = typer.Option(
-        "py", "--lang", help="Programming language (py, cc, sql)"
+        "py", "--lang", help="Programming language (py, cc, js, sql)"
     ),
 ):
     """Show problem files."""
@@ -110,11 +112,13 @@ def show(
         file_path = problem.python_path
     elif language == "cc":
         file_path = problem.cpp_path
+    elif language == "js":
+        file_path = problem.javascript_path
     elif language == "sql":
         file_path = problem.sql_path
     else:
         typer.echo(
-            f"Invalid language '{language}'. Valid options: py, cc, sql",
+            f"Invalid language '{language}'. Valid options: py, cc, js, sql",
             err=True,
         )
         raise typer.Exit(1)

@@ -18,47 +18,43 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/power-of-three/) | [LeetCode CH](https://leetcode.cn/problems/power-of-three/) (Easy)
 
 -   Tags: math, recursion
+
+
 ## 633. Sum of Square Numbers
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-square-numbers/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-square-numbers/) (Medium)
 
 -   Tags: math, two pointers, binary search
+
+
 ## 279. Perfect Squares
 
 -   [LeetCode](https://leetcode.com/problems/perfect-squares/) | [LeetCode CH](https://leetcode.cn/problems/perfect-squares/) (Medium)
 
 -   Tags: math, dynamic programming, breadth first search
-```python title="279. Perfect Squares - Python Solution"
-import math
+
+=== "Python"
+
+    ```python
+    --8<-- "python/0001_0300/0279_perfect_squares.py"
+    ```
 
 
-# DP - Knapsack Unbounded
-def numSquares(n: int) -> int:
-    dp = [float("inf") for _ in range(n + 1)]
-    dp[0] = 0
-
-    for i in range(1, n + 1):
-        for j in range(1, int(math.sqrt(n)) + 1):
-            dp[i] = min(dp[i], dp[i - j**2] + 1)
-
-    return dp[n]
-
-
-n = 12
-print(numSquares(n))  # 3
-
-```
 
 ## 1015. Smallest Integer Divisible by K
 
 -   [LeetCode](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | [LeetCode CH](https://leetcode.cn/problems/smallest-integer-divisible-by-k/) (Medium)
 
 -   Tags: hash table, math
+
+
 ## 2240. Number of Ways to Buy Pens and Pencils
 
 -   [LeetCode](https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils/) | [LeetCode CH](https://leetcode.cn/problems/number-of-ways-to-buy-pens-and-pencils/) (Medium)
 
 -   Tags: math, enumeration
+
+
 ## 2221. Find Triangular Sum of an Array
 
 -   [LeetCode](https://leetcode.com/problems/find-triangular-sum-of-an-array/) | [LeetCode CH](https://leetcode.cn/problems/find-triangular-sum-of-an-array/) (Medium)

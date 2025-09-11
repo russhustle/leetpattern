@@ -20,208 +20,93 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/build-an-array-with-stack-operations/) | [LeetCode CH](https://leetcode.cn/problems/build-an-array-with-stack-operations/) (Medium)
 
 -   Tags: array, stack, simulation
-```python title="1441. Build an Array With Stack Operations - Python Solution"
-from typing import List
+
+=== "Python"
+
+    ```python
+    --8<-- "python/1201_1500/1441_build_an_array_with_stack_operations.py"
+    ```
 
 
-# Stack
-def buildArray(target: List[int], n: int) -> List[str]:
-    res = []
-    m, i, j = len(target), 1, 0
-
-    while i <= n and j < m:
-        res.append("Push")
-        if target[j] != i:
-            res.append("Pop")
-        else:
-            j += 1
-        i += 1
-
-    return res
-
-
-target = [1, 3, 4]
-n = 4
-print(buildArray(target, n))
-# ['Push', 'Push', 'Pop', 'Push', 'Push']
-
-```
 
 ## 844. Backspace String Compare
 
 -   [LeetCode](https://leetcode.com/problems/backspace-string-compare/) | [LeetCode CH](https://leetcode.cn/problems/backspace-string-compare/) (Easy)
 
 -   Tags: two pointers, string, stack, simulation
-```python title="844. Backspace String Compare - Python Solution"
-def backspaceCompare(s: str, t: str) -> bool:
 
-    def build(text):
-        stack = []
+=== "Python"
 
-        for char in text:
-            if char != "#":
-                stack.append(char)
-            elif stack:
-                stack.pop()
-
-        return "".join(stack)
-
-    return build(s) == build(t)
+    ```python
+    --8<-- "python/0601_0900/0844_backspace_string_compare.py"
+    ```
 
 
-print(backspaceCompare("ab#c", "ad#c"))  # True
-
-```
 
 ## 682. Baseball Game
 
 -   [LeetCode](https://leetcode.com/problems/baseball-game/) | [LeetCode CH](https://leetcode.cn/problems/baseball-game/) (Easy)
 
 -   Tags: array, stack, simulation
-```python title="682. Baseball Game - Python Solution"
-from typing import List
+
+=== "Python"
+
+    ```python
+    --8<-- "python/0601_0900/0682_baseball_game.py"
+    ```
 
 
-# Stack
-def calPoints(operations: List[str]) -> int:
-    stack = []
-
-    for op in operations:
-        if op == "+":
-            stack.append(stack[-2] + stack[-1])
-        elif op == "D":
-            stack.append(2 * stack[-1])
-        elif op == "C":
-            stack.pop()
-        else:
-            stack.append(int(op))
-
-    return sum(stack)
-
-
-ops = ["5", "2", "C", "D", "+"]
-print(calPoints(ops))  # 30
-
-```
 
 ## 2390. Removing Stars From a String
 
 -   [LeetCode](https://leetcode.com/problems/removing-stars-from-a-string/) | [LeetCode CH](https://leetcode.cn/problems/removing-stars-from-a-string/) (Medium)
 
 -   Tags: string, stack, simulation
--   Remove all `*` characters and their adjacent characters from the string.
--   Steps for the string `leet**cod*e`:
 
-| char | action | stack   |
-| ---- | ------ | ------- |
-| l    | push   | "l"     |
-| e    | push   | "le"    |
-| e    | push   | "lee"   |
-| t    | push   | "leet"  |
-| *    | pop    | "lee"   |
-| *    | pop    | "le"    |
-| c    | push   | "lec"   |
-| o    | push   | "leco"  |
-| d    | push   | "lecod" |
-| *    | pop    | "leco"  |
-| e    | push   | "lecoe" |
+=== "Python"
 
-```python title="2390. Removing Stars From a String - Python Solution"
-# Stack
-def removeStars(s: str) -> str:
-    stack = []
-
-    for char in s:
-        if char == "*":
-            stack.pop()
-        else:
-            stack.append(char)
-
-    return "".join(stack)
+    ```python
+    --8<-- "python/2101_2400/2390_removing_stars_from_a_string.py"
+    ```
 
 
-s = "leet**cod*e"
-print(removeStars(s))  # "lecoe"
-
-```
 
 ## 1472. Design Browser History
 
 -   [LeetCode](https://leetcode.com/problems/design-browser-history/) | [LeetCode CH](https://leetcode.cn/problems/design-browser-history/) (Medium)
 
 -   Tags: array, linked list, stack, design, doubly linked list, data stream
-```python title="1472. Design Browser History - Python Solution"
-class BrowserHistory:
 
-    def __init__(self, homepage: str):
-        self.hist = [homepage]
-        self.cur = 0
+=== "Python"
 
-    def visit(self, url: str) -> None:
-        self.cur += 1
-        del self.hist[self.cur :]
-        self.hist.append(url)
-
-    def back(self, steps: int) -> str:
-        self.cur = max(self.cur - steps, 0)
-        return self.hist[self.cur]
-
-    def forward(self, steps: int) -> str:
-        self.cur = min(self.cur + steps, len(self.hist) - 1)
-        return self.hist[self.cur]
+    ```python
+    --8<-- "python/1201_1500/1472_design_browser_history.py"
+    ```
 
 
-if __name__ == "__main__":
-    obj = BrowserHistory("leetcode.com")
-    obj.visit("google.com")
-    obj.visit("facebook.com")
-    obj.visit("youtube.com")
-    assert obj.back(1) == "facebook.com"
-    assert obj.back(1) == "google.com"
-    assert obj.forward(1) == "facebook.com"
-    obj.visit("linkedin.com")
-    assert obj.forward(2) == "linkedin.com"
-    assert obj.back(2) == "google.com"
-    assert obj.back(7) == "leetcode.com"
-
-```
 
 ## 946. Validate Stack Sequences
 
 -   [LeetCode](https://leetcode.com/problems/validate-stack-sequences/) | [LeetCode CH](https://leetcode.cn/problems/validate-stack-sequences/) (Medium)
 
 -   Tags: array, stack, simulation
+
+
 ## 3412. Find Mirror Score of a String
 
 -   [LeetCode](https://leetcode.com/problems/find-mirror-score-of-a-string/) | [LeetCode CH](https://leetcode.cn/problems/find-mirror-score-of-a-string/) (Medium)
 
 -   Tags: hash table, string, stack, simulation
+
+
 ## 71. Simplify Path
 
 -   [LeetCode](https://leetcode.com/problems/simplify-path/) | [LeetCode CH](https://leetcode.cn/problems/simplify-path/) (Medium)
 
 -   Tags: string, stack
-```python title="71. Simplify Path - Python Solution"
-def simplify_path_stack(path: str) -> str:
-    if not path:
-        return "/"
 
-    stack = []
+=== "Python"
 
-    for p in path.split("/"):
-        if p == "" or p == ".":
-            continue
-        if p != "..":
-            stack.append(p)
-        elif stack:
-            stack.pop()
-    return "/" + "/".join(stack)
-
-
-def test_simplify_path_stack():
-    assert simplify_path_stack("/home/") == "/home"
-    assert simplify_path_stack("/../") == "/"
-    assert simplify_path_stack("/home//foo/") == "/home/foo"
-    assert simplify_path_stack("/a/./b/../../c/") == "/c"
-
-```
+    ```python
+    --8<-- "python/0001_0300/0071_simplify_path.py"
+    ```

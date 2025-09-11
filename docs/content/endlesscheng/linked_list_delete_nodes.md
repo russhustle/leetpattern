@@ -20,251 +20,91 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/remove-linked-list-elements/) | [LeetCode CH](https://leetcode.cn/problems/remove-linked-list-elements/) (Easy)
 
 -   Tags: linked list, recursion
--   Remove all elements from a linked list of integers that have value `val`.
 
--   Before
+=== "Python"
 
-```mermaid
-graph LR
-A((1)) --> B((2))
-B --> C((6))
-C --> D((3))
-D --> E((4))
-E --> F((5))
-F --> G((6))
-G --> H((None))
-```
-
--   After
-
-```mermaid
-graph LR
-A((1)) --> B((2))
-B -.-> C((6))
-C -.-> D((3))
-D --> E((4))
-E --> F((5))
-F -.-> G((6))
-B --> D((3))
-F --> I((None))
-```
-
-```python title="203. Remove Linked List Elements - Python Solution"
-from typing import Optional
-
-from leetpattern.utils import ListNode
+    ```python
+    --8<-- "python/0001_0300/0203_remove_linked_list_elements.py"
+    ```
 
 
-# Iterative
-def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
-    dummy = ListNode(0)
-    dummy.next = head
-    cur = dummy
-
-    while cur.next:
-        if cur.next.val == val:
-            cur.next = cur.next.next
-        else:
-            cur = cur.next
-
-    return dummy.next
-
-
-# |-------------|-----------------|--------------|
-# |  Approach   |      Time       |    Space     |
-# |-------------|-----------------|--------------|
-# |  Iterative  |      O(N)       |    O(1)      |
-# |-------------|-----------------|--------------|
-
-
-nums = [1, 2, 6, 3, 4, 5, 6]
-val = 6
-head = list_from_array(nums)
-print(head)
-# 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6
-print(removeElements(head, val))
-# 1 -> 2 -> 3 -> 4 -> 5
-
-```
 
 ## 3217. Delete Nodes From Linked List Present in Array
 
 -   [LeetCode](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | [LeetCode CH](https://leetcode.cn/problems/delete-nodes-from-linked-list-present-in-array/) (Medium)
 
 -   Tags: array, hash table, linked list
-```python title="3217. Delete Nodes From Linked List Present in Array - Python Solution"
-from typing import List, Optional
 
-from leetpattern.utils import ListNode, list_from_array, list_to_array
+=== "Python"
 
-
-def modified_list(
-    nums: List[int], head: Optional[ListNode]
-) -> Optional[ListNode]:
-    num_set = set(nums)
-    dummy = ListNode(0, head)
-    cur = dummy
-
-    while cur.next:
-        if cur.next.val in num_set:
-            cur.next = cur.next.next
-        else:
-            cur = cur.next
-
-    return dummy.next
+    ```python
+    --8<-- "python/3001_3300/3217_delete_nodes_from_linked_list_present_in_array.py"
+    ```
 
 
-def test_modified_list():
-    nums = [1, 2, 3]
-    head = list_from_array([1, 2, 3, 4, 5])
-    assert list_to_array(modified_list(nums, head)) == [4, 5]
-
-```
 
 ## 83. Remove Duplicates from Sorted List
 
 -   [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) (Easy)
 
 -   Tags: linked list
-```python title="83. Remove Duplicates from Sorted List - Python Solution"
-from typing import Optional
 
-from leetpattern.utils import ListNode
+=== "Python"
 
-
-# Linked List
-def deleteDuplicates(head: Optional[ListNode]) -> Optional[ListNode]:
-    if not head:
-        return None
-
-    cur = head
-    while cur.next:
-        if cur.next.val == cur.val:
-            cur.next = cur.next.next
-        else:
-            cur = cur.next
-
-    return head
+    ```python
+    --8<-- "python/0001_0300/0083_remove_duplicates_from_sorted_list.py"
+    ```
 
 
-head = ListNode().create([1, 1, 2, 3, 3])
-print(deleteDuplicates(head))  # 1 -> 2 -> 3
-
-```
 
 ## 82. Remove Duplicates from Sorted List II
 
 -   [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [LeetCode CH](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
 
 -   Tags: linked list, two pointers
-```python title="82. Remove Duplicates from Sorted List II - Python Solution"
-from typing import Optional
 
-from leetpattern.utils import ListNode
+=== "Python"
 
-
-# Linked List
-def deleteDuplicates(head: Optional[ListNode]) -> Optional[ListNode]:
-    dummy = ListNode(0, head)
-    cur = dummy
-
-    while cur.next and cur.next.next:
-        val = cur.next.val
-        if cur.next.next.val == val:
-            while cur.next and cur.next.val == val:
-                cur.next = cur.next.next
-        else:
-            cur = cur.next
-
-    return dummy.next
+    ```python
+    --8<-- "python/0001_0300/0082_remove_duplicates_from_sorted_list_ii.py"
+    ```
 
 
-head = ListNode().create([1, 1, 2, 3, 3, 4, 5])
-print(deleteDuplicates(head))  # 2 -> 4 -> 5
-
-```
 
 ## 237. Delete Node in a Linked List
 
 -   [LeetCode](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-node-in-a-linked-list/) (Medium)
 
 -   Tags: linked list
--   Delete a node in a singly linked list. You are given only the node to be deleted.
 
-```python title="237. Delete Node in a Linked List - Python Solution"
-from leetpattern.utils import ListNode
+=== "Python"
 
-
-def deleteNode(node: ListNode) -> None:
-    node.val = node.next.val
-    node.next = node.next.next
+    ```python
+    --8<-- "python/0001_0300/0237_delete_node_in_a_linked_list.py"
+    ```
 
 
-head = list_from_array([4, 5, 1, 9])
-node = head.next
-deleteNode(node)
-print(head)  # 4 -> 1 -> 9
-
-```
 
 ## 1669. Merge In Between Linked Lists
 
 -   [LeetCode](https://leetcode.com/problems/merge-in-between-linked-lists/) | [LeetCode CH](https://leetcode.cn/problems/merge-in-between-linked-lists/) (Medium)
 
 -   Tags: linked list
+
+
 ## 2487. Remove Nodes From Linked List
 
 -   [LeetCode](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nodes-from-linked-list/) (Medium)
 
 -   Tags: linked list, stack, recursion, monotonic stack
--   Remove all nodes from a linked list that have a value greater than `maxValue`.
 
-```python title="2487. Remove Nodes From Linked List - Python Solution"
-from typing import Optional
+=== "Python"
 
-from leetpattern.utils import ListNode, list_from_array, list_to_array
-
-
-def remove_nodes_recursive(head: Optional[ListNode]) -> Optional[ListNode]:
-    if not head:
-        return None
-
-    head.next = remove_nodes_recursive(head.next)
-
-    if head.next and head.val < head.next.val:
-        return head.next
-
-    return head
+    ```python
+    --8<-- "python/2401_2700/2487_remove_nodes_from_linked_list.py"
+    ```
 
 
-def remove_nodes_iterative(head: Optional[ListNode]) -> Optional[ListNode]:
-    stack = []
-    cur = head
-
-    while cur:
-        while stack and cur.val > stack[-1].val:
-            stack.pop()
-
-        stack.append(cur)
-        cur = cur.next
-
-    dummy = ListNode()
-    cur = dummy
-
-    for node in stack:
-        cur.next = node
-        cur = cur.next
-
-    return dummy.next
-
-
-def test_remove_nodes() -> None:
-    head = list_from_array([5, 2, 13, 3, 8])
-    assert (list_to_array(remove_nodes_recursive(head))) == [13, 8]
-    head = list_from_array([5, 2, 13, 3, 8])
-    assert (list_to_array(remove_nodes_iterative(head))) == [13, 8]
-
-```
 
 ## 1836. Remove Duplicates From an Unsorted Linked List
 

@@ -15,31 +15,22 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | [LeetCode CH](https://leetcode.cn/problems/find-the-k-beauty-of-a-number/) (Easy)
 
 -   Tags: math, string, sliding window
-```python title="2269. Find the K-Beauty of a Number - Python Solution"
-def divisorSubstrings(num: int, k: int) -> int:
-    numStr = str(num)
-    n = len(numStr)
-    res = 0
 
-    for i in range(n - k + 1):
-        x = int(numStr[i : i + k])
-        if x > 0 and num % x == 0:
-            res += 1
+=== "Python"
 
-    return res
+    ```python
+    --8<-- "python/2101_2400/2269_find_the_k_beauty_of_a_number.py"
+    ```
 
 
-num = 240
-k = 2
-print(divisorSubstrings(num, k))  # 2
-
-```
 
 ## 1984. Minimum Difference Between Highest and Lowest of K Scores
 
 -   [LeetCode](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [LeetCode CH](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) (Easy)
 
 -   Tags: array, sliding window, sorting
+
+
 ## 220. Contains Duplicate III
 
 -   [LeetCode](https://leetcode.com/problems/contains-duplicate-iii/) | [LeetCode CH](https://leetcode.cn/problems/contains-duplicate-iii/) (Hard)

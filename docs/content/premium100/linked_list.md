@@ -16,56 +16,29 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/) (Easy)
 
 -   Tags: linked list
-```python title="1474. Delete N Nodes After M Nodes of a Linked List - Python Solution"
-from typing import Optional
 
-from leetpattern.utils import ListNode
+=== "Python"
 
-
-# Linked List
-def deleteNodes(
-    head: Optional[ListNode], m: int, n: int
-) -> Optional[ListNode]:
-    dummy = ListNode(0, head)
-    cur = dummy
-
-    while cur.next:
-        for _ in range(m):
-            if not cur.next:
-                break
-            cur = cur.next
-
-        for _ in range(n):
-            if not cur.next:
-                break
-            cur.next = cur.next.next
-
-    return dummy.next
+    ```python
+    --8<-- "python/1201_1500/1474_delete_n_nodes_after_m_nodes_of_a_linked_list.py"
+    ```
 
 
-if __name__ == "__main__":
-    head = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-    m = 2
-    n = 3
-    head = list_from_array(head)
-    print(head)
-    # 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13
-    head = deleteNodes(head, m, n)
-    print(head)
-    # 1 -> 2 -> 6 -> 7 -> 11 -> 12
-
-```
 
 ## 708. Insert into a Sorted Circular Linked List
 
 -   [LeetCode](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/) (Medium)
 
 -   Tags: linked list
+
+
 ## 369. Plus One Linked List
 
 -   [LeetCode](https://leetcode.com/problems/plus-one-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/plus-one-linked-list/) (Medium)
 
 -   Tags: linked list, math
+
+
 ## 1265. Print Immutable Linked List in Reverse
 
 -   [LeetCode](https://leetcode.com/problems/print-immutable-linked-list-in-reverse/) | [LeetCode CH](https://leetcode.cn/problems/print-immutable-linked-list-in-reverse/) (Medium)

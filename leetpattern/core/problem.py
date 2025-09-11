@@ -18,19 +18,22 @@ class Problem:
     category: str
     url: str = ""
     url_ch: str = ""
+    urls_for_md: str = ""
+    tags: str = ""
     paid_only: bool = False
 
+    basename: Optional[str] = None
+    markdown: Optional[str] = None
     sub_folder: Optional[str] = None
-
+    # paths
     python_path: Optional[str] = None
     cpp_path: Optional[str] = None
     javascript_path: Optional[str] = None
     sql_path: Optional[str] = None
     txt_path: Optional[str] = None
     md_path: Optional[str] = None
-    basename: Optional[str] = None
-    markdown: Optional[str] = None
 
+    # Code snippets for different languages
     py_snippet: Optional[str] = None
     cpp_snippet: Optional[str] = None
     js_snippet: Optional[str] = None
@@ -113,6 +116,9 @@ class ProblemRepository:
         sql_path = f"{sql_folder}{basename}.sql"
         txt_path = f"{sql_folder}{basename}.txt"
 
+        urls_for_md = f"-    [LeetCode]({row['url']}) | [力扣]({row['urlCh']})"
+        tags_for_md = f"-    Tags: {row["category"]}"
+
         return Problem(
             qid=qid,
             title=row.get("title", ""),
@@ -120,6 +126,7 @@ class ProblemRepository:
             category=row.get("categorySlug", ""),
             url=row.get("url", ""),
             url_ch=row.get("urlCh", ""),
+            urls_for_md=urls_for_md,
             paid_only=row.get("paidOnly", False),
             sub_folder=sub_folder,
             python_path=python_path,

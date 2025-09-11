@@ -16,16 +16,22 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/stream-of-characters/) | [LeetCode CH](https://leetcode.cn/problems/stream-of-characters/) (Hard)
 
 -   Tags: array, string, design, trie, data stream
+
+
 ## 1408. String Matching in an Array
 
 -   [LeetCode](https://leetcode.com/problems/string-matching-in-an-array/) | [LeetCode CH](https://leetcode.cn/problems/string-matching-in-an-array/) (Easy)
 
 -   Tags: array, string, string matching
+
+
 ## 3213. Construct String with Minimum Cost
 
 -   [LeetCode](https://leetcode.com/problems/construct-string-with-minimum-cost/) | [LeetCode CH](https://leetcode.cn/problems/construct-string-with-minimum-cost/) (Hard)
 
 -   Tags: array, string, dynamic programming, suffix array
+
+
 ## 3292. Minimum Number of Valid Strings to Form Target II
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-valid-strings-to-form-target-ii/) (Hard)

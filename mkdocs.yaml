@@ -555,7 +555,7 @@ markdown_extensions:
 - pymdownx.tabbed:
     alternate_style: true
 - pymdownx.snippets:
-    base_path: src
+    base_path: leetpattern
 - pymdownx.highlight:
     anchor_linenums: true
     line_spans: __span

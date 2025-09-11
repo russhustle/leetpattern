@@ -20,58 +20,57 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/split-a-string-in-balanced-strings/) | [LeetCode CH](https://leetcode.cn/problems/split-a-string-in-balanced-strings/) (Easy)
 
 -   Tags: string, greedy, counting
+
+
 ## 2405. Optimal Partition of String
 
 -   [LeetCode](https://leetcode.com/problems/optimal-partition-of-string/) | [LeetCode CH](https://leetcode.cn/problems/optimal-partition-of-string/) (Medium)
 
 -   Tags: hash table, string, greedy
+
+
 ## 2294. Partition Array Such That Maximum Difference Is K
 
 -   [LeetCode](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/) | [LeetCode CH](https://leetcode.cn/problems/partition-array-such-that-maximum-difference-is-k/) (Medium)
 
 -   Tags: array, greedy, sorting
-```python title="2294. Partition Array Such That Maximum Difference Is K - Python Solution"
-from typing import List
+
+=== "Python"
+
+    ```python
+    --8<-- "python/2101_2400/2294_partition_array_such_that_maximum_difference_is_k.py"
+    ```
 
 
-def partitionArray(nums: List[int], k: int) -> int:
-    nums.sort()
-    mn = float("-inf")
-    res = 0
-
-    for num in nums:
-        if num - mn > k:
-            res += 1
-            mn = num
-
-    return res
-
-
-if __name__ == "__main__":
-    assert partitionArray([3, 6, 1, 2, 5], 2) == 2
-
-```
 
 ## 2358. Maximum Number of Groups Entering a Competition
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-groups-entering-a-competition/) (Medium)
 
 -   Tags: array, math, binary search, greedy
+
+
 ## 2522. Partition String Into Substrings With Values at Most K
 
 -   [LeetCode](https://leetcode.com/problems/partition-string-into-substrings-with-values-at-most-k/) | [LeetCode CH](https://leetcode.cn/problems/partition-string-into-substrings-with-values-at-most-k/) (Medium)
 
 -   Tags: string, dynamic programming, greedy
+
+
 ## 1546. Maximum Number of Non-Overlapping Subarrays With Sum Equals Target
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) (Medium)
 
 -   Tags: array, hash table, greedy, prefix sum
+
+
 ## 2436. Minimum Split Into Subarrays With GCD Greater Than One
 
 -   [LeetCode](https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/) | [LeetCode CH](https://leetcode.cn/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/) (Medium)
 
 -   Tags: array, math, dynamic programming, greedy, number theory
+
+
 ## 2892. Minimizing Array After Replacing Pairs With Their Product
 
 -   [LeetCode](https://leetcode.com/problems/minimizing-array-after-replacing-pairs-with-their-product/) | [LeetCode CH](https://leetcode.cn/problems/minimizing-array-after-replacing-pairs-with-their-product/) (Medium)

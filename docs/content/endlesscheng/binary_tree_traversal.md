@@ -21,486 +21,99 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-preorder-traversal/) (Easy)
 
 -   Tags: stack, tree, depth first search, binary tree
-![tree_traversal](../../assets/tree_traversal_dfs_bfs.png)
 
-### Example 1
+=== "Python"
 
-```mermaid
-graph TD
-A(( ))
-B(( ))
-C(( ))
-D(( ))
-E(( ))
-F(( ))
-G(( ))
-A --- B
-A --- E
-B --- C
-B --- D
-E --- F
-E --- G
-```
-
-Pre-order Traversal
-
-```mermaid
-graph TD
-0((0))
-1((1))
-2((2))
-3((3))
-4((4))
-5((5))
-6((6))
-0 --- 1
-0 --- 4
-1 --- 2
-1 --- 3
-4 --- 5
-4 --- 6
-```
-
-In-order Traversal
-
-```mermaid
-graph TD
-0((0))
-1((1))
-2((2))
-3((3))
-4((4))
-5((5))
-6((6))
-3 --- 1
-3 --- 5
-1 --- 0
-1 --- 2
-5 --- 4
-5 --- 6
-```
-
-Post-order Traversal
-
-```mermaid
-graph TD
-0((0))
-1((1))
-2((2))
-3((3))
-4((4))
-5((5))
-6((6))
-6 --- 2
-6 --- 5
-2 --- 0
-2 --- 1
-5 --- 3
-5 --- 4
-```
-
-Level Order Traversal
-
-```mermaid
-graph TD
-0((0))
-1((1))
-2((1))
-3((2))
-4((2))
-5((2))
-6((2))
-0 --- 1
-0 --- 2
-1 --- 3
-1 --- 4
-2 --- 5
-2 --- 6
-```
-
-### Example 2
-
-```mermaid
-graph TD
-0((0))
-1((1))
-2((2))
-3((3))
-4((4))
-5((5))
-6((6))
-0 --- 1
-0 --- 2
-1 --- 3
-1 --- 4
-2 --- 5
-2 --- 6
-```
-
-| Traversal   | Order             | Method         | Result                        |
-| ----------- | ----------------- | -------------- | ----------------------------- |
-| Preorder    | Root, Left, Right | DFS or Stack   | `[0, 1, 3, 4, 2, 5, 6]`       |
-| Inorder     | Left, Root, Right | DFS or Stack   | `[3, 1, 4, 0, 5, 2, 6]`       |
-| Postorder   | Left, Right, Root | DFS or Stack   | `[3, 4, 1, 5, 6, 2, 0]`       |
-| Level Order | Level by Level    | BFS with Queue | `[[0], [1, 2], [3, 4, 5, 6]]` |
-
-```python title="144. Binary Tree Preorder Traversal - Python Solution"
-from typing import List, Optional
-
-from binarytree import Node as TreeNode
-from binarytree import build
+    ```python
+    --8<-- "python/0001_0300/0144_binary_tree_preorder_traversal.py"
+    ```
 
 
-# Recursive
-def preorderTraversalRecursive(root: Optional[TreeNode]) -> List[int]:
-    res = []
-
-    def dfs(node):
-        if not node:
-            return None
-
-        res.append(node.val)  # <--
-        dfs(node.left)
-        dfs(node.right)
-
-    dfs(root)
-
-    return res
-
-
-# Iterative
-def preorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
-    if not root:
-        return []
-
-    stack = [root]
-    res = []
-
-    while stack:
-        node = stack.pop()
-        res.append(node.val)
-
-        if node.right:
-            stack.append(node.right)
-        if node.left:
-            stack.append(node.left)
-
-    return res
-
-
-tree = build([0, 1, 2, 3, 4, 5, 6])
-print(tree)
-#     __0__
-#    /     \
-#   1       2
-#  / \     / \
-# 3   4   5   6
-print(preorderTraversalRecursive(tree))  # [0, 1, 3, 4, 2, 5, 6]
-print(preorderTraversalIterative(tree))  # [0, 1, 3, 4, 2, 5, 6]
-
-```
 
 ## 94. Binary Tree Inorder Traversal
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-inorder-traversal/) (Easy)
 
 -   Tags: stack, tree, depth first search, binary tree
-```python title="94. Binary Tree Inorder Traversal - Python Solution"
-from typing import List, Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# Recursive
-def inorderTraversalRecursive(root: TreeNode) -> List[int]:
-    res = []
-
-    def dfs(node):
-        if not node:
-            return
-
-        dfs(node.left)
-        res.append(node.val)  # <--
-        dfs(node.right)
-
-    dfs(root)
-
-    return res
+    ```python
+    --8<-- "python/0001_0300/0094_binary_tree_inorder_traversal.py"
+    ```
 
 
-# Iterative
-def inorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
-    if not root:
-        return []
-
-    stack = []
-    res = []
-    cur = root
-
-    while cur or stack:
-        if cur:
-            stack.append(cur)
-            cur = cur.left
-        else:
-            cur = stack.pop()
-            res.append(cur.val)
-            cur = cur.right
-
-    return res
-
-
-tree = build([0, 1, 2, 3, 4, 5, 6])
-print(tree)
-#     __0__
-#    /     \
-#   1       2
-#  / \     / \
-# 3   4   5   6
-print(inorderTraversalRecursive(tree))  # [3, 1, 4, 0, 5, 2, 6]
-print(inorderTraversalIterative(tree))  # [3, 1, 4, 0, 5, 2, 6]
-
-```
 
 ## 145. Binary Tree Postorder Traversal
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-postorder-traversal/) (Easy)
 
 -   Tags: stack, tree, depth first search, binary tree
-```python title="145. Binary Tree Postorder Traversal - Python Solution"
-from typing import List, Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# Recursive
-def postorderTraversalRecursive(root: Optional[TreeNode]) -> List[int]:
-    res = []
-
-    def dfs(node):
-        if not node:
-            return
-
-        dfs(node.left)
-        dfs(node.right)
-        res.append(node.val)  # <--
-
-    dfs(root)
-
-    return res
+    ```python
+    --8<-- "python/0001_0300/0145_binary_tree_postorder_traversal.py"
+    ```
 
 
-# Iterative
-def postorderTraversalIterative(root: Optional[TreeNode]) -> List[int]:
-    if not root:
-        return []
-
-    res = []
-    stack = [root]
-
-    while stack:
-        node = stack.pop()
-        res.append(node.val)
-
-        if node.left:
-            stack.append(node.left)
-        if node.right:
-            stack.append(node.right)
-
-    return res[::-1]
-
-
-tree = build([0, 1, 2, 3, 4, 5, 6])
-print(tree)
-#     __0__
-#    /     \
-#   1       2
-#  / \     / \
-# 3   4   5   6
-print(postorderTraversalRecursive(tree))  # [3, 4, 1, 5, 6, 2, 0]
-print(postorderTraversalIterative(tree))  # [3, 4, 1, 5, 6, 2, 0]
-
-```
 
 ## 872. Leaf-Similar Trees
 
 -   [LeetCode](https://leetcode.com/problems/leaf-similar-trees/) | [LeetCode CH](https://leetcode.cn/problems/leaf-similar-trees/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
-```python title="872. Leaf-Similar Trees - Python Solution"
-from typing import Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# Tree
-def leafSimilar(root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-
-    def dfs(node, leaf):
-        if not node:
-            return
-        if not node.left and not node.right:
-            leaf.append(node.val)
-        dfs(node.left, leaf)
-        dfs(node.right, leaf)
-
-    leaf1, leaf2 = [], []
-    dfs(root1, leaf1)
-    dfs(root2, leaf2)
-
-    return leaf1 == leaf2
+    ```python
+    --8<-- "python/0601_0900/0872_leaf_similar_trees.py"
+    ```
 
 
-root1 = [3, 5, 1, 6, 2, 9, 8, None, None, 7, 4]
-root2 = [3, 5, 1, 6, 7, 4, 2, None, None, None, None, None, None, 9, 8]
-root1 = build(root1)
-
-root2 = build(root2)
-print(root1)
-#     ______3__
-#    /         \
-#   5__         1
-#  /   \       / \
-# 6     2     9   8
-#      / \
-#     7   4
-print(root2)
-#     __3__
-#    /     \
-#   5       1__
-#  / \     /   \
-# 6   7   4     2
-#              / \
-#             9   8
-print(leafSimilar(root1, root2))  # True
-
-```
 
 ## 404. Sum of Left Leaves
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-left-leaves/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-left-leaves/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-```python title="404. Sum of Left Leaves - Python Solution"
-from typing import Optional
 
-from binarytree import build
+=== "Python"
 
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+    ```python
+    --8<-- "python/0301_0600/0404_sum_of_left_leaves.py"
+    ```
 
 
-# Iterative
-def sumOfLeftLeaves(root: Optional[TreeNode]) -> int:
-    if not root:
-        return 0
-
-    stack = [root]
-    sumLL = 0
-
-    while stack:
-        node = stack.pop()
-
-        if node.left and not node.left.left and not node.left.right:
-            sumLL += node.left.val
-
-        if node.right:
-            stack.append(node.right)
-        if node.left:
-            stack.append(node.left)
-
-    return sumLL
-
-
-# Left Leave None:
-#   - node.left is not None
-#   - node.left.left is None
-#   - node.left.right is None
-
-root = build([3, 9, 20, None, None, 15, 7])
-print(root)
-#   3___
-#  /    \
-# 9     _20
-#      /   \
-#     15    7
-print(sumOfLeftLeaves(root))  # 24
-
-```
 
 ## 671. Second Minimum Node In a Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/second-minimum-node-in-a-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
+
+
 ## 1469. Find All The Lonely Nodes
 
 -   [LeetCode](https://leetcode.com/problems/find-all-the-lonely-nodes/) | [LeetCode CH](https://leetcode.cn/problems/find-all-the-lonely-nodes/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-```python title="1469. Find All The Lonely Nodes - Python Solution"
-from typing import List, Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# Binary Tree Traversal
-def getLonelyNodes(root: Optional[TreeNode]) -> List[int]:
-    res = []
-
-    def dfs(node):
-        if not node:
-            return False
-
-        left = dfs(node.left)
-        right = dfs(node.right)
-        if left and not right:
-            res.append(node.left.val)
-        if not left and right:
-            res.append(node.right.val)
-
-        return True
-
-    dfs(root)
-
-    return res
+    ```python
+    --8<-- "python/1201_1500/1469_find_all_the_lonely_nodes.py"
+    ```
 
 
-if __name__ == "__main__":
-    root = build([1, 2, 3, None, 4])
-    print(root)
-    #    __1
-    #  /   \
-    # 2     3
-    #  \
-    #   4
-    assert getLonelyNodes(root) == [4]
-
-    root = build([7, 1, 4, 6, None, 5, 3, None, None, None, None, None, 2])
-    print(root)
-    #     7____
-    #    /     \
-    #   1     __4
-    #  /     /   \
-    # 6     5     3
-    #        \
-    #         2
-    assert getLonelyNodes(root) == [6, 2]
-
-```
 
 ## 1214. Two Sum BSTs
 
 -   [LeetCode](https://leetcode.com/problems/two-sum-bsts/) | [LeetCode CH](https://leetcode.cn/problems/two-sum-bsts/) (Medium)
 
 -   Tags: two pointers, binary search, stack, tree, depth first search, binary search tree, binary tree
+
+
 ## 2764. Is Array a Preorder of Some ‌Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/is-array-a-preorder-of-some-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/is-array-a-preorder-of-some-binary-tree/) (Medium)

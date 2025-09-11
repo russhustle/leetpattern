@@ -19,65 +19,50 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/subarray-product-less-than-k/) | [LeetCode CH](https://leetcode.cn/problems/subarray-product-less-than-k/) (Medium)
 
 -   Tags: array, binary search, sliding window, prefix sum
-```python title="713. Subarray Product Less Than K - Python Solution"
-from typing import List
+
+=== "Python"
+
+    ```python
+    --8<-- "python/0601_0900/0713_subarray_product_less_than_k.py"
+    ```
 
 
-# Sliding Window Variable Subarrays Shorter
-def numSubarrayProductLessThanK(nums: List[int], k: int) -> int:
-    if k <= 1:
-        return 0
-
-    left = 0
-    prod = 1
-    res = 0
-
-    for right in range(len(nums)):
-        prod *= nums[right]
-
-        while prod >= k:
-            prod //= nums[left]
-            left += 1
-
-        res += right - left + 1
-
-    return res
-
-
-if __name__ == "__main__":
-    assert numSubarrayProductLessThanK([10, 5, 2, 6], 100) == 8
-    assert numSubarrayProductLessThanK([1, 2, 3], 0) == 0
-    assert numSubarrayProductLessThanK([1, 2, 3], 1) == 0
-    assert numSubarrayProductLessThanK([1, 2, 3], 2) == 1
-    assert numSubarrayProductLessThanK([1, 2, 3], 3) == 3
-
-```
 
 ## 3258. Count Substrings That Satisfy K-Constraint I
 
 -   [LeetCode](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/) | [LeetCode CH](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) (Easy)
 
 -   Tags: string, sliding window
+
+
 ## 2302. Count Subarrays With Score Less Than K
 
 -   [LeetCode](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) | [LeetCode CH](https://leetcode.cn/problems/count-subarrays-with-score-less-than-k/) (Hard)
 
 -   Tags: array, binary search, sliding window, prefix sum
+
+
 ## 2762. Continuous Subarrays
 
 -   [LeetCode](https://leetcode.com/problems/continuous-subarrays/) | [LeetCode CH](https://leetcode.cn/problems/continuous-subarrays/) (Medium)
 
 -   Tags: array, queue, sliding window, heap priority queue, ordered set, monotonic queue
+
+
 ## 3134. Find the Median of the Uniqueness Array
 
 -   [LeetCode](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | [LeetCode CH](https://leetcode.cn/problems/find-the-median-of-the-uniqueness-array/) (Hard)
 
 -   Tags: array, hash table, binary search, sliding window
+
+
 ## 3261. Count Substrings That Satisfy K-Constraint II
 
 -   [LeetCode](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/) | [LeetCode CH](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii/) (Hard)
 
 -   Tags: array, string, binary search, sliding window, prefix sum
+
+
 ## 2743. Count Substrings Without Repeating Character
 
 -   [LeetCode](https://leetcode.com/problems/count-substrings-without-repeating-character/) | [LeetCode CH](https://leetcode.cn/problems/count-substrings-without-repeating-character/) (Medium)

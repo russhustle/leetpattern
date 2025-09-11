@@ -16,16 +16,22 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/check-if-it-is-a-straight-line/) | [LeetCode CH](https://leetcode.cn/problems/check-if-it-is-a-straight-line/) (Easy)
 
 -   Tags: array, math, geometry
+
+
 ## 2280. Minimum Lines to Represent a Line Chart
 
 -   [LeetCode](https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/) | [LeetCode CH](https://leetcode.cn/problems/minimum-lines-to-represent-a-line-chart/) (Medium)
 
 -   Tags: array, math, geometry, sorting, number theory
+
+
 ## 1610. Maximum Number of Visible Points
 
 -   [LeetCode](https://leetcode.com/problems/maximum-number-of-visible-points/) | [LeetCode CH](https://leetcode.cn/problems/maximum-number-of-visible-points/) (Hard)
 
 -   Tags: array, math, geometry, sliding window, sorting
+
+
 ## 2152. Minimum Number of Lines to Cover Points
 
 -   [LeetCode](https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/) | [LeetCode CH](https://leetcode.cn/problems/minimum-number-of-lines-to-cover-points/) (Medium)

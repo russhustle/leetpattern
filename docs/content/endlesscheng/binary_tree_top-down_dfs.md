@@ -30,544 +30,176 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-```python title="104. Maximum Depth of Binary Tree - Python Solution"
-from collections import deque
-from typing import Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# Recursive
-def maxDepthRecursive(root: Optional[TreeNode]) -> int:
-    if not root:
-        return 0
-
-    left = maxDepthRecursive(root.left)
-    right = maxDepthRecursive(root.right)
-
-    return 1 + max(left, right)
+    ```python
+    --8<-- "python/0001_0300/0104_maximum_depth_of_binary_tree.py"
+    ```
 
 
-# DFS
-def maxDepthDFS(root: Optional[TreeNode]) -> int:
-    res = 0
-
-    def dfs(node, cnt):
-        if node is None:
-            return
-        cnt += 1
-        nonlocal res
-        res = max(res, cnt)
-
-        dfs(node.left, cnt)
-        dfs(node.right, cnt)
-
-    dfs(root, 0)
-
-    return res
-
-
-# Iterative
-def maxDepthIterative(root: Optional[TreeNode]) -> int:
-    if not root:
-        return 0
-
-    q = deque([root])
-    res = 0
-
-    while q:
-        res += 1
-        n = len(q)
-
-        for _ in range(n):
-            node = q.popleft()
-            if node.left:
-                q.append(node.left)
-            if node.right:
-                q.append(node.right)
-
-    return res
-
-
-if __name__ == "__main__":
-    root = [1, 2, 2, 3, 4, None, None, None, None, 5]
-    root = build(root)
-    print(root)
-    #     ____1
-    #    /     \
-    #   2__     2
-    #  /   \
-    # 3     4
-    #      /
-    #     5
-    assert maxDepthRecursive(root) == 4
-    assert maxDepthDFS(root) == 4
-    assert maxDepthIterative(root) == 4
-
-```
 
 ## 111. Minimum Depth of Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-```python title="111. Minimum Depth of Binary Tree - Python Solution"
-from collections import deque
-from typing import Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# Iterative
-def minDepthIterative(root: Optional[TreeNode]) -> int:
-    if not root:
-        return 0
-
-    q = deque([root])
-    res = 0
-
-    while q:
-        res += 1
-
-        for _ in range(len(q)):
-            node = q.popleft()
-
-            if not node.left and not node.right:
-                return res
-
-            if node.left:
-                q.append(node.left)
-            if node.right:
-                q.append(node.right)
+    ```python
+    --8<-- "python/0001_0300/0111_minimum_depth_of_binary_tree.py"
+    ```
 
 
-# Recursive
-def minDepthRecursive(root: Optional[TreeNode]) -> int:
-    if root is None:
-        return 0
-
-    if root.left is None and root.right is not None:
-        return 1 + minDepthRecursive(root.right)
-    if root.left is not None and root.right is None:
-        return 1 + minDepthRecursive(root.left)
-
-    return 1 + min(minDepthRecursive(root.left), minDepthRecursive(root.right))
-
-
-root = [1, 2, 2, 3, 4, None, None, None, None, 5]
-root = build(root)
-print(root)
-"""
-    ____1
-   /     \
-  2__     2
- /   \
-3     4
-     /
-    5
-
-"""
-print(minDepthIterative(root))  # 2
-print(minDepthRecursive(root))  # 2
-
-```
 
 ## 112. Path Sum
 
 -   [LeetCode](https://leetcode.com/problems/path-sum/) | [LeetCode CH](https://leetcode.cn/problems/path-sum/) (Easy)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-```python title="112. Path Sum - Python Solution"
-from typing import Optional
 
-from binarytree import build
+=== "Python"
 
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+    ```python
+    --8<-- "python/0001_0300/0112_path_sum.py"
+    ```
 
 
-# Recursive
-def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
-    if not root:
-        return False
-
-    if not root.left and not root.right:
-        return root.val == targetSum
-
-    targetSum -= root.val
-
-    return hasPathSum(root.left, targetSum) or hasPathSum(
-        root.right, targetSum
-    )
-
-
-root = build([5, 4, 8, 11, None, 13, 4, 7, 2, None, None, None, None, None, 1])
-print(root)
-#          5___
-#         /    \
-#     ___4     _8
-#    /        /  \
-#   11       13   4
-#  /  \            \
-# 7    2            1
-print(hasPathSum(root, 22))  # True
-
-```
 
 ## 129. Sum Root to Leaf Numbers
 
 -   [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [LeetCode CH](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-```python title="129. Sum Root to Leaf Numbers - Python Solution"
-from typing import Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-class Solution:
-    def sumNumbers(self, root: Optional[TreeNode]) -> int:
-        self.res = 0
-
-        def dfs(node, cur):
-            if not node:
-                return
-            cur = cur * 10 + node.val
-            if not node.left and not node.right:
-                self.res += cur
-                return
-            dfs(node.left, cur)
-            dfs(node.right, cur)
-
-        dfs(root, 0)
-
-        return self.res
+    ```python
+    --8<-- "python/0001_0300/0129_sum_root_to_leaf_numbers.py"
+    ```
 
 
-root = [1, 2, 3]
-root = build(root)
-print(root)
-#   1
-#  / \
-# 2   3
-print(Solution().sumNumbers(root))  # 25
-
-```
 
 ## 199. Binary Tree Right Side View
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-right-side-view/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-```python title="199. Binary Tree Right Side View - Python Solution"
-from collections import deque
-from typing import List, Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# Binary Tree BFS
-def rightSideViewBFS(root: Optional[TreeNode]) -> List[int]:
-    if not root:
-        return []
-
-    q = deque([root])
-    res = []
-
-    while q:
-        n = len(q)
-        for i in range(n):
-            node = q.popleft()
-            if i == n - 1:
-                res.append(node.val)
-            if node.left:
-                q.append(node.left)
-            if node.right:
-                q.append(node.right)
-
-    return res
+    ```python
+    --8<-- "python/0001_0300/0199_binary_tree_right_side_view.py"
+    ```
 
 
-# Binary Tree DFS
-def rightSideViewDFS(root: Optional[TreeNode]) -> List[int]:
-    """后序遍历，先右后左，遇到的第一个节点就是该深度的最右侧节点"""
-    ans = []
-
-    def dfs(node, depth):
-        if node is None:
-            return
-        if depth == len(ans):  # 这个深度首次遇到
-            ans.append(node.val)
-
-        dfs(node.right, depth + 1)
-        dfs(node.left, depth + 1)
-
-    dfs(root, 0)
-
-    return ans
-
-
-if __name__ == "__main__":
-    root = [1, 2, 2, 3, 4, None, 3, None, None, 5]
-    root = build(root)
-    print(root)
-    #     ____1
-    #    /     \
-    #   2__     2
-    #  /   \     \
-    # 3     4     3
-    #      /
-    #     5
-    assert rightSideViewBFS(root) == [1, 2, 3, 5]
-    assert rightSideViewDFS(root) == [1, 2, 3, 5]
-
-```
 
 ## 1448. Count Good Nodes in Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-```python title="1448. Count Good Nodes in Binary Tree - Python Solution"
-from typing import List
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# Tree
-def goodNodes(root: TreeNode) -> int:
-    def dfs(node, max_val):
-        if not node:
-            return 0
-
-        good = 1 if node.val >= max_val else 0
-
-        max_val = max(max_val, node.val)
-
-        good += dfs(node.left, max_val)
-        good += dfs(node.right, max_val)
-
-        return good
-
-    return dfs(root, root.val)
+    ```python
+    --8<-- "python/1201_1500/1448_count_good_nodes_in_binary_tree.py"
+    ```
 
 
-root = build([3, 1, 4, 3, None, 1, 5])
-print(root)
-#     3__
-#    /   \
-#   1     4
-#  /     / \
-# 3     1   5
-print(goodNodes(root))  # 4
-
-```
 
 ## 1457. Pseudo-Palindromic Paths in a Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/pseudo-palindromic-paths-in-a-binary-tree/) (Medium)
 
 -   Tags: bit manipulation, tree, depth first search, breadth first search, binary tree
+
+
 ## 1315. Sum of Nodes with Even-Valued Grandparent
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-nodes-with-even-valued-grandparent/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
+
+
 ## 988. Smallest String Starting From Leaf
 
 -   [LeetCode](https://leetcode.com/problems/smallest-string-starting-from-leaf/) | [LeetCode CH](https://leetcode.cn/problems/smallest-string-starting-from-leaf/) (Medium)
 
 -   Tags: string, backtracking, tree, depth first search, binary tree
+
+
 ## 1026. Maximum Difference Between Node and Ancestor
 
 -   [LeetCode](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) | [LeetCode CH](https://leetcode.cn/problems/maximum-difference-between-node-and-ancestor/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
+
+
 ## 1022. Sum of Root To Leaf Binary Numbers
 
 -   [LeetCode](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | [LeetCode CH](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
+
+
 ## 623. Add One Row to Tree
 
 -   [LeetCode](https://leetcode.com/problems/add-one-row-to-tree/) | [LeetCode CH](https://leetcode.cn/problems/add-one-row-to-tree/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
-```python title="623. Add One Row to Tree - Python Solution"
-from collections import deque
-from copy import deepcopy
-from typing import Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# BFS
-def addOneRow_bfs(
-    root: Optional[TreeNode], val: int, depth: int
-) -> Optional[TreeNode]:
-    if not root:
-        return None
-
-    if depth == 1:
-        new = TreeNode(val)
-        new.left = root
-        return new
-
-    q = deque([root])
-    cur = 1
-
-    while q:
-        size = len(q)
-        for _ in range(size):
-            node = q.popleft()
-
-            if cur == depth - 1:
-                old_left, old_right = node.left, node.right
-                node.left, node.right = TreeNode(val), TreeNode(val)
-                node.left.left = old_left
-                node.right.right = old_right
-            else:
-                if node.left:
-                    q.append(node.left)
-                if node.right:
-                    q.append(node.right)
-        cur += 1
-
-    return root
+    ```python
+    --8<-- "python/0601_0900/0623_add_one_row_to_tree.py"
+    ```
 
 
-# DFS
-def addOneRow_dfs(
-    root: Optional[TreeNode], val: int, depth: int
-) -> Optional[TreeNode]:
-    if depth == 1:
-        new = TreeNode(val)
-        new.left = root
-        return new
-
-    def dfs(node, cur):
-        if not node:
-            return
-        if cur == depth - 1:
-            old_left, old_right = node.left, node.right
-            node.left = TreeNode(val, old_left, None)
-            node.right = TreeNode(val, None, old_right)
-        else:
-            dfs(node.left, cur + 1)
-            dfs(node.right, cur + 1)
-
-    dfs(root, 1)
-
-    return root
-
-
-if __name__ == "__main__":
-    root = build([4, 2, 6, 3, 1, 5])
-    print(root)
-    #     __4__
-    #    /     \
-    #   2       6
-    #  / \     /
-    # 3   1   5
-    print(addOneRow_bfs(deepcopy(root), 1, 2))
-    #         4
-    #        / \
-    #     __1   1__
-    #    /         \
-    #   2           6
-    #  / \         /
-    # 3   1       5
-    print(addOneRow_dfs(deepcopy(root), 1, 2))
-    #         4
-    #        / \
-    #     __1   1__
-    #    /         \
-    #   2           6
-    #  / \         /
-    # 3   1       5
-
-```
 
 ## 1372. Longest ZigZag Path in a Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/) (Medium)
 
 -   Tags: dynamic programming, tree, depth first search, binary tree
+
+
 ## 971. Flip Binary Tree To Match Preorder Traversal
 
 -   [LeetCode](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/) | [LeetCode CH](https://leetcode.cn/problems/flip-binary-tree-to-match-preorder-traversal/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
+
+
 ## 2689. Extract Kth Character From The Rope Tree
 
 -   [LeetCode](https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/) | [LeetCode CH](https://leetcode.cn/problems/extract-kth-character-from-the-rope-tree/) (Easy)
 
 -   Tags: tree, depth first search, binary tree
+
+
 ## 298. Binary Tree Longest Consecutive Sequence
 
 -   [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [LeetCode CH](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) (Medium)
 
 -   Tags: tree, depth first search, binary tree
-```python title="298. Binary Tree Longest Consecutive Sequence - Python Solution"
-from typing import Optional
 
-from binarytree import Node as TreeNode
-from binarytree import build
+=== "Python"
 
-
-# Binary Tree
-def longestConsecutive(root: Optional[TreeNode]) -> int:
-    res = 0
-
-    def dfs(node):
-        if not node:
-            return 0
-
-        left, right = dfs(node.left), dfs(node.right)
-        cur = 1
-        if node.left and node.left.val == (node.val + 1):
-            cur = max(cur, left + 1)
-        if node.right and node.right.val == (node.val + 1):
-            cur = max(cur, right + 1)
-
-        nonlocal res
-        res = max(res, cur)
-        return cur
-
-    dfs(root)
-
-    return res
+    ```python
+    --8<-- "python/0001_0300/0298_binary_tree_longest_consecutive_sequence.py"
+    ```
 
 
-if __name__ == "__main__":
-    root = build([1, 3, 2, 4, None, None, None, 5])
-    print(root)
-    #       1
-    #      / \
-    #     3   2
-    #    /
-    #   4
-    #  /
-    # 5
-    print(longestConsecutive(root))  # 3
-
-```
 
 ## 1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/) (Medium)
 
 -   Tags: tree, depth first search, breadth first search, binary tree
+
+
 ## 545. Boundary of Binary Tree
 
 -   [LeetCode](https://leetcode.com/problems/boundary-of-binary-tree/) | [LeetCode CH](https://leetcode.cn/problems/boundary-of-binary-tree/) (Medium)

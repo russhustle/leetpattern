@@ -24,708 +24,184 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/remove-linked-list-elements/) | [LeetCode CH](https://leetcode.cn/problems/remove-linked-list-elements/) (Easy)
 
 -   Tags: linked list, recursion
--   Remove all elements from a linked list of integers that have value `val`.
 
--   Before
+=== "Python"
 
-```mermaid
-graph LR
-A((1)) --> B((2))
-B --> C((6))
-C --> D((3))
-D --> E((4))
-E --> F((5))
-F --> G((6))
-G --> H((None))
-```
-
--   After
-
-```mermaid
-graph LR
-A((1)) --> B((2))
-B -.-> C((6))
-C -.-> D((3))
-D --> E((4))
-E --> F((5))
-F -.-> G((6))
-B --> D((3))
-F --> I((None))
-```
-
-```python title="203. Remove Linked List Elements - Python Solution"
-from typing import Optional
-
-from leetpattern.utils import ListNode
+    ```python
+    --8<-- "python/0001_0300/0203_remove_linked_list_elements.py"
+    ```
 
 
-# Iterative
-def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
-    dummy = ListNode(0)
-    dummy.next = head
-    cur = dummy
-
-    while cur.next:
-        if cur.next.val == val:
-            cur.next = cur.next.next
-        else:
-            cur = cur.next
-
-    return dummy.next
-
-
-# |-------------|-----------------|--------------|
-# |  Approach   |      Time       |    Space     |
-# |-------------|-----------------|--------------|
-# |  Iterative  |      O(N)       |    O(1)      |
-# |-------------|-----------------|--------------|
-
-
-nums = [1, 2, 6, 3, 4, 5, 6]
-val = 6
-head = list_from_array(nums)
-print(head)
-# 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6
-print(removeElements(head, val))
-# 1 -> 2 -> 3 -> 4 -> 5
-
-```
 
 ## 707. Design Linked List
 
 -   [LeetCode](https://leetcode.com/problems/design-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/design-linked-list/) (Medium)
 
 -   Tags: linked list, design
--   Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
 
-```python title="707. Design Linked List - Python Solution"
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+=== "Python"
 
-
-class MyLinkedList:
-
-    def __init__(self):
-        self.dummy = ListNode()
-        self.size = 0
-
-    def get(self, index: int) -> int:
-        if index < 0 or index >= self.size:
-            return -1
-
-        current = self.dummy.next
-        for _ in range(index):
-            current = current.next
-
-        return current.val
-
-    def addAtHead(self, val: int) -> None:
-        self.dummy.next = ListNode(val, self.dummy.next)
-        self.size += 1
-
-    def addAtTail(self, val: int) -> None:
-        current = self.dummy
-        while current.next:
-            current = current.next
-        current.next = ListNode(val)
-        self.size += 1
-
-    def addAtIndex(self, index: int, val: int) -> None:
-        if index < 0 or index > self.size:
-            return
-
-        current = self.dummy
-        for i in range(index):
-            current = current.next
-        current.next = ListNode(val, current.next)
-        self.size += 1
-
-    def deleteAtIndex(self, index: int) -> None:
-        if index < 0 or index >= self.size:
-            return
-
-        current = self.dummy
-        for i in range(index):
-            current = current.next
-        current.next = current.next.next
-        self.size -= 1
+    ```python
+    --8<-- "python/0601_0900/0707_design_linked_list.py"
+    ```
 
 
-ll = MyLinkedList()
-ll.addAtHead(1)
-ll.addAtTail(3)
-ll.addAtIndex(1, 2)  # 1 -> 2 -> 3
-print(ll.get(1))  # 2
-
-```
 
 ## 206. Reverse Linked List
 
 -   [LeetCode](https://leetcode.com/problems/reverse-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/reverse-linked-list/) (Easy)
 
 -   Tags: linked list, recursion
-- Reverse a singly linked list.
 
-```mermaid
-graph LR
-A((1)) --> B((2))
-B --> C((3))
-C --> D((4))
-D --> E((5))
-```
+=== "Python"
 
-```mermaid
-graph RL
-E((5)) --> D((4))
-D --> C((3))
-C --> B((2))
-B --> A((1))
-```
-
-```python title="206. Reverse Linked List - Python Solution"
-from typing import Optional
-
-from leetpattern.utils import ListNode
+    ```python
+    --8<-- "python/0001_0300/0206_reverse_linked_list.py"
+    ```
 
 
-# Iterative
-def reverseListIterative(head: Optional[ListNode]) -> Optional[ListNode]:
-    cur = head
-    prev = None
-
-    while cur:
-        temp = cur.next
-        cur.next = prev
-
-        prev = cur
-        cur = temp
-
-    return prev
-
-
-# Recursive
-def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
-    def reverse(cur, prev):
-        if not cur:
-            return prev
-
-        temp = cur.next
-        cur.next = prev
-
-        return reverse(temp, cur)
-
-    return reverse(head, None)
-
-
-nums = [1, 2, 3, 4, 5]
-head1 = list_from_array(nums)
-print(head1)
-# 1 -> 2 -> 3 -> 4 -> 5
-print(reverseListIterative(head1))
-# 5 -> 4 -> 3 -> 2 -> 1
-head2 = list_from_array(nums)
-print(reverseListRecursive(head2))
-# 5 -> 4 -> 3 -> 2 -> 1
-
-```
 
 ## 237. Delete Node in a Linked List
 
 -   [LeetCode](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/delete-node-in-a-linked-list/) (Medium)
 
 -   Tags: linked list
--   Delete a node in a singly linked list. You are given only the node to be deleted.
 
-```python title="237. Delete Node in a Linked List - Python Solution"
-from leetpattern.utils import ListNode
+=== "Python"
 
-
-def deleteNode(node: ListNode) -> None:
-    node.val = node.next.val
-    node.next = node.next.next
+    ```python
+    --8<-- "python/0001_0300/0237_delete_node_in_a_linked_list.py"
+    ```
 
 
-head = list_from_array([4, 5, 1, 9])
-node = head.next
-deleteNode(node)
-print(head)  # 4 -> 1 -> 9
-
-```
 
 ## 2487. Remove Nodes From Linked List
 
 -   [LeetCode](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nodes-from-linked-list/) (Medium)
 
 -   Tags: linked list, stack, recursion, monotonic stack
--   Remove all nodes from a linked list that have a value greater than `maxValue`.
 
-```python title="2487. Remove Nodes From Linked List - Python Solution"
-from typing import Optional
+=== "Python"
 
-from leetpattern.utils import ListNode, list_from_array, list_to_array
-
-
-def remove_nodes_recursive(head: Optional[ListNode]) -> Optional[ListNode]:
-    if not head:
-        return None
-
-    head.next = remove_nodes_recursive(head.next)
-
-    if head.next and head.val < head.next.val:
-        return head.next
-
-    return head
+    ```python
+    --8<-- "python/2401_2700/2487_remove_nodes_from_linked_list.py"
+    ```
 
 
-def remove_nodes_iterative(head: Optional[ListNode]) -> Optional[ListNode]:
-    stack = []
-    cur = head
-
-    while cur:
-        while stack and cur.val > stack[-1].val:
-            stack.pop()
-
-        stack.append(cur)
-        cur = cur.next
-
-    dummy = ListNode()
-    cur = dummy
-
-    for node in stack:
-        cur.next = node
-        cur = cur.next
-
-    return dummy.next
-
-
-def test_remove_nodes() -> None:
-    head = list_from_array([5, 2, 13, 3, 8])
-    assert (list_to_array(remove_nodes_recursive(head))) == [13, 8]
-    head = list_from_array([5, 2, 13, 3, 8])
-    assert (list_to_array(remove_nodes_iterative(head))) == [13, 8]
-
-```
 
 ## 24. Swap Nodes in Pairs
 
 -   [LeetCode](https://leetcode.com/problems/swap-nodes-in-pairs/) | [LeetCode CH](https://leetcode.cn/problems/swap-nodes-in-pairs/) (Medium)
 
 -   Tags: linked list, recursion
--   Given a linked list, swap every two adjacent nodes and return its head.
 
-```python title="24. Swap Nodes in Pairs - Python Solution"
-from typing import Optional
+=== "Python"
 
-from leetpattern.utils import ListNode, list_from_array, list_to_array
-
-
-def swap_pairs(head: Optional[ListNode]) -> Optional[ListNode]:
-    dummy = ListNode(0, head)
-    n0 = dummy
-    n1 = dummy.next
-
-    while n1 and n1.next:
-        n2 = n1.next
-        n3 = n2.next
-
-        n0.next = n2
-        n2.next = n1
-        n1.next = n3
-
-        n0 = n1
-        n1 = n3
-
-    return dummy.next
+    ```python
+    --8<-- "python/0001_0300/0024_swap_nodes_in_pairs.py"
+    ```
 
 
-def test_swap_pairs():
-    head = list_from_array([1, 2, 3, 4, 5])
-    assert list_to_array(swap_pairs(head)) == [2, 1, 4, 3, 5]
-
-```
 
 ## 19. Remove Nth Node From End of List
 
 -   [LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [LeetCode CH](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) (Medium)
 
 -   Tags: linked list, two pointers
--   Given the `head` of a linked list, remove the `n-th` node from the end of the list and return its head.
 
-```python title="19. Remove Nth Node From End of List - Python Solution"
-from typing import Optional
+=== "Python"
 
-from leetpattern.utils import ListNode, list_from_array, list_to_array
-
-
-# Linked List
-def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
-    dummy = ListNode(0, head)
-    fast, slow = dummy, dummy
-
-    for _ in range(n):
-        fast = fast.next
-
-    while fast.next:
-        fast = fast.next
-        slow = slow.next
-
-    slow.next = slow.next.next
-
-    return dummy.next
+    ```python
+    --8<-- "python/0001_0300/0019_remove_nth_node_from_end_of_list.py"
+    ```
 
 
-def test_removeNthFromEnd() -> None:
-    head = list_from_array([1, 2, 3, 4, 5])
-    assert (list_to_array(removeNthFromEnd(head, 2))) == [1, 2, 3, 5]
-
-```
 
 ## 160. Intersection of Two Linked Lists
 
 -   [LeetCode](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [LeetCode CH](https://leetcode.cn/problems/intersection-of-two-linked-lists/) (Easy)
 
 -   Tags: hash table, linked list, two pointers
--   Find the node at which the intersection of two singly linked lists begins.
 
-```mermaid
-graph LR
-    a1((a1)) --> a2((a2))
-    a2 --> c1((c1))
-    b1((b1)) --> b2((b2))
-    b2 --> b3((b3))
-    b3 --> c1
-    c1 --> c2((c2))
-    c2 --> c3((c3))
-```
+=== "Python"
 
-```python title="160. Intersection of Two Linked Lists - Python Solution"
-from typing import Optional
-
-from leetpattern.utils import ListNode
+    ```python
+    --8<-- "python/0001_0300/0160_intersection_of_two_linked_lists.py"
+    ```
 
 
-# Hash Set
-def getIntersectionNodeHash(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
-    if not headA or not headB:
-        return None
-
-    visited = set()
-    cur = headA
-    while cur:
-        visited.add(cur)
-        cur = cur.next
-
-    cur = headB
-    while cur:
-        if cur in visited:
-            return cur
-        cur = cur.next
-
-    return None
-
-
-# Two Pointers
-def getIntersectionNodeTP(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
-    if not headA or not headB:
-        return None
-
-    a, b = headA, headB
-
-    while a != b:
-        a = a.next if a else headB
-        b = b.next if b else headA
-
-    return a
-
-
-listA = [4, 1, 8, 4, 5]
-listB = [5, 6, 1, 8, 4, 5]
-headA = list_from_array(listA)
-print(headA)
-# 4 -> 1 -> 8 -> 4 -> 5
-headB = list_from_array(listB)
-print(headB)
-# 5 -> 6 -> 1 -> 8 -> 4 -> 5
-
-headA.intersect(headB, 8)
-
-print(getIntersectionNodeHash(headA, headB))
-# 8 -> 4 -> 5
-print(getIntersectionNodeTP(headA, headB))
-# 8 -> 4 -> 5
-
-```
 
 ## 141. Linked List Cycle
 
 -   [LeetCode](https://leetcode.com/problems/linked-list-cycle/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle/) (Easy)
 
 -   Tags: hash table, linked list, two pointers
--   Determine if a linked list has a cycle in it.
 
-```mermaid
-graph LR
-    A((3)) --> B((2))
-    B --> C((0))
-    C --> D((4))
-```
+=== "Python"
 
-```mermaid
-graph LR
-    A((3)) --> B((2))
-    B --> C((0))
-    C --> D((4))
-    D --> B
-```
-
-```python title="141. Linked List Cycle - Python Solution"
-from typing import Optional
-
-from leetpattern.utils import ListNode
+    ```python
+    --8<-- "python/0001_0300/0141_linked_list_cycle.py"
+    ```
 
 
-def hasCycle(head: Optional[ListNode]) -> bool:
-    slow, fast = head, head
+=== "CPP"
 
-    while fast and fast.next:
-        slow = slow.next
-        fast = fast.next.next
-
-        if slow == fast:
-            return True
-
-    return False
+    ```cpp
+    --8<-- "cpp/0001_0300/0141_linked_list_cycle.cc"
+    ```
 
 
-print(hasCycle(list_from_array([3, 2, 0, -4])))  # False
-print(hasCycle(list_from_array([3, 2, 0, -4], 1)))  # True
-
-```
-
-```cpp title="141. Linked List Cycle - C++ Solution"
-#include <iostream>
-
-struct ListNode {
-    int val;
-    ListNode* next;
-    ListNode(int x) : val(x), next(NULL) {}
-};
-
-class Solution {
-   public:
-    bool hasCycle(ListNode* head) {
-        ListNode* slow = head;
-        ListNode* fast = head;
-
-        while (fast && fast->next) {
-            slow = slow->next;
-            fast = fast->next->next;
-
-            if (fast == slow) return true;
-        }
-        return false;
-    }
-};
-```
 
 ## 142. Linked List Cycle II
 
 -   [LeetCode](https://leetcode.com/problems/linked-list-cycle-ii/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-cycle-ii/) (Medium)
 
 -   Tags: hash table, linked list, two pointers
--   Given a linked list, return the node where the cycle begins. If there is no cycle, return `None`.
 
-```mermaid
-graph LR
-A[3] --> B[2]
-B --> C[0]
-C --> D[-4]
-D --> B
-```
+=== "Python"
 
-```python title="142. Linked List Cycle II - Python Solution"
-from typing import Optional
-
-from leetpattern.utils import ListNode
+    ```python
+    --8<-- "python/0001_0300/0142_linked_list_cycle_ii.py"
+    ```
 
 
-def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
-    slow, fast = head, head
+=== "CPP"
 
-    while fast and fast.next:
-        fast = fast.next.next
-        slow = slow.next
-
-        if slow == fast:
-            slow = head
-            while slow != fast:
-                slow = slow.next
-                fast = fast.next
-            return slow
-
-    return None
+    ```cpp
+    --8<-- "cpp/0001_0300/0142_linked_list_cycle_ii.cc"
+    ```
 
 
-head1 = list_from_array([3, 2, 0, -4], 1)
-print(detectCycle(head1).val)  # 2
-head2 = list_from_array([3, 2, 0, -4])
-print(detectCycle(head2))  # None
-
-```
-
-```cpp title="142. Linked List Cycle II - C++ Solution"
-#include <iostream>
-
-struct ListNode {
-    int val;
-    ListNode* next;
-    ListNode(int x) : val(x), next(NULL) {}
-};
-
-class Solution {
-   public:
-    ListNode* detectCycle(ListNode* head) {
-        ListNode* slow = head;
-        ListNode* fast = head;
-
-        while (fast && fast->next) {
-            slow = slow->next;
-            fast = fast->next->next;
-
-            if (fast == slow) {
-                slow = head;
-                while (slow != fast) {
-                    slow = slow->next;
-                    fast = fast->next;
-                }
-                return slow;
-            }
-        }
-        return nullptr;
-    }
-};
-```
 
 ## 2816. Double a Number Represented as a Linked List
 
 -   [LeetCode](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | [LeetCode CH](https://leetcode.cn/problems/double-a-number-represented-as-a-linked-list/) (Medium)
 
 -   Tags: linked list, math, stack
--   Given a number represented as a linked list, double it and return the resulting linked list.
 
-```python title="2816. Double a Number Represented as a Linked List - Python Solution"
-from typing import Optional
+=== "Python"
 
-from leetpattern.utils import ListNode, list_from_array, list_to_array
-
-
-def doubleIt(head: Optional[ListNode]) -> Optional[ListNode]:
-
-    def twice(node):
-        if not node:
-            return 0
-        doubled_value = node.val * 2 + twice(node.next)
-        node.val = doubled_value % 10
-        return doubled_value // 10
-
-    carry = twice(head)
-
-    if carry:
-        head = ListNode(val=carry, next=head)
-
-    return head
+    ```python
+    --8<-- "python/2701_3000/2816_double_a_number_represented_as_a_linked_list.py"
+    ```
 
 
-def test_doubleIt() -> None:
-    head = list_from_array([9, 9, 9])
-    assert (list_to_array(doubleIt(head))) == [1, 9, 9, 8]
-
-```
 
 ## 2. Add Two Numbers
 
 -   [LeetCode](https://leetcode.com/problems/add-two-numbers/) | [LeetCode CH](https://leetcode.cn/problems/add-two-numbers/) (Medium)
 
 -   Tags: linked list, math, recursion
--   Represent the sum of two numbers as a linked list.
 
-```python title="2. Add Two Numbers - Python Solution"
-from typing import Optional
+=== "Python"
 
-from leetpattern.utils import ListNode, list_from_array, list_to_array
-
-
-# Linked List
-def add_two_numbers(
-    l1: Optional[ListNode], l2: Optional[ListNode]
-) -> Optional[ListNode]:
-    dummy = ListNode()
-    cur = dummy
-    carry = 0
-
-    while l1 or l2:
-        v1 = l1.val if l1 else 0
-        v2 = l2.val if l2 else 0
-
-        carry, val = divmod(v1 + v2 + carry, 10)
-        cur.next = ListNode(val)
-        cur = cur.next
-
-        if l1:
-            l1 = l1.next
-        if l2:
-            l2 = l2.next
-
-    if carry:
-        cur.next = ListNode(val=carry)
-
-    return dummy.next
+    ```python
+    --8<-- "python/0001_0300/0002_add_two_numbers.py"
+    ```
 
 
-def test_add_two_numbers():
-    l1 = list_from_array([2, 4, 3])
-    l2 = list_from_array([5, 6, 4])
-    result = add_two_numbers(l1, l2)
-    assert list_to_array(result) == [7, 0, 8]
+=== "CPP"
 
-```
-
-```cpp title="2. Add Two Numbers - C++ Solution"
-struct ListNode {
-    int val;
-    ListNode* next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode* next) : val(x), next(next) {}
-};
-
-class Solution {
-   public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode dummy;
-        ListNode* cur = &dummy;
-        int carry = 0;
-
-        while (l1 || l2 || carry) {
-            if (l1) {
-                carry += l1->val;
-                l1 = l1->next;
-            }
-            if (l2) {
-                carry += l2->val;
-                l2 = l2->next;
-            }
-            cur->next = new ListNode(carry % 10);
-            cur = cur->next;
-            carry /= 10;
-        }
-        return dummy.next;
-    }
-};
-```
+    ```cpp
+    --8<-- "cpp/0001_0300/0002_add_two_numbers.cc"
+    ```

@@ -25,106 +25,92 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/random-pick-index/) | [LeetCode CH](https://leetcode.cn/problems/random-pick-index/) (Medium)
 
 -   Tags: hash table, math, reservoir sampling, randomized
+
+
 ## 382. Linked List Random Node
 
 -   [LeetCode](https://leetcode.com/problems/linked-list-random-node/) | [LeetCode CH](https://leetcode.cn/problems/linked-list-random-node/) (Medium)
 
 -   Tags: linked list, math, reservoir sampling, randomized
+
+
 ## 384. Shuffle an Array
 
 -   [LeetCode](https://leetcode.com/problems/shuffle-an-array/) | [LeetCode CH](https://leetcode.cn/problems/shuffle-an-array/) (Medium)
 
 -   Tags: array, math, design, randomized
+
+
 ## 470. Implement Rand10() Using Rand7()
 
 -   [LeetCode](https://leetcode.com/problems/implement-rand10-using-rand7/) | [LeetCode CH](https://leetcode.cn/problems/implement-rand10-using-rand7/) (Medium)
 
 -   Tags: math, rejection sampling, randomized, probability and statistics
+
+
 ## 528. Random Pick with Weight
 
 -   [LeetCode](https://leetcode.com/problems/random-pick-with-weight/) | [LeetCode CH](https://leetcode.cn/problems/random-pick-with-weight/) (Medium)
 
 -   Tags: array, math, binary search, prefix sum, randomized
+
+
 ## 710. Random Pick with Blacklist
 
 -   [LeetCode](https://leetcode.com/problems/random-pick-with-blacklist/) | [LeetCode CH](https://leetcode.cn/problems/random-pick-with-blacklist/) (Hard)
 
 -   Tags: array, hash table, math, binary search, sorting, randomized
+
+
 ## 478. Generate Random Point in a Circle
 
 -   [LeetCode](https://leetcode.com/problems/generate-random-point-in-a-circle/) | [LeetCode CH](https://leetcode.cn/problems/generate-random-point-in-a-circle/) (Medium)
 
 -   Tags: math, geometry, rejection sampling, randomized
+
+
 ## 497. Random Point in Non-overlapping Rectangles
 
 -   [LeetCode](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/) | [LeetCode CH](https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/) (Medium)
 
 -   Tags: array, math, binary search, reservoir sampling, prefix sum, ordered set, randomized
+
+
 ## 519. Random Flip Matrix
 
 -   [LeetCode](https://leetcode.com/problems/random-flip-matrix/) | [LeetCode CH](https://leetcode.cn/problems/random-flip-matrix/) (Medium)
 
 -   Tags: hash table, math, reservoir sampling, randomized
+
+
 ## 380. Insert Delete GetRandom O(1)
 
 -   [LeetCode](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [LeetCode CH](https://leetcode.cn/problems/insert-delete-getrandom-o1/) (Medium)
 
 -   Tags: array, hash table, math, design, randomized
-```python title="380. Insert Delete GetRandom O(1) - Python Solution"
-import random
+
+=== "Python"
+
+    ```python
+    --8<-- "python/0301_0600/0380_insert_delete_getrandom_o1.py"
+    ```
 
 
-class RandomizedSet:
-    def __init__(self):
-        self.nums = []
-        self.pos = {}  # num: idx
-
-    def insert(self, val: int) -> bool:
-        if val in self.pos:
-            return False
-        self.pos[val] = len(self.nums)
-        self.nums.append(val)
-        return True
-
-    def remove(self, val: int) -> bool:
-        if val not in self.pos:
-            return False
-
-        idx = self.pos[val]
-        last_val = self.nums[-1]
-        self.nums[idx] = last_val
-        self.pos[last_val] = idx
-
-        self.nums.pop()
-        del self.pos[val]
-        return True
-
-    def getRandom(self) -> int:
-        return random.choice(self.nums)
-
-
-def test_RandomizedSet():
-    obj = RandomizedSet()
-    assert obj.insert(1)
-    assert not obj.remove(2)
-    assert obj.insert(2)
-    assert obj.getRandom() in [1, 2]
-    assert obj.remove(1)
-    assert not obj.insert(2)
-    assert obj.getRandom() == 2
-
-```
 
 ## 381. Insert Delete GetRandom O(1) - Duplicates allowed
 
 -   [LeetCode](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/) | [LeetCode CH](https://leetcode.cn/problems/insert-delete-getrandom-o1-duplicates-allowed/) (Hard)
 
 -   Tags: array, hash table, math, design, randomized
+
+
 ## 1515. Best Position for a Service Centre
 
 -   [LeetCode](https://leetcode.com/problems/best-position-for-a-service-centre/) | [LeetCode CH](https://leetcode.cn/problems/best-position-for-a-service-centre/) (Hard)
 
 -   Tags: array, math, geometry, randomized
+
+
 ## 1968. Array With Elements Not Equal to Average of Neighbors
 
 -   [LeetCode](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/) | [LeetCode CH](https://leetcode.cn/problems/array-with-elements-not-equal-to-average-of-neighbors/) (Medium)

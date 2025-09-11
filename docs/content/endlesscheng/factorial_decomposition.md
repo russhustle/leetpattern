@@ -14,6 +14,8 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/factorial-trailing-zeroes/) | [LeetCode CH](https://leetcode.cn/problems/factorial-trailing-zeroes/) (Medium)
 
 -   Tags: math
+
+
 ## 793. Preimage Size of Factorial Zeroes Function
 
 -   [LeetCode](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/) | [LeetCode CH](https://leetcode.cn/problems/preimage-size-of-factorial-zeroes-function/) (Hard)

@@ -14,6 +14,8 @@ comments: True
 -   [LeetCode](https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/) | [LeetCode CH](https://leetcode.cn/problems/minimum-score-after-removals-on-a-tree/) (Hard)
 
 -   Tags: array, bit manipulation, tree, depth first search
+
+
 ## 3327. Check if DFS Strings Are Palindromes
 
 -   [LeetCode](https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/) | [LeetCode CH](https://leetcode.cn/problems/check-if-dfs-strings-are-palindromes/) (Hard)

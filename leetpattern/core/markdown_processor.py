@@ -27,25 +27,29 @@ class MarkdownProcessor:
             if category == "algorithms":
                 py_completed = (
                     problem.python_path
-                    and self.file_manager.file_exists_and_not_empty(problem.python_path)
+                    and self.file_manager.file_exists_and_not_empty(
+                        problem.python_path
+                    )
                 )
                 cpp_completed = (
                     problem.cpp_path
-                    and self.file_manager.file_exists_and_not_empty(problem.cpp_path)
+                    and self.file_manager.file_exists_and_not_empty(
+                        problem.cpp_path
+                    )
                 )
                 completed = py_completed or cpp_completed
             elif category == "sql":
                 completed = (
                     problem.sql_path
-                    and self.file_manager.file_exists_and_not_empty(problem.sql_path)
+                    and self.file_manager.file_exists_and_not_empty(
+                        problem.sql_path
+                    )
                 )
             else:
                 completed = False
 
             progress = "x" if completed else " "
-            content += (
-                f"- [{progress}] [{problem.qid}. {problem.title}]({problem.url_ch})"
-            )
+            content += f"- [{progress}] [{problem.qid}. {problem.title}]({problem.url_ch})"
             content += f" ({problem.difficulty})"
             content += " 👑\n" if problem.paid_only else "\n"
 
@@ -67,7 +71,9 @@ class MarkdownProcessor:
                 content += problem.markdown + "\n"
 
             # Add code content
-            code_content = self.code_extractor.extract_code_content(problem) + "\n"
+            code_content = (
+                self.code_extractor.extract_code_content(problem) + "\n"
+            )
             content += code_content
 
         return content

@@ -31,11 +31,11 @@ class Problem:
     basename: Optional[str] = None
     markdown: Optional[str] = None
 
-    py_content: Optional[str] = None
-    cpp_content: Optional[str] = None
-    js_content: Optional[str] = None
-    sql_content: Optional[str] = None
-    txt_content: Optional[str] = None
+    py_snippet: Optional[str] = None
+    cpp_snippet: Optional[str] = None
+    js_snippet: Optional[str] = None
+    sql_snippet: Optional[str] = None
+    txt_snippet: Optional[str] = None
 
 
 class ProblemRepository:
@@ -93,15 +93,6 @@ class ProblemRepository:
 
         return problems
 
-    def path_to_content(self, path: str) -> str:
-        """Read file content safely."""
-        if path and os.path.exists(path) and os.path.getsize(path) > 0:
-            with open(path, "r", encoding="utf-8") as f:
-                lines = f.readlines()
-                lines = [f"    {line}" for line in lines]
-                return "".join(lines)
-        return ""
-
     def _row_to_problem(self, row: pd.Series, qid: int) -> Problem:
         """Convert DataFrame row to Problem object."""
         sub_folder_index = (qid - 1) // 300
@@ -109,10 +100,10 @@ class ProblemRepository:
         end = (sub_folder_index + 1) * 300
         sub_folder = f"{start:04d}_{end:04d}"
 
-        py_folder = f"leetpattern/solutions/python/{sub_folder}/"
-        cpp_folder = f"leetpattern/solutions/cpp/{sub_folder}/"
-        js_folder = f"leetpattern/solutions/javascript/{sub_folder}/"
-        sql_folder = "leetpattern/solutions/sql/"
+        py_folder = f"leetpattern/python/{sub_folder}/"
+        cpp_folder = f"leetpattern/cpp/{sub_folder}/"
+        js_folder = f"leetpattern/javascript/{sub_folder}/"
+        sql_folder = "leetpattern/sql/"
 
         basename = f"{qid:04d}_{row['titleSlug']}"
 
@@ -139,11 +130,11 @@ class ProblemRepository:
             md_path=row.get("md_path"),
             basename=basename,
             markdown=row.get("markdown"),
-            py_content=snippet("Python", f"python/{sub_folder}/{basename}.py"),
-            cpp_content=snippet("CPP", f"cpp/{sub_folder}/{basename}.cc"),
-            js_content=snippet("JavaScript", f"javascript/{sub_folder}/{basename}.js"),
-            sql_content=snippet("SQL", f"sql/{basename}.sql"),
-            txt_content=snippet("TXT", f"sql/{basename}.txt"),
+            py_snippet=snippet("Python", f"python/{sub_folder}/{basename}.py"),
+            cpp_snippet=snippet("CPP", f"cpp/{sub_folder}/{basename}.cc"),
+            js_snippet=snippet("JavaScript", f"javascript/{sub_folder}/{basename}.js"),
+            sql_snippet=snippet("SQL", f"sql/{basename}.sql"),
+            txt_snippet=snippet("TXT", f"sql/{basename}.txt"),
         )
 
 

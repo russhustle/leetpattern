@@ -19,6 +19,9 @@ class Problem:
     url: str = ""
     url_ch: str = ""
     paid_only: bool = False
+
+    sub_folder: Optional[str] = None
+
     python_path: Optional[str] = None
     cpp_path: Optional[str] = None
     javascript_path: Optional[str] = None
@@ -27,6 +30,12 @@ class Problem:
     md_path: Optional[str] = None
     basename: Optional[str] = None
     markdown: Optional[str] = None
+
+    py_content: Optional[str] = None
+    cpp_content: Optional[str] = None
+    js_content: Optional[str] = None
+    sql_content: Optional[str] = None
+    txt_content: Optional[str] = None
 
 
 class ProblemRepository:
@@ -76,15 +85,22 @@ class ProblemRepository:
 
         for index, row in category_df.iterrows():
             qid = (
-                int(index)
-                if isinstance(index, (int, float))
-                else row.get("qid", index)
+                int(index) if isinstance(index, (int, float)) else row.get("qid", index)
             )
             problem = self._row_to_problem(row, qid)
             if problem:
                 problems.append(problem)
 
         return problems
+
+    def path_to_content(self, path: str) -> str:
+        """Read file content safely."""
+        if path and os.path.exists(path) and os.path.getsize(path) > 0:
+            with open(path, "r", encoding="utf-8") as f:
+                lines = f.readlines()
+                lines = [f"    {line}" for line in lines]
+                return "".join(lines)
+        return ""
 
     def _row_to_problem(self, row: pd.Series, qid: int) -> Problem:
         """Convert DataFrame row to Problem object."""
@@ -104,6 +120,7 @@ class ProblemRepository:
         cpp_path = f"{cpp_folder}{basename}.cc"
         javascript_path = f"{js_folder}{basename}.js"
         sql_path = f"{sql_folder}{basename}.sql"
+        txt_path = f"{sql_folder}{basename}.txt"
 
         return Problem(
             qid=qid,
@@ -113,12 +130,36 @@ class ProblemRepository:
             url=row.get("url", ""),
             url_ch=row.get("urlCh", ""),
             paid_only=row.get("paidOnly", False),
+            sub_folder=sub_folder,
             python_path=python_path,
             cpp_path=cpp_path,
             javascript_path=javascript_path,
             sql_path=sql_path,
-            txt_path=row.get("txt_path"),
+            txt_path=txt_path,
             md_path=row.get("md_path"),
             basename=basename,
             markdown=row.get("markdown"),
+            py_content=snippet("Python", f"python/{sub_folder}/{basename}.py"),
+            cpp_content=snippet("CPP", f"cpp/{sub_folder}/{basename}.cc"),
+            js_content=snippet("JavaScript", f"javascript/{sub_folder}/{basename}.js"),
+            sql_content=snippet("SQL", f"sql/{basename}.sql"),
+            txt_content=snippet("TXT", f"sql/{basename}.txt"),
         )
+
+
+def snippet(lang, path):
+    content = f"""=== "{lang}"
+
+    ```{lang.lower()}
+    --8<-- "{path}"
+    ```
+"""
+    return content
+
+
+if __name__ == "__main__":
+    from pprint import pprint
+
+    repo = ProblemRepository()
+    problem = repo.get_problem(1)
+    pprint(problem)

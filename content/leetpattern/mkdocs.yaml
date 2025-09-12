@@ -1,0 +1,57 @@
+site_name: LeetPattern
+
+nav:
+- Binary Search: binary_search.md
+- Array: array.md
+- Left Right Pointers: left_right_pointers.md
+- Fast Slow Pointers: fast_slow_pointers.md
+- Sliding Window Fixed: sliding_window_fixed.md
+- Sliding Window Variable: sliding_window_variable.md
+- Boyer Moore: boyer_moore.md
+- Prefix Sum: prefix_sum.md
+- Difference Array: difference_array.md
+- Linked List: linked_list.md
+- Backtracking: backtracking.md
+- Hash Map: hash_map.md
+- Hash Set: hash_set.md
+- Hash Counting: hash_counting.md
+- String: string.md
+- KMP: kmp.md
+- Tree Traversal: tree_traversal.md
+- Tree Feature: tree_feature.md
+- Tree BFS: tree_bfs.md
+- Tree Modification: tree_modification.md
+- BST: bst.md
+- Trie: trie.md
+- Stack: stack.md
+- Stack Monotonic: stack_monotonic.md
+- Queue: queue.md
+- Queue Monotonic: queue_monotonic.md
+- DP Basic: dp_basic.md
+- DP 2D: dp_2d.md
+- DP Stock: dp_stock.md
+- DP 01 Knapsack: dp_01_knapsack.md
+- DP Unbounded Knapsack: dp_unbounded_knapsack.md
+- DP Kadane: dp_kadane.md
+- DP Interval: dp_interval.md
+- DP LCS: dp_lcs.md
+- DP LIS: dp_lis.md
+- Greedy: greedy.md
+- Intervals: intervals.md
+- Graph Flood Fill: graph_flood_fill.md
+- Graph BFS: graph_bfs.md
+- Graph Topological Sort: graph_topological_sort.md
+- Graph Union Find: graph_union_find.md
+- Graph Shortest Path: graph_shortest_path.md
+- Graph Bellman Ford: graph_bellman_ford.md
+- Graph Minimum Spanning Tree: graph_minimum_spanning_tree.md
+- Graph Coloring: graph_coloring.md
+- Graph Tarjan: graph_tarjan.md
+- Heap: heap.md
+- Heap Top K: heap_top_k.md
+- Heap Two Heaps: heap_two_heaps.md
+- Heap Merge K Sorted: heap_merge_k_sorted.md
+- Bit Manipulation: bit_manipulation.md
+- Math: math.md
+- Simulation: simulation.md
+- Design: design.md

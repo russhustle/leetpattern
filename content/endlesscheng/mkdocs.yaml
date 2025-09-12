@@ -1,0 +1,265 @@
+site_name: EndlessCheng
+
+nav:
+- Sliding Window Fixed Size Basics: sliding_window_fixed_size_basics.md
+- Sliding Window Fixed Size Advanced: sliding_window_fixed_size_advanced.md
+- Sliding Window Fixed Size Others: sliding_window_fixed_size_others.md
+- Sliding Window Variable Max Basics: sliding_window_variable_max_basics.md
+- Sliding Window Variable Max Advanced: sliding_window_variable_max_advanced.md
+- Sliding Window Variable Min: sliding_window_variable_min.md
+- Sliding Window Variable Subarrays Longer: sliding_window_variable_subarrays_longer.md
+- Sliding Window Variable Subarrays Shorter: sliding_window_variable_subarrays_shorter.md
+- Sliding Window Variable Subarrays Exact: sliding_window_variable_subarrays_exact.md
+- Sliding Window Variable Others: sliding_window_variable_others.md
+- One Sequence Two Pointers Opposite Direction: one_sequence_two_pointers_opposite_direction.md
+- One Sequence Two Pointers Same Direction: one_sequence_two_pointers_same_direction.md
+- One Sequence Two Pointers Backward: one_sequence_two_pointers_backward.md
+- One Sequence Two Pointers In-Place Modification: one_sequence_two_pointers_in-place_modification.md
+- Two Sequences Two Pointers: two_sequences_two_pointers.md
+- Two Sequences Subsequence Checking: two_sequences_subsequence_checking.md
+- Three Pointers: three_pointers.md
+- Grouped Loop: grouped_loop.md
+- Binary Search Basics: binary_search_basics.md
+- Binary Search Advanced: binary_search_advanced.md
+- Binary Search Min Answer: binary_search_min_answer.md
+- Binary Search Max Answer: binary_search_max_answer.md
+- Binary Search Indirect Value: binary_search_indirect_value.md
+- Binary Search Minimize Max: binary_search_minimize_max.md
+- Binary Search Maximize Min: binary_search_maximize_min.md
+- Binary Search Kth Min Max: binary_search_kth_min_max.md
+- Binary Search Others: binary_search_others.md
+- Monotonic Stack: monotonic_stack.md
+- Rectangle: rectangle.md
+- Contribution Method: contribution_method.md
+- Lexicographically Smallest: lexicographically_smallest.md
+- Grid DFS: grid_dfs.md
+- Grid BFS: grid_bfs.md
+- Grid 01 BFS: grid_01_bfs.md
+- Grid Applications: grid_applications.md
+- Bit Basics: bit_basics.md
+- Bit XOR: bit_xor.md
+- Bit AND OR: bit_and_or.md
+- Bit LogTrick: bit_logtrick.md
+- Bit Contribution Method: bit_contribution_method.md
+- Bit Trial and Error Method: bit_trial_and_error_method.md
+- Bit Identity Law: bit_identity_law.md
+- Bit Thinking Problems: bit_thinking_problems.md
+- Bit Others: bit_others.md
+- DFS Basics: dfs_basics.md
+- BFS Basics: bfs_basics.md
+- Topological Sorting: topological_sorting.md
+- Topological Order DP: topological_order_dp.md
+- Fundamental Cycle: fundamental_cycle.md
+- Shortest Path Single Source Dijkstra: shortest_path_single_source_dijkstra.md
+- Shortest Path All Pairs Floyd: shortest_path_all_pairs_floyd.md
+- Minimum Spanning Tree: minimum_spanning_tree.md
+- Eulerian Path and Circuit: eulerian_path_and_circuit.md
+- Strongly and Biconnected Components: strongly_and_biconnected_components.md
+- Bipartite Graph Coloring: bipartite_graph_coloring.md
+- Network Flow: network_flow.md
+- Graph Others: graph_others.md
+- DP Climbing Stairs: dp_climbing_stairs.md
+- DP House Robber: dp_house_robber.md
+- DP Max Subarray Sum: dp_max_subarray_sum.md
+- DP Grid Basics: dp_grid_basics.md
+- DP Grid Advanced: dp_grid_advanced.md
+- DP 0-1 Knapsack: dp_0-1_knapsack.md
+- DP Complete Knapsack: dp_complete_knapsack.md
+- DP Multiple Knapsack: dp_multiple_knapsack.md
+- DP Grouped Knapsack: dp_grouped_knapsack.md
+- DP LCS Basics: dp_lcs_basics.md
+- DP LCS Advanced: dp_lcs_advanced.md
+- DP LIS Basics: dp_lis_basics.md
+- DP LIS Advanced: dp_lis_advanced.md
+- DP Partitioning Feasibility: dp_partitioning_feasibility.md
+- DP Optimal Partitioning: dp_optimal_partitioning.md
+- DP Constrained Number of Partitions: dp_constrained_number_of_partitions.md
+- DP Non-Overlapping Intervals: dp_non-overlapping_intervals.md
+- DP Stock Trading: dp_stock_trading.md
+- DP State Machine Basics: dp_state_machine_basics.md
+- DP State Machine Advanced: dp_state_machine_advanced.md
+- DP 1D: dp_1d.md
+- DP Valid Subsequence: dp_valid_subsequence.md
+- DP Matrix Exponentiation Optimized: dp_matrix_exponentiation_optimized.md
+- DP Subrectangle: dp_subrectangle.md
+- DP Multi-Dimensional: dp_multi-dimensional.md
+- DP Longest Palindromic Subsequence: dp_longest_palindromic_subsequence.md
+- DP Other Interval DP: dp_other_interval_dp.md
+- DP Permutation Type Adjacent Unrelated: dp_permutation_type_adjacent_unrelated.md
+- DP Permutation Type Adjacent Related: dp_permutation_type_adjacent_related.md
+- DP Traveling Salesman Problem: dp_traveling_salesman_problem.md
+- DP Subset State Compression: dp_subset_state_compression.md
+- DP Other State Compression: dp_other_state_compression.md
+- DP Digit: dp_digit.md
+- DP Prefix Sum: dp_prefix_sum.md
+- DP Monotonic Stack: dp_monotonic_stack.md
+- DP Monotonic Queue: dp_monotonic_queue.md
+- DP Fenwick Tree Segment Tree: dp_fenwick_tree_segment_tree.md
+- DP Trie: dp_trie.md
+- DP Other Optimized: dp_other_optimized.md
+- DP WQS Binary Search: dp_wqs_binary_search.md
+- Tree DP Tree Diameter: tree_dp_tree_diameter.md
+- Tree DP Maximum Independent Set: tree_dp_maximum_independent_set.md
+- Tree DP Minimum Dominating Set: tree_dp_minimum_dominating_set.md
+- Tree DP Rerooting DP: tree_dp_rerooting_dp.md
+- Tree DP Other: tree_dp_other.md
+- DP Graph: dp_graph.md
+- DP Game Theory: dp_game_theory.md
+- DP Probability Expectation: dp_probability_expectation.md
+- DP Print Solutions: dp_print_solutions.md
+- DP Prefix and Suffix Decomposition: dp_prefix_and_suffix_decomposition.md
+- DP Transform X to Y: dp_transform_x_to_y.md
+- DP Jump Game: dp_jump_game.md
+- DP Other DP: dp_other_dp.md
+- Enumerate Right Maintain Left: enumerate_right_maintain_left.md
+- Enumerate Middle: enumerate_middle.md
+- Prefix Sum Basics: prefix_sum_basics.md
+- Prefix Sum with Hash Table: prefix_sum_with_hash_table.md
+- Distance Sum: distance_sum.md
+- Prefix XOR Sum: prefix_xor_sum.md
+- 1D Prefix Sum: 1d_prefix_sum.md
+- 2D Prefix Sum: 2d_prefix_sum.md
+- 1D Difference Array: 1d_difference_array.md
+- 2D Difference Array: 2d_difference_array.md
+- Stack Basics: stack_basics.md
+- Stack Advanced: stack_advanced.md
+- Adjacent Elimination: adjacent_elimination.md
+- Valid Parentheses Strings: valid_parentheses_strings.md
+- Expression Parsing: expression_parsing.md
+- Dual Stack: dual_stack.md
+- Queue Basics: queue_basics.md
+- Queue Design: queue_design.md
+- Deque: deque.md
+- Monotonic Queue: monotonic_queue.md
+- Monotonic Queue Optimized DP: monotonic_queue_optimized_dp.md
+- Heap Basics: heap_basics.md
+- Heap Advanced: heap_advanced.md
+- Heap Rearrange Elements: heap_rearrange_elements.md
+- Heap Kth Smallest Largest: heap_kth_smallest_largest.md
+- Regret Heap: regret_heap.md
+- Lazy Deletion Heap: lazy_deletion_heap.md
+- Dual Heap: dual_heap.md
+- Trie Basics: trie_basics.md
+- Trie Advanced: trie_advanced.md
+- Trie Optimized DP: trie_optimized_dp.md
+- XOR Trie: xor_trie.md
+- Union Find Basics: union_find_basics.md
+- Union Find Advanced: union_find_advanced.md
+- GCD Union Find: gcd_union_find.md
+- Union Find on Arrays: union_find_on_arrays.md
+- Union Find Interval: union_find_interval.md
+- Edge Weighted Union Find: edge_weighted_union_find.md
+- Fenwick Tree: fenwick_tree.md
+- Inversion Count: inversion_count.md
+- Segment Tree: segment_tree.md
+- Lazy Segment Tree: lazy_segment_tree.md
+- Dynamic Segment Tree: dynamic_segment_tree.md
+- Offline Algorithm: offline_algorithm.md
+- Prime Check: prime_check.md
+- Prime Preprocessing: prime_preprocessing.md
+- Prime Factorization: prime_factorization.md
+- Factorial Decomposition: factorial_decomposition.md
+- Factors: factors.md
+- Greatest Common Divisor: greatest_common_divisor.md
+- Least Common Multiple: least_common_multiple.md
+- Coprime: coprime.md
+- Modular Arithmetic: modular_arithmetic.md
+- Number Theory Others: number_theory_others.md
+- Multiplication Principle: multiplication_principle.md
+- Combinatorial Counting: combinatorial_counting.md
+- Ball Placement Problems: ball_placement_problems.md
+- Inclusion Exclusion Principle: inclusion_exclusion_principle.md
+- Combinatorics Contribution Method: combinatorics_contribution_method.md
+- Probability and Expectation: probability_and_expectation.md
+- Game Theory: game_theory.md
+- Points and Lines: points_and_lines.md
+- Circles: circles.md
+- Rectangles and Polygons: rectangles_and_polygons.md
+- Convex Hull: convex_hull.md
+- Randomized Algorithms: randomized_algorithms.md
+- Palindromic Numbers: palindromic_numbers.md
+- Integer Partition: integer_partition.md
+- Manhattan Distance: manhattan_distance.md
+- Polynomial Convolution: polynomial_convolution.md
+- Math Others: math_others.md
+- Greedy from Smallest Largest: greedy_from_smallest_largest.md
+- Single Sequence Pairing: single_sequence_pairing.md
+- Double Sequence Pairing: double_sequence_pairing.md
+- Greedy from Left Right: greedy_from_left_right.md
+- Partitioning Greedy: partitioning_greedy.md
+- Enumerate then Greedy: enumerate_then_greedy.md
+- Exchange Argument: exchange_argument.md
+- Adjacent Different: adjacent_different.md
+- Regret Greedy: regret_greedy.md
+- Non-Overlapping Intervals: non-overlapping_intervals.md
+- Interval Grouping: interval_grouping.md
+- Interval Selection: interval_selection.md
+- Interval Coverage: interval_coverage.md
+- Merge Intervals: merge_intervals.md
+- Other Interval Greedy: other_interval_greedy.md
+- Lexicographically Smallest Largest: lexicographically_smallest_largest.md
+- Palindrome Greedy: palindrome_greedy.md
+- Math Greedy Basics: math_greedy_basics.md
+- Product Greedy: product_greedy.md
+- Sorting Inequality: sorting_inequality.md
+- Basic Inequality: basic_inequality.md
+- Median Greedy: median_greedy.md
+- Inductive Method: inductive_method.md
+- Other Math Greedy: other_math_greedy.md
+- From Special to General: from_special_to_general.md
+- Brain Teasers: brain_teasers.md
+- Reverse Thinking: reverse_thinking.md
+- Equivalent Transformation: equivalent_transformation.md
+- Construction Problems: construction_problems.md
+- Greedy Others: greedy_others.md
+- Linked List Traversal: linked_list_traversal.md
+- Linked List Delete Nodes: linked_list_delete_nodes.md
+- Linked List Insert Nodes: linked_list_insert_nodes.md
+- Linked List Reverse: linked_list_reverse.md
+- Linked List Front Back Pointers: linked_list_front_back_pointers.md
+- Linked List Fast Slow Pointers: linked_list_fast_slow_pointers.md
+- Linked List Double Pointers: linked_list_double_pointers.md
+- Linked Lists Merge: linked_lists_merge.md
+- Linked List Divide and Conquer: linked_list_divide_and_conquer.md
+- Linked List Applications: linked_list_applications.md
+- Linked List Others: linked_list_others.md
+- Binary Tree Traversal: binary_tree_traversal.md
+- Binary Tree Top-Down DFS: binary_tree_top-down_dfs.md
+- Binary Tree Bottom-Up DFS: binary_tree_bottom-up_dfs.md
+- Binary Tree Bottom-Up DFS Node Deletion: binary_tree_bottom-up_dfs_node_deletion.md
+- Binary Tree Recursion: binary_tree_recursion.md
+- Binary Tree Diameter: binary_tree_diameter.md
+- Binary Tree Backtracking: binary_tree_backtracking.md
+- Binary Tree Lowest Common Ancestor: binary_tree_lowest_common_ancestor.md
+- Binary Search Tree: binary_search_tree.md
+- Binary Tree Construction: binary_tree_construction.md
+- Binary Tree Insert Delete Nodes: binary_tree_insert_delete_nodes.md
+- Tree DP: tree_dp.md
+- Binary Tree BFS: binary_tree_bfs.md
+- Binary Tree Linked List: binary_tree_linked_list.md
+- N-ary Tree: n-ary_tree.md
+- Binary Tree Others: binary_tree_others.md
+- General Tree Traversal: general_tree_traversal.md
+- General Tree Top-Down DFS: general_tree_top-down_dfs.md
+- General Tree Bottom-Up DFS: general_tree_bottom-up_dfs.md
+- General Tree Recursion: general_tree_recursion.md
+- General Tree Diameter: general_tree_diameter.md
+- General Tree DFS Timestamp: general_tree_dfs_timestamp.md
+- General Tree Topological Sort: general_tree_topological_sort.md
+- General Tree Lowest Common Ancestor: general_tree_lowest_common_ancestor.md
+- General Tree Others: general_tree_others.md
+- Backtracking Basic: backtracking_basic.md
+- Backtracking Subset: backtracking_subset.md
+- Backtracking Partition: backtracking_partition.md
+- Backtracking Combination: backtracking_combination.md
+- Backtracking Permutation: backtracking_permutation.md
+- Backtracking Exhaustive Search and Pruning: backtracking_exhaustive_search_and_pruning.md
+- Backtracking with Duplicates: backtracking_with_duplicates.md
+- String KMP: string_kmp.md
+- String Z Function: string_z_function.md
+- String Manacher Algorithm: string_manacher_algorithm.md
+- String Hashing: string_hashing.md
+- String Minimal Representation: string_minimal_representation.md
+- String AC Automaton: string_ac_automaton.md
+- String Suffix Array: string_suffix_array.md
+- String Subsequence Automaton: string_subsequence_automaton.md

@@ -1,0 +1,20 @@
+site_name: Top 100 Liked
+
+nav:
+- Hash: hash.md
+- Two Pointers: two_pointers.md
+- Sliding Window: sliding_window.md
+- Subarray: subarray.md
+- Arrays: arrays.md
+- Matrix: matrix.md
+- Linked List: linked_list.md
+- Binary Tree: binary_tree.md
+- Graph: graph.md
+- Backtracking: backtracking.md
+- Binary Search: binary_search.md
+- Stack: stack.md
+- Heap: heap.md
+- Greedy: greedy.md
+- Dynamic Programming: dynamic_programming.md
+- Multi-dimensional Dynamic Programming: multi-dimensional_dynamic_programming.md
+- Techniques: techniques.md

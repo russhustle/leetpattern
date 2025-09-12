@@ -1,0 +1,18 @@
+site_name: Grind 75
+
+nav:
+- Array: array.md
+- Stack: stack.md
+- Linked List: linked_list.md
+- String: string.md
+- Binary Tree: binary_tree.md
+- Binary Search: binary_search.md
+- Graph: graph.md
+- Binary Search Tree: binary_search_tree.md
+- Hash Table: hash_table.md
+- Dynamic Programming: dynamic_programming.md
+- Binary: binary.md
+- Heap: heap.md
+- Trie: trie.md
+- Recursion: recursion.md
+- Matrix: matrix.md

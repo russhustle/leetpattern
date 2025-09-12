@@ -1,0 +1,11 @@
+site_name: Graph Theory
+
+nav:
+- Standard Traversal: standard_traversal.md
+- BFS: bfs.md
+- Matrix Graphs: matrix_graphs.md
+- Graph Theory: graph_theory.md
+- Union Find: union_find.md
+- Topological Sort: topological_sort.md
+- Dijkstra's: dijkstra's.md
+- MST: mst.md

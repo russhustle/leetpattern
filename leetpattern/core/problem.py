@@ -2,10 +2,14 @@
 
 import os
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import Optional
 
 import pandas as pd
 from pandas import DataFrame
+
+
+def if_file_exist(path: str) -> bool:
+    return os.path.exists(path) and os.path.getsize(path) > 0
 
 
 @dataclass
@@ -21,6 +25,10 @@ class Problem:
     urls_for_md: str = ""
     tags: str = ""
     paid_only: bool = False
+    is_done: bool = False
+
+    progress: str = ""
+    heading: str = ""
 
     basename: Optional[str] = None
     markdown: Optional[str] = None
@@ -70,32 +78,6 @@ class ProblemRepository:
         except KeyError:
             return None
 
-    def get_problems(self, qids: List[int]) -> List[Problem]:
-        """Get multiple problems by QID list."""
-        problems = []
-        for qid in qids:
-            problem = self.get_problem(qid)
-            if problem:
-                problems.append(problem)
-            else:
-                print(f"Warning: Problem {qid} not found")
-        return problems
-
-    def get_problems_by_category(self, category: str) -> List[Problem]:
-        """Get all problems in a specific category."""
-        category_df = self.df[self.df["categorySlug"] == category]
-        problems = []
-
-        for index, row in category_df.iterrows():
-            qid = (
-                int(index) if isinstance(index, (int, float)) else row.get("qid", index)
-            )
-            problem = self._row_to_problem(row, qid)
-            if problem:
-                problems.append(problem)
-
-        return problems
-
     def _row_to_problem(self, row: pd.Series, qid: int) -> Problem:
         """Convert DataFrame row to Problem object."""
         sub_folder_index = (qid - 1) // 300
@@ -117,7 +99,22 @@ class ProblemRepository:
         txt_path = f"{sql_folder}{basename}.txt"
 
         urls_for_md = f"-    [LeetCode]({row['url']}) | [力扣]({row['urlCh']})"
-        tags_for_md = f"-    Tags: {row["category"]}"
+
+        # check if any of the code files exist
+        is_done = False
+        if if_file_exist(python_path):
+            is_done = True
+        if if_file_exist(cpp_path):
+            is_done = True
+        if if_file_exist(javascript_path):
+            is_done = True
+        if if_file_exist(sql_path):
+            is_done = True
+        heading = f"## {qid}. {row['title']}"
+        heading_link = f"#{qid}-{row['titleSlug'].replace('_', '-')}"
+        progress = f"- [{"x" if is_done else " "}] [{qid}. {row['title']}]({heading_link}) ({row['difficulty']})"
+        progress += f"{" 👑" if row['paidOnly'] else ""}"
+        tags = f"-   Tags: {row['topicTags'].title() if row['topicTags'] else 'None'}"
 
         return Problem(
             qid=qid,
@@ -137,11 +134,32 @@ class ProblemRepository:
             md_path=row.get("md_path"),
             basename=basename,
             markdown=row.get("markdown"),
-            py_snippet=snippet("Python", f"python/{sub_folder}/{basename}.py"),
-            cpp_snippet=snippet("CPP", f"cpp/{sub_folder}/{basename}.cc"),
-            js_snippet=snippet("JavaScript", f"javascript/{sub_folder}/{basename}.js"),
-            sql_snippet=snippet("SQL", f"sql/{basename}.sql"),
-            txt_snippet=snippet("TXT", f"sql/{basename}.txt"),
+            heading=heading,
+            is_done=is_done,
+            progress=progress,
+            tags=tags,
+            # code snippets
+            py_snippet=(
+                snippet("Python", f"python/{sub_folder}/{basename}.py")
+                if if_file_exist(python_path)
+                else ""
+            ),
+            cpp_snippet=(
+                snippet("CPP", f"cpp/{sub_folder}/{basename}.cc")
+                if if_file_exist(cpp_path)
+                else ""
+            ),
+            js_snippet=(
+                snippet("JavaScript", f"javascript/{sub_folder}/{basename}.js")
+                if if_file_exist(javascript_path)
+                else ""
+            ),
+            sql_snippet=(
+                snippet("SQL", f"sql/{basename}.sql") if if_file_exist(sql_path) else ""
+            ),
+            txt_snippet=(
+                snippet("TXT", f"sql/{basename}.txt") if if_file_exist(txt_path) else ""
+            ),
         )
 
 
@@ -159,5 +177,8 @@ if __name__ == "__main__":
     from pprint import pprint
 
     repo = ProblemRepository()
-    problem = repo.get_problem(1)
-    pprint(problem)
+    problem = repo.get_problem(3011)
+    if problem is not None:
+        pprint(problem)
+    else:
+        pprint("Problem not found")

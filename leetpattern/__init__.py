@@ -1,15 +1,19 @@
 """LeetPattern - Documentation generator for LeetCode problem patterns."""
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 __author__ = "Sihan A"
 
-from .core.config import ConfigManager
-from .core.generator import DocumentationGenerator
+
+# from .core.generator import DocumentationGenerator
 from .core.problem import Problem, ProblemRepository
+from .core.topic import Topic, TopicRepository
+from .core.problem_set import ProblemSet, ProblemSetRepository
 
 __all__ = [
-    "ConfigManager",
     "Problem",
     "ProblemRepository",
-    "DocumentationGenerator",
+    "Topic",
+    "TopicRepository",
+    "ProblemSet",
+    "ProblemSetRepository",
 ]

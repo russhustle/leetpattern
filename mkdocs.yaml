@@ -15,7 +15,7 @@ nav:
 - About: about.md
 
 site_name: 🚀LeetPattern
-site_url: https://www.leetpattern.com
+site_url: https://russhustle.github.io/leetpattern/
 site_author: Sihan A
 site_description: LeetCode Patterns
 repo_url: https://github.com/russhustle/leetpattern/
@@ -42,7 +42,7 @@ theme:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
   font:
-    text: Roboto
+    text: Work Sans
     code: Roboto Code
 
   features:
@@ -127,7 +127,7 @@ plugins:
 
 extra:
   creator: Sihan A
-  homepage: https://www.leetpattern.com
+  homepage: https://russhustle.github.io/leetpattern/
   social:
   - icon: fontawesome/brands/github
     link: https://github.com/russhustle

@@ -1,3 +1,8 @@
+#include <cassert>
+#include <iostream>
+#include <vector>
+using namespace std;
+
 struct ListNode {
     int val;
     ListNode* next;
@@ -28,3 +33,17 @@ class Solution {
         return dummy.next;
     }
 };
+
+int main() {
+    Solution sol;
+    ListNode* list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+    ListNode* list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+    ListNode* merged = sol.mergeTwoLists(list1, list2);
+    vector<int> res;
+    while (merged) {
+        res.push_back(merged->val);
+        merged = merged->next;
+    }
+    assert(res == std::vector<int>({1, 1, 2, 3, 4, 4}));
+    return 0;
+}

@@ -1,3 +1,7 @@
+#include <cassert>
+#include <vector>
+using namespace std;
+
 struct ListNode {
     int val;
     ListNode* next;
@@ -29,3 +33,20 @@ class Solution {
         return dummy.next;
     }
 };
+
+int main() {
+    Solution sol;
+
+    ListNode* l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+    ListNode* l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+    ListNode* result = sol.addTwoNumbers(l1, l2);
+
+    vector<int> expected = {7, 0, 8};
+    for (int val : expected) {
+        assert(result != nullptr && result->val == val);
+        result = result->next;
+    }
+    assert(result == nullptr);  // End of list
+
+    return 0;
+}

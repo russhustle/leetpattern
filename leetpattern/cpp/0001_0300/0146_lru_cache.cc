@@ -1,3 +1,4 @@
+#include <cassert>
 #include <iostream>
 #include <unordered_map>
 using namespace std;
@@ -78,12 +79,12 @@ int main() {
     LRUCache lru(2);
     lru.put(1, 1);
     lru.put(2, 2);
-    cout << lru.get(1) << endl;  // 1
-    lru.put(3, 3);
-    cout << lru.get(2) << endl;  // -1
-    lru.put(4, 4);
-    cout << lru.get(1) << endl;  // -1
-    cout << lru.get(3) << endl;  // 3
-    cout << lru.get(4) << endl;  // 4
+    assert(lru.get(1) == 1);   // returns 1
+    lru.put(3, 3);             // evicts key 2
+    assert(lru.get(2) == -1);  // returns -1 (not found)
+    lru.put(4, 4);             // evicts key 1
+    assert(lru.get(1) == -1);  // returns -1 (not found)
+    assert(lru.get(3) == 3);   // returns 3
+    assert(lru.get(4) == 4);   // returns 4
     return 0;
 }

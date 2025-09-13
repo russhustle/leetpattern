@@ -7,14 +7,6 @@
 4. The left and right subtree each must also be a binary search tree
 5. There must be no duplicate nodes
 6. Inorder traversal of a BST gives a sorted list of keys
-
-```mermaid
-graph TD
-4((4)) --- 2((2))
-4 --- 7((7))
-2 --- 1((1))
-2 --- 3((3))
-```
 """
 
 from typing import Optional

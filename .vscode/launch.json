@@ -22,8 +22,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/asihan/repos/leetpattern/src/cpp",
-      "program": "/home/asihan/repos/leetpattern/src/cpp/build/Debug/outDebug",
+      "cwd": "/response_42e5c52f-6cb4-441c-be7f-428dda29c9d8",
+      "program": "/response_42e5c52f-6cb4-441c-be7f-428dda29c9d8/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

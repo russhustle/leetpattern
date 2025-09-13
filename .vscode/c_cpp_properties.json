@@ -1,14 +1,14 @@
 {
   "configurations": [
     {
-      "name": "macos-gcc-x64",
+      "name": "linux-gcc-x64",
       "includePath": [
         "${workspaceFolder}/**"
       ],
-      "compilerPath": "/opt/local/bin/gcc",
+      "compilerPath": "/usr/bin/gcc",
       "cStandard": "${default}",
       "cppStandard": "c++20",
-      "intelliSenseMode": "macos-gcc-x64",
+      "intelliSenseMode": "linux-gcc-x64",
       "compilerArgs": [
         ""
       ]

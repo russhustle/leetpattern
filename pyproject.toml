@@ -15,13 +15,11 @@ dependencies = [
     "notebook>=7.2.1",
     "mkdocs-exclude>=1.0.2",
     "mkdocs-static-i18n>=1.3.0",
-    "typer>=0.17.3",
     "mkdocs-monorepo-plugin>=1.1.2",
 ]
 
 [project.scripts]
-lpn = "leetpattern.core.commands:main"
-
+lpn = "leetpattern.core.commands:app"
 
 [build-system]
 requires = ["hatchling"]

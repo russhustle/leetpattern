@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from problem import ProblemRepository
+from leetpattern import ProblemRepository
 
 
 @dataclass

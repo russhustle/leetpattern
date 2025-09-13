@@ -1,3 +1,4 @@
+#include <cassert>
 #include <iostream>
 using namespace std;
 
@@ -11,14 +12,14 @@ int climbStairs(int n) {
         res = f1 + f2;
         f1 = f2;
         f2 = res;
-        ++i;
+        i++;
     }
     return res;
 }
 
 int main() {
-    cout << climbStairs(2) << endl;  // 2
-    cout << climbStairs(3) << endl;  // 3
-    cout << climbStairs(6) << endl;  // 13
+    assert(climbStairs(2) == 2);
+    assert(climbStairs(5) == 8);
+    assert(climbStairs(10) == 89);
     return 0;
 }

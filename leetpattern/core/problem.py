@@ -34,9 +34,9 @@ class Problem:
     markdown: Optional[str] = None
     sub_folder: Optional[str] = None
     # paths
-    python_path: Optional[str] = None
+    py_path: Optional[str] = None
     cpp_path: Optional[str] = None
-    javascript_path: Optional[str] = None
+    js_path: Optional[str] = None
     sql_path: Optional[str] = None
     txt_path: Optional[str] = None
     md_path: Optional[str] = None
@@ -126,9 +126,9 @@ class ProblemRepository:
             urls_for_md=urls_for_md,
             paid_only=row.get("paidOnly", False),
             sub_folder=sub_folder,
-            python_path=python_path,
+            py_path=python_path,
             cpp_path=cpp_path,
-            javascript_path=javascript_path,
+            js_path=javascript_path,
             sql_path=sql_path,
             txt_path=txt_path,
             md_path=row.get("md_path"),

@@ -41,6 +41,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | [力扣](https://leetcode.cn/problems/maximum-subarray-with-equal-products/)
 
 -   Tags: Array, Math, Sliding Window, Enumeration, Number Theory
-
-
-

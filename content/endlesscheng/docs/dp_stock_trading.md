@@ -46,6 +46,12 @@ comments: True
     --8<-- "python/0001_0300/0122_best_time_to_buy_and_sell_stock_ii.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0122_best_time_to_buy_and_sell_stock_ii.cc"
+    ```
+
 
 
 ## 123. Best Time to Buy and Sell Stock III
@@ -101,6 +107,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0714_best_time_to_buy_and_sell_stock_with_transaction_fee.py"
     ```
-
-
-

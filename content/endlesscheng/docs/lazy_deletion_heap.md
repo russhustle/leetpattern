@@ -37,7 +37,7 @@ comments: True
 
 
 
-## 2034. Stock Price Fluctuation 
+## 2034. Stock Price Fluctuation
 
 -    [LeetCode](https://leetcode.com/problems/stock-price-fluctuation/) | [力扣](https://leetcode.cn/problems/stock-price-fluctuation/)
 
@@ -50,6 +50,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/dinner-plate-stacks/) | [力扣](https://leetcode.cn/problems/dinner-plate-stacks/)
 
 -   Tags: Hash Table, Stack, Design, Heap Priority Queue
-
-
-

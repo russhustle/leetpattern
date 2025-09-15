@@ -14,6 +14,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/) | [力扣](https://leetcode.cn/problems/maximum-number-of-matching-indices-after-right-shifts/)
 
 -   Tags: Array, Two Pointers, Simulation
-
-
-

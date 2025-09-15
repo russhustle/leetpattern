@@ -32,6 +32,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-cost-of-trip-with-k-highways/) | [力扣](https://leetcode.cn/problems/maximum-cost-of-trip-with-k-highways/)
 
 -   Tags: Dynamic Programming, Bit Manipulation, Graph, Bitmask
-
-
-

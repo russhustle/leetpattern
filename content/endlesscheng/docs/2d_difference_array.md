@@ -32,6 +32,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/stamping-the-grid/) | [力扣](https://leetcode.cn/problems/stamping-the-grid/)
 
 -   Tags: Array, Greedy, Matrix, Prefix Sum
-
-
-

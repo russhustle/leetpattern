@@ -27,6 +27,12 @@ comments: True
     --8<-- "python/0001_0300/0035_search_insert_position.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0035_search_insert_position.cc"
+    ```
+
 
 
 ## 74. Search a 2D Matrix
@@ -110,6 +116,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0004_median_of_two_sorted_arrays.py"
     ```
-
-
-

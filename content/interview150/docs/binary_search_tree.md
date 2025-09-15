@@ -56,6 +56,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0001_0300/0098_validate_binary_search_tree.cc"
     ```
-
-
-

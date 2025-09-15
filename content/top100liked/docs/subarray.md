@@ -56,6 +56,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0076_minimum_window_substring.py"
     ```
-
-
-

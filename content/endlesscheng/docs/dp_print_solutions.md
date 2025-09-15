@@ -35,7 +35,7 @@ comments: True
 
 
 
-## 1092. Shortest Common Supersequence 
+## 1092. Shortest Common Supersequence
 
 -    [LeetCode](https://leetcode.com/problems/shortest-common-supersequence/) | [力扣](https://leetcode.cn/problems/shortest-common-supersequence/)
 
@@ -104,6 +104,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/encode-string-with-shortest-length/) | [力扣](https://leetcode.cn/problems/encode-string-with-shortest-length/)
 
 -   Tags: String, Dynamic Programming
-
-
-

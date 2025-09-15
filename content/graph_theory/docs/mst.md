@@ -65,6 +65,3 @@ comments: True
     ```python
     --8<-- "python/1201_1500/1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree.py"
     ```
-
-
-

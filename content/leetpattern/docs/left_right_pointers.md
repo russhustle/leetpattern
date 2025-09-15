@@ -79,6 +79,12 @@ comments: True
     --8<-- "python/0001_0300/0069_sqrtx.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0069_sqrtx.cc"
+    ```
+
 
 
 ## 88. Merge Sorted Array
@@ -182,6 +188,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0001_0300/0011_container_with_most_water.cc"
     ```
-
-
-

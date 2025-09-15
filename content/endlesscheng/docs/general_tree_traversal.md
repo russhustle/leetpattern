@@ -44,6 +44,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0582_kill_process.py"
     ```
-
-
-

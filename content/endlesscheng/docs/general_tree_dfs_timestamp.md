@@ -23,6 +23,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/) | [力扣](https://leetcode.cn/problems/check-if-dfs-strings-are-palindromes/)
 
 -   Tags: Array, Hash Table, String, Tree, Depth First Search, Hash Function
-
-
-

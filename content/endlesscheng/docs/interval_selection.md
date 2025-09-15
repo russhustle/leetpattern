@@ -29,6 +29,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/set-intersection-size-at-least-two/) | [力扣](https://leetcode.cn/problems/set-intersection-size-at-least-two/)
 
 -   Tags: Array, Greedy, Sorting
-
-
-

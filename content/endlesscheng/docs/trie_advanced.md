@@ -167,6 +167,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/longest-word-with-all-prefixes/) | [力扣](https://leetcode.cn/problems/longest-word-with-all-prefixes/)
 
 -   Tags: Depth First Search, Trie
-
-
-

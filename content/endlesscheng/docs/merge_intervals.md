@@ -167,6 +167,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/find-maximal-uncovered-ranges/) | [力扣](https://leetcode.cn/problems/find-maximal-uncovered-ranges/)
 
 -   Tags: Array, Sorting
-
-
-

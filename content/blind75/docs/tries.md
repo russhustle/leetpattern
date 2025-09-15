@@ -50,6 +50,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0211_design_add_and_search_words_data_structure.py"
     ```
-
-
-

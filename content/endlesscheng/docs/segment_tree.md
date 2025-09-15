@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/) | [力扣](https://leetcode.cn/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/)
 
 -   Tags: Array, Divide And Conquer, Dynamic Programming, Segment Tree
-
-
-

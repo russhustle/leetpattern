@@ -215,6 +215,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0340_longest_substring_with_at_most_k_distinct_characters.py"
     ```
-
-
-

@@ -107,6 +107,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0323_number_of_connected_components_in_an_undirected_graph.py"
     ```
-
-
-

@@ -239,6 +239,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/number-of-people-that-can-be-seen-in-a-grid/) | [力扣](https://leetcode.cn/problems/number-of-people-that-can-be-seen-in-a-grid/)
 
 -   Tags: Array, Stack, Matrix, Monotonic Stack
-
-
-

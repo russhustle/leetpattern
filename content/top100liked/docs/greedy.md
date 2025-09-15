@@ -77,6 +77,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0763_partition_labels.py"
     ```
-
-
-

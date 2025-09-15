@@ -122,6 +122,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0827_making_a_large_island.py"
     ```
-
-
-

@@ -14,6 +14,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/faulty-keyboard/) | [力扣](https://leetcode.cn/problems/faulty-keyboard/)
 
 -   Tags: String, Simulation
-
-
-

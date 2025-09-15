@@ -113,6 +113,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0001_0300/0210_course_schedule_ii.cc"
     ```
-
-
-

@@ -20,6 +20,3 @@ comments: True
     ```python
     --8<-- "python/2401_2700/2595_number_of_even_and_odd_bits.py"
     ```
-
-
-

@@ -251,6 +251,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/count-ways-to-distribute-candies/) | [力扣](https://leetcode.cn/problems/count-ways-to-distribute-candies/)
 
 -   Tags: Dynamic Programming
-
-
-

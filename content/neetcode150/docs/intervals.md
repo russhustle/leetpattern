@@ -95,6 +95,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | [力扣](https://leetcode.cn/problems/minimum-interval-to-include-each-query/)
 
 -   Tags: Array, Binary Search, Line Sweep, Sorting, Heap Priority Queue
-
-
-

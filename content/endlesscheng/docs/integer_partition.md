@@ -29,6 +29,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximize-number-of-nice-divisors/) | [力扣](https://leetcode.cn/problems/maximize-number-of-nice-divisors/)
 
 -   Tags: Math, Recursion, Number Theory
-
-
-

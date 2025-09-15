@@ -35,6 +35,3 @@ comments: True
     ```python
     --8<-- "python/1201_1500/1429_first_unique_number.py"
     ```
-
-
-

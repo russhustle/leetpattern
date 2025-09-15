@@ -59,6 +59,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/beautiful-pairs/) | [力扣](https://leetcode.cn/problems/beautiful-pairs/)
 
 -   Tags: Array, Math, Divide And Conquer, Geometry, Sorting, Ordered Set
-
-
-

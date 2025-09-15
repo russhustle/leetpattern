@@ -74,6 +74,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/number-of-subarrays-having-even-product/) | [力扣](https://leetcode.cn/problems/number-of-subarrays-having-even-product/)
 
 -   Tags: Array, Math, Dynamic Programming
-
-
-

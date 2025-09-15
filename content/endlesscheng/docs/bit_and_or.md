@@ -101,6 +101,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-number-that-makes-result-of-bitwise-and-zero/) | [力扣](https://leetcode.cn/problems/maximum-number-that-makes-result-of-bitwise-and-zero/)
 
 -   Tags: String, Greedy, Sorting
-
-
-

@@ -20,6 +20,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0874_walking_robot_simulation.py"
     ```
-
-
-

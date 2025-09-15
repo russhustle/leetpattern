@@ -122,6 +122,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/) | [力扣](https://leetcode.cn/problems/minimize-the-maximum-adjacent-element-difference/)
 
 -   Tags: Array, Binary Search, Greedy
-
-
-

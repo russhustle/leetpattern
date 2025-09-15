@@ -46,6 +46,12 @@ comments: True
     --8<-- "python/0301_0600/0344_reverse_string.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0301_0600/0344_reverse_string.cc"
+    ```
+
 
 
 ## 125. Valid Palindrome
@@ -335,6 +341,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/3sum-smaller/) | [力扣](https://leetcode.cn/problems/3sum-smaller/)
 
 -   Tags: Array, Two Pointers, Binary Search, Sorting
-
-
-

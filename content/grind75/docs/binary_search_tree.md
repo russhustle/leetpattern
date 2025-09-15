@@ -56,6 +56,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0230_kth_smallest_element_in_a_bst.py"
     ```
-
-
-

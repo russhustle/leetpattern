@@ -185,6 +185,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/) | [力扣](https://leetcode.cn/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/)
 
 -   Tags: Binary Search, Dynamic Programming, Bit Manipulation
-
-
-

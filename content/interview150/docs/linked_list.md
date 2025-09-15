@@ -182,6 +182,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0001_0300/0146_lru_cache.cc"
     ```
-
-
-

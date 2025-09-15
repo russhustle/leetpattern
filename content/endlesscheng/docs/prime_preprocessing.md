@@ -50,6 +50,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/prime-subtraction-operation/) | [力扣](https://leetcode.cn/problems/prime-subtraction-operation/)
 
 -   Tags: Array, Math, Binary Search, Greedy, Number Theory
-
-
-

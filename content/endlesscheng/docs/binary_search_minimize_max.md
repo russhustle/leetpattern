@@ -125,6 +125,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimize-max-distance-to-gas-station/) | [力扣](https://leetcode.cn/problems/minimize-max-distance-to-gas-station/)
 
 -   Tags: Array, Binary Search
-
-
-

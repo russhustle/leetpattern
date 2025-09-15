@@ -35,6 +35,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/0918_maximum_sum_circular_subarray.py"
     ```
-
-
-

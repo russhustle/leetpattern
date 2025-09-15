@@ -50,6 +50,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/find-the-minimum-cost-array-permutation/) | [力扣](https://leetcode.cn/problems/find-the-minimum-cost-array-permutation/)
 
 -   Tags: Array, Dynamic Programming, Bit Manipulation, Bitmask
-
-
-

@@ -215,6 +215,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/boundary-of-binary-tree/) | [力扣](https://leetcode.cn/problems/boundary-of-binary-tree/)
 
 -   Tags: Tree, Depth First Search, Binary Tree
-
-
-

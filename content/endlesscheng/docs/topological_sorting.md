@@ -200,6 +200,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1136_parallel_courses.py"
     ```
-
-
-

@@ -260,6 +260,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0124_binary_tree_maximum_path_sum.py"
     ```
-
-
-

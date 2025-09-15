@@ -50,6 +50,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/0924_minimize_malware_spread.py"
     ```
-
-
-

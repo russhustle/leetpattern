@@ -182,6 +182,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-gcd-sum-of-a-subarray/) | [力扣](https://leetcode.cn/problems/maximum-gcd-sum-of-a-subarray/)
 
 -   Tags: Array, Math, Binary Search, Number Theory
-
-
-

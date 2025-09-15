@@ -38,6 +38,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/) | [力扣](https://leetcode.cn/problems/minimum-number-of-taps-to-open-to-water-a-garden/)
 
 -   Tags: Array, Dynamic Programming, Greedy
-
-
-

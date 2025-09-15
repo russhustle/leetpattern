@@ -125,6 +125,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/handshakes-that-dont-cross/) | [力扣](https://leetcode.cn/problems/handshakes-that-dont-cross/)
 
 -   Tags: Math, Dynamic Programming
-
-
-

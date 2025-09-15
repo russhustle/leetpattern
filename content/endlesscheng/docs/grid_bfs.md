@@ -251,6 +251,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-time-takes-to-reach-destination-without-drowning/) | [力扣](https://leetcode.cn/problems/minimum-time-takes-to-reach-destination-without-drowning/)
 
 -   Tags: Array, Breadth First Search, Matrix
-
-
-

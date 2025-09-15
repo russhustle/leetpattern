@@ -77,6 +77,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-subtree-of-the-same-color/) | [力扣](https://leetcode.cn/problems/maximum-subtree-of-the-same-color/)
 
 -   Tags: Array, Dynamic Programming, Tree, Depth First Search
-
-
-

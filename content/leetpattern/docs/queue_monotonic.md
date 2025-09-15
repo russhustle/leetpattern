@@ -65,6 +65,3 @@ comments: True
     ```python
     --8<-- "python/2101_2400/2398_maximum_number_of_robots_within_budget.py"
     ```
-
-
-

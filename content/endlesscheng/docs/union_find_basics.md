@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/synonymous-sentences/) | [力扣](https://leetcode.cn/problems/synonymous-sentences/)
 
 -   Tags: Array, Hash Table, String, Backtracking, Union Find
-
-
-

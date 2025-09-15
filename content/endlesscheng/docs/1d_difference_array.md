@@ -392,6 +392,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-total-area-occupied-by-pistons/) | [力扣](https://leetcode.cn/problems/maximum-total-area-occupied-by-pistons/)
 
 -   Tags: Array, Hash Table, String, Simulation, Counting, Prefix Sum
-
-
-

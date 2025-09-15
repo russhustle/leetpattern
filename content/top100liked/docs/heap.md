@@ -56,6 +56,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0001_0300/0295_find_median_from_data_stream.cc"
     ```
-
-
-

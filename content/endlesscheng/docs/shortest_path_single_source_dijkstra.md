@@ -281,6 +281,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/find-the-closest-marked-node/) | [力扣](https://leetcode.cn/problems/find-the-closest-marked-node/)
 
 -   Tags: Array, Graph, Heap Priority Queue, Shortest Path
-
-
-

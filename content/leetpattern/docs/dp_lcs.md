@@ -125,6 +125,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1035_uncrossed_lines.py"
     ```
-
-
-

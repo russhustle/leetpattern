@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/change-the-root-of-a-binary-tree/) | [力扣](https://leetcode.cn/problems/change-the-root-of-a-binary-tree/)
 
 -   Tags: Tree, Depth First Search, Binary Tree
-
-
-

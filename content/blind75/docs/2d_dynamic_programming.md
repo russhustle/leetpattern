@@ -41,6 +41,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1143_longest_common_subsequence.py"
     ```
-
-
-

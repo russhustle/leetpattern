@@ -1,7 +1,9 @@
 from pathlib import Path
-from leetpattern import ProblemSetRepository
+
 import yaml
 from tqdm import tqdm
+
+from leetpattern import ProblemSetRepository
 
 
 def main():

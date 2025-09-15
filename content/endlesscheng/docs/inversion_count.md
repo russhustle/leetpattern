@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/count-pairs-in-two-arrays/) | [力扣](https://leetcode.cn/problems/count-pairs-in-two-arrays/)
 
 -   Tags: Array, Two Pointers, Binary Search, Sorting
-
-
-

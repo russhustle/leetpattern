@@ -305,6 +305,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1167_minimum_cost_to_connect_sticks.py"
     ```
-
-
-

@@ -71,6 +71,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0452_minimum_number_of_arrows_to_burst_balloons.py"
     ```
-
-
-

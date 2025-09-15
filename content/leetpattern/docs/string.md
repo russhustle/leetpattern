@@ -27,6 +27,12 @@ comments: True
     --8<-- "python/0301_0600/0344_reverse_string.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0301_0600/0344_reverse_string.cc"
+    ```
+
 
 
 ## 541. Reverse String II
@@ -110,6 +116,3 @@ comments: True
     ```python
     --8<-- "python/1801_2100/2000_reverse_prefix_of_word.py"
     ```
-
-
-

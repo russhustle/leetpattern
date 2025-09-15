@@ -23,6 +23,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/number-of-excellent-pairs/) | [力扣](https://leetcode.cn/problems/number-of-excellent-pairs/)
 
 -   Tags: Array, Hash Table, Binary Search, Bit Manipulation
-
-
-

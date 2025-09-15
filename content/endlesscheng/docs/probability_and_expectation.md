@@ -59,6 +59,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/toss-strange-coins/) | [力扣](https://leetcode.cn/problems/toss-strange-coins/)
 
 -   Tags: Array, Math, Dynamic Programming, Probability And Statistics
-
-
-

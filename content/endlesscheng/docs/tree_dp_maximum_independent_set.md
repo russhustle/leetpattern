@@ -32,6 +32,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/choose-edges-to-maximize-score-in-a-tree/) | [力扣](https://leetcode.cn/problems/choose-edges-to-maximize-score-in-a-tree/)
 
 -   Tags: Dynamic Programming, Tree, Depth First Search
-
-
-

@@ -77,6 +77,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/divide-chocolate/) | [力扣](https://leetcode.cn/problems/divide-chocolate/)
 
 -   Tags: Array, Binary Search
-
-
-

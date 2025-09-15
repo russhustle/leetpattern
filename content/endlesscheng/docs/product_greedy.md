@@ -23,6 +23,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/) | [力扣](https://leetcode.cn/problems/maximum-length-of-subarray-with-positive-product/)
 
 -   Tags: Array, Dynamic Programming, Greedy
-
-
-

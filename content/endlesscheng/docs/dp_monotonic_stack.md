@@ -41,6 +41,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-number-of-books-you-can-take/) | [力扣](https://leetcode.cn/problems/maximum-number-of-books-you-can-take/)
 
 -   Tags: Array, Dynamic Programming, Stack, Monotonic Stack
-
-
-

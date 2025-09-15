@@ -161,6 +161,3 @@ comments: True
     ```python
     --8<-- "python/2101_2400/2281_sum_of_total_strength_of_wizards.py"
     ```
-
-
-

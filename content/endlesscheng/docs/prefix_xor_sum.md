@@ -56,6 +56,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/) | [力扣](https://leetcode.cn/problems/count-paths-that-can-form-a-palindrome-in-a-tree/)
 
 -   Tags: Dynamic Programming, Bit Manipulation, Tree, Depth First Search, Bitmask
-
-
-

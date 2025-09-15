@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/) | [力扣](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence-ii/)
 
 -   Tags: Tree, Depth First Search, Binary Tree
-
-
-

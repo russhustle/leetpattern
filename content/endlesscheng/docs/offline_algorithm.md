@@ -110,6 +110,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/) | [力扣](https://leetcode.cn/problems/maximum-area-rectangle-with-point-constraints-ii/)
 
 -   Tags: Array, Math, Binary Indexed Tree, Segment Tree, Geometry, Sorting
-
-
-

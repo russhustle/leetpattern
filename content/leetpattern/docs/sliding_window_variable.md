@@ -131,6 +131,3 @@ comments: True
     ```python
     --8<-- "python/1801_2100/2024_maximize_the_confusion_of_an_exam.py"
     ```
-
-
-

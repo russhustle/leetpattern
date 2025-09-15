@@ -103,6 +103,12 @@ comments: True
     --8<-- "python/0001_0300/0202_happy_number.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0202_happy_number.cc"
+    ```
+
 
 
 ## 454. 4Sum II
@@ -116,6 +122,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0454_4sum_ii.py"
     ```
-
-
-

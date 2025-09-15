@@ -65,6 +65,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/) | [力扣](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)
 
 -   Tags: Array, Two Pointers, Stack, Greedy, Sorting, Monotonic Stack
-
-
-

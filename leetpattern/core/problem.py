@@ -155,10 +155,14 @@ class ProblemRepository:
                 else ""
             ),
             sql_snippet=(
-                snippet("SQL", f"sql/{basename}.sql") if if_file_exist(sql_path) else ""
+                snippet("SQL", f"sql/{basename}.sql")
+                if if_file_exist(sql_path)
+                else ""
             ),
             txt_snippet=(
-                snippet("TXT", f"sql/{basename}.txt") if if_file_exist(txt_path) else ""
+                snippet("TXT", f"sql/{basename}.txt")
+                if if_file_exist(txt_path)
+                else ""
             ),
         )
 

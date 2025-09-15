@@ -50,6 +50,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0378_kth_smallest_element_in_a_sorted_matrix.py"
     ```
-
-
-

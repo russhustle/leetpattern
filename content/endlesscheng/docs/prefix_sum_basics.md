@@ -116,6 +116,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) | [力扣](https://leetcode.cn/problems/count-odd-numbers-in-an-interval-range/)
 
 -   Tags: Math
-
-
-

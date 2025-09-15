@@ -105,7 +105,7 @@ comments: True
 
 
 
-## 2317. Maximum XOR After Operations 
+## 2317. Maximum XOR After Operations
 
 -    [LeetCode](https://leetcode.com/problems/maximum-xor-after-operations/) | [力扣](https://leetcode.cn/problems/maximum-xor-after-operations/)
 
@@ -164,6 +164,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/count-triplets-with-even-xor-set-bits-ii/) | [力扣](https://leetcode.cn/problems/count-triplets-with-even-xor-set-bits-ii/)
 
 -   Tags: Array, Bit Manipulation
-
-
-

@@ -110,6 +110,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree/) | [力扣](https://leetcode.cn/problems/encode-n-ary-tree-to-binary-tree/)
 
 -   Tags: Tree, Depth First Search, Breadth First Search, Design, Binary Tree
-
-
-

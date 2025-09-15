@@ -86,6 +86,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0815_bus_routes.py"
     ```
-
-
-

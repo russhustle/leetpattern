@@ -20,6 +20,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0383_ransom_note.py"
     ```
-
-
-

@@ -92,6 +92,3 @@ comments: True
     ```python
     --8<-- "python/1801_2100/1857_largest_color_value_in_a_directed_graph.py"
     ```
-
-
-

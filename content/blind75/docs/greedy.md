@@ -41,6 +41,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0001_0300/0055_jump_game.cc"
     ```
-
-
-

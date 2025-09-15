@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/department-top-three-salaries/) | [力扣](https://leetcode.cn/problems/department-top-three-salaries/)
 
 -   Tags: Database
-
-
-

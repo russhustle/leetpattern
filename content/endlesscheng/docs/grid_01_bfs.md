@@ -41,6 +41,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-sideway-jumps/) | [力扣](https://leetcode.cn/problems/minimum-sideway-jumps/)
 
 -   Tags: Array, Dynamic Programming, Greedy
-
-
-

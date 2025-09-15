@@ -137,6 +137,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/smallest-number-with-given-digit-product/) | [力扣](https://leetcode.cn/problems/smallest-number-with-given-digit-product/)
 
 -   Tags: Math, Greedy
-
-
-

@@ -80,6 +80,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/binary-tree-vertical-order-traversal/) | [力扣](https://leetcode.cn/problems/binary-tree-vertical-order-traversal/)
 
 -   Tags: Hash Table, Tree, Depth First Search, Breadth First Search, Sorting, Binary Tree
-
-
-

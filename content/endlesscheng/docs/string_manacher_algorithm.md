@@ -83,6 +83,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/) | [力扣](https://leetcode.cn/problems/maximum-product-of-the-length-of-two-palindromic-substrings/)
 
 -   Tags: String, Rolling Hash, Hash Function
-
-
-

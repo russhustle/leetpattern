@@ -110,6 +110,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/largest-palindrome-product/) | [力扣](https://leetcode.cn/problems/largest-palindrome-product/)
 
 -   Tags: Math, Enumeration
-
-
-

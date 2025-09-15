@@ -32,6 +32,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/amount-of-new-area-painted-each-day/) | [力扣](https://leetcode.cn/problems/amount-of-new-area-painted-each-day/)
 
 -   Tags: Array, Segment Tree, Ordered Set
-
-
-

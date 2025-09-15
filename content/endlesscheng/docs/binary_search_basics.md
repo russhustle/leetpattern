@@ -45,6 +45,12 @@ comments: True
     --8<-- "python/0001_0300/0035_search_insert_position.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0035_search_insert_position.cc"
+    ```
+
 
 
 ## 704. Binary Search
@@ -86,6 +92,3 @@ comments: True
     ```python
     --8<-- "python/2401_2700/2529_maximum_count_of_positive_integer_and_negative_integer.py"
     ```
-
-
-

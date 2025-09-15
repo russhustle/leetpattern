@@ -86,6 +86,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1049_last_stone_weight_ii.py"
     ```
-
-
-

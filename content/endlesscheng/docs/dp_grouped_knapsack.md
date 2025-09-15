@@ -32,6 +32,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/) | [力扣](https://leetcode.cn/problems/maximum-value-of-k-coins-from-piles/)
 
 -   Tags: Array, Dynamic Programming, Prefix Sum
-
-
-

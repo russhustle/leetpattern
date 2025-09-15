@@ -23,6 +23,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/) | [力扣](https://leetcode.cn/problems/preimage-size-of-factorial-zeroes-function/)
 
 -   Tags: Math, Binary Search
-
-
-

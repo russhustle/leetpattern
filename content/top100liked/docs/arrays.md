@@ -98,6 +98,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0041_first_missing_positive.py"
     ```
-
-
-

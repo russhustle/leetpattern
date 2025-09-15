@@ -128,6 +128,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0084_largest_rectangle_in_histogram.py"
     ```
-
-
-

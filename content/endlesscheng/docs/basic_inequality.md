@@ -41,6 +41,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | [力扣](https://leetcode.cn/problems/apply-operations-on-array-to-maximize-sum-of-squares/)
 
 -   Tags: Array, Hash Table, Greedy, Bit Manipulation
-
-
-

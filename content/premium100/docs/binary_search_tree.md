@@ -56,6 +56,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/largest-bst-subtree/) | [力扣](https://leetcode.cn/problems/largest-bst-subtree/)
 
 -   Tags: Dynamic Programming, Tree, Depth First Search, Binary Search Tree, Binary Tree
-
-
-

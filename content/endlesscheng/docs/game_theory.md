@@ -218,6 +218,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/the-wording-game/) | [力扣](https://leetcode.cn/problems/the-wording-game/)
 
 -   Tags: Array, Math, Two Pointers, String, Greedy, Game Theory
-
-
-

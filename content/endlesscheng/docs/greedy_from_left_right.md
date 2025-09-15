@@ -236,6 +236,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/) | [力扣](https://leetcode.cn/problems/merge-operations-to-turn-array-into-a-palindrome/)
 
 -   Tags: Array, Two Pointers, Greedy
-
-
-

@@ -41,6 +41,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0438_find_all_anagrams_in_a_string.py"
     ```
-
-
-

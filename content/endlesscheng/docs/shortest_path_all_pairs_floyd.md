@@ -59,6 +59,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/detonate-the-maximum-bombs/) | [力扣](https://leetcode.cn/problems/detonate-the-maximum-bombs/)
 
 -   Tags: Array, Math, Depth First Search, Breadth First Search, Graph, Geometry
-
-
-

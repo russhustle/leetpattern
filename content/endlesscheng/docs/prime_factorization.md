@@ -95,6 +95,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/count-the-number-of-ideal-arrays/) | [力扣](https://leetcode.cn/problems/count-the-number-of-ideal-arrays/)
 
 -   Tags: Math, Dynamic Programming, Combinatorics, Number Theory
-
-
-

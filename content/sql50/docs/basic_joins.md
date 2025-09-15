@@ -86,6 +86,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/confirmation-rate/) | [力扣](https://leetcode.cn/problems/confirmation-rate/)
 
 -   Tags: Database
-
-
-

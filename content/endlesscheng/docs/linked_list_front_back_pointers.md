@@ -53,6 +53,3 @@ comments: True
     ```python
     --8<-- "python/1201_1500/1474_delete_n_nodes_after_m_nodes_of_a_linked_list.py"
     ```
-
-
-

@@ -71,6 +71,3 @@ comments: True
     ```python
     --8<-- "python/2401_2700/2576_find_the_maximum_number_of_marked_indices.py"
     ```
-
-
-

@@ -80,6 +80,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1186_maximum_subarray_sum_with_one_deletion.py"
     ```
-
-
-

@@ -161,6 +161,3 @@ comments: True
     ```python
     --8<-- "python/1501_1800/1658_minimum_operations_to_reduce_x_to_zero.py"
     ```
-
-
-

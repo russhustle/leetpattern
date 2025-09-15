@@ -65,6 +65,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/find-triangular-sum-of-an-array/) | [力扣](https://leetcode.cn/problems/find-triangular-sum-of-an-array/)
 
 -   Tags: Array, Math, Simulation, Combinatorics
-
-
-

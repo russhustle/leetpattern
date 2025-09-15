@@ -158,6 +158,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0297_serialize_and_deserialize_binary_tree.py"
     ```
-
-
-

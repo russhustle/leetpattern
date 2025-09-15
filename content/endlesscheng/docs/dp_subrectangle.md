@@ -50,6 +50,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | [力扣](https://leetcode.cn/problems/find-the-minimum-area-to-cover-all-ones-ii/)
 
 -   Tags: Array, Matrix, Enumeration
-
-
-

@@ -32,6 +32,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/delete-nodes-and-return-forest/) | [力扣](https://leetcode.cn/problems/delete-nodes-and-return-forest/)
 
 -   Tags: Array, Hash Table, Tree, Depth First Search, Binary Tree
-
-
-

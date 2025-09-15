@@ -128,6 +128,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/) | [力扣](https://leetcode.cn/problems/array-with-elements-not-equal-to-average-of-neighbors/)
 
 -   Tags: Array, Greedy, Sorting
-
-
-

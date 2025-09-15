@@ -173,6 +173,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximize-total-tastiness-of-purchased-fruits/) | [力扣](https://leetcode.cn/problems/maximize-total-tastiness-of-purchased-fruits/)
 
 -   Tags: Array, Dynamic Programming
-
-
-

@@ -35,6 +35,12 @@ comments: True
     --8<-- "python/1201_1500/1456_maximum_number_of_vowels_in_a_substring_of_given_length.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/1201_1500/1456_maximum_number_of_vowels_in_a_substring_of_given_length.cc"
+    ```
+
 
 
 ## 643. Maximum Average Subarray I
@@ -230,6 +236,3 @@ comments: True
     ```python
     --8<-- "python/2101_2400/2107_number_of_unique_flavors_after_sharing_k_candies.py"
     ```
-
-
-

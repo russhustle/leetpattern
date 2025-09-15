@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) | [力扣](https://leetcode.cn/problems/maximum-number-of-jumps-to-reach-the-last-index/)
 
 -   Tags: Array, Dynamic Programming
-
-
-

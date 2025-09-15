@@ -59,6 +59,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/convex-polygon/) | [力扣](https://leetcode.cn/problems/convex-polygon/)
 
 -   Tags: Array, Math, Geometry
-
-
-

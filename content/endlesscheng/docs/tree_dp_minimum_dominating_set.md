@@ -20,6 +20,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/0968_binary_tree_cameras.py"
     ```
-
-
-

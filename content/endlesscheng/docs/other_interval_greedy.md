@@ -50,6 +50,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/) | [力扣](https://leetcode.cn/problems/minimum-time-to-complete-all-tasks/)
 
 -   Tags: Array, Binary Search, Stack, Greedy, Sorting
-
-
-

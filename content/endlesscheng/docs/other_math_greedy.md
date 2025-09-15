@@ -41,6 +41,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimize-rounding-error-to-meet-target/) | [力扣](https://leetcode.cn/problems/minimize-rounding-error-to-meet-target/)
 
 -   Tags: Array, Math, String, Greedy, Sorting
-
-
-

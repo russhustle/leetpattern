@@ -206,6 +206,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0001_0300/0011_container_with_most_water.cc"
     ```
-
-
-

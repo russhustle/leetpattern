@@ -32,6 +32,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/make-sum-divisible-by-p/) | [力扣](https://leetcode.cn/problems/make-sum-divisible-by-p/)
 
 -   Tags: Array, Hash Table, Prefix Sum
-
-
-

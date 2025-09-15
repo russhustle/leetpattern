@@ -110,6 +110,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0845_longest_mountain_in_array.py"
     ```
-
-
-

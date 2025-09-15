@@ -95,6 +95,3 @@ comments: True
     ```python
     --8<-- "python/1501_1800/1579_remove_max_number_of_edges_to_keep_graph_fully_traversable.py"
     ```
-
-
-

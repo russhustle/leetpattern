@@ -65,6 +65,3 @@ comments: True
     ```python
     --8<-- "python/2701_3000/2848_points_that_intersect_with_cars.py"
     ```
-
-
-

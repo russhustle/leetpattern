@@ -161,6 +161,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0001_0300/0236_lowest_common_ancestor_of_a_binary_tree.cc"
     ```
-
-
-

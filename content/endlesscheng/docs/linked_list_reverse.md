@@ -74,6 +74,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) | [力扣](https://leetcode.cn/problems/reverse-nodes-in-even-length-groups/)
 
 -   Tags: Linked List
-
-
-

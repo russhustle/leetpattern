@@ -86,6 +86,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0617_merge_two_binary_trees.py"
     ```
-
-
-

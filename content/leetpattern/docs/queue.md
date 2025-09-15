@@ -35,6 +35,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0225_implement_stack_using_queues.py"
     ```
-
-
-

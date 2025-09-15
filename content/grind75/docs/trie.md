@@ -36,5 +36,8 @@ comments: True
     --8<-- "python/0001_0300/0139_word_break.py"
     ```
 
+=== "CPP"
 
-
+    ```cpp
+    --8<-- "cpp/0001_0300/0139_word_break.cc"
+    ```

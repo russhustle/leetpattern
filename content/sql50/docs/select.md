@@ -50,6 +50,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/invalid-tweets/) | [力扣](https://leetcode.cn/problems/invalid-tweets/)
 
 -   Tags: Database
-
-
-

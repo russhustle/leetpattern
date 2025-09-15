@@ -86,6 +86,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/) | [力扣](https://leetcode.cn/problems/minimum-fuel-cost-to-report-to-the-capital/)
 
 -   Tags: Tree, Depth First Search, Breadth First Search, Graph
-
-
-

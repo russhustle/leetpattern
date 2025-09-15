@@ -74,6 +74,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/0992_subarrays_with_k_different_integers.py"
     ```
-
-
-

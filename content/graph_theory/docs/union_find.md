@@ -65,6 +65,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0839_similar_string_groups.py"
     ```
-
-
-

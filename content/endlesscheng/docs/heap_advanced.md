@@ -284,6 +284,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-time-to-build-blocks/) | [力扣](https://leetcode.cn/problems/minimum-time-to-build-blocks/)
 
 -   Tags: Array, Math, Greedy, Heap Priority Queue
-
-
-

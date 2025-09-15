@@ -112,6 +112,12 @@ comments: True
     --8<-- "python/0001_0300/0139_word_break.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0139_word_break.cc"
+    ```
+
 
 
 ## 300. Longest Increasing Subsequence
@@ -167,6 +173,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0032_longest_valid_parentheses.py"
     ```
-
-
-

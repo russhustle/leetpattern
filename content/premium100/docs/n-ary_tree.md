@@ -38,6 +38,3 @@ comments: True
     ```python
     --8<-- "python/1501_1800/1522_diameter_of_n_ary_tree.py"
     ```
-
-
-

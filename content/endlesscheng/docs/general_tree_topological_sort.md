@@ -29,6 +29,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/collect-coins-in-a-tree/) | [力扣](https://leetcode.cn/problems/collect-coins-in-a-tree/)
 
 -   Tags: Array, Tree, Graph, Topological Sort
-
-
-

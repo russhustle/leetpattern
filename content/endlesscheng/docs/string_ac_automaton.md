@@ -41,6 +41,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/) | [力扣](https://leetcode.cn/problems/minimum-number-of-valid-strings-to-form-target-ii/)
 
 -   Tags: Array, String, Binary Search, Dynamic Programming, Segment Tree, Rolling Hash, String Matching, Hash Function
-
-
-

@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/count-salary-categories/) | [力扣](https://leetcode.cn/problems/count-salary-categories/)
 
 -   Tags: Database
-
-
-

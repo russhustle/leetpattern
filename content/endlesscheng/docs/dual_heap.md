@@ -82,7 +82,7 @@ comments: True
 
 
 
-## 3369. Design an Array Statistics Tracker 
+## 3369. Design an Array Statistics Tracker
 
 -    [LeetCode](https://leetcode.com/problems/design-an-array-statistics-tracker/) | [力扣](https://leetcode.cn/problems/design-an-array-statistics-tracker/)
 
@@ -95,6 +95,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-operations-to-make-subarray-elements-equal/) | [力扣](https://leetcode.cn/problems/minimum-operations-to-make-subarray-elements-equal/)
 
 -   Tags: Array, Hash Table, Math, Sliding Window, Heap Priority Queue
-
-
-

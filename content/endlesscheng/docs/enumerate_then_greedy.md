@@ -65,6 +65,3 @@ comments: True
     ```cpp
     --8<-- "cpp/2101_2400/2234_maximum_total_beauty_of_the_gardens.cc"
     ```
-
-
-

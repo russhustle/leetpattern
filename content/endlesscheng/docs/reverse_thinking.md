@@ -92,6 +92,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/stamping-the-sequence/) | [力扣](https://leetcode.cn/problems/stamping-the-sequence/)
 
 -   Tags: String, Stack, Greedy, Queue
-
-
-

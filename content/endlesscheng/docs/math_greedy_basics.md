@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/integer-replacement/) | [力扣](https://leetcode.cn/problems/integer-replacement/)
 
 -   Tags: Dynamic Programming, Greedy, Bit Manipulation, Memoization
-
-
-

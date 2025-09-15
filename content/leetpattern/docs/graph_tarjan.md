@@ -20,6 +20,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1192_critical_connections_in_a_network.py"
     ```
-
-
-

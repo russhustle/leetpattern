@@ -68,7 +68,7 @@ comments: True
 
 
 
-## 1092. Shortest Common Supersequence 
+## 1092. Shortest Common Supersequence
 
 -    [LeetCode](https://leetcode.com/problems/shortest-common-supersequence/) | [力扣](https://leetcode.cn/problems/shortest-common-supersequence/)
 
@@ -89,6 +89,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/regular-expression-matching/) | [力扣](https://leetcode.cn/problems/regular-expression-matching/)
 
 -   Tags: String, Dynamic Programming, Recursion
-
-
-

@@ -29,6 +29,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/) | [力扣](https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/)
 
 -   Tags: String, Dynamic Programming, Prefix Sum
-
-
-

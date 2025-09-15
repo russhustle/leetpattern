@@ -32,6 +32,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/closest-node-to-path-in-tree/) | [力扣](https://leetcode.cn/problems/closest-node-to-path-in-tree/)
 
 -   Tags: Array, Tree, Depth First Search, Breadth First Search
-
-
-

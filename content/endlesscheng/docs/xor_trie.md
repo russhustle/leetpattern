@@ -59,6 +59,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-xor-of-two-non-overlapping-subtrees/) | [力扣](https://leetcode.cn/problems/maximum-xor-of-two-non-overlapping-subtrees/)
 
 -   Tags: Tree, Depth First Search, Graph, Trie
-
-
-

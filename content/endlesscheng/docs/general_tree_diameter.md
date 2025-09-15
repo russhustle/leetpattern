@@ -65,6 +65,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/find-the-last-marked-nodes-in-tree/) | [力扣](https://leetcode.cn/problems/find-the-last-marked-nodes-in-tree/)
 
 -   Tags: Tree, Depth First Search
-
-
-

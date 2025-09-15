@@ -74,6 +74,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/) | [力扣](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/)
 
 -   Tags: Array, Greedy, Sorting
-
-
-

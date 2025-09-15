@@ -56,6 +56,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/count-connected-components-in-lcm-graph/) | [力扣](https://leetcode.cn/problems/count-connected-components-in-lcm-graph/)
 
 -   Tags: Array, Hash Table, Math, Union Find, Number Theory
-
-
-

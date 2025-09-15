@@ -287,6 +287,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/count-pairs-of-equal-substrings-with-minimum-difference/) | [力扣](https://leetcode.cn/problems/count-pairs-of-equal-substrings-with-minimum-difference/)
 
 -   Tags: Hash Table, String, Greedy
-
-
-

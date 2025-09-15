@@ -74,6 +74,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-possible-number-by-binary-concatenation/) | [力扣](https://leetcode.cn/problems/maximum-possible-number-by-binary-concatenation/)
 
 -   Tags: Array, Bit Manipulation, Enumeration
-
-
-

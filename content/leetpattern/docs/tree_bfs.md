@@ -155,6 +155,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0863_all_nodes_distance_k_in_binary_tree.py"
     ```
-
-
-

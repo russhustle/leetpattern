@@ -101,6 +101,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/) | [力扣](https://leetcode.cn/problems/find-smallest-common-element-in-all-rows/)
 
 -   Tags: Array, Hash Table, Binary Search, Matrix, Counting
-
-
-

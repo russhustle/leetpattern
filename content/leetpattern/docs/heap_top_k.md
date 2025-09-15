@@ -140,6 +140,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0786_k_th_smallest_prime_fraction.py"
     ```
-
-
-

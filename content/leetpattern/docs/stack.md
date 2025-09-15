@@ -197,6 +197,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0770_basic_calculator_iv.py"
     ```
-
-
-

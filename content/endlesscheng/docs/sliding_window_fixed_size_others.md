@@ -38,6 +38,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/contains-duplicate-iii/) | [力扣](https://leetcode.cn/problems/contains-duplicate-iii/)
 
 -   Tags: Array, Sliding Window, Sorting, Bucket Sort, Ordered Set
-
-
-

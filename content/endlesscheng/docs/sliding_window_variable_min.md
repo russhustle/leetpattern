@@ -95,6 +95,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0632_smallest_range_covering_elements_from_k_lists.py"
     ```
-
-
-

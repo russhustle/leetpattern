@@ -104,6 +104,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/best-meeting-point/) | [力扣](https://leetcode.cn/problems/best-meeting-point/)
 
 -   Tags: Array, Math, Sorting, Matrix
-
-
-

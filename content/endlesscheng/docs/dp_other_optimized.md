@@ -68,6 +68,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/) | [力扣](https://leetcode.cn/problems/make-array-non-decreasing-or-non-increasing/)
 
 -   Tags: Dynamic Programming, Greedy
-
-
-

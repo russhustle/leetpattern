@@ -122,6 +122,3 @@ comments: True
     ```python
     --8<-- "python/2701_3000/2927_distribute_candies_among_children_iii.py"
     ```
-
-
-

@@ -80,6 +80,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) | [力扣](https://leetcode.cn/problems/maximum-total-damage-with-spell-casting/)
 
 -   Tags: Array, Hash Table, Two Pointers, Binary Search, Dynamic Programming, Sorting, Counting
-
-
-

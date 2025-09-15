@@ -50,6 +50,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0017_letter_combinations_of_a_phone_number.py"
     ```
-
-
-

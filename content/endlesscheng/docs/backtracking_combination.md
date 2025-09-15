@@ -59,6 +59,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/remove-invalid-parentheses/) | [力扣](https://leetcode.cn/problems/remove-invalid-parentheses/)
 
 -   Tags: String, Backtracking, Breadth First Search
-
-
-

@@ -6,8 +6,8 @@ __author__ = "Sihan A"
 
 # from .core.generator import DocumentationGenerator
 from .core.problem import Problem, ProblemRepository
-from .core.topic import Topic, TopicRepository
 from .core.problem_set import ProblemSet, ProblemSetRepository
+from .core.topic import Topic, TopicRepository
 
 __all__ = [
     "Problem",

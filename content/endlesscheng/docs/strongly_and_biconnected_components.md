@@ -38,6 +38,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-runes-to-add-to-cast-spell/) | [力扣](https://leetcode.cn/problems/minimum-runes-to-add-to-cast-spell/)
 
 -   Tags: Array, Depth First Search, Breadth First Search, Union Find, Graph, Topological Sort
-
-
-

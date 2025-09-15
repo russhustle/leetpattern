@@ -83,6 +83,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) | [力扣](https://leetcode.cn/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/)
 
 -   Tags: Linked List, Stack, Tree, Depth First Search, Binary Search Tree, Binary Tree, Doubly Linked List
-
-
-

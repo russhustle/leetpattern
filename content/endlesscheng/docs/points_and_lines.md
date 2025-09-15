@@ -41,6 +41,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/) | [力扣](https://leetcode.cn/problems/minimum-number-of-lines-to-cover-points/)
 
 -   Tags: Array, Hash Table, Math, Dynamic Programming, Backtracking, Bit Manipulation, Geometry, Bitmask
-
-
-

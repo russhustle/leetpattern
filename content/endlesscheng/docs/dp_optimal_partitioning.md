@@ -170,6 +170,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-subarrays-in-a-valid-split/) | [力扣](https://leetcode.cn/problems/minimum-subarrays-in-a-valid-split/)
 
 -   Tags: Array, Math, Dynamic Programming, Number Theory
-
-
-

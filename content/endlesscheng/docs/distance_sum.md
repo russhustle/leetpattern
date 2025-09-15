@@ -74,6 +74,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-operations-to-make-subarray-elements-equal/) | [力扣](https://leetcode.cn/problems/minimum-operations-to-make-subarray-elements-equal/)
 
 -   Tags: Array, Hash Table, Math, Sliding Window, Heap Priority Queue
-
-
-

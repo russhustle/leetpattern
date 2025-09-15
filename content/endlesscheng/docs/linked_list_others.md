@@ -47,6 +47,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/print-immutable-linked-list-in-reverse/) | [力扣](https://leetcode.cn/problems/print-immutable-linked-list-in-reverse/)
 
 -   Tags: Linked List, Two Pointers, Stack, Recursion
-
-
-

@@ -113,6 +113,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/number-of-ways-to-reach-destination-in-the-grid/) | [力扣](https://leetcode.cn/problems/number-of-ways-to-reach-destination-in-the-grid/)
 
 -   Tags: Math, Dynamic Programming, Combinatorics
-
-
-

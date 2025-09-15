@@ -83,6 +83,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/max-dot-product-of-two-subsequences/) | [力扣](https://leetcode.cn/problems/max-dot-product-of-two-subsequences/)
 
 -   Tags: Array, Dynamic Programming
-
-
-

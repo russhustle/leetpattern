@@ -60,7 +60,7 @@ comments: True
 
 
 
-## 1691. Maximum Height by Stacking Cuboids 
+## 1691. Maximum Height by Stacking Cuboids
 
 -    [LeetCode](https://leetcode.com/problems/maximum-height-by-stacking-cuboids/) | [力扣](https://leetcode.cn/problems/maximum-height-by-stacking-cuboids/)
 
@@ -119,6 +119,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/largest-divisible-subset/) | [力扣](https://leetcode.cn/problems/largest-divisible-subset/)
 
 -   Tags: Array, Math, Dynamic Programming, Sorting
-
-
-

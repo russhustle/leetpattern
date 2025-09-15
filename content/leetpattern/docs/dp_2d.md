@@ -71,6 +71,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0063_unique_paths_ii.py"
     ```
-
-
-

@@ -120,6 +120,12 @@ comments: True
     --8<-- "python/0001_0300/0122_best_time_to_buy_and_sell_stock_ii.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0122_best_time_to_buy_and_sell_stock_ii.cc"
+    ```
+
 
 
 ## 714. Best Time to Buy and Sell Stock with Transaction Fee
@@ -218,6 +224,12 @@ comments: True
     --8<-- "python/0001_0300/0134_gas_station.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0134_gas_station.cc"
+    ```
+
 
 
 ## 968. Binary Tree Cameras
@@ -245,6 +257,3 @@ comments: True
     ```python
     --8<-- "python/1501_1800/1589_maximum_sum_obtained_of_any_permutation.py"
     ```
-
-
-

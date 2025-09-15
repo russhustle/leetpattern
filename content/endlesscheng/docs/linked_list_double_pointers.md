@@ -38,6 +38,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0160_intersection_of_two_linked_lists.py"
     ```
-
-
-

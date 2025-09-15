@@ -26,6 +26,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0901_1200/1046_last_stone_weight.cc"
     ```
-
-
-

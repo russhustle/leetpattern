@@ -76,6 +76,12 @@ comments: True
     --8<-- "python/0001_0300/0134_gas_station.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0134_gas_station.cc"
+    ```
+
 
 
 ## 846. Hand of Straights
@@ -131,6 +137,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0678_valid_parenthesis_string.py"
     ```
-
-
-

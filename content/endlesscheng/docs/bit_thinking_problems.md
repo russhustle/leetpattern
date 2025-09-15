@@ -122,6 +122,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/guess-the-number-using-bitwise-questions-ii/) | [力扣](https://leetcode.cn/problems/guess-the-number-using-bitwise-questions-ii/)
 
 -   Tags: Bit Manipulation, Interactive
-
-
-

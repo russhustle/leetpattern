@@ -185,6 +185,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) | [力扣](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)
 
 -   Tags: Array, Binary Search
-
-
-

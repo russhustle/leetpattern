@@ -122,6 +122,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/is-array-a-preorder-of-some-binary-tree/) | [力扣](https://leetcode.cn/problems/is-array-a-preorder-of-some-binary-tree/)
 
 -   Tags: Stack, Tree, Depth First Search, Binary Tree
-
-
-

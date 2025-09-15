@@ -29,6 +29,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/check-for-contradictions-in-equations/) | [力扣](https://leetcode.cn/problems/check-for-contradictions-in-equations/)
 
 -   Tags: Array, Depth First Search, Union Find, Graph
-
-
-

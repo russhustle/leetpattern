@@ -17,27 +17,27 @@ file(GLOB_RECURSE CPP_FILES "*.cc")
 foreach(CPP_FILE ${CPP_FILES})
     # Get filename without extension
     get_filename_component(EXEC_NAME ${CPP_FILE} NAME_WE)
-    
+
     # Get the directory of the file to create unique names if needed
     get_filename_component(FILE_DIR ${CPP_FILE} DIRECTORY)
     get_filename_component(DIR_NAME ${FILE_DIR} NAME)
-    
+
     # Create unique executable name (useful if you have same filenames in different folders)
     if(NOT "${DIR_NAME}" STREQUAL "")
         set(UNIQUE_EXEC_NAME "${DIR_NAME}_${EXEC_NAME}")
     else()
         set(UNIQUE_EXEC_NAME "${EXEC_NAME}")
     endif()
-    
+
     # Create executable
     add_executable(${UNIQUE_EXEC_NAME} ${CPP_FILE})
-    
+
     # Add to a list for batch operations
     list(APPEND ALL_EXECUTABLES ${UNIQUE_EXEC_NAME})
 endforeach()
 
 # Create a custom target to build all executables
-add_custom_target(build_all 
+add_custom_target(build_all
     DEPENDS ${ALL_EXECUTABLES}
     COMMENT "Building all C++ problems"
 )

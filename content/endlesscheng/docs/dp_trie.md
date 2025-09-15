@@ -24,6 +24,12 @@ comments: True
     --8<-- "python/0001_0300/0139_word_break.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0139_word_break.cc"
+    ```
+
 
 
 ## 140. Word Break II
@@ -47,6 +53,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) | [力扣](https://leetcode.cn/problems/minimum-cost-to-convert-string-ii/)
 
 -   Tags: Array, String, Dynamic Programming, Graph, Trie, Shortest Path
-
-
-

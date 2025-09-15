@@ -176,6 +176,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0338_counting_bits.py"
     ```
-
-
-

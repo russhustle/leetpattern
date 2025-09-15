@@ -83,6 +83,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimizing-array-after-replacing-pairs-with-their-product/) | [力扣](https://leetcode.cn/problems/minimizing-array-after-replacing-pairs-with-their-product/)
 
 -   Tags: Array, Dynamic Programming, Greedy
-
-
-

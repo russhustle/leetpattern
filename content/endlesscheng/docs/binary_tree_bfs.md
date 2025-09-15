@@ -326,6 +326,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/correct-a-binary-tree/) | [力扣](https://leetcode.cn/problems/correct-a-binary-tree/)
 
 -   Tags: Hash Table, Tree, Depth First Search, Breadth First Search, Binary Tree
-
-
-

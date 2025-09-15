@@ -38,6 +38,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/valid-arrangement-of-pairs/) | [力扣](https://leetcode.cn/problems/valid-arrangement-of-pairs/)
 
 -   Tags: Depth First Search, Graph, Eulerian Circuit
-
-
-

@@ -41,6 +41,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/) | [力扣](https://leetcode.cn/problems/number-of-subarrays-with-lcm-equal-to-k/)
 
 -   Tags: Array, Math, Number Theory
-
-
-

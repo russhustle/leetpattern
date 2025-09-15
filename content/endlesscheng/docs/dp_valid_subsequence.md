@@ -104,6 +104,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/longest-string-chain/) | [力扣](https://leetcode.cn/problems/longest-string-chain/)
 
 -   Tags: Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting
-
-
-

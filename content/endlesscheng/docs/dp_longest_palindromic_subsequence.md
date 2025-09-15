@@ -74,6 +74,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/palindrome-removal/) | [力扣](https://leetcode.cn/problems/palindrome-removal/)
 
 -   Tags: Array, Dynamic Programming
-
-
-

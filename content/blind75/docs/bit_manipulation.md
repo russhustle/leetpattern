@@ -80,6 +80,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0371_sum_of_two_integers.py"
     ```
-
-
-

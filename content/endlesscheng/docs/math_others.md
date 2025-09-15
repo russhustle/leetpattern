@@ -296,6 +296,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/color-the-triangle-red/) | [力扣](https://leetcode.cn/problems/color-the-triangle-red/)
 
 -   Tags: Array, Math
-
-
-

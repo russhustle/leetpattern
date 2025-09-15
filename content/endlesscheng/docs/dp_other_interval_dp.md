@@ -179,6 +179,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-number-of-removal-queries-that-can-be-processed-i/) | [力扣](https://leetcode.cn/problems/maximum-number-of-removal-queries-that-can-be-processed-i/)
 
 -   Tags: Array, Dynamic Programming
-
-
-

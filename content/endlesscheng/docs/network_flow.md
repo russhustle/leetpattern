@@ -140,6 +140,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-total-distance-traveled/) | [力扣](https://leetcode.cn/problems/minimum-total-distance-traveled/)
 
 -   Tags: Array, Dynamic Programming, Sorting
-
-
-

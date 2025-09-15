@@ -44,6 +44,3 @@ comments: True
     ```cpp
     --8<-- "cpp/0301_0600/0437_path_sum_iii.cc"
     ```
-
-
-

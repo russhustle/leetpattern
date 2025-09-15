@@ -110,6 +110,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/shortest-way-to-form-string/) | [力扣](https://leetcode.cn/problems/shortest-way-to-form-string/)
 
 -   Tags: Two Pointers, String, Binary Search, Greedy
-
-
-

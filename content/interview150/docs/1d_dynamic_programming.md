@@ -65,6 +65,12 @@ comments: True
     --8<-- "python/0001_0300/0139_word_break.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0139_word_break.cc"
+    ```
+
 
 
 ## 322. Coin Change
@@ -92,6 +98,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0300_longest_increasing_subsequence.py"
     ```
-
-
-

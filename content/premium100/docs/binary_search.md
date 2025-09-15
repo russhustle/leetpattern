@@ -65,6 +65,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-average-subarray-ii/) | [力扣](https://leetcode.cn/problems/maximum-average-subarray-ii/)
 
 -   Tags: Array, Binary Search, Prefix Sum
-
-
-

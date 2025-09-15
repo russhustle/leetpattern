@@ -29,6 +29,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/design-search-autocomplete-system/) | [力扣](https://leetcode.cn/problems/design-search-autocomplete-system/)
 
 -   Tags: String, Depth First Search, Design, Trie, Sorting, Heap Priority Queue, Data Stream
-
-
-

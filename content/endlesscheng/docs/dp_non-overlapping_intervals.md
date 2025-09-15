@@ -59,6 +59,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | [力扣](https://leetcode.cn/problems/maximum-score-of-non-overlapping-intervals/)
 
 -   Tags: Array, Binary Search, Dynamic Programming, Sorting
-
-
-

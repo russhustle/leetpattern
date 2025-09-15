@@ -35,6 +35,3 @@ comments: True
     ```python
     --8<-- "python/0601_0900/0886_possible_bipartition.py"
     ```
-
-
-

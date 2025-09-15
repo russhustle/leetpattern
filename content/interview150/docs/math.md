@@ -40,6 +40,12 @@ comments: True
     --8<-- "python/0001_0300/0066_plus_one.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0066_plus_one.cc"
+    ```
+
 
 
 ## 172. Factorial Trailing Zeroes
@@ -60,6 +66,12 @@ comments: True
 
     ```python
     --8<-- "python/0001_0300/0069_sqrtx.py"
+    ```
+
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0069_sqrtx.cc"
     ```
 
 
@@ -89,6 +101,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0149_max_points_on_a_line.py"
     ```
-
-
-

@@ -128,6 +128,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximal-square/) | [力扣](https://leetcode.cn/problems/maximal-square/)
 
 -   Tags: Array, Dynamic Programming, Matrix
-
-
-

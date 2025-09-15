@@ -227,6 +227,3 @@ comments: True
     ```python
     --8<-- "python/1501_1800/1586_binary_search_tree_iterator_ii.py"
     ```
-
-
-

@@ -134,6 +134,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) | [力扣](https://leetcode.cn/problems/minimum-sum-of-values-by-dividing-array/)
 
 -   Tags: Array, Binary Search, Dynamic Programming, Bit Manipulation, Segment Tree, Queue
-
-
-

@@ -212,6 +212,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1171_remove_zero_sum_consecutive_nodes_from_linked_list.py"
     ```
-
-
-

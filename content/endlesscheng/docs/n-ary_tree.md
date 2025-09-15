@@ -122,6 +122,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/move-sub-tree-of-n-ary-tree/) | [力扣](https://leetcode.cn/problems/move-sub-tree-of-n-ary-tree/)
 
 -   Tags: Tree, Depth First Search
-
-
-

@@ -185,6 +185,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1101_the_earliest_moment_when_everyone_become_friends.py"
     ```
-
-
-

@@ -143,6 +143,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/longest-repeating-substring/) | [力扣](https://leetcode.cn/problems/longest-repeating-substring/)
 
 -   Tags: String, Binary Search, Dynamic Programming, Rolling Hash, Suffix Array, Hash Function
-
-
-

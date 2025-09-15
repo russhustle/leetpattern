@@ -170,6 +170,3 @@ comments: True
     ```python
     --8<-- "python/1801_2100/1976_number_of_ways_to_arrive_at_destination.py"
     ```
-
-
-

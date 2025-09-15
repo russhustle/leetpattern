@@ -50,6 +50,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0073_set_matrix_zeroes.py"
     ```
-
-
-

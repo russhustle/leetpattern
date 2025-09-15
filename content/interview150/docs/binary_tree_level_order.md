@@ -65,6 +65,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0103_binary_tree_zigzag_level_order_traversal.py"
     ```
-
-
-

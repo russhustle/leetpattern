@@ -185,6 +185,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function/) | [力扣](https://leetcode.cn/problems/design-an-expression-tree-with-evaluate-function/)
 
 -   Tags: Array, Math, Stack, Tree, Design, Binary Tree
-
-
-

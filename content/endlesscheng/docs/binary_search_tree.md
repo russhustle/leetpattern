@@ -227,6 +227,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/depth-of-bst-given-insertion-order/) | [力扣](https://leetcode.cn/problems/depth-of-bst-given-insertion-order/)
 
 -   Tags: Array, Tree, Binary Search Tree, Binary Tree, Ordered Set
-
-
-

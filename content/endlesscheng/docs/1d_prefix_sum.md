@@ -146,6 +146,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-relative-loss-after-buying-chocolates/) | [力扣](https://leetcode.cn/problems/minimum-relative-loss-after-buying-chocolates/)
 
 -   Tags: Array, Binary Search, Sorting, Prefix Sum
-
-
-

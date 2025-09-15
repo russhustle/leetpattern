@@ -80,6 +80,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/factor-combinations/) | [力扣](https://leetcode.cn/problems/factor-combinations/)
 
 -   Tags: Backtracking
-
-
-

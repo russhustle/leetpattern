@@ -56,6 +56,12 @@ comments: True
     --8<-- "python/1201_1500/1456_maximum_number_of_vowels_in_a_substring_of_given_length.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/1201_1500/1456_maximum_number_of_vowels_in_a_substring_of_given_length.cc"
+    ```
+
 
 
 ## 567. Permutation in String
@@ -125,6 +131,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0076_minimum_window_substring.py"
     ```
-
-
-

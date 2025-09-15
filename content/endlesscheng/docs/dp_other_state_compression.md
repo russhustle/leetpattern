@@ -140,6 +140,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/number-of-ways-to-build-sturdy-brick-wall/) | [力扣](https://leetcode.cn/problems/number-of-ways-to-build-sturdy-brick-wall/)
 
 -   Tags: Array, Dynamic Programming, Bit Manipulation, Bitmask
-
-
-

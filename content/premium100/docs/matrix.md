@@ -47,6 +47,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/candy-crush/) | [力扣](https://leetcode.cn/problems/candy-crush/)
 
 -   Tags: Array, Two Pointers, Matrix, Simulation
-
-
-

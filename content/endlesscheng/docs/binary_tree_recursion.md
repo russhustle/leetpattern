@@ -47,6 +47,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/) | [力扣](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/)
 
 -   Tags: Tree, Depth First Search, Binary Tree
-
-
-

@@ -38,6 +38,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/) | [力扣](https://leetcode.cn/problems/minimum-flips-in-binary-tree-to-get-result/)
 
 -   Tags: Dynamic Programming, Tree, Depth First Search, Binary Tree
-
-
-

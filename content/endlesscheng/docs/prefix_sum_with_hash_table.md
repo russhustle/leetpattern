@@ -259,7 +259,7 @@ comments: True
 
 
 
-## 3364. Minimum Positive Sum Subarray 
+## 3364. Minimum Positive Sum Subarray
 
 -    [LeetCode](https://leetcode.com/problems/minimum-positive-sum-subarray/) | [力扣](https://leetcode.cn/problems/minimum-positive-sum-subarray/)
 
@@ -272,6 +272,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/) | [力扣](https://leetcode.cn/problems/maximum-number-of-ways-to-partition-an-array/)
 
 -   Tags: Array, Hash Table, Counting, Enumeration, Prefix Sum
-
-
-

@@ -23,6 +23,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/sell-diminishing-valued-colored-balls/) | [力扣](https://leetcode.cn/problems/sell-diminishing-valued-colored-balls/)
 
 -   Tags: Array, Math, Binary Search, Greedy, Sorting, Heap Priority Queue
-
-
-

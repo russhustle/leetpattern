@@ -104,6 +104,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/max-stack/) | [力扣](https://leetcode.cn/problems/max-stack/)
 
 -   Tags: Linked List, Stack, Design, Doubly Linked List, Ordered Set
-
-
-

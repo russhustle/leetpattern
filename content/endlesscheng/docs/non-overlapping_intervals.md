@@ -47,6 +47,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/select-k-disjoint-special-substrings/) | [力扣](https://leetcode.cn/problems/select-k-disjoint-special-substrings/)
 
 -   Tags: Hash Table, String, Dynamic Programming, Greedy, Sorting
-
-
-

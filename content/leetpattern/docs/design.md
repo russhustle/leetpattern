@@ -176,6 +176,3 @@ comments: True
     ```python
     --8<-- "python/1201_1500/1244_design_a_leaderboard.py"
     ```
-
-
-

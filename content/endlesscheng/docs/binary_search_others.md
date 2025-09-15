@@ -47,6 +47,12 @@ comments: True
     --8<-- "python/0001_0300/0069_sqrtx.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0069_sqrtx.cc"
+    ```
+
 
 
 ## 74. Search a 2D Matrix
@@ -296,6 +302,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/) | [力扣](https://leetcode.cn/problems/smallest-rectangle-enclosing-black-pixels/)
 
 -   Tags: Array, Binary Search, Depth First Search, Breadth First Search, Matrix
-
-
-

@@ -227,6 +227,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/subtree-removal-game-with-fibonacci-tree/) | [力扣](https://leetcode.cn/problems/subtree-removal-game-with-fibonacci-tree/)
 
 -   Tags: Math, Dynamic Programming, Tree, Binary Tree, Game Theory
-
-
-

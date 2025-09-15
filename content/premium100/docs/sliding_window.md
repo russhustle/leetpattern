@@ -59,6 +59,3 @@ comments: True
     ```python
     --8<-- "python/0901_1200/1100_find_k_length_substrings_with_no_repeated_characters.py"
     ```
-
-
-

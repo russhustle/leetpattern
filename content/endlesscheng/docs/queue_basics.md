@@ -95,6 +95,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/time-taken-to-cross-the-door/) | [力扣](https://leetcode.cn/problems/time-taken-to-cross-the-door/)
 
 -   Tags: Array, Queue, Simulation
-
-
-

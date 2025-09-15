@@ -89,6 +89,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/) | [力扣](https://leetcode.cn/problems/add-two-polynomials-represented-as-linked-lists/)
 
 -   Tags: Linked List, Math, Two Pointers
-
-
-

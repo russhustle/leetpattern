@@ -140,6 +140,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/maximum-increasing-triplet-value/) | [力扣](https://leetcode.cn/problems/maximum-increasing-triplet-value/)
 
 -   Tags: Array, Ordered Set
-
-
-

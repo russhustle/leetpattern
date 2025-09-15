@@ -42,6 +42,12 @@ comments: True
     --8<-- "python/0001_0300/0035_search_insert_position.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0035_search_insert_position.cc"
+    ```
+
 
 
 ## 278. First Bad Version
@@ -131,6 +137,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0378_kth_smallest_element_in_a_sorted_matrix.py"
     ```
-
-
-

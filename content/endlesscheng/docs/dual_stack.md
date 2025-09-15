@@ -14,6 +14,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/design-a-text-editor/) | [力扣](https://leetcode.cn/problems/design-a-text-editor/)
 
 -   Tags: Linked List, String, Stack, Design, Simulation, Doubly Linked List
-
-
-

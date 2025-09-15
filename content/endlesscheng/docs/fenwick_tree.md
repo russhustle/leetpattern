@@ -200,6 +200,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/range-sum-query-2d-mutable/) | [力扣](https://leetcode.cn/problems/range-sum-query-2d-mutable/)
 
 -   Tags: Array, Design, Binary Indexed Tree, Segment Tree, Matrix
-
-
-

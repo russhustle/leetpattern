@@ -65,6 +65,3 @@ comments: True
     ```python
     --8<-- "python/0301_0600/0499_the_maze_iii.py"
     ```
-
-
-

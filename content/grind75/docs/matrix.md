@@ -20,6 +20,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0054_spiral_matrix.py"
     ```
-
-
-

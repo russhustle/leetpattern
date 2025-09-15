@@ -56,6 +56,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/prime-palindrome/) | [力扣](https://leetcode.cn/problems/prime-palindrome/)
 
 -   Tags: Math, Number Theory
-
-
-

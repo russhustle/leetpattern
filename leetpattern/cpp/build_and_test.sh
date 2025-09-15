@@ -30,7 +30,7 @@ for exe in ./*; do
     if [[ -x "$exe" && -f "$exe" ]]; then
         filename=$(basename "$exe")
         echo -e "\n${BLUE}Running $filename...${NC}"
-        
+
         if ./"$filename"; then
             echo -e "${GREEN}✅ $filename passed${NC}"
             ((passed++))

@@ -41,6 +41,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/erect-the-fence-ii/) | [力扣](https://leetcode.cn/problems/erect-the-fence-ii/)
 
 -   Tags: Array, Math, Geometry
-
-
-

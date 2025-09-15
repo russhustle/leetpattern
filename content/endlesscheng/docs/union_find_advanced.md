@@ -248,6 +248,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/) | [力扣](https://leetcode.cn/problems/sort-array-by-moving-items-to-empty-space/)
 
 -   Tags: Array, Greedy, Sorting
-
-
-

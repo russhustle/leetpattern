@@ -77,6 +77,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | [力扣](https://leetcode.cn/problems/bitwise-and-of-numbers-range/)
 
 -   Tags: Bit Manipulation
-
-
-

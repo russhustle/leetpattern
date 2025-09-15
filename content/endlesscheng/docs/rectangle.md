@@ -83,6 +83,3 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/pour-water/) | [力扣](https://leetcode.cn/problems/pour-water/)
 
 -   Tags: Array, Simulation
-
-
-

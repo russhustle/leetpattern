@@ -7,7 +7,7 @@ comments: True
 ## Table of Contents
 
 - [x] [383. Ransom Note](#383-ransom-note) (Easy)
-- [ ] [205. Isomorphic Strings](#205-isomorphic-strings) (Easy)
+- [x] [205. Isomorphic Strings](#205-isomorphic-strings) (Easy)
 - [ ] [290. Word Pattern](#290-word-pattern) (Easy)
 - [x] [242. Valid Anagram](#242-valid-anagram) (Easy)
 - [x] [49. Group Anagrams](#49-group-anagrams) (Medium)
@@ -36,6 +36,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/isomorphic-strings/) | [力扣](https://leetcode.cn/problems/isomorphic-strings/)
 
 -   Tags: Hash Table, String
+
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0205_isomorphic_strings.cc"
+    ```
 
 
 
@@ -107,6 +113,12 @@ comments: True
     --8<-- "python/0001_0300/0202_happy_number.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0202_happy_number.cc"
+    ```
+
 
 
 ## 219. Contains Duplicate II
@@ -134,6 +146,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0128_longest_consecutive_sequence.py"
     ```
-
-
-

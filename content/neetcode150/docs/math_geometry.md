@@ -70,6 +70,12 @@ comments: True
     --8<-- "python/0001_0300/0202_happy_number.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0202_happy_number.cc"
+    ```
+
 
 
 ## 66. Plus One
@@ -82,6 +88,12 @@ comments: True
 
     ```python
     --8<-- "python/0001_0300/0066_plus_one.py"
+    ```
+
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0066_plus_one.cc"
     ```
 
 
@@ -125,6 +137,3 @@ comments: True
     ```python
     --8<-- "python/0001_0300/0166_fraction_to_recurring_decimal.py"
     ```
-
-
-

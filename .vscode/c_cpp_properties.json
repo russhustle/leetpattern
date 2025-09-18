@@ -2,11 +2,14 @@
     "configurations": [
         {
             "name": "linux-gcc-x64",
-            "includePath": ["${workspaceFolder}/**"],
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/leetpattern/cpp"
+            ],
             "defines": [],
             "compilerPath": "/home/linuxbrew/.linuxbrew/bin/gcc-15",
             "cStandard": "${default}",
-            "cppStandard": "c++23",
+            "cppStandard": "c++17",
             "intelliSenseMode": "linux-gcc-x64"
         }
     ],

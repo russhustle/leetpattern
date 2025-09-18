@@ -1,12 +1,6 @@
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-    TreeNode(int x, TreeNode *left, TreeNode *right)
-        : val(x), left(left), right(right) {}
-};
+#include <iostream>
+
+#include "include/tree.hpp"
 
 class Solution {
    private:
@@ -22,3 +16,13 @@ class Solution {
         return root == nullptr || dfs(root->left, root->right);
     }
 };
+
+int main() {
+    Solution solution;
+    // Test with a symmetric tree
+    std::vector<int> values = {1, 2, 2, 3, 4, 4, 3};
+    TreeNode *root = TreeUtils::buildTree(values);
+    bool result = solution.isSymmetric(root);
+    std::cout << "Is symmetric: " << (result ? "true" : "false") << std::endl;
+    return 0;
+}

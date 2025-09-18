@@ -10,6 +10,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Add compiler flags for better debugging and warnings
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -g -std=c++23")
 
+# Include utils directory
+include_directories(include)
+include_directories(.)
+
+
 # Function to recursively find all .cc files
 file(GLOB_RECURSE CPP_FILES "*.cc")
 

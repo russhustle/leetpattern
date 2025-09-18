@@ -99,6 +99,12 @@ comments: True
     --8<-- "python/0001_0300/0088_merge_sorted_array.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0088_merge_sorted_array.cc"
+    ```
+
 
 
 ## 977. Squares of a Sorted Array

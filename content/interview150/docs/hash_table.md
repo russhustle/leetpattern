@@ -8,7 +8,7 @@ comments: True
 
 - [x] [383. Ransom Note](#383-ransom-note) (Easy)
 - [x] [205. Isomorphic Strings](#205-isomorphic-strings) (Easy)
-- [ ] [290. Word Pattern](#290-word-pattern) (Easy)
+- [x] [290. Word Pattern](#290-word-pattern) (Easy)
 - [x] [242. Valid Anagram](#242-valid-anagram) (Easy)
 - [x] [49. Group Anagrams](#49-group-anagrams) (Medium)
 - [x] [1. Two Sum](#1-two-sum) (Easy)
@@ -51,6 +51,18 @@ comments: True
 
 -   Tags: Hash Table, String
 
+=== "Python"
+
+    ```python
+    --8<-- "python/0001_0300/0290_word_pattern.py"
+    ```
+
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0290_word_pattern.cc"
+    ```
+
 
 
 ## 242. Valid Anagram
@@ -65,6 +77,12 @@ comments: True
     --8<-- "python/0001_0300/0242_valid_anagram.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0242_valid_anagram.cc"
+    ```
+
 
 
 ## 49. Group Anagrams
@@ -77,6 +95,12 @@ comments: True
 
     ```python
     --8<-- "python/0001_0300/0049_group_anagrams.py"
+    ```
+
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0049_group_anagrams.cc"
     ```
 
 
@@ -131,6 +155,12 @@ comments: True
 
     ```python
     --8<-- "python/0001_0300/0219_contains_duplicate_ii.py"
+    ```
+
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0219_contains_duplicate_ii.cc"
     ```
 
 

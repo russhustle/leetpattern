@@ -48,6 +48,12 @@ comments: True
     --8<-- "python/0001_0300/0026_remove_duplicates_from_sorted_array.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0026_remove_duplicates_from_sorted_array.cc"
+    ```
+
 
 
 ## 80. Remove Duplicates from Sorted Array II
@@ -60,6 +66,12 @@ comments: True
 
     ```python
     --8<-- "python/0001_0300/0080_remove_duplicates_from_sorted_array_ii.py"
+    ```
+
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0080_remove_duplicates_from_sorted_array_ii.cc"
     ```
 
 

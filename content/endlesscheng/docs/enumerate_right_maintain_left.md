@@ -96,6 +96,12 @@ comments: True
     --8<-- "python/0001_0300/0219_contains_duplicate_ii.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0219_contains_duplicate_ii.cc"
+    ```
+
 
 
 ## 121. Best Time to Buy and Sell Stock

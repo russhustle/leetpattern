@@ -39,6 +39,12 @@ comments: True
     --8<-- "python/0001_0300/0092_reverse_linked_list_ii.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0092_reverse_linked_list_ii.cc"
+    ```
+
 
 
 ## 24. Swap Nodes in Pairs

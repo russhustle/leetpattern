@@ -77,6 +77,12 @@ comments: True
     --8<-- "python/0001_0300/0101_symmetric_tree.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0101_symmetric_tree.cc"
+    ```
+
 
 
 ## 543. Diameter of Binary Tree

@@ -42,6 +42,12 @@ comments: True
     --8<-- "python/0001_0300/0219_contains_duplicate_ii.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0219_contains_duplicate_ii.cc"
+    ```
+
 
 
 ## 1456. Maximum Number of Vowels in a Substring of Given Length

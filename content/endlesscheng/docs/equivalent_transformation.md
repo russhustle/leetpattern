@@ -94,6 +94,12 @@ comments: True
     --8<-- "python/0001_0300/0049_group_anagrams.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0049_group_anagrams.cc"
+    ```
+
 
 
 ## 1183. Maximum Number of Ones

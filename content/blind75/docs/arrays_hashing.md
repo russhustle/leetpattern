@@ -42,6 +42,12 @@ comments: True
     --8<-- "python/0001_0300/0242_valid_anagram.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0242_valid_anagram.cc"
+    ```
+
 
 
 ## 1. Two Sum
@@ -74,6 +80,12 @@ comments: True
 
     ```python
     --8<-- "python/0001_0300/0049_group_anagrams.py"
+    ```
+
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0001_0300/0049_group_anagrams.cc"
     ```
 
 

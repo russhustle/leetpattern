@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "include/tree.hpp"
+#include "include/trees.hpp"
 
 class Solution {
    private:

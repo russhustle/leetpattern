@@ -10,13 +10,13 @@ echo -e "${BLUE}🔨 Building all C++ files...${NC}"
 
 # Create build directory
 mkdir -p build
-cd build
+cd build || exit
 
 # Run CMake
 cmake .. || { echo -e "${RED}❌ CMake configuration failed${NC}"; exit 1; }
 
 # Build all executables
-make build_all -j$(nproc) || { echo -e "${RED}❌ Build failed${NC}"; exit 1; }
+make build_all -j"$(nproc)" || { echo -e "${RED}❌ Build failed${NC}"; exit 1; }
 
 echo -e "${GREEN}✅ Build completed successfully!${NC}"
 echo -e "${BLUE}🧪 Running all tests...${NC}"

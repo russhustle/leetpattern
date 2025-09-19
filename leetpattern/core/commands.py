@@ -10,9 +10,7 @@ app = typer.Typer()
 @app.command()
 def show(
     qid: int = typer.Argument(..., help="LeetCode question ID"),
-    lang: str = typer.Option(
-        "py", "--lang", "-l", help="Programming language"
-    ),
+    lang: str = typer.Option("py", "--lang", "-l", help="Programming language"),
 ):
     """
     Show the written code for a given question ID and programming language.
@@ -47,9 +45,7 @@ def show(
 @app.command()
 def create(
     qid: int = typer.Argument(..., help="LeetCode question ID"),
-    lang: str = typer.Option(
-        "py", "--lang", "-l", help="Programming language"
-    ),
+    lang: str = typer.Option("py", "--lang", "-l", help="Programming language"),
 ):
     """
     Create a new code file for a given question ID and programming language.
@@ -72,9 +68,7 @@ def create(
         path = problem.sql_path
 
     if path and Path(path).exists():
-        typer.echo(
-            f"File already exists for question ID {qid} in {lang}: {path}"
-        )
+        typer.echo(f"File already exists for question ID {qid} in {lang}: {path}")
         raise typer.Exit(code=1)
 
     if path:

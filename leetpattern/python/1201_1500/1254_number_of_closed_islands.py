@@ -7,12 +7,7 @@ def closedIsland(grid: List[List[int]]) -> int:
     visited = set()
 
     def dfs(r, c):
-        if (
-            r not in range(m)
-            or c not in range(n)
-            or grid[r][c] == 1
-            or (r, c) in visited
-        ):
+        if r not in range(m) or c not in range(n) or grid[r][c] == 1 or (r, c) in visited:
             return
 
         grid[r][c] = 1

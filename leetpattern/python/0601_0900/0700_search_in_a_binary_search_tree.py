@@ -22,9 +22,7 @@ class TreeNode:
 
 
 # 1. Recursive
-def searchBSTRecursive(
-    root: Optional[TreeNode], val: int
-) -> Optional[TreeNode]:
+def searchBSTRecursive(root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
     if not root:
         return None
 
@@ -39,9 +37,7 @@ def searchBSTRecursive(
 
 
 # 2. Iterative
-def searchBSTIterative(
-    root: Optional[TreeNode], val: int
-) -> Optional[TreeNode]:
+def searchBSTIterative(root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
     while root:
         if root.val > val:
             root = root.left

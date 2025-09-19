@@ -10,14 +10,7 @@ def exist(board: List[List[str]], word: str) -> bool:
         if i == len(word):
             return True
 
-        if (
-            r < 0
-            or r >= m
-            or c < 0
-            or c >= n
-            or board[r][c] != word[i]
-            or (r, c) in path
-        ):
+        if r < 0 or r >= m or c < 0 or c >= n or board[r][c] != word[i] or (r, c) in path:
             return False
 
         path.add((r, c))

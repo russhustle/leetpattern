@@ -4,13 +4,10 @@
 
 from typing import Optional
 
-from leetpattern.utils import ListNode, list_from_array, list_to_array
+from leetpattern.utils import LinkedList, ListNode
 
 
-# Linked List
-def add_two_numbers(
-    l1: Optional[ListNode], l2: Optional[ListNode]
-) -> Optional[ListNode]:
+def add_two_numbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode()
     cur = dummy
     carry = 0
@@ -35,7 +32,7 @@ def add_two_numbers(
 
 
 def test_add_two_numbers():
-    l1 = list_from_array([2, 4, 3])
-    l2 = list_from_array([5, 6, 4])
-    result = add_two_numbers(l1, l2)
-    assert list_to_array(result) == [7, 0, 8]
+    l1 = LinkedList([2, 4, 3]).head
+    l2 = LinkedList([5, 6, 4]).head
+    added = add_two_numbers(l1, l2)
+    assert LinkedList(added).to_array() == [7, 0, 8]

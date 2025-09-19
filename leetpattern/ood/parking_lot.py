@@ -70,6 +70,4 @@ if __name__ == "__main__":
     print(parking_lot.park_vehicle(vehicle1))  # True
     print(parking_lot.park_vehicle(vehicle2))  # True
     print(parking_lot.park_vehicle(vehicle3))  # True
-    print(
-        parking_lot.park_vehicle(Vehicle("GHI101", VehicleSize.LARGE))
-    )  # False
+    print(parking_lot.park_vehicle(Vehicle("GHI101", VehicleSize.LARGE)))  # False

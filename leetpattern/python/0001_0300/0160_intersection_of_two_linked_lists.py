@@ -4,13 +4,11 @@
 
 from typing import Optional
 
-from leetpattern.utils import ListNode
+from leetpattern.utils import LinkedList, ListNode
 
 
 # Hash Set
-def getIntersectionNodeHash(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
+def getIntersectionNodeHash(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -30,9 +28,7 @@ def getIntersectionNodeHash(
 
 
 # Two Pointers
-def getIntersectionNodeTP(
-    headA: ListNode, headB: ListNode
-) -> Optional[ListNode]:
+def getIntersectionNodeTP(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
     if not headA or not headB:
         return None
 
@@ -45,18 +41,36 @@ def getIntersectionNodeTP(
     return a
 
 
-listA = [4, 1, 8, 4, 5]
-listB = [5, 6, 1, 8, 4, 5]
-headA = list_from_array(listA)
-print(headA)
-# 4 -> 1 -> 8 -> 4 -> 5
-headB = list_from_array(listB)
-print(headB)
-# 5 -> 6 -> 1 -> 8 -> 4 -> 5
+def test_intersection():
+    # Test case 1: Lists with intersection
+    llA = LinkedList([4, 1, 8, 4, 5])
+    llB = LinkedList([5, 6, 1])
 
-headA.intersect(headB, 8)
+    # Create intersection at node with value 8
+    nodeA = llA.head
+    while nodeA and nodeA.val != 8:
+        nodeA = nodeA.next
 
-print(getIntersectionNodeHash(headA, headB))
-# 8 -> 4 -> 5
-print(getIntersectionNodeTP(headA, headB))
-# 8 -> 4 -> 5
+    # Connect listB to the intersection point
+    llB.head.next.next.next = nodeA
+
+    assert llA.to_array() == [4, 1, 8, 4, 5]
+
+    intersection_hash = getIntersectionNodeHash(llA.head, llB.head)
+    intersection_tp = getIntersectionNodeTP(llA.head, llB.head)
+
+    assert intersection_hash is not None
+    assert intersection_tp is not None
+    assert intersection_hash.val == 8
+    assert intersection_tp.val == 8
+    assert intersection_hash == intersection_tp
+
+    # Test case 2: Lists without intersection
+    llC = LinkedList([2, 6, 4])
+    llD = LinkedList([1, 5])
+
+    intersection_hash = getIntersectionNodeHash(llC.head, llD.head)
+    intersection_tp = getIntersectionNodeTP(llC.head, llD.head)
+
+    assert intersection_hash is None
+    assert intersection_tp is None

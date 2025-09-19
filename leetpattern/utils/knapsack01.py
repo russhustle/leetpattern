@@ -2,9 +2,7 @@ from typing import List
 
 
 # 01 Knapsack - Manual Initialization
-def knapsack01Manual(
-    weights: List[int], values: List[int], capacity: int
-) -> int:
+def knapsack01Manual(weights: List[int], values: List[int], capacity: int) -> int:
     n = len(weights)
 
     dp = [[0] * (capacity + 1) for _ in range(n)]

@@ -15,9 +15,7 @@ def maxAreaOfIslandDFS(grid: List[List[int]]) -> int:
 
         grid[r][c] = 0
 
-        return (
-            1 + dfs(r + 1, c) + dfs(r - 1, c) + dfs(r, c + 1) + dfs(r, c - 1)
-        )
+        return 1 + dfs(r + 1, c) + dfs(r - 1, c) + dfs(r, c + 1) + dfs(r, c - 1)
 
     res = 0
     for i in range(m):

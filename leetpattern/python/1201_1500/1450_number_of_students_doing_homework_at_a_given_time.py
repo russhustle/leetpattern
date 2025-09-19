@@ -2,9 +2,7 @@ from typing import List
 
 
 # Brute Force
-def busyStudent(
-    startTime: List[int], endTime: List[int], queryTime: int
-) -> int:
+def busyStudent(startTime: List[int], endTime: List[int], queryTime: int) -> int:
     num = 0
     for i, j in zip(startTime, endTime):
         if i <= queryTime <= j:

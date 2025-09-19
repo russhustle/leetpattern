@@ -2,9 +2,7 @@ from typing import List
 
 
 # Grid DFS
-def colorBorder(
-    grid: List[List[int]], row: int, col: int, color: int
-) -> List[List[int]]:
+def colorBorder(grid: List[List[int]], row: int, col: int, color: int) -> List[List[int]]:
 
     dirs = [[0, 1], [1, 0], [0, -1], [-1, 0]]
     m, n = len(grid), len(grid[0])

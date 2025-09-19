@@ -1,14 +1,9 @@
-"""
-- Reverse a singly linked list.
-"""
-
 from typing import Optional
 
-from leetpattern.utils import ListNode
+from leetpattern.utils import LinkedList, ListNode
 
 
-# Iterative
-def reverseListIterative(head: Optional[ListNode]) -> Optional[ListNode]:
+def reverse_list_iterative(head: Optional[ListNode]) -> Optional[ListNode]:
     cur = head
     prev = None
 
@@ -22,26 +17,23 @@ def reverseListIterative(head: Optional[ListNode]) -> Optional[ListNode]:
     return prev
 
 
-# Recursive
-def reverseListRecursive(head: Optional[ListNode]) -> Optional[ListNode]:
+def reverse_list_recursive(head: Optional[ListNode]) -> Optional[ListNode]:
     def reverse(cur, prev):
         if not cur:
             return prev
 
         temp = cur.next
         cur.next = prev
-
         return reverse(temp, cur)
 
     return reverse(head, None)
 
 
-nums = [1, 2, 3, 4, 5]
-head1 = list_from_array(nums)
-print(head1)
-# 1 -> 2 -> 3 -> 4 -> 5
-print(reverseListIterative(head1))
-# 5 -> 4 -> 3 -> 2 -> 1
-head2 = list_from_array(nums)
-print(reverseListRecursive(head2))
-# 5 -> 4 -> 3 -> 2 -> 1
+def test_reverse_list():
+    ll = LinkedList([1, 2, 3, 4, 5])
+    ll.head = reverse_list_iterative(ll.head)
+    assert ll.to_array() == [5, 4, 3, 2, 1]
+
+    ll = LinkedList([1, 2, 3, 4, 5])
+    ll.head = reverse_list_recursive(ll.head)
+    assert ll.to_array() == [5, 4, 3, 2, 1]

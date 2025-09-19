@@ -3,9 +3,7 @@ from typing import List
 
 
 # Binary Search Min Answer
-def earliestSecondToMarkIndices(
-    nums: List[int], changeIndices: List[int]
-) -> int:
+def earliestSecondToMarkIndices(nums: List[int], changeIndices: List[int]) -> int:
     n, m = len(nums), len(changeIndices)
     if n > m:
         return -1

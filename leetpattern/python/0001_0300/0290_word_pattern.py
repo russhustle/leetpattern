@@ -13,11 +13,10 @@ def wordPattern(pattern: str, s: str) -> bool:
 
 
 def test_wordPattern():
-    assert wordPattern("abba", "dog cat cat dog") == True
-    assert wordPattern("abba", "dog cat cat fish") == False
-    assert wordPattern("aaaa", "dog cat cat dog") == False
-    assert wordPattern("abba", "dog dog dog dog") == False
-    assert wordPattern("abc", "b c a") == True
-    assert wordPattern("abc", "b c a a") == False
-    assert wordPattern("ab", "b b") == False
-    print("All test cases pass")
+    assert wordPattern("abba", "dog cat cat dog")
+    assert not wordPattern("abba", "dog cat cat fish")
+    assert not wordPattern("aaaa", "dog cat cat dog")
+    assert not wordPattern("abba", "dog dog dog dog")
+    assert wordPattern("abc", "b c a")
+    assert not wordPattern("abc", "b c a a")
+    assert not wordPattern("ab", "b b")

@@ -2,9 +2,7 @@ from typing import List
 
 
 # Sliding Window Fixed Size
-def dietPlanPerformance(
-    calories: List[int], k: int, lower: int, upper: int
-) -> int:
+def dietPlanPerformance(calories: List[int], k: int, lower: int, upper: int) -> int:
     res, T = 0, 0
 
     for i in range(len(calories)):

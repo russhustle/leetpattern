@@ -2,9 +2,7 @@ from typing import List
 
 
 # Simulation
-def distanceBetweenBusStops(
-    distance: List[int], start: int, destination: int
-) -> int:
+def distanceBetweenBusStops(distance: List[int], start: int, destination: int) -> int:
     if start > destination:
         start, destination = destination, start
 

@@ -7,9 +7,7 @@ from typing import Optional
 from leetpattern.utils import ListNode, list_from_array, list_to_array
 
 
-def reverseBetween(
-    head: Optional[ListNode], left: int, right: int
-) -> Optional[ListNode]:
+def reverseBetween(head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
     dummy = ListNode(next=head)
     p0 = dummy
     for _ in range(left - 1):

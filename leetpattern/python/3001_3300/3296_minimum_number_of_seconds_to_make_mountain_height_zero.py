@@ -5,9 +5,7 @@ from typing import List
 
 
 # Min Heap
-def minNumberOfSecondsMinHeap(
-    mountainHeight: int, workerTimes: List[int]
-) -> int:
+def minNumberOfSecondsMinHeap(mountainHeight: int, workerTimes: List[int]) -> int:
     minHeap = [(t, t, t) for t in workerTimes]
     heapify(minHeap)
 
@@ -25,9 +23,7 @@ def minNumberOfSecondsMinHeap(
 
 
 # Binary Search Min Answer
-def minNumberOfSecondsBinarySearchMin(
-    mountainHeight: int, workerTimes: List[int]
-) -> int:
+def minNumberOfSecondsBinarySearchMin(mountainHeight: int, workerTimes: List[int]) -> int:
     def check(m: int) -> bool:
         left_h = mountainHeight
         for t in workerTimes:

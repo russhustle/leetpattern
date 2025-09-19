@@ -12,9 +12,7 @@ def findMaxFish(grid: List[List[int]]) -> int:
         val = grid[r][c]
         grid[r][c] = 0
 
-        return (
-            val + dfs(r - 1, c) + dfs(r + 1, c) + dfs(r, c - 1) + dfs(r, c + 1)
-        )
+        return val + dfs(r - 1, c) + dfs(r + 1, c) + dfs(r, c - 1) + dfs(r, c + 1)
 
     for i in range(m):
         for j in range(n):

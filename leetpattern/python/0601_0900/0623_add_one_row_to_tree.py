@@ -7,9 +7,7 @@ from binarytree import build
 
 
 # BFS
-def addOneRow_bfs(
-    root: Optional[TreeNode], val: int, depth: int
-) -> Optional[TreeNode]:
+def addOneRow_bfs(root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
     if not root:
         return None
 
@@ -42,9 +40,7 @@ def addOneRow_bfs(
 
 
 # DFS
-def addOneRow_dfs(
-    root: Optional[TreeNode], val: int, depth: int
-) -> Optional[TreeNode]:
+def addOneRow_dfs(root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
     if depth == 1:
         new = TreeNode(val)
         new.left = root

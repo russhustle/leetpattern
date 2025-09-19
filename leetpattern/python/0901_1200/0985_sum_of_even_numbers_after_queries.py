@@ -2,9 +2,7 @@ from typing import List
 
 
 #  Simulation
-def sumEvenAfterQueries(
-    nums: List[int], queries: List[List[int]]
-) -> List[int]:
+def sumEvenAfterQueries(nums: List[int], queries: List[List[int]]) -> List[int]:
     res = []
     cur = sum(i for i in nums if i % 2 == 0)
 

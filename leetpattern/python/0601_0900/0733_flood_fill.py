@@ -36,9 +36,7 @@ from typing import List
 
 
 # DFS
-def floodFillDFS(
-    image: List[List[int]], sr: int, sc: int, color: int
-) -> List[List[int]]:
+def floodFillDFS(image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
 
     org = image[sr][sc]
     m, n = len(image), len(image[0])
@@ -63,9 +61,7 @@ def floodFillDFS(
 
 
 # BFS
-def floodFillBFS(
-    image: List[List[int]], sr: int, sc: int, color: int
-) -> List[List[int]]:
+def floodFillBFS(image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
 
     org = image[sr][sc]
     m, n = len(image), len(image[0])

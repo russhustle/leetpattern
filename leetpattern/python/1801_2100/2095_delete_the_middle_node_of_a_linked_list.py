@@ -1,9 +1,8 @@
 from typing import Optional
 
-from leetpattern.utils import ListNode
+from leetpattern.utils import LinkedList, ListNode
 
 
-# Linked List
 def deleteMiddle(head: Optional[ListNode]) -> Optional[ListNode]:
     fast, slow = head, head
     dummy = ListNode(0, head)
@@ -19,6 +18,11 @@ def deleteMiddle(head: Optional[ListNode]) -> Optional[ListNode]:
     return dummy.next
 
 
-node = list_from_array([1, 2, 3, 4, 5])
-print(deleteMiddle(node))
-# 1 -> 2 -> 4 -> 5
+def test_deleteMiddle():
+    ll = LinkedList([1, 3, 4, 7, 1, 2, 6])
+    ll = LinkedList(deleteMiddle(ll.head))
+    assert ll.to_array() == [1, 3, 4, 1, 2, 6]
+
+    ll = LinkedList([1, 2, 3, 4])
+    ll = LinkedList(deleteMiddle(ll.head))
+    assert ll.to_array() == [1, 2, 4]

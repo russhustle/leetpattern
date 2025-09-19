@@ -3,9 +3,7 @@ from typing import List
 
 
 # BFS
-def hasPathBFS(
-    maze: List[List[int]], start: List[int], destination: List[int]
-) -> bool:
+def hasPathBFS(maze: List[List[int]], start: List[int], destination: List[int]) -> bool:
     m, n = len(maze), len(maze[0])
     dirs = [[1, 0], [0, 1], [-1, 0], [0, -1]]
     q = deque([start])
@@ -19,11 +17,7 @@ def hasPathBFS(
         for dr, dc in dirs:
             nr, nc = r, c
 
-            while (
-                0 <= nr + dr < m
-                and 0 <= nc + dc < n
-                and maze[nr + dr][nc + dc] != 1
-            ):
+            while 0 <= nr + dr < m and 0 <= nc + dc < n and maze[nr + dr][nc + dc] != 1:
                 nr += dr
                 nc += dc
 

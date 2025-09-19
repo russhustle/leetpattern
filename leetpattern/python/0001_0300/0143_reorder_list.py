@@ -1,6 +1,6 @@
 from typing import Optional
 
-from leetpattern.utils import ListNode
+from leetpattern.utils import LinkedList, ListNode
 
 
 # Linked List
@@ -34,7 +34,13 @@ def reorderList(head: Optional[ListNode]) -> None:
         first, second = temp1, temp2
 
 
-head = list_from_array([1, 2, 3, 4, 5, 6])
-print(head)  # 1 -> 2 -> 3 -> 4 -> 5 -> 6
-reorderList(head)
-print(head)  # 1 -> 6 -> 2 -> 5 -> 3 -> 4
+def test_reorderList():
+    ll = LinkedList([1, 2, 3, 4, 5, 6])
+    assert ll.to_array() == [1, 2, 3, 4, 5, 6]
+    reorderList(ll.head)
+    assert ll.to_array() == [1, 6, 2, 5, 3, 4]
+
+    ll2 = LinkedList([1, 2, 3, 4, 5])
+    assert ll2.to_array() == [1, 2, 3, 4, 5]
+    reorderList(ll2.head)
+    assert ll2.to_array() == [1, 5, 2, 4, 3]

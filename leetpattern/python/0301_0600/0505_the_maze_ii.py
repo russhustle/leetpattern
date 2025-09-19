@@ -23,11 +23,7 @@ def shortestDistance(
         for dr, dc in directions:
             nr, nc, nd = r, c, d
 
-            while (
-                0 <= nr + dr < m
-                and 0 <= nc + dc < n
-                and maze[nr + dr][nc + dc] == 0
-            ):
+            while 0 <= nr + dr < m and 0 <= nc + dc < n and maze[nr + dr][nc + dc] == 0:
                 nr += dr
                 nc += dc
                 nd += 1

@@ -1,13 +1,9 @@
-"""
--   Determine if a linked list has a cycle in it.
-"""
-
 from typing import Optional
 
-from leetpattern.utils import ListNode
+from leetpattern.utils import LinkedList, ListNode
 
 
-def hasCycle(head: Optional[ListNode]) -> bool:
+def has_cycle(head: Optional[ListNode]) -> bool:
     slow, fast = head, head
 
     while fast and fast.next:
@@ -20,5 +16,14 @@ def hasCycle(head: Optional[ListNode]) -> bool:
     return False
 
 
-print(hasCycle(list_from_array([3, 2, 0, -4])))  # False
-print(hasCycle(list_from_array([3, 2, 0, -4], 1)))  # True
+def test_has_cycle():
+    ll = LinkedList([3, 2, 0, -4])
+    ll.make_cycle(pos=1)
+    assert has_cycle(ll.head)
+
+    ll = LinkedList([1, 2])
+    ll.make_cycle(pos=0)
+    assert has_cycle(ll.head)
+
+    ll = LinkedList([1, 2, 3, 4, 5])
+    assert not has_cycle(ll.head)

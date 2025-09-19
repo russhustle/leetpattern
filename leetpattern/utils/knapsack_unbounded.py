@@ -17,9 +17,7 @@ def knapsackUnboundedCapacity(
 
 
 # Unbounded Knapsack - first loop on items
-def knapsackUnboundedItems(
-    weights: List[int], values: List[int], capacity: int
-) -> int:
+def knapsackUnboundedItems(weights: List[int], values: List[int], capacity: int) -> int:
     n = len(weights)
     dp = [0 for _ in range(capacity + 1)]
 
@@ -31,9 +29,7 @@ def knapsackUnboundedItems(
 
 
 # Unbounded Knapsack - Space Optimized
-def knapsackUnbounded(
-    weights: List[int], values: List[int], capacity: int
-) -> int:
+def knapsackUnbounded(weights: List[int], values: List[int], capacity: int) -> int:
     n = len(weights)
     dp = [0 for _ in range(capacity + 1)]
 

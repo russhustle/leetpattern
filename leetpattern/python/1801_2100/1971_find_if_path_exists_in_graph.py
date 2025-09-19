@@ -3,9 +3,7 @@ from typing import List
 
 
 # DFS (Adjacency List)
-def validPathDFS(
-    n: int, edges: List[List[int]], source: int, destination: int
-) -> bool:
+def validPathDFS(n: int, edges: List[List[int]], source: int, destination: int) -> bool:
     if not edges and source != destination:
         return False
 

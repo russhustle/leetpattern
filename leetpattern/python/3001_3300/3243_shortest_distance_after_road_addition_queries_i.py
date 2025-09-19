@@ -12,9 +12,7 @@ from typing import List
 
 
 # BFS
-def shortestDistanceAfterQueries(
-    n: int, queries: List[List[int]]
-) -> List[int]:
+def shortestDistanceAfterQueries(n: int, queries: List[List[int]]) -> List[int]:
     g = [[] for _ in range(n)]
     for i in range(n - 1):
         g[i].append(i + 1)

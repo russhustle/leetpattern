@@ -33,9 +33,7 @@ class UnionFind:
 
 
 # Kruskal
-def findCriticalAndPseudoCriticalEdges(
-    n: int, edges: List[List[int]]
-) -> List[List[int]]:
+def findCriticalAndPseudoCriticalEdges(n: int, edges: List[List[int]]) -> List[List[int]]:
     m = len(edges)
 
     # Add index to edges

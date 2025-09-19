@@ -61,9 +61,7 @@ class ProblemRepository:
         """Lazy load the DataFrame."""
         if self._df is None:
             if not os.path.exists(self.data_path):
-                raise FileNotFoundError(
-                    f"Problem data file not found: {self.data_path}"
-                )
+                raise FileNotFoundError(f"Problem data file not found: {self.data_path}")
             self._df = pd.read_parquet(self.data_path)
         return self._df
 
@@ -155,14 +153,10 @@ class ProblemRepository:
                 else ""
             ),
             sql_snippet=(
-                snippet("SQL", f"sql/{basename}.sql")
-                if if_file_exist(sql_path)
-                else ""
+                snippet("SQL", f"sql/{basename}.sql") if if_file_exist(sql_path) else ""
             ),
             txt_snippet=(
-                snippet("TXT", f"sql/{basename}.txt")
-                if if_file_exist(txt_path)
-                else ""
+                snippet("TXT", f"sql/{basename}.txt") if if_file_exist(txt_path) else ""
             ),
         )
 

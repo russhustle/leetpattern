@@ -12,12 +12,7 @@ def wallsAndGates(rooms: List[List[int]]) -> None:
     directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
     def addRoom(r, c):
-        if (
-            0 <= r < m
-            and 0 <= c < n
-            and (r, c) not in visited
-            and rooms[r][c] != -1
-        ):
+        if 0 <= r < m and 0 <= c < n and (r, c) not in visited and rooms[r][c] != -1:
             q.append((r, c))
             visited.add((r, c))
 

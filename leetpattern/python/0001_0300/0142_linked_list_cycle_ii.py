@@ -1,10 +1,6 @@
-"""
--   Given a linked list, return the node where the cycle begins. If there is no cycle, return `None`.
-"""
-
 from typing import Optional
 
-from leetpattern.utils import ListNode
+from leetpattern.utils import LinkedList, ListNode
 
 
 def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
@@ -24,7 +20,9 @@ def detectCycle(head: Optional[ListNode]) -> Optional[ListNode]:
     return None
 
 
-head1 = list_from_array([3, 2, 0, -4], 1)
-print(detectCycle(head1).val)  # 2
-head2 = list_from_array([3, 2, 0, -4])
-print(detectCycle(head2))  # None
+def test_detectCycle():
+    l1 = LinkedList([3, 2, 0, -4])
+    l1.make_cycle(1)
+    assert detectCycle(l1.head).val == 2
+    l2 = LinkedList([3, 2, 0, -4])
+    assert not detectCycle(l2.head)

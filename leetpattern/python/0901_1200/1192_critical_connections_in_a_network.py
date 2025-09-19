@@ -3,9 +3,7 @@ from typing import List
 
 
 # Tarjan
-def criticalConnections(
-    n: int, connections: List[List[int]]
-) -> List[List[int]]:
+def criticalConnections(n: int, connections: List[List[int]]) -> List[List[int]]:
     graph = defaultdict(list)
     for u, v in connections:
         graph[u].append(v)

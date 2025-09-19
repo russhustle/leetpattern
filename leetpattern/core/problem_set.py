@@ -32,9 +32,7 @@ class ProblemSetRepository:
         self.problem_set.category = data.get("category", "")
         topics = data.get("topics", {})
         if not isinstance(topics, dict):
-            raise ValueError(
-                "topics should be a dict of topic names to problem IDs"
-            )
+            raise ValueError("topics should be a dict of topic names to problem IDs")
         for topic_name, problem_ids in topics.items():
             topic = Topic(
                 config_dir=self.problem_set.dir_name,

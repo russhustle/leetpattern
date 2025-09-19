@@ -15,9 +15,7 @@ class UnionFind:
         self.parent[self.find(n1)] = self.find(n2)
 
 
-def minReverseOperations(
-    n: int, p: int, banned: List[int], k: int
-) -> List[int]:
+def minReverseOperations(n: int, p: int, banned: List[int], k: int) -> List[int]:
     indices = UnionFind(n + 2)
     indices.union(p, p + 2)
 

@@ -1,9 +1,7 @@
 from typing import Callable, List, Tuple
 
 
-def maxTargetNodes(
-    edges1: List[List[int]], edges2: List[List[int]], k: int
-) -> List[int]:
+def maxTargetNodes(edges1: List[List[int]], edges2: List[List[int]], k: int) -> List[int]:
     n = len(edges1) + 1
     m = len(edges2) + 1
 

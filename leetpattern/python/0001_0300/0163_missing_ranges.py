@@ -1,9 +1,7 @@
 from typing import List
 
 
-def findMissingRanges(
-    nums: List[int], lower: int, upper: int
-) -> List[List[int]]:
+def findMissingRanges(nums: List[int], lower: int, upper: int) -> List[List[int]]:
     n = len(nums)
     res = []
     if n == 0:
@@ -25,9 +23,7 @@ def findMissingRanges(
     return res
 
 
-def findMissingRangesCompact(
-    nums: List[int], lower: int, upper: int
-) -> List[List[int]]:
+def findMissingRangesCompact(nums: List[int], lower: int, upper: int) -> List[List[int]]:
     res = []
 
     for num in nums + [upper + 1]:

@@ -107,13 +107,7 @@ def numIslandsBFS2(grid: List[List[str]]) -> int:
 
             for dr, dc in dirs:
                 nr, nc = dr + row, dc + col
-                if (
-                    nr < 0
-                    or nr >= m
-                    or nc < 0
-                    or nc >= n
-                    or grid[nr][nc] != "1"
-                ):
+                if nr < 0 or nr >= m or nc < 0 or nc >= n or grid[nr][nc] != "1":
                     continue
                 grid[nr][nc] = "2"
                 q.append((nr, nc))

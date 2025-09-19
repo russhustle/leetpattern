@@ -4,7 +4,7 @@
     "makefile.configureOnOpen": false,
     "prettier.embeddedLanguageFormatting": "auto",
     "prettier.bracketSameLine": false,
-    "prettier.printWidth": 79,
+    "prettier.printWidth": 90,
     "files.associations": {
         "iostream": "cpp",
         "algorithm": "cpp",

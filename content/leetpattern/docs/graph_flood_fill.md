@@ -27,6 +27,12 @@ comments: True
     --8<-- "python/0601_0900/0733_flood_fill.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0601_0900/0733_flood_fill.cc"
+    ```
+
 
 
 ## 200. Number of Islands

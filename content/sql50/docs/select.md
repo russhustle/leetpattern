@@ -19,6 +19,18 @@ comments: True
 
 -   Tags: Database
 
+=== "TXT"
+
+    ```txt
+    --8<-- "sql/1757_recyclable_and_low_fat_products.txt"
+    ```
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1757_recyclable_and_low_fat_products.sql"
+    ```
+
 
 
 ## 584. Find Customer Referee
@@ -26,6 +38,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/find-customer-referee/) | [力扣](https://leetcode.cn/problems/find-customer-referee/)
 
 -   Tags: Database
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/0584_find_customer_referee.sql"
+    ```
 
 
 
@@ -35,6 +53,12 @@ comments: True
 
 -   Tags: Database
 
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/0595_big_countries.sql"
+    ```
+
 
 
 ## 1148. Article Views I
@@ -43,6 +67,12 @@ comments: True
 
 -   Tags: Database
 
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1148_article_views_i.sql"
+    ```
+
 
 
 ## 1683. Invalid Tweets
@@ -50,3 +80,9 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/invalid-tweets/) | [力扣](https://leetcode.cn/problems/invalid-tweets/)
 
 -   Tags: Database
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1683_invalid_tweets.sql"
+    ```

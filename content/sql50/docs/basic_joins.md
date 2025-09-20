@@ -23,6 +23,12 @@ comments: True
 
 -   Tags: Database
 
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1378_replace_employee_id_with_the_unique_identifier.sql"
+    ```
+
 
 
 ## 1068. Product Sales Analysis I
@@ -30,6 +36,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/product-sales-analysis-i/) | [力扣](https://leetcode.cn/problems/product-sales-analysis-i/)
 
 -   Tags: Database
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1068_product_sales_analysis_i.sql"
+    ```
 
 
 
@@ -39,6 +51,12 @@ comments: True
 
 -   Tags: Database
 
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1581_customer_who_visited_but_did_not_make_any_transactions.sql"
+    ```
+
 
 
 ## 197. Rising Temperature
@@ -46,6 +64,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/rising-temperature/) | [力扣](https://leetcode.cn/problems/rising-temperature/)
 
 -   Tags: Database
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/0197_rising_temperature.sql"
+    ```
 
 
 
@@ -55,6 +79,12 @@ comments: True
 
 -   Tags: Database
 
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1661_average_time_of_process_per_machine.sql"
+    ```
+
 
 
 ## 577. Employee Bonus
@@ -62,6 +92,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/employee-bonus/) | [力扣](https://leetcode.cn/problems/employee-bonus/)
 
 -   Tags: Database
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/0577_employee_bonus.sql"
+    ```
 
 
 
@@ -71,6 +107,12 @@ comments: True
 
 -   Tags: Database
 
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1280_students_and_examinations.sql"
+    ```
+
 
 
 ## 570. Managers with at Least 5 Direct Reports
@@ -79,6 +121,12 @@ comments: True
 
 -   Tags: Database
 
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/0570_managers_with_at_least_5_direct_reports.sql"
+    ```
+
 
 
 ## 1934. Confirmation Rate
@@ -86,3 +134,9 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/confirmation-rate/) | [力扣](https://leetcode.cn/problems/confirmation-rate/)
 
 -   Tags: Database
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1934_confirmation_rate.sql"
+    ```

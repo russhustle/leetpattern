@@ -22,6 +22,12 @@ comments: True
 
 -   Tags: Database
 
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/0620_not_boring_movies.sql"
+    ```
+
 
 
 ## 1251. Average Selling Price
@@ -29,6 +35,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/average-selling-price/) | [力扣](https://leetcode.cn/problems/average-selling-price/)
 
 -   Tags: Database
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1251_average_selling_price.sql"
+    ```
 
 
 
@@ -38,6 +50,12 @@ comments: True
 
 -   Tags: Database
 
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1075_project_employees_i.sql"
+    ```
+
 
 
 ## 1633. Percentage of Users Attended a Contest
@@ -45,6 +63,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/percentage-of-users-attended-a-contest/) | [力扣](https://leetcode.cn/problems/percentage-of-users-attended-a-contest/)
 
 -   Tags: Database
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1633_percentage_of_users_attended_a_contest.sql"
+    ```
 
 
 
@@ -54,6 +78,18 @@ comments: True
 
 -   Tags: Database
 
+=== "TXT"
+
+    ```txt
+    --8<-- "sql/1211_queries_quality_and_percentage.txt"
+    ```
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1211_queries_quality_and_percentage.sql"
+    ```
+
 
 
 ## 1193. Monthly Transactions I
@@ -61,6 +97,18 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/monthly-transactions-i/) | [力扣](https://leetcode.cn/problems/monthly-transactions-i/)
 
 -   Tags: Database
+
+=== "TXT"
+
+    ```txt
+    --8<-- "sql/1193_monthly_transactions_i.txt"
+    ```
+
+=== "SQL"
+
+    ```sql
+    --8<-- "sql/1193_monthly_transactions_i.sql"
+    ```
 
 
 

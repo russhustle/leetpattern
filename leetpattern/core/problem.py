@@ -169,14 +169,3 @@ def snippet(lang, path):
     ```
 """
     return content
-
-
-if __name__ == "__main__":
-    from pprint import pprint
-
-    repo = ProblemRepository()
-    problem = repo.get_problem(3011)
-    if problem is not None:
-        pprint(problem)
-    else:
-        pprint("Problem not found")

@@ -13,9 +13,9 @@ struct ListNode {
     ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
-class ListUtils {
+class LinkedList {
    public:
-    static ListNode* buildList(const vector<int>& values) {
+    static ListNode* build(const vector<int>& values) {
         if (values.empty()) return nullptr;
 
         ListNode* head = new ListNode(values[0]);
@@ -29,16 +29,16 @@ class ListUtils {
         return head;
     }
 
-    static vector<int> toVector(ListNode* head) {
-        vector<int> result;
+    static vector<int> to_array(ListNode* head) {
+        vector<int> array;
         while (head) {
-            result.push_back(head->val);
+            array.push_back(head->val);
             head = head->next;
         }
-        return result;
+        return array;
     }
 
-    static void printList(ListNode* head) {
+    static void print_list(ListNode* head) {
         while (head) {
             cout << head->val;
             if (head->next) cout << " -> ";
@@ -54,6 +54,26 @@ class ListUtils {
             head = head->next;
         }
         return count;
+    }
+
+    static ListNode* make_cycle(ListNode* head, int pos) {
+        if (pos < 0) return head;
+
+        ListNode* tail = head;
+        ListNode* cycle_node = nullptr;
+        int index = 0;
+
+        while (tail && tail->next) {
+            if (index == pos) cycle_node = tail;
+            tail = tail->next;
+            index++;
+        }
+
+        if (tail && index == pos) cycle_node = tail;
+
+        if (tail) tail->next = cycle_node;
+
+        return head;
     }
 
     static ListNode* reverse(ListNode* head) {

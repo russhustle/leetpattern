@@ -1,16 +1,12 @@
 #include <cassert>
 #include <iostream>
-using namespace std;
 
-struct ListNode {
-    int val;
-    ListNode* next;
-    ListNode(int x) : val(x), next(NULL) {}
-};
+#include "include/lists.hpp"
+using namespace std;
 
 class Solution {
    public:
-    bool hasCycle(ListNode* head) {
+    bool has_cycle(ListNode* head) {
         ListNode* slow = head;
         ListNode* fast = head;
 
@@ -25,21 +21,18 @@ class Solution {
 };
 
 int main() {
-    Solution sol;
+    Solution solution;
 
-    ListNode* head = new ListNode(3);
-    head->next = new ListNode(2);
-    head->next->next = new ListNode(0);
-    head->next->next->next = new ListNode(-4);
-    head->next->next->next->next = head->next;  // Create a cycle
-    assert(sol.hasCycle(head) == true);
-
-    ListNode* head2 = new ListNode(1);
-    head2->next = new ListNode(2);
-    assert(sol.hasCycle(head2) == false);
-
-    ListNode* head3 = new ListNode(1);
-    assert(sol.hasCycle(head3) == false);
+    ListNode* head = LinkedList::build({3, 2, 0, -4});
+    // create cycle
+    head = LinkedList::make_cycle(head, 1);
+    assert(solution.has_cycle(head) == true);
+    // no cycle
+    ListNode* head2 = LinkedList::build({1, 2});
+    assert(solution.has_cycle(head2) == false);
+    // no cycle
+    ListNode* head3 = LinkedList::build({1});
+    assert(solution.has_cycle(head3) == false);
 
     return 0;
 }

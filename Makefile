@@ -22,6 +22,14 @@ sync:
 format:
 	uv run pre-commit run --all-files
 
+merge:
+	git checkout main
+	git merge dev
+	git push origin main
+	git checkout dev
+	git merge main
+	git push origin dev
+
 build:
 	uv run lpn generate
 

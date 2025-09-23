@@ -1,0 +1,5 @@
+site_name: Company
+
+nav:
+- Amazon: amazon.md
+- Indeed: indeed.md

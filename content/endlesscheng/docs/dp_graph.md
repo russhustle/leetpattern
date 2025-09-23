@@ -44,6 +44,12 @@ comments: True
     --8<-- "python/0601_0900/0787_cheapest_flights_within_k_stops.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0601_0900/0787_cheapest_flights_within_k_stops.cc"
+    ```
+
 
 
 ## 1786. Number of Restricted Paths From First to Last Node

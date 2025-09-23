@@ -54,6 +54,12 @@ comments: True
     --8<-- "python/0601_0900/0743_network_delay_time.py"
     ```
 
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0601_0900/0743_network_delay_time.cc"
+    ```
+
 
 
 ## 778. Swim in Rising Water
@@ -94,4 +100,10 @@ comments: True
 
     ```python
     --8<-- "python/0601_0900/0787_cheapest_flights_within_k_stops.py"
+    ```
+
+=== "CPP"
+
+    ```cpp
+    --8<-- "cpp/0601_0900/0787_cheapest_flights_within_k_stops.cc"
     ```

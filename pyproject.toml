@@ -30,8 +30,8 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["leetpattern"]
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "matplotlib>=3.9.2",
     "pyarrow>=19.0.1",
     "fastparquet>=2024.11.0",

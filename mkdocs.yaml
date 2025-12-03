@@ -11,7 +11,6 @@ nav:
           - Interview 150: "!include content/interview150/mkdocs.yaml"
           - SQL 50: "!include content/sql50/mkdocs.yaml"
           - Challenge: "!include content/challenge/mkdocs.yaml"
-          - EndlessCheng: "!include content/endlesscheng/mkdocs.yaml"
           - Company Wise: "!include content/company/mkdocs.yaml"
 
     - About: about.md

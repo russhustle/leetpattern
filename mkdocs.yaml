@@ -10,7 +10,6 @@ nav:
           - Premium 100: "!include content/premium100/mkdocs.yaml"
           - Interview 150: "!include content/interview150/mkdocs.yaml"
           - SQL 50: "!include content/sql50/mkdocs.yaml"
-          - Challenge: "!include content/challenge/mkdocs.yaml"
           - Company Wise: "!include content/company/mkdocs.yaml"
 
     - About: about.md

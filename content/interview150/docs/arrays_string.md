@@ -23,7 +23,7 @@ comments: True
 - [x] [135. Candy](#135-candy) (Hard)
 - [x] [42. Trapping Rain Water](#42-trapping-rain-water) (Hard)
 - [x] [13. Roman to Integer](#13-roman-to-integer) (Easy)
-- [ ] [12. Integer to Roman](#12-integer-to-roman) (Medium)
+- [x] [12. Integer to Roman](#12-integer-to-roman) (Medium)
 - [x] [58. Length of Last Word](#58-length-of-last-word) (Easy)
 - [x] [14. Longest Common Prefix](#14-longest-common-prefix) (Easy)
 - [x] [151. Reverse Words in a String](#151-reverse-words-in-a-string) (Medium)
@@ -341,6 +341,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/integer-to-roman/) | [力扣](https://leetcode.cn/problems/integer-to-roman/)
 
 -   Tags: Hash Table, Math, String
+
+=== "Python"
+
+    ```python
+    --8<-- "python/0001_0300/0012_integer_to_roman.py"
+    ```
 
 
 

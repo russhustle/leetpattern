@@ -52,7 +52,7 @@ class Problem:
 class ProblemRepository:
     """Repository for managing problem data."""
 
-    def __init__(self, data_path: str = None):
+    def __init__(self, data_path: Optional[str] = None):
         if data_path is None:
             data_path = os.path.join(os.path.dirname(__file__), "questions.parquet")
         self.data_path = data_path

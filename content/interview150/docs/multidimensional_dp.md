@@ -6,7 +6,7 @@ comments: True
 
 ## Table of Contents
 
-- [ ] [120. Triangle](#120-triangle) (Medium)
+- [x] [120. Triangle](#120-triangle) (Medium)
 - [x] [64. Minimum Path Sum](#64-minimum-path-sum) (Medium)
 - [x] [63. Unique Paths II](#63-unique-paths-ii) (Medium)
 - [x] [5. Longest Palindromic Substring](#5-longest-palindromic-substring) (Medium)
@@ -22,6 +22,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/triangle/) | [力扣](https://leetcode.cn/problems/triangle/)
 
 -   Tags: Array, Dynamic Programming
+
+=== "Python"
+
+    ```python
+    --8<-- "python/0001_0300/0120_triangle.py"
+    ```
 
 
 

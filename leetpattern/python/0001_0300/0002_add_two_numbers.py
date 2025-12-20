@@ -1,13 +1,10 @@
-"""
--   Represent the sum of two numbers as a linked list.
-"""
-
 from typing import Optional
 
 from leetpattern.utils import LinkedList, ListNode
 
 
 def add_two_numbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    """Add two numbers represented by linked lists."""
     dummy = ListNode()
     cur = dummy
     carry = 0

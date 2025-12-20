@@ -1,26 +1,27 @@
-"""
--   Return the final array after applying all the Adition operations.
-"""
-
 from typing import List
 
 
-# Difference Array
 def getModifiedArray(length: int, updates: List[List[int]]) -> List[int]:
-    result = [0 for _ in range(length)]
+    """
+    Return the final array after applying all the Adition operations.
+    method: difference array
+    """
+
+    res = [0 for _ in range(length)]
 
     for start, end, inc in updates:
-        result[start] += inc
+        res[start] += inc
 
         if end + 1 < length:
-            result[end + 1] -= inc
+            res[end + 1] -= inc
 
     for i in range(1, length):
-        result[i] += result[i - 1]
+        res[i] += res[i - 1]
 
-    return result
+    return res
 
 
-length = 5
-updates = [[1, 3, 2], [2, 4, 3], [0, 2, -2]]
-print(getModifiedArray(length, updates))  # [-2, 0, 3, 5, 3]
+if __name__ == "__main__":
+    length = 5
+    updates = [[1, 3, 2], [2, 4, 3], [0, 2, -2]]
+    assert getModifiedArray(length, updates) == [-2, 0, 3, 5, 3]

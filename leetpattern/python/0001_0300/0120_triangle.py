@@ -1,5 +1,5 @@
-from typing import List
 from functools import cache
+from typing import List
 
 
 class Solution:

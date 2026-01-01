@@ -1,26 +1,33 @@
 from typing import List
 
 
-# Greedy
-def canCompleteCircuit(gas: List[int], cost: List[int]) -> int:
-    curSum = 0
-    totalSum = 0
-    start = 0
+class canCompleteCircuit:
+    def greedy(self, gas: List[int], cost: List[int]) -> int:
+        """
+        Approach: Greedy
+        Time Complexity: O(n)
+        Space Complexity: O(1)
+        """
 
-    for i in range(len(gas)):
-        curSum += gas[i] - cost[i]
-        totalSum += gas[i] - cost[i]
+        # edge case
+        if sum(gas) < sum(cost):
+            return -1
 
-        if curSum < 0:
-            start = i + 1
-            curSum = 0
+        cur_sum = 0
+        start = 0
 
-    if totalSum < 0:
-        return -1
+        for i in range(len(gas)):
+            cur_sum += gas[i] - cost[i]
 
-    return start
+            if cur_sum < 0:
+                start = i + 1
+                cur_sum = 0
+
+        return start
 
 
-gas = [1, 2, 3, 4, 5]
-cost = [3, 4, 5, 1, 2]
-print(canCompleteCircuit(gas, cost))  # 3
+if __name__ == "__main__":
+    solution = canCompleteCircuit()
+    gas = [1, 2, 3, 4, 5]
+    cost = [3, 4, 5, 1, 2]
+    assert solution.greedy(gas, cost) == 3

@@ -1,21 +1,22 @@
 from typing import List
 
 
-# Greedy
-def maximumHappinessSum(happiness: List[int], k: int) -> int:
-    selected = 0
-    happinessScore = 0
-    happiness.sort(reverse=True)
+class maximumHappinessSum:
+    @staticmethod
+    def greedy(happiness: List[int], k: int) -> int:
+        happiness.sort(reverse=True)
+        res = 0
+        i = 0
 
-    for score in happiness:
-        if selected == k:
-            return happinessScore
-        happinessScore += max(0, score - selected)
-        selected += 1
+        while i < k:
+            if happiness[i] <= i:
+                break
+            res += happiness[i] - i
+            i += 1
 
-    return happinessScore
+        return res
 
 
-happiness = [1, 2, 3]
-k = 2
-print(maximumHappinessSum(happiness, k))  # 4
+if __name__ == "__main__":
+    assert maximumHappinessSum.greedy([1, 2, 3], 2) == 4
+    assert maximumHappinessSum.greedy([5, 1, 3, 7], 3) == 12

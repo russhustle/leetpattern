@@ -1,13 +1,16 @@
-def lengthOfLastWord(s: str) -> int:
-    n = 0
+class lengthOfLastWord:
+    def array(self, s: str) -> int:
+        res = 0
 
-    for i in range(len(s) - 1, -1, -1):
-        if s[i] != " ":
-            n += 1
-        if s[i] == " " and n > 0:
-            return n
+        for i in range(len(s) - 1, -1, -1):
+            if s[i] != " ":
+                res += 1
+            elif s[i] == " " and res > 0:
+                return res
 
-    return n
+        return res
 
 
-print(lengthOfLastWord("Hello World"))  # 5
+if __name__ == "__main__":
+    solution = lengthOfLastWord()
+    assert solution.array("Hello World") == 5

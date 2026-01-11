@@ -24,8 +24,6 @@ copyright: Copyright &copy; 2024-2025 Sihan A
 
 theme:
     language: en
-    logo: assets/logo.jpg
-    favicon: assets/logo.jpg
     name: material
     palette:
         - media: "(prefers-color-scheme: dark)"
@@ -115,10 +113,6 @@ markdown_extensions:
     - md_in_html
 
 plugins:
-    # show the last modification date of the page
-    - git-revision-date-localized:
-          enable_creation_date: true
-          type: timeago
     - search
     - monorepo
     - exclude:

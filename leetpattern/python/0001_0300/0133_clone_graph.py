@@ -8,44 +8,39 @@ class Node:
         self.neighbors = neighbors if neighbors is not None else []
 
 
-# 1. DFS
-def cloneGraphDFS(node: Optional["Node"]) -> Optional["Node"]:
-    if not node:
-        return None
+class CloneGraph:
+    def dfs(self, node: Optional["Node"]) -> Optional["Node"]:
+        hashmap = {}
 
-    cloned = {}  # {old: new}
+        def dfs(node):
+            if node in hashmap:
+                return hashmap[node]
 
-    def dfs(node):
-        if node in cloned:
-            return cloned[node]
+            res = Node(node.val)
+            hashmap[node] = res
 
-        new = Node(node.val)
-        cloned[node] = new
+            for nei in node.neighbors:
+                res.neighbors.append(dfs(nei))
 
-        for neighbor in node.neighbors:
-            new.neighbors.append(dfs(neighbor))
+            return res
 
-        return new
+        return dfs(node) if node else None
 
-    return dfs(node)
+    def bfs(self, node: Optional["Node"]) -> Optional["Node"]:
+        if not node:
+            return None
 
+        hashmap = {node: Node(node.val)}
+        q = deque([node])
 
-# 2. BFS
-def cloneGraphBFS(node: Optional["Node"]) -> Optional["Node"]:
-    if not node:
-        return None
+        while q:
+            cur = q.popleft()
 
-    cloned = {node: Node(node.val)}
-    q = deque([node])
+            for nei in cur.neighbors:
+                if nei not in hashmap:
+                    hashmap[nei] = Node(nei.val)
+                    q.append(nei)
 
-    while q:
-        cur = q.popleft()
+                hashmap[cur].neighbors.append(hashmap[nei])
 
-        for neighbor in cur.neighbors:
-            if neighbor not in cloned:
-                cloned[neighbor] = Node(neighbor.val)
-                q.append(neighbor)
-
-            cloned[cur].neighbors.append(cloned[neighbor])
-
-    return cloned[node]
+        return hashmap[node]

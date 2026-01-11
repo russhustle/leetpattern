@@ -1,43 +1,43 @@
-"""
-- Return the area of the largest rectangle that can be formed within a rectangle of 1's.
-
-![0085](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg)
-"""
-
 from typing import List
 
 
-# Monotonic Stack
-def maximalRectangle(matrix: List[List[str]]) -> int:
-    if not matrix or not matrix[0]:
-        return 0
+class maximalRectangle:
+    """
+    prerequisite: 84. Largest Rectangle in Histogram
+    """
 
-    n = len(matrix[0])
-    heights = [0] * (n + 1)
-    max_area = 0
+    def monotonic_stack(self, matrix: List[List[str]]) -> int:
+        if not matrix or not matrix[0]:
+            return 0
 
-    for row in matrix:
-        for i in range(n):
-            if row[i] == "1":
-                heights[i] += 1
-            else:
-                heights[i] = 0
+        n = len(matrix[0])
+        heights = [0] * (n + 1)
+        res = 0
 
-        stack = [-1]
-        for i in range(n + 1):
-            while heights[i] < heights[stack[-1]]:
-                h = heights[stack.pop()]
-                w = i - stack[-1] - 1
-                max_area = max(max_area, h * w)
-            stack.append(i)
+        for row in matrix:
+            for i in range(n):
+                if row[i] == "1":
+                    heights[i] += 1
+                else:
+                    heights[i] = 0
 
-    return max_area
+            stack = [-1]
+            for i in range(n + 1):
+                while heights[i] < heights[stack[-1]]:
+                    h = heights[stack.pop()]
+                    w = i - stack[-1] - 1
+                    res = max(res, h * w)
+                stack.append(i)
+
+        return res
 
 
-matrix = [
-    ["1", "0", "1", "0", "0"],
-    ["1", "0", "1", "1", "1"],
-    ["1", "1", "1", "1", "1"],
-    ["1", "0", "0", "1", "0"],
-]
-print(maximalRectangle(matrix))  # 6
+if __name__ == "__main__":
+    sol = maximalRectangle()
+    matrix = [
+        ["1", "0", "1", "0", "0"],
+        ["1", "0", "1", "1", "1"],
+        ["1", "1", "1", "1", "1"],
+        ["1", "0", "0", "1", "0"],
+    ]
+    assert sol.monotonic_stack(matrix) == 6

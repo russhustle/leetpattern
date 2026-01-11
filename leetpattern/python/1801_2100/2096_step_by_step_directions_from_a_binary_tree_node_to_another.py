@@ -1,4 +1,5 @@
 from typing import Optional
+
 from binarytree import Node as TreeNode
 
 

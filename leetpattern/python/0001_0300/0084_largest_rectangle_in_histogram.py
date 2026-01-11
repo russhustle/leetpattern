@@ -1,23 +1,26 @@
 from typing import List
 
 
-# Monotonic Stack
-def largestRectangleArea(heights: List[int]) -> int:
-    stack = []
-    max_area = 0
-    n = len(heights)
+class LargestRectangleArea:
+    def monotonic_stack(self, heights: List[int]) -> int:
+        stack = []
+        res = 0
+        n = len(heights)
 
-    for i in range(n + 1):
-        h = 0 if i == n else heights[i]
+        for i in range(n + 1):
+            h = heights[i] if i < n else 0
 
-        while stack and h < heights[stack[-1]]:
-            height = heights[stack.pop()]
-            width = i if not stack else i - stack[-1] - 1
-            max_area = max(max_area, height * width)
+            while stack and h < heights[stack[-1]]:
+                height = heights[stack.pop()]
+                width = i if not stack else i - stack[-1] - 1
+                res = max(res, height * width)
 
-        stack.append(i)
+            stack.append(i)
 
-    return max_area
+        return res
 
 
-print(largestRectangleArea([2, 1, 5, 6, 2, 3]))  # 10
+if __name__ == "__main__":
+    sol = LargestRectangleArea()
+    assert sol.monotonic_stack([2, 1, 5, 6, 2, 3]) == 10
+    assert sol.monotonic_stack([2, 4]) == 4

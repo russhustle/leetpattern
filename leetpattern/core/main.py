@@ -20,7 +20,6 @@ def main():
         )
         problem_set.make_topics_md()
         problem_set.make_mkdocs_yaml()
-        problem_set.make_readme_md()
 
 
 if __name__ == "__main__":

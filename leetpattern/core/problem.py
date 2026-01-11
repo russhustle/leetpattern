@@ -110,7 +110,7 @@ class ProblemRepository:
             is_done = True
         if if_file_exist(sql_path):
             is_done = True
-        heading = f"## {qid}. {row['title']}"
+        heading = f"## {qid}. {row['title'] + (" 👑" if row['paidOnly'] else "")}"
         heading_link = f"#{qid}-{row['titleSlug'].replace('_', '-')}"
         progress = f"- [{"x" if is_done else " "}] [{qid}. {row['title']}]({heading_link}) ({row['difficulty']})"
         progress += f"{" 👑" if row['paidOnly'] else ""}"

@@ -11,7 +11,6 @@ clean:
 	find . -name "output" -type d -exec rm -r {} +
 	find . -name "build" -type d -exec rm -r {} +
 	find . -name ".pytest_cache" -type d -exec rm -r {} +
-	find . -name "site" -type d -exec rm -r {} +
 
 push:
 	git add .

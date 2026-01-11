@@ -61,16 +61,9 @@ class ProblemSetRepository:
             with topic_path.open("w", encoding="utf-8") as file:
                 file.write(topic.md_content)
 
-    def make_readme_md(self):
-        content = f"# {self.problem_set.name}\n\n"
-        readme_path = self.docs / "README.md"
-        with readme_path.open("w", encoding="utf-8") as file:
-            file.write(content)
-
     def make_mkdocs_yaml(self):
         content = f"site_name: {self.problem_set.name}\n\nnav:\n"
         for topic in self.problem_set.topics:
-            # Use bilingual label if Chinese name exists
             if topic.name_zh:
                 label = f"{topic.name_zh} {topic.name}"
             else:

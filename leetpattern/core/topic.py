@@ -19,9 +19,7 @@ class TopicRepository:
     def __init__(self, topic: Topic):
         self.topic = topic
         # md_content
-        md_content = self.comments(comments=True) + "\n"
-
-        md_content += f"# {self.topic.name_zh} {self.topic.name}\n\n"
+        md_content = f"# {self.topic.name_zh} {self.topic.name}\n\n"
 
         md_content += self.toc() + "\n\n"
         for qid in self.topic.problem_ids:
@@ -30,12 +28,6 @@ class TopicRepository:
 
         # md_path
         self.topic.md_path = self.topic.name.lower().replace(" ", "_") + ".md"
-
-    def comments(self, comments: bool) -> str:
-        return f"""---
-comments: {comments}
----
-"""
 
     def toc(self):
         toc = "## Table of Contents\n\n"

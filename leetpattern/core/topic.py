@@ -46,8 +46,8 @@ class TopicRepository:
             content += problem.cpp_snippet + "\n" if problem.cpp_snippet else ""
             content += problem.js_snippet + "\n" if problem.js_snippet else ""
         elif problem and problem.category == "database":
-            content += problem.txt_snippet + "\n" if problem.txt_snippet else ""
             content += problem.sql_snippet + "\n" if problem.sql_snippet else ""
+            content += problem.txt_snippet + "\n" if problem.txt_snippet else ""
 
         return content
 

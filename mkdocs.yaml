@@ -39,8 +39,8 @@ theme:
               icon: material/toggle-switch-off-outline
               name: Switch to dark mode
     font:
-        text: Work Sans
-        code: Roboto Code
+        text: Roboto
+        code: Fira Code
 
     features:
         - content.code.copy # Enable copy button on code blocks

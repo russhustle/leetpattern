@@ -1,5 +1,3 @@
-"""Problem domain models and repository."""
-
 import os
 from dataclasses import dataclass
 from typing import Optional

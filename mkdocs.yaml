@@ -13,14 +13,12 @@ nav:
           - SQL 50: "!include content/sql50/mkdocs.yaml"
           - Company Wise: "!include content/company/mkdocs.yaml"
 
-    - About: about.md
-
 site_name: 🚀LeetPattern
 site_url: https://russhustle.github.io/leetpattern/
 site_author: Sihan A
 site_description: LeetCode Patterns
 repo_url: https://github.com/russhustle/leetpattern/
-copyright: Copyright &copy; 2024-2025 Sihan A
+copyright: Copyright &copy; 2024-2026 Sihan A
 
 theme:
     language: en
@@ -79,7 +77,6 @@ theme:
             bug: octicons/bug-16
             example: octicons/beaker-16
             quote: octicons/quote-16
-    custom_dir: overrides
 
 markdown_extensions:
     - admonition
@@ -115,10 +112,6 @@ markdown_extensions:
 plugins:
     - search
     - monorepo
-    - exclude:
-          glob:
-              - "md/*.md"
-              - "content/home/*.md"
 
 extra:
     creator: Sihan A
@@ -140,9 +133,6 @@ extra:
         title: Cookie consent
         description: We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.
 
-    analytics:
-        provider: google
-        property: G-EZ5J5E3CTR
 extra_javascript:
     - utils/mathjax.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6

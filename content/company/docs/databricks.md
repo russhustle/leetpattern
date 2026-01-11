@@ -12,7 +12,7 @@ comments: True
 - [x] [213. House Robber II](#213-house-robber-ii) (Medium)
 - [x] [198. House Robber](#198-house-robber) (Medium)
 - [ ] [1146. Snapshot Array](#1146-snapshot-array) (Medium)
-- [ ] [2096. Step-By-Step Directions From a Binary Tree Node to Another](#2096-step-by-step-directions-from-a-binary-tree-node-to-another) (Medium)
+- [x] [2096. Step-By-Step Directions From a Binary Tree Node to Another](#2096-step-by-step-directions-from-a-binary-tree-node-to-another) (Medium)
 - [ ] [933. Number of Recent Calls](#933-number-of-recent-calls) (Easy)
 
 
@@ -99,6 +99,12 @@ comments: True
 -    [LeetCode](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) | [力扣](https://leetcode.cn/problems/step-by-step-directions-from-a-binary-tree-node-to-another/)
 
 -   Tags: String, Tree, Depth First Search, Binary Tree
+
+=== "Python"
+
+    ```python
+    --8<-- "python/1801_2100/2096_step_by_step_directions_from_a_binary_tree_node_to_another.py"
+    ```
 
 
 

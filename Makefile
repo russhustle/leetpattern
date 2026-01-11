@@ -31,7 +31,7 @@ merge:
 	git push origin dev
 
 build:
-	uv run lpn generate
+	uv run python leetpattern/core/main.py
 
 test:
 	uv run pytest
@@ -39,4 +39,5 @@ test:
 run:
 	$(MAKE) build
 	$(MAKE) format || $(MAKE) format
+	uv run mkdocs build
 	$(MAKE) clean

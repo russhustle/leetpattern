@@ -133,5 +133,6 @@ site/
 output/
 *.ipynb
 *.drawio
-src copy/
-docs copy/
+
+/content/
+/home/

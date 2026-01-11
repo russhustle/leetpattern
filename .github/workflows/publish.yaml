@@ -31,5 +31,8 @@ jobs:
           - name: Install dependencies with uv
             run: uv sync --no-dev
 
+          - name: Build content folder
+            run: uv run python leetpattern/core/main.py
+
           - name: Deploy to GitHub Pages
             run: uv run mkdocs gh-deploy --force

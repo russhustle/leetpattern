@@ -2,21 +2,57 @@ category: algorithms
 dir: blind75
 name: Blind 75
 topics:
-    Arrays Hashing: [ 217, 242, 1, 49, 347, 271, 238, 128 ]
-    Two Pointers: [ 125, 15, 11 ]
-    Sliding Window: [ 121, 3, 424, 76 ]
-    Stack: [ 20 ]
-    Binary Search: [ 153, 33 ]
-    Linked List: [ 206, 21, 143, 19, 141, 23 ]
-    Trees: [ 226, 104, 100, 572, 235, 102, 98, 230, 105, 124, 298 ]
-    Heap: [ 295 ]
-    Backtracking: [ 39, 79 ]
-    Tries: [ 208, 212, 211 ]
-    Graphs: [ 200, 133, 417, 207, 261, 323 ]
-    Advanced Graphs: [ 269 ]
-    1D Dynamic Programming: [ 70, 198, 213, 5, 647, 91, 322, 152, 139, 300 ]
-    2D Dynamic Programming: [ 62, 1143 ]
-    Greedy: [ 53, 55 ]
-    Intervals: [ 57, 56, 252, 253, 254 ]
-    Math Geometry: [ 48, 54, 73 ]
-    Bit Manipulation: [ 191, 338, 190, 268, 371 ]
+    Arrays Hashing:
+        name_zh: 数组与哈希表
+        problem_ids: [217, 242, 1, 49, 347, 271, 238, 128]
+    Two Pointers:
+        name_zh: 双指针
+        problem_ids: [125, 15, 11]
+    Sliding Window:
+        name_zh: 滑动窗口
+        problem_ids: [121, 3, 424, 76]
+    Stack:
+        name_zh: 栈
+        problem_ids: [20]
+    Binary Search:
+        name_zh: 二分查找
+        problem_ids: [153, 33]
+    Linked List:
+        name_zh: 链表
+        problem_ids: [206, 21, 143, 19, 141, 23]
+    Trees:
+        name_zh: 树
+        problem_ids: [226, 104, 100, 572, 235, 102, 98, 230, 105, 124, 298]
+    Heap:
+        name_zh: 堆
+        problem_ids: [295]
+    Backtracking:
+        name_zh: 回溯
+        problem_ids: [39, 79]
+    Tries:
+        name_zh: 字典树
+        problem_ids: [208, 212, 211]
+    Graphs:
+        name_zh: 图论
+        problem_ids: [200, 133, 417, 207, 261, 323]
+    Advanced Graphs:
+        name_zh: 进阶图论
+        problem_ids: [269]
+    1D Dynamic Programming:
+        name_zh: 一维动态规划
+        problem_ids: [70, 198, 213, 5, 647, 91, 322, 152, 139, 300]
+    2D Dynamic Programming:
+        name_zh: 二维动态规划
+        problem_ids: [62, 1143]
+    Greedy:
+        name_zh: 贪心
+        problem_ids: [53, 55]
+    Intervals:
+        name_zh: 区间问题
+        problem_ids: [57, 56, 252, 253, 254]
+    Math Geometry:
+        name_zh: 数学与几何
+        problem_ids: [48, 54, 73]
+    Bit Manipulation:
+        name_zh: 位运算
+        problem_ids: [191, 338, 190, 268, 371]

@@ -9,6 +9,7 @@ nav:
           - Graph Theory: "!include content/graph_theory/mkdocs.yaml"
           - Premium 100: "!include content/premium100/mkdocs.yaml"
           - Interview 150: "!include content/interview150/mkdocs.yaml"
+          - 灵茶山艾府: "!include content/endlesscheng/mkdocs.yaml"
           - SQL 50: "!include content/sql50/mkdocs.yaml"
           - Company Wise: "!include content/company/mkdocs.yaml"
 

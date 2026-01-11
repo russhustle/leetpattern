@@ -4,7 +4,7 @@ name: EndlessCheng
 topics:
     # Sliding Window and Two Pointers
     ## Fixed Size Sliding Window
-    Sliding Window Fixed Size Basics:
+    定长滑动窗口基础 Fixed Sliding Window Basics:
         [
             1456,
             643,
@@ -22,7 +22,7 @@ topics:
             1151,
             2107,
         ]
-    Sliding Window Fixed Size Advanced:
+    定长滑动窗口进阶 Fixed Sliding Window Size Advanced:
         [
             1461,
             2134,
@@ -40,11 +40,11 @@ topics:
             2067,
             2524,
         ]
-    Sliding Window Fixed Size Others: [2269, 1984, 220]
+    定长滑动窗口其他 Fixed Sliding Window Others: [2269, 1984, 220]
     ## Variable Size Sliding Window
-    Sliding Window Variable Max Basics:
+    不定长滑动窗口求大基础 Variable Sliding Window Max Basics:
         [3, 3090, 1493, 1208, 904, 1695, 2958, 2024, 1004, 1658]
-    Sliding Window Variable Max Advanced:
+    不定长滑动窗口求大进阶 Variable Sliding Window Max Advanced:
         [
             2730,
             2779,
@@ -67,18 +67,25 @@ topics:
             159,
             340,
         ]
-    Sliding Window Variable Min: [209, 2904, 1234, 2875, 76, 632]
-    Sliding Window Variable Subarrays Longer:
+    不定长滑动窗口求小 Variable Sliding Window Min: [209, 2904, 1234, 2875, 76, 632]
+    不定长滑动窗口求长 Variable Sliding Window Subarrays Longer:
         [1358, 2962, 3325, 2799, 2537, 3298, 2495]
-    Sliding Window Variable Subarrays Shorter:
+    不定长滑动窗口求短 Variable Sliding Window Subarrays Shorter:
         [713, 3258, 2302, 2762, 3134, 3261, 2743]
-    Sliding Window Variable Subarrays Exact: [930, 1248, 3305, 3306, 992]
-    Sliding Window Variable Others:
-        [1438, 825, 2401, 1156, 424, 438, 1712, 1918]
-    ## One Sequence Two Pointers
-    One Sequence Two Pointers Opposite Direction:
+    不定长滑动窗口求精 Variable Sliding Window Subarrays Exact:
+        [930, 1248, 3305, 3306, 992]
+    不定长滑动窗口其他 Variable Sliding Window Others:
+        [825, 2401, 1156, 424, 438, 1712, 1918]
+
+    ## 单序列 One Sequence Two Pointers
+    单序列相向双指针 One Sequence Two Pointers Opposite Direction:
         [
             344,
+            3643,
+            541,
+            557,
+            345,
+            917,
             125,
             1750,
             2105,
@@ -88,6 +95,7 @@ topics:
             167,
             633,
             2824,
+            2563,
             15,
             16,
             18,
@@ -105,17 +113,20 @@ topics:
             2422,
             259,
         ]
-    One Sequence Two Pointers Same Direction:
-        [1574, 2972, 2122, 2234, 3323, 581]
-    One Sequence Two Pointers Backward: [1793]
-    One Sequence Two Pointers In-Place Modification:
-        [27, 26, 80, 283, 905, 922, 2460, 1089]
-    ## Two Sequences Two Pointers
-    Two Sequences Two Pointers:
+    单序列同向双指针 One Sequence Two Pointers Same Direction:
+        [611, 3649, 1574, 2972, 2122, 2234, 1989, 3323, 581, 3555]
+    单序列背向双指针 One Sequence Two Pointers Backward: [1793, 976]
+    单序列原地修改 One Sequence Two Pointers In-Place Modification:
+        [27, 26, 80, 2273, 3684, 283, 905, 922, 3467, 2460, 1089, 75]
+
+    ## 双序列 Two Sequences Two Pointers
+    双序列双指针 Two Sequences Two Pointers:
         [
+            2109,
             2540,
             88,
             2570,
+            350,
             1855,
             1385,
             925,
@@ -131,19 +142,25 @@ topics:
             1570,
             1868,
         ]
-    Two Sequences Subsequence Checking:
+    双序列判断子序列 Two Sequences Subsequence Check:
         [392, 524, 2486, 2825, 1023, 3132, 522, 1898, 2565, 3302]
     ## Three Pointers
-    Three Pointers: [2367, 2563, 795, 2444, 3347, 1213]
+    三指针 Three Pointers: [2367, 2563, 795, 2444, 3347, 1213]
     ## Gropued Loop
-    Grouped Loop:
+    分组循环 Grouped Loop:
         [
+            485,
             1446,
             1869,
             2414,
             3456,
+            2273,
+            2348,
+            1513,
             1957,
             674,
+            3708,
+            696,
             978,
             2110,
             228,
@@ -151,6 +168,7 @@ topics:
             1887,
             845,
             2038,
+            2900,
             1759,
             3011,
             1578,
@@ -159,9 +177,15 @@ topics:
             3255,
             3350,
             3105,
+            838,
             467,
+            3499,
+            413,
+            68,
+            135,
             2948,
             2593,
+            3640,
             2393,
             2436,
             2495,
@@ -192,21 +216,7 @@ topics:
         ]
     ## Binary Search on Answer
     Binary Search Min Answer:
-        [
-            1283,
-            2187,
-            1870,
-            1011,
-            875,
-            3296,
-            475,
-            2594,
-            1482,
-            3048,
-            2604,
-            2702,
-            3453,
-        ]
+        [1283, 2187, 1870, 1011, 875, 3296, 475, 2594, 1482, 3048, 2604, 2702, 3453]
     Binary Search Max Answer:
         [
             275,
@@ -358,21 +368,7 @@ topics:
         ]
     Grid 01 BFS: [1368, 2290, 3286, 1824]
     Grid Applications:
-        [
-            1631,
-            778,
-            329,
-            1036,
-            864,
-            1263,
-            2258,
-            2556,
-            2577,
-            2617,
-            694,
-            711,
-            1102,
-        ]
+        [1631, 778, 329, 1036, 864, 1263, 2258, 2556, 2577, 2617, 694, 711, 1102]
 
     # Bit
     Bit Basics:
@@ -421,21 +417,7 @@ topics:
     Bit Trial and Error Method: [3007, 421, 2935, 3145, 3022, 3287]
     Bit Identity Law: [1835, 2354]
     Bit Thinking Problems:
-        [
-            2546,
-            1558,
-            2571,
-            3315,
-            2568,
-            2509,
-            2939,
-            2749,
-            2835,
-            2897,
-            810,
-            3064,
-            3094,
-        ]
+        [2546, 1558, 2571, 3315, 2568, 2509, 2939, 2749, 2835, 2897, 810, 3064, 3094]
     Bit Others:
         [
             136,
@@ -565,21 +547,7 @@ topics:
             2463,
         ]
     Graph Others:
-        [
-            1042,
-            1761,
-            2508,
-            1579,
-            2065,
-            1697,
-            2242,
-            2493,
-            1782,
-            3435,
-            277,
-            1724,
-            2077,
-        ]
+        [1042, 1761, 2508, 1579, 2065, 1697, 2242, 2493, 1782, 3435, 277, 1724, 2077]
 
     # Dynamic Programming
     ## DP Basics
@@ -589,21 +557,7 @@ topics:
     ## Grid DP
     DP Grid Basics: [64, 62, 63, 120, 3393, 931, 2684, 2304, 1289, 3418]
     DP Grid Advanced:
-        [
-            1594,
-            1301,
-            2435,
-            174,
-            329,
-            2328,
-            2267,
-            1937,
-            3363,
-            1463,
-            741,
-            3459,
-            2510,
-        ]
+        [1594, 1301, 2435, 174, 329, 2328, 2267, 1937, 3363, 1463, 741, 3459, 2510]
     ## DP Knapsack
     DP 0-1 Knapsack:
         [
@@ -655,26 +609,11 @@ topics:
             2464,
         ]
     DP Constrained Number of Partitions:
-        [
-            410,
-            813,
-            1278,
-            1745,
-            1335,
-            1473,
-            2209,
-            1478,
-            1959,
-            2478,
-            3077,
-            2911,
-            3117,
-        ]
+        [410, 813, 1278, 1745, 1335, 1473, 2209, 1478, 1959, 2478, 3077, 2911, 3117]
     DP Non-Overlapping Intervals: [2830, 2008, 2054, 1235, 1751, 3414]
     ## DP State Machine
     DP Stock Trading: [121, 122, 123, 188, 309, 714]
-    DP State Machine Basics:
-        [3259, 2222, 1567, 2708, 2826, 2786, 1911, 376, 1186]
+    DP State Machine Basics: [3259, 2222, 1567, 2708, 2826, 2786, 1911, 376, 1186]
     DP State Machine Advanced:
         [
             1262,
@@ -697,10 +636,8 @@ topics:
             3269,
         ]
     ## Other Linear DP
-    DP 1D:
-        [2944, 2140, 983, 2901, 3144, 871, 2896, 2167, 2188, 3389, 3205, 1259]
-    DP Valid Subsequence:
-        [2501, 1218, 1027, 873, 3202, 446, 3351, 3041, 3409, 3098, 1048]
+    DP 1D: [2944, 2140, 983, 2901, 3144, 871, 2896, 2167, 2188, 3389, 3205, 1259]
+    DP Valid Subsequence: [2501, 1218, 1027, 873, 3202, 446, 3351, 3041, 3409, 3098, 1048]
     DP Matrix Exponentiation Optimized:
         [70, 509, 1137, 1220, 552, 935, 790, 3337, 2851, 2912]
     DP Subrectangle: [3148, 221, 1277, 2088, 3197]
@@ -825,8 +762,7 @@ topics:
             3007,
         ]
     ## Data Structure Optimized DP
-    DP Prefix Sum:
-        [2327, 1871, 1997, 3251, 2478, 837, 2463, 3333, 2902, 629, 1977, 3130]
+    DP Prefix Sum: [2327, 1871, 1997, 3251, 2478, 837, 2463, 3333, 2902, 629, 1977, 3130]
     DP Monotonic Stack: [1335, 2866, 2617, 2355]
     DP Monotonic Queue: [2944, 1696, 1425, 375, 1687, 2463, 3117, 2945, 2969]
     DP Fenwick Tree Segment Tree: [1626, 2407, 2770, 2926, 2916, 3410]
@@ -834,8 +770,7 @@ topics:
     DP Other Optimized: [1937, 2713, 3181, 2267, 3213, 3292, 2263]
     DP WQS Binary Search: [188, 2209]
     ## Tree DP
-    Tree DP Tree Diameter:
-        [543, 687, 124, 2385, 2246, 3203, 1617, 2538, 1522, 1245, 549]
+    Tree DP Tree Diameter: [543, 687, 124, 2385, 2246, 3203, 1617, 2538, 1522, 1245, 549]
     Tree DP Maximum Independent Set: [337, 2646, 2378]
     Tree DP Minimum Dominating Set: [968]
     Tree DP Rerooting DP: [834, 2581, 2858, 310, 3241]
@@ -844,26 +779,11 @@ topics:
     DP Graph: [3243, 787, 1786, 2050, 1976, 1857, 1928, 913, 1728, 1548]
     ## Game Theory DP
     DP Game Theory:
-        [
-            1025,
-            877,
-            486,
-            1510,
-            1690,
-            1406,
-            1140,
-            1563,
-            464,
-            1872,
-            913,
-            1728,
-            294,
-        ]
+        [1025, 877, 486, 1510, 1690, 1406, 1140, 1563, 464, 1872, 913, 1728, 294]
     ## Probability Expectation DP
     DP Probability Expectation: [688, 837, 1467, 808, 1230]
     ## DP Topics
-    DP Print Solutions:
-        [368, 1449, 1092, 943, 1125, 3260, 3149, 3441, 3348, 656, 471]
+    DP Print Solutions: [368, 1449, 1092, 943, 1125, 3260, 3149, 3441, 3348, 656, 471]
     DP Prefix and Suffix Decomposition:
         [
             724,
@@ -981,23 +901,8 @@ topics:
             3371,
         ]
     Enumerate Middle:
-        [
-            2909,
-            1930,
-            3128,
-            2874,
-            447,
-            456,
-            3067,
-            3455,
-            2242,
-            2867,
-            2552,
-            3257,
-            3073,
-        ]
-    Prefix Sum Basics:
-        [303, 3427, 2559, 3152, 1749, 2389, 3361, 2055, 1744, 53, 1523]
+        [2909, 1930, 3128, 2874, 447, 456, 3067, 3455, 2242, 2867, 2552, 3257, 3073]
+    Prefix Sum Basics: [303, 3427, 2559, 3152, 1749, 2389, 3361, 2055, 1744, 53, 1523]
     Prefix Sum with Hash Table:
         [
             930,
@@ -1046,8 +951,7 @@ topics:
             1788,
             2819,
         ]
-    2D Prefix Sum:
-        [304, 1314, 3070, 1738, 3212, 1292, 221, 1277, 1504, 1074, 3148]
+    2D Prefix Sum: [304, 1314, 3070, 1738, 3212, 1292, 221, 1277, 1504, 1074, 3148]
     1D Difference Array:
         [
             2848,
@@ -1119,8 +1023,7 @@ topics:
     Queue Design: [225, 232, 622, 641, 1670]
     Deque: [2810]
     Monotonic Queue: [239, 1438, 2762, 2398, 862, 1499, 2071]
-    Monotonic Queue Optimized DP:
-        [2944, 1696, 1425, 375, 1687, 3117, 2945, 2969]
+    Monotonic Queue Optimized DP: [2944, 1696, 1425, 375, 1687, 3117, 2945, 2969]
     Heap Basics:
         [
             1046,
@@ -1183,8 +1086,7 @@ topics:
     Regret Heap: [1642, 630, 871, 3362, 2813, 3049, 2599]
     Lazy Deletion Heap: [2349, 2353, 3092, 2034, 1172]
     Dual Heap: [2102, 295, 480, 1825, 3013, 3321, 3369, 3422]
-    Trie Basics:
-        [208, 211, 14, 648, 677, 720, 1268, 1233, 820, 2416, 2261, 1804, 2168]
+    Trie Basics: [208, 211, 14, 648, 677, 720, 1268, 1233, 820, 2416, 2261, 1804, 2168]
     Trie Advanced:
         [
             676,
@@ -1265,32 +1167,15 @@ topics:
     Segment Tree: [1157, 2407, 2940, 2286, 3161, 2213, 3165]
     Lazy Segment Tree: [2589, 2569, 1622, 850, 3454, 2916]
     Dynamic Segment Tree: [699, 715, 729, 731, 732, 2276, 2770]
-    Offline Algorithm:
-        [2343, 2070, 1847, 2503, 1851, 1697, 2940, 2747, 1938, 2736, 3382]
+    Offline Algorithm: [2343, 2070, 1847, 2503, 1851, 1697, 2940, 2747, 1938, 2736, 3382]
     # Math
     ## Number Theory
     Prime Check: [3115, 2614, 762, 3044, 866]
     Prime Preprocessing: [204, 2761, 3233, 2523, 2601]
-    Prime Factorization:
-        [2521, 2507, 3326, 2584, 2709, 2862, 2818, 1998, 1735, 2338]
+    Prime Factorization: [2521, 2507, 3326, 2584, 2709, 2862, 2818, 1998, 1735, 2338]
     Factorial Decomposition: [172, 793]
     Factors:
-        [
-            2427,
-            1952,
-            1492,
-            507,
-            1390,
-            1362,
-            829,
-            3447,
-            3164,
-            952,
-            1627,
-            2198,
-            625,
-            2847,
-        ]
+        [2427, 1952, 1492, 507, 1390, 1362, 829, 3447, 3164, 952, 1627, 2198, 625, 2847]
     Greatest Common Divisor:
         [
             1979,
@@ -1391,8 +1276,7 @@ topics:
     Randomized Algorithms:
         [398, 382, 384, 470, 528, 710, 478, 497, 519, 380, 381, 1515, 1968]
     ## Math Others
-    Palindromic Numbers:
-        [9, 2396, 2217, 866, 2967, 906, 2081, 3260, 3272, 564, 479]
+    Palindromic Numbers: [9, 2396, 2217, 866, 2967, 906, 2081, 3260, 3272, 564, 479]
     Integer Partition: [343, 1808]
     Manhattan Distance: [3443, 1131, 3102, 1330, 1956, 2613]
     Polynomial Convolution: [3400]
@@ -1477,8 +1361,7 @@ topics:
             3366,
         ]
     Single Sequence Pairing: [2144, 561, 1877, 881, 2592, 2576]
-    Double Sequence Pairing:
-        [2037, 455, 2410, 1433, 870, 826, 2449, 1889, 2561, 2323]
+    Double Sequence Pairing: [2037, 455, 2410, 1433, 870, 826, 2449, 1889, 2561, 2323]
     Greedy from Left Right:
         [
             3402,
@@ -1510,30 +1393,14 @@ topics:
     Partitioning Greedy: [1221, 2405, 2294, 2358, 2522, 1546, 2436, 2892]
     Enumerate then Greedy: [2171, 3085, 1727, 2749, 2910, 2234]
     Exchange Argument: [2895, 3457, 1665, 3273, 2136, 179, 3309]
-    Adjacent Different:
-        [2335, 1753, 1054, 2856, 1953, 767, 3139, 621, 358, 984, 1405]
+    Adjacent Different: [2335, 1753, 1054, 2856, 1953, 767, 3139, 621, 358, 984, 1405]
     Regret Greedy: [1642, 630, 871, 3362, 2813, 3049, 2599, 2463]
     Non-Overlapping Intervals: [435, 646, 1520, 3458]
     Interval Grouping: [2406, 253]
     Interval Selection: [452, 757]
     Interval Coverage: [45, 1024, 1326]
     Merge Intervals:
-        [
-            56,
-            57,
-            55,
-            763,
-            3169,
-            2580,
-            3394,
-            2963,
-            2584,
-            616,
-            758,
-            3323,
-            759,
-            2655,
-        ]
+        [56, 57, 55, 763, 3169, 2580, 3394, 2963, 2584, 616, 758, 3323, 759, 2655]
     Other Interval Greedy: [1288, 2054, 1705, 1353, 2589]
     Lexicographically Smallest Largest:
         [
@@ -1591,26 +1458,11 @@ topics:
     Product Greedy: [628, 1567]
     Sorting Inequality: [2285, 3016, 1402, 2931, 1589, 1874, 2268]
     Basic Inequality: [3081, 1969, 2939, 2897]
-    Median Greedy:
-        [462, 2033, 2448, 2607, 2967, 1478, 2968, 1703, 3086, 3441, 296]
+    Median Greedy: [462, 2033, 2448, 2607, 2967, 1478, 2968, 1703, 3086, 3441, 296]
     Inductive Method: [2952, 330, 1798]
     Other Math Greedy: [1414, 3107, 754, 1058]
     From Special to General:
-        [
-            2745,
-            2611,
-            1029,
-            2645,
-            2202,
-            2568,
-            1702,
-            3012,
-            1526,
-            2350,
-            517,
-            2499,
-            3357,
-        ]
+        [2745, 2611, 1029, 2645, 2202, 2568, 1702, 3012, 1526, 2350, 517, 2499, 3357]
     Brain Teasers:
         [
             2733,
@@ -1645,8 +1497,7 @@ topics:
             1794,
         ]
     Reverse Thinking: [2139, 1558, 554, 2718, 417, 991, 2227, 3419, 936]
-    Equivalent Transformation:
-        [3375, 2914, 3365, 1657, 2551, 1585, 1040, 249, 49, 1183]
+    Equivalent Transformation: [3375, 2914, 3365, 1657, 2551, 1585, 1040, 249, 49, 1183]
     Construction Problems:
         [
             942,
@@ -1693,8 +1544,7 @@ topics:
     Linked List Insert Nodes: [2807, 147, 708, 2046]
     Linked List Reverse: [206, 92, 24, 25, 2074]
     Linked List Front Back Pointers: [19, 61, 1721, 1474]
-    Linked List Fast Slow Pointers:
-        [876, 2095, 234, 2130, 143, 141, 142, 457, 2674]
+    Linked List Fast Slow Pointers: [876, 2095, 234, 2130, 143, 141, 142, 457, 2674]
     Linked List Double Pointers: [328, 86, 160]
     Linked Lists Merge: [2, 445, 2816, 21, 369, 1634]
     Linked List Divide and Conquer: [23, 148]
@@ -1763,8 +1613,7 @@ topics:
     Binary Tree Recursion: [538, 1038, 865, 1080]
     Binary Tree Diameter: [543, 687, 124, 2385, 549]
     Binary Tree Backtracking: [257, 113, 437]
-    Binary Tree Lowest Common Ancestor:
-        [235, 236, 1123, 2096, 1740, 1644, 1650, 1676]
+    Binary Tree Lowest Common Ancestor: [235, 236, 1123, 2096, 1740, 1644, 1650, 1676]
     Binary Search Tree:
         [
             98,
@@ -1914,27 +1763,11 @@ topics:
     Backtracking with Duplicates: [90, 40, 491, 47, 1079]
 
     # String
-    String KMP:
-        [28, 796, 1392, 3036, 1764, 1668, 459, 3008, 214, 686, 1397, 3037]
+    String KMP: [28, 796, 1392, 3036, 1764, 1668, 459, 3008, 214, 686, 1397, 3037]
     String Z Function: [2223, 3031, 3045, 3303, 3292, 2430, 3388, 1977]
     String Manacher Algorithm: [5, 647, 214, 3327, 1745, 1960]
     String Hashing:
-        [
-            28,
-            187,
-            1316,
-            1297,
-            2261,
-            3213,
-            1367,
-            1044,
-            718,
-            1923,
-            3292,
-            2168,
-            1554,
-            1062,
-        ]
+        [28, 187, 1316, 1297, 2261, 3213, 1367, 1044, 718, 1923, 3292, 2168, 1554, 1062]
     String Minimal Representation: [1163, 899, 3403]
     String AC Automaton: [1032, 1408, 3213, 3292]
     String Suffix Array:

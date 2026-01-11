@@ -33,10 +33,22 @@ class ProblemSetRepository:
         topics = data.get("topics", {})
         if not isinstance(topics, dict):
             raise ValueError("topics should be a dict of topic names to problem IDs")
-        for topic_name, problem_ids in topics.items():
+
+        for topic, value in topics.items():
+            topic_name = topic
+            if isinstance(value, list):
+                topic_name_zh = ""
+                problem_ids = value
+            elif isinstance(value, dict):
+                topic_name_zh = value.get("name_zh", "")
+                problem_ids = value.get("problem_ids", [])
+            else:
+                raise ValueError(f"Invalid topic format for {topic}")
+
             topic = Topic(
                 config_dir=self.problem_set.dir_name,
                 name=topic_name,
+                name_zh=topic_name_zh,
                 problem_ids=tuple(problem_ids),
             )
             repo = TopicRepository(topic)
@@ -58,17 +70,14 @@ class ProblemSetRepository:
     def make_mkdocs_yaml(self):
         content = f"site_name: {self.problem_set.name}\n\nnav:\n"
         for topic in self.problem_set.topics:
-            mkdocs_content = f"- {topic.name}: {topic.md_path}\n"
+            # Use bilingual label if Chinese name exists
+            if topic.name_zh:
+                label = f"{topic.name_zh} {topic.name}"
+            else:
+                label = topic.name
+
+            mkdocs_content = f"- {label}: {topic.md_path}\n"
             content += mkdocs_content
         mkdocs_path = self.problem_set_folder / "mkdocs.yaml"
         with mkdocs_path.open("w", encoding="utf-8") as file:
             file.write(content)
-
-
-if __name__ == "__main__":
-    paths = ["config/blind75.yaml", "config/grind75.yaml", "config/sql50.yaml"]
-    for path in paths:
-        repo = ProblemSetRepository(path)
-        repo.make_topics_md()
-        repo.make_readme_md()
-        repo.make_mkdocs_yaml()

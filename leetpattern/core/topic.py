@@ -7,6 +7,7 @@ from leetpattern import ProblemRepository
 class Topic:
     config_dir: str = ""
     name: str = ""
+    name_zh: str = ""
     problem_ids: tuple[int, ...] = tuple()
 
     md_content: str = ""
@@ -19,7 +20,9 @@ class TopicRepository:
         self.topic = topic
         # md_content
         md_content = self.comments(comments=True) + "\n"
-        md_content += f"# {self.topic.name}\n\n"
+
+        md_content += f"# {self.topic.name_zh} {self.topic.name}\n\n"
+
         md_content += self.toc() + "\n\n"
         for qid in self.topic.problem_ids:
             md_content += self.problem_content(qid) + "\n\n"

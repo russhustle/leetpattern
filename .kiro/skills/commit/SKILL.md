@@ -1,11 +1,7 @@
 ---
 name: commit
-description: Generate commit messages following the Conventional Commits specification.
+description: Generate commit messages following the Conventional Commits specification. Use when committing changes, writing commit messages, or preparing git commits.
 ---
-
-## Conventional Commits
-
-Generate commit messages following the [Conventional Commits](https://www.conventionalcommits.org/) specification.
 
 ## Commit Format
 

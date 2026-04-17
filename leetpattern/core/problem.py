@@ -112,7 +112,7 @@ class ProblemRepository:
         heading_link = f"#{qid}-{row['titleSlug'].replace('_', '-')}"
         progress = f"- [{"x" if is_done else " "}] [{qid}. {row['title']}]({heading_link}) ({row['difficulty']})"
         progress += f"{" 👑" if row['paidOnly'] else ""}"
-        tags = f"-   Tags: {row['topicTags'].title() if row['topicTags'] else 'None'}"
+        tags = f"-   Tags: {row['topicTags'].title() if pd.notna(row['topicTags']) else 'None'}"
 
         return Problem(
             qid=qid,

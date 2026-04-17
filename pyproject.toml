@@ -6,14 +6,14 @@ authors = [{ name = "Sihan A" }]
 readme = "docs/README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "mkdocs-material>=9.5.31",
-    "pymdown-extensions>=10.9",
+    "mkdocs-material>=9.7.6",
+    "pymdown-extensions>=10.21.2",
     "binarytree>=6.5.1",
     "sortedcontainers>=2.4.0",
-    "pandas>=2.2.3",
+    "pandas>=3.0.2",
     "mkdocs-monorepo-plugin>=1.1.2",
-    "typer>=0.17.4",
-    "tqdm>=4.67.1",
+    "typer>=0.24.1",
+    "tqdm>=4.67.3",
 ]
 
 [project.scripts]
@@ -28,18 +28,18 @@ packages = ["leetpattern"]
 
 [dependency-groups]
 dev = [
-    "matplotlib>=3.9.2",
-    "pyarrow>=19.0.1",
-    "fastparquet>=2024.11.0",
-    "networkx>=3.3",
-    "pre-commit>=3.8.0",
-    "black>=24.8.0",
-    "flake8>=7.1.1",
-    "pylint>=3.2.6",
-    "graphviz>=0.20.3",
-    "prompt-toolkit>=3.0.50",
-    "pytest>=8.4.2",
-    "pytest-cov>=6.2.1",
+    "matplotlib>=3.10.8",
+    "pyarrow>=23.0.1",
+    "fastparquet>=2026.3.0",
+    "networkx>=3.6.1",
+    "pre-commit>=4.5.1",
+    "black>=26.3.1",
+    "flake8>=7.3.0",
+    "pylint>=4.0.5",
+    "graphviz>=0.21",
+    "prompt-toolkit>=3.0.52",
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
 ]
 
 [tool.pytest.ini_options]

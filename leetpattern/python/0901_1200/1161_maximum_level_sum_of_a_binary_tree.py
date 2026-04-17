@@ -2,45 +2,32 @@ from collections import deque
 from typing import Optional
 
 from binarytree import Node as TreeNode
-from binarytree import build
 
 
-# BFS
-def maxLevelSum(root: Optional[TreeNode]) -> int:
-    if not root:
-        return 0
+class Solution:
+    def maxLevelSum(self, root: Optional[TreeNode]) -> int:
+        if not root:
+            return 0
 
-    q = deque([root])
-    res = 0
-    maxSum = float("-inf")
-    level = 1
+        q = deque([root])
+        res, level = 1, 1
+        max_sum = root.val
 
-    while q:
-        n = len(q)
-        curSum = 0
+        while q:
+            level_sum = 0
+            size = len(q)
+            for _ in range(size):
+                cur = q.popleft()
+                level_sum += cur.val
+                if cur.left:
+                    q.append(cur.left)
+                if cur.right:
+                    q.append(cur.right)
 
-        for _ in range(n):
-            node = q.popleft()
-            curSum += node.val
-            if node.left:
-                q.append(node.left)
-            if node.right:
-                q.append(node.right)
+            if level_sum > max_sum:
+                max_sum = level_sum
+                res = level
 
-        if curSum > maxSum:
-            maxSum = curSum
-            res = level
-        level += 1
+            level += 1
 
-    return res
-
-
-root = [1, 7, 0, 7, -8, None, None]
-root = build(root)
-print(root)
-#     ___1
-#    /    \
-#   7      0
-#  / \
-# 7   -8
-print(maxLevelSum(root))  # 2
+        return res

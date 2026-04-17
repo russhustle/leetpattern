@@ -3,19 +3,20 @@ from typing import List
 
 # DP Kadane
 def maxSubArrayDP(nums: List[int]) -> int:
-    dp = [0 for _ in range(len(nums))]
+    n = len(nums)
+    dp = [0 for _ in range(n)]
 
     dp[0] = nums[0]
-    maxSum = nums[0]
+    res = nums[0]
 
-    for i in range(1, len(nums)):
+    for i in range(1, n):
         dp[i] = max(
             dp[i - 1] + nums[i],  # continue the previous subarray
             nums[i],  # start a new subarray
         )
-        maxSum = max(maxSum, dp[i])
+        res = max(res, dp[i])
 
-    return maxSum
+    return res
 
 
 # Greedy

@@ -1,70 +1,50 @@
 from collections import deque
-from typing import Optional
+from typing import List, Optional
 
 from binarytree import Node as TreeNode
-from binarytree import build
 
 
-def _min_swaps_to_sort(nums):
-    """
-    Calculate the minimum number of swaps to sort the array.
-    Method: Permutation Cycle
-    """
-    n = len(nums)
-    arr = [(num, i) for i, num in enumerate(nums)]
-    arr.sort(key=lambda x: x[0])
+class Solution:
+    def minimumOperations(self, root: Optional[TreeNode]) -> int:
+        """
+        层序遍历+置换环
+        """
+        if not root:
+            0
 
-    visited = [False] * n
-    res = 0
+        q = deque([root])
+        res = 0
+        while q:
+            n = len(q)
+            level = []
+            for _ in range(n):
+                cur = q.popleft()
+                level.append(cur.val)
+                if cur.left:
+                    q.append(cur.left)
+                if cur.right:
+                    q.append(cur.right)
+            res += self._min_swaps(level)
+        return res
 
-    for i in range(n):
-        if visited[i] or arr[i][1] == i:
-            continue
+    def _min_swaps(self, nums: List) -> int:
+        n = len(nums)
+        nums = sorted((v, i) for i, v in enumerate(nums))
+        vis = [False] * n
+        pos = [0] * n
+        for new, (_, old) in enumerate(nums):
+            pos[old] = new
 
-        cycle_len = 0
-        j = i
-        while not visited[j]:
-            visited[j] = True
-            j = arr[j][1]
-            cycle_len += 1
+        swaps = 0
+        for i in range(n):
+            if vis[i] or nums[i][1] == i:
+                continue
+            cycle_len = 0
+            j = i
+            while not vis[j]:
+                vis[j] = True
+                j = pos[j]
+                cycle_len += 1
+            swaps += cycle_len - 1
 
-        if cycle_len > 1:
-            res += cycle_len - 1
-
-    return res
-
-
-def minimumOperations_bfs(root: Optional[TreeNode]) -> int:
-    if not root:
-        return 0
-
-    res = 0
-    q = deque([root])
-
-    while q:
-        size = len(q)
-        level = []
-        for _ in range(size):
-            node = q.popleft()
-            level.append(node.val)
-            if node.left:
-                q.append(node.left)
-            if node.right:
-                q.append(node.right)
-
-        res += _min_swaps_to_sort(level)
-
-    return res
-
-
-if __name__ == "__main__":
-    root = build([1, 4, 3, 7, 6, 8, 5, None, None, None, None, 9, None, 10])
-    print(root)
-    #     __1____
-    #    /       \
-    #   4         3___
-    #  / \       /    \
-    # 7   6     8     _5
-    #          /     /
-    #         9     10
-    assert minimumOperations_bfs(root) == 3
+        return swaps

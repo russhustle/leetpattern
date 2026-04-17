@@ -3,40 +3,47 @@ from collections import Counter, deque
 from typing import List
 
 
-# Heap
-def leastInterval1(tasks: List[str], n: int) -> int:
+def least_interval_heap(tasks: List[str], n: int) -> int:
     count = Counter(tasks)
     heap = [-c for c in count.values()]
     heapq.heapify(heap)
 
-    time = 0
+    res = 0
 
     q = deque()
 
     while heap or q:
-        time += 1
+        res += 1
 
         if heap:
             cnt = 1 + heapq.heappop(heap)
             if cnt:
-                q.append((cnt, time + n))
+                q.append((cnt, res + n))
 
-        if q and q[0][1] == time:
+        if q and q[0][1] == res:
             heapq.heappush(heap, q.popleft()[0])
 
-    return time
+    return res
 
 
-def leastInterval2(tasks: List[str], n: int) -> int:
+def least_interval_math(tasks: List[str], n: int) -> int:
     freq = Counter(tasks)
 
-    maxExec = max(freq.values())
-    maxCount = sum(1 for v in freq.values() if v == maxExec)
+    max_exec = max(freq.values())
+    max_count = sum(1 for v in freq.values() if v == max_exec)
 
-    return max((maxExec - 1) * (n + 1) + maxCount, len(tasks))
+    return max((max_exec - 1) * (n + 1) + max_count, len(tasks))
 
 
-tasks = ["A", "A", "A", "B", "B", "B"]
-n = 2
-print(leastInterval1(tasks, n))  # 8
-print(leastInterval2(tasks, n))  # 8
+def test_least_interval_heap():
+    assert least_interval_heap(["A", "A", "A", "B", "B", "B"], 2) == 8
+    assert least_interval_heap(["A"], 0) == 1
+    assert least_interval_heap(["A", "A", "A", "B", "B", "B"], 0) == 6
+    assert least_interval_heap(["A", "A", "A", "A", "B", "B", "B", "C", "C"], 2) == 10
+
+
+def test_least_interval_math():
+    assert least_interval_math(["A", "A", "A", "B", "B", "B"], 2) == 8
+    assert least_interval_math(["A"], 0) == 1
+    assert least_interval_math(["A", "A", "A", "B", "B", "B"], 0) == 6
+    assert least_interval_math(["A", "A", "A", "A", "B", "B", "B", "C", "C"], 2) == 10

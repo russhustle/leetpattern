@@ -1,0 +1,13 @@
+/* Custom ordered list styles to override MkDocs defaults and enhance theme */
+
+article ol {
+    list-style-type: decimal !important;
+}
+
+article ol ol {
+    list-style-type: decimal !important;
+}
+
+article ol ol ol {
+    list-style-type: decimal !important;
+}

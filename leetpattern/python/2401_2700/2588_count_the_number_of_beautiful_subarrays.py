@@ -1,32 +1,25 @@
-"""
-- `nums = [4, 3, 1, 2, 4]`
-- In bianry
-
-```
-4 -> 100
-3 -> 011
-1 -> 001
-2 -> 010
-4 -> 100
-```
-"""
-
 from collections import defaultdict
 from typing import List
 
 
-def beautifulSubarrays(nums: List[int]) -> int:
-    res, s = 0, 0
-    cnt = defaultdict(int)
-    cnt[0] = 1
+class Solution:
+    def beautifulSubarrays(self, nums: List[int]) -> int:
+        """Prefix XOR + HashMap: O(n) time, O(n) space.
+        A subarray XORs to 0 iff its prefix XOR equals
+        a previously seen prefix XOR.
+        """
+        res, prefix = 0, 0
+        cnt = defaultdict(int)
+        cnt[0] = 1
+        for x in nums:
+            prefix ^= x
+            res += cnt[prefix]
+            cnt[prefix] += 1
+        return res
 
-    for x in nums:
-        s ^= x
-        res += cnt[s]
-        cnt[s] += 1
 
-    return res
-
-
-nums = [4, 3, 1, 2, 4]
-print(beautifulSubarrays(nums))  # 2
+def test_beautiful_subarrays():
+    s = Solution()
+    assert s.beautifulSubarrays([4, 3, 1, 2, 4]) == 2
+    assert s.beautifulSubarrays([1, 10, 4]) == 0
+    assert s.beautifulSubarrays([0]) == 1

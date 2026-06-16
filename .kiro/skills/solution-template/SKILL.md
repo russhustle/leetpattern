@@ -1,55 +1,64 @@
 ---
 name: solution-template
-description: Generate LeetCode solution files using the Solution class template. Use when creating a new solution, refactoring an existing one to follow the standard structure, or scaffolding a problem file.
+description: Generate or refactor LeetCode Python solution files in this repo. Use for standard Solution-class problems and design problems that must keep the original judged class name.
 ---
 
-## Context
+## Shape
 
-- Solutions live in `leetpattern/python/{range}/` as `{number}_{name}.py`
-- Each file contains a `Solution` class with one method per approach
-- Tests are inline at the bottom of the file
-- Utility imports available: `from leetpattern.utils import LinkedList, ListNode, Trie, TrieNode, LPS`
+- Files live in `leetpattern/python/{range}/{number}_{name}.py`.
+- Use `Solution` for normal algorithm problems.
+- For design problems, keep the original LeetCode class name and API exactly
+  (`KthLargest`, `LRUCache`, `MedianFinder`, etc.). Do not wrap it in
+  `Solution`.
+- Put pytest-style inline tests at the bottom.
 
-## Template
+## Algorithm Skeleton
 
 ```python
-from typing import List
-
-
 class Solution:
-    def methodName(self, params) -> ReturnType:
+    def methodName(self, args) -> ReturnType:
         """Approach Name: O(?) time, O(?) space.
-        Key insight or important point about this approach.
+        Key insight.
         """
-        # implementation
-        pass
-
-    def methodNameAlt(self, params) -> ReturnType:
-        """Approach Name: O(?) time, O(?) space.
-        Key insight or important point about this approach.
-        """
-        # implementation
-        pass
+        ...
 
 
 def test_method_name():
     s = Solution()
-    for fn in (s.methodName, s.methodNameAlt):
-        assert fn(input1) == expected1
-        assert fn(input2) == expected2
-        assert fn(edge_case) == edge_expected
+    for fn in (s.methodName,):
+        assert fn(case) == expected
+```
+
+## Design Skeleton
+
+```python
+class OriginalClassName:
+    def __init__(self, args):
+        """Setup Approach: O(?) time, O(?) space.
+        Key state invariant.
+        """
+        ...
+
+    def requiredMethod(self, args) -> ReturnType:
+        """Operation Approach: O(?) time, O(?) space.
+        Key update/query invariant.
+        """
+        ...
+
+
+def test_original_class_name():
+    obj = OriginalClassName(init_args)
+    assert obj.requiredMethod(case) == expected
 ```
 
 ## Rules
 
-1. Use a single `Solution` class per file with one method per approach.
-2. The optimal approach should be the first method in the class.
-3. Each method must have a docstring with: approach name, time/space complexity, and the key insight that makes the approach work.
-4. Method names use camelCase matching LeetCode's naming (e.g., `containsDuplicate`, `twoSum`).
-5. Alternative approaches append a suffix: `methodNameSort`, `methodNameBF`, `methodNameDP`, etc.
-6. The test function loops over all methods to verify they produce the same results.
-7. Include at least 3 test cases: basic, non-trivial, and edge case (empty input, single element, etc.).
-8. No module-level docstrings or headers. The docstrings on methods are sufficient documentation.
-9. No `print()` calls or `if __name__` blocks. Use only the `test_` function.
-10. Keep implementations minimal — no unnecessary variables or comments beyond the docstring.
-11. Maximum line width is 90 characters. Wrap long docstrings, comments, and code to stay within this limit.
+1. Put the optimal approach first.
+2. Use camelCase names matching LeetCode. Alternative algorithm methods may add a
+   suffix such as `Sort`, `BF`, or `DP`.
+3. Add docstrings to public solution methods. For design problems, document
+   `__init__` and judged public operations.
+4. Include at least 3 useful test cases, including an edge case.
+5. Use only `test_` functions: no module headers, `print()`, or `if __name__`
+   blocks.
+6. Keep code minimal and lines at 90 characters or less.

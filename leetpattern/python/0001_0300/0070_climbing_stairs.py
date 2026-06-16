@@ -1,65 +1,67 @@
-"""
-- Return the number of distinct ways to reach the top of the stairs.
-- `dp[n]` stores the number of distinct ways to reach the `n-th` stair.
-- Formula: `dp[n] = dp[n - 1] + dp[n - 2]`.
-- Initialize `dp[0] = 0`, `dp[1] = 1`, and `dp[2] = 2`.
-"""
-
 from functools import cache
 
 
-# DP
-def climbStairsDP(n: int) -> int:
-    if n <= 2:
-        return n
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        """Optimized DP: O(n) time, O(1) space.
+        Only the previous two counts are needed to compute the next stair.
+        """
+        if n <= 2:
+            return n
 
-    dp = [i for i in range(n + 1)]
+        first, second = 1, 2
+        for _ in range(3, n + 1):
+            first, second = second, first + second
+        return second
 
-    for i in range(3, n + 1):
-        dp[i] = dp[i - 1] + dp[i - 2]
+    def climbStairsDP(self, n: int) -> int:
+        """Tabulation DP: O(n) time, O(n) space.
+        Each stair count is the sum of the ways to reach the previous two stairs.
+        """
+        if n <= 2:
+            return n
 
-    return dp[n]
+        dp = [0] * (n + 1)
+        dp[1], dp[2] = 1, 2
+        for i in range(3, n + 1):
+            dp[i] = dp[i - 1] + dp[i - 2]
+        return dp[n]
 
+    def climbStairsGreedy(self, n: int) -> int:
+        """Greedy Rolling Counts: O(n) time, O(1) space.
+        The next answer is always determined by the two latest reachable counts.
+        """
+        if n <= 2:
+            return n
 
-# DP (Optimized)
-def climbStairsDPOptimized(n: int) -> int:
-    if n <= 2:
-        return n
+        prev, cur = 1, 2
+        for _ in range(3, n + 1):
+            prev, cur = cur, prev + cur
+        return cur
 
-    first, second = 1, 2
+    def climbStairsDFS(self, n: int) -> int:
+        """Memoized DFS: O(n) time, O(n) space.
+        Caching prevents recomputing the same remaining-stair subproblems.
+        """
 
-    for _ in range(3, n + 1):
-        first, second = second, first + second
+        @cache
+        def dfs(i: int) -> int:
+            if i <= 2:
+                return i
+            return dfs(i - 1) + dfs(i - 2)
 
-    return second
-
-
-# Recursion
-def climbStairsRecursion(n: int) -> int:
-    @cache
-    def dfs(i: int) -> int:
-        if i <= 1:
-            return 1
-        return dfs(i - 1) + dfs(i - 2)
-
-    return dfs(n)
-
-
-# Greedy
-def climbStairsGreedy(n: int) -> int:
-    if n <= 2:
-        return n
-
-    p1, p2 = 1, 2
-
-    for _ in range(3, n + 1):
-        p1, p2 = p2, p1 + p2
-
-    return p2
+        return dfs(n)
 
 
-if __name__ == "__main__":
-    assert climbStairsDP(10) == 89
-    assert climbStairsDPOptimized(10) == 89
-    assert climbStairsRecursion(10) == 89
-    assert climbStairsGreedy(10) == 89
+def test_climb_stairs():
+    s = Solution()
+    for fn in (
+        s.climbStairs,
+        s.climbStairsDP,
+        s.climbStairsGreedy,
+        s.climbStairsDFS,
+    ):
+        assert fn(1) == 1
+        assert fn(2) == 2
+        assert fn(3) == 3
+        assert fn(10) == 89

@@ -1,51 +1,41 @@
-"""
-- Return the maximum area of water that can be trapped between the vertical lines.
-
-![11](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
-"""
-
 from typing import List
 
 
-# Brute Force
-def maxAreaBF(height: List[int]) -> int:
-    max_area = 0
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        """Two Pointers: O(n) time, O(1) space.
+        Move the shorter side inward to potentially find a taller line.
+        """
+        left, right = 0, len(height) - 1
+        res = 0
 
-    for i in range(len(height)):
-        for j in range(i + 1, len(height)):
-            h = min(height[i], height[j])
-            w = j - i
-            max_area = max(max_area, h * w)
+        while left < right:
+            w = right - left
+            h = min(height[left], height[right])
+            res = max(res, w * h)
 
-    return max_area
+            if height[left] < height[right]:
+                left += 1
+            else:
+                right -= 1
 
+        return res
 
-# Left Right Pointers
-def maxAreaLR(height: List[int]) -> int:
-    left, right = 0, len(height) - 1
-    res = 0
-
-    while left < right:
-        h = min(height[left], height[right])
-        w = right - left
-        res = max(res, h * w)
-
-        if height[left] < height[right]:
-            left += 1
-        else:
-            right -= 1
-
-    return res
-
-
-# |------------|------- |---------|
-# |  Approach  |  Time  |  Space  |
-# |------------|--------|---------|
-# | Brute Force| O(n^2) |  O(1)   |
-# | Left Right |  O(n)  |  O(1)   |
-# |------------|--------|---------|
+    def maxAreaBF(self, height: List[int]) -> int:
+        """Brute Force: O(n^2) time, O(1) space.
+        Check every pair of lines.
+        """
+        res = 0
+        for i in range(len(height)):
+            for j in range(i + 1, len(height)):
+                res = max(res, min(height[i], height[j]) * (j - i))
+        return res
 
 
-height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
-print(maxAreaBF(height))  # 49
-print(maxAreaLR(height))  # 49
+def test_max_area():
+    s = Solution()
+    for fn in (s.maxArea, s.maxAreaBF):
+        assert fn([1, 8, 6, 2, 5, 4, 8, 3, 7]) == 49
+        assert fn([1, 1]) == 1
+        assert fn([4, 3, 2, 1, 4]) == 16
+        assert fn([1, 2, 1]) == 2

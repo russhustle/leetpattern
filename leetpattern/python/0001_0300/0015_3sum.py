@@ -1,39 +1,49 @@
 from typing import List
 
 
-# Left Right Pointers
-def threeSum(nums: List[int]) -> List[List[int]]:
-    nums.sort()
-    res = []
-    n = len(nums)
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        """Two Pointers: O(n^2) time, O(1) space.
+        Sort, fix one element, then two-pointer scan for complement.
+        """
+        n = len(nums)
+        if n <= 2:
+            return []
 
-    for i in range(n - 2):
-        if i > 0 and nums[i] == nums[i - 1]:
-            continue
+        res = []
+        nums.sort()
 
-        left, right = i + 1, n - 1
+        for k in range(n - 2):
+            if k > 0 and nums[k] == nums[k - 1]:
+                continue
 
-        while left < right:
-            total = nums[i] + nums[left] + nums[right]
+            i, j = k + 1, n - 1
 
-            if total > 0:
-                right -= 1
-            elif total < 0:
-                left += 1
-            else:
-                res.append([nums[i], nums[left], nums[right]])
+            while i < j:
+                total = nums[k] + nums[i] + nums[j]
 
-                while left < right and nums[left] == nums[left + 1]:
-                    left += 1
+                if total > 0:
+                    j -= 1
+                elif total < 0:
+                    i += 1
+                else:
+                    res.append([nums[k], nums[i], nums[j]])
 
-                while left < right and nums[right] == nums[right - 1]:
-                    right -= 1
+                    while i < j and nums[i] == nums[i + 1]:
+                        i += 1
+                    while i < j and nums[j] == nums[j - 1]:
+                        j -= 1
 
-                left += 1
-                right -= 1
+                    i += 1
+                    j -= 1
 
-    return res
+        return res
 
 
-nums = [-1, 0, 1, 2, -1, -4]
-assert threeSum(nums) == [[-1, -1, 2], [-1, 0, 1]]
+def test_three_sum():
+    s = Solution()
+    for fn in (s.threeSum,):
+        assert fn([-1, 0, 1, 2, -1, -4]) == [[-1, -1, 2], [-1, 0, 1]]
+        assert fn([0, 1, 1]) == []
+        assert fn([0, 0, 0]) == [[0, 0, 0]]
+        assert fn([]) == []

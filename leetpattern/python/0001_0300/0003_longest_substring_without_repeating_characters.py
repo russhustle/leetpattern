@@ -1,55 +1,50 @@
-"""
-- Classic variable sliding window problem. Use a set to keep track of the characters in the current window.
-- Return the length of the longest substring without repeating characters.
-- [Template tutorial by 灵山茶艾府](https://leetcode.cn/problems/longest-substring-without-repeating-characters/solutions/1959540/xia-biao-zong-suan-cuo-qing-kan-zhe-by-e-iaks)
-"""
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        """Sliding Window: O(n) time, O(min(n, charset)) space.
+        Jump the left edge past each repeated character's previous index.
+        """
+        left = 0
+        res = 0
+        seen = {}
 
-from collections import defaultdict
+        for right, ch in enumerate(s):
+            if ch in seen and seen[ch] >= left:
+                left = seen[ch] + 1
+            seen[ch] = right
+            res = max(res, right - left + 1)
 
+        return res
 
-# Sliding Window Variable Max - HashMap
-def lengthOfLongestSubstringHash(s: str) -> int:
-    n = len(s)
-    if n <= 1:
-        return n
+    def lengthOfLongestSubstringSet(self, s: str) -> int:
+        """Sliding Window Set: O(n) time, O(min(n, charset)) space.
+        Shrink until the current character is unique in the window.
+        """
+        left = 0
+        res = 0
+        window = set()
 
-    left = 0
-    cnt = defaultdict(int)
-    res = 0
+        for right, ch in enumerate(s):
+            while ch in window:
+                window.remove(s[left])
+                left += 1
+            window.add(ch)
+            res = max(res, right - left + 1)
 
-    for right in range(n):
-        cnt[s[right]] += 1
-
-        while cnt[s[right]] > 1:
-            cnt[s[left]] -= 1
-            left += 1
-
-        res = max(res, right - left + 1)
-
-    return res
-
-
-# Sliding Window Variable Max - Set
-def lengthOfLongestSubstringSet(s: str) -> int:
-    n = len(s)
-    if n <= 1:
-        return n
-
-    left = 0
-    res = 0
-    window = set()
-
-    for right in range(n):
-        while left < right and s[right] in window:
-            window.remove(s[left])
-            left += 1
-        window.add(s[right])
-        res = max(res, right - left + 1)
-
-    return res
+        return res
 
 
-if __name__ == "__main__":
-    s = "abcabcbb"
-    assert lengthOfLongestSubstringHash(s) == 3
-    assert lengthOfLongestSubstringSet(s) == 3
+def test_length_of_longest_substring():
+    s = Solution()
+    cases = [
+        ("abcabcbb", 3),
+        ("bbbbb", 1),
+        ("pwwkew", 3),
+        ("", 0),
+        (" ", 1),
+        ("abba", 2),
+        ("dvdf", 3),
+    ]
+
+    for text, expected in cases:
+        assert s.lengthOfLongestSubstring(text) == expected
+        assert s.lengthOfLongestSubstringSet(text) == expected

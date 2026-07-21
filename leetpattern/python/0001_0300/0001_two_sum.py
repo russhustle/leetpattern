@@ -1,14 +1,13 @@
-"""
-- Return the indices of the two numbers such that they add up to a specific target.
-- Approach: Use a hashmap to store the indices of the numbers.
-- Time Complexity: O(n)
-- Space Complexity: O(n)
-"""
-
 from typing import List
 
 
 def two_sum(nums: List[int], target: int) -> List[int]:
+    """
+    - Return the indices of the two numbers such that they add up to a specific target.
+    - Approach: Use a hashmap to store the indices of the numbers.
+    - Time Complexity: O(n)
+    - Space Complexity: O(n)
+    """
     hashmap = {}  # val: idx
 
     for idx, val in enumerate(nums):

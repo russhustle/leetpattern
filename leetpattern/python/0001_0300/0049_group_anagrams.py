@@ -2,27 +2,32 @@ from collections import defaultdict
 from typing import List
 
 
-# Hash - List
-def groupAnagrams(strs: List[str]) -> List[List[str]]:
-    result = defaultdict(list)
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        """Counting Hash Map: O(n * k) time, O(n) space.
+        Words with the same 26-letter frequency tuple are anagrams.
+        """
+        groups = defaultdict(list)
 
-    for s in strs:
-        count = [0] * 26
-        for i in s:
-            count[ord(i) - ord("a")] += 1
+        for word in strs:
+            counts = [0] * 26
+            for ch in word:
+                counts[ord(ch) - ord("a")] += 1
+            groups[tuple(counts)].append(word)
 
-        result[tuple(count)].append(s)
-
-    return list(result.values())
-
-
-# |-------------|-----------------|--------------|
-# |  Approach   |      Time       |    Space     |
-# |-------------|-----------------|--------------|
-# |    Hash     |     O(n * k)    |     O(n)     |
-# |-------------|-----------------|--------------|
+        return list(groups.values())
 
 
-strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
-print(groupAnagrams(strs))
-# [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+def test_group_anagrams():
+    def normalized(groups):
+        return sorted(sorted(group) for group in groups)
+
+    s = Solution()
+    result = s.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"])
+    assert normalized(result) == [
+        ["ate", "eat", "tea"],
+        ["bat"],
+        ["nat", "tan"],
+    ]
+    assert normalized(s.groupAnagrams([""])) == [[""]]
+    assert normalized(s.groupAnagrams(["a"])) == [["a"]]

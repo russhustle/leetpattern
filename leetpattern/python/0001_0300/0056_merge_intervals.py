@@ -1,14 +1,17 @@
-"""
--   Merge all overlapping intervals.
+def merge(intervals: list[list[int]]) -> list[list[int]]:
+    """
+    Merge all overlapping intervals.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/44H3cEC2fFM?si=J-Jr_Fg2eDse3-de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-"""
-
-from typing import List
-
-
-# Intervals
-def merge(intervals: List[List[int]]) -> List[List[int]]:
+    |                    G----H
+    |                  E===========F
+    |     C--------D
+    |  A========B
+    |
+    |-----------------------------------
+    Draw the above to explain the process to the interviewer.
+    Time complexity: O(nlogn) due to sorting.
+    Space complexity: O(n) for the result list.
+    """
     n = len(intervals)
     if n <= 1:
         return intervals

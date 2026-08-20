@@ -45,9 +45,7 @@ def test_find_smallest_region():
         ["South America", "Brazil"],
     ]
 
-    assert (
-        s.findSmallestRegion(regions, "Quebec", "New York") == "North America"
-    )
+    assert s.findSmallestRegion(regions, "Quebec", "New York") == "North America"
     assert s.findSmallestRegion(regions, "Canada", "Quebec") == "Canada"
     assert s.findSmallestRegion(regions, "Brazil", "Boston") == "Earth"
     assert Solution.findSmallestRegion.__doc__

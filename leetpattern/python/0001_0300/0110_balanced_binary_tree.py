@@ -10,28 +10,24 @@ class TreeNode:
         self.right = right
 
 
-# Recursive
-def isBalanced(root: Optional[TreeNode]) -> bool:
-    def getHeight(node):
-        if not node:
-            return 0
+class Solution:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        if not root:
+            return True
 
-        # post order
-        leftHeight = getHeight(node.left)
-        rightHeight = getHeight(node.right)
+        def dfs(node: Optional[TreeNode]) -> list[int, bool]:
+            if not node:
+                return [0, True]
 
-        if leftHeight == -1 or rightHeight == -1:
-            return -1
+            hl, bl = dfs(node.left)
+            hr, br = dfs(node.right)
 
-        if abs(leftHeight - rightHeight) > 1:
-            return -1
-        else:
-            return 1 + max(leftHeight, rightHeight)
+            height = 1 + max(hl, hr)
+            balanced = bl and br and (abs(hl - hr) <= 1)
 
-    if getHeight(root) != -1:
-        return True
-    else:
-        return False
+            return [height, balanced]
+
+        return dfs(root)[1]
 
 
 root = [3, 9, 20, None, None, 15, 7]
@@ -42,4 +38,5 @@ print(root)
 # 9     _20
 #      /   \
 #     15    7
-print(isBalanced(root))  # True
+solution = Solution()
+print(solution.isBalanced(root))  # True

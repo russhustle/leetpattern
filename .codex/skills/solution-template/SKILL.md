@@ -19,6 +19,10 @@ class Solution:
     def methodName(self, args) -> ReturnType:
         """Approach Name: O(?) time, O(?) space.
         Key insight.
+
+        Example: representative input
+            meaningful state -> next meaningful state
+        Result: returned value or mutated state
         """
         ...
 
@@ -42,6 +46,9 @@ class OriginalClassName:
     def requiredMethod(self, args) -> ReturnType:
         """Operation Approach: O(?) time, O(?) space.
         Key update/query invariant.
+
+        Example: short operation sequence
+            operation -> relevant state or result
         """
         ...
 
@@ -58,7 +65,14 @@ def test_original_class_name():
    suffix such as `Sort`, `BF`, or `DP`.
 3. Add docstrings to public solution methods. For design problems, document
    `__init__` and judged public operations.
-4. Include at least 3 useful test cases, including an edge case.
-5. Use only `test_` functions: no module headers, `print()`, or `if __name__`
+4. Include one concise worked example in the primary approach's docstring. Trace
+   meaningful algorithm state changes such as pointers, heap contents, stack,
+   window, or DP values, then show the result. Use an ASCII diagram when it
+   makes intervals or spatial relationships clearer. For design problems,
+   simulate a short operation sequence in one relevant public docstring.
+5. Keep simulations accurate to the implementation and use a representative
+   non-edge input. Omit repetitive unchanged steps when they add no insight.
+6. Include at least 3 useful test cases, including an edge case.
+7. Use only `test_` functions: no module headers, `print()`, or `if __name__`
    blocks.
-6. Keep code minimal and lines at 90 characters or less.
+8. Keep code minimal and lines at 90 characters or less.

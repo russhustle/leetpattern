@@ -43,6 +43,10 @@ dev = [
     "pytest-cov>=7.1.0",
 ]
 
+[tool.uv]
+# CVE-2026-112902: libtiff encoder memory disclosure and crashes.
+constraint-dependencies = ["pillow>=13.0.0"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests", "leetpattern/python"]
 python_files = ["test_*.py", "*_test.py", "[0-9][0-9][0-9][0-9]_*.py"]

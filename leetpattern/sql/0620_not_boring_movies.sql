@@ -3,10 +3,8 @@ SELECT
     movie,
     description,
     rating
-FROM
-    cinema
+FROM Cinema
 WHERE
-    id % 2 = 1
-    AND LOWER(description) NOT LIKE '%boring%'
-ORDER BY
-    rating DESC;
+    MOD(id, 2) = 1
+    AND description <> 'boring'
+ORDER BY rating DESC;
